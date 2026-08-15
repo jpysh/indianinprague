@@ -208,6 +208,50 @@ header.site.nav-hidden {
 .sound-viz { display: flex; align-items: flex-end; gap: 2px; height: 12px; }
 .sound-bar { width: 2px; height: 3px; background: var(--marigold); border-radius: 1px; transition: height 0.2s; }
 
+/* Phone layout for the pill nav.
+   The nav had no width constraint at all, so its three children simply added up to more
+   than a phone is wide and the pill ran off BOTH edges — the wordmark clipped on the left
+   and "Book a consultation", the page's primary call to action, clipped on the right. On a
+   site whose traffic is ~90% mobile that is the most expensive twenty lines of CSS missing
+   from the page.
+
+   The pill now spans the viewport with a gutter and each child gives up exactly what it can
+   afford to:
+     - the wordmark truncates, because the page title already says where you are;
+     - "· Spirituality" is dropped, for the same reason;
+     - the sound toggle loses its text label but keeps its animated bars and its
+       aria-label, so it stays operable and still announces itself to a screen reader;
+     - the CTA gives up padding and a little type size, and NOTHING else. It never wraps,
+       never truncates and never shrinks below a 44px tap target. Everything else in this
+       block exists to protect it. */
+@media (max-width: 640px) {
+  header.site { top: 12px; padding: 0 12px; }
+  .pill-nav {
+    width: 100%; gap: 10px; padding: 6px 6px 6px 16px; justify-content: space-between;
+  }
+  .pill-nav .word {
+    font-size: 13px; min-width: 0; flex: 0 1 auto;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .pill-nav .word em { display: none; }
+  .sound-toggle { padding: 6px 10px; flex: 0 0 auto; }
+  .sound-toggle #sound-text { display: none; }
+  .pill-nav .btn-primary {
+    flex: 0 0 auto; font-size: 13px; padding: 11px 16px; min-height: 44px;
+  }
+}
+
+/* Only on genuinely tiny screens does the wordmark go. Measured at 375px — an iPhone SE or
+   13 mini, not a rare device — the CTA takes 155px, the sound toggle 44px, and the wordmark
+   still has ~110px, which fits "Indian in Prague" at 13px. Dropping the brand there would
+   have been a self-inflicted loss. The pill also stops spanning the full width here, since
+   a full-width bar holding two small controls reads as a rendering fault rather than a
+   design. */
+@media (max-width: 340px) {
+  .pill-nav .word { display: none; }
+  .pill-nav { width: auto; padding: 6px 6px 6px 10px; }
+}
+
 /* Dot Navigation */
 .dotnav {
   position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 55;
@@ -366,6 +410,79 @@ header.site.nav-hidden {
   .horizontal-track-wrapper { width: 100%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px; }
   .card.trip, .card.shop { scroll-snap-align: start; }
 }
+
+/* If the animation libraries never arrived, the desktop runway is never built — and the
+   track is `width: max-content` inside `overflow: hidden`, so every card past the first
+   screen becomes unreachable. Six trips and eight products, invisible. The fallback class
+   set by the preloader guard turns both runways into ordinary scrollers. */
+.no-motion-fallback .horizontal-pinned-section { overflow-x: auto; }
+.no-motion-fallback .horizontal-track-wrapper { width: 100%; overflow-x: auto; }
+
+/* ============================================================
+   RUNWAY CONTROLS — the visible way to move a runway sideways
+   ============================================================
+   The runways carried no affordance at all: on desktop they moved only when the page was
+   scrolled vertically while pinned, and on a phone they were a bare swipe area. Nothing
+   told a visitor there were fourteen more cards to the right, and a keyboard user could not
+   reach them at all. A shelf that does not look like a shelf does not get browsed.
+
+   One control row serves both modes — arrows plus a progress rail that doubles as a
+   "there is more, and this is where you are" indicator. */
+.runway-controls {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  padding: 4px var(--edge) 8px; max-width: 520px; margin: 0 auto;
+}
+.runway-btn {
+  flex: 0 0 auto; width: 46px; height: 46px; border-radius: 100px; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(33,23,53,0.06); border: 1px solid rgba(33,23,53,0.22);
+  color: inherit; transition: background 0.25s var(--ease), border-color 0.25s var(--ease),
+                              transform 0.25s var(--ease), opacity 0.25s var(--ease);
+}
+.runway-btn:hover { background: rgba(33,23,53,0.12); transform: translateY(-1px); }
+.runway-btn:focus-visible { outline: 2px solid var(--marigold); outline-offset: 3px; }
+.runway-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+/* Disabled rather than hidden: a control that vanishes at the end of a list makes the row
+   jump and leaves the visitor unsure whether they reached the end or broke something. */
+.runway-btn[aria-disabled="true"] { opacity: 0.28; pointer-events: none; }
+.runway-rail {
+  flex: 1 1 auto; height: 3px; border-radius: 100px; position: relative;
+  background: rgba(33,23,53,0.14); overflow: hidden;
+}
+.runway-rail span {
+  position: absolute; left: 0; top: 0; bottom: 0; width: 100%;
+  background: var(--terracotta); border-radius: 100px;
+  transform-origin: left center; transition: transform 0.15s linear;
+}
+/* On the dark bands the same controls need the inverse palette. */
+section.on-void .runway-btn { background: rgba(245,238,221,0.08); border-color: rgba(245,238,221,0.22); color: var(--cream); }
+section.on-void .runway-btn:hover { background: rgba(245,238,221,0.16); }
+section.on-void .runway-rail { background: rgba(245,238,221,0.16); }
+section.on-void .runway-rail span { background: var(--marigold); }
+
+/* ============================================================
+   RETURN TO TOP
+   ============================================================
+   The header now leaves for good once the visitor scrolls past the hero (see the nav logic
+   in the script), which is only fair if there is an obvious way back to it. This is that
+   way. It stays clear of the desktop dot-nav on the right edge and sits above the thumb on
+   a phone. */
+.to-top {
+  position: fixed; right: 20px; bottom: 20px; z-index: 70;
+  width: 52px; height: 52px; border-radius: 100px; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(33,23,53,0.82); backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(245,238,221,0.22); color: var(--cream);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.36);
+  opacity: 0; visibility: hidden; transform: translateY(12px) scale(0.94);
+  transition: opacity 0.35s var(--ease), transform 0.35s var(--ease), visibility 0.35s;
+}
+.to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+.to-top:hover { background: rgba(33,23,53,0.95); transform: translateY(-2px) scale(1.03); }
+.to-top:focus-visible { outline: 2px solid var(--marigold); outline-offset: 3px; }
+.to-top svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; }
+@media (min-width: 1080px) { .to-top { right: 72px; } } /* clear of the dot navigation */
+@media (max-width: 640px) { .to-top { right: 14px; bottom: 14px; width: 48px; height: 48px; } }
 
 .card.trip { width: 340px; padding: 0 0 24px; overflow: hidden; flex-shrink: 0; }
 .card.trip .art-blob { border-radius: 0 0 46% 54% / 0 0 30% 30%; aspect-ratio: 5/4; }
@@ -580,6 +697,74 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     <div class="loader-bar-bg"><div class="loader-bar-fill" id="loader-fill"></div></div>
   </div>
 </div>
+<script>
+/* Last-resort escape hatch for the preloader, deliberately placed here rather than in the
+   main script at the bottom of this page.
+
+   This page's animation runs on GSAP, ScrollTrigger, three.js and Lenis, all pulled from
+   cdnjs and unpkg. If any of those fails to arrive — a CDN outage, a corporate or hotel
+   network that blocks them, a captive portal, a country that filters them — then `gsap` is
+   undefined, the main script throws on its first line, and every dismissal path inside it
+   dies with it. The visitor is left staring at a loading screen forever, on the page where
+   they were deciding whether to book a consultation.
+
+   That was observed for real while testing: with the libraries blocked, the preloader
+   never left. The main script's own failsafe could not help, because it was inside the
+   script that had already thrown.
+
+   So this guard depends on nothing at all: no library, no other script, not even the rest
+   of this page's JavaScript. If the preloader is still up after 3 seconds, the content
+   becomes reachable. The page then renders without its animation — plain, but readable,
+   navigable and bookable, which is the whole point of it existing. */
+(function () {
+  setTimeout(function () {
+    var p = document.getElementById('preloader');
+    if (p && p.style.display !== 'none') {
+      p.style.display = 'none';
+      /* The hero and section headings are masked with a translate and are revealed by the
+         animation that never ran, so they must be un-masked by hand or the page would be
+         blank text on a background. */
+      var masked = document.querySelectorAll('.line-mask-inner');
+      for (var i = 0; i < masked.length; i++) { masked[i].style.transform = 'none'; }
+      document.documentElement.classList.add('no-motion-fallback');
+
+      /* The main script owns the header, the back-to-top button and the runway arrows, and
+         it is the script that just failed. Wire the essentials natively so the page is
+         still navigable: without this the visitor would be stranded at the bottom of a very
+         long page with a header that never returns. */
+      var top = document.getElementById('to-top');
+      if (top) {
+        top.classList.add('is-visible');
+        top.addEventListener('click', function () { window.scrollTo(0, 0); });
+      }
+      var rows = document.querySelectorAll('.runway-controls');
+      for (var r = 0; r < rows.length; r++) {
+        (function (row) {
+          var track = document.getElementById(row.getAttribute('data-runway'));
+          if (!track) return;
+          var card = track.querySelector('.card');
+          var stepPx = card ? card.getBoundingClientRect().width + 32 : 320;
+          var btns = row.querySelectorAll('.runway-btn');
+          for (var b = 0; b < btns.length; b++) {
+            (function (btn) {
+              btn.addEventListener('click', function () {
+                track.scrollLeft += parseInt(btn.getAttribute('data-dir'), 10) * stepPx;
+              });
+            })(btns[b]);
+          }
+        })(rows[r]);
+      }
+    }
+  }, 3000);
+})();
+</script>
+
+<!-- Return to top. Present in the markup from the start rather than injected by script, so
+     it exists even if the animation libraries never load — its click handler falls back to
+     the browser's own scrolling. -->
+<button class="to-top" id="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
 
 <!-- Fluid Magnetic Cursor -->
 <div id="cursor-dot"></div>
@@ -646,18 +831,19 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   <section class="hero on-void" id="hero">
     <div class="wrap hero-grid">
       <div>
-        <div class="eyebrow">
-          <span><strong>SPIRITUALITY</strong></span>
-          <span>indická spiritualita praha · yoga, ayurveda, meditation</span>
-          <span>Prague / India · MMXXVI</span>
-        </div>
+        <!-- The hero eyebrow was removed 15 Aug 2026. Unlike every other .eyebrow on this
+             page, which labels the section below it, this one sat above the headline
+             repeating what the headline already said, and pushed the actual message further
+             down a phone screen. The section eyebrows elsewhere are untouched. -->
+        <!-- Two lines rather than three: the headline is shorter now, and splitting
+             "Yoga, Ayurveda / and Spirituality" keeps the staggered mask reveal reading as
+             a deliberate two-beat phrase instead of one orphaned word. -->
         <h1 class="kinetic-title">
-          <span class="line-mask"><span class="line-mask-inner">Yoga, Ayurveda &amp;</span></span>
-          <span class="line-mask"><span class="line-mask-inner">Indian Spirituality</span></span>
-          <span class="line-mask"><span class="line-mask-inner">in Prague</span></span>
+          <span class="line-mask"><span class="line-mask-inner">Yoga, Ayurveda</span></span>
+          <span class="line-mask"><span class="line-mask-inner">and Spirituality</span></span>
         </h1>
         <p class="kicker">One philosophy. Four ways to begin.</p>
-        <p class="lede">Authentic yoga, Ayurveda, meditation and Indian wellbeing traditions, brought to Prague and made accessible for a European audience — rooted in genuine source knowledge, taught with the warmth Haidakhan Babaji called "Truth, Simplicity, Love."</p>
+        <p class="lede">Authentic yoga, Ayurveda, meditation and wellbeing traditions, rooted in genuine source knowledge, taught with the warmth Haidakhan Babaji called "Truth, Simplicity, Love."</p>
         <div class="ctas">
           <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
           <a href="#offer" class="btn btn-ghost" data-magnetic="true">See our courses</a>
@@ -827,6 +1013,19 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
           <p class="hook">A bespoke itinerary built around your dates, group size and goals — individuals, couples, or small groups.</p>
         </article>
       </div>
+
+      <!-- Runway controls. Buttons rather than a hint, because a hint tells you something
+           exists and a button lets you use it — and because these are the only way a
+           keyboard user can reach cards past the first screen. -->
+      <div class="runway-controls" data-runway="trips-track">
+        <button class="runway-btn" type="button" data-dir="-1" aria-label="Previous trips">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="runway-rail" role="presentation"><span></span></div>
+        <button class="runway-btn" type="button" data-dir="1" aria-label="More trips">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
     </div>
   </section>
 
@@ -876,6 +1075,19 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
           <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Gift Sets" loading="lazy"></div>
           <h3>Gift Sets</h3><p class="hook">Curated bundles for newcomers or gifting.</p>
         </article>
+      </div>
+
+      <!-- Runway controls. Buttons rather than a hint, because a hint tells you something
+           exists and a button lets you use it — and because these are the only way a
+           keyboard user can reach cards past the first screen. -->
+      <div class="runway-controls" data-runway="shop-track">
+        <button class="runway-btn" type="button" data-dir="-1" aria-label="Previous products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="runway-rail" role="presentation"><span></span></div>
+        <button class="runway-btn" type="button" data-dir="1" aria-label="More products">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
     </div>
   </section>
@@ -1106,11 +1318,14 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   // ------------------------------------------------------------
   gsap.registerPlugin(ScrollTrigger);
 
+  // Smooth scroll is itself motion the visitor did not ask for: it decouples the page from
+  // the finger or the wheel, which is a common trigger for motion sickness. Off entirely
+  // under reduced-motion, where the browser's native scrolling is exactly what is wanted.
   const lenis = new Lenis({
-    duration: 1.2,
+    duration: prefersReducedMotion ? 0 : 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    smoothWheel: true,
-    touchMultiplier: 2
+    smoothWheel: !prefersReducedMotion,
+    touchMultiplier: prefersReducedMotion ? 1 : 2
   });
 
   lenis.on('scroll', ScrollTrigger.update);
@@ -1120,18 +1335,153 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   });
   gsap.ticker.lagSmoothing(0);
 
-  // Hide-On-Scroll Header Navigation
-  let lastScrollY = 0;
+  // Header: shown at the top of the page, gone once the visitor is reading, and it does NOT
+  // come back on an upward scroll.
+  //
+  // The previous rule was the common one — hide on scroll down, reveal on scroll up — and it
+  // is exactly wrong for this page. Reading long copy on a phone involves constant small
+  // upward corrections, and each one threw a floating bar back over the text. The bar also
+  // covers the top of a pinned runway, so it reappeared over the very cards it was
+  // interrupting. It now leaves at 120px and returns only when the visitor is genuinely
+  // back at the top, which the "back to top" control makes a deliberate action rather than
+  // a long scroll.
   const headerEl = document.querySelector('header.site');
+  const NAV_HIDE_AT = 120;
+  const NAV_SHOW_AT = 24; // effectively "at the top", with room for momentum overshoot
   lenis.on('scroll', (e) => {
-    const currentY = e.scroll;
-    if (currentY > 120 && currentY > lastScrollY) {
+    const y = e.scroll;
+    if (y > NAV_HIDE_AT) {
       headerEl.classList.add('nav-hidden');
-    } else {
+    } else if (y <= NAV_SHOW_AT) {
       headerEl.classList.remove('nav-hidden');
     }
-    lastScrollY = currentY;
+    updateToTop(y);
+    updateAllRunwayRails();
   });
+
+  // ------------------------------------------------------------
+  // RETURN TO TOP
+  // ------------------------------------------------------------
+  const toTopBtn = document.getElementById('to-top');
+  // Appears after roughly one and a half screens: far enough that the header is long gone
+  // and the visitor may want it, not so eager that it hovers over the hero.
+  function updateToTop(y) {
+    if (!toTopBtn) return;
+    toTopBtn.classList.toggle('is-visible', y > window.innerHeight * 1.5);
+  }
+  if (toTopBtn) {
+    toTopBtn.addEventListener('click', () => {
+      // Instant for reduced motion: a long animated flight up the page is precisely the
+      // kind of movement that preference exists to prevent.
+      if (prefersReducedMotion) {
+        lenis.scrollTo(0, { immediate: true });
+        window.scrollTo(0, 0);
+      } else {
+        lenis.scrollTo(0, { duration: 1.1 });
+      }
+      // Return focus to the top of the document so a keyboard user lands where they were
+      // sent, rather than staying on a button that has just scrolled out from under them.
+      const first = document.querySelector('header.site a');
+      if (first) setTimeout(() => first.focus({ preventScroll: true }), prefersReducedMotion ? 0 : 1150);
+    });
+  }
+
+  // ------------------------------------------------------------
+  // RUNWAY CONTROLS
+  // ------------------------------------------------------------
+  // One controller drives both presentations of a runway:
+  //
+  //   phone  — the track is a native overflow-x scroller, so the buttons scroll the track.
+  //   desktop — the section is pinned and the track is moved by GSAP as the PAGE scrolls
+  //             vertically, one pixel for one pixel. So the buttons scroll the page, and
+  //             the runway follows. Same button, same felt result, different mechanism.
+  //
+  // The rail underneath is the part that does the quiet work: it is the only thing on the
+  // page that says "there are fourteen of these and you have seen three".
+  const runways = [];
+
+  document.querySelectorAll('.runway-controls').forEach((controls) => {
+    const track = document.getElementById(controls.dataset.runway);
+    if (!track) return;
+    const section = track.closest('.horizontal-pinned-section');
+    const fill = controls.querySelector('.runway-rail span');
+    const prev = controls.querySelector('[data-dir="-1"]');
+    const next = controls.querySelector('[data-dir="1"]');
+    const card = track.querySelector('.card');
+
+    // Step by one card plus the gap, so a press always lands cards on a tidy edge rather
+    // than leaving a sliver of the previous one.
+    const step = () => (card ? card.getBoundingClientRect().width + 32 : 320);
+    const isNative = () => window.matchMedia('(max-width: 768px)').matches ||
+                           document.documentElement.classList.contains('no-motion-fallback');
+
+    const maxScroll = () => Math.max(1, track.scrollWidth - track.clientWidth);
+
+    function progress() {
+      if (isNative()) return track.scrollLeft / maxScroll();
+      // Pinned mode. The obvious formula — how far the section's top has travelled past the
+      // viewport — is wrong precisely BECAUSE the section is pinned: its getBoundingClientRect
+      // top stays at 0 for the whole runway, so the rail sat at its floor and never moved.
+      // The honest source is the track's own transform, which is what the eye is actually
+      // watching.
+      if (typeof gsap === 'undefined') return 0;
+      const x = Number(gsap.getProperty(track, 'x')) || 0;
+      const range = Math.max(1, track.scrollWidth - window.innerWidth + 80);
+      return Math.min(1, Math.max(0, -x / range));
+    }
+
+    function render() {
+      const p = progress();
+      // A fill, not a thumb: it reads as "how much of this shelf you have seen", which is
+      // the question a visitor actually has. Floored at 6% so the bar is never an empty
+      // groove that looks broken before the first press.
+      if (fill) fill.style.transform = 'scaleX(' + Math.max(0.06, p) + ')';
+      prev.setAttribute('aria-disabled', String(p <= 0.001));
+      next.setAttribute('aria-disabled', String(p >= 0.999));
+    }
+
+    let snapTimer = null;
+
+    function move(dir) {
+      const behavior = prefersReducedMotion ? 'auto' : 'smooth';
+      if (isNative()) {
+        // `scroll-snap-type: x mandatory` CANCELS programmatic smooth scrolling: the
+        // browser re-snaps to the current point mid-animation, so the track never moves.
+        // Measured here — scrollBy and scrollTo with behavior:'smooth' both left scrollLeft
+        // unchanged at 23px, while behavior:'auto' worked. So snapping is suspended for the
+        // length of the animation and restored afterwards. The step is exactly one card
+        // plus the gap from an already-snapped position, so the restore lands on a snap
+        // point and nothing visibly jumps.
+        const target = track.scrollLeft + dir * step();
+        if (prefersReducedMotion) {
+          track.scrollLeft = target;
+          render();
+          return;
+        }
+        track.style.scrollSnapType = 'none';
+        track.scrollTo({ left: target, behavior: 'smooth' });
+        clearTimeout(snapTimer);
+        snapTimer = setTimeout(() => { track.style.scrollSnapType = ''; render(); }, 600);
+      } else if (typeof lenis !== 'undefined') {
+        lenis.scrollTo(lenis.scroll + dir * step(), { duration: prefersReducedMotion ? 0 : 0.6 });
+      } else {
+        window.scrollBy({ top: dir * step(), behavior });
+      }
+      setTimeout(render, 320);
+    }
+
+    prev.addEventListener('click', () => move(-1));
+    next.addEventListener('click', () => move(1));
+    track.addEventListener('scroll', render, { passive: true });
+
+    runways.push(render);
+    render();
+  });
+
+  function updateAllRunwayRails() {
+    for (let i = 0; i < runways.length; i++) runways[i]();
+  }
+  window.addEventListener('resize', updateAllRunwayRails);
 
   // ------------------------------------------------------------
   // 2. RITUAL PRELOADER & ENTRANCE SEQUENCE
@@ -1143,6 +1493,26 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   const words = ["Truth", "Simplicity", "Love"];
   let wordIdx = 0;
 
+  // The preloader used to run a hardcoded 2.2s progress tween followed by a 1.2s wipe —
+  // 3.4 seconds of imposed wait for a page whose HTML arrives in about 80ms. It measured
+  // nothing. Worse, it was a GSAP tween competing with two WebGL renderers that started at
+  // the same instant, so on a loaded machine or a mid-range phone it did not take 3.4s at
+  // all: it was observed sitting at "100%" for over a minute, which reads as a broken site
+  // on the one page where a visitor decides whether to trust us enough to book.
+  //
+  // It now reports something true. The bar tracks real readiness (fonts decoded, page
+  // loaded), floors at ENTRANCE_MIN so the three words still land as a ritual rather than a
+  // flash, and is capped at ENTRANCE_MAX so a fast connection is never held back. A hard
+  // failsafe dismisses it regardless of what GSAP or the GPU are doing — the page can no
+  // longer be held hostage by an animation that fell behind.
+  //
+  // Mobile is ~90% of this site's traffic, so these numbers are chosen for a phone on 4G:
+  // the HTML is already there, the fonts are the only real wait, and 900ms is comfortably
+  // longer than that on a normal connection.
+  const ENTRANCE_MIN = 450;   // below this the words flicker and the moment is lost
+  const ENTRANCE_MAX = 900;   // above this it is our delay, not the network's
+  const ENTRANCE_FAILSAFE = 2500; // absolute ceiling; nothing may hold the page past this
+
   const wordInterval = setInterval(() => {
     wordIdx = (wordIdx + 1) % words.length;
     gsap.to(loaderWord, {
@@ -1152,30 +1522,87 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         gsap.to(loaderWord, { opacity: 1, y: 0, duration: 0.3 });
       }
     });
-  }, 700);
+  }, 500);
 
-  let progress = { value: 0 };
-  gsap.to(progress, {
-    value: 100, duration: 2.2, ease: 'power2.inOut',
-    onUpdate: () => {
-      const val = Math.round(progress.value);
-      loaderCount.textContent = val;
-      loaderFill.style.width = val + '%';
-    },
-    onComplete: () => {
-      clearInterval(wordInterval);
-      gsap.to(preloader, {
-        clipPath: 'polygon(0 0, 100% 0, 100% 0%, 0 0%)',
-        duration: 1.2, ease: 'power4.inOut',
-        onComplete: () => {
-          preloader.style.display = 'none';
-          initEntranceAnimations();
-        }
-      });
+  const entranceStart = performance.now();
+  let revealed = false;
+
+  // Everything that dismisses the loader funnels through here, and it runs exactly once.
+  // `instant` skips the wipe entirely — used for reduced-motion visitors and by the
+  // failsafe, where any further animation would be adding to a wait that is already too
+  // long.
+  function revealPage(instant) {
+    if (revealed) return;
+    revealed = true;
+    clearInterval(wordInterval);
+
+    const finish = () => {
+      preloader.style.display = 'none';
+      initEntranceAnimations();
+      startHeavyVisuals();
+    };
+
+    if (instant) {
+      finish();
+      return;
     }
-  });
+
+    loaderCount.textContent = '100';
+    loaderFill.style.width = '100%';
+    gsap.to(preloader, {
+      clipPath: 'polygon(0 0, 100% 0, 100% 0%, 0 0%)',
+      duration: 0.65, ease: 'power4.inOut',
+      onComplete: finish
+    });
+  }
+
+  // Reduced motion: no countdown, no wipe, no waiting. Someone who has asked their device
+  // to stop animating things should not be shown a three-second animation about patience.
+  // Deferred by one tick so the rest of this script finishes parsing first.
+  if (prefersReducedMotion) {
+    setTimeout(() => revealPage(true), 0);
+  } else {
+    // Drive the number from real progress: fonts are the only asset that actually gates a
+    // first meaningful paint here, since the HTML is inline and the photographs are lazy.
+    const ready = Promise.all([
+      document.fonts ? document.fonts.ready : Promise.resolve(),
+      document.readyState === 'complete'
+        ? Promise.resolve()
+        : new Promise((r) => window.addEventListener('load', r, { once: true }))
+    ]);
+
+    let settled = false;
+    ready.then(() => { settled = true; });
+
+    // The bar eases toward 90% on its own and only completes once `ready` resolves, so it
+    // never claims to be finished while something is still loading — and never stalls at a
+    // number either, which is the specific failure that made the old one feel broken.
+    const tick = () => {
+      if (revealed) return;
+      const elapsed = performance.now() - entranceStart;
+      const paced = Math.min(90, (elapsed / ENTRANCE_MAX) * 90);
+      const val = settled ? Math.min(100, Math.max(paced, (elapsed / ENTRANCE_MIN) * 100)) : paced;
+      loaderCount.textContent = Math.round(val);
+      loaderFill.style.width = val + '%';
+
+      if (settled && elapsed >= ENTRANCE_MIN) { revealPage(false); return; }
+      if (elapsed >= ENTRANCE_MAX && settled) { revealPage(false); return; }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+
+    // Belt and braces. If fonts never resolve, a script 404s, the GPU stalls or a tween
+    // falls behind, the visitor still gets the page. This is the line that makes the
+    // 85-second hang impossible rather than unlikely.
+    setTimeout(() => revealPage(true), ENTRANCE_FAILSAFE);
+  }
 
   function initEntranceAnimations() {
+    // Reduced motion gets the finished state directly rather than a staggered reveal.
+    if (prefersReducedMotion) {
+      gsap.set('.hero .line-mask-inner', { y: '0%' });
+      return;
+    }
     gsap.to('.hero .line-mask-inner', {
       y: '0%', duration: 1.2, stagger: 0.15, ease: 'power4.out'
     });
@@ -1185,6 +1612,13 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   // 3. KINETIC TYPOGRAPHY & SCROLL VELOCITY SKEW
   // ------------------------------------------------------------
   const titles = document.querySelectorAll('.kinetic-title .line-mask-inner');
+  // Under reduced motion every heading is simply present. These are masked with a
+  // translate, so skipping the animation without setting the end state would leave the
+  // headings invisible — the one way this could go badly wrong, and worth being explicit
+  // about rather than relying on a default.
+  if (prefersReducedMotion) {
+    gsap.set(titles, { y: '0%' });
+  } else {
   titles.forEach(title => {
     gsap.to(title, {
       y: '0%', duration: 1.2, ease: 'power4.out',
@@ -1195,6 +1629,7 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
       }
     });
   });
+  }
 
   const skewBlocks = document.querySelectorAll('.skew-block');
   let skewTarget = 0;
@@ -1224,7 +1659,13 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   const bgCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
   const bgRenderer = new THREE.WebGLRenderer({ canvas: bgCanvas, alpha: true, antialias: false });
   bgRenderer.setSize(window.innerWidth, window.innerHeight);
-  bgRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  // Was min(devicePixelRatio, 2). On a modern phone that is 3, so the cap did nothing and
+  // the fluid shader was being rendered at up to 2x on the device class that can least
+  // afford it — and this page is ~90% mobile traffic. The effect is a soft organic wash
+  // with no fine detail, so 1.5 is visually indistinguishable and costs under half as many
+  // fragments. Kept as a named constant because the FPS watchdog below lowers it again.
+  const BG_PIXEL_RATIO = Math.min(window.devicePixelRatio, 1.5);
+  bgRenderer.setPixelRatio(BG_PIXEL_RATIO);
 
   const mouseVec = new THREE.Vector2(0.5, 0.5);
   const mouseVel = new THREE.Vector2(0, 0);
@@ -1359,6 +1800,9 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   // ------------------------------------------------------------
   const chakraContainer = document.getElementById('chakra-canvas-container');
   const chakraCanvas = document.getElementById('chakra-canvas');
+  // Assigned inside the block below when the section exists; a no-op otherwise, so
+  // startHeavyVisuals() does not have to know whether this page has a chakra section.
+  let startChakraCanvas = function () {};
   if (chakraContainer && chakraCanvas) {
     const cScene = new THREE.Scene();
     const cCamera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -1366,7 +1810,10 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 
     const cRenderer = new THREE.WebGLRenderer({ canvas: chakraCanvas, alpha: true, antialias: true });
     cRenderer.setSize(window.innerWidth, window.innerHeight);
-    cRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    // 1.75 rather than 2: this scene has wireframe geometry and point sprites, where edges
+    // are thin enough that resolution is worth more than it is on the background wash — but
+    // a phone's native 3 was never affordable alongside a second WebGL context.
+    cRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
 
     const resizeObserver = new ResizeObserver(() => {
       if (!chakraContainer) return;
@@ -1473,11 +1920,38 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
       cCamera.lookAt(activeNode.pos.x, activeNode.pos.y, activeNode.pos.z);
     }
 
+    // Two changes here, both about not doing work nobody can see.
+    //
+    // 1. The loop no longer starts at parse time. startChakraCanvas() is called from
+    //    startHeavyVisuals(), i.e. after the page is revealed.
+    // 2. It only runs while the section is actually on screen. The chakra canvas sits well
+    //    below the fold, so on a phone it was rendering a full 3D scene — every frame,
+    //    against a second WebGL context — for a visitor still reading the headline.
+    let chakraVisible = false;
+    let chakraRunning = false;
+
     function chakraLoop(t) {
+      if (!chakraVisible || !chakraRunning) { chakraRunning = false; return; }
       animateChakraCanvas(t);
       requestAnimationFrame(chakraLoop);
     }
-    requestAnimationFrame(chakraLoop);
+
+    const chakraObserver = new IntersectionObserver((entries) => {
+      chakraVisible = entries[0].isIntersecting && !document.hidden;
+      if (chakraVisible && !chakraRunning && !prefersReducedMotion) {
+        chakraRunning = true;
+        requestAnimationFrame(chakraLoop);
+      }
+    }, { rootMargin: '200px' }); // spin up just before it scrolls into view, never mid-frame
+
+    startChakraCanvas = function () {
+      if (prefersReducedMotion) {
+        // Static frame, same reasoning as the background: keep the artwork, drop the motion.
+        animateChakraCanvas(0);
+        return;
+      }
+      chakraObserver.observe(chakraContainer);
+    };
   }
 
   // ------------------------------------------------------------
@@ -1650,21 +2124,65 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     });
   }
 
+  // The background render loop no longer starts on its own. It used to begin the instant
+  // the script parsed, which meant a full-screen fragment shader was competing with the
+  // preloader's own animation for the same frames — the page was fighting itself before
+  // the visitor had seen anything. startHeavyVisuals() is called from revealPage(), so
+  // nothing heavy runs until the content is actually on screen.
+  let bgRunning = false;
+
   function render(time) {
+    if (!bgRunning) return;
     bgMaterial.uniforms.u_time.value = time * 0.001;
     bgRenderer.render(bgScene, bgCamera);
     requestAnimationFrame(render);
   }
-  requestAnimationFrame(render);
 
+  function startHeavyVisuals() {
+    // Reduced motion still gets the artwork, just not the movement: one frame is rendered
+    // so the page keeps its identity, and then nothing animates. Turning the canvas off
+    // entirely would leave a flat background and lose the design; holding a single frame
+    // respects the preference without punishing the visitor for having set it.
+    if (prefersReducedMotion) {
+      bgMaterial.uniforms.u_time.value = 0;
+      bgRenderer.render(bgScene, bgCamera);
+      return;
+    }
+    if (bgRunning) return;
+    bgRunning = true;
+    requestAnimationFrame(render);
+    startChakraCanvas();
+    requestAnimationFrame(checkFPS);
+  }
+
+  // A backgrounded tab has no business running two WebGL contexts on someone's battery.
+  // rAF is already throttled when hidden, but this stops the work entirely and picks it
+  // back up on return.
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      bgRunning = false;
+    } else if (!prefersReducedMotion && revealed) {
+      bgRunning = true;
+      requestAnimationFrame(render);
+    }
+  });
+
+  // Started by startHeavyVisuals(), and it stops with the background rather than running
+  // forever measuring a loop that is no longer drawing.
   let frameCount = 0;
   let lastFpsCheck = performance.now();
+  let fpsDowngraded = false;
   function checkFPS() {
+    if (!bgRunning) return;
     const now = performance.now();
     frameCount++;
     if (now >= lastFpsCheck + 1000) {
       const fps = (frameCount * 1000) / (now - lastFpsCheck);
-      if (fps < 40) {
+      // Second stage of the same safety valve as BG_PIXEL_RATIO. If a device still cannot
+      // hold 40fps at 1.5, drop to 1.0 once and stop reacting — a watchdog that keeps
+      // toggling resolution is more distracting than the low frame rate it is treating.
+      if (fps < 40 && !fpsDowngraded) {
+        fpsDowngraded = true;
         bgRenderer.setPixelRatio(1);
       }
       frameCount = 0;
@@ -1672,7 +2190,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     }
     requestAnimationFrame(checkFPS);
   }
-  requestAnimationFrame(checkFPS);
 
 })();
 </script>

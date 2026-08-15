@@ -532,6 +532,41 @@ three font files and six photographs. Repeat visits are the HTML alone — under
 
 ## Things that bit, so they don't bite again
 
+**`scroll-snap-type: x mandatory` silently cancels programmatic smooth scrolling.** The new
+runway arrows did nothing on mobile: both `scrollBy` and `scrollTo` with `behavior:'smooth'`
+left `scrollLeft` unchanged, because the browser re-snapped to the current point mid-flight.
+`behavior:'auto'` worked. The arrows now suspend `scroll-snap-type` for the length of the
+animation and restore it after, stepping by exactly one card plus the gap so the restore
+lands on a snap point and nothing jumps.
+
+**A pinned section's `getBoundingClientRect().top` does not move.** The runway progress rail
+was computed from how far the section had travelled up the viewport — which is zero for the
+entire runway, precisely because ScrollTrigger has pinned it. The rail sat at its floor. It
+now reads the track's own transform, which is what the visitor is actually watching.
+
+**The spirituality page's loading screen was measuring nothing** (fixed 15 Aug 2026). It ran
+a hardcoded 2.2s progress tween plus a 1.2s wipe on a page whose HTML arrives in ~80ms, and
+it did so while two WebGL renderers started in the same instant — so it was not a 3.4s floor
+but an unbounded one. Observed sitting at "100%" for 85 seconds on this Mac, on the LIVE
+Docker site, which is what "the site is broken" looked like from outside. It now tracks real
+readiness (fonts + load), floors at 450ms so the Truth/Simplicity/Love sequence still reads,
+caps at 900ms, and has a failsafe at 2500ms. Measured after: **532ms to content**.
+
+**A failsafe inside the script it protects is not a failsafe.** The first version of that fix
+put the timeout in the page's main script — which begins with `gsap.registerPlugin(...)`. If
+cdnjs or unpkg are blocked (corporate wifi, captive portal, national filtering, CDN outage),
+`gsap` is undefined, the script throws on its first line, and every dismissal path dies with
+it. Verified by pointing the CDN script tags at a 404: the preloader never left. There is now
+a dependency-free guard inline right after the preloader markup that un-masks the content
+after 3s no matter what. Tested with all four libraries dead: headline, body copy and the
+"Book a consultation" CTA all present and scrollable.
+
+**`prefers-reduced-motion` was read and then ignored.** The variable was assigned at the top
+of the script and used in exactly one place (the scroll-skew). Two 3D scenes, the entrance
+sequence, the kinetic headings and Lenis smooth scroll all ran regardless. All of them now
+honour it; the WebGL canvases render a single static frame rather than being switched off, so
+a reduced-motion visitor keeps the artwork and loses only the movement.
+
 **Pages `_headers` merges where nginx replaces — and the merge is silent.** nginx drops all
 inherited `add_header`s the moment a location sets one of its own. Pages does the opposite:
 a more specific rule *appends*. Both traps fired on the first version of `edge/_headers`,
