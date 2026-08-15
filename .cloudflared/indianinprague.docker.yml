@@ -1,0 +1,20 @@
+# Ingress for the indianinprague-jains-es tunnel, as consumed by the
+# indianinprague-tunnel container.
+#
+# Referenced by UUID rather than name: name lookup needs the account cert.pem, which is
+# deliberately NOT mounted into the container — only this one tunnel's credentials are.
+#
+# `indianinprague-site` is the compose service name, resolved over the compose network.
+# That is why the site container does not need its published host port for the tunnel to
+# work (8092 is published only for local checks), and why this never reaches for
+# host.docker.internal.
+tunnel: 423c232e-37cf-48f5-9243-04bcdd2a0bc5
+credentials-file: /etc/cloudflared/423c232e-37cf-48f5-9243-04bcdd2a0bc5.json
+protocol: http2
+
+ingress:
+  - hostname: indianinprague.jains.es
+    service: http://indianinprague-site:8080
+  # Anything arriving with a Host header we do not serve gets a 404 rather than being
+  # silently mapped onto the site.
+  - service: http_status:404

@@ -1,0 +1,16 @@
+# Redirects for Cloudflare Pages — the replacement for the `return 301` locations in
+# nginx/indianinprague.conf. Copied into dist/ by scripts/build-dist.mjs; Pages reads it
+# from the deployment root and does not serve it.
+#
+# Format: <from> <to> <status>. Limits: 2,000 static + 100 dynamic rules.
+#
+# NOT here, because Pages does it natively and nginx needed `try_files $uri $uri.html`
+# for it: the extensionless form of every page (/clothes -> clothes.html) resolves on its
+# own, and /404.html is served automatically for unmatched paths.
+
+# shop.html became wardrobe.html when the top nav went to five modules and the word "shop"
+# left the visitor-facing site. It was the most linked and best indexed page here, so the
+# old path stays alive permanently. 301 and not 302: the move is permanent, and only a 301
+# passes the accumulated ranking to the new URL. Both forms, because both resolved before.
+/shop.html   /wardrobe.html   301
+/shop        /wardrobe.html   301

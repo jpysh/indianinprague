@@ -1,0 +1,456 @@
+/* Shop pages — category nav, filter toolbar, and the three additions to the product card.
+ *
+ * Deliberately small. The generated cards reuse .piece / .frame / .meta / .nm / .pr /
+ * .tags from site.css unchanged, so the grid looks exactly like the hand-built one it
+ * replaced. Only what genuinely did not exist before is styled here.
+ *
+ * Contrast was checked against --void (#4A4433), the same bar site.css holds itself to:
+ *   --bone-dim  #D6CFB8  6.32:1   the Kč price, the favourite count, filter labels
+ *   --magenta   #E8A93C  4.77:1   the euro price, the active category
+ * Both clear AA for normal text. --saffron/--olive are lighter still.
+ */
+
+/* ---------- category nav ---------- */
+
+/* Horizontal scroll rather than wrap on a phone: with seven categories a wrapping row
+   becomes three lines and pushes the actual products below the fold. */
+.cat-nav{
+  display:flex;gap:8px;overflow-x:auto;
+  margin-bottom:20px;padding-bottom:8px;
+  -webkit-overflow-scrolling:touch;scrollbar-width:thin;
+}
+.cat-nav a{
+  flex:0 0 auto;display:flex;align-items:center;gap:6px;
+  min-height:44px;padding:0 14px;
+  border:1px solid rgba(242,239,230,.22);
+  font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bone-dim);white-space:nowrap;
+  transition:border-color .15s,color .15s,background .15s;
+}
+/* opacity .6 measured 3.33:1 against the ground and failed AA — the count is small text,
+   so it needs 4.5:1. .8 de-emphasises it just as well and measures 4.67:1. */
+.cat-nav a b{font-weight:400;opacity:.8;font-size:10.5px}
+.cat-nav a:hover{color:var(--bone);border-color:var(--bone)}
+.cat-nav a[aria-current="page"]{
+  background:var(--magenta);border-color:var(--magenta);color:var(--void);
+}
+.cat-nav a[aria-current="page"] b{opacity:.75}
+
+/* ---------- filter toolbar ---------- */
+
+/* Ships with the `hidden` attribute and is revealed by shop.js, so a visitor without
+   JavaScript is never shown a control that cannot do anything. */
+.shop-bar{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.shop-bar[hidden]{display:none}
+.sb-top{display:flex;flex-direction:column;gap:10px}
+.sb-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sb-status{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+
+.shop-bar input,.shop-bar select{
+  width:100%;min-height:44px;padding:0 12px;
+  background:var(--void-2);color:var(--bone);
+  border:1px solid rgba(242,239,230,.22);border-radius:0;
+  font-family:inherit;font-size:12.5px;
+  appearance:none;
+}
+.shop-bar input::placeholder{color:var(--bone-dim);opacity:.7}
+.shop-bar input:focus,.shop-bar select:focus{outline:2px solid var(--magenta);outline-offset:-1px}
+
+/* The native arrow disappears with appearance:none, so draw one back. Encoded --bone-dim. */
+.shop-bar select{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23D6CFB8'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;
+  padding-right:32px;
+}
+
+.sb-count{
+  font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bone-dim);align-self:center;
+}
+
+.sb-empty{
+  padding:40px 0;text-align:center;
+  font-size:13px;color:var(--bone-dim);
+}
+.sb-empty[hidden]{display:none}
+.sb-empty button{
+  background:none;border:none;padding:0;
+  font-family:inherit;font-size:inherit;
+  color:var(--magenta);text-decoration:underline;cursor:pointer;
+}
+
+@media (min-width:721px){
+  .sb-top{flex-direction:row;align-items:center;gap:12px}
+  .sb-search{flex:1 1 auto}
+  /* auto-fit rather than a fixed count: which controls exist varies by page, since a
+     control with nothing to filter is never rendered. */
+  .sb-controls{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+  .sb-sort{margin-left:auto}
+}
+
+
+/* ---------- availability segmented control ---------- */
+
+/* Availability is a MODE, not another attribute — you are browsing what you can buy, or
+   looking at what has already gone. A segmented control says that at a glance; a fifth
+   dropdown would bury it among the filters. */
+.sb-seg{display:flex;flex:0 0 auto;border:1px solid rgba(242,239,230,.22)}
+.sb-seg button{
+  flex:1 1 auto;min-height:44px;padding:0 14px;
+  background:none;border:none;border-right:1px solid rgba(242,239,230,.22);
+  font-family:inherit;font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bone-dim);cursor:pointer;white-space:nowrap;
+  transition:background .15s,color .15s;
+}
+.sb-seg button:last-child{border-right:none}
+.sb-seg button:hover{color:var(--bone)}
+.sb-seg button[aria-pressed="true"]{background:var(--magenta);color:var(--void);font-weight:600}
+
+/* ---------- active filter chips ---------- */
+
+/* The single biggest usability gap in a filtered grid is not knowing WHY it is short.
+   Each chip names the filter and removes it on click; "Clear all" appears once more than
+   one is active. */
+.sb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.sb-chips[hidden]{display:none}
+.chip{
+  display:inline-flex;align-items:center;gap:6px;
+  min-height:32px;padding:0 10px;
+  background:var(--void-2);border:1px solid var(--magenta);
+  font-family:inherit;font-size:11px;color:var(--bone);
+  cursor:pointer;transition:background .15s,color .15s;
+}
+.chip i{font-style:normal;color:var(--bone-dim);text-transform:uppercase;font-size:10px;letter-spacing:.05em}
+.chip span{color:var(--magenta);font-size:14px;line-height:1}
+.chip:hover{background:var(--magenta);color:var(--void)}
+.chip:hover i,.chip:hover span{color:var(--void)}
+.chip.clear-all{border-color:rgba(242,239,230,.35);color:var(--bone-dim)}
+.chip.clear-all:hover{background:var(--bone);color:var(--void)}
+
+/* ---------- progressive reveal ---------- */
+
+/* A real button, not a bare scroll sentinel. Pure infinite scroll cannot be reached by
+   keyboard and keeps the footer permanently out of reach; shop.js presses this for you
+   when you scroll near it, so both interaction models work. */
+.sb-more{
+  display:block;width:100%;margin:28px 0 0;min-height:48px;
+  background:none;border:1px solid var(--saffron);
+  font-family:inherit;font-size:12px;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--saffron);cursor:pointer;transition:background .15s,color .15s;
+}
+.sb-more:hover{background:var(--saffron);color:var(--void)}
+.sb-more[hidden]{display:none}
+
+/* ---------- card: carousel ---------- */
+
+/* Load-bearing. site.css sets `.piece{display:flex}`, and a class selector beats the user
+   agent's `[hidden]{display:none}` — so without this rule shop.js hiding a card would have
+   no visible effect and every filter would silently do nothing. */
+.piece[hidden]{display:none}
+
+/* A scroll-snap track, which is what makes touch swipe and trackpad scroll work with no
+   JavaScript involved in the scrolling at all — the buttons only exist for mouse and
+   keyboard. Photos 2 and 3 are appended here by shop.js on first interaction. */
+.frame .shots{
+  position:absolute;inset:0;z-index:1;
+  display:flex;overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  scrollbar-width:none;-ms-overflow-style:none;
+  overscroll-behavior-x:contain;
+}
+.frame .shots::-webkit-scrollbar{display:none}
+.frame .shot{position:relative;flex:0 0 100%;scroll-snap-align:center;height:100%}
+.frame .shots .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.shot-nav{
+  position:absolute;top:50%;transform:translateY(-50%);z-index:4;
+  width:32px;height:44px;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,9,8,.55);border:1px solid rgba(242,239,230,.28);
+  color:var(--bone);font-size:20px;line-height:1;cursor:pointer;
+  opacity:0;transition:opacity .15s,background .15s;
+}
+.shot-nav.prev{left:0;border-left:none}
+.shot-nav.next{right:0;border-right:none}
+.shot-nav:hover{background:var(--magenta);color:var(--void)}
+.piece:hover .shot-nav,.piece:focus-within .shot-nav{opacity:1}
+/* No hover on touch, so the arrows would never appear — but the track swipes there, and
+   the counter below still says how many photos there are. */
+@media (hover:none){.shot-nav{opacity:.85}}
+.shot-nav:focus-visible{opacity:1}
+
+/* Bottom-right, beside the external-link mark. Every overlay now owns one corner and
+   cannot collide with another:
+       top-left      SOLD / Reserved flag
+       top-right     favourites badge
+       bottom-left   brand or category caption
+       bottom-right  external-link mark, with the photo counter to its left
+   The blurb slides over the bottom edge on hover and deliberately covers both. */
+.shot-count{
+  position:absolute;bottom:9px;right:40px;z-index:3;
+  background:rgba(10,9,8,.62);color:var(--bone);
+  font-size:10px;letter-spacing:.06em;padding:3px 7px;
+}
+
+/* site.css puts this mark top-right, which is now the favourites badge's corner. */
+.piece .ext{top:auto;bottom:9px;right:8px}
+
+/* A long brand name would otherwise run under the counter in the opposite corner. */
+.frame > .cap:not(.flag){max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---------- card: hover blurb ---------- */
+
+/* The listing's own words, over the bottom of the photo on hover or keyboard focus.
+   Strictly an extra: condition, colour, size and price all live in the card's text below
+   the image, so a touch visitor (who has no hover) and a screen reader lose nothing. */
+.frame .blurb{
+  position:absolute;left:0;right:0;bottom:0;z-index:5;
+  margin:0;padding:14px 12px 12px;
+  background:linear-gradient(to top,rgba(10,9,8,.94),rgba(10,9,8,.86) 65%,transparent);
+  /* Plex SANS here, not the site's Plex Mono. This is the only text on a shop page that is
+     read rather than scanned, and a monospace face gives every letter the same width, so
+     word shapes flatten and reading slows. Plex Sans is the same family's proportional
+     sibling, so it sits with the rest of the page instead of fighting it.
+     12.5px/1.65 rather than 11px/1.5 — small text in a dark overlay needs the extra leading
+     more than body copy on a light ground does. */
+  font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color:var(--bone);font-size:12.5px;line-height:1.65;letter-spacing:.005em;
+  opacity:0;transform:translateY(6px);
+  transition:opacity .18s ease,transform .18s ease;
+  pointer-events:none;
+}
+.piece:hover .blurb,.piece:focus-within .blurb{opacity:1;transform:none}
+/* The caption sits in the same corner, so it steps aside rather than being overprinted. */
+.piece:hover .frame > .cap:not(.flag),.piece:focus-within .frame > .cap:not(.flag){opacity:0}
+.frame > .cap:not(.flag){transition:opacity .18s ease}
+@media (hover:none){.frame .blurb{display:none}}
+
+/* ---------- card: sold and reserved ---------- */
+
+/* Top-LEFT now: the favourite badge owns the top-right corner. */
+.frame .cap.flag{
+  top:8px;bottom:auto;left:8px;right:auto;
+  font-weight:600;letter-spacing:.1em;
+}
+/* --chilli, not --paprika. site.css already warns that paprika is a fill colour and not a
+   text colour, but the corollary bites here too: --void ON paprika measures only 2.29:1,
+   and so does --bone at 3.68:1. Chilli is the darker red in the same family and carries
+   --bone at 4.76:1, so the badge stays urgent AND legible. */
+.frame .cap.sold-flag{background:var(--chilli);color:var(--bone)}
+.frame .cap.res{background:var(--saffron);color:var(--void)}
+/* A sold card carries a flag AND the counter in the top-left; push the flag clear. */
+.piece.sold .shot-count{display:none}
+
+/* Desaturated rather than faded: a sold piece should still read as a real photograph —
+   it is evidence that things sell here — but must never look available at a glance. */
+.piece.sold .frame .ph{filter:grayscale(.72) contrast(.92)}
+.piece.sold .nm{color:var(--bone-dim)}
+/* Muted rather than red, at 6.22:1. Paprika text on the ground measures 2.29:1 and fails
+   outright — and the red badge on the photograph is already carrying the "gone" signal, so
+   shouting it twice in the price slot would be redundant as well as unreadable. */
+.piece.sold .pr.sold-pr{
+  color:var(--bone-dim);font-weight:600;text-transform:uppercase;
+  font-size:11px;letter-spacing:.08em;
+}
+.piece.sold .pr .czk{text-decoration:line-through}
+/* Not a link, so it must not pretend to be one. */
+.piece.sold{cursor:default}
+.piece.sold:hover .frame{outline:none}
+
+/* ---------- card: price pair and favourites ---------- */
+
+/* One currency, and big enough to be read at a glance. The koruna figure used to sit under
+   it at 10.5px and split the shopper's attention across two numbers for the same thing;
+   price is the second-most-scanned element on a product card after the photograph, so it
+   gets the weight. site.css already sets .pr nowrap and flex:0 0 auto. */
+.piece .meta .pr{
+  font-size:18px;font-weight:600;line-height:1.2;
+  color:var(--magenta);letter-spacing:-.01em;
+  align-self:center;
+}
+@media (min-width:801px){ .piece .meta .pr{font-size:19px} }
+
+/* Social proof, on the photograph rather than in the small print.
+   These are real people who saved the piece on Vinted, and it is the single strongest
+   reason a hesitant buyer commits — so it is roughly three times its old size and sits in
+   the top-right corner, the second place the eye lands on a card after the image itself. */
+.piece .fav-badge{
+  position:absolute;top:8px;right:8px;z-index:4;
+  display:inline-flex;align-items:center;gap:6px;
+  padding:6px 11px;
+  /* .82 rather than a lighter wash: this badge floats over photographs whose colour cannot
+     be known in advance, so the backdrop has to do the contrast work itself. At this
+     opacity the amber sits at roughly 8:1 whatever is behind it; at .66 a pale garment
+     could have taken it under AA. */
+  background:rgba(10,9,8,.82);
+  border:1px solid rgba(232,169,60,.55);
+  color:var(--magenta);
+  /* 20px — near enough double the 10.5px it was as a line of tag text, and level with the
+     price, which is the other number that decides a purchase. */
+  font-size:20px;font-weight:600;line-height:1;
+  font-variant-numeric:tabular-nums;
+  backdrop-filter:blur(3px);
+}
+.piece .fav-badge svg{flex:0 0 auto;width:18px;height:18px}
+
+/* ---------- footnotes ---------- */
+
+/* opacity .75 measured 4.28:1 — just under AA for text this size. .85 reads as the same
+   footnote and clears it at 5.03:1. */
+.fx-note{
+  margin-top:28px;max-width:62ch;
+  font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:12px;line-height:1.7;color:var(--bone-dim);opacity:.85;
+}
+
+/* The rest of the running prose on shop pages, for the same reason as the blurb. Scoped to
+   this stylesheet so the restaurant, diary and article pages keep the all-mono setting
+   until they are looked at properly. Headings, labels, prices and navigation stay mono —
+   that is where the site's character lives. */
+.page-head .lede,
+.sec-lead,
+.guide-body p{
+  font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:15px;line-height:1.7;
+}
+
+/* ---------- return to filters ---------- */
+
+/* Appears only once the toolbar has scrolled out of view, so it never covers the controls
+   it points at. Bottom-anchored rather than a second sticky strip below the header, which
+   would eat the small viewport this matters most on.
+   Two buttons, because they are two different intents: "narrow this down" and "start
+   again". One ambiguous arrow would serve neither well. */
+.sb-jump{
+  position:fixed;z-index:90;
+  left:50%;transform:translateX(-50%);
+  bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  display:flex;gap:1px;
+  box-shadow:0 4px 20px rgba(10,9,8,.45);
+}
+.sb-jump[hidden]{display:none}
+.sb-jump button{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:46px;padding:0 18px;
+  background:var(--magenta);color:var(--void);
+  border:1px solid var(--magenta);
+  font-family:inherit;font-size:12px;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;
+  cursor:pointer;transition:background .15s,color .15s;
+}
+.sb-jump button:hover{background:var(--bone);border-color:var(--bone)}
+.sb-jump .sb-jump-top{padding:0 14px;min-width:46px}
+
+@media (min-width:721px){
+  /* Out of the centre on a wide screen, where the middle of the viewport is content the
+     visitor is reading rather than dead space. */
+  .sb-jump{left:auto;right:24px;transform:none;bottom:24px}
+}
+
+/* ---------- the card's two destinations ---------- */
+
+/* A card carries two links now — the Vinted listing and a WhatsApp message about this
+ * specific piece — so it can no longer BE a link: an <a> cannot contain another <a>, and
+ * browsers recover from that by splitting the markup differently per engine.
+ *
+ * Instead the card is a <div>, the Vinted link is stretched over all of it, and .ask sits
+ * above that on the z axis. Clicking anywhere still opens the listing exactly as before;
+ * the only element that behaves differently is the one that is meant to.
+ */
+.piece{position:relative}
+
+/* Above everything inside .frame (shots 1, grain 2, count 3, nav 4, blurb 5) so the whole
+   card surface is the listing link. The two things that must stay independently clickable
+   are lifted back above it below. */
+.piece .go{position:absolute;inset:0;z-index:6}
+/* The carousel arrows used to be inside the card's anchor and cancelled its navigation with
+   preventDefault. They are outside it now, so they simply need to be on top. */
+.shot-nav{z-index:7}
+/* Decorative overlays must not eat clicks meant for the card beneath them. .blurb covers the
+   bottom third of the photograph on hover, which is a large dead zone if it is left
+   interactive. */
+.piece .blurb,.piece .grain,.piece .cap,.piece .ext,.piece .fav-badge{pointer-events:none}
+
+/* The focus ring belongs to the card, not to the invisible rectangle on top of it. */
+.piece:focus-within .frame{outline:2px solid var(--magenta);outline-offset:2px}
+
+/* ---------- ask about this piece ---------- */
+
+/* The single highest-value control on the page, and the site did not have it: every card's
+ * only exit was Vinted, in a new tab, so a visitor with a question — does this fit, what are
+ * the real measurements, do you have it in another colour — had nowhere to put it.
+ *
+ * WhatsApp green rather than the site's amber, because the recognition IS the affordance:
+ * it says which app is about to open before you tap it. Measured 5.9:1 on --void-2, so it
+ * clears AA as text without a fill.
+ */
+.piece .ask{
+  position:relative;z-index:7;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:8px;min-height:40px;padding:8px 10px;
+  font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:#25D366;border:1px solid rgba(37,211,102,.34);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.piece .ask:hover{background:#25D366;border-color:#25D366;color:var(--void)}
+.piece .ask:focus-visible{outline:2px solid #25D366;outline-offset:2px}
+/* On a sold card the ask is the ONLY thing left to do, so it keeps full weight while the
+   rest of the card is dimmed. */
+.piece.sold .ask{color:#3BE87C;border-color:rgba(37,211,102,.45)}
+
+/* ---------- how buying works ---------- */
+
+/* Replaces a block that said only "everything's live on Vinted" and pointed at the closet —
+ * which answered a question nobody had. These are the questions someone actually has before
+ * spending €29 with a stranger, and the site answered none of them.
+ */
+.how{
+  margin-top:38px;padding:24px 20px 26px;
+  border:1px solid rgba(232,169,60,.28);background:var(--void-2);
+}
+.how h2{
+  font-weight:500;font-size:clamp(17px,4.6vw,22px);letter-spacing:-.01em;
+  text-transform:uppercase;color:var(--bone);margin-bottom:18px;
+}
+.how-steps{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;max-width:66ch}
+.how-steps li{
+  counter-increment:step;position:relative;padding-left:34px;
+  font-size:13px;line-height:1.65;color:var(--bone-dim);
+}
+/* The number is generated rather than marked up: it is a visual ordinal, and <ol> already
+   conveys the sequence to a screen reader. aria-hidden is implicit on generated content. */
+.how-steps li::before{
+  content:counter(step);
+  position:absolute;left:0;top:1px;
+  width:22px;height:22px;display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:600;
+  color:var(--void);background:var(--magenta);
+}
+.how-steps b{color:var(--bone);font-weight:600}
+.how-note{
+  margin-top:18px;padding-top:16px;border-top:1px solid rgba(242,239,230,.12);
+  font-size:12px;line-height:1.65;color:var(--bone-dim);opacity:.85;max-width:66ch;
+}
+
+@media (min-width:641px){
+  .how{padding:30px 30px 32px}
+}
+
+/* ---------- paint budget ---------- */
+
+/* wardrobe.html holds 157 cards. shop.js keeps most of them `hidden`, revealing 24 at a
+ * time, but after a few reveals there are still a hundred laid-out cards above and below the
+ * viewport that the browser styles, lays out and paints on every scroll.
+ *
+ * content-visibility:auto lets it skip all of that for anything off-screen. contain-intrinsic-size
+ * supplies a placeholder height so the scrollbar does not jump as cards enter and leave; the
+ * `auto` keyword makes the browser remember each card's real height once it has been rendered
+ * once, so the estimate only matters for the first pass. 560px is a 4/5 frame plus the meta,
+ * tags and ask rows at the widest column.
+ *
+ * Not applied to the first row: an element that has never been rendered has no remembered
+ * size, and skipping the cards that are on screen at load would cost a reflow to gain
+ * nothing.
+ */
+@supports (content-visibility:auto){
+  .piece:nth-child(n+7){content-visibility:auto;contain-intrinsic-size:auto 560px}
+}

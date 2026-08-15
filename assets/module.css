@@ -1,0 +1,33 @@
+/* The "holding" block — the honest version of a coming-soon page.
+ *
+ * Used by wellness.html and buddy.html, and by the closing block on diaries.html. Loaded
+ * after site.css.
+ *
+ * The design brief for this component is one sentence: say plainly that the thing is not
+ * finished, and give the visitor exactly one useful action. It is bordered and set on the
+ * darker band so it reads as an aside rather than as the page's content — a holding page
+ * that styles its apology like an article implies there is something to read.
+ */
+
+.holding{
+  border:1px solid rgba(232,169,60,.28);
+  background:var(--void-2);
+  padding:24px 20px 26px;
+  max-width:72ch;
+}
+.holding h2{
+  font-weight:500;font-size:clamp(17px,4.6vw,22px);
+  letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
+  margin-bottom:14px;
+}
+.holding p{font-size:13.5px;line-height:1.7;color:var(--bone-dim);max-width:60ch}
+.holding p + p{margin-top:12px}
+.holding em{color:var(--bone);font-style:normal;font-weight:500}
+.holding-quiet{opacity:.8}
+/* .cta-row already carries its own top margin from site.css; this only stops the buttons
+   crowding the last paragraph on a narrow screen. */
+.holding .cta-row{margin-top:22px}
+
+@media (min-width:641px){
+  .holding{padding:30px 30px 32px}
+}

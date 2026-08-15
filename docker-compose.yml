@@ -1,0 +1,38 @@
+# indianinprague.jains.es — static HTML on nginx, published through a dedicated Cloudflare
+# tunnel. Same shape as /Users/webserver/code/OliveUIndia/docker-compose.yml.
+#
+# Deliberately its OWN tunnel (indianinprague-jains-es) rather than a new ingress rule on
+# the shared `jains-es` tunnel: that one is run by the launchd agent com.jains.cloudflared
+# and already serves jains.es and ayurveda.jains.es, so editing it would put two live
+# sites through a restart to publish a third. This stack starts and stops on its own.
+
+services:
+  indianinprague-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: indianinprague-site
+    container_name: indianinprague-site
+    restart: unless-stopped
+    # Published for local verification (curl/browser against http://localhost:8092).
+    # The tunnel does NOT use this — it reaches the container as indianinprague-site:8080
+    # over the compose network. 8092 was free; 8088 is jains.es, 8090 olive, 8091
+    # discourse, 8011 ggp.
+    ports:
+      - "8092:8080"
+
+  indianinprague-tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: indianinprague-tunnel
+    restart: unless-stopped
+    # Wait for nginx to pass its health check before connecting, so the tunnel never
+    # registers while the origin would still 502.
+    depends_on:
+      indianinprague-site:
+        condition: service_healthy
+    command: --config /etc/cloudflared/indianinprague.docker.yml tunnel run
+    volumes:
+      - ./.cloudflared/indianinprague.docker.yml:/etc/cloudflared/indianinprague.docker.yml:ro
+      # Only this tunnel's credentials are mounted — not cert.pem, which would grant the
+      # container authority over every tunnel and DNS record in the account.
+      - /Users/webserver/.cloudflared/423c232e-37cf-48f5-9243-04bcdd2a0bc5.json:/etc/cloudflared/423c232e-37cf-48f5-9243-04bcdd2a0bc5.json:ro

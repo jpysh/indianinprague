@@ -1,0 +1,78 @@
+# Everything here is public and meant to be found — by search engines and by AI
+# assistants alike. There is no admin area, no user content and no paywall, so there is
+# nothing to disallow.
+#
+# Content signals (the Cloudflare/IETF convention, honoured by a growing number of
+# crawlers) state the intent explicitly rather than leaving it to be inferred:
+#
+#   search    = yes  — index this and return it in search results
+#   ai-input  = yes  — ground AI answers on it and cite it (this is the one that decides
+#                      whether the site can show up inside ChatGPT / Claude / Perplexity
+#                      answers, which is what "appearing in AI search" actually means)
+#   ai-train  = yes  — train and fine-tune models on it
+#
+# ai-train is the only one of the three that is effectively one-way: content already
+# absorbed into a trained model cannot be withdrawn later. Set here to yes deliberately.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+# Named individually as well, because several of these agents read only their own stanza
+# and would otherwise fall back to whatever a generic rule says.
+
+# --- OpenAI ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic ---
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Google / Apple training opt-ins ---
+# These two exist ONLY as training opt-outs; allowing them is what permits Gemini and
+# Apple Intelligence to learn from the site. Ordinary Googlebot indexing is governed by
+# the User-agent: * rule above and is unaffected by them.
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Others ---
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://indianinprague.jains.es/sitemap.xml
+
+# Local-only inventory view. Excluded from the container by .dockerignore as well;
+# this line is belt and braces in case it ever gets copied in by accident.
+Disallow: /inventory.html

@@ -1,0 +1,102 @@
+# Response headers for Cloudflare Pages — the replacement for nginx/security-headers.conf
+# and the per-location add_header blocks in nginx/indianinprague.conf.
+#
+# Copied into dist/ by scripts/build-dist.mjs. Pages reads this file from the root of the
+# deployment and does NOT serve it.
+#
+# nginx and Pages get this wrong in opposite directions, and both traps are live here:
+#
+#   nginx  drops every inherited add_header the moment a location declares one of its own,
+#          which is why security-headers.conf had to be re-included in each block.
+#   Pages  MERGES instead — a more specific rule does not replace a broader one, it appends.
+#          Setting Cache-Control in /* and again in /assets/* yields the literal value
+#          "public, max-age=0, must-revalidate, public, max-age=31536000, immutable", and a
+#          browser honours the FIRST max-age it reads. Measured against `wrangler pages dev`
+#          before this file was restructured: the year-long immutable cache was dead on
+#          arrival and every asset revalidated on every view.
+#
+# So: any header that differs by path is NOT declared in /*. It is declared per path, or
+# detached with `! Header-Name` in the specific rule before being re-set. Only headers that
+# are genuinely identical everywhere live in the site-wide block.
+#
+# Limits: 100 rules, 2,000 characters per header value. We use a handful of each.
+
+# ---------------------------------------------------------------------------
+# Site-wide. Everything is served from this origin, so the policy collapses to 'self':
+# one external script (assets/shop.js, no inline handlers), no inline <style>, no
+# style="" attributes, IBM Plex Mono self-hosted from assets/fonts/. No third-party
+# origin remains on the site — nothing to leak a visitor's IP to, nothing that can set a
+# cookie.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=(), browsing-topics=()
+  Cross-Origin-Opener-Policy: same-origin
+  X-Frame-Options: DENY
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+# HTML revalidates on every request, which is what lets a release reach everyone at once.
+# Declared here rather than in /* so it cannot concatenate with the immutable rules below;
+# Pages' own default for HTML is the same value, and stating it keeps the intent visible.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# ---------------------------------------------------------------------------
+# /spirituality.html — the one page with a relaxed policy.
+#
+# The page is a self-contained design export, served exactly as written: inline <style>,
+# inline <script>, GSAP + ScrollTrigger + three.js from cdnjs, Lenis from unpkg, Google
+# Fonts, photographs from images.unsplash.com. Under the site-wide policy it does not
+# degrade, it fails completely — measured: 0 CSS rules applied, headings in Times, the
+# preloader frozen at "0%". Serving the file as-is REQUIRES this exception.
+#
+# What it costs, restated so it is not rediscovered later: cdnjs, unpkg, the two Google
+# Fonts hosts and images.unsplash.com all see the IP and User-Agent of every visitor to
+# this page, and 'unsafe-inline' on script-src removes the protection that makes an
+# injected <script> inert. Every other page keeps the strict policy above.
+#
+# `! Content-Security-Policy` detaches the strict policy inherited from /* first — without
+# it the two policies merge, and a merged CSP is enforced as the INTERSECTION of both, so
+# the page would still be blocked from loading cdnjs. That is exactly what happened on the
+# first run of this file.
+/spirituality.html
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+
+# The extensionless form resolves to the same file, so it needs the same exception.
+/spirituality
+  ! Content-Security-Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+
+# ---------------------------------------------------------------------------
+# Immutable content. Derived images are content-addressed by filename (the id and variant
+# width are in the name), and assets carry a per-file content hash in ?v= — see
+# scripts/bump-assets.mjs. A URL under these paths never changes meaning, so a year is
+# safe and re-fetching is pure waste.
+/images/derived/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts are also cross-origin-fetchable in principle; keep them explicitly same-origin.
+/assets/fonts/*
+  ! Cache-Control
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: same-origin
+
+# ---------------------------------------------------------------------------
+# Crawler files: fresh enough to reflect a rename within the hour, cheap enough not to
+# matter. Matches the nginx behaviour.
+/robots.txt
+  ! Cache-Control
+  Cache-Control: public, max-age=3600
+/sitemap.xml
+  ! Cache-Control
+  Cache-Control: public, max-age=3600
+/llms.txt
+  ! Cache-Control
+  Cache-Control: public, max-age=3600

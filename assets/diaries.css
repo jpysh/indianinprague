@@ -1,0 +1,107 @@
+/* diaries.html — the journal hub. Loaded after site.css.
+ *
+ * The page is a stack of horizontal rails, one per category, under a grid of the four most
+ * recent posts. The card itself (.post) is in site.css, because the homepage uses it too.
+ *
+ * There is NO JavaScript on this page, and the rails do not need any. Everything below is
+ * the browser's own overflow scrolling with scroll-snap on top: touch swipe, two-finger
+ * trackpad, shift+wheel, arrow keys and tabbing between cards all work out of the box. A
+ * scripted carousel would have re-implemented all of that, worse, and broken with script
+ * disabled — on a page whose entire content is text and photographs.
+ */
+
+.btn.saf{border-color:var(--olive);background:var(--saffron);color:var(--void)}
+.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--bone)}
+
+/* ---------- the featured grid ---------- */
+
+.latest{border-bottom:1px solid rgba(242,239,230,.10)}
+
+/* ---------- rails ---------- */
+
+.rail{border-bottom:1px solid rgba(242,239,230,.10);padding-block:26px 30px}
+/* Alternating bands, matching the rhythm main > section:nth-of-type(even) gives the rest of
+   the site. Scoped to .rail so the featured grid and the closing block keep the ground. */
+.rail:nth-of-type(even){background:var(--band)}
+
+.rail-top{
+  display:flex;flex-direction:column;gap:10px;
+  padding-bottom:18px;
+}
+.rail-top h2{
+  font-weight:500;font-size:clamp(17px,4.6vw,23px);
+  letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
+}
+.rail-note{font-size:12.5px;color:var(--bone-dim);max-width:56ch;margin-top:6px;line-height:1.6}
+.rail-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.rail-cs{font-size:11px;letter-spacing:.07em;color:var(--bone-dim);opacity:.85}
+.rail-all{
+  font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--magenta);
+  display:flex;align-items:center;min-height:44px;
+}
+.rail-all:hover{color:var(--saffron)}
+
+/* The track is deliberately NOT inside .wrap.
+ *
+ * It runs the full width of the viewport and carries the page gutter as its own padding, so
+ * the first card lines up with the heading above it while the last one runs off the right
+ * edge rather than stopping at a margin. That overflowing card is the affordance: it is how
+ * a rail says "there is more this way" without a scrollbar, an arrow or a hint of text.
+ * A track that ended flush inside the content column would look like a finished row. */
+.rail-track{
+  display:grid;
+  grid-auto-flow:column;
+  grid-auto-columns:minmax(240px,270px);
+  gap:12px;
+  overflow-x:auto;
+  overscroll-behavior-x:contain;
+  scroll-snap-type:x proximity;
+  /* Bottom padding leaves room for the focus ring and the hover lift, which would otherwise
+     be clipped by the scroll container. */
+  padding:3px var(--gutter) 16px;
+  /* Snap and keyboard scrolling both land the card at the gutter, not against the bezel. */
+  scroll-padding-inline:var(--gutter);
+  scrollbar-width:thin;
+  scrollbar-color:rgba(232,169,60,.4) transparent;
+}
+.rail-track > .post{scroll-snap-align:start}
+
+/* proximity rather than mandatory: with mandatory, a rail holding two cards on a wide screen
+   fights any attempt to scroll it a little, and a partial swipe is yanked back. proximity
+   snaps when you are close and leaves you alone when you are not. */
+
+/* The track itself is focusable (tabindex="0" in the markup) so it can be panned with the
+   arrow keys. That focus has to be visible, or a keyboard user lands on an element with no
+   indication they have. */
+.rail-track:focus-visible{outline:2px solid var(--magenta);outline-offset:-2px}
+
+/* WebKit still needs its own scrollbar rules. Kept visible but quiet — on a trackpad the
+   bar is the only persistent sign the row scrolls at all. */
+.rail-track::-webkit-scrollbar{height:8px}
+.rail-track::-webkit-scrollbar-track{background:transparent}
+.rail-track::-webkit-scrollbar-thumb{background:rgba(232,169,60,.35);border-radius:4px}
+.rail-track::-webkit-scrollbar-thumb:hover{background:rgba(232,169,60,.6)}
+
+@media (min-width:721px){
+  .rail{padding-block:30px 38px}
+  .rail-top{
+    flex-direction:row;justify-content:space-between;align-items:flex-start;gap:24px;
+    padding-bottom:22px;
+  }
+  .rail-meta{flex-direction:column;align-items:flex-end;gap:2px;text-align:right;flex:0 0 auto}
+  .rail-track{grid-auto-columns:minmax(280px,320px);gap:16px}
+}
+
+/* Wide screens: cap the track so it lines up with the content column instead of running the
+   full 1900px of a desktop monitor, while keeping the overflow behaviour. The gutter maths
+   mirrors .wrap (max-width 1280 + gutter each side). */
+@media (min-width:1341px){
+  .rail-track{
+    padding-inline:max(var(--gutter), calc((100vw - 1280px) / 2 + var(--gutter)));
+    scroll-padding-inline:max(var(--gutter), calc((100vw - 1280px) / 2 + var(--gutter)));
+  }
+}
+
+/* ---------- the closing block ---------- */
+
+.rail-end{border-bottom:none}

@@ -1,0 +1,23 @@
+{
+  "_comment": [
+    "Vinted ids of items that sold BEFORE this pipeline existed, so the diff never saw them",
+    "disappear. sync-vinted.mjs fetches each one once, recovers its real title, description",
+    "and photo from the Open Graph tags that survive on a sold listing page, and files it in",
+    "archive.json. After that it is never fetched again.",
+    "",
+    "You should not normally need to add to this. From now on anything that sells is caught",
+    "automatically by comparing each sync against the previous catalog.",
+    "",
+    "These seven were hardcoded on the old hand-built clothes page and had already sold —",
+    "they were live dead links on the site until the catalog replaced it."
+  ],
+  "ids": [
+    "9309067629",
+    "9309115949",
+    "9311732832",
+    "9313834270",
+    "9315253483",
+    "9316468722",
+    "9316508470"
+  ]
+}

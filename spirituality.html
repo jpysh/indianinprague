@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spirituality — Indian in Prague</title>
+<meta name="description" content="Yoga, Ayurveda, meditation, trips to India and authentic Ayurvedic products — brought to Prague and taught from genuine source knowledge.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,440;0,9..144,560;1,9..144,440&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Core CDN Libraries -->
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<style>
+/* ============================================================
+   TOKENS & CORE STYLES
+   ============================================================ */
+:root {
+  --void:        #211735;
+  --void-deep:   #160F24;
+  --void-soft:   #2E2148;
+  --paper:       rgba(251, 246, 236, 0.92);
+  --paper-solid: #FBF6EC;
+  --sand:        rgba(242, 231, 211, 0.92);
+  --sand-solid:  #F2E7D3;
+  --ink:         #1B1328;
+  --ink-soft:    #584C60;
+  --ink-faint:   #8C7F94;
+  --terracotta:  #C1552E;
+  --terracotta-deep:#8C3D1E;
+  --marigold:    #E8A23D;
+  --marigold-soft:#F0C27E;
+  --moss:        #6E7C53;
+  --moss-deep:   #4A5638;
+  --cream:       #F5EEDD;
+  --line:        rgba(36,28,46,0.15);
+  --line-on-void:rgba(245,238,221,0.18);
+
+  --font-display:'Fraunces', Georgia, serif;
+  --font-body:   'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-label:  'Space Mono', 'Courier New', monospace;
+
+  --edge:        clamp(22px, 6vw, 76px);
+  --gap-section: clamp(80px, 14vw, 160px);
+  --ease:        cubic-bezier(.22,.61,.36,1);
+  --ease-soft:   cubic-bezier(.16,.84,.44,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: initial; }
+html.lenis { height: auto; }
+
+body {
+  margin: 0;
+  background: var(--void-deep);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; }
+
+:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 4px; border-radius: 4px; }
+
+.wrap { max-width: 1280px; margin: 0 auto; padding-left: var(--edge); padding-right: var(--edge); position: relative; }
+
+/* Dynamic WebGL Canvas Container */
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 998; opacity: .035; mix-blend-mode: multiply;
+}
+
+/* ============================================================
+   PRELOADER
+   ============================================================ */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--void-deep);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-label);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.loader-content { text-align: center; display: flex; flex-direction: column; gap: 20px; align-items: center; }
+.loader-quote { font-family: var(--font-display); font-size: clamp(24px, 4vw, 42px); font-style: italic; color: var(--marigold); min-height: 60px; }
+.loader-number { font-size: clamp(48px, 8vw, 96px); font-weight: 500; color: var(--paper-solid); letter-spacing: -0.04em; }
+.loader-bar-bg { width: 220px; height: 2px; background: rgba(245,238,221,0.15); border-radius: 4px; overflow: hidden; position: relative; }
+.loader-bar-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: var(--terracotta); }
+
+/* ============================================================
+   FLUID MAGNETIC CURSOR
+   ============================================================ */
+#cursor-dot {
+  position: fixed; top: 0; left: 0; width: 8px; height: 8px;
+  background: var(--marigold); border-radius: 50%; pointer-events: none;
+  z-index: 99999; transform: translate(-50%, -50%); transition: opacity 0.3s;
+}
+#cursor-ring {
+  position: fixed; top: 0; left: 0; width: 40px; height: 40px;
+  border: 1px solid rgba(232, 162, 61, 0.5); border-radius: 50%; pointer-events: none;
+  z-index: 99998; transform: translate(-50%, -50%);
+  display: flex; align-items: center; justify-content: center;
+  transition: width 0.3s var(--ease), height 0.3s var(--ease), border-color 0.3s, background 0.3s;
+}
+#cursor-ring.hovering {
+  width: 80px; height: 80px; background: rgba(193, 85, 76, 0.15); border-color: var(--terracotta);
+}
+#cursor-badge {
+  font-family: var(--font-label); font-size: 9px; letter-spacing: 0.1em;
+  color: var(--cream); opacity: 0; transition: opacity 0.2s; text-transform: uppercase;
+}
+#cursor-ring.hovering #cursor-badge { opacity: 1; }
+
+@media (pointer: coarse), (max-width: 1024px) {
+  #cursor-dot, #cursor-ring { display: none !important; }
+}
+
+/* ============================================================
+   THE THREAD (SCROLL PATH)
+   ============================================================ */
+.thread {
+  position: fixed; left: 32px; top: 0; bottom: 0; width: 34px; z-index: 55;
+  display: none; pointer-events: none;
+}
+@media (min-width: 1080px){ .thread { display: block; } }
+.thread svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.thread .track { stroke: rgba(245,238,221,0.12); stroke-width: 2; fill: none; }
+.thread .fill { stroke: url(#threadGrad); stroke-width: 2; fill: none; stroke-dasharray: 2000; stroke-dashoffset: 2000; }
+.thread-bead {
+  position: absolute; left: 17px; width: 10px; height: 10px; margin-left: -5px; margin-top: -5px;
+  border-radius: 50%; background: var(--void-soft); border: 2px solid var(--marigold);
+  transition: transform 0.4s var(--ease), background 0.4s, box-shadow 0.4s;
+}
+.thread-bead.active {
+  background: var(--marigold); transform: scale(1.6);
+  box-shadow: 0 0 15px var(--marigold);
+}
+
+/* Eyebrow & Mask Reveal */
+.eyebrow {
+  font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--ink-soft); display: flex; flex-direction: column; gap: 4px; line-height: 1.6;
+}
+.eyebrow strong { color: var(--terracotta-deep); font-weight: 500; letter-spacing: .12em; }
+section.on-void .eyebrow { color: rgba(245,238,221,.62); }
+section.on-void .eyebrow strong { color: var(--marigold); }
+
+.line-mask { overflow: hidden; display: block; }
+.line-mask-inner { display: block; transform: translateY(110%); }
+
+/* Targeted Velocity Skew Block */
+.skew-block { will-change: transform; transition: transform 0.1s linear; }
+
+/* ============================================================
+   HEADER & NAVIGATION (HIDE-ON-SCROLL)
+   ============================================================ */
+header.site {
+  position: fixed; top: 20px; left: 0; right: 0; z-index: 60;
+  display: flex; justify-content: center; pointer-events: none;
+  transition: transform 0.4s var(--ease), opacity 0.4s var(--ease);
+}
+header.site.nav-hidden {
+  transform: translateY(-120%); opacity: 0;
+}
+.pill-nav {
+  pointer-events: auto; display: flex; align-items: center; gap: 16px;
+  background: rgba(33, 23, 53, 0.82); backdrop-filter: blur(24px) saturate(160%);
+  border: 1px solid rgba(245,238,221,0.18); border-radius: 100px; padding: 8px 10px 8px 22px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4); color: var(--cream);
+}
+.pill-nav .word { font-family: var(--font-display); font-size: 15.5px; }
+.pill-nav .word em { font-style: italic; color: var(--marigold); }
+
+/* Sound Toggle Pill */
+.sound-toggle {
+  background: rgba(245,238,221,0.08); border: 1px solid rgba(245,238,221,0.2);
+  border-radius: 100px; padding: 6px 14px; color: var(--cream);
+  font-family: var(--font-label); font-size: 10.5px; letter-spacing: 0.05em;
+  display: flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.3s;
+}
+.sound-toggle:hover { background: rgba(245,238,221,0.18); }
+.sound-viz { display: flex; align-items: flex-end; gap: 2px; height: 12px; }
+.sound-bar { width: 2px; height: 3px; background: var(--marigold); border-radius: 1px; transition: height 0.2s; }
+
+/* Dot Navigation */
+.dotnav {
+  position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 55;
+  display: none; flex-direction: column; gap: 16px; align-items: center;
+}
+@media (min-width: 1080px){ .dotnav { display: flex; } }
+.dotnav a {
+  width: 8px; height: 8px; border-radius: 50%; background: rgba(245,238,221,0.3);
+  position: relative; transition: background 0.3s, transform 0.3s;
+}
+.dotnav a.active { background: var(--marigold); transform: scale(1.6); }
+.dotnav a::after {
+  content: attr(data-label); position: absolute; right: 22px; top: 50%; transform: translateY(-50%);
+  font-family: var(--font-label); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cream); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s;
+  background: rgba(22, 15, 36, 0.85); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(245,238,221,0.15);
+}
+.dotnav a:hover::after { opacity: 1; }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-body); font-weight: 600; font-size: 15px;
+  padding: 15px 28px; border-radius: 100px; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  min-height: 44px; cursor: pointer; border: none; white-space: nowrap; position: relative; overflow: hidden;
+}
+.btn-primary {
+  color: var(--cream);
+  background: linear-gradient(120deg, var(--terracotta) 0%, var(--terracotta-deep) 60%, var(--void) 140%);
+  box-shadow: 0 16px 36px -16px rgba(140,61,30,.6);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 22px 42px -16px rgba(140,61,30,.8); }
+.btn-ghost {
+  color: var(--cream); background: transparent; border: 1.5px solid rgba(245,238,221,.3);
+}
+.btn-ghost:hover { background: rgba(245,238,221,.08); border-color: var(--cream); }
+.btn-text {
+  display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14.5px;
+  color: var(--marigold); padding: 4px 0; position: relative;
+}
+.btn-text .arrow { transition: transform 0.3s var(--ease); }
+.btn-text:hover .arrow { transform: translateX(6px); }
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  position: relative; min-height: 100vh; display: flex; align-items: center;
+  padding: 160px 0 100px; isolation: isolate; color: var(--cream);
+}
+.hero-grid {
+  display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(36px, 5vw, 80px); align-items: center;
+}
+@media (max-width: 900px){ .hero-grid { grid-template-columns: 1fr; } }
+
+.hero h1 {
+  font-size: clamp(40px, 5.8vw, 72px); line-height: 1.05; letter-spacing: -.02em; margin-top: 18px; max-width: 14ch;
+}
+.hero .kicker {
+  font-family: var(--font-display); font-style: italic; color: var(--marigold-soft);
+  font-size: clamp(18px, 2vw, 24px); margin-top: 18px;
+}
+.hero .lede {
+  color: rgba(245,238,221,.85); font-size: 17px; line-height: 1.75; max-width: 52ch; margin-top: 22px;
+}
+.hero .ctas { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; margin-top: 36px; }
+
+.art-blob {
+  position: relative; aspect-ratio: 4/5; width: 100%; border-radius: 38% 62% 61% 39% / 45% 40% 60% 55%;
+  overflow: hidden; background: linear-gradient(150deg, #4A3A6B 0%, #7A4B33 60%, #C1552E 130%);
+  box-shadow: 0 40px 80px -30px rgba(0,0,0,.6), inset 0 0 0 1px rgba(245,238,221,.2);
+  display: flex; align-items: flex-end; animation: blobshift 14s var(--ease-soft) infinite alternate;
+}
+.art-blob img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.85;
+  transition: transform 0.8s var(--ease);
+}
+.art-blob:hover img { transform: scale(1.06); }
+
+@keyframes blobshift{
+  0%{ border-radius:38% 62% 61% 39% / 45% 40% 60% 55%; }
+  100%{ border-radius:58% 42% 40% 60% / 38% 58% 42% 62%; }
+}
+.art-blob .cap {
+  position: relative; z-index: 2;
+  font-family: var(--font-label); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
+  color: rgba(245,238,221,.9); padding: 22px 24px; background: linear-gradient(0deg, rgba(22,15,36,.88), transparent);
+  width: 100%;
+}
+
+/* Section Transitions with Frosted Translucent Depth */
+.sec-pad { padding: var(--gap-section) 0; position: relative; }
+.band-paper {
+  background: var(--paper); color: var(--ink);
+  backdrop-filter: blur(24px) saturate(160%);
+  border-top: 1px solid rgba(245,238,221,0.3); border-bottom: 1px solid rgba(245,238,221,0.3);
+}
+.band-sand {
+  background: var(--sand); color: var(--ink);
+  backdrop-filter: blur(24px) saturate(160%);
+  border-top: 1px solid rgba(245,238,221,0.3); border-bottom: 1px solid rgba(245,238,221,0.3);
+}
+
+.intro-inner { max-width: 780px; }
+.intro-inner p { font-size: 20px; line-height: 1.75; color: var(--ink); margin-bottom: 20px; font-weight: 500; }
+.pull {
+  font-family: var(--font-display); font-style: italic; font-size: clamp(24px, 2.8vw, 32px);
+  color: var(--terracotta-deep); margin-top: 36px; padding-left: 28px; border-left: 3px solid var(--terracotta);
+}
+.pull cite { display: block; font-family: var(--font-label); font-style: normal; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 12px; }
+
+.sec-head { max-width: 640px; margin-bottom: clamp(40px, 5vw, 64px); }
+.sec-head h2 { font-size: clamp(32px, 4.2vw, 48px); line-height: 1.08; margin-top: 14px; letter-spacing: -.01em; }
+.sec-head .hook { margin-top: 16px; color: var(--ink-soft); font-size: 17px; max-width: 52ch; font-weight: 500; }
+
+/* ============================================================
+   CARDS & GRID
+   ============================================================ */
+.cards-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;
+}
+.card {
+  background: rgba(251, 246, 236, 0.88); border-radius: 26px; padding: 32px 28px;
+  box-shadow: 0 30px 60px -38px rgba(36,28,46,.25); border: 1px solid rgba(36,28,46,.1);
+  display: flex; flex-direction: column; gap: 14px; position: relative;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+  will-change: transform; backdrop-filter: blur(12px);
+}
+.card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 40px 70px -30px rgba(36,28,46,.35); }
+.band-sand .card { background: rgba(251, 246, 236, 0.92); }
+.band-paper .card { background: rgba(242, 231, 211, 0.92); }
+
+.icon-blob {
+  width: 56px; height: 56px; border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
+  background: rgba(193,85,46,.12); display: flex; align-items: center; justify-content: center;
+}
+.icon-blob svg { width: 28px; height: 28px; }
+
+.tag { font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--terracotta-deep); }
+.card h3 { font-size: 22px; line-height: 1.25; }
+.card .hook { color: var(--ink-soft); font-size: 15px; line-height: 1.6; font-weight: 500; }
+.card ul { margin: 4px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+.card ul li { font-size: 14px; color: var(--ink-soft); font-weight: 500; }
+.card .btn-text { margin-top: auto; padding-top: 8px; }
+
+/* ============================================================
+   HORIZONTAL SCROLL RUNWAYS (TRIPS & SHOP)
+   ============================================================ */
+.horizontal-pinned-section { position: relative; overflow: hidden; }
+.horizontal-track-wrapper { display: flex; width: max-content; padding: 20px var(--edge) 40px; gap: 32px; }
+
+@media (max-width: 768px) {
+  .horizontal-pinned-section { overflow-x: auto; }
+  .horizontal-track-wrapper { width: 100%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px; }
+  .card.trip, .card.shop { scroll-snap-align: start; }
+}
+
+.card.trip { width: 340px; padding: 0 0 24px; overflow: hidden; flex-shrink: 0; }
+.card.trip .art-blob { border-radius: 0 0 46% 54% / 0 0 30% 30%; aspect-ratio: 5/4; }
+.card.trip .loc, .card.trip h3, .card.trip .hook { padding-left: 24px; padding-right: 24px; }
+.card.trip .loc { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; color: var(--terracotta-deep); margin-top: 18px; }
+.card.trip h3 { font-size: 20px; margin-top: 6px; }
+
+.card.shop { width: 280px; align-items: flex-start; gap: 10px; flex-shrink: 0; }
+.card.shop .art-blob { width: 100%; aspect-ratio: 1/1; }
+.card.shop h3 { font-size: 18px; margin-top: 4px; }
+
+/* ============================================================
+   PHILOSOPHY SECTION
+   ============================================================ */
+.philosophy {
+  position: relative; padding: var(--gap-section) 0;
+  color: var(--cream); isolation: isolate;
+}
+.philosophy-top .word {
+  font-family: var(--font-display); font-size: clamp(34px, 4.8vw, 56px); margin-top: 16px; max-width: 15ch; line-height: 1.08;
+}
+.philosophy-top p { margin-top: 24px; max-width: 64ch; color: rgba(245,238,221,.85); font-size: 17px; line-height: 1.75; }
+
+.commit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; margin-top: 60px; }
+.commit { padding: 30px; border-radius: 22px; background: rgba(245,238,221,.06); border: 1px solid rgba(245,238,221,.14); backdrop-filter: blur(12px); }
+.commit .n { font-family: var(--font-label); font-size: 12px; color: var(--marigold); letter-spacing: .08em; }
+.commit h4 { color: var(--cream); font-size: 20px; margin-top: 12px; }
+.commit p { color: rgba(245,238,221,.78); font-size: 14.5px; margin-top: 10px; line-height: 1.65; }
+
+.philosophy .pull { color: var(--marigold-soft); border-left-color: var(--marigold); margin-top: 56px; }
+.philosophy .pull cite { color: rgba(245,238,221,.55); }
+.philosophy .closing { margin-top: 24px; color: rgba(245,238,221,.8); max-width: 64ch; font-size: 16px; line-height: 1.7; }
+
+/* ============================================================
+   FULL-VIEWPORT 3D CHAKRA STAGE & MEDITATION
+   ============================================================ */
+.meditation {
+  position: relative; padding: var(--gap-section) 0; color: var(--cream); overflow: hidden; isolation: isolate;
+}
+
+#chakra-canvas-container {
+  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: auto; overflow: hidden;
+}
+#chakra-canvas { width: 100%; height: 100%; display: block; }
+
+.chakra-content-layer {
+  position: relative; z-index: 2; pointer-events: none;
+}
+.chakra-content-layer a, .chakra-content-layer button, .chakra-row {
+  pointer-events: auto;
+}
+
+.med-intro { max-width: 680px; }
+.med-intro p { margin-top: 20px; color: rgba(245,238,221,.88); font-size: 17px; line-height: 1.75; }
+
+.spine-wrap {
+  position: relative; margin-top: 60px;
+  display: grid; grid-template-columns: 1fr; max-width: 720px;
+}
+
+.chakra-table { margin-top: 10px; }
+.chakra-row {
+  display: grid; grid-template-columns: 36px 1fr 1fr; gap: 16px; align-items: center;
+  padding: 22px 28px; margin-bottom: 16px; border-radius: 20px;
+  background: rgba(22, 15, 36, 0.65); backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(245,238,221,0.14); opacity: .45;
+  transition: opacity 0.5s var(--ease), transform 0.5s var(--ease), border-color 0.5s, background 0.5s;
+}
+.chakra-row.active {
+  opacity: 1; transform: translateX(12px) scale(1.02);
+  background: rgba(33, 23, 53, 0.88); border-color: var(--marigold);
+  box-shadow: 0 16px 36px rgba(232, 162, 61, 0.22);
+}
+.chakra-row .num { font-family: var(--font-label); font-size: 13px; color: var(--marigold); font-weight: 500; }
+.chakra-row h4 { font-size: 18px; color: var(--cream); font-weight: 440; }
+.chakra-row .meta { font-size: 12.5px; color: rgba(245,238,221,.6); margin-top: 2px; }
+.chakra-row .quality { font-size: 14.5px; color: rgba(245,238,221,.9); text-align: right; }
+
+/* ============================================================
+   ABOUT & TESTIMONIALS & FAQ
+   ============================================================ */
+.about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(30px, 6vw, 72px); align-items: center; }
+@media (max-width: 860px){ .about-grid { grid-template-columns: 1fr; } }
+.about h2 { font-size: clamp(30px, 3.8vw, 44px); margin-top: 14px; }
+.about p { margin-top: 18px; color: var(--ink-soft); font-size: 16.5px; line-height: 1.75; max-width: 56ch; font-weight: 500; }
+.bio-card {
+  margin-top: 28px; padding: 24px 26px; border-radius: 20px; background: rgba(251, 246, 236, 0.95);
+  border: 1px dashed rgba(36,28,46,.25);
+}
+.bio-card .lbl { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--terracotta-deep); }
+.bio-card p { margin-top: 10px; font-size: 14.5px; color: var(--ink-soft); }
+
+.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+.testi-card {
+  background: rgba(251, 246, 236, 0.92); border-radius: 26px; padding: 32px 28px; border: 1px solid rgba(36,28,46,.1);
+  box-shadow: 0 26px 54px -34px rgba(36,28,46,.25); backdrop-filter: blur(14px);
+}
+.testi-card .quote { font-family: var(--font-display); font-style: italic; font-size: 18px; line-height: 1.6; color: var(--ink); }
+.testi-card .who { display: flex; align-items: center; gap: 14px; margin-top: 24px; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(140deg, var(--terracotta), var(--marigold)); }
+.testi-card .name { font-weight: 700; font-size: 14.5px; }
+.testi-card .loc { font-size: 13px; color: var(--ink-soft); }
+
+.faq-list { max-width: 780px; }
+.faq-item { border-bottom: 1px solid var(--line); padding: 22px 0; }
+.faq-item summary {
+  cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  font-family: var(--font-display); font-size: 20px; color: var(--ink);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item .plus { position: relative; width: 18px; height: 18px; flex: none; }
+.faq-item .plus::before, .faq-item .plus::after { content: ''; position: absolute; background: var(--terracotta-deep); transition: transform 0.3s var(--ease); }
+.faq-item .plus::before { left: 0; top: 8px; width: 18px; height: 2px; }
+.faq-item .plus::after  { left: 8px; top: 0; width: 2px; height: 18px; }
+.faq-item[open] .plus::after { transform: rotate(90deg); opacity: 0; }
+.faq-item .a { margin-top: 14px; color: var(--ink-soft); font-size: 15.5px; line-height: 1.7; max-width: 62ch; font-weight: 500; }
+
+/* ============================================================
+   MOBILE READABILITY ACCESSIBILITY OVERHAUL
+   ============================================================ */
+@media (max-width: 768px) {
+  body { font-size: 17px; line-height: 1.7; }
+  .sec-pad { padding: clamp(56px, 10vw, 90px) 0; }
+  .band-paper { background: rgba(251, 246, 236, 0.96); backdrop-filter: blur(24px) saturate(180%); }
+  .band-sand { background: rgba(242, 231, 211, 0.96); backdrop-filter: blur(24px) saturate(180%); }
+  .card { background: #FFFFFF; border: 1px solid rgba(36,28,46,0.12); box-shadow: 0 16px 32px rgba(22,15,36,0.12); }
+  .card h3 { font-size: 21px; color: #160F24; }
+  .card .hook, .card ul li, .intro-inner p, .sec-head .hook { color: #2E2148; font-weight: 500; }
+  .commit { background: rgba(22, 15, 36, 0.88); border: 1px solid rgba(245, 238, 221, 0.2); }
+  .commit h4 { color: #FBF6EC; }
+  .commit p { color: rgba(245, 238, 221, 0.9); }
+  .chakra-row { grid-template-columns: 28px 1fr; gap: 8px; }
+  .chakra-row .quality { grid-column: 2; text-align: left; font-size: 13px; color: var(--marigold-soft); }
+}
+
+/* ============================================================
+   FINAL CTA & FOOTER
+   ============================================================ */
+.final-cta {
+  position: relative; padding: calc(var(--gap-section) * 1.2) 0; overflow: hidden;
+  color: var(--cream); text-align: center;
+}
+.final-cta .inner { position: relative; max-width: 640px; margin: 0 auto; }
+.final-cta .eyebrow { justify-content: center; align-items: center; }
+.final-cta h2 { font-size: clamp(34px, 4.8vw, 56px); color: var(--cream); margin-top: 16px; }
+.final-cta p { margin-top: 20px; color: rgba(245,238,221,.8); font-size: 17px; }
+.final-cta .ctas { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 36px; }
+
+footer.site { background: var(--void-deep); color: var(--cream); padding: var(--gap-section) 0 36px; border-top: 1px solid rgba(245,238,221,0.1); }
+.foot-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr; gap: 48px; padding-bottom: 56px; border-bottom: 1px solid rgba(245,238,221,.12); }
+@media (max-width: 800px){ .foot-grid { grid-template-columns: 1fr; gap: 36px; } }
+.foot-word { font-family: var(--font-display); font-size: 22px; }
+.foot-word em { font-style: italic; color: var(--marigold); }
+.foot-lede { margin-top: 16px; color: rgba(245,238,221,.7); font-size: 14.5px; max-width: 48ch; line-height: 1.65; }
+.newsletter { display: flex; gap: 10px; margin-top: 24px; max-width: 380px; }
+.newsletter input {
+  flex: 1; padding: 13px 18px; border-radius: 100px; border: 1px solid rgba(245,238,221,.22);
+  background: rgba(245,238,221,.06); color: var(--cream); font-family: var(--font-body); font-size: 14px;
+}
+.newsletter input::placeholder { color: rgba(245,238,221,.45); }
+.newsletter button {
+  padding: 13px 24px; border-radius: 100px; border: none; background: var(--marigold); color: var(--void-deep);
+  font-weight: 700; font-size: 14px; cursor: pointer; transition: transform 0.3s var(--ease);
+}
+.newsletter button:hover { transform: translateY(-2px); }
+.foot-col h5 { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: rgba(245,238,221,.5); margin-bottom: 16px; }
+.foot-col .item { display: block; padding: 6px 0; font-size: 14.5px; color: rgba(245,238,221,.85); }
+.foot-col a.item:hover { color: var(--marigold); }
+.foot-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 28px; font-size: 13px; color: rgba(245,238,221,.45); }
+
+  /* ---- return navigation ----------------------------------------------------
+     Added during integration. This page was authored as a standalone export, so every
+     link on it pointed at one of its own anchors; a visitor arriving here from search
+     had no route to the rest of the site. */
+  .foot-back{
+    display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;
+    padding:22px 0 18px;margin-top:10px;
+    border-top:1px solid rgba(245,238,221,0.14);
+  }
+  .foot-back .back-home{
+    font-family:var(--font-label);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--marigold);white-space:nowrap;
+  }
+  .foot-back .back-home:hover{opacity:.8}
+  .back-nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-left:auto}
+  .back-nav a{
+    font-family:var(--font-label);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--cream);opacity:.62;
+    display:flex;align-items:center;min-height:44px;
+  }
+  .back-nav a:hover{opacity:1}
+  .back-nav a[aria-current="page"]{opacity:1;color:var(--marigold)}
+  @media (max-width:640px){
+    .back-nav{margin-left:0}
+  }
+  .newsletter{display:flex;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+
+<!-- SVG Grain Overlay -->
+<svg class="grain" xmlns="http://www.w3.org/2000/svg"><filter id="grainF"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#grainF)"/></svg>
+
+<!-- Dynamic GLSL Fluid WebGL Canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- Ritual Preloader -->
+<div id="preloader">
+  <div class="loader-content">
+    <div class="loader-quote"><span id="loader-word">Truth</span></div>
+    <div class="loader-number"><span id="loader-count">0</span>%</div>
+    <div class="loader-bar-bg"><div class="loader-bar-fill" id="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- Fluid Magnetic Cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"><span id="cursor-badge"></span></div>
+
+<!-- Continuous Path Thread -->
+<div class="thread" aria-hidden="true">
+  <svg viewBox="0 0 34 2000" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="threadGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#C1552E"/>
+        <stop offset="50%" stop-color="#E8A23D"/>
+        <stop offset="100%" stop-color="#6E7C53"/>
+      </linearGradient>
+    </defs>
+    <path class="track" d="M17,0 V2000"/>
+    <path id="threadFill" class="fill" d="M17,0 V2000"/>
+  </svg>
+  <div class="thread-bead" data-target="#hero"></div>
+  <div class="thread-bead" data-target="#offer"></div>
+  <div class="thread-bead" data-target="#trips"></div>
+  <div class="thread-bead" data-target="#shop"></div>
+  <div class="thread-bead" data-target="#philosophy"></div>
+  <div class="thread-bead" data-target="#meditation"></div>
+  <div class="thread-bead" data-target="#about"></div>
+  <div class="thread-bead" data-target="#contact"></div>
+</div>
+
+<!-- Header Navigation (Hide-On-Scroll) -->
+<header class="site">
+  <nav class="pill-nav" data-magnetic="true">
+    <a href="#hero" class="word">Indian in Prague <em>· Spirituality</em></a>
+    
+    <button class="sound-toggle" id="sound-toggle" aria-label="Toggle Ambient Audio">
+      <div class="sound-viz">
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+        <div class="sound-bar"></div>
+      </div>
+      <span id="sound-text">Sound Off</span>
+    </button>
+
+    <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
+  </nav>
+</header>
+
+<!-- Dot Navigation -->
+<nav class="dotnav" aria-label="Section navigation">
+  <a href="#hero" data-label="Hero" class="active"></a>
+  <a href="#offer" data-label="Offer"></a>
+  <a href="#trips" data-label="Trips"></a>
+  <a href="#shop" data-label="Shop"></a>
+  <a href="#philosophy" data-label="Philosophy"></a>
+  <a href="#meditation" data-label="Meditation"></a>
+  <a href="#about" data-label="About"></a>
+  <a href="#testimonials" data-label="Voices"></a>
+  <a href="#contact" data-label="Contact"></a>
+</nav>
+
+<!-- MAIN CONTENT WRAPPER -->
+<main id="main-content">
+
+  <!-- HERO SECTION -->
+  <section class="hero on-void" id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">
+          <span><strong>SPIRITUALITY</strong></span>
+          <span>indická spiritualita praha · yoga, ayurveda, meditation</span>
+          <span>Prague / India · MMXXVI</span>
+        </div>
+        <h1 class="kinetic-title">
+          <span class="line-mask"><span class="line-mask-inner">Yoga, Ayurveda &amp;</span></span>
+          <span class="line-mask"><span class="line-mask-inner">Indian Spirituality</span></span>
+          <span class="line-mask"><span class="line-mask-inner">in Prague</span></span>
+        </h1>
+        <p class="kicker">One philosophy. Four ways to begin.</p>
+        <p class="lede">Authentic yoga, Ayurveda, meditation and Indian wellbeing traditions, brought to Prague and made accessible for a European audience — rooted in genuine source knowledge, taught with the warmth Haidakhan Babaji called "Truth, Simplicity, Love."</p>
+        <div class="ctas">
+          <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
+          <a href="#offer" class="btn btn-ghost" data-magnetic="true">See our courses</a>
+          <a href="#shop" class="btn-text" data-magnetic="true">Explore products <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-blob" role="img" aria-label="Yoga and meditation practice in Prague">
+          <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80" alt="Yoga session" loading="eager">
+          <span class="cap">Photo — teaching or treatment session in progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="sec-pad band-paper" id="intro">
+    <div class="wrap intro-inner skew-block">
+      <p>Indian in Prague brings together four things rarely offered in one place: learning, practice, travel and authentic products. Whether you're taking your first yoga class, booking an Ayurvedic consultation, planning a journey to India, or simply want genuine Ayurvedic oils delivered across Europe — this is your starting point.</p>
+      <p>We work with the same primary-source knowledge of yoga, Ayurveda and Indian spirituality that has guided seekers for centuries, adapted thoughtfully for modern European life — in Prague and beyond.</p>
+      <blockquote class="pull">"Work is worship."<cite>— Haidakhan Babaji</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section class="sec-pad band-sand" id="offer">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow"><strong>WHAT WE OFFER</strong><span>four spaces, one philosophy</span></div>
+        <h2 class="kinetic-title">
+          <span class="line-mask"><span class="line-mask-inner">Learn, travel, practise,</span></span>
+          <span class="line-mask"><span class="line-mask-inner">and bring it home.</span></span>
+        </h2>
+        <p class="hook">Each space stands on its own — take whichever pieces are useful to you, in whatever order suits your life.</p>
+      </div>
+
+      <div class="cards-grid skew-block">
+        <article class="card" data-magnetic="true">
+          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--terracotta-deep)" stroke-width="1.5"><path d="M16 4 C10 4 8 10 12 13 C6 14 4 20 9 24 C13 27 19 27 23 24 C28 20 26 14 20 13 C24 10 22 4 16 4Z"/><path d="M16 13 L16 27"/></svg></div>
+          <div class="tag">Learn</div>
+          <h3>Yoga, Ayurveda &amp; Meditation Courses</h3>
+          <p class="hook">Classes, workshops and structured courses taught from authentic, source-based knowledge — not diluted trends.</p>
+          <ul>
+            <li>Regular yoga classes, in-person in Prague</li>
+            <li>Meditation instruction</li>
+            <li>Weekend and one-day workshops</li>
+            <li>Structured courses for those going deeper</li>
+            <li>Individual and private sessions</li>
+          </ul>
+        </article>
+
+        <article class="card" data-magnetic="true">
+          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--moss-deep)" stroke-width="1.5"><path d="M4 20 C10 10 22 8 28 16 C22 14 12 16 8 24 Z"/><path d="M8 24 L4 28"/></svg></div>
+          <div class="tag">Travel</div>
+          <h3>Journeys to India</h3>
+          <p class="hook">Small-group, carefully guided trips for yoga, Ayurveda and genuine cultural immersion — not a package tour.</p>
+          <ul>
+            <li>Yoga &amp; Ayurveda retreats</li>
+            <li>Panchakarma — Ayurvedic detox — journeys</li>
+            <li>Cultural and sightseeing trips</li>
+            <li>Private and small-group itineraries</li>
+          </ul>
+          <a href="#trips" class="btn-text">See the trips <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card" data-magnetic="true">
+          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--terracotta-deep)" stroke-width="1.5"><path d="M16 27 C16 27 6 20 6 12 C6 7 11 5 16 10 C21 5 26 7 26 12 C26 20 16 27 16 27Z"/></svg></div>
+          <div class="tag">Products</div>
+          <h3>Authentic Indian &amp; Ayurvedic Goods</h3>
+          <p class="hook">Genuine products sourced from trusted producers in India, shipped across Europe.</p>
+          <ul>
+            <li>Ayurvedic oils, herbs and teas</li>
+            <li>Copper vessels and ritual items</li>
+            <li>Yoga mats and accessories</li>
+            <li>Books and gift sets</li>
+          </ul>
+          <a href="#shop" class="btn-text">Browse the shop <span class="arrow">→</span></a>
+        </article>
+
+        <article class="card" data-magnetic="true">
+          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--moss-deep)" stroke-width="1.5"><circle cx="16" cy="16" r="10"/><path d="M16 10 L16 16 L20 19"/></svg></div>
+          <div class="tag">Practice</div>
+          <h3>Treatments &amp; Personal Sessions</h3>
+          <p class="hook">Hands-on Ayurvedic treatments and personal consultations for individual care.</p>
+          <ul>
+            <li>Ayurvedic consultations</li>
+            <li>Ayurvedic massage and body treatments</li>
+            <li>Marma therapy</li>
+            <li>Personalised wellness recommendations</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIPS TO INDIA (HORIZONTAL RUNWAY) -->
+  <section class="horizontal-pinned-section band-paper" id="trips">
+    <div class="sec-pad">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="eyebrow"><strong>TRIPS TO INDIA</strong><span>small-group and private journeys</span></div>
+          <h2 class="kinetic-title">
+            <span class="line-mask"><span class="line-mask-inner">Six ways to go deeper.</span></span>
+          </h2>
+          <p class="hook">Guided, carefully structured, and led by people who know these places from the inside — not a coach-tour itinerary.</p>
+        </div>
+      </div>
+
+      <div class="horizontal-track-wrapper" id="trips-track">
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b2">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala coast" loading="lazy">
+            <span class="cap">Kerala coast / Himalayan foothills</span>
+          </div>
+          <div class="loc">KERALA · HIMALAYAS</div>
+          <h3>Panchakarma &amp; Ayurveda Retreat</h3>
+          <p class="hook">Full Ayurvedic detox and rejuvenation, guided by experienced local practitioners, from coastal Kerala to the quiet Himalayas.</p>
+        </article>
+
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b3">
+            <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Rishikesh Ganges" loading="lazy">
+            <span class="cap">The Ganges, Rishikesh</span>
+          </div>
+          <div class="loc">RISHIKESH</div>
+          <h3>Yoga at the Source</h3>
+          <p class="hook">A classical yoga intensive in the town where modern yoga tourism began, on the banks of the Ganges.</p>
+        </article>
+
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b4">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Chopta Himalayas" loading="lazy">
+            <span class="cap">Himalayan scenery, Chopta</span>
+          </div>
+          <div class="loc">RISHIKESH · CHOPTA</div>
+          <h3>Jog Sadhana</h3>
+          <p class="hook">Deep classical-yoga sadhana balanced with study of classical texts, set against Himalayan scenery.</p>
+        </article>
+
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b2">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa sunset coast" loading="lazy">
+            <span class="cap">Jaipur architecture / Goa coast</span>
+          </div>
+          <div class="loc">DELHI · AGRA · JAIPUR · GOA</div>
+          <h3>Golden Triangle &amp; Goa</h3>
+          <p class="hook">Delhi, Agra and Jaipur's culture and history, followed by rest and recovery on Goa's beaches.</p>
+        </article>
+
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b3">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Nepal monastery" loading="lazy">
+            <span class="cap">Himalayan monastery, Nepal</span>
+          </div>
+          <div class="loc">NEPAL</div>
+          <h3>Himalayan Spiritual Journey</h3>
+          <p class="hook">Trekking, monasteries and mountain energy across the Himalayan foothills, for those seeking scale and quiet together.</p>
+        </article>
+
+        <article class="card trip" data-badge="DRAG">
+          <div class="art-blob b4">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Private meditation retreat" loading="lazy">
+            <span class="cap">Your dates, your group</span>
+          </div>
+          <div class="loc">TAILORED</div>
+          <h3>Private &amp; Corporate Retreats</h3>
+          <p class="hook">A bespoke itinerary built around your dates, group size and goals — individuals, couples, or small groups.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP BY CATEGORY (HORIZONTAL RUNWAY) -->
+  <section class="horizontal-pinned-section band-sand" id="shop">
+    <div class="sec-pad">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="eyebrow"><strong>SHOP BY CATEGORY</strong><span>authentic Indian &amp; ayurvedic products</span></div>
+          <h2 class="kinetic-title">
+            <span class="line-mask"><span class="line-mask-inner">Eight categories, sourced with care.</span></span>
+          </h2>
+          <p class="hook">Genuine goods from trusted producers in India, shipped across Europe.</p>
+        </div>
+      </div>
+
+      <div class="horizontal-track-wrapper" id="shop-track">
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Ayurvedic Oils" loading="lazy"></div>
+          <h3>Ayurvedic Oils</h3><p class="hook">Massage, hair, nasal and dropper oils.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Skincare and Cosmetics" loading="lazy"></div>
+          <h3>Skincare &amp; Cosmetics</h3><p class="hook">Natural face and body care.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b4"><img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=600&q=80" alt="Copper Vessels" loading="lazy"></div>
+          <h3>Copper Vessels</h3><p class="hook">Bottles, jugs, neti pots, Shirodhara bowls.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Herbs and Spices" loading="lazy"></div>
+          <h3>Herbs, Spices &amp; Teas</h3><p class="hook">Turmeric, ghee, basmati rice, herbal blends.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=600&q=80" alt="Yoga Mats" loading="lazy"></div>
+          <h3>Yoga Mats &amp; Accessories</h3><p class="hook">Mats, covers, props.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b4"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Meditation Rituals" loading="lazy"></div>
+          <h3>Rituals &amp; Meditation</h3><p class="hook">Oil warmers, incense, ritual sets.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="Books and Learning" loading="lazy"></div>
+          <h3>Books &amp; Learning</h3><p class="hook">Ayurveda and yoga reference titles.</p>
+        </article>
+        <article class="card shop" data-badge="EXPLORE">
+          <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Gift Sets" loading="lazy"></div>
+          <h3>Gift Sets</h3><p class="hook">Curated bundles for newcomers or gifting.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy on-void" id="philosophy">
+    <div class="wrap philosophy-top">
+      <div class="eyebrow"><strong>OUR PHILOSOPHY</strong><span>what guides how we work</span></div>
+      <div class="word kinetic-title">
+        <span class="line-mask"><span class="line-mask-inner">Truth, Simplicity, Love.</span></span>
+      </div>
+      <p>These three words, at the heart of Haidakhan Babaji's teaching, guide how we work. Spirituality doesn't need to be complicated, expensive, or wrapped in mystique to be genuine. Real Indian wisdom — in yoga, in Ayurveda, in meditation — is practical, direct, and available to anyone with sincere interest.</p>
+    </div>
+
+    <div class="wrap commit-grid skew-block">
+      <div class="commit">
+        <div class="n">01</div>
+        <h4>Authenticity</h4>
+        <p>Knowledge and products sourced from genuine Indian tradition and trusted practitioners, not diluted for trend.</p>
+      </div>
+      <div class="commit">
+        <div class="n">02</div>
+        <h4>Accessibility</h4>
+        <p>Made understandable and usable for a European audience, without losing depth.</p>
+      </div>
+      <div class="commit">
+        <div class="n">03</div>
+        <h4>Wholebeing</h4>
+        <p>Body, mind and spirit treated as one system, not three separate boxes.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <blockquote class="pull">"All religions lead to one point, and that is God Himself; and therefore following any religion you will ultimately reach God."<cite>— Haidakhan Babaji</cite></blockquote>
+      <p class="closing">This is not a religious offering — everyone is welcome regardless of background or belief. It is a practical path to better health, calm and self-understanding, open to anyone curious enough to start.</p>
+    </div>
+  </section>
+
+  <!-- FULL-VIEWPORT 3D CHAKRA STAGE & MEDITATION -->
+  <section class="meditation on-void" id="meditation">
+    <div id="chakra-canvas-container" data-badge="FEEL">
+      <canvas id="chakra-canvas"></canvas>
+    </div>
+
+    <div class="wrap chakra-content-layer">
+      <div class="med-intro">
+        <div class="eyebrow"><strong>MEDITATION &amp; THE SEVEN CENTRES</strong><span>felt, not merely explained</span></div>
+        <h2 class="kinetic-title" style="color:var(--cream); margin-top:14px;">
+          <span class="line-mask"><span class="line-mask-inner">Something you feel,</span></span>
+          <span class="line-mask"><span class="line-mask-inner">not an abstract idea.</span></span>
+        </h2>
+        <p>At the centre of Indian spiritual practice is meditation. Regular practice is described across Indian traditions as working through the body's subtle energy centres, often mapped as seven chakras — each linked to both a physical function and a quality of character. Scroll down to travel through the spine's 3D energy nodes.</p>
+      </div>
+
+      <div class="spine-wrap">
+        <div class="chakra-table">
+          <div class="chakra-row" data-idx="0"><div class="num">01</div><div><h4>Root — Mooladhara</h4><div class="meta">Base of spine</div></div><div class="quality">Innocence, groundedness</div></div>
+          <div class="chakra-row" data-idx="1"><div class="num">02</div><div><h4>Sacral — Swadisthana</h4><div class="meta">Lower abdomen</div></div><div class="quality">Creativity, focus</div></div>
+          <div class="chakra-row" data-idx="2"><div class="num">03</div><div><h4>Navel — Nabhi</h4><div class="meta">Abdomen</div></div><div class="quality">Contentment, generosity</div></div>
+          <div class="chakra-row" data-idx="3"><div class="num">04</div><div><h4>Heart — Anahat</h4><div class="meta">Chest</div></div><div class="quality">Compassion, confidence</div></div>
+          <div class="chakra-row" data-idx="4"><div class="num">05</div><div><h4>Throat — Vishuddhi</h4><div class="meta">Throat</div></div><div class="quality">Communication, diplomacy</div></div>
+          <div class="chakra-row" data-idx="5"><div class="num">06</div><div><h4>Third Eye — Agnya</h4><div class="meta">Between the brows</div></div><div class="quality">Forgiveness, clarity</div></div>
+          <div class="chakra-row" data-idx="6"><div class="num">07</div><div><h4>Crown — Sahastrara</h4><div class="meta">Top of the head</div></div><div class="quality">Integration, connection</div></div>
+        </div>
+
+        <div style="margin-top:44px;">
+          <p style="color:rgba(245,238,221,.85);">Our meditation guidance and classes work with this framework in a practical, non-dogmatic way — helping you understand what you're feeling and why.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:24px;" data-magnetic="true">Book an introductory session</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="sec-pad band-sand" id="about">
+    <div class="wrap about-grid">
+      <div class="art-blob b2">
+        <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?auto=format&fit=crop&w=800&q=80" alt="Founder portrait" loading="lazy">
+        <span class="cap">Founder portrait</span>
+      </div>
+      <div>
+        <div class="eyebrow"><strong>WHY PRAGUE, WHY US</strong><span>founder &amp; practitioner</span></div>
+        <h2 class="kinetic-title">
+          <span class="line-mask"><span class="line-mask-inner">Closing the gap between</span></span>
+          <span class="line-mask"><span class="line-mask-inner">India and Europe.</span></span>
+        </h2>
+        <p>Indian in Prague exists to close the gap between authentic Indian spiritual and wellness traditions and the growing European interest in them. Based in Prague, we serve the local and wider European community directly — no need to travel to India to begin, though we'll gladly take you there when you're ready.</p>
+        <div class="bio-card">
+          <div class="lbl">Founder note — to personalise before publishing</div>
+          <p>This space is for your own voice: where you trained, how long, one concrete credential or lineage detail, and why Prague specifically.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="sec-pad band-paper" id="testimonials">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow"><strong>TESTIMONIALS</strong><span>in their own words</span></div>
+        <h2 class="kinetic-title">
+          <span class="line-mask"><span class="line-mask-inner">What changed for them.</span></span>
+        </h2>
+      </div>
+      <div class="testi-grid skew-block">
+        <article class="testi-card">
+          <p class="quote">"My first Ayurvedic consultation completely changed how I think about my daily routine — small changes, real difference."</p>
+          <div class="who"><div class="avatar"></div><div><div class="name">Klára S.</div><div class="loc">Prague</div></div></div>
+        </article>
+        <article class="testi-card">
+          <p class="quote">"The Rishikesh trip was nothing like a typical holiday. Structured, well looked-after, and genuinely transformative."</p>
+          <div class="who"><div class="avatar"></div><div><div class="name">Tomáš V.</div><div class="loc">Brno</div></div></div>
+        </article>
+        <article class="testi-card">
+          <p class="quote">"I started with the copper water bottle out of curiosity and ended up taking the weekend meditation workshop."</p>
+          <div class="who"><div class="avatar"></div><div><div class="name">Anežka H.</div><div class="loc">Prague</div></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec-pad band-sand" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow"><strong>FREQUENTLY ASKED</strong><span>questions before you begin</span></div>
+        <h2>Good to know.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>Do I need any experience to start?<span class="plus"></span></summary>
+          <p class="a">No — classes and introductory sessions suit complete beginners as well as more experienced practitioners.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is this connected to a particular religion?<span class="plus"></span></summary>
+          <p class="a">No. These are universal practices for health, calm and self-understanding, open to people of any or no religious background.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I just buy products without taking a course?<span class="plus"></span></summary>
+          <p class="a">Yes — the shop and services are independent; take whichever pieces are useful to you.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you organise trips to India for individuals, not just groups?<span class="plus"></span></summary>
+          <p class="a">Yes — both small-group and individually tailored trips are available.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Where do treatments and classes take place?<span class="plus"></span></summary>
+          <p class="a">Get in touch for current locations and formats in Prague, including any online options.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta on-void" id="cta">
+    <div class="wrap inner">
+      <div class="eyebrow"><strong>BEGIN</strong></div>
+      <h2 class="kinetic-title">
+        <span class="line-mask"><span class="line-mask-inner">Begin where you are.</span></span>
+      </h2>
+      <p>Whether you want to join a class, book a consultation, order Ayurvedic products, or start planning a trip to India — start with a conversation.</p>
+      <div class="ctas">
+        <a href="#contact" class="btn btn-primary" data-badge="BEGIN" data-magnetic="true">Book a consultation</a>
+        <a href="#offer" class="btn btn-ghost" data-magnetic="true">Explore the offerings</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site" id="contact">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-word">Indian in Prague <em>· Spirituality</em></div>
+      <p class="foot-lede">Ready to begin? Whether you want to join a class, book a consultation, order Ayurvedic products, or start planning a trip to India — get in touch.</p>
+      <div class="newsletter">
+        <a class="btn btn-primary" href="https://wa.me/420777558262?text=Hi!%20I'd%20like%20to%20hear%20about%20upcoming%20yoga%2C%20Ayurveda%20and%20meditation%20dates%20in%20Prague." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:helloayursen@gmail.com?subject=Spirituality%20%E2%80%94%20keep%20me%20posted">Email instead</a>
+      </div>
+    </div>
+    <div class="foot-col">
+      <h5>Get in touch</h5>
+      <a class="item" href="mailto:helloayursen@gmail.com">helloayursen@gmail.com</a>
+      <a class="item" href="https://wa.me/420777558262" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="item">Prague, Czech Republic</span>
+    </div>
+    <div class="foot-col">
+      <h5>Elsewhere on this site</h5>
+      <a class="item" href="/">Home</a>
+      <a class="item" href="/wardrobe.html">The wardrobe</a>
+      <a class="item" href="/diaries.html">The diaries</a>
+      <a class="item" href="/wellness.html">Wellness</a>
+    </div>
+  </div>
+  <div class="wrap foot-back">
+    <a class="back-home" href="/">← Indian in Prague</a>
+    <nav class="back-nav" aria-label="Back to the rest of the site">
+      <a href="/wardrobe.html">Wardrobe</a>
+      <a href="/spirituality.html" aria-current="page">Spirituality</a>
+      <a href="/wellness.html">Wellness</a>
+      <a href="/buddy.html">Buddy</a>
+      <a href="/diaries.html">Diaries</a>
+    </nav>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Indian in Prague. Prague / India.</span>
+    <span>No cookies and no analytics. This page loads fonts, images and animation libraries from third-party CDNs.</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+   SCRIPT ARCHITECTURE & ENGINE EXECUTION
+   ============================================================ -->
+<script>
+(function() {
+  'use strict';
+
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ------------------------------------------------------------
+  // 1. LENIS SMOOTH SCROLL & GSAP SETUP
+  // ------------------------------------------------------------
+  gsap.registerPlugin(ScrollTrigger);
+
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+    touchMultiplier: 2
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+
+  gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+  });
+  gsap.ticker.lagSmoothing(0);
+
+  // Hide-On-Scroll Header Navigation
+  let lastScrollY = 0;
+  const headerEl = document.querySelector('header.site');
+  lenis.on('scroll', (e) => {
+    const currentY = e.scroll;
+    if (currentY > 120 && currentY > lastScrollY) {
+      headerEl.classList.add('nav-hidden');
+    } else {
+      headerEl.classList.remove('nav-hidden');
+    }
+    lastScrollY = currentY;
+  });
+
+  // ------------------------------------------------------------
+  // 2. RITUAL PRELOADER & ENTRANCE SEQUENCE
+  // ------------------------------------------------------------
+  const preloader = document.getElementById('preloader');
+  const loaderCount = document.getElementById('loader-count');
+  const loaderFill = document.getElementById('loader-fill');
+  const loaderWord = document.getElementById('loader-word');
+  const words = ["Truth", "Simplicity", "Love"];
+  let wordIdx = 0;
+
+  const wordInterval = setInterval(() => {
+    wordIdx = (wordIdx + 1) % words.length;
+    gsap.to(loaderWord, {
+      opacity: 0, y: -10, duration: 0.2,
+      onComplete: () => {
+        loaderWord.textContent = words[wordIdx];
+        gsap.to(loaderWord, { opacity: 1, y: 0, duration: 0.3 });
+      }
+    });
+  }, 700);
+
+  let progress = { value: 0 };
+  gsap.to(progress, {
+    value: 100, duration: 2.2, ease: 'power2.inOut',
+    onUpdate: () => {
+      const val = Math.round(progress.value);
+      loaderCount.textContent = val;
+      loaderFill.style.width = val + '%';
+    },
+    onComplete: () => {
+      clearInterval(wordInterval);
+      gsap.to(preloader, {
+        clipPath: 'polygon(0 0, 100% 0, 100% 0%, 0 0%)',
+        duration: 1.2, ease: 'power4.inOut',
+        onComplete: () => {
+          preloader.style.display = 'none';
+          initEntranceAnimations();
+        }
+      });
+    }
+  });
+
+  function initEntranceAnimations() {
+    gsap.to('.hero .line-mask-inner', {
+      y: '0%', duration: 1.2, stagger: 0.15, ease: 'power4.out'
+    });
+  }
+
+  // ------------------------------------------------------------
+  // 3. KINETIC TYPOGRAPHY & SCROLL VELOCITY SKEW
+  // ------------------------------------------------------------
+  const titles = document.querySelectorAll('.kinetic-title .line-mask-inner');
+  titles.forEach(title => {
+    gsap.to(title, {
+      y: '0%', duration: 1.2, ease: 'power4.out',
+      scrollTrigger: {
+        trigger: title.parentElement,
+        start: 'top 88%',
+        toggleActions: 'play none none reverse'
+      }
+    });
+  });
+
+  const skewBlocks = document.querySelectorAll('.skew-block');
+  let skewTarget = 0;
+  let currentSkew = 0;
+
+  lenis.on('scroll', (e) => {
+    skewTarget = Math.max(-1.5, Math.min(1.5, e.velocity * 0.05));
+  });
+
+  function updateSkew() {
+    currentSkew += (skewTarget - currentSkew) * 0.1;
+    if (!prefersReducedMotion) {
+      skewBlocks.forEach(block => {
+        block.style.transform = `skewY(${currentSkew}deg)`;
+      });
+    }
+    skewTarget *= 0.92;
+    requestAnimationFrame(updateSkew);
+  }
+  requestAnimationFrame(updateSkew);
+
+  // ------------------------------------------------------------
+  // 4. THREE.JS FLUID GLSL LIQUID CANVAS
+  // ------------------------------------------------------------
+  const bgCanvas = document.getElementById('bg-canvas');
+  const bgScene = new THREE.Scene();
+  const bgCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+  const bgRenderer = new THREE.WebGLRenderer({ canvas: bgCanvas, alpha: true, antialias: false });
+  bgRenderer.setSize(window.innerWidth, window.innerHeight);
+  bgRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  const mouseVec = new THREE.Vector2(0.5, 0.5);
+  const mouseVel = new THREE.Vector2(0, 0);
+  let lastMouse = { x: 0, y: 0 };
+
+  window.addEventListener('mousemove', (e) => {
+    const rx = e.clientX / window.innerWidth;
+    const ry = 1.0 - (e.clientY / window.innerHeight);
+    mouseVel.x = rx - lastMouse.x;
+    mouseVel.y = ry - lastMouse.y;
+    lastMouse = { x: rx, y: ry };
+    mouseVec.set(rx, ry);
+  });
+
+  const fragmentShader = `
+    uniform float u_time;
+    uniform vec2 u_resolution;
+    uniform vec2 u_mouse;
+    uniform vec2 u_velocity;
+
+    vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
+    float snoise(vec2 v){
+      const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+               -0.577350269189626, 0.024390243902439);
+      vec2 i  = floor(v + dot(v, C.yy) );
+      vec2 x0 = v -   i + dot(i, C.xx);
+      vec2 i1;
+      i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+      vec4 x12 = x0.xyxy + C.xxzz;
+      x12.xy -= i1;
+      i = mod(i, 289.0);
+      vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+      + i.x + vec3(0.0, i1.x, 1.0 ));
+      vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+      m = m*m ; m = m*m ;
+      vec3 x = 2.0 * fract(p * C.www) - 1.0;
+      vec3 h = abs(x) - 0.5;
+      vec3 ox = floor(x + 0.5);
+      vec3 a0 = x - ox;
+      m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+      vec3 g;
+      g.x  = a0.x  * x0.x  + h.x  * x0.y;
+      g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+      return 130.0 * dot(m, g);
+    }
+
+    void main() {
+      vec2 st = gl_FragCoord.xy / u_resolution.xy;
+      st.x *= u_resolution.x / u_resolution.y;
+
+      float dist = distance(st, u_mouse);
+      float ripple = sin(dist * 18.0 - u_time * 2.5) * exp(-dist * 3.5);
+
+      vec2 q = vec2(0.0);
+      q.x = snoise(st + vec2(u_time * 0.04, u_time * 0.03));
+      q.y = snoise(st + vec2(u_time * 0.03, u_time * 0.05));
+
+      vec2 r = vec2(0.0);
+      r.x = snoise(st + 1.0 * q + vec2(1.7, 9.2) + 0.12 * u_time);
+      r.y = snoise(st + 1.0 * q + vec2(8.3, 2.8) + 0.10 * u_time);
+
+      float f = snoise(st + r + ripple * length(u_velocity) * 4.0);
+
+      vec3 voidColor  = vec3(0.086, 0.059, 0.141);
+      vec3 terracotta = vec3(0.549, 0.239, 0.118);
+      vec3 marigold   = vec3(0.910, 0.635, 0.239);
+      vec3 moss       = vec3(0.290, 0.337, 0.220);
+
+      vec3 color = mix(voidColor, terracotta, clamp(f * f * 2.0, 0.0, 1.0));
+      color = mix(color, marigold, clamp(length(q), 0.0, 1.0) * 0.35);
+      color = mix(color, moss, clamp(r.x, 0.0, 1.0) * 0.25);
+
+      gl_FragColor = vec4(color, 0.9);
+    }
+  `;
+
+  const bgMaterial = new THREE.ShaderMaterial({
+    vertexShader: `void main(){ gl_Position = vec4(position, 1.0); }`,
+    fragmentShader: fragmentShader,
+    uniforms: {
+      u_time: { value: 0 },
+      u_resolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+      u_mouse: { value: mouseVec },
+      u_velocity: { value: mouseVel }
+    }
+  });
+
+  const bgMesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), bgMaterial);
+  bgScene.add(bgMesh);
+
+  window.addEventListener('resize', () => {
+    bgRenderer.setSize(window.innerWidth, window.innerHeight);
+    bgMaterial.uniforms.u_resolution.value.set(window.innerWidth, window.innerHeight);
+  });
+
+  // ------------------------------------------------------------
+  // 5. RESPONSIVE HORIZONTAL SCROLL RUNWAYS
+  // ------------------------------------------------------------
+  ScrollTrigger.matchMedia({
+    "(min-width: 769px)": function() {
+      function setupRunway(sectionId, trackId) {
+        const section = document.getElementById(sectionId);
+        const track = document.getElementById(trackId);
+        if (!section || !track) return;
+
+        const getScrollAmount = () => -(track.scrollWidth - window.innerWidth + 80);
+
+        const tween = gsap.to(track, { x: getScrollAmount, ease: 'none' });
+
+        ScrollTrigger.create({
+          trigger: section, start: 'top top',
+          end: () => `+=${track.scrollWidth - window.innerWidth}`,
+          pin: true, animation: tween, scrub: 1, invalidateOnRefresh: true
+        });
+
+        const cards = track.querySelectorAll('.card');
+        cards.forEach(card => {
+          gsap.to(card, {
+            rotateY: 6, ease: 'none',
+            scrollTrigger: { trigger: section, start: 'top top', end: () => `+=${track.scrollWidth}`, scrub: 0.5 }
+          });
+        });
+      }
+
+      setupRunway('trips', 'trips-track');
+      setupRunway('shop', 'shop-track');
+    }
+  });
+
+  // ------------------------------------------------------------
+  // 6. FULL-VIEWPORT 3D CHAKRA STAGE
+  // ------------------------------------------------------------
+  const chakraContainer = document.getElementById('chakra-canvas-container');
+  const chakraCanvas = document.getElementById('chakra-canvas');
+  if (chakraContainer && chakraCanvas) {
+    const cScene = new THREE.Scene();
+    const cCamera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    cCamera.position.set(0, 0, 20);
+
+    const cRenderer = new THREE.WebGLRenderer({ canvas: chakraCanvas, alpha: true, antialias: true });
+    cRenderer.setSize(window.innerWidth, window.innerHeight);
+    cRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const resizeObserver = new ResizeObserver(() => {
+      if (!chakraContainer) return;
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      cCamera.aspect = w / h;
+      cCamera.updateProjectionMatrix();
+      cRenderer.setSize(w, h);
+    });
+    resizeObserver.observe(chakraContainer);
+
+    const chakraColors = [
+      0xC1552E, // Root
+      0xE8A23D, // Sacral
+      0xF0C27E, // Navel
+      0x6E7C53, // Heart
+      0x4A8C8C, // Throat
+      0x4A3A6B, // Third Eye
+      0xF5EEDD  // Crown
+    ];
+
+    const chakraNodes = [];
+    const group = new THREE.Group();
+
+    for (let i = 0; i < 7; i++) {
+      const angle = (i / 7) * Math.PI * 2;
+      const xPos = Math.sin(angle) * 2.2;
+      const yPos = (i - 3) * 3.2;
+      const zPos = Math.cos(angle) * 1.5;
+
+      const nodeGeo = new THREE.IcosahedronGeometry(0.9, 2);
+      const nodeMat = new THREE.MeshBasicMaterial({ color: chakraColors[i], wireframe: true, transparent: true, opacity: 0.5 });
+      const nodeMesh = new THREE.Mesh(nodeGeo, nodeMat);
+      nodeMesh.position.set(xPos, yPos, zPos);
+
+      // Particle Aura Ring
+      const pGeo = new THREE.BufferGeometry();
+      const pCount = 80;
+      const posArray = new Float32Array(pCount * 3);
+      for (let p = 0; p < pCount * 3; p += 3) {
+        const a = (p / 3) * (Math.PI * 2 / pCount);
+        const radius = 1.6 + Math.random() * 0.4;
+        posArray[p] = Math.cos(a) * radius;
+        posArray[p + 1] = (Math.random() - 0.5) * 0.35;
+        posArray[p + 2] = Math.sin(a) * radius;
+      }
+      pGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+      const pMat = new THREE.PointsMaterial({ size: 0.07, color: chakraColors[i], transparent: true, opacity: 0.85 });
+      const pRing = new THREE.Points(pGeo, pMat);
+      nodeMesh.add(pRing);
+
+      // Diffuse Aura Sphere
+      const auraGeo = new THREE.SphereGeometry(1.6, 16, 16);
+      const auraMat = new THREE.MeshBasicMaterial({ color: chakraColors[i], transparent: true, opacity: 0.08 });
+      const auraMesh = new THREE.Mesh(auraGeo, auraMat);
+      nodeMesh.add(auraMesh);
+
+      chakraNodes.push({ mesh: nodeMesh, pRing: pRing, aura: auraMesh, baseColor: chakraColors[i], pos: { x: xPos, y: yPos, z: zPos } });
+      group.add(nodeMesh);
+    }
+    cScene.add(group);
+
+    function animateChakraCanvas(time) {
+      const t = time * 0.001;
+      chakraNodes.forEach((node, idx) => {
+        node.mesh.rotation.y = t * 0.8 * (idx % 2 === 0 ? 1 : -1);
+        node.pRing.rotation.y = -t * 1.4;
+      });
+      cRenderer.render(cScene, cCamera);
+    }
+
+    const rows = document.querySelectorAll('.chakra-row');
+    rows.forEach((row, idx) => {
+      ScrollTrigger.create({
+        trigger: row, start: 'top 60%', end: 'bottom 40%',
+        onEnter: () => highlightChakra(idx),
+        onEnterBack: () => highlightChakra(idx)
+      });
+    });
+
+    function highlightChakra(index) {
+      rows.forEach((r, i) => r.classList.toggle('active', i === index));
+      chakraNodes.forEach((node, i) => {
+        if (i === index) {
+          gsap.to(node.mesh.scale, { x: 1.5, y: 1.5, z: 1.5, duration: 0.6, ease: 'back.out(1.7)' });
+          node.mesh.material.opacity = 1.0;
+          node.aura.material.opacity = 0.25;
+        } else {
+          gsap.to(node.mesh.scale, { x: 1.0, y: 1.0, z: 1.0, duration: 0.5 });
+          node.mesh.material.opacity = 0.35;
+          node.aura.material.opacity = 0.05;
+        }
+      });
+
+      // 3D Orbital Camera Glide Path
+      const activeNode = chakraNodes[index];
+      gsap.to(cCamera.position, {
+        x: activeNode.pos.x + 3.0,
+        y: activeNode.pos.y,
+        z: activeNode.pos.z + 10.0,
+        duration: 1.2,
+        ease: 'power2.out'
+      });
+      cCamera.lookAt(activeNode.pos.x, activeNode.pos.y, activeNode.pos.z);
+    }
+
+    function chakraLoop(t) {
+      animateChakraCanvas(t);
+      requestAnimationFrame(chakraLoop);
+    }
+    requestAnimationFrame(chakraLoop);
+  }
+
+  // ------------------------------------------------------------
+  // 7. CONTINUOUS PATH THREAD & DYNAMIC BEADS
+  // ------------------------------------------------------------
+  const threadFill = document.getElementById('threadFill');
+  const beads = document.querySelectorAll('.thread-bead');
+
+  function updateBeadPositions() {
+    beads.forEach(bead => {
+      const targetId = bead.getAttribute('data-target');
+      const targetEl = document.querySelector(targetId);
+      if (targetEl) {
+        const docHeight = document.documentElement.scrollHeight;
+        const rect = targetEl.getBoundingClientRect();
+        const absoluteTop = rect.top + window.scrollY;
+        const pct = (absoluteTop / docHeight) * 100;
+        bead.style.top = pct + '%';
+      }
+    });
+  }
+  window.addEventListener('load', updateBeadPositions);
+  window.addEventListener('resize', updateBeadPositions);
+
+  if (threadFill) {
+    const len = 2000;
+    threadFill.style.strokeDasharray = len;
+    threadFill.style.strokeDashoffset = len;
+
+    lenis.on('scroll', (e) => {
+      const scrollPct = e.progress;
+      threadFill.style.strokeDashoffset = len * (1 - scrollPct);
+
+      beads.forEach(bead => {
+        const targetId = bead.getAttribute('data-target');
+        const targetEl = document.querySelector(targetId);
+        if (targetEl) {
+          const rect = targetEl.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.2) {
+            bead.classList.add('active');
+          } else {
+            bead.classList.remove('active');
+          }
+        }
+      });
+    });
+  }
+
+  // ------------------------------------------------------------
+  // 8. FLUID MAGNETIC CURSOR & BADGES
+  // ------------------------------------------------------------
+  const cursorDot = document.getElementById('cursor-dot');
+  const cursorRing = document.getElementById('cursor-ring');
+  const cursorBadge = document.getElementById('cursor-badge');
+
+  let cMouse = { x: -100, y: -100 };
+  let ringPos = { x: -100, y: -100 };
+
+  window.addEventListener('mousemove', (e) => {
+    cMouse.x = e.clientX;
+    cMouse.y = e.clientY;
+    gsap.set(cursorDot, { x: cMouse.x, y: cMouse.y });
+  });
+
+  function updateCursor() {
+    ringPos.x += (cMouse.x - ringPos.x) * 0.15;
+    ringPos.y += (cMouse.y - ringPos.y) * 0.15;
+    gsap.set(cursorRing, { x: ringPos.x, y: ringPos.y });
+    requestAnimationFrame(updateCursor);
+  }
+  requestAnimationFrame(updateCursor);
+
+  const magneticEls = document.querySelectorAll('[data-magnetic="true"], .btn');
+  magneticEls.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+      gsap.to(el, { x: x * 0.2, y: y * 0.2, duration: 0.3, ease: 'power2.out' });
+    });
+
+    el.addEventListener('mouseleave', () => {
+      gsap.to(el, { x: 0, y: 0, duration: 0.5, ease: 'elastic.out(1, 0.3)' });
+    });
+  });
+
+  document.querySelectorAll('[data-badge]').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursorRing.classList.add('hovering');
+      cursorBadge.textContent = el.getAttribute('data-badge');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursorRing.classList.remove('hovering');
+      cursorBadge.textContent = '';
+    });
+  });
+
+  // ------------------------------------------------------------
+  // 9. WEB AUDIO API AMBIENT SYNTHESIZER (432 Hz Theta Pad)
+  // ------------------------------------------------------------
+  let audioCtx = null;
+  let masterGain = null;
+  let isPlaying = false;
+  const soundToggle = document.getElementById('sound-toggle');
+  const soundText = document.getElementById('sound-text');
+  const soundBars = document.querySelectorAll('.sound-bar');
+
+  function initAudio() {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    masterGain = audioCtx.createGain();
+    masterGain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+
+    const freqs = [216, 324, 270, 432];
+    freqs.forEach(f => {
+      const osc = audioCtx.createOscillator();
+      const oscGain = audioCtx.createGain();
+
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(f, audioCtx.currentTime);
+
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(500, audioCtx.currentTime);
+
+      oscGain.gain.setValueAtTime(0.12, audioCtx.currentTime);
+
+      osc.connect(filter);
+      filter.connect(masterGain);
+      osc.start();
+    });
+
+    masterGain.connect(audioCtx.destination);
+  }
+
+  soundToggle.addEventListener('click', () => {
+    if (!audioCtx) initAudio();
+
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+
+    if (!isPlaying) {
+      masterGain.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + 1.5);
+      soundText.textContent = "Sound On";
+      isPlaying = true;
+      animateEqualizer(true);
+    } else {
+      masterGain.gain.linearRampToValueAtTime(0.001, audioCtx.currentTime + 1.0);
+      setTimeout(() => {
+        if (!isPlaying && audioCtx) audioCtx.suspend();
+      }, 1000);
+      soundText.textContent = "Sound Off";
+      isPlaying = false;
+      animateEqualizer(false);
+    }
+  });
+
+  function animateEqualizer(play) {
+    soundBars.forEach((bar, i) => {
+      if (play) {
+        gsap.to(bar, {
+          height: () => 4 + Math.random() * 10,
+          duration: 0.3 + i * 0.1,
+          repeat: -1, yoyo: true, ease: 'power1.inOut'
+        });
+      } else {
+        gsap.killTweensOf(bar);
+        gsap.to(bar, { height: 3, duration: 0.3 });
+      }
+    });
+  }
+
+  function render(time) {
+    bgMaterial.uniforms.u_time.value = time * 0.001;
+    bgRenderer.render(bgScene, bgCamera);
+    requestAnimationFrame(render);
+  }
+  requestAnimationFrame(render);
+
+  let frameCount = 0;
+  let lastFpsCheck = performance.now();
+  function checkFPS() {
+    const now = performance.now();
+    frameCount++;
+    if (now >= lastFpsCheck + 1000) {
+      const fps = (frameCount * 1000) / (now - lastFpsCheck);
+      if (fps < 40) {
+        bgRenderer.setPixelRatio(1);
+      }
+      frameCount = 0;
+      lastFpsCheck = now;
+    }
+    requestAnimationFrame(checkFPS);
+  }
+  requestAnimationFrame(checkFPS);
+
+})();
+</script>
+</body>
+</html>

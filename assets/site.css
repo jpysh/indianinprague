@@ -1,0 +1,518 @@
+/* Shared shell for every page: palette, typography, header, footer, buttons, image
+ * frames and the grid primitives.
+ *
+ * This used to be five near-identical <style> blocks, one per page, ~80% duplicated. As
+ * one external file it is fetched once and then served from cache for the rest of the
+ * visit, and — because no page carries inline CSS or a style="" attribute any more — the
+ * CSP can say style-src 'self' with no 'unsafe-inline'.
+ *
+ * Page-specific rules live in assets/<page>.css, loaded after this file so the cascade
+ * resolves the handful of deliberate per-page overrides (.btn.saf, .sec-lead widths).
+ *
+ * Mobile-first: the unprefixed rules are the phone layout, and min-width queries add the
+ * wider ones. That ordering is why the phone — the slowest device and the smallest
+ * viewport — never has to parse rules meant for a desktop and then undo them.
+ */
+
+/* fonts.css is linked separately from the HTML rather than @import-ed here. An @import
+ * cannot start until this file has been fetched and parsed, which would serialise two
+ * round trips before any text can paint; two <link> tags fetch in parallel. */
+
+:root{
+  /* Pantone-based palette — Martini Olive ground.
+   *
+   * The ground was #726A4E. At that value the palette's own accents did not meet WCAG AA
+   * against it: paprika text measured 1.28:1 (the garment PRICES were effectively
+   * invisible), the "View on Vinted" call to action 2.62:1, and all body copy 3.47:1
+   * against a 4.5:1 requirement.
+   *
+   * Darkening the ground rather than lightening each accent is the deliberate choice:
+   * there are three accent hues sitting on it, and lightening them individually washes
+   * the spice palette out toward cream and loses what makes the design its own. A deeper
+   * olive keeps every accent's chroma and lifts all of them at once. It is also already
+   * in the visual language — the frames and vignettes use #3D2B24 chicory.
+   *
+   * To revert the whole thing, put --void back to #726A4E (and --void-2/-3 to #655D43 /
+   * #585138). Nothing else depends on the new values.
+   */
+  --void:#4A4433; --void-2:#413C2D; --void-3:#383426;
+
+  /* Alternating section band. Sections were separated only by a 1px dark rule that is
+   * effectively invisible on a dark ground, so the page read as one undifferentiated
+   * column.
+   *
+   * This is a VALUE step in the same warm olive family, not a complementary hue, and that
+   * was measured rather than assumed: a literal complement of the ground is a slate blue
+   * (#33394A), which separates from the ground by only 1.19:1 — LESS distinct than this
+   * warm option at 1.36:1 — while introducing a cool hue that fights paprika, saffron and
+   * amber and undercuts the spice identity the whole design is built on. A darker band of
+   * the same hue reads as "new section" immediately and lifts text contrast on top of it
+   * (body copy goes from 6.22:1 to 8.44:1).
+   *
+   * If a cool band is ever wanted, this is the one variable to change. */
+  --band:#353022;
+
+  /* paprika is a FILL colour, not a text colour. It is a mid-luminance saturated red that
+     cannot reach 4.5:1 on any ground dark enough to be readable — it tops out around
+     3.5:1 even on near-black. So it keeps its job as a background (the Czech-In label,
+     button fills) where dark text sits ON it, and small accent text uses --magenta
+     instead, which clears AA at 4.70:1 here. */
+  --paprika:#D3502F; --chilli:#B8431F; --saffron:#DCE775; --turmeric:#B8431F;
+  --magenta:#E8A93C; --olive:#DCE775; --bone:#F2EFE6; --bone-dim:#D6CFB8;
+  --avocado:#8A8B32; --chicory:#3D2B24; --tangerine:#D3502F; --lime:#DCE775;
+
+  /* Single source of truth for the gutter, so the header, sections and footer stay in
+     line when it tightens on a phone. */
+  --gutter:20px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+body{
+  background:var(--void);
+  color:var(--bone);
+  font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  position:relative;
+  overflow-x:hidden;
+}
+
+/* Full-page film grain. Fixed and pointer-events:none so it never intercepts a tap. */
+body::before{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
+  opacity:.055;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+a{color:inherit;text-decoration:none}
+::selection{background:var(--magenta);color:var(--void)}
+
+/* Keyboard users need to see where they are. The design has no focus styling at all
+   otherwise, and :focus-visible keeps it off mouse clicks. */
+:focus-visible{outline:2px solid var(--magenta);outline-offset:3px}
+
+img{max-width:100%;height:auto}
+
+.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter);width:100%}
+
+/* Lets a keyboard or screen-reader user jump past the header nav. Off-screen until
+   focused. */
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--magenta);color:var(--void);padding:10px 16px;
+  font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+}
+.skip:focus{left:0}
+
+/* Text only a screen reader sees. Used to carry the "opens on Vinted, new tab"
+   warning that the repeated visible "View on Vinted" labels used to carry. */
+.vh{
+  position:absolute;width:1px;height:1px;margin:-1px;padding:0;
+  overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0;
+}
+
+/* The header is sticky, so an anchor jump would otherwise land with the target's first
+   line hidden underneath it. Applied globally rather than per-id so any anchor added
+   later gets the clearance for free. */
+html{scroll-behavior:smooth}
+:target,[id]{scroll-margin-top:88px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---------- header ---------- */
+
+header.site{
+  border-bottom:1px solid rgba(242,239,230,.18);
+  position:sticky;top:0;z-index:100;
+  background:rgba(74,68,51,.94);
+  backdrop-filter:blur(8px);
+}
+
+/* One row at every width: brand | section links | contact icons. The bar used to wrap onto
+   two rows below 641px, because the brand shared row one with a coordinate stamp and left
+   the nav no space. The stamp is gone, and the icons now sit outside nav.main so they stay
+   pinned to the right edge even when the links themselves have to scroll. */
+.bar{
+  display:flex;align-items:center;
+  gap:10px;min-height:52px;
+  flex-wrap:nowrap;
+}
+
+.brand{
+  flex:0 0 auto;
+  font-weight:600;font-size:11.5px;letter-spacing:0;text-transform:uppercase;
+  /* The wordmark is four words and two slashes in a monospace face — 20 characters that
+     alone would eat half of a 375px bar. Pulling the spaces in around the slashes buys
+     back ~30px and reads as a tighter lockup rather than a smaller logo. */
+  word-spacing:-.34em;
+  /* Without this the three words wrapped to two lines inside a fixed-height bar and
+     spilled over the border. */
+  white-space:nowrap;
+}
+.brand b{color:var(--magenta)}
+
+/* The mobile nav: a horizontal strip that scrolls if the links outrun the viewport.
+   Chosen over a hamburger because there are only four links — a disclosure widget would
+   add a tap to reach every one of them, and needs JavaScript this site otherwise does
+   not have (script-src is 'none'). */
+nav.main{
+  display:flex;gap:14px;
+  /* margin-left:auto rather than justify-content:flex-end. With flex-end, a nav too narrow
+     for its labels overflows towards its START edge — the first link slides left underneath
+     the wordmark, overlapping it and staying unreachable, because a scroll container cannot
+     scroll backwards past its origin. Pushing the whole box right with auto margin instead
+     keeps the labels laid out from the left, so the overflow lands at the right edge where
+     overflow-x can actually scroll to it. */
+  flex:0 1 auto;min-width:0;margin-left:auto;justify-content:flex-start;
+  font-size:10.5px;letter-spacing:0;text-transform:uppercase;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{
+  color:var(--bone);opacity:.68;
+  transition:opacity .15s,color .15s;
+  /* flex:0 0 auto matters: as a shrinkable item the label would be squeezed and clipped
+     silently, and nav.main would never report an overflow to scroll. */
+  flex:0 0 auto;white-space:nowrap;
+  /* 44px of vertical tap target, per the WCAG target-size guidance. */
+  display:flex;align-items:center;min-height:44px;
+}
+nav.main a:hover{opacity:1;color:var(--magenta)}
+nav.main a.active{opacity:1;color:var(--magenta)}
+
+/* Icon links (Vinted, WhatsApp). Text labels for these two would take ~130px of a 335px
+   strip; as icons they take 36 and stay recognisable. The accessible name lives in
+   aria-label, and title gives sighted mouse users the same thing on hover.
+   They live outside nav.main so that the scroll container holding the section links
+   cannot carry them off the right edge — the contact cluster is always reachable. */
+.bar-ico{
+  flex:0 0 auto;
+  display:flex;align-items:center;
+  /* A hairline separating "where you can go on this site" from "where you can reach me". */
+  padding-left:9px;
+  border-left:1px solid rgba(242,239,230,.16);
+}
+a.ico{
+  opacity:.8;
+  color:var(--bone);
+  min-width:31px;min-height:44px;
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity .15s,color .15s;
+}
+a.ico:hover{opacity:1;color:var(--magenta)}
+/* WhatsApp's own green, because that recognition is the whole value of an icon. Clears AA
+   comfortably on this ground (~6:1). */
+a.wa{color:#25D366}
+a.wa:hover{color:#3BE87C}
+
+/* TWO ROWS on a phone, one row from 641px up.
+ *
+ * This replaces a single scrolling row that hid the contact icons below 641px. Both halves
+ * of that arrangement were measured to be failing:
+ *
+ *   - The nav still overflowed. At 375px — an iPhone, not an edge case — the four labels
+ *     needed 225px in a 203px box, so the last one was cut off mid-word with no scrollbar
+ *     and no fade to say it could be scrolled. The fade existed but was scoped to 339px and
+ *     below, i.e. exactly NOT the widths where the clipping happened.
+ *
+ *   - Hiding .bar-ico cost more than it saved. WhatsApp is this site's primary contact
+ *     channel — it is the contactPoint in the structured data — and on a phone it survived
+ *     only in the footer, 14,000px down on the wardrobe page. The one device where tapping
+ *     a WhatsApp link opens the actual app is the one device that had no link to tap.
+ *
+ * Giving the links their own full-width row solves both at once: 28 characters of label fit
+ * inside 320px with room to spare, so nothing clips and nothing needs a scroll hint, and the
+ * icons keep their place on row one. It costs ~44px of vertical space on a phone, which is
+ * the cheapest thing on the screen. */
+@media (max-width:640px){
+  .bar{flex-wrap:wrap;padding-bottom:0}
+  nav.main{
+    order:3;flex-basis:100%;margin-left:0;
+    gap:18px;
+    /* Optical alignment with the wordmark above it, minus the tap target's own padding. */
+    border-top:1px solid rgba(242,239,230,.10);
+  }
+  /* Still a scroll container — a future fifth module, or a very narrow phone, should
+     degrade to scrolling rather than clipping. The fade now applies wherever that can
+     happen instead of only below 339px, and it is keyed to the scroll position so it is
+     invisible once you reach the end. */
+  nav.main{
+    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);
+    mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);
+  }
+  .bar-ico{margin-left:auto}
+}
+
+/* Anchor clearance has to match the header that is actually sticking. The header is one row
+   (52px) from 641px up and two (~96px) below it, so a single global value would either park
+   an anchored review under the bar on a phone or leave a gap on a desktop. */
+@media (max-width:640px){
+  :target,[id]{scroll-margin-top:112px}
+}
+
+@media (min-width:641px){
+  :root{--gutter:30px}
+  .bar{min-height:64px;gap:24px}
+  .brand{font-size:15px;letter-spacing:.04em}
+  nav.main{
+    gap:24px;font-size:12.5px;letter-spacing:.04em;overflow-x:visible;
+  }
+  nav.main a{min-height:0}
+  .bar-ico{padding-left:20px}
+}
+
+/* ---------- image frames ---------- */
+
+.frame{position:relative;overflow:hidden;border:1px solid rgba(58,30,22,.18)}
+/* Photos are wrapped in <picture> for the WebP/JPEG choice. display:contents takes the
+   wrapper out of the layout entirely, so .ph below still positions against .frame exactly
+   as it did when the <img> was a direct child. */
+.frame picture{display:contents}
+.frame .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.frame .grain{
+  position:absolute;inset:0;z-index:2;opacity:.2;mix-blend-mode:overlay;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g2)'/%3E%3C/svg%3E");
+}
+.frame .cap{
+  position:absolute;left:10px;bottom:9px;z-index:3;
+  font-size:10.5px;letter-spacing:.09em;color:var(--bone);text-transform:uppercase;
+  background:rgba(58,30,22,.6);padding:3px 8px;
+}
+.frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(58,30,22,.55);mix-blend-mode:multiply;pointer-events:none}
+
+/* Restaurant names sit ON the photograph, in the same bottom-left slot the garment
+   captions use, rather than floating above it as loose text. It is a name rather than a
+   descriptor, so it is set larger and heavier than a plain .cap — and gets a gradient
+   scrim instead of a flat chip, because a restaurant photo is busy and unpredictable
+   where a flat-lay garment shot is not. */
+.frame .cap.rname{
+  left:0;right:0;bottom:0;
+  font-size:14px;font-weight:600;letter-spacing:.03em;
+  padding:26px 12px 10px;
+  background:linear-gradient(to top,rgba(28,24,16,.88),rgba(28,24,16,.55) 55%,transparent);
+}
+
+/* A frame that actually contains a photograph dials the grain and vignette back, so the
+   treatment reads as a tint rather than smothering the image. */
+.frame:has(.ph) .grain{opacity:.06}
+.frame:has(.ph)::after{box-shadow:inset 0 0 40px 6px rgba(58,30,22,.18)}
+
+/* spice-duotone placeholder grounds, hue set per element */
+.sp-mag{background:radial-gradient(85% 85% at 35% 25%,#E4713F,transparent 55%),linear-gradient(150deg,#D3502F,#3D2B24)}
+.sp-pap{background:radial-gradient(85% 85% at 40% 30%,#E4713F,transparent 55%),linear-gradient(150deg,#C24420,#2E1F19)}
+.sp-saf{background:radial-gradient(85% 80% at 45% 35%,#E4EF9A,transparent 55%),linear-gradient(150deg,#B7C13F,#5C5E1E)}
+.sp-oli{background:radial-gradient(85% 85% at 35% 30%,#A9AA4E,transparent 55%),linear-gradient(150deg,#8A8B32,#3A3A14)}
+.sp-chi{background:radial-gradient(85% 85% at 55% 30%,#E4713F,transparent 55%),linear-gradient(150deg,#C24420,#2E1F19)}
+.sp-plum{background:radial-gradient(85% 85% at 40% 30%,#6E6A4B,transparent 55%),linear-gradient(150deg,#4A3B30,#241812)}
+
+/* ---------- page furniture ---------- */
+
+.page-head{border-bottom:1px solid rgba(58,30,22,.22);padding:38px 0 30px;position:relative}
+.crumb{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
+.page-head h1{font-weight:300;font-size:clamp(28px,7vw,60px);line-height:1.04;letter-spacing:-.01em;max-width:20ch;margin-bottom:18px}
+.page-head h1 b{font-weight:600;color:var(--magenta)}
+.page-head .lede{font-size:14px;color:var(--bone-dim);max-width:62ch}
+.page-head .lede b{color:var(--magenta);font-weight:500}
+
+@media (min-width:641px){
+  .page-head{padding:52px 0 40px}
+}
+
+/* A light hairline, not the old rgba(58,30,22,.22) — a dark rule on a dark ground is
+   invisible, which is half of why the sections ran together. */
+section{border-bottom:1px solid rgba(242,239,230,.10)}
+
+/* Alternating bands give the page a rhythm, so scrolling past a section boundary is
+   obvious without having to read the heading. */
+main > section:nth-of-type(even){background:var(--band)}
+
+
+/* padding-block, NOT the `padding: 22px 0 44px` shorthand this used to be.
+ *
+ * .sec-inner is always applied alongside .wrap (`class="wrap sec-inner"`), and .wrap sets
+ * `padding: 0 var(--gutter)`. The shorthand here reset the horizontal padding back to 0,
+ * so every section on every page ran flush to both edges of the screen — text touching
+ * the bezel on a phone. Same bug applied to .hero-inner in index.css.
+ * Setting only the block axis leaves .wrap's inline gutter intact. */
+.sec-inner{padding-block:22px 44px}
+
+/* Stacked on a phone. The old rule was flex with `justify-content:space-between` at every
+   width, and .expo carried white-space:nowrap — so at 375px the exposition text ran off
+   the right edge of the screen and was simply cut off. */
+.sec-top{
+  display:flex;flex-direction:column;gap:10px;
+  padding:22px 0 20px;margin-bottom:26px;
+  /* Warm amber rather than the old near-invisible dark rule: this line under the section
+     heading is the marker someone scanning the page actually sees. */
+  border-bottom:1px solid rgba(232,169,60,.22);
+}
+.sec-top h2{font-weight:500;font-size:clamp(19px,5vw,30px);letter-spacing:-.01em;text-transform:uppercase}
+.sec-top .expo{
+  font-size:11px;letter-spacing:.07em;color:var(--bone-dim);
+  line-height:1.9;opacity:.85;
+  /* Deliberately NOT nowrap at this width — that is what caused the overflow. */
+  text-align:left;
+}
+
+@media (min-width:721px){
+  .sec-inner{padding-block:22px 60px}
+  .sec-top{flex-direction:row;justify-content:space-between;align-items:flex-start;gap:20px;padding:22px 0 26px;margin-bottom:34px}
+  .sec-top .expo{text-align:right;white-space:nowrap}
+}
+
+.sec-lead{max-width:62ch;font-size:14px;color:var(--bone-dim);margin-bottom:32px}
+.sec-lead b{color:var(--magenta);font-weight:600}
+
+/* ---------- buttons ---------- */
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-size:12px;letter-spacing:.07em;text-transform:uppercase;
+  padding:12px 20px;min-height:44px;
+  border:1px solid var(--bone);color:var(--bone);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.btn:hover{background:var(--bone);color:var(--void)}
+.btn.mag{border-color:var(--magenta);color:var(--magenta)}
+.btn.mag:hover{background:var(--magenta);color:var(--void)}
+.btn.saf{border-color:var(--saffron);background:var(--saffron);color:var(--void)}
+.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--void)}
+
+.cta-row{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+/* The home page puts a cta-row ABOVE the image grid as well as below it, and the rule
+   above only set a top margin — so the "Open Vinted closet" buttons sat flush against the
+   first row of photographs. Only applied when something follows, so the trailing cta-row
+   at the end of a section does not add space on top of the section's own padding. */
+.cta-row:not(:last-child){margin-bottom:30px}
+
+/* ---------- grids shared by several pages ---------- */
+
+/* One column by default; widen as the viewport allows. */
+.grid3{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:521px){.grid3{grid-template-columns:1fr 1fr}}
+@media (min-width:801px){.grid3{grid-template-columns:repeat(3,1fr);gap:16px}}
+
+.split{display:grid;grid-template-columns:1fr;gap:16px}
+@media (min-width:721px){.split{grid-template-columns:1fr 1fr}}
+
+.piece{display:flex;flex-direction:column}
+.piece .frame{aspect-ratio:4/5}
+.piece .meta{padding:12px 2px 0;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+/* min-width:0 is load-bearing. Without it the name keeps its max-content width, and a
+   long garment title pushes the nowrap price clean off the right edge of a 375px screen
+   instead of wrapping. */
+.piece .meta .nm{font-size:13px;font-weight:500;color:var(--bone);flex:1 1 auto;min-width:0}
+.piece .meta .pr{font-size:12.5px;color:var(--magenta);white-space:nowrap;flex:0 0 auto}
+.piece .tags{padding:5px 2px 0;font-size:10.5px;letter-spacing:.05em;color:var(--bone-dim);text-transform:uppercase}
+/* Every card used to end in a "View on Vinted →" line — six of them on the home page,
+   twenty-four on the wardrobe. The card is already the link, so the repetition was noise.
+   One small corner mark carries the "this leaves the site" meaning instead, and the link's
+   accessible name carries it in words via .vh. */
+.piece .ext{
+  position:absolute;top:8px;right:8px;z-index:2;
+  width:22px;height:22px;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,9,8,.62);border:1px solid rgba(242,239,230,.28);
+  color:var(--bone);font-size:11px;line-height:1;
+  transition:background .15s,border-color .15s,color .15s;
+}
+.piece:hover .ext,.piece:focus-visible .ext{background:var(--magenta);border-color:var(--magenta);color:var(--void)}
+.piece:hover .frame{outline:2px solid var(--magenta);outline-offset:2px}
+
+.plate{border:1px solid rgba(58,30,22,.2);display:flex;flex-direction:column;background:var(--void-2)}
+.plate .frame{aspect-ratio:16/9;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+.plate .pbody{padding:20px}
+.plate h3{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--bone)}
+.plate .cz{font-size:11px;color:var(--olive);letter-spacing:.04em;margin-bottom:12px}
+.plate p{font-size:13px;color:var(--bone-dim);margin-bottom:14px}
+.plate .more{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
+.plate a.more:hover{color:var(--magenta)}
+a.plate{transition:transform .15s}
+a.plate:hover{transform:translateY(-2px)}
+a.plate:hover h3{color:var(--magenta)}
+a.plate h3{transition:color .15s}
+
+/* ---------- diary post card ---------- */
+
+/* Shared, not page-specific: the same card appears in the homepage's diary strip and in
+   every rail on diaries.html. It lives here rather than in diaries.css because index.html
+   does not load diaries.css and should not have to.
+
+   Close cousin of .plate, which it does not reuse: .plate is a fixed two-up feature with a
+   16/9 crop and generous padding, sized for one or two items in a .split. A rail card is
+   narrower, denser, and has to hold its height against neighbours in a scrolling track —
+   hence flex:1 on the body and the .more pinned to the bottom, so a two-line title and a
+   four-line title still produce cards that line up. */
+.post{
+  display:flex;flex-direction:column;
+  border:1px solid rgba(58,30,22,.2);background:var(--void-2);
+  transition:transform .15s,border-color .15s;
+}
+.post .frame{aspect-ratio:16/10;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+.post .pbody{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto}
+.post h3{
+  font-size:15px;font-weight:600;line-height:1.25;letter-spacing:-.01em;
+  color:var(--bone);margin-bottom:8px;transition:color .15s;
+}
+.post p{font-size:12.5px;line-height:1.6;color:var(--bone-dim);margin-bottom:14px}
+/* margin-top:auto is what aligns the read-links across a row of uneven cards. */
+.post .more{margin-top:auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
+.post:hover{transform:translateY(-2px);border-color:rgba(232,169,60,.35)}
+.post:hover h3{color:var(--magenta)}
+.post:hover .frame{filter:brightness(1.06)}
+/* A card is a link, so it must show a focus ring — and the ring goes round the whole card
+   rather than the text inside it, which is what a keyboard user is actually moving between. */
+.post:focus-visible{outline:2px solid var(--magenta);outline-offset:3px}
+
+/* The larger variant used by the Tram 22 grid at the top of diaries.html. Same card, more
+   air, a wider crop — it is the front page of the journal. */
+.post-lg .frame{aspect-ratio:4/3}
+.post-lg h3{font-size:16.5px}
+
+.grid4{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:521px){.grid4{grid-template-columns:1fr 1fr}}
+@media (min-width:1001px){.grid4{grid-template-columns:repeat(4,1fr);gap:16px}}
+
+@media (prefers-reduced-motion:reduce){
+  .post:hover{transform:none}
+}
+
+/* ---------- footer ---------- */
+
+footer{padding:36px 0 44px}
+.foot{display:flex;flex-direction:column;gap:24px;flex-wrap:wrap;align-items:flex-start}
+.foot .fb{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.foot .fb b{color:var(--magenta)}
+.foot p{font-size:12px;color:var(--bone-dim);max-width:38ch;margin-top:10px}
+.foot nav{display:flex;flex-direction:column;gap:2px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+/* 44px, not 40 — these are the five footer links, and on a phone they were the only
+   targets on the site still under the WCAG minimum. */
+.foot nav a{opacity:.68;display:flex;align-items:center;min-height:44px}
+.foot nav a:hover{opacity:1;color:var(--magenta)}
+
+/* The footer carries WhatsApp as a labelled link rather than a bare icon: by the time
+   someone has scrolled this far they are looking for a way to get in touch, and a label
+   converts far better than a glyph. The header icon is for people who already know. */
+.foot nav a.wa-link{color:#25D366;opacity:.9;gap:8px}
+.foot nav a.wa-link:hover{opacity:1;color:#3BE87C}
+.wa-ico{flex:0 0 auto}
+
+/* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner.
+   This line is the whole privacy notice. */
+.foot .privacy{font-size:10.5px;color:var(--bone-dim);opacity:.65;margin-top:18px;letter-spacing:.03em}
+
+@media (min-width:641px){
+  footer{padding:44px 0 56px}
+  .foot{flex-direction:row;justify-content:space-between;gap:24px}
+  .foot nav{gap:8px}
+  .foot nav a{min-height:0}
+}
+
+/* Honour the OS-level "reduce motion" setting: kill the smooth scroll and the hover
+   translate, which are the only movement on the site. */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  a.plate:hover{transform:none}
+}

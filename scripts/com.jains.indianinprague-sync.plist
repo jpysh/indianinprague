@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Daily catalog sync + publish for indianinprague.jains.es.
+
+  NOT LOADED BY DEFAULT. This runs ./scripts/publish.sh unattended, which deploys to the
+  live site and pings IndexNow — enable it only when you are happy for the site to track
+  the Vinted closet without anyone looking at the result first.
+
+  To enable:
+    cp scripts/com.jains.indianinprague-sync.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.jains.indianinprague-sync.plist
+
+  To disable:
+    launchctl unload ~/Library/LaunchAgents/com.jains.indianinprague-sync.plist
+
+  To check what it did:
+    tail -50 /Users/webserver/code/indianinprague/.sync.log
+
+  07:15 rather than midnight: the ECB publishes its daily reference rate on CET working
+  mornings, so an early-morning run picks up the current day's rate rather than yesterday's.
+  RunAtLoad is false so enabling it does not immediately fire a deploy.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jains.indianinprague-sync</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/webserver/code/indianinprague/scripts/publish.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/webserver/code/indianinprague</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key><integer>7</integer>
+    <key>Minute</key><integer>15</integer>
+  </dict>
+
+  <key>RunAtLoad</key>
+  <false/>
+
+  <!-- publish.sh shells out to node, docker and magick; launchd's default PATH has none
+       of them. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/webserver/code/indianinprague/.sync.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/webserver/code/indianinprague/.sync.log</string>
+</dict>
+</plist>

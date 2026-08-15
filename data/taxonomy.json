@@ -1,0 +1,114 @@
+{
+  "_comment": [
+    "Hand-maintained. Maps what Vinted returns (Czech) onto what this site shows (English).",
+    "",
+    "categories: Vinted sends a Czech breadcrumb string like 'Bydlení Pekáče' or 'Ženy Šaty'.",
+    "  Matching is longest-prefix, so 'Ženy' catches the whole women's branch while",
+    "  'Ženy Šperky' overrides it for jewellery. Add a rule only when sync-vinted.mjs",
+    "  reports an unmapped branch at the end of a run — never by going through items.",
+    "",
+    "  Spirituality and Wellness have no equivalent in Vinted's tree. Those are curatorial,",
+    "  not structural, so they are assigned per item in overrides.json, which always wins",
+    "  over the rules below.",
+    "",
+    "conditions / colors: Vinted's closed sets. Anything not listed passes through as-is,",
+    "  so a missing entry shows the Czech word rather than breaking the page."
+  ],
+
+  "categories": {
+    "Ženy": "Fashion",
+    "Muži": "Fashion",
+    "Děti": "Fashion",
+    "Bydlení": "Home Decor",
+
+    "Ženy Náhrdelníky": "Jewellery",
+    "Ženy Naušnice": "Jewellery",
+    "Ženy Náramky": "Jewellery",
+    "Ženy Prsteny": "Jewellery",
+    "Ženy Soupravy šperků": "Jewellery",
+    "Ženy Piercing": "Jewellery",
+    "Ženy Hodinky": "Jewellery",
+    "Muži Náramky": "Jewellery",
+    "Muži Náhrdelníky": "Jewellery",
+    "Muži Hodinky": "Jewellery",
+    "Koníčky a sběratelství Přívěsky": "Jewellery",
+
+    "Knihy, hudba, video": "Books",
+
+    "Krása": "Wellness",
+    "Ženy Péče o obličej": "Wellness",
+    "Ženy Péče o tělo": "Wellness",
+    "Ženy Nástroje pro péči o tělo": "Wellness"
+  },
+
+  "conditions": {
+    "Nové s visačkou": "New with tags",
+    "Nový s visačkou": "New with tags",
+    "Nové bez visačky": "New without tags",
+    "Nový bez visačky": "New without tags",
+    "Velmi dobrý": "Very good",
+    "Velmi dobrý stav": "Very good",
+    "Dobrý": "Good",
+    "Dobrý stav": "Good",
+    "Uspokojivý": "Satisfactory",
+    "Uspokojivý stav": "Satisfactory"
+  },
+
+  "colors": {
+    "Bílá": "White",
+    "Černá": "Black",
+    "Šedá": "Grey",
+    "Modrá": "Blue",
+    "Námořnická modrá": "Navy",
+    "Tyrkysová": "Turquoise",
+    "Zelená": "Green",
+    "Khaki": "Khaki",
+    "Červená": "Red",
+    "Vínová": "Burgundy",
+    "Růžová": "Pink",
+    "Fialová": "Purple",
+    "Žlutá": "Yellow",
+    "Oranžová": "Orange",
+    "Hnědá": "Brown",
+    "Béžová": "Beige",
+    "Krémová": "Cream",
+    "Zlatá": "Gold",
+    "Stříbrná": "Silver",
+    "Vícebarevná": "Multicolour",
+    "Průhledná": "Transparent",
+    "Smíšená": "Multicolour",
+    "Námořnická": "Navy",
+    "Tmavě růžová": "Dark pink",
+    "Tmavě zelená": "Dark green",
+    "Tmavě modrá": "Dark blue",
+    "Světle modrá": "Light blue",
+    "Světle zelená": "Light green",
+    "Korálová": "Coral",
+    "Lila": "Lilac",
+    "Hořčicově žlutá": "Mustard",
+    "Meruňková": "Apricot",
+    "Broskvová": "Peach",
+    "Mátová": "Mint",
+    "Olivová": "Olive",
+    "Bordó": "Burgundy",
+    "Písková": "Sand"
+  },
+
+  "_sizes_comment": [
+    "Vinted returns a compound size like 'L / 40 / 12' (UK / EU / US). Shoppers filter on",
+    "the letter, so sync-vinted.mjs takes the part before the first slash and maps it here.",
+    "Anything unmapped falls back to the raw string, and items with no size at all (books,",
+    "decor, most jewellery) simply carry none — the size filter hides itself on pages where",
+    "nothing has one."
+  ],
+  "sizes": {
+    "XS": "XS",
+    "S": "S",
+    "M": "M",
+    "L": "L",
+    "XL": "XL",
+    "XXL": "XXL",
+    "Univerzální": "One size",
+    "Uni": "One size"
+  }
+}

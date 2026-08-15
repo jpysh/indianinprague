@@ -1,0 +1,110 @@
+/* index.html — the hero is the only thing on this page that the others do not share.
+ * Loaded after site.css.
+ *
+ * The original inline block also carried .rrow and .rv rules, which no element on this
+ * page uses (they belong to restaurants.html). Dropped rather than carried forward.
+ */
+
+/* ---------- shelf tiles ---------- */
+
+/* The homepage used to show six individual garments. With 150 pieces across six shelves
+   that is the wrong unit: six arbitrary items tell a first-time visitor nothing about what
+   the wardrobe holds, and the chance any one of them is the thing they came for is poor.
+   A shelf with a count answers "what do you have?" and lets someone pick a lane.
+
+   Same .frame/.grain/.cap vocabulary as the product cards, so the front page still looks
+   like the shop it leads into. */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (min-width:641px){.tiles{grid-template-columns:repeat(3,1fr);gap:14px}}
+
+.tile{
+  display:flex;flex-direction:column;
+  border:1px solid rgba(58,30,22,.2);background:var(--void-2);
+  transition:transform .15s,border-color .15s;
+}
+.tile .frame{aspect-ratio:1/1;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+/* The count sits in the caption slot the product cards use for the category name — bottom
+   left, on the photograph, over the same scrim. */
+.tile .frame .cap{font-size:10px;letter-spacing:.08em}
+.tile .tbody{padding:12px 12px 14px;display:flex;flex-direction:column;flex:1 1 auto;gap:3px}
+.tile h3{
+  font-size:13.5px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;
+  color:var(--bone);transition:color .15s;
+}
+.tile .tcz{font-size:10.5px;letter-spacing:.04em;color:var(--bone-dim);opacity:.85}
+.tile:hover{transform:translateY(-2px);border-color:rgba(232,169,60,.35)}
+.tile:hover h3{color:var(--magenta)}
+.tile:hover .frame{filter:brightness(1.06)}
+.tile:focus-visible{outline:2px solid var(--magenta);outline-offset:3px}
+
+/* The "everything" tile has no photograph — it is a destination, not a shelf. It fills the
+   last cell of the grid and inverts the emphasis so it reads as the way past the shelves
+   rather than as a seventh one. */
+.tile-all{
+  border-color:rgba(232,169,60,.4);
+  background:linear-gradient(150deg,rgba(232,169,60,.14),transparent 70%),var(--void-2);
+  justify-content:center;
+}
+.tile-all .tbody{padding:18px 14px;gap:6px;justify-content:center}
+.tile-all h3{font-size:15px;color:var(--magenta)}
+.tile-all .more{
+  margin-top:8px;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--saffron);
+}
+
+@media (min-width:641px){
+  .tile .tbody{padding:14px 15px 16px}
+  .tile h3{font-size:15px}
+  .tile .tcz{font-size:11px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  .tile:hover{transform:none}
+}
+
+/* ---------- hero ---------- */
+
+.hero{position:relative;border-bottom:1px solid rgba(58,30,22,.22);overflow:hidden}
+
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  background:
+    radial-gradient(60% 80% at 12% 20%, rgba(155,59,119,.20), transparent 55%),
+    radial-gradient(55% 70% at 88% 15%, rgba(232,169,60,.28), transparent 50%),
+    radial-gradient(70% 90% at 75% 95%, rgba(200,67,46,.20), transparent 55%),
+    radial-gradient(50% 60% at 40% 70%, rgba(126,138,40,.16), transparent 55%),
+    var(--void);
+}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;opacity:.10;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='hg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='3'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23hg)'/%3E%3C/svg%3E");
+}
+
+/* padding-block, not the shorthand — see the note on .sec-inner in site.css.
+   `padding:52px 0 48px` cancelled .wrap`s inline gutter and put the hero hard against
+   both screen edges. */
+.hero-inner{position:relative;z-index:2;padding-block:52px 48px}
+/* Bone on chilli, not void-on-paprika. Dark text on paprika measured 2.29:1 — and
+   paprika has so little headroom that only near-black clears AA on it (4.44:1 at
+   #14110E), which reads as a printing error against this warm palette. Flipping to light
+   text on the deeper chilli red gives 4.73:1 while keeping the chip unmistakably red. */
+.hero .label{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--bone);background:var(--chilli);display:inline-block;padding:6px 12px;margin-bottom:22px;font-weight:500}
+.hero h1{font-weight:300;font-size:clamp(34px,10vw,86px);line-height:.98;letter-spacing:-.02em;max-width:16ch;color:#F2EFE6}
+.hero h1 b{font-weight:600;color:var(--void);background:var(--magenta);padding:0 .12em}
+.hero .sub{margin-top:22px;color:#D6CFB8;font-size:14.5px;max-width:54ch;letter-spacing:.01em}
+.hero-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+
+/* The MMXXVI stamp is decorative. On a phone it would collide with the headline, so it
+   only appears once the hero has width to spare. */
+.hero-index{display:none}
+
+@media (min-width:641px){
+  .hero-inner{padding-block:96px 84px}
+  .hero .label{margin-bottom:26px}
+  .hero .sub{margin-top:26px}
+  .hero-cta{margin-top:34px}
+  .hero-index{
+    display:block;
+    position:absolute;top:26px;right:30px;z-index:2;text-align:right;
+    color:var(--magenta);font-size:11px;letter-spacing:.1em;line-height:1.8;opacity:.9;
+  }
+}

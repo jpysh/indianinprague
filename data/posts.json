@@ -1,0 +1,136 @@
+{
+  "_comment": [
+    "Hand-maintained. Every post that appears in the Diaries hub, and the shelves they sit on.",
+    "",
+    "diaries.html is generated from this file by scripts/build-diaries.mjs. Adding a post is",
+    "one entry here plus a build — there is no CMS and no database, deliberately.",
+    "",
+    "A category renders as one horizontal rail. A category with NO posts is not rendered at",
+    "all: an empty shelf on a page whose whole job is to show there is something to read is",
+    "worse than a shorter page. So the six categories below are the full vocabulary, and the",
+    "page grows into them as posts are written. Order here is order on the page.",
+    "",
+    "Fields on a post:",
+    "  id       stable slug, used for nothing yet but will be the anchor when posts get pages",
+    "  cat      must match a category id below",
+    "  title    the card's heading",
+    "  blurb    one or two sentences; the card truncates nothing, so keep it short",
+    "  href     where the card goes",
+    "  date     ISO. Sorts the rails and picks the four on the Tram 22 grid and the homepage",
+    "  photo    key into images/derived/manifest.json, or null for a spice-gradient card",
+    "  kicker   the small line above the title. Usually the place or the dish",
+    "",
+    "The five restaurant entries point at anchors on restaurants.html rather than at pages of",
+    "their own. That page holds the reviews, carries the Review structured data and has the",
+    "search ranking for 'indická restaurace praha' — splitting it into five thin pages would",
+    "throw all of that away to gain nothing a rail cannot already do."
+  ],
+
+  "categories": [
+    {
+      "id": "food",
+      "name": "Food I love in the city",
+      "cs": "indická restaurace praha",
+      "note": "Every Indian place in Prague, judged honestly — plus the vegan spots worth the tram ride.",
+      "all": { "href": "restaurants.html", "label": "All the reviews" }
+    },
+    {
+      "id": "fashion",
+      "name": "What I wear",
+      "cs": "indické oblečení",
+      "note": "Contemporary Indian wear, and how it actually works in a European city.",
+      "all": { "href": "clothes.html", "label": "The clothes" }
+    },
+    {
+      "id": "jewellery",
+      "name": "Silver and beads",
+      "cs": "šperky",
+      "note": "Where the pieces came from, and what they are.",
+      "all": { "href": "jewellery.html", "label": "The jewellery" }
+    },
+    {
+      "id": "home",
+      "name": "Things for a flat",
+      "cs": "bytové doplňky",
+      "note": "Making a Prague rental feel like somewhere you live.",
+      "all": { "href": "home-decor.html", "label": "Home things" }
+    },
+    {
+      "id": "spirit",
+      "name": "Brass and ritual",
+      "cs": "duchovní předměty",
+      "note": "Ordinary household objects in India, sold without the incense-shop mysticism.",
+      "all": { "href": "ritual-objects.html", "label": "The objects" }
+    },
+    {
+      "id": "life",
+      "name": "Life between two countries",
+      "cs": "život mezi dvěma zeměmi",
+      "note": "Paperwork, winters, homesickness, and the small things nobody warns you about.",
+      "all": null
+    }
+  ],
+
+  "posts": [
+    {
+      "id": "contemporary-indian-wear",
+      "cat": "fashion",
+      "title": "Contemporary Indian wear on the streets of Prague",
+      "blurb": "Not Goa-hippie, not festival sari. The new age of Indian wear — earthy palettes, hand-loomed craft, avant-garde fusion — and exactly how to style it into a European wardrobe.",
+      "href": "article-contemporary-indian-wear.html",
+      "date": "2026-08-05",
+      "photo": "images/IMG_5564.JPG",
+      "kicker": "Dispatch 01 · block print"
+    },
+    {
+      "id": "annamalai",
+      "cat": "food",
+      "title": "Annamalai",
+      "blurb": "Cooked to order in a dim underground room in Nové Město, with the TV blaring Indian songs. Tastes vary day to day, the way fresh cooking does. The only South Indian I keep going back to.",
+      "href": "restaurants.html#annamalai",
+      "date": "2026-08-04",
+      "photo": "images/IMG_4126.JPG",
+      "kicker": "Nové Město · tastes like home"
+    },
+    {
+      "id": "indelicious",
+      "cat": "food",
+      "title": "INDelicious Bistro",
+      "blurb": "Street food from across India, in Nusle. Super tasty, and somehow I never leave bloated. Pav bhaji, vada pav, bhel.",
+      "href": "restaurants.html#indelicious",
+      "date": "2026-08-04",
+      "photo": "images/IMG_5000.jpg",
+      "kicker": "Nusle · street food"
+    },
+    {
+      "id": "dosa-dosa",
+      "cat": "food",
+      "title": "Dosa Dosa",
+      "blurb": "Fully vegan South Indian on Újezd, and a perfect breakfast stop. California dosa, uttapam, buckwheat noodles, and cold brew worth staying for.",
+      "href": "restaurants.html#dosa-dosa",
+      "date": "2026-08-03",
+      "photo": "images/IMG_5054.JPG",
+      "kicker": "Újezd · fully vegan"
+    },
+    {
+      "id": "pastva",
+      "cat": "food",
+      "title": "Pastva",
+      "blurb": "A rotating menu in Anděl, friendly staff, and dishes that have no business being this good without animal products. Burgers, risotto, dumplings, borscht.",
+      "href": "restaurants.html#pastva",
+      "date": "2026-08-02",
+      "photo": "images/IMG_4041.JPG",
+      "kicker": "Anděl · fully vegan"
+    },
+    {
+      "id": "palo-verde",
+      "cat": "food",
+      "title": "Palo Verde Bistro",
+      "blurb": "Dreamy decor on Žitná — mushroom lamps and cosmic skies. The spinach chimney and the parmesan burger are the reason to come back.",
+      "href": "restaurants.html#palo-verde",
+      "date": "2026-08-01",
+      "photo": null,
+      "kicker": "Žitná · fully vegan"
+    }
+  ]
+}

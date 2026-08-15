@@ -1,0 +1,22 @@
+{
+  "name": "indianinprague",
+  "private": true,
+  "description": "Build pipeline for indianinprague.jains.es. The site itself has no dependencies — every script under scripts/ imports only node: builtins, deliberately. This file exists for exactly one reason: to pin wrangler.",
+  "comment": [
+    "Why wrangler is pinned to an exact version with a lockfile, rather than invoked as",
+    "`npx wrangler`: publish.sh runs unattended from launchd every morning WITH A CLOUDFLARE",
+    "DEPLOY TOKEN IN THE ENVIRONMENT. `npx wrangler` resolves the latest version from the",
+    "npm registry at run time, which means a freshly published wrangler — or a freshly",
+    "compromised one, or any of its 37 transitive dependencies — would execute here, with",
+    "that token, before anyone looked at it. An exact version plus package-lock.json means",
+    "the bytes that ran yesterday are the bytes that run today, and an upgrade is a decision",
+    "someone makes rather than something that happens overnight.",
+    "",
+    "Upgrade deliberately:  npm install --save-dev --save-exact wrangler@<version>",
+    "",
+    "node_modules/ is never staged into dist/ — build-dist.mjs copies an explicit list."
+  ],
+  "devDependencies": {
+    "wrangler": "4.123.0"
+  }
+}
