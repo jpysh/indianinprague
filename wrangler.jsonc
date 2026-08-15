@@ -1,0 +1,33 @@
+{
+  // indianinprague.jains.es — a static-assets-only Worker. There is no `main` script: this
+  // Worker serves files and nothing else, which is why the deployment stays on the free
+  // tier without touching the 100k/day request budget that scripted Workers draw from.
+  //
+  // WHY WORKERS STATIC ASSETS AND NOT PAGES
+  // Pages force-drops the .html extension: /wardrobe.html answers 308 -> /wardrobe, and the
+  // behaviour is not configurable. This site links every page as href="wardrobe.html", the
+  // sitemap lists .html URLs, and every page carries <link rel="canonical"> pointing at its
+  // .html form. On Pages a crawler would therefore fetch /wardrobe.html, be redirected to
+  // /wardrobe, and then be told by the page itself that the canonical URL is /wardrobe.html
+  // — contradictory signals on every page of the site, plus a redirect hop on every
+  // internal click. nginx served both forms at 200.
+  //
+  // Workers Static Assets exposes html_handling, so the URLs stay exactly as they are
+  // today. Same free limits as Pages (20,000 files, 25 MiB each), same _headers and
+  // _redirects support, no markup churn, no SEO risk.
+  "name": "indianinprague",
+  "compatibility_date": "2026-08-15",
+
+  "assets": {
+    "directory": "./dist",
+
+    // "none" = serve the literal path requested. No .html is added, dropped, or redirected.
+    // This is the whole reason for choosing Workers over Pages; do not change it without
+    // rewriting every internal link, canonical tag and sitemap entry to match.
+    "html_handling": "none",
+
+    // Unmatched paths get 404.html with a 404 status, matching the nginx `=404` fallthrough
+    // and location = /404.html block.
+    "not_found_handling": "404-page"
+  }
+}

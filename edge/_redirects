@@ -1,0 +1,35 @@
+# Redirects for Cloudflare Pages — the replacement for the `return 301` locations in
+# nginx/indianinprague.conf. Copied into dist/ by scripts/build-dist.mjs; Pages reads it
+# from the deployment root and does not serve it.
+#
+# Format: <from> <to> <status>. Limits: 2,000 static + 100 dynamic rules.
+#
+# The homepage. `html_handling: "none"` in wrangler.jsonc makes the asset server serve the
+# literal path requested and nothing else — which is exactly what keeps /wardrobe.html
+# answering 200 instead of redirecting to /wardrobe, and is the whole reason this site is on
+# Workers Static Assets rather than Pages. The cost of that setting is that "/" no longer
+# maps to index.html by itself: measured against a local dev server, the bare homepage
+# returned 404 and served 404.html.
+#
+# The `200` status makes this a REWRITE, not a redirect: the visitor stays on "/" and the
+# bytes of index.html are returned there. A 301 to /index.html would work too and would be
+# wrong — it would put a redirect on the most-linked URL of the site and split it from the
+# canonical tag, which is the same trap that ruled Pages out.
+/            /index.html      200
+
+# NOT here: /404.html is served automatically for unmatched paths, via
+# not_found_handling in wrangler.jsonc.
+#
+# Also NOT here, and a deliberate change from nginx: the extensionless form of each page
+# (/clothes for clothes.html) no longer resolves. nginx offered it via `try_files $uri
+# $uri.html`, but nothing in the markup, the sitemap or any canonical tag has ever used it —
+# it existed only for URLs typed by hand. Restoring it would mean serving every page at two
+# live URLs, which is the duplicate-content problem the .html decision above avoids. The one
+# extensionless path that was ever published, /shop, is redirected below.
+
+# shop.html became wardrobe.html when the top nav went to five modules and the word "shop"
+# left the visitor-facing site. It was the most linked and best indexed page here, so the
+# old path stays alive permanently. 301 and not 302: the move is permanent, and only a 301
+# passes the accumulated ranking to the new URL. Both forms, because both resolved before.
+/shop.html   /wardrobe.html   301
+/shop        /wardrobe.html   301

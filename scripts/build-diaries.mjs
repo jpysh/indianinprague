@@ -169,8 +169,9 @@ const index = await readFile(path.join(ROOT, "index.html"), "utf8");
 const header = /<header class="site">[\s\S]*?<\/header>/.exec(index);
 const footer = /<footer>[\s\S]*?<\/footer>/.exec(index);
 if (!header || !footer) throw new Error("could not lift <header>/<footer> out of index.html");
-const v = /assets\/site\.css\?v=(\d+)/.exec(index);
-const ver = v ? v[1] : "1";
+// No ?v= token is emitted by this file. bump-assets.mjs owns it outright and runs after
+// every generator; see the note in build-shop.mjs's chrome() for what having two owners
+// cost when the token changed shape.
 
 // The current-page marking the rest of the site gets. Same rule as sync-chrome.mjs.
 const chromeHeader = header[0].replace(
@@ -203,10 +204,10 @@ const html = `<!DOCTYPE html>
 <meta property="og:image" content="${SITE}/images/derived/IMG_5564-1200.jpg">
 <meta property="og:image:alt" content="Indian in Prague">
 <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts.css?v=${ver}">
-<link rel="stylesheet" href="assets/site.css?v=${ver}">
-<link rel="stylesheet" href="assets/diaries.css?v=${ver}">
-<link rel="stylesheet" href="assets/module.css?v=${ver}">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/diaries.css">
+<link rel="stylesheet" href="assets/module.css">
 <script type="application/ld+json">
 ${jsonLd(posts)}
 </script>

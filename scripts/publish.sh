@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Publish the site: pull the closet, rebuild every generated artefact, upload to Cloudflare
-# Pages, tell the search engines.
+# Publish the site: pull the closet, rebuild every generated artefact, upload to Cloudflare,
+# tell the search engines.
 #
 # This is the whole operating procedure. Adding a product to the website means listing it
 # on Vinted and running this — there is no second place to type anything.
@@ -74,32 +74,35 @@ if [ -n "$LOCAL" ]; then
   # Serve dist/ rather than the repo root, so what you check is what ships — including the
   # absence of inventory.html. Wrangler's dev server also applies _headers and _redirects,
   # which python3 -m http.server does not, so the CSP and the /shop.html 301 are testable.
-  echo "serve with: npx wrangler pages dev dist"
+  echo "serve with: ./node_modules/.bin/wrangler dev   # serves dist/ exactly as Cloudflare will"
   echo "inventory:  open ./inventory.html directly — it is not in dist/ by design"
   exit 0
 fi
 
-step "9/9 deploy to Cloudflare Pages"
+step "9/9 deploy to Cloudflare"
 
-# The deploy token comes from the macOS Keychain, not from a file and not from the launchd
-# plist. The plist lives in scripts/ and its EnvironmentVariables are world-readable to
-# anything that can read the repo; a token there would be a credential checked in beside the
-# code. Keychain keeps it encrypted at rest and out of every backup of this directory.
+# Cloudflare credentials, in order of preference.
 #
-# One-time setup:
-#   security add-generic-password -a "$USER" -s indianinprague-cf-token -w
-#     (paste the token at the prompt — it does not appear in shell history that way)
+# 1. A scoped API token in the macOS Keychain, if one is there. This is the tighter option:
+#    the token is scoped to "Workers Scripts:Edit" on this account and nothing else, so it
+#    cannot touch DNS, the zone or the other tunnels, and the worst case if it leaks is a
+#    defaced indianinprague.jains.es rather than a lost domain. Set one up with:
+#      security add-generic-password -a "$USER" -s indianinprague-cf-token -w
 #
-# The token itself is scoped to Pages:Edit on this one project. It cannot touch DNS, the
-# zone, Workers or the other tunnels on this account, so the worst case if it leaks is a
-# defaced indianinprague.jains.es and not a lost domain. That scoping is the real control
-# here; everything else is depth.
-if ! CLOUDFLARE_API_TOKEN=$(security find-generic-password -a "$USER" -s indianinprague-cf-token -w 2>/dev/null); then
-  echo "⚠ no Cloudflare token in the Keychain — add it with:" >&2
-  echo "    security add-generic-password -a \"\$USER\" -s indianinprague-cf-token -w" >&2
-  exit 1
+# 2. Otherwise, whatever `wrangler login` stored in ~/Library/Preferences/.wrangler. That is
+#    a browser OAuth session, which is far easier to set up but grants broader account
+#    access than the token above. It refreshes itself, so the unattended 07:15 run keeps
+#    working; if it ever does expire, wrangler exits non-zero, this script stops on `set -e`,
+#    and IndexNow is never pinged — a failed publish, not a broken site.
+#
+# Either way the credential is NEVER put in the launchd plist: that file lives in scripts/
+# and its EnvironmentVariables are readable by anything that can read this directory.
+if CLOUDFLARE_API_TOKEN=$(security find-generic-password -a "$USER" -s indianinprague-cf-token -w 2>/dev/null); then
+  export CLOUDFLARE_API_TOKEN
+  echo "auth: scoped API token from Keychain"
+else
+  echo "auth: wrangler's stored browser login"
 fi
-export CLOUDFLARE_API_TOKEN
 
 # ./node_modules/.bin/wrangler, NOT npx wrangler. npx resolves the latest version from the
 # npm registry at run time, and this script runs unattended with the token above already in
@@ -111,17 +114,17 @@ if [ ! -x ./node_modules/.bin/wrangler ]; then
   exit 1
 fi
 
-# Direct upload: wrangler hashes every file and sends only the ones the project does not
-# already have, so a normal day pushes the rebuilt HTML and the morning's new photos, not
-# 171 MB. --commit-dirty because there is no git repo here; the deploy is the record.
-./node_modules/.bin/wrangler pages deploy dist \
-  --project-name=indianinprague \
-  --branch=main \
-  --commit-dirty=true
+# A static-assets-only Worker — see wrangler.jsonc for why this is not Cloudflare Pages
+# (short version: Pages force-redirects /wardrobe.html to /wardrobe and cannot be told not
+# to, which would fight every canonical tag on the site).
+#
+# wrangler hashes every file and uploads only the ones Cloudflare does not already hold, so
+# a normal morning sends the rebuilt HTML and the day's new photos rather than 171 MB.
+./node_modules/.bin/wrangler deploy
 
 # Confirm the live site is actually serving this build before inviting crawlers to it.
 # Checking the real hostname rather than a local port is the point: it exercises DNS, the
-# Pages custom domain and the edge, which is the whole surface that replaced nginx.
+# custom domain binding and the edge, which is the whole surface that replaced nginx.
 if curl -fsS -o /dev/null "https://indianinprague.jains.es/wardrobe.html"; then
   echo "live origin healthy"
   node scripts/indexnow.mjs

@@ -399,11 +399,14 @@ function chrome(indexHtml) {
   const header = /<header class="site">[\s\S]*?<\/header>/.exec(indexHtml);
   const footer = /<footer>[\s\S]*?<\/footer>/.exec(indexHtml);
   if (!header || !footer) throw new Error("could not lift <header>/<footer> out of index.html");
-  // The ?v= cache token is owned by bump-assets.mjs, so read the one currently in use
-  // rather than hardcoding a number here. Hardcoding meant every regeneration quietly
-  // reverted the generated pages to an older token than the hand-written ones.
-  const v = /assets\/site\.css\?v=(\d+)/.exec(indexHtml);
-  return { header: header[0], footer: footer[0], v: v ? v[1] : "1" };
+  // No ?v= token is emitted here. bump-assets.mjs owns it outright and runs after every
+  // generator, stamping each asset with a hash of its own contents. This function used to
+  // scrape the token out of index.html and echo it onto the generated pages, which broke
+  // silently when the token stopped being a decimal counter: the /(\d+)/ match missed a hex
+  // hash, fell back to "1", and every regenerated page shipped ?v=1 until bump-assets
+  // corrected it moments later. One owner is the fix; a second reader was never buying
+  // anything.
+  return { header: header[0], footer: footer[0] };
 }
 
 // Mark the top-level module the current page belongs to.
@@ -542,10 +545,10 @@ function page(cat, items, manifest, counts, ch) {
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
 <meta property="og:image:alt" content="Indian in Prague">
 <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts.css?v=${ch.v}">
-<link rel="stylesheet" href="assets/site.css?v=${ch.v}">
-<link rel="stylesheet" href="assets/clothes.css?v=${ch.v}">
-<link rel="stylesheet" href="assets/shop.css?v=${ch.v}">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/clothes.css">
+<link rel="stylesheet" href="assets/shop.css">
 <script type="application/ld+json">
 ${jsonLd(cat, items)}
 </script>
@@ -573,7 +576,7 @@ ${markNav(ch.header, "wardrobe")}
 </div></section>
 </main>
 ${ch.footer}
-<script src="assets/shop.js?v=${ch.v}" defer></script>
+<script src="assets/shop.js" defer></script>
 </body>
 </html>
 `;

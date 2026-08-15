@@ -1,21 +1,38 @@
 # indianinprague.jains.es — deployment
 
-Static site **built** on this Mac and **hosted** on Cloudflare Pages. Everything below the
-"Shape" heading still describes the build; what changed on 15 Aug 2026 is only where the
-output lands.
+Static site **built** on this Mac and **hosted** on Cloudflare, as a static-assets-only
+Worker. Everything below the "Shape" heading still describes the build; what changed on
+15 Aug 2026 is only where the output lands.
 
 **Live:** https://indianinprague.jains.es
-**Local preview:** `npx wrangler pages dev dist`
+**Local preview:** `./node_modules/.bin/wrangler dev` (serves `dist/` exactly as the edge will)
 
 ---
 
-## Hosting: Pages, not Docker (15 Aug 2026)
+## Hosting: Cloudflare, not Docker (15 Aug 2026)
 
 nginx, the `cloudflared` tunnel and the two containers are gone. The site is ~1,940 static
 files with no server-side behaviour — `assets/shop.js` filters client-side against JSON
-that is already on disk — so there was nothing for an origin to do. Pages free covers it
-with room to spare: 20,000 files per deployment (we use 1,941), 25 MiB per file (largest
-derivative is 0.59 MiB), unmetered bandwidth. No Workers, no Functions, no KV.
+that is already on disk — so there was nothing for an origin to do. The free tier covers it
+with room to spare: 20,000 files per version (we use 1,941), 25 MiB per file (largest
+derivative is 0.59 MiB), unmetered bandwidth. There is no Worker *script* — `wrangler.jsonc`
+declares assets and no `main` — so nothing draws on the 100k/day request budget.
+
+### Why Workers Static Assets and not Cloudflare Pages
+
+Pages was the obvious choice and was configured first. It force-redirects `/wardrobe.html`
+to `/wardrobe` with a 308, and that behaviour cannot be turned off. This site links every
+page as `href="wardrobe.html"`, `sitemap.xml` lists `.html` URLs, and every page carries a
+`<link rel="canonical">` pointing at its own `.html` form — so on Pages a crawler fetches
+`/wardrobe.html`, gets bounced to `/wardrobe`, and is then told by the page that the
+canonical URL is `/wardrobe.html`. Contradictory signals on every page, plus a redirect hop
+on every internal click. nginx served both forms at 200.
+
+Workers Static Assets exposes `html_handling`, so `"none"` keeps every URL byte-identical to
+what has been indexed for months. Same free limits, same `_headers` and `_redirects`
+support, no markup churn. The one cost: `"none"` also stops `/` mapping to `index.html` by
+itself, which is why `edge/_redirects` carries an explicit `/ → /index.html 200` **rewrite**
+(status 200, not 301 — the homepage must not redirect).
 
 What this buys, beyond one less moving part: the site no longer goes down when this Mac
 sleeps, and it is served from Cloudflare's edge rather than through a tunnel back to a
@@ -40,18 +57,68 @@ The daily job stays here. Four independent reasons, any one of which is decisive
 So: **hosting is Cloudflare's, building is ours.** No Docker is involved any more — node,
 magick, cwebp and wrangler are all native, driven by launchd at 07:15.
 
+### Why the build is NOT containerised
+
+It was considered and rejected. The pipeline's untrusted inputs are Vinted's item HTML and
+the photos it downloads, and the risky operation is ImageMagick parsing those bytes — a real
+risk, but one a container addresses badly here:
+
+- The build's *output* is what gets published, and it needs this directory mounted to do its
+  job. A container would protect the host from a process whose legitimate function is to
+  write the files that go live. That is host safety, not **site** safety.
+- `wrangler` needs the deploy token and network egress regardless, so the credential ends up
+  inside the container anyway.
+- A launchd job at 07:15 that requires Docker Desktop to be awake reintroduces the exact
+  failure mode this migration removed.
+
+Two facts made the trade easy: every script under `scripts/` imports **only `node:`
+builtins** (zero npm dependencies, so no supply chain), and the photos ImageMagick processes
+are the author's own uploads coming back from Vinted, not arbitrary files.
+
+Three cheaper controls were applied instead, and they close more of the real risk:
+
+1. **The Cloudflare credential never goes in the launchd plist** — that file lives in
+   `scripts/` and its `EnvironmentVariables` are readable by anything that can read the repo.
+   `publish.sh` takes whichever of these it finds:
+   - a scoped API token in the macOS Keychain (`Workers Scripts:Edit`, this account only),
+     added with `security add-generic-password -a "$USER" -s indianinprague-cf-token -w`.
+     Tighter: it cannot touch DNS, the zone or the other tunnels, so the worst case if it
+     leaks is a defaced site rather than a lost domain.
+   - otherwise the browser session from `wrangler login`. Much easier to set up, broader
+     access. Chosen deliberately for a personal site; swapping in the token later needs no
+     code change, just the one `security` command above.
+2. **`wrangler` is pinned exactly and lockfiled**, and invoked as
+   `./node_modules/.bin/wrangler` — never `npx wrangler`, which resolves the latest version
+   from the npm registry at run time and would execute it unattended with that token in the
+   environment. `package.json` exists for this single purpose. Upgrade deliberately with
+   `npm install --save-dev --save-exact wrangler@<version>`.
+3. **ImageMagick has a policy** at `~/.config/ImageMagick/policy.xml`, where it survives
+   `brew upgrade`. It was `Policy: Undefined` (fully permissive) before. Delegates are off
+   entirely, and the network/scripting/Ghostscript coders are denied by coder rather than by
+   extension, since a crafted file selects its coder by content. Verified: a remote URL now
+   fails *before* any network request, where previously it fetched to a temp file first.
+
+If isolation is ever wanted, the right split is by trust, not by process: run **sync + image
+derivation** in a container with *no credentials*, and keep **deploy** on the host with the
+token, so untrusted input never meets the secret.
+
 ### The three files that replaced nginx
 
 | Was | Now |
 |---|---|
-| `nginx/security-headers.conf` + per-location `add_header` | `pages/_headers` |
-| `location = /shop.html { return 301 ... }` | `pages/_redirects` |
+| `nginx/security-headers.conf` + per-location `add_header` | `edge/_headers` |
+| `location = /shop.html { return 301 ... }` | `edge/_redirects` |
 | `Dockerfile`'s `COPY` list (what is public) | `scripts/build-dist.mjs` → `dist/` |
+| `listen` / `root` / `index` / 404 handling | `wrangler.jsonc` |
 
-`try_files $uri $uri.html` and the `/404.html` fallback have no replacement because Pages
-does both natively.
+The `/404.html` fallback is `not_found_handling: "404-page"`. `try_files $uri $uri.html` has
+deliberately **not** been replaced: extensionless URLs like `/clothes` no longer resolve.
+Nothing in the markup, sitemap or any canonical tag ever used them — they existed only for
+hand-typed URLs — and restoring them would serve every page at two live URLs, which is the
+duplicate-content problem the `.html` decision above exists to avoid. The one extensionless
+path ever published, `/shop`, is redirected explicitly.
 
-**`dist/` is not cosmetic.** `wrangler pages deploy .` would have uploaded `scripts/`,
+**`dist/` is not cosmetic.** Pointing the asset server at the repo root would have uploaded `scripts/`,
 `data/`, `nginx/`, `.sync.log` and 408 MB of camera originals. `build-dist.mjs` is now the
 single definition of what is public, and it asserts that — it throws if `scripts/`, `data/`
 or `inventory.html` reach the staging directory.
@@ -65,22 +132,29 @@ quietly shipping the internal stock-taking view to the live site. It is withheld
 ## Shape
 
 ```
-visitor ──https──▶ Cloudflare edge ──tunnel──▶ indianinprague-tunnel ──http──▶ indianinprague-site
-                                    (outbound)   (cloudflared)        :8080      (nginx:alpine)
-                                                        └──────── compose network ────────┘
+visitor ──https──▶ Cloudflare edge ──▶ static assets (dist/, uploaded by wrangler)
+
+this Mac, 07:15 daily (launchd):
+  vinted.cz ──▶ sync-vinted ──▶ build-images (magick/cwebp) ──▶ build-* ──▶ dist/ ──▶ wrangler deploy
 ```
 
-Two containers, one `docker-compose.yml`:
+> **Superseded 15 Aug 2026.** The two containers below (`indianinprague-site` running
+> nginx, `indianinprague-tunnel` running cloudflared) and the `Dockerfile`,
+> `docker-compose.yml`, `nginx/` and `.cloudflared/` files that define them are no longer
+> used. They are kept until the Cloudflare deployment has run unattended for a few days,
+> then deleted. Nothing in the daily job touches Docker. The historical description is
+> retained below because the tunnel-and-nginx arrangement is referenced further down this
+> document.
 
 | Container | Image | Role |
 |---|---|---|
 | `indianinprague-site` | built from `Dockerfile` | nginx serving the HTML + images on :8080, published to the host as :8092 |
 | `indianinprague-tunnel` | `cloudflare/cloudflared:latest` | holds the tunnel open, forwards to `indianinprague-site:8080` |
 
-The tunnel reaches the site **by compose service name**, not through the published host
-port. 8092 exists purely so you can `curl` the origin without going out to Cloudflare and
-back. The tunnel container waits on the site's Docker health check before it registers, so
-the hostname is never live while the origin would still 502.
+The tunnel reached the site **by compose service name**, not through the published host
+port. 8092 existed purely so you could `curl` the origin without going out to Cloudflare and
+back. The tunnel container waited on the site's Docker health check before registering, so
+the hostname was never live while the origin would still 502.
 
 ### Cloudflare
 
@@ -460,8 +534,8 @@ three font files and six photographs. Repeat visits are the HTML alone — under
 
 **Pages `_headers` merges where nginx replaces — and the merge is silent.** nginx drops all
 inherited `add_header`s the moment a location sets one of its own. Pages does the opposite:
-a more specific rule *appends*. Both traps fired on the first version of `pages/_headers`,
-caught by `wrangler pages dev` before anything shipped:
+a more specific rule *appends*. Both traps fired on the first version of `edge/_headers`,
+caught by a local `wrangler dev` before anything shipped:
 
 - `Cache-Control` in `/*` plus `Cache-Control` in `/assets/*` produced the literal value
   `public, max-age=0, must-revalidate, public, max-age=31536000, immutable`. A browser
@@ -474,7 +548,23 @@ caught by `wrangler pages dev` before anything shipped:
 
 The fix for both is `! Header-Name` in the specific rule, which detaches the inherited *and*
 default value before the new one is set. Anything that varies by path must never be declared
-in `/*`. Verify with `curl -sI` against `wrangler pages dev dist`, not by reading the file.
+in `/*`. Verify with `curl -sI` against a local `wrangler dev`, not by reading the file.
+
+**An ImageMagick policy can be valid XML and still be silently ignored.** ImageMagick does
+not use a real XML parser for `policy.xml`, and its own parser aborts on a **backtick inside
+a comment**. A draft that passed `xmllint` cleanly was dropped without a word — `magick -list
+policy` simply stopped listing the file, which looks exactly like a machine with no policy.
+(XML's own rule that comments may not contain a double hyphen killed an earlier draft too,
+via the dashed underlines beneath its headings.) Never assume the file loaded: check that it
+appears in `magick -list policy`, then probe an actual denial.
+
+**Two owners of the `?v=` token, one of which broke when its shape changed.**
+`build-shop.mjs` and `build-diaries.mjs` used to scrape the current token out of
+`index.html` with `/(\d+)/` and echo it onto every page they generated. When the token
+became a hex content hash, that regex stopped matching, both fell back to `?v=1`, and every
+regenerated page shipped a wrong token until `bump-assets.mjs` corrected it seconds later —
+harmless in the output, but it made the daily log claim the stylesheets had changed when
+they had not. The generators now emit no token at all; `bump-assets.mjs` owns it outright.
 
 **The asset `?v=` token was invalidating everything, every day.** `bump-assets.mjs` used a
 single global counter and `publish.sh` runs it unconditionally each morning, so a sync that

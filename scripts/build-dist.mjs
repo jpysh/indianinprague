@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// Stage the public site into dist/ — the exact set of files that goes to Cloudflare Pages.
+// Stage the public site into dist/ — the exact set of files uploaded to Cloudflare.
 //
-// Why a staging directory instead of `wrangler pages deploy .`
-// -----------------------------------------------------------
+// Why a staging directory instead of pointing the asset server at the repo root
+// ----------------------------------------------------------------------------
 // The repo root is not the web root and never was. Deploying it verbatim would upload
 // scripts/ (including sync-vinted.mjs and its Vinted session logic), data/ (the whole
 // product master plus the enrichment cache), nginx/, .cloudflared/, .sync.log, DEPLOY.md,
@@ -24,7 +24,7 @@
 //
 //   node scripts/build-dist.mjs
 //
-// Run it after every generator and before `wrangler pages deploy dist`.
+// Run it after every generator and before `wrangler deploy`.
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -70,9 +70,11 @@ await mkdir(path.join(DIST, "images"), { recursive: true });
 await run("rsync", ["-a", "--delete", `${ROOT}/images/derived/`, `${DIST}/images/derived/`]);
 
 // ---------------------------------------------------------------------------
-// Pages' own control files. These configure the deployment and are not served as content.
+// Edge behaviour. These two configure the asset server and are never served as content —
+// verified: /_headers and /_redirects both 404. They live in edge/ rather than at the repo
+// root so that the root stays "the pages of the site" and nothing else.
 for (const f of ["_headers", "_redirects"]) {
-  await cp(path.join(ROOT, "pages", f), path.join(DIST, f));
+  await cp(path.join(ROOT, "edge", f), path.join(DIST, f));
 }
 
 // ---------------------------------------------------------------------------
@@ -85,7 +87,7 @@ for (const leaked of ["scripts", "data", "nginx", ".cloudflared", "images/930906
   if (existsSync(path.join(DIST, leaked))) throw new Error(`non-public path reached dist/: ${leaked}`);
 }
 
-// Pages free allows 20,000 files per deployment and 25 MiB per file. Neither is close
+// The free tier allows 20,000 files per version and 25 MiB per file. Neither is close
 // today (~1,975 files, largest derivative well under the cap), but a runaway image build
 // should fail here rather than half-way through an upload.
 let count = 0;
@@ -103,9 +105,9 @@ const walk = async (dir) => {
 };
 await walk(DIST);
 
-if (count > 20000) throw new Error(`${count} files exceeds the Pages free limit of 20,000`);
+if (count > 20000) throw new Error(`${count} files exceeds the free-tier limit of 20,000 files per version`);
 if (biggest.size > 25 * 1024 * 1024) {
-  throw new Error(`${biggest.file} is ${(biggest.size / 1048576).toFixed(1)} MiB, over the 25 MiB Pages limit`);
+  throw new Error(`${biggest.file} is ${(biggest.size / 1048576).toFixed(1)} MiB, over the 25 MiB per-file limit`);
 }
 
 console.log(
