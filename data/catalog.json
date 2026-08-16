@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-08-15T08:19:46.206Z",
+  "syncedAt": "2026-08-16T05:15:08.565Z",
   "rate": {
     "czkPerEur": 24.205,
-    "fetched": "2026-08-15",
+    "fetched": "2026-08-16",
     "source": "ECB"
   },
-  "count": 148,
+  "count": 147,
   "items": [
     {
       "id": "9649545514",
@@ -68,7 +68,7 @@
         "images/vinted-9644821969-2.jpg",
         "images/vinted-9644821969-3.jpg"
       ],
-      "favourites": 70,
+      "favourites": 71,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -82,8 +82,8 @@
     {
       "id": "9641705366",
       "title": "Vibrant African Tribal Boho Summer Dress | Ethnic Print Swing Kaftan Tunic | Free Size M to L",
-      "priceCzk": 300,
-      "priceEur": 12,
+      "priceCzk": 250,
+      "priceEur": 10,
       "brand": "Handmade Beauty",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -176,7 +176,7 @@
         "images/vinted-9607321104-2.jpg",
         "images/vinted-9607321104-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -190,8 +190,8 @@
     {
       "id": "9604783346",
       "title": "Seven Elephants with Evil Eye Hanging | Good Energy Lucky Elephant Decor",
-      "priceCzk": 400,
-      "priceEur": 17,
+      "priceCzk": 360,
+      "priceEur": 15,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -226,8 +226,8 @@
     {
       "id": "9603839908",
       "title": "Table or Hanging Moroccan Lantern Lamp Candle Holder",
-      "priceCzk": 200,
-      "priceEur": 8,
+      "priceCzk": 150,
+      "priceEur": 6,
       "brand": "IKEA",
       "size": "",
       "sizeGroup": "",
@@ -536,7 +536,7 @@
         "images/vinted-9602849104-2.jpg",
         "images/vinted-9602849104-3.jpg"
       ],
-      "favourites": 43,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -752,7 +752,7 @@
         "images/vinted-9602725968-2.jpg",
         "images/vinted-9602725968-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -788,7 +788,7 @@
         "images/vinted-9602693296-2.jpg",
         "images/vinted-9602693296-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 26,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -895,7 +895,7 @@
         "images/vinted-9602615425-1.jpg",
         "images/vinted-9602615425-2.jpg"
       ],
-      "favourites": 31,
+      "favourites": 32,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1075,7 +1075,7 @@
         "images/vinted-9602511782-2.jpg",
         "images/vinted-9602511782-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1305,8 +1305,8 @@
     {
       "id": "9583484807",
       "title": "Indian Top Brand Jaypore Summer Cotton Ethnic Tunic Outfit | Size M",
-      "priceCzk": 330,
-      "priceEur": 14,
+      "priceCzk": 250,
+      "priceEur": 10,
       "brand": "Indian",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -1651,7 +1651,7 @@
         "images/vinted-9575501283-2.jpg",
         "images/vinted-9575501283-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2047,7 +2047,7 @@
         "images/vinted-9562257190-2.jpg",
         "images/vinted-9562257190-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2097,8 +2097,8 @@
     {
       "id": "9561780997",
       "title": "Art Nouveau Indian Designer Long Sheer Scarf – Lightweight, Elegant, Silky-Soft",
-      "priceCzk": 160,
-      "priceEur": 7,
+      "priceCzk": 50,
+      "priceEur": 2,
       "brand": "Nida Mahmood",
       "size": "",
       "sizeGroup": "",
@@ -2119,7 +2119,7 @@
         "images/vinted-9561780997-2.jpg",
         "images/vinted-9561780997-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2133,8 +2133,8 @@
     {
       "id": "9561725365",
       "title": "Designer scarf Indian luxury label Satya Paul",
-      "priceCzk": 160,
-      "priceEur": 7,
+      "priceCzk": 50,
+      "priceEur": 2,
       "brand": "SATYA PAUL",
       "size": "",
       "sizeGroup": "",
@@ -2239,42 +2239,6 @@
       }
     },
     {
-      "id": "9561522069",
-      "title": "Springfield Red Linen Top With Wooden Buttons",
-      "priceCzk": 250,
-      "priceEur": 10,
-      "brand": "Springfield",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": "Red",
-        "cs": "Červená"
-      },
-      "category": "Fashion",
-      "vintedCategoryCs": "Ženy Topy bez rukávů",
-      "description": "Linen fabric. Fits beautifully. Springfield brand.",
-      "photo": "images/vinted-9561522069-1.jpg",
-      "photos": [
-        "images/vinted-9561522069-1.jpg",
-        "images/vinted-9561522069-2.jpg",
-        "images/vinted-9561522069-3.jpg"
-      ],
-      "favourites": 26,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9561522069-springfield-red-linen-top-with-wooden-buttons",
-        "es": "https://www.vinted.es/items/9561522069-springfield-red-linen-top-with-wooden-buttons",
-        "com": "https://www.vinted.com/items/9561522069-springfield-red-linen-top-with-wooden-buttons"
-      }
-    },
-    {
       "id": "9561251555",
       "title": "Indian yellow cotton Hare Rama Radhe Radhe shawl/scarf/stole",
       "priceCzk": 300,
@@ -2299,7 +2263,7 @@
         "images/vinted-9561251555-2.jpg",
         "images/vinted-9561251555-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2659,7 +2623,7 @@
         "images/vinted-9489491094-2.jpg",
         "images/vinted-9489491094-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3019,7 +2983,7 @@
         "images/vinted-9439083125-2.jpg",
         "images/vinted-9439083125-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3163,7 +3127,7 @@
         "images/vinted-9438031948-2.jpg",
         "images/vinted-9438031948-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3789,8 +3753,8 @@
     {
       "id": "9370862833",
       "title": "Handwoven Indian Summer Cotton Maxi Dress | Size M",
-      "priceCzk": 500,
-      "priceEur": 21,
+      "priceCzk": 460,
+      "priceEur": 19,
       "brand": "Anoshk",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -4257,8 +4221,8 @@
     {
       "id": "9336035745",
       "title": "Indian Cotton Summer Maxi Dress | Size M-L",
-      "priceCzk": 400,
-      "priceEur": 17,
+      "priceCzk": 370,
+      "priceEur": 15,
       "brand": "Anoshk",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -4279,7 +4243,7 @@
         "images/vinted-9336035745-2.jpg",
         "images/vinted-9336035745-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4315,7 +4279,7 @@
         "images/vinted-9331197768-2.jpg",
         "images/vinted-9331197768-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4545,8 +4509,8 @@
     {
       "id": "9328560854",
       "title": "African Batik Print Midi Dress | Handmade With Nigerian Ankara Cotton",
-      "priceCzk": 400,
-      "priceEur": 17,
+      "priceCzk": 370,
+      "priceEur": 15,
       "brand": "House",
       "size": "Univerzální",
       "sizeGroup": "One size",
@@ -4567,7 +4531,7 @@
         "images/vinted-9328560854-2.jpg",
         "images/vinted-9328560854-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,

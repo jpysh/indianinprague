@@ -266,6 +266,38 @@
       "featured": false,
       "hidden": false,
       "soldAt": "2026-08-15"
+    },
+    {
+      "id": "9561522069",
+      "title": "Springfield Red Linen Top With Wooden Buttons",
+      "priceCzk": 250,
+      "priceEur": 10,
+      "brand": "Springfield",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Red",
+        "cs": "Červená"
+      },
+      "category": "Fashion",
+      "vintedCategoryCs": "Ženy Topy bez rukávů",
+      "description": "Linen fabric. Fits beautifully. Springfield brand.",
+      "photo": "images/vinted-9561522069-1.jpg",
+      "photos": [
+        "images/vinted-9561522069-1.jpg",
+        "images/vinted-9561522069-2.jpg",
+        "images/vinted-9561522069-3.jpg"
+      ],
+      "favourites": 26,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-16"
     }
   ]
 }
