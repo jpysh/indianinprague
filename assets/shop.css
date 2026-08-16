@@ -43,7 +43,16 @@
 .shop-bar{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
 .shop-bar[hidden]{display:none}
 .sb-top{display:flex;flex-direction:column;gap:10px}
+/* Two columns, but only where two columns can hold a label.
+ *
+ * The controls are 16px now (see the note on the input rule below), and 16px of monospace
+ * is wide: "Any condition" is thirteen characters at 9.6px each, so it needs 125px of text
+ * width, and a select spends another 44px on its inset padding and arrow. Two columns only
+ * clear that from about 386px up. Below it the label was being cut off mid-word by the
+ * arrow — "Any conditio▾" — which is worse than the row of extra height single-column
+ * costs. */
 .sb-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:399px){.sb-controls{grid-template-columns:1fr}}
 .sb-status{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
 
 .shop-bar input,.shop-bar select{
@@ -88,7 +97,10 @@
   .sb-search{flex:1 1 auto}
   /* auto-fit rather than a fixed count: which controls exist varies by page, since a
      control with nothing to filter is never rendered. */
-  .sb-controls{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+  /* 180px, not the 150px this was: at 16px the longest label a select carries — "Any
+     condition" — needs 125px of text plus 44px of padding and arrow, so a 150px track
+     clipped it by a character. */
+  .sb-controls{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
   .sb-sort{margin-left:auto}
 }
 
