@@ -300,7 +300,7 @@
 /* opacity .75 measured 4.28:1 — just under AA for text this size. .85 reads as the same
    footnote and clears it at 5.03:1. */
 .fx-note{
-  margin-top:28px;max-width:62ch;
+  margin-top:28px;max-width:var(--measure-s);
   font-family:var(--sans);font-size:var(--fs-s);line-height:var(--lh-read);
   color:var(--bone-dim);opacity:.85;
 }
@@ -408,7 +408,7 @@
   font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);letter-spacing:-.01em;
   text-transform:uppercase;color:var(--bone);margin-bottom:18px;
 }
-.how-steps{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;max-width:66ch}
+.how-steps{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;max-width:var(--measure)}
 .how-steps li{
   counter-increment:step;position:relative;padding-left:34px;
   color:var(--bone-dim);
@@ -425,7 +425,7 @@
 .how-steps b{color:var(--bone);font-weight:600}
 .how-note{
   margin-top:18px;padding-top:16px;border-top:1px solid rgba(242,239,230,.12);
-  font-size:var(--fs-s);color:var(--bone-dim);opacity:.85;max-width:66ch;
+  font-size:var(--fs-s);color:var(--bone-dim);opacity:.85;max-width:var(--measure);
 }
 
 @media (min-width:641px){

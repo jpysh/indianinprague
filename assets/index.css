@@ -89,7 +89,7 @@
 .hero .label{font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--bone);background:var(--chilli);display:inline-block;padding:6px 12px;margin-bottom:22px;font-weight:500}
 .hero h1{font-weight:300;font-size:clamp(2.125rem,1rem + 5.6vw,5.375rem);line-height:1.0;letter-spacing:-.02em;max-width:16ch;color:#F2EFE6}
 .hero h1 b{font-weight:600;color:var(--void);background:var(--magenta);padding:0 .12em}
-.hero .sub{margin-top:22px;color:var(--bone-dim);font-size:var(--fs-l);max-width:56ch}
+.hero .sub{margin-top:22px;color:var(--bone-dim);font-size:var(--fs-l);max-width:var(--measure-s)}
 .hero-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
 
 /* The MMXXVI stamp is decorative. On a phone it would collide with the headline, so it

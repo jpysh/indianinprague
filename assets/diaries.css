@@ -32,7 +32,7 @@
   font-weight:500;font-size:var(--fs-xl);
   letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
 }
-.rail-note{font-size:var(--fs-s);color:var(--bone-dim);max-width:60ch;margin-top:6px}
+.rail-note{font-size:var(--fs-s);color:var(--bone-dim);max-width:var(--measure-s);margin-top:6px}
 .rail-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .rail-cs{font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone-dim);opacity:.85}
 .rail-all{

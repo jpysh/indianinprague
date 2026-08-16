@@ -13,14 +13,14 @@
   border:1px solid rgba(232,169,60,.28);
   background:var(--void-2);
   padding:24px 20px 26px;
-  max-width:72ch;
+  max-width:64ch;
 }
 .holding h2{
   font-weight:500;font-size:var(--fs-xl);
   letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
   margin-bottom:14px;
 }
-.holding p{color:var(--bone-dim);max-width:62ch}
+.holding p{color:var(--bone-dim);max-width:var(--measure-s)}
 .holding p + p{margin-top:12px}
 .holding em{color:var(--bone);font-style:normal;font-weight:500}
 .holding-quiet{opacity:.8}

@@ -3,7 +3,7 @@
 .notfound{display:flex;align-items:center;min-height:60vh;padding:60px 0}
 .notfound h1{font-weight:300;font-size:var(--fs-3xl);line-height:var(--lh-tight);letter-spacing:-.01em;max-width:20ch;margin-bottom:20px}
 .notfound h1 b{font-weight:600;color:var(--magenta)}
-.notfound .sub{font-size:var(--fs-l);color:var(--bone-dim);max-width:56ch;margin-bottom:32px}
+.notfound .sub{font-size:var(--fs-l);color:var(--bone-dim);max-width:var(--measure-s);margin-bottom:32px}
 .notfound .links{display:flex;flex-wrap:wrap;gap:12px;font-size:var(--fs-xs);letter-spacing:.04em;text-transform:uppercase}
 .notfound .links a{
   border:1px solid rgba(242,239,230,.3);padding:0 18px;

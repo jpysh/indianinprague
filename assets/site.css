@@ -100,6 +100,23 @@
   /* Two faces, two jobs. See the .prose rule below for which text gets which. */
   --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
   --sans:'IBM Plex Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  /* ---------- measure ----------
+   *
+   * These are NOT the ch values the site used to carry, and the difference is the whole
+   * point. `ch` is the width of the digit zero, and in a MONOSPACE face that is also the
+   * width of every other character — so `max-width:66ch` on mono put exactly 66 characters
+   * on a line. In a proportional face the zero is one of the widest glyphs there is: at
+   * 66ch, Plex Sans fits 83 characters, measured. Every measure on the site was silently
+   * 25% too wide the moment the prose changed face.
+   *
+   * Calibrated against Plex Sans at --fs-l: 9.6px per ch, 7.64px per average character.
+   * 54ch lands at about 68 characters and 48ch at about 60 — inside the 55-75 band where
+   * reading speed and comprehension both hold up, rather than the width at which people
+   * start skimming in an F-pattern.
+   */
+  --measure:54ch;     /* ~68 characters — long-form body */
+  --measure-s:48ch;   /* ~60 characters — ledes, notes, captions under a heading */
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -395,7 +412,7 @@ a.wa:hover{color:#3BE87C}
 .crumb{font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
 .page-head h1{font-weight:300;font-size:var(--fs-3xl);line-height:var(--lh-tight);letter-spacing:-.01em;max-width:20ch;margin-bottom:18px}
 .page-head h1 b{font-weight:600;color:var(--magenta)}
-.page-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:62ch}
+.page-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:var(--measure-s)}
 .page-head .lede b{color:var(--magenta);font-weight:500}
 
 /* Light type on a dark ground optically GAINS weight — the glyphs bleed outward into the
@@ -453,7 +470,7 @@ main > section:nth-of-type(even){background:var(--band)}
   .sec-top .expo{text-align:right;white-space:nowrap}
 }
 
-.sec-lead{max-width:62ch;color:var(--bone-dim);margin-bottom:32px}
+.sec-lead{max-width:var(--measure-s);color:var(--bone-dim);margin-bottom:32px}
 .sec-lead b{color:var(--magenta);font-weight:600}
 
 /* ---------- buttons ---------- */
@@ -589,7 +606,7 @@ footer{padding:36px 0 44px}
 .foot{display:flex;flex-direction:column;gap:24px;flex-wrap:wrap;align-items:flex-start}
 .foot .fb{font-size:var(--fs-s);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
 .foot .fb b{color:var(--magenta)}
-.foot p{font-size:var(--fs-s);color:var(--bone-dim);max-width:38ch;margin-top:10px}
+.foot p{font-size:var(--fs-s);color:var(--bone-dim);max-width:32ch;margin-top:10px}
 .foot nav{display:flex;flex-direction:column;gap:2px;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.04em}
 /* 44px, not 40 — these are the five footer links, and on a phone they were the only
    targets on the site still under the WCAG minimum. */

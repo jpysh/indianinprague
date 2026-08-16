@@ -18,7 +18,7 @@
 .key .trap{color:var(--bone-dim);border:1px solid rgba(242,239,230,.3)}
 
 .note{border:1px solid var(--chilli);padding:20px var(--gutter);margin:6px 0 34px;background:var(--void-2)}
-.note p{color:var(--bone-dim);max-width:66ch}
+.note p{color:var(--bone-dim);max-width:var(--measure)}
 .note b{color:var(--chilli)}
 
 .reviews{padding:22px 0 44px}
@@ -30,7 +30,7 @@
 .rev .rhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px}
 .rev h2{font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);letter-spacing:-.01em;color:var(--bone)}
 .rev .meta{font-size:var(--fs-2xs);color:var(--olive);letter-spacing:.03em;text-transform:uppercase;margin-bottom:12px}
-.rev p{color:var(--bone-dim);max-width:64ch;margin-bottom:12px}
+.rev p{color:var(--bone-dim);max-width:var(--measure);margin-bottom:12px}
 .rev .order{color:var(--bone)}
 .rev .order b{color:var(--magenta)}
 
@@ -54,7 +54,7 @@
 .vegan-sec .sec-top h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);letter-spacing:-.01em;text-transform:uppercase}
 /* Same overflow fix as the shared .sec-top .expo — nowrap only once there is room. */
 .vegan-sec .expo{font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--olive);line-height:1.9;opacity:.9;text-align:left}
-.vegan-sec .sub{max-width:64ch;color:var(--bone-dim);margin-bottom:26px}
+.vegan-sec .sub{max-width:var(--measure-s);color:var(--bone-dim);margin-bottom:26px}
 
 @media (min-width:721px){
   .vegan-sec{padding:22px 0 56px}
