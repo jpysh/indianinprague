@@ -153,8 +153,24 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; 
 }
 
 /* ============================================================
-   THE THREAD (SCROLL PATH)
-   ============================================================ */
+   THE THREAD (SCROLL PATH) — the page's only position tracker
+   ------------------------------------------------------------
+   There used to be two of these: this rail on the left, and a column of dots fixed to the
+   right edge. The right-hand column was decoration — nothing in the page ever moved its
+   .active class, so it permanently claimed the visitor was still in the hero no matter how
+   far down they had read. Two trackers that disagree about where you are is strictly worse
+   than one that is right, so it is gone and this rail absorbed its one real asset: the
+   section names it carried in a tooltip.
+
+   Names cost horizontal space on a page whose left margin is part of the composition, so
+   they are not permanently on. They fade in while you are scrolling — the moment you are
+   actually asking "where am I?" — and fade back out about a second after you stop. Hover
+   or keyboard focus brings them back on demand, and the name of the section you are in
+   stays brighter than the rest so the answer is readable at a glance rather than counted
+   off against the beads.
+
+   The beads are real anchors, not script-driven handles: they work as a table of contents
+   even in the no-JS fallback path, where the CDN never delivered Lenis. */
 .thread {
   position: fixed; left: 32px; top: 0; bottom: 0; width: 34px; z-index: 55;
   display: none; pointer-events: none;
@@ -163,14 +179,77 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; 
 .thread svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .thread .track { stroke: rgba(245,238,221,0.12); stroke-width: 2; fill: none; }
 .thread .fill { stroke: url(#threadGrad); stroke-width: 2; fill: none; stroke-dasharray: 2000; stroke-dashoffset: 2000; }
+
+/* The bead is a 28px hit target wrapping a 10px dot: the dot is the design, the padding is
+   the pointer/44px-adjacent affordance. The dot is a separate element specifically so that
+   .active can scale it without also scaling the name beside it. */
 .thread-bead {
-  position: absolute; left: 17px; width: 10px; height: 10px; margin-left: -5px; margin-top: -5px;
-  border-radius: 50%; background: var(--void-soft); border: 2px solid var(--marigold);
+  position: absolute; left: 17px; width: 28px; height: 28px; margin-left: -14px; margin-top: -14px;
+  display: flex; align-items: center; justify-content: center;
+  pointer-events: auto; border-radius: 50%;
+}
+.thread-bead .dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--void-soft); border: 2px solid var(--marigold);
   transition: transform 0.4s var(--ease), background 0.4s, box-shadow 0.4s;
 }
-.thread-bead.active {
+.thread-bead:hover .dot { transform: scale(1.35); }
+.thread-bead.active .dot {
   background: var(--marigold); transform: scale(1.6);
   box-shadow: 0 0 15px var(--marigold);
+}
+.thread-bead:focus-visible { outline: 2px solid var(--marigold); outline-offset: 2px; }
+
+.thread-bead .tag {
+  position: absolute; left: 26px; top: 50%;
+  font-family: var(--font-label); font-size: 10px; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--cream); white-space: nowrap;
+  background: rgba(38, 27, 60, 0.92); border: 1px solid rgba(245,238,221,0.22);
+  padding: 5px 10px; border-radius: 100px; backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px -14px rgba(0,0,0,.9);
+  opacity: 0; transform: translate(-8px, -50%); pointer-events: none;
+  transition: opacity .3s var(--ease), transform .3s var(--ease), color .3s, border-color .3s;
+}
+/* .naming is set by script for a beat after each scroll; :hover and :focus-within are the
+   on-demand routes, and they work with no script at all. */
+/* .82 rather than the .62 this started at: the rail crosses the black meditation stage,
+   where a dimmed chip on a dimmed background stopped being a label and became a smudge.
+   The hierarchy against the active name is carried by colour, which survives the black. */
+.thread.naming .thread-bead .tag,
+.thread:hover .thread-bead .tag,
+.thread:focus-within .thread-bead .tag {
+  opacity: .82; transform: translate(0, -50%);
+}
+.thread.naming .thread-bead.active .tag,
+.thread:hover .thread-bead.active .tag,
+.thread:focus-within .thread-bead.active .tag,
+.thread-bead:hover .tag,
+.thread-bead:focus-visible .tag {
+  opacity: 1; color: var(--marigold); border-color: rgba(232,162,61,.45);
+  box-shadow: 0 8px 24px -12px rgba(0,0,0,.8);
+}
+/* Between 1080px (where the rail appears) and 1280px there is no real gutter left of the
+   content: the full column of names lands on top of the body copy. Rather than suppress the
+   feature there, the scroll reveal narrows to the one name that answers the question — the
+   section you are actually in. Hover and focus still open the full list on demand, because
+   at that point the visitor asked for it and can see what they are covering. */
+@media (max-width: 1279px) {
+  /* :not(:hover):not(:focus-within) so that a scroll happening mid-hover cannot yank the
+     list away from under the pointer that opened it. */
+  .thread.naming:not(:hover):not(:focus-within) .thread-bead .tag {
+    opacity: 0; transform: translate(-8px, -50%);
+  }
+  .thread.naming:not(:hover):not(:focus-within) .thread-bead.active .tag {
+    opacity: 1; transform: translate(0, -50%);
+  }
+}
+
+/* Without motion the names still arrive and still leave — they just do not slide. */
+@media (prefers-reduced-motion: reduce) {
+  .thread-bead .tag { transform: translate(0, -50%); transition: opacity .2s linear; }
+  .thread.naming .thread-bead .tag,
+  .thread:hover .thread-bead .tag,
+  .thread:focus-within .thread-bead .tag { transform: translate(0, -50%); }
 }
 
 /* Eyebrow & Mask Reveal */
@@ -263,24 +342,9 @@ header.site.nav-hidden {
   .pill-nav { width: auto; padding: 6px 6px 6px 10px; }
 }
 
-/* Dot Navigation */
-.dotnav {
-  position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 55;
-  display: none; flex-direction: column; gap: 16px; align-items: center;
-}
-@media (min-width: 1080px){ .dotnav { display: flex; } }
-.dotnav a {
-  width: 8px; height: 8px; border-radius: 50%; background: rgba(245,238,221,0.3);
-  position: relative; transition: background 0.3s, transform 0.3s;
-}
-.dotnav a.active { background: var(--marigold); transform: scale(1.6); }
-.dotnav a::after {
-  content: attr(data-label); position: absolute; right: 22px; top: 50%; transform: translateY(-50%);
-  font-family: var(--font-label); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
-  color: var(--cream); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity 0.2s;
-  background: rgba(22, 15, 36, 0.85); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(245,238,221,0.15);
-}
-.dotnav a:hover::after { opacity: 1; }
+/* The right-edge dot navigation that used to live here was removed on 16 Aug 2026 — see the
+   note above .thread. Its section names moved onto the left rail; nothing else was lost,
+   because its active state was never wired to anything. */
 
 /* ============================================================
    BUTTONS
@@ -476,8 +540,8 @@ section.on-void .runway-rail span { background: var(--marigold); }
    ============================================================
    The header now leaves for good once the visitor scrolls past the hero (see the nav logic
    in the script), which is only fair if there is an obvious way back to it. This is that
-   way. It stays clear of the desktop dot-nav on the right edge and sits above the thumb on
-   a phone. */
+   way. The right edge it used to share with the dot navigation is now its alone, and it
+   sits above the thumb on a phone. */
 .to-top {
   position: fixed; right: 20px; bottom: 20px; z-index: 70;
   width: 52px; height: 52px; border-radius: 100px; cursor: pointer;
@@ -530,12 +594,54 @@ section.on-void .runway-rail span { background: var(--marigold); }
 /* ============================================================
    FULL-VIEWPORT 3D CHAKRA STAGE & MEDITATION
    ============================================================ */
+/* The stage is black, and it is black on purpose.
+
+   It used to be transparent, sitting over the page's purple fluid wash — which meant the
+   seven wireframe nodes, their point rings and their 0.08-opacity auras were competing with
+   a moving gradient of roughly their own luminance. The animation the section exists for
+   was the least visible thing in it. Against black the auras finally have somewhere to
+   glow, and the marigold and teal of the upper chakras stop greying out.
+
+   The second half of the fix is that the canvas is now PINNED. It was absolutely positioned
+   across a 1637px-tall section while the renderer was sized to the viewport (900px), so the
+   animation occupied the top 55% of the section and then scrolled away — by the time you
+   reached the Throat and Crown rows, the camera was gliding to nodes that had left the
+   screen. Sticky + a negative margin holds it across the full viewport for the whole length
+   of the section, so every row you read has its node in front of you.
+
+   overflow:hidden had to come off .meditation for that: any overflow other than visible
+   makes the section its own scrollport, and a sticky child of a box that does not scroll
+   never sticks. The clipping moved onto the pinned layer itself, which is where it belongs. */
 .meditation {
-  position: relative; padding: var(--gap-section) 0; color: var(--cream); overflow: hidden; isolation: isolate;
+  position: relative; color: var(--cream); isolation: isolate;
+  background: #000;
+  /* The extra tail is the stage's release: the pinned canvas unpins exactly at the section
+     boundary, so without a run-out the last node was sliced in half by the cream section
+     below it, which reads as a rendering fault rather than an ending. */
+  padding: var(--gap-section) 0 calc(var(--gap-section) + 60px);
+}
+/* Softens the seam where the purple philosophy section hands over to the black stage. The
+   bottom edge is left as a hard cut — it meets the cream About section, and a fade there
+   would read as a smudge rather than a transition. */
+.meditation::before {
+  content: ''; position: absolute; left: 0; right: 0; top: 0; height: 240px; z-index: 0;
+  background: linear-gradient(to bottom, var(--void-deep), rgba(0,0,0,0));
+  pointer-events: none;
+}
+/* The run-out itself: the 3D dissolves into the black over the last 260px, so what meets
+   the cream About section is a clean graphic edge and not a bisected sphere. It sits above
+   the canvas (z 1) and below the copy (z 2), so it veils the animation and nothing else. */
+.meditation::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 260px; z-index: 1;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), #000 78%);
+  pointer-events: none;
 }
 
 #chakra-canvas-container {
-  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: auto; overflow: hidden;
+  position: sticky; top: 0; z-index: 1; width: 100%;
+  height: 100vh; height: 100dvh;
+  margin-bottom: -100vh; margin-bottom: -100dvh;
+  pointer-events: auto; overflow: hidden;
 }
 #chakra-canvas { width: 100%; height: 100%; display: block; }
 
@@ -781,9 +887,11 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 <div id="cursor-dot"></div>
 <div id="cursor-ring"><span id="cursor-badge"></span></div>
 
-<!-- Continuous Path Thread -->
-<div class="thread" aria-hidden="true">
-  <svg viewBox="0 0 34 2000" preserveAspectRatio="none">
+<!-- Continuous Path Thread — the page's section navigation, named on scroll and on hover.
+     It is a <nav> rather than an aria-hidden ornament now that the beads are anchors and
+     carry the section names the deleted right-hand dot column used to hold. -->
+<nav class="thread" aria-label="Section navigation">
+  <svg viewBox="0 0 34 2000" preserveAspectRatio="none" aria-hidden="true">
     <defs>
       <linearGradient id="threadGrad" x1="0" y1="0" x2="0" y2="1">
         <stop offset="0%" stop-color="#C1552E"/>
@@ -794,15 +902,16 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     <path class="track" d="M17,0 V2000"/>
     <path id="threadFill" class="fill" d="M17,0 V2000"/>
   </svg>
-  <div class="thread-bead" data-target="#hero"></div>
-  <div class="thread-bead" data-target="#offer"></div>
-  <div class="thread-bead" data-target="#trips"></div>
-  <div class="thread-bead" data-target="#shop"></div>
-  <div class="thread-bead" data-target="#philosophy"></div>
-  <div class="thread-bead" data-target="#meditation"></div>
-  <div class="thread-bead" data-target="#about"></div>
-  <div class="thread-bead" data-target="#contact"></div>
-</div>
+  <a class="thread-bead" href="#hero" data-target="#hero"><span class="dot"></span><span class="tag">Top</span></a>
+  <a class="thread-bead" href="#offer" data-target="#offer"><span class="dot"></span><span class="tag">What we offer</span></a>
+  <a class="thread-bead" href="#trips" data-target="#trips"><span class="dot"></span><span class="tag">Journeys</span></a>
+  <a class="thread-bead" href="#shop" data-target="#shop"><span class="dot"></span><span class="tag">Ritual objects</span></a>
+  <a class="thread-bead" href="#philosophy" data-target="#philosophy"><span class="dot"></span><span class="tag">Philosophy</span></a>
+  <a class="thread-bead" href="#meditation" data-target="#meditation"><span class="dot"></span><span class="tag">Meditation</span></a>
+  <a class="thread-bead" href="#about" data-target="#about"><span class="dot"></span><span class="tag">About</span></a>
+  <a class="thread-bead" href="#testimonials" data-target="#testimonials"><span class="dot"></span><span class="tag">Voices</span></a>
+  <a class="thread-bead" href="#contact" data-target="#contact"><span class="dot"></span><span class="tag">Contact</span></a>
+</nav>
 
 <!-- Header Navigation (Hide-On-Scroll) -->
 <header class="site">
@@ -821,19 +930,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
   </nav>
 </header>
-
-<!-- Dot Navigation -->
-<nav class="dotnav" aria-label="Section navigation">
-  <a href="#hero" data-label="Hero" class="active"></a>
-  <a href="#offer" data-label="Offer"></a>
-  <a href="#trips" data-label="Trips"></a>
-  <a href="#shop" data-label="Shop"></a>
-  <a href="#philosophy" data-label="Philosophy"></a>
-  <a href="#meditation" data-label="Meditation"></a>
-  <a href="#about" data-label="About"></a>
-  <a href="#testimonials" data-label="Voices"></a>
-  <a href="#contact" data-label="Contact"></a>
-</nav>
 
 <!-- MAIN CONTENT WRAPPER -->
 <main id="main-content">
@@ -1816,8 +1912,16 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     const cCamera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
     cCamera.position.set(0, 0, 20);
 
+    // Sized from the container, not from window.innerWidth/innerHeight. The window is the
+    // wrong box twice over: it includes the scrollbar gutter, which pushed the canvas wider
+    // than the page and produced a horizontal overflow, and it was never the height of the
+    // element the canvas actually fills.
     const cRenderer = new THREE.WebGLRenderer({ canvas: chakraCanvas, alpha: true, antialias: true });
-    cRenderer.setSize(window.innerWidth, window.innerHeight);
+    const chakraBox = () => ({
+      w: chakraContainer.clientWidth || window.innerWidth,
+      h: chakraContainer.clientHeight || window.innerHeight
+    });
+    (function () { const b = chakraBox(); cCamera.aspect = b.w / b.h; cCamera.updateProjectionMatrix(); cRenderer.setSize(b.w, b.h); })();
     // 1.75 rather than 2: this scene has wireframe geometry and point sprites, where edges
     // are thin enough that resolution is worth more than it is on the background wash — but
     // a phone's native 3 was never affordable alongside a second WebGL context.
@@ -1825,8 +1929,7 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 
     const resizeObserver = new ResizeObserver(() => {
       if (!chakraContainer) return;
-      const w = window.innerWidth;
-      const h = window.innerHeight;
+      const { w, h } = chakraBox();
       cCamera.aspect = w / h;
       cCamera.updateProjectionMatrix();
       cRenderer.setSize(w, h);
@@ -1884,12 +1987,16 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     }
     cScene.add(group);
 
+    // Where the camera is pointing, tweened by highlightChakra and applied every frame.
+    const camTarget = new THREE.Vector3(0, 0, 0);
+
     function animateChakraCanvas(time) {
       const t = time * 0.001;
       chakraNodes.forEach((node, idx) => {
         node.mesh.rotation.y = t * 0.8 * (idx % 2 === 0 ? 1 : -1);
         node.pRing.rotation.y = -t * 1.4;
       });
+      cCamera.lookAt(camTarget);
       cRenderer.render(cScene, cCamera);
     }
 
@@ -1916,8 +2023,22 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         }
       });
 
-      // 3D Orbital Camera Glide Path
+      // 3D Orbital Camera Glide Path.
+      //
+      // lookAt() centres whatever it is aimed at, so aiming it at the node itself put the
+      // glowing node dead centre — directly behind the left-aligned chakra table, which is
+      // the one place on the stage it could not be seen. Aiming a few units to the LEFT of
+      // the node pushes the node into the right of the frame, and the two halves of the
+      // section stop fighting: names on the left, the thing being named on the right.
+      // Narrow viewports have no right half to give it, so there the aim stays centred.
+      //
+      // The aim is also tweened and re-applied every frame instead of being set once. It
+      // used to be a single lookAt() called at the moment of the switch, i.e. computed from
+      // where the camera WAS rather than where it was travelling to — the framing was
+      // therefore always one section stale, and the node drifted out of the composition
+      // during the glide it was supposed to be the subject of.
       const activeNode = chakraNodes[index];
+      const composeX = chakraBox().w >= 1000 ? 4.2 : 0;
       gsap.to(cCamera.position, {
         x: activeNode.pos.x + 3.0,
         y: activeNode.pos.y,
@@ -1925,7 +2046,13 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         duration: 1.2,
         ease: 'power2.out'
       });
-      cCamera.lookAt(activeNode.pos.x, activeNode.pos.y, activeNode.pos.z);
+      gsap.to(camTarget, {
+        x: activeNode.pos.x - composeX,
+        y: activeNode.pos.y,
+        z: activeNode.pos.z,
+        duration: 1.2,
+        ease: 'power2.out'
+      });
     }
 
     // Two changes here, both about not doing work nobody can see.
@@ -1983,6 +2110,37 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   }
   window.addEventListener('load', updateBeadPositions);
   window.addEventListener('resize', updateBeadPositions);
+  // The runways and the meditation stage change the document height once ScrollTrigger has
+  // measured them, and a bead placed against the old height sits in the wrong place for the
+  // rest of the session. Re-place them whenever ScrollTrigger re-measures.
+  if (window.ScrollTrigger) ScrollTrigger.addEventListener('refresh', updateBeadPositions);
+  updateBeadPositions();
+
+  // Exactly one bead is active at any scroll position: the last one whose section has
+  // crossed the reading line. The previous test ("top above the middle AND bottom below a
+  // fifth") left no bead lit in the gap between a short section leaving and the next
+  // arriving, which read as the tracker breaking rather than as a boundary.
+  const threadNav = document.querySelector('.thread');
+  function updateActiveBead() {
+    const line = window.innerHeight * 0.45;
+    let activeIdx = 0;
+    beads.forEach((bead, i) => {
+      const targetEl = document.querySelector(bead.getAttribute('data-target'));
+      if (targetEl && targetEl.getBoundingClientRect().top <= line) activeIdx = i;
+    });
+    beads.forEach((bead, i) => bead.classList.toggle('active', i === activeIdx));
+  }
+
+  // The names show themselves while the page is moving and take themselves away when it
+  // stops — 1.1s, long enough to finish reading the one you were after, short enough that
+  // an idle page is back to its full width of composition.
+  let namingTimer = null;
+  function revealNames() {
+    if (!threadNav) return;
+    threadNav.classList.add('naming');
+    clearTimeout(namingTimer);
+    namingTimer = setTimeout(() => threadNav.classList.remove('naming'), 1100);
+  }
 
   if (threadFill) {
     const len = 2000;
@@ -1990,23 +2148,23 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     threadFill.style.strokeDashoffset = len;
 
     lenis.on('scroll', (e) => {
-      const scrollPct = e.progress;
-      threadFill.style.strokeDashoffset = len * (1 - scrollPct);
-
-      beads.forEach(bead => {
-        const targetId = bead.getAttribute('data-target');
-        const targetEl = document.querySelector(targetId);
-        if (targetEl) {
-          const rect = targetEl.getBoundingClientRect();
-          if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.2) {
-            bead.classList.add('active');
-          } else {
-            bead.classList.remove('active');
-          }
-        }
-      });
+      threadFill.style.strokeDashoffset = len * (1 - e.progress);
+      updateActiveBead();
+      revealNames();
     });
+    updateActiveBead();
   }
+
+  // Clicking a bead hands the target to Lenis rather than to the browser, so the jump keeps
+  // the page's easing instead of teleporting out from under the scroll-driven animation.
+  beads.forEach(bead => {
+    bead.addEventListener('click', (ev) => {
+      const targetEl = document.querySelector(bead.getAttribute('data-target'));
+      if (!targetEl || !lenis) return;
+      ev.preventDefault();
+      lenis.scrollTo(targetEl, { offset: -40 });
+    });
+  });
 
   // ------------------------------------------------------------
   // 8. FLUID MAGNETIC CURSOR & BADGES

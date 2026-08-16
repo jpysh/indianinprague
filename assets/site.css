@@ -64,6 +64,38 @@
   /* Single source of truth for the gutter, so the header, sections and footer stay in
      line when it tightens on a phone. */
   --gutter:20px;
+
+  /* ---------- type scale ----------
+   *
+   * Nine steps, replacing the twenty fixed px sizes and ten separate clamp() expressions
+   * that had accumulated across these stylesheets — 11.5, 12.5, 13.5, 14.5, 15.5 and 16.5
+   * all existed, a half-pixel apart, doing nothing different from each other. Steps that
+   * small are not a scale; they are decisions taken one at a time, months apart.
+   *
+   * In rem, and that is the point of the exercise. Every size on this site used to be px,
+   * which browser ZOOM scales fine — but the separate "Font size" preference in Chrome,
+   * Firefox and Safari does nothing to px text at all. A visitor who has moved that off 16
+   * because they are tired of squinting was still being handed 14px here. 1rem is whatever
+   * they set. Structural padding stays in px on purpose: it should not grow with the text.
+   *
+   * The fluid steps use clamp(min, rem + vw, max) rather than plain vw so they still
+   * respond to that preference at every viewport width — a pure-vw heading ignores it.
+   */
+  --fs-3xs:.6875rem;   /* 11px — the privacy line, and nothing else */
+  --fs-2xs:.75rem;     /* 12px — captions, tags, chips, crumbs, counts */
+  --fs-xs:.8125rem;    /* 13px — nav, buttons, footer links, small labels */
+  --fs-s:.875rem;      /* 14px — card titles, dense secondary prose */
+  --fs-m:1rem;         /* 16px — THE BODY DEFAULT, and every form control */
+  --fs-l:1.0625rem;    /* 17px — long-form body and page ledes */
+  --fs-xl:clamp(1.25rem,.95rem + 1.4vw,1.625rem);   /* 20 → 26 */
+  --fs-2xl:clamp(1.5rem,1.1rem + 2.2vw,2.125rem);   /* 24 → 34 */
+  --fs-3xl:clamp(2rem,1.1rem + 4.6vw,3.75rem);      /* 32 → 60 */
+
+  /* Leading rises with line length and falls with size. */
+  --lh-tight:1.15;   /* display headings */
+  --lh-snug:1.45;    /* card titles, short labels */
+  --lh-read:1.65;    /* body copy */
+  --lh-long:1.72;    /* the article, which is the longest measure on the site */
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
