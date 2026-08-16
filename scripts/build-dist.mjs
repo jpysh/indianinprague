@@ -37,6 +37,40 @@ const run = promisify(execFile);
 const ROOT = path.resolve(import.meta.dirname, "..");
 const DIST = path.join(ROOT, "dist");
 
+// ---------------------------------------------------------------------------
+// Directory sync, with a fallback, because this script now runs in two places.
+//
+// On this Mac, rsync is the right tool and stays the default: -a --delete moves the day's
+// new photos and nothing else, which is what keeps a 171 MB image tree from being recopied
+// every morning.
+//
+// Cloudflare's build container has no rsync. When the repo was connected to Workers Builds
+// on 16 Aug 2026 the first build died on `spawn rsync ENOENT`, and the container is not
+// ours to install into. So: probe once, and fall back to node's own recursive copy.
+//
+// The fallback drops the destination first, which is how it earns the --delete guarantee —
+// a file removed from the source cannot survive in dist/ as a stale URL. That costs a full
+// copy every time, which is the wrong trade on the Mac (hence rsync first) and free in the
+// cloud, where the checkout starts empty anyway.
+let hasRsync = null;
+async function syncDir(src, dest) {
+  if (hasRsync === null) {
+    try {
+      await run("rsync", ["--version"]);
+      hasRsync = true;
+    } catch {
+      hasRsync = false;
+      console.log("rsync not found — using node's recursive copy (expected on Cloudflare)");
+    }
+  }
+  if (hasRsync) {
+    await run("rsync", ["-a", "--delete", `${src}/`, `${dest}/`]);
+    return;
+  }
+  await rm(dest, { recursive: true, force: true });
+  await cp(src, dest, { recursive: true });
+}
+
 // Pages that exist in the repo root but must never be served.
 const PRIVATE_PAGES = new Set(["inventory.html"]);
 
@@ -65,9 +99,9 @@ for (const f of rootFiles) {
 // ---------------------------------------------------------------------------
 // assets/ and images/derived/. Only the derivatives ship — the markup points exclusively
 // at images/derived/, which scripts/build-images.mjs generates from the originals.
-await run("rsync", ["-a", "--delete", `${ROOT}/assets/`, `${DIST}/assets/`]);
+await syncDir(path.join(ROOT, "assets"), path.join(DIST, "assets"));
 await mkdir(path.join(DIST, "images"), { recursive: true });
-await run("rsync", ["-a", "--delete", `${ROOT}/images/derived/`, `${DIST}/images/derived/`]);
+await syncDir(path.join(ROOT, "images", "derived"), path.join(DIST, "images", "derived"));
 
 // ---------------------------------------------------------------------------
 // Edge behaviour. These two configure the asset server and are never served as content —
