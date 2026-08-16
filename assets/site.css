@@ -170,7 +170,7 @@ body{
 
 /* A heading that breaks with one word alone on the last line looks like a mistake, and on
    this site — where h1 runs to 60px — it looks like a large one. Ignored where unsupported. */
-h1,h2,h3,.nm,.brand{text-wrap:balance}
+h1,h2,h3,.nm{text-wrap:balance}
 
 /* Form controls inherit nothing by default, and Safari on iOS zooms the whole viewport
    whenever a focused field is under 16px. The wardrobe's search box and five filter selects
