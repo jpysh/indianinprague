@@ -16,11 +16,11 @@
   max-width:72ch;
 }
 .holding h2{
-  font-weight:500;font-size:clamp(17px,4.6vw,22px);
+  font-weight:500;font-size:var(--fs-xl);
   letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
   margin-bottom:14px;
 }
-.holding p{font-size:13.5px;line-height:1.7;color:var(--bone-dim);max-width:60ch}
+.holding p{color:var(--bone-dim);max-width:62ch}
 .holding p + p{margin-top:12px}
 .holding em{color:var(--bone);font-style:normal;font-weight:500}
 .holding-quiet{opacity:.8}

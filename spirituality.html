@@ -664,7 +664,10 @@ section.on-void .runway-rail span { background: var(--marigold); }
 .chakra-row {
   display: grid; grid-template-columns: 36px 1fr 1fr; gap: 16px; align-items: center;
   padding: 22px 28px; margin-bottom: 16px; border-radius: 20px;
-  background: rgba(22, 15, 36, 0.65); backdrop-filter: blur(20px) saturate(160%);
+  /* .78 rather than .65: against the old purple wash a thin card was enough separation, but
+     on the black stage the wireframes now read at full strength and were legible straight
+     through the inactive rows' text. */
+  background: rgba(22, 15, 36, 0.78); backdrop-filter: blur(20px) saturate(160%);
   border: 1px solid rgba(245,238,221,0.14); opacity: .45;
   transition: opacity 0.5s var(--ease), transform 0.5s var(--ease), border-color 0.5s, background 0.5s;
 }

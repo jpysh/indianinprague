@@ -1,17 +1,24 @@
 /* restaurants.html — reviews and vegan list. Loaded after site.css. */
 
-.btn.saf{border-color:var(--olive);background:var(--saffron);color:var(--bone)}
-.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--void)}
+/* The .btn.saf override that used to sit here put cream text on the saffron fill at
+   1.16:1. site.css sets --void on it, at 7.26:1. */
 
-/* verdict key */
+/* verdict key
+ *
+ * The third chip used to carry class="skip", which collides with the skip-link utility in
+ * site.css — `position:absolute; left:-9999px`. The key rendered two of its three entries
+ * and the page never said what a tourist trap looked like. It is .trap now.
+ *
+ * .real is a saffron FILL, so the text on it is --void. It was --bone: 1.16:1, on the one
+ * label that tells a reader whether a restaurant is worth the tram fare. */
 .key{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 6px}
-.key span{font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:6px 10px;font-weight:500}
-.key .real{color:var(--bone);background:var(--saffron)}
+.key span{font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;padding:6px 10px;font-weight:500}
+.key .real{color:var(--void);background:var(--saffron)}
 .key .mild{color:var(--bone);border:1px solid var(--chilli)}
-.key .skip{color:var(--bone-dim);border:1px solid rgba(58,30,22,.3)}
+.key .trap{color:var(--bone-dim);border:1px solid rgba(242,239,230,.3)}
 
 .note{border:1px solid var(--chilli);padding:20px var(--gutter);margin:6px 0 34px;background:var(--void-2)}
-.note p{font-size:13px;color:var(--bone-dim);max-width:70ch}
+.note p{color:var(--bone-dim);max-width:66ch}
 .note b{color:var(--chilli)}
 
 .reviews{padding:22px 0 44px}
@@ -21,14 +28,14 @@
 .rev{border-top:1px solid rgba(58,30,22,.16);padding:24px 0;display:grid;grid-template-columns:1fr;gap:14px}
 .rev .frame{aspect-ratio:3/2}
 .rev .rhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:4px}
-.rev h2{font-weight:500;font-size:clamp(18px,4.5vw,21px);letter-spacing:-.01em;color:var(--bone)}
-.rev .meta{font-size:11px;color:var(--olive);letter-spacing:.03em;text-transform:uppercase;margin-bottom:12px}
-.rev p{font-size:14px;color:var(--bone-dim);max-width:64ch;margin-bottom:10px}
-.rev .order{font-size:13px;color:var(--bone)}
+.rev h2{font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);letter-spacing:-.01em;color:var(--bone)}
+.rev .meta{font-size:var(--fs-2xs);color:var(--olive);letter-spacing:.03em;text-transform:uppercase;margin-bottom:12px}
+.rev p{color:var(--bone-dim);max-width:64ch;margin-bottom:12px}
+.rev .order{color:var(--bone)}
 .rev .order b{color:var(--magenta)}
 
-.rv{font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;font-weight:500}
-.rv.real{color:var(--bone);background:var(--saffron)}
+.rv{font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;padding:5px 9px;font-weight:500}
+.rv.real{color:var(--void);background:var(--saffron)}
 .rv.mild{color:var(--bone);border:1px solid var(--chilli)}
 
 @media (min-width:721px){
@@ -44,10 +51,10 @@
   padding:22px 0;margin-bottom:24px;
   border-bottom:1px solid rgba(58,30,22,.16);
 }
-.vegan-sec .sec-top h2{font-weight:500;font-size:clamp(19px,5vw,30px);letter-spacing:-.01em;text-transform:uppercase}
+.vegan-sec .sec-top h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);letter-spacing:-.01em;text-transform:uppercase}
 /* Same overflow fix as the shared .sec-top .expo — nowrap only once there is room. */
-.vegan-sec .expo{font-size:11px;letter-spacing:.07em;color:var(--olive);line-height:1.9;opacity:.9;text-align:left}
-.vegan-sec .sub{max-width:64ch;font-size:14px;color:var(--bone-dim);margin-bottom:26px}
+.vegan-sec .expo{font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--olive);line-height:1.9;opacity:.9;text-align:left}
+.vegan-sec .sub{max-width:64ch;color:var(--bone-dim);margin-bottom:26px}
 
 @media (min-width:721px){
   .vegan-sec{padding:22px 0 56px}
@@ -63,8 +70,8 @@
 .vitem .frame{aspect-ratio:16/9;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
 .vitem .vb{padding:18px}
 .vitem .vtop{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:4px}
-.vitem h3{font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.01em;color:var(--bone)}
-.vitem .badge{font-size:9.5px;letter-spacing:.06em;color:var(--void);background:var(--olive);padding:3px 7px;text-transform:uppercase;white-space:nowrap}
+.vitem h3{font-size:var(--fs-l);font-weight:600;line-height:var(--lh-snug);text-transform:uppercase;letter-spacing:.01em;color:var(--bone)}
+.vitem .badge{font-size:var(--fs-2xs);letter-spacing:.05em;color:var(--void);background:var(--olive);padding:3px 7px;text-transform:uppercase;white-space:nowrap}
 .vitem .badge.friend{background:transparent;color:var(--olive);border:1px solid var(--olive)}
-.vitem .m{font-size:11px;color:var(--olive);letter-spacing:.03em;text-transform:uppercase;margin-bottom:8px}
-.vitem p{font-size:13px;color:var(--bone-dim)}
+.vitem .m{font-size:var(--fs-2xs);color:var(--olive);letter-spacing:.03em;text-transform:uppercase;margin-bottom:8px}
+.vitem p{color:var(--bone-dim)}

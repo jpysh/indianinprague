@@ -96,6 +96,10 @@
   --lh-snug:1.45;    /* card titles, short labels */
   --lh-read:1.65;    /* body copy */
   --lh-long:1.72;    /* the article, which is the longest measure on the site */
+
+  /* Two faces, two jobs. See the .prose rule below for which text gets which. */
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:'IBM Plex Sans',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -104,12 +108,58 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   background:var(--void);
   color:var(--bone);
-  font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-  line-height:1.55;
+  font-family:var(--mono);
+  font-size:var(--fs-m);
+  line-height:var(--lh-read);
   -webkit-font-smoothing:antialiased;
   position:relative;
   overflow-x:hidden;
 }
+
+/* ---------- the two jobs text does here ----------
+ *
+ * Almost everything on this site is SCANNED — the wordmark, the nav, prices, tags,
+ * captions, section headings, button labels. Monospace is excellent at that: fixed advance
+ * widths make columns line up and labels read as machined rather than typed. That is the
+ * whole visual idea and it does not move.
+ *
+ * A smaller share is READ — the article, a restaurant review, a product description, the
+ * lede under a page title. Monospace is measurably worse at that: every glyph occupies the
+ * same advance, so the outline of a word — the thing a fluent reader recognises before
+ * decoding any letter — flattens into a picket fence.
+ *
+ * shop.css made this call for product blurbs and page ledes and left a note saying the
+ * diary, restaurant and article pages "keep the all-mono setting until they are looked at
+ * properly". This is that, promoted here and extended to the rest of the site. Plex Sans is
+ * Plex Mono's sibling, drawn by the same team on the same skeleton, so the two sit together
+ * rather than looking like an accident.
+ *
+ * text-wrap:pretty is the other half of the job: it is what stops a paragraph ending on a
+ * single orphaned word. Browsers that do not support it ignore the declaration.
+ */
+.prose,
+.lede, .sec-lead, .sub,
+.article p, .article li,
+.rev p, .rev .order, .note p,
+.post p, .plate p, .vitem p,
+.guide-body p, .manifesto p, .vinted-cta p,
+.holding p, .rail-note, .how-steps li, .how-note,
+.notfound .sub, .foot p{
+  font-family:var(--sans);
+  font-size:var(--fs-m);
+  line-height:var(--lh-read);
+  text-wrap:pretty;
+}
+
+/* A heading that breaks with one word alone on the last line looks like a mistake, and on
+   this site — where h1 runs to 60px — it looks like a large one. Ignored where unsupported. */
+h1,h2,h3,.nm,.brand{text-wrap:balance}
+
+/* Form controls inherit nothing by default, and Safari on iOS zooms the whole viewport
+   whenever a focused field is under 16px. The wardrobe's search box and five filter selects
+   were 12.5px, so tapping the most-used control on the site threw the visitor into a zoomed
+   page they then had to pinch back out of. 1rem is the fix and the only fix. */
+input,select,textarea,button{font-family:inherit;font-size:var(--fs-m)}
 
 /* Full-page film grain. Fixed and pointer-events:none so it never intercepts a tap. */
 body::before{
@@ -134,7 +184,7 @@ img{max-width:100%;height:auto}
 .skip{
   position:absolute;left:-9999px;top:0;z-index:200;
   background:var(--magenta);color:var(--void);padding:10px 16px;
-  font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;
 }
 .skip:focus{left:0}
 
@@ -173,7 +223,7 @@ header.site{
 
 .brand{
   flex:0 0 auto;
-  font-weight:600;font-size:11.5px;letter-spacing:0;text-transform:uppercase;
+  font-weight:600;font-size:var(--fs-2xs);letter-spacing:0;text-transform:uppercase;
   /* The wordmark is four words and two slashes in a monospace face — 20 characters that
      alone would eat half of a 375px bar. Pulling the spaces in around the slashes buys
      back ~30px and reads as a tighter lockup rather than a smaller logo. */
@@ -197,7 +247,7 @@ nav.main{
      keeps the labels laid out from the left, so the overflow lands at the right edge where
      overflow-x can actually scroll to it. */
   flex:0 1 auto;min-width:0;margin-left:auto;justify-content:flex-start;
-  font-size:10.5px;letter-spacing:0;text-transform:uppercase;
+  font-size:var(--fs-2xs);letter-spacing:0;text-transform:uppercase;
   overflow-x:auto;
   scrollbar-width:none;
 }
@@ -287,9 +337,9 @@ a.wa:hover{color:#3BE87C}
 @media (min-width:641px){
   :root{--gutter:30px}
   .bar{min-height:64px;gap:24px}
-  .brand{font-size:15px;letter-spacing:.04em}
+  .brand{font-size:var(--fs-s);letter-spacing:.04em}
   nav.main{
-    gap:24px;font-size:12.5px;letter-spacing:.04em;overflow-x:visible;
+    gap:24px;font-size:var(--fs-xs);letter-spacing:.04em;overflow-x:visible;
   }
   nav.main a{min-height:0}
   .bar-ico{padding-left:20px}
@@ -309,7 +359,7 @@ a.wa:hover{color:#3BE87C}
 }
 .frame .cap{
   position:absolute;left:10px;bottom:9px;z-index:3;
-  font-size:10.5px;letter-spacing:.09em;color:var(--bone);text-transform:uppercase;
+  font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone);text-transform:uppercase;
   background:rgba(58,30,22,.6);padding:3px 8px;
 }
 .frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(58,30,22,.55);mix-blend-mode:multiply;pointer-events:none}
@@ -321,7 +371,7 @@ a.wa:hover{color:#3BE87C}
    where a flat-lay garment shot is not. */
 .frame .cap.rname{
   left:0;right:0;bottom:0;
-  font-size:14px;font-weight:600;letter-spacing:.03em;
+  font-size:var(--fs-m);font-weight:600;letter-spacing:.03em;
   padding:26px 12px 10px;
   background:linear-gradient(to top,rgba(28,24,16,.88),rgba(28,24,16,.55) 55%,transparent);
 }
@@ -342,11 +392,20 @@ a.wa:hover{color:#3BE87C}
 /* ---------- page furniture ---------- */
 
 .page-head{border-bottom:1px solid rgba(58,30,22,.22);padding:38px 0 30px;position:relative}
-.crumb{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
-.page-head h1{font-weight:300;font-size:clamp(28px,7vw,60px);line-height:1.04;letter-spacing:-.01em;max-width:20ch;margin-bottom:18px}
+.crumb{font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
+.page-head h1{font-weight:300;font-size:var(--fs-3xl);line-height:var(--lh-tight);letter-spacing:-.01em;max-width:20ch;margin-bottom:18px}
 .page-head h1 b{font-weight:600;color:var(--magenta)}
-.page-head .lede{font-size:14px;color:var(--bone-dim);max-width:62ch}
+.page-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:62ch}
 .page-head .lede b{color:var(--magenta);font-weight:500}
+
+/* Light type on a dark ground optically GAINS weight — the glyphs bleed outward into the
+   background rather than the reverse — so a weight that is elegant at 60px is frail at 32.
+   The h1 clamps down to 32px on a phone and keeps its 300 there, which is the one width
+   where the headline stops looking deliberate and starts looking thin. 400 below the
+   breakpoint, 300 above it, where there is enough mass for the light weight to read. */
+@media (max-width:640px){
+  .page-head h1,.art-head h1,.hero h1,.notfound h1{font-weight:400}
+}
 
 @media (min-width:641px){
   .page-head{padding:52px 0 40px}
@@ -380,9 +439,9 @@ main > section:nth-of-type(even){background:var(--band)}
      heading is the marker someone scanning the page actually sees. */
   border-bottom:1px solid rgba(232,169,60,.22);
 }
-.sec-top h2{font-weight:500;font-size:clamp(19px,5vw,30px);letter-spacing:-.01em;text-transform:uppercase}
+.sec-top h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);letter-spacing:-.01em;text-transform:uppercase}
 .sec-top .expo{
-  font-size:11px;letter-spacing:.07em;color:var(--bone-dim);
+  font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone-dim);
   line-height:1.9;opacity:.85;
   /* Deliberately NOT nowrap at this width — that is what caused the overflow. */
   text-align:left;
@@ -394,14 +453,14 @@ main > section:nth-of-type(even){background:var(--band)}
   .sec-top .expo{text-align:right;white-space:nowrap}
 }
 
-.sec-lead{max-width:62ch;font-size:14px;color:var(--bone-dim);margin-bottom:32px}
+.sec-lead{max-width:62ch;color:var(--bone-dim);margin-bottom:32px}
 .sec-lead b{color:var(--magenta);font-weight:600}
 
 /* ---------- buttons ---------- */
 
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  font-size:12px;letter-spacing:.07em;text-transform:uppercase;
+  font-size:var(--fs-xs);letter-spacing:.06em;text-transform:uppercase;
   padding:12px 20px;min-height:44px;
   border:1px solid var(--bone);color:var(--bone);
   transition:background .15s,color .15s,border-color .15s;
@@ -446,9 +505,9 @@ main > section:nth-of-type(even){background:var(--band)}
 /* min-width:0 is load-bearing. Without it the name keeps its max-content width, and a
    long garment title pushes the nowrap price clean off the right edge of a 375px screen
    instead of wrapping. */
-.piece .meta .nm{font-size:13px;font-weight:500;color:var(--bone);flex:1 1 auto;min-width:0}
-.piece .meta .pr{font-size:12.5px;color:var(--magenta);white-space:nowrap;flex:0 0 auto}
-.piece .tags{padding:5px 2px 0;font-size:10.5px;letter-spacing:.05em;color:var(--bone-dim);text-transform:uppercase}
+.piece .meta .nm{font-size:var(--fs-s);font-weight:500;line-height:var(--lh-snug);color:var(--bone);flex:1 1 auto;min-width:0}
+.piece .meta .pr{font-size:var(--fs-s);color:var(--magenta);white-space:nowrap;flex:0 0 auto}
+.piece .tags{padding:6px 2px 0;font-size:var(--fs-2xs);letter-spacing:.04em;color:var(--bone-dim);text-transform:uppercase}
 /* Every card used to end in a "View on Vinted →" line — six of them on the home page,
    twenty-four on the wardrobe. The card is already the link, so the repetition was noise.
    One small corner mark carries the "this leaves the site" meaning instead, and the link's
@@ -457,7 +516,7 @@ main > section:nth-of-type(even){background:var(--band)}
   position:absolute;top:8px;right:8px;z-index:2;
   width:22px;height:22px;display:flex;align-items:center;justify-content:center;
   background:rgba(10,9,8,.62);border:1px solid rgba(242,239,230,.28);
-  color:var(--bone);font-size:11px;line-height:1;
+  color:var(--bone);font-size:var(--fs-2xs);line-height:1;
   transition:background .15s,border-color .15s,color .15s;
 }
 .piece:hover .ext,.piece:focus-visible .ext{background:var(--magenta);border-color:var(--magenta);color:var(--void)}
@@ -466,10 +525,10 @@ main > section:nth-of-type(even){background:var(--band)}
 .plate{border:1px solid rgba(58,30,22,.2);display:flex;flex-direction:column;background:var(--void-2)}
 .plate .frame{aspect-ratio:16/9;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
 .plate .pbody{padding:20px}
-.plate h3{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--bone)}
-.plate .cz{font-size:11px;color:var(--olive);letter-spacing:.04em;margin-bottom:12px}
-.plate p{font-size:13px;color:var(--bone-dim);margin-bottom:14px}
-.plate .more{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
+.plate h3{font-size:var(--fs-l);font-weight:600;line-height:var(--lh-snug);text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--bone)}
+.plate .cz{font-size:var(--fs-2xs);color:var(--olive);letter-spacing:.04em;margin-bottom:12px}
+.plate p{color:var(--bone-dim);margin-bottom:14px}
+.plate .more{font-size:var(--fs-xs);letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
 .plate a.more:hover{color:var(--magenta)}
 a.plate{transition:transform .15s}
 a.plate:hover{transform:translateY(-2px)}
@@ -495,12 +554,14 @@ a.plate h3{transition:color .15s}
 .post .frame{aspect-ratio:16/10;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
 .post .pbody{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto}
 .post h3{
-  font-size:15px;font-weight:600;line-height:1.25;letter-spacing:-.01em;
+  font-size:var(--fs-m);font-weight:600;line-height:var(--lh-snug);letter-spacing:-.01em;
   color:var(--bone);margin-bottom:8px;transition:color .15s;
 }
-.post p{font-size:12.5px;line-height:1.6;color:var(--bone-dim);margin-bottom:14px}
+/* --fs-s rather than the --fs-m the .prose rule gives it: a rail card is 280-320px wide,
+   and 16px there would run about thirty characters to the line. */
+.post p{font-size:var(--fs-s);color:var(--bone-dim);margin-bottom:14px}
 /* margin-top:auto is what aligns the read-links across a row of uneven cards. */
-.post .more{margin-top:auto;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
+.post .more{margin-top:auto;font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;color:var(--magenta)}
 .post:hover{transform:translateY(-2px);border-color:rgba(232,169,60,.35)}
 .post:hover h3{color:var(--magenta)}
 .post:hover .frame{filter:brightness(1.06)}
@@ -511,7 +572,7 @@ a.plate h3{transition:color .15s}
 /* The larger variant used by the Tram 22 grid at the top of diaries.html. Same card, more
    air, a wider crop — it is the front page of the journal. */
 .post-lg .frame{aspect-ratio:4/3}
-.post-lg h3{font-size:16.5px}
+.post-lg h3{font-size:var(--fs-l)}
 
 /* minmax(0,1fr) for the same reason as .grid3 above. */
 .grid4{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
@@ -526,10 +587,10 @@ a.plate h3{transition:color .15s}
 
 footer{padding:36px 0 44px}
 .foot{display:flex;flex-direction:column;gap:24px;flex-wrap:wrap;align-items:flex-start}
-.foot .fb{font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.foot .fb{font-size:var(--fs-s);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
 .foot .fb b{color:var(--magenta)}
-.foot p{font-size:12px;color:var(--bone-dim);max-width:38ch;margin-top:10px}
-.foot nav{display:flex;flex-direction:column;gap:2px;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.foot p{font-size:var(--fs-s);color:var(--bone-dim);max-width:38ch;margin-top:10px}
+.foot nav{display:flex;flex-direction:column;gap:2px;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.04em}
 /* 44px, not 40 — these are the five footer links, and on a phone they were the only
    targets on the site still under the WCAG minimum. */
 .foot nav a{opacity:.68;display:flex;align-items:center;min-height:44px}
@@ -538,13 +599,17 @@ footer{padding:36px 0 44px}
 /* The footer carries WhatsApp as a labelled link rather than a bare icon: by the time
    someone has scrolled this far they are looking for a way to get in touch, and a label
    converts far better than a glyph. The header icon is for people who already know. */
-.foot nav a.wa-link{color:#25D366;opacity:.9;gap:8px}
+/* opacity .9 measured 4.26:1 and failed AA for text this size. At full strength the same
+   green is 4.89:1 and reads no louder. */
+.foot nav a.wa-link{color:#25D366;gap:8px}
 .foot nav a.wa-link:hover{opacity:1;color:#3BE87C}
 .wa-ico{flex:0 0 auto}
 
 /* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner.
    This line is the whole privacy notice. */
-.foot .privacy{font-size:10.5px;color:var(--bone-dim);opacity:.65;margin-top:18px;letter-spacing:.03em}
+/* opacity .65 measured 3.64:1 — the one line on the site that stated a policy and could
+   not be read. .8 is still visibly quieter than the links above it, at 4.64:1. */
+.foot .privacy{font-size:var(--fs-3xs);color:var(--bone-dim);opacity:.8;margin-top:18px;letter-spacing:.03em}
 
 @media (min-width:641px){
   footer{padding:44px 0 56px}
@@ -560,3 +625,74 @@ footer{padding:36px 0 44px}
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
   a.plate:hover{transform:none}
 }
+
+/* ---------- motion ----------
+ *
+ * Everything below is CSS. There is deliberately no animation library on these pages.
+ *
+ * spirituality.html gets its movement from GSAP, ScrollTrigger, three.js and Lenis pulled
+ * from unpkg and cdnjs — roughly a quarter of a megabyte of JavaScript from two
+ * third-party origins. That is a defensible trade on one showpiece page. It is not one
+ * here: wardrobe.html carries 159 cards and 3,300 DOM nodes, and the whole reason this
+ * site self-hosts its fonts is that the footer's "no cookies, no trackers, no analytics"
+ * is meant literally. Scroll-linked reveals no longer need any of it.
+ *
+ * The pattern matters as much as the effect. The BASE state is the finished state — cards
+ * are visible, at full opacity, in their final position — and the animation is added
+ * inside @supports on top. Support for scroll-driven animations is Chrome/Edge 115+ and
+ * Safari 18+, with Firefox still behind a flag; in Firefox, and in any browser that has
+ * never heard of this, the feature query simply does not match and the page renders as it
+ * does today. Nothing is ever hidden waiting for a script that might not arrive.
+ */
+@supports (animation-timeline:view()){
+  @media (prefers-reduced-motion:no-preference){
+    .piece,.post,.plate,.tile,.vitem,.rev,.holding,.how{
+      animation:lift linear both;
+      animation-timeline:view();
+      /* Finishes early — by the time the card is a fifth of the way up the viewport it is
+         already settled, so nothing is still moving where the eye has come to rest. */
+      animation-range:entry 0% cover 20%;
+    }
+    @keyframes lift{
+      from{opacity:0;transform:translateY(16px)}
+      to{opacity:1;transform:none}
+    }
+
+    /* The section rules draw themselves as their heading arrives. It is the one flourish
+       that is native to a monospace layout — a rule being typed rather than a thing
+       sliding in. */
+    .sec-top,.rail-top{
+      animation:rule-in linear both;
+      animation-timeline:view();
+      animation-range:entry 10% cover 26%;
+    }
+    @keyframes rule-in{
+      from{clip-path:inset(0 100% 0 0)}
+      to{clip-path:inset(0 0 0 0)}
+    }
+  }
+}
+
+/* Cross-document view transitions. The site is same-origin, server-rendered and almost
+   script-free, which is the ideal case for these: a card on the wardrobe and the
+   photograph at the top of its category page are the same object, and the browser can
+   tween between them across a real navigation with no JavaScript at all.
+   Unsupported browsers get an ordinary navigation, which is what they get today. */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.22s}
+
+/* A hover underline that grows from the left rather than a border that blinks on. It is
+   drawn as a background image so it sits under the descenders instead of clipping them,
+   and it animates, which a border-bottom cannot. */
+.post h3,.plate h3,.tile h3{
+  background-image:linear-gradient(var(--magenta),var(--magenta));
+  background-repeat:no-repeat;
+  background-position:0 100%;
+  background-size:0 1px;
+  transition:background-size .22s ease,color .15s;
+}
+.post:hover h3,a.plate:hover h3,.tile:hover h3,
+.post:focus-visible h3,a.plate:focus-visible h3,.tile:focus-visible h3{background-size:100% 1px}

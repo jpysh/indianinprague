@@ -537,6 +537,9 @@ function page(cat, items, manifest, counts, ch) {
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
 <meta property="og:image:alt" content="Indian in Prague">
 <link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Plex Sans carries every lede and every paragraph of prose on the site now, so it is
+     as much a first-paint font as the mono is. One file: it is a variable face. -->
+<link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/clothes.css">

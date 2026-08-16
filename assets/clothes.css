@@ -1,23 +1,23 @@
 /* clothes.html — the wardrobe page. Loaded after site.css. */
 
-/* This page's saffron button sits on the olive ground rather than the hero, so it carries
-   its own border and text colour. Deliberate override of the shared .btn.saf. */
-.btn.saf{border-color:var(--olive);background:var(--saffron);color:var(--bone)}
-.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--void)}
+/* The .btn.saf override removed from here set colour:--bone on the saffron fill — cream
+   on lime, 1.16:1 — on the primary call to action of all seven shop pages, which load this
+   file. site.css sets colour:--void on the same fill at 7.26:1. */
 
 .manifesto{
   background:var(--magenta);color:var(--void);
   padding:26px var(--gutter);margin:30px 0 36px;
   display:grid;grid-template-columns:1fr;gap:22px;
 }
-.manifesto h2{font-weight:400;font-size:20px;line-height:1.2;color:var(--void)}
-.manifesto p{font-size:13px;color:var(--void);opacity:.9}
+.manifesto h2{font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);color:var(--void)}
+/* opacity:.9 took dark text on the amber panel to 3.95:1. At full strength it is 4.70:1. */
+.manifesto p{color:var(--void)}
 .manifesto .labels{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.manifesto .labels span{font-size:10.5px;letter-spacing:.05em;border:1px solid var(--void);color:var(--void);padding:4px 8px;text-transform:uppercase}
+.manifesto .labels span{font-size:var(--fs-2xs);letter-spacing:.05em;border:1px solid var(--void);color:var(--void);padding:4px 8px;text-transform:uppercase}
 
 @media (min-width:721px){
   .manifesto{grid-template-columns:1fr 1fr;gap:30px;padding:36px 30px;margin:36px 0 42px}
-  .manifesto h2{font-size:22px}
+  .manifesto h2{font-size:var(--fs-xl)}
 }
 
 .vinted-cta{
@@ -25,19 +25,19 @@
   padding:28px var(--gutter);margin:40px 0;
   text-align:center;background:var(--void-2);
 }
-.vinted-cta h2{font-weight:400;font-size:clamp(20px,5vw,25px);color:var(--magenta);margin-bottom:10px;text-transform:uppercase;letter-spacing:.01em}
-.vinted-cta p{font-size:13px;color:var(--bone-dim);max-width:54ch;margin:0 auto 20px}
+.vinted-cta h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);color:var(--magenta);margin-bottom:10px;text-transform:uppercase;letter-spacing:.01em}
+.vinted-cta p{color:var(--bone-dim);max-width:56ch;margin:0 auto 20px}
 
 @media (min-width:721px){
   .vinted-cta{padding:36px 30px;margin:48px 0}
 }
 
 .guide{padding:20px 0 48px}
-.guide h2{font-weight:500;font-size:clamp(19px,2.6vw,26px);text-transform:uppercase;border-top:1px solid rgba(58,30,22,.2);padding-top:24px;margin-bottom:6px}
-.guide .cz{font-size:11px;color:var(--olive);margin-bottom:24px;letter-spacing:.04em}
-.guide-body{max-width:70ch}
-.guide-body p{font-size:14px;color:var(--bone-dim);margin-bottom:16px}
-.guide-body h3{font-size:15px;font-weight:600;text-transform:uppercase;color:var(--magenta);margin:26px 0 8px;letter-spacing:.02em}
+.guide h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);text-transform:uppercase;border-top:1px solid rgba(58,30,22,.2);padding-top:24px;margin-bottom:6px}
+.guide .cz{font-size:var(--fs-2xs);color:var(--olive);margin-bottom:24px;letter-spacing:.04em}
+.guide-body{max-width:66ch}
+.guide-body p{color:var(--bone-dim);margin-bottom:16px}
+.guide-body h3{font-size:var(--fs-l);font-weight:600;text-transform:uppercase;color:var(--magenta);margin:26px 0 8px;letter-spacing:.02em}
 .guide-body b{color:var(--bone);font-weight:600}
 
 @media (min-width:641px){
