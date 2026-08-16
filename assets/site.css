@@ -599,9 +599,10 @@ footer{padding:36px 0 44px}
 /* The footer carries WhatsApp as a labelled link rather than a bare icon: by the time
    someone has scrolled this far they are looking for a way to get in touch, and a label
    converts far better than a glyph. The header icon is for people who already know. */
-/* opacity .9 measured 4.26:1 and failed AA for text this size. At full strength the same
-   green is 4.89:1 and reads no louder. */
-.foot nav a.wa-link{color:#25D366;gap:8px}
+/* opacity:1 is load-bearing — .foot nav a above sets .68, and at that strength this green
+   measures 3.08:1. The rule used to say .9, which was 4.26:1 and still under AA. At full
+   strength it is 4.89:1 and reads no louder, because the colour is doing the work. */
+.foot nav a.wa-link{color:#25D366;opacity:1;gap:8px}
 .foot nav a.wa-link:hover{opacity:1;color:#3BE87C}
 .wa-ico{flex:0 0 auto}
 
