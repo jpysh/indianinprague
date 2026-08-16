@@ -200,9 +200,10 @@ tunnel by UUID rather than by name — name lookup is what would require cert.pe
 ```
 
 That is the whole procedure. The script syncs the closet, derives the new photos, rebuilds
-every shop page, regenerates the structured data and sitemap, bumps the cache token,
-rebuilds the container and pings IndexNow — in that order, for reasons documented at the
-top of the script.
+every shop page, regenerates the structured data and sitemap, bumps the cache token, stages
+`dist/`, commits what it is about to publish, deploys to Cloudflare and pings IndexNow — in
+that order, for reasons documented at the top of the script. Ten steps as of 16 Aug 2026;
+the commit is step 9 and is explained under "There are two publish paths now" below.
 
 Useful variants:
 
@@ -247,6 +248,40 @@ launchctl unload ~/Library/LaunchAgents/com.jains.indianinprague-sync.plist
 The source of truth for the agent is `scripts/com.jains.indianinprague-sync.plist`; the
 copy in `~/Library/LaunchAgents/` is what actually runs. It sets an explicit `PATH`
 because launchd's default has neither node, docker nor ImageMagick on it.
+
+### There are two publish paths now, and they must not disagree (16 Aug 2026)
+
+The repo is connected to **Cloudflare Workers Builds**, so a push to `main` deploys the
+site. `publish.sh` also deploys the site. They do not read the same thing:
+
+| Path | Deploys | Triggered by |
+|---|---|---|
+| `publish.sh` on this Mac | the **working tree** (`build-dist.mjs` stages from disk) | 07:15 launchd, or by hand |
+| Workers Builds | the **last commit** (`dist/` is gitignored, so the build stages it) | `git push origin main` |
+
+Left alone, that pairing goes backwards on its own. The morning job rebuilds every generated
+page and deploys it, nobody commits the result, and a push days later — for an unrelated
+one-line fix — ships the older tree and reverts a week of catalog updates. Nothing errors.
+
+So **`publish.sh` step 9 commits what it is about to deploy**, before the upload rather than
+after, and scoped by pathspec to the paths `build-dist` stages plus `data/`. Consequences
+worth knowing:
+
+- **Your hand-edited pages get committed too**, if they are among the published files. That
+  is correct, not a slip: `build-dist` stages them from the working tree, so they went live,
+  and the commit records what went live. Work in progress you do not want published should
+  not be sitting in a published file at 07:15.
+- **`scripts/`, `package.json`, `wrangler.jsonc` and the `.md` files are never committed by
+  the job**, nor is anything you had staged by hand. Those stay yours.
+- **It does not push.** A push would trigger Workers Builds and deploy the same bytes twice,
+  and the credentials are not in launchd's environment anyway. The commits queue locally;
+  because they hold exactly what is already live, pushing them later is a no-op at the edge.
+  The run prints the `git push` line to use.
+- **A git problem stops the publish before the deploy**, so git and the edge stay in step.
+  Detached HEAD or a missing work tree fails in the first second, ahead of the Vinted sync.
+
+Also note the build container **has no rsync** — `build-dist.mjs` probes for it and falls
+back to a recursive node copy. Assume no system binaries are available there.
 
 ### Sold pieces
 

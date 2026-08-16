@@ -22,7 +22,37 @@
 #               that shipped correctly and stayed invisible for a day exactly this way.
 #   build-dist  must precede the deploy — it is the definition of what is public, and the
 #               only thing keeping scripts/, data/ and inventory.html off the internet.
+#   commit      must precede the deploy, not follow it. See below.
 #   indexnow    must follow the deploy, or it invites crawlers to fetch the previous build.
+#
+# WHY THIS SCRIPT COMMITS (added 16 Aug 2026)
+# -------------------------------------------
+# There are now TWO ways this site publishes: this script, and a push to `main`, because the
+# repo is connected to Cloudflare Workers Builds. That second path deploys whatever is
+# COMMITTED; this one deploys whatever is in the WORKING TREE (build-dist stages from disk,
+# not from git). Two publishers reading two different definitions of "the site" is a
+# regression waiting for a quiet morning: the 07:15 job rebuilds every generated page and
+# deploys it, nobody commits the result, and the next push — days later, for an unrelated
+# one-line fix — ships the older tree and silently reverts a week of catalog updates. There
+# is no error anywhere in that sequence. The site just goes backwards.
+#
+# So the run commits what it published. Two details that are not arbitrary:
+#
+#   BEFORE the deploy, not after. If committing fails we stop, and git and the edge are both
+#   still on yesterday — consistent, and obvious in the log. Commit AFTER a successful deploy
+#   and a failure there leaves the edge ahead of git, which is the exact divergence this is
+#   here to prevent.
+#
+#   Scoped to what build-dist stages, plus data/. NOT `git add -A`. Human-authored files the
+#   pipeline never touches — scripts/, wrangler.jsonc, package.json, the .md files — stay out,
+#   so a half-finished edit sitting in the tree at 07:15 is not committed by a cron job. The
+#   published pages ARE in scope even when hand-edited, because build-dist stages them from
+#   the working tree: they went live, so they belong in the commit that records what went live.
+#
+# It deliberately does NOT push. A push would trigger Workers Builds, which would deploy the
+# same bytes a second time — and the credentials for it are not in launchd's environment
+# anyway. Pushing stays a human action; the commits queue up until then, and because they
+# hold exactly what is already live, pushing them later is a no-op at the edge.
 #
 # This runs on this Mac and not in the cloud, deliberately. sync-vinted's session handshake
 # works from a residential IP and would be challenged from a datacenter range; build-images
@@ -45,28 +75,42 @@ done
 
 step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
 
-step "1/9 sync from Vinted"
+# Checked here, in the first second, rather than at step 9 — a git problem should surface
+# before the Vinted sync and the image derivation, not after six minutes of work that is
+# then thrown away because the run cannot record itself.
+if [ -z "$LOCAL" ]; then
+  git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
+    echo "⚠ not a git work tree — publish.sh commits what it deploys; see the header" >&2
+    exit 1
+  }
+  GIT_BRANCH=$(git symbolic-ref --quiet --short HEAD) || {
+    echo "⚠ detached HEAD — commit or check out a branch before publishing" >&2
+    exit 1
+  }
+fi
+
+step "1/10 sync from Vinted"
 node scripts/sync-vinted.mjs $FULL
 
-step "2/9 derive responsive images"
+step "2/10 derive responsive images"
 node scripts/build-images.mjs
 
-step "3/9 build shop pages"
+step "3/10 build shop pages"
 node scripts/build-shop.mjs
 
-step "4/9 build local inventory view"
+step "4/10 build local inventory view"
 node scripts/build-inventory.mjs
 
-step "5/9 inject JSON-LD"
+step "5/10 inject JSON-LD"
 node scripts/build-jsonld.mjs
 
-step "6/9 build sitemap"
+step "6/10 build sitemap"
 node scripts/build-sitemap.mjs
 
-step "7/9 bump asset cache tokens"
+step "7/10 bump asset cache tokens"
 node scripts/bump-assets.mjs
 
-step "8/9 stage dist/"
+step "8/10 stage dist/"
 node scripts/build-dist.mjs
 
 if [ -n "$LOCAL" ]; then
@@ -79,7 +123,47 @@ if [ -n "$LOCAL" ]; then
   exit 0
 fi
 
-step "9/9 deploy to Cloudflare"
+step "9/10 commit what is about to be published"
+
+# The pathspec IS the contract: these are the paths build-dist stages into dist/, plus data/,
+# which is the master the pages are generated from — committing pages without the catalog
+# that produced them would record a result with no cause. Everything else in the repo is
+# hand-authored and stays out, so an unfinished edit to scripts/ or a half-written note in
+# DEPLOY.md is never swept into a 07:15 commit.
+#
+# ':!inventory.html' excludes the stock-taking view for the same reason build-dist withholds
+# it from the upload: cost prices and unlisted stock. It is tracked from before that rule
+# existed, so it is excluded explicitly here rather than silently riding along on the glob.
+PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images/derived edge data )
+
+# `git add` first, and not only because of modified files: build-images writes NEW
+# derivatives every time a listing gains a photo, and build-shop can write a page that did
+# not exist yesterday. Those are untracked, and untracked files are invisible to both
+# `git diff HEAD` and a path-scoped `git commit` — without this add, the day a product
+# category appears is the day the commit quietly omits it.
+git add -- "${PUBLISHED[@]}"
+
+# Both the test and the commit are scoped to the same pathspec, so anything the user had
+# staged by hand before 07:15 is neither counted as "something to publish" nor carried into
+# an automated commit. `git commit -- <paths>` ignores the rest of the index by design.
+if git diff --cached --quiet -- "${PUBLISHED[@]}"; then
+  echo "nothing generated changed — no commit (deploying anyway; dist/ is already staged)"
+else
+  # --no-verify: this runs unattended at 07:15. A hook that prompts, or one that shells out
+  # to something slow, would hang the publish rather than fail it, and a hung publish is the
+  # one failure mode nothing here recovers from.
+  git commit --no-verify -q -m "publish: $(date +%Y-%m-%d) generated output" -m \
+    "Automated commit from scripts/publish.sh, recording the tree that step 10 deploys.
+Committed before the upload so git can never trail the edge. Not pushed — see the
+header of publish.sh." -- "${PUBLISHED[@]}" || {
+    echo "⚠ commit failed — stopping BEFORE the deploy so git and the edge stay in step" >&2
+    exit 1
+  }
+  echo "committed on ${GIT_BRANCH}: $(git log --oneline -1)"
+  echo "not pushed — run: git push origin ${GIT_BRANCH}"
+fi
+
+step "10/10 deploy to Cloudflare"
 
 # Cloudflare credentials, in order of preference.
 #
