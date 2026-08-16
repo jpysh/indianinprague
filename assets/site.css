@@ -389,15 +389,26 @@ main > section:nth-of-type(even){background:var(--band)}
 
 /* ---------- grids shared by several pages ---------- */
 
-/* One column by default; widen as the viewport allows. */
-.grid3{display:grid;grid-template-columns:1fr;gap:12px}
-@media (min-width:521px){.grid3{grid-template-columns:1fr 1fr}}
-@media (min-width:801px){.grid3{grid-template-columns:repeat(3,1fr);gap:16px}}
+/* One column by default; widen as the viewport allows.
+
+   Every track is minmax(0,1fr) rather than a bare 1fr, and that is load-bearing, not
+   style. A bare 1fr is minmax(auto,1fr), so each column refuses to shrink below its
+   item's min-content width. The cards contain `.piece .frame`, which sizes itself from
+   `aspect-ratio:4/5` with no intrinsic width to work from — its min-content resolves to
+   a fixed 560px, so three columns demanded 1712px inside a 1220px container and the
+   grid ran off the right edge of the page on desktop. minmax(0,…) lets the tracks
+   shrink to the space that actually exists. */
+.grid3{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:521px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:801px){.grid3{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
 
 .split{display:grid;grid-template-columns:1fr;gap:16px}
 @media (min-width:721px){.split{grid-template-columns:1fr 1fr}}
 
-.piece{display:flex;flex-direction:column}
+/* min-width:0 so a card can never push its track wider than the track was given —
+   the aspect-ratio frame below has a 560px min-content width it would otherwise
+   insist on. Pairs with the minmax(0,1fr) tracks in .grid3. */
+.piece{display:flex;flex-direction:column;min-width:0}
 .piece .frame{aspect-ratio:4/5}
 .piece .meta{padding:12px 2px 0;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 /* min-width:0 is load-bearing. Without it the name keeps its max-content width, and a
@@ -470,9 +481,10 @@ a.plate h3{transition:color .15s}
 .post-lg .frame{aspect-ratio:4/3}
 .post-lg h3{font-size:16.5px}
 
-.grid4{display:grid;grid-template-columns:1fr;gap:12px}
-@media (min-width:521px){.grid4{grid-template-columns:1fr 1fr}}
-@media (min-width:1001px){.grid4{grid-template-columns:repeat(4,1fr);gap:16px}}
+/* minmax(0,1fr) for the same reason as .grid3 above. */
+.grid4{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:521px){.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1001px){.grid4{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
 
 @media (prefers-reduced-motion:reduce){
   .post:hover{transform:none}
