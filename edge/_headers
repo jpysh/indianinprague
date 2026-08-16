@@ -51,10 +51,16 @@
 # degrade, it fails completely — measured: 0 CSS rules applied, headings in Times, the
 # preloader frozen at "0%". Serving the file as-is REQUIRES this exception.
 #
-# What it costs, restated so it is not rediscovered later: cdnjs, unpkg, the two Google
-# Fonts hosts and images.unsplash.com all see the IP and User-Agent of every visitor to
-# this page, and 'unsafe-inline' on script-src removes the protection that makes an
-# injected <script> inert. Every other page keeps the strict policy above.
+# What it costs, restated so it is not rediscovered later: cdnjs, unpkg and
+# images.unsplash.com see the IP and User-Agent of every visitor to this page, and
+# 'unsafe-inline' on script-src removes the protection that makes an injected <script>
+# inert. Every other page keeps the strict policy above.
+#
+# The two Google Fonts hosts were removed on 16 Aug 2026 when Fraunces, Manrope and Space
+# Mono were self-hosted (see assets/spirituality-fonts.css). font-src is back to 'self'
+# alone, and style-src no longer trusts a third party. The remaining exceptions are the
+# script CDNs and Unsplash; both go away if the libraries are vendored and the stock
+# photography is replaced with the author's own.
 #
 # `! Content-Security-Policy` detaches the strict policy inherited from /* first — without
 # it the two policies merge, and a merged CSP is enforced as the INTERSECTION of both, so
@@ -62,12 +68,12 @@
 # first run of this file.
 /spirituality.html
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 
 # The extensionless form resolves to the same file, so it needs the same exception.
 /spirituality
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://images.unsplash.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 
 # ---------------------------------------------------------------------------
 # Immutable content. Derived images are content-addressed by filename (the id and variant

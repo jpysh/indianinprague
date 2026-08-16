@@ -38,7 +38,6 @@ const PAGES = {
   "index.html": null,
   "404.html": null,
   "clothes.html": "wardrobe",
-  "wellness.html": "wellness",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.
   //
@@ -51,7 +50,6 @@ const PAGES = {
   // Add it once the page has been ported onto the site's own chrome and stylesheet. Until
   // then its navigation is its own, which is also why it currently has no links back to the
   // rest of the site.
-  "buddy.html": "buddy",
   "diaries.html": "diaries",
   "restaurants.html": "diaries",
   "article-contemporary-indian-wear.html": "diaries",
@@ -66,8 +64,8 @@ const FOOTER = /<footer>[\s\S]*?<\/footer>/;
 function markNav(header, module) {
   if (!module) return header;
   return header.replace(
-    new RegExp(`<a href="/${module}\\.html">`),
-    `<a href="/${module}.html" class="active" aria-current="page">`);
+    new RegExp(`<a href="/${module}">`),
+    `<a href="/${module}" class="active" aria-current="page">`);
 }
 
 const index = await readFile(path.join(ROOT, "index.html"), "utf8");

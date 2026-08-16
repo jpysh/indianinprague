@@ -20,18 +20,18 @@ const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 // Priority reflects how much of the site's reason to exist each page carries, not a wish.
 const PAGES = [
   { file: "index.html", loc: "/", priority: "1.0", changefreq: "weekly" },
-  { file: "wardrobe.html", loc: "/wardrobe.html", priority: "0.9", changefreq: "daily" },
-  // Wellness is a top-level module with its own hand-written page and a small grid.
-  { file: "wellness.html", loc: "/wellness.html", priority: "0.6", changefreq: "monthly" },
+  { file: "wardrobe.html", loc: "/wardrobe", priority: "0.9", changefreq: "daily" },
+  // wellness.html and buddy.html were removed on 16 Aug 2026 (unfinished holding pages),
+  // so neither belongs in the sitemap. Their URLs now return the site's 404.
   // Spirituality is a hand-written module page (yoga, ayurveda, meditation, trips), not
   // the shop shelf that used to hold this URL — that shelf is /ritual-objects.html now.
-  { file: "spirituality.html", loc: "/spirituality.html", priority: "0.8", changefreq: "monthly" },
-  { file: "clothes.html", loc: "/clothes.html", priority: "0.9", changefreq: "daily" },
-  { file: "restaurants.html", loc: "/restaurants.html", priority: "0.9", changefreq: "monthly" },
-  { file: "diaries.html", loc: "/diaries.html", priority: "0.7", changefreq: "monthly" },
+  { file: "spirituality.html", loc: "/spirituality", priority: "0.8", changefreq: "monthly" },
+  { file: "clothes.html", loc: "/clothes", priority: "0.9", changefreq: "daily" },
+  { file: "restaurants.html", loc: "/restaurants", priority: "0.9", changefreq: "monthly" },
+  { file: "diaries.html", loc: "/diaries", priority: "0.7", changefreq: "monthly" },
   {
     file: "article-contemporary-indian-wear.html",
-    loc: "/article-contemporary-indian-wear.html",
+    loc: "/article-contemporary-indian-wear",
     priority: "0.6",
     changefreq: "yearly",
   },
@@ -44,7 +44,7 @@ const PAGES = [
 // changefreq is daily because these turn over with the closet, not with the writing.
 for (const file of ["home-decor.html", "jewellery.html", "ritual-objects.html", "books.html", "more.html", "sold.html"]) {
   if (existsSync(`${ROOT}/${file}`)) {
-    PAGES.push({ file, loc: `/${file}`, priority: "0.8", changefreq: "daily" });
+    PAGES.push({ file, loc: `/${file.replace(/\.html$/, "")}`, priority: "0.8", changefreq: "daily" });
   }
 }
 

@@ -104,7 +104,7 @@ function rail(cat, posts, manifest) {
         <h2 id="rail-${esc(cat.id)}">${esc(cat.name)}</h2>
         <p class="rail-note">${esc(cat.note)}</p>
       </div>
-      <div class="rail-meta"><span class="rail-cs" lang="cs">${esc(cat.cs)}</span>${all}</div>
+      <div class="rail-meta"><span class="rail-cs">${esc(cat.sub)}</span>${all}</div>
     </div>
     <!-- tabindex="0" makes the track itself focusable, which is what lets a keyboard user
          scroll it with the arrow keys. role/aria-label give that stop a name, so it is not
@@ -122,8 +122,8 @@ function jsonLd(posts) {
     "@graph": [
       {
         "@type": "Blog",
-        "@id": `${SITE}/diaries.html#blog`,
-        url: `${SITE}/diaries.html`,
+        "@id": `${SITE}/diaries#blog`,
+        url: `${SITE}/diaries`,
         name: "Tram 22 Diaries",
         description:
           "A journal about Indian food in Prague, contemporary Indian clothing, and life between India and the Czech Republic.",
@@ -135,7 +135,7 @@ function jsonLd(posts) {
           headline: p.title,
           description: p.blurb,
           datePublished: p.date,
-          url: `${SITE}/${p.href}`,
+          url: `${SITE}${String(p.href).replace(/\.html$/, "").replace(/^(?!\/)/, "/")}`,
           author: { "@id": `${SITE}/#author` },
         })),
       },
@@ -143,7 +143,7 @@ function jsonLd(posts) {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-          { "@type": "ListItem", position: 2, name: "Tram 22 Diaries", item: `${SITE}/diaries.html` },
+          { "@type": "ListItem", position: 2, name: "Tram 22 Diaries", item: `${SITE}/diaries` },
         ],
       },
     ],
@@ -192,12 +192,12 @@ const html = `<!DOCTYPE html>
 <title>Tram 22 Diaries — Indian food, clothes and life in Prague | Indian in Prague</title>
 <meta name="description" content="Honest reviews of Prague's Indian restaurants, notes on contemporary Indian wear, and life between two countries. The Tram 22 journal.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="${SITE}/diaries.html">
+<link rel="canonical" href="${SITE}/diaries">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Indian in Prague">
 <meta property="og:locale" content="en">
-<meta property="og:url" content="${SITE}/diaries.html">
+<meta property="og:url" content="${SITE}/diaries">
 <meta property="og:title" content="Tram 22 Diaries — an Indian in Prague">
 <meta property="og:description" content="Honest reviews of Prague's Indian restaurants, contemporary Indian wear, and life between two countries.">
 <meta name="twitter:card" content="summary_large_image">
@@ -238,7 +238,7 @@ ${rails.join("\n\n")}
     <p>Jewellery, home things, brass, and the long one about paperwork and winters. They appear here as they are written — there is no list to join and nothing to unsubscribe from, but if you want a nudge when the next one lands, message me.</p>
     <div class="cta-row">
       <a class="btn saf" href="https://wa.me/420777558262?text=${encodeURIComponent("Hi! Nudge me when there is a new diary on indianinprague.jains.es.")}" target="_blank" rel="noopener">Nudge me when there's a new one →</a>
-      <a class="btn" href="/wardrobe.html">The wardrobe →</a>
+      <a class="btn" href="/wardrobe">The wardrobe →</a>
     </div>
   </div>
 </div></section>

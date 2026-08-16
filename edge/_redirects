@@ -4,32 +4,34 @@
 #
 # Format: <from> <to> <status>. Limits: 2,000 static + 100 dynamic rules.
 #
-# The homepage. `html_handling: "none"` in wrangler.jsonc makes the asset server serve the
-# literal path requested and nothing else — which is exactly what keeps /wardrobe.html
-# answering 200 instead of redirecting to /wardrobe, and is the whole reason this site is on
-# Workers Static Assets rather than Pages. The cost of that setting is that "/" no longer
-# maps to index.html by itself: measured against a local dev server, the bare homepage
-# returned 404 and served 404.html.
+# The site moved to EXTENSIONLESS URLs on 16 Aug 2026 (wrangler.jsonc:
+# html_handling "auto-trailing-slash"). /wardrobe is the real URL; wardrobe.html is only a
+# filename on disk. The asset server already serves / from index.html and already redirects
+# the .html form, so no rewrite is needed for the homepage.
 #
-# The `200` status makes this a REWRITE, not a redirect: the visitor stays on "/" and the
-# bytes of index.html are returned there. A 301 to /index.html would work too and would be
-# wrong — it would put a redirect on the most-linked URL of the site and split it from the
-# canonical tag, which is the same trap that ruled Pages out.
-/            /index.html      200
-
-# NOT here: /404.html is served automatically for unmatched paths, via
-# not_found_handling in wrangler.jsonc.
-#
-# Also NOT here, and a deliberate change from nginx: the extensionless form of each page
-# (/clothes for clothes.html) no longer resolves. nginx offered it via `try_files $uri
-# $uri.html`, but nothing in the markup, the sitemap or any canonical tag has ever used it —
-# it existed only for URLs typed by hand. Restoring it would mean serving every page at two
-# live URLs, which is the duplicate-content problem the .html decision above avoids. The one
-# extensionless path that was ever published, /shop, is redirected below.
+# The .html rules below exist anyway, and they matter. Left to itself the asset server sends
+# /wardrobe.html to /wardrobe with a **307 Temporary** — measured. Every one of these URLs
+# has been indexed for months and is what external links point at, and a temporary redirect
+# tells Google the old URL is still the right one, which is the opposite of the truth. These
+# rules answer 301 Permanent instead, so ranking consolidates onto the new URL. They are
+# matched before the built-in behaviour.
 
 # shop.html became wardrobe.html when the top nav went to five modules and the word "shop"
 # left the visitor-facing site. It was the most linked and best indexed page here, so the
 # old path stays alive permanently. 301 and not 302: the move is permanent, and only a 301
 # passes the accumulated ranking to the new URL. Both forms, because both resolved before.
-/shop.html   /wardrobe.html   301
-/shop        /wardrobe.html   301
+/shop.html                                /wardrobe                         301
+/shop                                     /wardrobe                         301
+
+/index.html                               /                                 301
+/wardrobe.html                            /wardrobe                         301
+/clothes.html                             /clothes                          301
+/jewellery.html                           /jewellery                        301
+/home-decor.html                          /home-decor                       301
+/ritual-objects.html                      /ritual-objects                   301
+/books.html                               /books                            301
+/sold.html                                /sold                             301
+/spirituality.html                        /spirituality                     301
+/diaries.html                             /diaries                          301
+/restaurants.html                         /restaurants                      301
+/article-contemporary-indian-wear.html    /article-contemporary-indian-wear 301

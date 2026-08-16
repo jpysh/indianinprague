@@ -1,16 +1,88 @@
 {
-  "syncedAt": "2026-08-16T05:15:08.565Z",
+  "syncedAt": "2026-08-16T10:49:00.477Z",
   "rate": {
     "czkPerEur": 24.205,
     "fetched": "2026-08-16",
     "source": "ECB"
   },
-  "count": 147,
+  "count": 149,
   "items": [
+    {
+      "id": "9675580496",
+      "title": "Vintage Tan Leather Bag | Ethiopian | Boho Leather Bag",
+      "priceCzk": 695,
+      "priceEur": 29,
+      "brand": "ethiopian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Brown",
+        "cs": "Hnědá"
+      },
+      "category": "Fashion",
+      "vintedCategoryCs": "Ženy Tašky přes rameno",
+      "description": "Vintage high quality brown genuine leather Ethiopia handmade crossbody shoulder bag.\nAdjustable Strap\n1 main compartment\n1 inner pocket",
+      "photo": "images/vinted-9675580496-1.jpg",
+      "photos": [
+        "images/vinted-9675580496-1.jpg",
+        "images/vinted-9675580496-2.jpg",
+        "images/vinted-9675580496-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9675580496-vintage-tan-leather-bag-ethiopian-boho-leather-bag",
+        "es": "https://www.vinted.es/items/9675580496-vintage-tan-leather-bag-ethiopian-boho-leather-bag",
+        "com": "https://www.vinted.com/items/9675580496-vintage-tan-leather-bag-ethiopian-boho-leather-bag"
+      }
+    },
+    {
+      "id": "9674633786",
+      "title": "Vintage Jewellery | Rope Twisted Hoops Earrings | 925 Silver Ethnic Jewellery",
+      "priceCzk": 695,
+      "priceEur": 29,
+      "brand": "Vintage Love",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Silver",
+        "cs": "Stříbrná"
+      },
+      "category": "Jewellery",
+      "vintedCategoryCs": "Ženy Naušnice",
+      "description": "Vintage Bali Wire-Wrapped Hoop Earrings\n92.5% Pure Sterling Silver (tested)\nDiameter 2 cm",
+      "photo": "images/vinted-9674633786-1.jpg",
+      "photos": [
+        "images/vinted-9674633786-1.jpg",
+        "images/vinted-9674633786-2.jpg",
+        "images/vinted-9674633786-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9674633786-vintage-jewellery-rope-twisted-hoops-earrings-925-silver-ethnic-jewellery",
+        "es": "https://www.vinted.es/items/9674633786-vintage-jewellery-rope-twisted-hoops-earrings-925-silver-ethnic-jewellery",
+        "com": "https://www.vinted.com/items/9674633786-vintage-jewellery-rope-twisted-hoops-earrings-925-silver-ethnic-jewellery"
+      }
+    },
     {
       "id": "9649545514",
       "title": "Buddhist Clothing | Buddha Coord Set | Premium Luxury Indian Suit Set | Summer Cotton Dress",
-      "priceCzk": 700,
+      "priceCzk": 695,
       "priceEur": 29,
       "brand": "Indian",
       "size": "L / 40 / 12",
@@ -32,7 +104,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -68,7 +140,7 @@
         "images/vinted-9644821969-2.jpg",
         "images/vinted-9644821969-3.jpg"
       ],
-      "favourites": 71,
+      "favourites": 70,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -536,7 +608,7 @@
         "images/vinted-9602849104-2.jpg",
         "images/vinted-9602849104-3.jpg"
       ],
-      "favourites": 47,
+      "favourites": 48,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -895,7 +967,7 @@
         "images/vinted-9602615425-1.jpg",
         "images/vinted-9602615425-2.jpg"
       ],
-      "favourites": 32,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1111,7 +1183,7 @@
         "images/vinted-9602491240-2.jpg",
         "images/vinted-9602491240-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4783,7 +4855,7 @@
         "images/vinted-9316357780-2.jpg",
         "images/vinted-9316357780-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,

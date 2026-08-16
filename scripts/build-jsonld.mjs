@@ -62,7 +62,7 @@ const WEBSITE = {
   "@id": `${SITE}/#website`,
   url: `${SITE}/`,
   name: "Indian in Prague",
-  alternateName: "Indian in Prague — indické oblečení a restaurace Praha",
+  alternateName: "Indian in Prague",
   description:
     "Contemporary Indian clothes for sale in Prague, honest reviews of Prague's Indian restaurants, vegan spots, and a journal about life between India and the Czech Republic.",
   inLanguage: ["en", "cs"],
@@ -159,15 +159,15 @@ const graphs = {
   "clothes.html": async () => [
     {
       "@type": "CollectionPage",
-      "@id": `${SITE}/clothes.html#webpage`,
-      url: `${SITE}/clothes.html`,
+      "@id": `${SITE}/clothes#webpage`,
+      url: `${SITE}/clothes`,
       name: "Modern Indian clothes in Prague",
       isPartOf: { "@id": `${SITE}/#website` },
       inLanguage: "en",
     },
     breadcrumb([
       ["Home", `${SITE}/`],
-      ["Clothes", `${SITE}/clothes.html`],
+      ["Clothes", `${SITE}/clothes`],
     ]),
     {
       "@type": "ItemList",
@@ -185,13 +185,13 @@ const graphs = {
     //
     // FAQPage was the obvious alternative and is deliberately not used: Google requires
     // FAQ markup to mirror question-and-answer content that is actually visible on the
-    // page, and these are statement headings ("Block print / blokový tisk"), not
+    // page, and these are statement headings ("Block print"), not
     // questions. Rewriting them into questions to satisfy a schema would be tail-wagging
     // the dog. DefinedTerm describes what this genuinely is, carries no such guideline
     // risk, and is just as extractable by an LLM answering "what is Ajrakh block print".
     {
       "@type": "DefinedTermSet",
-      "@id": `${SITE}/clothes.html#glossary`,
+      "@id": `${SITE}/clothes#glossary`,
       name: "A quick guide to modern Indian labels",
       description:
         "What the terms on Indian clothing labels actually mean, for buyers who have only met Indian clothing through European ethno shops.",
@@ -200,16 +200,14 @@ const graphs = {
         {
           "@type": "DefinedTerm",
           name: "Block print",
-          alternateName: "blokový tisk",
-          inDefinedTermSet: { "@id": `${SITE}/clothes.html#glossary` },
+          inDefinedTermSet: { "@id": `${SITE}/clothes#glossary` },
           description:
             "Hand-carved wooden blocks stamped by hand onto cotton. The tiny irregularities are the point — no two metres are identical. The best of it is done slowly and ethically in Jaipur workshops, and it is the opposite of printed-mandala fast fashion.",
         },
         {
           "@type": "DefinedTerm",
           name: "Handloom",
-          alternateName: "ruční tkaní",
-          inDefinedTermSet: { "@id": `${SITE}/clothes.html#glossary` },
+          inDefinedTermSet: { "@id": `${SITE}/clothes#glossary` },
           description:
             "Fabric woven on a non-powered loom by a weaver rather than a machine. It breathes differently, drapes differently and lasts longer. Good makers work directly with artisan communities, so a piece carries a maker rather than just a label.",
         },
@@ -220,15 +218,15 @@ const graphs = {
   "restaurants.html": async () => [
     {
       "@type": "CollectionPage",
-      "@id": `${SITE}/restaurants.html#webpage`,
-      url: `${SITE}/restaurants.html`,
+      "@id": `${SITE}/restaurants#webpage`,
+      url: `${SITE}/restaurants`,
       name: "Indian restaurants in Prague — honest reviews",
       isPartOf: { "@id": `${SITE}/#website` },
       inLanguage: "en",
     },
     breadcrumb([
       ["Home", `${SITE}/`],
-      ["Restaurants", `${SITE}/restaurants.html`],
+      ["Restaurants", `${SITE}/restaurants`],
     ]),
     {
       "@type": "ItemList",
@@ -276,8 +274,8 @@ const graphs = {
   "diaries.html": async () => [
     {
       "@type": "Blog",
-      "@id": `${SITE}/diaries.html#blog`,
-      url: `${SITE}/diaries.html`,
+      "@id": `${SITE}/diaries#blog`,
+      url: `${SITE}/diaries`,
       name: "Tram 22 Diaries",
       description:
         "A journal about modern Indian fashion, curated Vinted finds, and life between India and Prague.",
@@ -286,38 +284,38 @@ const graphs = {
       inLanguage: "en",
       // Points at the dispatch's own @id rather than restating it, so the two pages
       // describe one article between them instead of two competing copies.
-      blogPost: [{ "@id": `${SITE}/article-contemporary-indian-wear.html#article` }],
+      blogPost: [{ "@id": `${SITE}/article-contemporary-indian-wear#article` }],
     },
     breadcrumb([
       ["Home", `${SITE}/`],
-      ["Tram 22 Diaries", `${SITE}/diaries.html`],
+      ["Tram 22 Diaries", `${SITE}/diaries`],
     ]),
   ],
 
   "article-contemporary-indian-wear.html": async () => [
     {
       "@type": "Article",
-      "@id": `${SITE}/article-contemporary-indian-wear.html#article`,
-      url: `${SITE}/article-contemporary-indian-wear.html`,
+      "@id": `${SITE}/article-contemporary-indian-wear#article`,
+      url: `${SITE}/article-contemporary-indian-wear`,
       headline: "Contemporary Indian wear on the streets of Prague",
       description:
         "Not Goa-hippie, not festival sari. The new age of Indian wear — and exactly how to style it into a European wardrobe.",
       image: `${SITE}/images/derived/IMG_5564-1200.jpg`,
       author: { "@id": `${SITE}/#author` },
       publisher: { "@id": `${SITE}/#author` },
-      isPartOf: { "@id": `${SITE}/diaries.html#blog` },
+      isPartOf: { "@id": `${SITE}/diaries#blog` },
       datePublished: PUBLISHED,
       dateModified: MODIFIED,
       inLanguage: "en",
       articleSection: "Fashion",
       keywords:
-        "contemporary Indian wear, modern Indian fashion Prague, block print, indické oblečení Praha, slow fashion, handloom",
+        "contemporary Indian wear, modern Indian fashion Prague, block print, slow fashion, handloom",
       wordCount: 0, // filled in below from the actual body copy
     },
     breadcrumb([
       ["Home", `${SITE}/`],
-      ["Tram 22 Diaries", `${SITE}/diaries.html`],
-      ["Contemporary Indian wear", `${SITE}/article-contemporary-indian-wear.html`],
+      ["Tram 22 Diaries", `${SITE}/diaries`],
+      ["Contemporary Indian wear", `${SITE}/article-contemporary-indian-wear`],
     ]),
   ],
 };

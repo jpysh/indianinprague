@@ -43,24 +43,24 @@ const STOREFRONT = "cz";
 const CATEGORIES = [
   {
     name: "Fashion", slug: "clothes", page: "clothes.html", managed: true,
-    cs: "indické oblečení",
-    title: "Modern Indian Clothes in Prague — Buy on Vinted | Indické oblečení Praha",
+    sub: "kurtas · sarees · sets",
+    title: "Modern Indian Clothes in Prague — Buy on Vinted",
   },
   {
     name: "Home Decor", slug: "home-decor", page: "home-decor.html",
-    cs: "bytové doplňky",
+    sub: "textiles · ceramics",
     title: "Indian Home Decor in Prague — Textiles, Ceramics, Handmade | Indian in Prague",
     h1: ["Home things,", "carried back"],
     lead: "Block-printed textiles, hand-painted ceramics, and small objects that make a Prague flat feel less like a rental. Most of it came back in a suitcase.",
-    expo: ["HOME", "bytový textil · keramika", "handmade · block print"],
+    expo: ["HOME", "textiles · ceramics", "handmade · block print"],
   },
   {
     name: "Jewellery", slug: "jewellery", page: "jewellery.html",
-    cs: "šperky · stříbro",
+    sub: "silver · handmade",
     title: "Indian Jewellery in Prague — Silver, Beads, Handmade | Indian in Prague",
     h1: ["Jewellery,", "mostly silver"],
     lead: "Pieces picked up across India and worn, not collected. Oxidised silver, glass beads, and the kind of thing you cannot find on Wenceslas Square.",
-    expo: ["JEWELLERY", "šperky · stříbro", "handmade · oxidised"],
+    expo: ["JEWELLERY", "silver · brass", "handmade · oxidised"],
   },
   {
     // The catalog still says "Spirituality" — that is the Vinted branch name, and renaming
@@ -69,50 +69,37 @@ const CATEGORIES = [
     // and its own hand-written page), so the shelf of brass and beads took the name it
     // always actually described and gave up the URL.
     name: "Spirituality", label: "Ritual Objects", slug: "ritual-objects", page: "ritual-objects.html",
-    cs: "duchovní předměty",
+    sub: "brass · sandalwood",
     title: "Indian Ritual Objects in Prague — Incense, Brass, Prayer Beads | Indian in Prague",
     h1: ["Objects that", "hold something"],
     lead: "Brass, sandalwood, prayer beads. Sold plainly, without the incense-shop mysticism — these are ordinary household things in India, and they are good objects on their own terms.",
-    expo: ["RITUAL OBJECTS", "duchovní předměty", "brass · sandalwood"],
+    expo: ["RITUAL OBJECTS", "altar & puja", "brass · sandalwood"],
   },
-  {
-    // Wellness is a TOP-LEVEL MODULE now, not a shelf in the wardrobe — it has its own nav
-    // slot and its own hand-written page. Two flags carry that:
-    //
-    //   managed: the page is hand-written and only its SHOP:GRID region is replaced, so the
-    //     module's editorial copy above the grid survives every build (same deal as
-    //     clothes.html).
-    //   module:  keep it out of the wardrobe's category strip. Two entries called
-    //     "Wellness" — one in the top nav, one in the shelf strip — is the kind of
-    //     duplication that makes a visitor wonder which one is the real one.
-    //
-    // The items themselves are untouched: they still carry category "Wellness", still
-    // appear on wardrobe.html, and still say "Wellness" on the card.
-    name: "Wellness", slug: "wellness", page: "wellness.html", managed: true, module: true,
-    cs: "ájurvéda · péče",
-    title: "Ayurvedic & Natural Wellness in Prague | Indian in Prague",
-    h1: ["Wellness,", "the unglamorous kind"],
-    lead: "Oils, powders and simple remedies that are cupboard staples in an Indian home. No wellness-industry claims attached.",
-    expo: ["WELLNESS", "ájurvéda · přírodní", "oils · powders"],
-  },
+  // Wellness was a top-level module page here until 16 Aug 2026, when it was removed along
+  // with Buddy: both were holding pages with no products on them, and an unfinished shelf
+  // advertised on the homepage costs more trust than it earns. The single catalog item
+  // still carrying category "Wellness" is unaffected — it keeps its category, still appears
+  // on wardrobe.html and still says "Wellness" on the card. Only the dedicated page is gone.
+  // Re-adding it means restoring an entry here with managed:true and module:true, plus its
+  // sitemap line and its nav slot in index.html.
   {
     name: "Books", slug: "books", page: "books.html",
-    cs: "knihy",
+    sub: "second-hand books",
     title: "Indian Books in Prague — Fiction, Cookery, Second-hand | Indian in Prague",
     h1: ["Books I have", "finished with"],
     lead: "Fiction, cookery and the odd art book — read once, kept well, and taking up shelf space I do not have.",
-    expo: ["BOOKS", "knihy · second-hand", "fiction · cookery"],
+    expo: ["BOOKS", "second-hand", "fiction · cookery"],
   },
   {
     // The data keeps saying "Uncategorised" — that is the signal sync-vinted.mjs prints
     // when a Vinted branch has no rule yet, and softening it in the data would hide the
     // work. The shopper just sees "More".
     name: "Uncategorised", label: "More", slug: "more", page: "more.html",
-    cs: "ostatní",
+    sub: "odds and ends",
     title: "More from my closet | Indian in Prague",
     h1: ["Everything", "else"],
     lead: "The pieces that do not fit a shelf label yet.",
-    expo: ["MORE", "ostatní", "odds and ends"],
+    expo: ["MORE", "everything else", "odds and ends"],
   },
 ];
 
@@ -120,6 +107,11 @@ const CATEGORIES = [
 // while the photo decodes, and one that changed on every deploy would flicker.
 const SPICE = ["sp-oli", "sp-mag", "sp-pap", "sp-saf", "sp-chi", "sp-plum"];
 const spice = (id) => SPICE[Number(id) % SPICE.length];
+
+// The site serves extensionless URLs (see wrangler.jsonc html_handling). Every URL this
+// file writes — canonical, og:url, tiles, breadcrumbs — goes through here, so the .html
+// form exists only as a filename on disk and never as a link. index.html is the site root.
+const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -378,17 +370,17 @@ function toolbar(items) {
 
 const catNav = (active, counts) =>
   `<nav class="cat-nav" aria-label="Wardrobe shelves">` +
-  `<a href="/wardrobe.html"${active === "Everything" ? ' aria-current="page"' : ""}>Everything <b>${counts.__all}</b></a>` +
+  `<a href="/wardrobe"${active === "Everything" ? ' aria-current="page"' : ""}>Everything <b>${counts.__all}</b></a>` +
   // `module` categories are excluded: Wellness has its own slot in the TOP nav now, and
   // listing it here as well would put the same word in two navigations on the same screen,
   // pointing at the same page, one of them implying it is a shelf inside the wardrobe.
   CATEGORIES.filter((c) => counts[c.name] && !c.module)
-    .map((c) => `<a href="/${c.page}"${active === c.name ? ' aria-current="page"' : ""}>${esc(label(c.name))} <b>${counts[c.name]}</b></a>`)
+    .map((c) => `<a href="${url(c.page)}"${active === c.name ? ' aria-current="page"' : ""}>${esc(label(c.name))} <b>${counts[c.name]}</b></a>`)
     .join("") +
   // Its own page as well as the availability toggle, because "what has already sold" is a
   // thing a shopper goes looking for deliberately — and a page has a URL you can link to,
   // which a filter state does not.
-  (counts.__sold ? `<a href="/sold.html" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
+  (counts.__sold ? `<a href="/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
   `</nav>`;
 
 /* ------------------------------------------------------------------- pages ---- */
@@ -422,19 +414,19 @@ function chrome(indexHtml) {
 // colour. Both, because neither does the other's job.
 function markNav(header, module) {
   return header.replace(
-    new RegExp(`<a href="/${module}\\.html">`),
-    `<a href="/${module}.html" class="active" aria-current="page">`);
+    new RegExp(`<a href="/${module}">`),
+    `<a href="/${module}" class="active" aria-current="page">`);
 }
 
 function jsonLd(cat, items) {
-  const url = `${SITE}/${cat.page}`;
+  const pageUrl = `${SITE}${url(cat.page)}`;
   return JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": `${url}#webpage`,
-        url,
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
         name: cat.title.split(" — ")[0],
         isPartOf: { "@id": `${SITE}/#website` },
         inLanguage: "en",
@@ -443,12 +435,12 @@ function jsonLd(cat, items) {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-          { "@type": "ListItem", position: 2, name: cat.name, item: url },
+          { "@type": "ListItem", position: 2, name: cat.name, item: pageUrl },
         ],
       },
       {
         "@type": "ItemList",
-        "@id": `${url}#items`,
+        "@id": `${pageUrl}#items`,
         numberOfItems: items.length,
         itemListElement: items.map((it, i) => ({
           "@type": "ListItem",
@@ -533,12 +525,12 @@ function page(cat, items, manifest, counts, ch) {
 <title>${esc(cat.title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="${SITE}/${cat.page}">
+<link rel="canonical" href="${SITE}${url(cat.page)}">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Indian in Prague">
 <meta property="og:locale" content="en">
-<meta property="og:url" content="${SITE}/${cat.page}">
+<meta property="og:url" content="${SITE}${url(cat.page)}">
 <meta property="og:title" content="${esc(cat.title.split(" | ")[0])}">
 <meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -559,7 +551,7 @@ ${markNav(ch.header, "wardrobe")}
 
 <main id="main">
 <div class="page-head"><div class="wrap">
-  <div class="crumb">${esc(cat.name)} · <span lang="cs">${esc(cat.expo[1])}</span></div>
+  <div class="crumb">${esc(cat.name)} · <span>${esc(cat.expo[1])}</span></div>
   <h1>${esc(cat.h1[0])} <b>${esc(cat.h1[1])}</b>.</h1>
   <p class="lede">${esc(cat.lead)}</p>
 </div></div>
@@ -673,7 +665,7 @@ async function main() {
     title: "The whole wardrobe — Indian clothes, jewellery, home things in Prague | Indian in Prague",
     h1: ["Everything", "in one place"],
     lead: `All ${available.length} pieces currently for sale — clothing, jewellery, home things, books and the rest — plus what has already sold. Filter it down, or tap any piece to open its Vinted listing.`,
-    expo: ["THE WARDROBE", "celý sortiment", `${available.length} available · ${sold.length} sold`],
+    expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
   await writeFile(path.join(ROOT, "wardrobe.html"), page(all, live, manifest, counts, ch));
   console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold)`);
@@ -694,7 +686,7 @@ async function main() {
       title: "Sold pieces — Indian in Prague",
       h1: ["Already", "gone"],
       lead: `${sold.length} pieces that have found homes. Everything here is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
-      expo: ["SOLD", "prodáno", `${sold.length} pieces · archive`],
+      expo: ["SOLD", "archive", `${sold.length} pieces · archive`],
     };
     await writeFile(path.join(ROOT, "sold.html"), page(soldPage, sold, manifest, counts, ch));
     console.log(`  sold.html — ${sold.length} items`);
@@ -716,20 +708,20 @@ async function main() {
       const newest = available.filter((i) => i.category === c.name).sort(byNewest)[0];
       const n = counts[c.name];
       return (
-        `<a class="tile" href="/${c.page}">` +
+        `<a class="tile" href="${url(c.page)}">` +
         `<div class="frame ${newest ? spice(newest.id) : "sp-oli"}">` +
         (newest ? picture(newest, manifest, false) : "") +
         `<div class="grain"></div>` +
         `<span class="cap">${n} ${n === 1 ? "piece" : "pieces"}</span></div>` +
         `<div class="tbody"><h3>${esc(label(c.name))}</h3>` +
-        `<span class="tcz" lang="cs">${esc(c.cs)}</span></div></a>`
+        `<span class="tcz">${esc(c.sub)}</span></div></a>`
       );
     }).join("\n    ");
 
   // The last tile is the whole wardrobe. Someone who does not want to choose a shelf should
   // not have to scroll past six of them to find the way in.
   const allTile =
-    `<a class="tile tile-all" href="/wardrobe.html">` +
+    `<a class="tile tile-all" href="/wardrobe">` +
     `<div class="tbody"><h3>Everything</h3>` +
     `<span class="tcz">${available.length} pieces for sale${sold.length ? ` · ${sold.length} sold` : ""}</span>` +
     `<span class="more">Open the wardrobe →</span></div></a>`;

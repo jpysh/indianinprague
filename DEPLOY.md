@@ -92,7 +92,14 @@ Three cheaper controls were applied instead, and they close more of the real ris
    from the npm registry at run time and would execute it unattended with that token in the
    environment. `package.json` exists for this single purpose. Upgrade deliberately with
    `npm install --save-dev --save-exact wrangler@<version>`.
-3. **ImageMagick has a policy** at `~/.config/ImageMagick/policy.xml`, where it survives
+3. **Fraunces, Manrope and Space Mono are self-hosted** from `assets/fonts/` as of
+   16 Aug 2026 (see `assets/spirituality-fonts.css`), removing the last third-party origin
+   that every visitor to `/spirituality.html` was forced to contact. `edge/_headers` no
+   longer trusts `fonts.googleapis.com` or `fonts.gstatic.com`: `font-src` is `'self'` alone
+   and `style-src` trusts no third party. Verified live: zero requests to Google, 20 font
+   faces served from this origin. Only latin and latin-ext are shipped, of Google's six
+   subsets — latin-ext is mandatory, it carries the Czech diacritics.
+4. **ImageMagick has a policy** at `~/.config/ImageMagick/policy.xml`, where it survives
    `brew upgrade`. It was `Policy: Undefined` (fully permissive) before. Delegates are off
    entirely, and the network/scripting/Ghostscript coders are denied by coder rather than by
    extension, since a crafted file selects its coder by content. Verified: a remote URL now
@@ -138,13 +145,16 @@ this Mac, 07:15 daily (launchd):
   vinted.cz ──▶ sync-vinted ──▶ build-images (magick/cwebp) ──▶ build-* ──▶ dist/ ──▶ wrangler deploy
 ```
 
-> **Superseded 15 Aug 2026.** The two containers below (`indianinprague-site` running
-> nginx, `indianinprague-tunnel` running cloudflared) and the `Dockerfile`,
-> `docker-compose.yml`, `nginx/` and `.cloudflared/` files that define them are no longer
-> used. They are kept until the Cloudflare deployment has run unattended for a few days,
-> then deleted. Nothing in the daily job touches Docker. The historical description is
-> retained below because the tunnel-and-nginx arrangement is referenced further down this
-> document.
+> **Sunset 16 Aug 2026.** `docker compose down` has been run: both containers and the
+> compose network are gone, and `localhost:8092` no longer answers. The site was unaffected
+> — it is served by the Worker. The five containers belonging to the other sites on this
+> host (jains.es, Olive, Excelminds, Coco) were untouched.
+>
+> The `Dockerfile`, `docker-compose.yml`, `nginx/` and `.cloudflared/` files are kept for
+> now as a rollback path and deleted once the Cloudflare deployment has a few clean days
+> behind it. The tunnel itself still exists in the Cloudflare dashboard and can be removed
+> at the same time. The historical description below is retained because the
+> tunnel-and-nginx arrangement is referenced further down this document.
 
 | Container | Image | Role |
 |---|---|---|
@@ -531,6 +541,74 @@ three font files and six photographs. Repeat visits are the HTML alone — under
 ---
 
 ## Things that bit, so they don't bite again
+
+**Changing URL shape is an eight-place edit.** The site moved to extensionless URLs on
+16 Aug 2026. Flipping `html_handling` alone would have produced exactly the broken state that
+ruled Pages out a day earlier: every internal link taking a redirect hop, and every canonical
+tag still naming the .html form, so the page contradicts the redirect that sent you there.
+The full set: `wrangler.jsonc`, `edge/_redirects`, the internal links / canonical / og:url in
+all 13 pages, `build-shop.mjs` (a `url()` helper plus the shelf strip, the nav active-marker
+and the "Everything" tile), `build-diaries.mjs`, `data/posts.json` hrefs, `build-jsonld.mjs`,
+and `build-sitemap.mjs` (both the static list AND the dynamically pushed shelf pages).
+Four separate rebuild-and-sweep rounds were needed before the shipped output was clean —
+each generator reintroduced links the previous sweep had fixed.
+
+**The built-in .html redirect is a 307, not a 301.** Measured: `html_handling` sends
+/wardrobe.html to /wardrobe **temporarily**. For URLs indexed for months that is the wrong
+signal — it tells Google the old URL remains canonical. `edge/_redirects` now carries an
+explicit 301 per page, matched ahead of the built-in behaviour. Verified live: one hop, 301,
+final 200.
+
+**`/shop.html` was pointed at `/wardrobe.html`, which then redirected again** — a two-hop
+chain the moment .html started redirecting. Redirect targets must be final URLs, not URLs
+that are themselves redirected.
+
+**`spirituality.html` had no canonical tag at all** — never had one; the design export
+shipped without it, and it went unnoticed until every other page's canonical was being
+checked. It now has canonical, og:url, og:title, og:type and og:site_name.
+
+**Removing a language is a six-place edit, not a find-and-replace.** The site is
+English-only as of 16 Aug 2026, and the Czech text lived in six separate places, four of
+which regenerate: `build-shop.mjs` (per-category `cs:` subtitles, the Czech line in every
+`expo` strip, one page title, and a `lang="cs"` span in the tile template and the crumb),
+`build-diaries.mjs` + `data/posts.json` (a Czech subtitle per rail), `build-jsonld.mjs`
+(`alternateName` on the glossary terms, and the site `alternateName`), the hand-written
+editorial regions of `clothes.html` and `restaurants.html` that `build-shop` deliberately
+preserves, `llms.txt`, and the `<title>`/meta descriptions. Deleting the visible spans alone
+would have left the site English for one day.
+
+**`build-diaries.mjs` and `sync-chrome.mjs` are NOT in `publish.sh`.** They are run by hand.
+So a change to the nav or to `posts.json` looks like it has not taken effect until you run
+them explicitly — the daily job will never do it for you. That is why `diaries.html` still
+had Czech rail subtitles after a full `publish.sh --local`.
+
+**Deleting a page is not enough when a generator makes it.** `wellness.html` looked
+hand-written but was produced by `build-shop.mjs` as a `managed: true, module: true` entry.
+Removing the file alone would have left the site correct for one day and then quietly
+regenerated the page on the next 07:15 run, complete with a sitemap entry. Removing a page
+means removing it from `build-shop.mjs`, `build-sitemap.mjs` and `sync-chrome.mjs` as well.
+
+**`spirituality.html` does not get chrome from `sync-chrome.mjs`.** It is a design export
+with its own hand-written header and footer, so the nav edit that propagated to the other
+six pages left three dead links to the deleted pages sitting in its footer. Any future nav
+change has to be applied there by hand — a site-wide `grep` for the old URL is the check.
+
+**A review finding of mine that was simply wrong, corrected here so it is not "fixed"
+later.** I reported that the spirituality page's 16 photographs had no `width`/`height` and
+were therefore shifting the layout. They have no dimensions, but they cannot shift anything:
+every one is `position: absolute; inset: 0` inside an `.art-blob` that already declares an
+`aspect-ratio`, so the space is reserved before the image exists. Measured CLS over 14,000px
+of scrolling: **0.0000, zero shift events**. Adding dimension attributes would be harmless
+and pointless. (Caveat on the measurement: only 1 of 16 images had loaded in the test
+harness, so the number leans on the structural argument rather than replacing it.)
+
+**The trip and product cards are not links.** Discovered while fixing the cursor badge that
+said "DRAG" on cards that cannot be dragged: `<article class="card trip">` and
+`<article class="card shop">` contain no `<a>`, no `href` and no click handler. Six trips and
+eight products, on a page whose purpose is selling them, are decoration. The misleading
+badges have been removed so the cursor no longer promises an interaction that does not
+exist, but the cards remain unclickable pending destinations from the author — that is a
+content decision, not a code one.
 
 **`scroll-snap-type: x mandatory` silently cancels programmatic smooth scrolling.** The new
 runway arrows did nothing on mobile: both `scrollBy` and `scrollTo` with `behavior:'smooth'`

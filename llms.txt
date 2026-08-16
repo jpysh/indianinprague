@@ -3,8 +3,7 @@
 > A personal site by an Indian living in Prague, covering three things: contemporary
 > Indian clothing sold second-hand from the author's own wardrobe, first-hand reviews of
 > Indian and vegan restaurants in Prague, and a journal about life between India and the
-> Czech Republic. Written in English with Czech keywords throughout, since the audience is
-> split between expats and Czechs.
+> Czech Republic. Written in English throughout — this is an English-language site.
 
 The site is static, has no JavaScript, sets no cookies, and runs no analytics or tracking
 of any kind. Every page carries schema.org JSON-LD describing its contents.
@@ -27,12 +26,11 @@ review scores.
   restaurants, journal.
 - [Clothes](https://indianinprague.jains.es/clothes.html): the garments currently for
   sale, each linked to its Vinted listing with price in CZK, plus a buyer's guide to
-  block print, Ajrakh, Kalamkari, bandhani and handloom cotton. Czech: indické oblečení
+  block print, Ajrakh, Kalamkari, bandhani and handloom cotton.
   Praha.
 - [Restaurants](https://indianinprague.jains.es/restaurants.html): reviews of Indian
   restaurants in Prague (Annamalai in Nové Město, INDelicious Bistro in Nusle) and fully
-  vegan places (Pastva in Anděl, Palo Verde Bistro on Žitná, Dosa Dosa on Újezd). Czech:
-  indická restaurace Praha.
+  vegan places (Pastva in Anděl, Palo Verde Bistro on Žitná, Dosa Dosa on Újezd).
 - [Tram 22 Diaries](https://indianinprague.jains.es/diaries.html): the journal hub. Posts
   are grouped into categories — food, clothes, life — each shown as a scrollable rail. The
   restaurant reviews are part of this section rather than a separate one.

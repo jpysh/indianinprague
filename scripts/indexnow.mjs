@@ -9,7 +9,7 @@
 //
 // The participant that matters most here is Seznam.cz. It is the Czech search engine, it
 // takes a meaningful share of Czech-language queries, and this site is explicitly
-// targeting Czech searches ("indické oblečení Praha", "indická restaurace Praha"). Bing
+// The site is English-only as of 16 Aug 2026; the Czech keyword strategy is gone. Bing
 // and Yandex come along for free — and Bing's index is what ChatGPT search reads, so this
 // is also the fastest route into AI answers.
 //

@@ -4,27 +4,29 @@
   // tier without touching the 100k/day request budget that scripted Workers draw from.
   //
   // WHY WORKERS STATIC ASSETS AND NOT PAGES
-  // Pages force-drops the .html extension: /wardrobe.html answers 308 -> /wardrobe, and the
-  // behaviour is not configurable. This site links every page as href="wardrobe.html", the
-  // sitemap lists .html URLs, and every page carries <link rel="canonical"> pointing at its
-  // .html form. On Pages a crawler would therefore fetch /wardrobe.html, be redirected to
-  // /wardrobe, and then be told by the page itself that the canonical URL is /wardrobe.html
-  // — contradictory signals on every page of the site, plus a redirect hop on every
-  // internal click. nginx served both forms at 200.
+  // Pages force-drops the .html extension and the behaviour is NOT configurable. Workers
+  // exposes html_handling, so the choice of URL shape stays ours. That mattered on 15 Aug,
+  // when the site still linked everything as .html and switching would have meant a
+  // redirect on every internal click while every canonical tag still pointed at the .html
+  // form — contradictory signals on every page.
   //
-  // Workers Static Assets exposes html_handling, so the URLs stay exactly as they are
-  // today. Same free limits as Pages (20,000 files, 25 MiB each), same _headers and
-  // _redirects support, no markup churn, no SEO risk.
+  // On 16 Aug the site moved to extensionless URLs deliberately, and this time the whole
+  // chain moved with it: internal links, canonicals, og:url, JSON-LD, the sitemap and the
+  // redirect rules. That is the difference between changing the URL shape and breaking it.
   "name": "indianinprague",
   "compatibility_date": "2026-08-15",
 
   "assets": {
     "directory": "./dist",
 
-    // "none" = serve the literal path requested. No .html is added, dropped, or redirected.
-    // This is the whole reason for choosing Workers over Pages; do not change it without
-    // rewriting every internal link, canonical tag and sitemap entry to match.
-    "html_handling": "none",
+    // "auto-trailing-slash": /wardrobe is served from wardrobe.html, and the .html form is
+    // redirected away. The .html suffix now exists only as a filename on disk.
+    //
+    // Note the built-in redirect is a 307 TEMPORARY — measured, not assumed. Every .html URL
+    // here has been indexed for months, and a temporary redirect tells Google the old URL is
+    // still canonical, which is the opposite of the truth. edge/_redirects therefore carries
+    // an explicit 301 for each one, matched ahead of this behaviour.
+    "html_handling": "auto-trailing-slash",
 
     // Unmatched paths get 404.html with a 404 status, matching the nginx `=404` fallthrough
     // and location = /404.html block.
