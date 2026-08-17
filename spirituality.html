@@ -1029,8 +1029,10 @@ footer.site {
   font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
   color: rgba(245,238,221,.5); padding: 4px 0 8px;
 }
+/* No aria-current marker in here either: on the site pages this exact block is copied out of
+   index.html by the generators, so a per-page marker cannot survive a build — and this footer
+   is meant to be identical to those apart from colour. */
 .foot-col .head:hover { color: var(--foot-accent); }
-.foot-col .head[aria-current="page"] { color: var(--foot-accent); }
 /* 36px rather than 44: these rows sit in a single vertical column with nothing tappable beside
    them, so the mis-tap a 44px target guards against is a neighbouring row in the same list —
    and 36px plus the row gap still clears a fingertip. It buys back ~100px of footer height. */
@@ -2238,7 +2240,7 @@ footer.site {
        buttons of near-equal weight makes neither one the action. WhatsApp is the one CTA now.
      · WhatsApp appeared twice (button + list item). Once.
      · The site links appeared twice — a "Elsewhere on this site" column AND a near-identical
-       back-nav row underneath it. One nav, carrying aria-current for the page you are on.
+       back-nav row underneath it. One nav.
      · The two-line legal block is one line.
 
      Three columns rather than the old three-plus-two-rows: identity and action, where to go,
@@ -2275,7 +2277,7 @@ footer.site {
         <a class="item" href="/books">Books</a>
       </div>
       <div class="foot-col">
-        <a class="head" href="/spirituality" aria-current="page">Spirituality</a>
+        <a class="head" href="/spirituality">Spirituality</a>
         <a class="item" href="/spirituality#offer">Courses &amp; treatments</a>
         <a class="item" href="/spirituality#trips">Journeys to India</a>
         <a class="item" href="/spirituality#meditation">Chakras</a>

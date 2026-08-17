@@ -668,8 +668,10 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
   font-size:var(--fs-2xs);text-transform:uppercase;letter-spacing:.09em;
   color:var(--bone-dim);opacity:.75;padding:4px 0 8px
 }
+/* No aria-current in here: index.html is the single source of this block and the generators
+   copy it verbatim into every page, so a per-page marker cannot survive a build. The header
+   nav carries .active + aria-current for the module, which is where the marker belongs. */
 .foot-col .head:hover{color:var(--magenta);opacity:1}
-.foot-col .head[aria-current=page]{color:var(--magenta);opacity:1}
 
 /* 36px rather than the 44px these links used to carry. They sit in a single vertical column
    with nothing tappable beside them, so the only mis-tap available is the neighbouring row in
@@ -677,7 +679,6 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
    footer that fits a phone screen and one that does not. */
 .foot-col .item{display:flex;align-items:center;min-height:36px;font-size:var(--fs-xs);color:var(--bone);opacity:.82}
 .foot-col .item:hover{color:var(--magenta);opacity:1}
-.foot-col .item[aria-current=page]{color:var(--magenta);opacity:1}
 
 .foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;padding-top:18px}
 .foot-reach{display:flex;gap:10px;flex:0 0 auto}
