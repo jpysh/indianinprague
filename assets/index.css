@@ -87,8 +87,12 @@
    #14110E), which reads as a printing error against this warm palette. Flipping to light
    text on the deeper chilli red gives 4.73:1 while keeping the chip unmistakably red. */
 .hero .label{font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--bone);background:var(--chilli);display:inline-block;padding:6px 12px;margin-bottom:22px;font-weight:500}
-.hero h1{font-weight:300;font-size:clamp(2.125rem,1rem + 5.6vw,5.375rem);line-height:1.0;letter-spacing:-.02em;max-width:16ch;color:#F2EFE6}
-.hero h1 b{font-weight:600;color:var(--void);background:var(--magenta);padding:0 .12em}
+/* line-height must stay above 1 here: the b is a highlight block whose background box is
+   taller than the em, so at 1.0 the second line's block bit into the first one's. This
+   face's background box measures 1.30em, so anything under that overlaps no matter the
+      clamp size; 1.4 leaves a clean sliver of daylight from 34px up to 86px. */
+.hero h1{font-weight:300;font-size:clamp(2.125rem,1rem + 5.6vw,5.375rem);line-height:1.4;letter-spacing:-.02em;max-width:16ch;color:#F2EFE6}
+.hero h1 b{font-weight:600;color:var(--void);background:var(--magenta);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .hero .sub{margin-top:22px;color:var(--bone-dim);font-size:var(--fs-l);max-width:var(--measure-s)}
 .hero-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
 

@@ -294,7 +294,55 @@
       chips.appendChild(all);
     }
     chips.hidden = active.length === 0;
+    drawRefineCount();
   }
+
+  /* ------------------------------------------------------- refine disclosure ---- */
+
+  // The five refinement selects are collapsed behind a summary on a phone.
+  //
+  // Measured before this existed: on a 375x812 screen the first product card sat at y=943 —
+  // one and a sixth screens down — because the page head, the shelf strip and a 392px
+  // toolbar came first. A shop page that shows no product on the first screen is a shop
+  // page arguing with itself.
+  //
+  // Search and the availability segments stay out in the open: those are the two controls
+  // people reach for first. Condition, size, price, colour and sort are refinements, and
+  // refinements can ask to be opened. Nothing is hidden without being announced — the
+  // summary carries a count of how many are currently set, and the chip row underneath is
+  // outside the disclosure, so an active filter is always visible even when this is shut.
+  //
+  // It is a <details>, so with JavaScript disabled it still opens and closes on its own. All
+  // the script does is decide the INITIAL state, which is a judgement about screen width
+  // that CSS cannot make on a <details>.
+  var refine = document.querySelector("[data-refine]");
+  var refineCount = document.querySelector("[data-refine-count]");
+  var wide = window.matchMedia("(min-width:721px)");
+
+  function refineActive() {
+    var n = 0;
+    selects.forEach(function (s) { if (s.value) n++; });
+    if (sort && sort.value && sort.value !== "new") n++;
+    return n;
+  }
+
+  function drawRefineCount() {
+    if (!refineCount) return;
+    var n = refineActive();
+    refineCount.textContent = n ? String(n) : "";
+    refineCount.hidden = !n;
+  }
+
+  function syncRefine() {
+    if (!refine) return;
+    // Open on a wide screen, where there is room and the row costs nothing. On a phone,
+    // open only if something in it is already set — arriving on a shared filtered link and
+    // finding the controls shut would hide the reason the grid is short.
+    refine.open = wide.matches || refineActive() > 0;
+  }
+
+  if (wide.addEventListener) wide.addEventListener("change", syncRefine);
+  else if (wide.addListener) wide.addListener(syncRefine);
 
   function setAvail(v) {
     avail = v;
@@ -482,6 +530,9 @@
   // shared or bookmarked link paints the filtered grid once rather than painting all 157
   // cards and then filtering them.
   readUrl();
+  // After readUrl, so a filtered link opens the disclosure that explains why it is filtered,
+  // and before apply(), so the toolbar is at its final height when the grid first paints.
+  syncRefine();
   apply();
   onScroll();
 })();

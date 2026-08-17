@@ -19,6 +19,18 @@
   margin-bottom:20px;padding-bottom:8px;
   -webkit-overflow-scrolling:touch;scrollbar-width:thin;
 }
+
+/* The same fade the header nav carries, for the same reason and it was missing here.
+   This strip holds seven categories and is the primary navigation on a shop page; at
+   375px it cut "HOME DECOR" off mid-word with nothing to say the row continued. The mask
+   is scoped to the widths where the strip genuinely cannot fit — above that it would fade
+   an edge that has nothing behind it. */
+@media (max-width:900px){
+  .cat-nav{
+    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);
+    mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);
+  }
+}
 .cat-nav a{
   flex:0 0 auto;display:flex;align-items:center;gap:6px;
   min-height:44px;padding:0 14px;
@@ -53,6 +65,45 @@
  * costs. */
 .sb-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media (max-width:399px){.sb-controls{grid-template-columns:1fr}}
+
+/* ---------- refine disclosure ----------
+ *
+ * See the long note in shop.js. The five refinement selects live inside a <details> so a
+ * phone shows a product on its first screen; the summary is the control, and it disappears
+ * from 721px up where the controls are simply always visible. */
+.sb-refine{border:0}
+.sb-refine > summary{
+  display:flex;align-items:center;gap:8px;
+  min-height:44px;padding:0 14px;
+  border:1px solid rgba(242,239,230,.22);
+  font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--bone-dim);cursor:pointer;list-style:none;
+  transition:border-color .15s,color .15s;
+}
+.sb-refine > summary::-webkit-details-marker{display:none}
+.sb-refine > summary:hover{color:var(--bone);border-color:var(--bone)}
+.sb-refine > summary:focus-visible{outline:2px solid var(--magenta);outline-offset:2px}
+/* A chevron drawn in CSS rather than a glyph, so it can rotate on open. */
+.sb-refine > summary::after{
+  content:"";margin-left:auto;width:8px;height:8px;
+  border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+  transform:translateY(-2px) rotate(45deg);transition:transform .2s;
+}
+.sb-refine[open] > summary::after{transform:translateY(2px) rotate(-135deg)}
+.sb-refine[open] > summary{margin-bottom:8px}
+/* How many refinements are set, so nothing is silently hidden behind a closed summary. */
+.sb-refine-n{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:20px;height:20px;padding:0 5px;
+  background:var(--magenta);color:var(--void);
+  font-size:var(--fs-2xs);font-weight:600;line-height:1;
+}
+.sb-refine-n[hidden]{display:none}
+
+@media (min-width:721px){
+  /* No disclosure on a wide screen — the controls are the toolbar. */
+  .sb-refine > summary{display:none}
+}
 .sb-status{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
 
 .shop-bar input,.shop-bar select{
@@ -438,6 +489,14 @@
 .how-note{
   margin-top:18px;padding-top:16px;border-top:1px solid rgba(242,239,230,.12);
   font-size:var(--fs-s);color:var(--bone-dim);opacity:.85;max-width:var(--measure);
+}
+
+/* On a 360px phone the block was spending 74px of a 360px screen on padding and the step
+   indent, which left the steps running about 27 characters to the line. The numbers stay
+   the same size; the space around them gives way. */
+@media (max-width:400px){
+  .how{padding:22px 14px 24px}
+  .how-steps li{padding-left:30px}
 }
 
 @media (min-width:641px){

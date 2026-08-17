@@ -162,6 +162,47 @@ async function fetchDetail(itemUrl, cookie) {
   return { description: "", vintedCategoryCs: "", colorCs: "" };
 }
 
+/* ----------------------------------------------------------------- seller ---- */
+
+// The seller's own feedback, for the trust strip on the homepage.
+//
+// /api/v2/users/<id> answers with the whole profile in ONE request and needs the same
+// anonymous session the wardrobe endpoint uses, so this costs a single extra call on a run
+// that already makes hundreds. The public /member/<id>?tab=feedback page renders the same
+// numbers, but only after its JavaScript runs — scraping it would mean a headless browser
+// for two integers that are sitting in a JSON field.
+//
+// `feedback_reputation` is a 0–1 float, NOT a star rating: 1 means every review is
+// positive. Multiplying by 5 is the same arithmetic Vinted's own profile page does.
+//
+// This never throws. A rating is decoration on a page whose job is selling clothes — if
+// Vinted changes the field or rate-limits this one call, the strip falls back to its
+// static copy and the publish carries on. Compare fetchWardrobe, where a failure MUST stop
+// the run because the catalog would otherwise be published empty.
+async function fetchSeller(cookie) {
+  try {
+    const { user: u } = await (await get(`${HOST}/api/v2/users/${USER_ID}`, cookie, "application/json")).json();
+    const count = Number(u.feedback_count) || 0;
+    if (!count || u.hide_feedback) return null;
+    return {
+      fetched: new Date().toISOString(),
+      rating: Math.round(Number(u.feedback_reputation) * 50) / 10,
+      count,
+      positive: Number(u.positive_feedback_count) || 0,
+      neutral: Number(u.neutral_feedback_count) || 0,
+      negative: Number(u.negative_feedback_count) || 0,
+      followers: Number(u.followers_count) || 0,
+      // Sales Vinted itself counts, which is a larger and truer number than archive.json:
+      // it includes everything sold before this pipeline existed.
+      soldTotal: Number(u.given_item_count) || 0,
+      feedbackUrl: `${HOST}/member/${USER_ID}?tab=feedback`,
+    };
+  } catch (err) {
+    console.warn(`  ⚠ could not read seller feedback: ${err.message} — keeping the last value`);
+    return null;
+  }
+}
+
 async function downloadPhoto(url, dest) {
   if (existsSync(dest)) return false;
   const res = await fetch(url, { headers: { "User-Agent": UA } });
@@ -324,6 +365,13 @@ async function main() {
 
   console.log("fetching wardrobe…");
   const raw = await fetchWardrobe(cookie);
+
+  console.log("fetching seller feedback…");
+  const seller = await fetchSeller(cookie);
+  if (seller) {
+    await writeJson("seller.json", seller);
+    console.log(`  ${seller.rating.toFixed(1)}★ from ${seller.count} reviews`);
+  }
 
   console.log("fetching FX rate…");
   const rate = await fxRate(await readJson("fxrate.json", null));

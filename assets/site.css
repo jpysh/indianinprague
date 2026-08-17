@@ -67,7 +67,7 @@
 
   /* ---------- type scale ----------
    *
-   * Nine steps, replacing the twenty fixed px sizes and ten separate clamp() expressions
+   * Eight steps, replacing the twenty fixed px sizes and ten separate clamp() expressions
    * that had accumulated across these stylesheets — 11.5, 12.5, 13.5, 14.5, 15.5 and 16.5
    * all existed, a half-pixel apart, doing nothing different from each other. Steps that
    * small are not a scale; they are decisions taken one at a time, months apart.
@@ -81,8 +81,7 @@
    * The fluid steps use clamp(min, rem + vw, max) rather than plain vw so they still
    * respond to that preference at every viewport width — a pure-vw heading ignores it.
    */
-  --fs-3xs:.6875rem;   /* 11px — the privacy line, and nothing else */
-  --fs-2xs:.75rem;     /* 12px — captions, tags, chips, crumbs, counts */
+  --fs-2xs:.75rem;     /* 12px — captions, tags, chips, crumbs, counts, the privacy line */
   --fs-xs:.8125rem;    /* 13px — nav, buttons, footer links, small labels */
   --fs-s:.875rem;      /* 14px — card titles, dense secondary prose */
   --fs-m:1rem;         /* 16px — THE BODY DEFAULT, and every form control */
@@ -248,6 +247,11 @@ header.site{
   /* Without this the three words wrapped to two lines inside a fixed-height bar and
      spilled over the border. */
   white-space:nowrap;
+  /* The wordmark is a link home, and it was 20px tall on a phone and 23px on a desktop —
+     under the 24px WCAG 2.2 target minimum at every width, which is UX-AUDIT item 7.2.
+     The text cannot grow without eating the bar, so the TARGET grows instead: the box is
+     centred on the same baseline and only its hit area changes. */
+  display:flex;align-items:center;min-height:24px;
 }
 .brand b{color:var(--magenta)}
 
@@ -473,6 +477,38 @@ main > section:nth-of-type(even){background:var(--band)}
 .sec-lead{max-width:var(--measure-s);color:var(--bone-dim);margin-bottom:32px}
 .sec-lead b{color:var(--magenta);font-weight:600}
 
+/* ---------- seller rating strip (homepage) ---------- */
+
+/* Deliberately NOT a card: no border, no panel, no background. It sits in the flow above
+   the lead like a byline, because a boxed-off rating reads as an advertisement for itself,
+   which is the opposite of what a trust signal needs to do. The only emphasis is the
+   number, and the only colour is the saffron on the stars.
+
+   It wraps rather than scrolls at narrow widths — three short phrases, so on a phone it
+   becomes two lines and stays entirely readable. */
+.trust{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;
+  margin-bottom:14px;font-size:var(--fs-s);color:var(--bone-dim);
+}
+.trust-rate{display:inline-flex;align-items:baseline;gap:8px;white-space:nowrap}
+/* letter-spacing because ★ glyphs are drawn tight and read as a smear at small sizes. */
+.trust .stars{color:var(--magenta);letter-spacing:.08em;font-size:1.2em}
+.trust-rate b{color:var(--bone);font-weight:600;font-size:1.15em}
+.trust-n{white-space:nowrap}
+/* The link carries the underline the rest of the strip does not, so the one interactive
+   thing here is unambiguous without a button's weight. */
+.trust-go{
+  color:var(--magenta);font-weight:500;white-space:nowrap;
+  text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;
+  /* 23px tall as plain inline text, which is under the 24px WCAG 2.2 target minimum. The
+     strip is baseline-aligned, so the link cannot simply become a 44px block without
+     dropping off that baseline — inline-flex with a min-height keeps the text where it is
+     and grows only the hit area. */
+  display:inline-flex;align-items:center;min-height:24px;
+}
+.trust-go:hover,.trust-go:focus-visible{color:var(--bone)}
+@media (any-pointer:coarse){.trust-go{min-height:44px}}
+
 /* ---------- buttons ---------- */
 
 .btn{
@@ -626,14 +662,37 @@ footer{padding:36px 0 44px}
 /* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner.
    This line is the whole privacy notice. */
 /* opacity .65 measured 3.64:1 — the one line on the site that stated a policy and could
-   not be read. .8 is still visibly quieter than the links above it, at 4.64:1. */
-.foot .privacy{font-size:var(--fs-3xs);color:var(--bone-dim);opacity:.8;margin-top:18px;letter-spacing:.03em}
+   not be read. .8 is still visibly quieter than the links above it, at 4.64:1.
+   It was also the only user of an 11px step, which is a whole scale step existing for one
+   declaration; it takes --fs-2xs now and the scale is eight steps rather than nine. */
+.foot .privacy{font-size:var(--fs-2xs);color:var(--bone-dim);opacity:.8;margin-top:18px;letter-spacing:.03em}
 
 @media (min-width:641px){
   footer{padding:44px 0 56px}
   .foot{flex-direction:row;justify-content:space-between;gap:24px}
   .foot nav{gap:8px}
   .foot nav a{min-height:0}
+}
+
+/* ---------- tap targets, keyed to the pointer rather than the width ----------
+ *
+ * Two rules above drop links from 44px to their own text height at 641px — one in the
+ * header, one here. Both were written as "wide screen means mouse", and 641px up is
+ * exactly where the tablets are: measured at 768px and at 1024px, every header nav link
+ * and every footer link came out 21px tall, under the 24px WCAG 2.2 target minimum, on
+ * the one class of device with no cursor to aim with.
+ *
+ * any-pointer:coarse, not pointer:coarse. It asks whether ANY available input is coarse,
+ * so a touchscreen laptop and a tablet with a trackpad attached both keep the large
+ * targets; pointer:coarse asks only about the primary input and would surrender them the
+ * moment a mouse is plugged in. Nobody is harmed by a link being easy to hit.
+ *
+ * Placed after both breakpoint blocks deliberately — these selectors have the same
+ * specificity as the ones they are correcting, so source order is what decides. */
+@media (any-pointer:coarse){
+  nav.main a{min-height:44px}
+  .foot nav a{min-height:44px}
+  .brand{min-height:44px}
 }
 
 /* Honour the OS-level "reduce motion" setting: kill the smooth scroll and the hover
@@ -667,9 +726,14 @@ footer{padding:36px 0 44px}
     .piece,.post,.plate,.tile,.vitem,.rev,.holding,.how{
       animation:lift linear both;
       animation-timeline:view();
-      /* Finishes early — by the time the card is a fifth of the way up the viewport it is
-         already settled, so nothing is still moving where the eye has come to rest. */
-      animation-range:entry 0% cover 20%;
+      /* The range ends inside ENTRY, not inside cover, and that distinction is the whole
+         correctness of this rule. `cover` is measured against the element's full pass
+         across the viewport, so on a short screen with a tall element the range can still
+         be mid-way while the element is sitting still in front of the reader — text parked
+         at 60% opacity. `entry 100%` is reached the moment the element has finished
+         entering, which is the last instant at which an entrance animation should still be
+         running. */
+      animation-range:entry 0% entry 100%;
     }
     @keyframes lift{
       from{opacity:0;transform:translateY(16px)}
@@ -679,10 +743,14 @@ footer{padding:36px 0 44px}
     /* The section rules draw themselves as their heading arrives. It is the one flourish
        that is native to a monospace layout — a rule being typed rather than a thing
        sliding in. */
+    /* Same correction as above, and it mattered more here: measured at 375px, a section
+       heading parked just below the fold sat at clip-path:inset(0 47% 0 0) — half the words
+       wiped, and staying wiped, because `cover 26%` was still a long scroll away. A wipe
+       that does not finish is not an effect, it is missing text. */
     .sec-top,.rail-top{
       animation:rule-in linear both;
       animation-timeline:view();
-      animation-range:entry 10% cover 26%;
+      animation-range:entry 0% entry 90%;
     }
     @keyframes rule-in{
       from{clip-path:inset(0 100% 0 0)}

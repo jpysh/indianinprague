@@ -346,6 +346,8 @@ function toolbar(items) {
         <input type="search" id="sb-q" placeholder="Search title or brand…" autocomplete="off"></label>
       ${avail}
     </div>
+    <details class="sb-refine" data-refine>
+    <summary><span class="sb-refine-label">Refine &amp; sort</span><span class="sb-refine-n" data-refine-count></span></summary>
     <div class="sb-controls">
       ${sel("sb-cond", "Any condition", conditions, "Condition")}
       ${sel("sb-size", "All sizes", sizes, "Size")}
@@ -361,6 +363,7 @@ function toolbar(items) {
           <option value="desc">Price: high to low</option>
         </select></label>
     </div>
+    </details>
     <div class="sb-status">
       <div class="sb-chips" id="sb-chips"></div>
       <p class="sb-count" id="sb-count" role="status" aria-live="polite"></p>
@@ -448,6 +451,12 @@ function jsonLd(cat, items) {
           item: {
             "@type": "Product",
             name: it.title,
+            // The Vinted item id doubles as the SKU — see the note in build-jsonld.mjs.
+            // Emitted on sold items too: an identifier is how a crawler recognises that
+            // the SoldOut product it sees today is the one it indexed as InStock last week,
+            // rather than a different piece that happens to share a title.
+            sku: it.id,
+            productID: it.id,
             description: it.description ? it.description.slice(0, 400) : undefined,
             image: it.photo ? `${SITE}/${it.photo}` : undefined,
             brand: it.brand ? { "@type": "Brand", name: it.brand } : undefined,
@@ -612,7 +621,7 @@ async function main() {
   for (const c of CATEGORIES) counts[c.name] = live.filter((i) => i.category === c.name).length;
 
   const indexPath = path.join(ROOT, "index.html");
-  const indexHtml = await readFile(indexPath, "utf8");
+  let indexHtml = await readFile(indexPath, "utf8");
   const ch = chrome(indexHtml);
 
   let written = 0;
@@ -684,17 +693,74 @@ async function main() {
   // linked to and indexed where a toggle cannot.
   if (!sold.length && existsSync(path.join(ROOT, "sold.html"))) await rm(path.join(ROOT, "sold.html"));
   if (sold.length) {
+    // The last N, not the whole archive. This page answers "does anything here actually
+    // sell?", and that is a question about recency — a 2024 sale is no evidence the shop is
+    // alive today. Ten is enough to be convincing and short enough to stay one screen of
+    // scrolling. archive.json keeps every sale regardless; this is a display cap, so
+    // nothing is lost by raising or lowering it.
+    const RECENT_SOLD = 10;
+    const recent = sold.slice(0, RECENT_SOLD);
     const soldPage = {
       name: "Sold", slug: "sold", page: "sold.html",
-      title: "Sold pieces — Indian in Prague",
+      title: "Last 10 items sold — Indian in Prague",
       h1: ["Already", "gone"],
-      lead: `${sold.length} pieces that have found homes. Everything here is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
-      expo: ["SOLD", "archive", `${sold.length} pieces · archive`],
+      // "Sold" here means "left the closet". Vinted deletes a listing the moment it sells
+      // and exposes no sold history, so a disappearance IS the sale event — see the sold
+      // section of sync-vinted.mjs. The rare false positive is a listing pulled by hand.
+      lead: `The last ${recent.length} pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
+      expo: ["SOLD", "recent", `last ${recent.length} · sold`],
     };
-    await writeFile(path.join(ROOT, "sold.html"), page(soldPage, sold, manifest, counts, ch));
-    console.log(`  sold.html — ${sold.length} items`);
+    await writeFile(path.join(ROOT, "sold.html"), page(soldPage, recent, manifest, counts, ch));
+    console.log(`  sold.html — ${recent.length} of ${sold.length} archived items`);
     written++;
   }
+
+  // The homepage trust strip, in place of a paragraph describing the shop.
+  //
+  // What it replaced said "Everything I am selling, in one place. Contemporary Indian
+  // clothing, oxidised silver, brass, home things and books read once…" — true, and already
+  // said three times on the same screen: by the hero paragraph above it, by the six shelf
+  // tiles below it, and by their subtitles. A visitor at this point has stopped asking WHAT
+  // is for sale and started asking WHETHER TO TRUST IT: the goods are second-hand, the
+  // payment happens on a marketplace they may not know, and the seller is one person.
+  //
+  // A rating carried by a count answers that in one line, and it is the only thing on this
+  // page a stranger cannot simply assert about themselves. Hence what is in the strip and
+  // what is deliberately not:
+  //
+  //   the number      — "5.0" is the claim; the stars just make it scannable
+  //   the count       — 5.0 from 36 is trust, 5.0 from 1 is noise. Never show one alone
+  //   "on Vinted"     — a rating is only as good as the place it is checkable
+  //   Read the reviews — the link IS the proof, so it goes to the feedback tab itself,
+  //                     not the profile. An unverifiable rating is worth less than none
+  //
+  // Not included, on purpose: a fourth description of the stock, a follower count, sales
+  // totals, badges. Each would dilute the one number doing the work.
+  //
+  // Stars are rounded to whole characters — CSP is `style-src 'self'` on this page, so the
+  // usual clipped-overlay trick for half stars would need an inline style and be blocked.
+  // The printed figure next to them is the authoritative one, so a 4.8 shown as five stars
+  // is never the only thing a reader has to go on.
+  const seller = existsSync(path.join(ROOT, "data/seller.json"))
+    ? JSON.parse(await readFile(path.join(ROOT, "data/seller.json"), "utf8"))
+    : null;
+
+  // No file, no reviews yet, or a Vinted hiccup during the sync: fall back to the plain
+  // sentence rather than an empty box or a "0.0 ★" that actively repels. The strip is an
+  // enhancement, and the shelves below it work without it.
+  const trust = !seller?.count
+    ? `<p class="sec-lead">One of a kind, priced in koruna, posted from Prague. Pick a shelf:</p>`
+    : `<div class="trust">` +
+      `<span class="trust-rate">` +
+      `<span class="stars" aria-hidden="true">${"★".repeat(Math.round(seller.rating))}${"☆".repeat(5 - Math.round(seller.rating))}</span>` +
+      `<b>${seller.rating.toFixed(1)}</b></span>` +
+      `<span class="trust-n">${seller.count} reviews on Vinted</span>` +
+      `<a class="trust-go" href="${esc(seller.feedbackUrl)}" target="_blank" rel="noopener">` +
+      `Read the reviews<span class="vh"> on Vinted (opens in a new tab)</span> →</a>` +
+      `<span class="vh">Rated ${seller.rating.toFixed(1)} out of 5 from ${seller.count} buyer reviews on Vinted.</span>` +
+      `</div>\n  <p class="sec-lead">One of a kind, priced in koruna, posted from Prague. Pick a shelf:</p>`;
+
+  indexHtml = replaceRegion(indexHtml, "SHOP:TRUST", trust, "index.html");
 
   // Homepage: SHELVES, not six individual pieces.
   //

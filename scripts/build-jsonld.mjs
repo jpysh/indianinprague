@@ -93,6 +93,19 @@ async function products() {
     .map((i) => ({
       "@type": "Product",
       name: i.title,
+      // The Vinted item id IS the SKU, deliberately — no second identifier is minted here.
+      // Every piece is a one-off, listed exactly once, and the id already keys the photos
+      // on disk, the overrides file, the enrich cache and the archive. Inventing a parallel
+      // scheme would mean maintaining a mapping whose only job is to disagree with this one
+      // eventually. If the site ever sells multi-unit stock of its own, THAT is when a
+      // locally-issued SKU earns its keep; until then this is the identifier Google, Bing
+      // and any feed reader should see.
+      //
+      // Caveat worth knowing: delete and re-list a piece on Vinted and it gets a new id, so
+      // the SKU changes for what is physically the same object. Acceptable here — a relist
+      // is a new listing at a new URL, which is what search engines will see regardless.
+      sku: i.id,
+      productID: i.id,
       description: i.description
         ? i.description.replace(/\s+/g, " ").trim().slice(0, 400)
         : [i.condition.en, i.color.en, i.size].filter(Boolean).join(" · "),
