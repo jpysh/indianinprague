@@ -1019,7 +1019,9 @@ footer.site {
    against the block of text — the claim and the way to act on it, together. They wrap under the
    sentence the moment there isn't room for both. */
 .foot-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
-.foot-lede { color: var(--foot-dim); font-size: 14.5px; max-width: 52ch; line-height: 1.6; flex: 1 1 30ch; }
+/* No max-width — see the note in assets/site.css. A 52ch cap folded one sentence into three
+   lines while the row beside it sat empty. */
+.foot-lede { color: var(--foot-dim); font-size: 14.5px; line-height: 1.6; flex: 1 1 34ch; }
 
 /* Three category columns, each headed by a link to the section itself — the heading is a
    destination, not a label, so a visitor can land on the hub or jump straight past it. */

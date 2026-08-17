@@ -33,6 +33,7 @@
 //   node scripts/bump-assets.mjs
 
 import { readFile, writeFile, readdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import path from "node:path";
 
@@ -47,7 +48,19 @@ for (const f of await readdir(path.join(ROOT, "assets"))) {
   hashes.set(f, createHash("sha256").update(bytes).digest("hex").slice(0, 8));
 }
 
-const pages = (await readdir(ROOT)).filter((f) => f.endsWith(".html"));
+// Root pages, plus diaries/ — the Diaries index and its post pages are written into a
+// directory of their own (see build-diaries.mjs), and they load the same stylesheets under
+// the same immutable cache headers. Left out of this list they would be the only pages on
+// the site serving an unversioned /assets/site.css.
+const pages = (await readdir(ROOT))
+  .filter((f) => f.endsWith(".html"))
+  .concat(
+    existsSync(path.join(ROOT, "diaries"))
+      ? (await readdir(path.join(ROOT, "diaries")))
+          .filter((f) => f.endsWith(".html"))
+          .map((f) => path.join("diaries", f))
+      : [],
+  );
 
 let touched = 0;
 

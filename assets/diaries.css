@@ -173,7 +173,11 @@
 }
 /* h4, not h2: on this page the post title is an h3 under the category's h2. The content file
    is written with h4 for that reason. */
-.entry-body h4{
+/* h2 as well as h4: on a post page the post title is the h1, so a body's own sections are
+   h2s (content/hello-world.html). The long-form fashion dispatch predates the split and
+   still uses h4 — it was written for a page where the title was an h3. Both look the same,
+   because visually they are the same thing: a section break inside one piece of writing. */
+.entry-body h2, .entry-body h4{
   font-family:var(--mono);
   font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);
   text-transform:uppercase;letter-spacing:-.01em;color:var(--magenta);
@@ -207,7 +211,7 @@
   border:1px solid rgba(232,169,60,.28);background:var(--void-2);
   padding:24px 20px 26px;margin-top:34px;max-width:var(--measure);
 }
-.shop-cta h4{
+.shop-cta h2, .shop-cta h4{
   font-family:var(--mono);
   font-weight:600;font-size:var(--fs-l);text-transform:uppercase;
   letter-spacing:.01em;color:var(--magenta);margin-bottom:8px;
@@ -221,3 +225,91 @@
 /* ---------- the closing block ---------- */
 
 .rail-end{border-bottom:none}
+
+
+/* =====================================================================
+   THE INDEX CARDS  (added 17 Aug 2026 with the split into post pages)
+   =====================================================================
+   Every post on the index is now a card and only a card — the full text moved to
+   /diaries/<id>. Two things the old cards did not carry, and both are standard on any blog
+   index worth reading: the date, and how long the thing takes.
+
+   The card is an <article> wrapping a single <a>, rather than an <a> wrapping everything.
+   The whole card is still clickable, but the markup says "an article, which links to itself"
+   instead of "a link, which happens to contain a heading". */
+
+.post{scroll-margin-top:96px}
+.post-link{display:flex;flex-direction:column;height:100%;color:inherit}
+.post-link:hover h3{color:var(--magenta)}
+
+/* Mono, small caps, quiet: this line is orientation, not content. It sits ABOVE the title —
+   on an index of dated writing, "when" is the first question, and putting it under the
+   heading buries it beneath the blurb. */
+.post-meta{
+  font-family:var(--mono);
+  font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--bone-dim);margin-bottom:8px;
+}
+.post-meta time{color:var(--magenta)}
+.post .pbody .rv{align-self:flex-start;margin-bottom:10px}
+
+/* =====================================================================
+   A POST PAGE
+   ===================================================================== */
+
+.post-head{border-bottom:1px solid rgba(242,239,230,.10);padding:30px 0 26px}
+.crumb-nav a{color:var(--magenta)}
+.crumb-nav a:hover{color:var(--saffron)}
+.crumb-nav span{opacity:.5;margin:0 4px}
+.post-head h1{
+  font-weight:400;font-size:var(--fs-3xl);line-height:var(--lh-tight);
+  letter-spacing:-.01em;color:var(--bone);max-width:22ch;margin:14px 0 12px;
+}
+.post-byline{
+  font-family:var(--mono);
+  font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--bone-dim);display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+}
+.post-byline time{color:var(--magenta)}
+/* The blurb is the standfirst here — the same sentence that sold the post on the index,
+   doing its second job as the opening summary. */
+.post-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:var(--measure);margin-top:16px}
+
+.post-main{padding:26px 0 44px}
+.post-hero{aspect-ratio:16/9;margin-bottom:30px;max-width:var(--measure-l,860px)}
+.post-main .order{
+  color:var(--bone);max-width:var(--measure);margin-top:20px;
+  border-left:2px solid var(--magenta);padding-left:14px;
+}
+.post-main .order b{color:var(--magenta)}
+
+/* Previous / next inside the same category. "More like this one" beats "whatever was written
+   the same week", which is what a flat chronological pager would give you. */
+.post-nav{
+  display:grid;grid-template-columns:minmax(0,1fr);gap:12px;
+  margin-top:40px;padding-top:26px;border-top:1px solid rgba(242,239,230,.10);
+}
+.post-nav a{
+  display:flex;flex-direction:column;gap:6px;padding:16px 18px;
+  border:1px solid rgba(242,239,230,.14);background:var(--void-2);
+  min-height:44px;justify-content:center;
+}
+.post-nav a:hover{border-color:rgba(232,169,60,.45)}
+.post-nav a span{
+  font-family:var(--mono);font-size:var(--fs-2xs);
+  letter-spacing:.05em;text-transform:uppercase;color:var(--magenta);
+}
+.post-nav a b{font-weight:500;color:var(--bone);font-size:var(--fs-s)}
+.post-nav .next{text-align:right}
+
+.post-related{border-top:1px solid rgba(242,239,230,.10);background:var(--band);padding-block:34px 44px}
+.post-related .sec-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.post-related h2{
+  font-weight:500;font-size:var(--fs-xl);letter-spacing:-.01em;color:var(--bone);
+}
+
+@media (min-width:721px){
+  .post-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .post-head{padding:44px 0 34px}
+  .post-main{padding:34px 0 56px}
+}

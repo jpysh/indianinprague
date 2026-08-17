@@ -14,15 +14,13 @@
     "so on — and the ids below are what those anchors are made from. Changing an id changes a",
     "URL that has been shared, so treat them as permanent.",
     "",
-    "Two categories, because two is what there is writing for. A category with no posts is not",
+    "A category with no posts is not rendered at all: an empty section on a page whose",
     "rendered at all: an empty section on a page whose whole job is to show there is something",
     "to read is worse than a shorter page. Order here is order on the page.",
     "",
     "Fields on a post:",
     "  id       stable slug. IS the on-page anchor and part of a public URL — permanent.",
     "  cat      must match a category id below",
-    "  group    optional sub-heading within a category; posts with the same group render",
-    "           together under it. Used by Food to keep the vegan places in their own set.",
     "  kind     'article' renders the body as long-form prose with its own headings.",
     "           'review' renders it as a review entry with a photo beside the text.",
     "  title    the heading, and the name in the structured data",
@@ -44,23 +42,28 @@
       "name": "What I wear",
       "note": "Contemporary Indian wear, and how it actually works in a European city.",
       "sub": "clothes & textiles",
-      "all": { "href": "/clothes", "label": "Shop the clothes" }
+      "all": {
+        "href": "/clothes",
+        "label": "Shop the clothes"
+      }
     },
     {
       "id": "food",
       "name": "Food I love in the city",
-      "note": "Every Indian place in Prague, judged honestly — plus the vegan spots worth the tram ride.",
+      "note": "Every Indian place in Prague, judged honestly — plus the fully vegan spots worth the tram ride.",
       "sub": "restaurant reviews",
       "all": null,
-      "disclosure": "No paid collaborations or review invites, just my experiences. I compare the food in the city to what I have grown up eating :)",
-      "groups": [
-        { "id": "indian", "name": "Indian restaurants", "note": null },
-        {
-          "id": "vegan",
-          "name": "Vegan in Prague",
-          "note": "Creative plant-based food. Indian food is a cheat code for vegans — whole cuisines built on lentils, chickpeas and vegetables, no imitation anything. These are the places (Indian and not) I go back to."
-        }
-      ]
+      "disclosure": "No paid collaborations or review invites, just my experiences. I compare the food in the city to what I have grown up eating :)"
+    },
+    {
+      "id": "mindfulness",
+      "name": "Mindfulness",
+      "note": "Practice, stillness, and what Indian spiritual traditions look like from a European weekday.",
+      "sub": "practice & stillness",
+      "all": {
+        "href": "/spirituality",
+        "label": "Courses & treatments"
+      }
     }
   ],
   "posts": [
@@ -79,7 +82,6 @@
     {
       "id": "annamalai",
       "cat": "food",
-      "group": "indian",
       "kind": "review",
       "title": "Annamalai",
       "blurb": "Cooked to order in a dim underground room in Nové Město, with the TV blaring Indian songs. Tastes vary day to day, the way fresh cooking does. The only South Indian I keep going back to.",
@@ -87,7 +89,10 @@
       "date": "2026-08-04",
       "photo": "images/IMG_4126.JPG",
       "kicker": "Nové Město · tastes like home",
-      "verdict": { "label": "Tastes like home", "tone": "real" },
+      "verdict": {
+        "label": "Tastes like home",
+        "tone": "real"
+      },
       "meta": "Nové Město · South Indian · sit-down",
       "order": "dosa, idli, and medu vada.",
       "cuisine": "South Indian",
@@ -96,7 +101,6 @@
     {
       "id": "indelicious",
       "cat": "food",
-      "group": "indian",
       "kind": "review",
       "title": "INDelicious Bistro",
       "blurb": "North and South Indian street food in Nusle. Super tasty, and somehow never leaves you bloated — which is the whole trick with street food.",
@@ -104,7 +108,10 @@
       "date": "2026-08-03",
       "photo": "images/IMG_5000.jpg",
       "kicker": "Nusle · street food",
-      "verdict": { "label": "Street food", "tone": "mild" },
+      "verdict": {
+        "label": "Street food",
+        "tone": "mild"
+      },
       "meta": "Nusle · North/South Indian · quick bites and full meals",
       "order": "pav bhaji, spinach paneer paratha, vada pav, bhel.",
       "cuisine": "Indian",
@@ -113,7 +120,6 @@
     {
       "id": "dosa-dosa",
       "cat": "food",
-      "group": "vegan",
       "kind": "review",
       "title": "Dosa Dosa",
       "blurb": "Fully vegan South Indian on Újezd, and a perfect breakfast stop. California dosa, masala dosa, uttapam, buckwheat noodles.",
@@ -121,7 +127,10 @@
       "date": "2026-08-02",
       "photo": "images/IMG_5054.JPG",
       "kicker": "Újezd · fully vegan",
-      "verdict": { "label": "Fully vegan", "tone": "vegan" },
+      "verdict": {
+        "label": "Fully vegan",
+        "tone": "vegan"
+      },
       "meta": "Újezd · South Indian · fully vegan",
       "order": "California dosa, masala dosa, uttapam.",
       "cuisine": "South Indian vegan",
@@ -130,7 +139,6 @@
     {
       "id": "pastva",
       "cat": "food",
-      "group": "vegan",
       "kind": "review",
       "title": "Pastva",
       "blurb": "A rotating fully vegan menu in Anděl, and staff who clearly enjoy feeding people. Burgers, risotto, dumplings, borscht, hummus, croquettes.",
@@ -138,7 +146,10 @@
       "date": "2026-08-01",
       "photo": "images/IMG_4041.JPG",
       "kicker": "Anděl · fully vegan",
-      "verdict": { "label": "Fully vegan", "tone": "vegan" },
+      "verdict": {
+        "label": "Fully vegan",
+        "tone": "vegan"
+      },
       "meta": "Anděl · European · fully vegan",
       "order": "whatever is on the rotating menu.",
       "cuisine": "Vegan",
@@ -147,7 +158,6 @@
     {
       "id": "palo-verde",
       "cat": "food",
-      "group": "vegan",
       "kind": "review",
       "title": "Palo Verde Bistro",
       "blurb": "Mushroom lamps, cosmic skies, and a spinach chimney worth going back for. Fully vegan, on Žitná.",
@@ -155,11 +165,26 @@
       "date": "2026-07-30",
       "photo": null,
       "kicker": "Žitná · fully vegan",
-      "verdict": { "label": "Fully vegan", "tone": "vegan" },
+      "verdict": {
+        "label": "Fully vegan",
+        "tone": "vegan"
+      },
       "meta": "Žitná · European · fully vegan",
       "order": "spinach chimney, parmesan burger.",
       "cuisine": "Vegan",
       "region": "Žitná"
+    },
+    {
+      "id": "hello-world",
+      "cat": "mindfulness",
+      "kind": "article",
+      "title": "Hello world",
+      "blurb": "The first note in a new category — why mindfulness gets its own shelf here, and what will land in it.",
+      "body": "hello-world.html",
+      "date": "2026-08-17",
+      "photo": null,
+      "kicker": "New category",
+      "reading": 2
     }
   ]
 }

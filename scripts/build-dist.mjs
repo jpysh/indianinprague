@@ -166,6 +166,14 @@ for (const f of rootFiles) {
 // assets/ and images/derived/. Only the derivatives ship — the markup points exclusively
 // at images/derived/, which scripts/build-images.mjs generates from the originals.
 await syncDir(path.join(ROOT, "assets"), path.join(DIST, "assets"));
+
+// diaries/ — the Diaries index and one page per post, written by build-diaries.mjs. It is a
+// directory rather than a root .html file so that /diaries resolves exactly one way: to
+// diaries/index.html. A root diaries.html sitting beside it would leave the asset server
+// choosing between two candidates for the same URL.
+if (existsSync(path.join(ROOT, "diaries"))) {
+  await syncDir(path.join(ROOT, "diaries"), path.join(DIST, "diaries"));
+}
 await mkdir(path.join(DIST, "images"), { recursive: true });
 await syncDir(path.join(ROOT, "images", "derived"), path.join(DIST, "images", "derived"));
 
@@ -230,7 +238,18 @@ const redirectSources = new Set(
     .map((l) => l.trim().split(/\s+/)[0]),
 );
 
-const htmlFiles = (await readdir(DIST)).filter((f) => f.endsWith(".html"));
+// Root pages plus diaries/ — the Diaries index and every post page. They were outside this
+// check for as long as the Diaries was a single root file; they are most of the site's
+// internal linking now, so leaving them out would check the least link-dense pages and skip
+// the rest.
+const htmlFiles = [
+  ...(await readdir(DIST)).filter((f) => f.endsWith(".html")),
+  ...(existsSync(path.join(DIST, "diaries"))
+    ? (await readdir(path.join(DIST, "diaries")))
+        .filter((f) => f.endsWith(".html"))
+        .map((f) => `diaries/${f}`)
+    : []),
+];
 const pageText = new Map();
 for (const f of htmlFiles) pageText.set(f, await readFile(path.join(DIST, f), "utf8"));
 
@@ -260,6 +279,8 @@ for (const [file, html] of pageText) {
       : htmlFiles.includes(target.slice(1)) ? target.slice(1)
       : htmlFiles.includes(target.slice(1) + ".html") ? target.slice(1) + ".html"
       : target === "/" ? "index.html"
+      // /diaries is a directory index, so its anchors live in diaries/index.html.
+      : htmlFiles.includes(target.slice(1) + "/index.html") ? target.slice(1) + "/index.html"
       : null;
     if (!targetFile) continue; // a redirect target, or not an html page — nothing to check
     const body = pageText.get(targetFile);

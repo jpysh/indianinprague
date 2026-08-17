@@ -49,5 +49,16 @@
 # to the redirect target, so /restaurants#annamalai arrives at /diaries#annamalai on its own.
 /restaurants                              /diaries#food                     301
 /restaurants.html                         /diaries#food                     301
-/article-contemporary-indian-wear         /diaries#contemporary-indian-wear  301
-/article-contemporary-indian-wear.html    /diaries#contemporary-indian-wear  301
+/article-contemporary-indian-wear         /diaries/contemporary-indian-wear  301
+/article-contemporary-indian-wear.html    /diaries/contemporary-indian-wear  301
+
+# Every post got a page of its own on 17 Aug 2026 (see scripts/build-diaries.mjs). The
+# redirect above now lands on the post itself rather than on an anchor in a wall of text,
+# which is a better destination than it had a day ago.
+#
+# The one-day-old /diaries#annamalai style of link cannot be redirected here — a fragment
+# never reaches the server — so the index keeps id="<post-id>" on every card. Such a link
+# scrolls to the card for that post, which links to the post. Nobody arrives nowhere.
+#
+# /restaurants#annamalai therefore still works too: it 301s to /diaries, the browser
+# reapplies #annamalai, and the card is there.

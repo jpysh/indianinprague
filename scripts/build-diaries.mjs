@@ -1,56 +1,75 @@
 #!/usr/bin/env node
-// Render data/posts.json + content/*.html into the Diaries, and into the homepage's strip.
+// Render data/posts.json + content/*.html into the Diaries: one index page and one page per
+// post. Also refreshes the homepage's three-card strip.
 //
-// WHAT THIS PAGE IS  (restructured 17 Aug 2026)
-// --------------------------------------------
-// The Diaries is now ONE page, and it holds the writing rather than pointing at it.
+// WHAT THIS PAGE IS  (restructured again 17 Aug 2026)
+// --------------------------------------------------
+// The Diaries is an INDEX, and every post has a page of its own.
 //
-// Before: /diaries was a hub of cards, and every card left the page — five of them to
-// anchors on /restaurants and one to /article-contemporary-indian-wear. The blog was a table
-// of contents for two other pages, which meant a reader who wanted "the writing on this
-// site" had three URLs to visit and no single place that was the blog.
+//   /diaries                    the index — every post once, as a card, grouped by category
+//   /diaries/<id>               the post itself
 //
-// Now: two categories, both inline.
+// It has now been all three shapes, so the reasoning is worth keeping:
 //
-//   Tram 22 Diaries                     h1
-//     Latest                            the four newest, as cards that jump down the page
-//     What I wear            #fashion    h2  ← the long-form dispatch, in full
-//     Food I love in the city  #food     h2  ← every review, in full
-//       Indian restaurants                   h3-group
-//       Vegan in Prague       #vegan          h3-group
+//   1. A hub of cards pointing at /restaurants and /article-contemporary-indian-wear. Three
+//      URLs, and no single place that was "the blog".
+//   2. One page holding everything inline (16 Aug). That fixed the scatter and immediately
+//      bought a worse problem: every post appeared TWICE — once as a card in "Latest", once
+//      in full below — and the page grew without limit as posts were added. A reader looking
+//      for one restaurant scrolled past a 2,000-word fashion dispatch to reach it.
+//   3. This. Each post appears exactly once on the index, as a card, and lives at a URL of
+//      its own.
 //
-// /restaurants and /article-contemporary-indian-wear are gone, 301'd here (edge/_redirects).
-// That consolidation was a deliberate call by the site's owner and it is not free: the
-// restaurants page carried the ranking for the Prague Indian-restaurant searches and five
-// Review nodes of structured data. Both are preserved rather than dropped — every Review is
-// re-emitted below against the same restaurant names, the Article node for the dispatch is
-// re-emitted too, and the anchors the old URLs used (#annamalai, #vegan, …) are the anchors
-// this page uses, so /restaurants#annamalai lands in the right place after the redirect
-// (a browser carries the fragment across a 301; the server never sees it).
+// Why per-post pages are the right shape here, beyond the duplication:
+//   · A post can be linked, shared and ranked on its own terms — its own <title>, its own
+//     description, its own canonical, its own Article/Review node. On one page, six posts
+//     compete for a single title and a single description.
+//   · The index stays a constant size as the journal grows.
+//   · Structured data stops being a pile of nodes on one URL and becomes one node per URL,
+//     which is what both search engines and LLM crawlers actually expect from a blog.
 //
-// Heading levels are load-bearing, not decorative: h1 page, h2 category, h3 post, h4 inside
-// a post's prose. content/contemporary-indian-wear.html is written with h4 sections for
-// exactly this reason — see the comment at the top of that file.
+// URL SHAPE, and why the index stays at the repo root
+// ---------------------------------------------------
+// The index is diaries.html (served at /diaries); the posts are diaries/<id>.html (served at
+// /diaries/<id>). A root file and a directory of the same name coexisting looks like a
+// conflict and is not one: the asset server resolves /diaries to the FILE and only uses the
+// directory for paths beneath it. Measured with `wrangler dev` against dist/, which is the
+// same asset server the deployment runs.
 //
-// There is still NO JavaScript on this page.
+// The obvious alternative — diaries/index.html and no root file — was built first and
+// rejected on measurement: `/diaries` then answers **307 Temporary Redirect** to `/diaries/`.
+// That URL is the most linked page on the site, it is the canonical in every tag and the
+// sitemap, and edge/_redirects exists precisely because a 307 on an indexed URL tells Google
+// the old form is still the right one. A redirect on the canonical is not a cosmetic detail.
+//
+// OLD ANCHORS STILL LAND
+// ----------------------
+// /diaries#annamalai was public for a day and /restaurants#annamalai 301s onto it. A server
+// cannot redirect a fragment — the browser never sends it — so every card on the index keeps
+// id="<post-id>". An old link scrolls to the card for that post, which links to the post. The
+// destination changed; nobody arrives nowhere.
+//
+// Heading levels: on the index, h1 page > h2 category > h3 card. On a post page the post
+// title is the h1, so bodies in content/ use h2 for their own sections.
+//
+// There is still NO JavaScript on any of these pages.
 //
 //   node scripts/build-diaries.mjs
 //
 // Run after sync-chrome.mjs (it lifts the header and footer out of index.html).
 
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile, mkdir, rm } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const SITE = "https://indianinprague.jains.es";
+const OUT = path.join(ROOT, "diaries");
 
-// How many posts the "Latest" grid shows. Four fills the grid at every breakpoint
-// (1 / 2 / 4 columns) without leaving a ragged last row.
-const FEATURED = 4;
-
-// The homepage strip is narrower — three fits its three-column grid exactly.
-const HOME_STRIP = 3;
+// Two cards on the homepage (was three, changed 17 Aug 2026 at the owner's request). They go
+// into a two-column grid rather than the three-column one — two cards in a three-track grid
+// leaves an empty cell, which reads as a card that failed to load rather than as a choice.
+const HOME_STRIP = 2;
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -62,32 +81,70 @@ const spice = (id) =>
   SPICE[[...String(id)].reduce((a, ch) => a + ch.charCodeAt(0), 0) % SPICE.length];
 
 const CARD_SIZES = "(min-width:801px) 380px, (min-width:521px) 50vw, calc(100vw - 60px)";
-const ENTRY_SIZES = "(min-width:801px) 400px, (min-width:521px) 50vw, calc(100vw - 40px)";
+const HERO_SIZES = "(min-width:801px) 760px, calc(100vw - 40px)";
 
-function picture(post, manifest, sizes, alt = "") {
+// Post pages sit one directory down, so every asset and internal link on them is written
+// absolute. The index is at /diaries/ and does the same, for one rule rather than two.
+const asset = (p) => "/" + String(p).replace(/^\//, "");
+
+function picture(post, manifest, sizes, alt = "", eager = false) {
   const entry = post.photo && manifest[post.photo];
   if (!entry) return "";
-  const jpgs = entry.variants.map((v) => `${v.jpg} ${v.w}w`).join(", ");
-  const webps = entry.variants.map((v) => `${v.webp} ${v.w}w`).join(", ");
+  const jpgs = entry.variants.map((v) => `${asset(v.jpg)} ${v.w}w`).join(", ");
+  const webps = entry.variants.map((v) => `${asset(v.webp)} ${v.w}w`).join(", ");
   const f = entry.variants[0];
   return (
     `<picture><source type="image/webp" srcset="${webps}" sizes="${sizes}">` +
-    `<img class="ph" src="${f.jpg}" srcset="${jpgs}" sizes="${sizes}" ` +
-    `width="${f.w}" height="${f.h}" alt="${esc(alt)}" loading="lazy" decoding="async"></picture>`
+    `<img class="ph" src="${asset(f.jpg)}" srcset="${jpgs}" sizes="${sizes}" ` +
+    `width="${f.w}" height="${f.h}" alt="${esc(alt)}" ` +
+    (eager ? `fetchpriority="high" decoding="async"` : `loading="lazy" decoding="async"`) +
+    `></picture>`
   );
 }
 
+const humanDate = (iso) =>
+  new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", {
+    day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
+  });
+
+const postUrl = (p) => `/diaries/${p.id}`;
+
 /* --------------------------------------------------------------- the cards ---- */
 
-// A card in the Latest grid, or in the homepage strip. `base` is "" on the diaries page
-// itself — the card is a jump link to a section further down — and "/diaries" on the
-// homepage, where it has to be a real navigation.
+// One card = one post, and a post gets exactly one card. Every card carries its date: on an
+// index of dated writing that is the single most useful thing after the title, and the old
+// cards had nothing but a blurb.
 //
-// Empty alt: the card's heading immediately below is the accessible name, and the photo is a
-// decorative crop of a scene the heading already names.
-function postCard(post, manifest, base, cls) {
+// Empty alt on the photograph: the heading immediately below is the accessible name, and the
+// image is a decorative crop of a scene the heading already names.
+function postCard(post, manifest, cls) {
+  const bits = [
+    `<time datetime="${esc(post.date)}">${esc(humanDate(post.date))}</time>`,
+    post.reading ? `<span>${post.reading} min read</span>` : "",
+    post.meta ? `<span>${esc(post.meta)}</span>` : "",
+  ].filter(Boolean);
+
   return (
-    `<a class="post${cls ? " " + cls : ""}" href="${base}#${esc(post.id)}">` +
+    `<article class="post${cls ? " " + cls : ""}" id="${esc(post.id)}">` +
+    `<a class="post-link" href="${postUrl(post)}">` +
+    `<div class="frame ${spice(post.id)}">${picture(post, manifest, CARD_SIZES)}<div class="grain"></div>` +
+    (post.kicker ? `<span class="cap">${esc(post.kicker)}</span>` : "") +
+    `</div>` +
+    `<div class="pbody">` +
+    `<p class="post-meta">${bits.join(" · ")}</p>` +
+    `<h3>${esc(post.title)}</h3>` +
+    (post.verdict ? `<span class="rv ${esc(post.verdict.tone)}">${esc(post.verdict.label)}</span>` : "") +
+    `<p>${esc(post.blurb)}</p>` +
+    `<span class="more">Read it →</span>` +
+    `</div></a></article>`
+  );
+}
+
+// The homepage strip keeps the old markup shape (a bare <a class="post">) because index.css
+// styles it, and it now points at the post rather than at an anchor on the index.
+function homeCard(post, manifest) {
+  return (
+    `<a class="post" href="${postUrl(post)}">` +
     `<div class="frame ${spice(post.id)}">${picture(post, manifest, CARD_SIZES)}<div class="grain"></div>` +
     (post.kicker ? `<span class="cap">${esc(post.kicker)}</span>` : "") +
     `</div>` +
@@ -97,80 +154,18 @@ function postCard(post, manifest, base, cls) {
   );
 }
 
-/* ------------------------------------------------------------- the entries ---- */
+/* ------------------------------------------------------------ the index page ---- */
 
-const humanDate = (iso) =>
-  new Date(iso + "T00:00:00Z").toLocaleDateString("en-GB", {
-    day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
-  });
-
-// A <time> element rather than a bare string, so the date is machine-readable in the page
-// and not only inside the JSON-LD.
-const byline = (post) =>
-  `<p class="entry-meta"><time datetime="${esc(post.date)}">${esc(humanDate(post.date))}</time>` +
-  (post.reading ? ` · <span>${post.reading} min read</span>` : "") +
-  (post.meta ? ` · <span>${esc(post.meta)}</span>` : "") +
-  `</p>`;
-
-// The long-form dispatch. The body arrives as HTML from content/ and is emitted verbatim.
-function articleEntry(post, body, manifest) {
-  return `<article class="entry entry-article" id="${esc(post.id)}">
-      <h3>${esc(post.title)}</h3>
-      ${byline(post)}
-      <div class="entry-body">
-${body}
-      </div>
-      <div class="shop-cta">
-        <h4>Shop the look</h4>
-        <p>The pieces I write about here go up on my Vinted closet as I rotate them — block print, handloom, contemporary cuts. Pre-loved, locally available, no slow shipping from India.</p>
-        <a class="btn saf" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
-      </div>
-    </article>`;
-}
-
-// A review. The photograph sits beside the text from 721px up and above it on a phone — the
-// .rev grid does that, and it is the same rule the old restaurants page used.
-function reviewEntry(post, body, manifest) {
-  const v = post.verdict;
-  return `<article class="entry rev" id="${esc(post.id)}">
-      <div class="frame ${spice(post.id)}">${picture(post, manifest, ENTRY_SIZES, post.title)}<div class="grain"></div></div>
-      <div class="rev-body">
-        <div class="rhead"><h3>${esc(post.title)}</h3>${
-          v ? `<span class="rv ${esc(v.tone)}">${esc(v.label)}</span>` : ""}</div>
-        ${byline(post)}
-${body}
-        ${post.order ? `<p class="order"><b>Order:</b> ${esc(post.order)}</p>` : ""}
-      </div>
-    </article>`;
-}
-
-/* ------------------------------------------------------------ the sections ---- */
-
-// One category = one section. Posts inside it are grouped when the category declares groups
-// (Food does: Indian restaurants, then the vegan places), and rendered flat when it does not.
-function categorySection(cat, posts, bodies, manifest) {
-  const render = (p) =>
-    p.kind === "article"
-      ? articleEntry(p, bodies[p.id], manifest)
-      : reviewEntry(p, bodies[p.id], manifest);
-
-  let inner;
-  if (cat.groups?.length) {
-    inner = cat.groups
-      .map((g) => {
-        const ps = posts.filter((p) => p.group === g.id);
-        if (!ps.length) return "";
-        return `<div class="entry-group" id="${esc(g.id)}">
-      <h3 class="group-head">${esc(g.name)}</h3>
-      ${g.note ? `<p class="group-note">${esc(g.note)}</p>` : ""}
-    </div>
-    ${ps.map(render).join("\n    ")}`;
-      })
-      .filter(Boolean)
-      .join("\n\n    ");
-  } else {
-    inner = posts.map(render).join("\n\n    ");
-  }
+function categorySection(cat, posts, manifest) {
+  // One flat grid, newest first. Food used to split into "Indian restaurants" and "Vegan in
+  // Prague" — that grouping was inherited from the old /restaurants page, where every review
+  // was rendered full-length and the sub-headings were the only way to find anything. On a
+  // grid of dated cards it just fragmented five items into two short rows, and the vegan
+  // places are already marked by their verdict chip. The category is the level of grouping
+  // this page needs.
+  const inner = `<div class="grid3">
+      ${posts.map((p) => postCard(p, manifest)).join("\n      ")}
+    </div>`;
 
   const all = cat.all
     ? `<a class="rail-all" href="${esc(cat.all.href)}">${esc(cat.all.label)} →</a>`
@@ -182,9 +177,8 @@ function categorySection(cat, posts, bodies, manifest) {
     ? `<div class="key"><span class="real">Tastes like home</span><span class="mild">Toned down</span><span class="trap">Tourist trap</span><span class="vegan">Fully vegan</span></div>`
     : "";
 
-  // The honesty line. It was a floating aside on the old restaurants page; here it belongs to
-  // the category, immediately under its heading, where someone deciding whether to trust a
-  // review reads it before the reviews rather than after them.
+  // The honesty line, immediately under the category heading — someone deciding whether to
+  // trust a review reads it before the reviews rather than after them.
   const disclosure = cat.disclosure
     ? `<div class="note"><p>${esc(cat.disclosure)}</p></div>`
     : "";
@@ -197,7 +191,7 @@ function categorySection(cat, posts, bodies, manifest) {
         <p class="cat-note">${esc(cat.note)}</p>
       </div>
       <div class="cat-meta"><span class="cat-count">${posts.length} ${
-        posts.length === 1 ? "dispatch" : "dispatches"}</span>${all}</div>
+        posts.length === 1 ? "post" : "posts"}</span>${all}</div>
     </div>
     ${key}
     ${disclosure}
@@ -206,19 +200,21 @@ function categorySection(cat, posts, bodies, manifest) {
 </section>`;
 }
 
-/* --------------------------------------------------------------- structured ---- */
+/* ------------------------------------------------------------ structured data ---- */
 
 const abs = (p) => `${SITE}${p}`;
 
-function jsonLd(posts, cats) {
-  const url = (p) => abs(`/diaries#${p.id}`);
-  const imageOf = (p, manifest) => {
-    const e = p.photo && manifest[p.photo];
-    if (!e) return undefined;
-    const biggest = e.variants[e.variants.length - 1];
-    return abs("/" + biggest.jpg.replace(/^\//, ""));
-  };
-  return (manifest) => JSON.stringify({
+const imageOf = (p, manifest) => {
+  const e = p.photo && manifest[p.photo];
+  if (!e) return undefined;
+  const biggest = e.variants[e.variants.length - 1];
+  return abs(asset(biggest.jpg));
+};
+
+// The index describes the blog and lists what is in it. The posts themselves are described on
+// their own pages — one node per URL, rather than every node on one URL.
+function indexJsonLd(posts, cats, manifest) {
+  return JSON.stringify({
     "@context": "https://schema.org",
     "@graph": [
       {
@@ -227,63 +223,23 @@ function jsonLd(posts, cats) {
         url: abs("/diaries"),
         name: "Tram 22 Diaries",
         description:
-          "Honest reviews of Prague's Indian and vegan restaurants, notes on contemporary Indian wear, and life between India and the Czech Republic.",
+          "Honest reviews of Prague's Indian and vegan restaurants, notes on contemporary Indian wear, mindfulness practice, and life between India and the Czech Republic.",
         isPartOf: { "@id": abs("/#website") },
         author: { "@id": abs("/#author") },
         inLanguage: "en",
-        // The categories, named where a crawler can see them — the page's two <section>s.
         about: cats.map((c) => ({ "@type": "Thing", name: c.name })),
         blogPost: posts.map((p) => ({
           "@type": "BlogPosting",
-          "@id": url(p),
+          "@id": abs(postUrl(p) + "#post"),
           headline: p.title,
           description: p.blurb,
           datePublished: p.date,
-          url: url(p),
+          url: abs(postUrl(p)),
           image: imageOf(p, manifest),
           author: { "@id": abs("/#author") },
           isPartOf: { "@id": abs("/diaries#blog") },
         })),
       },
-      // The dispatch keeps an Article node of its own. It had one at
-      // /article-contemporary-indian-wear#article; the id moves with the content so the
-      // markup describes where the words actually are now.
-      ...posts.filter((p) => p.kind === "article").map((p) => ({
-        "@type": "Article",
-        "@id": abs(`/diaries#${p.id}-article`),
-        headline: p.title,
-        description: p.blurb,
-        datePublished: p.date,
-        mainEntityOfPage: { "@id": abs("/diaries#webpage") },
-        image: imageOf(p, manifest),
-        author: { "@id": abs("/#author") },
-        publisher: { "@id": abs("/#author") },
-        inLanguage: "en",
-        wordCount: undefined,
-      })),
-      // Every Review that used to live on /restaurants, against the same restaurant names.
-      // Dropping these on consolidation would have been the single most expensive part of
-      // the move; re-emitting them here is what makes it survivable.
-      ...posts.filter((p) => p.kind === "review").map((p) => ({
-        "@type": "Review",
-        "@id": url(p),
-        url: url(p),
-        itemReviewed: {
-          "@type": "Restaurant",
-          name: p.title,
-          servesCuisine: p.cuisine,
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Prague",
-            addressRegion: p.region,
-            addressCountry: "CZ",
-          },
-        },
-        author: { "@id": abs("/#author") },
-        datePublished: p.date,
-        name: p.verdict?.label,
-        reviewBody: p.blurb,
-      })),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -293,6 +249,116 @@ function jsonLd(posts, cats) {
       },
     ],
   }, null, 2);
+}
+
+// A post page carries the node for its own content, and nothing else's. Reviews keep the
+// Review type they had on the old /restaurants page — against the same restaurant names, so
+// the entity a search engine already knows survives every move this content has made.
+function postJsonLd(post, cat, manifest) {
+  const url = abs(postUrl(post));
+  const isReview = post.kind === "review";
+
+  const main = isReview
+    ? {
+        "@type": "Review",
+        "@id": `${url}#post`,
+        url,
+        itemReviewed: {
+          "@type": "Restaurant",
+          name: post.title,
+          servesCuisine: post.cuisine,
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Prague",
+            addressRegion: post.region,
+            addressCountry: "CZ",
+          },
+        },
+        author: { "@id": abs("/#author") },
+        publisher: { "@id": abs("/#author") },
+        datePublished: post.date,
+        name: post.verdict?.label,
+        reviewBody: post.blurb,
+        image: imageOf(post, manifest),
+        isPartOf: { "@id": abs("/diaries#blog") },
+        mainEntityOfPage: { "@id": `${url}#webpage` },
+      }
+    : {
+        "@type": ["BlogPosting", "Article"],
+        "@id": `${url}#post`,
+        url,
+        headline: post.title,
+        description: post.blurb,
+        datePublished: post.date,
+        image: imageOf(post, manifest),
+        author: { "@id": abs("/#author") },
+        publisher: { "@id": abs("/#author") },
+        inLanguage: "en",
+        isPartOf: { "@id": abs("/diaries#blog") },
+        mainEntityOfPage: { "@id": `${url}#webpage` },
+        articleSection: cat.name,
+      };
+
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      main,
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
+          { "@type": "ListItem", position: 2, name: "Tram 22 Diaries", item: abs("/diaries") },
+          { "@type": "ListItem", position: 3, name: cat.name, item: abs(`/diaries#${cat.id}`) },
+          { "@type": "ListItem", position: 4, name: post.title, item: url },
+        ],
+      },
+    ],
+  }, null, 2);
+}
+
+/* -------------------------------------------------------------------- shell ---- */
+
+function shell({ title, description, canonical, image, jsonld, header, footer, body, extraCss = "" }) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title}</title>
+<meta name="description" content="${esc(description)}">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="${canonical}">
+<meta name="theme-color" content="#4A4433">
+<meta property="og:type" content="${canonical.includes("/diaries/") ? "article" : "website"}">
+<meta property="og:site_name" content="Indian in Prague">
+<meta property="og:locale" content="en">
+<meta property="og:url" content="${canonical}">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${esc(description)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="${image}">
+<meta property="og:image:alt" content="Indian in Prague">
+<link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/diaries.css">
+<link rel="stylesheet" href="/assets/module.css">${extraCss}
+<script type="application/ld+json">
+${jsonld}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+${header}
+
+<main id="main">
+${body}
+</main>
+${footer}
+</body>
+</html>
+`;
 }
 
 /* -------------------------------------------------------------------- main ---- */
@@ -323,81 +389,41 @@ const index = await readFile(path.join(ROOT, "index.html"), "utf8");
 const header = /<header class="site">[\s\S]*?<\/header>/.exec(index);
 const footer = /<footer>[\s\S]*?<\/footer>/.exec(index);
 if (!header || !footer) throw new Error("could not lift <header>/<footer> out of index.html");
-// No ?v= token is emitted by this file. bump-assets.mjs owns it outright and runs after
-// every generator; see the note in build-shop.mjs's chrome() for what having two owners
-// cost when the token changed shape.
 
-// The current-page marking the rest of the site gets. Same rule as sync-chrome.mjs.
-const chromeHeader = header[0].replace(
+// The chrome is lifted from a page at the repo root, so its relative asset hrefs
+// (assets/site.css) resolve one directory too high from /diaries/. Absolute them.
+const absolutise = (html) =>
+  html
+    .replace(/(href|src)="(assets\/)/g, '$1="/$2')
+    .replace(/(href|src)="(images\/)/g, '$1="/$2');
+
+const chromeHeader = absolutise(header[0]).replace(
   /<a href="\/diaries">/,
   '<a href="/diaries" class="active" aria-current="page">');
+const chromeFooter = absolutise(footer[0]);
 
-const featured = posts.slice(0, FEATURED);
 const cats = data.categories
   .map((cat) => [cat, posts.filter((p) => p.cat === cat.id)])
   .filter(([, ps]) => ps.length > 0);
 
-const sections = cats.map(([cat, ps]) => categorySection(cat, ps, bodies, manifest));
+const catById = Object.fromEntries(data.categories.map((c) => [c.id, c]));
 
-// The jump strip under the h1. Two categories today; it is generated, so it stays honest as
-// categories are added or run dry.
+/* ---- the index ---- */
+
 const catNav =
   `<nav class="cat-jump" aria-label="Categories">` +
   cats.map(([c, ps]) =>
     `<a href="#${esc(c.id)}">${esc(c.name)} <b>${ps.length}</b></a>`).join("") +
   `</nav>`;
 
-const html = `<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Indian &amp; Vegan Restaurants in Prague, Reviewed — Tram 22 Diaries</title>
-<meta name="description" content="Honest reviews of Prague's Indian restaurants and the best fully vegan spots, by an Indian who grew up eating this food — plus notes on contemporary Indian wear and life between two countries.">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="${SITE}/diaries">
-<meta name="theme-color" content="#4A4433">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Indian in Prague">
-<meta property="og:locale" content="en">
-<meta property="og:url" content="${SITE}/diaries">
-<meta property="og:title" content="Indian &amp; vegan restaurants in Prague, reviewed — Tram 22 Diaries">
-<meta property="og:description" content="Which Indian restaurants in Prague are actually authentic, the best fully vegan spots, and how contemporary Indian wear works in a European city.">
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:image" content="${SITE}/images/derived/IMG_4126-1200.jpg">
-<meta property="og:image:alt" content="Indian in Prague">
-<link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<!-- Plex Sans carries every lede and every paragraph of prose on the site now, so it is
-     as much a first-paint font as the mono is. One file: it is a variable face. -->
-<link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/diaries.css">
-<link rel="stylesheet" href="assets/module.css">
-<script type="application/ld+json">
-${jsonLd(posts, cats.map(([c]) => c))(manifest)}
-</script>
-</head>
-<body>
-<a class="skip" href="#main">Skip to content</a>
-${chromeHeader}
-
-<main id="main">
-<div class="page-head"><div class="wrap">
+const indexBody = `<div class="page-head"><div class="wrap">
   <div class="crumb">Tram 22 · the journal</div>
   <h1>Tram 22 <b>Diaries</b></h1>
-  <p class="lede">Notes from the legendary tram number 22, the lifeline of the city. Where I eat, what I wear, and what living between two countries actually feels like — every review and every dispatch, on one page.</p>
+  <p class="lede">Notes from the legendary tram number 22, the lifeline of the city. Where I eat, what I wear, and what a practice looks like on an ordinary weekday — ${posts.length} posts, newest first in each shelf.</p>
   ${catNav}
 </div></div>
 
-<section class="latest"><div class="wrap sec-inner">
-  <div class="sec-top"><h2>Latest from the 22</h2></div>
-  <div class="grid4">
-    ${featured.map((p) => postCard(p, manifest, "", "post-lg")).join("\n    ")}
-  </div>
-</div></section>
-
-${sections.join("\n\n")}
+${cats.map(([cat, ps]) => categorySection(cat, ps, manifest)).join("\n\n")}
 
 <section class="rail-end"><div class="wrap sec-inner">
   <div class="holding">
@@ -408,22 +434,118 @@ ${sections.join("\n\n")}
       <a class="btn" href="/wardrobe">The wardrobe →</a>
     </div>
   </div>
-</div></section>
-</main>
-${footer[0]}
-</body>
-</html>
-`;
+</div></section>`;
 
-await writeFile(path.join(ROOT, "diaries.html"), html);
+await rm(OUT, { recursive: true, force: true });
+await mkdir(OUT, { recursive: true });
+
+await writeFile(path.join(ROOT, "diaries.html"), shell({
+  title: "Tram 22 Diaries — Indian &amp; vegan restaurants in Prague, Indian wear, mindfulness",
+  description:
+    "Honest reviews of Prague's Indian restaurants and the best fully vegan spots, notes on contemporary Indian wear, and mindfulness practice — by an Indian living in Prague.",
+  canonical: abs("/diaries"),
+  image: abs("/images/derived/IMG_4126-1200.jpg"),
+  jsonld: indexJsonLd(posts, cats.map(([c]) => c), manifest),
+  header: chromeHeader,
+  footer: chromeFooter,
+  body: indexBody,
+}));
+
+/* ---- one page per post ---- */
+
+for (const post of posts) {
+  const cat = catById[post.cat];
+  if (!cat) throw new Error(`posts.json: ${post.id} has cat "${post.cat}", which is not a category`);
+
+  // Previous and next WITHIN the category: "more like this one" is more useful at the end of
+  // a restaurant review than whatever happened to be written the same week.
+  const siblings = posts.filter((p) => p.cat === post.cat);
+  const i = siblings.findIndex((p) => p.id === post.id);
+  const newer = siblings[i - 1];
+  const older = siblings[i + 1];
+
+  const meta = [
+    `<time datetime="${esc(post.date)}">${esc(humanDate(post.date))}</time>`,
+    post.reading ? `<span>${post.reading} min read</span>` : "",
+    post.meta ? `<span>${esc(post.meta)}</span>` : "",
+  ].filter(Boolean).join(" · ");
+
+  const hero = post.photo
+    ? `<div class="post-hero frame ${spice(post.id)}">${picture(post, manifest, HERO_SIZES, post.title, true)}<div class="grain"></div></div>`
+    : "";
+
+  const shopCta = post.cat === "fashion"
+    ? `<div class="shop-cta">
+        <h2>Shop the look</h2>
+        <p>The pieces I write about here go up on my Vinted closet as I rotate them — block print, handloom, contemporary cuts. Pre-loved, locally available, no slow shipping from India.</p>
+        <a class="btn saf" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
+      </div>`
+    : "";
+
+  const orderLine = post.order
+    ? `<p class="order"><b>Order:</b> ${esc(post.order)}</p>`
+    : "";
+
+  const nav = (newer || older)
+    ? `<nav class="post-nav" aria-label="More in ${esc(cat.name)}">
+      ${older ? `<a class="prev" href="${postUrl(older)}"><span>← Older in ${esc(cat.name)}</span><b>${esc(older.title)}</b></a>` : "<span></span>"}
+      ${newer ? `<a class="next" href="${postUrl(newer)}"><span>Newer in ${esc(cat.name)} →</span><b>${esc(newer.title)}</b></a>` : "<span></span>"}
+    </nav>`
+    : "";
+
+  const related = siblings.filter((p) => p.id !== post.id).slice(0, 3);
+  const relatedBlock = related.length
+    ? `<section class="post-related"><div class="wrap sec-inner">
+    <div class="sec-top"><h2>More in ${esc(cat.name)}</h2><a class="rail-all" href="/diaries#${esc(cat.id)}">All ${esc(cat.name.toLowerCase())} →</a></div>
+    <div class="grid3">
+      ${related.map((p) => postCard(p, manifest)).join("\n      ")}
+    </div>
+  </div></section>`
+    : "";
+
+  const body = `<article class="post-page">
+  <div class="post-head"><div class="wrap">
+    <nav class="crumb crumb-nav" aria-label="Breadcrumb">
+      <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> <a href="/diaries#${esc(cat.id)}">${esc(cat.name)}</a>
+    </nav>
+    <h1>${esc(post.title)}</h1>
+    <p class="post-byline">${meta}${
+      post.verdict ? ` · <span class="rv ${esc(post.verdict.tone)}">${esc(post.verdict.label)}</span>` : ""}</p>
+    <p class="lede">${esc(post.blurb)}</p>
+  </div></div>
+
+  <div class="wrap post-main">
+    ${hero}
+    <div class="entry-body">
+${bodies[post.id]}
+    </div>
+    ${orderLine}
+    ${shopCta}
+    ${nav}
+  </div>
+</article>
+
+${relatedBlock}`;
+
+  await writeFile(path.join(OUT, `${post.id}.html`), shell({
+    title: `${esc(post.title)} — ${esc(cat.name)} | Tram 22 Diaries`,
+    description: post.blurb,
+    canonical: abs(postUrl(post)),
+    image: imageOf(post, manifest) || abs("/images/derived/IMG_4126-1200.jpg"),
+    jsonld: postJsonLd(post, cat, manifest),
+    header: chromeHeader,
+    footer: chromeFooter,
+    body,
+  }));
+}
+
 console.log(
-  `  diaries.html — ${posts.length} posts inline in ${cats.length} categor${cats.length === 1 ? "y" : "ies"}, ${featured.length} featured`);
+  `  diaries.html + diaries/ — index and ${posts.length} post page${posts.length === 1 ? "" : "s"} in ${cats.length} categor${cats.length === 1 ? "y" : "ies"}`);
 
-// The homepage strip, between its own markers. These cards DO leave the page, so they carry
-// the /diaries base.
+// The homepage strip. These cards point at the post pages.
 const strip =
-  `<div class="grid3">\n    ` +
-  posts.slice(0, HOME_STRIP).map((p) => postCard(p, manifest, "/diaries")).join("\n    ") +
+  `<div class="grid2">\n    ` +
+  posts.slice(0, HOME_STRIP).map((p) => homeCard(p, manifest)).join("\n    ") +
   `\n  </div>`;
 await writeFile(path.join(ROOT, "index.html"), replaceRegion(index, "DIARY:LATEST", strip, "index.html"));
 console.log(`  index.html — ${HOME_STRIP} latest posts (diary region replaced)`);

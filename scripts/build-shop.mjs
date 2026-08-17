@@ -748,8 +748,14 @@ async function main() {
   // No file, no reviews yet, or a Vinted hiccup during the sync: fall back to the plain
   // sentence rather than an empty box or a "0.0 ★" that actively repels. The strip is an
   // enhancement, and the shelves below it work without it.
+  // The "One of a kind, priced in koruna, posted from Prague. Pick a shelf:" line that used
+  // to sit under this strip was removed 17 Aug 2026. Every clause of it was already on the
+  // screen: the shelves it told you to pick are the six tiles immediately below, each with a
+  // piece count, and the terms are on the shelf pages themselves. With no reviews to show,
+  // the region is now empty rather than falling back to that sentence — an empty region is
+  // honest, a restatement is noise.
   const trust = !seller?.count
-    ? `<p class="sec-lead">One of a kind, priced in koruna, posted from Prague. Pick a shelf:</p>`
+    ? ``
     : `<div class="trust">` +
       `<span class="trust-rate">` +
       `<span class="stars" aria-hidden="true">${"★".repeat(Math.round(seller.rating))}${"☆".repeat(5 - Math.round(seller.rating))}</span>` +
@@ -758,7 +764,7 @@ async function main() {
       `<a class="trust-go" href="${esc(seller.feedbackUrl)}" target="_blank" rel="noopener">` +
       `Read the reviews<span class="vh"> on Vinted (opens in a new tab)</span> →</a>` +
       `<span class="vh">Rated ${seller.rating.toFixed(1)} out of 5 from ${seller.count} buyer reviews on Vinted.</span>` +
-      `</div>\n  <p class="sec-lead">One of a kind, priced in koruna, posted from Prague. Pick a shelf:</p>`;
+      `</div>`;
 
   indexHtml = replaceRegion(indexHtml, "SHOP:TRUST", trust, "index.html");
 

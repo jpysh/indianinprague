@@ -12,7 +12,7 @@
 //   node scripts/build-sitemap.mjs && docker compose up -d --build
 
 import { readFile, writeFile, stat } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import path from "node:path";
 
 const SITE = "https://indianinprague.jains.es";
@@ -40,6 +40,21 @@ const PAGES = [
   // long-form dispatch inline, which is why it went 0.7 -> 0.9.
   { file: "diaries.html", loc: "/diaries", priority: "0.9", changefreq: "weekly" },
 ];
+
+// Every post now has a page of its own (17 Aug 2026 — see the header of build-diaries.mjs),
+// and each one is a URL a crawler should know about in its own right. Read from disk rather
+// than from posts.json so the sitemap can only ever list a file that was actually written.
+for (const file of existsSync(`${ROOT}/diaries`) ? readdirSync(`${ROOT}/diaries`) : []) {
+  if (!file.endsWith(".html") || file === "index.html") continue;
+  PAGES.push({
+    file: `diaries/${file}`,
+    loc: `/diaries/${file.replace(/\.html$/, "")}`,
+    // Below the index, above a shop shelf: these are the writing, but the index is the page
+    // that collects them and the one worth entering the site through.
+    priority: "0.8",
+    changefreq: "monthly",
+  });
+}
 
 // The category pages build-shop.mjs emits. Which of them exist depends on what is actually
 // in the closet this week — a category with nothing in it is not written — so they are

@@ -487,9 +487,12 @@ main > section:nth-of-type(even){background:var(--band)}
 
    It wraps rather than scrolls at narrow widths — three short phrases, so on a phone it
    becomes two lines and stays entirely readable. */
+/* 14px was the gap to the sentence that used to follow this strip; that sentence is gone and
+   the strip now sits directly above the shelf tiles, which need the same air the sentence had
+   below it. */
 .trust{
   display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;
-  margin-bottom:14px;font-size:var(--fs-s);color:var(--bone-dim);
+  margin-bottom:30px;font-size:var(--fs-s);color:var(--bone-dim);
 }
 .trust-rate{display:inline-flex;align-items:baseline;gap:8px;white-space:nowrap}
 /* letter-spacing because ★ glyphs are drawn tight and read as a smear at small sizes. */
@@ -543,6 +546,11 @@ main > section:nth-of-type(even){background:var(--band)}
    a fixed 560px, so three columns demanded 1712px inside a 1220px container and the
    grid ran off the right edge of the page on desktop. minmax(0,…) lets the tracks
    shrink to the space that actually exists. */
+/* Two-up. Used by the homepage diary strip, which carries the two newest posts: a pair in a
+   three-track grid would leave one cell empty and read as a card that failed to load. */
+.grid2{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:641px){.grid2{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+
 .grid3{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 @media (min-width:521px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:801px){.grid3{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
@@ -658,7 +666,11 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
 /* Sentence and channels share one line, chips pushed right and centred against the text block —
    the claim and the way to act on it, together. They wrap beneath it when there is no room. */
 .foot-intro{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}
-.foot-lede{font-size:var(--fs-s);color:var(--bone-dim);max-width:52ch;line-height:1.6;flex:1 1 30ch}
+/* No max-width. The 52ch cap that used to be here is the right rule for a column of prose and
+   the wrong one for a single 140-character sentence with 700px of empty footer beside it: it
+   was folding one line of copy into three while the row it sits in had room to spare. The
+   sentence now takes the width the row gives it, and the chips beside it set the limit. */
+.foot-lede{font-size:var(--fs-s);color:var(--bone-dim);line-height:1.6;flex:1 1 34ch}
 
 .foot-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 32px;margin-top:20px}
 .foot-col{display:flex;flex-direction:column}
