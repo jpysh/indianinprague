@@ -22,20 +22,22 @@ review scores.
 
 ## Pages
 
-- [Home](https://indianinprague.jains.es/): overview of all three strands — wardrobe,
-  restaurants, journal.
+- [Home](https://indianinprague.jains.es/): overview of both strands — the wardrobe, and
+  the journal (which holds the restaurant reviews).
 - [Clothes](https://indianinprague.jains.es/clothes.html): the garments currently for
   sale, each linked to its Vinted listing with price in CZK, plus a buyer's guide to
   block print, Ajrakh, Kalamkari, bandhani and handloom cotton.
   Praha.
-- [Restaurants](https://indianinprague.jains.es/restaurants.html): reviews of Indian
-  restaurants in Prague (Annamalai in Nové Město, INDelicious Bistro in Nusle) and fully
-  vegan places (Pastva in Anděl, Palo Verde Bistro on Žitná, Dosa Dosa on Újezd).
-- [Tram 22 Diaries](https://indianinprague.jains.es/diaries.html): the journal hub. Posts
-  are grouped into categories — food, clothes, life — each shown as a scrollable rail. The
-  restaurant reviews are part of this section rather than a separate one.
-- [Contemporary Indian wear on the streets of Prague](https://indianinprague.jains.es/article-contemporary-indian-wear.html):
-  long-form piece on how modern Indian clothing fits a European wardrobe.
+- [Tram 22 Diaries](https://indianinprague.jains.es/diaries): the whole journal, on one
+  page, in two categories.
+  - **What I wear** (#contemporary-indian-wear): a long-form piece on how modern Indian
+    clothing — earthy palettes, hand-loomed craft, block print — fits a European wardrobe.
+  - **Food I love in the city** (#food): reviews of Indian restaurants in Prague
+    (Annamalai in Nové Město #annamalai, INDelicious Bistro in Nusle #indelicious) and
+    fully vegan places (#vegan — Dosa Dosa on Újezd, Pastva in Anděl, Palo Verde Bistro
+    on Žitná). No paid collaborations.
+  The former /restaurants and /article-contemporary-indian-wear URLs 301 here; each review
+  is an anchor on this page rather than a page of its own.
 
 ## Attribution
 

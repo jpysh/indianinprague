@@ -155,11 +155,12 @@ body{
  */
 .prose,
 .lede, .sec-lead, .sub,
-.article p, .article li,
 .rev p, .rev .order, .note p,
-.post p, .plate p, .vitem p,
+.post p, .plate p,
+.entry-body p, .entry-body li,
+.cat-note, .group-note, .shop-cta p,
 .guide-body p, .manifesto p, .vinted-cta p,
-.holding p, .rail-note, .how-steps li, .how-note,
+.holding p, .how-steps li, .how-note,
 .notfound .sub, .foot p{
   font-family:var(--sans);
   font-size:var(--fs-m);

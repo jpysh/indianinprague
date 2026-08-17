@@ -33,5 +33,21 @@
 /sold.html                                /sold                             301
 /spirituality.html                        /spirituality                     301
 /diaries.html                             /diaries                          301
-/restaurants.html                         /restaurants                      301
-/article-contemporary-indian-wear.html    /article-contemporary-indian-wear 301
+
+# /restaurants and /article-contemporary-indian-wear were FOLDED INTO /diaries on
+# 17 Aug 2026. Both pages are deleted; their content is inline on the Diaries under the
+# category it belongs to, and every anchor they used (#annamalai, #indelicious, #dosa-dosa,
+# #pastva, #palo-verde, #vegan) is an anchor on that page.
+#
+# 301 and not 302 for the usual reason — the move is permanent and only a 301 passes the
+# accumulated ranking on. /restaurants is the most valuable URL involved: it held the position
+# for the Prague Indian-restaurant searches and five Review nodes of structured data. Both the
+# reviews and the schema were carried over to /diaries rather than dropped, which is what
+# makes this survivable rather than simply lossy.
+#
+# The fragment is not the server's business and does not need a rule: a browser reapplies it
+# to the redirect target, so /restaurants#annamalai arrives at /diaries#annamalai on its own.
+/restaurants                              /diaries#food                     301
+/restaurants.html                         /diaries#food                     301
+/article-contemporary-indian-wear         /diaries#contemporary-indian-wear  301
+/article-contemporary-indian-wear.html    /diaries#contemporary-indian-wear  301

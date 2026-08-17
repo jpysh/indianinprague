@@ -175,7 +175,10 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; 
   position: fixed; left: 32px; top: 0; bottom: 0; width: 34px; z-index: 55;
   display: none; pointer-events: none;
 }
-@media (min-width: 1080px){ .thread { display: block; } }
+/* Retired 2026-08-17: the left rail overlapped main content on desktop and read as a
+   distraction rather than an aid. Kept in the DOM (hidden) so the in-page anchors and the
+   scroll-progress script stay intact; flip this back to `display: block` to restore it. */
+@media (min-width: 1080px){ .thread { display: none; } }
 .thread svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
 .thread .track { stroke: rgba(245,238,221,0.12); stroke-width: 2; fill: none; }
 .thread .fill { stroke: url(#threadGrad); stroke-width: 2; fill: none; stroke-dasharray: 2000; stroke-dashoffset: 2000; }
@@ -287,16 +290,126 @@ header.site.nav-hidden {
 .pill-nav .word { font-family: var(--font-display); font-size: 15.5px; }
 .pill-nav .word em { font-style: italic; color: var(--marigold); }
 
-/* Sound Toggle Pill */
+/* Section links, wide screens only. */
+.nav-links { display: flex; align-items: center; gap: 22px; margin: 0 4px; }
+.nav-links a {
+  font-size: 14.5px; font-weight: 600; color: rgba(245,238,221,.82);
+  padding: 6px 2px; position: relative; transition: color .3s var(--ease);
+}
+.nav-links a::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1.5px;
+  background: var(--marigold); transform: scaleX(0); transform-origin: left;
+  transition: transform .35s var(--ease);
+}
+.nav-links a:hover { color: var(--cream); }
+.nav-links a:hover::after, .nav-links a.current::after { transform: scaleX(1); }
+.nav-links a.current { color: var(--marigold); }
+
+/* Sound toggle.
+   The three equaliser bars this replaced were the problem the visitor had: bars are a level
+   METER, not a control, and three short dashes read as decoration — nothing about them said
+   "off", and nothing said "press me". A speaker with a slash through it is the one audio
+   symbol that is understood without a label, which is what lets the text label go on every
+   size rather than only on phones. State lives in aria-pressed and the label, both swapped
+   in JS, so a screen reader is told what pressing it will do rather than what it looks like. */
 .sound-toggle {
   background: rgba(245,238,221,0.08); border: 1px solid rgba(245,238,221,0.2);
-  border-radius: 100px; padding: 6px 14px; color: var(--cream);
-  font-family: var(--font-label); font-size: 10.5px; letter-spacing: 0.05em;
-  display: flex; align-items: center; gap: 8px; cursor: pointer; transition: background 0.3s;
+  border-radius: 100px; padding: 0; color: var(--cream);
+  width: 44px; height: 44px; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: background .3s, border-color .3s;
 }
-.sound-toggle:hover { background: rgba(245,238,221,0.18); }
-.sound-viz { display: flex; align-items: flex-end; gap: 2px; height: 12px; }
-.sound-bar { width: 2px; height: 3px; background: var(--marigold); border-radius: 1px; transition: height 0.2s; }
+.sound-toggle:hover { background: rgba(245,238,221,0.18); border-color: rgba(245,238,221,.42); }
+.ico-sound { width: 21px; height: 21px; overflow: visible; }
+.ico-sound .spk { fill: rgba(245,238,221,.75); transition: fill .3s; }
+.ico-sound .waves path, .ico-sound .slash {
+  fill: none; stroke-width: 1.9; stroke-linecap: round; transition: opacity .3s, stroke .3s;
+}
+.ico-sound .waves path { stroke: rgba(245,238,221,.75); opacity: 0; }
+.ico-sound .slash { stroke: rgba(245,238,221,.75); opacity: 1; }
+.sound-toggle.is-on .ico-sound .spk { fill: var(--marigold); }
+.sound-toggle.is-on .ico-sound .waves path { stroke: var(--marigold); opacity: 1; }
+.sound-toggle.is-on .ico-sound .slash { opacity: 0; }
+.sound-toggle.is-on { background: rgba(232,162,61,.16); border-color: rgba(232,162,61,.5); }
+
+/* Menu button — phone control, hidden once the links themselves fit. */
+.menu-btn {
+  display: none; align-items: center; gap: 9px; cursor: pointer;
+  background: rgba(245,238,221,.08); border: 1px solid rgba(245,238,221,.22);
+  border-radius: 100px; padding: 0 18px; min-height: 44px; flex: 0 0 auto;
+  color: var(--cream); font-family: var(--font-body); font-weight: 600; font-size: 14px;
+  transition: background .3s, border-color .3s;
+}
+.menu-btn:hover { background: rgba(245,238,221,.16); }
+.menu-icon { display: block; width: 16px; height: 11px; position: relative; }
+.menu-icon i {
+  position: absolute; left: 0; width: 100%; height: 1.8px; border-radius: 2px;
+  background: var(--cream); transition: transform .4s var(--ease), width .4s var(--ease);
+}
+.menu-icon i:first-child { top: 0; }
+.menu-icon i:last-child  { bottom: 0; }
+.menu-btn[aria-expanded="true"] .menu-icon i:first-child { transform: translateY(4.6px) rotate(45deg); }
+.menu-btn[aria-expanded="true"] .menu-icon i:last-child  { transform: translateY(-4.6px) rotate(-45deg); }
+
+/* The sheet. Opacity/visibility rather than [hidden] alone so it can be animated; `hidden` is
+   removed by JS on first open and the class carries the state from then on. */
+.nav-sheet {
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(12, 7, 22, .93); backdrop-filter: blur(28px) saturate(150%);
+  opacity: 0; visibility: hidden; transition: opacity .45s var(--ease), visibility .45s;
+  display: flex; align-items: flex-end;
+}
+.nav-sheet.open { opacity: 1; visibility: visible; }
+/* The pill rides above the sheet while it is open, so the control that opened the menu is the
+   same control that closes it — its icon has already turned into an X. */
+body.sheet-open header.site { z-index: 95; }
+body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
+.nav-sheet[hidden] { display: none; }
+.nav-sheet-inner { width: 100%; padding: 0 22px calc(28px + env(safe-area-inset-bottom)); }
+.nav-sheet-eyebrow {
+  font-family: var(--font-label); font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+  color: rgba(245,238,221,.55); margin-bottom: 14px;
+}
+.nav-sheet ul { display: flex; flex-direction: column; list-style: none; }
+.nav-sheet li { border-top: 1px solid rgba(245,238,221,.13); }
+.nav-sheet li:last-of-type { border-bottom: 1px solid rgba(245,238,221,.13); }
+.nav-sheet li a {
+  display: grid; grid-template-columns: 34px 1fr; gap: 2px 12px;
+  padding: 16px 2px; align-items: baseline; min-height: 44px;
+}
+.nav-sheet .n { font-family: var(--font-label); font-size: 12px; color: var(--marigold); grid-row: 1 / span 2; }
+.nav-sheet .l { font-family: var(--font-display); font-size: 25px; color: var(--cream); line-height: 1.15; }
+.nav-sheet .d { font-size: 13.5px; color: rgba(245,238,221,.62); }
+.nav-sheet li a:hover .l, .nav-sheet li a:focus-visible .l { color: var(--marigold); }
+.nav-sheet-cta { margin-top: 22px; width: 100%; justify-content: center; }
+
+/* Each row lifts in behind the one above it — the reveal is what makes opening the menu feel
+   like part of the page rather than a browser dialog dropped on top of it. */
+.nav-sheet li, .nav-sheet-eyebrow, .nav-sheet-cta {
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .5s var(--ease), transform .5s var(--ease);
+}
+.nav-sheet.open li, .nav-sheet.open .nav-sheet-eyebrow, .nav-sheet.open .nav-sheet-cta {
+  opacity: 1; transform: none;
+}
+.nav-sheet.open .nav-sheet-eyebrow { transition-delay: .06s; }
+.nav-sheet.open li:nth-child(1) { transition-delay: .10s; }
+.nav-sheet.open li:nth-child(2) { transition-delay: .16s; }
+.nav-sheet.open li:nth-child(3) { transition-delay: .22s; }
+.nav-sheet.open li:nth-child(4) { transition-delay: .28s; }
+.nav-sheet.open li:nth-child(5) { transition-delay: .34s; }
+.nav-sheet.open .nav-sheet-cta { transition-delay: .40s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-sheet li, .nav-sheet-eyebrow, .nav-sheet-cta { transform: none; transition: opacity .2s linear; }
+}
+
+/* Below the breakpoint where five words plus a wordmark stop fitting, the links fold into the
+   sheet and the labelled button takes their place. */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .menu-btn { display: inline-flex; }
+}
 
 /* Phone layout for the pill nav.
    The nav had no width constraint at all, so its three children simply added up to more
@@ -324,11 +437,8 @@ header.site.nav-hidden {
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .pill-nav .word em { display: none; }
-  .sound-toggle { padding: 6px 10px; flex: 0 0 auto; }
-  .sound-toggle #sound-text { display: none; }
-  .pill-nav .btn-primary {
-    flex: 0 0 auto; font-size: 13px; padding: 11px 16px; min-height: 44px;
-  }
+  .sound-toggle { width: 42px; height: 42px; }
+  .menu-btn { font-size: 13.5px; padding: 0 15px; }
 }
 
 /* Only on genuinely tiny screens does the wordmark go. Measured at 375px — an iPhone SE or
@@ -395,6 +505,17 @@ header.site.nav-hidden {
   color: rgba(245,238,221,.85); font-size: 17px; line-height: 1.75; max-width: 52ch; margin-top: 22px;
 }
 .hero .ctas { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; margin-top: 36px; }
+/* Four items wrap 3+1 on most desktop widths, which reads as a mistake. A two-column grid
+   pairs them deliberately instead, and the two ghost buttons share a width so the pair scans
+   as one rank. On a phone the same grid collapses to a single full-width column. */
+.hero .ctas-4 { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 14px 18px; }
+.hero .ctas-4 .btn { justify-content: center; width: 100%; }
+/* The third button is allowed to sit alone on row two — with only three items a 2+1 grid is
+   the honest shape, and it keeps both ghosts the same width as the primary above them. */
+.hero .lede-link { display: inline-flex; margin-top: 22px; }
+@media (max-width: 560px) {
+  .hero .ctas-4 { grid-template-columns: 1fr; }
+}
 
 .art-blob {
   position: relative; aspect-ratio: 4/5; width: 100%; border-radius: 38% 62% 61% 39% / 45% 40% 60% 55%;
@@ -676,10 +797,13 @@ section.on-void .runway-rail span { background: var(--marigold); }
   background: rgba(33, 23, 53, 0.88); border-color: var(--marigold);
   box-shadow: 0 16px 36px rgba(232, 162, 61, 0.22);
 }
-.chakra-row .num { font-family: var(--font-label); font-size: 13px; color: var(--marigold); font-weight: 500; }
-.chakra-row h4 { font-size: 18px; color: var(--cream); font-weight: 440; }
-.chakra-row .meta { font-size: 12.5px; color: rgba(245,238,221,.6); margin-top: 2px; }
-.chakra-row .quality { font-size: 14.5px; color: rgba(245,238,221,.9); text-align: right; }
+/* Sizes raised across the board 2026-08-17. The old scale (18/12.5/14.5) was set against a
+   lighter wash; on the black stage, at .45 opacity, the secondary lines were effectively
+   unreadable until a row went active. Contrast on the inactive state was lifted with it. */
+.chakra-row .num { font-family: var(--font-label); font-size: 15px; color: var(--marigold); font-weight: 500; }
+.chakra-row h4 { font-size: 21px; color: var(--cream); font-weight: 440; line-height: 1.3; }
+.chakra-row .meta { font-size: 14.5px; color: rgba(245,238,221,.72); margin-top: 4px; }
+.chakra-row .quality { font-size: 16.5px; color: rgba(245,238,221,.92); text-align: right; }
 
 /* ============================================================
    ABOUT & TESTIMONIALS & FAQ
@@ -734,8 +858,10 @@ section.on-void .runway-rail span { background: var(--marigold); }
   .commit { background: rgba(22, 15, 36, 0.88); border: 1px solid rgba(245, 238, 221, 0.2); }
   .commit h4 { color: #FBF6EC; }
   .commit p { color: rgba(245, 238, 221, 0.9); }
-  .chakra-row { grid-template-columns: 28px 1fr; gap: 8px; }
-  .chakra-row .quality { grid-column: 2; text-align: left; font-size: 13px; color: var(--marigold-soft); }
+  .chakra-row { grid-template-columns: 32px 1fr; gap: 10px; padding: 20px 22px; }
+  .chakra-row h4 { font-size: 20px; }
+  .chakra-row .meta { font-size: 14px; }
+  .chakra-row .quality { grid-column: 2; text-align: left; font-size: 15px; color: var(--marigold-soft); margin-top: 6px; }
 }
 
 /* ============================================================
@@ -918,21 +1044,54 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 
 <!-- Header Navigation (Hide-On-Scroll) -->
 <header class="site">
-  <nav class="pill-nav" data-magnetic="true">
+  <nav class="pill-nav" data-magnetic="true" aria-label="Primary">
     <a href="#hero" class="word">Indian in Prague <em>· Spirituality</em></a>
-    
-    <button class="sound-toggle" id="sound-toggle" aria-label="Toggle Ambient Audio">
-      <div class="sound-viz">
-        <div class="sound-bar"></div>
-        <div class="sound-bar"></div>
-        <div class="sound-bar"></div>
-      </div>
-      <span id="sound-text">Sound Off</span>
+
+    <!-- Wide screens show the sections themselves rather than a control that hides them:
+         NN/g's finding is that navigation kept visible outperforms navigation behind an
+         icon, for every audience, and there is room here to simply show it. -->
+    <ul class="nav-links">
+      <li><a href="#offer">Offer</a></li>
+      <li><a href="#trips">Journeys</a></li>
+      <li><a href="#meditation">Chakras</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="sound-toggle" id="sound-toggle" aria-pressed="false"
+            aria-label="Ambient sound is off. Activate to play." title="Play ambient sound">
+      <svg class="ico-sound" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path class="spk" d="M4 9.5h3.2L12 5.5v13L7.2 14.5H4z"/>
+        <g class="waves"><path d="M15.4 9.4a3.7 3.7 0 0 1 0 5.2"/><path d="M18 6.8a7.4 7.4 0 0 1 0 10.4"/></g>
+        <line class="slash" x1="15" y1="8.6" x2="21" y2="15.4"/>
+      </svg>
     </button>
 
-    <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
+    <!-- The phone control is a labelled word, not a bare icon. Same NN/g work: an unlabelled
+         hamburger is found less often than a labelled one, and this site's traffic is mostly
+         first-time mobile visitors. -->
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav-sheet">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      <span class="menu-word">Menu</span>
+    </button>
   </nav>
 </header>
+
+<!-- Full-screen section index. Anchored to the BOTTOM of the sheet: on a large phone the top
+     corners are the hardest place to reach, so the links sit where the thumb already is. -->
+<div class="nav-sheet" id="nav-sheet" role="dialog" aria-modal="true" aria-label="Sections" hidden>
+  <div class="nav-sheet-inner">
+    <p class="nav-sheet-eyebrow">Where would you like to go?</p>
+    <ul>
+      <li><a href="#offer"><span class="n">01</span> <span class="l">What we offer</span> <span class="d">Courses, treatments, journeys, goods</span></a></li>
+      <li><a href="#trips"><span class="n">02</span> <span class="l">Journeys to India</span> <span class="d">Retreats, Panchakarma, cultural trips</span></a></li>
+      <li><a href="#meditation"><span class="n">03</span> <span class="l">Chakras</span> <span class="d">The seven centres, felt not explained</span></a></li>
+      <li><a href="#shop"><span class="n">04</span> <span class="l">Ritual objects</span> <span class="d">Ayurvedic goods, shipped across Europe</span></a></li>
+      <li><a href="#contact"><span class="n">05</span> <span class="l">Contact</span> <span class="d">Start with a conversation</span></a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary nav-sheet-cta">Book a consultation</a>
+  </div>
+</div>
 
 <!-- MAIN CONTENT WRAPPER -->
 <main id="main-content">
@@ -954,10 +1113,17 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         </h1>
         <p class="kicker">One philosophy. Four ways to begin.</p>
         <p class="lede">Authentic yoga, Ayurveda, meditation and wellbeing traditions, rooted in genuine source knowledge, taught with the warmth Haidakhan Babaji called "Truth, Simplicity, Love."</p>
-        <div class="ctas">
+        <!-- The chakra link sits between the lede and the buttons rather than among them: it
+             is an invitation to look, not one of the three things to click, and putting it
+             above the button block stops it competing with them for the same glance. -->
+        <a href="#meditation" class="btn-text lede-link" data-magnetic="true">Explore the Chakras: Our Energy Centers <span class="arrow">→</span></a>
+
+        <!-- Three routes, one visual rank each: one solid primary and two ghosts of equal
+             weight, on a two-up grid so the row never breaks into an orphan. -->
+        <div class="ctas ctas-4">
           <a href="#contact" class="btn btn-primary" data-magnetic="true">Book a consultation</a>
           <a href="#offer" class="btn btn-ghost" data-magnetic="true">See our courses</a>
-          <a href="#shop" class="btn-text" data-magnetic="true">Explore products <span class="arrow">→</span></a>
+          <a href="#shop" class="btn btn-ghost" data-magnetic="true">Explore products</a>
         </div>
       </div>
       <div class="hero-art">
@@ -982,7 +1148,7 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   <section class="sec-pad band-sand" id="offer">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow"><strong>WHAT WE OFFER</strong><span>four spaces, one philosophy</span></div>
+        <div class="eyebrow"><strong>WHAT WE OFFER</strong><span>three spaces, one philosophy</span></div>
         <h2 class="kinetic-title">
           <span class="line-mask"><span class="line-mask-inner">Learn, travel, practise,</span></span>
           <span class="line-mask"><span class="line-mask-inner">and bring it home.</span></span>
@@ -993,16 +1159,15 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
       <div class="cards-grid skew-block">
         <article class="card" data-magnetic="true">
           <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--terracotta-deep)" stroke-width="1.5"><path d="M16 4 C10 4 8 10 12 13 C6 14 4 20 9 24 C13 27 19 27 23 24 C28 20 26 14 20 13 C24 10 22 4 16 4Z"/><path d="M16 13 L16 27"/></svg></div>
-          <div class="tag">Learn</div>
-          <h3>Yoga, Ayurveda &amp; Meditation Courses</h3>
-          <p class="hook">Classes, workshops and structured courses taught from authentic, source-based knowledge — not diluted trends.</p>
+          <div class="tag">Learn &amp; Practise</div>
+          <h3>Courses, Treatments &amp; Personal Sessions</h3>
+          <p class="hook">Yoga, Ayurveda and meditation from authentic, source-based knowledge — in group classes, or one-to-one.</p>
           <ul>
-            <li>Regular yoga classes, in-person in Prague</li>
-            <li>Meditation instruction</li>
-            <li>Weekend and one-day workshops</li>
-            <li>Structured courses for those going deeper</li>
-            <li>Individual and private sessions</li>
+            <li>Yoga classes and meditation, in-person in Prague</li>
+            <li>Workshops and structured courses</li>
+            <li>Ayurvedic consultations, treatments and marma therapy</li>
           </ul>
+          <a href="https://wa.me/420777558262?text=Hi!%20I'd%20like%20to%20talk%20to%20your%20Ayurveda%20%26%20Naturopathy%20experts%20about%20courses%2C%20treatments%20or%20a%20personal%20session." class="btn-text" target="_blank" rel="noopener">Talk to Our Ayurveda &amp; Naturopathy Experts <span class="arrow">→</span></a>
         </article>
 
         <article class="card" data-magnetic="true">
@@ -1031,19 +1196,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
             <li>Books and gift sets</li>
           </ul>
           <a href="#shop" class="btn-text">Browse the shop <span class="arrow">→</span></a>
-        </article>
-
-        <article class="card" data-magnetic="true">
-          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--moss-deep)" stroke-width="1.5"><circle cx="16" cy="16" r="10"/><path d="M16 10 L16 16 L20 19"/></svg></div>
-          <div class="tag">Practice</div>
-          <h3>Treatments &amp; Personal Sessions</h3>
-          <p class="hook">Hands-on Ayurvedic treatments and personal consultations for individual care.</p>
-          <ul>
-            <li>Ayurvedic consultations</li>
-            <li>Ayurvedic massage and body treatments</li>
-            <li>Marma therapy</li>
-            <li>Personalised wellness recommendations</li>
-          </ul>
         </article>
       </div>
     </div>
@@ -1262,11 +1414,9 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
           <div class="chakra-row" data-idx="5"><div class="num">06</div><div><h4>Third Eye — Agnya</h4><div class="meta">Between the brows</div></div><div class="quality">Forgiveness, clarity</div></div>
           <div class="chakra-row" data-idx="6"><div class="num">07</div><div><h4>Crown — Sahastrara</h4><div class="meta">Top of the head</div></div><div class="quality">Integration, connection</div></div>
         </div>
-
-        <div style="margin-top:44px;">
-          <p style="color:rgba(245,238,221,.85);">Our meditation guidance and classes work with this framework in a practical, non-dogmatic way — helping you understand what you're feeling and why.</p>
-          <a href="#contact" class="btn btn-primary" style="margin-top:24px;" data-magnetic="true">Book an introductory session</a>
-        </div>
+        <!-- The closing paragraph and "Book an introductory session" button that used to sit
+             here were removed 2026-08-17: this section is the stage, and a CTA parked over the
+             animation pulled focus off the chakras. The page's asks live in #contact. -->
       </div>
     </div>
   </section>
@@ -2004,16 +2154,65 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     }
 
     const rows = document.querySelectorAll('.chakra-row');
-    rows.forEach((row, idx) => {
+    const chakraTable = document.querySelector('.chakra-table');
+
+    // Row selection is derived from position, not from edge events.
+    //
+    // Each row used to own a ScrollTrigger with onEnter/onEnterBack between 'top 60%' and
+    // 'bottom 40%'. Two problems, both only visible on a fast flick: a row shorter than that
+    // 20%-of-viewport band can be entered and left inside a single scroll tick, so its enter
+    // event is the one that never fires; and when several triggers do fire in one tick they
+    // resolve in DOM order, so scrolling UP finished on the LOWEST row that fired rather than
+    // the one under the cursor. "Third Eye — Agnya" was the row that lost most often.
+    //
+    // One trigger spanning the table now samples on every update and picks whichever row
+    // centre is nearest the middle of the viewport. There are no edges left to miss: however
+    // far a single tick jumps, the answer is still just "which row is here now".
+    function nearestRow() {
+      const line = window.innerHeight / 2;
+      let best = 0, bestDist = Infinity;
+      rows.forEach((r, i) => {
+        const b = r.getBoundingClientRect();
+        const dist = Math.abs(b.top + b.height / 2 - line);
+        if (dist < bestDist) { bestDist = dist; best = i; }
+      });
+      return best;
+    }
+
+    // Declared before the trigger is created: ScrollTrigger fires onRefresh synchronously from
+    // create(), so a `let` below it would be read inside its temporal dead zone.
+    let activeChakra = -1;
+
+    if (chakraTable) {
       ScrollTrigger.create({
-        trigger: row, start: 'top 60%', end: 'bottom 40%',
-        onEnter: () => highlightChakra(idx),
-        onEnterBack: () => highlightChakra(idx)
+        trigger: chakraTable,
+        start: 'top bottom', end: 'bottom top',
+        onUpdate: () => highlightChakra(nearestRow()),
+        onRefresh: () => highlightChakra(nearestRow())
+      });
+    }
+
+    // Desktop pointer users get to drive it directly rather than scrub for it. The rows are
+    // already pointer-events: auto over the canvas; this makes them real controls — focusable,
+    // Enter/Space operable, and announced as buttons.
+    rows.forEach((row, idx) => {
+      row.setAttribute('role', 'button');
+      row.setAttribute('tabindex', '0');
+      row.addEventListener('click', () => highlightChakra(idx, true));
+      row.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); highlightChakra(idx, true); }
       });
     });
 
-    function highlightChakra(index) {
-      rows.forEach((r, i) => r.classList.toggle('active', i === index));
+    function highlightChakra(index, force) {
+      // onUpdate fires every scroll frame; nearly all of those frames ask for the row that is
+      // already lit. Bail before touching the DOM or starting a tween.
+      if (index === activeChakra && !force) return;
+      activeChakra = index;
+      rows.forEach((r, i) => {
+        r.classList.toggle('active', i === index);
+        r.setAttribute('aria-pressed', i === index ? 'true' : 'false');
+      });
       chakraNodes.forEach((node, i) => {
         if (i === index) {
           gsap.to(node.mesh.scale, { x: 1.5, y: 1.5, z: 1.5, duration: 0.6, ease: 'back.out(1.7)' });
@@ -2225,8 +2424,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   let masterGain = null;
   let isPlaying = false;
   const soundToggle = document.getElementById('sound-toggle');
-  const soundText = document.getElementById('sound-text');
-  const soundBars = document.querySelectorAll('.sound-bar');
 
   function initAudio() {
     audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -2264,32 +2461,83 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 
     if (!isPlaying) {
       masterGain.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + 1.5);
-      soundText.textContent = "Sound On";
       isPlaying = true;
-      animateEqualizer(true);
     } else {
       masterGain.gain.linearRampToValueAtTime(0.001, audioCtx.currentTime + 1.0);
       setTimeout(() => {
         if (!isPlaying && audioCtx) audioCtx.suspend();
       }, 1000);
-      soundText.textContent = "Sound Off";
       isPlaying = false;
-      animateEqualizer(false);
     }
+    paintSoundState();
   });
 
-  function animateEqualizer(play) {
-    soundBars.forEach((bar, i) => {
-      if (play) {
-        gsap.to(bar, {
-          height: () => 4 + Math.random() * 10,
-          duration: 0.3 + i * 0.1,
-          repeat: -1, yoyo: true, ease: 'power1.inOut'
-        });
+  // The label always describes what pressing it will DO, not what state it is in — that is
+  // the half a mute control usually gets wrong, and the half that decides whether a visitor
+  // trusts the button enough to press it.
+  function paintSoundState() {
+    soundToggle.classList.toggle('is-on', isPlaying);
+    soundToggle.setAttribute('aria-pressed', isPlaying ? 'true' : 'false');
+    soundToggle.setAttribute('aria-label', isPlaying
+      ? 'Ambient sound is on. Activate to mute.'
+      : 'Ambient sound is off. Activate to play.');
+    soundToggle.setAttribute('title', isPlaying ? 'Mute ambient sound' : 'Play ambient sound');
+  }
+
+  // ------------------------------------------------------------
+  // 9b. SECTION MENU (phone)
+  // ------------------------------------------------------------
+  const menuBtn = document.getElementById('menu-btn');
+  const navSheet = document.getElementById('nav-sheet');
+
+  if (menuBtn && navSheet) {
+    let sheetOpen = false;
+
+    function setSheet(open) {
+      sheetOpen = open;
+      if (open) navSheet.hidden = false;
+      // Next frame, so the transition has a from-state to animate out of.
+      requestAnimationFrame(() => navSheet.classList.toggle('open', open));
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.style.overflow = open ? 'hidden' : '';
+      document.body.classList.toggle('sheet-open', open);
+      if (open) {
+        const first = navSheet.querySelector('a');
+        if (first) first.focus({ preventScroll: true });
       } else {
-        gsap.killTweensOf(bar);
-        gsap.to(bar, { height: 3, duration: 0.3 });
+        menuBtn.focus({ preventScroll: true });
       }
+    }
+
+    menuBtn.addEventListener('click', () => setSheet(!sheetOpen));
+
+    // Any link closes it: these are in-page anchors, so leaving the overlay up would hide the
+    // very section the visitor just asked for.
+    navSheet.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setSheet(false)));
+
+    navSheet.addEventListener('click', (e) => { if (e.target === navSheet) setSheet(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && sheetOpen) setSheet(false); });
+  }
+
+  // Current-section marker for the desktop links. Cheap: one IntersectionObserver, no work on
+  // scroll frames.
+  const navLinkEls = document.querySelectorAll('.nav-links a');
+  if (navLinkEls.length) {
+    const byHash = {};
+    navLinkEls.forEach(a => { byHash[a.getAttribute('href')] = a; });
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const link = byHash['#' + entry.target.id];
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navLinkEls.forEach(a => a.classList.remove('current'));
+          link.classList.add('current');
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px' });
+    Object.keys(byHash).forEach(hash => {
+      const sec = document.querySelector(hash);
+      if (sec) sectionObserver.observe(sec);
     });
   }
 

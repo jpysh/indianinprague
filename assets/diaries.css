@@ -1,105 +1,221 @@
-/* diaries.html — the journal hub. Loaded after site.css.
+/* diaries.html — the journal. Loaded after site.css.
  *
- * The page is a stack of horizontal rails, one per category, under a grid of the four most
- * recent posts. The card itself (.post) is in site.css, because the homepage uses it too.
+ * Restructured 17 Aug 2026. This used to be a hub of horizontal rails whose cards left the
+ * page; it is now one page that HOLDS the writing, in two categories. assets/restaurants.css
+ * and assets/article.css were folded in here when /restaurants and
+ * /article-contemporary-indian-wear were consolidated into this page, so the rules that
+ * style a review and the rules that style long-form prose now live together — which is where
+ * they belong, because they now render in the same document.
  *
- * There is NO JavaScript on this page, and the rails do not need any. Everything below is
- * the browser's own overflow scrolling with scroll-snap on top: touch swipe, two-finger
- * trackpad, shift+wheel, arrow keys and tabbing between cards all work out of the box. A
- * scripted carousel would have re-implemented all of that, worse, and broken with script
- * disabled — on a page whose entire content is text and photographs.
+ * The rail rules are gone with the rails. What replaced them:
+ *
+ *   .cat-jump     the category strip under the h1
+ *   .cat          one category = one <section>
+ *   .entry        one post, in either of two shapes:
+ *   .entry-article  long-form prose (h4 sections, .fit asides, .shop-cta)
+ *   .rev            a review: photograph beside the text, verdict chip, order line
+ *
+ * There is still NO JavaScript on this page.
  */
 
 .btn.saf{border-color:var(--olive);background:var(--saffron);color:var(--void)}
 .btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--bone)}
 
+/* ---------- category jump strip ---------- */
+
+/* Under the h1, above everything. It is the page's table of contents and its primary
+   navigation: with the writing inline, "which category" is the only choice a reader has to
+   make, so it is the first thing offered and it is a real anchor list rather than a widget. */
+.cat-jump{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin-top:22px;
+}
+.cat-jump a{
+  display:inline-flex;align-items:center;gap:7px;
+  min-height:44px;padding:0 15px;
+  border:1px solid rgba(232,169,60,.4);
+  font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--magenta);
+  transition:background .15s,color .15s,border-color .15s;
+}
+.cat-jump a:hover,.cat-jump a:focus-visible{background:var(--magenta);color:var(--void)}
+.cat-jump a b{font-weight:600;opacity:.75;font-size:var(--fs-2xs)}
+
 /* ---------- the featured grid ---------- */
 
 .latest{border-bottom:1px solid rgba(242,239,230,.10)}
 
-/* ---------- rails ---------- */
+/* ---------- a category ---------- */
 
-.rail{border-bottom:1px solid rgba(242,239,230,.10);padding-block:26px 30px}
+.cat{border-bottom:1px solid rgba(242,239,230,.10);padding-block:26px 44px}
 /* Alternating bands, matching the rhythm main > section:nth-of-type(even) gives the rest of
-   the site. Scoped to .rail so the featured grid and the closing block keep the ground. */
-.rail:nth-of-type(even){background:var(--band)}
+   the site. The scroll-margin keeps a jumped-to category clear of the sticky header. */
+.cat:nth-of-type(even){background:var(--band)}
+.cat{scroll-margin-top:88px}
 
-.rail-top{
+.cat-head{
   display:flex;flex-direction:column;gap:10px;
-  padding-bottom:18px;
+  padding:18px 0 20px;margin-bottom:26px;
+  border-bottom:1px solid rgba(232,169,60,.22);
 }
-.rail-top h2{
-  font-weight:500;font-size:var(--fs-xl);
+.cat-head h2{
+  font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);
   letter-spacing:-.01em;text-transform:uppercase;color:var(--bone);
 }
-.rail-note{font-size:var(--fs-s);color:var(--bone-dim);max-width:var(--measure-s);margin-top:6px}
-.rail-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.rail-cs{font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone-dim);opacity:.85}
+.cat-note{font-size:var(--fs-s);color:var(--bone-dim);max-width:var(--measure-s);margin-top:6px}
+.cat-meta{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.cat-count{
+  font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;
+  color:var(--bone-dim);opacity:.85;white-space:nowrap;
+}
 .rail-all{
   font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;color:var(--magenta);
   display:flex;align-items:center;min-height:44px;
 }
 .rail-all:hover{color:var(--saffron)}
 
-/* The track is deliberately NOT inside .wrap.
- *
- * It runs the full width of the viewport and carries the page gutter as its own padding, so
- * the first card lines up with the heading above it while the last one runs off the right
- * edge rather than stopping at a margin. That overflowing card is the affordance: it is how
- * a rail says "there is more this way" without a scrollbar, an arrow or a hint of text.
- * A track that ended flush inside the content column would look like a finished row. */
-.rail-track{
-  display:grid;
-  grid-auto-flow:column;
-  grid-auto-columns:minmax(240px,270px);
-  gap:12px;
-  overflow-x:auto;
-  overscroll-behavior-x:contain;
-  scroll-snap-type:x proximity;
-  /* Bottom padding leaves room for the focus ring and the hover lift, which would otherwise
-     be clipped by the scroll container. */
-  padding:3px var(--gutter) 16px;
-  /* Snap and keyboard scrolling both land the card at the gutter, not against the bezel. */
-  scroll-padding-inline:var(--gutter);
-  scrollbar-width:thin;
-  scrollbar-color:rgba(232,169,60,.4) transparent;
+@media (min-width:721px){
+  .cat{padding-block:30px 56px}
+  .cat-head{
+    flex-direction:row;justify-content:space-between;align-items:flex-start;gap:24px;
+    padding:22px 0 24px;margin-bottom:32px;
+  }
+  .cat-meta{flex-direction:column;align-items:flex-end;gap:2px;text-align:right;flex:0 0 auto}
 }
-.rail-track > .post{scroll-snap-align:start}
 
-/* proximity rather than mandatory: with mandatory, a rail holding two cards on a wide screen
-   fights any attempt to scroll it a little, and a partial swipe is yanked back. proximity
-   snaps when you are close and leaves you alone when you are not. */
+/* ---------- a group inside a category ---------- */
 
-/* The track itself is focusable (tabindex="0" in the markup) so it can be panned with the
-   arrow keys. That focus has to be visible, or a keyboard user lands on an element with no
-   indication they have. */
-.rail-track:focus-visible{outline:2px solid var(--magenta);outline-offset:-2px}
+/* Food has two: the Indian restaurants, then the vegan places. A group is a heading and a
+   note, not a container — the entries are siblings after it, so a review is never nested two
+   levels deep for the sake of a subtitle. */
+.entry-group{margin:34px 0 22px}
+.entry-group:first-of-type{margin-top:0}
+.group-head{
+  font-weight:600;font-size:var(--fs-xl);line-height:var(--lh-tight);
+  text-transform:uppercase;letter-spacing:.01em;color:var(--magenta);
+}
+.group-note{font-size:var(--fs-m);color:var(--bone-dim);max-width:var(--measure);margin-top:8px}
 
-/* WebKit still needs its own scrollbar rules. Kept visible but quiet — on a trackpad the
-   bar is the only persistent sign the row scrolls at all. */
-.rail-track::-webkit-scrollbar{height:8px}
-.rail-track::-webkit-scrollbar-track{background:transparent}
-.rail-track::-webkit-scrollbar-thumb{background:rgba(232,169,60,.35);border-radius:4px}
-.rail-track::-webkit-scrollbar-thumb:hover{background:rgba(232,169,60,.6)}
+/* ---------- verdict key ---------- */
+
+/* The third chip used to carry class="skip", which collides with the skip-link utility in
+   site.css — position:absolute; left:-9999px. It rendered off-screen and the key was silently
+   two-thirds of itself. It is .trap now.
+   .real is a saffron FILL, so the text on it is --void: --bone on saffron measures 1.16:1. */
+.key{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 30px}
+.key span{
+  font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;
+  padding:6px 10px;font-weight:500;
+}
+.key .real{color:var(--void);background:var(--saffron)}
+.key .mild{color:var(--bone);border:1px solid var(--chilli)}
+.key .trap{color:var(--bone-dim);border:1px solid rgba(242,239,230,.3)}
+/* An OUTLINE, not an avocado fill. --avocado is a mid-luminance green: dark text on it
+   measures 2.69:1 and light text 3.14:1, so no text passes AA on that fill at any weight —
+   it is a --paprika situation and the same rule applies (see the palette note in site.css).
+   The olive outline reads as a sibling of the filled .real chip rather than a competitor,
+   and the text is 7.26:1 on the ground and 9.85:1 on the band. */
+.key .vegan{color:var(--olive);border:1px solid var(--olive)}
+
+/* ---------- an entry: shared ---------- */
+
+.entry{scroll-margin-top:96px}
+.entry + .entry{border-top:1px solid rgba(242,239,230,.10);margin-top:34px;padding-top:34px}
+.entry-meta{
+  font-family:var(--mono);
+  font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;
+  color:var(--bone-dim);margin:8px 0 16px;
+}
+.entry-meta time{color:var(--magenta)}
+
+/* ---------- a review ---------- */
+
+/* Stacked on a phone: a 400px image column would leave the text about 90px wide at 375px. */
+.rev{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.rev .frame{aspect-ratio:3/2}
+.rev .rhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.rev h3{
+  font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);
+  letter-spacing:-.01em;color:var(--bone);
+}
+.rev p{color:var(--bone-dim);max-width:var(--measure);margin-bottom:12px}
+.rev .order{color:var(--bone);margin-bottom:0}
+.rev .order b{color:var(--magenta)}
+
+.rv{
+  font-size:var(--fs-2xs);letter-spacing:.05em;text-transform:uppercase;
+  padding:5px 9px;font-weight:500;
+}
+.rv.real{color:var(--void);background:var(--saffron)}
+.rv.mild{color:var(--bone);border:1px solid var(--chilli)}
+/* Outline for the same reason as .key .vegan above. */
+.rv.vegan{color:var(--olive);border:1px solid var(--olive)}
 
 @media (min-width:721px){
-  .rail{padding-block:30px 38px}
-  .rail-top{
-    flex-direction:row;justify-content:space-between;align-items:flex-start;gap:24px;
-    padding-bottom:22px;
-  }
-  .rail-meta{flex-direction:column;align-items:flex-end;gap:2px;text-align:right;flex:0 0 auto}
-  .rail-track{grid-auto-columns:minmax(280px,320px);gap:16px}
+  .rev{grid-template-columns:340px minmax(0,1fr);gap:28px;align-items:start}
 }
 
-/* Wide screens: cap the track so it lines up with the content column instead of running the
-   full 1900px of a desktop monitor, while keeping the overflow behaviour. The gutter maths
-   mirrors .wrap (max-width 1280 + gutter each side). */
-@media (min-width:1341px){
-  .rail-track{
-    padding-inline:max(var(--gutter), calc((100vw - 1280px) / 2 + var(--gutter)));
-    scroll-padding-inline:max(var(--gutter), calc((100vw - 1280px) / 2 + var(--gutter)));
-  }
+/* ---------- the long-form dispatch ---------- */
+
+.entry-article h3{
+  font-weight:400;font-size:var(--fs-2xl);line-height:var(--lh-tight);
+  letter-spacing:-.01em;color:var(--bone);max-width:24ch;
+}
+/* 66ch of Plex Sans is 83 characters, not 66 — see the --measure note in site.css. */
+.entry-body{max-width:var(--measure)}
+/* --fs-l and the long leading, not the --fs-m the shared .prose rule hands out: this is the
+   one piece of sustained reading on the site — six minutes of it — and it gets the same
+   17px/1.72 the standalone article page used. A review is three sentences and stays at 16. */
+.entry-body p{font-size:var(--fs-l);line-height:var(--lh-long);margin-bottom:20px}
+.entry-body p.lede{
+  font-size:1.25rem;line-height:1.5;color:var(--bone);
+  border-left:2px solid var(--magenta);padding-left:20px;
+}
+/* h4, not h2: on this page the post title is an h3 under the category's h2. The content file
+   is written with h4 for that reason. */
+.entry-body h4{
+  font-family:var(--mono);
+  font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);
+  text-transform:uppercase;letter-spacing:-.01em;color:var(--magenta);
+  margin:38px 0 10px;padding-top:22px;
+  border-top:1px solid rgba(242,239,230,.12);
+}
+.entry-body h4 .no{color:var(--magenta);margin-right:12px}
+.entry-body .fit{
+  background:var(--void-2);border-left:2px solid var(--olive);
+  padding:16px 20px;margin:16px 0 24px;
+  font-size:var(--fs-m);color:var(--bone-dim);line-height:var(--lh-read);
+}
+.entry-body .fit b{
+  color:var(--olive);font-family:var(--mono);text-transform:uppercase;
+  font-size:var(--fs-2xs);letter-spacing:.06em;display:block;margin-bottom:4px;
+}
+.entry-body a.brand-lnk{
+  color:var(--magenta);border-bottom:1px solid rgba(240,180,41,.4);
+  transition:color .15s,border-color .15s;
+}
+.entry-body a.brand-lnk:hover{color:var(--magenta);border-color:var(--magenta)}
+.entry-body ul{list-style:none;margin:16px 0 24px}
+.entry-body ul li{
+  font-size:var(--fs-l);line-height:var(--lh-read);color:var(--bone);
+  padding-left:22px;position:relative;margin-bottom:14px;
+}
+.entry-body ul li::before{content:"—";position:absolute;left:0;color:var(--magenta)}
+.entry-body ul li b{color:var(--magenta);font-weight:600}
+
+.shop-cta{
+  border:1px solid rgba(232,169,60,.28);background:var(--void-2);
+  padding:24px 20px 26px;margin-top:34px;max-width:var(--measure);
+}
+.shop-cta h4{
+  font-family:var(--mono);
+  font-weight:600;font-size:var(--fs-l);text-transform:uppercase;
+  letter-spacing:.01em;color:var(--magenta);margin-bottom:8px;
+}
+.shop-cta p{color:var(--bone-dim);margin-bottom:20px}
+
+@media (min-width:641px){
+  .shop-cta{padding:30px 30px 32px}
 }
 
 /* ---------- the closing block ---------- */
