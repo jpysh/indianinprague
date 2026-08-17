@@ -11,9 +11,20 @@
 // drops it from the structured data too.
 
 import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
 
 const SITE = "https://indianinprague.jains.es";
-const ROOT = "/Users/webserver/code/indianinprague";
+// Resolved from this file's own location, the way every other script in here does it.
+//
+// It was hardcoded to /Users/webserver/code/indianinprague until 17 Aug 2026, which worked
+// for as long as the only thing that ran it was publish.sh on the Mac. It is not: the repo is
+// connected to Cloudflare Workers Builds, whose build command is
+// `npm ci && node scripts/build-dist.mjs`, and build-dist runs the generators itself when it
+// is not passed --no-generate. So a plain `git push` executes this file with the repo at
+// /opt/buildhome/repo and it died on ENOENT trying to open a path from someone's laptop —
+// after build-shop had already succeeded, which is what made the failure look like a data
+// problem rather than a path one.
+const ROOT = path.resolve(import.meta.dirname, "..");
 
 // Real dates, not invented ones. 2026-07-05 is when the pages were actually written (the
 // original file mtimes before any of the deployment work touched them); MODIFIED is the
@@ -67,6 +78,48 @@ const WEBSITE = {
     "Contemporary Indian clothes for sale in Prague, honest reviews of Prague's Indian restaurants, vegan spots, and a journal about life between India and the Czech Republic.",
   inLanguage: ["en", "cs"],
   publisher: { "@id": `${SITE}/#author` },
+};
+
+// The site models its author as a Person, which is right for the wardrobe and the diaries:
+// those ARE one person's closet and one person's opinions. /spirituality is not — it sells
+// services (courses, treatments, guided trips) and ships physical goods across Europe, and
+// an answer engine asked "who runs Ayurvedic consultations in Prague" is looking for a
+// business entity, not a blogger. Both nodes therefore exist and are linked to each other
+// with sameAs, so the two reconcile as one operation rather than reading as two unrelated
+// parties who happen to share a domain. Entity coherence across sources is the thing AI
+// engines actually check.
+const ORG = {
+  "@type": "Organization",
+  "@id": `${SITE}/#org`,
+  name: "Indian in Prague",
+  url: `${SITE}/spirituality`,
+  description:
+    "Yoga, Ayurveda, meditation and wellbeing taught from source knowledge in Prague, guided journeys to India, and authentic Ayurvedic goods shipped across Europe.",
+  founder: { "@id": `${SITE}/#author` },
+  sameAs: [VINTED],
+  areaServed: [
+    { "@type": "Country", name: "Czech Republic" },
+    { "@type": "Place", name: "Europe" },
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Prague",
+    addressCountry: "CZ",
+  },
+  knowsAbout: [
+    "Ayurveda",
+    "Panchakarma",
+    "Yoga",
+    "Meditation",
+    "Marma therapy",
+    "Chakras",
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    url: WHATSAPP,
+    availableLanguage: ["en", "cs"],
+  },
 };
 
 const breadcrumb = (trail) => ({
@@ -225,6 +278,231 @@ const graphs = {
             "Fabric woven on a non-powered loom by a weaver rather than a machine. It breathes differently, drapes differently and lasts longer. Good makers work directly with artisan communities, so a piece carries a maker rather than just a label.",
         },
       ],
+    },
+  ],
+
+  // /spirituality was a design export that never got wired in here, so the largest page on
+  // the site — 15k words of services, retreats, products and a real FAQ — carried no
+  // structured data at all until 17 Aug 2026. It was the single biggest gap on the site:
+  // everything on it was invisible as machine-readable entities.
+  "spirituality.html": async () => [
+    ORG,
+    {
+      "@type": "WebPage",
+      "@id": `${SITE}/spirituality#webpage`,
+      url: `${SITE}/spirituality`,
+      name: "Yoga, Ayurveda and Spirituality — Indian in Prague",
+      description:
+        "Yoga, Ayurveda, meditation and wellbeing traditions taught from genuine source knowledge in Prague, guided journeys to India, and authentic Ayurvedic products shipped across Europe.",
+      isPartOf: { "@id": `${SITE}/#website` },
+      about: [
+        { "@type": "Thing", name: "Ayurveda" },
+        { "@type": "Thing", name: "Yoga" },
+        { "@type": "Thing", name: "Meditation" },
+        { "@type": "Thing", name: "Panchakarma" },
+      ],
+      inLanguage: "en",
+    },
+    breadcrumb([
+      ["Home", `${SITE}/`],
+      ["Spirituality", `${SITE}/spirituality`],
+    ]),
+
+    // The five Q&As below are verbatim from the visible "Good to know." section. That is not
+    // a nicety: Google requires FAQ markup to mirror question-and-answer content actually
+    // present on the page, and a verbatim answer is also the single most citable unit of
+    // text there is for an answer engine. If the section is edited, edit these to match.
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE}/spirituality#faq`,
+      inLanguage: "en",
+      mainEntity: [
+        [
+          "Do I need any experience to start?",
+          "No — classes and introductory sessions suit complete beginners as well as more experienced practitioners.",
+        ],
+        [
+          "Is this connected to a particular religion?",
+          "No. These are universal practices for health, calm and self-understanding, open to people of any or no religious background.",
+        ],
+        [
+          "Can I just buy products without taking a course?",
+          "Yes — the shop and services are independent; take whichever pieces are useful to you.",
+        ],
+        [
+          "Do you organise trips to India for individuals, not just groups?",
+          "Yes — both small-group and individually tailored trips are available.",
+        ],
+        [
+          "Where do treatments and classes take place?",
+          "Get in touch for current locations and formats in Prague, including any online options.",
+        ],
+      ].map(([q, a]) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
+    },
+
+    // The three things the page actually offers, as Services rather than prose. "Ayurvedic
+    // consultation in Prague" and "marma therapy" are the queries these exist to answer.
+    ...[
+      {
+        id: "learn",
+        name: "Courses, Treatments & Personal Sessions",
+        serviceType: "Yoga, Ayurveda and meditation instruction",
+        description:
+          "Yoga, Ayurveda and meditation from authentic, source-based knowledge — in group classes, or one-to-one.",
+        offers: [
+          "Yoga classes and meditation, in-person in Prague",
+          "Workshops and structured courses",
+          "Ayurvedic consultations, treatments and marma therapy",
+        ],
+      },
+      {
+        id: "travel",
+        name: "Journeys to India",
+        serviceType: "Guided yoga and Ayurveda travel",
+        description:
+          "Small-group, carefully guided trips for yoga, Ayurveda and genuine cultural immersion — not a package tour.",
+        offers: [
+          "Yoga and Ayurveda retreats",
+          "Panchakarma — Ayurvedic detox — journeys",
+          "Cultural and sightseeing trips",
+          "Private and small-group itineraries",
+        ],
+      },
+      {
+        id: "products",
+        name: "Authentic Indian & Ayurvedic Goods",
+        serviceType: "Ayurvedic and yoga goods retail",
+        description:
+          "Genuine products sourced from trusted producers in India, shipped across Europe.",
+        offers: [
+          "Ayurvedic oils, herbs and teas",
+          "Copper vessels and ritual items",
+          "Yoga mats and accessories",
+          "Books and gift sets",
+        ],
+      },
+    ].map((s) => ({
+      "@type": "Service",
+      "@id": `${SITE}/spirituality#${s.id}`,
+      name: s.name,
+      serviceType: s.serviceType,
+      description: s.description,
+      provider: { "@id": `${SITE}/#org` },
+      areaServed: [
+        { "@type": "City", name: "Prague" },
+        { "@type": "Place", name: "Europe" },
+      ],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: s.name,
+        itemListElement: s.offers.map((o) => ({
+          "@type": "Offer",
+          itemOffered: { "@type": "Service", name: o },
+        })),
+      },
+    })),
+
+    {
+      "@type": "ItemList",
+      "@id": `${SITE}/spirituality#journeys`,
+      name: "Journeys to India",
+      description:
+        "Six guided trips to India and Nepal for yoga, Ayurveda, Panchakarma and cultural immersion, led by people who know these places from the inside.",
+      numberOfItems: 6,
+      itemListElement: [
+        [
+          "Panchakarma & Ayurveda Retreat",
+          "Full Ayurvedic detox and rejuvenation, guided by experienced local practitioners, from coastal Kerala to the quiet Himalayas.",
+          ["Kerala", "Himalayas"],
+        ],
+        [
+          "Yoga at the Source",
+          "A classical yoga intensive in the town where modern yoga tourism began, on the banks of the Ganges.",
+          ["Rishikesh"],
+        ],
+        [
+          "Jog Sadhana",
+          "Deep classical-yoga sadhana balanced with study of classical texts, set against Himalayan scenery.",
+          ["Rishikesh", "Chopta"],
+        ],
+        [
+          "Golden Triangle & Goa",
+          "Delhi, Agra and Jaipur's culture and history, followed by rest and recovery on Goa's beaches.",
+          ["Delhi", "Agra", "Jaipur", "Goa"],
+        ],
+        [
+          "Himalayan Spiritual Journey",
+          "Trekking, monasteries and mountain energy across the Himalayan foothills, for those seeking scale and quiet together.",
+          ["Nepal"],
+        ],
+        [
+          "Private & Corporate Retreats",
+          "Tailored itineraries built around a group's own purpose, pace and dates.",
+          ["India"],
+        ],
+      ].map(([name, description, places], i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "TouristTrip",
+          name,
+          description,
+          provider: { "@id": `${SITE}/#org` },
+          itinerary: places.map((p) => ({ "@type": "Place", name: p })),
+        },
+      })),
+    },
+
+    {
+      "@type": "ItemList",
+      "@id": `${SITE}/spirituality#goods`,
+      name: "Authentic Indian and Ayurvedic goods",
+      numberOfItems: 8,
+      itemListElement: [
+        ["Ayurvedic Oils", "Massage, hair, nasal and dropper oils."],
+        ["Skincare & Cosmetics", "Natural face and body care."],
+        ["Copper Vessels", "Bottles, jugs, neti pots, Shirodhara bowls."],
+        ["Herbs, Spices & Teas", "Turmeric, ghee, basmati rice, herbal blends."],
+        ["Yoga Mats & Accessories", "Mats, covers, props."],
+        ["Rituals & Meditation", "Oil warmers, incense, ritual sets."],
+        ["Books & Learning", "Ayurveda and yoga reference titles."],
+        ["Gift Sets", "Curated bundles for newcomers or gifting."],
+      ].map(([name, description], i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: { "@type": "ProductCollection", name, description },
+      })),
+    },
+
+    // DefinedTermSet rather than FAQPage, for exactly the reason spelled out over the
+    // clothes glossary above: these are statement headings, not questions, and rewriting
+    // them into questions to satisfy a schema would be tail-wagging the dog. An LLM asked
+    // "what is the Anahata chakra" extracts this just as readily, with no guideline risk.
+    {
+      "@type": "DefinedTermSet",
+      "@id": `${SITE}/spirituality#chakras`,
+      name: "The seven chakras",
+      description:
+        "The seven energy centres, their positions in the body and the qualities associated with each.",
+      inLanguage: "en",
+      hasDefinedTerm: [
+        ["Root — Mooladhara", "Base of spine", "Innocence, groundedness"],
+        ["Sacral — Swadisthana", "Lower abdomen", "Creativity, focus"],
+        ["Navel — Nabhi", "Abdomen", "Contentment, generosity"],
+        ["Heart — Anahat", "Chest", "Compassion, confidence"],
+        ["Throat — Vishuddhi", "Throat", "Communication, diplomacy"],
+        ["Third Eye — Agnya", "Between the brows", "Forgiveness, clarity"],
+        ["Crown — Sahastrara", "Top of the head", "Integration, connection"],
+      ].map(([name, where, qualities]) => ({
+        "@type": "DefinedTerm",
+        name,
+        inDefinedTermSet: { "@id": `${SITE}/spirituality#chakras` },
+        description: `${where}. Associated with: ${qualities.toLowerCase()}.`,
+      })),
     },
   ],
 

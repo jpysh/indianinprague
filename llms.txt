@@ -24,10 +24,27 @@ review scores.
 
 - [Home](https://indianinprague.jains.es/): overview of both strands — the wardrobe, and
   the journal (which holds the restaurant reviews).
-- [Clothes](https://indianinprague.jains.es/clothes.html): the garments currently for
+- [Clothes](https://indianinprague.jains.es/clothes): the garments currently for
   sale, each linked to its Vinted listing with price in CZK, plus a buyer's guide to
   block print, Ajrakh, Kalamkari, bandhani and handloom cotton.
-  Praha.
+- [Wardrobe](https://indianinprague.jains.es/wardrobe): everything for sale in one place.
+  The category pages beneath it are
+  [jewellery](https://indianinprague.jains.es/jewellery),
+  [home decor](https://indianinprague.jains.es/home-decor),
+  [ritual objects](https://indianinprague.jains.es/ritual-objects) (brass, sandalwood) and
+  [books](https://indianinprague.jains.es/books).
+- [Spirituality](https://indianinprague.jains.es/spirituality): the site's services strand,
+  distinct from the second-hand wardrobe above. Yoga, Ayurveda, meditation and wellbeing
+  taught in Prague from source knowledge; guided small-group journeys to India and Nepal
+  (Panchakarma and Ayurveda retreats in Kerala and the Himalayas, classical yoga in
+  Rishikesh, the Delhi–Agra–Jaipur–Goa route, Himalayan trekking, and tailored private or
+  corporate itineraries); and authentic Ayurvedic goods shipped across Europe — oils,
+  herbs and teas, copper vessels, yoga equipment, books and gift sets. The page also
+  defines the seven chakras (Mooladhara through Sahastrara) with their positions and
+  associated qualities, and answers common questions directly — notably that the practices
+  are not tied to any religion and that no prior experience is needed. Everything on this
+  page is described in schema.org JSON-LD: Organization, Service, TouristTrip, FAQPage and
+  DefinedTermSet.
 - [Tram 22 Diaries](https://indianinprague.jains.es/diaries): the whole journal, on one
   page, in two categories.
   - **What I wear** (#contemporary-indian-wear): a long-form piece on how modern Indian

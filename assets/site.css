@@ -161,7 +161,7 @@ body{
 .cat-note, .group-note, .shop-cta p,
 .guide-body p, .manifesto p, .vinted-cta p,
 .holding p, .how-steps li, .how-note,
-.notfound .sub, .foot p{
+.notfound .sub, .foot-lede{
   font-family:var(--sans);
   font-size:var(--fs-m);
   line-height:var(--lh-read);
@@ -637,42 +637,78 @@ a.plate h3{transition:color .15s}
   .post:hover{transform:none}
 }
 
-/* ---------- footer ---------- */
+/* ---------- footer ----------
+ *
+ * Rebuilt 17 Aug 2026, and shared verbatim with the Spirituality page: same markup, same
+ * class names, same spacing and type steps. Only the colours differ per page, and here they
+ * come from the site palette rather than that page's void.
+ *
+ * What the old footer had that this one does not: a wordmark (the header already carries it),
+ * a flat list of seven links with no grouping, and WhatsApp as the only channel. What it gains:
+ * three category columns whose headings are themselves links, sub-navigation into each area
+ * (fourteen internal links rather than seven, which is the internal linking search engines
+ * actually read), and two small channel chips instead of one wide labelled link. */
 
-footer{padding:36px 0 44px}
-.foot{display:flex;flex-direction:column;gap:24px;flex-wrap:wrap;align-items:flex-start}
-.foot .fb{font-size:var(--fs-s);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-.foot .fb b{color:var(--magenta)}
-.foot p{font-size:var(--fs-s);color:var(--bone-dim);max-width:32ch;margin-top:10px}
-.foot nav{display:flex;flex-direction:column;gap:2px;font-size:var(--fs-xs);text-transform:uppercase;letter-spacing:.04em}
-/* 44px, not 40 — these are the five footer links, and on a phone they were the only
-   targets on the site still under the WCAG minimum. */
-.foot nav a{opacity:.68;display:flex;align-items:center;min-height:44px}
-.foot nav a:hover{opacity:1;color:var(--magenta)}
+footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);padding:36px 0 18px}
+.foot{padding-bottom:22px;border-bottom:1px solid rgba(242,239,230,.14)}
 
-/* The footer carries WhatsApp as a labelled link rather than a bare icon: by the time
-   someone has scrolled this far they are looking for a way to get in touch, and a label
-   converts far better than a glyph. The header icon is for people who already know. */
-/* opacity:1 is load-bearing — .foot nav a above sets .68, and at that strength this green
-   measures 3.08:1. The rule used to say .9, which was 4.26:1 and still under AA. At full
-   strength it is 4.89:1 and reads no louder, because the colour is doing the work. */
-.foot nav a.wa-link{color:#25D366;opacity:1;gap:8px}
-.foot nav a.wa-link:hover{opacity:1;color:#3BE87C}
+/* One sentence, identical on every page including Spirituality — it describes the site, not
+   whichever page you happen to be standing on, which is also what makes it useful to a search
+   engine reading any single page in isolation. */
+/* Sentence and channels share one line, chips pushed right and centred against the text block —
+   the claim and the way to act on it, together. They wrap beneath it when there is no room. */
+.foot-intro{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px}
+.foot-lede{font-size:var(--fs-s);color:var(--bone-dim);max-width:52ch;line-height:1.6;flex:1 1 30ch}
+
+.foot-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 32px;margin-top:20px}
+.foot-col{display:flex;flex-direction:column}
+/* The column heading is a destination, not a label: land on the hub, or skip straight past it
+   to the thing you actually wanted. */
+.foot-col .head{
+  font-size:var(--fs-2xs);text-transform:uppercase;letter-spacing:.09em;
+  color:var(--bone-dim);opacity:.75;padding:4px 0 8px
+}
+.foot-col .head:hover{color:var(--magenta);opacity:1}
+.foot-col .head[aria-current=page]{color:var(--magenta);opacity:1}
+
+/* 36px rather than the 44px these links used to carry. They sit in a single vertical column
+   with nothing tappable beside them, so the only mis-tap available is the neighbouring row in
+   the same list, and 36px plus the row gap clears a fingertip. It is the difference between a
+   footer that fits a phone screen and one that does not. */
+.foot-col .item{display:flex;align-items:center;min-height:36px;font-size:var(--fs-xs);color:var(--bone);opacity:.82}
+.foot-col .item:hover{color:var(--magenta);opacity:1}
+.foot-col .item[aria-current=page]{color:var(--magenta);opacity:1}
+
+.foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;padding-top:18px}
+.foot-reach{display:flex;gap:10px;flex:0 0 auto}
+/* The bottom rule is now two notes about the site rather than anything to click. */
+.foot-made{font-size:var(--fs-2xs);color:var(--bone-dim);opacity:.8;letter-spacing:.03em}
+/* Icon plus one word. At footer scale "WhatsApp me" was carrying no information the green mark
+   did not already carry, and email deserved to be a control rather than an address to copy. */
+.chip{
+  display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:8px 16px 8px 13px;
+  border-radius:100px;font-size:var(--fs-xs);font-weight:600;
+  border:1px solid rgba(242,239,230,.16);color:var(--bone);
+  transition:background .3s,border-color .3s,color .3s
+}
+/* #25D366 at full strength measures 4.89:1 on this ground — the same reasoning that set the
+   old .wa-link to opacity 1 rather than .68. */
+.chip.wa{color:#25D366;border-color:rgba(37,211,102,.40)}
+.chip.wa:hover{background:rgba(37,211,102,.12);border-color:#25D366}
+.chip.mail:hover{background:rgba(242,239,230,.08);border-color:rgba(242,239,230,.42)}
 .wa-ico{flex:0 0 auto}
 
-/* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner.
-   This line is the whole privacy notice. */
-/* opacity .65 measured 3.64:1 — the one line on the site that stated a policy and could
-   not be read. .8 is still visibly quieter than the links above it, at 4.64:1.
-   It was also the only user of an 11px step, which is a whole scale step existing for one
-   declaration; it takes --fs-2xs now and the scale is eight steps rather than nine. */
-.foot .privacy{font-size:var(--fs-2xs);color:var(--bone-dim);opacity:.8;margin-top:18px;letter-spacing:.03em}
+/* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner. This
+   line is the whole privacy notice, and it keeps the contrast it was corrected to. */
+.foot-note{font-size:var(--fs-2xs);color:var(--bone-dim);opacity:.8;letter-spacing:.03em}
 
-@media (min-width:641px){
-  footer{padding:44px 0 56px}
-  .foot{flex-direction:row;justify-content:space-between;gap:24px}
-  .foot nav{gap:8px}
-  .foot nav a{min-height:0}
+/* Two columns before one: three lists stacked single-file is a long scroll of footer, and 340
+   rather than 380 because a 375px iPhone is the median phone here, not an edge case. */
+@media (max-width:700px){
+  .foot-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px}
+}
+@media (max-width:340px){
+  .foot-nav{grid-template-columns:1fr}
 }
 
 /* ---------- tap targets, keyed to the pointer rather than the width ----------
@@ -692,7 +728,7 @@ footer{padding:36px 0 44px}
  * specificity as the ones they are correcting, so source order is what decides. */
 @media (any-pointer:coarse){
   nav.main a{min-height:44px}
-  .foot nav a{min-height:44px}
+  .foot-col .item{min-height:40px}
   .brand{min-height:44px}
 }
 

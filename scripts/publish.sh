@@ -16,6 +16,11 @@
 #                                          reflowing as photos load)
 #   build-shop  must precede build-jsonld (jsonld reads data/catalog.json and the pages
 #                                          build-shop just wrote)
+#   build-diaries must follow build-shop   (it lifts the header/footer out of index.html,
+#                                          which build-shop rewrites) and precede bump-assets
+#                                          (it writes diaries.html, which needs stamping)
+#   sync-chrome must precede both          it maintains the header/footer in the hand-written
+#                                          pages, which is the shell everything else reads
 #   bump-assets must precede build-dist — it rewrites the ?v= token in the HTML, and
 #               build-dist is what copies that HTML to the upload. Without a fresh token
 #               Cloudflare keeps serving the old CSS at the edge; DEPLOY.md records a fix
@@ -122,28 +127,44 @@ if [ -z "$LOCAL" ]; then
   }
 fi
 
-step "1/10 sync from Vinted"
+step "1/12 sync from Vinted"
 node scripts/sync-vinted.mjs $FULL
 
-step "2/10 derive responsive images"
+step "2/12 derive responsive images"
 node scripts/build-images.mjs
 
-step "3/10 build shop pages"
+# The chrome — header and footer — lives in index.html and is copied from there into the
+# hand-written pages that are not generated (404.html, clothes.html). It was in NEITHER
+# pipeline until 17 Aug 2026 and had to be remembered by hand, which meant a footer edit
+# reached ten generated pages automatically and silently skipped those two. It runs FIRST
+# because it maintains the outer shell every later generator reads out of index.html.
+step "3/12 sync the chrome into the hand-written pages"
+node scripts/sync-chrome.mjs
+
+step "4/12 build shop pages"
 node scripts/build-shop.mjs
 
-step "4/10 build local inventory view"
+# Added 17 Aug 2026. It was never in this script — the Diaries was built by hand — which was
+# tolerable while that page was a hub of cards and became a bug the moment it started holding
+# the writing itself: a post edited in data/posts.json or content/ would not have reached the
+# site until somebody remembered to run one command. AFTER build-shop, because it lifts the
+# header and footer out of index.html and build-shop rewrites index.html's own regions.
+step "5/12 build the diaries"
+node scripts/build-diaries.mjs
+
+step "6/12 build local inventory view"
 node scripts/build-inventory.mjs
 
-step "5/10 inject JSON-LD"
+step "7/12 inject JSON-LD"
 node scripts/build-jsonld.mjs
 
-step "6/10 build sitemap"
+step "8/12 build sitemap"
 node scripts/build-sitemap.mjs
 
-step "7/10 bump asset cache tokens"
+step "9/12 bump asset cache tokens"
 node scripts/bump-assets.mjs
 
-step "8/10 stage dist/"
+step "10/12 stage dist/"
 # --no-generate because steps 3-7 above ARE the generators build-dist would otherwise run
 # itself. It gained that ability on 17 Aug 2026 so that a plain `git push` — which triggers
 # Workers Builds, whose build command is just `npm ci && node scripts/build-dist.mjs` —
@@ -161,7 +182,7 @@ if [ -n "$LOCAL" ]; then
   exit 0
 fi
 
-step "9/10 commit what is about to be published"
+step "11/12 commit what is about to be published"
 
 # The pathspec IS the contract: these are the paths build-dist stages into dist/, plus data/,
 # which is the master the pages are generated from — committing pages without the catalog
@@ -206,7 +227,7 @@ header of publish.sh." -- "${PUBLISHED[@]}" || {
   echo "not pushed — run: git push origin ${GIT_BRANCH}"
 fi
 
-step "10/10 deploy to Cloudflare"
+step "12/12 deploy to Cloudflare"
 
 # Cloudflare credentials, in order of preference.
 #

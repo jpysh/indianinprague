@@ -45,22 +45,28 @@
 # ---------------------------------------------------------------------------
 # /spirituality.html — the one page with a relaxed policy.
 #
-# The page is a self-contained design export, served exactly as written: inline <style>,
-# inline <script>, GSAP + ScrollTrigger + three.js from cdnjs, Lenis from unpkg, Google
-# Fonts, photographs from images.unsplash.com. Under the site-wide policy it does not
-# degrade, it fails completely — measured: 0 CSS rules applied, headings in Times, the
-# preloader frozen at "0%". Serving the file as-is REQUIRES this exception.
+# The page is a self-contained design export, served close to as written: inline <style>
+# and inline <script> throughout, plus photographs from images.unsplash.com. Under the
+# site-wide policy it does not degrade, it fails completely — measured: 0 CSS rules applied,
+# headings in Times, the preloader frozen at "0%". Serving the file as-is REQUIRES this
+# exception.
 #
-# What it costs, restated so it is not rediscovered later: cdnjs, unpkg and
-# images.unsplash.com see the IP and User-Agent of every visitor to this page, and
-# 'unsafe-inline' on script-src removes the protection that makes an injected <script>
-# inert. Every other page keeps the strict policy above.
+# What it costs, restated so it is not rediscovered later: images.unsplash.com sees the IP
+# and User-Agent of every visitor to this page, and 'unsafe-inline' on script-src removes
+# the protection that makes an injected <script> inert. Every other page keeps the strict
+# policy above.
 #
-# The two Google Fonts hosts were removed on 16 Aug 2026 when Fraunces, Manrope and Space
-# Mono were self-hosted (see assets/spirituality-fonts.css). font-src is back to 'self'
-# alone, and style-src no longer trusts a third party. The remaining exceptions are the
-# script CDNs and Unsplash; both go away if the libraries are vendored and the stock
-# photography is replaced with the author's own.
+# Two rounds of exceptions have since been retired. The Google Fonts hosts went on 16 Aug
+# 2026 when Fraunces, Manrope and Space Mono were self-hosted (assets/spirituality-fonts.css).
+# cdnjs.cloudflare.com and unpkg.com went on 17 Aug 2026 when GSAP, ScrollTrigger, three.js
+# and Lenis were vendored into assets/vendor/ — 731 KB that had been render-blocking in
+# <head>, now same-origin and loaded after the content. script-src is back to 'self' plus
+# the inline allowance the export needs.
+#
+# One exception is left. images.unsplash.com goes away when the stock photography is
+# replaced with the author's own, at which point img-src returns to 'self' data: and this
+# whole stanza can be deleted in favour of the site-wide policy — except for
+# 'unsafe-inline', which the export's inline scripts and styles will always need.
 #
 # `! Content-Security-Policy` detaches the strict policy inherited from /* first — without
 # it the two policies merge, and a merged CSP is enforced as the INTERSECTION of both, so
@@ -68,12 +74,12 @@
 # first run of this file.
 /spirituality.html
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 
 # The extensionless form resolves to the same file, so it needs the same exception.
 /spirituality
   ! Content-Security-Policy
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 
 # ---------------------------------------------------------------------------
 # Immutable content. Derived images are content-addressed by filename (the id and variant

@@ -30,7 +30,7 @@
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { readdir, rm, mkdir, cp, stat } from "node:fs/promises";
+import { readdir, rm, mkdir, cp, stat, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -105,14 +105,28 @@ async function syncDir(src, dest) {
 // stale committed HTML — is the silent divergence this whole block exists to end. A red
 // build is visible and costs one push; a green build serving the wrong bytes is not.
 const GENERATORS = [
+  // FIRST: it copies index.html's header and footer into the hand-written pages that no
+  // generator owns (404.html, clothes.html). Missing from both pipelines until 17 Aug 2026,
+  // so those two drifted every time the chrome changed and nobody remembered the command.
+  "sync-chrome.mjs",   // index.html's chrome -> 404.html, clothes.html
   "build-shop.mjs",    // catalog -> shop pages, and the SHOP:* regions of index/clothes
+  // Added 17 Aug 2026, and it was overdue. It reads data/posts.json, content/*.html and the
+  // image manifest — all committed — so it belongs in exactly the same category as
+  // build-shop. It was missing from this list AND from publish.sh, which was survivable
+  // while diaries.html was a hub of cards nobody edited; it stopped being survivable when
+  // that page became the whole blog. A push that changed a post would have deployed the
+  // previously committed HTML and looked green doing it.
+  // AFTER build-shop: it lifts the header and footer out of index.html, which build-shop
+  // rewrites. Both only ever replace their own <!-- REGION --> markers, so neither clobbers
+  // the other.
+  "build-diaries.mjs", // posts.json + content/ -> diaries.html, and index's DIARY:LATEST
   "build-jsonld.mjs",  // structured data, including the SKUs
   "build-sitemap.mjs", // URL list, which depends on which pages build-shop just wrote
   "bump-assets.mjs",   // MUST BE LAST: it hashes the assets and stamps ?v= into the HTML
 ];
 
-// publish.sh passes --no-generate: it has already run all four, in this order, as steps
-// 3-7, and re-running them would be several seconds of identical work on every publish.
+// publish.sh passes --no-generate: it has already run all six, in this order, and
+// re-running them would be several seconds of identical work on every publish.
 if (process.argv.includes("--no-generate")) {
   console.log("--no-generate: staging the tree as-is (caller already built it)");
 } else {
@@ -195,6 +209,74 @@ if (count > 20000) throw new Error(`${count} files exceeds the free-tier limit o
 if (biggest.size > 25 * 1024 * 1024) {
   throw new Error(`${biggest.file} is ${(biggest.size / 1048576).toFixed(1)} MiB, over the 25 MiB per-file limit`);
 }
+
+// ---------------------------------------------------------------------------
+// Every internal link resolves, and every anchor it points at exists.
+//
+// Added 17 Aug 2026, the day /restaurants and /article-contemporary-indian-wear were folded
+// into /diaries. Eleven files linked to those two URLs — a footer on every page, the homepage
+// strip, the 404 link list, llms.txt, the sitemap — and each one had to be found by hand. Get
+// one wrong and the site ships a link to a page that no longer exists, which no test here
+// would have noticed and no visitor would report.
+//
+// This is deliberately checked against dist/ rather than the repo, because dist/ IS the site:
+// it is the only place where "does this URL exist" has a single answer. A link is satisfied by
+// a real file, by the extensionless form of one, or by a rule in _redirects — that last one
+// matters, because /restaurants is now a legitimate link target that is not a file.
+const redirectSources = new Set(
+  (await readFile(path.join(DIST, "_redirects"), "utf8"))
+    .split("\n")
+    .filter((l) => l.trim() && !l.trim().startsWith("#"))
+    .map((l) => l.trim().split(/\s+/)[0]),
+);
+
+const htmlFiles = (await readdir(DIST)).filter((f) => f.endsWith(".html"));
+const pageText = new Map();
+for (const f of htmlFiles) pageText.set(f, await readFile(path.join(DIST, f), "utf8"));
+
+// Resolve a site path to a file in dist/, the way the asset server does.
+const resolves = (p) =>
+  existsSync(path.join(DIST, p)) ||
+  existsSync(path.join(DIST, p + ".html")) ||
+  existsSync(path.join(DIST, p, "index.html")) ||
+  redirectSources.has(p);
+
+const dead = [];
+const badAnchor = [];
+for (const [file, html] of pageText) {
+  for (const m of html.matchAll(/\b(?:href|src)="([^"]+)"/g)) {
+    const raw = m[1];
+    // External, in-page, and non-navigational schemes are not this check's business.
+    if (/^(https?:|mailto:|tel:|data:|#)/.test(raw)) continue;
+    const [pathPart, frag] = raw.split("#");
+    const clean = pathPart.split("?")[0];
+    const target = clean === "" ? file : (clean.startsWith("/") ? clean : "/" + clean);
+    if (clean !== "" && !resolves(target)) { dead.push(`${file} -> ${raw}`); continue; }
+    // The anchor half. The Diaries now depends on these completely: every review and the
+    // dispatch is reached by fragment, so a typo'd id is a broken link with no 404 to show it.
+    if (!frag) continue;
+    const targetFile =
+      clean === "" ? file
+      : htmlFiles.includes(target.slice(1)) ? target.slice(1)
+      : htmlFiles.includes(target.slice(1) + ".html") ? target.slice(1) + ".html"
+      : target === "/" ? "index.html"
+      : null;
+    if (!targetFile) continue; // a redirect target, or not an html page — nothing to check
+    const body = pageText.get(targetFile);
+    if (body && !new RegExp(`\\sid="${frag.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}"`).test(body)) {
+      badAnchor.push(`${file} -> ${raw} (no id="${frag}" in ${targetFile})`);
+    }
+  }
+}
+
+if (dead.length || badAnchor.length) {
+  throw new Error(
+    "dist/ contains links that do not resolve:\n" +
+      [...dead.map((d) => `  dead link:   ${d}`), ...badAnchor.map((a) => `  dead anchor: ${a}`)]
+        .join("\n"),
+  );
+}
+console.log(`  links checked: ${pageText.size} pages, every internal href and anchor resolves`);
 
 console.log(
   `dist/ staged: ${count} files, largest ${biggest.file} ` +

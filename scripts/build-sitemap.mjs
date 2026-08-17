@@ -13,9 +13,15 @@
 
 import { readFile, writeFile, stat } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import path from "node:path";
 
 const SITE = "https://indianinprague.jains.es";
-const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
+// path.resolve(import.meta.dirname, ...), matching every other script here. It used to be
+// `new URL("..", import.meta.url).pathname`, which is a URL pathname: percent-ENCODED. A repo
+// checked out to a directory with a space in it resolves to ".../my%20repo" and every read
+// fails. Same family of bug as the absolute path that was hardcoded in build-jsonld.mjs until
+// 17 Aug 2026 and broke the Cloudflare build — resolve from the module, always.
+const ROOT = path.resolve(import.meta.dirname, "..");
 
 // Priority reflects how much of the site's reason to exist each page carries, not a wish.
 const PAGES = [

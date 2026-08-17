@@ -22,11 +22,15 @@
      with them, along with the last third-party origin on this page. -->
 <link rel="stylesheet" href="assets/spirituality-fonts.css?v=a2a42eaf">
 
-<!-- Core CDN Libraries -->
-<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<!-- The four animation libraries used to load here, from unpkg and cdnjs, as four
+     render-blocking <script> tags in <head>. That was 731 KB — three.js alone is 603 KB —
+     downloaded from two third-party origins, with the DNS lookup and TLS handshake for each,
+     before the browser was allowed to paint a single word of a 15,000-word page.
+     They are now self-hosted in assets/vendor/ and moved to just above the first inline
+     script at the bottom of <body>. See the comment there for why they are moved rather
+     than deferred. Self-hosting also retires the last third-party origins on this page,
+     which is what lets the CSP for this path go back to plain 'self'. -->
+
 
 <style>
 /* ============================================================
@@ -58,7 +62,12 @@
   --font-label:  'Space Mono', 'Courier New', monospace;
 
   --edge:        clamp(22px, 6vw, 76px);
-  --gap-section: clamp(80px, 14vw, 160px);
+  /* 160px → 124px at the top end. The old rhythm was set when every section opened with a
+     three-part header (eyebrow, headline, hook); with those removed the padding was no longer
+     separating two dense blocks, it was just empty band. Still ~2× the gap between a heading
+     and its own content, which is what keeps a heading reading as belonging to what follows
+     rather than floating between sections. */
+  --gap-section: clamp(72px, 10vw, 124px);
   --ease:        cubic-bezier(.22,.61,.36,1);
   --ease-soft:   cubic-bezier(.16,.84,.44,1);
 }
@@ -264,7 +273,12 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; 
 section.on-void .eyebrow { color: rgba(245,238,221,.62); }
 section.on-void .eyebrow strong { color: var(--marigold); }
 
-.line-mask { overflow: hidden; display: block; }
+/* The mask clips its own line to hide it before the reveal, which also clipped the descenders
+   of anything that reached below the baseline — the "g" in "bring it home" lost its tail at
+   any line-height under about 1.2. The box is grown by a descender's worth and the growth is
+   pulled straight back out of the flow, so letters are whole and the line rhythm is unchanged.
+   The reveal still starts fully hidden: translateY(110%) is measured against the taller box. */
+.line-mask { overflow: hidden; display: block; padding-bottom: .16em; margin-bottom: -.16em; }
 .line-mask-inner { display: block; transform: translateY(110%); }
 
 /* Targeted Velocity Skew Block */
@@ -321,14 +335,17 @@ header.site.nav-hidden {
 }
 .sound-toggle:hover { background: rgba(245,238,221,0.18); border-color: rgba(245,238,221,.42); }
 .ico-sound { width: 21px; height: 21px; overflow: visible; }
-.ico-sound .spk { fill: rgba(245,238,221,.75); transition: fill .3s; }
-.ico-sound .waves path, .ico-sound .slash {
-  fill: none; stroke-width: 1.9; stroke-linecap: round; transition: opacity .3s, stroke .3s;
+/* All three parts are strokes now, not a filled speaker beside stroked waves — the reference
+   glyph is a single-weight outline drawing, and mixing a fill with 1.9px strokes made the
+   speaker read heavier than the waves at 21px. */
+.ico-sound .spk, .ico-sound .waves path, .ico-sound .slash {
+  fill: none; stroke: rgba(245,238,221,.78); stroke-width: 1.9;
+  stroke-linecap: round; stroke-linejoin: round;
+  transition: opacity .3s, stroke .3s;
 }
-.ico-sound .waves path { stroke: rgba(245,238,221,.75); opacity: 0; }
-.ico-sound .slash { stroke: rgba(245,238,221,.75); opacity: 1; }
-.sound-toggle.is-on .ico-sound .spk { fill: var(--marigold); }
-.sound-toggle.is-on .ico-sound .waves path { stroke: var(--marigold); opacity: 1; }
+.ico-sound .slash { opacity: 1; }
+.sound-toggle.is-on .ico-sound .spk,
+.sound-toggle.is-on .ico-sound .waves path { stroke: var(--marigold); }
 .sound-toggle.is-on .ico-sound .slash { opacity: 0; }
 .sound-toggle.is-on { background: rgba(232,162,61,.16); border-color: rgba(232,162,61,.5); }
 
@@ -508,14 +525,26 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
 /* Four items wrap 3+1 on most desktop widths, which reads as a mistake. A two-column grid
    pairs them deliberately instead, and the two ghost buttons share a width so the pair scans
    as one rank. On a phone the same grid collapses to a single full-width column. */
-.hero .ctas-4 { display: grid; grid-template-columns: repeat(2, minmax(0, max-content)); gap: 14px 18px; }
+/* Same rule as the cards: with three items the only honest layouts are one row or one column,
+   never 2+1. The hero text column is ~590px at 1200px+, which fits all three buttons at 24px
+   side padding and a 14px gap (~573px measured) — below that they stack full width, capped so
+   they don't stretch to absurd lengths on a tablet. */
+.hero .ctas-4 { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 420px; }
 .hero .ctas-4 .btn { justify-content: center; width: 100%; }
+@media (min-width: 1200px) {
+  .hero .ctas-4 {
+    grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: max-content;
+    max-width: none; gap: 14px;
+  }
+  /* The hero text column is a fixed 554px at every desktop width (the wrap is capped at
+     1280px), and three buttons at the default 28px padding come to exactly that — flush to
+     the pixel, which would overflow the moment a label grew. Trimming the padding and a
+     half-point of type buys ~60px of slack while keeping the 44px minimum height. */
+  .hero .ctas-4 .btn { width: auto; padding-left: 20px; padding-right: 20px; font-size: 14.5px; }
+}
 /* The third button is allowed to sit alone on row two — with only three items a 2+1 grid is
    the honest shape, and it keeps both ghosts the same width as the primary above them. */
 .hero .lede-link { display: inline-flex; margin-top: 22px; }
-@media (max-width: 560px) {
-  .hero .ctas-4 { grid-template-columns: 1fr; }
-}
 
 .art-blob {
   position: relative; aspect-ratio: 4/5; width: 100%; border-radius: 38% 62% 61% 39% / 45% 40% 60% 55%;
@@ -533,12 +562,9 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
   0%{ border-radius:38% 62% 61% 39% / 45% 40% 60% 55%; }
   100%{ border-radius:58% 42% 40% 60% / 38% 58% 42% 62%; }
 }
-.art-blob .cap {
-  position: relative; z-index: 2;
-  font-family: var(--font-label); font-size: 11px; letter-spacing: .06em; text-transform: uppercase;
-  color: rgba(245,238,221,.9); padding: 22px 24px; background: linear-gradient(0deg, rgba(22,15,36,.88), transparent);
-  width: 100%;
-}
+/* .art-blob .cap removed 2026-08-17 with the caption spans themselves: the labels restated
+   what the photograph already showed, and the gradient scrim they needed to stay legible sat
+   over the bottom of every image. The alt attributes still carry the description. */
 
 /* Section Transitions with Frosted Translucent Depth */
 .sec-pad { padding: var(--gap-section) 0; position: relative; }
@@ -553,8 +579,8 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
   border-top: 1px solid rgba(245,238,221,0.3); border-bottom: 1px solid rgba(245,238,221,0.3);
 }
 
-.intro-inner { max-width: 780px; }
-.intro-inner p { font-size: 20px; line-height: 1.75; color: var(--ink); margin-bottom: 20px; font-weight: 500; }
+/* .intro-inner rules removed with the #intro section they styled. .pull stays — the
+   philosophy section still uses it. */
 .pull {
   font-family: var(--font-display); font-style: italic; font-size: clamp(24px, 2.8vw, 32px);
   color: var(--terracotta-deep); margin-top: 36px; padding-left: 28px; border-left: 3px solid var(--terracotta);
@@ -562,14 +588,24 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
 .pull cite { display: block; font-family: var(--font-label); font-style: normal; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 12px; }
 
 .sec-head { max-width: 640px; margin-bottom: clamp(40px, 5vw, 64px); }
-.sec-head h2 { font-size: clamp(32px, 4.2vw, 48px); line-height: 1.08; margin-top: 14px; letter-spacing: -.01em; }
+/* line-height 1.08 → 1.14: with the eyebrow gone the headline is the whole section header, and
+   at 48px the tighter setting was crowding its two lines together. The 14px top margin went
+   with the eyebrow it used to clear — a heading that is now first in its box needs no offset
+   from the thing above it. */
+.sec-head h2 { font-size: clamp(32px, 4.2vw, 48px); line-height: 1.14; letter-spacing: -.01em; }
+.sec-head .eyebrow + h2 { margin-top: 14px; }
 .sec-head .hook { margin-top: 16px; color: var(--ink-soft); font-size: 17px; max-width: 52ch; font-weight: 500; }
 
 /* ============================================================
    CARDS & GRID
    ============================================================ */
-.cards-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;
+/* Three cards, so only two layouts are honest: all three across, or one per row.
+   auto-fit/minmax gave a third — two across with a hole where the fourth card would be — which
+   reads as a loading failure rather than a layout. The explicit switch happens at 940px, the
+   width below which a third of the container stops holding a two-line card title comfortably. */
+.cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+@media (max-width: 940px) {
+  .cards-grid { grid-template-columns: 1fr; }
 }
 .card {
   background: rgba(251, 246, 236, 0.88); border-radius: 26px; padding: 32px 28px;
@@ -582,11 +618,8 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
 .band-sand .card { background: rgba(251, 246, 236, 0.92); }
 .band-paper .card { background: rgba(242, 231, 211, 0.92); }
 
-.icon-blob {
-  width: 56px; height: 56px; border-radius: 60% 40% 55% 45% / 50% 55% 45% 50%;
-  background: rgba(193,85,46,.12); display: flex; align-items: center; justify-content: center;
-}
-.icon-blob svg { width: 28px; height: 28px; }
+/* .icon-blob removed 2026-08-17: three abstract line marks that named nothing the card's own
+   tag and title did not already say, taking the top 70px of every card above the fold. */
 
 .tag { font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--terracotta-deep); }
 .card h3 { font-size: 22px; line-height: 1.25; }
@@ -680,7 +713,15 @@ section.on-void .runway-rail span { background: var(--marigold); }
 @media (min-width: 1080px) { .to-top { right: 72px; } } /* clear of the dot navigation */
 @media (max-width: 640px) { .to-top { right: 14px; bottom: 14px; width: 48px; height: 48px; } }
 
-.card.trip { width: 340px; padding: 0 0 24px; overflow: hidden; flex-shrink: 0; }
+/* The trip cards drop the panel .card gives them — background, border, shadow and rounded
+   rectangle. The blob-shaped photo is the card's own silhouette, and framing an organic shape
+   inside a rounded box put two competing outlines on the same object. Only the chrome goes:
+   width, padding, snap behaviour, hover lift and every child style are untouched. */
+.card.trip {
+  width: 340px; padding: 0 0 24px; overflow: hidden; flex-shrink: 0;
+  background: none; border: none; box-shadow: none; backdrop-filter: none; border-radius: 0;
+}
+.card.trip:hover { box-shadow: none; }
 .card.trip .art-blob { border-radius: 0 0 46% 54% / 0 0 30% 30%; aspect-ratio: 5/4; }
 .card.trip .loc, .card.trip h3, .card.trip .hook { padding-left: 24px; padding-right: 24px; }
 .card.trip .loc { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; color: var(--terracotta-deep); margin-top: 18px; }
@@ -702,11 +743,34 @@ section.on-void .runway-rail span { background: var(--marigold); }
 }
 .philosophy-top p { margin-top: 24px; max-width: 64ch; color: rgba(245,238,221,.85); font-size: 17px; line-height: 1.75; }
 
-.commit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; margin-top: 60px; }
+/* Three items, so the same rule as the offer cards: one row or one column, never 2+1 with a
+   hole. These are short text blocks with no image, so they hold a narrow column far better
+   than the offer cards do — 640px is the switch, which keeps all three across on tablet. */
+.commit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 60px; }
 .commit { padding: 30px; border-radius: 22px; background: rgba(245,238,221,.06); border: 1px solid rgba(245,238,221,.14); backdrop-filter: blur(12px); }
 .commit .n { font-family: var(--font-label); font-size: 12px; color: var(--marigold); letter-spacing: .08em; }
 .commit h4 { color: var(--cream); font-size: 20px; margin-top: 12px; }
 .commit p { color: rgba(245,238,221,.78); font-size: 14.5px; margin-top: 10px; line-height: 1.65; }
+
+/* These two blocks must sit AFTER the .commit base rules: a media query adds no specificity,
+   so an equally specific rule later in the file wins regardless of the query.
+
+   Keeping three across on a tablet costs line length — at 768px each column is ~213px, and the
+   default 30px padding leaves only ~20 characters per line. Trimming padding and gap buys back
+   most of that; these are three-line statements rather than paragraphs, so the row-of-three
+   comparison is worth more than the extra characters. */
+@media (max-width: 900px) {
+  .commit-grid { gap: 18px; }
+  .commit { padding: 22px 20px; }
+  .commit h4 { font-size: 18px; }
+  .commit p { font-size: 14px; }
+}
+@media (max-width: 640px) {
+  .commit-grid { grid-template-columns: 1fr; gap: 18px; }
+  .commit { padding: 26px 24px; }
+  .commit h4 { font-size: 20px; }
+  .commit p { font-size: 15px; }
+}
 
 .philosophy .pull { color: var(--marigold-soft); border-left-color: var(--marigold); margin-top: 56px; }
 .philosophy .pull cite { color: rgba(245,238,221,.55); }
@@ -809,17 +873,33 @@ section.on-void .runway-rail span { background: var(--marigold); }
    ABOUT & TESTIMONIALS & FAQ
    ============================================================ */
 .about-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: clamp(30px, 6vw, 72px); align-items: center; }
-@media (max-width: 860px){ .about-grid { grid-template-columns: 1fr; } }
-.about h2 { font-size: clamp(30px, 3.8vw, 44px); margin-top: 14px; }
-.about p { margin-top: 18px; color: var(--ink-soft); font-size: 16.5px; line-height: 1.75; max-width: 56ch; font-weight: 500; }
-.bio-card {
-  margin-top: 28px; padding: 24px 26px; border-radius: 20px; background: rgba(251, 246, 236, 0.95);
-  border: 1px dashed rgba(36,28,46,.25);
+/* Once the two columns stack, the portrait inherits the full text measure — at 768px that was
+   676×845, i.e. 82% of the viewport height for one decorative photo, so a tablet visitor had
+   to scroll a full screen of it before reaching the copy it illustrates. Capping the width
+   keeps the 4/5 blob proportion and lands it at roughly the share of the screen it holds on
+   desktop (~30% of width, under half the height). Centred, because a narrow image left-aligned
+   under a full-width paragraph reads as a layout error. */
+@media (max-width: 860px){
+  .about-grid { grid-template-columns: 1fr; }
+  .about-grid .art-blob { max-width: min(360px, 58%); margin-inline: auto; }
 }
-.bio-card .lbl { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--terracotta-deep); }
-.bio-card p { margin-top: 10px; font-size: 14.5px; color: var(--ink-soft); }
+/* A phone is narrow enough that 58% would shrink the portrait to a thumbnail — the cap exists
+   to stop a tablet-width image swallowing the screen, not to miniaturise it. 76% of a 375px
+   screen is 250px tall-ish and still only ~38% of the viewport height. */
+@media (max-width: 560px){
+  .about-grid .art-blob { max-width: 76%; }
+}
+/* No top offset any more: the 14px existed to clear the eyebrow that was removed above it, and
+   a heading that is now first in its column needs no gap to nothing. */
+.about h2 { font-size: clamp(30px, 3.8vw, 44px); }
+.about .eyebrow + h2 { margin-top: 14px; }
+.about p { margin-top: 18px; color: var(--ink-soft); font-size: 16.5px; line-height: 1.75; max-width: 56ch; font-weight: 500; }
+/* .bio-card rules removed 2026-08-17 with the dashed "founder note" placeholder they styled. */
 
-.testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+/* Three quotes, same rule as the offer cards and the commitments: one row or one column, never
+   2+1 with a hole. Testimonials in particular are read as a set — three voices side by side is
+   the evidence; two-and-a-stray reads as one review having been added later. */
+.testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: stretch; }
 .testi-card {
   background: rgba(251, 246, 236, 0.92); border-radius: 26px; padding: 32px 28px; border: 1px solid rgba(36,28,46,.1);
   box-shadow: 0 26px 54px -34px rgba(36,28,46,.25); backdrop-filter: blur(14px);
@@ -829,6 +909,26 @@ section.on-void .runway-rail span { background: var(--marigold); }
 .avatar { width: 42px; height: 42px; border-radius: 50%; background: linear-gradient(140deg, var(--terracotta), var(--marigold)); }
 .testi-card .name { font-weight: 700; font-size: 14.5px; }
 .testi-card .loc { font-size: 13px; color: var(--ink-soft); }
+
+/* After the base rules, or a media query of equal specificity loses the cascade.
+   A quote is a block of running text, so it needs more room per column than the commitment
+   cards do: 18px display italic in a ~210px column is about 22 characters a line, which is
+   where an italic serif starts to feel like a ransom note. Type and padding come down between
+   641–900px to hold the row of three, and the switch to one column is at 640px. */
+@media (max-width: 900px) {
+  .testi-grid { gap: 18px; }
+  .testi-card { padding: 24px 20px; border-radius: 20px; }
+  .testi-card .quote { font-size: 16px; line-height: 1.55; }
+  .testi-card .who { margin-top: 18px; gap: 11px; }
+  .avatar { width: 36px; height: 36px; }
+}
+@media (max-width: 640px) {
+  .testi-grid { grid-template-columns: 1fr; gap: 18px; }
+  .testi-card { padding: 28px 24px; border-radius: 26px; }
+  .testi-card .quote { font-size: 18px; line-height: 1.6; }
+  .testi-card .who { margin-top: 22px; gap: 14px; }
+  .avatar { width: 42px; height: 42px; }
+}
 
 .faq-list { max-width: 780px; }
 .faq-item { border-bottom: 1px solid var(--line); padding: 22px 0; }
@@ -844,17 +944,42 @@ section.on-void .runway-rail span { background: var(--marigold); }
 .faq-item[open] .plus::after { transform: rotate(90deg); opacity: 0; }
 .faq-item .a { margin-top: 14px; color: var(--ink-soft); font-size: 15.5px; line-height: 1.7; max-width: 62ch; font-weight: 500; }
 
+/* FAQ on the void — the treatment inherited from the retired final CTA.
+   Everything here is a colour inversion plus the CTA's more generous padding; the disclosure
+   behaviour, the plus/minus animation and the layout are untouched. Rows get a top border as
+   well as a bottom one so the list reads as a closed panel of cream lines over the moving
+   background rather than a stack of underlines fading into it. */
+.faq-void { padding: calc(var(--gap-section) * 1.2) 0; }
+.faq-void .sec-head h2 { color: var(--cream); }
+.faq-void .faq-list { max-width: 820px; }
+.faq-void .faq-item { border-bottom-color: var(--line-on-void); padding: 24px 0; }
+.faq-void .faq-item:first-child { border-top: 1px solid var(--line-on-void); }
+.faq-void .faq-item summary { color: var(--cream); }
+.faq-void .faq-item summary:hover { color: var(--marigold); }
+.faq-void .faq-item .plus::before,
+.faq-void .faq-item .plus::after { background: var(--marigold); }
+.faq-void .faq-item .a { color: rgba(245,238,221,.8); }
+/* The open row is tinted rather than only expanded: on a dark, animated background a plain
+   expansion was easy to lose track of. */
+.faq-void .faq-item[open] { background: rgba(245,238,221,.05); }
+.faq-void .faq-item[open] summary,
+.faq-void .faq-item[open] .a { padding-left: 18px; padding-right: 18px; }
+.faq-void .faq-item[open] { border-radius: 14px; }
+
 /* ============================================================
    MOBILE READABILITY ACCESSIBILITY OVERHAUL
    ============================================================ */
 @media (max-width: 768px) {
   body { font-size: 17px; line-height: 1.7; }
-  .sec-pad { padding: clamp(56px, 10vw, 90px) 0; }
+  .sec-pad { padding: clamp(52px, 9vw, 76px) 0; }
+  /* A phone shows one section at a time; the heading only has to clear its own content, and
+     the band colour already marks the seam. */
+  .sec-head { margin-bottom: 30px; }
   .band-paper { background: rgba(251, 246, 236, 0.96); backdrop-filter: blur(24px) saturate(180%); }
   .band-sand { background: rgba(242, 231, 211, 0.96); backdrop-filter: blur(24px) saturate(180%); }
   .card { background: #FFFFFF; border: 1px solid rgba(36,28,46,0.12); box-shadow: 0 16px 32px rgba(22,15,36,0.12); }
   .card h3 { font-size: 21px; color: #160F24; }
-  .card .hook, .card ul li, .intro-inner p, .sec-head .hook { color: #2E2148; font-weight: 500; }
+  .card .hook, .card ul li, .sec-head .hook { color: #2E2148; font-weight: 500; }
   .commit { background: rgba(22, 15, 36, 0.88); border: 1px solid rgba(245, 238, 221, 0.2); }
   .commit h4 { color: #FBF6EC; }
   .commit p { color: rgba(245, 238, 221, 0.9); }
@@ -867,65 +992,665 @@ section.on-void .runway-rail span { background: var(--marigold); }
 /* ============================================================
    FINAL CTA & FOOTER
    ============================================================ */
-.final-cta {
-  position: relative; padding: calc(var(--gap-section) * 1.2) 0; overflow: hidden;
-  color: var(--cream); text-align: center;
-}
-.final-cta .inner { position: relative; max-width: 640px; margin: 0 auto; }
-.final-cta .eyebrow { justify-content: center; align-items: center; }
-.final-cta h2 { font-size: clamp(34px, 4.8vw, 56px); color: var(--cream); margin-top: 16px; }
-.final-cta p { margin-top: 20px; color: rgba(245,238,221,.8); font-size: 17px; }
-.final-cta .ctas { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-top: 36px; }
+/* .final-cta rules removed with the section itself; its dark treatment and 1.2× padding now
+   live on .faq-void above. */
 
-footer.site { background: var(--void-deep); color: var(--cream); padding: var(--gap-section) 0 36px; border-top: 1px solid rgba(245,238,221,0.1); }
-.foot-grid { display: grid; grid-template-columns: 1.4fr .8fr .8fr; gap: 48px; padding-bottom: 56px; border-bottom: 1px solid rgba(245,238,221,.12); }
-@media (max-width: 800px){ .foot-grid { grid-template-columns: 1fr; gap: 36px; } }
-.foot-word { font-family: var(--font-display); font-size: 22px; }
-.foot-word em { font-style: italic; color: var(--marigold); }
-.foot-lede { margin-top: 16px; color: rgba(245,238,221,.7); font-size: 14.5px; max-width: 48ch; line-height: 1.65; }
-.newsletter { display: flex; gap: 10px; margin-top: 24px; max-width: 380px; }
-.newsletter input {
-  flex: 1; padding: 13px 18px; border-radius: 100px; border: 1px solid rgba(245,238,221,.22);
-  background: rgba(245,238,221,.06); color: var(--cream); font-family: var(--font-body); font-size: 14px;
-}
-.newsletter input::placeholder { color: rgba(245,238,221,.45); }
-.newsletter button {
-  padding: 13px 24px; border-radius: 100px; border: none; background: var(--marigold); color: var(--void-deep);
-  font-weight: 700; font-size: 14px; cursor: pointer; transition: transform 0.3s var(--ease);
-}
-.newsletter button:hover { transform: translateY(-2px); }
-.foot-col h5 { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: rgba(245,238,221,.5); margin-bottom: 16px; }
-.foot-col .item { display: block; padding: 6px 0; font-size: 14.5px; color: rgba(245,238,221,.85); }
-.foot-col a.item:hover { color: var(--marigold); }
-.foot-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 28px; font-size: 13px; color: rgba(245,238,221,.45); }
+/* ---- footer ---------------------------------------------------------------
+   The shared footer pattern. Every colour resolves from these four custom properties, so
+   porting this to another page is a matter of redefining them — the structure, spacing and
+   type scale are meant to stay identical site-wide.
 
-  /* ---- return navigation ----------------------------------------------------
-     Added during integration. This page was authored as a standalone export, so every
-     link on it pointed at one of its own anchors; a visitor arriving here from search
-     had no route to the rest of the site. */
-  .foot-back{
-    display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;
-    padding:22px 0 18px;margin-top:10px;
-    border-top:1px solid rgba(245,238,221,0.14);
-  }
-  .foot-back .back-home{
-    font-family:var(--font-label);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
-    color:var(--marigold);white-space:nowrap;
-  }
-  .foot-back .back-home:hover{opacity:.8}
-  .back-nav{display:flex;flex-wrap:wrap;gap:8px 22px;margin-left:auto}
-  .back-nav a{
-    font-family:var(--font-label);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
-    color:var(--cream);opacity:.62;
-    display:flex;align-items:center;min-height:44px;
-  }
-  .back-nav a:hover{opacity:1}
-  .back-nav a[aria-current="page"]{opacity:1;color:var(--marigold)}
-  @media (max-width:640px){
-    .back-nav{margin-left:0}
-  }
-  .newsletter{display:flex;flex-wrap:wrap;gap:10px}
+   Padding is the section rhythm halved: a footer is a resting place, not another section, and
+   the old full var(--gap-section) put a screen of empty dark between the last answer and the
+   first link. */
+footer.site {
+  --foot-bg:    var(--void-deep);
+  --foot-ink:   var(--cream);
+  --foot-dim:   rgba(245,238,221,.7);
+  --foot-line:  rgba(245,238,221,.14);
+  --foot-accent: var(--marigold);
+
+  background: var(--foot-bg); color: var(--foot-ink);
+  padding: 36px 0 18px;
+  border-top: 1px solid rgba(245,238,221,.1);
+}
+.foot { padding-bottom: 22px; border-bottom: 1px solid var(--foot-line); }
+/* Sentence and channels on one line, the chips pushed to the right edge and vertically centred
+   against the block of text — the claim and the way to act on it, together. They wrap under the
+   sentence the moment there isn't room for both. */
+.foot-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
+.foot-lede { color: var(--foot-dim); font-size: 14.5px; max-width: 52ch; line-height: 1.6; flex: 1 1 30ch; }
+
+/* Three category columns, each headed by a link to the section itself — the heading is a
+   destination, not a label, so a visitor can land on the hub or jump straight past it. */
+.foot-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 32px; margin-top: 20px; }
+.foot-col { display: flex; flex-direction: column; }
+.foot-col .head {
+  font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
+  color: rgba(245,238,221,.5); padding: 4px 0 8px;
+}
+.foot-col .head:hover { color: var(--foot-accent); }
+.foot-col .head[aria-current="page"] { color: var(--foot-accent); }
+/* 36px rather than 44: these rows sit in a single vertical column with nothing tappable beside
+   them, so the mis-tap a 44px target guards against is a neighbouring row in the same list —
+   and 36px plus the row gap still clears a fingertip. It buys back ~100px of footer height. */
+.foot-col .item {
+  display: flex; align-items: center; min-height: 36px;
+  font-size: 14px; color: rgba(245,238,221,.82);
+}
+.foot-col .item:hover { color: var(--foot-accent); }
+
+.foot-bottom {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px;
+  padding-top: 18px;
+}
+.foot-reach { display: flex; gap: 10px; flex: 0 0 auto; }
+.foot-made { font-size: 12.5px; color: rgba(245,238,221,.42); }
+/* Icon plus one word. At footer scale "Message on" was the part carrying no information. */
+.chip {
+  display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 8px 16px 8px 13px;
+  border-radius: 100px; font-size: 13.5px; font-weight: 600;
+  border: 1px solid var(--foot-line); color: rgba(245,238,221,.85);
+  transition: background .3s, border-color .3s, color .3s;
+}
+.chip.wa { color: #25D366; border-color: rgba(37,211,102,.4); }
+.chip.wa:hover { background: rgba(37,211,102,.12); border-color: #25D366; }
+.chip.mail:hover { background: rgba(245,238,221,.08); border-color: rgba(245,238,221,.4); color: var(--foot-ink); }
+.foot-note { font-size: 12.5px; color: rgba(245,238,221,.42); }
+
+/* Two columns before one: three category lists stacked single-file on a phone is a long scroll
+   of footer, and these lists are short enough to pair. */
+@media (max-width: 700px) {
+  .foot-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 20px; }
+}
+/* 340, not 380: a 375px iPhone is not a narrow edge case, it is the median phone on this site,
+   and dropping it to one column made the footer 792px tall. Only genuinely tiny screens stack. */
+@media (max-width: 340px) {
+  .foot-nav { grid-template-columns: 1fr; }
+}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://indianinprague.jains.es/#org",
+      "name": "Indian in Prague",
+      "url": "https://indianinprague.jains.es/spirituality",
+      "description": "Yoga, Ayurveda, meditation and wellbeing taught from source knowledge in Prague, guided journeys to India, and authentic Ayurvedic goods shipped across Europe.",
+      "founder": {
+        "@id": "https://indianinprague.jains.es/#author"
+      },
+      "sameAs": [
+        "https://www.vinted.cz/member/3166447071"
+      ],
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Czech Republic"
+        },
+        {
+          "@type": "Place",
+          "name": "Europe"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Prague",
+        "addressCountry": "CZ"
+      },
+      "knowsAbout": [
+        "Ayurveda",
+        "Panchakarma",
+        "Yoga",
+        "Meditation",
+        "Marma therapy",
+        "Chakras"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://wa.me/420777558262",
+        "availableLanguage": [
+          "en",
+          "cs"
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://indianinprague.jains.es/spirituality#webpage",
+      "url": "https://indianinprague.jains.es/spirituality",
+      "name": "Yoga, Ayurveda and Spirituality — Indian in Prague",
+      "description": "Yoga, Ayurveda, meditation and wellbeing traditions taught from genuine source knowledge in Prague, guided journeys to India, and authentic Ayurvedic products shipped across Europe.",
+      "isPartOf": {
+        "@id": "https://indianinprague.jains.es/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Ayurveda"
+        },
+        {
+          "@type": "Thing",
+          "name": "Yoga"
+        },
+        {
+          "@type": "Thing",
+          "name": "Meditation"
+        },
+        {
+          "@type": "Thing",
+          "name": "Panchakarma"
+        }
+      ],
+      "inLanguage": "en"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://indianinprague.jains.es/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Spirituality",
+          "item": "https://indianinprague.jains.es/spirituality"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://indianinprague.jains.es/spirituality#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need any experience to start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — classes and introductory sessions suit complete beginners as well as more experienced practitioners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this connected to a particular religion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. These are universal practices for health, calm and self-understanding, open to people of any or no religious background."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I just buy products without taking a course?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — the shop and services are independent; take whichever pieces are useful to you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you organise trips to India for individuals, not just groups?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — both small-group and individually tailored trips are available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do treatments and classes take place?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Get in touch for current locations and formats in Prague, including any online options."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://indianinprague.jains.es/spirituality#learn",
+      "name": "Courses, Treatments & Personal Sessions",
+      "serviceType": "Yoga, Ayurveda and meditation instruction",
+      "description": "Yoga, Ayurveda and meditation from authentic, source-based knowledge — in group classes, or one-to-one.",
+      "provider": {
+        "@id": "https://indianinprague.jains.es/#org"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Prague"
+        },
+        {
+          "@type": "Place",
+          "name": "Europe"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Courses, Treatments & Personal Sessions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Yoga classes and meditation, in-person in Prague"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Workshops and structured courses"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ayurvedic consultations, treatments and marma therapy"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://indianinprague.jains.es/spirituality#travel",
+      "name": "Journeys to India",
+      "serviceType": "Guided yoga and Ayurveda travel",
+      "description": "Small-group, carefully guided trips for yoga, Ayurveda and genuine cultural immersion — not a package tour.",
+      "provider": {
+        "@id": "https://indianinprague.jains.es/#org"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Prague"
+        },
+        {
+          "@type": "Place",
+          "name": "Europe"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Journeys to India",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Yoga and Ayurveda retreats"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Panchakarma — Ayurvedic detox — journeys"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cultural and sightseeing trips"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private and small-group itineraries"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://indianinprague.jains.es/spirituality#products",
+      "name": "Authentic Indian & Ayurvedic Goods",
+      "serviceType": "Ayurvedic and yoga goods retail",
+      "description": "Genuine products sourced from trusted producers in India, shipped across Europe.",
+      "provider": {
+        "@id": "https://indianinprague.jains.es/#org"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Prague"
+        },
+        {
+          "@type": "Place",
+          "name": "Europe"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Authentic Indian & Ayurvedic Goods",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ayurvedic oils, herbs and teas"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Copper vessels and ritual items"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Yoga mats and accessories"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Books and gift sets"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://indianinprague.jains.es/spirituality#journeys",
+      "name": "Journeys to India",
+      "description": "Six guided trips to India and Nepal for yoga, Ayurveda, Panchakarma and cultural immersion, led by people who know these places from the inside.",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Panchakarma & Ayurveda Retreat",
+            "description": "Full Ayurvedic detox and rejuvenation, guided by experienced local practitioners, from coastal Kerala to the quiet Himalayas.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "Kerala"
+              },
+              {
+                "@type": "Place",
+                "name": "Himalayas"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Yoga at the Source",
+            "description": "A classical yoga intensive in the town where modern yoga tourism began, on the banks of the Ganges.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "Rishikesh"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Jog Sadhana",
+            "description": "Deep classical-yoga sadhana balanced with study of classical texts, set against Himalayan scenery.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "Rishikesh"
+              },
+              {
+                "@type": "Place",
+                "name": "Chopta"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Golden Triangle & Goa",
+            "description": "Delhi, Agra and Jaipur's culture and history, followed by rest and recovery on Goa's beaches.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "Delhi"
+              },
+              {
+                "@type": "Place",
+                "name": "Agra"
+              },
+              {
+                "@type": "Place",
+                "name": "Jaipur"
+              },
+              {
+                "@type": "Place",
+                "name": "Goa"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Himalayan Spiritual Journey",
+            "description": "Trekking, monasteries and mountain energy across the Himalayan foothills, for those seeking scale and quiet together.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "Nepal"
+              }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "TouristTrip",
+            "name": "Private & Corporate Retreats",
+            "description": "Tailored itineraries built around a group's own purpose, pace and dates.",
+            "provider": {
+              "@id": "https://indianinprague.jains.es/#org"
+            },
+            "itinerary": [
+              {
+                "@type": "Place",
+                "name": "India"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://indianinprague.jains.es/spirituality#goods",
+      "name": "Authentic Indian and Ayurvedic goods",
+      "numberOfItems": 8,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Ayurvedic Oils",
+            "description": "Massage, hair, nasal and dropper oils."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Skincare & Cosmetics",
+            "description": "Natural face and body care."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Copper Vessels",
+            "description": "Bottles, jugs, neti pots, Shirodhara bowls."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Herbs, Spices & Teas",
+            "description": "Turmeric, ghee, basmati rice, herbal blends."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Yoga Mats & Accessories",
+            "description": "Mats, covers, props."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Rituals & Meditation",
+            "description": "Oil warmers, incense, ritual sets."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Books & Learning",
+            "description": "Ayurveda and yoga reference titles."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "ProductCollection",
+            "name": "Gift Sets",
+            "description": "Curated bundles for newcomers or gifting."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "DefinedTermSet",
+      "@id": "https://indianinprague.jains.es/spirituality#chakras",
+      "name": "The seven chakras",
+      "description": "The seven energy centres, their positions in the body and the qualities associated with each.",
+      "inLanguage": "en",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Root — Mooladhara",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Base of spine. Associated with: innocence, groundedness."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Sacral — Swadisthana",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Lower abdomen. Associated with: creativity, focus."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Navel — Nabhi",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Abdomen. Associated with: contentment, generosity."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Heart — Anahat",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Chest. Associated with: compassion, confidence."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Throat — Vishuddhi",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Throat. Associated with: communication, diplomacy."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Third Eye — Agnya",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Between the brows. Associated with: forgiveness, clarity."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Crown — Sahastrara",
+          "inDefinedTermSet": {
+            "@id": "https://indianinprague.jains.es/spirituality#chakras"
+          },
+          "description": "Top of the head. Associated with: integration, connection."
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -947,12 +1672,13 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 /* Last-resort escape hatch for the preloader, deliberately placed here rather than in the
    main script at the bottom of this page.
 
-   This page's animation runs on GSAP, ScrollTrigger, three.js and Lenis, all pulled from
-   cdnjs and unpkg. If any of those fails to arrive — a CDN outage, a corporate or hotel
-   network that blocks them, a captive portal, a country that filters them — then `gsap` is
-   undefined, the main script throws on its first line, and every dismissal path inside it
-   dies with it. The visitor is left staring at a loading screen forever, on the page where
-   they were deciding whether to book a consultation.
+   This page's animation runs on GSAP, ScrollTrigger, three.js and Lenis. Those are now
+   served from this origin rather than cdnjs and unpkg, which removes the CDN-outage and
+   blocked-third-party-origin cases this guard was written for — but not all of them: a
+   failed request, a parse error, or an exception anywhere in the engine still leaves `gsap`
+   undefined, the main script throwing on its first line, and every dismissal path inside it
+   dead with it. The visitor is left staring at a loading screen forever, on the page where
+   they were deciding whether to book a consultation. So the guard stays.
 
    That was observed for real while testing: with the libraries blocked, the preloader
    never left. The main script's own failsafe could not help, because it was inside the
@@ -1001,7 +1727,14 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         })(rows[r]);
       }
     }
-  }, 3000);
+    /* 3000 ms until 17 Aug 2026. Three seconds is past Google's 2.5 s "good LCP" threshold
+       on its own, so in the failure case this guard exists for, the page was guaranteed to
+       fail Core Web Vitals before it recovered — and a rendering crawler that samples the
+       viewport in that window sees a loading overlay rather than the content. 800 ms is
+       still far longer than the engine needs to boot when it is working (the libraries are
+       same-origin now, so they are not racing a third-party handshake either), so this does
+       not fire spuriously; it just stops the failure case from also being a slow one. */
+  }, 800);
 })();
 </script>
 
@@ -1060,10 +1793,17 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
 
     <button class="sound-toggle" id="sound-toggle" aria-pressed="false"
             aria-label="Ambient sound is off. Activate to play." title="Play ambient sound">
+      <!-- Outline speaker + two waves + a full corner-to-corner bar, matching the standard
+           mute glyph. The waves stay drawn in both states: it is the bar alone that says
+           muted, exactly as on the reference icon, so the shape the eye learns never changes
+           between states — only whether it is struck through. -->
       <svg class="ico-sound" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path class="spk" d="M4 9.5h3.2L12 5.5v13L7.2 14.5H4z"/>
-        <g class="waves"><path d="M15.4 9.4a3.7 3.7 0 0 1 0 5.2"/><path d="M18 6.8a7.4 7.4 0 0 1 0 10.4"/></g>
-        <line class="slash" x1="15" y1="8.6" x2="21" y2="15.4"/>
+        <path class="spk" d="M3.2 9h3.4L11.5 4.9v14.2L6.6 15H3.2z"/>
+        <g class="waves">
+          <path d="M15 9.6a3.4 3.4 0 0 1 0 4.8"/>
+          <path d="M17.6 7a7 7 0 0 1 0 10"/>
+        </g>
+        <line class="slash" x1="3.4" y1="3.4" x2="20.6" y2="20.6"/>
       </svg>
     </button>
 
@@ -1129,36 +1869,30 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
       <div class="hero-art">
         <div class="art-blob" role="img" aria-label="Yoga and meditation practice in Prague">
           <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?auto=format&fit=crop&w=1200&q=80" alt="Yoga session" loading="eager">
-          <span class="cap">Photo — teaching or treatment session in progress</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="sec-pad band-paper" id="intro">
-    <div class="wrap intro-inner skew-block">
-      <p>Indian in Prague brings together four things rarely offered in one place: learning, practice, travel and authentic products. Whether you're taking your first yoga class, booking an Ayurvedic consultation, planning a journey to India, or simply want genuine Ayurvedic oils delivered across Europe — this is your starting point.</p>
-      <p>We work with the same primary-source knowledge of yoga, Ayurveda and Indian spirituality that has guided seekers for centuries, adapted thoughtfully for modern European life — in Prague and beyond.</p>
-      <blockquote class="pull">"Work is worship."<cite>— Haidakhan Babaji</cite></blockquote>
-    </div>
-  </section>
+  <!-- The #intro section (two paragraphs and the "Work is worship" pull quote) was removed
+       2026-08-17: it restated what the hero and #offer already say, and sat between them as a
+       full screen of prose before the visitor reached anything actionable. Nothing links to
+       #intro, so no anchor breaks. -->
 
   <!-- WHAT WE OFFER -->
   <section class="sec-pad band-sand" id="offer">
     <div class="wrap">
+      <!-- Eyebrow and hook removed 2026-08-17 as redundant: the headline already says what the
+           section is, and the three cards below say it again in detail. -->
       <div class="sec-head">
-        <div class="eyebrow"><strong>WHAT WE OFFER</strong><span>three spaces, one philosophy</span></div>
         <h2 class="kinetic-title">
           <span class="line-mask"><span class="line-mask-inner">Learn, travel, practise,</span></span>
           <span class="line-mask"><span class="line-mask-inner">and bring it home.</span></span>
         </h2>
-        <p class="hook">Each space stands on its own — take whichever pieces are useful to you, in whatever order suits your life.</p>
       </div>
 
       <div class="cards-grid skew-block">
         <article class="card" data-magnetic="true">
-          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--terracotta-deep)" stroke-width="1.5"><path d="M16 4 C10 4 8 10 12 13 C6 14 4 20 9 24 C13 27 19 27 23 24 C28 20 26 14 20 13 C24 10 22 4 16 4Z"/><path d="M16 13 L16 27"/></svg></div>
           <div class="tag">Learn &amp; Practise</div>
           <h3>Courses, Treatments &amp; Personal Sessions</h3>
           <p class="hook">Yoga, Ayurveda and meditation from authentic, source-based knowledge — in group classes, or one-to-one.</p>
@@ -1167,11 +1901,10 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
             <li>Workshops and structured courses</li>
             <li>Ayurvedic consultations, treatments and marma therapy</li>
           </ul>
-          <a href="https://wa.me/420777558262?text=Hi!%20I'd%20like%20to%20talk%20to%20your%20Ayurveda%20%26%20Naturopathy%20experts%20about%20courses%2C%20treatments%20or%20a%20personal%20session." class="btn-text" target="_blank" rel="noopener">Talk to Our Ayurveda &amp; Naturopathy Experts <span class="arrow">→</span></a>
+          <a href="https://wa.me/420777558262?text=Hi!%20I'd%20like%20to%20talk%20to%20your%20Ayurveda%20%26%20Naturopathy%20experts%20about%20courses%2C%20treatments%20or%20a%20personal%20session." class="btn-text" target="_blank" rel="noopener">Talk to Ayurveda &amp; Naturopathy Experts <span class="arrow">→</span></a>
         </article>
 
         <article class="card" data-magnetic="true">
-          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--moss-deep)" stroke-width="1.5"><path d="M4 20 C10 10 22 8 28 16 C22 14 12 16 8 24 Z"/><path d="M8 24 L4 28"/></svg></div>
           <div class="tag">Travel</div>
           <h3>Journeys to India</h3>
           <p class="hook">Small-group, carefully guided trips for yoga, Ayurveda and genuine cultural immersion — not a package tour.</p>
@@ -1185,7 +1918,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         </article>
 
         <article class="card" data-magnetic="true">
-          <div class="icon-blob"><svg viewBox="0 0 32 32" fill="none" stroke="var(--terracotta-deep)" stroke-width="1.5"><path d="M16 27 C16 27 6 20 6 12 C6 7 11 5 16 10 C21 5 26 7 26 12 C26 20 16 27 16 27Z"/></svg></div>
           <div class="tag">Products</div>
           <h3>Authentic Indian &amp; Ayurvedic Goods</h3>
           <p class="hook">Genuine products sourced from trusted producers in India, shipped across Europe.</p>
@@ -1206,7 +1938,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     <div class="sec-pad">
       <div class="wrap">
         <div class="sec-head">
-          <div class="eyebrow"><strong>TRIPS TO INDIA</strong><span>small-group and private journeys</span></div>
           <h2 class="kinetic-title">
             <span class="line-mask"><span class="line-mask-inner">Six ways to go deeper.</span></span>
           </h2>
@@ -1218,7 +1949,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b2">
             <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala coast" loading="lazy">
-            <span class="cap">Kerala coast / Himalayan foothills</span>
           </div>
           <div class="loc">KERALA · HIMALAYAS</div>
           <h3>Panchakarma &amp; Ayurveda Retreat</h3>
@@ -1228,7 +1958,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b3">
             <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Rishikesh Ganges" loading="lazy">
-            <span class="cap">The Ganges, Rishikesh</span>
           </div>
           <div class="loc">RISHIKESH</div>
           <h3>Yoga at the Source</h3>
@@ -1238,7 +1967,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b4">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Chopta Himalayas" loading="lazy">
-            <span class="cap">Himalayan scenery, Chopta</span>
           </div>
           <div class="loc">RISHIKESH · CHOPTA</div>
           <h3>Jog Sadhana</h3>
@@ -1248,7 +1976,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b2">
             <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa sunset coast" loading="lazy">
-            <span class="cap">Jaipur architecture / Goa coast</span>
           </div>
           <div class="loc">DELHI · AGRA · JAIPUR · GOA</div>
           <h3>Golden Triangle &amp; Goa</h3>
@@ -1258,7 +1985,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b3">
             <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Nepal monastery" loading="lazy">
-            <span class="cap">Himalayan monastery, Nepal</span>
           </div>
           <div class="loc">NEPAL</div>
           <h3>Himalayan Spiritual Journey</h3>
@@ -1268,7 +1994,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
         <article class="card trip">
           <div class="art-blob b4">
             <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Private meditation retreat" loading="lazy">
-            <span class="cap">Your dates, your group</span>
           </div>
           <div class="loc">TAILORED</div>
           <h3>Private &amp; Corporate Retreats</h3>
@@ -1296,7 +2021,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     <div class="sec-pad">
       <div class="wrap">
         <div class="sec-head">
-          <div class="eyebrow"><strong>SHOP BY CATEGORY</strong><span>authentic Indian &amp; ayurvedic products</span></div>
           <h2 class="kinetic-title">
             <span class="line-mask"><span class="line-mask-inner">Eight categories, sourced with care.</span></span>
           </h2>
@@ -1357,7 +2081,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   <!-- PHILOSOPHY -->
   <section class="philosophy on-void" id="philosophy">
     <div class="wrap philosophy-top">
-      <div class="eyebrow"><strong>OUR PHILOSOPHY</strong><span>what guides how we work</span></div>
       <div class="word kinetic-title">
         <span class="line-mask"><span class="line-mask-inner">Truth, Simplicity, Love.</span></span>
       </div>
@@ -1425,20 +2148,16 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   <section class="sec-pad band-sand" id="about">
     <div class="wrap about-grid">
       <div class="art-blob b2">
-        <img src="https://images.unsplash.com/photo-1507398941214-572c25f4b1dc?auto=format&fit=crop&w=800&q=80" alt="Founder portrait" loading="lazy">
-        <span class="cap">Founder portrait</span>
+        <!-- PLACEHOLDER 2026-08-17, pending a real founder portrait. The previous image — a
+             man weight-training in a gym — described a different business entirely. -->
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?auto=format&fit=crop&w=800&q=80" alt="Woman seated in meditation posture" loading="lazy">
       </div>
       <div>
-        <div class="eyebrow"><strong>WHY PRAGUE, WHY US</strong><span>founder &amp; practitioner</span></div>
         <h2 class="kinetic-title">
           <span class="line-mask"><span class="line-mask-inner">Closing the gap between</span></span>
           <span class="line-mask"><span class="line-mask-inner">India and Europe.</span></span>
         </h2>
         <p>Indian in Prague exists to close the gap between authentic Indian spiritual and wellness traditions and the growing European interest in them. Based in Prague, we serve the local and wider European community directly — no need to travel to India to begin, though we'll gladly take you there when you're ready.</p>
-        <div class="bio-card">
-          <div class="lbl">Founder note — to personalise before publishing</div>
-          <p>This space is for your own voice: where you trained, how long, one concrete credential or lineage detail, and why Prague specifically.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -1447,7 +2166,6 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
   <section class="sec-pad band-paper" id="testimonials">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow"><strong>TESTIMONIALS</strong><span>in their own words</span></div>
         <h2 class="kinetic-title">
           <span class="line-mask"><span class="line-mask-inner">What changed for them.</span></span>
         </h2>
@@ -1469,11 +2187,11 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="sec-pad band-sand" id="faq">
+  <!-- FAQ — now the page's closing section, carrying the dark treatment the final CTA used to
+       own: no band colour, so the WebGL background shows through. -->
+  <section class="sec-pad on-void faq-void" id="faq">
     <div class="wrap">
       <div class="sec-head">
-        <div class="eyebrow"><strong>FREQUENTLY ASKED</strong><span>questions before you begin</span></div>
         <h2>Good to know.</h2>
       </div>
       <div class="faq-list">
@@ -1501,64 +2219,100 @@ footer.site { background: var(--void-deep); color: var(--cream); padding: var(--
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="final-cta on-void" id="cta">
-    <div class="wrap inner">
-      <div class="eyebrow"><strong>BEGIN</strong></div>
-      <h2 class="kinetic-title">
-        <span class="line-mask"><span class="line-mask-inner">Begin where you are.</span></span>
-      </h2>
-      <p>Whether you want to join a class, book a consultation, order Ayurvedic products, or start planning a trip to India — start with a conversation.</p>
-      <div class="ctas">
-        <a href="#contact" class="btn btn-primary" data-badge="BEGIN" data-magnetic="true">Book a consultation</a>
-        <a href="#offer" class="btn btn-ghost" data-magnetic="true">Explore the offerings</a>
-      </div>
-    </div>
-  </section>
+  <!-- The #cta section ("Begin where you are.") was removed 2026-08-17. Its dark treatment moved
+       up onto the FAQ above, so the page still closes on the void rather than on a flat sand
+       band, and the footer — which carries the same two calls to action plus the WhatsApp
+       button — now follows the FAQ directly. -->
 
 </main>
 
-<!-- FOOTER -->
+<!-- FOOTER
+     Rebuilt 2026-08-17 as the shared pattern for every page on the site; only the colours are
+     meant to change per page (they all resolve from --foot-* below).
+
+     What went, and why:
+     · The lede repeated the sentence the final CTA had just made. One sentence stays, rewritten
+       to say what the business is and where it is — the line that gives search engines and AI
+       answers their local-business context, which the old "Ready to begin?" copy did not.
+     · "Email instead" as a button: the address itself is a link two columns over, and two
+       buttons of near-equal weight makes neither one the action. WhatsApp is the one CTA now.
+     · WhatsApp appeared twice (button + list item). Once.
+     · The site links appeared twice — a "Elsewhere on this site" column AND a near-identical
+       back-nav row underneath it. One nav, carrying aria-current for the page you are on.
+     · The two-line legal block is one line.
+
+     Three columns rather than the old three-plus-two-rows: identity and action, where to go,
+     how to reach a person. Everything is a 44px target and stacks to one column on a phone. -->
 <footer class="site" id="contact">
-  <div class="wrap foot-grid">
-    <div>
-      <div class="foot-word">Indian in Prague <em>· Spirituality</em></div>
-      <p class="foot-lede">Ready to begin? Whether you want to join a class, book a consultation, order Ayurvedic products, or start planning a trip to India — get in touch.</p>
-      <div class="newsletter">
-        <a class="btn btn-primary" href="https://wa.me/420777558262?text=Hi!%20I'd%20like%20to%20hear%20about%20upcoming%20yoga%2C%20Ayurveda%20and%20meditation%20dates%20in%20Prague." target="_blank" rel="noopener">Message on WhatsApp</a>
-        <a class="btn btn-ghost" href="mailto:helloayursen@gmail.com?subject=Spirituality%20%E2%80%94%20keep%20me%20posted">Email instead</a>
+  <div class="wrap foot">
+    <!-- One sentence, written at site level rather than page level, so the identical block sits
+         on Wardrobe and Diaries without a word changing. The brand line above it went: the nav
+         below already highlights where you are, and the wordmark is in the header.
+
+         The two channel chips sit beside the sentence rather than down in the bottom bar: that
+         pairs the claim with the way to act on it, and leaves the bottom rule for the two lines
+         that are notes about the site rather than things to do. -->
+    <div class="foot-intro">
+      <p class="foot-lede">South Asian clothes, jewellery, home goods, food and spiritual practices in Europe. A real field guide with the goods and services to match.</p>
+      <div class="foot-reach">
+        <a class="chip wa" href="https://wa.me/420777558262?text=Hi!%20I%20found%20you%20on%20indianinprague.jains.es%20and%20I%20have%20a%20question." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+          WhatsApp
+        </a>
+        <a class="chip mail" href="mailto:helloayursen@gmail.com?subject=Hello%20from%20indianinprague.jains.es">
+          <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="2.6" y="4.8" width="18.8" height="14.4" rx="2.4"/><path d="m3.4 6.6 8.6 6.2 8.6-6.2"/></svg>
+          Email
+        </a>
       </div>
     </div>
-    <div class="foot-col">
-      <h5>Get in touch</h5>
-      <a class="item" href="mailto:helloayursen@gmail.com">helloayursen@gmail.com</a>
-      <a class="item" href="https://wa.me/420777558262" target="_blank" rel="noopener">WhatsApp</a>
-      <span class="item">Prague, Czech Republic</span>
-    </div>
-    <div class="foot-col">
-      <h5>Elsewhere on this site</h5>
-      <a class="item" href="/">Home</a>
-      <a class="item" href="/wardrobe">The wardrobe</a>
-      <a class="item" href="/diaries">The diaries</a>
-    </div>
-  </div>
-  <div class="wrap foot-back">
-    <a class="back-home" href="/">← Indian in Prague</a>
-    <nav class="back-nav" aria-label="Back to the rest of the site">
-      <a href="/wardrobe">Wardrobe</a>
-      <a href="/spirituality" aria-current="page">Spirituality</a>
-      <a href="/diaries">Diaries</a>
+
+    <nav class="foot-nav" aria-label="Footer">
+      <div class="foot-col">
+        <a class="head" href="/wardrobe">Wardrobe</a>
+        <a class="item" href="/clothes">Clothes</a>
+        <a class="item" href="/jewellery">Jewellery</a>
+        <a class="item" href="/home-decor">Home decor</a>
+        <a class="item" href="/books">Books</a>
+      </div>
+      <div class="foot-col">
+        <a class="head" href="/spirituality" aria-current="page">Spirituality</a>
+        <a class="item" href="/spirituality#offer">Courses &amp; treatments</a>
+        <a class="item" href="/spirituality#trips">Journeys to India</a>
+        <a class="item" href="/spirituality#meditation">Chakras</a>
+        <a class="item" href="/ritual-objects">Ritual objects</a>
+      </div>
+      <div class="foot-col">
+        <a class="head" href="/diaries">Diaries</a>
+        <a class="item" href="/diaries#food">Restaurants</a>
+        <a class="item" href="/clothes#vinted">Vinted closet</a>
+        <a class="item" href="/">Home</a>
+      </div>
     </nav>
   </div>
+
   <div class="wrap foot-bottom">
-    <span>© 2026 Indian in Prague. Prague / India.</span>
-    <span>No cookies and no analytics. This page loads fonts, images and animation libraries from third-party CDNs.</span>
+    <span class="foot-made">Made with ❤️ using AI, with a human in the loop</span>
+    <span class="foot-note">No cookies, no analytics.</span>
   </div>
 </footer>
 
 <!-- ============================================================
    SCRIPT ARCHITECTURE & ENGINE EXECUTION
    ============================================================ -->
+
+<!-- Self-hosted, and placed HERE rather than in <head>, which is the whole point: the
+     browser now parses and paints the entire page before it spends a byte on animation.
+     Moved rather than given defer= because the engine below is an inline script, and inline
+     scripts run at parse time — ahead of any deferred script. Marking these defer would
+     mean GSAP, ScrollTrigger, Lenis and THREE were all still undefined at the moment the
+     engine reached for them. Ordinary synchronous tags in source order, sitting after the
+     content instead of in front of it, give the same first-paint win with none of that risk.
+     Order matters: ScrollTrigger registers itself onto gsap, so gsap must precede it. -->
+<script src="assets/vendor/lenis-1.1.14.min.js"></script>
+<script src="assets/vendor/gsap-3.12.5.min.js"></script>
+<script src="assets/vendor/ScrollTrigger-3.12.5.min.js"></script>
+<script src="assets/vendor/three-r128.min.js"></script>
+
 <script>
 (function() {
   'use strict';

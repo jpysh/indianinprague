@@ -18,9 +18,15 @@
 //   node scripts/indexnow.mjs --dry    # print what would be sent, send nothing
 
 import { readFile, readdir } from "node:fs/promises";
+import path from "node:path";
 
 const HOST = "indianinprague.jains.es";
-const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
+// path.resolve(import.meta.dirname, ...), matching every other script here. It used to be
+// `new URL("..", import.meta.url).pathname`, which is a URL pathname: percent-ENCODED. A repo
+// checked out to a directory with a space in it resolves to ".../my%20repo" and every read
+// fails. Same family of bug as the absolute path that was hardcoded in build-jsonld.mjs until
+// 17 Aug 2026 and broke the Cloudflare build — resolve from the module, always.
+const ROOT = path.resolve(import.meta.dirname, "..");
 const DRY = process.argv.includes("--dry");
 
 // The key is proved by hosting <key>.txt at the site root containing the key itself;
