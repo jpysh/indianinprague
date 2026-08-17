@@ -65,15 +65,48 @@ cd "$(dirname "$0")/.."
 
 FULL=""
 LOCAL=""
+IF_NEEDED=""
 for arg in "$@"; do
   case "$arg" in
     --full)  FULL="--full" ;;
     --local) LOCAL="1" ;;
+    --if-needed) IF_NEEDED="1" ;;
     *) echo "unknown option: $arg" >&2; exit 2 ;;
   esac
 done
 
 step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
+
+# ONCE A DAY, WHENEVER THE MACHINE HAPPENS TO BE ON (added 17 Aug 2026)
+# ---------------------------------------------------------------------
+# StartCalendarInterval alone was not a daily guarantee, and the day that proved it was
+# 17 Aug 2026: the Mac was shut down at 23:50 and booted at 08:21, so at 07:15 there was
+# nothing running to fire. launchd does NOT replay a calendar event missed while the
+# machine was OFF (it does after sleep — this Mac never sleeps, so that path never helped).
+# `launchctl print` read `runs = 0` and the site simply did not update that day. Silently:
+# no error, no log line, because the job that would have written the log never started.
+#
+# So the schedule is now three overlapping triggers in the plist — RunAtLoad, a 07:15
+# calendar entry, and an hourly StartInterval — and THIS FLAG is what stops that from
+# meaning three publishes a day. Each trigger passes --if-needed; the first run to succeed
+# on a given date stamps the date, and every later trigger that day exits here in
+# milliseconds. Turn the Mac on at 3pm and the day's sync happens at 3pm. Leave it on and
+# nothing changes: 07:15, as before.
+#
+# The hourly trigger is also the retry. A run fired at boot can fail simply because the
+# network is not up yet, and a failed run deliberately does NOT stamp the date — so the
+# next hour tries again, and keeps trying, until one succeeds. That is the whole recovery
+# mechanism; there is no other retry around the Vinted fetch.
+#
+# A HAND-TYPED `./scripts/publish.sh` IS NEVER BLOCKED. The flag is opt-in and only the
+# launchd job passes it, because "publish now" typed by a person means now, not "only if
+# the robot has not already been here today".
+STAMP="$(dirname "$0")/../.sync-stamp"
+TODAY=$(date +%Y-%m-%d)
+if [ -n "$IF_NEEDED" ] && [ "$(cat "$STAMP" 2>/dev/null)" = "$TODAY" ]; then
+  echo "already published today ($TODAY) — nothing to do"
+  exit 0
+fi
 
 # Checked here, in the first second, rather than at step 9 — a git problem should surface
 # before the Vinted sync and the image derivation, not after six minutes of work that is
@@ -217,6 +250,13 @@ fi
 if curl -fsS -o /dev/null "https://indianinprague.jains.es/wardrobe.html"; then
   echo "live origin healthy"
   node scripts/indexnow.mjs
+
+  # Stamped HERE and nowhere else: after the deploy is up and the live site has answered.
+  # Anything that stops the run short leaves the stamp on yesterday, which is what turns
+  # the hourly trigger into a retry instead of a silent daily miss. Never stamped for
+  # --local, which deploys nothing.
+  echo "$TODAY" > "$STAMP"
+  echo "stamped $TODAY — the launchd triggers will now no-op until tomorrow"
 else
   echo "⚠ indianinprague.jains.es did not answer — skipping IndexNow so crawlers are not sent to a broken build" >&2
   exit 1

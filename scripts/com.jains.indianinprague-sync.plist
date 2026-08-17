@@ -18,29 +18,57 @@
 
   07:15 rather than midnight: the ECB publishes its daily reference rate on CET working
   mornings, so an early-morning run picks up the current day's rate rather than yesterday's.
-  RunAtLoad is false so enabling it does not immediately fire a deploy.
+
+  It fires at 07:15, at startup, and hourly — all three passing --if-needed, so the site
+  publishes AT MOST ONCE A DAY and at least once on any day the machine is switched on at
+  all. Before 17 Aug 2026 this was 07:15 only, and a Mac that happened to be powered off at
+  that minute simply skipped the day with no error anywhere.
+
+  After editing this file, reload it or launchd keeps running the old copy:
+    cp scripts/com.jains.indianinprague-sync.plist ~/Library/LaunchAgents/
+    launchctl unload ~/Library/LaunchAgents/com.jains.indianinprague-sync.plist
+    launchctl load   ~/Library/LaunchAgents/com.jains.indianinprague-sync.plist
 -->
 <plist version="1.0">
 <dict>
   <key>Label</key>
   <string>com.jains.indianinprague-sync</string>
 
+  <!-- --if-needed makes every trigger below idempotent for the day: the first run to
+       finish successfully stamps the date in .sync-stamp and the rest exit immediately.
+       See the block at the top of publish.sh for why there are three of them. -->
   <key>ProgramArguments</key>
   <array>
     <string>/Users/webserver/code/indianinprague/scripts/publish.sh</string>
+    <string>--if-needed</string>
   </array>
 
   <key>WorkingDirectory</key>
   <string>/Users/webserver/code/indianinprague</string>
 
+  <!-- The normal time. Kept for the ECB reason above, and it is what fires on any day the
+       Mac is already switched on at 07:15. -->
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key><integer>7</integer>
     <key>Minute</key><integer>15</integer>
   </dict>
 
+  <!-- Catch-up trigger 1: startup/login. On 17 Aug 2026 the Mac was off at 07:15 and
+       launchd skipped the day outright rather than running the job late — a calendar event
+       missed while the machine is POWERED OFF is not replayed. So the job now also fires
+       when the machine comes up, and --if-needed decides whether there is anything to do.
+       This was `false` precisely so that loading the agent could not fire a deploy; that
+       is now handled properly by the date stamp instead of by never running. -->
   <key>RunAtLoad</key>
-  <false/>
+  <true/>
+
+  <!-- Catch-up trigger 2: hourly, and the only retry in the whole pipeline. Two jobs:
+       a boot-time run that failed because the network was not up yet gets another go an
+       hour later, and a Mac switched on at 3pm publishes at 3pm instead of waiting for
+       tomorrow. On a day that already published, this costs one date comparison. -->
+  <key>StartInterval</key>
+  <integer>3600</integer>
 
   <!-- publish.sh shells out to node, docker and magick; launchd's default PATH has none
        of them. -->
