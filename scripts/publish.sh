@@ -111,7 +111,12 @@ step "7/10 bump asset cache tokens"
 node scripts/bump-assets.mjs
 
 step "8/10 stage dist/"
-node scripts/build-dist.mjs
+# --no-generate because steps 3-7 above ARE the generators build-dist would otherwise run
+# itself. It gained that ability on 17 Aug 2026 so that a plain `git push` — which triggers
+# Workers Builds, whose build command is just `npm ci && node scripts/build-dist.mjs` —
+# regenerates the site instead of deploying whatever HTML was committed. See the header of
+# build-dist.mjs. Here that work is already done, so the flag skips a duplicate pass.
+node scripts/build-dist.mjs --no-generate
 
 if [ -n "$LOCAL" ]; then
   printf '\n\033[1m-- local only: skipping deploy and IndexNow\033[0m\n'

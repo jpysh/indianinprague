@@ -22,9 +22,11 @@
 // from the deployment too, rather than lingering forever the way an append-only upload
 // directory would.
 //
-//   node scripts/build-dist.mjs
+//   node scripts/build-dist.mjs                 # regenerates the site, then stages it
+//   node scripts/build-dist.mjs --no-generate   # stage only; the caller already built
 //
-// Run it after every generator and before `wrangler deploy`.
+// Run it before `wrangler deploy`. It now runs the pure-node generators itself — see the
+// GENERATORS block below for why that moved here from publish.sh.
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -69,6 +71,56 @@ async function syncDir(src, dest) {
   }
   await rm(dest, { recursive: true, force: true });
   await cp(src, dest, { recursive: true });
+}
+
+// ---------------------------------------------------------------------------
+// Regenerate before staging, unless the caller already did it.
+//
+// WHY THIS IS HERE AND NOT ONLY IN publish.sh (added 17 Aug 2026)
+// ---------------------------------------------------------------
+// Two publish paths, and until now only one of them built anything. `publish.sh` runs ten
+// steps; a push to `main` runs Cloudflare Workers Builds, whose build command is
+// `npm ci && node scripts/build-dist.mjs` — this file and nothing else. So a push deployed
+// whatever HTML happened to be committed, and every generator was skipped.
+//
+// That failed quietly, in the worst way available. Edit a stylesheet, push: the new CSS
+// uploads, the HTML still carries yesterday's `?v=` token, and the edge keeps serving the
+// old file from cache. The deploy is green, the change is invisible, and the next morning's
+// 07:15 run fixes it by accident — so the symptom is "I pushed it and nothing happened,
+// and then it worked overnight", which is nearly impossible to attribute.
+//
+// Running the generators HERE fixes both paths at once and needs no change to the
+// Cloudflare dashboard, because the existing build command already calls this file. An
+// intraday push now deploys exactly what a 07:15 run would.
+//
+// Only the four PURE-NODE generators are listed. The other three cannot run in Cloudflare's
+// container and must not be attempted:
+//   sync-vinted     needs a residential IP (DataDome) and ~500 subrequests
+//   build-images    shells out to ImageMagick and cwebp
+//   build-inventory writes a local-only page that is never staged anyway
+// Everything the four below read is committed: data/*.json and images/derived/manifest.json.
+// That is what makes a cloud build reproduce a Mac build exactly.
+//
+// A generator that throws fails the build, deliberately. The alternative — carry on with
+// stale committed HTML — is the silent divergence this whole block exists to end. A red
+// build is visible and costs one push; a green build serving the wrong bytes is not.
+const GENERATORS = [
+  "build-shop.mjs",    // catalog -> shop pages, and the SHOP:* regions of index/clothes
+  "build-jsonld.mjs",  // structured data, including the SKUs
+  "build-sitemap.mjs", // URL list, which depends on which pages build-shop just wrote
+  "bump-assets.mjs",   // MUST BE LAST: it hashes the assets and stamps ?v= into the HTML
+];
+
+// publish.sh passes --no-generate: it has already run all four, in this order, as steps
+// 3-7, and re-running them would be several seconds of identical work on every publish.
+if (process.argv.includes("--no-generate")) {
+  console.log("--no-generate: staging the tree as-is (caller already built it)");
+} else {
+  for (const g of GENERATORS) {
+    const { stdout } = await run(process.execPath, [path.join(ROOT, "scripts", g)], { cwd: ROOT });
+    const last = stdout.trim().split("\n").filter(Boolean).pop() || "ok";
+    console.log(`  ${g} — ${last}`);
+  }
 }
 
 // Pages that exist in the repo root but must never be served.
