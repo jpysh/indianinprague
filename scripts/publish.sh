@@ -172,7 +172,12 @@ step "9/10 commit what is about to be published"
 # ':!inventory.html' excludes the stock-taking view for the same reason build-dist withholds
 # it from the upload: cost prices and unlisted stock. It is tracked from before that rule
 # existed, so it is excluded explicitly here rather than silently riding along on the glob.
-PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images/derived edge data )
+# content/ joined this list on 17 Aug 2026, when the Diaries stopped pointing at two other
+# pages and started holding the writing itself. It is the same argument that put data/ here:
+# it is a master the pages are generated FROM, and committing diaries.html without the prose
+# it was built from would record a result with no cause. It is never uploaded — build-dist
+# ships root .html/.txt, assets/ and images/derived/ only — so it is source, not output.
+PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images/derived edge data content )
 
 # `git add` first, and not only because of modified files: build-images writes NEW
 # derivatives every time a listing gains a photo, and build-shop can write a page that did

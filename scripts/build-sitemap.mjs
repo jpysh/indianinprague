@@ -27,14 +27,12 @@ const PAGES = [
   // the shop shelf that used to hold this URL — that shelf is /ritual-objects.html now.
   { file: "spirituality.html", loc: "/spirituality", priority: "0.8", changefreq: "monthly" },
   { file: "clothes.html", loc: "/clothes", priority: "0.9", changefreq: "daily" },
-  { file: "restaurants.html", loc: "/restaurants", priority: "0.9", changefreq: "monthly" },
-  { file: "diaries.html", loc: "/diaries", priority: "0.7", changefreq: "monthly" },
-  {
-    file: "article-contemporary-indian-wear.html",
-    loc: "/article-contemporary-indian-wear",
-    priority: "0.6",
-    changefreq: "yearly",
-  },
+  // /restaurants and /article-contemporary-indian-wear were folded into /diaries on
+  // 17 Aug 2026 and both 301 to it (edge/_redirects). A sitemap must not list a URL that
+  // redirects — it tells a crawler the redirect target is not the canonical one — so the
+  // Diaries carries their priority now as well as its own. It holds every review and the
+  // long-form dispatch inline, which is why it went 0.7 -> 0.9.
+  { file: "diaries.html", loc: "/diaries", priority: "0.9", changefreq: "weekly" },
 ];
 
 // The category pages build-shop.mjs emits. Which of them exist depends on what is actually

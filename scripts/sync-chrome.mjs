@@ -50,9 +50,10 @@ const PAGES = {
   // Add it once the page has been ported onto the site's own chrome and stylesheet. Until
   // then its navigation is its own, which is also why it currently has no links back to the
   // rest of the site.
-  "diaries.html": "diaries",
-  "restaurants.html": "diaries",
-  "article-contemporary-indian-wear.html": "diaries",
+  // diaries.html is NOT listed: scripts/build-diaries.mjs writes that page from scratch and
+  // lifts the header and footer out of index.html itself, marking "diaries" as it goes. It
+  // used to be here alongside restaurants.html and the article — both of those were folded
+  // into the Diaries on 17 Aug 2026 and no longer exist.
 };
 
 const HEADER = /<header class="site">[\s\S]*?<\/header>/;

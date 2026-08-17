@@ -228,109 +228,17 @@ const graphs = {
     },
   ],
 
-  "restaurants.html": async () => [
-    {
-      "@type": "CollectionPage",
-      "@id": `${SITE}/restaurants#webpage`,
-      url: `${SITE}/restaurants`,
-      name: "Indian restaurants in Prague — honest reviews",
-      isPartOf: { "@id": `${SITE}/#website` },
-      inLanguage: "en",
-    },
-    breadcrumb([
-      ["Home", `${SITE}/`],
-      ["Restaurants", `${SITE}/restaurants`],
-    ]),
-    {
-      "@type": "ItemList",
-      name: "Indian and vegan restaurants in Prague, reviewed",
-      itemListElement: [
-        restaurantReview(
-          "Annamalai",
-          "Nové Město",
-          "South Indian",
-          "Tastes like home",
-          "South Indian sit-down restaurant in Nové Město. The closest thing in Prague to food as it is actually cooked in South India.",
-        ),
-        restaurantReview(
-          "INDelicious Bistro",
-          "Nusle",
-          "Indian",
-          "Street food",
-          "North and South Indian street food in Nusle — quick bites and full meals.",
-        ),
-        restaurantReview(
-          "Pastva",
-          "Anděl",
-          "Vegan",
-          "Fully vegan",
-          "Fully vegan restaurant in Anděl.",
-        ),
-        restaurantReview(
-          "Palo Verde Bistro",
-          "Žitná",
-          "Vegan",
-          "Fully vegan",
-          "Fully vegan bistro on Žitná.",
-        ),
-        restaurantReview(
-          "Dosa Dosa",
-          "Újezd",
-          "South Indian vegan",
-          "Fully vegan",
-          "Fully vegan South Indian dosa specialist on Újezd.",
-        ),
-      ].map((r, i) => ({ "@type": "ListItem", position: i + 1, item: r })),
-    },
-  ],
-
-  "diaries.html": async () => [
-    {
-      "@type": "Blog",
-      "@id": `${SITE}/diaries#blog`,
-      url: `${SITE}/diaries`,
-      name: "Tram 22 Diaries",
-      description:
-        "A journal about modern Indian fashion, curated Vinted finds, and life between India and Prague.",
-      isPartOf: { "@id": `${SITE}/#website` },
-      author: { "@id": `${SITE}/#author` },
-      inLanguage: "en",
-      // Points at the dispatch's own @id rather than restating it, so the two pages
-      // describe one article between them instead of two competing copies.
-      blogPost: [{ "@id": `${SITE}/article-contemporary-indian-wear#article` }],
-    },
-    breadcrumb([
-      ["Home", `${SITE}/`],
-      ["Tram 22 Diaries", `${SITE}/diaries`],
-    ]),
-  ],
-
-  "article-contemporary-indian-wear.html": async () => [
-    {
-      "@type": "Article",
-      "@id": `${SITE}/article-contemporary-indian-wear#article`,
-      url: `${SITE}/article-contemporary-indian-wear`,
-      headline: "Contemporary Indian wear on the streets of Prague",
-      description:
-        "Not Goa-hippie, not festival sari. The new age of Indian wear — and exactly how to style it into a European wardrobe.",
-      image: `${SITE}/images/derived/IMG_5564-1200.jpg`,
-      author: { "@id": `${SITE}/#author` },
-      publisher: { "@id": `${SITE}/#author` },
-      isPartOf: { "@id": `${SITE}/diaries#blog` },
-      datePublished: PUBLISHED,
-      dateModified: MODIFIED,
-      inLanguage: "en",
-      articleSection: "Fashion",
-      keywords:
-        "contemporary Indian wear, modern Indian fashion Prague, block print, slow fashion, handloom",
-      wordCount: 0, // filled in below from the actual body copy
-    },
-    breadcrumb([
-      ["Home", `${SITE}/`],
-      ["Tram 22 Diaries", `${SITE}/diaries`],
-      ["Contemporary Indian wear", `${SITE}/article-contemporary-indian-wear`],
-    ]),
-  ],
+  // restaurants.html, diaries.html and article-contemporary-indian-wear.html were handled
+  // here until 17 Aug 2026. The first and third no longer exist — their content was folded
+  // into /diaries and both URLs 301 to it (edge/_redirects). The Diaries is deliberately NOT
+  // in this table either: scripts/build-diaries.mjs writes that page from data/posts.json and
+  // emits its own graph — Blog, one BlogPosting per dispatch, an Article for the long read,
+  // and the five Review nodes the restaurants page used to carry.
+  //
+  // That is not a style preference, it is a collision. The loop below STRIPS every
+  // application/ld+json block from a page before inserting its own, so listing diaries.html
+  // here would silently delete the graph the diaries generator had just written. One owner
+  // per page.
 };
 
 for (const [file, build] of Object.entries(graphs)) {
