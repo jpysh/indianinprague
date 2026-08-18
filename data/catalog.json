@@ -1,12 +1,84 @@
 {
-  "syncedAt": "2026-08-17T22:40:13.227Z",
+  "syncedAt": "2026-08-18T22:53:56.731Z",
   "rate": {
-    "czkPerEur": 24.201,
-    "fetched": "2026-08-17",
+    "czkPerEur": 24.179,
+    "fetched": "2026-08-18",
     "source": "ECB"
   },
   "count": 143,
   "items": [
+    {
+      "id": "9698274032",
+      "title": "Retro top | Vintage top | Boho style | Mango Marble Print Long Sleeve Shirt",
+      "priceCzk": 95,
+      "priceEur": 4,
+      "brand": "Mango",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Coral",
+        "cs": "Korálová"
+      },
+      "category": "Fashion",
+      "vintedCategoryCs": "Ženy Blůzy",
+      "description": "Bust 40 inches / 101.6 cm\nLength 24 inches / 61 cm\nLight, viscose fabric, Marble print, Straight design, Rounded neck, Long buttoned sleeve. \nBeautiful flow and boho feel.",
+      "photo": "images/vinted-9698274032-1.jpg",
+      "photos": [
+        "images/vinted-9698274032-1.jpg",
+        "images/vinted-9698274032-2.jpg",
+        "images/vinted-9698274032-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9698274032-retro-top-vintage-top-boho-style-mango-marble-print-long-sleeve-shirt",
+        "es": "https://www.vinted.es/items/9698274032-retro-top-vintage-top-boho-style-mango-marble-print-long-sleeve-shirt",
+        "com": "https://www.vinted.com/items/9698274032-retro-top-vintage-top-boho-style-mango-marble-print-long-sleeve-shirt"
+      }
+    },
+    {
+      "id": "9696606450",
+      "title": "Apple Magic Trackpad (Lightning cord) White Multi-Touch Surface | Bluetooth Wireless Mouse",
+      "priceCzk": 2400,
+      "priceEur": 99,
+      "brand": "Apple",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "White",
+        "cs": "Bílá"
+      },
+      "category": "Uncategorised",
+      "vintedCategoryCs": "Elektronika Myši",
+      "description": "Brand new wireless Magic Trackpad.\nChord not included.\nHas a USB-C port.\nModel details here - https://www.apple.com/shop/product/mxk93am/a/magic-trackpad-usb%E2%80%91c-white-multi-touch-surface",
+      "photo": "images/vinted-9696606450-1.jpg",
+      "photos": [
+        "images/vinted-9696606450-1.jpg",
+        "images/vinted-9696606450-2.jpg",
+        "images/vinted-9696606450-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9696606450-apple-magic-trackpad-lightning-cord-white-multi-touch-surface-bluetooth-wireless-mouse",
+        "es": "https://www.vinted.es/items/9696606450-apple-magic-trackpad-lightning-cord-white-multi-touch-surface-bluetooth-wireless-mouse",
+        "com": "https://www.vinted.com/items/9696606450-apple-magic-trackpad-lightning-cord-white-multi-touch-surface-bluetooth-wireless-mouse"
+      }
+    },
     {
       "id": "9686505544",
       "title": "Vintage jewellery | retro jewellery | 925 Silver Bracelet | Amethyst and Pearl | boho",
@@ -32,7 +104,7 @@
         "images/vinted-9686505544-2.jpg",
         "images/vinted-9686505544-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -153,7 +225,7 @@
     },
     {
       "id": "9644821969",
-      "title": "Set of 2 Ceramic Vintage Baking Dish | Cosy Country Kitchen",
+      "title": "Set of 2 Ceramic Retro Vintage Baking Dish | Cosy Country Kitchen",
       "priceCzk": 195,
       "priceEur": 8,
       "brand": "Handmade Beauty",
@@ -176,15 +248,15 @@
         "images/vinted-9644821969-2.jpg",
         "images/vinted-9644821969-3.jpg"
       ],
-      "favourites": 71,
+      "favourites": 72,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9644821969-set-of-2-ceramic-vintage-baking-dish-cosy-country-kitchen",
-        "es": "https://www.vinted.es/items/9644821969-set-of-2-ceramic-vintage-baking-dish-cosy-country-kitchen",
-        "com": "https://www.vinted.com/items/9644821969-set-of-2-ceramic-vintage-baking-dish-cosy-country-kitchen"
+        "cz": "https://www.vinted.cz/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen",
+        "es": "https://www.vinted.es/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen",
+        "com": "https://www.vinted.com/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen"
       }
     },
     {
@@ -824,7 +896,7 @@
         "images/vinted-9602725968-2.jpg",
         "images/vinted-9602725968-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1148,7 +1220,7 @@
         "images/vinted-9602442603-2.jpg",
         "images/vinted-9602442603-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1193,42 +1265,6 @@
         "cz": "https://www.vinted.cz/items/9602413571-william-dalrymple-the-last-mughal-of-india-duff-cooper-prize-winner",
         "es": "https://www.vinted.es/items/9602413571-william-dalrymple-the-last-mughal-of-india-duff-cooper-prize-winner",
         "com": "https://www.vinted.com/items/9602413571-william-dalrymple-the-last-mughal-of-india-duff-cooper-prize-winner"
-      }
-    },
-    {
-      "id": "9597305543",
-      "title": "Mango Marble Print Boho Hippie Trippy Long Sleeve Shirt",
-      "priceCzk": 120,
-      "priceEur": 5,
-      "brand": "Mango",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": "Coral",
-        "cs": "Korálová"
-      },
-      "category": "Fashion",
-      "vintedCategoryCs": "Ženy Blůzy",
-      "description": "Bust 40 inches / 101.6 cm\nLength 24 inches / 61 cm\nLight, viscose fabric, Marble print, Straight design, Rounded neck, Long buttoned sleeve. Beautiful flow and boho feel.",
-      "photo": "images/vinted-9597305543-1.jpg",
-      "photos": [
-        "images/vinted-9597305543-1.jpg",
-        "images/vinted-9597305543-2.jpg",
-        "images/vinted-9597305543-3.jpg"
-      ],
-      "favourites": 0,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9597305543-mango-marble-print-boho-hippie-trippy-long-sleeve-shirt",
-        "es": "https://www.vinted.es/items/9597305543-mango-marble-print-boho-hippie-trippy-long-sleeve-shirt",
-        "com": "https://www.vinted.com/items/9597305543-mango-marble-print-boho-hippie-trippy-long-sleeve-shirt"
       }
     },
     {
@@ -1809,9 +1845,9 @@
     },
     {
       "id": "9562398817",
-      "title": "Greek Patterns Grey Glitter Sequin Lightweight Shawl",
-      "priceCzk": 500,
-      "priceEur": 21,
+      "title": "Retro Scarf | Boho Accessories | Greek Patterns Grey Glitter Sequin Lightweight Shawl",
+      "priceCzk": 399,
+      "priceEur": 17,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1838,9 +1874,9 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9562398817-greek-patterns-grey-glitter-sequin-lightweight-shawl",
-        "es": "https://www.vinted.es/items/9562398817-greek-patterns-grey-glitter-sequin-lightweight-shawl",
-        "com": "https://www.vinted.com/items/9562398817-greek-patterns-grey-glitter-sequin-lightweight-shawl"
+        "cz": "https://www.vinted.cz/items/9562398817-retro-scarf-boho-accessories-greek-patterns-grey-glitter-sequin-lightweight-shawl",
+        "es": "https://www.vinted.es/items/9562398817-retro-scarf-boho-accessories-greek-patterns-grey-glitter-sequin-lightweight-shawl",
+        "com": "https://www.vinted.com/items/9562398817-retro-scarf-boho-accessories-greek-patterns-grey-glitter-sequin-lightweight-shawl"
       }
     },
     {
@@ -1904,7 +1940,7 @@
         "images/vinted-9562257190-2.jpg",
         "images/vinted-9562257190-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1976,7 +2012,7 @@
         "images/vinted-9561780997-2.jpg",
         "images/vinted-9561780997-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2241,7 +2277,7 @@
     },
     {
       "id": "9529729646",
-      "title": "Handmade Unisex Himalayan Wool Hat with Earflaps 100% Soft Fleece Lining Beanie | Boho Rustic",
+      "title": "Handmade Himalayan Wool Hat with 100% Soft Fleece Lining Beanie | Boho Fashion | Vintage Retro",
       "priceCzk": 500,
       "priceEur": 21,
       "brand": "Indian",
@@ -2270,9 +2306,9 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9529729646-handmade-unisex-himalayan-wool-hat-with-earflaps-100-soft-fleece-lining-beanie-boho-rustic",
-        "es": "https://www.vinted.es/items/9529729646-handmade-unisex-himalayan-wool-hat-with-earflaps-100-soft-fleece-lining-beanie-boho-rustic",
-        "com": "https://www.vinted.com/items/9529729646-handmade-unisex-himalayan-wool-hat-with-earflaps-100-soft-fleece-lining-beanie-boho-rustic"
+        "cz": "https://www.vinted.cz/items/9529729646-handmade-himalayan-wool-hat-with-100-soft-fleece-lining-beanie-boho-fashion-vintage-retro",
+        "es": "https://www.vinted.es/items/9529729646-handmade-himalayan-wool-hat-with-100-soft-fleece-lining-beanie-boho-fashion-vintage-retro",
+        "com": "https://www.vinted.com/items/9529729646-handmade-himalayan-wool-hat-with-100-soft-fleece-lining-beanie-boho-fashion-vintage-retro"
       }
     },
     {
@@ -2444,7 +2480,7 @@
         "images/vinted-9493332709-2.jpg",
         "images/vinted-9493332709-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2637,7 +2673,7 @@
     },
     {
       "id": "9476315818",
-      "title": "Vintage Boho Sterling Silver Bead Necklace Choker Boho",
+      "title": "Vintage Jewellery | Boho jewellery | Sterling Silver Bead Necklace Choker | Retro",
       "priceCzk": 150,
       "priceEur": 6,
       "brand": "Accessories",
@@ -2666,9 +2702,9 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9476315818-vintage-boho-sterling-silver-bead-necklace-choker-boho",
-        "es": "https://www.vinted.es/items/9476315818-vintage-boho-sterling-silver-bead-necklace-choker-boho",
-        "com": "https://www.vinted.com/items/9476315818-vintage-boho-sterling-silver-bead-necklace-choker-boho"
+        "cz": "https://www.vinted.cz/items/9476315818-vintage-jewellery-boho-jewellery-sterling-silver-bead-necklace-choker-retro",
+        "es": "https://www.vinted.es/items/9476315818-vintage-jewellery-boho-jewellery-sterling-silver-bead-necklace-choker-retro",
+        "com": "https://www.vinted.com/items/9476315818-vintage-jewellery-boho-jewellery-sterling-silver-bead-necklace-choker-retro"
       }
     },
     {
@@ -2696,7 +2732,7 @@
         "images/vinted-9476069022-2.jpg",
         "images/vinted-9476069022-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2876,7 +2912,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2984,7 +3020,7 @@
         "images/vinted-9438031948-2.jpg",
         "images/vinted-9438031948-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3212,42 +3248,6 @@
       }
     },
     {
-      "id": "9395187190",
-      "title": "Kafka Metamorphosis and Other Stories Unsettling Modern Classics Penguin",
-      "priceCzk": 97,
-      "priceEur": 4,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Good",
-        "cs": "Dobrý"
-      },
-      "color": {
-        "en": "",
-        "cs": ""
-      },
-      "category": "Books",
-      "vintedCategoryCs": "Knihy, hudba, video Beletrie",
-      "description": "Kafka is regarded as one of the greatest writers of the twentieth century. This Penguin Modern Classics edition collects Metamorphosis alongside his other essential short fiction, surreal, darkly funny, and deeply unsettling. Influenced generations of writers. 3.95 stars on Goodreads. #kafka #classicliterature #penguinclassics",
-      "photo": "images/vinted-9395187190-1.jpg",
-      "photos": [
-        "images/vinted-9395187190-1.jpg",
-        "images/vinted-9395187190-2.jpg",
-        "images/vinted-9395187190-3.jpg"
-      ],
-      "favourites": 14,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9395187190-kafka-metamorphosis-and-other-stories-unsettling-modern-classics-penguin",
-        "es": "https://www.vinted.es/items/9395187190-kafka-metamorphosis-and-other-stories-unsettling-modern-classics-penguin",
-        "com": "https://www.vinted.com/items/9395187190-kafka-metamorphosis-and-other-stories-unsettling-modern-classics-penguin"
-      }
-    },
-    {
       "id": "9395169253",
       "title": "Marlon James A Brief History of Seven Killings Man Booker Prize Winner",
       "priceCzk": 148,
@@ -3452,7 +3452,7 @@
         "images/vinted-9395042890-2.jpg",
         "images/vinted-9395042890-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4330,8 +4330,8 @@
     {
       "id": "9328596973",
       "title": "Vegan Bros \"Eating Animals Is Weird\" Slogan T-Shirt",
-      "priceCzk": 120,
-      "priceEur": 5,
+      "priceCzk": 99,
+      "priceEur": 4,
       "brand": "Vegan Bros",
       "size": "S / 36 / 8",
       "sizeGroup": "S",
@@ -4352,7 +4352,7 @@
         "images/vinted-9328596973-2.jpg",
         "images/vinted-9328596973-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5108,7 +5108,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,

@@ -521,6 +521,70 @@
       "featured": false,
       "hidden": false,
       "soldAt": "2026-08-17"
+    },
+    {
+      "id": "9597305543",
+      "title": "Mango Marble Print Boho Hippie Trippy Long Sleeve Shirt",
+      "priceCzk": 120,
+      "priceEur": 5,
+      "brand": "Mango",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Coral",
+        "cs": "Korálová"
+      },
+      "category": "Fashion",
+      "vintedCategoryCs": "Ženy Blůzy",
+      "description": "Bust 40 inches / 101.6 cm\nLength 24 inches / 61 cm\nLight, viscose fabric, Marble print, Straight design, Rounded neck, Long buttoned sleeve. Beautiful flow and boho feel.",
+      "photo": "images/vinted-9597305543-1.jpg",
+      "photos": [
+        "images/vinted-9597305543-1.jpg",
+        "images/vinted-9597305543-2.jpg",
+        "images/vinted-9597305543-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-18"
+    },
+    {
+      "id": "9395187190",
+      "title": "Kafka Metamorphosis and Other Stories Unsettling Modern Classics Penguin",
+      "priceCzk": 97,
+      "priceEur": 4,
+      "brand": "",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Good",
+        "cs": "Dobrý"
+      },
+      "color": {
+        "en": "",
+        "cs": ""
+      },
+      "category": "Books",
+      "vintedCategoryCs": "Knihy, hudba, video Beletrie",
+      "description": "Kafka is regarded as one of the greatest writers of the twentieth century. This Penguin Modern Classics edition collects Metamorphosis alongside his other essential short fiction, surreal, darkly funny, and deeply unsettling. Influenced generations of writers. 3.95 stars on Goodreads. #kafka #classicliterature #penguinclassics",
+      "photo": "images/vinted-9395187190-1.jpg",
+      "photos": [
+        "images/vinted-9395187190-1.jpg",
+        "images/vinted-9395187190-2.jpg",
+        "images/vinted-9395187190-3.jpg"
+      ],
+      "favourites": 14,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-18"
     }
   ]
 }
