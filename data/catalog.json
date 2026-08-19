@@ -1,12 +1,48 @@
 {
-  "syncedAt": "2026-08-19T08:17:36.637Z",
+  "syncedAt": "2026-08-19T09:18:29.422Z",
   "rate": {
     "czkPerEur": 24.179,
     "fetched": "2026-08-19",
     "source": "ECB"
   },
-  "count": 143,
+  "count": 144,
   "items": [
+    {
+      "id": "9706461112",
+      "title": "Spiritual meditation bracelet | Tibetan Buddhist Jewellery| Rudraksh Yoga Mala",
+      "priceCzk": 180,
+      "priceEur": 7,
+      "brand": "Handmade Beauty",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Brown",
+        "cs": "Hnědá"
+      },
+      "category": "Jewellery",
+      "vintedCategoryCs": "Ženy Náramky",
+      "description": "Beautiful spiritual beaded meditation bracelet. \nMade with natural material of dark brown Rudraksh seeds and light brown Bodhi tree seed beads. Perfect for yoga, meditation, mindfulness practices, or everyday boho styling.\n14 rudraksh seeds\n7 bodhi tree seeds \n2.5 inches diameter \nStretchable elastic",
+      "photo": "images/vinted-9706461112-1.jpg",
+      "photos": [
+        "images/vinted-9706461112-1.jpg",
+        "images/vinted-9706461112-2.jpg",
+        "images/vinted-9706461112-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9706461112-spiritual-meditation-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-mala",
+        "es": "https://www.vinted.es/items/9706461112-spiritual-meditation-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-mala",
+        "com": "https://www.vinted.com/items/9706461112-spiritual-meditation-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-mala"
+      }
+    },
     {
       "id": "9698274032",
       "title": "Retro top | Vintage top | Boho style | Mango Marble Print Long Sleeve Shirt",
@@ -1904,7 +1940,7 @@
         "images/vinted-9562314219-2.jpg",
         "images/vinted-9562314219-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4352,7 +4388,7 @@
         "images/vinted-9328596973-2.jpg",
         "images/vinted-9328596973-3.jpg"
       ],
-      "favourites": 34,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
