@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-08-20T08:17:44.630Z",
+  "syncedAt": "2026-08-20T09:18:38.062Z",
   "rate": {
     "czkPerEur": 24.163,
     "fetched": "2026-08-20",
     "source": "ECB"
   },
-  "count": 141,
+  "count": 140,
   "items": [
     {
       "id": "9711247731",
@@ -572,7 +572,7 @@
         "images/vinted-9602950103-2.jpg",
         "images/vinted-9602950103-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4253,42 +4253,6 @@
         "cz": "https://www.vinted.cz/items/9329298936-indian-pink-bandhani-print-kaftan-top-size-m-to-l",
         "es": "https://www.vinted.es/items/9329298936-indian-pink-bandhani-print-kaftan-top-size-m-to-l",
         "com": "https://www.vinted.com/items/9329298936-indian-pink-bandhani-print-kaftan-top-size-m-to-l"
-      }
-    },
-    {
-      "id": "9328596973",
-      "title": "Vegan Bros \"Eating Animals Is Weird\" Slogan T-Shirt",
-      "priceCzk": 99,
-      "priceEur": 4,
-      "brand": "Vegan Bros",
-      "size": "S / 36 / 8",
-      "sizeGroup": "S",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Grey",
-        "cs": "Šedá"
-      },
-      "category": "Fashion",
-      "vintedCategoryCs": "Ženy Trička",
-      "description": "A fun, conversation-starting piece for anyone plant-based or animal-loving. Grey cotton with a bold black \"EATING ANIMALS IS WEIRD\" slogan across the front and the Vegan Bros logo underneath.",
-      "photo": "images/vinted-9328596973-1.jpg",
-      "photos": [
-        "images/vinted-9328596973-1.jpg",
-        "images/vinted-9328596973-2.jpg",
-        "images/vinted-9328596973-3.jpg"
-      ],
-      "favourites": 32,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9328596973-vegan-bros-eating-animals-is-weird-slogan-t-shirt",
-        "es": "https://www.vinted.es/items/9328596973-vegan-bros-eating-animals-is-weird-slogan-t-shirt",
-        "com": "https://www.vinted.com/items/9328596973-vegan-bros-eating-animals-is-weird-slogan-t-shirt"
       }
     },
     {
