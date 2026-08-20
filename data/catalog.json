@@ -1,17 +1,53 @@
 {
-  "syncedAt": "2026-08-20T13:22:04.238Z",
+  "syncedAt": "2026-08-20T14:22:56.551Z",
   "rate": {
-    "czkPerEur": 24.163,
+    "czkPerEur": 24.153,
     "fetched": "2026-08-20",
     "source": "ECB"
   },
-  "count": 140,
+  "count": 141,
   "items": [
+    {
+      "id": "9720394316",
+      "title": "Vintage boho necklace | retro tribal jewellery choker | Tibetan mandala style",
+      "priceCzk": 199,
+      "priceEur": 8,
+      "brand": "Antik",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Blue",
+        "cs": "Modrá"
+      },
+      "category": "Jewellery",
+      "vintedCategoryCs": "Ženy Náhrdelníky",
+      "description": "Gold Plate Brass Multi Color Pendant Blue Beads Necklace. Beautifully styled as a choker too. Adjustable.",
+      "photo": "images/vinted-9720394316-1.jpg",
+      "photos": [
+        "images/vinted-9720394316-1.jpg",
+        "images/vinted-9720394316-2.jpg",
+        "images/vinted-9720394316-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9720394316-vintage-boho-necklace-retro-tribal-jewellery-choker-tibetan-mandala-style",
+        "es": "https://www.vinted.es/items/9720394316-vintage-boho-necklace-retro-tribal-jewellery-choker-tibetan-mandala-style",
+        "com": "https://www.vinted.com/items/9720394316-vintage-boho-necklace-retro-tribal-jewellery-choker-tibetan-mandala-style"
+      }
+    },
     {
       "id": "9711247731",
       "title": "Spiritual Bracelet | Buddhist Jewellery | Rudraksh Yoga Mala Spiritual Accessories Meditation",
-      "priceCzk": 130,
-      "priceEur": 5,
+      "priceCzk": 99,
+      "priceEur": 4,
       "brand": "Handmade Beauty",
       "size": "",
       "sizeGroup": "",
@@ -1595,7 +1631,7 @@
       "id": "9565566983",
       "title": "Indian Antique Radha Krishna Brass Statue Hindu Spiritual Religious God Sculpture | Brass 5.5 Inches",
       "priceCzk": 1800,
-      "priceEur": 74,
+      "priceEur": 75,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1739,7 +1775,7 @@
       "id": "9565087476",
       "title": "Antique Indian Brass Golden Lord Shiva Parvati and Ganesha Family Idol Statue",
       "priceCzk": 1800,
-      "priceEur": 74,
+      "priceEur": 75,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
