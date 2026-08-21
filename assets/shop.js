@@ -60,8 +60,14 @@
       var bits = entry.split(":");
       var base = bits[0];
       var widths = bits[1].split("|");
+      // Third field is the content token, appended as ?v= exactly as the server-rendered
+      // <picture> does. Derived images are cached for a year as immutable, so a picture
+      // that changes without changing filename would otherwise stay stale for every
+      // returning visitor. Older markup has no third field; the URL is then unversioned,
+      // which is what it was before.
+      var q = bits[2] ? "?v=" + bits[2] : "";
       var srcset = function (ext) {
-        return widths.map(function (w) { return IMG + base + "-" + w + "." + ext + " " + w + "w"; }).join(", ");
+        return widths.map(function (w) { return IMG + base + "-" + w + "." + ext + q + " " + w + "w"; }).join(", ");
       };
       var shot = document.createElement("div");
       shot.className = "shot";
@@ -78,7 +84,7 @@
       // already the link's accessible name. Repeating the title three times would make a
       // screen reader read the whole grid three times over.
       img.alt = "";
-      img.src = IMG + base + "-" + widths[0] + ".jpg";
+      img.src = IMG + base + "-" + widths[0] + ".jpg" + q;
       img.srcset = srcset("jpg");
       img.sizes = SIZES;
       pic.appendChild(src);
