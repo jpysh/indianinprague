@@ -91,7 +91,7 @@
   },
   "40": {
     "vendorPath": "Gift items",
-    "shelf": "Gifts",
+    "shelf": "Others",
     "sub": null
   },
   "41": {
@@ -206,27 +206,27 @@
   },
   "65": {
     "vendorPath": "Gift items > Small statues",
-    "shelf": "Gifts",
-    "sub": "Small statues"
+    "shelf": "Meditation",
+    "sub": "Deities"
   },
   "66": {
     "vendorPath": "Gift items > Key rings",
-    "shelf": "Gifts",
+    "shelf": "Others",
     "sub": "Key rings"
   },
   "67": {
     "vendorPath": "Gift items > Notebooks",
-    "shelf": "Gifts",
+    "shelf": "Others",
     "sub": "Notebooks"
   },
   "68": {
     "vendorPath": "Gift items > Badges",
-    "shelf": "Gifts",
+    "shelf": "Others",
     "sub": "Badges"
   },
   "69": {
     "vendorPath": "Gift items > Stickers and posters",
-    "shelf": "Gifts",
+    "shelf": "Meditation",
     "sub": "Stickers and posters"
   },
   "71": {
@@ -352,7 +352,7 @@
   "257": {
     "vendorPath": "Meditation > Japa bead bags",
     "shelf": "Meditation",
-    "sub": "Japa bead bags"
+    "sub": "Bead counters"
   },
   "258": {
     "vendorPath": "Fashion > Jewellery > Other adornments",
@@ -451,7 +451,7 @@
   },
   "294": {
     "vendorPath": "Gift items > Pendants",
-    "shelf": "Gifts",
+    "shelf": "Jewellery",
     "sub": "Pendants"
   },
   "295": {
@@ -486,12 +486,12 @@
   },
   "301": {
     "vendorPath": "Gift items > Boxes",
-    "shelf": "Gifts",
+    "shelf": "Home Decor",
     "sub": "Boxes"
   },
   "302": {
     "vendorPath": "Gift items > Boxes > Rajasthani mirror-work",
-    "shelf": "Gifts",
+    "shelf": "Home Decor",
     "sub": "Boxes"
   },
   "305": {
@@ -611,7 +611,7 @@
   },
   "335": {
     "vendorPath": "Gift items > Greetings cards",
-    "shelf": "Gifts",
+    "shelf": "Others",
     "sub": "Greetings cards"
   },
   "336": {
@@ -676,7 +676,7 @@
   },
   "350": {
     "vendorPath": "Gift items > Children’s gifts and dolls",
-    "shelf": "Gifts",
-    "sub": "Children’s gifts and dolls"
+    "shelf": "Others",
+    "sub": "Dolls and children's gifts"
   }
 }
