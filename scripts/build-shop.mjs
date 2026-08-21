@@ -27,7 +27,7 @@
 // Run after sync-vinted.mjs and build-images.mjs (it reads the image manifest the latter
 // writes, to emit width/height and stop the grid reflowing as photos arrive).
 
-import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
+import { readFile, writeFile, rm, mkdir, readdir } from "node:fs/promises";
 import { vendorItems } from "./vendor-items.mjs";
 import { existsSync } from "node:fs";
 import path from "node:path";
@@ -46,6 +46,11 @@ const CATEGORIES = [
     name: "Fashion", slug: "fashion", page: "wardrobe/fashion.html", managed: true,
     sub: "kurtas · sarees · sets",
     title: "Modern Indian Clothes in Prague — Buy on Vinted",
+    // Page 1 is hand-written and only its grid region is replaced, so it never reads these.
+    // Pages 2+ are generated from the same template as every other shelf and do.
+    h1: ["Clothes,", "worn and new"],
+    lead: "Kurtas, sarees, dhotis and sets — second-hand pieces from my own wardrobe alongside new stock from a Prague supplier.",
+    expo: ["FASHION", "kurtas · sarees", "second-hand · new"],
   },
   {
     name: "Home Decor", slug: "home-decor", page: "wardrobe/home-decor.html",
@@ -145,6 +150,17 @@ const spice = (id) => SPICE[Number(id) % SPICE.length];
 // file writes — canonical, og:url, tiles, breadcrumbs — goes through here, so the .html
 // form exists only as a filename on disk and never as a link. index.html is the site root.
 const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
+
+// Cards per generated page. 100 keeps the heaviest shelf near the weight of a page the
+// site already served comfortably; the browser then reveals them 24 at a time (shop.js).
+const PER_PAGE = 100;
+
+// Page 1 is the shelf itself. Page 2 of /wardrobe/fashion is /wardrobe/fashion/2, which
+// means fashion.html sits beside a fashion/ directory — the same shape wardrobe.html and
+// wardrobe/ already use, and unambiguous for the same reason: only one of the two can
+// answer any given URL.
+const pageFile = (cat, no) =>
+  no === 1 ? cat.page : cat.page.replace(/\.html$/, "") + `/${no}.html`;
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -352,6 +368,37 @@ function card(item, manifest, eager, showCat) {
 
 // The first three cards are the ones above the fold on a desktop grid, so they load eagerly
 // and everything below them lazily.
+// The strip of page links under the grid.
+//
+// Real links to real pages, not a script that swaps content: each page has its own URL, so
+// it can be linked, shared, indexed and reached with JavaScript off. rel=prev/next is
+// emitted because Bing and Seznam still read it — Google retired it in 2019, and neither
+// costs anything.
+function pager(cat, seq) {
+  if (seq.total < 2) return "";
+  const href = (n) => url(pageFile(cat, n));
+  const link = (n, label, cls) =>
+    `<a class="pg${cls ? " " + cls : ""}" href="${href(n)}"${n === seq.no ? ' aria-current="page"' : ""}>${label}</a>`;
+
+  // Window of page numbers around the current one: the whole run for a short series, and
+  // first/last plus neighbours for a long one, so a 16-page shelf does not print 16 links.
+  const nums = [];
+  const near = (n) => n === 1 || n === seq.total || Math.abs(n - seq.no) <= 2;
+  for (let n = 1; n <= seq.total; n++) {
+    if (near(n)) nums.push(link(n, String(n)));
+    else if (nums[nums.length - 1] !== "…") nums.push("…");
+  }
+
+  return (
+    `<nav class="pager" aria-label="Pagination">` +
+    (seq.no > 1 ? link(seq.no - 1, "← Previous", "pg-step") : "") +
+    `<span class="pg-nums">${nums.map((n) => (n === "…" ? `<span class="pg-gap">…</span>` : n)).join("")}</span>` +
+    (seq.no < seq.total ? link(seq.no + 1, "Next →", "pg-step") : "") +
+    `<span class="pg-of">Page ${seq.no} of ${seq.total}</span>` +
+    `</nav>`
+  );
+}
+
 const grid = (items, manifest, showCat) =>
   `<div class="grid3" id="grid">\n` +
   items.map((it, i) => "    " + card(it, manifest, i < 3, showCat)).join("\n") +
@@ -608,23 +655,26 @@ const FX_NOTE =
   `checkout, so the amount you pay for a second-hand piece may differ slightly. Prices on ` +
   `cards marked with a shop name are confirmed on WhatsApp before you pay anything.</p>`;
 
-function page(cat, items, manifest, counts, ch) {
+function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }) {
   const desc = cat.lead.slice(0, 155);
+  // Page 2 onwards says so in the title. Identical titles across a series is the classic
+  // way to make a shop's own pages compete with each other in search results.
+  const pageTitle = seq.no > 1 ? `${cat.title} — page ${seq.no}` : cat.title;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${esc(cat.title)}</title>
+<title>${esc(pageTitle)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="${SITE}${url(cat.page)}">
+<link rel="canonical" href="${SITE}${url(pageFile(cat, seq.no))}">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Indian in Prague">
 <meta property="og:locale" content="en">
-<meta property="og:url" content="${SITE}${url(cat.page)}">
-<meta property="og:title" content="${esc(cat.title.split(" | ")[0])}">
+<meta property="og:url" content="${SITE}${url(pageFile(cat, seq.no))}">
+<meta property="og:title" content="${esc(pageTitle.split(" | ")[0])}">
 <meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
@@ -658,6 +708,7 @@ ${markNav(ch.header, "wardrobe")}
 
   ${grid(items, manifest, cat.name === "Everything")}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>
+  ${pager(cat, seq)}
   ${FX_NOTE}
 
   ${HOW_IT_WORKS}
@@ -716,7 +767,10 @@ async function main() {
   const live = [...available.sort(byNewest), ...sold.sort(byNewest)];
 
   const counts = { __all: live.length, __sold: sold.length };
-  for (const c of CATEGORIES) counts[c.name] = live.filter((i) => i.category === c.name).length;
+  // Same list-of-names rule as the shelf itself: counting on cat.name alone would have the
+  // strip say "Meditation 11" over a page of 461.
+  for (const c of CATEGORIES)
+    counts[c.name] = live.filter((i) => (c.names || [c.name]).includes(i.category)).length;
 
   const indexPath = path.join(ROOT, "index.html");
   let indexHtml = await readFile(indexPath, "utf8");
@@ -739,25 +793,47 @@ async function main() {
       continue;
     }
 
-    if (cat.managed) {
-      // Hand-written page: swap only the grid region, leave the prose alone.
-      const p = path.join(ROOT, cat.page);
-      const html = await readFile(p, "utf8");
-      // A module page gets the bare grid: no shelf strip (it is not a shelf in the wardrobe)
-      // and no filter toolbar (two items cannot be usefully filtered — every control would
-      // be a dead one). Just the pieces, and the note about how the prices convert.
-      const body = cat.module
-        ? grid(items, manifest, false) + "\n  " + FX_NOTE
-        : catNav(cat.name, counts) + "\n  " + toolbar(items) + "\n  " + grid(items, manifest, false) +
-          `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` + FX_NOTE;
-      await writeFile(p, replaceRegion(html, "SHOP:GRID", body, cat.page));
-      console.log(`  ${cat.page} — ${items.length} items (grid region replaced)`);
-    } else {
-      await mkdir(path.dirname(path.join(ROOT, cat.page)), { recursive: true });
-      await writeFile(path.join(ROOT, cat.page), page(cat, items, manifest, counts, ch));
-      console.log(`  ${cat.page} — ${items.length} items`);
+    const total = Math.max(1, Math.ceil(items.length / PER_PAGE));
+
+    // Pages that existed on a previous build but not on this one — the shelf shrank, or
+    // PER_PAGE changed. Left behind they are a stale grid nobody links to, still indexable.
+    const dir = path.join(ROOT, cat.page.replace(/\.html$/, ""));
+    if (existsSync(dir)) {
+      for (const f of await readdir(dir)) {
+        const n = Number(f.replace(/\.html$/, ""));
+        if (n && n > total) {
+          await rm(path.join(dir, f));
+          console.log(`  ${cat.page.replace(/\.html$/, "")}/${f} — removed (page no longer exists)`);
+        }
+      }
     }
-    written++;
+
+    for (let no = 1; no <= total; no++) {
+      const slice = items.slice((no - 1) * PER_PAGE, no * PER_PAGE);
+      const seq = { no, total };
+      const file = pageFile(cat, no);
+
+      if (cat.managed && no === 1) {
+        // Hand-written page: swap only the grid region, leave the prose alone.
+        const p = path.join(ROOT, file);
+        const html = await readFile(p, "utf8");
+        // A module page gets the bare grid: no shelf strip (it is not a shelf in the
+        // wardrobe) and no filter toolbar (two items cannot be usefully filtered — every
+        // control would be a dead one). Just the pieces, and the note about how the prices
+        // convert.
+        const body = cat.module
+          ? grid(slice, manifest, false) + "\n  " + FX_NOTE
+          : catNav(cat.name, counts) + "\n  " + toolbar(slice) + "\n  " + grid(slice, manifest, false) +
+            `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
+            pager(cat, seq) + "\n  " + FX_NOTE;
+        await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
+      } else {
+        await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
+        await writeFile(path.join(ROOT, file), page(cat, slice, manifest, counts, ch, seq));
+      }
+      written++;
+    }
+    console.log(`  ${cat.page} — ${items.length} items across ${total} page${total === 1 ? "" : "s"}`);
   }
 
   // The everything page — "the wardrobe", which is what the top nav calls it.
@@ -787,8 +863,18 @@ async function main() {
   // exactly the shape diaries.html and diaries/ already use: /diaries 200s, /diaries/ 307s
   // back to it, /diaries/<post> 200s.
   await mkdir(path.join(ROOT, "wardrobe"), { recursive: true });
-  await writeFile(path.join(ROOT, "wardrobe.html"), page(all, live, manifest, counts, ch));
-  console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold)`);
+
+  // The storefront paginates like every other shelf, and it is the page that most needed
+  // it: 1,543 cards in one document came to 4 MB, which is not a page anyone should be
+  // asked to load on a phone. Its pages 2+ go to /wardrobe/2, /wardrobe/3 — the same
+  // directory the shelves live in, which is why a shelf may never be called by a number.
+  const allTotal = Math.max(1, Math.ceil(live.length / PER_PAGE));
+  for (let no = 1; no <= allTotal; no++) {
+    const slice = live.slice((no - 1) * PER_PAGE, no * PER_PAGE);
+    const file = no === 1 ? "wardrobe.html" : `wardrobe/${no}.html`;
+    await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal }));
+  }
+  console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold) across ${allTotal} pages`);
   // The old page is not left on disk to rot: it would still be reachable, still be
   // indexable, and would go stale the first time the closet changed.
   if (existsSync(path.join(ROOT, "shop.html"))) {

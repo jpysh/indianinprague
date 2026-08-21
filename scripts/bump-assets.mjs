@@ -52,15 +52,26 @@ for (const f of await readdir(path.join(ROOT, "assets"))) {
 // directory of their own (see build-diaries.mjs), and they load the same stylesheets under
 // the same immutable cache headers. Left out of this list they would be the only pages on
 // the site serving an unversioned /assets/site.css.
-const pages = (await readdir(ROOT))
-  .filter((f) => f.endsWith(".html"))
-  .concat(
-    existsSync(path.join(ROOT, "diaries"))
-      ? (await readdir(path.join(ROOT, "diaries")))
-          .filter((f) => f.endsWith(".html"))
-          .map((f) => path.join("diaries", f))
-      : [],
-  );
+// Every page, at any depth. It used to be the repo root plus diaries/, which was the whole
+// site until 21 Aug 2026 — then the shelves moved to wardrobe/ and paginated into
+// wardrobe/<shelf>/<n>.html, and every one of them silently stopped being stamped. The
+// symptom is the one this script exists to prevent: /assets/* is cached for a year as
+// immutable, so a stylesheet change reached nobody who had already loaded the old file, and
+// the pages looked correct on a fresh browser and stale on every returning one.
+//
+// Walking is the fix rather than a longer list, because the next directory added would
+// otherwise repeat this exactly.
+async function htmlPages(dir = ROOT, prefix = "") {
+  const out = [];
+  for (const e of await readdir(dir, { withFileTypes: true })) {
+    if (e.name === "node_modules" || e.name === "dist" || e.name.startsWith(".")) continue;
+    const rel = prefix ? path.join(prefix, e.name) : e.name;
+    if (e.isDirectory()) out.push(...(await htmlPages(path.join(dir, e.name), rel)));
+    else if (e.name.endsWith(".html")) out.push(rel);
+  }
+  return out;
+}
+const pages = await htmlPages();
 
 let touched = 0;
 

@@ -67,6 +67,23 @@ for (const file of ["wardrobe/home-decor.html", "wardrobe/jewellery.html", "ward
   }
 }
 
+// Paginated shelves. Every page of a series is its own URL with its own canonical, so each
+// one belongs in the sitemap — a crawler that only ever sees page 1 indexes a tenth of the
+// catalogue. Discovered from disk rather than listed by hand, because the page count moves
+// every time stock does.
+for (const shelf of ["", "fashion", "home-decor", "jewellery", "meditation", "books", "wellness", "keepsakes", "food", "others"]) {
+  const dir = shelf ? `${ROOT}/wardrobe/${shelf}` : `${ROOT}/wardrobe`;
+  if (!existsSync(dir)) continue;
+  for (const f of readdirSync(dir)) {
+    // Page files are named by their number; anything else in here is a shelf's page 1.
+    const n = Number(f.replace(/\.html$/, ""));
+    if (!n || n < 2) continue;
+    const loc = shelf ? `/wardrobe/${shelf}/${n}` : `/wardrobe/${n}`;
+    PAGES.push({ file: loc.slice(1) + ".html", loc, priority: "0.6", changefreq: "daily" });
+  }
+}
+
+
 // The alt text is read straight out of the HTML, so it arrives already entity-encoded
 // ("Black &amp; Red"). Decode first, or escaping again yields "&amp;amp;" and the crawler
 // sees a literal "&amp;" in the caption.

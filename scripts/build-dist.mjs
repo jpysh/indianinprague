@@ -185,6 +185,12 @@ if (existsSync(path.join(ROOT, "wardrobe"))) {
 await mkdir(path.join(DIST, "images"), { recursive: true });
 await syncDir(path.join(ROOT, "images", "derived"), path.join(DIST, "images", "derived"));
 
+// manifest.json is build input, not content. Nothing on the page fetches it — build-shop.mjs
+// reads it from the repo — and at 1.24 MB it was both the largest file in the deployment and
+// a public listing of every image the build knows about.
+const manifest = path.join(DIST, "images", "derived", "manifest.json");
+if (existsSync(manifest)) await rm(manifest);
+
 // ---------------------------------------------------------------------------
 // Edge behaviour. These two configure the asset server and are never served as content —
 // verified: /_headers and /_redirects both 404. They live in edge/ rather than at the repo
@@ -249,10 +255,17 @@ const redirectSources = new Set(
 // Root pages plus diaries/ and wardrobe/. They were outside this check for as long as the
 // Diaries was a single root file; between them they are most of the site's internal linking
 // now, so leaving them out would check the least link-dense pages and skip the rest.
-const subdirPages = async (dir) =>
-  existsSync(path.join(DIST, dir))
-    ? (await readdir(path.join(DIST, dir))).filter((f) => f.endsWith(".html")).map((f) => `${dir}/${f}`)
-    : [];
+// Recursive: the shelves paginate into wardrobe/<shelf>/<n>.html, so a single level of
+// readdir would check page 1 of every shelf and none of the rest.
+const subdirPages = async (dir) => {
+  if (!existsSync(path.join(DIST, dir))) return [];
+  const out = [];
+  for (const e of await readdir(path.join(DIST, dir), { withFileTypes: true })) {
+    if (e.isDirectory()) out.push(...(await subdirPages(`${dir}/${e.name}`)));
+    else if (e.name.endsWith(".html")) out.push(`${dir}/${e.name}`);
+  }
+  return out;
+};
 const htmlFiles = [
   ...(await readdir(DIST)).filter((f) => f.endsWith(".html")),
   ...(await subdirPages("diaries")),
