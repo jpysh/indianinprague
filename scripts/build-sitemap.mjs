@@ -61,7 +61,7 @@ for (const file of existsSync(`${ROOT}/diaries`) ? readdirSync(`${ROOT}/diaries`
 // discovered from disk rather than listed, and vanish from the sitemap when they empty
 // out rather than becoming 404s a crawler keeps retrying.
 // changefreq is daily because these turn over with the closet, not with the writing.
-for (const file of ["wardrobe/home-decor.html", "wardrobe/jewellery.html", "wardrobe/meditation.html", "wardrobe/books.html", "wardrobe/others.html", "wardrobe/sold.html"]) {
+for (const file of ["wardrobe/home-decor.html", "wardrobe/jewellery.html", "wardrobe/meditation.html", "wardrobe/books.html", "wardrobe/wellness.html", "wardrobe/keepsakes.html", "wardrobe/food.html", "wardrobe/others.html", "wardrobe/sold.html"]) {
   if (existsSync(`${ROOT}/${file}`)) {
     PAGES.push({ file, loc: `/${file.replace(/\.html$/, "")}`, priority: "0.8", changefreq: "daily" });
   }

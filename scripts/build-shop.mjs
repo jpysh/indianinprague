@@ -69,7 +69,12 @@ const CATEGORIES = [
     // is the Spirituality MODULE now (yoga, ayurveda, meditation, trips — its own nav slot
     // and its own hand-written page), so the shelf of brass and beads took the name it
     // always actually described and gave up the URL.
-    name: "Spirituality", label: "Meditation", slug: "meditation", page: "wardrobe/meditation.html",
+    // TWO category values feed this shelf. "Spirituality" is what data/catalog.json says —
+    // that is Vinted's branch name and renaming it would break the sync. "Meditation" is
+    // what the vendor catalogue says, because the taxonomy was rebuilt around it when the
+    // shelf grew from 11 items to the largest on the site.
+    name: "Spirituality", names: ["Spirituality", "Meditation"],
+    label: "Meditation", slug: "meditation", page: "wardrobe/meditation.html",
     sub: "brass · sandalwood",
     title: "Indian Ritual Objects in Prague — Incense, Brass, Prayer Beads | Indian in Prague",
     h1: ["Objects that", "hold something"],
@@ -92,10 +97,37 @@ const CATEGORIES = [
     expo: ["BOOKS", "second-hand", "fiction · cookery"],
   },
   {
+    name: "Wellness", slug: "wellness", page: "wardrobe/wellness.html",
+    sub: "oils · soaps · ayurveda",
+    title: "Indian Wellness in Prague — Oils, Soaps, Ayurveda | Indian in Prague",
+    h1: ["Oils, soaps,", "and remedies"],
+    lead: "Ayurvedic creams and oils, hand-cut soaps, oil-based perfumes — the everyday shelf of an Indian bathroom, most of it made in small batches.",
+    expo: ["WELLNESS", "oils · soaps", "ayurvedic"],
+  },
+  {
+    name: "Keepsakes", slug: "keepsakes", page: "wardrobe/keepsakes.html",
+    sub: "cards · notebooks · keyrings",
+    title: "Indian Keepsakes in Prague — Cards, Notebooks, Keyrings | Indian in Prague",
+    h1: ["Small things,", "carried home"],
+    lead: "Greetings cards, notebooks, keyrings and badges. The inexpensive end of the shelf, and the easiest thing to post to someone.",
+    expo: ["KEEPSAKES", "cards · notebooks", "small gifts"],
+  },
+  {
+    name: "Food", slug: "food", page: "wardrobe/food.html",
+    sub: "spices · honey · prasadam",
+    title: "Indian Food in Prague — Spices, Masalas, Ayurvedic Supplements | Indian in Prague",
+    h1: ["Spices, and", "what goes with them"],
+    lead: "Single spices and masala blends, honey, prasadam, and Ayurvedic supplements. Cupboard things, not souvenirs.",
+    expo: ["FOOD", "spices · masala", "honey · prasadam"],
+  },
+  {
     // The data keeps saying "Uncategorised" — that is the signal sync-vinted.mjs prints
     // when a Vinted branch has no rule yet, and softening it in the data would hide the
     // work. The shopper just sees "More".
-    name: "Uncategorised", label: "Others", slug: "others", page: "wardrobe/others.html",
+    // Same two-name arrangement: "Uncategorised" is what sync-vinted.mjs writes when a
+    // Vinted branch has no rule yet, and softening it in the data would hide the work.
+    name: "Uncategorised", names: ["Uncategorised", "Others"],
+    label: "Others", slug: "others", page: "wardrobe/others.html",
     sub: "odds and ends",
     title: "More from my closet | Indian in Prague",
     h1: ["Everything", "else"],
@@ -694,7 +726,7 @@ async function main() {
 
   // Whole generated pages, one per non-empty category, plus the everything page.
   for (const cat of CATEGORIES) {
-    const items = live.filter((i) => i.category === cat.name);
+    const items = live.filter((i) => (cat.names || [cat.name]).includes(i.category));
     if (!items.length) {
       // A category can empty out — the last "More" item gets a taxonomy rule, the last of
       // something sells. Leaving the page behind would strand a stale grid the nav no
