@@ -25,7 +25,7 @@ Eight shelves. Your existing tree kept wherever it survives contact with 1,485 n
 | Meditation | ~11 | 486 | **New.** Malas, incense, deities, worship items |
 | Fashion | 49 | 344 | Clothing and bags, both vendors |
 | Jewellery | 37 | 242 | Lifted out of Govinda's `Fashion` to match your existing shelf |
-| Home Decor | 12 | 127 | Accessories, textiles, crockery, boxes |
+| Home Decor | 12 | 127 | Bedding, cushions, table and dining, storage, decorative — **plus the incoming line** |
 | Books | 39 | 91 | |
 | Wellness | 1 | 82 | Govinda's `Cosmetics` folded in |
 | Others | 2 | 78 | **New.** Anything that fits nowhere, kept visible rather than hidden |
@@ -50,6 +50,33 @@ shelf. The branch is not gifting, it is devotional goods filed by object type:
 
 Merging the statues into `Deities` also fixes that shelf: it held 5 items, most of them
 *clothes* for deities. It now holds 63 and means what it says.
+
+### The incoming line, and why `Home Decor` was resubdivided
+
+Bedsheets, sofa throws, cushion covers, table covers, quilts, trays and baskets all land in
+`Home Decor` — none of them belong in `Others`, which stays at 88 and is not crowded.
+
+They do not fit Govinda's own split of the shelf, though, which was `Home textiles` /
+`Home accessories` / `Crockery`. That split is the vendor's warehouse logic: bedding and
+cushions lumped together as "textiles" are two different errands, and trays filed under
+"Crockery" is where a shopper never looks. So the shelf is subdivided by errand instead:
+
+| Subcategory | Govinda today | Incoming |
+|---|---:|---|
+| Table and dining | 34 | Table covers, trays |
+| Decorative accessories | 29 | — |
+| Storage and baskets | 28 | Baskets |
+| Cushions and throws | 27 | Cushion covers, sofa throws |
+| Bedding and quilts | 9 | Bedsheets, quilts |
+
+Table linen sits with trays and tableware rather than with the other textiles, because
+setting a table is one errand and making a bed is another.
+
+**When to split off a `Home Textiles` shelf:** bedding plus cushions is 36 today. If the
+incoming line takes that pair past roughly 120 — plausible if bedsheets and quilts arrive in
+any depth — it earns its own shelf, leaving `Home Decor` as tableware, storage and
+decorative. Worth watching, not worth pre-empting: a shelf of 36 split off now would look
+empty, and splitting later costs two redirects.
 
 ### `Others`, and when it stops being `Others`
 
@@ -89,7 +116,7 @@ Swami`) becomes a brand-style filter rather than a URL.
 | Meditation | Kanthi malas (108), Devotional pictures (86), Deities (63), Japa bead bags (60), Incense sticks (53), Stickers and posters (51), Bead counters (22), Worship items (20), Malas and clickers (13), Incense holders (6), Tilak and Ganga clay (3) |
 | Fashion | Women's clothing, Men's clothing, Children's clothing, Bags |
 | Jewellery | Bindi (101), Bracelets (42), Necklaces (28), Pendants (17), Earrings (15), Other adornments (10), Anklets (4) |
-| Home Decor | Home textiles (36), Crockery (34), Home accessories (29), Boxes (28) |
+| Home Decor | Table and dining (34), Decorative accessories (29), Storage and baskets (28), Cushions and throws (27), Bedding and quilts (9) |
 | Books | Srila Prabhupada, Other authors, Foreign languages, Cookery books, For children, Second-hand books, Audio and video, E-books |
 | Wellness | Creams and oils, Soaps, Oil-based perfumes, Shampoos and hair dyes, Dental hygiene, Make-up |
 | Others | Key rings, Dolls and children's gifts, Greetings cards, Notebooks, Badges |

@@ -12,7 +12,7 @@ const GIFTS = {
   "Small statues": ["Meditation", "Deities"], // murtis — merges with the 5 already there
   "Stickers and posters": ["Meditation", "Stickers and posters"],
   Pendants: ["Jewellery", "Pendants"],
-  Boxes: ["Home Decor", "Boxes"],
+  Boxes: ["Home Decor", "Storage and baskets"],
   "Key rings": ["Others", "Key rings"],
   "Greetings cards": ["Others", "Greetings cards"],
   Notebooks: ["Others", "Notebooks"],
@@ -20,6 +20,28 @@ const GIFTS = {
   "Children’s gifts and dolls": ["Others", "Dolls and children's gifts"],
   "Children's gifts and dolls": ["Others", "Dolls and children's gifts"],
 };
+
+// Home Decor is subdivided by what a shopper is actually looking for, not by Govinda's
+// own split of textiles/accessories/crockery. Bedding and cushions are different errands;
+// "Home textiles" covering both, while trays sit under "Crockery", helps nobody.
+//
+// The incoming line lands in these same subcategories, which is why they exist now rather
+// than being retrofitted later: bedsheets and quilts to Bedding, sofa throws and cushion
+// covers to Cushions and throws, table covers and trays to Table and dining, baskets to
+// Storage and baskets. Table linen sits with trays and tableware rather than with the
+// other textiles because setting a table is one errand, not two.
+function home(p) {
+  const leaf = p[2] || p[1];
+  switch (leaf) {
+    case "Bedspreads": return "Bedding and quilts";
+    case "Pillowcases": return "Cushions and throws";
+    case "Plates": case "Bowls": case "Cups": case "Sealable bowls":
+    case "Kamandalus": case "Kettles, thermos flasks": case "Kettles, flasks":
+      return "Table and dining";
+    case "Boxes": case "Rajasthani mirror-work": return "Storage and baskets";
+    default: return "Decorative accessories"; // paintings, hangings, candle holders, hooks, vases
+  }
+}
 
 const map = {};
 for (const c of cats) {
@@ -39,7 +61,7 @@ for (const c of cats) {
       sub = p.length === 2 && p[1] === "Japa bead bags" ? "Bead counters" : p[1];
       break;
     case "Books": shelf = "Books"; sub = p[1]; break;
-    case "Home": shelf = "Home Decor"; sub = p[1]; break;
+    case "Home": shelf = "Home Decor"; sub = home(p); break;
     case "Gift items": [shelf, sub] = GIFTS[p[1]] || ["Others", null]; break;
     case "Cosmetics": shelf = "Wellness"; sub = p[1]; break;
     case "Food and supplements": shelf = "Food"; sub = p[1]; break;
