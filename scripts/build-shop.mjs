@@ -112,10 +112,7 @@ const spice = (id) => SPICE[Number(id) % SPICE.length];
 // The site serves extensionless URLs (see wrangler.jsonc html_handling). Every URL this
 // file writes — canonical, og:url, tiles, breadcrumbs — goes through here, so the .html
 // form exists only as a filename on disk and never as a link. index.html is the site root.
-const url = (page) =>
-  page === "index.html" ? "/"
-  : page === "wardrobe/index.html" ? "/wardrobe"
-  : "/" + String(page).replace(/\.html$/, "");
+const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -734,15 +731,23 @@ async function main() {
   // sees, and renaming them would have churned the asset cache token and every reference in
   // DEPLOY.md to buy nothing.
   const all = {
-    name: "Everything", slug: "wardrobe", page: "wardrobe/index.html",
+    name: "Everything", slug: "wardrobe", page: "wardrobe.html",
     title: "The whole wardrobe — Indian clothes, jewellery, home things in Prague | Indian in Prague",
     h1: ["Everything", "in one place"],
     lead: `All ${available.length} pieces currently for sale — clothing, jewellery, home things, books and the rest — plus what has already sold. Filter it down, or tap any piece to open its Vinted listing.`,
     expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
+  // The storefront is a ROOT FILE, not wardrobe/index.html, and the difference is a status
+  // code. With an index.html inside the directory, the asset server answers /wardrobe with
+  // a 307 to /wardrobe/ — measured on the live site. /wardrobe is the most linked URL here
+  // and every canonical, tile and nav item points at it, so it has to answer 200 itself.
+  //
+  // wardrobe.html beside a wardrobe/ directory that has no index is unambiguous, and it is
+  // exactly the shape diaries.html and diaries/ already use: /diaries 200s, /diaries/ 307s
+  // back to it, /diaries/<post> 200s.
   await mkdir(path.join(ROOT, "wardrobe"), { recursive: true });
-  await writeFile(path.join(ROOT, "wardrobe/index.html"), page(all, live, manifest, counts, ch));
-  console.log(`  wardrobe/index.html — ${live.length} items (${sold.length} sold)`);
+  await writeFile(path.join(ROOT, "wardrobe.html"), page(all, live, manifest, counts, ch));
+  console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold)`);
   // The old page is not left on disk to rot: it would still be reachable, still be
   // indexable, and would go stale the first time the closet changed.
   if (existsSync(path.join(ROOT, "shop.html"))) {

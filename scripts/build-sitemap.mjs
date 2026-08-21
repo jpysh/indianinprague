@@ -26,7 +26,7 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 // Priority reflects how much of the site's reason to exist each page carries, not a wish.
 const PAGES = [
   { file: "index.html", loc: "/", priority: "1.0", changefreq: "weekly" },
-  { file: "wardrobe/index.html", loc: "/wardrobe", priority: "0.9", changefreq: "daily" },
+  { file: "wardrobe.html", loc: "/wardrobe", priority: "0.9", changefreq: "daily" },
   // wellness.html and buddy.html were removed on 16 Aug 2026 (unfinished holding pages),
   // so neither belongs in the sitemap. Their URLs now return the site's 404.
   // Spirituality is a hand-written module page (yoga, ayurveda, meditation, trips), not a
