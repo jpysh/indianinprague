@@ -10159,5 +10159,62 @@
         "webp": "images/derived/vinted-9720394316-3-800.webp"
       }
     ]
+  },
+  "images/vinted-9729863208-1.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-9729863208-1-400.jpg",
+        "webp": "images/derived/vinted-9729863208-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "jpg": "images/derived/vinted-9729863208-1-800.jpg",
+        "webp": "images/derived/vinted-9729863208-1-800.webp"
+      }
+    ]
+  },
+  "images/vinted-9729863208-2.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-9729863208-2-400.jpg",
+        "webp": "images/derived/vinted-9729863208-2-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "jpg": "images/derived/vinted-9729863208-2-800.jpg",
+        "webp": "images/derived/vinted-9729863208-2-800.webp"
+      }
+    ]
+  },
+  "images/vinted-9729863208-3.jpg": {
+    "width": 1200,
+    "height": 1600,
+    "aspect": 0.75,
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-9729863208-3-400.jpg",
+        "webp": "images/derived/vinted-9729863208-3-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1067,
+        "jpg": "images/derived/vinted-9729863208-3-800.jpg",
+        "webp": "images/derived/vinted-9729863208-3-800.webp"
+      }
+    ]
   }
 }

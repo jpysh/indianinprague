@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-21T12:26:19.784Z",
+  "syncedAt": "2026-08-21T13:15:43.949Z",
   "rate": {
     "czkPerEur": 24.153,
     "fetched": "2026-08-21",
@@ -7,6 +7,59 @@
   },
   "count": 141,
   "items": [
+    {
+      "id": "9729863208",
+      "title": "Mango Woollen Wide Leg Long Textured Pants",
+      "priceCzk": 240,
+      "priceEur": 10,
+      "brand": "Mango",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good"
+      },
+      "color": {
+        "en": "Cream"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Wide-leg trousers",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 9,
+          "name": "Trousers & leggings"
+        },
+        {
+          "id": 1071,
+          "name": "Wide-leg trousers"
+        }
+      ],
+      "description": "Textured finish\nHigh rise\nElasticized waistband\nWide leg\nHeavy woollen pants",
+      "photo": "images/vinted-9729863208-1.jpg",
+      "photos": [
+        "images/vinted-9729863208-1.jpg",
+        "images/vinted-9729863208-2.jpg",
+        "images/vinted-9729863208-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9729863208-mango-woollen-wide-leg-long-textured-pants",
+        "es": "https://www.vinted.es/items/9729863208-mango-woollen-wide-leg-long-textured-pants",
+        "com": "https://www.vinted.com/items/9729863208-mango-woollen-wide-leg-long-textured-pants",
+        "uk": "https://www.vinted.co.uk/items/9729863208-mango-woollen-wide-leg-long-textured-pants"
+      }
+    },
     {
       "id": "9720394316",
       "title": "Vintage boho necklace | retro tribal jewellery choker | Tibetan mandala style",
@@ -5704,59 +5757,6 @@
       }
     },
     {
-      "id": "9336035745",
-      "title": "Indian Cotton Summer Maxi Dress | Size M-L",
-      "priceCzk": 370,
-      "priceEur": 15,
-      "brand": "Anoshk",
-      "size": "M / 38 / 10",
-      "sizeGroup": "M",
-      "condition": {
-        "en": "Very good"
-      },
-      "color": {
-        "en": "Apricot"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Long dresses",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 4,
-          "name": "Clothing"
-        },
-        {
-          "id": 10,
-          "name": "Dresses"
-        },
-        {
-          "id": 1055,
-          "name": "Long dresses"
-        }
-      ],
-      "description": "Beautiful long dress in soft pastel beige, with a delicate grey and mustard-yellow floral print. Original Indian design by the brand Anoshk, a much loved delhi fashion boutique. Made from 100% lightweight cotton, soft, breathable, and comfortable even on hot days. The top is fitted and the skirt falls into a full, flowing A-line shape that moves beautifully when you walk. Three-quarter sleeves and a small V-notch neckline with a tie detail. The waist is loose and flowing, so it fits a wide range of sizes and body shapes. Perfect for summer, holidays, weddings, or any occasion where you want to feel elegant and comfortable at the same time.\n\nBust: Can fit approx. 36-38 in \nShoulder: 15 inch\nWaist: free-flow, fits most\nLength: 48 in / 122 cm",
-      "photo": "images/vinted-9336035745-1.jpg",
-      "photos": [
-        "images/vinted-9336035745-1.jpg",
-        "images/vinted-9336035745-2.jpg",
-        "images/vinted-9336035745-3.jpg"
-      ],
-      "favourites": 18,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9336035745-indian-cotton-summer-maxi-dress-size-m-l",
-        "es": "https://www.vinted.es/items/9336035745-indian-cotton-summer-maxi-dress-size-m-l",
-        "com": "https://www.vinted.com/items/9336035745-indian-cotton-summer-maxi-dress-size-m-l",
-        "uk": "https://www.vinted.co.uk/items/9336035745-indian-cotton-summer-maxi-dress-size-m-l"
-      }
-    },
-    {
       "id": "9331197768",
       "title": "Mango Gold Metallic Cami Top | Size M",
       "priceCzk": 89,
@@ -7087,10 +7087,10 @@
     },
     {
       "id": "9311521689",
-      "title": "Indian Cotton Maxi Skirt · Red Orange Bandhani Print · Drawstring Waist · Boho",
-      "priceCzk": 470,
+      "title": "Boho Cotton Maxi Skirt | Vintage Skirt | Drawstring Waist | Indian Ethnic",
+      "priceCzk": 450,
       "priceEur": 19,
-      "brand": "House",
+      "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
@@ -7132,10 +7132,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9311521689-indian-cotton-maxi-skirt-red-orange-bandhani-print-drawstring-waist-boho",
-        "es": "https://www.vinted.es/items/9311521689-indian-cotton-maxi-skirt-red-orange-bandhani-print-drawstring-waist-boho",
-        "com": "https://www.vinted.com/items/9311521689-indian-cotton-maxi-skirt-red-orange-bandhani-print-drawstring-waist-boho",
-        "uk": "https://www.vinted.co.uk/items/9311521689-indian-cotton-maxi-skirt-red-orange-bandhani-print-drawstring-waist-boho"
+        "cz": "https://www.vinted.cz/items/9311521689-boho-cotton-maxi-skirt-vintage-skirt-drawstring-waist-indian-ethnic",
+        "es": "https://www.vinted.es/items/9311521689-boho-cotton-maxi-skirt-vintage-skirt-drawstring-waist-indian-ethnic",
+        "com": "https://www.vinted.com/items/9311521689-boho-cotton-maxi-skirt-vintage-skirt-drawstring-waist-indian-ethnic",
+        "uk": "https://www.vinted.co.uk/items/9311521689-boho-cotton-maxi-skirt-vintage-skirt-drawstring-waist-indian-ethnic"
       }
     },
     {

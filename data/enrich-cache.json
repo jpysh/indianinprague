@@ -3146,5 +3146,29 @@
       }
     ],
     "condition": "Very good"
+  },
+  "9729863208": {
+    "description": "Textured finish\nHigh rise\nElasticized waistband\nWide leg\nHeavy woollen pants",
+    "vintedCategory": "Women Wide-leg trousers",
+    "colorRaw": "Cream",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 9,
+        "name": "Trousers & leggings"
+      },
+      {
+        "id": 1071,
+        "name": "Wide-leg trousers"
+      }
+    ],
+    "condition": "Very good"
   }
 }

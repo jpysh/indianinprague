@@ -745,6 +745,54 @@
       "featured": false,
       "hidden": false,
       "soldAt": "2026-08-20"
+    },
+    {
+      "id": "9336035745",
+      "title": "Indian Cotton Summer Maxi Dress | Size M-L",
+      "priceCzk": 370,
+      "priceEur": 15,
+      "brand": "Anoshk",
+      "size": "M / 38 / 10",
+      "sizeGroup": "M",
+      "condition": {
+        "en": "Very good"
+      },
+      "color": {
+        "en": "Apricot"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Long dresses",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 10,
+          "name": "Dresses"
+        },
+        {
+          "id": 1055,
+          "name": "Long dresses"
+        }
+      ],
+      "description": "Beautiful long dress in soft pastel beige, with a delicate grey and mustard-yellow floral print. Original Indian design by the brand Anoshk, a much loved delhi fashion boutique. Made from 100% lightweight cotton, soft, breathable, and comfortable even on hot days. The top is fitted and the skirt falls into a full, flowing A-line shape that moves beautifully when you walk. Three-quarter sleeves and a small V-notch neckline with a tie detail. The waist is loose and flowing, so it fits a wide range of sizes and body shapes. Perfect for summer, holidays, weddings, or any occasion where you want to feel elegant and comfortable at the same time.\n\nBust: Can fit approx. 36-38 in \nShoulder: 15 inch\nWaist: free-flow, fits most\nLength: 48 in / 122 cm",
+      "photo": "images/vinted-9336035745-1.jpg",
+      "photos": [
+        "images/vinted-9336035745-1.jpg",
+        "images/vinted-9336035745-2.jpg",
+        "images/vinted-9336035745-3.jpg"
+      ],
+      "favourites": 18,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-21"
     }
   ]
 }
