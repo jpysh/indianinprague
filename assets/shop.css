@@ -529,3 +529,34 @@
 @supports (content-visibility:auto){
   .piece:nth-child(n+7){content-visibility:auto;contain-intrinsic-size:auto 560px}
 }
+
+/* ---------- pagination ---------- */
+
+/* Real links to real pages. The strip sits below the grid and above the FX note, which is
+   where a visitor who has reached the end of 100 cards is already looking.
+   Wrapped rather than scrolled: a 16-page series on a phone is three short rows, and a
+   horizontally scrolling control is one nobody discovers. */
+.pager{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  margin:28px 0 8px;font-family:var(--mono);font-size:var(--fs-xs);
+}
+.pg-nums{display:flex;flex-wrap:wrap;gap:6px}
+.pager .pg{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:38px;height:38px;padding:0 10px;
+  border:1px solid var(--band);border-radius:2px;
+  color:var(--bone-dim);text-decoration:none;
+  transition:background .16s ease,color .16s ease,border-color .16s ease;
+}
+.pager .pg:hover,.pager .pg:focus-visible{background:var(--band);color:var(--bone)}
+/* The current page is a link to itself, kept in the tab order and marked for assistive
+   tech with aria-current — removing it would make the strip jump as you page through. */
+.pager .pg[aria-current="page"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
+.pager .pg-step{font-weight:600}
+.pg-gap{padding:0 2px;color:var(--bone-dim);opacity:.6}
+/* Pushed to the far end on a wide screen, dropped to its own line on a narrow one. */
+.pg-of{margin-left:auto;color:var(--bone-dim);opacity:.75}
+@media (max-width:560px){
+  .pg-of{margin-left:0;width:100%}
+  .pager .pg{min-width:34px;height:34px}
+}
