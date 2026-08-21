@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-21T13:15:43.949Z",
+  "syncedAt": "2026-08-21T13:27:25.156Z",
   "rate": {
     "czkPerEur": 24.153,
     "fetched": "2026-08-21",
@@ -7,6 +7,59 @@
   },
   "count": 141,
   "items": [
+    {
+      "id": "9729949801",
+      "title": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
+      "priceCzk": 320,
+      "priceEur": 13,
+      "brand": "Indian",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good"
+      },
+      "color": {
+        "en": "Beige"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Summer dresses",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 10,
+          "name": "Dresses"
+        },
+        {
+          "id": 1065,
+          "name": "Summer dresses"
+        }
+      ],
+      "description": "Bust: Can fit approx. 36-38 inches\nShoulder: 15 inch\nWaist: free-flow, fits most \nLength: 48 inches\n\nBeautiful long dress in soft pastel beige, with a delicate grey and mustard-yellow floral print. \nOriginal Indian design by the brand Anoshk, a much loved delhi fashion boutique. \nMade from 100% lightweight cotton, soft, breathable, and comfortable even on hot days. \nThe top is fitted and the skirt falls into a vintage style A-line shape. \nThree-quarter sleeves and a small V-notch neckline with a tie detail. \nThe waist is loose and flowing, so it fits a wide range of sizes and body shapes. Perfect for summer, holidays, weddings, or any occasion where you want to feel elegant and comfortable at the same time.",
+      "photo": "images/vinted-9729949801-1.jpg",
+      "photos": [
+        "images/vinted-9729949801-1.jpg",
+        "images/vinted-9729949801-2.jpg",
+        "images/vinted-9729949801-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9729949801-indian-boho-dress-vintage-long-dress-retro-style-summer-cotton",
+        "es": "https://www.vinted.es/items/9729949801-indian-boho-dress-vintage-long-dress-retro-style-summer-cotton",
+        "com": "https://www.vinted.com/items/9729949801-indian-boho-dress-vintage-long-dress-retro-style-summer-cotton",
+        "uk": "https://www.vinted.co.uk/items/9729949801-indian-boho-dress-vintage-long-dress-retro-style-summer-cotton"
+      }
+    },
     {
       "id": "9729863208",
       "title": "Mango Woollen Wide Leg Long Textured Pants",
@@ -474,55 +527,6 @@
         "es": "https://www.vinted.es/items/9649545514-boho-dress-buddha-coord-set-boho-dress-indian-summer-cotton-suit-pant-ethnic-dress",
         "com": "https://www.vinted.com/items/9649545514-boho-dress-buddha-coord-set-boho-dress-indian-summer-cotton-suit-pant-ethnic-dress",
         "uk": "https://www.vinted.co.uk/items/9649545514-boho-dress-buddha-coord-set-boho-dress-indian-summer-cotton-suit-pant-ethnic-dress"
-      }
-    },
-    {
-      "id": "9644821969",
-      "title": "Set of 2 Ceramic Retro Vintage Baking Dish | Cosy Country Kitchen",
-      "priceCzk": 195,
-      "priceEur": 8,
-      "brand": "Handmade Beauty",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags"
-      },
-      "color": {
-        "en": "White"
-      },
-      "category": "Home Decor",
-      "vintedCategory": "Home Oven & roasting dishes",
-      "crumbs": [
-        {
-          "id": 1918,
-          "name": "Home"
-        },
-        {
-          "id": 3476,
-          "name": "Cookware & bakeware"
-        },
-        {
-          "id": 3510,
-          "name": "Oven & roasting dishes"
-        }
-      ],
-      "description": "Brand new, never used. Beautiful matching set of 2 ceramic oven baking dishes with a blue and yellow floral folk design. Ideal kitchenware for baking, roasting, gratins, lasagne and serving. Please see photos for the exact measurements.\n\nThe hand painted floral grid gives them a lovely Polish pottery / European folk-art look, with rich cobalt blue and yellow detailing on a white ceramic background. A lovely set for anyone who likes colourful kitchenware, cottage-style interiors or vintage-inspired tableware.\n\n#ceramicdish #bakingdish #oventray #ovencookware #roastingdish #ceramics #floralceramics #folkart #kitchenware #vintageinspired",
-      "photo": "images/vinted-9644821969-1.jpg",
-      "photos": [
-        "images/vinted-9644821969-1.jpg",
-        "images/vinted-9644821969-2.jpg",
-        "images/vinted-9644821969-3.jpg"
-      ],
-      "favourites": 74,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen",
-        "es": "https://www.vinted.es/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen",
-        "com": "https://www.vinted.com/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen",
-        "uk": "https://www.vinted.co.uk/items/9644821969-set-of-2-ceramic-retro-vintage-baking-dish-cosy-country-kitchen"
       }
     },
     {
