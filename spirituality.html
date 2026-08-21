@@ -615,6 +615,11 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
   will-change: transform; backdrop-filter: blur(12px);
 }
 .card:hover { transform: translateY(-8px) scale(1.01); box-shadow: 0 40px 70px -30px rgba(36,28,46,.35); }
+/* The trip and shop cards are anchors to a pre-filled WhatsApp chat, so the whole card is the
+   target the hover lift has always implied. Nothing else changes: colour and underline are
+   inherited back off the link so the card looks exactly as it did as an <article>. */
+a.card { text-decoration: none; color: inherit; }
+a.card:focus-visible { outline: 2px solid var(--terracotta-deep); outline-offset: 4px; }
 .band-sand .card { background: rgba(251, 246, 236, 0.92); }
 .band-paper .card { background: rgba(242, 231, 211, 0.92); }
 
@@ -1950,59 +1955,59 @@ footer.site {
       </div>
 
       <div class="horizontal-track-wrapper" id="trips-track">
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Panchakarma%20%26%20Ayurveda%20Retreat.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Panchakarma &amp; Ayurveda Retreat on WhatsApp">
           <div class="art-blob b2">
             <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" alt="Kerala coast" loading="lazy">
           </div>
           <div class="loc">KERALA · HIMALAYAS</div>
           <h3>Panchakarma &amp; Ayurveda Retreat</h3>
           <p class="hook">Full Ayurvedic detox and rejuvenation, guided by experienced local practitioners, from coastal Kerala to the quiet Himalayas.</p>
-        </article>
+        </a>
 
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Yoga%20at%20the%20Source.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Yoga at the Source on WhatsApp">
           <div class="art-blob b3">
             <img src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80" alt="Rishikesh Ganges" loading="lazy">
           </div>
           <div class="loc">RISHIKESH</div>
           <h3>Yoga at the Source</h3>
           <p class="hook">A classical yoga intensive in the town where modern yoga tourism began, on the banks of the Ganges.</p>
-        </article>
+        </a>
 
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Jog%20Sadhana.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Jog Sadhana on WhatsApp">
           <div class="art-blob b4">
             <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Chopta Himalayas" loading="lazy">
           </div>
           <div class="loc">RISHIKESH · CHOPTA</div>
           <h3>Jog Sadhana</h3>
           <p class="hook">Deep classical-yoga sadhana balanced with study of classical texts, set against Himalayan scenery.</p>
-        </article>
+        </a>
 
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Golden%20Triangle%20%26%20Goa.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Golden Triangle &amp; Goa on WhatsApp">
           <div class="art-blob b2">
             <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" alt="Goa sunset coast" loading="lazy">
           </div>
           <div class="loc">DELHI · AGRA · JAIPUR · GOA</div>
           <h3>Golden Triangle &amp; Goa</h3>
           <p class="hook">Delhi, Agra and Jaipur's culture and history, followed by rest and recovery on Goa's beaches.</p>
-        </article>
+        </a>
 
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Himalayan%20Spiritual%20Journey.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Himalayan Spiritual Journey on WhatsApp">
           <div class="art-blob b3">
             <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Nepal monastery" loading="lazy">
           </div>
           <div class="loc">NEPAL</div>
           <h3>Himalayan Spiritual Journey</h3>
           <p class="hook">Trekking, monasteries and mountain energy across the Himalayan foothills, for those seeking scale and quiet together.</p>
-        </article>
+        </a>
 
-        <article class="card trip">
+        <a class="card trip" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Private%20%26%20Corporate%20Retreats.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Private &amp; Corporate Retreats on WhatsApp">
           <div class="art-blob b4">
             <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Private meditation retreat" loading="lazy">
           </div>
           <div class="loc">TAILORED</div>
           <h3>Private &amp; Corporate Retreats</h3>
           <p class="hook">A bespoke itinerary built around your dates, group size and goals — individuals, couples, or small groups.</p>
-        </article>
+        </a>
       </div>
 
       <!-- Runway controls. Buttons rather than a hint, because a hint tells you something
@@ -2033,38 +2038,38 @@ footer.site {
       </div>
 
       <div class="horizontal-track-wrapper" id="shop-track">
-        <article class="card shop">
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Ayurvedic%20Oils.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Ayurvedic Oils on WhatsApp">
           <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80" alt="Ayurvedic Oils" loading="lazy"></div>
           <h3>Ayurvedic Oils</h3><p class="hook">Massage, hair, nasal and dropper oils.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Skincare%20%26%20Cosmetics.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Skincare &amp; Cosmetics on WhatsApp">
           <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80" alt="Skincare and Cosmetics" loading="lazy"></div>
           <h3>Skincare &amp; Cosmetics</h3><p class="hook">Natural face and body care.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Copper%20Vessels.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Copper Vessels on WhatsApp">
           <div class="art-blob b4"><img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=600&q=80" alt="Copper Vessels" loading="lazy"></div>
           <h3>Copper Vessels</h3><p class="hook">Bottles, jugs, neti pots, Shirodhara bowls.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Herbs%2C%20Spices%20%26%20Teas.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Herbs, Spices &amp; Teas on WhatsApp">
           <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Herbs and Spices" loading="lazy"></div>
           <h3>Herbs, Spices &amp; Teas</h3><p class="hook">Turmeric, ghee, basmati rice, herbal blends.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Yoga%20Mats%20%26%20Accessories.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Yoga Mats &amp; Accessories on WhatsApp">
           <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?auto=format&fit=crop&w=600&q=80" alt="Yoga Mats" loading="lazy"></div>
           <h3>Yoga Mats &amp; Accessories</h3><p class="hook">Mats, covers, props.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Rituals%20%26%20Meditation.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Rituals &amp; Meditation on WhatsApp">
           <div class="art-blob b4"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80" alt="Meditation Rituals" loading="lazy"></div>
           <h3>Rituals &amp; Meditation</h3><p class="hook">Oil warmers, incense, ritual sets.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Books%20%26%20Learning.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Books &amp; Learning on WhatsApp">
           <div class="art-blob b2"><img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="Books and Learning" loading="lazy"></div>
           <h3>Books &amp; Learning</h3><p class="hook">Ayurveda and yoga reference titles.</p>
-        </article>
-        <article class="card shop">
+        </a>
+        <a class="card shop" href="https://wa.me/420777558262?text=Hi%21%20I%27m%20interested%20in%20Gift%20Sets.%20%E2%80%94%20from%20the%20Spirituality%20page" target="_blank" rel="noopener" aria-label="Ask about Gift Sets on WhatsApp">
           <div class="art-blob b3"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Gift Sets" loading="lazy"></div>
           <h3>Gift Sets</h3><p class="hook">Curated bundles for newcomers or gifting.</p>
-        </article>
+        </a>
       </div>
 
       <!-- Runway controls. Buttons rather than a hint, because a hint tells you something
