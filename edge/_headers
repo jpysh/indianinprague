@@ -82,10 +82,20 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; frame-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests
 
 # ---------------------------------------------------------------------------
-# Immutable content. Derived images are content-addressed by filename (the id and variant
-# width are in the name), and assets carry a per-file content hash in ?v= — see
-# scripts/bump-assets.mjs. A URL under these paths never changes meaning, so a year is
-# safe and re-fetching is pure waste.
+# Immutable content. Assets carry a per-file content hash in ?v= — see
+# scripts/bump-assets.mjs — and derived images now carry one too, written into every URL by
+# build-shop.mjs from the manifest.
+#
+# The image token was added on 21 Aug 2026, and the reason is worth keeping. The rule used
+# to rest on filenames alone: an id plus a variant width, where a new photograph meant a new
+# listing id and therefore a new name. That assumption broke the first time an image was
+# EDITED rather than added — the Govinda book covers were composited onto a backdrop in
+# place, twice, and the bytes behind govinda-96-1.jpg changed while its URL did not. With a
+# year-long immutable cache, every returning visitor kept whichever version they happened to
+# load first: three people looking at the same shelf saw three different builds of it.
+#
+# A URL under these paths still never changes meaning — but that is now true because the URL
+# carries the content, not because filenames were assumed never to be reused.
 /images/derived/*
   ! Cache-Control
   Cache-Control: public, max-age=31536000, immutable
