@@ -56,33 +56,3 @@
 #
 # /restaurants#annamalai therefore still works too: it 301s to /diaries, the browser
 # reapplies #annamalai, and the card is there.
-
-# THE SHELVES MOVED UNDER /wardrobe ON 21 AUG 2026.
-#
-# /wardrobe was already the storefront and the shelves were siblings of it — /clothes,
-# /jewellery, /books — which said, structurally, that they were separate things. They are
-# not: they are what is inside the wardrobe. With a second vendor's catalogue arriving the
-# distinction stopped being cosmetic, because every new shelf would have had to claim
-# another top-level path.
-#
-# 301 and not 302, for the same reason as every rule above: the move is permanent, these
-# URLs have been indexed for months, and only a 301 passes the accumulated ranking on.
-#
-# Two shelves also changed name. /ritual-objects is /wardrobe/meditation — the shelf grew
-# from 11 items to the largest one on the site, and "ritual objects" described the brass
-# but not the malas, incense or deities. /more is /wardrobe/others, which is what a
-# catch-all should be called.
-/clothes                                  /wardrobe/fashion                 301
-/clothes.html                             /wardrobe/fashion                 301
-/jewellery                                /wardrobe/jewellery               301
-/jewellery.html                           /wardrobe/jewellery               301
-/home-decor                               /wardrobe/home-decor              301
-/home-decor.html                          /wardrobe/home-decor              301
-/ritual-objects                           /wardrobe/meditation              301
-/ritual-objects.html                      /wardrobe/meditation              301
-/books                                    /wardrobe/books                   301
-/books.html                               /wardrobe/books                   301
-/more                                     /wardrobe/others                  301
-/more.html                                /wardrobe/others                  301
-/sold                                     /wardrobe/sold                    301
-/sold.html                                /wardrobe/sold                    301

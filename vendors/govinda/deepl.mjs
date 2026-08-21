@@ -20,7 +20,10 @@ export const GLOSSARY = JSON.parse(
   readFileSync(new URL("./data/glossary.json", import.meta.url), "utf8"),
 );
 
-export async function translate(texts, { from = "CS", to = "EN-GB" } = {}) {
+// source_lang is deliberately NOT sent. The catalogue is mostly Czech but not entirely:
+// the foreign-language book branch carries Ukrainian, Russian and Vietnamese editions, and
+// forcing CS on those returns transliterated nonsense. DeepL detects per request.
+export async function translate(texts, { to = "EN-GB" } = {}) {
   const out = [];
   for (const text of texts) {
     const hit = GLOSSARY[text.trim()];
@@ -33,7 +36,6 @@ export async function translate(texts, { from = "CS", to = "EN-GB" } = {}) {
     const key = KEYS[current];
     const body = new URLSearchParams();
     body.set("target_lang", to);
-    body.set("source_lang", from);
     for (const [, t] of pending) body.append("text", t);
 
     const res = await fetch("https://api-free.deepl.com/v2/translate", {
