@@ -108,8 +108,8 @@ const GENERATORS = [
   // FIRST: it copies index.html's header and footer into the hand-written pages that no
   // generator owns (404.html, clothes.html). Missing from both pipelines until 17 Aug 2026,
   // so those two drifted every time the chrome changed and nobody remembered the command.
-  "sync-chrome.mjs",   // index.html's chrome -> 404.html, clothes.html
-  "build-shop.mjs",    // catalog -> shop pages, and the SHOP:* regions of index/clothes
+  "sync-chrome.mjs",   // index.html's chrome -> 404.html, wardrobe/fashion.html
+  "build-shop.mjs",    // catalog + vendor listings -> shelf pages, and the SHOP:* regions
   // Added 17 Aug 2026, and it was overdue. It reads data/posts.json, content/*.html and the
   // image manifest — all committed — so it belongs in exactly the same category as
   // build-shop. It was missing from this list AND from publish.sh, which was survivable
