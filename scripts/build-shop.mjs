@@ -135,8 +135,14 @@ function picture(item, manifest, eager) {
   }
   // Root-absolute: the manifest stores repo-relative paths and shelf pages are a directory
   // down, where "images/…" would resolve to /wardrobe/images/….
-  const jpgs = entry.variants.map((v) => `/${v.jpg} ${v.w}w`).join(", ");
-  const webps = entry.variants.map((v) => `/${v.webp} ${v.w}w`).join(", ");
+  //
+  // ?v= is the content token from the manifest. Derived images are cached for a year as
+  // immutable, so a URL whose bytes change without changing name is served stale to every
+  // returning visitor until the cache expires — which is what happened when the Govinda
+  // book covers were composited in place. The token makes a changed picture a changed URL.
+  const q = entry.v ? `?v=${entry.v}` : "";
+  const jpgs = entry.variants.map((v) => `/${v.jpg}${q} ${v.w}w`).join(", ");
+  const webps = entry.variants.map((v) => `/${v.webp}${q} ${v.w}w`).join(", ");
   // src is the SMALLEST variant, not the largest. srcset decides what a modern browser
   // actually fetches, so src is only the fallback — and pointing it at the 800 meant any
   // client that ignored srcset pulled 120 KB to fill a 400px cell. width/height come from
@@ -145,7 +151,7 @@ function picture(item, manifest, eager) {
   const load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
   return (
     `<picture><source type="image/webp" srcset="${webps}" sizes="${IMG_SIZES}">` +
-    `<img class="ph" src="/${fallback.jpg}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
+    `<img class="ph" src="/${fallback.jpg}${q}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
     `width="${fallback.w}" height="${fallback.h}" alt="${alt}" ${load} decoding="async"></picture>`
   );
 }
@@ -165,7 +171,10 @@ function extraShots(item, manifest) {
       const entry = manifest[p];
       if (!entry) return null;
       const base = entry.variants[0].jpg.replace(/-\d+\.jpg$/, "");
-      return `${base.replace("images/derived/", "")}:${entry.variants.map((v) => v.w).join("|")}`;
+      // base:widths:token — shop.js appends the token as ?v= for the same cache reason the
+      // <picture> markup does.
+      return `${base.replace("images/derived/", "")}:${entry.variants.map((v) => v.w).join("|")}` +
+        (entry.v ? `:${entry.v}` : "");
     })
     .filter(Boolean)
     .join(",");

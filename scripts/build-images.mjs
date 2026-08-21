@@ -17,7 +17,8 @@
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { readdir, mkdir, stat, writeFile } from "node:fs/promises";
+import { readdir, mkdir, stat, writeFile, readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -147,10 +148,26 @@ async function main() {
       variants.push({ w, h, jpg: path.relative(ROOT, jpg), webp: path.relative(ROOT, webp) });
     }
 
+    // A content token for the SOURCE, carried into every URL that points at its
+    // derivatives as ?v= — the same device assets/*.css already uses.
+    //
+    // WHY THIS EXISTS (21 Aug 2026). edge/_headers caches /images/derived/* for a year as
+    // immutable, on the stated grounds that "a URL under these paths never changes
+    // meaning". That held while every source was a photograph named after its listing id:
+    // a new photo meant a new name. It stopped holding the moment vendor images were
+    // composited in place — the bytes behind govinda-96-1.jpg changed twice while the URL
+    // stayed put, so returning visitors kept a year-long cached copy of the old one. Three
+    // people looking at the same shelf saw three different builds.
+    //
+    // Hashing the source rather than each derivative keeps one token per card (the extra
+    // shots in data-shots share it) and changes exactly when the picture changes.
+    const token = createHash("sha1").update(await readFile(src)).digest("hex").slice(0, 8);
+
     manifest[`images/${file}`] = {
       width: srcW,
       height: srcH,
       aspect: +(srcW / srcH).toFixed(4),
+      v: token,
       variants,
     };
     process.stdout.write(`${file} ${srcW}x${srcH} -> ${variants.map((v) => v.w).join(",")}\n`);
