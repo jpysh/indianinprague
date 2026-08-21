@@ -28,7 +28,7 @@ Eight shelves. Your existing tree kept wherever it survives contact with 1,485 n
 | Home Decor | 12 | 127 | Bedding, cushions, table and dining, storage, decorative — **plus the incoming line** |
 | Books | 39 | 91 | |
 | Wellness | 1 | 82 | Govinda's `Cosmetics` folded in |
-| Stationery and keepsakes | 0 | 57 | **New.** Keyrings, cards, notebooks, badges |
+| Keepsakes | 0 | 57 | **New.** Keyrings, cards, notebooks, badges |
 | Food | 0 | 27 | **New.** Spices, honey, prasadam, Ayurvedic supplements |
 | Others | 2 | 21 | **New.** What genuinely fits nowhere, kept visible rather than hidden |
 
@@ -42,12 +42,12 @@ shelf. The branch is not gifting, it is devotional goods filed by object type:
 | Small statues | 58 | Meditation › Deities | They are murtis — Damodar, Nrsimhadev, Yasoda |
 | Stickers and posters | 51 | Meditation › Stickers and posters | Krishna, Durga, Hanuman |
 | Boxes (incl. Rajasthani) | 28 | Home Decor › Boxes | Painted and mirror-work boxes |
-| Key rings | 24 | Stationery and keepsakes | |
+| Key rings | 24 | Keepsakes | |
 | Dolls and children's gifts | 19 | Others › Dolls and children's gifts | Radha-Krishna, Nrsimha-Prahlad dolls |
-| Greetings cards | 18 | Stationery and keepsakes | |
+| Greetings cards | 18 | Keepsakes | |
 | Pendants | 17 | Jewellery › Pendants | Tilak, kavaca, Nrsimhadev |
-| Notebooks | 8 | Stationery and keepsakes | |
-| Badges | 7 | Stationery and keepsakes | |
+| Notebooks | 8 | Keepsakes | |
+| Badges | 7 | Keepsakes | |
 
 Merging the statues into `Deities` also fixes that shelf: it held 5 items, most of them
 *clothes* for deities. It now holds 63 and means what it says.
@@ -79,7 +79,7 @@ any depth — it earns its own shelf, leaving `Home Decor` as tableware, storage
 decorative. Worth watching, not worth pre-empting: a shelf of 36 split off now would look
 empty, and splitting later costs two redirects.
 
-### `Stationery and keepsakes`, split out of `Others`
+### `Keepsakes`, split out of `Others`
 
 Keyrings (24), greetings cards (18), notebooks (8) and badges (7) — 57 items that share a
 shopper: small, inexpensive, bought as an afterthought or a present. They were the reason
@@ -127,7 +127,7 @@ Swami`) becomes a brand-style filter rather than a URL.
 | Home Decor | Table and dining (34), Decorative accessories (29), Storage and baskets (28), Cushions and throws (27), Bedding and quilts (9) |
 | Books | Srila Prabhupada, Other authors, Foreign languages, Cookery books, For children, Second-hand books, Audio and video, E-books |
 | Wellness | Creams and oils, Soaps, Oil-based perfumes, Shampoos and hair dyes, Dental hygiene, Make-up |
-| Stationery and keepsakes | Key rings (24), Greetings cards (18), Notebooks (8), Badges (7) |
+| Keepsakes | Key rings (24), Greetings cards (18), Notebooks (8), Badges (7) |
 | Others | none — 21 items, too few and too unalike to subdivide |
 | Food | Spices, Ayurvedic supplements, Prasadam and mahaprasadam, Honey |
 

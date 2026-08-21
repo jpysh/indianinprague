@@ -27,7 +27,7 @@
 // Run after sync-vinted.mjs and build-images.mjs (it reads the image manifest the latter
 // writes, to emit width/height and stop the grid reflowing as photos arrive).
 
-import { readFile, writeFile, rm } from "node:fs/promises";
+import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -42,12 +42,12 @@ const STOREFRONT = "cz";
 // Order is display order: the nav, and the sequence of sections on shop.html.
 const CATEGORIES = [
   {
-    name: "Fashion", slug: "clothes", page: "clothes.html", managed: true,
+    name: "Fashion", slug: "fashion", page: "wardrobe/fashion.html", managed: true,
     sub: "kurtas · sarees · sets",
     title: "Modern Indian Clothes in Prague — Buy on Vinted",
   },
   {
-    name: "Home Decor", slug: "home-decor", page: "home-decor.html",
+    name: "Home Decor", slug: "home-decor", page: "wardrobe/home-decor.html",
     sub: "textiles · ceramics",
     title: "Indian Home Decor in Prague — Textiles, Ceramics, Handmade | Indian in Prague",
     h1: ["Home things,", "carried back"],
@@ -55,7 +55,7 @@ const CATEGORIES = [
     expo: ["HOME", "textiles · ceramics", "handmade · block print"],
   },
   {
-    name: "Jewellery", slug: "jewellery", page: "jewellery.html",
+    name: "Jewellery", slug: "jewellery", page: "wardrobe/jewellery.html",
     sub: "silver · handmade",
     title: "Indian Jewellery in Prague — Silver, Beads, Handmade | Indian in Prague",
     h1: ["Jewellery,", "mostly silver"],
@@ -68,7 +68,7 @@ const CATEGORIES = [
     // is the Spirituality MODULE now (yoga, ayurveda, meditation, trips — its own nav slot
     // and its own hand-written page), so the shelf of brass and beads took the name it
     // always actually described and gave up the URL.
-    name: "Spirituality", label: "Ritual Objects", slug: "ritual-objects", page: "ritual-objects.html",
+    name: "Spirituality", label: "Meditation", slug: "meditation", page: "wardrobe/meditation.html",
     sub: "brass · sandalwood",
     title: "Indian Ritual Objects in Prague — Incense, Brass, Prayer Beads | Indian in Prague",
     h1: ["Objects that", "hold something"],
@@ -83,7 +83,7 @@ const CATEGORIES = [
   // Re-adding it means restoring an entry here with managed:true and module:true, plus its
   // sitemap line and its nav slot in index.html.
   {
-    name: "Books", slug: "books", page: "books.html",
+    name: "Books", slug: "books", page: "wardrobe/books.html",
     sub: "second-hand books",
     title: "Indian Books in Prague — Fiction, Cookery, Second-hand | Indian in Prague",
     h1: ["Books I have", "finished with"],
@@ -94,7 +94,7 @@ const CATEGORIES = [
     // The data keeps saying "Uncategorised" — that is the signal sync-vinted.mjs prints
     // when a Vinted branch has no rule yet, and softening it in the data would hide the
     // work. The shopper just sees "More".
-    name: "Uncategorised", label: "More", slug: "more", page: "more.html",
+    name: "Uncategorised", label: "Others", slug: "others", page: "wardrobe/others.html",
     sub: "odds and ends",
     title: "More from my closet | Indian in Prague",
     h1: ["Everything", "else"],
@@ -111,7 +111,10 @@ const spice = (id) => SPICE[Number(id) % SPICE.length];
 // The site serves extensionless URLs (see wrangler.jsonc html_handling). Every URL this
 // file writes — canonical, og:url, tiles, breadcrumbs — goes through here, so the .html
 // form exists only as a filename on disk and never as a link. index.html is the site root.
-const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
+const url = (page) =>
+  page === "index.html" ? "/"
+  : page === "wardrobe/index.html" ? "/wardrobe"
+  : "/" + String(page).replace(/\.html$/, "");
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -129,11 +132,13 @@ function picture(item, manifest, eager) {
   if (!entry) {
     // No derivative yet (build-images.mjs not run since the last sync). Emit the original
     // so the page is still correct, just heavier.
-    const src = esc(item.photo || "images/derived/IMG_5630-400.jpg");
+    const src = "/" + esc(item.photo || "images/derived/IMG_5630-400.jpg");
     return `<img class="ph" src="${src}" alt="${alt}" loading="${eager ? "eager" : "lazy"}" decoding="async">`;
   }
-  const jpgs = entry.variants.map((v) => `${v.jpg} ${v.w}w`).join(", ");
-  const webps = entry.variants.map((v) => `${v.webp} ${v.w}w`).join(", ");
+  // Root-absolute: the manifest stores repo-relative paths and shelf pages are a directory
+  // down, where "images/…" would resolve to /wardrobe/images/….
+  const jpgs = entry.variants.map((v) => `/${v.jpg} ${v.w}w`).join(", ");
+  const webps = entry.variants.map((v) => `/${v.webp} ${v.w}w`).join(", ");
   // src is the SMALLEST variant, not the largest. srcset decides what a modern browser
   // actually fetches, so src is only the fallback — and pointing it at the 800 meant any
   // client that ignored srcset pulled 120 KB to fill a 400px cell. width/height come from
@@ -142,7 +147,7 @@ function picture(item, manifest, eager) {
   const load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
   return (
     `<picture><source type="image/webp" srcset="${webps}" sizes="${IMG_SIZES}">` +
-    `<img class="ph" src="${fallback.jpg}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
+    `<img class="ph" src="/${fallback.jpg}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
     `width="${fallback.w}" height="${fallback.h}" alt="${alt}" ${load} decoding="async"></picture>`
   );
 }
@@ -383,7 +388,7 @@ const catNav = (active, counts) =>
   // Its own page as well as the availability toggle, because "what has already sold" is a
   // thing a shopper goes looking for deliberately — and a page has a URL you can link to,
   // which a filter state does not.
-  (counts.__sold ? `<a href="/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
+  (counts.__sold ? `<a href="/wardrobe/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
   `</nav>`;
 
 /* ------------------------------------------------------------------- pages ---- */
@@ -394,6 +399,15 @@ function chrome(indexHtml) {
   const header = /<header class="site">[\s\S]*?<\/header>/.exec(indexHtml);
   const footer = /<footer>[\s\S]*?<\/footer>/.exec(indexHtml);
   if (!header || !footer) throw new Error("could not lift <header>/<footer> out of index.html");
+
+  // Shelf pages are written to /wardrobe/, so the chrome's relative hrefs (assets/site.css)
+  // would resolve a directory too high. Same fix, same reason, as build-diaries.mjs.
+  const absolutise = (html) =>
+    html
+      .replace(/(href|src)="(assets\/)/g, '$1="/$2')
+      .replace(/(href|src)="(images\/)/g, '$1="/$2');
+  header[0] = absolutise(header[0]);
+  footer[0] = absolutise(footer[0]);
   // No ?v= token is emitted here. bump-assets.mjs owns it outright and runs after every
   // generator, stamping each asset with a hash of its own contents. This function used to
   // scrape the token out of index.html and echo it onto the generated pages, which broke
@@ -545,14 +559,14 @@ function page(cat, items, manifest, counts, ch) {
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
 <meta property="og:image:alt" content="Indian in Prague">
-<link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Plex Sans carries every lede and every paragraph of prose on the site now, so it is
      as much a first-paint font as the mono is. One file: it is a variable face. -->
-<link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/clothes.css">
-<link rel="stylesheet" href="assets/shop.css">
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/clothes.css">
+<link rel="stylesheet" href="/assets/shop.css">
 <script type="application/ld+json">
 ${jsonLd(cat, items)}
 </script>
@@ -580,7 +594,7 @@ ${markNav(ch.header, "wardrobe")}
 </div></section>
 </main>
 ${ch.footer}
-<script src="assets/shop.js" defer></script>
+<script src="/assets/shop.js" defer></script>
 </body>
 </html>
 `;
@@ -655,6 +669,7 @@ async function main() {
       await writeFile(p, replaceRegion(html, "SHOP:GRID", body, cat.page));
       console.log(`  ${cat.page} — ${items.length} items (grid region replaced)`);
     } else {
+      await mkdir(path.dirname(path.join(ROOT, cat.page)), { recursive: true });
       await writeFile(path.join(ROOT, cat.page), page(cat, items, manifest, counts, ch));
       console.log(`  ${cat.page} — ${items.length} items`);
     }
@@ -673,14 +688,15 @@ async function main() {
   // sees, and renaming them would have churned the asset cache token and every reference in
   // DEPLOY.md to buy nothing.
   const all = {
-    name: "Everything", slug: "wardrobe", page: "wardrobe.html",
+    name: "Everything", slug: "wardrobe", page: "wardrobe/index.html",
     title: "The whole wardrobe — Indian clothes, jewellery, home things in Prague | Indian in Prague",
     h1: ["Everything", "in one place"],
     lead: `All ${available.length} pieces currently for sale — clothing, jewellery, home things, books and the rest — plus what has already sold. Filter it down, or tap any piece to open its Vinted listing.`,
     expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
-  await writeFile(path.join(ROOT, "wardrobe.html"), page(all, live, manifest, counts, ch));
-  console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold)`);
+  await mkdir(path.join(ROOT, "wardrobe"), { recursive: true });
+  await writeFile(path.join(ROOT, "wardrobe/index.html"), page(all, live, manifest, counts, ch));
+  console.log(`  wardrobe/index.html — ${live.length} items (${sold.length} sold)`);
   // The old page is not left on disk to rot: it would still be reachable, still be
   // indexable, and would go stale the first time the closet changed.
   if (existsSync(path.join(ROOT, "shop.html"))) {
@@ -691,7 +707,7 @@ async function main() {
   // The sold page. Worth its own URL rather than only a filter state: "has anything here
   // actually sold" is a question a hesitant buyer asks deliberately, and a URL can be
   // linked to and indexed where a toggle cannot.
-  if (!sold.length && existsSync(path.join(ROOT, "sold.html"))) await rm(path.join(ROOT, "sold.html"));
+  if (!sold.length && existsSync(path.join(ROOT, "wardrobe/sold.html"))) await rm(path.join(ROOT, "wardrobe/sold.html"));
   if (sold.length) {
     // The last N, not the whole archive. This page answers "does anything here actually
     // sell?", and that is a question about recency — a 2024 sale is no evidence the shop is
@@ -701,7 +717,7 @@ async function main() {
     const RECENT_SOLD = 10;
     const recent = sold.slice(0, RECENT_SOLD);
     const soldPage = {
-      name: "Sold", slug: "sold", page: "sold.html",
+      name: "Sold", slug: "sold", page: "wardrobe/sold.html",
       title: "Last 10 items sold — Indian in Prague",
       h1: ["Already", "gone"],
       // "Sold" here means "left the closet". Vinted deletes a listing the moment it sells
@@ -710,7 +726,7 @@ async function main() {
       lead: `The last ${recent.length} pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
       expo: ["SOLD", "recent", `last ${recent.length} · sold`],
     };
-    await writeFile(path.join(ROOT, "sold.html"), page(soldPage, recent, manifest, counts, ch));
+    await writeFile(path.join(ROOT, "wardrobe/sold.html"), page(soldPage, recent, manifest, counts, ch));
     console.log(`  sold.html — ${recent.length} of ${sold.length} archived items`);
     written++;
   }

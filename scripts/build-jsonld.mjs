@@ -222,18 +222,18 @@ const graphs = {
     },
   ],
 
-  "clothes.html": async () => [
+  "wardrobe/fashion.html": async () => [
     {
       "@type": "CollectionPage",
-      "@id": `${SITE}/clothes#webpage`,
-      url: `${SITE}/clothes`,
+      "@id": `${SITE}/wardrobe/fashion#webpage`,
+      url: `${SITE}/wardrobe/fashion`,
       name: "Modern Indian clothes in Prague",
       isPartOf: { "@id": `${SITE}/#website` },
       inLanguage: "en",
     },
     breadcrumb([
       ["Home", `${SITE}/`],
-      ["Clothes", `${SITE}/clothes`],
+      ["Fashion", `${SITE}/wardrobe/fashion`],
     ]),
     {
       "@type": "ItemList",
@@ -257,7 +257,7 @@ const graphs = {
     // risk, and is just as extractable by an LLM answering "what is Ajrakh block print".
     {
       "@type": "DefinedTermSet",
-      "@id": `${SITE}/clothes#glossary`,
+      "@id": `${SITE}/wardrobe/fashion#glossary`,
       name: "A quick guide to modern Indian labels",
       description:
         "What the terms on Indian clothing labels actually mean, for buyers who have only met Indian clothing through European ethno shops.",
@@ -266,14 +266,14 @@ const graphs = {
         {
           "@type": "DefinedTerm",
           name: "Block print",
-          inDefinedTermSet: { "@id": `${SITE}/clothes#glossary` },
+          inDefinedTermSet: { "@id": `${SITE}/wardrobe/fashion#glossary` },
           description:
             "Hand-carved wooden blocks stamped by hand onto cotton. The tiny irregularities are the point — no two metres are identical. The best of it is done slowly and ethically in Jaipur workshops, and it is the opposite of printed-mandala fast fashion.",
         },
         {
           "@type": "DefinedTerm",
           name: "Handloom",
-          inDefinedTermSet: { "@id": `${SITE}/clothes#glossary` },
+          inDefinedTermSet: { "@id": `${SITE}/wardrobe/fashion#glossary` },
           description:
             "Fabric woven on a non-powered loom by a weaver rather than a machine. It breathes differently, drapes differently and lasts longer. Good makers work directly with artisan communities, so a piece carries a maker rather than just a label.",
         },

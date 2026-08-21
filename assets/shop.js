@@ -13,7 +13,9 @@
 (function () {
   "use strict";
 
-  var IMG = "images/derived/";
+  // Root-absolute: shelf pages live at /wardrobe/<shelf>, so a relative path would
+  // resolve to /wardrobe/images/derived/.
+  var IMG = "/images/derived/";
   var SIZES = "(min-width:801px) 400px, (min-width:521px) 50vw, calc(100vw - 40px)";
   var PAGE = 24; // cards revealed per step
   // The sticky site header is 52px; leave a little air so the toolbar does not land flush
