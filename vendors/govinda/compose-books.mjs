@@ -43,13 +43,15 @@ async function isWhitePadded(file) {
 }
 
 async function backdrop(out) {
-  // Blurred and gently vignetted, imitating what the camera did for free on the Vinted
-  // photographs: shallow depth of field, light falling off at the edges. Without it a sharp
-  // quilt competes with a sharp cover and the eye settles on neither.
+  // Vignetted, not blurred. The vignette imitates light falling off at the edges of the
+  // closet photographs and keeps the eye on the cover; a blur was tried and dropped, because
+  // it read as a defect at thumbnail size rather than as depth of field — the block print is
+  // the point of the cloth, and softening it threw away the detail that makes it recognisably
+  // the same fabric the Vinted photographs are shot on.
   await magick([
     BACKDROP, "-auto-orient",
     "-resize", `${CANVAS.w}x${CANVAS.h}^`, "-gravity", "center", "-extent", `${CANVAS.w}x${CANVAS.h}`,
-    "-blur", "0x4", out,
+    out,
   ]);
   await magick([
     out,
