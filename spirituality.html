@@ -639,18 +639,21 @@ a.card:focus-visible { outline: 2px solid var(--terracotta-deep); outline-offset
 .horizontal-pinned-section { position: relative; overflow: hidden; }
 .horizontal-track-wrapper { display: flex; width: max-content; padding: 20px var(--edge) 40px; gap: 32px; }
 
-@media (max-width: 768px) {
-  .horizontal-pinned-section { overflow-x: auto; }
-  .horizontal-track-wrapper { width: 100%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px; }
-  .card.trip, .card.shop { scroll-snap-align: start; }
-}
+/* The plain swipeable shelf, kept for the two cases where no runway is built: the engine
+   failed (`no-motion-fallback`), or the visitor asked for reduced motion (`runway-native`).
+   Without this the track is `width: max-content` inside `overflow: hidden` and every card
+   past the first screen is unreachable — six trips and eight products, invisible.
 
-/* If the animation libraries never arrived, the desktop runway is never built — and the
-   track is `width: max-content` inside `overflow: hidden`, so every card past the first
-   screen becomes unreachable. Six trips and eight products, invisible. The fallback class
-   set by the preloader guard turns both runways into ordinary scrollers. */
-.no-motion-fallback .horizontal-pinned-section { overflow-x: auto; }
-.no-motion-fallback .horizontal-track-wrapper { width: 100%; overflow-x: auto; }
+   These were previously also applied at `max-width: 768px` unconditionally, which is how a
+   healthy phone ended up with the fallback layout and the pinned runway at the same time. */
+.no-motion-fallback .horizontal-pinned-section,
+.runway-native .horizontal-pinned-section { overflow-x: auto; }
+.no-motion-fallback .horizontal-track-wrapper,
+.runway-native .horizontal-track-wrapper {
+  width: 100%; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 20px;
+}
+.no-motion-fallback .card.trip, .no-motion-fallback .card.shop,
+.runway-native .card.trip, .runway-native .card.shop { scroll-snap-align: start; }
 
 /* ============================================================
    RUNWAY CONTROLS — the visible way to move a runway sideways
