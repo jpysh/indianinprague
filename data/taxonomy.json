@@ -35,7 +35,8 @@
     "Women Face care": "Wellness",
     "Women Body care": "Wellness",
     "Women Body care tools": "Wellness",
-    "Hobbies & collectables Charms & pendants": "Jewellery"
+    "Hobbies & collectables Charms & pendants": "Jewellery",
+    "Women Body jewellery": "Jewellery"
   },
   "conditions": {
     "New with tags": "New with tags",
@@ -46,6 +47,7 @@
   },
   "colors": {
     "Multicolor": "Multicolour",
+    "Multi": "Multicolour",
     "Gray": "Grey"
   },
   "_sizes_comment": [
