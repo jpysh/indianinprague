@@ -2,22 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "indianinprague",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4321"],
+      "name": "dist",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "-l", "4321", "dist"],
       "port": 4321
-    },
-    {
-      "name": "indianinprague-qa",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "4322"],
-      "port": 4322
-    },
-    {
-      "name": "indianinprague-dist",
-      "runtimeExecutable": "./node_modules/.bin/wrangler",
-      "runtimeArgs": ["dev", "--port", "4330"],
-      "port": 4330
     }
   ]
 }

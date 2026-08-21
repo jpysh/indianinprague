@@ -174,6 +174,14 @@ await syncDir(path.join(ROOT, "assets"), path.join(DIST, "assets"));
 if (existsSync(path.join(ROOT, "diaries"))) {
   await syncDir(path.join(ROOT, "diaries"), path.join(DIST, "diaries"));
 }
+
+// wardrobe/ — the storefront index and one page per shelf, written by build-shop.mjs. The
+// shelves moved under /wardrobe on 21 Aug 2026: they are what is inside the wardrobe, not
+// siblings of it, and a second vendor's catalogue would otherwise have claimed a fresh
+// top-level path per shelf. Same directory-not-root-file reasoning as diaries/ above.
+if (existsSync(path.join(ROOT, "wardrobe"))) {
+  await syncDir(path.join(ROOT, "wardrobe"), path.join(DIST, "wardrobe"));
+}
 await mkdir(path.join(DIST, "images"), { recursive: true });
 await syncDir(path.join(ROOT, "images", "derived"), path.join(DIST, "images", "derived"));
 
@@ -238,17 +246,17 @@ const redirectSources = new Set(
     .map((l) => l.trim().split(/\s+/)[0]),
 );
 
-// Root pages plus diaries/ — the Diaries index and every post page. They were outside this
-// check for as long as the Diaries was a single root file; they are most of the site's
-// internal linking now, so leaving them out would check the least link-dense pages and skip
-// the rest.
+// Root pages plus diaries/ and wardrobe/. They were outside this check for as long as the
+// Diaries was a single root file; between them they are most of the site's internal linking
+// now, so leaving them out would check the least link-dense pages and skip the rest.
+const subdirPages = async (dir) =>
+  existsSync(path.join(DIST, dir))
+    ? (await readdir(path.join(DIST, dir))).filter((f) => f.endsWith(".html")).map((f) => `${dir}/${f}`)
+    : [];
 const htmlFiles = [
   ...(await readdir(DIST)).filter((f) => f.endsWith(".html")),
-  ...(existsSync(path.join(DIST, "diaries"))
-    ? (await readdir(path.join(DIST, "diaries")))
-        .filter((f) => f.endsWith(".html"))
-        .map((f) => `diaries/${f}`)
-    : []),
+  ...(await subdirPages("diaries")),
+  ...(await subdirPages("wardrobe")),
 ];
 const pageText = new Map();
 for (const f of htmlFiles) pageText.set(f, await readFile(path.join(DIST, f), "utf8"));
@@ -279,7 +287,7 @@ for (const [file, html] of pageText) {
       : htmlFiles.includes(target.slice(1)) ? target.slice(1)
       : htmlFiles.includes(target.slice(1) + ".html") ? target.slice(1) + ".html"
       : target === "/" ? "index.html"
-      // /diaries is a directory index, so its anchors live in diaries/index.html.
+      // /diaries and /wardrobe are directory indexes, so their anchors live in <dir>/index.html.
       : htmlFiles.includes(target.slice(1) + "/index.html") ? target.slice(1) + "/index.html"
       : null;
     if (!targetFile) continue; // a redirect target, or not an html page — nothing to check

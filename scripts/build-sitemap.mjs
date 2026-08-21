@@ -29,10 +29,10 @@ const PAGES = [
   { file: "wardrobe.html", loc: "/wardrobe", priority: "0.9", changefreq: "daily" },
   // wellness.html and buddy.html were removed on 16 Aug 2026 (unfinished holding pages),
   // so neither belongs in the sitemap. Their URLs now return the site's 404.
-  // Spirituality is a hand-written module page (yoga, ayurveda, meditation, trips), not
-  // the shop shelf that used to hold this URL — that shelf is /ritual-objects.html now.
+  // Spirituality is a hand-written module page (yoga, ayurveda, meditation, trips), not a
+  // shop shelf. The shelf that briefly held this URL is /wardrobe/meditation now.
   { file: "spirituality.html", loc: "/spirituality", priority: "0.8", changefreq: "monthly" },
-  { file: "clothes.html", loc: "/clothes", priority: "0.9", changefreq: "daily" },
+  { file: "wardrobe/fashion.html", loc: "/wardrobe/fashion", priority: "0.9", changefreq: "daily" },
   // /restaurants and /article-contemporary-indian-wear were folded into /diaries on
   // 17 Aug 2026 and both 301 to it (edge/_redirects). A sitemap must not list a URL that
   // redirects — it tells a crawler the redirect target is not the canonical one — so the
@@ -61,7 +61,7 @@ for (const file of existsSync(`${ROOT}/diaries`) ? readdirSync(`${ROOT}/diaries`
 // discovered from disk rather than listed, and vanish from the sitemap when they empty
 // out rather than becoming 404s a crawler keeps retrying.
 // changefreq is daily because these turn over with the closet, not with the writing.
-for (const file of ["home-decor.html", "jewellery.html", "ritual-objects.html", "books.html", "more.html", "sold.html"]) {
+for (const file of ["wardrobe/home-decor.html", "wardrobe/jewellery.html", "wardrobe/meditation.html", "wardrobe/books.html", "wardrobe/others.html", "wardrobe/sold.html"]) {
   if (existsSync(`${ROOT}/${file}`)) {
     PAGES.push({ file, loc: `/${file.replace(/\.html$/, "")}`, priority: "0.8", changefreq: "daily" });
   }

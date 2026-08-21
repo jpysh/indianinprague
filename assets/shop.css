@@ -304,6 +304,13 @@
    --bone at 4.76:1, so the badge stays urgent AND legible. */
 .frame .cap.sold-flag{background:var(--chilli);color:var(--bone)}
 .frame .cap.res{background:var(--saffron);color:var(--void)}
+/* Where the piece comes from. Deliberately the quietest of the three flags: Sold and
+   Reserved are about availability and have to interrupt, while the vendor mark is
+   provenance — it must be readable at a glance without competing with the photograph.
+   --bone on --chicory measures 10.9:1, so it stays legible at 12px over any image. */
+.frame .cap.vendor-flag{background:var(--chicory);color:var(--bone);font-weight:500}
+/* Sold or out-of-stock cards carry two flags in the same corner; stack rather than overlap. */
+.frame .cap.flag ~ .cap.flag{top:34px}
 /* A sold card carries a flag AND the counter in the top-left; push the flag clear. */
 .piece.sold .shot-count{display:none}
 

@@ -1,0 +1,682 @@
+{
+  "12": {
+    "vendorPath": "Books",
+    "shelf": "Books",
+    "sub": null
+  },
+  "19": {
+    "vendorPath": "Fashion",
+    "shelf": "Fashion",
+    "sub": null
+  },
+  "20": {
+    "vendorPath": "Fashion > Men's clothing",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "21": {
+    "vendorPath": "Fashion > Women's clothing",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "22": {
+    "vendorPath": "Fashion > Children's clothing",
+    "shelf": "Fashion",
+    "sub": "Children's clothing"
+  },
+  "23": {
+    "vendorPath": "Fashion > Men's clothing > Dhoti",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "25": {
+    "vendorPath": "Fashion > Men's clothing > Shirts",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "26": {
+    "vendorPath": "Fashion > Men's clothing > T-shirts",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "27": {
+    "vendorPath": "Fashion > Men's clothing > Trousers",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "28": {
+    "vendorPath": "Fashion > Men's clothing > Chadars",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "29": {
+    "vendorPath": "Fashion > Women's clothing > Saris",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "30": {
+    "vendorPath": "Fashion > Women's clothing > Gopi dresses",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "32": {
+    "vendorPath": "Fashion > Women's clothing > Skirts",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "33": {
+    "vendorPath": "Fashion > Women's clothing > Punjabi suits",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "34": {
+    "vendorPath": "Fashion > Children's clothing > Printed T-shirts",
+    "shelf": "Fashion",
+    "sub": "Children's clothing"
+  },
+  "36": {
+    "vendorPath": "Home > Home accessories",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "38": {
+    "vendorPath": "Cosmetics",
+    "shelf": "Wellness",
+    "sub": null
+  },
+  "39": {
+    "vendorPath": "Food and supplements",
+    "shelf": "Food",
+    "sub": null
+  },
+  "40": {
+    "vendorPath": "Gift items",
+    "shelf": "Others",
+    "sub": null
+  },
+  "41": {
+    "vendorPath": "Home > Home textiles",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "42": {
+    "vendorPath": "Home > Crockery",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "43": {
+    "vendorPath": "Home > Home accessories > Decorative hooks",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "44": {
+    "vendorPath": "Home > Home accessories > Hanging decorations",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "45": {
+    "vendorPath": "Fashion > Women's clothing > Scarves, chadars and dupattas",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "46": {
+    "vendorPath": "Fashion > Handbags",
+    "shelf": "Fashion",
+    "sub": "Bags"
+  },
+  "47": {
+    "vendorPath": "Fashion > Jewellery",
+    "shelf": "Jewellery",
+    "sub": null
+  },
+  "48": {
+    "vendorPath": "Home > Home textiles > Pillowcases",
+    "shelf": "Home Decor",
+    "sub": "Cushions and throws"
+  },
+  "49": {
+    "vendorPath": "Home > Home textiles > Bedspreads",
+    "shelf": "Home Decor",
+    "sub": "Bedding and quilts"
+  },
+  "50": {
+    "vendorPath": "Home > Crockery > Plates",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "51": {
+    "vendorPath": "Home > Crockery > Cups",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "52": {
+    "vendorPath": "Home > Crockery > Bowls",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "53": {
+    "vendorPath": "Home > Crockery > Sealable bowls",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "54": {
+    "vendorPath": "Cosmetics > Soaps",
+    "shelf": "Wellness",
+    "sub": "Soaps"
+  },
+  "55": {
+    "vendorPath": "Cosmetics > Shampoos and hair dyes",
+    "shelf": "Wellness",
+    "sub": "Shampoos and hair dyes"
+  },
+  "56": {
+    "vendorPath": "Cosmetics > Dental hygiene",
+    "shelf": "Wellness",
+    "sub": "Dental hygiene"
+  },
+  "57": {
+    "vendorPath": "Cosmetics > Creams and oils",
+    "shelf": "Wellness",
+    "sub": "Creams and oils"
+  },
+  "58": {
+    "vendorPath": "Cosmetics > Oil-based perfumes",
+    "shelf": "Wellness",
+    "sub": "Oil-based perfumes"
+  },
+  "59": {
+    "vendorPath": "Cosmetics > Make-up",
+    "shelf": "Wellness",
+    "sub": "Make-up"
+  },
+  "61": {
+    "vendorPath": "Food and supplements > Ayurvedic supplements",
+    "shelf": "Food",
+    "sub": "Ayurvedic supplements"
+  },
+  "63": {
+    "vendorPath": "Food and supplements > Honey",
+    "shelf": "Food",
+    "sub": "Honey"
+  },
+  "64": {
+    "vendorPath": "Food and supplements > Spices",
+    "shelf": "Food",
+    "sub": "Spices"
+  },
+  "65": {
+    "vendorPath": "Gift items > Small statues",
+    "shelf": "Meditation",
+    "sub": "Deities"
+  },
+  "66": {
+    "vendorPath": "Gift items > Key rings",
+    "shelf": "Keepsakes",
+    "sub": "Key rings"
+  },
+  "67": {
+    "vendorPath": "Gift items > Notebooks",
+    "shelf": "Keepsakes",
+    "sub": "Notebooks"
+  },
+  "68": {
+    "vendorPath": "Gift items > Badges",
+    "shelf": "Keepsakes",
+    "sub": "Badges"
+  },
+  "69": {
+    "vendorPath": "Gift items > Stickers and posters",
+    "shelf": "Meditation",
+    "sub": "Stickers and posters"
+  },
+  "71": {
+    "vendorPath": "Food and supplements > Spices > Single spices",
+    "shelf": "Food",
+    "sub": "Spices"
+  },
+  "72": {
+    "vendorPath": "Food and supplements > Spices > Masala blends",
+    "shelf": "Food",
+    "sub": "Spices"
+  },
+  "79": {
+    "vendorPath": "Books > For children",
+    "shelf": "Books",
+    "sub": "For children"
+  },
+  "81": {
+    "vendorPath": "Books > Second-hand books",
+    "shelf": "Books",
+    "sub": "Second-hand books"
+  },
+  "82": {
+    "vendorPath": "Books > E-books",
+    "shelf": "Books",
+    "sub": "E-books"
+  },
+  "83": {
+    "vendorPath": "Books > Other authors",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "111": {
+    "vendorPath": "Books > Foreign languages > English",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "112": {
+    "vendorPath": "Books > Foreign languages > Russian",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "113": {
+    "vendorPath": "Books > Foreign languages > Vietnamese",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "205": {
+    "vendorPath": "Books > Foreign languages > English > Suhotra Swami",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "222": {
+    "vendorPath": "Books > Other authors > Adiraja dasa",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "223": {
+    "vendorPath": "Books > Other authors > Bhakti Vikasa Swami",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "224": {
+    "vendorPath": "Books > Other authors > Danavir Goswami",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "233": {
+    "vendorPath": "Books > Other authors > Krishnavalli devi dasi",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "239": {
+    "vendorPath": "Books > Other authors > Satsvarupa dasa Goswami",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "241": {
+    "vendorPath": "Books > Other authors > Suhotra Swami",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "245": {
+    "vendorPath": "Books > Other authors > Tamal Krishna Goswami",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "249": {
+    "vendorPath": "Fashion > Jewellery > Bindi",
+    "shelf": "Jewellery",
+    "sub": "Bindi"
+  },
+  "250": {
+    "vendorPath": "Fashion > Jewellery > Earrings",
+    "shelf": "Jewellery",
+    "sub": "Earrings"
+  },
+  "251": {
+    "vendorPath": "Fashion > Jewellery > Bracelets",
+    "shelf": "Jewellery",
+    "sub": "Bracelets"
+  },
+  "253": {
+    "vendorPath": "Meditation",
+    "shelf": "Meditation",
+    "sub": null
+  },
+  "254": {
+    "vendorPath": "Meditation > Worship items",
+    "shelf": "Meditation",
+    "sub": "Worship items"
+  },
+  "255": {
+    "vendorPath": "Meditation > Kanthi malas",
+    "shelf": "Meditation",
+    "sub": "Kanthi malas"
+  },
+  "256": {
+    "vendorPath": "Meditation > Incense sticks",
+    "shelf": "Meditation",
+    "sub": "Incense sticks"
+  },
+  "257": {
+    "vendorPath": "Meditation > Japa bead bags",
+    "shelf": "Meditation",
+    "sub": "Bead counters"
+  },
+  "258": {
+    "vendorPath": "Fashion > Jewellery > Other adornments",
+    "shelf": "Jewellery",
+    "sub": "Other adornments"
+  },
+  "259": {
+    "vendorPath": "Meditation > Incense holders",
+    "shelf": "Meditation",
+    "sub": "Incense holders"
+  },
+  "260": {
+    "vendorPath": "Fashion > Children's clothing > Girls’",
+    "shelf": "Fashion",
+    "sub": "Children's clothing"
+  },
+  "261": {
+    "vendorPath": "Fashion > Children's clothing > Boys’",
+    "shelf": "Fashion",
+    "sub": "Children's clothing"
+  },
+  "263": {
+    "vendorPath": "Food and supplements > Prasadam and mahaprasadam",
+    "shelf": "Food",
+    "sub": "Prasadam and mahaprasadam"
+  },
+  "264": {
+    "vendorPath": "Books > Audio and video",
+    "shelf": "Books",
+    "sub": "Audio and video"
+  },
+  "269": {
+    "vendorPath": "Fashion > Women's clothing > Dresses",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "271": {
+    "vendorPath": "Fashion > Women's clothing > T-shirts and tops",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "272": {
+    "vendorPath": "Home > Home accessories > Vases and lamps",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "273": {
+    "vendorPath": "Fashion > Women's clothing > Blouses and kurtas",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "280": {
+    "vendorPath": "Meditation > Japa bead bags > Women's japa bead bags",
+    "shelf": "Meditation",
+    "sub": "Japa bead bags"
+  },
+  "281": {
+    "vendorPath": "Meditation > Japa bead bags > Men's japa bead bags",
+    "shelf": "Meditation",
+    "sub": "Japa bead bags"
+  },
+  "282": {
+    "vendorPath": "Meditation > Japa bead bags > Unisex japa bead bags",
+    "shelf": "Meditation",
+    "sub": "Japa bead bags"
+  },
+  "283": {
+    "vendorPath": "Fashion > Women's clothing > Skirts > Circle skirts",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "284": {
+    "vendorPath": "Meditation > Tilak and Ganga clay",
+    "shelf": "Meditation",
+    "sub": "Tilak and Ganga clay"
+  },
+  "285": {
+    "vendorPath": "Meditation > Devotional pictures",
+    "shelf": "Meditation",
+    "sub": "Devotional pictures"
+  },
+  "286": {
+    "vendorPath": "Fashion > Jewellery > Necklaces",
+    "shelf": "Jewellery",
+    "sub": "Necklaces"
+  },
+  "292": {
+    "vendorPath": "Fashion > Men's clothing > Gamcha",
+    "shelf": "Fashion",
+    "sub": "Men's clothing"
+  },
+  "293": {
+    "vendorPath": "Home > Crockery > Kettles, flasks",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "294": {
+    "vendorPath": "Gift items > Pendants",
+    "shelf": "Jewellery",
+    "sub": "Pendants"
+  },
+  "295": {
+    "vendorPath": "Home > Crockery > Kamandalus",
+    "shelf": "Home Decor",
+    "sub": "Table and dining"
+  },
+  "296": {
+    "vendorPath": "Fashion > Women's clothing > Saris > Cotton",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "297": {
+    "vendorPath": "Fashion > Women's clothing > Saris > Viscose",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "298": {
+    "vendorPath": "Fashion > Women's clothing > Saris > Silk",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "299": {
+    "vendorPath": "Fashion > Women's clothing > Saris > Chiffon",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "300": {
+    "vendorPath": "Meditation > Rudraksha",
+    "shelf": "Meditation",
+    "sub": "Rudraksha"
+  },
+  "301": {
+    "vendorPath": "Gift items > Boxes",
+    "shelf": "Home Decor",
+    "sub": "Storage and baskets"
+  },
+  "302": {
+    "vendorPath": "Gift items > Boxes > Rajasthani mirror-work",
+    "shelf": "Home Decor",
+    "sub": "Storage and baskets"
+  },
+  "305": {
+    "vendorPath": "Books > Second-hand books > Srila Prabhupada",
+    "shelf": "Books",
+    "sub": "Second-hand books"
+  },
+  "306": {
+    "vendorPath": "Books > Other authors > Other",
+    "shelf": "Books",
+    "sub": "Other authors"
+  },
+  "308": {
+    "vendorPath": "Books > Cookery books",
+    "shelf": "Books",
+    "sub": "Cookery books"
+  },
+  "309": {
+    "vendorPath": "Books > Second-hand books > Other",
+    "shelf": "Books",
+    "sub": "Second-hand books"
+  },
+  "310": {
+    "vendorPath": "Books > Second-hand books > Krishna Dharma dasa",
+    "shelf": "Books",
+    "sub": "Second-hand books"
+  },
+  "312": {
+    "vendorPath": "Books > Foreign languages > English > Danavir Goswami",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "313": {
+    "vendorPath": "Books > Foreign languages > English > Other",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "315": {
+    "vendorPath": "Books > Foreign languages > English > Bhakti Vikasa Swami",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "316": {
+    "vendorPath": "Books > Foreign languages",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "317": {
+    "vendorPath": "Books > Srila Prabhupada",
+    "shelf": "Books",
+    "sub": "Srila Prabhupada"
+  },
+  "318": {
+    "vendorPath": "Books > Srila Prabhupada > Srimad-Bhagavatam",
+    "shelf": "Books",
+    "sub": "Srila Prabhupada"
+  },
+  "319": {
+    "vendorPath": "Books > Srila Prabhupada > Caitanya-caritamrta",
+    "shelf": "Books",
+    "sub": "Srila Prabhupada"
+  },
+  "320": {
+    "vendorPath": "Books > Srila Prabhupada > Other",
+    "shelf": "Books",
+    "sub": "Srila Prabhupada"
+  },
+  "321": {
+    "vendorPath": "Fashion > Handbags > Clutch bags",
+    "shelf": "Fashion",
+    "sub": "Bags"
+  },
+  "322": {
+    "vendorPath": "Fashion > Handbags > Handbags",
+    "shelf": "Fashion",
+    "sub": "Bags"
+  },
+  "323": {
+    "vendorPath": "Fashion > Jewellery > Silver",
+    "shelf": "Jewellery",
+    "sub": "Silver"
+  },
+  "324": {
+    "vendorPath": "Home",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "325": {
+    "vendorPath": "Fashion > Women's clothing > Petticoats and cholis",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "329": {
+    "vendorPath": "Fashion > Handbags > Bags",
+    "shelf": "Fashion",
+    "sub": "Bags"
+  },
+  "330": {
+    "vendorPath": "Fashion > Handbags > Wallets",
+    "shelf": "Fashion",
+    "sub": "Bags"
+  },
+  "331": {
+    "vendorPath": "Fashion > Women's clothing > Gamcha",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "333": {
+    "vendorPath": "Fashion > Women's clothing > Saris > Mixture",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "334": {
+    "vendorPath": "Fashion > Women's clothing > Trousers",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "335": {
+    "vendorPath": "Gift items > Greetings cards",
+    "shelf": "Keepsakes",
+    "sub": "Greetings cards"
+  },
+  "336": {
+    "vendorPath": "Books > Srila Prabhupada > Bhagavad-gita",
+    "shelf": "Books",
+    "sub": "Srila Prabhupada"
+  },
+  "337": {
+    "vendorPath": "Books > Foreign languages > English > Srila Prabhupada",
+    "shelf": "Books",
+    "sub": "Foreign languages"
+  },
+  "339": {
+    "vendorPath": "Meditation > Bead counters",
+    "shelf": "Meditation",
+    "sub": "Bead counters"
+  },
+  "340": {
+    "vendorPath": "Meditation > Deities",
+    "shelf": "Meditation",
+    "sub": "Deities"
+  },
+  "341": {
+    "vendorPath": "Meditation > Kanthi malas > Single-strand",
+    "shelf": "Meditation",
+    "sub": "Kanthi malas"
+  },
+  "342": {
+    "vendorPath": "Meditation > Kanthi malas > Two-strand",
+    "shelf": "Meditation",
+    "sub": "Kanthi malas"
+  },
+  "343": {
+    "vendorPath": "Meditation > Kanthi malas > Three-strand",
+    "shelf": "Meditation",
+    "sub": "Kanthi malas"
+  },
+  "344": {
+    "vendorPath": "Meditation > Malas and clickers",
+    "shelf": "Meditation",
+    "sub": "Malas and clickers"
+  },
+  "345": {
+    "vendorPath": "Home > Home accessories > Candle holders",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "346": {
+    "vendorPath": "Fashion > Women's clothing > Jackets",
+    "shelf": "Fashion",
+    "sub": "Women's clothing"
+  },
+  "348": {
+    "vendorPath": "Home > Home accessories > Paintings",
+    "shelf": "Home Decor",
+    "sub": "Decorative accessories"
+  },
+  "349": {
+    "vendorPath": "Fashion > Jewellery > Anklets",
+    "shelf": "Jewellery",
+    "sub": "Anklets"
+  },
+  "350": {
+    "vendorPath": "Gift items > Children’s gifts and dolls",
+    "shelf": "Others",
+    "sub": "Dolls and children's gifts"
+  }
+}

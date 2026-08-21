@@ -18,3 +18,13 @@ dist/
 
 # npm is here only to pin wrangler (see package.json). Lockfile IS tracked; installs are not.
 node_modules/
+
+# Vendor sync (Govinda). The scraped catalogue and its photos are disposable — regenerate
+# with vendors/govinda/scrape.mjs. Only YOUR decisions (data/overrides.json) are tracked,
+# which is what stops a weekly re-scrape from overwriting hand-set prices and copy.
+vendors/govinda/.env
+vendors/govinda/images/
+vendors/govinda/*.log
+# Raw scrape output: rewritten wholesale every run, and large. data/translations.json is
+# NOT ignored — it is paid DeepL output and re-fetching it costs money.
+vendors/govinda/data/products-raw.json

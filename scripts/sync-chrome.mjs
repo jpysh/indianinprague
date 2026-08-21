@@ -37,7 +37,7 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const PAGES = {
   "index.html": null,
   "404.html": null,
-  "clothes.html": "wardrobe",
+  "wardrobe/fashion.html": "wardrobe",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.
   //
@@ -93,8 +93,14 @@ for (const [file, module] of Object.entries(PAGES)) {
   // replacing its own header with itself is a no-op, and marking a module on it would be
   // wrong (the homepage is not inside any of them).
   if (file !== "index.html") {
-    html = html.replace(HEADER, markNav(header[0], module));
-    html = html.replace(FOOTER, footer[0]);
+    // Pages below the root (wardrobe/fashion.html) need the chrome's relative asset hrefs
+    // absoluted, or assets/site.css resolves to /wardrobe/assets/site.css. Same fix as
+    // build-diaries.mjs and build-shop.mjs.
+    const nested = file.includes("/");
+    const fix = (h) =>
+      nested ? h.replace(/(href|src)="(assets\/|images\/)/g, '$1="/$2') : h;
+    html = html.replace(HEADER, fix(markNav(header[0], module)));
+    html = html.replace(FOOTER, fix(footer[0]));
   }
   if (v) html = html.replace(/(assets\/[a-z0-9-]+\.css\?v=)\d+/g, `$1${v[1]}`);
 

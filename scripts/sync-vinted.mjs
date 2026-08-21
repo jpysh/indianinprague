@@ -48,7 +48,23 @@ const HOST = "https://www.vinted.cz";
 // Vinted mirrors every listing across its national storefronts — vinted.es/items/<id>
 // serves the same item as vinted.cz/items/<id>. Storing all three now means the Spanish
 // shop is a template change later, not a re-sync.
-const STOREFRONTS = { cz: "https://www.vinted.cz", es: "https://www.vinted.es", com: "https://www.vinted.com" };
+const STOREFRONTS = {
+  cz: "https://www.vinted.cz",
+  es: "https://www.vinted.es",
+  com: "https://www.vinted.com",
+  uk: "https://www.vinted.co.uk",
+};
+
+// Item detail is read from the UK storefront, not the Czech one. Vinted renders each
+// national site in its own language and ignores both Accept-Language and the locale
+// cookie for anonymous visitors (measured 21 Aug 2026: en-GB, en-US, ?locale=en and
+// anonymous-iso-locale=en all still returned Czech). The listing itself is identical
+// across storefronts — same id, same photos, same seller — so fetching /items/<id> from
+// .co.uk is the same item in the language this site publishes in.
+//
+// .co.uk specifically, not .com: the US site says "Jewelry" and the UK site says
+// "Jewellery", and this site is written in British English.
+const DETAIL_HOST = STOREFRONTS.uk;
 
 // A real browser UA. Not evasion — the API returns 403 to the default Node agent, and
 // this is the same request the author's own browser makes against their own closet.
@@ -88,8 +104,8 @@ async function writeJson(file, value) {
 // Collect the cookies the homepage sets and flatten them into one Cookie header. The one
 // that matters is access_token_web; the rest are carried along because sending a partial
 // jar is more suspicious to a bot filter than sending the whole thing.
-async function openSession() {
-  const res = await fetch(HOST + "/", { headers: { "User-Agent": UA, Accept: "text/html" } });
+async function openSession(host = HOST) {
+  const res = await fetch(host + "/", { headers: { "User-Agent": UA, Accept: "text/html" } });
   if (!res.ok) throw new Error(`session bootstrap failed: HTTP ${res.status}`);
   await res.text();
 
@@ -105,10 +121,10 @@ async function openSession() {
   return [...jar].map(([k, v]) => `${k}=${v}`).join("; ");
 }
 
-async function get(url, cookie, accept) {
+async function get(url, cookie, accept, lang = "en-GB,en;q=0.9") {
   for (let attempt = 1; ; attempt++) {
     const res = await fetch(url, {
-      headers: { "User-Agent": UA, Accept: accept, Cookie: cookie, "Accept-Language": "cs-CZ,cs;q=0.9,en;q=0.8" },
+      headers: { "User-Agent": UA, Accept: accept, Cookie: cookie, "Accept-Language": lang },
     });
     if (res.ok) return res;
     // 429/403 are the rate limiter talking. 5xx is Vinted or the Cloudflare in front of it
@@ -143,23 +159,70 @@ async function fetchWardrobe(cookie) {
 // Pull the schema.org Product out of an item page. Vinted renders it server-side, so it
 // survives without executing any of the page's JavaScript.
 async function fetchDetail(itemUrl, cookie) {
-  const html = await (await get(itemUrl, cookie, "text/html")).text();
+  // Same listing, UK storefront — see DETAIL_HOST. The path carries the id and slug and is
+  // storefront-independent.
+  const url = itemUrl.replace(/^https:\/\/www\.vinted\.[a-z.]+/, DETAIL_HOST);
+  const html = await (await get(url, cookie, "text/html")).text();
   const blocks = html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g);
+  // ld.category is a flattened two-level string ("Ženy Dlouhé šaty") that drops every
+  // level in between: the page itself reads Ženy > Doplňky > Šperky > Náhrdelníky. That
+  // full path is what the site's taxonomy is built from, and it is NOT in the JSON-LD —
+  // Vinted renders breadcrumbs as markup only (measured 21 Aug 2026: the item page carries
+  // exactly one ld+json block, a Product). So the path is read from the HTML instead.
+  let out = { description: "", vintedCategory: "", colorRaw: "", crumbs: [], condition: "" };
   for (const [, raw] of blocks) {
     try {
       const ld = JSON.parse(raw);
       if (ld["@type"] === "Product") {
-        return {
-          description: (ld.description || "").trim(),
-          vintedCategoryCs: ld.category || "",
-          colorCs: ld.color || "",
-        };
+        out.description = (ld.description || "").trim();
+        out.vintedCategory = ld.category || "";
+        out.colorRaw = ld.color || "";
       }
     } catch {
       // A malformed block is not worth aborting a 500-item run over.
     }
   }
-  return { description: "", vintedCategoryCs: "", colorCs: "" };
+  out.crumbs = crumbs(html);
+  // Condition comes from the page, not from the wardrobe API. The API is bound to the
+  // Czech marketplace and answers "Velmi dobrý" whatever Accept-Language asks for; the UK
+  // item page says "Very good". Since the condition is displayed and filtered on, it has
+  // to be the English one. The UK wardrobe endpoint is not an alternative — it answers 200
+  // with an empty list, because the closet lives on .cz.
+  out.condition = condition(html);
+  return out;
+}
+
+// The condition, e.g. "Very good", "New without tags".
+//
+// Anchored on itemProp="status" — the wrapper carries data-testid="item-attributes-status"
+// but so does the "Condition" LABEL that precedes the value, and the gap between them runs
+// to a few hundred characters. itemProp sits on the value's own node, so it cannot pick up
+// the label by accident. Class names are hashed per Vinted build and are not used.
+function condition(html) {
+  const m = html.match(/itemProp="status"[\s\S]{0,300}?<span[^>]*>([^<]*)/);
+  return m ? m[1].trim() : "";
+}
+
+// The breadcrumb trail as rendered. Anchored on data-testid="breadcrumb" rather than the
+// class names, which are hashed per build (Breadcrumbs-module-scss-module__mDt9qq__) and
+// would break on any Vinted deploy.
+//
+// The final crumb is a brand-within-category link ("Handmade Beauty Náhrdelníky", href
+// .../brand/7294168-...) — a filter, not a level of the tree — so it is dropped. Its href
+// is what identifies it; the label alone is indistinguishable from a real category.
+function crumbs(html) {
+  const out = [];
+  for (const m of html.matchAll(
+    /<a\s+href="([^"]*)"[^>]*data-testid="breadcrumb"[^>]*>[\s\S]*?<span[^>]*itemProp="title"[^>]*>([^<]*)<\/span>/g
+  )) {
+    const href = m[1];
+    const name = m[2].replace(/&amp;/g, "&").trim();
+    if (!name || href.includes("/brand/")) continue;
+    // /catalog/1187-doplnky?referrer=… — the numeric id is stable, the slug is localised.
+    const id = Number(href.match(/\/catalog\/(\d+)-/)?.[1]) || null;
+    out.push({ id, name });
+  }
+  return out;
 }
 
 /* ----------------------------------------------------------------- seller ---- */
@@ -269,9 +332,11 @@ async function fxRate(cached) {
 
 /* --------------------------------------------------------------- taxonomy ---- */
 
-// Vinted answers in Czech. The UI is English, so the Czech value is kept alongside the
-// English one rather than thrown away: it is real search-relevance data for Czech queries
-// and it is what the Spanish equivalent will slot into later.
+// Vinted is fetched with Accept-Language: en-GB — the same toggle a person flips in its
+// header — so conditions, colours and categories already arrive in English and nothing
+// Czech is stored. This map is therefore no longer a translation: it exists to force
+// BRITISH spellings on the handful of words where Vinted ships American ones
+// ("Multicolor" -> "Multicolour"). An unmapped value passes through unchanged.
 function translate(map, value) {
   if (!value) return "";
   return map[value] || value;
@@ -294,10 +359,21 @@ function sizeGroup(raw, map) {
 // Category comes back as a Czech breadcrumb string ("Bydlení Pekáče", "Ženy Šaty").
 // Matching on longest prefix means one rule covers a whole branch of Vinted's tree, so
 // the mapping stays small as the catalog grows.
-function categorise(vintedCategoryCs, rules) {
+// The same shape ld.category has — top level plus leaf, "Women Necklaces" — rebuilt from
+// the breadcrumbs. Needed because a small number of item pages come back without the
+// Product JSON-LD block at all (2 of 141 on 21 Aug 2026, neither reserved nor sold, and
+// both fine on a retry). The breadcrumbs are rendered server-side and were present on
+// both, so they are the more reliable of the two and are used as the fallback rather than
+// letting the item drop to Uncategorised.
+function flatten(crumbs) {
+  if (!crumbs?.length) return "";
+  return crumbs.length === 1 ? crumbs[0].name : `${crumbs[0].name} ${crumbs[crumbs.length - 1].name}`;
+}
+
+function categorise(vintedCategory, rules) {
   let best = null;
   for (const [prefix, category] of Object.entries(rules)) {
-    if (vintedCategoryCs.startsWith(prefix) && (!best || prefix.length > best[0].length)) {
+    if (vintedCategory.startsWith(prefix) && (!best || prefix.length > best[0].length)) {
       best = [prefix, category];
     }
   }
@@ -315,7 +391,7 @@ function categorise(vintedCategoryCs, rules) {
 async function writeCsv(live, sold) {
   const cols = [
     "id", "status", "title", "category", "brand", "price_czk", "price_eur", "condition",
-    "size", "colour", "favourites", "photos", "sold_at", "vinted_category_cs", "url",
+    "size", "colour", "favourites", "photos", "sold_at", "vinted_category", "url",
   ];
   const cell = (v) => {
     const s = v === null || v === undefined ? "" : String(v);
@@ -324,7 +400,7 @@ async function writeCsv(live, sold) {
   const row = (i, status) => [
     i.id, status, i.title, i.category, i.brand, i.priceCzk, i.priceEur, i.condition?.en,
     i.sizeGroup || i.size, i.color?.en, i.favourites, (i.photos || []).length,
-    i.soldAt || "", i.vintedCategoryCs, i.urls?.cz || "",
+    i.soldAt || "", i.vintedCategory, i.urls?.cz || "",
   ].map(cell).join(",");
 
   const lines = [cols.join(","), ...live.map((i) => row(i, i.reserved ? "reserved" : "available")),
@@ -352,8 +428,8 @@ async function main() {
     if (!i.needsEnrich && !(i.id in enrichCache)) {
       enrichCache[i.id] = {
         description: i.description,
-        vintedCategoryCs: i.vintedCategoryCs,
-        colorCs: i.color?.cs || "",
+        vintedCategory: i.vintedCategory,
+        colorRaw: i.color?.en || "",
       };
     }
   }
@@ -362,6 +438,8 @@ async function main() {
 
   console.log("opening session…");
   const cookie = await openSession();
+  // A separate jar: cookies are per-domain, and item detail is fetched from .co.uk.
+  const detailCookie = await openSession(DETAIL_HOST);
 
   console.log("fetching wardrobe…");
   const raw = await fetchWardrobe(cookie);
@@ -386,7 +464,11 @@ async function main() {
     // returned by the wardrobe endpoint but must not appear in the shop.
     if (r.is_hidden || r.is_draft) continue;
 
-    const cached = full ? null : cache.get(id);
+    // A cache entry written before breadcrumbs existed has no crumbs, and the taxonomy
+    // is built from those paths. Treating it as a miss backfills the gap on an ordinary
+    // run instead of forcing a --full re-enrich of everything.
+    const hit = full ? null : cache.get(id);
+    const cached = hit && Array.isArray(hit.crumbs) && hit.crumbs.length ? hit : null;
     let detail;
     let needsEnrich = false;
     if (cached) {
@@ -394,7 +476,7 @@ async function main() {
     } else {
       process.stdout.write(`  enriching ${id} — ${r.title.slice(0, 50)}…\n`);
       try {
-        detail = await fetchDetail(r.url, cookie);
+        detail = await fetchDetail(r.url, detailCookie);
         enrichCache[id] = detail;
         // Checkpoint. Without this, a failure 400 items into a cold run threw away every
         // page fetched so far — which is exactly what a Cloudflare 524 did on the first
@@ -410,7 +492,7 @@ async function main() {
         // wardrobe data alone is enough to display it — and flag it so the next run
         // retries just this one rather than everything.
         console.warn(`  ⚠ could not enrich ${id}: ${err.message} — will retry next run`);
-        detail = { description: "", vintedCategoryCs: "", colorCs: "" };
+        detail = { description: "", vintedCategory: "", colorRaw: "", crumbs: [], condition: "" };
         needsEnrich = true;
       }
       enriched++;
@@ -439,7 +521,8 @@ async function main() {
 
     const priceCzk = Number(r.price.amount);
     const category =
-      overrides[id]?.category || categorise(detail.vintedCategoryCs, taxonomy.categories);
+      overrides[id]?.category ||
+      categorise(detail.vintedCategory || flatten(detail.crumbs), taxonomy.categories);
 
     items.push({
       id,
@@ -449,10 +532,13 @@ async function main() {
       brand: r.brand || "",
       size: r.size || "",
       sizeGroup: sizeGroup(r.size, taxonomy.sizes),
-      condition: { en: translate(taxonomy.conditions, r.status), cs: r.status || "" },
-      color: { en: translate(taxonomy.colors, detail.colorCs), cs: detail.colorCs },
+      condition: { en: translate(taxonomy.conditions, detail.condition) },
+      color: { en: translate(taxonomy.colors, detail.colorRaw) },
       category,
-      vintedCategoryCs: detail.vintedCategoryCs,
+      vintedCategory: detail.vintedCategory,
+      // Full path from the item page's breadcrumbs, in English:
+      // ["Women","Accessories","Jewellery","Necklaces"].
+      crumbs: detail.crumbs || [],
       description: detail.description,
       photo: photoPaths[0] || null,
       photos: photoPaths,
@@ -528,7 +614,7 @@ async function main() {
       // A sold listing has no category left on it either, so overrides.json is the only
       // place this can come from. Unset ones land in "More" alongside anything else the
       // taxonomy has not caught up with.
-      category: overrides[id]?.category || "Uncategorised", vintedCategoryCs: "",
+      category: overrides[id]?.category || "Uncategorised", vintedCategory: "",
       photo: photoPath, photos: photoPath ? [photoPath] : [],
       favourites: 0, reserved: false,
       sold: true, soldAt: "earlier", recovered: true,
@@ -560,7 +646,7 @@ async function main() {
   // from then on.
   if (unmapped.length) {
     console.log(`\n⚠ ${unmapped.length} item(s) need a rule in data/taxonomy.json:`);
-    const branches = [...new Set(unmapped.map((i) => i.vintedCategoryCs || "(no category)"))];
+    const branches = [...new Set(unmapped.map((i) => i.vintedCategory || "(no category)"))];
     for (const b of branches.sort()) console.log(`   "${b}"`);
   }
 }

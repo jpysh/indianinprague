@@ -27,7 +27,8 @@
 // Run after sync-vinted.mjs and build-images.mjs (it reads the image manifest the latter
 // writes, to emit width/height and stop the grid reflowing as photos arrive).
 
-import { readFile, writeFile, rm } from "node:fs/promises";
+import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
+import { vendorItems } from "./vendor-items.mjs";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -42,12 +43,12 @@ const STOREFRONT = "cz";
 // Order is display order: the nav, and the sequence of sections on shop.html.
 const CATEGORIES = [
   {
-    name: "Fashion", slug: "clothes", page: "clothes.html", managed: true,
+    name: "Fashion", slug: "fashion", page: "wardrobe/fashion.html", managed: true,
     sub: "kurtas · sarees · sets",
     title: "Modern Indian Clothes in Prague — Buy on Vinted",
   },
   {
-    name: "Home Decor", slug: "home-decor", page: "home-decor.html",
+    name: "Home Decor", slug: "home-decor", page: "wardrobe/home-decor.html",
     sub: "textiles · ceramics",
     title: "Indian Home Decor in Prague — Textiles, Ceramics, Handmade | Indian in Prague",
     h1: ["Home things,", "carried back"],
@@ -55,7 +56,7 @@ const CATEGORIES = [
     expo: ["HOME", "textiles · ceramics", "handmade · block print"],
   },
   {
-    name: "Jewellery", slug: "jewellery", page: "jewellery.html",
+    name: "Jewellery", slug: "jewellery", page: "wardrobe/jewellery.html",
     sub: "silver · handmade",
     title: "Indian Jewellery in Prague — Silver, Beads, Handmade | Indian in Prague",
     h1: ["Jewellery,", "mostly silver"],
@@ -68,7 +69,7 @@ const CATEGORIES = [
     // is the Spirituality MODULE now (yoga, ayurveda, meditation, trips — its own nav slot
     // and its own hand-written page), so the shelf of brass and beads took the name it
     // always actually described and gave up the URL.
-    name: "Spirituality", label: "Ritual Objects", slug: "ritual-objects", page: "ritual-objects.html",
+    name: "Spirituality", label: "Meditation", slug: "meditation", page: "wardrobe/meditation.html",
     sub: "brass · sandalwood",
     title: "Indian Ritual Objects in Prague — Incense, Brass, Prayer Beads | Indian in Prague",
     h1: ["Objects that", "hold something"],
@@ -83,7 +84,7 @@ const CATEGORIES = [
   // Re-adding it means restoring an entry here with managed:true and module:true, plus its
   // sitemap line and its nav slot in index.html.
   {
-    name: "Books", slug: "books", page: "books.html",
+    name: "Books", slug: "books", page: "wardrobe/books.html",
     sub: "second-hand books",
     title: "Indian Books in Prague — Fiction, Cookery, Second-hand | Indian in Prague",
     h1: ["Books I have", "finished with"],
@@ -94,7 +95,7 @@ const CATEGORIES = [
     // The data keeps saying "Uncategorised" — that is the signal sync-vinted.mjs prints
     // when a Vinted branch has no rule yet, and softening it in the data would hide the
     // work. The shopper just sees "More".
-    name: "Uncategorised", label: "More", slug: "more", page: "more.html",
+    name: "Uncategorised", label: "Others", slug: "others", page: "wardrobe/others.html",
     sub: "odds and ends",
     title: "More from my closet | Indian in Prague",
     h1: ["Everything", "else"],
@@ -129,11 +130,13 @@ function picture(item, manifest, eager) {
   if (!entry) {
     // No derivative yet (build-images.mjs not run since the last sync). Emit the original
     // so the page is still correct, just heavier.
-    const src = esc(item.photo || "images/derived/IMG_5630-400.jpg");
+    const src = "/" + esc(item.photo || "images/derived/IMG_5630-400.jpg");
     return `<img class="ph" src="${src}" alt="${alt}" loading="${eager ? "eager" : "lazy"}" decoding="async">`;
   }
-  const jpgs = entry.variants.map((v) => `${v.jpg} ${v.w}w`).join(", ");
-  const webps = entry.variants.map((v) => `${v.webp} ${v.w}w`).join(", ");
+  // Root-absolute: the manifest stores repo-relative paths and shelf pages are a directory
+  // down, where "images/…" would resolve to /wardrobe/images/….
+  const jpgs = entry.variants.map((v) => `/${v.jpg} ${v.w}w`).join(", ");
+  const webps = entry.variants.map((v) => `/${v.webp} ${v.w}w`).join(", ");
   // src is the SMALLEST variant, not the largest. srcset decides what a modern browser
   // actually fetches, so src is only the fallback — and pointing it at the 800 meant any
   // client that ignored srcset pulled 120 KB to fill a 400px cell. width/height come from
@@ -142,7 +145,7 @@ function picture(item, manifest, eager) {
   const load = eager ? 'fetchpriority="high"' : 'loading="lazy"';
   return (
     `<picture><source type="image/webp" srcset="${webps}" sizes="${IMG_SIZES}">` +
-    `<img class="ph" src="${fallback.jpg}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
+    `<img class="ph" src="/${fallback.jpg}" srcset="${jpgs}" sizes="${IMG_SIZES}" ` +
     `width="${fallback.w}" height="${fallback.h}" alt="${alt}" ${load} decoding="async"></picture>`
   );
 }
@@ -197,6 +200,12 @@ const wa = (body) => WA + encodeURIComponent(body);
 // already no. "Do you have anything similar" is the only useful thing left to ask, and it
 // is often a real sale.
 function askUrl(item) {
+  // Vendor stock: no listing URL to quote — these are not linked out to, and the customer
+  // is buying from this site. The SKU is what makes the message answerable instead.
+  if (item.vendor) {
+    const price = item.priceEur == null ? "" : ` (€${item.priceEur})`;
+    return wa(`Hi! I'd like to order "${item.title}"${price} — ref ${item.id}`);
+  }
   if (item.sold) {
     return wa(`Hi! "${item.title}" has sold — do you have anything similar?`);
   }
@@ -241,20 +250,31 @@ function card(item, manifest, eager, showCat) {
     ? `<span class="pr sold-pr">Sold</span>`
     : `<span class="pr">€${item.priceEur}</span>`;
 
+  // Where a piece comes from, on the photograph. Secondhand pieces from the closet and new
+  // retail stock shipped from Prague are different propositions, and a buyer has to be able
+  // to tell which is which before they ask about one.
+  const vendorBadge = item.vendor
+    ? `<span class="cap flag vendor-flag">${esc(item.vendor)}</span>`
+    : "";
+
   const badges =
     (sold ? `<span class="cap flag sold-flag">Sold</span>` : "") +
-    (item.reserved ? `<span class="cap flag res">Reserved</span>` : "");
+    (item.reserved ? `<span class="cap flag res">Reserved</span>` : "") +
+    (item.vendor && !item.inStock ? `<span class="cap flag res">Out of stock</span>` : "") +
+    vendorBadge;
 
   const inner =
     `<div class="frame ${spice(item.id)}">` +
     `<div class="shots" data-track><div class="shot">${picture(item, manifest, eager)}</div></div>` +
     `<div class="grain"></div>` +
-    (sold ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
+    // The ↗ promises a link out. Vendor cards have none — they are bought here — so the
+    // glyph would be a lie about where the card goes.
+    (sold || item.vendor ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
     `${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${badges}${favBadge}` +
     blurb(item) +
     `</div>` +
     `<div class="meta"><span class="nm">${esc(item.title)}</span>${price}</div>` +
-    `<div class="tags">${esc(tags) || (sold ? "No longer available" : "")}</div>`;
+    `<div class="tags">${esc(item.vendor ? `New · ${item.delivery}` : tags) || (sold ? "No longer available" : "")}</div>`;
 
   // Every card is a <div>, never an <a>. It carries TWO destinations now — the Vinted
   // listing and a WhatsApp message about this specific piece — and an anchor cannot legally
@@ -269,7 +289,11 @@ function card(item, manifest, eager, showCat) {
   // A sold card gets no .go: Vinted 307s a sold listing to a page with its structured data
   // stripped, so every one of those would be a dead end. It keeps .ask, because "do you have
   // anything like this?" is the single most useful thing a sold card can be asked.
-  const go = sold
+  // Vendor cards get no .go at all: there is no destination. Vinted items link to their
+  // listing because that is where the sale happens; a Govinda item is bought here, through
+  // the ask link, and linking to the vendor's own shop would send the buyer to the same
+  // item at the vendor's own price.
+  const go = sold || item.vendor
     ? ""
     : `<a class="go" href="${esc(item.urls[STOREFRONT])}" target="_blank" rel="noopener"` +
       ` aria-label="${esc(item.title)} — open the Vinted listing in a new tab"></a>`;
@@ -279,7 +303,7 @@ function card(item, manifest, eager, showCat) {
   // decorate a link whose label already says what it does. The green carries the recognition.
   const ask =
     `<a class="ask" href="${esc(askUrl(item))}" target="_blank" rel="noopener">` +
-    `${sold ? "Ask for something similar" : "Ask about this piece"}` +
+    `${item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
     `<span class="vh"> — opens WhatsApp in a new tab</span></a>`;
 
   return `<div class="piece${sold ? " sold" : ""}"${data}>${inner}${go}${ask}</div>`;
@@ -383,7 +407,7 @@ const catNav = (active, counts) =>
   // Its own page as well as the availability toggle, because "what has already sold" is a
   // thing a shopper goes looking for deliberately — and a page has a URL you can link to,
   // which a filter state does not.
-  (counts.__sold ? `<a href="/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
+  (counts.__sold ? `<a href="/wardrobe/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
   `</nav>`;
 
 /* ------------------------------------------------------------------- pages ---- */
@@ -394,6 +418,15 @@ function chrome(indexHtml) {
   const header = /<header class="site">[\s\S]*?<\/header>/.exec(indexHtml);
   const footer = /<footer>[\s\S]*?<\/footer>/.exec(indexHtml);
   if (!header || !footer) throw new Error("could not lift <header>/<footer> out of index.html");
+
+  // Shelf pages are written to /wardrobe/, so the chrome's relative hrefs (assets/site.css)
+  // would resolve a directory too high. Same fix, same reason, as build-diaries.mjs.
+  const absolutise = (html) =>
+    html
+      .replace(/(href|src)="(assets\/)/g, '$1="/$2')
+      .replace(/(href|src)="(images\/)/g, '$1="/$2');
+  header[0] = absolutise(header[0]);
+  footer[0] = absolutise(footer[0]);
   // No ?v= token is emitted here. bump-assets.mjs owns it outright and runs after every
   // generator, stamping each asset with a hash of its own contents. This function used to
   // scrape the token out of index.html and echo it onto the generated pages, which broke
@@ -471,7 +504,12 @@ function jsonLd(cat, items) {
               ...(it.sold
                 ? { availability: "https://schema.org/SoldOut" }
                 : {
-                    url: it.urls[STOREFRONT],
+                    // Vendor items have no listing URL — they are bought here, so the offer
+                    // points at the shelf page they sit on rather than anywhere external.
+                    // No `seller` is asserted either: naming a seller in structured data is
+                    // a public claim about who the merchant is, and that is not settled
+                    // while orders run through WhatsApp.
+                    url: it.vendor ? pageUrl : it.urls[STOREFRONT],
                     // EUR, matching the price printed on the card. Structured data is
                     // supposed to agree with what the visitor can see; quoting CZK here
                     // while the page says euro is exactly the mismatch that gets a feed
@@ -509,20 +547,25 @@ const HOW_IT_WORKS =
     <h2>How buying works</h2>
     <ol class="how-steps">
       <li><b>Ask first, if you want.</b> Measurements, fabric, how something actually fits — message me and I will tell you straight, including when a piece is not right for you.</li>
-      <li><b>Buy it on Vinted.</b> Every piece links to its listing. Payment, postage and buyer protection are all handled there, so there is no separate checkout on this site and I never see your card details.</li>
-      <li><b>It posts from Prague.</b> Usually within a day or two of the order. Vinted's buyer protection covers the return if the item is not as described.</li>
+      <li><b>Second-hand pieces: buy them on Vinted.</b> Every piece from my own collection links to its listing. Payment, postage and buyer protection are all handled there, so there is no separate checkout on this site and I never see your card details.</li>
+      <li><b>New stock: order on WhatsApp.</b> Cards marked with a shop name are new goods from a Prague supplier, not from my closet. Message me and I will confirm the price and postage before anything is paid.</li>
+      <li><b>It posts from Prague.</b> Second-hand pieces usually go within a day or two, and Vinted's buyer protection covers the return if the item is not as described. New stock takes 5-10 business days across Europe.</li>
     </ol>
-    <p class="how-note">Everything is second-hand or one-of-a-kind from my own collection, so each piece exists once — when it is gone it is gone. Sizes are the label size; ask me for real measurements before you buy.</p>
+    <p class="how-note">Pieces without a shop name are second-hand or one-of-a-kind from my own collection, so each exists once — when it is gone it is gone. Sizes are the label size; ask me for real measurements before you buy.</p>
     <div class="cta-row">
       <a class="btn saf" href="${wa("Hi! I have a question about something in the wardrobe.")}" target="_blank" rel="noopener">Ask me on WhatsApp →</a>
       <a class="btn" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
     </div>
   </div>`;
 
+// Two different truths now, and conflating them would misstate one of them: a Vinted price
+// is converted for display and charged by Vinted in the buyer's own currency, while a
+// vendor price is what we actually charge, agreed before anything is paid.
 const FX_NOTE =
   `<p class="fx-note">Prices are converted from Czech koruna at the European Central Bank ` +
   `reference rate and rounded to the nearest euro. Vinted charges in your own currency at ` +
-  `checkout, so the amount you pay may differ slightly.</p>`;
+  `checkout, so the amount you pay for a second-hand piece may differ slightly. Prices on ` +
+  `cards marked with a shop name are confirmed on WhatsApp before you pay anything.</p>`;
 
 function page(cat, items, manifest, counts, ch) {
   const desc = cat.lead.slice(0, 155);
@@ -545,14 +588,14 @@ function page(cat, items, manifest, counts, ch) {
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
 <meta property="og:image:alt" content="Indian in Prague">
-<link rel="preload" href="assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Plex Sans carries every lede and every paragraph of prose on the site now, so it is
      as much a first-paint font as the mono is. One file: it is a variable face. -->
-<link rel="preload" href="assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/fonts.css">
-<link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/clothes.css">
-<link rel="stylesheet" href="assets/shop.css">
+<link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts.css">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/clothes.css">
+<link rel="stylesheet" href="/assets/shop.css">
 <script type="application/ld+json">
 ${jsonLd(cat, items)}
 </script>
@@ -580,7 +623,7 @@ ${markNav(ch.header, "wardrobe")}
 </div></section>
 </main>
 ${ch.footer}
-<script src="assets/shop.js" defer></script>
+<script src="/assets/shop.js" defer></script>
 </body>
 </html>
 `;
@@ -613,8 +656,22 @@ async function main() {
     ? JSON.parse(await readFile(path.join(ROOT, "data/archive.json"), "utf8")).items
     : [];
   const sold = archive.filter((i) => !i.hidden);
-  const available = catalog.items.filter((i) => !i.hidden);
-  const byNewest = (a, b) => Number(b.id) - Number(a.id);
+
+  // Vendor stock joins the closet here and nowhere earlier: data/catalog.json stays purely
+  // Vinted, so sync-vinted.mjs can keep rewriting it wholesale without touching any of this.
+  const vendor = vendorItems(ROOT);
+  if (vendor.length) console.log(`  ${vendor.length} vendor item(s) from Govinda`);
+  const available = [...catalog.items.filter((i) => !i.hidden), ...vendor];
+  // Vinted ids are numeric and ascend with time, so sorting on them is "newest first".
+  // Vendor ids are not (govinda-96), and Number() on one is NaN — which makes every
+  // comparison false and leaves those cards wherever the sort happened to drop them.
+  //
+  // So: the closet first, newest first, then vendor stock by SKU. The order is not
+  // arbitrary. A Vinted piece is one-of-a-kind and sells once, so it is genuinely news;
+  // vendor stock is restockable and will still be there next week.
+  const key = (i) => (i.vendor ? -1 : Number(i.id));
+  const byNewest = (a, b) =>
+    key(b) - key(a) || String(a.id).localeCompare(String(b.id), "en", { numeric: true });
   const live = [...available.sort(byNewest), ...sold.sort(byNewest)];
 
   const counts = { __all: live.length, __sold: sold.length };
@@ -655,6 +712,7 @@ async function main() {
       await writeFile(p, replaceRegion(html, "SHOP:GRID", body, cat.page));
       console.log(`  ${cat.page} — ${items.length} items (grid region replaced)`);
     } else {
+      await mkdir(path.dirname(path.join(ROOT, cat.page)), { recursive: true });
       await writeFile(path.join(ROOT, cat.page), page(cat, items, manifest, counts, ch));
       console.log(`  ${cat.page} — ${items.length} items`);
     }
@@ -679,6 +737,15 @@ async function main() {
     lead: `All ${available.length} pieces currently for sale — clothing, jewellery, home things, books and the rest — plus what has already sold. Filter it down, or tap any piece to open its Vinted listing.`,
     expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
+  // The storefront is a ROOT FILE, not wardrobe/index.html, and the difference is a status
+  // code. With an index.html inside the directory, the asset server answers /wardrobe with
+  // a 307 to /wardrobe/ — measured on the live site. /wardrobe is the most linked URL here
+  // and every canonical, tile and nav item points at it, so it has to answer 200 itself.
+  //
+  // wardrobe.html beside a wardrobe/ directory that has no index is unambiguous, and it is
+  // exactly the shape diaries.html and diaries/ already use: /diaries 200s, /diaries/ 307s
+  // back to it, /diaries/<post> 200s.
+  await mkdir(path.join(ROOT, "wardrobe"), { recursive: true });
   await writeFile(path.join(ROOT, "wardrobe.html"), page(all, live, manifest, counts, ch));
   console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold)`);
   // The old page is not left on disk to rot: it would still be reachable, still be
@@ -691,7 +758,7 @@ async function main() {
   // The sold page. Worth its own URL rather than only a filter state: "has anything here
   // actually sold" is a question a hesitant buyer asks deliberately, and a URL can be
   // linked to and indexed where a toggle cannot.
-  if (!sold.length && existsSync(path.join(ROOT, "sold.html"))) await rm(path.join(ROOT, "sold.html"));
+  if (!sold.length && existsSync(path.join(ROOT, "wardrobe/sold.html"))) await rm(path.join(ROOT, "wardrobe/sold.html"));
   if (sold.length) {
     // The last N, not the whole archive. This page answers "does anything here actually
     // sell?", and that is a question about recency — a 2024 sale is no evidence the shop is
@@ -701,7 +768,7 @@ async function main() {
     const RECENT_SOLD = 10;
     const recent = sold.slice(0, RECENT_SOLD);
     const soldPage = {
-      name: "Sold", slug: "sold", page: "sold.html",
+      name: "Sold", slug: "sold", page: "wardrobe/sold.html",
       title: "Last 10 items sold — Indian in Prague",
       h1: ["Already", "gone"],
       // "Sold" here means "left the closet". Vinted deletes a listing the moment it sells
@@ -710,7 +777,7 @@ async function main() {
       lead: `The last ${recent.length} pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
       expo: ["SOLD", "recent", `last ${recent.length} · sold`],
     };
-    await writeFile(path.join(ROOT, "sold.html"), page(soldPage, recent, manifest, counts, ch));
+    await writeFile(path.join(ROOT, "wardrobe/sold.html"), page(soldPage, recent, manifest, counts, ch));
     console.log(`  sold.html — ${recent.length} of ${sold.length} archived items`);
     written++;
   }

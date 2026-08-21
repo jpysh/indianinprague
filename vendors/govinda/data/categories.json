@@ -1,0 +1,2412 @@
+[
+  {
+    "id": 12,
+    "url": "https://govindashop.cz/12-knihy",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 19,
+    "url": "https://govindashop.cz/19-moda",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 20,
+    "url": "https://govindashop.cz/20-panske-obleceni",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 21,
+    "url": "https://govindashop.cz/21-damske-obleceni",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 22,
+    "url": "https://govindashop.cz/22-detske-obleceni",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dětské oblečení",
+        "url": "https://govindashop.cz/22-detske-obleceni"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 23,
+    "url": "https://govindashop.cz/23-dhoti",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Dhotí",
+        "url": "https://govindashop.cz/23-dhoti"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 25,
+    "url": "https://govindashop.cz/25-kosile",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Košile",
+        "url": "https://govindashop.cz/25-kosile"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 26,
+    "url": "https://govindashop.cz/26-tricka",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Trička",
+        "url": "https://govindashop.cz/26-tricka"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 27,
+    "url": "https://govindashop.cz/27-kalhoty",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Kalhoty",
+        "url": "https://govindashop.cz/27-kalhoty"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 28,
+    "url": "https://govindashop.cz/28-cadary",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Čadary",
+        "url": "https://govindashop.cz/28-cadary"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 29,
+    "url": "https://govindashop.cz/29-sari",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 30,
+    "url": "https://govindashop.cz/30-gopi-dresy",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Gopí dresy",
+        "url": "https://govindashop.cz/30-gopi-dresy"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 32,
+    "url": "https://govindashop.cz/32-sukne",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sukně",
+        "url": "https://govindashop.cz/32-sukne"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 33,
+    "url": "https://govindashop.cz/33-punjabi",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Punjábí",
+        "url": "https://govindashop.cz/33-punjabi"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 34,
+    "url": "https://govindashop.cz/34-tricka-s-potiskem",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dětské oblečení",
+        "url": "https://govindashop.cz/22-detske-obleceni"
+      },
+      {
+        "name": "Trička s potiskem",
+        "url": "https://govindashop.cz/34-tricka-s-potiskem"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 36,
+    "url": "https://govindashop.cz/36-bytove-doplnky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 38,
+    "url": "https://govindashop.cz/38-kosmetika",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 39,
+    "url": "https://govindashop.cz/39-potraviny-a-doplnky",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 40,
+    "url": "https://govindashop.cz/40-darkove-zbozi",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 41,
+    "url": "https://govindashop.cz/41-bytovy-textil",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytový textil",
+        "url": "https://govindashop.cz/41-bytovy-textil"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 42,
+    "url": "https://govindashop.cz/42-nadobi",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 43,
+    "url": "https://govindashop.cz/43-ozdobne-hacky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      },
+      {
+        "name": "Ozdobné háčky",
+        "url": "https://govindashop.cz/43-ozdobne-hacky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 44,
+    "url": "https://govindashop.cz/44-zavesne-ozdoby",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      },
+      {
+        "name": "Závěsné ozdoby",
+        "url": "https://govindashop.cz/44-zavesne-ozdoby"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 45,
+    "url": "https://govindashop.cz/45-saly-cadary-dupatty",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Šály, čadary, dupatty",
+        "url": "https://govindashop.cz/45-saly-cadary-dupatty"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 46,
+    "url": "https://govindashop.cz/46-kabelky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/46-kabelky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 47,
+    "url": "https://govindashop.cz/47-sperky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 48,
+    "url": "https://govindashop.cz/48-povlaky-na-polstare",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytový textil",
+        "url": "https://govindashop.cz/41-bytovy-textil"
+      },
+      {
+        "name": "Povlaky na polštáře",
+        "url": "https://govindashop.cz/48-povlaky-na-polstare"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 49,
+    "url": "https://govindashop.cz/49-prehozy-pres-postel",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytový textil",
+        "url": "https://govindashop.cz/41-bytovy-textil"
+      },
+      {
+        "name": "Přehozy přes postel",
+        "url": "https://govindashop.cz/49-prehozy-pres-postel"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 50,
+    "url": "https://govindashop.cz/50-talire",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Talíře",
+        "url": "https://govindashop.cz/50-talire"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 51,
+    "url": "https://govindashop.cz/51-poharky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Pohárky",
+        "url": "https://govindashop.cz/51-poharky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 52,
+    "url": "https://govindashop.cz/52-misky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Misky",
+        "url": "https://govindashop.cz/52-misky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 53,
+    "url": "https://govindashop.cz/53-uzaviratelne-misky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Uzavíratelné misky",
+        "url": "https://govindashop.cz/53-uzaviratelne-misky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 54,
+    "url": "https://govindashop.cz/54-mydla",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Mýdla",
+        "url": "https://govindashop.cz/54-mydla"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 55,
+    "url": "https://govindashop.cz/55-sampony-a-barvy-na-vlasy",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Šampóny a barvy na vlasy",
+        "url": "https://govindashop.cz/55-sampony-a-barvy-na-vlasy"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 56,
+    "url": "https://govindashop.cz/56-zubni-hygiena",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Zubní hygiena",
+        "url": "https://govindashop.cz/56-zubni-hygiena"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 57,
+    "url": "https://govindashop.cz/57-kremy-a-oleje",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Krémy a oleje",
+        "url": "https://govindashop.cz/57-kremy-a-oleje"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 58,
+    "url": "https://govindashop.cz/58-olejove-parfemy",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Olejové parfémy",
+        "url": "https://govindashop.cz/58-olejove-parfemy"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 59,
+    "url": "https://govindashop.cz/59-dekorativni-kosmetika",
+    "path": [
+      {
+        "name": "Kosmetika",
+        "url": "https://govindashop.cz/38-kosmetika"
+      },
+      {
+        "name": "Dekorativní kosmetika",
+        "url": "https://govindashop.cz/59-dekorativni-kosmetika"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 61,
+    "url": "https://govindashop.cz/61-ayurvedske-doplnky-stravy",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Ayurvédské doplňky stravy",
+        "url": "https://govindashop.cz/61-ayurvedske-doplnky-stravy"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 63,
+    "url": "https://govindashop.cz/63-med",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Med",
+        "url": "https://govindashop.cz/63-med"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 64,
+    "url": "https://govindashop.cz/64-koreni",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Koření",
+        "url": "https://govindashop.cz/64-koreni"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 65,
+    "url": "https://govindashop.cz/65-sosky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Sošky",
+        "url": "https://govindashop.cz/65-sosky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 66,
+    "url": "https://govindashop.cz/66-klicenky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Klíčenky",
+        "url": "https://govindashop.cz/66-klicenky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 67,
+    "url": "https://govindashop.cz/67-notesy",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Notesy",
+        "url": "https://govindashop.cz/67-notesy"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 68,
+    "url": "https://govindashop.cz/68-odznaky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Odznaky",
+        "url": "https://govindashop.cz/68-odznaky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 69,
+    "url": "https://govindashop.cz/69-nalepky-a-plakaty",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Nálepky a plakáty",
+        "url": "https://govindashop.cz/69-nalepky-a-plakaty"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 71,
+    "url": "https://govindashop.cz/71-jednodruhove",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Koření",
+        "url": "https://govindashop.cz/64-koreni"
+      },
+      {
+        "name": "Jednodruhové",
+        "url": "https://govindashop.cz/71-jednodruhove"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 72,
+    "url": "https://govindashop.cz/72-masaly",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Koření",
+        "url": "https://govindashop.cz/64-koreni"
+      },
+      {
+        "name": "Masaly",
+        "url": "https://govindashop.cz/72-masaly"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 79,
+    "url": "https://govindashop.cz/79-pro-deti",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Pro děti",
+        "url": "https://govindashop.cz/79-pro-deti"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 81,
+    "url": "https://govindashop.cz/81-antikvariat",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Antikvariát",
+        "url": "https://govindashop.cz/81-antikvariat"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 82,
+    "url": "https://govindashop.cz/82-e-knihy",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "E-knihy",
+        "url": "https://govindashop.cz/82-e-knihy"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 83,
+    "url": "https://govindashop.cz/83-jini-autori",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 111,
+    "url": "https://govindashop.cz/111-anglicke",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 112,
+    "url": "https://govindashop.cz/112-ruske",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Ruské",
+        "url": "https://govindashop.cz/112-ruske"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 113,
+    "url": "https://govindashop.cz/113-vietnamske",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Vietnamské",
+        "url": "https://govindashop.cz/113-vietnamske"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 205,
+    "url": "https://govindashop.cz/205-suhotra-svami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      },
+      {
+        "name": "Suhotra Svámí",
+        "url": "https://govindashop.cz/205-suhotra-svami"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 222,
+    "url": "https://govindashop.cz/222-adiradza-dasa",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Ádirádža dása",
+        "url": "https://govindashop.cz/222-adiradza-dasa"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 223,
+    "url": "https://govindashop.cz/223-bhakti-vikasa-svami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Bhakti Vikáša Svámí",
+        "url": "https://govindashop.cz/223-bhakti-vikasa-svami"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 224,
+    "url": "https://govindashop.cz/224-danavir-gosvami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Dánavír Gósvámí",
+        "url": "https://govindashop.cz/224-danavir-gosvami"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 233,
+    "url": "https://govindashop.cz/233-krisnavalli-devi-dasi",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Krišnavallí déví dásí",
+        "url": "https://govindashop.cz/233-krisnavalli-devi-dasi"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 239,
+    "url": "https://govindashop.cz/239-satsvarup-das-gosvami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Satsvarúp dás Gósvámí",
+        "url": "https://govindashop.cz/239-satsvarup-das-gosvami"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 241,
+    "url": "https://govindashop.cz/241-suhotra-svami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Suhotra Svámí",
+        "url": "https://govindashop.cz/241-suhotra-svami"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 245,
+    "url": "https://govindashop.cz/245-tamal-krisna-gosvami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Tamál Krišna Gosvámí",
+        "url": "https://govindashop.cz/245-tamal-krisna-gosvami"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 249,
+    "url": "https://govindashop.cz/249-bindi",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Bindi",
+        "url": "https://govindashop.cz/249-bindi"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 250,
+    "url": "https://govindashop.cz/250-nausnice",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Naušnice",
+        "url": "https://govindashop.cz/250-nausnice"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 251,
+    "url": "https://govindashop.cz/251-naramky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Náramky",
+        "url": "https://govindashop.cz/251-naramky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 253,
+    "url": "https://govindashop.cz/253-meditace",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 254,
+    "url": "https://govindashop.cz/254-k-uctivani",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "K uctívání",
+        "url": "https://govindashop.cz/254-k-uctivani"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 255,
+    "url": "https://govindashop.cz/255-kantimaly",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Kantimály",
+        "url": "https://govindashop.cz/255-kantimaly"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 256,
+    "url": "https://govindashop.cz/256-vonne-tycinky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Vonné tyčinky",
+        "url": "https://govindashop.cz/256-vonne-tycinky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 257,
+    "url": "https://govindashop.cz/257-japa-pytliky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Japa pytlíky",
+        "url": "https://govindashop.cz/257-japa-pytliky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 258,
+    "url": "https://govindashop.cz/258-jine-ozdoby",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Jiné ozdoby",
+        "url": "https://govindashop.cz/258-jine-ozdoby"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 259,
+    "url": "https://govindashop.cz/259-stojanky-na-tycinky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Stojánky na tyčinky",
+        "url": "https://govindashop.cz/259-stojanky-na-tycinky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 260,
+    "url": "https://govindashop.cz/260-divci",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dětské oblečení",
+        "url": "https://govindashop.cz/22-detske-obleceni"
+      },
+      {
+        "name": "Dívčí",
+        "url": "https://govindashop.cz/260-divci"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 261,
+    "url": "https://govindashop.cz/261-chlapecke",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dětské oblečení",
+        "url": "https://govindashop.cz/22-detske-obleceni"
+      },
+      {
+        "name": "Chlapecké",
+        "url": "https://govindashop.cz/261-chlapecke"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 263,
+    "url": "https://govindashop.cz/263-prasadam-a-mahaprasadam",
+    "path": [
+      {
+        "name": "Potraviny a doplňky",
+        "url": "https://govindashop.cz/39-potraviny-a-doplnky"
+      },
+      {
+        "name": "Prasádam a maháprasádam",
+        "url": "https://govindashop.cz/263-prasadam-a-mahaprasadam"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 264,
+    "url": "https://govindashop.cz/264-audio-a-video",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Audio a video",
+        "url": "https://govindashop.cz/264-audio-a-video"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 269,
+    "url": "https://govindashop.cz/269-saty",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Šaty",
+        "url": "https://govindashop.cz/269-saty"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 271,
+    "url": "https://govindashop.cz/271-tricka-a-topy",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Trička a topy",
+        "url": "https://govindashop.cz/271-tricka-a-topy"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 272,
+    "url": "https://govindashop.cz/272-vazy-a-lampy",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      },
+      {
+        "name": "Vázy a lampy",
+        "url": "https://govindashop.cz/272-vazy-a-lampy"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 273,
+    "url": "https://govindashop.cz/273-halenky-a-kurty",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Halenky a Kurty",
+        "url": "https://govindashop.cz/273-halenky-a-kurty"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 280,
+    "url": "https://govindashop.cz/280-damske-japa-pytliky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Japa pytlíky",
+        "url": "https://govindashop.cz/257-japa-pytliky"
+      },
+      {
+        "name": "Dámské japa pytlíky",
+        "url": "https://govindashop.cz/280-damske-japa-pytliky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 281,
+    "url": "https://govindashop.cz/281-panske-japa-pytliky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Japa pytlíky",
+        "url": "https://govindashop.cz/257-japa-pytliky"
+      },
+      {
+        "name": "Pánské japa pytlíky",
+        "url": "https://govindashop.cz/281-panske-japa-pytliky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 282,
+    "url": "https://govindashop.cz/282-univerzalni-japa-pytliky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Japa pytlíky",
+        "url": "https://govindashop.cz/257-japa-pytliky"
+      },
+      {
+        "name": "Univerzální japa pytlíky",
+        "url": "https://govindashop.cz/282-univerzalni-japa-pytliky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 283,
+    "url": "https://govindashop.cz/283-kolove-sukne",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sukně",
+        "url": "https://govindashop.cz/32-sukne"
+      },
+      {
+        "name": "Kolové sukně",
+        "url": "https://govindashop.cz/283-kolove-sukne"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 284,
+    "url": "https://govindashop.cz/284-tilak-ganga",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Tilak, Ganga",
+        "url": "https://govindashop.cz/284-tilak-ganga"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 285,
+    "url": "https://govindashop.cz/285-obrazky",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Obrázky",
+        "url": "https://govindashop.cz/285-obrazky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 286,
+    "url": "https://govindashop.cz/286-nahrdelniky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Náhrdelníky",
+        "url": "https://govindashop.cz/286-nahrdelniky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 292,
+    "url": "https://govindashop.cz/292-gamsi",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Pánské oblečení",
+        "url": "https://govindashop.cz/20-panske-obleceni"
+      },
+      {
+        "name": "Gamši",
+        "url": "https://govindashop.cz/292-gamsi"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 293,
+    "url": "https://govindashop.cz/293-konvice-termosky",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Konvice, termosky",
+        "url": "https://govindashop.cz/293-konvice-termosky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 294,
+    "url": "https://govindashop.cz/294-privesky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Přívěšky",
+        "url": "https://govindashop.cz/294-privesky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 295,
+    "url": "https://govindashop.cz/295-kamandaly",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Nádobí",
+        "url": "https://govindashop.cz/42-nadobi"
+      },
+      {
+        "name": "Kamandaly",
+        "url": "https://govindashop.cz/295-kamandaly"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 296,
+    "url": "https://govindashop.cz/296-bavlna",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      },
+      {
+        "name": "Bavlna",
+        "url": "https://govindashop.cz/296-bavlna"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 297,
+    "url": "https://govindashop.cz/297-viskoza",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      },
+      {
+        "name": "Viskoza",
+        "url": "https://govindashop.cz/297-viskoza"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 298,
+    "url": "https://govindashop.cz/298-hedvabi",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      },
+      {
+        "name": "Hedvábí",
+        "url": "https://govindashop.cz/298-hedvabi"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 299,
+    "url": "https://govindashop.cz/299-sifon",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      },
+      {
+        "name": "Šifon",
+        "url": "https://govindashop.cz/299-sifon"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 300,
+    "url": "https://govindashop.cz/300-rudraksa",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Rudrakša",
+        "url": "https://govindashop.cz/300-rudraksa"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 301,
+    "url": "https://govindashop.cz/301-krabicky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Krabičky",
+        "url": "https://govindashop.cz/301-krabicky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 302,
+    "url": "https://govindashop.cz/302-rajastanske-se-sklicky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Krabičky",
+        "url": "https://govindashop.cz/301-krabicky"
+      },
+      {
+        "name": "Rajastánské se sklíčky",
+        "url": "https://govindashop.cz/302-rajastanske-se-sklicky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 305,
+    "url": "https://govindashop.cz/305-srila-prabhupada",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Antikvariát",
+        "url": "https://govindashop.cz/81-antikvariat"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/305-srila-prabhupada"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 306,
+    "url": "https://govindashop.cz/306-ostatni",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Jiní autoři",
+        "url": "https://govindashop.cz/83-jini-autori"
+      },
+      {
+        "name": "Ostatní",
+        "url": "https://govindashop.cz/306-ostatni"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 308,
+    "url": "https://govindashop.cz/308-kucharky",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Kuchařky",
+        "url": "https://govindashop.cz/308-kucharky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 309,
+    "url": "https://govindashop.cz/309-ostatni",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Antikvariát",
+        "url": "https://govindashop.cz/81-antikvariat"
+      },
+      {
+        "name": "Ostatní",
+        "url": "https://govindashop.cz/309-ostatni"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 310,
+    "url": "https://govindashop.cz/310-krisna-dharma-das",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Antikvariát",
+        "url": "https://govindashop.cz/81-antikvariat"
+      },
+      {
+        "name": "Krišna Dharma dás",
+        "url": "https://govindashop.cz/310-krisna-dharma-das"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 312,
+    "url": "https://govindashop.cz/312-danavir-gosvami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      },
+      {
+        "name": "Danavír Gosvámí",
+        "url": "https://govindashop.cz/312-danavir-gosvami"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 313,
+    "url": "https://govindashop.cz/313-ostatni",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      },
+      {
+        "name": "Ostatní",
+        "url": "https://govindashop.cz/313-ostatni"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 315,
+    "url": "https://govindashop.cz/315-bhakti-vikasa-svami",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      },
+      {
+        "name": "Bhakti Vikáša Svámí",
+        "url": "https://govindashop.cz/315-bhakti-vikasa-svami"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 316,
+    "url": "https://govindashop.cz/316-cizi-jazyky",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 317,
+    "url": "https://govindashop.cz/317-srila-prabhupada",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/317-srila-prabhupada"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 318,
+    "url": "https://govindashop.cz/318-srimad-bhagavatam",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/317-srila-prabhupada"
+      },
+      {
+        "name": "Šrímad-Bhágavatam",
+        "url": "https://govindashop.cz/318-srimad-bhagavatam"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 319,
+    "url": "https://govindashop.cz/319-caitanja-caritamrita",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/317-srila-prabhupada"
+      },
+      {
+        "name": "Čaitanja-čaritámrita",
+        "url": "https://govindashop.cz/319-caitanja-caritamrita"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 320,
+    "url": "https://govindashop.cz/320-ostatni",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/317-srila-prabhupada"
+      },
+      {
+        "name": "Ostatní",
+        "url": "https://govindashop.cz/320-ostatni"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 321,
+    "url": "https://govindashop.cz/321-psanicka",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/46-kabelky"
+      },
+      {
+        "name": "Psaníčka",
+        "url": "https://govindashop.cz/321-psanicka"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 322,
+    "url": "https://govindashop.cz/322-kabelky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/46-kabelky"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/322-kabelky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 323,
+    "url": "https://govindashop.cz/323-stribro",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Stříbro",
+        "url": "https://govindashop.cz/323-stribro"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 324,
+    "url": "https://govindashop.cz/324-domov",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 325,
+    "url": "https://govindashop.cz/325-spodnicky-a-coli",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Spodničky a Čólí",
+        "url": "https://govindashop.cz/325-spodnicky-a-coli"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 329,
+    "url": "https://govindashop.cz/329-tasky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/46-kabelky"
+      },
+      {
+        "name": "Tašky",
+        "url": "https://govindashop.cz/329-tasky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 330,
+    "url": "https://govindashop.cz/330-penezenky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Kabelky",
+        "url": "https://govindashop.cz/46-kabelky"
+      },
+      {
+        "name": "Peněženky",
+        "url": "https://govindashop.cz/330-penezenky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 331,
+    "url": "https://govindashop.cz/331-gamsi",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Gamši",
+        "url": "https://govindashop.cz/331-gamsi"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 333,
+    "url": "https://govindashop.cz/333-smes",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Sárí",
+        "url": "https://govindashop.cz/29-sari"
+      },
+      {
+        "name": "Směs",
+        "url": "https://govindashop.cz/333-smes"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 334,
+    "url": "https://govindashop.cz/334-kalhoty",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Kalhoty",
+        "url": "https://govindashop.cz/334-kalhoty"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 335,
+    "url": "https://govindashop.cz/335-prani",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Přaní",
+        "url": "https://govindashop.cz/335-prani"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 336,
+    "url": "https://govindashop.cz/336-bhagavad-gita",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/317-srila-prabhupada"
+      },
+      {
+        "name": "Bhagavad-gītā",
+        "url": "https://govindashop.cz/336-bhagavad-gita"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 337,
+    "url": "https://govindashop.cz/337-srila-prabhupada",
+    "path": [
+      {
+        "name": "Knihy",
+        "url": "https://govindashop.cz/12-knihy"
+      },
+      {
+        "name": "Cizí jazyky",
+        "url": "https://govindashop.cz/316-cizi-jazyky"
+      },
+      {
+        "name": "Anglické",
+        "url": "https://govindashop.cz/111-anglicke"
+      },
+      {
+        "name": "Šríla Prabhupáda",
+        "url": "https://govindashop.cz/337-srila-prabhupada"
+      }
+    ],
+    "depth": 4
+  },
+  {
+    "id": 339,
+    "url": "https://govindashop.cz/339-pocitadla",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Počítadla",
+        "url": "https://govindashop.cz/339-pocitadla"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 340,
+    "url": "https://govindashop.cz/340-bozstva",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Božstva",
+        "url": "https://govindashop.cz/340-bozstva"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 341,
+    "url": "https://govindashop.cz/341-jednorade",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Kantimály",
+        "url": "https://govindashop.cz/255-kantimaly"
+      },
+      {
+        "name": "Jednořadé",
+        "url": "https://govindashop.cz/341-jednorade"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 342,
+    "url": "https://govindashop.cz/342-dvourade",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Kantimály",
+        "url": "https://govindashop.cz/255-kantimaly"
+      },
+      {
+        "name": "Dvouřadé",
+        "url": "https://govindashop.cz/342-dvourade"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 343,
+    "url": "https://govindashop.cz/343-trojrade",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Kantimály",
+        "url": "https://govindashop.cz/255-kantimaly"
+      },
+      {
+        "name": "Trojřadé",
+        "url": "https://govindashop.cz/343-trojrade"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 344,
+    "url": "https://govindashop.cz/344-ruzence-klikry",
+    "path": [
+      {
+        "name": "Meditace",
+        "url": "https://govindashop.cz/253-meditace"
+      },
+      {
+        "name": "Růžence, klikry",
+        "url": "https://govindashop.cz/344-ruzence-klikry"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 345,
+    "url": "https://govindashop.cz/345-svicny",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      },
+      {
+        "name": "Svícny",
+        "url": "https://govindashop.cz/345-svicny"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 346,
+    "url": "https://govindashop.cz/346-kabatky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Dámské oblečení",
+        "url": "https://govindashop.cz/21-damske-obleceni"
+      },
+      {
+        "name": "Kabátky",
+        "url": "https://govindashop.cz/346-kabatky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 348,
+    "url": "https://govindashop.cz/348-obrazy",
+    "path": [
+      {
+        "name": "Domov",
+        "url": "https://govindashop.cz/324-domov"
+      },
+      {
+        "name": "Bytové doplňky",
+        "url": "https://govindashop.cz/36-bytove-doplnky"
+      },
+      {
+        "name": "Obrazy",
+        "url": "https://govindashop.cz/348-obrazy"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 349,
+    "url": "https://govindashop.cz/349-nakotnicky",
+    "path": [
+      {
+        "name": "Móda",
+        "url": "https://govindashop.cz/19-moda"
+      },
+      {
+        "name": "Šperky",
+        "url": "https://govindashop.cz/47-sperky"
+      },
+      {
+        "name": "Nákotníčky",
+        "url": "https://govindashop.cz/349-nakotnicky"
+      }
+    ],
+    "depth": 3
+  },
+  {
+    "id": 350,
+    "url": "https://govindashop.cz/350-detske-darky-a-panenky",
+    "path": [
+      {
+        "name": "Dárkové zboží",
+        "url": "https://govindashop.cz/40-darkove-zbozi"
+      },
+      {
+        "name": "Dětské dárky a panenky",
+        "url": "https://govindashop.cz/350-detske-darky-a-panenky"
+      }
+    ],
+    "depth": 2
+  },
+  {
+    "id": 351,
+    "url": "https://govindashop.cz/351-01",
+    "path": [
+      {
+        "name": "01",
+        "url": "https://govindashop.cz/351-01"
+      }
+    ],
+    "depth": 1
+  },
+  {
+    "id": 352,
+    "url": "https://govindashop.cz/352-01-02",
+    "path": [
+      {
+        "name": "01 02",
+        "url": "https://govindashop.cz/352-01-02"
+      }
+    ],
+    "depth": 1
+  }
+]
