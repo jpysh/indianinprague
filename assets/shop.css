@@ -560,3 +560,27 @@
   .pg-of{margin-left:0;width:100%}
   .pager .pg{min-width:34px;height:34px}
 }
+
+/* ---------- subcategory chips ---------- */
+
+/* Real links to real pages, sitting between the shelf strip and the filter toolbar — the
+   order matters: shelf, then division of shelf, then attributes of what is on it.
+   Scrolls horizontally rather than wrapping: Meditation has twelve divisions, and three
+   wrapped rows of chips would push the grid below the fold on a phone. The shelf strip
+   above it already behaves this way, so the gesture is the one the page has taught. */
+.subs{
+  display:flex;gap:8px;margin:0 0 16px;padding-bottom:4px;
+  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  font-family:var(--mono);font-size:var(--fs-2xs);
+}
+.subs::-webkit-scrollbar{display:none}
+.subs .sub{
+  flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
+  padding:7px 12px;border:1px solid var(--band);border-radius:999px;
+  color:var(--bone-dim);text-decoration:none;white-space:nowrap;
+  transition:background .16s ease,color .16s ease,border-color .16s ease;
+}
+.subs .sub b{font-weight:500;opacity:.6}
+.subs .sub:hover,.subs .sub:focus-visible{background:var(--band);color:var(--bone)}
+.subs .sub.on{background:var(--bone);color:var(--void);border-color:var(--bone)}
+.subs .sub.on b{opacity:.55}

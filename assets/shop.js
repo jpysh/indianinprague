@@ -425,7 +425,67 @@
     }
   }
 
+  /* ------------------------------------------------- the rest of the shelf ---- */
+
+  // The page holds 100 cards; the shelf may hold 461. Filtering or sorting only what is on
+  // screen answers the wrong question — "Brown" would report four matches out of a hundred
+  // and call it the shelf. So the first time a control is actually used, the remaining
+  // cards are fetched and the grid becomes the whole shelf.
+  //
+  // Deferred rather than done on load because most visitors browse and never filter, and
+  // this is several hundred KB they would pay for and not use.
+  var allUrl = grid.getAttribute("data-all");
+  var full = !allUrl;
+  var loading = false;
+
+  function anyActive() {
+    if (avail || (q.value || "").trim()) return true;
+    if (sort && sort.value && sort.value !== "new") return true;
+    for (var i = 0; i < selects.length; i++) if (selects[i].value) return true;
+    return false;
+  }
+
+  function ensureFull(then) {
+    if (full || loading) return then();
+    loading = true;
+    grid.setAttribute("aria-busy", "true");
+    fetch(allUrl, { credentials: "same-origin" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (html) {
+        grid.innerHTML = html;
+        cards = Array.prototype.slice.call(grid.querySelectorAll(".piece"));
+        cards.forEach(function (c, i) { c._i = i; });
+        // Galleries are built on first interaction with a card, so the new ones need the
+        // same listeners the original hundred got.
+        cards.forEach(function (card) {
+          ["pointerenter", "focusin", "touchstart"].forEach(function (ev) {
+            card.addEventListener(ev, function () { buildCarousel(card); }, { once: true, passive: true });
+          });
+        });
+        // The pager is now meaningless: every card of the shelf is in this grid, and the
+        // reveal button below takes over from it.
+        var pg = document.querySelector(".pager");
+        if (pg) pg.hidden = true;
+        full = true;
+      })
+      .catch(function () {
+        // Filtering the hundred cards already here is a worse answer than the whole shelf,
+        // but it is a far better one than a grid that stops responding.
+        full = true;
+      })
+      .then(function () {
+        loading = false;
+        grid.removeAttribute("aria-busy");
+        then();
+      });
+  }
+
   function apply() {
+    if (!full && anyActive()) return ensureFull(applyNow);
+    applyNow();
+  }
+
+  function applyNow() {
     shown = cards.filter(matches).sort(comparator());
     var inShown = new Set(shown);
 
