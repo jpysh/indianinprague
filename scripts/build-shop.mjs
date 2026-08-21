@@ -28,6 +28,7 @@
 // writes, to emit width/height and stop the grid reflowing as photos arrive).
 
 import { readFile, writeFile, rm, mkdir } from "node:fs/promises";
+import { vendorItems } from "./vendor-items.mjs";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -202,6 +203,12 @@ const wa = (body) => WA + encodeURIComponent(body);
 // already no. "Do you have anything similar" is the only useful thing left to ask, and it
 // is often a real sale.
 function askUrl(item) {
+  // Vendor stock: no listing URL to quote — these are not linked out to, and the customer
+  // is buying from this site. The SKU is what makes the message answerable instead.
+  if (item.vendor) {
+    const price = item.priceEur == null ? "" : ` (€${item.priceEur})`;
+    return wa(`Hi! I'd like to order "${item.title}"${price} — ref ${item.id}`);
+  }
   if (item.sold) {
     return wa(`Hi! "${item.title}" has sold — do you have anything similar?`);
   }
@@ -246,20 +253,31 @@ function card(item, manifest, eager, showCat) {
     ? `<span class="pr sold-pr">Sold</span>`
     : `<span class="pr">€${item.priceEur}</span>`;
 
+  // Where a piece comes from, on the photograph. Secondhand pieces from the closet and new
+  // retail stock shipped from Prague are different propositions, and a buyer has to be able
+  // to tell which is which before they ask about one.
+  const vendorBadge = item.vendor
+    ? `<span class="cap flag vendor-flag">${esc(item.vendor)}</span>`
+    : "";
+
   const badges =
     (sold ? `<span class="cap flag sold-flag">Sold</span>` : "") +
-    (item.reserved ? `<span class="cap flag res">Reserved</span>` : "");
+    (item.reserved ? `<span class="cap flag res">Reserved</span>` : "") +
+    (item.vendor && !item.inStock ? `<span class="cap flag res">Out of stock</span>` : "") +
+    vendorBadge;
 
   const inner =
     `<div class="frame ${spice(item.id)}">` +
     `<div class="shots" data-track><div class="shot">${picture(item, manifest, eager)}</div></div>` +
     `<div class="grain"></div>` +
-    (sold ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
+    // The ↗ promises a link out. Vendor cards have none — they are bought here — so the
+    // glyph would be a lie about where the card goes.
+    (sold || item.vendor ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
     `${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${badges}${favBadge}` +
     blurb(item) +
     `</div>` +
     `<div class="meta"><span class="nm">${esc(item.title)}</span>${price}</div>` +
-    `<div class="tags">${esc(tags) || (sold ? "No longer available" : "")}</div>`;
+    `<div class="tags">${esc(item.vendor ? `New · ${item.delivery}` : tags) || (sold ? "No longer available" : "")}</div>`;
 
   // Every card is a <div>, never an <a>. It carries TWO destinations now — the Vinted
   // listing and a WhatsApp message about this specific piece — and an anchor cannot legally
@@ -274,7 +292,11 @@ function card(item, manifest, eager, showCat) {
   // A sold card gets no .go: Vinted 307s a sold listing to a page with its structured data
   // stripped, so every one of those would be a dead end. It keeps .ask, because "do you have
   // anything like this?" is the single most useful thing a sold card can be asked.
-  const go = sold
+  // Vendor cards get no .go at all: there is no destination. Vinted items link to their
+  // listing because that is where the sale happens; a Govinda item is bought here, through
+  // the ask link, and linking to the vendor's own shop would send the buyer to the same
+  // item at the vendor's own price.
+  const go = sold || item.vendor
     ? ""
     : `<a class="go" href="${esc(item.urls[STOREFRONT])}" target="_blank" rel="noopener"` +
       ` aria-label="${esc(item.title)} — open the Vinted listing in a new tab"></a>`;
@@ -284,7 +306,7 @@ function card(item, manifest, eager, showCat) {
   // decorate a link whose label already says what it does. The green carries the recognition.
   const ask =
     `<a class="ask" href="${esc(askUrl(item))}" target="_blank" rel="noopener">` +
-    `${sold ? "Ask for something similar" : "Ask about this piece"}` +
+    `${item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
     `<span class="vh"> — opens WhatsApp in a new tab</span></a>`;
 
   return `<div class="piece${sold ? " sold" : ""}"${data}>${inner}${go}${ask}</div>`;
@@ -485,7 +507,12 @@ function jsonLd(cat, items) {
               ...(it.sold
                 ? { availability: "https://schema.org/SoldOut" }
                 : {
-                    url: it.urls[STOREFRONT],
+                    // Vendor items have no listing URL — they are bought here, so the offer
+                    // points at the shelf page they sit on rather than anywhere external.
+                    // No `seller` is asserted either: naming a seller in structured data is
+                    // a public claim about who the merchant is, and that is not settled
+                    // while orders run through WhatsApp.
+                    url: it.vendor ? pageUrl : it.urls[STOREFRONT],
                     // EUR, matching the price printed on the card. Structured data is
                     // supposed to agree with what the visitor can see; quoting CZK here
                     // while the page says euro is exactly the mismatch that gets a feed
@@ -523,20 +550,25 @@ const HOW_IT_WORKS =
     <h2>How buying works</h2>
     <ol class="how-steps">
       <li><b>Ask first, if you want.</b> Measurements, fabric, how something actually fits — message me and I will tell you straight, including when a piece is not right for you.</li>
-      <li><b>Buy it on Vinted.</b> Every piece links to its listing. Payment, postage and buyer protection are all handled there, so there is no separate checkout on this site and I never see your card details.</li>
-      <li><b>It posts from Prague.</b> Usually within a day or two of the order. Vinted's buyer protection covers the return if the item is not as described.</li>
+      <li><b>Second-hand pieces: buy them on Vinted.</b> Every piece from my own collection links to its listing. Payment, postage and buyer protection are all handled there, so there is no separate checkout on this site and I never see your card details.</li>
+      <li><b>New stock: order on WhatsApp.</b> Cards marked with a shop name are new goods from a Prague supplier, not from my closet. Message me and I will confirm the price and postage before anything is paid.</li>
+      <li><b>It posts from Prague.</b> Second-hand pieces usually go within a day or two, and Vinted's buyer protection covers the return if the item is not as described. New stock takes 5-10 business days across Europe.</li>
     </ol>
-    <p class="how-note">Everything is second-hand or one-of-a-kind from my own collection, so each piece exists once — when it is gone it is gone. Sizes are the label size; ask me for real measurements before you buy.</p>
+    <p class="how-note">Pieces without a shop name are second-hand or one-of-a-kind from my own collection, so each exists once — when it is gone it is gone. Sizes are the label size; ask me for real measurements before you buy.</p>
     <div class="cta-row">
       <a class="btn saf" href="${wa("Hi! I have a question about something in the wardrobe.")}" target="_blank" rel="noopener">Ask me on WhatsApp →</a>
       <a class="btn" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
     </div>
   </div>`;
 
+// Two different truths now, and conflating them would misstate one of them: a Vinted price
+// is converted for display and charged by Vinted in the buyer's own currency, while a
+// vendor price is what we actually charge, agreed before anything is paid.
 const FX_NOTE =
   `<p class="fx-note">Prices are converted from Czech koruna at the European Central Bank ` +
   `reference rate and rounded to the nearest euro. Vinted charges in your own currency at ` +
-  `checkout, so the amount you pay may differ slightly.</p>`;
+  `checkout, so the amount you pay for a second-hand piece may differ slightly. Prices on ` +
+  `cards marked with a shop name are confirmed on WhatsApp before you pay anything.</p>`;
 
 function page(cat, items, manifest, counts, ch) {
   const desc = cat.lead.slice(0, 155);
@@ -627,8 +659,22 @@ async function main() {
     ? JSON.parse(await readFile(path.join(ROOT, "data/archive.json"), "utf8")).items
     : [];
   const sold = archive.filter((i) => !i.hidden);
-  const available = catalog.items.filter((i) => !i.hidden);
-  const byNewest = (a, b) => Number(b.id) - Number(a.id);
+
+  // Vendor stock joins the closet here and nowhere earlier: data/catalog.json stays purely
+  // Vinted, so sync-vinted.mjs can keep rewriting it wholesale without touching any of this.
+  const vendor = vendorItems(ROOT);
+  if (vendor.length) console.log(`  ${vendor.length} vendor item(s) from Govinda`);
+  const available = [...catalog.items.filter((i) => !i.hidden), ...vendor];
+  // Vinted ids are numeric and ascend with time, so sorting on them is "newest first".
+  // Vendor ids are not (govinda-96), and Number() on one is NaN — which makes every
+  // comparison false and leaves those cards wherever the sort happened to drop them.
+  //
+  // So: the closet first, newest first, then vendor stock by SKU. The order is not
+  // arbitrary. A Vinted piece is one-of-a-kind and sells once, so it is genuinely news;
+  // vendor stock is restockable and will still be there next week.
+  const key = (i) => (i.vendor ? -1 : Number(i.id));
+  const byNewest = (a, b) =>
+    key(b) - key(a) || String(a.id).localeCompare(String(b.id), "en", { numeric: true });
   const live = [...available.sort(byNewest), ...sold.sort(byNewest)];
 
   const counts = { __all: live.length, __sold: sold.length };

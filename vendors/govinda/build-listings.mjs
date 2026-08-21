@@ -38,6 +38,12 @@ if (need.length) {
 }
 
 const en = (t) => (t ? cache[t] ?? t : "");
+
+// Book titles are NOT translated. They are the names of specific editions, and machine
+// translation turns them into ordinary words — "Návraty" came back as "Returns" when the
+// book is Prabhupada's "Coming Back". The original text is what a buyer searching for that
+// edition will type. Descriptions are still translated; only the title is left alone.
+const title = (p, shelf) => (shelf === "Books" ? p.titleCs : en(p.titleCs));
 const eur = (czk) => Math.round(czk / rate.czkPerEur);
 
 const COLS = [
@@ -56,23 +62,27 @@ const rows = raw.map((p) => {
   const cat = map[p.categoryId] || {};
   const markup = o.markup_pct ?? MARKUP_PCT;
   const vendorEur = eur(p.priceCzk);
+  const shelf = o.shelf ?? cat.shelf ?? "Others";
+  const inStock = p.availability === "InStock";
   return [
     p.sku,
-    o.list ?? "no",                                  // nothing goes live until you say so
-    o.shelf ?? cat.shelf ?? "Others",
+    // In stock at Govinda means live here. An item they have pulled is not something we
+    // can sell, so it goes out of the shop on the same signal, without waiting for a human.
+    o.list ?? (inStock ? "yes" : "no"),
+    shelf,
     o.subcategory ?? cat.sub ?? "",
-    o.title ?? en(p.titleCs),
+    o.title ?? title(p, shelf),
     o.description ?? en(p.descriptionCs),
     p.brand,
     p.priceCzk,
     vendorEur,
     markup,
     o.price_eur ?? Math.round((p.priceCzk * (1 + markup / 100)) / rate.czkPerEur),
-    p.availability === "InStock" ? "in stock" : "out of stock",
+    inStock ? "in stock" : "out of stock",
     o.ships_from ?? SHIPS_FROM,
     o.delivery ?? DELIVERY,
     p.images.join(" | "),
-    o.title || o.description ? "edited" : "machine",
+    o.title || o.description ? "edited" : shelf === "Books" ? "machine (title original)" : "machine",
     p.url,
   ].map(cell).join(",");
 });

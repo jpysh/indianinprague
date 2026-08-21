@@ -41,7 +41,12 @@ const WIDTHS = [400, 800, 1200, 1600];
 // The editorial photographs (IMG_*.JPG) keep all four: the article uses them full-bleed
 // and the home page hero is 1600 wide.
 const GRID_WIDTHS = [400, 800];
-const isProductPhoto = (f) => /^vinted-/.test(f);
+const isProductPhoto = (f) => /^(vinted|govinda)-/.test(f);
+
+// Vendor originals live outside images/ and are gitignored — ~2,400 JPEGs at full size is
+// not something to carry in git history. Only the derivatives ship, and they land in
+// images/derived/ beside everything else, so the rest of the pipeline needs no special case.
+const VENDOR_DIRS = [path.join(ROOT, "vendors", "govinda", "images")];
 
 const QUALITY_JPEG = 80;
 const QUALITY_WEBP = 78;
@@ -75,7 +80,15 @@ async function dimensions(file) {
 async function main() {
   await mkdir(OUT_DIR, { recursive: true });
 
-  const files = (await readdir(SRC_DIR)).filter(isSource).sort();
+  // [directory, filename] rather than filenames alone, because sources now come from more
+  // than one place.
+  const files = [
+    ...(await readdir(SRC_DIR)).filter(isSource).map((f) => [SRC_DIR, f]),
+    ...(await Promise.all(
+      VENDOR_DIRS.map(async (d) =>
+        existsSync(d) ? (await readdir(d)).filter(isSource).map((f) => [d, f]) : []),
+    )).flat(),
+  ].sort((a, b) => a[1].localeCompare(b[1]));
   if (files.length === 0) {
     console.error("no source images found in images/");
     process.exit(1);
@@ -87,8 +100,8 @@ async function main() {
   let encoded = 0;
   let skipped = 0;
 
-  for (const file of files) {
-    const src = path.join(SRC_DIR, file);
+  for (const [dir, file] of files) {
+    const src = path.join(dir, file);
     const base = file.replace(/\.[^.]+$/, "");
     const { w: srcW, h: srcH } = await dimensions(src);
 
