@@ -155,7 +155,11 @@ await mkdir(DIST, { recursive: true });
 // Root files: every page except the private ones, the IndexNow key file (<32-hex>.txt)
 // alongside robots.txt and llms.txt, and the sitemap.
 const rootFiles = (await readdir(ROOT)).filter(
-  (f) => (f.endsWith(".html") || f.endsWith(".txt") || f === "sitemap.xml") && !PRIVATE_PAGES.has(f),
+  // .cards are the shelf card fragments the filters fetch — content, not pages, which is
+  // why they are not .html and why they must still be staged.
+  (f) =>
+    (f.endsWith(".html") || f.endsWith(".txt") || f.endsWith(".cards") || f === "sitemap.xml") &&
+    !PRIVATE_PAGES.has(f),
 );
 
 for (const f of rootFiles) {

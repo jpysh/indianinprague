@@ -155,12 +155,33 @@ const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(
 // site already served comfortably; the browser then reveals them 24 at a time (shop.js).
 const PER_PAGE = 100;
 
+// URL-safe form of a subcategory name. Diacritics are stripped rather than percent-encoded:
+// /wardrobe/meditation/kanthi-malas is a URL someone can read aloud, and the Sanskrit and
+// Czech names in this catalogue would otherwise produce a line of %C3%A1.
+const slug = (name) =>
+  name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    // Apostrophes are DELETED rather than treated as a separator: "Women's clothing" is
+    // womens-clothing, which is what a person types and links to. Letting the general rule
+    // below have it produces women-s-clothing, a URL that reads as a typo.
+    .replace(/['\u2019]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
 // Page 1 is the shelf itself. Page 2 of /wardrobe/fashion is /wardrobe/fashion/2, which
 // means fashion.html sits beside a fashion/ directory — the same shape wardrobe.html and
 // wardrobe/ already use, and unambiguous for the same reason: only one of the two can
 // answer any given URL.
 const pageFile = (cat, no) =>
   no === 1 ? cat.page : cat.page.replace(/\.html$/, "") + `/${no}.html`;
+
+// A subcategory page and its own page 2: /wardrobe/meditation/kanthi-malas and
+// /wardrobe/meditation/kanthi-malas/2. Page numbers and subcategories share the shelf
+// directory and cannot collide — a page is a number, a subcategory is a word.
+const subFile = (cat, name, no) => {
+  const base = cat.page.replace(/\.html$/, "") + "/" + slug(name);
+  return no === 1 ? base + ".html" : base + `/${no}.html`;
+};
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -368,15 +389,41 @@ function card(item, manifest, eager, showCat) {
 
 // The first three cards are the ones above the fold on a desktop grid, so they load eagerly
 // and everything below them lazily.
+// The subcategory strip: one chip per division of this shelf, each a real page.
+//
+// Only divisions with enough in them to be worth a page — a chip leading to two items is a
+// dead end that costs a click, and a page of two items is not a page a search engine has
+// any reason to keep. Everything below the threshold stays reachable on the shelf itself.
+const SUB_MIN = 8;
+
+function subChips(cat, items, active) {
+  // Not on the everything page. Its divisions are the shelves, which the strip above it
+  // already lists — and a chip there would point at /wardrobe/<slug>, a URL that does not
+  // exist and sits in the same namespace as the shelves themselves.
+  if (cat.name === "Everything" || cat.name === "Sold") return "";
+  const counts = new Map();
+  for (const i of items) if (i.subcategory) counts.set(i.subcategory, (counts.get(i.subcategory) || 0) + 1);
+  const subs = [...counts].filter(([, n]) => n >= SUB_MIN).sort((a, b) => b[1] - a[1]);
+  if (!subs.length) return "";
+  return (
+    `<nav class="subs" aria-label="${esc(label(cat.name))} subcategories">` +
+    `<a class="sub${active ? "" : " on"}" href="${url(cat.page)}">All <b>${items.length}</b></a>` +
+    subs.map(([name, n]) =>
+      `<a class="sub${active === name ? " on" : ""}" href="${url(subFile(cat, name, 1))}">` +
+      `${esc(name)} <b>${n}</b></a>`).join("") +
+    `</nav>`
+  );
+}
+
 // The strip of page links under the grid.
 //
 // Real links to real pages, not a script that swaps content: each page has its own URL, so
 // it can be linked, shared, indexed and reached with JavaScript off. rel=prev/next is
 // emitted because Bing and Seznam still read it — Google retired it in 2019, and neither
 // costs anything.
-function pager(cat, seq) {
+function pager(cat, seq, sub = null) {
   if (seq.total < 2) return "";
-  const href = (n) => url(pageFile(cat, n));
+  const href = (n) => url(sub ? subFile(cat, sub, n) : pageFile(cat, n));
   const link = (n, label, cls) =>
     `<a class="pg${cls ? " " + cls : ""}" href="${href(n)}"${n === seq.no ? ' aria-current="page"' : ""}>${label}</a>`;
 
@@ -399,10 +446,27 @@ function pager(cat, seq) {
   );
 }
 
-const grid = (items, manifest, showCat) =>
-  `<div class="grid3" id="grid">\n` +
+const grid = (items, manifest, showCat, allUrl = "") =>
+  `<div class="grid3" id="grid"${allUrl ? ` data-all="${allUrl}"` : ""}>\n` +
   items.map((it, i) => "    " + card(it, manifest, i < 3, showCat)).join("\n") +
   `\n  </div>`;
+
+// The whole shelf as cards and nothing else, for the filters.
+//
+// A filter that searches only the hundred cards on the current page is a filter that lies:
+// "Brown" on page 1 of Meditation reports four matches out of 461 items. So the rest of the
+// shelf is fetched — but only when someone actually touches a control, because most
+// visitors browse and never filter.
+//
+// This ships the SERVER-RENDERED cards rather than a JSON index that the script turns back
+// into cards. An index is a tenth of the bytes and would need a second implementation of
+// the card in JavaScript, which then has to be kept in step with this one — badge, price,
+// gallery, ask link, the lot. Two renderers that must agree is a bug with a delivery date.
+//
+// Not an .html file on purpose: it is a fragment, not a page, and naming it so keeps it out
+// of the sitemap and out of anything that enumerates pages.
+const cardsFragment = (items, manifest, showCat) =>
+  items.map((it) => card(it, manifest, false, showCat)).join("\n");
 
 /* ----------------------------------------------------------------- toolbar ---- */
 
@@ -655,11 +719,19 @@ const FX_NOTE =
   `checkout, so the amount you pay for a second-hand piece may differ slightly. Prices on ` +
   `cards marked with a shop name are confirmed on WhatsApp before you pay anything.</p>`;
 
-function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }) {
+function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub = null, shelfItems = null) {
   const desc = cat.lead.slice(0, 155);
   // Page 2 onwards says so in the title. Identical titles across a series is the classic
   // way to make a shop's own pages compete with each other in search results.
-  const pageTitle = seq.no > 1 ? `${cat.title} — page ${seq.no}` : cat.title;
+  // A subcategory page is its own page, not a variant of the shelf: its title leads with
+  // what it holds, because "Kanthi malas" is what someone searches for and the shelf title
+  // is not.
+  const base = sub ? `${sub} — Indian ${label(cat.name)} in Prague | Indian in Prague` : cat.title;
+  const pageTitle = seq.no > 1 ? `${base} — page ${seq.no}` : base;
+  const self = sub ? subFile(cat, sub, seq.no) : pageFile(cat, seq.no);
+  // Only when there is more to fetch: a shelf that fits on one page already holds every
+  // card the filters could match.
+  const allUrl = seq.total > 1 && !sub ? url(cat.page).replace(/\/$/, "") + ".cards" : "";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -668,12 +740,12 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }) {
 <title>${esc(pageTitle)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<link rel="canonical" href="${SITE}${url(pageFile(cat, seq.no))}">
+<link rel="canonical" href="${SITE}${url(self)}">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Indian in Prague">
 <meta property="og:locale" content="en">
-<meta property="og:url" content="${SITE}${url(pageFile(cat, seq.no))}">
+<meta property="og:url" content="${SITE}${url(self)}">
 <meta property="og:title" content="${esc(pageTitle.split(" | ")[0])}">
 <meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -697,18 +769,19 @@ ${markNav(ch.header, "wardrobe")}
 
 <main id="main">
 <div class="page-head"><div class="wrap">
-  <div class="crumb">${esc(cat.name)} · <span>${esc(cat.expo[1])}</span></div>
-  <h1>${esc(cat.h1[0])} <b>${esc(cat.h1[1])}</b>.</h1>
-  <p class="lede">${esc(cat.lead)}</p>
+  <div class="crumb"><a href="${url(cat.page)}">${esc(label(cat.name))}</a>${sub ? ` · <span>${esc(sub)}</span>` : ` · <span>${esc(cat.expo[1])}</span>`}</div>
+  <h1>${sub ? esc(sub) : `${esc(cat.h1[0])} <b>${esc(cat.h1[1])}</b>.`}</h1>
+  <p class="lede">${sub ? `${items.length} ${esc(sub.toLowerCase())} in the ${esc(label(cat.name).toLowerCase())} shelf.` : esc(cat.lead)}</p>
 </div></div>
 
 <section><div class="wrap sec-inner">
   ${catNav(cat.name, counts)}
+  ${subChips(cat, shelfItems || items, sub)}
   ${toolbar(items)}
 
-  ${grid(items, manifest, cat.name === "Everything")}
+  ${grid(items, manifest, cat.name === "Everything", allUrl)}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>
-  ${pager(cat, seq)}
+  ${pager(cat, seq, sub)}
   ${FX_NOTE}
 
   ${HOW_IT_WORKS}
@@ -753,7 +826,15 @@ async function main() {
   // Vinted, so sync-vinted.mjs can keep rewriting it wholesale without touching any of this.
   const vendor = vendorItems(ROOT);
   if (vendor.length) console.log(`  ${vendor.length} vendor item(s) from Govinda`);
-  const available = [...catalog.items.filter((i) => !i.hidden), ...vendor];
+  // The leaf of the Vinted breadcrumb trail is that catalogue's subcategory: "Women >
+  // Accessories > Jewellery > Necklaces" belongs under Necklaces, the same shelf division
+  // the vendor catalogue states outright. Without this the two vendors would divide the
+  // same shelf along different lines.
+  const withSub = (i) => ({
+    ...i,
+    subcategory: i.subcategory || (i.crumbs?.length ? i.crumbs[i.crumbs.length - 1].name : ""),
+  });
+  const available = [...catalog.items.filter((i) => !i.hidden).map(withSub), ...vendor];
   // Vinted ids are numeric and ascend with time, so sorting on them is "newest first".
   // Vendor ids are not (govinda-96), and Number() on one is NaN — which makes every
   // comparison false and leaves those cards wherever the sort happened to drop them.
@@ -823,17 +904,51 @@ async function main() {
         // convert.
         const body = cat.module
           ? grid(slice, manifest, false) + "\n  " + FX_NOTE
-          : catNav(cat.name, counts) + "\n  " + toolbar(slice) + "\n  " + grid(slice, manifest, false) +
+          : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(slice) +
+            "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "") +
             `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
             pager(cat, seq) + "\n  " + FX_NOTE;
         await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
       } else {
         await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
-        await writeFile(path.join(ROOT, file), page(cat, slice, manifest, counts, ch, seq));
+        await writeFile(path.join(ROOT, file), page(cat, slice, manifest, counts, ch, seq, null, items));
       }
       written++;
     }
     console.log(`  ${cat.page} — ${items.length} items across ${total} page${total === 1 ? "" : "s"}`);
+
+    if (total > 1) {
+      await writeFile(
+        path.join(ROOT, cat.page.replace(/\.html$/, "") + ".cards"),
+        cardsFragment(items, manifest, false),
+      );
+    }
+
+    // Subcategory pages. These are the pages that can actually rank: "kanthi mala" and
+    // "gopi dress" are what someone types, and a shelf of 461 mixed objects answers none of
+    // those queries. Same threshold as the chips — a page of three items is not worth a URL.
+    const bySub = new Map();
+    for (const i of items) if (i.subcategory) {
+      if (!bySub.has(i.subcategory)) bySub.set(i.subcategory, []);
+      bySub.get(i.subcategory).push(i);
+    }
+    let subPages = 0;
+    for (const [name, subItems] of bySub) {
+      if (subItems.length < SUB_MIN) continue;
+      const subTotal = Math.max(1, Math.ceil(subItems.length / PER_PAGE));
+      for (let no = 1; no <= subTotal; no++) {
+        const file = subFile(cat, name, no);
+        await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
+        await writeFile(
+          path.join(ROOT, file),
+          page(cat, subItems.slice((no - 1) * PER_PAGE, no * PER_PAGE), manifest, counts, ch,
+               { no, total: subTotal }, name, items),
+        );
+        subPages++;
+        written++;
+      }
+    }
+    if (subPages) console.log(`    + ${subPages} subcategory page(s)`);
   }
 
   // The everything page — "the wardrobe", which is what the top nav calls it.
@@ -873,6 +988,9 @@ async function main() {
     const slice = live.slice((no - 1) * PER_PAGE, no * PER_PAGE);
     const file = no === 1 ? "wardrobe.html" : `wardrobe/${no}.html`;
     await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal }));
+  }
+  if (allTotal > 1) {
+    await writeFile(path.join(ROOT, "wardrobe.cards"), cardsFragment(live, manifest, true));
   }
   console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold) across ${allTotal} pages`);
   // The old page is not left on disk to rot: it would still be reachable, still be

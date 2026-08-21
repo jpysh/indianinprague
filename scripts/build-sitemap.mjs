@@ -71,16 +71,42 @@ for (const file of ["wardrobe/home-decor.html", "wardrobe/jewellery.html", "ward
 // one belongs in the sitemap — a crawler that only ever sees page 1 indexes a tenth of the
 // catalogue. Discovered from disk rather than listed by hand, because the page count moves
 // every time stock does.
-for (const shelf of ["", "fashion", "home-decor", "jewellery", "meditation", "books", "wellness", "keepsakes", "food", "others"]) {
-  const dir = shelf ? `${ROOT}/wardrobe/${shelf}` : `${ROOT}/wardrobe`;
-  if (!existsSync(dir)) continue;
-  for (const f of readdirSync(dir)) {
-    // Page files are named by their number; anything else in here is a shelf's page 1.
-    const n = Number(f.replace(/\.html$/, ""));
-    if (!n || n < 2) continue;
-    const loc = shelf ? `/wardrobe/${shelf}/${n}` : `/wardrobe/${n}`;
-    PAGES.push({ file: loc.slice(1) + ".html", loc, priority: "0.6", changefreq: "daily" });
+// Everything under wardrobe/ that is a page: numbered pages of a series, subcategory pages,
+// and the numbered pages of those. Walked rather than listed, because the set changes every
+// time stock does — a shelf gains a division, a division outgrows one page.
+//
+// Priority says what it is, not how good it is: a subcategory page is the most specific
+// thing here and the one most likely to answer a search ("kanthi mala", "gopi dress"), so
+// it ranks above a numbered continuation of a shelf.
+const walk = (rel) => {
+  const abs = `${ROOT}/${rel}`;
+  if (!existsSync(abs)) return;
+  for (const f of readdirSync(abs, { withFileTypes: true })) {
+    if (f.isDirectory()) { walk(`${rel}/${f.name}`); continue; }
+    if (!f.name.endsWith(".html")) continue;
+    const stem = f.name.replace(/\.html$/, "");
+    const n = Number(stem);
+    // Page 1 of a shelf is written at the level above and is already in PAGES.
+    if (n && n < 2) continue;
+    const loc = `/${rel}/${stem}`;
+    PAGES.push({
+      file: `${rel}/${f.name}`,
+      loc,
+      priority: n ? "0.6" : "0.7",
+      changefreq: "daily",
+    });
   }
+};
+walk("wardrobe"); // recursive: shelves, their pages, their subcategories, and those pages
+
+// The shelves themselves are listed explicitly further up, and walk() finds them again as
+// wardrobe/<shelf>.html. Same URL twice in a sitemap is not fatal, but it is a signal that
+// the file was assembled without anyone checking — and a crawler reading two entries with
+// different priorities for one URL has to pick one.
+const seen = new Set();
+for (let i = PAGES.length - 1; i >= 0; i--) {
+  if (seen.has(PAGES[i].loc)) PAGES.splice(i, 1);
+  else seen.add(PAGES[i].loc);
 }
 
 
