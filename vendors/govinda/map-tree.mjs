@@ -3,6 +3,13 @@ import { readFileSync, writeFileSync } from "node:fs";
 
 const cats = JSON.parse(readFileSync("vendors/govinda/data/categories-en.json", "utf8"));
 
+// The paper-and-pocket half of the old "Gift items" branch becomes its own shelf:
+// keyrings, cards, notebooks and badges are 57 items that share a shopper — small,
+// inexpensive, bought as an afterthought or a present. Leaving them in Others made Others
+// the third-largest shelf, which is the sign of a catch-all doing real work it should not
+// be doing. What stays behind is 23 items with nothing in common, which is what Others is
+// for.
+//
 // Their "Gift items" branch is not kept as a shelf: opened up, it is not gifting but
 // devotional goods filed by object type. The statues are murtis (Damodar, Nrsimhadev), the
 // stickers are Krishna and Durga, the pendants are tilak and kavaca. Each part goes where
@@ -13,10 +20,10 @@ const GIFTS = {
   "Stickers and posters": ["Meditation", "Stickers and posters"],
   Pendants: ["Jewellery", "Pendants"],
   Boxes: ["Home Decor", "Storage and baskets"],
-  "Key rings": ["Others", "Key rings"],
-  "Greetings cards": ["Others", "Greetings cards"],
-  Notebooks: ["Others", "Notebooks"],
-  Badges: ["Others", "Badges"],
+  "Key rings": ["Stationery and keepsakes", "Key rings"],
+  "Greetings cards": ["Stationery and keepsakes", "Greetings cards"],
+  Notebooks: ["Stationery and keepsakes", "Notebooks"],
+  Badges: ["Stationery and keepsakes", "Badges"],
   "Children’s gifts and dolls": ["Others", "Dolls and children's gifts"],
   "Children's gifts and dolls": ["Others", "Dolls and children's gifts"],
 };

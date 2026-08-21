@@ -28,8 +28,9 @@ Eight shelves. Your existing tree kept wherever it survives contact with 1,485 n
 | Home Decor | 12 | 127 | Bedding, cushions, table and dining, storage, decorative — **plus the incoming line** |
 | Books | 39 | 91 | |
 | Wellness | 1 | 82 | Govinda's `Cosmetics` folded in |
-| Others | 2 | 78 | **New.** Anything that fits nowhere, kept visible rather than hidden |
+| Stationery and keepsakes | 0 | 57 | **New.** Keyrings, cards, notebooks, badges |
 | Food | 0 | 27 | **New.** Spices, honey, prasadam, Ayurvedic supplements |
+| Others | 2 | 21 | **New.** What genuinely fits nowhere, kept visible rather than hidden |
 
 ### No `Gifts` shelf
 
@@ -41,12 +42,12 @@ shelf. The branch is not gifting, it is devotional goods filed by object type:
 | Small statues | 58 | Meditation › Deities | They are murtis — Damodar, Nrsimhadev, Yasoda |
 | Stickers and posters | 51 | Meditation › Stickers and posters | Krishna, Durga, Hanuman |
 | Boxes (incl. Rajasthani) | 28 | Home Decor › Boxes | Painted and mirror-work boxes |
-| Key rings | 24 | Others › Key rings | |
+| Key rings | 24 | Stationery and keepsakes | |
 | Dolls and children's gifts | 19 | Others › Dolls and children's gifts | Radha-Krishna, Nrsimha-Prahlad dolls |
-| Greetings cards | 18 | Others › Greetings cards | |
+| Greetings cards | 18 | Stationery and keepsakes | |
 | Pendants | 17 | Jewellery › Pendants | Tilak, kavaca, Nrsimhadev |
-| Notebooks | 8 | Others › Notebooks | |
-| Badges | 7 | Others › Badges | |
+| Notebooks | 8 | Stationery and keepsakes | |
+| Badges | 7 | Stationery and keepsakes | |
 
 Merging the statues into `Deities` also fixes that shelf: it held 5 items, most of them
 *clothes* for deities. It now holds 63 and means what it says.
@@ -78,18 +79,25 @@ any depth — it earns its own shelf, leaving `Home Decor` as tableware, storage
 decorative. Worth watching, not worth pre-empting: a shelf of 36 split off now would look
 empty, and splitting later costs two redirects.
 
-### `Others`, and when it stops being `Others`
+### `Stationery and keepsakes`, split out of `Others`
 
-78 Govinda items plus the two Vinted oddments — the computer mouse and one arts-and-crafts
-item — taking Vinted's own branch names for anything that arrives uncategorised.
+Keyrings (24), greetings cards (18), notebooks (8) and badges (7) — 57 items that share a
+shopper: small, inexpensive, bought as an afterthought or a present. They were the reason
+`Others` had become the third-largest shelf, which is the sign of a catch-all doing real
+work it should not be doing.
 
-Subcategories: Key rings (24), Dolls and children's gifts (19), Greetings cards (18),
-Notebooks (8), Badges (7).
+Split out, it is a normal mid-sized shelf, comparable to Food and Wellness, and it is the
+one place on the site where someone can browse the cheap end deliberately.
 
-At ~88 items it is the second-smallest shelf, which is the right size for a catch-all. If
-it grows past roughly 150, the natural split is **Stationery & keepsakes** (cards,
-notebooks, badges, keyrings — 57 today) leaving dolls and true oddments behind. Not worth
-doing at this size.
+### `Others`, now doing its actual job
+
+21 Govinda items — the deity dolls (19) and two hair clips — plus the two Vinted oddments,
+the computer mouse and one arts-and-crafts item, taking Vinted's own branch names.
+
+That is what a catch-all should look like: small, visibly miscellaneous, and not hiding
+anything a shopper would go looking for. It needs no subcategories at this size. If a
+recognisable group forms in it again — as the stationery did — that group leaves, the same
+way this one did.
 
 ### What changed from your current tree, and why
 
@@ -119,7 +127,8 @@ Swami`) becomes a brand-style filter rather than a URL.
 | Home Decor | Table and dining (34), Decorative accessories (29), Storage and baskets (28), Cushions and throws (27), Bedding and quilts (9) |
 | Books | Srila Prabhupada, Other authors, Foreign languages, Cookery books, For children, Second-hand books, Audio and video, E-books |
 | Wellness | Creams and oils, Soaps, Oil-based perfumes, Shampoos and hair dyes, Dental hygiene, Make-up |
-| Others | Key rings, Dolls and children's gifts, Greetings cards, Notebooks, Badges |
+| Stationery and keepsakes | Key rings (24), Greetings cards (18), Notebooks (8), Badges (7) |
+| Others | none — 21 items, too few and too unalike to subdivide |
 | Food | Spices, Ayurvedic supplements, Prasadam and mahaprasadam, Honey |
 
 ## URLs this implies
