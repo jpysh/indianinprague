@@ -1114,7 +1114,10 @@ async function main() {
     noun: "Indian goods",
     title: "Shop Indian clothes, jewellery and home things in Europe",
     h1: ["Everything", "in one place"],
-    lead: `All ${available.length} pieces currently for sale: clothing, jewellery, home things, meditation objects, books and the rest. Hand-picked and hand-crafted, some of it out of my own wardrobe. Filter it down, or tap any piece to buy it or ask about it.`,
+    // No count in the lede. It is on screen twice already — the shelf strip says "All 1631"
+    // and the toolbar prints the result count — and a number in the opening line dates the
+    // sentence the moment stock moves. This is also the page's meta description.
+    lead: "Clothing, jewellery, home things, meditation objects, books and the rest. Hand-picked and hand-crafted, some of it out of my own wardrobe. Filter it down, or tap any piece to buy it or ask about it.",
     expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
   // The storefront is a ROOT FILE, not wardrobe/index.html, and the difference is a status
