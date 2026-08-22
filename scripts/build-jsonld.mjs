@@ -11,6 +11,7 @@
 // drops it from the structured data too.
 
 import { readFile, writeFile } from "node:fs/promises";
+import { productNode } from "./product-node.mjs";
 import path from "node:path";
 
 const SITE = "https://indianinprague.jains.es";
@@ -141,48 +142,21 @@ const breadcrumb = (trail) => ({
  * the card's one-line tag string, and cannot drift out of step with the markup. */
 async function products() {
   const catalog = JSON.parse(await readFile(`${ROOT}/data/catalog.json`, "utf8"));
+  // Written by build-shop.mjs, which runs first (publish.sh) and is the only place that
+  // knows which shelf page an item paginated onto. Absent on a bare checkout, in which case
+  // the item still gets a node — just without an on-site address.
+  let anchors = {};
+  try {
+    anchors = JSON.parse(await readFile(`${ROOT}/data/anchors.json`, "utf8"));
+  } catch {
+    console.warn("  data/anchors.json missing — run build-shop.mjs first; products have no url");
+  }
   return catalog.items
     .filter((i) => i.category === "Fashion" && !i.hidden)
-    .map((i) => ({
-      "@type": "Product",
-      name: i.title,
-      // The Vinted item id IS the SKU, deliberately — no second identifier is minted here.
-      // Every piece is a one-off, listed exactly once, and the id already keys the photos
-      // on disk, the overrides file, the enrich cache and the archive. Inventing a parallel
-      // scheme would mean maintaining a mapping whose only job is to disagree with this one
-      // eventually. If the site ever sells multi-unit stock of its own, THAT is when a
-      // locally-issued SKU earns its keep; until then this is the identifier Google, Bing
-      // and any feed reader should see.
-      //
-      // Caveat worth knowing: delete and re-list a piece on Vinted and it gets a new id, so
-      // the SKU changes for what is physically the same object. Acceptable here — a relist
-      // is a new listing at a new URL, which is what search engines will see regardless.
-      sku: i.id,
-      productID: i.id,
-      description: i.description
-        ? i.description.replace(/\s+/g, " ").trim().slice(0, 400)
-        : [i.condition.en, i.color.en, i.size].filter(Boolean).join(" · "),
-      category: "Apparel > Indian clothing",
-      ...(i.brand ? { brand: { "@type": "Brand", name: i.brand } } : {}),
-      ...(i.color.en ? { color: i.color.en } : {}),
-      ...(i.size ? { size: i.size } : {}),
-      url: i.urls.cz,
-      offers: {
-        "@type": "Offer",
-        price: i.priceCzk,
-        priceCurrency: "CZK",
-        // Vinted's own condition, rather than assuming every piece is used — a good part
-        // of this closet is listed new or new-without-tags.
-        itemCondition: /^New/.test(i.condition.en)
-          ? "https://schema.org/NewCondition"
-          : "https://schema.org/UsedCondition",
-        availability: i.reserved
-          ? "https://schema.org/PreOrder"
-          : "https://schema.org/InStock",
-        url: i.urls.cz,
-        seller: { "@id": `${SITE}/#author` },
-      },
-    }));
+    // One shared builder with build-shop.mjs, see scripts/product-node.mjs. This used to be
+    // a second, divergent copy: koruna instead of euro, and no sold handling at all, so a
+    // garment that had already sold went on advertising itself here as InStock.
+    .map((i) => productNode(i, anchors[i.id]));
 }
 
 const restaurantReview = (name, area, cuisine, verdict, body) => ({
@@ -219,6 +193,58 @@ const graphs = {
         { "@type": "Thing", name: "Vegan restaurants in Prague" },
       ],
       inLanguage: "en",
+    },
+  ],
+
+  // The one page that answers the transactional questions — how do I buy, do you ship here,
+  // what if it does not fit. That shape of question is exactly what an assistant is asked,
+  // and a verbatim visible Q&A is the most citable format there is, so the FAQ here is
+  // marked up in full. Every answer below is word-for-word what the page shows, which is
+  // what Google's FAQ guidelines require and the only version worth publishing anyway.
+  "how-it-works.html": async () => [
+    {
+      "@type": "WebPage",
+      "@id": `${SITE}/how-it-works#webpage`,
+      url: `${SITE}/how-it-works`,
+      name: "How buying works — shipping, returns and prices",
+      description:
+        "How to buy Indian clothes and goods from Indian in Prague: Vinted for second-hand pieces, WhatsApp for new stock, shipping across Europe from Prague, returns, prices in euro, and privacy.",
+      isPartOf: { "@id": `${SITE}/#website` },
+      inLanguage: "en",
+    },
+    breadcrumb([
+      ["Home", `${SITE}/`],
+      ["How it works", `${SITE}/how-it-works`],
+    ]),
+    {
+      "@type": "FAQPage",
+      "@id": `${SITE}/how-it-works#faq`,
+      mainEntity: [
+        [
+          "How do I actually buy something?",
+          "If the piece is second-hand, click through to its Vinted listing and buy it there — payment and postage are handled by Vinted. If the card is marked with a shop name it is new stock, and you order it by messaging me on WhatsApp. There is no checkout on this site.",
+        ],
+        [
+          "Do you ship outside the Czech Republic?",
+          "Yes, across Europe. Second-hand pieces ship through Vinted to any country Vinted operates in, at the postage Vinted quotes you. New stock I post myself from Prague, normally arriving in 5-10 business days, at a postage cost I confirm with you before you pay.",
+        ],
+        [
+          "What if it does not fit?",
+          "Ask before you buy — that is the reliable fix. Sizes on the cards are the label size, and Indian label sizes do not map neatly onto European ones, so message me and I will measure the actual garment for you. If you have already bought: a Vinted purchase goes through Vinted's Buyer Protection, and new stock ordered on WhatsApp carries the 14-day right to change your mind.",
+        ],
+        [
+          "Are the clothes second-hand or new?",
+          "Both, and the card tells you which. A card with no shop name on it is from my own wardrobe: second-hand or one-of-a-kind, and it exists exactly once. A card marked with a shop name is new stock from a Prague supplier. Every second-hand piece also carries its condition — new with tags, new without tags, very good, good or satisfactory — as Vinted grades it.",
+        ],
+        [
+          "Why Vinted, instead of a shop on this website?",
+          "Because it is genuinely better for you. Vinted handles the payment, the postage label and the buyer protection, and it means I never see your card details and this site never has to ask you for them. It is also why there are no cookies, no accounts and no tracking here — there is nothing to track.",
+        ],
+      ].map(([q, a]) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
     },
   ],
 

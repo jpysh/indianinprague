@@ -1,0 +1,63 @@
+/* /how-it-works — the one prose page on the site.
+ *
+ * Small on purpose. site.css already sets the type for .prose, so all this file does is
+ * space it and give the FAQ its shape. Nothing here is reusable-by-design; if a second prose
+ * page ever appears, that is when this earns a better name. */
+
+.info{padding:56px 0 88px}
+.info h1{margin:0 0 14px}
+.info .sub{max-width:62ch;margin:0 0 8px;color:var(--bone-dim)}
+
+/* One column, capped at a readable measure. A 1280px wrap of body text is unreadable and no
+   amount of type size fixes it. */
+.info-body{max-width:70ch;margin-top:40px;display:flex;flex-direction:column;gap:44px}
+.info-sec h2{font-size:var(--fs-xl);margin:0 0 14px}
+/* site.css sets the reading font by naming specific selectors rather than by a blanket
+   `p` rule, so a new page's paragraphs default to the display mono until they are named.
+   Named here rather than added to that list in site.css: this is the only page that uses
+   these classes. */
+.info-sec p{
+  margin:0 0 12px;
+  font-family:var(--sans);font-size:var(--fs-m);line-height:var(--lh-read);text-wrap:pretty;
+}
+.info-sec p:last-child{margin-bottom:0}
+.info-sec ol,.info-sec ul{margin:0 0 12px;padding-left:20px;display:flex;flex-direction:column;gap:10px}
+.info-sec li{font-family:var(--sans);font-size:var(--fs-m);line-height:var(--lh-read)}
+.info-sec a{color:var(--magenta);text-decoration:underline;text-underline-offset:2px}
+
+/* The FAQ is a <dl> because that is what a list of questions and answers is. It is NOT a
+   <details> accordion: the answers have to be visible for the FAQPage markup to be honest
+   about mirroring what a visitor sees, and there are only five of them. */
+.faq{margin:0;display:flex;flex-direction:column;gap:22px}
+.faq dt{
+  font-family:var(--mono);font-size:var(--fs-s);letter-spacing:.02em;
+  color:var(--bone);margin-bottom:8px;
+}
+.faq dd{
+  margin:0;font-family:var(--sans);font-size:var(--fs-m);line-height:var(--lh-read);
+  color:var(--bone-dim);
+}
+
+/* Legal sits below the commercial answers, quieter but not hidden. */
+.info-sec.legal h2{font-size:var(--fs-l);color:var(--bone-dim)}
+.info-sec.legal p,.info-sec.legal li{font-size:var(--fs-s)}
+.info-updated{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--bone-dim);letter-spacing:.05em}
+
+/* Lifted whole from assets/shop.css when "How buying works" moved here from the eighty
+   shelf pages. The numbered-step styling was already written and already good; the bordered
+   card around it was not brought across, because on a shelf page the block had to announce
+   itself against a grid of photographs and here it is simply the first section of a page of
+   prose.
+   The number is generated rather than marked up: it is a visual ordinal, and <ol> already
+   conveys the sequence to a screen reader. aria-hidden is implicit on generated content. */
+.how-steps{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;padding-left:0}
+.how-steps li{counter-increment:step;position:relative;padding-left:34px;color:var(--bone-dim)}
+.how-steps li::before{
+  content:counter(step);
+  position:absolute;left:0;top:1px;
+  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:var(--fs-2xs);font-weight:600;
+  color:var(--void);background:var(--magenta);
+}
+.how-steps b{color:var(--bone);font-weight:600}
+@media (max-width:400px){ .how-steps li{padding-left:30px} }

@@ -14,22 +14,16 @@
 
 /* Horizontal scroll rather than wrap on a phone: with seven categories a wrapping row
    becomes three lines and pushes the actual products below the fold. */
+/* Wraps. It used to scroll sideways with a fade mask over the right edge, and the mask was
+   a patch over the real problem: this is the primary navigation of the shop, and half of it
+   sat behind a gesture. Horizontal scroll gives no overview of how many shelves exist, is
+   close to undiscoverable with a mouse, and the counts — "Fashion 57" is where someone
+   learns where the depth is — were part of what got cut off.
+   The chips are short. Eight of them fit one row on a desktop and two or three on a phone,
+   and two rows on a phone is not a cost. Hidden shelves are. */
 .cat-nav{
-  display:flex;gap:8px;overflow-x:auto;
-  margin-bottom:20px;padding-bottom:8px;
-  -webkit-overflow-scrolling:touch;scrollbar-width:thin;
-}
-
-/* The same fade the header nav carries, for the same reason and it was missing here.
-   This strip holds seven categories and is the primary navigation on a shop page; at
-   375px it cut "HOME DECOR" off mid-word with nothing to say the row continued. The mask
-   is scoped to the widths where the strip genuinely cannot fit — above that it would fade
-   an edge that has nothing behind it. */
-@media (max-width:900px){
-  .cat-nav{
-    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);
-    mask-image:linear-gradient(to right,#000 calc(100% - 28px),transparent);
-  }
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin-bottom:20px;
 }
 .cat-nav a{
   flex:0 0 auto;display:flex;align-items:center;gap:6px;
@@ -42,6 +36,18 @@
 /* opacity .6 measured 3.33:1 against the ground and failed AA — the count is small text,
    so it needs 4.5:1. .8 de-emphasises it just as well and measures 4.67:1. */
 .cat-nav a b{font-weight:400;opacity:.8;font-size:var(--fs-2xs)}
+
+/* Wrapping costs vertical space, and on a 375px phone the strip was landing two chips to a
+   row and eight rows deep, which pushed the first product to y=1055 — worse than the
+   sideways scroll it replaced, on the one measurement that matters most.
+   The fix is horizontal, not vertical: the chips were spending 28px of every row on inset
+   padding they do not need at this width. Tightening it fits three to a row. The 44px
+   minimum height is untouched — that is the touch target, and it is not negotiable. */
+@media (max-width:520px){
+  .cat-nav{gap:6px}
+  .cat-nav a{padding:0 9px;letter-spacing:.02em;font-size:var(--fs-2xs)}
+  .cat-nav a b{font-size:11px}
+}
 .cat-nav a:hover{color:var(--bone);border-color:var(--bone)}
 .cat-nav a[aria-current="page"]{
   background:var(--magenta);border-color:var(--magenta);color:var(--void);
@@ -365,16 +371,6 @@
 }
 .piece .fav-badge svg{flex:0 0 auto;width:18px;height:18px}
 
-/* ---------- footnotes ---------- */
-
-/* opacity .75 measured 4.28:1 — just under AA for text this size. .85 reads as the same
-   footnote and clears it at 5.03:1. */
-.fx-note{
-  margin-top:28px;max-width:var(--measure-s);
-  font-family:var(--sans);font-size:var(--fs-s);line-height:var(--lh-read);
-  color:var(--bone-dim);opacity:.85;
-}
-
 /* The rule that used to sit here — Plex Sans for .lede, .sec-lead and .guide-body p —
    has moved to site.css and grown to cover the whole site. The note it carried said the
    other pages kept the all-mono setting "until they are looked at properly"; they have
@@ -464,52 +460,6 @@
    rest of the card is dimmed. */
 .piece.sold .ask{color:#3BE87C;border-color:rgba(37,211,102,.45)}
 
-/* ---------- how buying works ---------- */
-
-/* Replaces a block that said only "everything's live on Vinted" and pointed at the closet —
- * which answered a question nobody had. These are the questions someone actually has before
- * spending €29 with a stranger, and the site answered none of them.
- */
-.how{
-  margin-top:38px;padding:24px 20px 26px;
-  border:1px solid rgba(232,169,60,.28);background:var(--void-2);
-}
-.how h2{
-  font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);letter-spacing:-.01em;
-  text-transform:uppercase;color:var(--bone);margin-bottom:18px;
-}
-.how-steps{list-style:none;counter-reset:step;display:flex;flex-direction:column;gap:14px;max-width:var(--measure)}
-.how-steps li{
-  counter-increment:step;position:relative;padding-left:34px;
-  color:var(--bone-dim);
-}
-/* The number is generated rather than marked up: it is a visual ordinal, and <ol> already
-   conveys the sequence to a screen reader. aria-hidden is implicit on generated content. */
-.how-steps li::before{
-  content:counter(step);
-  position:absolute;left:0;top:1px;
-  width:24px;height:24px;display:flex;align-items:center;justify-content:center;
-  font-family:var(--mono);font-size:var(--fs-2xs);font-weight:600;
-  color:var(--void);background:var(--magenta);
-}
-.how-steps b{color:var(--bone);font-weight:600}
-.how-note{
-  margin-top:18px;padding-top:16px;border-top:1px solid rgba(242,239,230,.12);
-  font-size:var(--fs-s);color:var(--bone-dim);opacity:.85;max-width:var(--measure);
-}
-
-/* On a 360px phone the block was spending 74px of a 360px screen on padding and the step
-   indent, which left the steps running about 27 characters to the line. The numbers stay
-   the same size; the space around them gives way. */
-@media (max-width:400px){
-  .how{padding:22px 14px 24px}
-  .how-steps li{padding-left:30px}
-}
-
-@media (min-width:641px){
-  .how{padding:30px 30px 32px}
-}
-
 /* ---------- paint budget ---------- */
 
 /* wardrobe.html holds 157 cards. shop.js keeps most of them `hidden`, revealing 24 at a
@@ -568,12 +518,31 @@
    Scrolls horizontally rather than wrapping: Meditation has twelve divisions, and three
    wrapped rows of chips would push the grid below the fold on a phone. The shelf strip
    above it already behaves this way, so the gesture is the one the page has taught. */
+/* Wraps, for the same reason .cat-nav does — but clamped, because a shelf can carry a dozen
+   divisions and wrapping all of them would push the first product a long way down on a
+   phone. Two rows is the compromise: nothing is behind a gesture, and what is behind the
+   clamp is behind a labelled button that says how many.
+   The clamp is a max-height rather than a row count because CSS has no "two flex rows". The
+   number here is a no-JS fallback only, and it is deliberately generous: shop.js measures a
+   real chip on load and sets the exact two-row height, because guessing it wrong clips the
+   second row THROUGH the chips rather than below them — which is what a hand-computed 72px
+   did (the chips are 42px tall, not the 32px the padding arithmetic suggested). */
 .subs{
-  display:flex;gap:8px;margin:0 0 16px;padding-bottom:4px;
-  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;
+  max-height:92px;overflow:hidden;
   font-family:var(--mono);font-size:var(--fs-2xs);
 }
-.subs::-webkit-scrollbar{display:none}
+.subs.subs-open{max-height:none}
+.subs-more{
+  display:none;margin:0 0 16px;padding:6px 12px;
+  background:none;border:1px dashed var(--band);border-radius:999px;
+  font-family:var(--mono);font-size:var(--fs-2xs);color:var(--bone-dim);
+  cursor:pointer;min-height:32px;
+  transition:border-color .16s ease,color .16s ease;
+}
+.subs-more:not([hidden]){display:inline-flex;align-items:center;gap:6px}
+.subs-more:hover,.subs-more:focus-visible{border-color:var(--bone);color:var(--bone)}
+.subs-more b{font-weight:500;opacity:.6}
 .subs .sub{
   flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
   padding:7px 12px;border:1px solid var(--band);border-radius:999px;
@@ -599,12 +568,8 @@
    and striking it through would read as a discount that is not on offer. */
 .piece.oos .pr{opacity:.75}
 
-/* Availability sits beside the search box, not among the refinements: "can I buy this"
-   is asked before "which colour", and burying it in a disclosure hid the sold view. */
-.sb-avail{display:flex;flex:0 0 auto}
-.sb-avail select{
-  height:100%;min-height:44px;padding:0 34px 0 14px;
-  font-family:var(--mono);font-size:var(--fs-xs);
-  color:var(--bone);background:var(--void-2);border:1px solid var(--band);border-radius:2px;
-}
-@media (max-width:560px){ .sb-avail,.sb-avail select{width:100%} }
+/* Availability leads the refinements now, so it is a control like any other in that grid
+   and wants no styling of its own — `.shop-bar select` already dresses it. It used to carry
+   a bespoke block here (fixed height, its own border and font size) because it sat beside
+   the search box and had to match the input rather than the filters. It sits with the
+   filters now, so it should look like a filter. */

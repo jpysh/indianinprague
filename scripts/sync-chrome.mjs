@@ -37,6 +37,9 @@ const ROOT = path.resolve(import.meta.dirname, "..");
 const PAGES = {
   "index.html": null,
   "404.html": null,
+  // Reached from the footer, from every module, and belonging to none of them — buying,
+  // shipping, returns and privacy are not the wardrobe any more than they are the diaries.
+  "how-it-works.html": null,
   "wardrobe/fashion.html": "wardrobe",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.

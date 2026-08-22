@@ -7,11 +7,11 @@
 // IndexNow is the one push mechanism still operating, and one submission fans out to
 // every participant.
 //
-// The participant that matters most here is Seznam.cz. It is the Czech search engine, it
-// takes a meaningful share of Czech-language queries, and this site is explicitly
-// The site is English-only as of 16 Aug 2026; the Czech keyword strategy is gone. Bing
-// and Yandex come along for free — and Bing's index is what ChatGPT search reads, so this
-// is also the fastest route into AI answers.
+// Bing matters most in principle, because Bing's index is what ChatGPT search reads, which
+// makes this the fastest route into AI answers. Seznam matters most in practice right now,
+// because it is the one participant that accepts this host today (see the note above
+// ENDPOINTS) and it is the Czech search engine, in the city the shop ships from. Yandex
+// comes along for free.
 //
 // Usage:
 //   node scripts/indexnow.mjs          # submit every URL in sitemap.xml
@@ -72,17 +72,62 @@ if (!probe.ok || probeBody !== key) {
 }
 console.log("\nkey file verified");
 
-const res = await fetch("https://api.indexnow.org/IndexNow", {
-  method: "POST",
-  headers: { "Content-Type": "application/json; charset=utf-8" },
-  body: JSON.stringify({ host: HOST, key, keyLocation: `https://${HOST}/${keyFile}`, urlList }),
+// Submitted to each participant SEPARATELY rather than to api.indexnow.org.
+//
+// The spec says one submission to api.indexnow.org fans out to every participant, and that
+// is true — but api.indexnow.org IS Bing, and when Bing refuses the host it answers 403
+// before any fan-out happens. Measured 22 Aug 2026, same payload, same key:
+//
+//   api.indexnow.org   403 UserForbiddedToAccessSite
+//   www.bing.com       403 UserForbiddedToAccessSite   <- the same refusal, unsurprisingly
+//   search.seznam.cz   200
+//   yandex.com         202 {"success":true}
+//
+// So Bing's own opinion of this host was silently deciding whether Seznam heard anything,
+// and Seznam is the participant that matters most here. Fanning out locally costs two extra
+// HTTPS requests and removes that coupling entirely.
+const ENDPOINTS = [
+  ["Bing", "https://www.bing.com/indexnow"],
+  ["Seznam", "https://search.seznam.cz/indexnow"],
+  ["Yandex", "https://yandex.com/indexnow"],
+];
+
+const payload = JSON.stringify({
+  host: HOST,
+  key,
+  keyLocation: `https://${HOST}/${keyFile}`,
+  urlList,
 });
 
-const body = await res.text();
-// 200 = accepted, 202 = accepted but key still being validated. Both are successes.
-if (res.status === 200 || res.status === 202) {
-  console.log(`submitted: HTTP ${res.status}${res.status === 202 ? " (key pending validation)" : ""}`);
-} else {
-  console.error(`submission failed: HTTP ${res.status} ${body.slice(0, 300)}`);
+console.log("");
+const results = await Promise.all(
+  ENDPOINTS.map(async ([name, endpoint]) => {
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json; charset=utf-8" },
+        body: payload,
+      });
+      const body = (await res.text()).trim();
+      // 200 = accepted, 202 = accepted but the key is still being validated. Both are wins.
+      const ok = res.status === 200 || res.status === 202;
+      console.log(
+        `${name.padEnd(7)} ${ok ? "ok" : "FAILED"}  HTTP ${res.status}` +
+          (body && !ok ? `  ${body.slice(0, 160)}` : ""),
+      );
+      return ok;
+    } catch (err) {
+      // A network failure to one participant is not a reason to hide the others.
+      console.log(`${name.padEnd(7)} FAILED  ${err.message}`);
+      return false;
+    }
+  }),
+);
+
+// Non-zero only when NOBODY accepted. One participant refusing this host must not read as a
+// failed publish — publish.sh steps over this either way now, but the exit code is also what
+// a human reads when they run it by hand.
+if (!results.some(Boolean)) {
+  console.error("\nno participant accepted the submission");
   process.exit(1);
 }

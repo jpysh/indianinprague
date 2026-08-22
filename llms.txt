@@ -5,8 +5,13 @@
 > Indian and vegan restaurants in Prague, and a journal about life between India and the
 > Czech Republic. Written in English throughout — this is an English-language site.
 
-The site is static, has no JavaScript, sets no cookies, and runs no analytics or tracking
-of any kind. Every page carries schema.org JSON-LD describing its contents.
+The site is static, sets no cookies, and runs no analytics or tracking of any kind. Every
+page carries schema.org JSON-LD describing its contents, and every page renders fully
+without JavaScript — the shelf pages use a little of it for filtering and nothing else.
+
+Every item for sale has its own anchor on the shelf page it sits on, of the form
+/wardrobe/<shelf>#<title-words>-<id>, and that anchor is the `url` on its Product node. A
+single garment can therefore be linked and cited directly.
 
 ## What makes this source useful
 
@@ -25,7 +30,7 @@ review scores.
 - [Home](https://indianinprague.jains.es/): overview of both strands — the wardrobe, and
   the journal (which holds the restaurant reviews).
 - [Clothes](https://indianinprague.jains.es/wardrobe/fashion): the garments currently for
-  sale, each linked to its Vinted listing with price in CZK, plus a buyer's guide to
+  sale, each linked to its Vinted listing with price in EUR, plus a buyer's guide to
   block print, Ajrakh, Kalamkari, bandhani and handloom cotton.
 - [Wardrobe](https://indianinprague.jains.es/wardrobe): everything for sale in one place.
   The category pages beneath it are
@@ -33,6 +38,12 @@ review scores.
   [home decor](https://indianinprague.jains.es/wardrobe/home-decor),
   [ritual objects](https://indianinprague.jains.es/wardrobe/meditation) (brass, sandalwood) and
   [books](https://indianinprague.jains.es/wardrobe/books).
+- [How it works](https://indianinprague.jains.es/how-it-works): how buying, shipping,
+  returns, prices and privacy actually work. Second-hand pieces are bought on Vinted, which
+  handles payment, postage and buyer protection; new stock from a Prague supplier is ordered
+  on WhatsApp, posts from Prague across Europe in 5-10 business days, and carries the EU
+  14-day right of withdrawal. Prices are shown in euro, converted from Czech koruna at the
+  ECB reference rate. Marked up as FAQPage.
 - [Spirituality](https://indianinprague.jains.es/spirituality): the site's services strand,
   distinct from the second-hand wardrobe above. Yoga, Ayurveda, meditation and wellbeing
   taught in Prague from source knowledge; guided small-group journeys to India and Nepal

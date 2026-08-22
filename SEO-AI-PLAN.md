@@ -4,9 +4,56 @@ Living document. Survives session boundaries: if a Claude session closes, start 
 Owner: one person doing everything, so every item below is scored for effort vs. payoff and
 nothing here assumes a budget, an agency or a second pair of hands.
 
-Last updated: 2026-08-17
-Targets: `https://indianinprague.jains.es/` and `https://indianinprague.jains.es/spirituality`
+Last updated: 2026-08-22
+Targets: `https://indianinprague.jains.es/` and `https://indianinprague.jains.es/wardrobe`
+Secondary: `https://indianinprague.jains.es/spirituality` (the 17 Aug target; still valid, no longer first)
 Audience: European women, 18–65, looking for products and services.
+
+---
+
+## 0.5 Your tasks — the things only you can do
+
+Everything else in this file is mine. These need a login I do not have, a fact about the
+business only you know, or your own words. Ordered by payoff.
+
+- [ ] **Bing Webmaster Tools — verify the site.** This is the one blocking item. Bing is
+      refusing IndexNow submissions for this host with `403 UserForbiddedToAccessSite`, and
+      Bing's index is what ChatGPT Search reads, so this is the closest thing to a direct
+      lever on ChatGPT visibility that exists.
+      1. `https://www.bing.com/webmasters` → sign in with any Microsoft account.
+      2. Choose **Import from Google Search Console**, authorise, pick
+         `indianinprague.jains.es`. Verification comes across with it — no DNS or file change.
+      3. If the import does not offer the property: **Add site manually** → XML file method →
+         it gives you `BingSiteAuth.xml`. Do not upload it anywhere; send the contents to a
+         Claude session and it gets deployed with everything else.
+      4. Once verified, open **IndexNow** in the sidebar and confirm the key
+         `f21add2c50aa16c370d126be8a4b1f8d` is listed. If it offers to generate a new key,
+         **decline** — the existing one is already deployed.
+      5. Open **Sitemaps** and submit `https://indianinprague.jains.es/sitemap.xml`.
+      6. Say so in the next session, and the 403 gets re-tested.
+      (Bing Places is not relevant — there is no walk-in premises. Skip it.)
+
+- [ ] **Read `/how-it-works` before it goes live.** It was drafted on 22 Aug 2026 and it makes
+      public statements in your name about shipping, returns, privacy and terms. Every factual
+      claim in it came from copy already on the site or from what you confirmed in that
+      session, and the 14-day withdrawal line is a legal requirement, not a choice. But it is
+      not legal advice and it has not been read by a lawyer. Check it says what is true.
+
+- [ ] **Home page copy — ~600 words, in your voice.** Still open, and still the biggest
+      ranking gap on the site: the home page is 705 words against 11k on `/wardrobe`. See 3.5
+      for the two sections suggested. On 22 Aug you chose to put the FAQ on `/how-it-works`
+      rather than the home page, which is the right split — but it leaves this untouched.
+
+- [ ] **Vinted profile bio.** Five minutes, real value. Make the bio name "Indian in Prague"
+      in exactly that form and link back to the site. Answer engines check whether an entity
+      describes itself the same way everywhere; this is the cheapest consistency win available.
+
+- [ ] **Fortnightly AI-visibility check.** Section 6. Ask ChatGPT, Perplexity, Claude and
+      Google AI Mode the section 4 queries and log the answer in section 7. Twenty minutes,
+      and it is the same thing paid monitoring tools sell.
+
+- [ ] **Decide on shipping and return facts for vendor stock**, if you ever want
+      `shippingDetails` and `hasMerchantReturnPolicy` in the product markup — see 3.11.
 
 ---
 
@@ -338,6 +385,96 @@ same pass. Related: no pricing or duration is shown anywhere on the page. `Offer
 and "how much does it cost" is the single most common question an assistant gets asked about
 a service. That data is not on the page for me to mark up.
 
+### 3.11 `[x]` Session of 22 Aug 2026 — IndexNow, product data, `/how-it-works`, shelf UX
+
+A working session with the site owner. Decisions are recorded with their reasoning because
+several of them closed off options that will look tempting again later.
+
+**IndexNow: the 403 diagnosed, and the fan-out decoupled from it.**
+`api.indexnow.org` **is** Bing. When Bing refuses a host it answers 403 before any fan-out
+happens, so Bing's private opinion of this site was deciding whether Seznam heard anything at
+all. Measured the same payload against each participant directly:
+
+| Endpoint | Result |
+|---|---|
+| `api.indexnow.org` | 403 `UserForbiddedToAccessSite` |
+| `www.bing.com/indexnow` | 403 `UserForbiddedToAccessSite` |
+| `search.seznam.cz/indexnow` | **200** |
+| `yandex.com/indexnow` | **202** `{"success":true}` |
+
+`scripts/indexnow.mjs` now submits to all three separately and only exits non-zero if *nobody*
+accepts. Ran live: Seznam and Yandex took all 92 URLs, the first successful ping in days.
+The key file also lost its trailing newline — 33 bytes to 32 — as a candidate cause of Bing's
+refusal, since Bing's validator is stricter than the spec requires. The likelier cause is that
+the host is not verified in Bing Webmaster Tools, which is now item one of section 0.5.
+
+**Google Merchant Center: ruled out, deliberately.** Merchant Center requires a unique landing
+page per offer and strips URL fragments, so 141+ anchor URLs would collapse to one `link`
+value and be disapproved as duplicates. Building a page per item was considered and rejected
+by the owner — the shopping experience stays as it is. This costs less than it sounds: AI
+shopping assistants (ChatGPT, Perplexity, Copilot) read `Product`/`Offer` JSON-LD **off the
+page** and do not consume Merchant Center feeds at all. Route 2 serves them fully.
+*Do not re-propose Merchant Center without first re-proposing per-item pages; they are the
+same decision.*
+
+**Every item now has an address.** Cards carry `id="<title-words>-<vinted-id>"`, and that
+anchor is the `url` on the item's `Product` node. Before this there was no way to link to a
+single garment — not for a shopper pasting into a chat, not for an assistant citing one. The
+canonical anchor is on the **category** page, recorded in `data/anchors.json` by
+`build-shop.mjs` as it paginates, because that is the only place the page an item lands on is
+known. `/wardrobe` was rejected as the canonical home: it holds only the first 100 items.
+
+**The two schema generators were merged.** `scripts/product-node.mjs` is now the only place a
+catalogue item becomes a `Product`. They had drifted badly: `build-shop.mjs` emitted EUR and
+handled sold items, `build-jsonld.mjs` emitted **CZK** and had no sold handling at all — so a
+garment that had already sold went on advertising itself to Google as `InStock`, at a price
+the site displays nowhere. Same SKU, two prices, contradictory availability, which is exactly
+the entity inconsistency section 1 flags. Euro everywhere now, by the owner's decision.
+
+**`/how-it-works` created.** One page for how buying works, prices and currency, shipping,
+returns, five FAQs, privacy and terms. Linked from the footer site-wide, marked up as
+`WebPage` + `BreadcrumbList` + `FAQPage` with the five answers verbatim. The four-step "How
+buying works" block and the currency note **moved here** from the ~80 shelf pages that carried
+them. That cost is real and was accepted knowingly: the block used to answer "how does it
+reach me, what if it does not fit" at the moment someone was looking at a €29 garment, and now
+it answers them one click away. If conversion suffers, the fix is a one-line summary linking
+here — not eighty copies of the full text.
+
+Shipping and return facts are stated minimally and honestly: Vinted's own terms and Buyer
+Protection govern second-hand sales; vendor stock ordered on WhatsApp carries the EU 14-day
+right of withdrawal, which is law whether or not the page says so, and costs are "confirmed
+with you before you pay" rather than invented figures.
+
+**`shippingDetails` and `hasMerchantReturnPolicy` are deliberately NOT in the product markup.**
+They are the highest-leverage fields left for merchant rich results, and both need concrete
+numbers — postage cost, delivery window, who pays return postage — that the minimal route
+above deliberately does not commit to. Open, not dropped. See section 0.5.
+
+**Shelf navigation stopped scrolling sideways.** `.cat-nav` wraps; the fade mask is gone.
+Horizontal scroll hid half the primary navigation behind a gesture, gave no overview of how
+many shelves exist, and was close to undiscoverable with a mouse. The subcategory strip wraps
+too, clamped to two rows with a measured "Show all (n)" button that only appears when there is
+genuinely a third row.
+
+Measured cost, so it is on the record: on a 375px phone the wrapped shelf strip is 244px tall
+across five rows, and the first product card sits at y=1031. The scrolling version was one
+row. Tightening the chip padding and type at ≤520px recovered only 8px — the constraint is
+label length, not padding. **If this matters, the lever is the labels**, not the layout:
+"Home decor 131" and "Everything 1632" are what force two chips to a row. That is a copy
+decision and has not been made unilaterally.
+
+**Availability moved in with the other filters.** It sat beside the search box on the argument
+that "can I buy this" precedes "which colour" — true, but it is still a filter, and a filter
+parked outside the filter group is one people do not find when they go looking for filters. It
+now leads the refinements, which are open by default on desktop, and the disclosure counts it
+like any other set control so a shared "sold only" link still explains itself on a phone.
+
+**Bug found and fixed in passing: the sitemap had lost every image.** `build-sitemap.mjs`
+tested `src.startsWith("images/")`, written when the markup used repo-relative paths. Shelf
+pages moved into `/wardrobe/` and began emitting `/images/...`, at which point the test matched
+nothing, silently: "93 pages, 0 images", no error, for as long as that has been true. Now 985
+images across the sitemap.
+
 ---
 
 ## 4. Keyword targets
@@ -360,6 +497,34 @@ and it is also the exact shape of question people ask ChatGPT and Perplexity.
 | 8 | vegan indian prague | informational | low | `/diaries#vegan` |
 | 9 | modern indian fashion not goa hippie | informational | very low | needs 3.5 copy |
 | 10 | indian jewellery prague silver | transactional | low | `/jewellery` |
+
+### `/wardrobe` and `/how-it-works` — added 22 Aug 2026
+
+`/wardrobe` replaced `/spirituality` as the second primary target. The queries below are
+transactional and long-tail on purpose: they are what a buyer types, and they are the same
+shape as what an assistant gets asked.
+
+| # | Query | Intent | Difficulty | Where it is answered |
+|---|---|---|---|---|
+| 1 | buy indian clothes online europe | transactional | medium | `/wardrobe/fashion` |
+| 2 | second hand indian clothes europe | transactional | low | `/wardrobe` |
+| 3 | indian jewellery silver buy europe | transactional | low | `/wardrobe/jewellery` |
+| 4 | kanthi mala buy europe | transactional | very low | subcategory page |
+| 5 | indian incense buy prague | transactional | very low | `/wardrobe/meditation` |
+| 6 | where to buy indian home decor europe | commercial | low | `/wardrobe/home-decor` |
+| 7 | does she ship indian clothes to germany | informational | very low | `/how-it-works` |
+| 8 | indian clothing sizes vs european sizes | informational | medium | `/how-it-works` FAQ |
+| 9 | is it safe to buy indian clothes on vinted | informational | low | `/how-it-works` FAQ |
+| 10 | return policy indian clothes shop europe | informational | very low | `/how-it-works` |
+
+7–10 exist because of the new page and are the ones an AI assistant is most likely to quote
+verbatim, since each is answered by a visible question-and-answer pair carrying `FAQPage`
+markup. They will never be high-volume. They are close to uncontested, and they are asked by
+someone who is already deciding whether to buy.
+
+Every item on a shelf is also individually addressable now (`3.11`), so an assistant answering
+"does anyone in Europe sell oxidised silver Indian bracelets" has a URL for the specific piece
+rather than only the shelf.
 
 ### `/spirituality`
 
@@ -386,11 +551,14 @@ particular is a verbatim FAQ answer, which is the single most citable format the
 Everything here is $0. Nothing on this list needs a subscription.
 
 - **Google Search Console** — already set up for both properties. Good.
-- **Bing Webmaster Tools** — `[ ]` **not set up, and this matters more than it sounds.**
+- **Bing Webmaster Tools** — `[ ]` **not set up, and this is now blocking IndexNow, not just
+  desirable.** Step-by-step instructions are in section 0.5.
   ChatGPT Search is Bing-backed. This is the closest thing to a direct lever on ChatGPT
   visibility and it is free. Highest-priority item you can do yourself in ten minutes.
   Import directly from GSC, no re-verification needed.
-- **IndexNow** — already wired in `scripts/indexnow.mjs`. Feeds Bing/Yandex instantly.
+- **IndexNow** — wired in `scripts/indexnow.mjs`, and as of 22 Aug 2026 it submits to Bing,
+  Seznam and Yandex separately rather than through `api.indexnow.org`. Seznam and Yandex accept;
+  Bing 403s until the Webmaster Tools item in section 0.5 is done. See 3.11.
 - **Manual AI-visibility check** — every fortnight, ask ChatGPT, Perplexity, Claude and
   Google AI Mode the ten queries in section 4 and log whether the site is cited. This is what
   paid "AI visibility monitoring" tools do; done by hand at this scale it is free and more

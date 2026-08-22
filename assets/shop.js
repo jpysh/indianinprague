@@ -311,6 +311,41 @@
     drawRefineCount();
   }
 
+  /* ------------------------------------------------------ subcategory strip ---- */
+
+  // The strip wraps and is clamped to two rows in CSS. The button is only worth showing when
+  // there is actually a third row behind the clamp, and that depends on the viewport, not on
+  // the chip count — nine chips fit one row on a desktop and need three on a phone. So it is
+  // measured rather than guessed, and re-measured on resize.
+  //
+  // Ships with the `hidden` attribute, so a visitor without JavaScript is never offered a
+  // button that cannot do anything. That visitor sees a clamped strip — the trade for not
+  // rendering a dead control — and every subcategory is still reachable from the shelf.
+  var subs = document.querySelector(".subs");
+  var subsMore = document.querySelector("[data-subs-more]");
+  if (subs && subsMore) {
+    var syncSubs = function () {
+      if (subs.classList.contains("subs-open")) return;
+      // Two rows of whatever a chip actually measures, plus the gap between them. Measured
+      // rather than written down: a chip is 42px, not the 32px its padding and border
+      // suggest, and a clamp set from the arithmetic cut the second row through the middle
+      // of the chips instead of below them.
+      var chip = subs.firstElementChild;
+      if (chip) {
+        var gap = parseFloat(getComputedStyle(subs).rowGap) || 8;
+        subs.style.maxHeight = chip.offsetHeight * 2 + gap + "px";
+      }
+      subsMore.hidden = subs.scrollHeight <= subs.clientHeight + 1;
+    };
+    subsMore.addEventListener("click", function () {
+      var open = subs.classList.toggle("subs-open");
+      subsMore.setAttribute("aria-expanded", open ? "true" : "false");
+      subsMore.firstChild.nodeValue = open ? "Show fewer " : "Show all ";
+    });
+    window.addEventListener("resize", syncSubs);
+    syncSubs();
+  }
+
   /* ------------------------------------------------------- refine disclosure ---- */
 
   // The five refinement selects are collapsed behind a summary on a phone.
@@ -320,9 +355,11 @@
   // toolbar came first. A shop page that shows no product on the first screen is a shop
   // page arguing with itself.
   //
-  // Search and the availability segments stay out in the open: those are the two controls
-  // people reach for first. Condition, size, price, colour and sort are refinements, and
-  // refinements can ask to be opened. Nothing is hidden without being announced — the
+  // Search stays out in the open — it is the one control that is not a filter. Availability,
+  // condition, size, price, colour and sort are all refinements and live in here together;
+  // availability used to sit outside beside the search box, which meant the control people
+  // go to the filter group looking for was not in the filter group. Nothing is hidden
+  // without being announced — the
   // summary carries a count of how many are currently set, and the chip row underneath is
   // outside the disclosure, so an active filter is always visible even when this is shut.
   //
@@ -336,6 +373,12 @@
   function refineActive() {
     var n = 0;
     selects.forEach(function (s) { if (s.value) n++; });
+    // Counted like any other refinement now that it lives in the group. It carries no
+    // data-filter — the availability rules are their own code path, see setAvail — so it is
+    // not in `selects` and has to be added by hand. Missing it would let someone arrive on a
+    // shared "sold only" link and find the disclosure shut on a phone, with no explanation
+    // on screen for why the grid is short.
+    if (availSelect && availSelect.value) n++;
     if (sort && sort.value && sort.value !== "new") n++;
     return n;
   }

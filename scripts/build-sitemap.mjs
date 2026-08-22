@@ -39,6 +39,10 @@ const PAGES = [
   // Diaries carries their priority now as well as its own. It holds every review and the
   // long-form dispatch inline, which is why it went 0.7 -> 0.9.
   { file: "diaries.html", loc: "/diaries", priority: "0.9", changefreq: "weekly" },
+  // Rarely edited, but it answers the transactional questions ("do you ship to Germany",
+  // "what if it does not fit") that both a search engine and an assistant get asked, so it
+  // is not a low-priority afterthought.
+  { file: "how-it-works.html", loc: "/how-it-works", priority: "0.7", changefreq: "monthly" },
 ];
 
 // Every post now has a page of its own (17 Aug 2026 — see the header of build-diaries.mjs),
@@ -136,9 +140,15 @@ async function imagesOf(file) {
     const tag = m[0];
     const src = /src="([^"]+)"/.exec(tag)?.[1];
     const alt = /alt="([^"]*)"/.exec(tag)?.[1] ?? "";
-    if (!src || !src.startsWith("images/")) continue;
+    // Both forms. The markup used to be written with repo-relative paths ("images/..."),
+    // and this test was written against that. Shelf pages moved into /wardrobe/ and started
+    // emitting root-absolute paths ("/images/..."), at which point this quietly matched
+    // nothing and the sitemap lost EVERY image entry — 93 pages, 0 images, no error.
+    if (!src) continue;
+    const rel = src.startsWith("/") ? src.slice(1) : src;
+    if (!rel.startsWith("images/")) continue;
     // De-duplicate: the same garment can appear on more than one page.
-    if (!out.has(src)) out.set(src, alt);
+    if (!out.has(rel)) out.set(rel, alt);
   }
   return [...out.entries()];
 }

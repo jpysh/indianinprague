@@ -29,6 +29,7 @@
 
 import { readFile, writeFile, rm, mkdir, readdir } from "node:fs/promises";
 import { vendorItems } from "./vendor-items.mjs";
+import { productNode, itemSlug } from "./product-node.mjs";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -398,7 +399,11 @@ function card(item, manifest, eager, showCat) {
     `${oos ? "Notify when back" : item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
     `<span class="vh"> — opens WhatsApp in a new tab</span></a>`;
 
-  return `<div class="piece${sold ? " sold" : ""}${oos ? " oos" : ""}"${data}>${inner}${go}${ask}</div>`;
+  // The id is the item's address. There is no page per piece — a card on a shelf is what an
+  // item IS here — so the anchor is the only way to link to one, for a shopper pasting it
+  // into a chat and for an AI assistant citing a specific garment. Readable words plus the
+  // Vinted id; see itemSlug() for why the number stays.
+  return `<div class="piece${sold ? " sold" : ""}${oos ? " oos" : ""}" id="${itemSlug(item)}"${data}>${inner}${go}${ask}</div>`;
 }
 
 // The first three cards are the ones above the fold on a desktop grid, so they load eagerly
@@ -425,7 +430,14 @@ function subChips(cat, items, active) {
     subs.map(([name, n]) =>
       `<a class="sub${active === name ? " on" : ""}" href="${url(subFile(cat, name, 1))}">` +
       `${esc(name)} <b>${n}</b></a>`).join("") +
-    `</nav>`
+    `</nav>` +
+    // Wrapped rather than scrolled sideways — see the note on .subs in assets/shop.css.
+    // Clamped to two rows so a shelf with a dozen divisions does not push the products off
+    // the first screen, and the button says how many are behind the clamp rather than
+    // leaving it to be guessed. Ships hidden: shop.js reveals it only when the strip
+    // actually overflows, so a shelf with four chips is never offered a pointless control.
+    `<button class="subs-more" type="button" data-subs-more hidden aria-expanded="false">` +
+    `Show all <b>${subs.length + 1}</b></button>`
   );
 }
 
@@ -527,12 +539,15 @@ function toolbar(items) {
   // the right shape while "not available" had exactly one meaning. It has three now: in
   // stock, out of stock at the vendor, and sold. Four segments is past what fits at this
   // width on a phone without wrapping into a second row, and a wrapped segmented control
-  // stops reading as one control.
+  // stops reading as one control. So it is a select.
   //
-  // So it becomes a select, and sits with the search box rather than among the refinements:
-  // it answers "can I buy this", which is a different question from "which colour" and is
-  // asked first. The counts stay in the labels — a control that offers a filter leading to
-  // nothing is a control that wastes a click.
+  // It sat beside the search box for a while, on the argument that "can I buy this" is a
+  // different question from "which colour". True, but it is still a filter, and a filter
+  // parked outside the filter group is a filter people do not find when they go looking for
+  // filters. It now leads the refinements, which on a desktop are open by default — so
+  // nothing moved further away there — and on a phone the disclosure counts it like any
+  // other set control. The counts stay in the labels: a control offering a filter that
+  // leads to nothing is a control that wastes a click.
   //
   // Sold spans both catalogues on purpose. A shopper does not care which of them a thing
   // came from, and splitting the view by vendor would make them ask.
@@ -552,11 +567,11 @@ function toolbar(items) {
     <div class="sb-top">
       <label class="sb-search"><span class="vh">Search the closet</span>
         <input type="search" id="sb-q" placeholder="Search title or brand…" autocomplete="off"></label>
-      ${avail}
     </div>
     <details class="sb-refine" data-refine>
     <summary><span class="sb-refine-label">Refine &amp; sort</span><span class="sb-refine-n" data-refine-count></span></summary>
     <div class="sb-controls">
+      ${avail}
       ${sel("sb-cond", "Any condition", conditions, "Condition")}
       ${sel("sb-size", "All sizes", sizes, "Size")}
       ${bands.length < 2 ? "" : `<label class="sb-sel"><span class="vh">Price</span>
@@ -665,91 +680,28 @@ function jsonLd(cat, items) {
         itemListElement: items.map((it, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          item: {
-            "@type": "Product",
-            name: it.title,
-            // The Vinted item id doubles as the SKU — see the note in build-jsonld.mjs.
-            // Emitted on sold items too: an identifier is how a crawler recognises that
-            // the SoldOut product it sees today is the one it indexed as InStock last week,
-            // rather than a different piece that happens to share a title.
-            sku: it.id,
-            productID: it.id,
-            description: it.description ? it.description.slice(0, 400) : undefined,
-            image: it.photo ? `${SITE}/${it.photo}` : undefined,
-            brand: it.brand ? { "@type": "Brand", name: it.brand } : undefined,
-            color: it.color?.en || undefined,
-            category: it.category,
-            // A sold piece is declared SoldOut with no price and no url, rather than
-            // quietly left out. Omitting it would misrepresent the page (the item IS on
-            // it), and marking it InStock would put an unbuyable product into search
-            // results — which is both a poor result and a structured-data violation.
-            offers: {
-              "@type": "Offer",
-              ...(it.sold
-                ? { availability: "https://schema.org/SoldOut" }
-                : {
-                    // Vendor items have no listing URL — they are bought here, so the offer
-                    // points at the shelf page they sit on rather than anywhere external.
-                    // No `seller` is asserted either: naming a seller in structured data is
-                    // a public claim about who the merchant is, and that is not settled
-                    // while orders run through WhatsApp.
-                    url: it.vendor ? pageUrl : it.urls[STOREFRONT],
-                    // EUR, matching the price printed on the card. Structured data is
-                    // supposed to agree with what the visitor can see; quoting CZK here
-                    // while the page says euro is exactly the mismatch that gets a feed
-                    // flagged. The Kč figure is preserved in data/catalog.csv.
-                    price: it.priceEur,
-                    priceCurrency: "EUR",
-                    availability: it.reserved
-                      ? "https://schema.org/PreOrder"
-                      : "https://schema.org/InStock",
-                  }),
-              ...(it.condition?.en
-                ? {
-                    itemCondition: /^New/.test(it.condition.en)
-                      ? "https://schema.org/NewCondition"
-                      : "https://schema.org/UsedCondition",
-                  }
-                : {}),
-            },
-          },
+          // One shared builder, see scripts/product-node.mjs. The url is this page's own
+          // anchor for the item, so the graph a page publishes describes that page.
+          item: productNode(it, `${pageUrl}#${itemSlug(it)}`),
         })),
       },
     ],
   }, null, 2);
 }
 
-// The block that used to sit here said only "everything's live on Vinted" and pointed at
-// the closet. That answers a question nobody was asking. The questions someone actually has
-// before spending €29 with a stranger are: how does it reach me, can I ask something first,
-// and what happens if it does not fit — and the site answered none of them.
+// Both the four-step "How buying works" block and the currency note used to be rendered
+// here, on all ~80 shelf pages. They moved to /how-it-works on 22 Aug 2026, whole and
+// unedited, so that shipping, returns, prices, privacy and terms live at one address that
+// can be linked, cited and found — rather than as a block repeated eighty times and
+// reachable from nowhere in particular.
 //
-// Three plain steps and a way to ask. No claims that cannot be kept: the returns line says
-// what Vinted's policy is rather than inventing a friendlier one.
-const HOW_IT_WORKS =
-  `<div class="how" id="how">
-    <h2>How buying works</h2>
-    <ol class="how-steps">
-      <li><b>Ask first, if you want.</b> Measurements, fabric, how something actually fits — message me and I will tell you straight, including when a piece is not right for you.</li>
-      <li><b>Second-hand pieces: buy them on Vinted.</b> Every piece from my own collection links to its listing. Payment, postage and buyer protection are all handled there, so there is no separate checkout on this site and I never see your card details.</li>
-      <li><b>New stock: order on WhatsApp.</b> Cards marked with a shop name are new goods from a Prague supplier, not from my closet. Message me and I will confirm the price and postage before anything is paid.</li>
-      <li><b>It posts from Prague.</b> Second-hand pieces usually go within a day or two, and Vinted's buyer protection covers the return if the item is not as described. New stock takes 5-10 business days across Europe.</li>
-    </ol>
-    <p class="how-note">Pieces without a shop name are second-hand or one-of-a-kind from my own collection, so each exists once — when it is gone it is gone. Sizes are the label size; ask me for real measurements before you buy.</p>
-    <div class="cta-row">
-      <a class="btn saf" href="${wa("Hi! I have a question about something in the wardrobe.")}" target="_blank" rel="noopener">Ask me on WhatsApp →</a>
-      <a class="btn" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
-    </div>
-  </div>`;
-
-// Two different truths now, and conflating them would misstate one of them: a Vinted price
-// is converted for display and charged by Vinted in the buyer's own currency, while a
-// vendor price is what we actually charge, agreed before anything is paid.
-const FX_NOTE =
-  `<p class="fx-note">Prices are converted from Czech koruna at the European Central Bank ` +
-  `reference rate and rounded to the nearest euro. Vinted charges in your own currency at ` +
-  `checkout, so the amount you pay for a second-hand piece may differ slightly. Prices on ` +
-  `cards marked with a shop name are confirmed on WhatsApp before you pay anything.</p>`;
+// The cost is real and worth naming: that block answered "how does it reach me, can I ask
+// first, what if it does not fit" at the moment someone was looking at a €29 garment, and
+// now it answers them one click away, from the footer. The trade was made deliberately.
+//
+// Everything a visitor needs is still one link from every page, because the footer is on
+// every page. If the conversion cost shows up in practice, the smallest fix is a one-line
+// summary here linking to /how-it-works — not restoring eighty copies of the full text.
 
 function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub = null, shelfItems = null) {
   const desc = cat.lead.slice(0, 155);
@@ -816,9 +768,6 @@ ${markNav(ch.header, "wardrobe")}
   ${grid(items, manifest, cat.name === "Everything", allUrl)}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>
   ${pager(cat, seq, sub)}
-  ${FX_NOTE}
-
-  ${HOW_IT_WORKS}
 </div></section>
 </main>
 ${ch.footer}
@@ -893,6 +842,19 @@ async function main() {
 
   let written = 0;
 
+  // id -> the one canonical address for that item, written to data/anchors.json at the end.
+  //
+  // An item has no page of its own; it is a card on a shelf. Which shelf page depends on
+  // where it falls in the pagination, and that is known HERE and nowhere else. build-jsonld
+  // needs the same answer for the home-page graph, and duplicating the pagination arithmetic
+  // over there is how the two schema generators drifted apart in the first place. So this
+  // build records it and the other one reads it.
+  //
+  // The category page wins over /wardrobe: /wardrobe only holds the first PER_PAGE items, so
+  // an anchor pointing there would jump to nothing for everything past it. The category page
+  // always contains the item. One rule, never wrong.
+  const anchors = {};
+
   // Whole generated pages, one per non-empty category, plus the everything page.
   for (const cat of CATEGORIES) {
     const items = live.filter((i) => (cat.names || [cat.name]).includes(i.category));
@@ -928,6 +890,10 @@ async function main() {
       const seq = { no, total };
       const file = pageFile(cat, no);
 
+      // First shelf to claim an item wins. Two CATEGORIES can list the same source category
+      // in `names` (Spirituality feeds Meditation), and an item needs exactly one address.
+      for (const it of slice) if (!(it.id in anchors)) anchors[it.id] = `${SITE}${url(file)}#${itemSlug(it)}`;
+
       if (cat.managed && no === 1) {
         // Hand-written page: swap only the grid region, leave the prose alone.
         const p = path.join(ROOT, file);
@@ -937,11 +903,11 @@ async function main() {
         // control would be a dead one). Just the pieces, and the note about how the prices
         // convert.
         const body = cat.module
-          ? grid(slice, manifest, false) + "\n  " + FX_NOTE
+          ? grid(slice, manifest, false)
           : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(slice) +
             "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "") +
             `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
-            pager(cat, seq) + "\n  " + FX_NOTE;
+            pager(cat, seq);
         await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
       } else {
         await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
@@ -1150,6 +1116,9 @@ async function main() {
   await writeFile(indexPath, replaceRegion(
     indexHtml, "SHOP:GRID", `<div class="tiles">\n    ${tiles}\n    ${allTile}\n  </div>`, "index.html"));
   console.log(`  index.html — ${tiles.split("</a>").length - 1} shelf tiles (strip region replaced)`);
+
+  await writeFile(path.join(ROOT, "data/anchors.json"), JSON.stringify(anchors, null, 2) + "\n");
+  console.log(`  data/anchors.json — ${Object.keys(anchors).length} item anchors`);
 
   console.log(`\n${written + 2} pages written from ${live.length} live items`);
 }
