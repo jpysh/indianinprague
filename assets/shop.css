@@ -71,6 +71,12 @@
  * costs. */
 .sb-controls{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 @media (max-width:399px){.sb-controls{grid-template-columns:1fr}}
+/* Availability takes the full width of the grid. Its default option names its own filter —
+   "Availability All" — which measures ~165px of text and needs ~210px with the inset padding
+   and the arrow. A half-width track at these viewports is about 180px, so in a two-column
+   grid the word "All" was being cut off by the arrow. A row of its own, rather than a label
+   that lies about what is selected. */
+.sb-avail{grid-column:1/-1}
 
 /* ---------- refine disclosure ----------
  *
@@ -149,16 +155,42 @@
   color:var(--magenta);text-decoration:underline;cursor:pointer;
 }
 
+/* One row on a wide screen: search, then every filter, then sort.
+ *
+ * The three wrappers the markup needs on a phone — .sb-top holding the search, the <details>
+ * holding the refinements, and .sb-controls inside it — all become `display:contents` here,
+ * so every control is a direct flex child of .shop-bar and they lay out as one line. The
+ * wrappers still exist in the DOM, and on a phone they still do their jobs; on a desktop
+ * they simply stop being boxes.
+ *
+ * The summary is already hidden at this width (see above), and shop.js keeps the <details>
+ * open whenever the viewport is wide — which matters more than it looks, because a closed
+ * <details> hides its children whatever their display value, and there would be no summary
+ * left to reopen it with.
+ *
+ * flex-wrap, not a fixed column count: which controls exist varies by page, since a control
+ * with nothing to filter is never rendered. Seven controls fit one row at 1280px and fall to
+ * two rows below that, rather than being clipped.
+ *
+ * 150px basis with room to grow. The longest label any select carries is "Any condition",
+ * which needs 125px of text plus padding and arrow — flex-grow covers the difference on any
+ * real width, and shrinking below the basis is disabled so nothing gets clipped. */
 @media (min-width:721px){
-  .sb-top{flex-direction:row;align-items:center;gap:12px}
-  .sb-search{flex:1 1 auto}
-  /* auto-fit rather than a fixed count: which controls exist varies by page, since a
-     control with nothing to filter is never rendered. */
-  /* 180px, not the 150px this was: at 16px the longest label a select carries — "Any
-     condition" — needs 125px of text plus 44px of padding and arrow, so a 150px track
-     clipped it by a character. */
-  .sb-controls{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
-  .sb-sort{margin-left:auto}
+  .shop-bar{flex-direction:row;flex-wrap:wrap;align-items:center;gap:10px}
+  .sb-top,.sb-refine,.sb-controls{display:contents}
+  /* Chrome wraps a <details>'s children in a ::details-content box that is a block
+     container, so display:contents on the <details> itself is not enough — without this the
+     five selects stack in a column inside that box instead of joining the row. Browsers
+     without the pseudo-element ignore the rule and were already correct. */
+  .sb-refine::details-content{display:contents}
+  /* Search leads and takes the slack: it is the one control whose content is unbounded. */
+  .sb-search{flex:2 1 220px}
+  .sb-sel{flex:1 0 150px}
+  /* 218px, not 150: see the note on .sb-avail above — this is the one control whose closed
+     label carries its own name, and it has to fit. */
+  .sb-avail{flex:1 0 218px}
+  /* Chips and the result count are a line of their own, under the controls. */
+  .sb-status{flex:1 0 100%}
 }
 
 

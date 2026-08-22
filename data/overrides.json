@@ -15,29 +15,67 @@
     "is structurally right and commercially wrong. Move anything you disagree with back by",
     "deleting its line."
   ],
-
-  "9565566983": { "category": "Spirituality", "featured": true },
-  "9565484914": { "category": "Spirituality" },
-  "9565381682": { "category": "Spirituality" },
-  "9565320171": { "category": "Spirituality" },
-  "9565087476": { "category": "Spirituality" },
-  "9564918603": { "category": "Spirituality" },
-  "9564694739": { "category": "Spirituality" },
-  "9575763651": { "category": "Spirituality" },
-  "9575501283": { "category": "Spirituality" },
-  "9489491094": { "category": "Spirituality" },
-  "9604783346": { "category": "Spirituality" },
-
+  "9565566983": {
+    "category": "Spirituality",
+    "featured": true
+  },
+  "9565484914": {
+    "category": "Spirituality"
+  },
+  "9565381682": {
+    "category": "Spirituality"
+  },
+  "9565320171": {
+    "category": "Spirituality"
+  },
+  "9565087476": {
+    "category": "Spirituality"
+  },
+  "9564918603": {
+    "category": "Spirituality"
+  },
+  "9564694739": {
+    "category": "Spirituality"
+  },
+  "9575763651": {
+    "category": "Spirituality"
+  },
+  "9575501283": {
+    "category": "Spirituality"
+  },
+  "9489491094": {
+    "category": "Spirituality"
+  },
+  "9604783346": {
+    "category": "Spirituality"
+  },
   "_sold_comment": [
     "The seven items in sold-seed.json. Vinted strips the category from a sold listing, so",
     "there is nothing to map — these are set by hand from their titles, all clothing and",
     "accessories. Without this they would collect in 'More'."
   ],
-  "9309067629": { "category": "Fashion" },
-  "9309115949": { "category": "Fashion" },
-  "9311732832": { "category": "Fashion" },
-  "9313834270": { "category": "Fashion" },
-  "9315253483": { "category": "Fashion" },
-  "9316468722": { "category": "Fashion" },
-  "9316508470": { "category": "Fashion" }
+  "9309067629": {
+    "category": "Fashion"
+  },
+  "9309115949": {
+    "category": "Fashion"
+  },
+  "9311732832": {
+    "category": "Fashion"
+  },
+  "9313834270": {
+    "category": "Fashion"
+  },
+  "9315253483": {
+    "category": "Fashion"
+  },
+  "9316468722": {
+    "category": "Fashion"
+  },
+  "9316508470": {
+    "category": "Fashion"
+  },
+  "9696606450": {
+    "hidden": true
+  }
 }

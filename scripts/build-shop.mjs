@@ -45,28 +45,34 @@ const STOREFRONT = "cz";
 const CATEGORIES = [
   {
     name: "Fashion", slug: "fashion", page: "wardrobe/fashion.html", managed: true,
+    // The shelf in the words a buyer would type. Used by the subcategory title template,
+    // where "Kanthi malas: buy Indian ritual objects in Europe" needs a noun for the shelf
+    // that is not the shelf's own label — nobody searches for "Meditation".
+    noun: "Indian clothing",
     sub: "kurtas · sarees · sets",
-    title: "Modern Indian Clothes in Prague — Buy on Vinted",
+    title: "Indian Clothes in Europe: Kurtas, Sarees, Block Print",
     // Page 1 is hand-written and only its grid region is replaced, so it never reads these.
     // Pages 2+ are generated from the same template as every other shelf and do.
     h1: ["Clothes,", "worn and new"],
-    lead: "Kurtas, sarees, dhotis and sets — second-hand pieces from my own wardrobe alongside new stock from a Prague supplier.",
+    lead: "Kurtas, sarees, dhotis and sets. Block print, handloom and artisan-made, some from my own wardrobe and the rest new.",
     expo: ["FASHION", "kurtas · sarees", "second-hand · new"],
   },
   {
     name: "Home Decor", slug: "home-decor", page: "wardrobe/home-decor.html",
     sub: "textiles · ceramics",
-    title: "Indian Home Decor in Prague — Textiles, Ceramics, Handmade | Indian in Prague",
+    noun: "Indian home decor",
+    title: "Indian Home Decor in Europe: Textiles, Ceramics, Handmade",
     h1: ["Home things,", "carried back"],
-    lead: "Block-printed textiles, hand-painted ceramics, and small objects that make a Prague flat feel less like a rental. Most of it came back in a suitcase.",
+    lead: "Block-printed textiles, hand-painted ceramics and small objects that make your flat feel less like a rental. Made by hand in India, and chosen the way I choose things for my own home.",
     expo: ["HOME", "textiles · ceramics", "handmade · block print"],
   },
   {
     name: "Jewellery", slug: "jewellery", page: "wardrobe/jewellery.html",
     sub: "silver · handmade",
-    title: "Indian Jewellery in Prague — Silver, Beads, Handmade | Indian in Prague",
+    noun: "Indian jewellery",
+    title: "Indian Jewellery in Europe: Silver, Beads, Handmade",
     h1: ["Jewellery,", "mostly silver"],
-    lead: "Pieces picked up across India and worn, not collected. Oxidised silver, glass beads, and the kind of thing you cannot find on Wenceslas Square.",
+    lead: "Made across India and meant to be worn rather than collected. Oxidised silver, glass beads and the kind of thing you cannot find easily.",
     expo: ["JEWELLERY", "silver · brass", "handmade · oxidised"],
   },
   {
@@ -82,7 +88,8 @@ const CATEGORIES = [
     name: "Spirituality", names: ["Spirituality", "Meditation"],
     label: "Meditation", slug: "meditation", page: "wardrobe/meditation.html",
     sub: "brass · sandalwood",
-    title: "Indian Ritual Objects in Prague — Incense, Brass, Prayer Beads | Indian in Prague",
+    noun: "Indian ritual objects",
+    title: "Indian Ritual Objects in Europe: Incense, Brass, Malas",
     h1: ["Objects that", "hold something"],
     lead: "Brass, sandalwood, prayer beads. Sold plainly, without the incense-shop mysticism — these are ordinary household things in India, and they are good objects on their own terms.",
     expo: ["RITUAL OBJECTS", "altar & puja", "brass · sandalwood"],
@@ -96,32 +103,44 @@ const CATEGORIES = [
   // sitemap line and its nav slot in index.html.
   {
     name: "Books", slug: "books", page: "wardrobe/books.html",
-    sub: "second-hand books",
-    title: "Indian Books in Prague — Fiction, Cookery, Second-hand | Indian in Prague",
-    h1: ["Books I have", "finished with"],
-    lead: "Fiction, cookery and the odd art book — read once, kept well, and taking up shelf space I do not have.",
-    expo: ["BOOKS", "second-hand", "fiction · cookery"],
+    sub: "second-hand · new",
+    noun: "Indian books",
+    title: "Indian Books in Europe: Fiction, Cookery, Scripture",
+    // "Books I have finished with" was a promise the shelf broke: 72 of its 117 books are
+    // new editions and translations that have never been anyone's. "Award winners" is
+    // carried by real stock, not by hope: Elizabeth Kolbert's Under a White Sky took the
+    // Pulitzer, and Mirza Waheed's The Book of Gold Leaves was DSC Prize shortlisted.
+    h1: ["Award winners,", "read and unread"],
+    lead: "Fiction, cookery, art and scripture. Literary second-hand finds from my own shelves, alongside new editions and translations.",
+    expo: ["BOOKS", "second-hand · new", "fiction · cookery"],
   },
   {
     name: "Wellness", slug: "wellness", page: "wardrobe/wellness.html",
     sub: "oils · soaps · ayurveda",
-    title: "Indian Wellness in Prague — Oils, Soaps, Ayurveda | Indian in Prague",
+    noun: "Ayurvedic wellness",
+    title: "Ayurvedic Wellness in Europe: Oils, Soaps, Perfumes",
     h1: ["Oils, soaps,", "and remedies"],
     lead: "Ayurvedic creams and oils, hand-cut soaps, oil-based perfumes — the everyday shelf of an Indian bathroom, most of it made in small batches.",
     expo: ["WELLNESS", "oils · soaps", "ayurvedic"],
   },
   {
     name: "Keepsakes", slug: "keepsakes", page: "wardrobe/keepsakes.html",
-    sub: "cards · notebooks · keyrings",
-    title: "Indian Keepsakes in Prague — Cards, Notebooks, Keyrings | Indian in Prague",
+    sub: "cards · notebooks · dolls",
+    noun: "Indian gifts",
+    title: "Indian Gifts in Europe: Cards, Notebooks, Dolls, Keyrings",
     h1: ["Small things,", "carried home"],
-    lead: "Greetings cards, notebooks, keyrings and badges. The inexpensive end of the shelf, and the easiest thing to post to someone.",
-    expo: ["KEEPSAKES", "cards · notebooks", "small gifts"],
+    // Names the dolls because a quarter of the shelf is now dolls: the whole "Gift items"
+    // branch of the vendor's tree moved here on 22 Aug 2026, from a shelf called Others that
+    // no shopper would think to open. The lead is this page's meta description as well as
+    // its opening line, so it has to say what is actually on the shelf.
+    lead: "Greetings cards, notebooks, keyrings and badges, and small deity dolls for children. The inexpensive end of the shelf, and the easiest thing to post to someone.",
+    expo: ["KEEPSAKES", "cards · dolls", "small gifts"],
   },
   {
     name: "Food", slug: "food", page: "wardrobe/food.html",
     sub: "spices · honey · prasadam",
-    title: "Indian Food in Prague — Spices, Masalas, Ayurvedic Supplements | Indian in Prague",
+    noun: "Indian food",
+    title: "Indian Food in Europe: Spices, Masalas, Ayurvedic Supplements",
     h1: ["Spices, and", "what goes with them"],
     lead: "Single spices and masala blends, honey, prasadam, and Ayurvedic supplements. Cupboard things, not souvenirs.",
     expo: ["FOOD", "spices · masala", "honey · prasadam"],
@@ -135,7 +154,8 @@ const CATEGORIES = [
     name: "Uncategorised", names: ["Uncategorised", "Others"],
     label: "Others", slug: "others", page: "wardrobe/others.html",
     sub: "odds and ends",
-    title: "More from my closet | Indian in Prague",
+    noun: "Indian goods",
+    title: "Indian Odds and Ends in Europe: Everything Else",
     h1: ["Everything", "else"],
     lead: "The pieces that do not fit a shelf label yet.",
     expo: ["MORE", "everything else", "odds and ends"],
@@ -145,7 +165,11 @@ const CATEGORIES = [
 // Deterministic so a card keeps the same placeholder tint between builds — the tint shows
 // while the photo decodes, and one that changed on every deploy would flicker.
 const SPICE = ["sp-oli", "sp-mag", "sp-pap", "sp-saf", "sp-chi", "sp-plum"];
-const spice = (id) => SPICE[Number(id) % SPICE.length];
+// Digits only, because a vendor id is "govinda-2254" and Number() on that is NaN — NaN % 6
+// is NaN and SPICE[NaN] is undefined, which is how every vendor card has been shipping
+// `class="frame undefined"` and no placeholder tint at all. Stripping the non-digits leaves
+// Vinted's numeric ids exactly as they were, so no existing card changes colour.
+const spice = (id) => SPICE[Number(String(id).replace(/\D/g, "")) % SPICE.length];
 
 // Prices below €2 keep their cents. Above that the cents are noise, and whole euros are
 // what this shop has always shown. See build-listings.mjs for the measurement.
@@ -311,7 +335,11 @@ function card(item, manifest, eager, showCat) {
   // "you cannot buy this today", and a shopper scanning a grid of 100 cards needs that
   // readable at a glance rather than spelled out in a badge they have to stop and read.
   const oos = !sold && item.vendor && item.inStock === false;
-  const caption = showCat ? label(item.category) : item.brand;
+  // A vendor card gets no brand caption: the vendor flag at the top of the frame already
+  // says "Govinda", and the brand on those items is "Govinda Shop" — the same word twice on
+  // the same photograph, once in each corner. The category caption on the Everything page is
+  // kept, because there it says something the flag does not.
+  const caption = showCat ? label(item.category) : item.vendor ? "" : item.brand;
   const tags = [item.condition?.en, item.color?.en, item.sizeGroup].filter(Boolean).join(" · ");
 
   // The favourite count is the strongest social proof on the page — these are real people
@@ -544,18 +572,26 @@ function toolbar(items) {
   // It sat beside the search box for a while, on the argument that "can I buy this" is a
   // different question from "which colour". True, but it is still a filter, and a filter
   // parked outside the filter group is a filter people do not find when they go looking for
-  // filters. It now leads the refinements, which on a desktop are open by default — so
-  // nothing moved further away there — and on a phone the disclosure counts it like any
-  // other set control. The counts stay in the labels: a control offering a filter that
-  // leads to nothing is a control that wastes a click.
+  // filters. It sits last among the refinements, after colour and before sort, in the same
+  // place on every width.
+  //
+  // No counts in the labels, unlike the shelf chips. This control sits in a row of selects
+  // whose closed state reads "Any condition", "All colours", "Newest first" — a bare number
+  // in among those reads as a different kind of control, and the count is on screen anyway
+  // in the result line under the toolbar. The counts still decide which options EXIST: an
+  // option leading to nothing is a click that can only disappoint, so it is not offered.
+  //
+  // The default option names its own filter — "Availability All" rather than "All" —
+  // because closed, a select shows only its selected option, and "All" alone next to
+  // "All colours" says nothing about what it is all of.
   //
   // Sold spans both catalogues on purpose. A shopper does not care which of them a thing
   // came from, and splitting the view by vendor would make them ask.
   const availOpts = [
-    ["", `All ${items.length}`],
-    ["available", `In stock ${items.length - soldCount - oosCount}`],
-    oosCount ? ["oos", `Out of stock ${oosCount}`] : null,
-    soldCount ? ["sold", `Sold ${soldCount}`] : null,
+    ["", "Availability All"],
+    ["available", "In stock"],
+    oosCount ? ["oos", "Out of stock"] : null,
+    soldCount ? ["sold", "Sold"] : null,
   ].filter(Boolean);
 
   const avail = availOpts.length > 2 ? `<label class="sb-avail"><span class="vh">Availability</span>
@@ -571,13 +607,13 @@ function toolbar(items) {
     <details class="sb-refine" data-refine>
     <summary><span class="sb-refine-label">Refine &amp; sort</span><span class="sb-refine-n" data-refine-count></span></summary>
     <div class="sb-controls">
-      ${avail}
       ${sel("sb-cond", "Any condition", conditions, "Condition")}
       ${sel("sb-size", "All sizes", sizes, "Size")}
       ${bands.length < 2 ? "" : `<label class="sb-sel"><span class="vh">Price</span>
         <select id="sb-price" data-filter="sb-price" data-name="Price"><option value="">Any price</option>${
           bands.map((b) => `<option value="${b.id}">${esc(b.label)}</option>`).join("")}</select></label>`}
       ${sel("sb-color", "All colours", colors, "Colour")}
+      ${avail}
       <label class="sb-sel sb-sort"><span class="vh">Sort by</span>
         <select id="sb-sort">
           <option value="new">Newest first</option>
@@ -596,17 +632,24 @@ function toolbar(items) {
 
 const catNav = (active, counts) =>
   `<nav class="cat-nav" aria-label="Wardrobe shelves">` +
-  `<a href="/wardrobe"${active === "Everything" ? ' aria-current="page"' : ""}>Everything <b>${counts.__all}</b></a>` +
+  // "All", not "Everything": it is the widest chip in the strip by some way, and at 375px
+  // its width is part of what forces the strip to five rows. The internal name of the
+  // category stays "Everything" — it is what the page is called and what the home tile says.
+  `<a href="/wardrobe"${active === "Everything" ? ' aria-current="page"' : ""}>All <b>${counts.__all}</b></a>` +
   // `module` categories are excluded: Wellness has its own slot in the TOP nav now, and
   // listing it here as well would put the same word in two navigations on the same screen,
   // pointing at the same page, one of them implying it is a shelf inside the wardrobe.
   CATEGORIES.filter((c) => counts[c.name] && !c.module)
     .map((c) => `<a href="${url(c.page)}"${active === c.name ? ' aria-current="page"' : ""}>${esc(label(c.name))} <b>${counts[c.name]}</b></a>`)
     .join("") +
-  // Its own page as well as the availability toggle, because "what has already sold" is a
-  // thing a shopper goes looking for deliberately — and a page has a URL you can link to,
-  // which a filter state does not.
-  (counts.__sold ? `<a href="/wardrobe/sold" class="sold-tab"${active === "Sold" ? ' aria-current="page"' : ""}>Sold <b>${counts.__sold}</b></a>` : "") +
+  // Sold is NOT a chip here. This strip answers "what do you have?", and a shelf of things
+  // nobody can buy is not an answer to it — it was sitting in the primary navigation of a
+  // shop, at equal weight to Fashion and Jewellery, offering a dead end.
+  //
+  // The page still exists and still earns its URL: "what has already sold" is a thing a
+  // shopper goes looking for deliberately, and a page can be linked and indexed where a
+  // filter state cannot. It is reached from the footer and from the Availability filter,
+  // which is where someone actually asks that question.
   `</nav>`;
 
 /* ------------------------------------------------------------------- pages ---- */
@@ -710,8 +753,13 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
   // A subcategory page is its own page, not a variant of the shelf: its title leads with
   // what it holds, because "Kanthi malas" is what someone searches for and the shelf title
   // is not.
-  const base = sub ? `${sub} — Indian ${label(cat.name)} in Prague | Indian in Prague` : cat.title;
-  const pageTitle = seq.no > 1 ? `${base} — page ${seq.no}` : base;
+  // A subcategory page leads with what it holds, because "Kanthi malas" is what someone
+  // searches for and the shelf title is not. What follows is the shelf in buyable words plus
+  // the market, and NOT the site name: repeating "Indian in Prague" after every one of these
+  // spent title width saying what the brand already says, on the pages with the highest
+  // intent on the site.
+  const base = sub ? `${sub}: buy ${cat.noun} in Europe` : cat.title;
+  const pageTitle = seq.no > 1 ? `${base}, page ${seq.no}` : base;
   const self = sub ? subFile(cat, sub, seq.no) : pageFile(cat, seq.no);
   // Only when there is more to fetch: a shelf that fits on one page already holds every
   // card the filters could match.
@@ -818,17 +866,81 @@ async function main() {
     subcategory: i.subcategory || (i.crumbs?.length ? i.crumbs[i.crumbs.length - 1].name : ""),
   });
   const available = [...catalog.items.filter((i) => !i.hidden).map(withSub), ...vendor];
-  // Vinted ids are numeric and ascend with time, so sorting on them is "newest first".
-  // Vendor ids are not (govinda-96), and Number() on one is NaN — which makes every
-  // comparison false and leaves those cards wherever the sort happened to drop them.
+
+  // The shared clock. One line per item: id -> the date this build first saw it.
   //
-  // So: the closet first, newest first, then vendor stock by SKU. The order is not
-  // arbitrary. A Vinted piece is one-of-a-kind and sells once, so it is genuinely news;
-  // vendor stock is restockable and will still be there next week.
-  const key = (i) => (i.vendor ? -1 : Number(i.id));
+  // Written here and nowhere else, because this is the only script that sees both catalogues
+  // merged — sync-vinted.mjs knows nothing about Govinda, and the Govinda CSV is built by its
+  // own script. It cannot live inside data/catalog.json either: sync-vinted.mjs regenerates
+  // that file wholesale, so the stamps would be destroyed on the next sync, which is the same
+  // reason vendor items are kept out of it.
+  //
+  // A stamp is written once and never rewritten. A Vinted relist gets a new id and so stamps
+  // fresh, correctly — it is a new listing. A Govinda SKU keeps its number through going out
+  // of stock and coming back, and keeps its original stamp with it: restocked stock is not
+  // news, which is what the sort has always assumed.
+  //
+  // Sold pieces are stamped too. When a thing appeared and whether it later sold are two
+  // different facts, and stamping both keeps the sold grid ordered like everything else.
+  const firstSeenPath = path.join(ROOT, "data/first-seen.json");
+  const firstSeen = existsSync(firstSeenPath)
+    ? JSON.parse(await readFile(firstSeenPath, "utf8"))
+    : {};
+  const today = new Date().toISOString().slice(0, 10);
+  let stamped = 0;
+  for (const i of [...available, ...sold]) {
+    if (!firstSeen[i.id]) { firstSeen[i.id] = today; stamped++; }
+  }
+  if (stamped) {
+    // Sorted by id so the file diffs legibly instead of shuffling on every run.
+    const ordered = Object.fromEntries(
+      Object.keys(firstSeen).sort().map((k) => [k, firstSeen[k]]));
+    await writeFile(firstSeenPath, JSON.stringify(ordered, null, 2) + "\n");
+    console.log(`  data/first-seen.json — ${stamped} newly stamped, ${Object.keys(firstSeen).length} total`);
+  }
+  // "Newest" needs a clock the two catalogues share, and they have none.
+  //
+  // Vinted ids are numeric and ascend with time, so sorting on them is genuinely "newest
+  // first" — within Vinted. Govinda SKUs ascend too — within Govinda. Across the two the
+  // numbers mean nothing to each other: 9696606450 and 2254 are not comparable, and
+  // Number("govinda-2254") is NaN, which makes every comparison false and leaves those cards
+  // wherever the sort happened to drop them. The old rule dodged the problem by forcing
+  // every vendor item to sort last. That is why the Others tile — a shelf of twenty-nine
+  // Govinda pieces and one Apple trackpad — led with the trackpad.
+  //
+  // So the clock is recorded rather than inferred: first-seen(), below, stamps the date an
+  // id is first seen by a build and never changes it afterwards. The stamps live in
+  // data/first-seen.json, they are committed like any other data file, and they mean that
+  // from now on "newest" is a fact about when a thing appeared here rather than a guess from
+  // its id.
+  //
+  // Within one day the stamps tie, and then it falls back to the old ordering: Vinted before
+  // Govinda, each newest-first by its own id. The tie matters most on the first run, when
+  // everything already in the catalogue is stamped at once; it stops mattering as real dates
+  // accumulate.
+  // The same-day tiebreak, in three steps rather than one number. The single `key` this
+  // replaced returned -1 for every vendor item, which sorted them below Vinted correctly but
+  // made them all equal to each other — so the final string compare, which is ASCENDING,
+  // decided the order among them and the oldest Govinda SKU came out on top. The Others tile
+  // led with a tube of toothpaste, SKU 485.
+  const isVendor = (i) => (i.vendor ? 1 : 0);
+  const num = (i) => Number(String(i.id).replace(/\D/g, ""));
   const byNewest = (a, b) =>
-    key(b) - key(a) || String(a.id).localeCompare(String(b.id), "en", { numeric: true });
-  const live = [...available.sort(byNewest), ...sold.sort(byNewest)];
+    (firstSeen[b.id] || "").localeCompare(firstSeen[a.id] || "") ||   // real clock first
+    isVendor(a) - isVendor(b) ||                                      // Vinted before Govinda
+    num(b) - num(a) ||                                                // each newest by its own id
+    String(b.id).localeCompare(String(a.id), "en", { numeric: true }); // stable, and descending
+  // Three tiers, not two. Out-of-stock vendor stock used to sort in among the buyable
+  // pieces, because it is not sold and the split was sold/not-sold — so a grid of things you
+  // can buy today was salted with things you cannot. It is still not the same as sold: the
+  // piece is expected back, which is why it sits ABOVE the sold pieces rather than with
+  // them. In stock, then out of stock, then sold; newest first within each.
+  const canBuy = (i) => !(i.vendor && i.inStock === false);
+  const live = [
+    ...available.filter(canBuy).sort(byNewest),
+    ...available.filter((i) => !canBuy(i)).sort(byNewest),
+    ...sold.sort(byNewest),
+  ];
 
   const counts = { __all: live.length, __sold: sold.length };
   // Same list-of-names rule as the shelf itself: counting on cat.name alone would have the
@@ -860,30 +972,37 @@ async function main() {
     const items = live.filter((i) => (cat.names || [cat.name]).includes(i.category));
     if (!items.length) {
       // A category can empty out — the last "More" item gets a taxonomy rule, the last of
-      // something sells. Leaving the page behind would strand a stale grid the nav no
-      // longer links to, still in the sitemap and still indexable.
+      // something sells, everything on it gets refiled. Leaving the pages behind would
+      // strand a stale grid the nav no longer links to, still in the sitemap and still
+      // indexable.
+      //
+      // The DIRECTORY goes too, not just the page. It holds the numbered pages and every
+      // subcategory page of a shelf that no longer exists, and build-sitemap.mjs walks
+      // wardrobe/ recursively — so leaving it behind means submitting pages to Google for a
+      // shelf whose items now live somewhere else entirely.
+      //
+      // No redirect is left behind, deliberately. The shelf returns by itself the day
+      // something lands in it again, and a static 301 would then sit in front of the rebuilt
+      // page until a person remembered to delete it.
       const stale = path.join(ROOT, cat.page);
+      const staleDir = path.join(ROOT, cat.page.replace(/\.html$/, ""));
       if (!cat.managed && existsSync(stale)) {
         await rm(stale);
         console.log(`  ${cat.page} — removed (category is empty)`);
+      }
+      if (!cat.managed && existsSync(staleDir)) {
+        await rm(staleDir, { recursive: true });
+        console.log(`  ${cat.page.replace(/\.html$/, "")}/ — removed (category is empty)`);
       }
       continue;
     }
 
     const total = Math.max(1, Math.ceil(items.length / PER_PAGE));
 
-    // Pages that existed on a previous build but not on this one — the shelf shrank, or
-    // PER_PAGE changed. Left behind they are a stale grid nobody links to, still indexable.
+    // Every page this build writes under the shelf's own directory. Anything else found
+    // there afterwards is stale and gets swept — see the note at the end of this block.
     const dir = path.join(ROOT, cat.page.replace(/\.html$/, ""));
-    if (existsSync(dir)) {
-      for (const f of await readdir(dir)) {
-        const n = Number(f.replace(/\.html$/, ""));
-        if (n && n > total) {
-          await rm(path.join(dir, f));
-          console.log(`  ${cat.page.replace(/\.html$/, "")}/${f} — removed (page no longer exists)`);
-        }
-      }
-    }
+    const wrote = new Set();
 
     for (let no = 1; no <= total; no++) {
       const slice = items.slice((no - 1) * PER_PAGE, no * PER_PAGE);
@@ -913,6 +1032,7 @@ async function main() {
         await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
         await writeFile(path.join(ROOT, file), page(cat, slice, manifest, counts, ch, seq, null, items));
       }
+      wrote.add(path.resolve(ROOT, file));
       written++;
     }
     console.log(`  ${cat.page} — ${items.length} items across ${total} page${total === 1 ? "" : "s"}`);
@@ -944,11 +1064,38 @@ async function main() {
           page(cat, subItems.slice((no - 1) * PER_PAGE, no * PER_PAGE), manifest, counts, ch,
                { no, total: subTotal }, name, items),
         );
+        wrote.add(path.resolve(ROOT, file));
         subPages++;
         written++;
       }
     }
     if (subPages) console.log(`    + ${subPages} subcategory page(s)`);
+
+    // Sweep the shelf's directory: any .html this build did not just write is stale.
+    //
+    // This used to check only for NUMBERED pages above the current page count, which caught
+    // a shrinking shelf and nothing else. It missed every other way a page goes stale — a
+    // subcategory renamed, a subcategory falling below SUB_MIN, or the slug rule itself
+    // changing. That last one had already happened: slug() deletes apostrophes, so
+    // "Dolls and children's gifts" is dolls-and-childrens-gifts, and the older
+    // dolls-and-children-s-gifts.html sat there for months, unlinked, in the sitemap, a
+    // duplicate of a live page.
+    //
+    // Comparing against what was written is the rule that covers all of them at once, and it
+    // cannot go wrong in the dangerous direction: a page that should exist was written a few
+    // lines above and is therefore in the set.
+    if (existsSync(dir)) {
+      const sweep = async (d) => {
+        for (const f of await readdir(d, { withFileTypes: true })) {
+          const full = path.join(d, f.name);
+          if (f.isDirectory()) { await sweep(full); continue; }
+          if (!f.name.endsWith(".html") || wrote.has(path.resolve(full))) continue;
+          await rm(full);
+          console.log(`  ${path.relative(ROOT, full)} — removed (no longer generated)`);
+        }
+      };
+      await sweep(dir);
+    }
   }
 
   // The everything page — "the wardrobe", which is what the top nav calls it.
@@ -964,9 +1111,10 @@ async function main() {
   // DEPLOY.md to buy nothing.
   const all = {
     name: "Everything", slug: "wardrobe", page: "wardrobe.html",
-    title: "The whole wardrobe — Indian clothes, jewellery, home things in Prague | Indian in Prague",
+    noun: "Indian goods",
+    title: "Shop Indian clothes, jewellery and home things in Europe",
     h1: ["Everything", "in one place"],
-    lead: `All ${available.length} pieces currently for sale — clothing, jewellery, home things, books and the rest — plus what has already sold. Filter it down, or tap any piece to open its Vinted listing.`,
+    lead: `All ${available.length} pieces currently for sale: clothing, jewellery, home things, meditation objects, books and the rest. Hand-picked and hand-crafted, some of it out of my own wardrobe. Filter it down, or tap any piece to buy it or ask about it.`,
     expo: ["THE WARDROBE", "the full range", `${available.length} available · ${sold.length} sold`],
   };
   // The storefront is a ROOT FILE, not wardrobe/index.html, and the difference is a status
@@ -1014,7 +1162,7 @@ async function main() {
     const recent = sold.slice(0, RECENT_SOLD);
     const soldPage = {
       name: "Sold", slug: "sold", page: "wardrobe/sold.html",
-      title: "Last 10 items sold — Indian in Prague",
+      title: "Recently sold: Indian clothes and jewellery in Europe",
       h1: ["Already", "gone"],
       // "Sold" here means "left the closet". Vinted deletes a listing the moment it sells
       // and exposes no sold history, so a disappearance IS the sale event — see the sold
@@ -1092,7 +1240,17 @@ async function main() {
   // newest piece on that shelf, so the front page still turns over as the closet does.
   const tiles = CATEGORIES.filter((c) => !c.module && counts[c.name])
     .map((c) => {
-      const newest = available.filter((i) => i.category === c.name).sort(byNewest)[0];
+      // (c.names || [c.name]), matching the shelf and the counts. Filtering on c.name alone
+      // meant the Others tile drew from the single item whose category literally reads
+      // "Uncategorised" and ignored the twenty-nine filed as "Others" — the same
+      // one-name-versus-two bug the counts above already had to fix.
+      const names = c.names || [c.name];
+      // canBuy as well as available: the tile is a shop window, and since vendor stock the
+      // supplier has run out of still counts as "available" (it is not sold), the newest
+      // piece on a shelf could otherwise be one nobody can order today.
+      const newest = available
+        .filter((i) => names.includes(i.category) && canBuy(i))
+        .sort(byNewest)[0];
       const n = counts[c.name];
       return (
         `<a class="tile" href="${url(c.page)}">` +

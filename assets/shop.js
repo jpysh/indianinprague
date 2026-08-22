@@ -219,17 +219,22 @@
   cards.forEach(function (c, i) { c._i = i; }); // document order = newest first
   var num = function (el, a) { return Number(el.getAttribute(a)) || 0; };
 
-  var isSold = function (el) { return el.getAttribute("data-avail") === "sold" ? 1 : 0; };
+  // 0 in stock, 1 out of stock, 2 sold. Three ranks rather than a sold/not-sold flag: out of
+  // stock is not buyable today either, so it does not belong among the pieces that are — but
+  // it is expected back, so it does not belong down with the sold ones either.
+  var AVAIL_RANK = { available: 0, oos: 1, sold: 2 };
+  var availRank = function (el) { return AVAIL_RANK[el.getAttribute("data-avail")] || 0; };
 
   function comparator() {
     var mode = sort.value;
     return function (a, b) {
       // Availability outranks every sort mode. Sold pieces belong in the grid — they are
-      // proof that things here sell — but never above something a visitor can actually buy.
-      // Without this, "price low to high" leads with a sold item and the cheapest available
-      // piece is pushed down the page. build-shop.mjs applies the same rule to the
-      // server-rendered order, for visitors and crawlers that never run this file.
-      var byAvail = isSold(a) - isSold(b);
+      // proof that things here sell — but never above something a visitor can actually buy,
+      // and the same goes for stock the vendor has run out of. Without this, "price low to
+      // high" leads with a sold item and the cheapest available piece is pushed down the
+      // page. build-shop.mjs applies the same three ranks to the server-rendered order, for
+      // visitors and crawlers that never run this file.
+      var byAvail = availRank(a) - availRank(b);
       if (byAvail) return byAvail;
 
       if (mode === "asc") return num(a, "data-price") - num(b, "data-price");

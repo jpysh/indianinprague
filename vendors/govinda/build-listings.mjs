@@ -5,6 +5,7 @@
 // set or copy you rewrote.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { translate } from "./deepl.mjs";
+import { rows as parseCsv } from "../../scripts/vendor-items.mjs";
 
 const RAW = "vendors/govinda/data/products-raw.json";
 const CACHE = "vendors/govinda/data/translations.json";
@@ -57,6 +58,11 @@ const COLS = [
   "sku", "list", "shelf", "subcategory", "title", "description", "brand",
   "price_czk_vendor", "price_eur_vendor", "markup_pct", "price_eur",
   "availability", "ships_from", "delivery", "images", "translated", "url",
+  // "yes" once Govinda has stopped selling the product altogether. Invisible to a shopper —
+  // the card just says out of stock — but the dashboard needs the difference: something they
+  // have merely run out of will come back, something they no longer sell is a candidate for
+  // you to drop.
+  "retired",
 ];
 
 const cell = (v) => {
@@ -99,10 +105,52 @@ const rows = raw.map((p) => {
     p.images.join(" | "),
     o.title || o.description ? "edited" : shelf === "Books" ? "machine (title original)" : "machine",
     p.url,
+    "",
   ].map(cell).join(",");
 });
 
-writeFileSync(OUT, "﻿" + [COLS.join(","), ...rows].join("\n") + "\n");
+/* --------------------------------------------------------------- retired rows ---- */
+
+// Nothing is ever removed from this file.
+//
+// Out of stock has never removed anything — that is the `availability` column above, and 107
+// items are currently published as out of stock rather than hidden, deliberately, so the
+// shelf does not quietly shrink. But there was a second case with no handling at all: when
+// Govinda deletes a product from their catalogue, the scrape stops returning it, no row gets
+// written, and it disappears from the site. It was reported in changes.json and shown on the
+// dashboard, but the item was already gone before anyone read that.
+//
+// So the previous file is read back and any SKU missing from this scrape is written out
+// again, exactly as it was, with two edits: availability forced to out of stock, and retired
+// set. Every other field survives untouched — description, shelf, images, URL — because the
+// row is the only place they exist; snapshot.json keeps just the title, price and stock. The
+// photographs are safe on their own: nothing in the pipeline prunes vendors/govinda/images.
+//
+// A retired row is carried forward again on every subsequent run, and only ever leaves by
+// hand or by `"list": "no"` in data/overrides.json. There is no automatic expiry: this file
+// is small, each disappearance is already a thing a person reviews, and a rule with a number
+// in it deletes something you wanted on a morning you were not watching.
+//
+// If Govinda relists the SKU, the fresh scrape wins and the row is rebuilt from live data
+// with retired empty again — nothing to undo.
+const live = new Set(raw.map((p) => String(p.sku)));
+const retired = [];
+if (existsSync(OUT)) {
+  const [head, ...body] = parseCsv(readFileSync(OUT, "utf8").replace(/^\ufeff/, ""));
+  const col = Object.fromEntries(head.map((h, i) => [h, i]));
+  for (const r of body) {
+    if (r.length < 2 || live.has(String(r[col.sku]))) continue;
+    // Written against the CURRENT column list, not the old one, so adding a column later
+    // cannot shift a carried row's fields out of alignment.
+    const row = COLS.map((c) => (col[c] === undefined ? "" : r[col[c]] ?? ""));
+    row[COLS.indexOf("availability")] = "out of stock";
+    row[COLS.indexOf("retired")] = "yes";
+    retired.push(row.map(cell).join(","));
+  }
+}
+
+writeFileSync(OUT, "﻿" + [COLS.join(","), ...rows, ...retired].join("\n") + "\n");
+if (retired.length) console.error(`carried ${retired.length} retired row(s) forward`);
 
 /* ------------------------------------------------------------------ what changed ---- */
 

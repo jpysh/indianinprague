@@ -440,7 +440,7 @@ await rm(OUT, { recursive: true, force: true });
 await mkdir(OUT, { recursive: true });
 
 await writeFile(path.join(ROOT, "diaries.html"), shell({
-  title: "Tram 22 Diaries — Indian &amp; vegan restaurants in Prague, Indian wear, mindfulness",
+  title: "Tram 22 Diaries: Indian and vegan restaurants in Prague",
   description:
     "Honest reviews of Prague's Indian restaurants and the best fully vegan spots, notes on contemporary Indian wear, and mindfulness practice — by an Indian living in Prague.",
   canonical: abs("/diaries"),
@@ -528,7 +528,7 @@ ${bodies[post.id]}
 ${relatedBlock}`;
 
   await writeFile(path.join(OUT, `${post.id}.html`), shell({
-    title: `${esc(post.title)} — ${esc(cat.name)} | Tram 22 Diaries`,
+    title: `${esc(post.title)}: ${esc(cat.name)}, Tram 22 Diaries`,
     description: post.blurb,
     canonical: abs(postUrl(post)),
     image: imageOf(post, manifest) || abs("/images/derived/IMG_4126-1200.jpg"),

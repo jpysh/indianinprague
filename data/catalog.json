@@ -313,7 +313,7 @@
       "reserved": false,
       "sold": false,
       "featured": false,
-      "hidden": false,
+      "hidden": true,
       "urls": {
         "cz": "https://www.vinted.cz/items/9696606450-apple-magic-trackpad-lightning-cord-white-multi-touch-surface-bluetooth-wireless-mouse",
         "es": "https://www.vinted.es/items/9696606450-apple-magic-trackpad-lightning-cord-white-multi-touch-surface-bluetooth-wireless-mouse",

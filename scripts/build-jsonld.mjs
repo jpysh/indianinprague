@@ -185,12 +185,17 @@ const graphs = {
       "@type": "CollectionPage",
       "@id": `${SITE}/#webpage`,
       url: `${SITE}/`,
-      name: "Indian in Prague — modern Indian clothes, real food, life between two countries",
+      name: "Indian in Prague: clothes, jewellery, home things, meditation and books",
       isPartOf: { "@id": `${SITE}/#website` },
+      // Follows the page. The restaurant and vegan entries were dropped on 22 Aug 2026 when
+      // the home page stopped leading with the Diaries — the reviews are still first-hand and
+      // still carry Review schema, but they live on /diaries now, and an `about` naming
+      // things the page no longer discusses is exactly the entity inconsistency answer
+      // engines check for.
       about: [
-        { "@type": "Thing", name: "Contemporary Indian fashion" },
-        { "@type": "Thing", name: "Indian restaurants in Prague" },
-        { "@type": "Thing", name: "Vegan restaurants in Prague" },
+        { "@type": "Thing", name: "Contemporary South Asian fashion" },
+        { "@type": "Thing", name: "Indian jewellery and home goods" },
+        { "@type": "Thing", name: "Meditation and ritual objects" },
       ],
       inLanguage: "en",
     },

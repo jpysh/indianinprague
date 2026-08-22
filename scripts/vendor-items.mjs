@@ -11,7 +11,10 @@ const OVERRIDES = "vendors/govinda/data/overrides.json";
 
 // Enough CSV for a file this pipeline writes itself: quoted fields with embedded commas
 // and doubled quotes, which is all build-listings.mjs ever emits.
-function rows(text) {
+//
+// Exported because build-listings.mjs reads its own previous output now, to carry retired
+// rows forward. One parser, so the reader and the writer cannot disagree about quoting.
+export function rows(text) {
   const out = [];
   let row = [], cur = "", q = false;
   for (let i = 0; i < text.length; i++) {
@@ -78,6 +81,10 @@ export function vendorItems(root) {
         sold: !!o.sold,
         soldAt: o.sold || "",
         inStock: r[col.availability] === "in stock",
+        // Govinda no longer sells it at all, as opposed to being temporarily out of stock.
+        // The card cannot tell the difference and should not — both mean "not today" — but
+        // the inventory dashboard can.
+        retired: r[col.retired] === "yes",
         delivery: r[col.delivery],
         photo: photos[0] || null,
         photos,

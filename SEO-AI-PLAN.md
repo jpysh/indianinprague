@@ -469,6 +469,21 @@ parked outside the filter group is one people do not find when they go looking f
 now leads the refinements, which are open by default on desktop, and the disclosure counts it
 like any other set control so a shared "sold only" link still explains itself on a phone.
 
+**`data/first-seen.json` — a new data file, do not delete it.** The two catalogues had no
+shared clock: Vinted ids and Govinda SKUs both ascend with time but mean nothing to each
+other, so `build-shop.mjs` dodged the problem by forcing every vendor item to sort last. That
+is why the Others shelf — twenty-nine Govinda pieces and one Apple trackpad — put a trackpad
+on the home page. Now the clock is recorded: the first time a build sees an id it stamps
+today's date and never rewrites it. "Newest" is a fact about when a thing appeared rather than
+a guess from its id, the home-page tile follows it automatically, and nothing is pinned.
+Seeded 2026-08-22 with all 1,632 items on the same date, so the tiebreak (Vinted before
+Govinda, each newest-first by its own id) decides tiles until real dates accumulate. One
+hand-set entry, documented in the file's own `_comment`.
+
+A `featured` pin was built first and reverted the same session, at the owner's direction: a
+dormant pin is a thing that surprises whoever finds a tile not matching the sort order later.
+`featured` in `data/overrides.json` is dead data again. Do not revive it without asking.
+
 **Bug found and fixed in passing: the sitemap had lost every image.** `build-sitemap.mjs`
 tested `src.startsWith("images/")`, written when the markup used repo-relative paths. Shelf
 pages moved into `/wardrobe/` and began emitting `/images/...`, at which point the test matched
