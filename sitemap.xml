@@ -111,6 +111,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://indianinprague.jains.es/wardrobe/17</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://indianinprague.jains.es/wardrobe/2</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
@@ -219,6 +225,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://indianinprague.jains.es/wardrobe/fashion/5</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/bags</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
@@ -229,6 +241,12 @@
     <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing/2</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing</loc>
@@ -327,6 +345,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi/2</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
@@ -376,6 +400,12 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/key-rings</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://indianinprague.jains.es/wardrobe/keepsakes/notebooks</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
@@ -478,7 +508,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/others/dolls-and-children-s-gifts</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>

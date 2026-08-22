@@ -177,7 +177,12 @@
   var chips = document.getElementById("sb-chips");
   var empty = document.getElementById("sb-empty");
   var reset = document.getElementById("sb-reset");
-  var availBtns = Array.prototype.slice.call(bar.querySelectorAll("[data-avail]"));
+  // Availability moved from a segmented control to a select when it grew a third state
+  // (out of stock). Both are read here: the buttons are gone from the markup, but a page
+  // cached from before this change still has them, and a control that silently stops
+  // working is worse than one that is briefly duplicated.
+  var availSelect = bar.querySelector("[data-avail-select]");
+  var availBtns = Array.prototype.slice.call(bar.querySelectorAll("button[data-avail]"));
 
   // Only the controls this page actually rendered. A page whose items have no sizes never
   // gets a size dropdown, so nothing here may assume one exists.
@@ -273,7 +278,8 @@
   function drawChips() {
     chips.innerHTML = "";
     var active = [];
-    if (avail) active.push(["Availability", avail === "sold" ? "Sold" : "Available", function () { setAvail(""); }]);
+    var AVAIL_LABEL = { sold: "Sold", oos: "Out of stock", available: "In stock" };
+    if (avail) active.push(["Availability", AVAIL_LABEL[avail] || avail, function () { setAvail(""); }]);
     selects.forEach(function (s) {
       if (!s.value) return;
       var text = s.options[s.selectedIndex].textContent;
@@ -357,6 +363,7 @@
     availBtns.forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-avail") === v));
     });
+    if (availSelect && availSelect.value !== v) availSelect.value = v;
     apply();
   }
 
@@ -413,14 +420,17 @@
       }
     }
     var av = p.get("avail");
-    if (av === "sold" || av === "available") {
+    // "oos" joined sold and available when out-of-stock vendor stock started being shown
+    // rather than hidden.
+    if (av === "sold" || av === "available" || av === "oos") {
       // Only if this page rendered the availability control; otherwise the state would be
       // unreachable and un-clearable.
-      if (availBtns.length) {
+      if (availSelect || availBtns.length) {
         avail = av;
         availBtns.forEach(function (b) {
           b.setAttribute("aria-pressed", String(b.getAttribute("data-avail") === av));
         });
+        if (availSelect) availSelect.value = av;
       }
     }
   }
@@ -509,6 +519,9 @@
   availBtns.forEach(function (b) {
     b.addEventListener("click", function () { setAvail(b.getAttribute("data-avail")); });
   });
+  if (availSelect) {
+    availSelect.addEventListener("change", function () { setAvail(availSelect.value); });
+  }
   if (reset) reset.addEventListener("click", function () { clearAll(); q.focus(); });
 
   /* ------------------------------------------------------- return to filters ---- */

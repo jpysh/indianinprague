@@ -584,3 +584,27 @@
 .subs .sub:hover,.subs .sub:focus-visible{background:var(--band);color:var(--bone)}
 .subs .sub.on{background:var(--bone);color:var(--void);border-color:var(--bone)}
 .subs .sub.on b{opacity:.55}
+
+/* ---------- out of stock ---------- */
+
+/* Same visual language as sold, one step lighter. Both mean "not today", so both are
+   desaturated rather than faded — the photograph still has to read as a real object. Out of
+   stock is the recoverable one, so it keeps more colour than sold: the piece is expected
+   back, and greying it as hard as a sold item would overstate the loss. */
+.piece.oos .frame .ph{filter:grayscale(.55) contrast(.95)}
+.piece.oos .nm{color:var(--bone-dim)}
+/* Saffron on void, 9.6:1. Not the chilli of a sold flag: this is a wait, not an ending. */
+.frame .cap.oos-flag{background:var(--saffron);color:var(--void)}
+/* The price stays legible and unstruck. It is still what the thing costs when it returns,
+   and striking it through would read as a discount that is not on offer. */
+.piece.oos .pr{opacity:.75}
+
+/* Availability sits beside the search box, not among the refinements: "can I buy this"
+   is asked before "which colour", and burying it in a disclosure hid the sold view. */
+.sb-avail{display:flex;flex:0 0 auto}
+.sb-avail select{
+  height:100%;min-height:44px;padding:0 34px 0 14px;
+  font-family:var(--mono);font-size:var(--fs-xs);
+  color:var(--bone);background:var(--void-2);border:1px solid var(--band);border-radius:2px;
+}
+@media (max-width:560px){ .sb-avail,.sb-avail select{width:100%} }
