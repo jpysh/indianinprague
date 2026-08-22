@@ -577,6 +577,23 @@ three font files and six photographs. Repeat visits are the HTML alone — under
 
 ## Things that bit, so they don't bite again
 
+**The workers.dev subdomain kept switching itself back on.** `workers_dev` defaults to
+**true** when the key is absent from `wrangler.jsonc`, so every deploy re-enabled
+`indianinprague.0jpysh.workers.dev` — which is why turning it off in the Cloudflare dashboard
+never lasted past the next push. The dashboard toggle is state the deploy overwrites; the
+config file is the state the deploy is made from. `"workers_dev": false` is now set
+explicitly (22 Aug 2026), and it should stay set.
+
+Measured before the fix: `https://indianinprague.0jpysh.workers.dev/` answered **200** and
+served the entire site, byte for byte. That is a second crawlable copy of every page, with
+every canonical, `og:url` and sitemap entry on it pointing at `indianinprague.jains.es` — a
+duplicate-content problem, on a hostname with no `robots.txt` of its own to exclude it.
+
+Related and NOT changed: `preview_urls` also defaults to true, so each deployed version gets
+`<version>-indianinprague.0jpysh.workers.dev`. Same duplication in miniature. Left on because
+it is useful for checking a build, and the URLs are unguessable and short-lived — but if
+those ever turn up in Search Console, `"preview_urls": false` is the switch.
+
 **Changing URL shape is an eight-place edit.** The site moved to extensionless URLs on
 16 Aug 2026. Flipping `html_handling` alone would have produced exactly the broken state that
 ruled Pages out a day earlier: every internal link taking a redirect hop, and every canonical

@@ -16,6 +16,20 @@
   "name": "indianinprague",
   "compatibility_date": "2026-08-15",
 
+  // The workers.dev subdomain stays OFF, and this line is the only thing that keeps it off.
+  //
+  // It defaults to true when the key is absent, so every deploy was re-enabling
+  // indianinprague.0jpysh.workers.dev — including deploys triggered from GitHub, which is
+  // why switching it off in the dashboard never stuck. The dashboard toggle is state the
+  // next deploy overwrites; this file is the state the deploy is made from.
+  //
+  // It matters beyond tidiness: that subdomain serves the ENTIRE site, byte for byte, on a
+  // second hostname. Two full copies of every page, both crawlable, with canonical tags,
+  // og:url and the sitemap all pointing at indianinprague.jains.es — which is the textbook
+  // shape of a duplicate-content problem, and the copy has no robots.txt of its own to
+  // exclude it.
+  "workers_dev": false,
+
   "assets": {
     "directory": "./dist",
 
