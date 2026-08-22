@@ -275,7 +275,19 @@ fi
 # custom domain binding and the edge, which is the whole surface that replaced nginx.
 if curl -fsS -o /dev/null "https://indianinprague.jains.es/wardrobe.html"; then
   echo "live origin healthy"
-  node scripts/indexnow.mjs
+
+  # NOT fatal, and the reason is a bug this caused. IndexNow is a NOTIFICATION: it tells
+  # Bing and Seznam that URLs changed, after a deploy that has already succeeded and been
+  # health-checked. It has been answering 403 UserForbiddedToAccessSite for days.
+  #
+  # Under `set -e` that non-zero exit aborted the script one line before the stamp — and the
+  # stamp is what makes --if-needed no-op for the rest of the day. So every hourly trigger
+  # found an unstamped date, ran a full sync, rebuilt every page, committed and deployed
+  # again: twenty-four publishes a day, each one green, none of them stamping. The site was
+  # never broken; the pipeline was retrying a ping.
+  #
+  # A notification failing must never cost a deploy. It is reported and the run continues.
+  node scripts/indexnow.mjs || echo "⚠ IndexNow submission failed — deploy is live, crawlers were not pinged" >&2
 
   # Stamped HERE and nowhere else: after the deploy is up and the live site has answered.
   # Anything that stops the run short leaves the stamp on yesterday, which is what turns

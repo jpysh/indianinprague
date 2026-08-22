@@ -146,6 +146,10 @@ const CATEGORIES = [
 const SPICE = ["sp-oli", "sp-mag", "sp-pap", "sp-saf", "sp-chi", "sp-plum"];
 const spice = (id) => SPICE[Number(id) % SPICE.length];
 
+// Prices below €2 keep their cents. Above that the cents are noise, and whole euros are
+// what this shop has always shown. See build-listings.mjs for the measurement.
+const money = (n) => (n < 2 ? Number(n).toFixed(2) : String(Math.round(n)));
+
 // The site serves extensionless URLs (see wrangler.jsonc html_handling). Every URL this
 // file writes — canonical, og:url, tiles, breadcrumbs — goes through here, so the .html
 // form exists only as a filename on disk and never as a link. index.html is the site root.
@@ -278,16 +282,21 @@ const wa = (body) => WA + encodeURIComponent(body);
 // already no. "Do you have anything similar" is the only useful thing left to ask, and it
 // is often a real sale.
 function askUrl(item) {
+  // Out of stock asks a different question, and it is a question with a real answer:
+  // the vendor restocks, so "when" is answerable in a way "is this available" is not.
+  if (item.vendor && !item.sold && item.inStock === false) {
+    return wa(`Hi! Is "${item.title}" coming back in stock? — ref ${item.id}`);
+  }
   // Vendor stock: no listing URL to quote — these are not linked out to, and the customer
   // is buying from this site. The SKU is what makes the message answerable instead.
   if (item.vendor) {
-    const price = item.priceEur == null ? "" : ` (€${item.priceEur})`;
+    const price = item.priceEur == null ? "" : ` (€${money(item.priceEur)})`;
     return wa(`Hi! I'd like to order "${item.title}"${price} — ref ${item.id}`);
   }
   if (item.sold) {
     return wa(`Hi! "${item.title}" has sold — do you have anything similar?`);
   }
-  const price = item.priceEur == null ? "" : ` (€${item.priceEur})`;
+  const price = item.priceEur == null ? "" : ` (€${money(item.priceEur)})`;
   return wa(`Hi! I'd like to ask about "${item.title}"${price} — ${item.urls[STOREFRONT]}`);
 }
 
@@ -296,6 +305,11 @@ function askUrl(item) {
 // page is still correct and complete with JavaScript switched off.
 function card(item, manifest, eager, showCat) {
   const sold = !!item.sold;
+  // Three states, not two. Sold means it is gone; out of stock means the vendor has run
+  // out and it is expected back. They share a visual language deliberately — both mean
+  // "you cannot buy this today", and a shopper scanning a grid of 100 cards needs that
+  // readable at a glance rather than spelled out in a badge they have to stop and read.
+  const oos = !sold && item.vendor && item.inStock === false;
   const caption = showCat ? label(item.category) : item.brand;
   const tags = [item.condition?.en, item.color?.en, item.sizeGroup].filter(Boolean).join(" · ");
 
@@ -314,7 +328,7 @@ function card(item, manifest, eager, showCat) {
     ` data-cat="${esc(item.category)}" data-size="${esc(item.sizeGroup || "")}"` +
     ` data-color="${esc(item.color?.en || "")}" data-brand="${esc(item.brand || "")}"` +
     ` data-cond="${esc(item.condition?.en || "")}" data-price="${item.priceCzk ?? ""}"` +
-    ` data-fav="${item.favourites || 0}" data-avail="${sold ? "sold" : "available"}"` +
+    ` data-fav="${item.favourites || 0}" data-avail="${sold ? "sold" : oos ? "oos" : "available"}"` +
     ` data-title="${esc((item.title || "").toLowerCase())}"` +
     (shots ? ` data-shots="${esc(shots)}"` : "");
 
@@ -326,7 +340,7 @@ function card(item, manifest, eager, showCat) {
   // listing, and inventing one would misstate what the piece actually fetched.
   const price = item.priceEur == null
     ? `<span class="pr sold-pr">Sold</span>`
-    : `<span class="pr">€${item.priceEur}</span>`;
+    : `<span class="pr">€${money(item.priceEur)}</span>`;
 
   // Where a piece comes from, on the photograph. Secondhand pieces from the closet and new
   // retail stock shipped from Prague are different propositions, and a buyer has to be able
@@ -338,7 +352,7 @@ function card(item, manifest, eager, showCat) {
   const badges =
     (sold ? `<span class="cap flag sold-flag">Sold</span>` : "") +
     (item.reserved ? `<span class="cap flag res">Reserved</span>` : "") +
-    (item.vendor && !item.inStock ? `<span class="cap flag res">Out of stock</span>` : "") +
+    (oos ? `<span class="cap flag oos-flag">Out of stock</span>` : "") +
     vendorBadge;
 
   const inner =
@@ -381,10 +395,10 @@ function card(item, manifest, eager, showCat) {
   // decorate a link whose label already says what it does. The green carries the recognition.
   const ask =
     `<a class="ask" href="${esc(askUrl(item))}" target="_blank" rel="noopener">` +
-    `${item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
+    `${oos ? "Notify when back" : item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
     `<span class="vh"> — opens WhatsApp in a new tab</span></a>`;
 
-  return `<div class="piece${sold ? " sold" : ""}"${data}>${inner}${go}${ask}</div>`;
+  return `<div class="piece${sold ? " sold" : ""}${oos ? " oos" : ""}"${data}>${inner}${go}${ask}</div>`;
 }
 
 // The first three cards are the ones above the fold on a desktop grid, so they load eagerly
@@ -507,14 +521,32 @@ function toolbar(items) {
   const bands = PRICE_BANDS.filter((b) =>
     items.some((i) => i.priceEur != null && i.priceEur >= b.min && i.priceEur < b.max));
   const soldCount = items.filter((i) => i.sold).length;
+  const oosCount = items.filter((i) => !i.sold && i.vendor && i.inStock === false).length;
 
-  // Availability is a mode, not a value — you are browsing what you can buy, or looking at
-  // what sold. A segmented control says that; a fourth dropdown would bury it.
-  const avail = soldCount && soldCount < items.length ? `<div class="sb-seg" role="group" aria-label="Availability">
-      <button type="button" data-avail="" aria-pressed="true">All ${items.length}</button>
-      <button type="button" data-avail="available" aria-pressed="false">Available ${items.length - soldCount}</button>
-      <button type="button" data-avail="sold" aria-pressed="false">Sold ${soldCount}</button>
-    </div>` : "";
+  // Availability was a three-way segmented control — All / Available / Sold — and that was
+  // the right shape while "not available" had exactly one meaning. It has three now: in
+  // stock, out of stock at the vendor, and sold. Four segments is past what fits at this
+  // width on a phone without wrapping into a second row, and a wrapped segmented control
+  // stops reading as one control.
+  //
+  // So it becomes a select, and sits with the search box rather than among the refinements:
+  // it answers "can I buy this", which is a different question from "which colour" and is
+  // asked first. The counts stay in the labels — a control that offers a filter leading to
+  // nothing is a control that wastes a click.
+  //
+  // Sold spans both catalogues on purpose. A shopper does not care which of them a thing
+  // came from, and splitting the view by vendor would make them ask.
+  const availOpts = [
+    ["", `All ${items.length}`],
+    ["available", `In stock ${items.length - soldCount - oosCount}`],
+    oosCount ? ["oos", `Out of stock ${oosCount}`] : null,
+    soldCount ? ["sold", `Sold ${soldCount}`] : null,
+  ].filter(Boolean);
+
+  const avail = availOpts.length > 2 ? `<label class="sb-avail"><span class="vh">Availability</span>
+      <select id="sb-avail" data-avail-select>
+        ${availOpts.map(([v, l]) => `<option value="${v}">${esc(l)}</option>`).join("\n        ")}
+      </select></label>` : "";
 
   return `<div class="shop-bar" data-shop-bar hidden>
     <div class="sb-top">
@@ -777,7 +809,9 @@ ${markNav(ch.header, "wardrobe")}
 <section><div class="wrap sec-inner">
   ${catNav(cat.name, counts)}
   ${subChips(cat, shelfItems || items, sub)}
-  ${toolbar(items)}
+  ${/* The whole shelf, not this page of it. The filters search the whole shelf, so a
+        count taken from the hundred cards on screen would promise "Out of stock 13" and
+        then find 107. */ ""}${toolbar(shelfItems || items)}
 
   ${grid(items, manifest, cat.name === "Everything", allUrl)}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>

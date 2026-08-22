@@ -44,7 +44,14 @@ const en = (t) => (t ? cache[t] ?? t : "");
 // book is Prabhupada's "Coming Back". The original text is what a buyer searching for that
 // edition will type. Descriptions are still translated; only the title is left alone.
 const title = (p, shelf) => (shelf === "Books" ? p.titleCs : en(p.titleCs));
-const eur = (czk) => Math.round(czk / rate.czkPerEur);
+// Whole euros read cleanly and are what the closet has always shown — but this catalogue
+// reaches down to 10 CZK, where rounding to the nearest euro turns a 41-cent bracelet into
+// "€0" and a 74-item band between 50c and €1.49 all into "€1". Under €2 the cents are the
+// price; above it they are noise.
+const eur = (czk) => {
+  const exact = czk / rate.czkPerEur;
+  return exact < 2 ? Math.round(exact * 100) / 100 : Math.round(exact);
+};
 
 const COLS = [
   "sku", "list", "shelf", "subcategory", "title", "description", "brand",
@@ -66,9 +73,17 @@ const rows = raw.map((p) => {
   const inStock = p.availability === "InStock";
   return [
     p.sku,
-    // In stock at Govinda means live here. An item they have pulled is not something we
-    // can sell, so it goes out of the shop on the same signal, without waiting for a human.
-    o.list ?? (inStock ? "yes" : "no"),
+    // In stock at Govinda means live here — including items they have run out of, which
+    // are published as out of stock rather than hidden, so a shopper sees the range rather
+    // than a shelf that quietly shrinks.
+    //
+    // Two things are never listed, on separate grounds:
+    //   E-books   — free downloads. There is no margin on one, no fulfilment, and no reason
+    //               for a buyer to come through us rather than to Govinda directly.
+    //   €0        — the safety net for a free item filed anywhere else. One bracelet is
+    //               priced at nothing, which is either an error at Govinda or a thing we
+    //               would never want auto-listed at 15% of zero.
+    o.list ?? (cat.sub === "E-books" || !Number(p.priceCzk) ? "no" : "yes"),
     shelf,
     o.subcategory ?? cat.sub ?? "",
     o.title ?? title(p, shelf),
@@ -77,7 +92,7 @@ const rows = raw.map((p) => {
     p.priceCzk,
     vendorEur,
     markup,
-    o.price_eur ?? Math.round((p.priceCzk * (1 + markup / 100)) / rate.czkPerEur),
+    o.price_eur ?? eur(p.priceCzk * (1 + markup / 100)),
     inStock ? "in stock" : "out of stock",
     o.ships_from ?? SHIPS_FROM,
     o.delivery ?? DELIVERY,

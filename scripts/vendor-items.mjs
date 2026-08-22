@@ -7,6 +7,7 @@ import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 
 const CSV = "vendors/govinda/data/listings.csv";
+const OVERRIDES = "vendors/govinda/data/overrides.json";
 
 // Enough CSV for a file this pipeline writes itself: quoted fields with embedded commas
 // and doubled quotes, which is all build-listings.mjs ever emits.
@@ -31,6 +32,10 @@ function rows(text) {
 export function vendorItems(root) {
   const file = path.join(root, CSV);
   if (!existsSync(file)) return [];
+  // Your decisions, keyed by SKU. sold is the one the vendor cannot tell us: their stock
+  // level says whether THEY have it, never whether we have promised it to someone.
+  const ovFile = path.join(root, OVERRIDES);
+  const overrides = existsSync(ovFile) ? JSON.parse(readFileSync(ovFile, "utf8")) : {};
   const [head, ...body] = rows(readFileSync(file, "utf8").replace(/^﻿/, ""));
   const col = Object.fromEntries(head.map((h, i) => [h, i]));
 
@@ -42,6 +47,7 @@ export function vendorItems(root) {
         .split(" | ")
         .filter(Boolean)
         .map((_, n) => `images/govinda-${sku}-${n + 1}.jpg`);
+      const o = overrides[sku] || {};
       return {
         id: `govinda-${sku}`,
         vendor: "Govinda",
@@ -50,8 +56,12 @@ export function vendorItems(root) {
         // Priced in euro only: this is retail stock, not a koruna listing converted for
         // display, and the CZK figure is the vendor's, not ours. data-price wants a number
         // for the range filter, so it carries the euro figure.
-        priceEur: Number(r[col.price_eur]) || null,
-        priceCzk: Number(r[col.price_eur]) || null,
+        // Number(x) || null turns a legitimate 0 into null, and card() renders a null
+        // price as the word "Sold" — the convention borrowed from Vinted, where a sold
+        // listing has its price stripped. Eighteen free e-books were therefore advertised
+        // as sold. A blank cell is unknown; a zero is a price.
+        priceEur: r[col.price_eur] === "" ? null : Number(r[col.price_eur]),
+        priceCzk: r[col.price_eur] === "" ? null : Number(r[col.price_eur]),
         brand: r[col.brand],
         category: r[col.shelf],
         subcategory: r[col.subcategory],
@@ -62,7 +72,11 @@ export function vendorItems(root) {
         size: "", sizeGroup: "",
         favourites: 0,
         reserved: false,
-        sold: false,
+        // A manual mark, and it outranks the vendor's stock level in one direction only:
+        // restocking does not un-sell something we have already promised. Clearing it is a
+        // decision, not a side effect of a sync.
+        sold: !!o.sold,
+        soldAt: o.sold || "",
         inStock: r[col.availability] === "in stock",
         delivery: r[col.delivery],
         photo: photos[0] || null,
