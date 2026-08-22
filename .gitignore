@@ -28,3 +28,6 @@ vendors/govinda/*.log
 # Raw scrape output: rewritten wholesale every run, and large. data/translations.json is
 # NOT ignored — it is paid DeepL output and re-fetching it costs money.
 vendors/govinda/data/products-raw.json
+# The previous sync's state, kept only to diff against the next one. Regenerated every run;
+# data/changes.json is derived from it and is worth committing, this is not.
+vendors/govinda/data/snapshot.json

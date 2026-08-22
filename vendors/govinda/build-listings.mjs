@@ -103,4 +103,51 @@ const rows = raw.map((p) => {
 });
 
 writeFileSync(OUT, "﻿" + [COLS.join(","), ...rows].join("\n") + "\n");
+
+/* ------------------------------------------------------------------ what changed ---- */
+
+// What moved since the last run, written for the dashboard to read.
+//
+// The sync has both states in hand at exactly this moment and has been throwing the old one
+// away. Without it the weekly check is a scan of 1,483 rows looking for nothing in
+// particular; with it, it is "11 new, 4 price changes, 6 gone" and a two-minute review.
+//
+// Snapshot rather than diffing the CSV: the CSV is a rendering, and comparing renderings
+// would report a change every time a column was added or a rate moved.
+const SNAP = "vendors/govinda/data/snapshot.json";
+const CHANGES = "vendors/govinda/data/changes.json";
+
+const now = Object.fromEntries(raw.map((p) => [p.sku, {
+  title: en(p.titleCs),
+  priceCzk: p.priceCzk,
+  availability: p.availability,
+}]));
+
+const prev = existsSync(SNAP) ? JSON.parse(readFileSync(SNAP, "utf8")) : null;
+const changes = { at: new Date().toISOString(), first: !prev, added: [], gone: [], price: [], stock: [] };
+
+if (prev) {
+  for (const [sku, p] of Object.entries(now)) {
+    const was = prev[sku];
+    if (!was) { changes.added.push({ sku, title: p.title }); continue; }
+    if (was.priceCzk !== p.priceCzk) {
+      changes.price.push({ sku, title: p.title, from: was.priceCzk, to: p.priceCzk });
+    }
+    if (was.availability !== p.availability) {
+      changes.stock.push({ sku, title: p.title, from: was.availability, to: p.availability });
+    }
+  }
+  // Gone from their catalogue entirely — not merely out of stock, which is the `stock`
+  // list above. This is the one that needs a person: an item we may have promised, that
+  // the vendor no longer sells at all.
+  for (const sku of Object.keys(prev)) if (!now[sku]) changes.gone.push({ sku, title: prev[sku].title });
+}
+
+writeFileSync(CHANGES, JSON.stringify(changes, null, 2) + "\n");
+writeFileSync(SNAP, JSON.stringify(now, null, 2) + "\n");
+console.error(
+  prev
+    ? `changes: ${changes.added.length} new, ${changes.price.length} price, ${changes.stock.length} stock, ${changes.gone.length} gone`
+    : "changes: first snapshot, nothing to compare",
+);
 console.error(`wrote ${OUT}: ${rows.length} rows, rate ${rate.czkPerEur} CZK/EUR (${rate.fetched})`);
