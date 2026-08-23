@@ -837,6 +837,50 @@
       "featured": false,
       "hidden": false,
       "soldAt": "2026-08-21"
+    },
+    {
+      "id": "9602824787",
+      "title": "learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet",
+      "priceCzk": 198,
+      "priceEur": 8,
+      "brand": "",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Good"
+      },
+      "color": {
+        "en": ""
+      },
+      "category": "Books",
+      "vintedCategory": "Books & Media Fiction",
+      "crumbs": [
+        {
+          "id": 2309,
+          "name": "Books & Media"
+        },
+        {
+          "id": 2312,
+          "name": "Books"
+        },
+        {
+          "id": 2319,
+          "name": "Fiction"
+        }
+      ],
+      "description": "Written when Neruda was only nineteen, this collection of sensual, aching love poetry launched him onto the world stage and remains one of the most celebrated poetry collections ever published. Neruda went on to win the Nobel Prize in Literature, and this book is still considered one of the most romantic and intensely personal works of poetry ever written. This Penguin Classics Deluxe Edition includes illustrations by Pablo Picasso. 4.19 stars on Goodreads. #poetry #pabloneruda #lovepoems",
+      "photo": "images/vinted-9602824787-1.jpg",
+      "photos": [
+        "images/vinted-9602824787-1.jpg",
+        "images/vinted-9602824787-2.jpg",
+        "images/vinted-9602824787-3.jpg"
+      ],
+      "favourites": 7,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-23"
     }
   ]
 }

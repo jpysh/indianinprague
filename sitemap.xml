@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://indianinprague.jains.es/</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -99,13 +99,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/spirituality</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -126,13 +126,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/how-it-works</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/annamalai</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -151,7 +151,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/contemporary-indian-wear</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -161,7 +161,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/dosa-dosa</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -180,13 +180,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/hello-world</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/indelicious</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -205,7 +205,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/palo-verde</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -220,7 +220,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/pastva</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -239,13 +239,9 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/10</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2411-1-400.jpg?v=f1a9dc68</image:loc>
-      <image:title>Kantimala, 1st series, with Nrsimhadéva (finer beard)</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2410-1-400.jpg?v=51d30c49</image:loc>
       <image:title>Kantimála 1st series tulasi with large OM relief</image:title>
@@ -290,16 +286,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2389-1-400.jpg?v=e15ea12c</image:loc>
       <image:title>3D image of Krishna and Radha amongst the gopis</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2385-1-400.jpg?v=4620388b</image:loc>
+      <image:title>3D image of Prabhupada</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/11</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2114-1-400.jpg?v=926d6486</image:loc>
-      <image:title>Kantimála, 1st series, silver with turquoise</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2110-1-400.jpg?v=f6853809</image:loc>
       <image:title>Kantimála, 1st series, silver with a blue stone</image:title>
@@ -344,16 +340,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2080-1-400.jpg?v=840e87f9</image:loc>
       <image:title>Knossos pine</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2068-1-400.jpg?v=858c73f6</image:loc>
+      <image:title>Gópínáth – biscuits made from dates, carob and oat flakes, 95 g</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/12</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1804-1-400.jpg?v=a5f42558</image:loc>
-      <image:title>Patchwork single bedspread</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1790-1-400.jpg?v=21cb277b</image:loc>
       <image:title>A 1-row Kantimála with blue beads on 3 rows of tulas</image:title>
@@ -398,16 +394,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1760-1-400.jpg?v=ffbced75</image:loc>
       <image:title>Women’s white embroidered kurta, long-sleeved</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1758-1-400.jpg?v=1a07afa7</image:loc>
+      <image:title>A skirt and blouse set in embroidered chiffon for girls and petite women</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/13</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1339-1-400.jpg?v=563bce47</image:loc>
-      <image:title>Boys’ set featuring elephants and hunters, sizes 28 and 32</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1338-1-400.jpg?v=0c0ff1b0</image:loc>
       <image:title>Boys’ set featuring elephants and hunters, size 16</image:title>
@@ -452,16 +448,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1319-1-400.jpg?v=19c91130</image:loc>
       <image:title>Hanging elephants</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1317-1-400.jpg?v=26a4d464</image:loc>
+      <image:title>Small red Rajasthani box</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/14</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1033-1-400.jpg?v=9752df9c</image:loc>
-      <image:title>Oval Prabhupada sticker</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-995-1-400.jpg?v=ed1e3249</image:loc>
       <image:title>Nauka o seberealizaci</image:title>
@@ -506,16 +502,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-968-1-400.jpg?v=d0dd0da2</image:loc>
       <image:title>Set of 4 twisted bracelets</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-967-1-400.jpg?v=9c3ef925</image:loc>
+      <image:title>Set of 18 bracelets, iridescent finish, 4 colours</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/15</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-592-1-400.jpg?v=dae594a1</image:loc>
-      <image:title>Ground coriander 35 g</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-591-1-400.jpg?v=a8eb7cc2</image:loc>
       <image:title>Roman caraway 30 g</image:title>
@@ -560,16 +556,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-552-1-400.jpg?v=8bd20467</image:loc>
       <image:title>Knossos Lemon</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-550-1-400.jpg?v=43205490</image:loc>
+      <image:title>Knossos Honey</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/16</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3855-1-400.jpg?v=9e648f7a</image:loc>
-      <image:title>Colourful Butterfly Stick-on Tattoos IX (2 types)</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3851-1-400.jpg?v=6b138178</image:loc>
       <image:title>Pavitram – the mala of Nrsimhadéva</image:title>
@@ -614,16 +610,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3595-1-400.jpg?v=6a4f3d23</image:loc>
       <image:title>Sheet for hay bales, 210 x 100 cm</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3522-1-400.jpg?v=8196cab5</image:loc>
+      <image:title>Unadorned wooden stick holder, light/dark</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/17</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-813-1-400.jpg?v=3d51cfc5</image:loc>
-      <image:title>Men’s blue and grey checked trousers</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-773-1-400.jpg?v=ea304624</image:loc>
       <image:title>Japa bag: Jagannath, Subhadra, Baladev</image:title>
@@ -657,6 +653,10 @@
       <image:title>Bestseller Albert Camus The Stranger Nobel Prize Winner Vintage International Edition</image:title>
     </image:image>
     <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
+      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602693296-1-400.jpg?v=43e776bc</image:loc>
       <image:title>Haruki Murakami Norwegian Wood Multi Million Copy Bestseller</image:title>
     </image:image>
@@ -671,13 +671,9 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9367213932-1-400.jpg?v=e0dceee4</image:loc>
-      <image:title>Zara Jumpsuit White Cotton Summer | Size</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9364938382-1-400.jpg?v=f5b73fc0</image:loc>
       <image:title>Indian Cotton Hand-Stitched Summer Long Maxi Dress | Size M</image:title>
@@ -722,16 +718,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9339656344-1-400.jpg?v=d7c61f8e</image:loc>
       <image:title>Hand Block Printed Indian Summer Cotton Tiered Midi Dress – Size M</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9331197768-1-400.jpg?v=e6b47541</image:loc>
+      <image:title>Mango Gold Metallic Cami Top | Size M</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/3</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3832-1-400.jpg?v=c05bc16b</image:loc>
-      <image:title>Japa bag, embroidered in burgundy with the Maha Mantra, sizes M and L</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3831-1-400.jpg?v=061c90c7</image:loc>
       <image:title>Brown embroidered Nrsimhadév japa bag, sizes M, L</image:title>
@@ -776,16 +772,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3821-1-400.jpg?v=c4002a01</image:loc>
       <image:title>Yellow Krishna japa bag with gopis</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3819-1-400.jpg?v=6e035ae5</image:loc>
+      <image:title>White Krishna japa bag with a flute</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/4</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3685-1-400.jpg?v=f43b6910</image:loc>
-      <image:title>Jagannath round sticker S/L</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3684-1-400.jpg?v=80ab0418</image:loc>
       <image:title>Jagannath sticker with a flag</image:title>
@@ -830,16 +826,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3674-1-400.jpg?v=4c0ad3e2</image:loc>
       <image:title>Special Nag Champa Incense Sticks</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3672-1-400.jpg?v=4c0ad3e2</image:loc>
+      <image:title>Sarasvati incense sticks</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/5</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3543-1-400.jpg?v=d3268d74</image:loc>
-      <image:title>Radha Krishna 7 x 5 cm, 4 designs</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3542-1-400.jpg?v=b1c2f8cc</image:loc>
       <image:title>Gaura Nitai 7 x 5 cm</image:title>
@@ -884,16 +880,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3528-1-400.jpg?v=b8c61dee</image:loc>
       <image:title>OM pendant – glass and silver</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3526-1-400.jpg?v=4ec440ca</image:loc>
+      <image:title>Star Earrings – Wood</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/6</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3356-1-400.jpg?v=47ebd608</image:loc>
-      <image:title>Picture of Krishna and Balarama, 7 x 5 cm</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3354-1-400.jpg?v=8544aeb3</image:loc>
       <image:title>A picture of Prabhupada, 7 x 5 cm, on a blue background</image:title>
@@ -938,16 +934,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3339-1-400.jpg?v=d3c8025a</image:loc>
       <image:title>Kantimála, 1st series, round, large</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3338-1-400.jpg?v=01e5067e</image:loc>
+      <image:title>Bindi, size 8, burgundy</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/7</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3181-1-400.jpg?v=4c638320</image:loc>
-      <image:title>Solid-coloured dhotis with no pattern</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3179-1-400.jpg?v=914f6804</image:loc>
       <image:title>Two strips of dhoti, a border of thin solid strips</image:title>
@@ -992,16 +988,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3153-1-400.jpg?v=e45a0d0b</image:loc>
       <image:title>Carved elephant, 6.5 cm</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3150-1-400.jpg?v=2c61e5d1</image:loc>
+      <image:title>Prayer bead counter in a brown bag, with carved beads</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/8</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2947-1-400.jpg?v=94b82bcd</image:loc>
-      <image:title>CD O Kralevici Prahládovi (2. díl ze Š. Bhágavatamu)</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2945-1-400.jpg?v=1d1277e0</image:loc>
       <image:title>CD Krišna Avatár (audiokniha 2 CD)</image:title>
@@ -1046,16 +1042,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2919-1-400.jpg?v=13822317</image:loc>
       <image:title>Hand-painted painting on canvas</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2918-1-400.jpg?v=4259e7b0</image:loc>
+      <image:title>Hand-painted painting on canvas</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/9</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2711-1-400.jpg?v=de1b5151</image:loc>
-      <image:title>Men’s checked shirt, brick red, L</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2709-1-400.jpg?v=f1435601</image:loc>
       <image:title>Women’s purple kurta, 3/4 sleeves, M/L</image:title>
@@ -1100,16 +1096,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2687-1-400.jpg?v=a2329b35</image:loc>
       <image:title>Bindi/stick-on tattoo, circular, single colour, diameter 3.8 cm</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2686-1-400.jpg?v=a5ebb18b</image:loc>
+      <image:title>Colourful, glittery Bindi dots</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-138-1-400.jpg?v=551621c1</image:loc>
-      <image:title>Vjása-púdža 2002</image:title>
-    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-137-1-400.jpg?v=033e46c7</image:loc>
       <image:title>Vjása-púdža 2001</image:title>
@@ -1154,10 +1150,14 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602849104-1-400.jpg?v=02241f38</image:loc>
       <image:title>Bestseller Albert Camus The Stranger Nobel Prize Winner Vintage International Edition</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
+      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/fiction</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1179,10 +1179,6 @@
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602838102-1-400.jpg?v=d169063e</image:loc>
       <image:title>mind bending Natsume Soseki The Gate NYRB Classics Introduction by Pico Iyer</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
-      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
     </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602725968-1-400.jpg?v=5d62974e</image:loc>
@@ -1208,10 +1204,14 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602442603-1-400.jpg?v=553abb05</image:loc>
       <image:title>Ayn Rand The Fountainhead Signet Centennial Edition Instant Classic</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9419147643-1-400.jpg?v=7002b642</image:loc>
+      <image:title>brand new - Christopher Bollen Havoc Deliciously Nasty Psychological Thriller New York Times Pick</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/foreign-languages</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1265,7 +1265,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/non-fiction</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1319,7 +1319,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/srila-prabhupada</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1373,7 +1373,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1405,10 +1405,6 @@
       <image:title>mind bending Natsume Soseki The Gate NYRB Classics Introduction by Pico Iyer</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
-      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
-    </image:image>
-    <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602788500-1-400.jpg?v=ef7fc5b6</image:loc>
       <image:title>Social Science Benedict Anderson Imagined Communities Origins and Spread of Nationalism</image:title>
     </image:image>
@@ -1424,10 +1420,14 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602725968-1-400.jpg?v=5d62974e</image:loc>
       <image:title>read before you die Rumi The Essential Rumi Coleman Barks New Expanded Edition Bestselling Poetry</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602681438-1-400.jpg?v=c56d81bb</image:loc>
+      <image:title>Best book of 2021 Elizabeth Kolbert Under a White Sky Pulitzer Prize Winning Author</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1481,7 +1481,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/3</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1535,7 +1535,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/4</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1589,7 +1589,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/5</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1643,7 +1643,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/bags</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1697,7 +1697,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/childrens-clothing</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1751,7 +1751,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1773,7 +1773,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1827,7 +1827,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/summer-dresses</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1881,7 +1881,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/womens-clothing/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -1935,7 +1935,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/womens-clothing</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1989,7 +1989,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2043,7 +2043,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/food/spices</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2097,7 +2097,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/food</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2151,7 +2151,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -2205,7 +2205,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/bedding-and-quilts</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2247,7 +2247,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/cushions-and-throws</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2301,7 +2301,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/decorative-accessories</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2355,7 +2355,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/storage-and-baskets</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2409,7 +2409,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/table-and-dining</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2463,7 +2463,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2517,7 +2517,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -2571,7 +2571,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/3</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -2625,7 +2625,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -2635,7 +2635,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2689,7 +2689,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bracelets</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2743,7 +2743,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/earrings</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2797,7 +2797,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/necklaces</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2851,7 +2851,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/other-adornments</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2905,7 +2905,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/pendants</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2959,7 +2959,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3013,7 +3013,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/dolls-and-childrens-gifts</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3067,7 +3067,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/greetings-cards</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3121,7 +3121,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/key-rings</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3175,7 +3175,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/notebooks</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3213,7 +3213,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3267,7 +3267,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -3321,7 +3321,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/3</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -3375,7 +3375,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/4</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -3429,7 +3429,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/5</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -3483,7 +3483,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/bead-counters</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3537,7 +3537,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/deities</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3591,7 +3591,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/devotional-pictures</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3645,7 +3645,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/incense-sticks</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3699,7 +3699,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/japa-bead-bags</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3753,7 +3753,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/kanthi-malas/2</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -3791,7 +3791,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/kanthi-malas</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3845,7 +3845,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/malas-and-clickers</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3899,7 +3899,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/stickers-and-posters</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3953,7 +3953,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/worship-items</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4007,7 +4007,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4061,7 +4061,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/sold</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4079,6 +4079,10 @@
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602849104-1-400.jpg?v=02241f38</image:loc>
       <image:title>Bestseller Albert Camus The Stranger Nobel Prize Winner Vintage International Edition</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
+      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
     </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602693296-1-400.jpg?v=43e776bc</image:loc>
@@ -4100,14 +4104,10 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9596865736-1-400.jpg?v=9339dbb7</image:loc>
       <image:title>Indian Khadi Handwoven Cotton Linen Boho Tunic Summer Outfit | Coral Pink | Size L</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9583484807-1-400.jpg?v=a180e6d2</image:loc>
-      <image:title>Indian Top Brand Jaypore Summer Cotton Ethnic Tunic Outfit | Size M</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/oil-based-perfumes</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4161,7 +4161,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/shampoos-and-hair-dyes</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4215,7 +4215,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/soaps</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4269,7 +4269,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
