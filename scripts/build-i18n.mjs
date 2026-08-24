@@ -85,15 +85,46 @@ const langUrl = (lang, url) => (lang === DEFAULT_LANG ? url : `/${lang}${url ===
 // No flags: a flag is a country, and Spanish is not Spain. Each language is named in
 // ITSELF — someone who cannot read English cannot find "Czech" in an English list.
 function switcher(lang, url) {
-  const here = LANGS[lang]?.name || "English";
+  const here = lang === DEFAULT_LANG ? "English" : LANGS[lang].name;
+  const code = (lang === DEFAULT_LANG ? "en" : lang).toUpperCase();
+
+  // A globe, not a flag. Flags are countries — Spanish is not Spain, German is not only
+  // Germany — and this is the one pictogram for "language" that a visitor from anywhere
+  // recognises. Inline rather than a font or an image so it inherits currentColor and costs
+  // no request.
+  const globe =
+    '<svg class="lang-globe" viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false" ' +
+    'fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
+    '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>' +
+    '<path d="M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18"/></svg>';
+
+  // The caret is what says "this opens" rather than "this navigates". Without it a word
+  // sitting in a header reads as one more nav link, which is the failure this replaces.
+  const caret =
+    '<svg class="lang-caret" viewBox="0 0 24 24" width="11" height="11" aria-hidden="true" focusable="false" ' +
+    'fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' +
+    '<path d="M6 9l6 6 6-6"/></svg>';
+
+  // Both labels are always in the markup and CSS picks one: the full name on a laptop, the
+  // code on a phone, where the header has three other things to fit inside 375px. Doing it
+  // in CSS rather than by user agent means it responds to the actual width available.
+  const label = `<span class="lang-name">${here}</span><span class="lang-code">${code}</span>`;
+
+  // The CURRENT language is listed too, highlighted rather than hidden. A menu that omits
+  // where you are makes you infer it from the button; showing all eight with one lit is a
+  // model you read in one glance, and the list stops changing length as you move between
+  // languages. It is a <span>, not an <a>: a link to the page you are already on is a
+  // dead control, and screen readers announce aria-current as "current page" anyway.
   const options = [[DEFAULT_LANG, "English"], ...CODES.map((c) => [c, LANGS[c].name])]
-    .filter(([code]) => code !== lang)
-    .map(([code, name]) =>
-      `<a href="${langUrl(code, url)}" hreflang="${code}" lang="${code}">${name}</a>`)
+    .map(([c, name]) =>
+      c === lang
+        ? `<span class="lang-here" aria-current="true" lang="${c}">${name}</span>`
+        : `<a href="${langUrl(c, url)}" hreflang="${c}" lang="${c}">${name}</a>`)
     .join("");
+
   return (
-    `<details class="lang" translate="no"><summary aria-label="Language: ${here}. Choose another." title="${here}">` +
-    `<span aria-hidden="true">${(lang === DEFAULT_LANG ? "en" : lang).toUpperCase()}</span></summary>` +
+    `<details class="lang" translate="no"><summary aria-label="Language: ${here}. Choose another.">` +
+    `${globe}${label}${caret}</summary>` +
     `<div class="lang-menu">${options}</div></details>`
   );
 }

@@ -850,35 +850,78 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
  * navigation is also a well-known screen-reader annoyance — it announces as a form control
  * and fires on arrow-key browsing.
  *
+ * It sits OUTSIDE .bar-ico, on the left of that hairline. The divider means "site links to
+ * the left, ways to reach me on the right", and a language control is a site control — it
+ * spent its first day grouped with Vinted and WhatsApp, which is a category error.
+ *
  * No flags anywhere. A flag is a country and a language is not: Spanish is not Spain, and
  * German is not only Germany. Each language is named in ITSELF, because a visitor who
  * cannot read English cannot find "Czech" in an English list. */
-.lang{position:relative;flex:0 0 auto}
+.lang{position:relative;flex:0 0 auto;margin-left:14px}
 .lang>summary{
   list-style:none;cursor:pointer;
-  opacity:.8;color:var(--bone);
-  min-width:31px;min-height:44px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:12px;letter-spacing:.08em;font-weight:600;
-  transition:opacity .15s,color .15s;
+  display:flex;align-items:center;gap:7px;
+  min-height:34px;padding:0 10px;
+  /* A pill, not a bare word. The border is what makes it read as a control rather than as
+     one more nav link, and the shading lifts it off the header bar without the volume of a
+     filled button — which would out-shout the nav this header exists to serve. */
+  border:1px solid rgba(242,239,230,.34);
+  border-radius:999px;
+  background:rgba(242,239,230,.06);
+  color:var(--bone);
+  font-size:var(--fs-2xs);letter-spacing:.04em;text-transform:uppercase;
+  /* Full opacity where nav.main sits at .68: the contrast IS the prominence. */
+  opacity:1;
+  transition:background .15s,border-color .15s,color .15s;
 }
 .lang>summary::-webkit-details-marker{display:none}
-.lang>summary:hover,.lang[open]>summary{opacity:1;color:var(--magenta)}
+.lang>summary:hover,.lang[open]>summary{
+  color:var(--magenta);
+  border-color:var(--magenta);
+  background:rgba(232,169,60,.12);
+}
+.lang-globe{flex:none;opacity:.9}
+.lang-caret{flex:none;opacity:.7;transition:transform .15s}
+.lang[open] .lang-caret{transform:rotate(180deg)}
+/* The code is the phone label; see the media query at the end of this block. */
+.lang-code{display:none}
+
 .lang-menu{
-  position:absolute;top:100%;right:0;z-index:60;
-  min-width:150px;padding:6px 0;
-  background:var(--ink,#1c1a17);
-  border:1px solid rgba(242,239,230,.16);border-radius:8px;
-  box-shadow:0 12px 28px rgba(0,0,0,.34);
+  position:absolute;top:calc(100% + 6px);right:0;z-index:60;
+  min-width:100%;padding:6px 0;
+  background:#221f1b;
+  border:1px solid rgba(242,239,230,.16);border-radius:10px;
+  box-shadow:0 14px 32px rgba(0,0,0,.4);
   display:flex;flex-direction:column;
 }
-.lang-menu a{
-  padding:9px 16px;color:var(--bone);opacity:.85;
+.lang-menu a,.lang-menu .lang-here{
+  padding:9px 18px;color:var(--bone);
   text-decoration:none;white-space:nowrap;font-size:14px;
 }
+.lang-menu a{opacity:.82}
 .lang-menu a:hover{opacity:1;color:var(--magenta);background:rgba(242,239,230,.06)}
+/* Where you are now. Highlighted rather than ticked: a checkmark is a second thing to
+   decode at 11px, while colour plus a marker rail reads before you have finished looking.
+   It is a <span>, so it does not respond to hover — deliberately, since there is nowhere
+   for it to take you. */
+.lang-menu .lang-here{
+  color:var(--magenta);opacity:1;font-weight:600;
+  background:rgba(232,169,60,.1);
+  box-shadow:inset 3px 0 0 var(--magenta);
+  cursor:default;
+}
+
+/* Phones. The full language name is what makes the control findable, but at 375px the bar
+   is already carrying a wordmark, three nav links and two icons — so the globe keeps the
+   meaning and the code says where you are, in about half the width. */
+@media (max-width:640px){
+  .lang{margin-left:auto}
+  .lang>summary{padding:0 9px;gap:5px}
+  .lang-name{display:none}
+  .lang-code{display:inline}
+}
 
 /* The menu hangs from the RIGHT edge of its button at every width. Anchoring it left
  * instead pushes it off a 375px screen — measured: it ended at 412px on a 375px viewport,
- * because .bar-ico sits hard against the right margin on a phone. Right-anchored, it grows
- * inwards, where there is always room. */
+ * because the control sits hard against the right margin on a phone. Right-anchored, it
+ * grows inwards, where there is always room. */
