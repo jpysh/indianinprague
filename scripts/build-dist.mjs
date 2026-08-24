@@ -328,13 +328,18 @@ for (const [file, html] of pageText) {
     // The anchor half. The Diaries now depends on these completely: every review and the
     // dispatch is reached by fragment, so a typo'd id is a broken link with no 404 to show it.
     if (!frag) continue;
+    // A trailing slash is part of the URL but never part of the filename: /de/ is served by
+    // de/index.html. Without stripping it here every anchor into a language homepage fell
+    // through to null and went unchecked — silently, which is the failure mode this whole
+    // block exists to remove.
+    const bare = target.replace(/\/$/, "");
     const targetFile =
       clean === "" ? file
-      : htmlFiles.includes(target.slice(1)) ? target.slice(1)
-      : htmlFiles.includes(target.slice(1) + ".html") ? target.slice(1) + ".html"
+      : htmlFiles.includes(bare.slice(1)) ? bare.slice(1)
+      : htmlFiles.includes(bare.slice(1) + ".html") ? bare.slice(1) + ".html"
       : target === "/" ? "index.html"
       // /diaries and /wardrobe are directory indexes, so their anchors live in <dir>/index.html.
-      : htmlFiles.includes(target.slice(1) + "/index.html") ? target.slice(1) + "/index.html"
+      : htmlFiles.includes(bare.slice(1) + "/index.html") ? bare.slice(1) + "/index.html"
       : null;
     if (!targetFile) continue; // a redirect target, or not an html page — nothing to check
     const body = pageText.get(targetFile);

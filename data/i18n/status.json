@@ -1,6 +1,6 @@
 {
   "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
-  "generated": "2026-08-24T11:00:00.457Z",
+  "generated": "2026-08-24T11:47:10.741Z",
   "sources": 3756,
   "exhausted": false,
   "languages": [
@@ -12,7 +12,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": []
     },
     {
@@ -23,7 +23,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": []
     },
     {
@@ -45,7 +45,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": []
     },
     {
@@ -56,7 +56,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": []
     },
     {
@@ -67,7 +67,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": []
     },
     {
@@ -78,7 +78,7 @@
       "missing": 0,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": null,
       "excluded": [
         "/^attr\\./"
       ]

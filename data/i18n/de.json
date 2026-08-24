@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T10:59:59.552Z",
-  "count": 3759,
+  "generated": "2026-08-24T11:47:10.733Z",
+  "count": 3760,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -15044,6 +15044,10 @@
     "text.ccccc0b9f647": {
       "text": "8 Personen haben diesen Artikel auf Vinted gespeichert",
       "src": "ccccc0b9f647"
+    },
+    "text.2bcf06e22b6d": {
+      "text": "Indisches Boho-Kleid | Langes Vintage-Kleid | Retro-Stil | Sommerkleid aus Baumwolle",
+      "src": "2bcf06e22b6d"
     }
   }
 }

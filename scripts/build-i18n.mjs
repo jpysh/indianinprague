@@ -75,7 +75,19 @@ const urlFor = (file) => {
   return bare === "index" ? "/" : "/" + bare;
 };
 
-const langUrl = (lang, url) => (lang === DEFAULT_LANG ? url : `/${lang}${url === "/" ? "" : url}`);
+// The URL a page answers on in a given language.
+//
+// The homepage keeps its trailing slash — /de/ and not /de — because /de is not the URL the
+// site actually serves. A language tree's homepage is de/index.html, a DIRECTORY INDEX, and
+// Cloudflare's html_handling redirects /de to /de/ with a 307 (measured on the live site,
+// 24 Aug 2026). /wardrobe returns 200 directly only because it is wardrobe.html, a file.
+//
+// Naming the pre-redirect form was wrong in four places at once: every switcher link cost a
+// hop, the hreflang alternates pointed at a redirect, the canonical inside de/index.html
+// disagreed with the URL being served, and the sitemap listed a redirecting URL — which
+// build-sitemap.mjs's own header calls out as telling a crawler the target is not canonical.
+// One function, because all four read it from here.
+const langUrl = (lang, url) => (lang === DEFAULT_LANG ? url : `/${lang}${url === "/" ? "/" : url}`);
 
 /* ------------------------------------------------------------------ switcher ---- */
 

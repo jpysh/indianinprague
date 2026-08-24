@@ -24,14 +24,80 @@
 // worst outcome of a bug in this file is a bad translation on a page, never lost catalogue
 // data or a half-written build.
 import { createServer } from "node:http";
-import { spawn } from "node:child_process";
-import { readFileSync, existsSync } from "node:fs";
+import { spawn, execFile } from "node:child_process";
+import { promisify } from "node:util";
+import { readFileSync, existsSync, statSync } from "node:fs";
 import path from "node:path";
-import { LANGS, CODES, ROOT, loadSources, loadMachine, loadOverrides, saveOverrides, resolve, coverage } from "./i18n.mjs";
+import { LANGS, CODES, ROOT, loadSources, loadMachine, loadOverrides, saveOverrides, resolve, coverage, englishSummary } from "./i18n.mjs";
 
 const PORT = Number(process.env.DASHBOARD_PORT || 8093);
 const HOST = "127.0.0.1";
 const ALLOWED_HOSTS = new Set([`127.0.0.1:${PORT}`, `localhost:${PORT}`, `[::1]:${PORT}`]);
+
+const run = promisify(execFile);
+
+/* ---------------------------------------------------------------------- pages ---- */
+
+// Two tools, one bookmark. The inventory view and the translation view are separate pages
+// with separate code — this only makes them share an origin and a tab bar, because the
+// alternative was reimplementing 200 lines of working filter-and-sort UI inside the other
+// page and then keeping two renderers of the same catalogue in step forever.
+//
+// Inventory is the landing page: translations are quiet most weeks, stock is not.
+const PAGES = {
+  "/": { file: "inventory.html", tab: "inventory" },
+  "/inventory": { file: "inventory.html", tab: "inventory" },
+  "/translations": { file: "dashboard.html", tab: "translations" },
+  // The path this page answered on before the two were joined. Kept so an existing bookmark
+  // does not break.
+  "/dashboard.html": { file: "dashboard.html", tab: "translations" },
+};
+
+// The tab bar, injected as the page is served rather than baked into either file.
+//
+// scripts/inventory-page.html must keep working when double-clicked off disk with the agent
+// stopped — that is its whole character, inline everything, no server — and a tab linking to
+// a server that is not running is a dead control. Injecting on serve means the bar exists in
+// exactly the context where it works.
+//
+// Deliberately NOT sticky. Both pages already have their own sticky header at top:0, and the
+// inventory's table headers stick at a hardcoded top:104px measured from it. A second sticky
+// bar would either overlap that or require changing an offset in a file this feature has no
+// business touching.
+function tabBar(current, dark) {
+  const ink = dark ? "#F2EFE6" : "#1c1a17";
+  const bg = dark ? "#353022" : "#efeae0";
+  const on = dark ? "#DCE775" : "#1c1a17";
+  const tab = (href, label, name) =>
+    `<a href="${href}" style="padding:7px 14px;border-radius:6px;text-decoration:none;` +
+    `font:600 12px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.08em;` +
+    `text-transform:uppercase;color:${current === name ? (dark ? "#2a2519" : "#fff") : ink};` +
+    `background:${current === name ? on : "transparent"};opacity:${current === name ? 1 : 0.72}"` +
+    `${current === name ? ' aria-current="page"' : ""}>${label}</a>`;
+  return (
+    `<nav aria-label="Views" style="display:flex;gap:6px;align-items:center;padding:8px 16px;` +
+    `background:${bg};border-bottom:1px solid rgba(128,128,128,.25)">` +
+    tab("/inventory", "Inventory", "inventory") +
+    tab("/translations", "Translations", "translations") +
+    `</nav>`
+  );
+}
+
+// inventory.html is generated once a day by publish.sh, so opened in the afternoon it shows
+// the morning's closet. Regenerating it when the catalogue is newer costs one stat and, at
+// most, a sub-second node call — and removes the whole category of "why does this say 140
+// when I sold one an hour ago".
+async function freshInventory() {
+  const page = path.join(ROOT, "inventory.html");
+  const catalog = path.join(ROOT, "data/catalog.json");
+  try {
+    if (existsSync(page) && statSync(page).mtimeMs >= statSync(catalog).mtimeMs) return;
+    await run(process.execPath, [path.join(ROOT, "scripts/build-inventory.mjs")], { cwd: ROOT });
+  } catch (err) {
+    // A stale page is far better than no page: serve what is on disk and say why in the log.
+    console.warn(`inventory rebuild failed, serving the existing file: ${err.message}`);
+  }
+}
 
 const readJson = (rel, fallback) => {
   try {
@@ -152,6 +218,20 @@ function checklist() {
   if (inv.needsEnrich) items.push({ level: "act", text: `${inv.needsEnrich} items never enriched from Vinted — they show without a description` });
   if (inv.noPhoto) items.push({ level: "act", text: `${inv.noPhoto} live items have no photo` });
 
+  // What the English did this week. Not a task in itself — the nightly run translates new
+  // and changed strings on its own — but it is the number that explains everything below it:
+  // seven languages moving at once is what a rewritten paragraph looks like from here.
+  const en = englishSummary(sources);
+  if (en.added || en.edited) {
+    const parts = [];
+    if (en.added) parts.push(`${en.added} new`);
+    if (en.edited) parts.push(`${en.edited} rewritten`);
+    items.push({
+      level: "note",
+      text: `English: ${parts.join(", ")} in the last ${en.days} days — already translated unless a language shows a gap above`,
+    });
+  }
+
   const runs = publishLog(3);
   if (runs[0]?.failed) {
     items.push({ level: "act", text: `The last publish stopped at step ${runs[0].steps} of ${runs[0].total || "?"} — see the log below` });
@@ -204,6 +284,7 @@ function state(lang) {
   });
   return {
     lang,
+    english: englishSummary(sources),
     languages: CODES.map((c) => ({ code: c, ...coverage(c, sources), ...LANGS[c] })),
     checklist: checklist(),
     inventory: inventory(),
@@ -244,8 +325,15 @@ const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${HOST}:${PORT}`);
 
   try {
-    if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/dashboard.html")) {
-      const html = readFileSync(path.join(ROOT, "dashboard.html"), "utf8");
+    const page = req.method === "GET" ? PAGES[url.pathname] : null;
+    if (page) {
+      if (page.file === "inventory.html") await freshInventory();
+      const file = path.join(ROOT, page.file);
+      if (!existsSync(file)) {
+        return json(res, { error: `${page.file} has not been generated yet — run node scripts/build-inventory.mjs` }, 503);
+      }
+      const dark = page.file === "inventory.html";
+      const html = readFileSync(file, "utf8").replace(/<body([^>]*)>/, `<body$1>${tabBar(page.tab, dark)}`);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
       return res.end(html);
     }
@@ -308,10 +396,16 @@ if (process.argv[2] === "--check") {
     if (!c) throw new Error("FAIL: " + m);
   };
   assert(s.languages.length === 7, "seven languages in state");
+  assert(s.english.total > 0 && s.english.characters > 0, "English summary counted");
+  assert(s.english.added + s.english.edited <= s.english.total, "churn cannot exceed the corpus");
   assert(Array.isArray(s.rows), "rows is an array");
   assert(Array.isArray(s.checklist) && s.checklist.length, "checklist is generated");
   assert(typeof s.inventory.live === "number", "inventory counted");
   assert(ALLOWED_HOSTS.size === 3 && !ALLOWED_HOSTS.has("evil.test"), "host allow-list is closed");
+  assert(PAGES["/"].file === "inventory.html", "inventory is the landing page");
+  assert(PAGES["/dashboard.html"].file === "dashboard.html", "the old bookmark still resolves");
+  assert(tabBar("inventory", false).includes('aria-current="page"'), "the current tab is marked");
+  assert(!tabBar("translations", true).includes("undefined"), "tab bar renders in the dark theme");
   console.log(`ok — ${s.rows.length} rows, ${s.inventory.live} live items, ${s.checklist.length} checklist entries`);
 } else {
   server.listen(PORT, HOST, () => console.log(`dashboard → http://${HOST}:${PORT}`));

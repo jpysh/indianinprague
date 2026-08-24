@@ -81,16 +81,38 @@ const overrideFile = (lang) => path.join(DIR, "overrides", `${lang}.json`);
 
 export const loadSources = () => read(sourcesFile(), {}).entries || {};
 
+// Rewritten in full every run, but NOT forgetful: each key carries the date it first
+// appeared and the date its English last changed, merged forward from the previous file.
+//
+// Without this the dashboard can say what the English IS and never what it DID, and "what
+// changed since last week" is the whole point of a weekly pass — a string that was rewritten
+// on Tuesday is the one worth re-reading in seven languages on Sunday.
 export function saveSources(entries) {
+  const previous = loadSources();
+  const today = new Date().toISOString().slice(0, 10);
+  for (const [key, entry] of Object.entries(entries)) {
+    const before = previous[key];
+    // A string that was already in the file before this field existed is NOT new — it is
+    // undated. Without this the first run after adding the field reports the entire site as
+    // "3,756 new this week", which is both wrong and the kind of number that teaches you to
+    // ignore the panel it appears in. An empty date sorts below every cutoff, so undated
+    // strings simply never count as churn.
+    entry.since = before ? before.since || "" : today;
+    // `changed` stays at the first-seen date until the text actually moves, so a brand new
+    // string does not also read as "changed today" and appear twice in the same summary.
+    entry.changed = !before ? today : before.src === entry.src ? before.changed || "" : today;
+  }
   write(sourcesFile(), {
     _comment: [
       "The English source of record — every translatable string on the site. GENERATED:",
       "rewritten in full by scripts/translate.mjs on every run. Editing it by hand does",
       "nothing; edit the English page or the Vinted listing instead.",
       "",
-      "  text   the English",
-      "  src    hash of that English, used to detect when a translation went stale",
-      "  where  human label, shown in the dashboard so a key means something to a reader",
+      "  text     the English",
+      "  src      hash of that English, used to detect when a translation went stale",
+      "  where    human label, shown in the dashboard so a key means something to a reader",
+      "  since    the date this string first appeared on the site",
+      "  changed  the date its English last changed; equals `since` until it is edited",
     ],
     generated: new Date().toISOString(),
     count: Object.keys(entries).length,
@@ -168,6 +190,25 @@ export function resolve(lang, sources = loadSources()) {
     out[key] = { text: usable ? machined.text : null, from: usable ? "machine" : null, stale: false };
   }
   return out;
+}
+
+// The English side of the same picture: how much there is to translate, and how much of it
+// moved recently. English is not a translation target and has no coverage — what it has is
+// volume and churn, and those are what decide how much work the other seven need.
+export function englishSummary(sources = loadSources(), days = 7) {
+  const cutoff = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+  const rows = Object.values(sources);
+  const isNew = (r) => (r.since || "") >= cutoff;
+  return {
+    total: rows.length,
+    characters: rows.reduce((n, r) => n + r.text.length, 0),
+    products: Object.keys(sources).filter((k) => k.startsWith("item.")).length,
+    pageText: Object.keys(sources).filter((k) => k.startsWith("text.")).length,
+    added: rows.filter(isNew).length,
+    // Edited, not added: a string that appeared this week is new, not changed.
+    edited: rows.filter((r) => !isNew(r) && (r.changed || "") >= cutoff).length,
+    days,
+  };
 }
 
 // Per-language coverage, for the dashboard and the weekly checklist.

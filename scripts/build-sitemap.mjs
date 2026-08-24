@@ -179,7 +179,9 @@ function alternates(page, langs) {
   if (!langs.length) return [];
   const rows = [`    <xhtml:link rel="alternate" hreflang="en" href="${SITE}${page.loc}"/>`];
   for (const code of langs) {
-    rows.push(`    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE}/${code}${page.loc === "/" ? "" : page.loc}"/>`);
+    // Trailing slash on the homepage: /de/ is what the server actually serves, /de 307s to
+    // it. Same reason as langUrl() in build-i18n.mjs — a sitemap must not list a redirect.
+    rows.push(`    <xhtml:link rel="alternate" hreflang="${code}" href="${SITE}/${code}${page.loc === "/" ? "/" : page.loc}"/>`);
   }
   rows.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${page.loc}"/>`);
   return rows;
@@ -226,7 +228,7 @@ for (const page of PAGES) {
   // eight images, it is the same dilution this file already avoids by capping at 12. The
   // captions differ, but the image belongs to the English page it was first listed under.
   for (const code of langs) {
-    const loc = `/${code}${page.loc === "/" ? "" : page.loc}`;
+    const loc = `/${code}${page.loc === "/" ? "/" : page.loc}`;
     const { mtime: m } = await stat(path.join(ROOT, code, page.file));
     lines.push("  <url>");
     lines.push(`    <loc>${SITE}${loc}</loc>`);
