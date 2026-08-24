@@ -839,3 +839,46 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
 }
 .post:hover h3,a.plate:hover h3,.tile:hover h3,
 .post:focus-visible h3,a.plate:focus-visible h3,.tile:focus-visible h3{background-size:100% 1px}
+
+/* ---------------------------------------------------------------- language ---- */
+/* The switcher. A <details> disclosure holding real links, written into every page by
+ * scripts/build-i18n.mjs — which is what knows the current path, and therefore what each
+ * link should point at.
+ *
+ * <details> rather than a <select> or a JS dropdown: it opens, closes, and takes keyboard
+ * focus with no script at all, on a site that ships almost none. A <select> full of
+ * navigation is also a well-known screen-reader annoyance — it announces as a form control
+ * and fires on arrow-key browsing.
+ *
+ * No flags anywhere. A flag is a country and a language is not: Spanish is not Spain, and
+ * German is not only Germany. Each language is named in ITSELF, because a visitor who
+ * cannot read English cannot find "Czech" in an English list. */
+.lang{position:relative;flex:0 0 auto}
+.lang>summary{
+  list-style:none;cursor:pointer;
+  opacity:.8;color:var(--bone);
+  min-width:31px;min-height:44px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;letter-spacing:.08em;font-weight:600;
+  transition:opacity .15s,color .15s;
+}
+.lang>summary::-webkit-details-marker{display:none}
+.lang>summary:hover,.lang[open]>summary{opacity:1;color:var(--magenta)}
+.lang-menu{
+  position:absolute;top:100%;right:0;z-index:60;
+  min-width:150px;padding:6px 0;
+  background:var(--ink,#1c1a17);
+  border:1px solid rgba(242,239,230,.16);border-radius:8px;
+  box-shadow:0 12px 28px rgba(0,0,0,.34);
+  display:flex;flex-direction:column;
+}
+.lang-menu a{
+  padding:9px 16px;color:var(--bone);opacity:.85;
+  text-decoration:none;white-space:nowrap;font-size:14px;
+}
+.lang-menu a:hover{opacity:1;color:var(--magenta);background:rgba(242,239,230,.06)}
+
+/* The menu hangs from the RIGHT edge of its button at every width. Anchoring it left
+ * instead pushes it off a 375px screen — measured: it ended at 412px on a 375px viewport,
+ * because .bar-ico sits hard against the right margin on a phone. Right-anchored, it grows
+ * inwards, where there is always room. */

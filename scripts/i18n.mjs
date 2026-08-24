@@ -186,7 +186,13 @@ export function coverage(lang, sources = loadSources()) {
 }
 
 /* ------------------------------------------------------------------ self-check ---- */
-if (process.argv[2] === "--check") {
+// True only when this file is the script node was asked to run. Without it, importing a
+// module for one exported helper also executes its command line — translate.mjs imports
+// englishPages() from build-i18n.mjs, and unguarded that import would rebuild every
+// language tree as a side effect of asking what the pages are.
+const isMain = process.argv[1] && import.meta.filename === path.resolve(process.argv[1]);
+
+if (isMain && process.argv[2] === "--check") {
   const assert = (cond, msg) => {
     if (!cond) throw new Error("FAIL: " + msg);
   };

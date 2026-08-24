@@ -37,3 +37,16 @@ vendors/govinda/data/snapshot.json
 
 # Dashboard server log (launchd). Same reason scripts/*.log is ignored above.
 scripts/dashboard.log
+
+# The language trees, written by scripts/build-i18n.mjs from the English pages plus
+# data/i18n/*.json. Derived, ~15 MB per language, and rebuilt on every publish — including
+# in the Workers Builds container, which runs build-i18n.mjs as one of build-dist's
+# generators. What IS committed is data/i18n/, the translations themselves: the source, not
+# the output. Same rule as dist/.
+/ru/
+/fr/
+/de/
+/it/
+/es/
+/pl/
+/cs/

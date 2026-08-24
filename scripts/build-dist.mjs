@@ -33,6 +33,7 @@ import { promisify } from "node:util";
 import { readdir, rm, mkdir, cp, stat, readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { CODES } from "./i18n.mjs";
 
 const run = promisify(execFile);
 
@@ -121,6 +122,15 @@ const GENERATORS = [
   // the other.
   "build-diaries.mjs", // posts.json + content/ -> diaries.html, and index's DIARY:LATEST
   "build-jsonld.mjs",  // structured data, including the SKUs
+  // The seven language trees, mirrored from the English pages the generators above just
+  // wrote. It reads data/i18n/*.json and nothing else — no network, no API key — which is
+  // what lets a cloud build produce them from committed translations exactly as this Mac
+  // does. scripts/translate.mjs, which DOES need a DeepL key, is deliberately not here: it
+  // runs on the Mac only, and its output is committed for this step to read.
+  //
+  // AFTER build-jsonld (it mirrors the finished pages, structured data and all) and BEFORE
+  // build-sitemap (which lists the language URLs it writes).
+  "build-i18n.mjs",
   "build-sitemap.mjs", // URL list, which depends on which pages build-shop just wrote
   "bump-assets.mjs",   // MUST BE LAST: it hashes the assets and stamps ?v= into the HTML
 ];
@@ -139,6 +149,10 @@ if (process.argv.includes("--no-generate")) {
 
 // Pages that exist in the repo root but must never be served.
 const PRIVATE_PAGES = new Set(["inventory.html", "dashboard.html"]);
+
+// Read from i18n.mjs rather than repeated here: a language added there must not need a
+// second edit in this file to reach the deployment.
+const I18N_LANGS = CODES;
 
 // Start clean at the top level so a page deleted from the repo cannot survive in dist/ as
 // a stale URL. images/derived and assets are rsync'd rather than recreated, so this costs
@@ -186,6 +200,15 @@ if (existsSync(path.join(ROOT, "diaries"))) {
 if (existsSync(path.join(ROOT, "wardrobe"))) {
   await syncDir(path.join(ROOT, "wardrobe"), path.join(DIST, "wardrobe"));
 }
+// The language trees — /de, /fr, /ru, /it, /es, /pl, /cs — written by build-i18n.mjs from
+// the English pages above. One directory per language, mirroring the whole site; assets and
+// images are NOT duplicated into them, so seven languages cost HTML and nothing else.
+for (const lang of I18N_LANGS) {
+  if (existsSync(path.join(ROOT, lang))) {
+    await syncDir(path.join(ROOT, lang), path.join(DIST, lang));
+  }
+}
+
 await mkdir(path.join(DIST, "images"), { recursive: true });
 await syncDir(path.join(ROOT, "images", "derived"), path.join(DIST, "images", "derived"));
 
@@ -274,6 +297,12 @@ const htmlFiles = [
   ...(await readdir(DIST)).filter((f) => f.endsWith(".html")),
   ...(await subdirPages("diaries")),
   ...(await subdirPages("wardrobe")),
+  // The language trees too. build-i18n.mjs rewrites every internal href to add a /<lang>
+  // prefix, and only for pages that were actually mirrored — a rule with an exception in it
+  // (spirituality.html is not mirrored) and therefore a rule worth checking rather than
+  // trusting. The first build got exactly this wrong and pointed every language at a
+  // /de/spirituality that was never written.
+  ...(await Promise.all(CODES.map((c) => subdirPages(c)))).flat(),
 ];
 const pageText = new Map();
 for (const f of htmlFiles) pageText.set(f, await readFile(path.join(DIST, f), "utf8"));

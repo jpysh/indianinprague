@@ -17,6 +17,7 @@
 //
 //   node scripts/deepl.mjs --check     # offline: glossary loads, lookups resolve, keys found
 import { readFileSync } from "node:fs";
+import path from "node:path";
 
 // Keys live in .env at the REPO ROOT, not beside a vendor script: they are now a site-wide
 // secret, not Govinda's. The file is gitignored — it holds credentials and nothing else.
@@ -86,9 +87,15 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
 }
 
 /* ---------------------------------------------------------------- self-check ---- */
+// True only when this file is the script node was asked to run. Without it, importing a
+// module for one exported helper also executes its command line — translate.mjs imports
+// englishPages() from build-i18n.mjs, and unguarded that import would rebuild every
+// language tree as a side effect of asking what the pages are.
+const isMain = process.argv[1] && import.meta.filename === path.resolve(process.argv[1]);
+
 // Offline. Proves the glossary parses, both lookup paths resolve, and keys were read —
 // the three ways this module fails silently at 07:15 with nobody watching.
-if (process.argv[2] === "--check") {
+if (isMain && process.argv[2] === "--check") {
   const assert = (cond, msg) => {
     if (!cond) throw new Error("FAIL: " + msg);
   };

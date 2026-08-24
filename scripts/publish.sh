@@ -127,10 +127,10 @@ if [ -z "$LOCAL" ]; then
   }
 fi
 
-step "1/12 sync from Vinted"
+step "1/14 sync from Vinted"
 node scripts/sync-vinted.mjs $FULL
 
-step "2/12 derive responsive images"
+step "2/14 derive responsive images"
 node scripts/build-images.mjs
 
 # The chrome — header and footer — lives in index.html and is copied from there into the
@@ -138,10 +138,10 @@ node scripts/build-images.mjs
 # pipeline until 17 Aug 2026 and had to be remembered by hand, which meant a footer edit
 # reached ten generated pages automatically and silently skipped those two. It runs FIRST
 # because it maintains the outer shell every later generator reads out of index.html.
-step "3/12 sync the chrome into the hand-written pages"
+step "3/14 sync the chrome into the hand-written pages"
 node scripts/sync-chrome.mjs
 
-step "4/12 build shop pages"
+step "4/14 build shop pages"
 node scripts/build-shop.mjs
 
 # Added 17 Aug 2026. It was never in this script — the Diaries was built by hand — which was
@@ -149,22 +149,39 @@ node scripts/build-shop.mjs
 # the writing itself: a post edited in data/posts.json or content/ would not have reached the
 # site until somebody remembered to run one command. AFTER build-shop, because it lifts the
 # header and footer out of index.html and build-shop rewrites index.html's own regions.
-step "5/12 build the diaries"
+step "5/14 build the diaries"
 node scripts/build-diaries.mjs
 
-step "6/12 build local inventory view"
+# Everything readable on the English pages is now written, which is the earliest this can
+# run: scripts/translate.mjs extracts its source strings FROM the built pages. It is also
+# the only step that talks to DeepL, and the only one that needs .env — which is why it
+# lives here and not in build-dist.mjs's generator list, where a cloud build with no keys
+# would hit it.
+#
+# Running out of quota is not a failure here. translate.mjs records the shortfall in
+# data/i18n/status.json, exits 0, and the language trees below are simply built with more
+# English in them — visible on the dashboard, invisible to a visitor beyond the language.
+step "6/14 translate what is new"
+node scripts/translate.mjs
+
+step "7/14 build local inventory view"
 node scripts/build-inventory.mjs
 
-step "7/12 inject JSON-LD"
+step "8/14 inject JSON-LD"
 node scripts/build-jsonld.mjs
 
-step "8/12 build sitemap"
+# AFTER build-jsonld, because it mirrors the finished English pages including their
+# structured data, and BEFORE build-sitemap, which lists the URLs it writes.
+step "9/14 build the language trees"
+node scripts/build-i18n.mjs
+
+step "10/14 build sitemap"
 node scripts/build-sitemap.mjs
 
-step "9/12 bump asset cache tokens"
+step "11/14 bump asset cache tokens"
 node scripts/bump-assets.mjs
 
-step "10/12 stage dist/"
+step "12/14 stage dist/"
 # --no-generate because steps 3-7 above ARE the generators build-dist would otherwise run
 # itself. It gained that ability on 17 Aug 2026 so that a plain `git push` — which triggers
 # Workers Builds, whose build command is just `npm ci && node scripts/build-dist.mjs` —
@@ -182,7 +199,7 @@ if [ -n "$LOCAL" ]; then
   exit 0
 fi
 
-step "11/12 commit what is about to be published"
+step "13/14 commit what is about to be published"
 
 # The pathspec IS the contract: these are the paths build-dist stages into dist/, plus data/,
 # which is the master the pages are generated from — committing pages without the catalog
@@ -227,7 +244,7 @@ header of publish.sh." -- "${PUBLISHED[@]}" || {
   echo "not pushed — run: git push origin ${GIT_BRANCH}"
 fi
 
-step "12/12 deploy to Cloudflare"
+step "14/14 deploy to Cloudflare"
 
 # Cloudflare credentials, in order of preference.
 #

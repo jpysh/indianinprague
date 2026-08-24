@@ -24,10 +24,12 @@
 // reads as machine Czech to a Czech reader — SEO-AI-PLAN.md section F7 makes the case at
 // length. Czech attribute words (condition, colour) come from Vinted's own Czech storefront
 // via sync-vinted.mjs, which is real Czech written by Vinted, not by a translator.
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import { translate } from "./deepl.mjs";
-import { LANGS, CODES, ROOT, DIR, loadSources, saveSources, loadMachine, saveMachine, source, coverage } from "./i18n.mjs";
+import { translate, glossaryHit } from "./deepl.mjs";
+import { LANGS, CODES, ROOT, DIR, hash, loadSources, saveSources, loadMachine, saveMachine, source, coverage } from "./i18n.mjs";
+import { strings } from "./extract.mjs";
+import { englishPages } from "./build-i18n.mjs";
 
 const argv = process.argv.slice(2);
 const flag = (name, fallback = null) => {
@@ -81,7 +83,54 @@ function catalogSources() {
   return out;
 }
 
+// Everything readable on the built English pages: headings, body copy, nav, buttons, page
+// titles, meta descriptions, alt text. Keyed by a hash of the text itself rather than by
+// where it sits, for two reasons: the same nav label appears on 95 pages and must be
+// translated once, and a paragraph that gets rewritten is a NEW paragraph rather than a
+// stale translation of the old one — prose has no identity apart from its words.
+//
+// Product fields are keyed by item id instead (see catalogSources), because a title IS the
+// same thing after an edit, and an override on it should survive with a "the English
+// changed" prompt rather than quietly detaching. Strings already carried by a product key
+// are skipped here, so nothing is translated twice.
+function pageSources(existing) {
+  const known = new Set(Object.values(existing).map((s) => s.text));
+  const out = {};
+  for (const file of englishPages()) {
+    for (const text of strings(readFileSync(path.join(ROOT, file), "utf8"))) {
+      if (known.has(text) || out[`text.${hash(text)}`]) continue;
+      out[`text.${hash(text)}`] = source(text, `page text — first seen on ${file}`);
+    }
+  }
+  return out;
+}
+
 /* -------------------------------------------------------------------- sourced ---- */
+
+// The Govinda vendor pipeline translated a Czech shop INTO English: vendors/govinda/data/
+// translations.json is a Czech-original -> English map, 2,400 entries deep, and every
+// English string on a Govinda product card came out of it. Inverted, it is a ready-made
+// Czech translation of that half of the shop — written by the vendor, for Czech customers.
+//
+// Putting those strings through DeepL back into Czech would be a game of telephone with a
+// perfectly good original sitting on disk. Where the same English came from two different
+// Czech originals, the first wins and the rest are dropped: an ambiguous back-translation is
+// worth less than a consistent one, and the dashboard is where a wrong pick gets fixed.
+function govindaCzech(sources) {
+  const file = path.join(ROOT, "vendors/govinda/data/translations.json");
+  if (!existsSync(file)) return {};
+  const pairs = JSON.parse(readFileSync(file, "utf8"));
+  const byEnglish = new Map();
+  for (const [cs, en] of Object.entries(pairs)) {
+    if (typeof en === "string" && en.trim() && !byEnglish.has(en)) byEnglish.set(en, cs);
+  }
+  const out = {};
+  for (const [key, src] of Object.entries(sources)) {
+    const cs = byEnglish.get(src.text);
+    if (cs && cs !== src.text) out[key] = { text: cs, src: src.src, via: "govinda-cs" };
+  }
+  return out;
+}
 
 // Czech that already exists as Czech, written by someone rather than by an API. Today that
 // is Vinted's own attribute vocabulary, carried on the catalogue as condition.cs / color.cs
@@ -91,10 +140,10 @@ function catalogSources() {
 // a string came from — but carry `via`, so the dashboard can say "Vinted, Czech" instead of
 // implying DeepL wrote it, and so a later pass can tell sourced text from generated text.
 function sourcedCzech(sources) {
+  const out = { ...govindaCzech(sources) };
   const file = path.join(ROOT, "data/catalog.json");
   const raw = JSON.parse(readFileSync(file, "utf8"));
   const items = Array.isArray(raw) ? raw : raw.items || Object.values(raw)[0];
-  const out = {};
   for (const item of items) {
     if (item.hidden) continue;
     for (const field of ["condition", "color"]) {
@@ -122,6 +171,24 @@ function outstanding(lang, sources, machine) {
 
 async function fill(lang, sources, budget) {
   const machine = loadMachine(lang);
+
+  // Adding a term to the glossary's keep-list has to reach translations that were made
+  // BEFORE it was added, or the fix only applies to strings nobody has translated yet —
+  // which is the opposite of when you notice you need it. A cached entry that disagrees
+  // with the glossary is dropped here and refilled below, at no quota cost: a keep-list hit
+  // never reaches the API.
+  let corrected = 0;
+  for (const [key, src] of Object.entries(sources)) {
+    const hit = glossaryHit(src.text, LANGS[lang].deepl);
+    if (hit !== undefined && machine[key] && machine[key].text !== hit) {
+      delete machine[key];
+      corrected++;
+    }
+  }
+  if (corrected) {
+    saveMachine(lang, machine);
+    console.log(`  ${lang}: ${corrected} entries dropped — the glossary disagrees with them`);
+  }
   const todo = outstanding(lang, sources, machine);
   const chars = todo.reduce((n, [, s]) => n + s.text.length, 0);
   if (!todo.length) return { lang, done: 0, chars: 0, remaining: 0, budget, exhausted: false };
@@ -170,7 +237,8 @@ async function fill(lang, sources, budget) {
 
 /* ---------------------------------------------------------------------- main ---- */
 
-const sources = { ...catalogSources() };
+const catalog = catalogSources();
+const sources = { ...catalog, ...pageSources(catalog) };
 saveSources(sources);
 console.log(`${Object.keys(sources).length} source strings`);
 
@@ -186,7 +254,7 @@ if (!DRY && ONLY.includes("cs")) {
     added++;
   }
   if (added) saveMachine("cs", machine);
-  console.log(`  cs: ${added} attribute words taken from Vinted's Czech storefront (no quota spent)`);
+  console.log(`  cs: ${added} strings taken from Czech originals — Govinda listings and Vinted attributes (no quota spent)`);
 }
 
 const results = [];

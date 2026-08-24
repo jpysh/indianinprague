@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-24T08:39:01.435Z",
+  "syncedAt": "2026-08-24T10:58:13.537Z",
   "rate": {
     "czkPerEur": 24.116,
     "fetched": "2026-08-24",
@@ -16,10 +16,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Beige"
+        "en": "Beige",
+        "cs": "Béžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -69,10 +71,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Cream"
+        "en": "Cream",
+        "cs": "Krémová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Wide-leg trousers",
@@ -122,10 +126,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Blue"
+        "en": "Blue",
+        "cs": "Modrá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -175,10 +181,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -228,10 +236,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Coral"
+        "en": "Coral",
+        "cs": "Korálová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -281,10 +291,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Uncategorised",
       "vintedCategory": "Electronics Mice",
@@ -330,10 +342,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Purple"
+        "en": "Purple",
+        "cs": "Fialová"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -383,10 +397,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Shoulder bags",
@@ -432,10 +448,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -485,10 +503,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Long dresses",
@@ -538,10 +558,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -591,10 +613,12 @@
       "size": "Univerzální",
       "sizeGroup": "One size",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Beige"
+        "en": "Beige",
+        "cs": "Béžová"
       },
       "category": "Fashion",
       "vintedCategory": "Men Caps",
@@ -644,10 +668,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Navy"
+        "en": "Navy",
+        "cs": "Námořnická"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -697,10 +723,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Ornaments",
@@ -750,10 +778,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Home Decor",
       "vintedCategory": "Home Novelty lights",
@@ -803,7 +833,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New with tags"
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
       },
       "color": {
         "en": ""
@@ -856,7 +887,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -905,7 +937,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -954,7 +987,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1003,7 +1037,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1052,7 +1087,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1101,7 +1137,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1150,7 +1187,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New with tags"
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
       },
       "color": {
         "en": ""
@@ -1199,7 +1237,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1248,7 +1287,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1297,7 +1337,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1346,7 +1387,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1395,7 +1437,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1444,7 +1487,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -1493,7 +1537,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -1542,7 +1587,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -1591,7 +1637,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1640,7 +1687,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1689,7 +1737,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1738,7 +1787,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1787,7 +1837,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -1836,7 +1887,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -1885,10 +1937,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Body jewellery",
@@ -1938,10 +1992,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -1991,10 +2047,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -2023,7 +2081,7 @@
         "images/vinted-9580235622-2.jpg",
         "images/vinted-9580235622-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2044,10 +2102,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -2097,10 +2157,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -2150,10 +2212,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Lilac"
+        "en": "Lilac",
+        "cs": "Lila"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -2203,10 +2267,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Spirituality",
       "vintedCategory": "Women Necklaces",
@@ -2256,10 +2322,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Orange"
+        "en": "Orange",
+        "cs": "Oranžová"
       },
       "category": "Spirituality",
       "vintedCategory": "Women Scarves & shawls",
@@ -2305,10 +2373,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2354,10 +2424,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Beige"
+        "en": "Beige",
+        "cs": "Béžová"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2403,10 +2475,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2452,10 +2526,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2501,10 +2577,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2529,7 +2607,7 @@
         "images/vinted-9565087476-2.jpg",
         "images/vinted-9565087476-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2550,10 +2628,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2599,10 +2679,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Spirituality",
       "vintedCategory": "Home Sculptures & figurines",
@@ -2648,10 +2730,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Red"
+        "en": "Red",
+        "cs": "Červená"
       },
       "category": "Home Decor",
       "vintedCategory": "Home Bowls",
@@ -2701,10 +2785,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Grey"
+        "en": "Grey",
+        "cs": "Šedá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -2750,10 +2836,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Beige"
+        "en": "Beige",
+        "cs": "Béžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -2799,10 +2887,12 @@
       "size": "XL / 42 / 14",
       "sizeGroup": "XL",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Purple"
+        "en": "Purple",
+        "cs": "Fialová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi-dresses",
@@ -2852,10 +2942,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Home Decor",
       "vintedCategory": "Home Tapestries",
@@ -2901,10 +2993,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Turquoise"
+        "en": "Turquoise",
+        "cs": "Tyrkysová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -2950,10 +3044,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -2999,10 +3095,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Coral"
+        "en": "Coral",
+        "cs": "Korálová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -3048,10 +3146,12 @@
       "size": "XL / 42 / 14",
       "sizeGroup": "XL",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -3101,10 +3201,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Scarves & shawls",
@@ -3150,10 +3252,12 @@
       "size": "S / 36 / 8",
       "sizeGroup": "S",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Cream"
+        "en": "Cream",
+        "cs": "Krémová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -3203,10 +3307,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Navy"
+        "en": "Navy",
+        "cs": "Námořnická"
       },
       "category": "Fashion",
       "vintedCategory": "Women Long dresses",
@@ -3256,10 +3362,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -3309,10 +3417,12 @@
       "size": "S / 36 / 8",
       "sizeGroup": "S",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Orange"
+        "en": "Orange",
+        "cs": "Oranžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Other clothing",
@@ -3358,10 +3468,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -3411,10 +3523,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -3464,10 +3578,12 @@
       "size": "XL / 42 / 14",
       "sizeGroup": "XL",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Orange"
+        "en": "Orange",
+        "cs": "Oranžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi skirts",
@@ -3517,10 +3633,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3570,10 +3688,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Blue"
+        "en": "Blue",
+        "cs": "Modrá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3623,10 +3743,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Turquoise"
+        "en": "Turquoise",
+        "cs": "Tyrkysová"
       },
       "category": "Spirituality",
       "vintedCategory": "Women Necklaces",
@@ -3676,10 +3798,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3729,10 +3853,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Purple"
+        "en": "Purple",
+        "cs": "Fialová"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3782,10 +3908,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Bracelets",
@@ -3835,10 +3963,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Blue"
+        "en": "Blue",
+        "cs": "Modrá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3888,10 +4018,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Orange"
+        "en": "Orange",
+        "cs": "Oranžová"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -3941,10 +4073,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -3994,10 +4128,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Hobbies & collectables Charms & pendants",
@@ -4047,10 +4183,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Jewellery sets",
@@ -4100,10 +4238,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -4153,10 +4293,12 @@
       "size": "30–38 mm",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Watches",
@@ -4202,10 +4344,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -4255,10 +4399,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Silver"
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Earrings",
@@ -4308,7 +4454,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New with tags"
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
       },
       "color": {
         "en": ""
@@ -4357,7 +4504,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -4406,7 +4554,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4455,7 +4604,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
         "en": ""
@@ -4504,7 +4654,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4553,7 +4704,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4602,7 +4754,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4651,7 +4804,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4700,7 +4854,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4749,7 +4904,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -4798,7 +4954,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -4847,10 +5004,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Red"
+        "en": "Red",
+        "cs": "Červená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -4900,10 +5059,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -4953,10 +5114,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -5006,10 +5169,12 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Jewellery",
       "vintedCategory": "Women Necklaces",
@@ -5059,10 +5224,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Grey"
+        "en": "Grey",
+        "cs": "Šedá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -5112,10 +5279,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Skorts",
@@ -5161,10 +5330,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -5214,7 +5385,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -5263,7 +5435,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -5312,10 +5485,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -5365,10 +5540,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi-dresses",
@@ -5418,7 +5595,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -5467,7 +5645,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -5516,7 +5695,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
         "en": ""
@@ -5565,7 +5745,8 @@
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
         "en": ""
@@ -5614,10 +5795,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Mustard"
+        "en": "Mustard",
+        "cs": "Hořčicově žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Short-sleeved tops",
@@ -5667,10 +5850,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Blue"
+        "en": "Blue",
+        "cs": "Modrá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -5720,10 +5905,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Gold"
+        "en": "Gold",
+        "cs": "Zlatá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Vest tops",
@@ -5773,10 +5960,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Turquoise"
+        "en": "Turquoise",
+        "cs": "Tyrkysová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -5826,10 +6015,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -5879,10 +6070,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
-        "en": "Purple"
+        "en": "Purple",
+        "cs": "Fialová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi-dresses",
@@ -5932,10 +6125,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -5985,10 +6180,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Pink"
+        "en": "Pink",
+        "cs": "Tmavě růžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Cover-ups & sarongs",
@@ -6038,10 +6235,12 @@
       "size": "Univerzální",
       "sizeGroup": "One size",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6091,10 +6290,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi-dresses",
@@ -6144,10 +6345,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Navy"
+        "en": "Navy",
+        "cs": "Námořnická"
       },
       "category": "Fashion",
       "vintedCategory": "Women Midi-dresses",
@@ -6197,10 +6400,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Shirts",
@@ -6250,10 +6455,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Straight-leg trousers",
@@ -6303,10 +6510,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Dark green"
+        "en": "Dark green",
+        "cs": "Tmavě zelená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6356,10 +6565,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6409,10 +6620,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6462,10 +6675,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "White"
+        "en": "White",
+        "cs": "Bílá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6515,10 +6730,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Yellow"
+        "en": "Yellow",
+        "cs": "Žlutá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Peplum tops",
@@ -6568,10 +6785,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Party & cocktail dresses",
@@ -6625,10 +6844,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Satisfactory"
+        "en": "Satisfactory",
+        "cs": "Uspokojivý"
       },
       "color": {
-        "en": "Blue"
+        "en": "Blue",
+        "cs": "Modrá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Playsuits",
@@ -6678,10 +6899,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Good"
+        "en": "Good",
+        "cs": "Dobrý"
       },
       "color": {
-        "en": "Navy"
+        "en": "Navy",
+        "cs": "Námořnická"
       },
       "category": "Fashion",
       "vintedCategory": "Women Formal & work dresses",
@@ -6731,10 +6954,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Long dresses",
@@ -6784,10 +7009,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Light blue"
+        "en": "Light blue",
+        "cs": "Světle modrá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6837,10 +7064,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Multicolour"
+        "en": "Multicolour",
+        "cs": "Smíšená"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6890,10 +7119,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Navy"
+        "en": "Navy",
+        "cs": "Námořnická"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
@@ -6943,10 +7174,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Blouses",
@@ -6996,10 +7229,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Pink"
+        "en": "Pink",
+        "cs": "Tmavě růžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Maxi skirts",
@@ -7049,10 +7284,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "Very good"
+        "en": "Very good",
+        "cs": "Velmi dobrý"
       },
       "color": {
-        "en": "Orange"
+        "en": "Orange",
+        "cs": "Oranžová"
       },
       "category": "Fashion",
       "vintedCategory": "Women Maxi skirts",
@@ -7102,10 +7339,12 @@
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Brown"
+        "en": "Brown",
+        "cs": "Hnědá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Maxi skirts",
@@ -7155,10 +7394,12 @@
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
-        "en": "New without tags"
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
       },
       "color": {
-        "en": "Black"
+        "en": "Black",
+        "cs": "Černá"
       },
       "category": "Fashion",
       "vintedCategory": "Women Summer dresses",
