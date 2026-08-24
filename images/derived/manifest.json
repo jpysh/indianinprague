@@ -48249,6 +48249,26 @@
       }
     ]
   },
+  "images/post-europe-in-india.jpg": {
+    "width": 1187,
+    "height": 792,
+    "aspect": 1.4987,
+    "v": "85cec473",
+    "variants": [
+      {
+        "w": 400,
+        "h": 267,
+        "jpg": "images/derived/post-europe-in-india-400.jpg",
+        "webp": "images/derived/post-europe-in-india-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 534,
+        "jpg": "images/derived/post-europe-in-india-800.jpg",
+        "webp": "images/derived/post-europe-in-india-800.webp"
+      }
+    ]
+  },
   "images/vinted-9309067629-1.jpg": {
     "width": 600,
     "height": 800,

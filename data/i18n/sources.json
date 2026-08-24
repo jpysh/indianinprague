@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-08-24T15:06:23.297Z",
-  "count": 3758,
+  "generated": "2026-08-24T15:32:15.732Z",
+  "count": 3797,
   "entries": {
     "item.9729949801.title": {
       "text": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
@@ -2393,9 +2393,9 @@
       "since": "2026-08-24",
       "changed": "2026-08-24"
     },
-    "text.a21c38f71d8c": {
-      "text": "No cookies, no trackers, no analytics on this site. Made with ❤️ using AI, with a human in the loop. Machine translated, so minor inaccuracies may occur.",
-      "src": "a21c38f71d8c",
+    "text.5cdfce3c3325": {
+      "text": "No cookies, no trackers, no analytics on this site. Machine translated, so minor inaccuracies may occur. Made with ❤️ using AI, with a human in the loop.",
+      "src": "5cdfce3c3325",
       "where": "page text — first seen on 404.html",
       "since": "2026-08-24",
       "changed": "2026-08-24"
@@ -2750,40 +2750,26 @@
       "since": "",
       "changed": ""
     },
-    "text.1ab1e121c0df": {
-      "text": "New category",
-      "src": "1ab1e121c0df",
+    "text.1c8aef6b2313": {
+      "text": "25 August 2026",
+      "src": "1c8aef6b2313",
       "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.cf9bab150bd5": {
-      "text": "17 August 2026",
-      "src": "cf9bab150bd5",
+    "text.e3830dce8444": {
+      "text": "What Europe's search for alternative healing can teach us",
+      "src": "e3830dce8444",
       "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.57fa55d8639e": {
-      "text": "2 min read",
-      "src": "57fa55d8639e",
+    "text.5f89e41410a3": {
+      "text": "Yoga studios on every second corner, incense in boho shops, pranayama before work. Europe is not importing an aesthetic, it is recovering a way of living, and that is why these traditions land the way they do.",
+      "src": "5f89e41410a3",
       "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.64ec88ca00b2": {
-      "text": "Hello world",
-      "src": "64ec88ca00b2",
-      "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.bdb83dc39185": {
-      "text": "The first note in a new category — why mindfulness gets its own shelf here, and what will land in it.",
-      "src": "bdb83dc39185",
-      "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.5bebf7f2befb": {
       "text": "More is coming",
@@ -2813,26 +2799,411 @@
       "since": "",
       "changed": ""
     },
-    "text.d484315ffab6": {
-      "text": "Annamalai: Food I love in the city, Tram 22 Diaries",
-      "src": "d484315ffab6",
-      "where": "page text — first seen on diaries/annamalai.html",
-      "since": "",
-      "changed": ""
+    "text.6435310ef40b": {
+      "text": "What Europe's search for alternative healing can teach us: Mindfulness, Tram 22 Diaries",
+      "src": "6435310ef40b",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.2bd873d6c734": {
       "text": "Breadcrumb",
       "src": "2bd873d6c734",
-      "where": "page text — first seen on diaries/annamalai.html",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
       "since": "",
       "changed": ""
     },
     "text.187fd64f0282": {
       "text": "Kavyanjali",
       "src": "187fd64f0282",
-      "where": "page text — first seen on diaries/annamalai.html",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
       "since": "2026-08-24",
       "changed": "2026-08-24"
+    },
+    "text.4d10d26cd441": {
+      "text": "There is a glimmer of joy I feel whenever I see a man wearing a Rudraksh beads",
+      "src": "4d10d26cd441",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.447bd1884519": {
+      "text": "mala",
+      "src": "447bd1884519",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.f4d28b78b4ec": {
+      "text": ", or an \"Om\" tattoo on a woman, here on the streets of Prague.",
+      "src": "f4d28b78b4ec",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.bfdec1cf146f": {
+      "text": "When I moved here, I expected the usual polite curiosity about India: about our food, the places to visit, the weddings. What I did not expect was how many people would want to talk to me about our lifestyle. Ayurveda, yoga, spirituality, and Hindu and Buddhist philosophy. There are yoga studios on every second corner,",
+      "src": "bfdec1cf146f",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.5acfa20f98ac": {
+      "text": "incense sticks",
+      "src": "5acfa20f98ac",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.1cc5cdda5e0c": {
+      "text": "are sold from rustic and boho shops, and people practise pranayama in the morning.",
+      "src": "1cc5cdda5e0c",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.488e6cdf56ce": {
+      "text": "But none of it is really about India. It is about three things:",
+      "src": "488e6cdf56ce",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.19e28253b02d": {
+      "text": "Exhaustion.",
+      "src": "19e28253b02d",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.5919d61c3824": {
+      "text": "Mental and physical, and the growing sense that there must be another way to live.",
+      "src": "5919d61c3824",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.f31481967ddd": {
+      "text": "Personal growth",
+      "src": "f31481967ddd",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.fc24d19c4e39": {
+      "text": "that looks Eastward, and asks what to remove rather than what to add.",
+      "src": "fc24d19c4e39",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.df79a9927eb3": {
+      "text": "Planetary balance,",
+      "src": "df79a9927eb3",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.31a0d61a9310": {
+      "text": "reached through eco-friendly, non-extractive, centuries-old practices that were sidetracked on our march towards industrial and technological development.",
+      "src": "31a0d61a9310",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.893449dd88d8": {
+      "text": "We are exhausted and need another way to live",
+      "src": "893449dd88d8",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.8463a13e936c": {
+      "text": "Modern life has given humanity extraordinary things. But somewhere along the way, we became very good at developing the world around us while becoming less certain about how to care for the world within us.",
+      "src": "8463a13e936c",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.58405c42047c": {
+      "text": "The reason Ayurveda, yoga, and Hindu and other Eastern philosophies land so well in the middle of a mental health crisis is that the burnout has structural causes. Europe has built an extraordinary standard of living on a work culture that leaves very little room for the nervous system, and people are noticing.",
+      "src": "58405c42047c",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.f20a9c1f28b9": {
+      "text": "Western medicine, brilliant as it is, tends to treat the mind as an organ that goes wrong. Ayurveda never separated the mind from the body, the body from the season, the season from what you eat, or any of it from how you live.",
+      "src": "f20a9c1f28b9",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.1401ca14fc7c": {
+      "text": "There is science behind these spiritual practices. But it is behavioural science mixed with a better poetry of life and earth. Oil on the scalp, warm food, sleeping and rising with the light, spices in food, silence in the first hour of the day. A psychologist would call these sleep hygiene, circadian regulation, and somatic self-soothing.",
+      "src": "1401ca14fc7c",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.f4fb15b126ec": {
+      "text": "My mother calls it daily routine.",
+      "src": "f4fb15b126ec",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.aab74d1e68b8": {
+      "text": "Yoga asanas are a preparation. A way of making the body quiet and flexible enough that the mind becomes bearable to sit inside.",
+      "src": "aab74d1e68b8",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.639d808a665f": {
+      "text": "Personal growth does not always mean becoming more",
+      "src": "639d808a665f",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.7b6d56c98c10": {
+      "text": "Modern culture often teaches us that personal growth means adding. More knowledge, qualifications, wealth, experiences, achievements, followers. The list is endless. Ancient Eastern philosophies can offer a rather different question: what if growth sometimes means removing?",
+      "src": "7b6d56c98c10",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.d210256b9f7f": {
+      "text": "Unnecessary noise and constant stimulation.",
+      "src": "d210256b9f7f",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.092d3f1e607b": {
+      "text": "The need to prove our existence.",
+      "src": "092d3f1e607b",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.16512fe500ab": {
+      "text": "Habits that keep us disconnected from our bodies, from other people, and from nature.",
+      "src": "16512fe500ab",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.22e3890240a6": {
+      "text": "Yoga, meditation, Ayurveda and Buddhist traditions are enormously diverse and cannot simply be placed into one category called \"Eastern wisdom\". Yet many of them share an interest in awareness, balance, discipline, compassion, and the relationship between our inner life and the world around us.",
+      "src": "22e3890240a6",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.2d07a72a8e33": {
+      "text": "That is perhaps why they resonate so strongly today. They invite us to become more conscious of the person we already are, rather than promising a better version of that person. And that can be a very different kind of personal growth.",
+      "src": "2d07a72a8e33",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.4a73fa58813d": {
+      "text": "Spiritual balance also means planetary balance",
+      "src": "4a73fa58813d",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.ffd78610ce69": {
+      "text": "Wellbeing cannot ultimately be separated from the wellbeing of the planet. We can meditate in beautiful rooms, practise yoga every morning and fill our homes with calming Ayurvedic foods and fragrances. But if the way we live depends upon endless extraction, endless consumption and endless waste, something remains out of balance.",
+      "src": "ffd78610ce69",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.731aa22c719a": {
+      "text": "Many traditional societies understood something that industrial civilisation has often struggled to remember.",
+      "src": "731aa22c719a",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.49f583c527d2": {
+      "text": "We are not separate from nature. We are nature.",
+      "src": "49f583c527d2",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.bffacad37c92": {
+      "text": "Across India and elsewhere, generations developed ways of living with plants, natural fibres, herbs, oils, wood and clay that were closely connected to local environments and seasonal rhythms. None of this asks the earth for very much:",
+      "src": "bffacad37c92",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.efc86adc8f4f": {
+      "text": "A copper vessel that lasts three generations.",
+      "src": "efc86adc8f4f",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.7c6ee1acf572": {
+      "text": "Sesame oil pressed from a seed.",
+      "src": "7c6ee1acf572",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.09c4f2d905bd": {
+      "text": "Textile woven on a natural handloom, strong enough to be passed from mothers to daughters.",
+      "src": "09c4f2d905bd",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.5969d8c094de": {
+      "text": "Neem, turmeric and tulsi",
+      "src": "5969d8c094de",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.6390e1bdb045": {
+      "text": ", grown in backyards rather than factories.",
+      "src": "6390e1bdb045",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.9fe76a4445ad": {
+      "text": "These practices were never designed to be extracted, scaled or discarded, because they came from a way of thinking in which the self, the household, the field and the season were one continuous system.",
+      "src": "9fe76a4445ad",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.e693759cac56": {
+      "text": "We set that thinking aside for two centuries, believing it was the slow road. It turns out it was simply the road that could be walked forever. Of course, we should not romanticise the past: ancient ways of living were not automatically sustainable, perfect or universally applicable. But there is wisdom worth revisiting.",
+      "src": "e693759cac56",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.9ac8a0217363": {
+      "text": "Building a bridge, not a shop",
+      "src": "9ac8a0217363",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.42f8e6e969da": {
+      "text": "I sell Ayurvedic products,",
+      "src": "42f8e6e969da",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.0b88abbbf438": {
+      "text": "handloom meditation clothing",
+      "src": "0b88abbbf438",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.0013cde6aaa2": {
+      "text": ", and the small objects that make a practice possible. I started this work because I watched people here in Europe reaching towards traditions that my family, my culture and generations before me had held with respect for a very long time. Reaching for a slower relationship with the body, the mind and the world around them.",
+      "src": "0013cde6aaa2",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.e7ecbba5bb20": {
+      "text": "And often, what they found first was the loudest and cheapest version of it. A mass-produced object stripped of its story of origin and place. Something presented as exotic, when it could have been presented simply as human.",
+      "src": "e7ecbba5bb20",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.990692e99256": {
+      "text": "I want to offer things with a little more care behind them, and not turn Indian culture into a costume or a marketing aesthetic. Things made by people, rather than designed to look handmade. Natural materials where they genuinely make sense. Handloom traditions seen as living crafts rather than decorative trends. Ayurvedic products approached with respect for the tradition behind them.",
+      "src": "990692e99256",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.c298ae7eb059": {
+      "text": "Perhaps what I am really creating is more than a shop. It is a small bridge between worlds. Between an India that I know personally and a Europe that is asking new questions. Between old knowledge and modern life. Between consumption and conscious choice.",
+      "src": "c298ae7eb059",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.79d079558f4e": {
+      "text": "If someone buys a meditation shawl from me and it simply makes them feel comfortable while sitting quietly, that is already enough. If an Ayurvedic product encourages them to think differently about their daily routine, wonderful.",
+      "src": "79d079558f4e",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.8a725f02c48e": {
+      "text": "Hopefully the object becomes an invitation: to slow down, learn, notice, practise, and perhaps eventually to need fewer things rather than more.",
+      "src": "8a725f02c48e",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.984a90232b6d": {
+      "text": "The best part is that Europe is already reaching towards these old traditions in its search for a healthier, calmer and more conscious way of living. It is not adopting Eastern practice as an aesthetic import. It is leading the way in recovering a technology of living that our own march towards progress mislaid.",
+      "src": "984a90232b6d",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.32e2f9ca026d": {
+      "text": "And I am so excited to be part of this story.",
+      "src": "32e2f9ca026d",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.6a834c6cd85f": {
+      "text": "Objects for the practice",
+      "src": "6a834c6cd85f",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.e1ae58b94a76": {
+      "text": "Malas, incense, deities and the rest of the ritual objects this writing describes, on the Meditation shelf.",
+      "src": "e1ae58b94a76",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.0eeaecd8d140": {
+      "text": "Shop the wardrobe →",
+      "src": "0eeaecd8d140",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.d8e00df9c105": {
+      "text": "More from the diaries",
+      "src": "d8e00df9c105",
+      "where": "page text — first seen on diaries/alternative-health-care-europe.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.d484315ffab6": {
+      "text": "Annamalai: Food I love in the city, Tram 22 Diaries",
+      "src": "d484315ffab6",
+      "where": "page text — first seen on diaries/annamalai.html",
+      "since": "",
+      "changed": ""
     },
     "text.f808eca70794": {
       "text": "Nové Město · South Indian · sit-down",
@@ -2872,13 +3243,6 @@
     "text.55de06ce1653": {
       "text": "Spices and store-cupboard things from the same kitchens these places cook from, on the Food shelf.",
       "src": "55de06ce1653",
-      "where": "page text — first seen on diaries/annamalai.html",
-      "since": "2026-08-24",
-      "changed": "2026-08-24"
-    },
-    "text.0eeaecd8d140": {
-      "text": "Shop the wardrobe →",
-      "src": "0eeaecd8d140",
       "where": "page text — first seen on diaries/annamalai.html",
       "since": "2026-08-24",
       "changed": "2026-08-24"
@@ -3107,13 +3471,6 @@
       "since": "2026-08-24",
       "changed": "2026-08-24"
     },
-    "text.d8e00df9c105": {
-      "text": "More from the diaries",
-      "src": "d8e00df9c105",
-      "where": "page text — first seen on diaries/contemporary-indian-wear.html",
-      "since": "2026-08-24",
-      "changed": "2026-08-24"
-    },
     "text.388e45d8b86e": {
       "text": "Dosa Dosa: Food I love in the city, Tram 22 Diaries",
       "src": "388e45d8b86e",
@@ -3183,83 +3540,6 @@
       "where": "page text — first seen on diaries/food.html",
       "since": "",
       "changed": ""
-    },
-    "text.714f1ea11d88": {
-      "text": "Hello world: Mindfulness, Tram 22 Diaries",
-      "src": "714f1ea11d88",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0a0d9afc4591": {
-      "text": "This is the first note in a new shelf of the Diaries. Until now this journal has had two subjects: what I wear, and where I eat. Here is a third.",
-      "src": "0a0d9afc4591",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cbcc658734c8": {
-      "text": "Mindfulness is the part of my life that visitors to this site ask about most and that I have written about least. It is also the part hardest to write honestly, because the vocabulary around it in Europe has been worn smooth — a word on a candle, a subscription in an app. What I mean by it is narrower and older: the practices I grew up around, done on ordinary weekdays, in a Prague flat, by someone with a job and a tram to catch.",
-      "src": "cbcc658734c8",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a34eeebee960": {
-      "text": "What will land here",
-      "src": "a34eeebee960",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f0d05181cebb": {
-      "text": "Short notes rather than doctrine. What a practice actually asks of you on a Tuesday morning. What survives the move from India to a European winter and what quietly does not. The questions people ask me after a class, which are usually more practical than spiritual — how long, how often, what if I cannot sit still.",
-      "src": "f0d05181cebb",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.7067dfb56a84": {
-      "text": "There will be nothing here about becoming a better version of yourself. The traditions I learned from are not self-improvement schemes; they are older than the idea that a person is a project.",
-      "src": "7067dfb56a84",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.465b5d202494": {
-      "text": "Where the rest of it lives",
-      "src": "465b5d202494",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.6b37d17cd72f": {
-      "text": "The teaching side — classes, Ayurvedic treatments, journeys to India — has its own home on this site, and it is a different kind of page: what is offered, and how to reach a person. This shelf is for the writing. If you want the practice rather than the notes, start there instead.",
-      "src": "6b37d17cd72f",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.759638447694": {
-      "text": "That is the whole of the first note. The next one will have something in it.",
-      "src": "759638447694",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.6a834c6cd85f": {
-      "text": "Objects for the practice",
-      "src": "6a834c6cd85f",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "2026-08-24",
-      "changed": "2026-08-24"
-    },
-    "text.e1ae58b94a76": {
-      "text": "Malas, incense, deities and the rest of the ritual objects this writing describes, on the Meditation shelf.",
-      "src": "e1ae58b94a76",
-      "where": "page text — first seen on diaries/hello-world.html",
-      "since": "2026-08-24",
-      "changed": "2026-08-24"
     },
     "text.9e18a2094ea2": {
       "text": "INDelicious Bistro: Food I love in the city, Tram 22 Diaries",
@@ -4058,13 +4338,6 @@
       "where": "page text — first seen on index.html",
       "since": "",
       "changed": ""
-    },
-    "text.5cdfce3c3325": {
-      "text": "No cookies, no trackers, no analytics on this site. Machine translated, so minor inaccuracies may occur. Made with ❤️ using AI, with a human in the loop.",
-      "src": "5cdfce3c3325",
-      "where": "page text — first seen on index.html",
-      "since": "2026-08-24",
-      "changed": "2026-08-24"
     },
     "text.e86836c0c91f": {
       "text": "Shop Indian clothes, jewellery and home things in Europe",

@@ -380,3 +380,56 @@
   .post-head{padding:44px 0 34px}
   .post-main{padding:34px 0 56px}
 }
+
+/* ---------- the article column (24 Aug 2026) ----------
+ *
+ * A post used to be four different widths stacked flush-left inside a centred 1280 wrap:
+ * H1 792, lede 551, hero 860, body 518. Measured at 1611px that left the reading column
+ * ending 927px from the right edge, with a ragged right margin in four places, for the
+ * whole length of a 1,200-word essay.
+ *
+ * Left-aligned prose in a centred wrap IS this site's language — the homepage does the same
+ * thing — and it works there because a full-width grid of tiles sits underneath and fills
+ * the space. An article has nothing on the right for thousands of pixels, which is the one
+ * page type where that pattern reads as breakage rather than style.
+ *
+ * So the article centres, and it is the only page type that does. Two widths, not four: the
+ * text column, and a media column slightly wider than it, which is the standard long-form
+ * rhythm — the image is allowed to breathe past the measure without the measure chasing it.
+ *
+ * SCOPED BY STYLESHEET, not by a class: diaries.css is only ever loaded on Diaries pages,
+ * so .page-head here cannot reach the wardrobe's shelves, which share that class name and
+ * are deliberately left alone for now.
+ */
+.post-head .wrap,
+.page-head .wrap,
+.post-main{
+  --post-col:720px;    /* text: ~68ch at 17px once the 20px gutters are taken off */
+  --post-media:860px;  /* hero: wider than the measure, deliberately */
+}
+
+/* Every child of the two heading blocks shares one column, so the crumb, the H1, the byline
+   and the lede finally agree on both edges. */
+.post-head .wrap > *,
+.page-head .wrap > *{
+  max-width:var(--post-col);
+  margin-inline:auto;
+}
+/* site.css caps these at 20ch and --measure-s respectively, which is what made the H1 and
+   the lede disagree with each other by 240px. */
+.post-head h1,
+.page-head h1,
+.post-head .lede,
+.page-head .lede{max-width:var(--post-col)}
+
+/* The body of the post, and everything that runs with it. */
+.entry-body,
+.post-main .order,
+.shop-cta,
+.post-nav{margin-inline:auto;max-width:var(--post-col)}
+
+/* The hero keeps its wider measure and centres on the same axis. */
+.post-hero{max-width:var(--post-media);margin-inline:auto}
+
+/* Card grids are untouched: .grid3 already fills the wrap, so it has none of the void this
+   block exists to remove, and pulling it in would waste the width it uses well. */

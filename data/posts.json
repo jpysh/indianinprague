@@ -68,6 +68,18 @@
   ],
   "posts": [
     {
+      "id": "alternative-health-care-europe",
+      "cat": "meditation",
+      "kind": "article",
+      "title": "What Europe's search for alternative healing can teach us",
+      "blurb": "Yoga studios on every second corner, incense in boho shops, pranayama before work. Europe is not importing an aesthetic, it is recovering a way of living, and that is why these traditions land the way they do.",
+      "body": "alternative-health-care-europe.html",
+      "date": "2026-08-25",
+      "photo": "images/post-europe-in-india.jpg",
+      "kicker": "Mindfulness",
+      "reading": 6
+    },
+    {
       "id": "contemporary-indian-wear",
       "cat": "fashion",
       "kind": "article",
@@ -173,18 +185,6 @@
       "order": "spinach chimney, parmesan burger.",
       "cuisine": "Vegan",
       "region": "Žitná"
-    },
-    {
-      "id": "hello-world",
-      "cat": "meditation",
-      "kind": "article",
-      "title": "Hello world",
-      "blurb": "The first note in a new category — why mindfulness gets its own shelf here, and what will land in it.",
-      "body": "hello-world.html",
-      "date": "2026-08-17",
-      "photo": null,
-      "kicker": "New category",
-      "reading": 2
     }
   ]
 }

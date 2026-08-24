@@ -37,6 +37,23 @@
    */
   --void:#4A4433; --void-2:#413C2D; --void-3:#383426;
 
+  /* CHROME: the header and the footer, one colour, 24 Aug 2026.
+   *
+   * The header used to be rgba(74,68,51,.94) — which is --void at 94% ON --void, compositing
+   * to #4A4433 exactly. The bar was measurably the same colour as the page it floated over:
+   * 1.0:1. The backdrop blur and the alpha were both doing nothing visible, and a 1px border
+   * was the only thing marking where the page stopped and the chrome began. The footer was
+   * barely better at 1.28:1 — LESS separation than a section band gets (1.36:1).
+   *
+   * #221F16 is 1.70:1 against the body and 1.25:1 against the band, which is the point: it
+   * has to clear BOTH, or a banded section sitting above the footer bleeds into it. The
+   * darker ground also lifts every colour that sits on the chrome — nav links from 4.89:1 to
+   * 7.25:1, magenta from 4.70:1 to 7.97:1.
+   *
+   * Header and footer share it deliberately. Two near-identical darks 1.07:1 apart are not a
+   * hierarchy anyone perceives, they are two values to keep in step. */
+  --chrome:#221F16;
+
   /* Alternating section band. Sections were separated only by a 1px dark rule that is
    * effectively invisible on a dark ground, so the page read as one undifferentiated
    * column.
@@ -56,9 +73,14 @@
      cannot reach 4.5:1 on any ground dark enough to be readable — it tops out around
      3.5:1 even on near-black. So it keeps its job as a background (the Czech-In label,
      button fills) where dark text sits ON it, and small accent text uses --magenta
-     instead, which clears AA at 4.70:1 here. */
+     instead, which clears AA at 5.57:1 here. */
   --paprika:#D3502F; --chilli:#B8431F; --saffron:#DCE775; --turmeric:#B8431F;
-  --magenta:#E8A93C; --olive:#DCE775; --bone:#F2EFE6; --bone-dim:#D6CFB8;
+  /* magenta was #E8A93C, which measured 4.70:1 on --void — over the 4.5 AA floor, but only
+     just, and it is the accent for small text across the whole site. On a DARK ground an
+     accent gains contrast by getting lighter, not darker: #F0BC5C reads 5.57:1 on the body,
+     7.55:1 on the band and 9.45:1 on the chrome, and carries --void on top of it at 5.57:1
+     for the filled hover states. Same amber, a comfortable margin instead of a graze. */
+  --magenta:#F0BC5C; --olive:#DCE775; --bone:#F2EFE6; --bone-dim:#D6CFB8;
   --avocado:#8A8B32; --chicory:#3D2B24; --tangerine:#D3502F; --lime:#DCE775;
 
   /* Single source of truth for the gutter, so the header, sections and footer stay in
@@ -194,7 +216,19 @@ a{color:inherit;text-decoration:none}
 
 img{max-width:100%;height:auto}
 
-.wrap{max-width:1280px;margin:0 auto;padding:0 var(--gutter);width:100%}
+/* THE PAGE WIDTH, one token (24 Aug 2026).
+ *
+ * Was a hard 1280px, which on a 1920 display left 320px of dead margin down each side and
+ * capped the shelves at three product cards per row — a shop showing three things across
+ * two-thirds of the screen. 1600 is the ceiling because past roughly that width a row of
+ * cards costs more eye travel than the extra card is worth; it is a reading limit, not a
+ * technical one.
+ *
+ * The header and the footer read the same token, so the wordmark can never sit inboard of
+ * the content beneath it. That drift is the reason this is a variable and not three
+ * numbers. */
+:root{--wrap:1600px;--head-col:820px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter);width:100%}
 
 /* Lets a keyboard or screen-reader user jump past the header nav. Off-screen until
    focused. */
@@ -224,7 +258,9 @@ html{scroll-behavior:smooth}
 header.site{
   border-bottom:1px solid rgba(242,239,230,.18);
   position:sticky;top:0;z-index:100;
-  background:rgba(74,68,51,.94);
+  /* .94 rather than opaque: now that the tint differs from the page, the blur is a real
+     effect — content darkens softly as it scrolls under the bar instead of meeting a lid. */
+  background:rgba(34,31,22,.94);
   backdrop-filter:blur(8px);
 }
 
@@ -392,6 +428,21 @@ a.wa:hover{color:#3BE87C}
     overflow:visible;
   }
   .menu[open] ~ nav.main{display:flex}
+
+  /* TWO PANELS CANNOT BE OPEN AT ONCE.
+   *
+   * <details> elements do not coordinate: opening the menu leaves the language switcher
+   * openable, and both panels drop from the same bar. The nav panel sits at z-index 99 and
+   * the language menu at 60, so the nav covered the top of the language list — English,
+   * Русский and Français were behind it. A visitor who cannot read the current page could
+   * open the picker and not find their language, which is the one audience that control
+   * exists for.
+   *
+   * Hiding the control while the menu is open makes the broken state unreachable rather
+   * than merely survivable, and it needs no JavaScript — there is none loaded site-wide,
+   * and script-src forbids the inline kind. The pill returns the instant the menu closes.
+   * The sibling selector works because .lang follows .menu in the markup. */
+  .menu[open] ~ .lang{display:none}
   nav.main a{
     min-height:48px;
     border-bottom:1px solid rgba(242,239,230,.08);
@@ -464,9 +515,24 @@ a.wa:hover{color:#3BE87C}
 
 .page-head{border-bottom:1px solid rgba(58,30,22,.22);padding:38px 0 30px;position:relative}
 .crumb{font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
-.page-head h1{font-weight:300;font-size:var(--fs-3xl);line-height:var(--lh-tight);letter-spacing:-.01em;max-width:20ch;margin-bottom:18px}
+
+/* Breadcrumb links measured 15px tall — under the 24px WCAG 2.2 target-size minimum, on a
+   control that is one of two ways back out of a shelf or a post. Same fix already used for
+   .brand and for .trust-n: the TEXT stays exactly where it is on its baseline, and only the
+   hit area grows. inline-flex rather than a block so the crumb still reads as one line with
+   its separators. */
+.crumb a{display:inline-flex;align-items:center;min-height:24px}
+@media (any-pointer:coarse){.crumb a{min-height:32px}}
+/* HEADING COLUMN. The H1 and the lede beneath it used to carry unrelated caps — 20ch and
+   --measure-s — so a shelf heading measured 720px above a 490px lede, two ragged right
+   edges for no reason. One token, one edge. Left-aligned, NOT centred like the Diaries
+   article: on a listing page a full-width grid defines the column, and a heading that
+   centres would float away from the first card it introduces. Text aligns to whatever
+   defines the column beneath it — on an article that is the prose itself, which is why
+   that one page type centres. */
+.page-head h1{font-weight:300;font-size:var(--fs-3xl);line-height:var(--lh-tight);letter-spacing:-.01em;max-width:var(--head-col);margin-bottom:18px}
 .page-head h1 b{font-weight:600;color:var(--magenta)}
-.page-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:var(--measure-s)}
+.page-head .lede{font-size:var(--fs-l);color:var(--bone-dim);max-width:var(--head-col)}
 .page-head .lede b{color:var(--magenta);font-weight:500}
 
 /* Light type on a dark ground optically GAINS weight — the glyphs bleed outward into the
@@ -721,7 +787,7 @@ a.plate h3{transition:color .15s}
  * (fourteen internal links rather than seven, which is the internal linking search engines
  * actually read), and two small channel chips instead of one wide labelled link. */
 
-footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);padding:36px 0 18px}
+footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);padding:36px 0 18px}
 .foot{padding-bottom:22px;border-bottom:1px solid rgba(242,239,230,.14)}
 
 /* The wordmark returns to the footer (24 Aug 2026), reversing the note above. What changed:

@@ -618,3 +618,17 @@
    a bespoke block here (fixed height, its own border and font size) because it sat beside
    the search box and had to match the input rather than the filters. It sits with the
    filters now, so it should look like a filter. */
+
+/* ---------- a fourth product column on a wide screen (24 Aug 2026) ----------
+ *
+ * site.css caps .grid3 at three columns from 801px up and never grows it again, so a 1920
+ * display showed three cards across a 1280 wrap. With the wrap now at 1600 there is room
+ * for four at ~373px, which is barely under the 396px they measure today — the row gains a
+ * product without the cards losing anything.
+ *
+ * THIS RULE LIVES IN shop.css DELIBERATELY. .grid3 is shared with the Diaries card grids,
+ * and those cards carry a title and an excerpt: four across turns an article into a tile.
+ * shop.css is only ever loaded on wardrobe pages, so the split needs no extra class. */
+@media (min-width:1400px){
+  .grid3{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
