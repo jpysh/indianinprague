@@ -14,7 +14,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { productNode } from "./product-node.mjs";
 import path from "node:path";
 
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 // Resolved from this file's own location, the way every other script in here does it.
 //
 // It was hardcoded to /Users/webserver/code/indianinprague until 17 Aug 2026, which worked
@@ -40,7 +40,7 @@ const WHATSAPP = "https://wa.me/420777558262";
 const PERSON = {
   "@type": "Person",
   "@id": `${SITE}/#author`,
-  name: "Indian in Prague",
+  name: "Guldaar Bazaar",
   description:
     "An Indian living in Prague, writing about contemporary Indian clothing, Indian restaurants in the city, and life between two countries.",
   url: `${SITE}/`,
@@ -73,8 +73,8 @@ const WEBSITE = {
   "@type": "WebSite",
   "@id": `${SITE}/#website`,
   url: `${SITE}/`,
-  name: "Indian in Prague",
-  alternateName: "Indian in Prague",
+  name: "Guldaar Bazaar",
+  alternateName: "Guldaar Bazaar",
   description:
     "Contemporary Indian clothes for sale in Prague, honest reviews of Prague's Indian restaurants, vegan spots, and a journal about life between India and the Czech Republic.",
   inLanguage: ["en", "cs"],
@@ -92,7 +92,7 @@ const WEBSITE = {
 const ORG = {
   "@type": "Organization",
   "@id": `${SITE}/#org`,
-  name: "Indian in Prague",
+  name: "Guldaar Bazaar",
   url: `${SITE}/spirituality`,
   description:
     "Yoga, Ayurveda, meditation and wellbeing taught from source knowledge in Prague, guided journeys to India, and authentic Ayurvedic goods shipped across Europe.",
@@ -185,7 +185,7 @@ const graphs = {
       "@type": "CollectionPage",
       "@id": `${SITE}/#webpage`,
       url: `${SITE}/`,
-      name: "Indian in Prague: clothes, jewellery, home things, meditation and books",
+      name: "Guldaar Bazaar: clothes, jewellery, home things, meditation and books",
       isPartOf: { "@id": `${SITE}/#website` },
       // Follows the page. The restaurant and vegan entries were dropped on 22 Aug 2026 when
       // the home page stopped leading with the Diaries — the reviews are still first-hand and
@@ -213,7 +213,7 @@ const graphs = {
       url: `${SITE}/how-it-works`,
       name: "How buying works — shipping, returns and prices",
       description:
-        "How to buy Indian clothes and goods from Indian in Prague: Vinted for second-hand pieces, WhatsApp for new stock, shipping across Europe from Prague, returns, prices in euro, and privacy.",
+        "How to buy Indian clothes and goods from Guldaar Bazaar: Vinted for second-hand pieces, WhatsApp for new stock, shipping across Europe from Prague, returns, prices in euro, and privacy.",
       isPartOf: { "@id": `${SITE}/#website` },
       inLanguage: "en",
     },
@@ -322,7 +322,7 @@ const graphs = {
       "@type": "WebPage",
       "@id": `${SITE}/spirituality#webpage`,
       url: `${SITE}/spirituality`,
-      name: "Yoga, Ayurveda and Spirituality — Indian in Prague",
+      name: "Yoga, Ayurveda and Spirituality — Guldaar Bazaar",
       description:
         "Yoga, Ayurveda, meditation and wellbeing traditions taught from genuine source knowledge in Prague, guided journeys to India, and authentic Ayurvedic products shipped across Europe.",
       isPartOf: { "@id": `${SITE}/#website` },

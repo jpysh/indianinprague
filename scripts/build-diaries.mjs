@@ -63,7 +63,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 const OUT = path.join(ROOT, "diaries");
 
 // Two cards on the homepage (was three, changed 17 Aug 2026 at the owner's request). They go
@@ -415,14 +415,14 @@ function shell({ title, description, canonical, image, jsonld, header, footer, b
 <link rel="canonical" href="${canonical}">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="${canonical.includes("/diaries/") ? "article" : "website"}">
-<meta property="og:site_name" content="Indian in Prague">
+<meta property="og:site_name" content="Guldaar Bazaar">
 <meta property="og:locale" content="en">
 <meta property="og:url" content="${canonical}">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${esc(description)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="${image}">
-<meta property="og:image:alt" content="Indian in Prague">
+<meta property="og:image:alt" content="Guldaar Bazaar">
 <link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
@@ -524,7 +524,7 @@ ${cats.map(([cat, ps]) => categorySection(cat, ps, manifest)).join("\n\n")}
     <h2>More is coming</h2>
     <p>Jewellery, home things, brass, and the long one about paperwork and winters. They appear here as they are written — there is no list to join and nothing to unsubscribe from, but if you want a nudge when the next one lands, message me.</p>
     <div class="cta-row">
-      <a class="btn saf" href="https://wa.me/420777558262?text=${encodeURIComponent("Hi! Nudge me when there is a new diary on indianinprague.jains.es.")}" target="_blank" rel="noopener">Nudge me when there's a new one →</a>
+      <a class="btn saf" href="https://wa.me/420777558262?text=${encodeURIComponent("Hi! Nudge me when there is a new diary on guldaarbazaar.com.")}" target="_blank" rel="noopener">Nudge me when there's a new one →</a>
       <a class="btn" href="/wardrobe">The wardrobe →</a>
     </div>
   </div>

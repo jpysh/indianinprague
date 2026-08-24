@@ -1,59 +1,21 @@
-# Redirects for Cloudflare Pages — the replacement for the `return 301` locations in
-# nginx/indianinprague.conf. Copied into dist/ by scripts/build-dist.mjs; Pages reads it
-# from the deployment root and does not serve it.
+# Redirect rules for the Cloudflare asset server. Copied into dist/ by
+# scripts/build-dist.mjs, which the asset server reads from the deployment root and does
+# not serve.
 #
 # Format: <from> <to> <status>. Limits: 2,000 static + 100 dynamic rules.
 #
-# The site moved to EXTENSIONLESS URLs on 16 Aug 2026 (wrangler.jsonc:
-# html_handling "auto-trailing-slash"). /wardrobe is the real URL; wardrobe.html is only a
-# filename on disk. The asset server already serves / from index.html and already redirects
-# the .html form, so no rewrite is needed for the homepage.
+# THIS FILE IS DELIBERATELY EMPTY OF RULES (24 Aug 2026).
 #
-# The .html rules below exist anyway, and they matter. Left to itself the asset server sends
-# /wardrobe.html to /wardrobe with a **307 Temporary** — measured. Every one of these URLs
-# has been indexed for months and is what external links point at, and a temporary redirect
-# tells Google the old URL is still the right one, which is the opposite of the truth. These
-# rules answer 301 Permanent instead, so ranking consolidates onto the new URL. They are
-# matched before the built-in behaviour.
-
-# shop.html became wardrobe.html when the top nav went to five modules and the word "shop"
-# left the visitor-facing site. It was the most linked and best indexed page here, so the
-# old path stays alive permanently. 301 and not 302: the move is permanent, and only a 301
-# passes the accumulated ranking to the new URL. Both forms, because both resolved before.
-/shop.html                                /wardrobe                         301
-/shop                                     /wardrobe                         301
-
-/index.html                               /                                 301
-/wardrobe.html                            /wardrobe                         301
-/spirituality.html                        /spirituality                     301
-/diaries.html                             /diaries                          301
-/how-it-works.html                        /how-it-works                     301
-
-# /restaurants and /article-contemporary-indian-wear were FOLDED INTO /diaries on
-# 17 Aug 2026. Both pages are deleted; their content is inline on the Diaries under the
-# category it belongs to, and every anchor they used (#annamalai, #indelicious, #dosa-dosa,
-# #pastva, #palo-verde, #vegan) is an anchor on that page.
+# It used to carry eleven 301s covering the .html forms and two renamed paths. Those
+# existed for one reason: those URLs had been indexed for months on
+# indianinprague.jains.es, and the asset server's own built-in redirect is a 307
+# TEMPORARY, which tells Google the OLD URL is still canonical — the opposite of the
+# truth after a permanent move.
 #
-# 301 and not 302 for the usual reason — the move is permanent and only a 301 passes the
-# accumulated ranking on. /restaurants is the most valuable URL involved: it held the position
-# for the Prague Indian-restaurant searches and five Review nodes of structured data. Both the
-# reviews and the schema were carried over to /diaries rather than dropped, which is what
-# makes this survivable rather than simply lossy.
+# guldaarbazaar.com is a new hostname with no indexing history and no inbound links, so
+# there is nothing for a 301 to consolidate. The built-in 307 on /wardrobe.html is
+# therefore harmless here: it still resolves for anyone who types the .html form, it just
+# carries no ranking signal that could be misattributed.
 #
-# The fragment is not the server's business and does not need a rule: a browser reapplies it
-# to the redirect target, so /restaurants#annamalai arrives at /diaries#annamalai on its own.
-/restaurants                              /diaries#food                     301
-/restaurants.html                         /diaries#food                     301
-/article-contemporary-indian-wear         /diaries/contemporary-indian-wear  301
-/article-contemporary-indian-wear.html    /diaries/contemporary-indian-wear  301
-
-# Every post got a page of its own on 17 Aug 2026 (see scripts/build-diaries.mjs). The
-# redirect above now lands on the post itself rather than on an anchor in a wall of text,
-# which is a better destination than it had a day ago.
-#
-# The one-day-old /diaries#annamalai style of link cannot be redirected here — a fragment
-# never reaches the server — so the index keeps id="<post-id>" on every card. Such a link
-# scrolls to the card for that post, which links to the post. Nobody arrives nowhere.
-#
-# /restaurants#annamalai therefore still works too: it 301s to /diaries, the browser
-# reapplies #annamalai, and the card is there.
+# If a path on THIS domain ever gets indexed and then moves, add its 301 here. The
+# reasoning above is the test for whether a rule belongs in this file.

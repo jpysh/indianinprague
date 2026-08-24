@@ -34,7 +34,7 @@ import { walk } from "./extract.mjs";
 
 const argv = process.argv.slice(2);
 const ONLY = argv.includes("--lang") ? argv[argv.indexOf("--lang") + 1].split(",") : CODES;
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 
 // How much English a page may still contain and stay indexable. A tenth is generous enough
 // to ignore a stray attribute word and strict enough that a page which is mostly English

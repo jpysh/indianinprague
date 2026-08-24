@@ -1,7 +1,7 @@
 {
   "name": "indianinprague",
   "private": true,
-  "description": "Build pipeline for indianinprague.jains.es. The site itself has no dependencies — every script under scripts/ imports only node: builtins, deliberately. This file exists for exactly one reason: to pin wrangler.",
+  "description": "Build pipeline for guldaarbazaar.com. The site itself has no dependencies — every script under scripts/ imports only node: builtins, deliberately. This file exists for exactly one reason: to pin wrangler.",
   "comment": [
     "Why wrangler is pinned to an exact version with a lockfile, rather than invoked as",
     "`npx wrangler`: publish.sh runs unattended from launchd every morning WITH A CLOUDFLARE",

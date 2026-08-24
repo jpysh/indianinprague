@@ -16,7 +16,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { CODES } from "./i18n.mjs";
 
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 // path.resolve(import.meta.dirname, ...), matching every other script here. It used to be
 // `new URL("..", import.meta.url).pathname`, which is a URL pathname: percent-ENCODED. A repo
 // checked out to a directory with a space in it resolves to ".../my%20repo" and every read

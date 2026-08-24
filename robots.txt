@@ -71,7 +71,7 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://indianinprague.jains.es/sitemap.xml
+Sitemap: https://guldaarbazaar.com/sitemap.xml
 
 # Local-only inventory view. Excluded from the container by .dockerignore as well;
 # this line is belt and braces in case it ever gets copied in by accident.

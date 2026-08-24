@@ -5,7 +5,7 @@
 // 139 categories at 1 request / 2s. Authorised reseller sync; robots.txt permits these paths.
 import { writeFile } from "node:fs/promises";
 
-const UA = "IndianInPrague-reseller/1.0 (+https://indianinprague.jains.es; authorised reseller sync)";
+const UA = "IndianInPrague-reseller/1.0 (+https://guldaarbazaar.com; authorised reseller sync)";
 const DELAY = 2000;
 const SITEMAP = "https://govindashop.cz/1_cs_0_sitemap.xml";
 

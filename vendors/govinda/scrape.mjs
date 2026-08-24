@@ -9,7 +9,7 @@
 // back, or a SKU changing.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 
-const UA = "IndianInPrague-reseller/1.0 (+https://indianinprague.jains.es; authorised reseller sync)";
+const UA = "IndianInPrague-reseller/1.0 (+https://guldaarbazaar.com; authorised reseller sync)";
 const DELAY = 2000;
 const SITEMAP = "https://govindashop.cz/1_cs_0_sitemap.xml";
 const OUT = "vendors/govinda/data/products-raw.json";

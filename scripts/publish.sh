@@ -251,8 +251,8 @@ step "14/14 deploy to Cloudflare"
 # 1. A scoped API token in the macOS Keychain, if one is there. This is the tighter option:
 #    the token is scoped to "Workers Scripts:Edit" on this account and nothing else, so it
 #    cannot touch DNS, the zone or the other tunnels, and the worst case if it leaks is a
-#    defaced indianinprague.jains.es rather than a lost domain. Set one up with:
-#      security add-generic-password -a "$USER" -s indianinprague-cf-token -w
+#    defaced guldaarbazaar.com rather than a lost domain. Set one up with:
+#      security add-generic-password -a "$USER" -s guldaarbazaar-cf-token -w
 #
 # 2. Otherwise, whatever `wrangler login` stored in ~/Library/Preferences/.wrangler. That is
 #    a browser OAuth session, which is far easier to set up but grants broader account
@@ -262,7 +262,7 @@ step "14/14 deploy to Cloudflare"
 #
 # Either way the credential is NEVER put in the launchd plist: that file lives in scripts/
 # and its EnvironmentVariables are readable by anything that can read this directory.
-if CLOUDFLARE_API_TOKEN=$(security find-generic-password -a "$USER" -s indianinprague-cf-token -w 2>/dev/null); then
+if CLOUDFLARE_API_TOKEN=$(security find-generic-password -a "$USER" -s guldaarbazaar-cf-token -w 2>/dev/null); then
   export CLOUDFLARE_API_TOKEN
   echo "auth: scoped API token from Keychain"
 else
@@ -290,7 +290,7 @@ fi
 # Confirm the live site is actually serving this build before inviting crawlers to it.
 # Checking the real hostname rather than a local port is the point: it exercises DNS, the
 # custom domain binding and the edge, which is the whole surface that replaced nginx.
-if curl -fsS -o /dev/null "https://indianinprague.jains.es/wardrobe.html"; then
+if curl -fsS -o /dev/null "https://guldaarbazaar.com/wardrobe"; then
   echo "live origin healthy"
 
   # NOT fatal, and the reason is a bug this caused. IndexNow is a NOTIFICATION: it tells
@@ -313,6 +313,6 @@ if curl -fsS -o /dev/null "https://indianinprague.jains.es/wardrobe.html"; then
   echo "$TODAY" > "$STAMP"
   echo "stamped $TODAY — the launchd triggers will now no-op until tomorrow"
 else
-  echo "⚠ indianinprague.jains.es did not answer — skipping IndexNow so crawlers are not sent to a broken build" >&2
+  echo "⚠ guldaarbazaar.com did not answer — skipping IndexNow so crawlers are not sent to a broken build" >&2
   exit 1
 fi

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Daily catalog sync + publish for indianinprague.jains.es.
+  Daily catalog sync + publish for guldaarbazaar.com.
 
   NOT LOADED BY DEFAULT. This runs ./scripts/publish.sh unattended, which deploys to the
   live site and pings IndexNow — enable it only when you are happy for the site to track

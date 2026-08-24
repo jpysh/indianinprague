@@ -34,7 +34,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 
 // Which storefront the "buy" links point at. The catalog stores cz/es/com for every item,
 // so switching this — or making it per-visitor once the Spanish shop opens — is a
@@ -756,7 +756,7 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
   // is not.
   // A subcategory page leads with what it holds, because "Kanthi malas" is what someone
   // searches for and the shelf title is not. What follows is the shelf in buyable words plus
-  // the market, and NOT the site name: repeating "Indian in Prague" after every one of these
+  // the market, and NOT the site name: repeating "Guldaar Bazaar" after every one of these
   // spent title width saying what the brand already says, on the pages with the highest
   // intent on the site.
   const base = sub ? `${sub}: buy ${cat.noun} in Europe` : cat.title;
@@ -776,14 +776,14 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
 <link rel="canonical" href="${SITE}${url(self)}">
 <meta name="theme-color" content="#4A4433">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Indian in Prague">
+<meta property="og:site_name" content="Guldaar Bazaar">
 <meta property="og:locale" content="en">
 <meta property="og:url" content="${SITE}${url(self)}">
 <meta property="og:title" content="${esc(pageTitle.split(" | ")[0])}">
 <meta property="og:description" content="${esc(desc)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="${SITE}/images/derived/IMG_5630-1200.jpg">
-<meta property="og:image:alt" content="Indian in Prague">
+<meta property="og:image:alt" content="Guldaar Bazaar">
 <link rel="preload" href="/assets/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <!-- Plex Sans carries every lede and every paragraph of prose on the site now, so it is
      as much a first-paint font as the mono is. One file: it is a variable face. -->

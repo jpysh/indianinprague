@@ -9,7 +9,7 @@
 // Merging them is the fix. Anything that needs a Product node calls productNode(); there is
 // no second copy left to drift.
 
-const SITE = "https://indianinprague.jains.es";
+const SITE = "https://guldaarbazaar.com";
 
 /** The anchor a single item is reachable at, e.g. "indian-boho-dress-9729949801".
  *

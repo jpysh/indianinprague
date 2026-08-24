@@ -1,11 +1,42 @@
-# indianinprague.jains.es — deployment
+# guldaarbazaar.com — deployment
 
 Static site **built** on this Mac and **hosted** on Cloudflare, as a static-assets-only
 Worker. Everything below the "Shape" heading still describes the build; what changed on
 15 Aug 2026 is only where the output lands.
 
-**Live:** https://indianinprague.jains.es
+**Live:** https://guldaarbazaar.com   (was indianinprague.jains.es until 24 Aug 2026 — see "Domain move" below)
 **Local preview:** `./node_modules/.bin/wrangler dev` (serves `dist/` exactly as the edge will)
+
+---
+
+## Domain move: indianinprague.jains.es → guldaarbazaar.com (24 Aug 2026)
+
+The shop moved to its own domain, in a **different Cloudflare account**
+(`digitalmayasen@gmail.com`, which manages the `guldaarbazaar.com` zone). Everything below
+still describes the same build; what changed is the hostname, the account, and the
+customer-facing name.
+
+- **Worker renamed** `indianinprague` → `guldaarbazaar` (`wrangler.jsonc`). New account, so
+  there was no existing Worker to preserve and nothing to migrate.
+- **Two deploy paths, unchanged in shape, both re-pointed.** Workers Builds is connected to
+  `jpysh/indianinprague` in the new account (build `npm ci && node scripts/build-dist.mjs`,
+  deploy `./node_modules/.bin/wrangler deploy`, path `/`, non-production branch builds OFF).
+  `scripts/publish.sh` still deploys directly from this Mac and still does not push.
+- **The Keychain item changed name** to `guldaarbazaar-cf-token`, because the token has to
+  be issued against the NEW account. The old `indianinprague-cf-token` is deliberately left
+  in place: it is the only credential that still reaches the old Worker, and destroying it
+  before the new domain is verified would remove the way back.
+- **No redirect from the old host.** The old DNS record and Worker were deleted outright.
+  This was a deliberate choice, not an oversight: traffic was nil, and the only off-site
+  link (the Vinted profile) was updated by hand. It means old URLs are dead rather than
+  redirected, and Search Console cannot process a Change of Address — the old property's
+  indexing simply decays.
+- **`edge/_redirects` was emptied of rules.** See the comment in that file for why the
+  eleven legacy 301s protected nothing on a hostname with no indexing history.
+- **The brand became "Guldaar Bazaar"** on every customer-facing surface, including the
+  seven translated trees (a mechanical swap of the proper noun inside the existing DeepL
+  output — no re-translation, no spend). Diary prose was left alone: a dated post saying
+  what the shop was called at the time is a record, not a stale string.
 
 ---
 
@@ -420,7 +451,7 @@ curl -sI http://localhost:8092/ | head -1
 Check what the public actually gets:
 
 ```bash
-curl -sI https://indianinprague.jains.es/ | head -1
+curl -sI https://guldaarbazaar.com/ | head -1
 ```
 
 Watch the logs:
@@ -820,7 +851,7 @@ crawlers — that one enforces regardless of what robots.txt says.
 Check whether it is resolved:
 
 ```bash
-curl -s "https://indianinprague.jains.es/robots.txt?v=$(date +%s)" | head -5
+curl -s "https://guldaarbazaar.com/robots.txt?v=$(date +%s)" | head -5
 ```
 
 While it is still active, that starts with Cloudflare's legal preamble. When it is clear,
@@ -902,9 +933,9 @@ Worth doing next, in rough order of value:
 in 2023 and Bing followed; submission is Search Console / Bing Webmaster Tools only, and
 both need the site owner's login. Two things worth doing there once, by hand:
 
-- **Google Search Console** — add `indianinprague.jains.es` as a property (DNS TXT
+- **Google Search Console** — add `guldaarbazaar.com` as a property (DNS TXT
   verification via the Cloudflare dashboard is easiest since the zone is already there),
-  then submit `https://indianinprague.jains.es/sitemap.xml`.
+  then submit `https://guldaarbazaar.com/sitemap.xml`.
 - **Bing Webmaster Tools** — same, and it can import directly from Search Console.
 
 What *can* be automated is IndexNow, which is the one push mechanism still operating:

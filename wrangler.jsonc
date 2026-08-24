@@ -1,5 +1,5 @@
 {
-  // indianinprague.jains.es — a static-assets-only Worker. There is no `main` script: this
+  // guldaarbazaar.com — a static-assets-only Worker. There is no `main` script: this
   // Worker serves files and nothing else, which is why the deployment stays on the free
   // tier without touching the 100k/day request budget that scripted Workers draw from.
   //
@@ -13,7 +13,7 @@
   // On 16 Aug the site moved to extensionless URLs deliberately, and this time the whole
   // chain moved with it: internal links, canonicals, og:url, JSON-LD, the sitemap and the
   // redirect rules. That is the difference between changing the URL shape and breaking it.
-  "name": "indianinprague",
+  "name": "guldaarbazaar",
   "compatibility_date": "2026-08-15",
 
   // The workers.dev subdomain stays OFF, and this line is the only thing that keeps it off.
@@ -25,7 +25,7 @@
   //
   // It matters beyond tidiness: that subdomain serves the ENTIRE site, byte for byte, on a
   // second hostname. Two full copies of every page, both crawlable, with canonical tags,
-  // og:url and the sitemap all pointing at indianinprague.jains.es — which is the textbook
+  // og:url and the sitemap all pointing at guldaarbazaar.com — which is the textbook
   // shape of a duplicate-content problem, and the copy has no robots.txt of its own to
   // exclude it.
   "workers_dev": false,

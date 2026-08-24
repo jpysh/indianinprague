@@ -9,7 +9,7 @@
 import { readFileSync, existsSync, mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
-const UA = "IndianInPrague-reseller/1.0 (+https://indianinprague.jains.es; authorised reseller sync)";
+const UA = "IndianInPrague-reseller/1.0 (+https://guldaarbazaar.com; authorised reseller sync)";
 const DELAY = 1000;
 const DIR = "vendors/govinda/images";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
