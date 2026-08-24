@@ -4,7 +4,7 @@
 // keyed by SKU, and are applied on top — so a weekly re-scrape never overwrites a price you
 // set or copy you rewrote.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { translate } from "./deepl.mjs";
+import { translate } from "../../scripts/deepl.mjs";
 import { rows as parseCsv } from "../../scripts/vendor-items.mjs";
 
 const RAW = "vendors/govinda/data/products-raw.json";

@@ -1,0 +1,1233 @@
+{
+  "_comment": [
+    "DeepL output for de (Deutsch). GENERATED — rewritten by",
+    "scripts/translate.mjs whenever the English changes. Nothing here is precious and",
+    "nothing here is yours: your edits live in overrides/ and are never written by a build.",
+    "",
+    "  src   hash of the English this was translated from; a mismatch means retranslate"
+  ],
+  "generated": "2026-08-24T10:09:07.401Z",
+  "count": 305,
+  "entries": {
+    "attr.color.red": {
+      "text": "Netz",
+      "src": "ba19e9c3d5f4"
+    },
+    "attr.color.blue": {
+      "text": "Blau",
+      "src": "ec7d56a01607"
+    },
+    "attr.color.navy": {
+      "text": "Marine",
+      "src": "fb2fc1b3b8cc"
+    },
+    "attr.color.gold": {
+      "text": "Gold",
+      "src": "6249df4367d0"
+    },
+    "attr.condition.good": {
+      "text": "Gut",
+      "src": "c939327ca16d"
+    },
+    "attr.color.grey": {
+      "text": "Grau",
+      "src": "d4ac58091b02"
+    },
+    "attr.color.pink": {
+      "text": "Rosa",
+      "src": "bd38ed773240"
+    },
+    "attr.color.beige": {
+      "text": "Beige",
+      "src": "5f10cf309e5f"
+    },
+    "attr.color.cream": {
+      "text": "Creme",
+      "src": "d5398ba40fe2"
+    },
+    "attr.color.brown": {
+      "text": "Braun",
+      "src": "18f285592896"
+    },
+    "attr.color.coral": {
+      "text": "Koralle",
+      "src": "56ac628a2f10"
+    },
+    "attr.color.black": {
+      "text": "Schwarz",
+      "src": "c6cfe6e4f129"
+    },
+    "attr.color.lilac": {
+      "text": "Flieder",
+      "src": "e3233c699c7d"
+    },
+    "attr.color.white": {
+      "text": "Weiß",
+      "src": "3495e757855a"
+    },
+    "attr.color.purple": {
+      "text": "Lila",
+      "src": "7d465fb9b931"
+    },
+    "attr.color.silver": {
+      "text": "Silber",
+      "src": "a0b43df06f52"
+    },
+    "attr.color.yellow": {
+      "text": "Gelb",
+      "src": "19dd83f11752"
+    },
+    "attr.color.orange": {
+      "text": "Orange",
+      "src": "78e7771b8b46"
+    },
+    "attr.color.mustard": {
+      "text": "Senf",
+      "src": "4ec51082ce79"
+    },
+    "attr.condition.very-good": {
+      "text": "Sehr gut",
+      "src": "06a2935e6f57"
+    },
+    "attr.color.turquoise": {
+      "text": "Türkis",
+      "src": "27b0da11a987"
+    },
+    "attr.color.dark-green": {
+      "text": "Dunkelgrün",
+      "src": "a1f45c459dce"
+    },
+    "attr.color.light-blue": {
+      "text": "Hellblau",
+      "src": "087adcfa7186"
+    },
+    "attr.color.multicolour": {
+      "text": "Mehrfarbig",
+      "src": "a95a6359e765"
+    },
+    "attr.condition.satisfactory": {
+      "text": "Befriedigend",
+      "src": "6f12a6a702ce"
+    },
+    "attr.condition.new-with-tags": {
+      "text": "Neu mit Etiketten",
+      "src": "3f4d0f75317f"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "Neu, ohne Etiketten",
+      "src": "b240e472e77d"
+    },
+    "item.9313828257.title": {
+      "text": "Häkelkleid für das Büro",
+      "src": "60e6e1f58652"
+    },
+    "item.9330125733.title": {
+      "text": "Lila Midi-Kleid im Wickelstil",
+      "src": "fbe6c501a7de"
+    },
+    "item.9488799404.title": {
+      "text": "Boho-Halskette mit gelben Perlen",
+      "src": "d10bcf137fb9"
+    },
+    "item.9564694739.title": {
+      "text": "Ganesha-Figur aus Holz",
+      "src": "b7edd72d8919"
+    },
+    "item.9313953618.title": {
+      "text": "Kurzer Jumpsuit | Forever21",
+      "src": "6880f148e307"
+    },
+    "item.9538548234.title": {
+      "text": "Armband aus reinem 925er Silber mit Perlen",
+      "src": "dfa243c2649c"
+    },
+    "item.9488787680.title": {
+      "text": "Boho-Halskette aus violetten Rocailles",
+      "src": "37783cfed7a1"
+    },
+    "item.9328440121.title": {
+      "text": "Midi-Kleid mit geometrischem Muster in Marineblau",
+      "src": "eaec75b2d9e9"
+    },
+    "item.9578974766.title": {
+      "text": "Schwarzes Maxikleid aus Baumwolle | Größe L",
+      "src": "3757bc8bc02a"
+    },
+    "item.9493474615.title": {
+      "text": "Süßwasserperlen-Choker-Halskette",
+      "src": "9a2dd05afdae"
+    },
+    "item.9313793339.title": {
+      "text": "Sommerliches Strandkleid mit Neckholder und V-Ausschnitt",
+      "src": "8f6c0135abc6"
+    },
+    "item.9562314219.title": {
+      "text": "Indische, handgewebte Stola aus Leinen im Ethno-Stil",
+      "src": "62b04577316e"
+    },
+    "item.9562257190.title": {
+      "text": "Mango Midi-Sommer-/Partykleid | L–XL",
+      "src": "71166c04e526"
+    },
+    "item.9371186724.title": {
+      "text": "Mehrfarbiger, handgefertigter Stoffschmuck",
+      "src": "ed8f6d2699d2"
+    },
+    "item.9331197768.title": {
+      "text": "Cami-Top in Mango Gold Metallic | Größe M",
+      "src": "7bc205f2e6ca"
+    },
+    "item.9561218589.title": {
+      "text": "ZARA: cremefarbenes, gehäkeltes Crop-Top mit langen Ärmeln",
+      "src": "5585e00fc540"
+    },
+    "item.9476370273.title": {
+      "text": "Auffällige Vintage-Hängerkette aus Glas",
+      "src": "4516b193e069"
+    },
+    "item.9438031948.title": {
+      "text": "Vintage-Schmuck | Ethnische Boho-Halskette",
+      "src": "36c11b9255c4"
+    },
+    "item.9367213932.title": {
+      "text": "Zara-Jumpsuit aus weißer Baumwolle für den Sommer | Größe",
+      "src": "d0934f126f5b"
+    },
+    "item.9498955593.title": {
+      "text": "Tie-Dye-Set aus Oberteil und Rock mit Blumenmuster | L/XL",
+      "src": "e66906691eac"
+    },
+    "item.9331163535.title": {
+      "text": "Indisches, mit Seide und Baumwolle besticktes Oberteil | Blaugrün",
+      "src": "8428ab2c454e"
+    },
+    "item.9729863208.title": {
+      "text": "Weite, lange Strukturhose aus Wolle in Mango",
+      "src": "f66b84b4f595"
+    },
+    "item.9607321104.title": {
+      "text": "Handgefertigter Anhänger aus Keramik | Boho-Hippie-Flair",
+      "src": "fe9875c0a3f5"
+    },
+    "item.9388380417.title": {
+      "text": "Ethnische Tunika aus indischer Baumwolle im Tie-Dye-Stil | Größe M",
+      "src": "31bb7263dc17"
+    },
+    "item.9339704755.title": {
+      "text": "Sommer-Wickeloberteil aus indischer Baumwolle | Größe M bis L",
+      "src": "d13a0711c6cd"
+    },
+    "item.9565320171.title": {
+      "text": "Indische Parvati-Figur, Statue, spirituelles Heiligtum",
+      "src": "cba63dbd90ce"
+    },
+    "item.9561725365.title": {
+      "text": "Designerschal der indischen Luxusmarke Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "item.9311775029.title": {
+      "text": "Schwarzes Kurti-Oberteil aus Baumwolle · Größe L · Indischer Boho-Stil",
+      "src": "671150bcd5c8"
+    },
+    "item.9675580496.title": {
+      "text": "Vintage-Tasche | Äthiopisches hellbraunes Leder | Boho-Tasche",
+      "src": "fea2cf673919"
+    },
+    "item.9564918603.title": {
+      "text": "Indische Ganesha-Figur aus Terrakotta – Statue, Götterbild",
+      "src": "2112976670e8"
+    },
+    "item.9438792395.title": {
+      "text": "Mehrfarbige Boho-Ohrringe mit Rocailles – Hängende Creolen",
+      "src": "122be0688a30"
+    },
+    "item.9320744061.title": {
+      "text": "Indische Baumwollhose | Schwarz | Design mit roten Knöpfen",
+      "src": "36f9283855ee"
+    },
+    "item.9371212323.title": {
+      "text": "Handgefertigte, kunstvolle Textil- und Holz-Anhänger-Halskette",
+      "src": "a99e77f4b363"
+    },
+    "item.9360542677.title": {
+      "text": "Sommerkleid aus indischer Baumwolle mit Blockdruck und ohne Träger",
+      "src": "21cdb9d32022"
+    },
+    "item.9493332709.title": {
+      "text": "Von indischen Kunsthandwerkern gefertigte Indigo-Häkelkette",
+      "src": "5c248f4e69b5"
+    },
+    "item.9328489962.title": {
+      "text": "Shiftkleid mit tropischem Blumenmuster | Handgefertigt in Nigeria",
+      "src": "dad674a2d8c7"
+    },
+    "item.9370862833.title": {
+      "text": "Handgewebtes „Indian Summer“-Maxikleid aus Baumwolle | Größe M",
+      "src": "1b8363f570d9"
+    },
+    "item.9316393171.title": {
+      "text": "Indisches Sommerkleid aus Baumwolle | Vielseitig | Vielfältig tragbar",
+      "src": "987508937b28"
+    },
+    "item.9561679205.title": {
+      "text": "Indische, handgewebte Leinen-Stola/Halstuch/Schal in Korallenrosa",
+      "src": "805d29f7f893"
+    },
+    "item.9477421040.title": {
+      "text": "Vergoldete Armreifen mit zwei Armreifen aus weißem Kristall",
+      "src": "27c1cf4f2006"
+    },
+    "item.9329298936.title": {
+      "text": "Kaftan-Oberteil mit indischem rosa Bandhani-Print – Größe M bis L",
+      "src": "42a380967d08"
+    },
+    "item.9603839908.title": {
+      "text": "Marokkanische Laterne als Tisch- oder Hängelampe bzw. Kerzenhalter",
+      "src": "1a3a931a0c7e"
+    },
+    "item.9602470022.title": {
+      "text": "Jen Beagin: Große Schweizer HBO-Serie mit Jodie Comer in der Hauptrolle",
+      "src": "8c0072dde9d4"
+    },
+    "item.9552844745.title": {
+      "text": "Indisches Fit-&-Flare-Halterkleid aus reiner Baumwolle | Größe L",
+      "src": "a672a1dda38b"
+    },
+    "item.9316420644.title": {
+      "text": "Handgenähtes „Indian Summer“-Strand-Kaftan-Kleid | Baumwolle",
+      "src": "1d387995bfc7"
+    },
+    "item.9565381682.title": {
+      "text": "Indische Ganesha- und Parvati-Figuren – spirituelle Götterbilder",
+      "src": "986fce8e2f56"
+    },
+    "item.9561602678.title": {
+      "text": "Sommerkleid aus einer Baumwoll-Leinen-Mischung aus Indien mit zwei Taschen",
+      "src": "b0d0d2b71e89"
+    },
+    "item.9511040845.title": {
+      "text": "Armreif im indischen Vintage-Stil aus goldfarbenem Kristall",
+      "src": "5b19cc52987d"
+    },
+    "item.9330044272.title": {
+      "text": "Sommer-Kaftan-Kleid | Nigerianische Baumwolle | Einheitsgröße M bis L",
+      "src": "7ab3a0220f98"
+    },
+    "item.9578313870.title": {
+      "text": "Mango-Bluse | Oberteil mit Rundhalsausschnitt | Kurze Ärmel mit Polsterung",
+      "src": "5a9adc584493"
+    },
+    "item.9442502622.title": {
+      "text": "Handgefertigte große Hängeohrringe aus afrikanischem Stoff mit blauen Punkten",
+      "src": "8376001339b6"
+    },
+    "item.9602569998.title": {
+      "text": "Khaled Hosseini: „Und die Berge hallten wider“ – ein weltweiter Bestseller",
+      "src": "7347b97ae1fe"
+    },
+    "item.9500656843.title": {
+      "text": "Vintage-Schmuck aus 925er Feinsilber | Ethnische Tribal-Ohrringe",
+      "src": "0efb043b87f7"
+    },
+    "item.9439083125.title": {
+      "text": "Swarovski-Charms-Set / Sterlingsilber / Swarovski-Kristall",
+      "src": "b323b934ca4c"
+    },
+    "item.9602556623.title": {
+      "text": "Francis Fukuyama: „Identity“ – ein politisches Meisterwerk und Bestseller",
+      "src": "2e26cadcea20"
+    },
+    "item.9364938382.title": {
+      "text": "Handgenähtes langes Sommer-Maxikleid aus indischer Baumwolle | Größe M",
+      "src": "0013e43386ab"
+    },
+    "item.9561251555.title": {
+      "text": "Indischer gelber Baumwollschal/Halstuch/Stola mit der Aufschrift „Hare Rama Radhe Radhe“",
+      "src": "7fdd9f030e4c"
+    },
+    "item.9395042890.title": {
+      "text": "Prognosen zur heutigen Weltordnung – Bruno Maçães: Der Anbruch Eurasiens",
+      "src": "c317085288ff"
+    },
+    "item.9437887059.title": {
+      "text": "Indische Vintage-Ohrringe aus Silber | 92,5 % Silber mit Steinverzierung",
+      "src": "a06548005c1d"
+    },
+    "item.9316357780.title": {
+      "text": "Sommer-Strandkleid aus indischer Baumwolle | Blumenmuster mit Schmetterlingen | Taschen",
+      "src": "655a6fe07105"
+    },
+    "item.9489491094.title": {
+      "text": "Tibetische Halskette | Buddhistisch | Boho-Schmuck | Vintage | Retro",
+      "src": "5fa52213b8ee"
+    },
+    "item.9442502622.description": {
+      "text": "In Nigeria handgefertigte, große Ohrhänger aus blau gepunktetem Stoff.",
+      "src": "d15d69007904"
+    },
+    "item.9438210918.title": {
+      "text": "Fastrack Quarz-Analoguhr mit silbernem Zifferblatt und Edelstahlarmband",
+      "src": "addae22ca945"
+    },
+    "item.9395142510.title": {
+      "text": "Angie Thomas: „The Hate U Give“ – Ein atemberaubender, lebensverändernder Bestseller",
+      "src": "cccde8351aca"
+    },
+    "item.9331108819.title": {
+      "text": "Kimono/Angrakha aus indischer Baumwolle | Vielseitige Strandjacke",
+      "src": "6c0af4c0fd1a"
+    },
+    "item.9629132899.title": {
+      "text": "Baseballkappe mit gesticktem Regenbogenherz | Geschenk zum LGBTQ-Pride-Monat",
+      "src": "1cf298a98c4a"
+    },
+    "item.9602536889.title": {
+      "text": "Colson Whitehead: „Die Underground Railroad“ – Pulitzer-Preisträger",
+      "src": "3f2c694824c6"
+    },
+    "item.9564218918.title": {
+      "text": "Indische Suppenschüssel aus Keramik mit Henkel | Spülmaschinen- und mikrowellengeeignet",
+      "src": "b6afb00cf9c3"
+    },
+    "item.9360475926.title": {
+      "text": "India Summer – Asymmetrisches Midi-Kleid aus Baumwolle mit Blockdruck | Größe L",
+      "src": "b95e6b842f8c"
+    },
+    "item.9395334867.title": {
+      "text": "D. H. Lawrence: „Lady Chatterleys Liebhaber“ – einst verbotener, skandalöser Klassiker",
+      "src": "b607f455419b"
+    },
+    "item.9339656344.title": {
+      "text": "Indisches Sommer-Midi-Kleid aus Baumwolle mit mehrlagigem Schnitt und Handblockdruck – Größe M",
+      "src": "fcadc6dab316"
+    },
+    "item.9311896207.title": {
+      "text": "Midi-Kleid aus indischer Baumwolle · Marineblauer Kachelmuster-Druck · Plissiert · Größe L",
+      "src": "189261565d9f"
+    },
+    "item.9602491240.title": {
+      "text": "Unbedingt lesen: Peter Frankopan – „Die Seidenstraßen“ – weltweiter Nummer-1-Bestseller",
+      "src": "d5cf44c7b419"
+    },
+    "item.9602442603.title": {
+      "text": "Ayn Rand: „Der Quell“ – Signet Centennial Edition – Ein sofortiger Klassiker",
+      "src": "aa784c057d65"
+    },
+    "item.9602413571.title": {
+      "text": "William Dalrymple: „Der letzte Mogul Indiens“ – Gewinner des Duff-Cooper-Preises",
+      "src": "d17787c2f22d"
+    },
+    "item.9581381003.title": {
+      "text": "Ohrringe aus Neusilber in Elefantenform | Boho-Hippie-Schmuck aus Indien",
+      "src": "8aceece80ff8"
+    },
+    "item.9729949801.title": {
+      "text": "Indisches Boho-Kleid | Langes Vintage-Kleid | Retro-Stil | Sommerkleid aus Baumwolle",
+      "src": "2bcf06e22b6d"
+    },
+    "item.9575501283.title": {
+      "text": "Om Namah Shivaya – Hinduistischer Gebetsschal | Spiritueller Yoga- und Meditationsschal",
+      "src": "2ac5edf7ccf5"
+    },
+    "item.9395115967.title": {
+      "text": "Zadie Smith: „White Teeth“ – ein herausragender Debütroman des neuen Jahrtausends",
+      "src": "1499b6f62d00"
+    },
+    "item.9328560854.title": {
+      "text": "Midi-Kleid mit afrikanischem Batik-Muster | Handgefertigt aus nigerianischer Ankara-Baumwolle",
+      "src": "7db37b3795ae"
+    },
+    "item.9500656843.description": {
+      "text": "Indischer Vintage-Schmuck aus 92,5er Feinsilber | Mit der Punzierung „92,5“ versehen",
+      "src": "1f26b00b4eec"
+    },
+    "item.9395169253.title": {
+      "text": "Marlon James: „Eine kurze Geschichte von sieben Morden“ – Gewinner des Man Booker Prize",
+      "src": "cd3c83aa7fd3"
+    },
+    "item.9395315968.title": {
+      "text": "Robert Ryan: „Dead Man’s Land“ – ein fesselndes Sherlock-Holmes-Spin-off, das im Ersten Weltkrieg spielt",
+      "src": "828e4e03636d"
+    },
+    "item.9604783346.title": {
+      "text": "Sieben Elefanten mit „Bösem Blick“ zum Aufhängen | Glücksbringer-Dekoration „Good Energy Lucky Elephant“",
+      "src": "67c32c70bd47"
+    },
+    "item.9580235622.title": {
+      "text": "Vintage-Boho-Retro-Schmuck | Handgefertigte, gehäkelte Sonnenblumen-Ohrhänger",
+      "src": "ad8f3a40234b"
+    },
+    "item.9311521689.title": {
+      "text": "Boho-Maxirock aus Baumwolle | Vintage-Rock | Kordelzug in der Taille | Indischer Ethno-Stil",
+      "src": "88306c398e67"
+    },
+    "item.9511040845.description": {
+      "text": "Vintage-Armreif aus Indien in Goldoptik, 2,5 Zoll/6,35 cm. Sehr hübsch.",
+      "src": "c82f35467db1"
+    },
+    "item.9698274032.title": {
+      "text": "Retro-Oberteil | Vintage-Oberteil | Boho-Stil | Langärmliges Shirt mit Mango-Marmor-Print",
+      "src": "4c22644e29fb"
+    },
+    "item.9729863208.description": {
+      "text": "Strukturierte Oberfläche\nHohe Leibhöhe\nElastischer Bund\nWeites Hosenbein\nSchwere Wollhose",
+      "src": "44fe5de25257"
+    },
+    "item.9602838102.title": {
+      "text": "Verblüffend: Natsume Soseki – „Das Tor“ (NYRB Classics) – Einleitung von Pico Iyer",
+      "src": "26bce423540f"
+    },
+    "item.9720394316.title": {
+      "text": "Vintage-Boho-Halskette | Retro-Tribal-Schmuck-Choker | Im tibetischen Mandala-Stil",
+      "src": "36a81d980413"
+    },
+    "item.9565087476.title": {
+      "text": "Antike indische Statue aus Messing der Familie von Lord Shiva, Parvati und Ganesha",
+      "src": "ea1f305fb753"
+    },
+    "item.9395068524.title": {
+      "text": "Eric Hoffer: „Der wahre Gläubige“ – ein erschreckend aktueller Klassiker über Massenbewegungen",
+      "src": "72cd8e05b5a3"
+    },
+    "item.9562192907.title": {
+      "text": "Traditionelle indonesische Ulos im Vintage-Stil – Accessoire, Wandrahmen, Teppich, Tischläufer",
+      "src": "1a62a29c3c15"
+    },
+    "item.9561780997.title": {
+      "text": "Langer, transparenter Schal im Jugendstil von einem indischen Designer – leicht, elegant, seidenweich",
+      "src": "245b0a58078c"
+    },
+    "item.9355163406.title": {
+      "text": "Vom Autor von „Life of Pie“ – „Die hohen Berge Portugals“ von Yann Martel – 3 Erzählungen",
+      "src": "847e36e6e92e"
+    },
+    "item.9311631498.title": {
+      "text": "FabIndia – Rosa Maxirock aus Baumwolle · Blockdruck · Goldfarbene Zari-Borte · Festlicher Boho-Stil",
+      "src": "10753dfa7926"
+    },
+    "item.9314010527.title": {
+      "text": "Maxikleid mit afrikanischem Print · Blau, Weiß, Gold · Trägerlos, gerafft · Nigerianische Baumwolle",
+      "src": "d60db8510b7c"
+    },
+    "item.9309160145.title": {
+      "text": "Handbesticktes mexikanisches Kleid · Schwarzes Huipil-Kleid mit Blumenmuster · Handgefertigt · Boho-Stil",
+      "src": "88acfff4c6e5"
+    },
+    "item.9476315818.title": {
+      "text": "Vintage-Schmuck | Boho-Schmuck | Halskette aus Sterling-Silber-Perlen im Choker-Stil | Retro",
+      "src": "7294a6525b94"
+    },
+    "item.9362130631.title": {
+      "text": "Indien während des Ausnahmezustands: „Eine verwundete Zivilisation“ von V. S. Naipaul, Nobelpreisträger",
+      "src": "915db534f633"
+    },
+    "item.9322734477.title": {
+      "text": "Indisches Sommerhemd aus Baumwolle · Schwarz-roter Blockdruck · Herzmotiv · Größe L",
+      "src": "135910ef74b3"
+    },
+    "item.9312410623.title": {
+      "text": "Jumpsuit aus indischer Baumwolle · Blauer Blockdruck · Elastisches Oberteil aus Häkelstoff · Sommerlicher Boho-Stil",
+      "src": "0f59723fe5d3"
+    },
+    "item.9602596973.title": {
+      "text": "M. P. Khemka: Akupressur und Akupunktur – Ein-Punkt-Behandlung, Band 1: „Bindu Ek Upchar Anek“",
+      "src": "7222f7d3e6c0"
+    },
+    "item.9371171716.title": {
+      "text": "Handgefertigte Halskette aus indischem Baumwollstoff | Kunsthandwerklicher Textilschmuck | Boho-Festival",
+      "src": "a632df3535e4"
+    },
+    "item.9315339114.title": {
+      "text": "Wickeloberteil mit afrikanischem Print | Hochwertige nigerianische Baumwolle | Peplum-Schnitt | Puffärmel",
+      "src": "8fd44d2b0d81"
+    },
+    "item.9602746361.title": {
+      "text": "Das darf man nicht verpassen – Malcolm Gladwell: „David und Goliath“ – Nummer eins der internationalen Bestsellerlisten",
+      "src": "eeec06b9a11d"
+    },
+    "item.9602681438.title": {
+      "text": "Das beste Buch des Jahres 2021: Elizabeth Kolbert – „Under a White Sky“ – Pulitzer-Preisträgerin",
+      "src": "adb65f191ebc"
+    },
+    "item.9686505544.title": {
+      "text": "Vintage-Schmuck | Retro-Schmuck | Armband aus 925er Silber | Amethyst und Perle | Boho",
+      "src": "b86a62948d75"
+    },
+    "item.9602879226.title": {
+      "text": "„Emotional Mirza Waheed: Das Buch der goldenen Blätter“ – auf der Shortlist für den DSC-Preis: Eine Liebesgeschichte aus Kaschmir",
+      "src": "12a2f7e73730"
+    },
+    "item.9562398817.title": {
+      "text": "Retro-Schal | Boho-Accessoires | Leichter Schal mit griechischen Mustern und grauen Glitzer-Pailletten",
+      "src": "d90ebf2a469c"
+    },
+    "item.9602894095.title": {
+      "text": "Inspirierend: Piya Bahadurs Reise zum Mekong – Vier Frauen, 17.000 Kilometer Motorradabenteuer",
+      "src": "e5acf514b7f2"
+    },
+    "item.9395211212.title": {
+      "text": "Spanisch lernen – Don Quijote von Cervantes: Ein zeitloses Meisterwerk, illustrierte spanische Ausgabe",
+      "src": "b15b0483441c"
+    },
+    "item.9316140580.title": {
+      "text": "Weißes Baumwoll-Sommerkleid mit Taschen im indischen Blockdruck-Stil | Blumiges Mogul-Motiv | Größe M–L",
+      "src": "69fbb46f25c7"
+    },
+    "item.9602788500.title": {
+      "text": "Sozialwissenschaften – Benedict Anderson: „Imagined Communities“ – Ursprünge und Ausbreitung des Nationalismus",
+      "src": "d6f6657d9ec4"
+    },
+    "item.9602649617.title": {
+      "text": "OG-Ausgabe von 1970: Anthony Gilbert – „The Body on the Beam“ (Vintage Pan Books – Krimis aus dem Goldenen Zeitalter)",
+      "src": "9349f2d7108e"
+    },
+    "item.9579803801.title": {
+      "text": "Seltener Fund: Authentischer viktorianischer Armreif aus 925er Silber | Vintage-Retro-Schmuck im königlichen Stil",
+      "src": "57379aef9e8e"
+    },
+    "item.9395292320.title": {
+      "text": "Brandneu – Mayyu Ali: „Eradication“ – Ein erschütternder Bericht aus erster Hand über den Völkermord an den Rohingya",
+      "src": "6995f7e3d6d1"
+    },
+    "item.9311368443.title": {
+      "text": "Palazzo-Rock mit Hosenbeinen | Batik-ähnlicher Druck | Weite Beine | Indischer Boho-Stil | Baumwolle aus Nigeria",
+      "src": "cc9875478f38"
+    },
+    "item.9674633786.description": {
+      "text": "Vintage-Creolen im Bali-Stil mit Drahtumwicklung\n92,5 % reines Sterlingsilber (geprüft)\nDurchmesser 2 cm",
+      "src": "ac8f02eeef5e"
+    },
+    "item.9602779694.title": {
+      "text": "Indische Geschichte Christophe Jaffrelot Pratinav Anil – Indiens erste Diktatur: Der Ausnahmezustand",
+      "src": "fc1d1c869a3d"
+    },
+    "item.9649545514.title": {
+      "text": "Boho-Kleid | Buddha-Kombi-Set | Boho-Kleid | „Indian Summer“-Baumwollhose | Ethno-Kleid",
+      "src": "e48310f988ae"
+    },
+    "item.9583027994.title": {
+      "text": "3 indische Nasenstecker aus oxidiertem Silber ohne Piercing | Nasenstecker zum Aufstecken | Boho-Chic-Schmuck",
+      "src": "fd0f3d127f08"
+    },
+    "item.9312286809.title": {
+      "text": "Ritu Kumar India – Sommerkleid aus Baumwolle · Art-déco-Fächer-Print · Mit Perlen verzierter Ausschnitt · Taschen",
+      "src": "f1cd7e8b75f3"
+    },
+    "item.9603594529.title": {
+      "text": "Gebundene Ausgabe: David Whyte – „Consolations“; Elizabeth Gilbert – „Behalte dieses Buch für immer auf deinem Nachttisch“",
+      "src": "96c365ffb05c"
+    },
+    "item.9603636575.title": {
+      "text": "Set zur Behandlung von Sportverletzungen: Chinesische Schröpftherapie – 12 Schröpfgläser, Komplettset, Akupunktur-Modell",
+      "src": "dcadca1579e5"
+    },
+    "item.9355268622.title": {
+      "text": "Funktionaler Hintergrund, aber möglich: „The Netanyahus“ – Joshua Cohen, Gewinner des Pulitzer-Preises 2022",
+      "src": "9d37fe2e99a5"
+    },
+    "item.9711247731.title": {
+      "text": "Spirituelles Armband | Buddhistischer Schmuck | Rudraksha-Yoga-Mala – Spirituelle Accessoires für die Meditation",
+      "src": "3d08649f5144"
+    },
+    "item.9641705366.title": {
+      "text": "Farbenfrohes afrikanisches Boho-Sommerkleid im Tribal-Stil | Kaftan-Tunika im Swing-Stil mit ethnischem Print | Einheitsgröße M bis L",
+      "src": "e86237e2dca1"
+    },
+    "item.9565484914.title": {
+      "text": "Gott des Reichtums und des Wohlstands | Indische hinduistische Ganesha-Figur – religiöse, spirituelle Statue – spirituell",
+      "src": "63559ef2d9b3"
+    },
+    "item.9359739617.title": {
+      "text": "Das beste Buch über Pakistan: Daniyal Mueenuddin – Pakistan: Kurzgeschichtensammlung, englische Taschenbuchausgabe",
+      "src": "580a0cb0d3c4"
+    },
+    "item.9602950103.title": {
+      "text": "Seltenes Exemplar von Markus Zusaks „Die Bücherdiebin“ – die „New York Times“ bezeichnete es als „lebensverändernd“ – Nummer 1 der internationalen Bestsellerliste",
+      "src": "e6237bcd94a9"
+    },
+    "item.9581381003.description": {
+      "text": "Aufwendiges Design. Ein wunderschön detailliert gearbeiteter Elefant, der Stärke, Weisheit und Wohlstand symbolisiert.",
+      "src": "8276f0f14d2f"
+    },
+    "item.9575763651.title": {
+      "text": "Indische Rudraksha-Gebetskette für Meditation, Yoga und Chanting | Hinduistische spirituelle Rosenkranz-Halskette",
+      "src": "0ef35b30956d"
+    },
+    "item.9529729646.title": {
+      "text": "Handgefertigte Mütze aus Himalaya-Wolle mit Futter aus 100 % weichem Fleece | Boho-Mode | Vintage-Retro",
+      "src": "5b3f11c5a1f5"
+    },
+    "item.9602907756.title": {
+      "text": "unberechenbar Keigo Higashino „Eine Mittsommer-Gleichung“ – Detektiv Galileo – Der japanische Stieg Larsson",
+      "src": "c1ce6a1037c0"
+    },
+    "item.9438954997.title": {
+      "text": "Goldfarbenes Schmuckset bestehend aus einer Halskette, passenden Creolen, einem Armreif und einem Ring",
+      "src": "a9fbff5f2bf2"
+    },
+    "item.9395098362.title": {
+      "text": "Orientalische zeitlose Geschichten – Amita Kanekar: „Die Angst vor den Löwen“ – Ein packender Thriller über einen Aufstand in der Mogul-Ära – Indien",
+      "src": "ade83197c671"
+    },
+    "item.9360886820.title": {
+      "text": "Jetzt im Handel erhältlich: „The Alternative. Was Ökonomen Ihnen vorenthalten wollen“ von Nick Romeo (englische Taschenbuchausgabe)",
+      "src": "8534279891e0"
+    },
+    "item.9602725968.title": {
+      "text": "„Lies, bevor du stirbst“ – Rumi: „The Essential Rumi“ von Coleman Barks – Neue, erweiterte Ausgabe – Bestseller-Lyrik",
+      "src": "ed9316b0445e"
+    },
+    "item.9561251555.description": {
+      "text": "Von Hand koloriert. Feinste Baumwolle aus Webstühlen. Im Blockdruckverfahren bedruckt. Spirituell, elegant, friedensspendend. Großformatig.",
+      "src": "f108654a518f"
+    },
+    "item.9419147643.title": {
+      "text": "Brandneu – Christopher Bollen: „Havoc“ – Ein köstlich bösartiger Psychothriller, empfohlen von der New York Times",
+      "src": "34399280b05e"
+    },
+    "item.9561218589.description": {
+      "text": "Größe S\nUngetragen, neuwertiger Zustand, durchscheinend  \nCremefarben \nKurze Länge  \nGehäkelt",
+      "src": "babd18cf1808"
+    },
+    "item.9355082189.title": {
+      "text": "Die Geheimnisse hinter den GLP-Abnehmmedikamenten – „Off the Scales“ von Aimee Donnellan: Die Insider-Geschichte von Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "item.9674633786.title": {
+      "text": "Vintage-Schmuck | Retro-Schmuck | Gedrehte Seil-Creolen | Ethnischer Boho-Schmuck aus 925er Silber",
+      "src": "0fc1f0de3ba8"
+    },
+    "item.9602870728.title": {
+      "text": "Chitra Banerjee Divakaruni: „Der Palast der Illusionen“ – Internationaler Bestseller – Das Mahabharata neu erzählt",
+      "src": "e1c706d7ed74"
+    },
+    "item.9565566983.title": {
+      "text": "Indische antike Radha-Krishna-Statue aus Messing – hinduistische spirituelle Gottesfigur | Messing, 5,5 Zoll",
+      "src": "8e0e25823725"
+    },
+    "item.9488799404.description": {
+      "text": "Diese Halskette besteht aus tiefgelben Rocailles mit goldenen Rocailles als Akzente und einer Kunststoffkordel.",
+      "src": "ef548bda8352"
+    },
+    "item.9488787680.description": {
+      "text": "Diese Halskette besteht aus tiefvioletten Rocailles mit goldenen Rocailles als Akzente und einer Kunststoffkordel.",
+      "src": "37c2ffda88bd"
+    },
+    "item.9720394316.description": {
+      "text": "Halskette aus vergoldetem Messing mit mehrfarbigem Anhänger und blauen Perlen. Lässt sich auch wunderbar als Choker tragen. Längenverstellbar.",
+      "src": "0222e190d517"
+    },
+    "item.9493332709.description": {
+      "text": "Handgefertigte, zweilagige, schlichte und leichte Halskette aus gehäkelten Perlen. Mit Kordeln zur Anpassung an die gewünschte Länge.",
+      "src": "74698620b449"
+    },
+    "item.9580235622.description": {
+      "text": "Hängende, gehäkelte Sonnenblumen-Ohrringe mit braunen Holzperlen.\nMaterialien: Wolle, Edelstahl, Holz\nStil: Boho & Hippie\nHöhe: 7 cm",
+      "src": "3c887561cea9"
+    },
+    "item.9564218918.description": {
+      "text": "Keramik-Suppenschüssel aus Indien mit Henkel, mikrowellen- und spülmaschinenfest, lebensmittelechtes Material, mehrfarbig\nBreite 11 cm\nHöhe 7 cm",
+      "src": "ae11b01d1e19"
+    },
+    "item.9562398817.description": {
+      "text": "Der hellgraue Schal ist an den Rändern mit zarten Paillettenverzierungen in einem geometrischen griechischen Schlüsselmuster versehen.\nMischung aus Baumwolle, Wolle und Viskose.",
+      "src": "e3bfed52ad1f"
+    },
+    "item.9675580496.description": {
+      "text": "Hochwertige Vintage-Umhängetasche aus braunem Echtleder, handgefertigt in Äthiopien.\nVerstellbarer Riemen\n1 Hauptfach\n1 Innentasche",
+      "src": "778b6215cb8c"
+    },
+    "item.9316420644.description": {
+      "text": "Kurzes Strandkleid im Kaftan-Stil oder schlichte Sommerkleidung aus Indien, aus weicher Baumwolle gefertigt. In den Farben Türkis und Dunkelgrün erhältlich, passend für die Größen M bis L.",
+      "src": "f9856a0d7a9f"
+    },
+    "item.9438792395.description": {
+      "text": "Zum Verkauf steht ein wunderschönes Paar mehrfarbige Ohrringe aus Rocailles, 2,75 Zoll lang und 1 Zoll breit, mit silberfarbenen Beschlägen. Ein wunderschönes und einzigartiges Boho-Paar.",
+      "src": "36b404572169"
+    },
+    "item.9561602678.description": {
+      "text": "Ungetragen. \nFarbe – Creme\nMaterial – Baumwoll-Leinen-Mischung\nPassform – Locker, Größe L–XL\nÄrmel – Kurzarm\nLänge – Midi\nTaschen – 2\nVerschluss – Knopf am Rücken",
+      "src": "7328b2bd4796"
+    },
+    "item.9552844745.description": {
+      "text": "Produktdetails\n• Fit-and-Flare-Kleid mit blauem Print mit indischen Ethno-Motiven\n• Neckholder-Ausschnitt\n• Ärmellos\n• Maxilänge mit ausgestelltem Saum\n• Baumwollstoff\nGröße L\nBrustumfang 40 Zoll",
+      "src": "08bba5cc974c"
+    },
+    "item.9489491094.description": {
+      "text": "Eine wunderschöne, klobige Halskette im tibetischen Stil mit einer „Om“-Gravur 🕉️. Korallen- und Türkiseinlagen auf einer Messingplatte mit mehrsträngigen Glasperlen und einem Verschluss aus Holzknöpfen.",
+      "src": "58db4f121215"
+    },
+    "item.9561725365.description": {
+      "text": "Schal des indischen Luxus-Modelabels Satya Paul. Mit einem japanisch inspirierten Bambus-Muster und einem kontrastierenden roten Rand.\nMaterial: Transparenter, leichter Stoff, Chiffon",
+      "src": "705254e0fd36"
+    },
+    "item.9561679205.description": {
+      "text": "Atemberaubend und elegant. Aus Leinen gefertigt, mit gewebtem Muster, sehr klassischer und eleganter Look. Passt dank seiner vielseitigen Farbe und seines schönen Falls zu verschiedenen Outfits.",
+      "src": "9d8baf77b7ae"
+    },
+    "item.9698274032.description": {
+      "text": "Brustumfang 40 Zoll / 101,6 cm\nLänge 24 Zoll / 61 cm\nLeichter Viskose-Stoff, Marmor-Print, gerader Schnitt, Rundhalsausschnitt, lange Ärmel mit Knopfleiste.\nWunderschöner Fall und Boho-Flair.",
+      "src": "ad327c2c5d3d"
+    },
+    "item.9629132899.description": {
+      "text": "🌈 Regenbogen-Pride-Baseballkappe – Kappe mit gesticktem Regenbogenherz, LGBTQ+-Pride-Kappe 🌈\nMaterial: 100 % Premium-Baumwolle\nPassform: Verstellbarer Riemenverschluss\nGröße: Einheitsgröße, passt den meisten Erwachsenen",
+      "src": "d65a9a0498a2"
+    },
+    "item.9313828257.description": {
+      "text": "Elegantes, figurbetontes Kleid in Marineblau mit einem weißen Einsatz aus Häkelspitze vorne und einem plissierten Saum. Ein schickes, feminines Kleidungsstück, das sich perfekt für festliche Anlässe, Firmenveranstaltungen oder als Bürokleidung eignet.\n\nGröße: L (Etikett)",
+      "src": "0acccc64a7e6"
+    },
+    "item.9493474615.description": {
+      "text": "Edelstein: Perle\nVerschluss: Karabinerverschluss\nKettenart: Perlenkette\nPerlen: 8 mm Süßwasserperlen\nKette: 16'' + 1''\nWasserfest und hypoallergen\n\nSüßwasserperlenkette, natürliche, einzigartige Formen",
+      "src": "00e8a2715383"
+    },
+    "item.9313953618.description": {
+      "text": "Hübscher, blaugrüner Jumpsuit von Forever 21 mit luftig fallender, gestufter Rüschenverzierung vorne und verstellbaren, zum Binden gedachten Trägern. Ein leichter, bequemer und figurschmeichelnder Sommer-Jumpsuit für einen Abendausgang.",
+      "src": "48ee50f09ef0"
+    },
+    "item.9564918603.description": {
+      "text": "Mini-Ganesha-Tonfigur – Handgefertigte dekorative spirituelle Ganesha-Figur als Geschenk für das Büro oder zur Einweihungsfeier oder als Wohnaccessoire\nGröße: ca. 3,1 × 1,9 × 4 Zoll (L × B × H), Gewicht: 200 Gramm",
+      "src": "e91c626d75b5"
+    },
+    "item.9355163406.description": {
+      "text": "„Die hohen Berge Portugals“ von Yann Martel, Autor von „Schiffbruch mit Tiger“. Taschenbuch, gebrauchter Zustand mit leichten Gebrauchsspuren am Einband und Abnutzungsspuren (siehe Fotos). Vollständig und gut lesbar. Aus einem rauchfreien Haushalt.",
+      "src": "45282112205b"
+    },
+    "item.9477421040.description": {
+      "text": "2 vergoldete Armreifen mit weißen Strasssteinen. Indischer Hochzeitsschmuck.\n\nFarbe – Gold, Weiß\nMaterial – Kupfer\nMuster – Paisley-Motiv\nBeschichtung – Vergoldung, Gold",
+      "src": "4e338240ec1d"
+    },
+    "item.9538548234.description": {
+      "text": "Hergestellt aus echtem, 92,5 % reinem Silber. Mit der 925er-Punzierung versehen. Verstellbares Design für einen bequemen und sicheren Sitz. Rhodiniert, um ein Anlaufen zu verhindern und einen lang anhaltenden Glanz zu gewährleisten.",
+      "src": "598e9459aafc"
+    },
+    "item.9476370273.description": {
+      "text": "Handgefertigte Statement-Halskette mit einem rechteckigen Anhänger aus verschmolzenem Glas. Der Anhänger besticht durch ein wunderschönes, metallisch schimmerndes Spiralmuster in den Farbtönen Meeresblau, Bronze, Gold und Kupferglitzer.",
+      "src": "b75fa8ed33a0"
+    },
+    "item.9565320171.description": {
+      "text": "Mini-Parvati-Tonfigur – Handgefertigte dekorative spirituelle Hindu-Göttin-Parvati-Figur als Geschenk zur Einweihung eines Büros oder einer Wohnung oder als Wohnaccessoire\nGröße: ca. 3,1 × 1,9 × 4 Zoll (L × B × H), Gewicht: 200 Gramm",
+      "src": "fd5d3dd8dc5b"
+    },
+    "item.9561780997.description": {
+      "text": "Schal. Ein vom Jugendstil inspiriertes Design der indischen Modedesignerin Nida Mahmood. Mahmood, die als Indiens „Königin des Kitschs“ bekannt ist, verbindet häufig internationale Kunstströmungen der Vergangenheit mit traditioneller indischer Ästhetik.",
+      "src": "f0e0fd6b1b06"
+    },
+    "item.9565566983.description": {
+      "text": "Verehren Sie die hinduistischen Götter Radha und Krishna für Spiritualität, Frieden, Harmonie, Glück und Wohlbefinden. Wunderschöne spirituelle Wohnaccessoires. \n\nStatue aus Messing\nHöhe: 5,5 Zoll\nBreite: 3 Zoll\nTiefe: 2 Zoll\nGewicht: 750 g",
+      "src": "719082ea08d4"
+    },
+    "item.9562257190.description": {
+      "text": "Einmal getragen. Fließender Stoff. A-Linien-Schnitt. Midi-Länge. Ausschnitt. Rundhalsausschnitt. Ärmellos. Verdeckter Reißverschluss am Rücken. Seitliche Schlitze. \nLänge 131 cm, Brustumfang 55 cm, Taillenumfang 45 cm, Hüftumfang 56,5 cm\n85 % Viskose, 15 % Polyamid",
+      "src": "0631b4fec421"
+    },
+    "item.9578974766.description": {
+      "text": "Größe: L  \nMaterial: Rayon\nEin wunderschönes schwarzes Kleid mit Blumenmuster oben und unten. Mit weichem Futter für hohen Tragekomfort. Das perfekte Sommerkleid für den Strand, Tagesausflüge und eine lockere Passform.",
+      "src": "95cb09e384cc"
+    },
+    "item.9686505544.description": {
+      "text": "Handgefertigtes Armband aus echtem 925er Sterlingsilber (geprägt). \nAmethyststeine mit gezüchteten Süßwasserperlen\nKippverschluss\nZwei rechteckige, facettierte Amethyste\nDrei runde Süßwasserperlen\nDas Armband ist 7 Zoll lang",
+      "src": "2347fbe304f1"
+    },
+    "item.9316393171.description": {
+      "text": "Superweiche indische Baumwolle und wunderschöner Blumenprint. Dank der Träger lässt sich das Kleid sowohl als Neckholder-Kleid als auch mit normalen Schulterträgern tragen. Reicht bis zum Knie. Sehr atmungsaktiv und bequem für den Sommer.\nGröße: M bis L passen gut",
+      "src": "642b7756fc58"
+    },
+    "item.9603839908.description": {
+      "text": "Dank des Tragegriffs lässt sie sich aufhängen oder auf einen Tisch stellen und sorgt so für eine dekorative Beleuchtung. Die leuchtend gelbe Metalllaterne im marokkanischen Stil besticht durch aufwendige filigrane Ausschnitte.\nHöhe 8 Zoll / 20 cm\nBreite 4 Zoll / 10 cm",
+      "src": "30e1ad9061bf"
+    },
+    "item.9564694739.description": {
+      "text": "Die handgeschnitzte Holzstatue des hinduistischen Gottes Ganesha thront auf einem wunderschön gearbeiteten Sockel. Diese wunderschöne, spirituelle und elegante Ganesha-Statue bringt Segen, Wohlstand und zeitlose indische Kunstfertigkeit in jeden Raum und jede Wohnraumgestaltung.",
+      "src": "6ff24af8062c"
+    },
+    "item.9607321104.description": {
+      "text": "Handgefertigte, marineblaue Keramik-Halskette mit einer Kette mit rosa Akzenten. Die Länge der Halskette ist verstellbar. Aufgrund des Glasurprozesses beim Brennen der Keramik ist die Rückseite der Anhänger nicht glasiert und unversiegelt. Beim Tragen fällt dies jedoch nicht auf.",
+      "src": "cb64550e688f"
+    },
+    "item.9565381682.description": {
+      "text": "Mini-Ganesha- und Parvati-Tonfiguren – handgefertigte, dekorative, spirituelle Hindu-Götterfiguren von Ganesha und Parvati als Geschenk für das Büro oder zur Einweihungsfeier oder als Wohnaccessoire\nGröße pro Stück: ca. 3,1 x 1,9 x 4 Zoll (L x B x H), Gewicht pro Stück: 200 Gramm",
+      "src": "359cb158a1ab"
+    },
+    "item.9578313870.description": {
+      "text": "Bluse in der Farbe „Lilac Mango“ mit Rundhalsausschnitt und kurzen Ärmeln, die mit Einlagen versehen sind, um die Form zu bewahren. Ideal für das Büro, Abendveranstaltungen oder formelle Anlässe. Schimmert und fällt wunderschön.\nGröße L\nObermaterial: 100 % Polyester",
+      "src": "1ab3ad7b8b3d"
+    },
+    "item.9438031948.description": {
+      "text": "Dies ist eine handgefertigte Boho-Statement-Halskette mit aufwendiger Perlenstickerei, Steinen und einer Stoffapplikation als Basis, handgefertigt in Nigeria. Sie besticht durch ein auffälliges, farbenfrohes Design mit verschiedenen bunten Perlen, Kunststeinen und kleinen Metallanhängern am unteren Ende.",
+      "src": "4fc05cf7da8e"
+    },
+    "item.9438210918.description": {
+      "text": "Armbandmaterial – Edelstahl\nArmbandfarbe – Silber\nAnzeigeart – Analog\nVerschluss – 3-teiliger Schiebeverschluss\nUhrwerk – Quarz\nZifferblattfarbe – Silber\nGehäuseform – oval\nGehäusematerial – Metall\nGehäuselänge – 32,70 mm\nGehäusebreite – 31,45 mm\nGehäusedicke – 7,15 mm",
+      "src": "e19f6e5ba4d6"
+    },
+    "item.9604783346.description": {
+      "text": "Material: Metall\nLänge: 16 Zoll / 40,6 cm\nBreite: 2 Zoll / 5,08 cm\n7 Figuren in Form von Elefanten und „bösen Blicken“, von denen man glaubt, dass sie Glück bringen und negative Energie aus dem Zuhause oder Büro vertreiben, in dem sie aufgehängt werden. Perfekte Dekoration im Boho-Ethno-Stil für die Eingangstür oder die Wände eines Raumes.",
+      "src": "75599b0b0684"
+    },
+    "item.9320744061.description": {
+      "text": "Wunderschöne Baumwollhose im Indian-Summer-Stil in Schwarz, mit hübschen roten Knöpfen an der Seite. Super vielseitig und sehr figurschmeichelnder Schnitt. Perfekt für den Sommer. Taillenumfang: 36 Zoll. Von der bekannten indischen Marke Jaypore, die für handwerkliche Designs und natürliche Textilien bekannt ist.",
+      "src": "8c96f64bf862"
+    },
+    "item.9583027994.description": {
+      "text": "3 leicht zu tragende Nasenstecker zum Aufstecken aus einer Silberlegierung. Kombinieren Sie diese mit einem Tanktop und einem geblümten Palazzo-Hosenrock oder Rock, um den rustikal-modernen indischen Stil zu erzielen. Da ich Nasenstecker nicht mag, verkaufe ich diese. Das Bild, auf dem die Nasenstecker getragen werden, dient nur zur Veranschaulichung und ist kein Foto von mir.",
+      "src": "0ec6921b8fa4"
+    },
+    "item.9476315818.description": {
+      "text": "Wunderschöne Perlenkette im Bohème-Stil mit leuchtend orangefarbenen, korallenfarbenen und türkisfarbenen Perlen sowie strukturierten, silberfarbenen Akzenten im tibetischen Stil. Ideal zum Kombinieren mit anderen Ketten oder als Blickfang. In hervorragendem Zustand, leicht und mit einem klassischen Verschluss versehen.",
+      "src": "057f368848d7"
+    },
+    "item.9395315968.description": {
+      "text": "Ein Buch, das man nicht aus der Hand legen kann. Dr. John Watson dient als Militärarzt in den Schützengräben von Flanders Fields, wo ein Serienmörder die Soldaten verfolgt. Ein spannender, atmosphärischer Krimi, der die Geschichte des Ersten Weltkriegs mit klassischer Detektivliteratur verbindet. #sherlockholmes #wwifiction #mysterybooks",
+      "src": "dfa72043f121"
+    },
+    "item.9565087476.description": {
+      "text": "Wunderschöne, spirituelle, antike, goldene Figur, die die gesamte Familie des hinduistischen Gottes Shiva darstellt (Shiva, Parvati und Ganesh, sitzend auf Nandi). \nMaße – Größe 5,5 x 6 x 2,5 Zoll; Gewicht 1695 Gramm (1,6 kg); Material: Messing\nHolen Sie sich Spiritualität, Frieden, Harmonie, Glück und Wohlbefinden nach Hause",
+      "src": "90a8bcf8527d"
+    },
+    "item.9371186724.description": {
+      "text": "Ein einzigartiges, auffälliges Schmuckstück – perfekt zu einem schlichten Oberteil oder einem Sommerkleid, um einen Farbtupfer zu setzen. Leicht und angenehm zu tragen – ein wunderschönes Beispiel für handgefertigten indischen Textilschmuck. Eine farbenfrohe, fröhliche, handgefertigte Statement-Halskette, die vollständig aus Baumwollstoff gefertigt ist.",
+      "src": "50f89c8117e6"
+    },
+    "item.9575501283.description": {
+      "text": "Indisches gelb-orangefarbenes Altar-Tuch/Halstuch aus Baumwolle für hinduistische Rituale, Gebete, Mantras oder Meditation und Puja. Von Hand bedruckt mit der roten Aufschrift „Om Namah Shivaya“, einem Shivalinga sowie der gesamten Shiva-Familie mit Shiva, Parvati und Ganesha. \nLänge 55 Zoll / 139 cm\nBreite 33 Zoll / 83 cm",
+      "src": "6a6c4c0cab94"
+    },
+    "item.9439083125.description": {
+      "text": "Hinweis: Die letzten beiden Fotos von Ohrring und Halskette dienen nur zur Veranschaulichung und sollen zeigen, wie diese Anhänger kombiniert und getragen werden können. Der Ohrring bzw. die Halskette sind NICHT Teil des Angebots. Es werden ausschließlich die Anhänger verkauft! :)\n\nZwei Anhänger aus Sterlingsilber mit Swarovski-Kristallen als Geburtssteine für den Monat April.\nMaterial: Silber / Swarovski-Kristall",
+      "src": "bdea3cf3bc27"
+    },
+    "item.9529729646.description": {
+      "text": "Sehr warm. Diese handgefertigte Mütze aus 100 % Wolle mit einem Futter aus 100 % weichem Fleece wird von Kunsthandwerkern im indischen Himalaya hergestellt. Mit ihren lebhaften, mehrfarbigen Mustern, den kuscheligen Ohrenklappen und den geflochtenen Quasten-Bändern verleiht sie Ihrem Winterlook einen verspielten, freigeistigen Boho-Hippie-Charme. Breite: 9 Zoll.",
+      "src": "f91fccf4b399"
+    },
+    "item.9711247731.description": {
+      "text": "Wunderschönes, spirituelles Meditationsarmband aus Perlen.\nHergestellt aus natürlichen Materialien: dunkelbraunen Rudraksh-Samen und hellbraunen Perlen aus Bodhi-Baumsamen. Perfekt für Yoga, Meditation, Achtsamkeitsübungen oder den Boho-Look im Alltag.\n14 Rudraksh-Samen\n7 Bodhi-Baumsamen\nDurchmesser: 2,5 Zoll\nDehnbares Gummiband",
+      "src": "8be1f9bee3ab"
+    },
+    "item.9313793339.description": {
+      "text": "Fließendes Sommer-Maxikleid mit Batik-ähnlichem Print. Mintgrün, Schwarz und Weiß. V-Ausschnitt vorne und hinten mit einem selbstzubindenden Neckholder-Ausschnitt, verziert mit Holzperlen. Der Saum fällt wunderschön und schwingt anmutig mit jeder Bewegung.\nAus einem weichen, seidig-glatten Stoff mit Satin-Optik. Perfekt als Strandkleid, Resort-Overdress oder Abendkleid.\nGröße L",
+      "src": "b3623b498921"
+    },
+    "item.9395211212.description": {
+      "text": "Eine wunderschön illustrierte Adaption des größten Romans, der je auf Spanisch geschrieben wurde, mit Illustrationen von Svetlin. Ideal für Spanischlernende, Schüler und alle, die einen leicht zugänglichen Einstieg in Cervantes’ legendäre Geschichte vom Ritter suchen, der gegen Windmühlen kämpfte. #donquijote #spanischlernen #klassischeliteratur",
+      "src": "eed87e0a0db7"
+    },
+    "item.9395115967.description": {
+      "text": "Gewinner des Whitbread First Novel Award 2000, gepriesen als das herausragende Debüt seiner Generation. Eine weitläufige, urkomische, generationenübergreifende Saga zweier Familien im multikulturellen London. Ein moderner Klassiker und einer der prägenden britischen Romane der 2000er Jahre. 3,99 Sterne auf Goodreads. #zadiesmith #modernclassics #bookclub",
+      "src": "f47a506051fe"
+    },
+    "item.9311521689.description": {
+      "text": "Wunderschöner, bodenlanger Rock aus indischer Baumwolle in leuchtendem Rot, Orange und Lila, mit einem wirbelnden Bandhani-Muster und einer atemberaubenden Kontrastborte am Saum aus übereinanderliegenden Einsätzen mit Blattmotiven in Gold, Creme und Dunkelbraun, die ihm einen edlen, festlichen Look verleihen. Der perfekte Sommerrock, der sich hervorragend mit einem Trägertop oder einer locker sitzenden Bluse kombinieren lässt.",
+      "src": "88c3079fb8de"
+    },
+    "item.9395142510.description": {
+      "text": "Von John Green als „atemberaubend“ gelobt. Ein mehrfach preisgekrönter Nummer-1-Bestseller der „New York Times“, inspiriert von der Black-Lives-Matter-Bewegung, der die Geschichte der 16-jährigen Starr erzählt, nachdem sie miterlebt hat, wie die Polizei ihre beste Freundin aus Kindertagen erschossen hat. Verfilmt als Kinohit. 4,50 Sterne auf Goodreads. #YAbooks #mustread #bookish",
+      "src": "8e41fa54fdfb"
+    },
+    "item.9498955593.description": {
+      "text": "Das Set besteht aus einem kurzärmeligen Crop-Top mit V-Ausschnitt, kombiniert mit einem passenden Rock mit Knopfleiste. Das Gesamtdesign besticht durch einen weißen Gänseblümchen-Blumenprint vor einem rot-orangefarbenen Tie-Dye-Hintergrund.\n\nTaillenumfang des Rocks – 34 Zoll\nHüftumfang des Rocks – 42 Zoll\nLänge des Rocks – 27 Zoll\nBrustumfang des Tops – 44 Zoll (Oversize-Look und -Passform)\nPassend für Größe L/XL",
+      "src": "2b4c9dfc6029"
+    },
+    "item.9395098362.description": {
+      "text": "Ein wunderschön gestaltetes Buch mit vergoldetem Einband. Die Handlung spielt im Jahr 1673 im Indien unter der Herrschaft von Aurangzeb: Zwei junge Mogul-Adlige geraten in die Nachwehen eines niedergeschlagenen Aufstands, der von einer mysteriösen Frau und ihren Anhängern angeführt wurde. Das Buch liest sich wie ein Krimi und lässt das Mogul-Indien dabei lebendig werden. #historischerRoman #Mogul-Indien #bookstagram",
+      "src": "dbe7662e55a6"
+    },
+    "item.9395334867.description": {
+      "text": "Der Roman, der so umstritten war, dass er in Großbritannien über dreißig Jahre lang verboten war und 1960 wegen Obszönität vor Gericht stand. Eine leidenschaftliche, Grenzen sprengende Geschichte über Klassenunterschiede, Begierde und verbotene Liebe zwischen einer Adligen und ihrem Wildhüter. Einer der berüchtigtsten und bedeutendsten Romane der englischen Literatur #bannedbooks #classicliterature #dhlawrence",
+      "src": "ac307305c2fa"
+    },
+    "item.9395292320.description": {
+      "text": "Diese Memoiren, verfasst von einem Rohingya-Dichter, der den Völkermord selbst erlebt hat, wurden dafür gelobt, dass sie die Kraft der Feder zum Wohle der Menschheit einsetzen. Ein seltenes, unverzichtbares Augenzeugenbericht aus erster Hand über eine der prägendsten Menschenrechtskrisen unserer Zeit. Eine eindringliche Lektüre für alle, die sich für Menschenrechte, Flüchtlingsgeschichten und Zeitgeschichte interessieren. #Menschenrechte #Memoiren #Sachbuch",
+      "src": "4038f2d68091"
+    },
+    "item.9322734477.description": {
+      "text": "Wunderschönes indisches Baumwollhemd im Sommerstil, auf auffälligem schwarzem Grund mit markanten, rot-grünen, im Blockdruckverfahren aufgebrachten herzförmigen Motiven und hübschen Holzknöpfen. Ein elegantes, unkompliziertes Statement-Stück mit echtem handwerklichem Charakter. Lässt sich mühelos kombinieren: Tragen Sie es zu Jeans und Sandalen, in eine Hose oder einen Rock gesteckt oder offen über einem T-Shirt. Ein wunderschöner Farbtupfer und ein hübsches Muster für jede Jahreszeit.",
+      "src": "872b0d5d0a2a"
+    },
+    "item.9395169253.description": {
+      "text": "Gewinner des Man Booker Prize 2015, von führenden Kritikern als episch und großartig bezeichnet. Ein weitläufiger, kaleidoskopischer Roman, der ausgehend vom Attentatsversuch auf Bob Marley durch Jahrzehnte jamaikanischer Politik, Bandenkriege und die CIA führt. Weithin als einer der größten Romane des 21. Jahrhunderts angesehen. 4,06 Sterne auf Goodreads. #bookerprize #literaryfiction #bookstagram",
+      "src": "6d6d8ee1187d"
+    },
+    "item.9395068524.description": {
+      "text": "Die „New York Times“ bezeichnete das Buch als eindringliche, beunruhigende Lektüre. Dieser 1951 verfasste, schlanke Klassiker erklärt, warum gewöhnliche Menschen sich fanatischen Bewegungen anschließen und zu überzeugten Anhängern werden, und liest sich, als wäre er erst gestern geschrieben worden. Ein Lieblingsbuch der Präsidenten Eisenhower und Clinton. 4,11 Sterne auf Goodreads. #Psychologie #Philosophie #Sachbuch – enthält Markierungen und hilfreiche Notizen",
+      "src": "b4705b309873"
+    },
+    "item.9579803801.description": {
+      "text": "Ein seltener Fund. \nMaterial: Echtes 925er Silber (geprüft) \nGröße: 2,4 Zoll\nIch verkaufe ihn, da er mir etwas zu klein ist. Silberarmreif mit aufwendigen Motiven im viktorianischen Stil, mit antiker Oberfläche und verziert mit sorgfältig gefassten aquablauen Kristallen, grünen Kristallen und Kunstperlen. \nHerstellung: Handgefertigtes Kunsthandwerk\nKontaktieren Sie mich für weitere Details oder schärfere Fotos.",
+      "src": "a33aafc2eb86"
+    },
+    "item.9395042890.description": {
+      "text": "Der ehemalige portugiesische Europaminister reiste sechs Monate lang auf dem Landweg von Baku nach Peking, um zu beweisen, dass Europa und Asien zu einem Superkontinent verschmelzen. Ein Leser sagte, das Buch habe seine Sicht auf die Geopolitik nachhaltig verändert. Ein Muss für alle, die sich für China, Russland und das sich wandelnde globale Machtgleichgewicht interessieren. 3,84 Sterne auf Goodreads. #Geopolitik #Aktuelles #Sachbuch",
+      "src": "7df1b8a748f6"
+    },
+    "item.9649545514.description": {
+      "text": "Schwarze Kurta/langes Oberteil/Anzug/Tunika aus reiner indischer Baumwolle mit durchgängigem Buddha-Handblockdruck und passender Hose. Die Hose verfügt über Kordelzüge vorne, einen bequemen Gummizug, Seitentaschen und Seitenschlitze. Rundhalsausschnitt und Dreiviertelärmel. Verleiht einen atemberaubenden spirituellen, Boho-Chic- und ethnischen Look. \nBrustumfang 40 Zoll\nLänge der Kurta (Oberteil) 44 Zoll\nHosenweite 34 Zoll \nHosenlänge 37 Zoll",
+      "src": "be5938adcbad"
+    },
+    "item.9575763651.description": {
+      "text": "🕉️ Natürliche Rudraksha-Japa-Mala: Hergestellt aus authentischen 7-mm-Rudraksha-Perlen, ideal für spirituelle Zwecke und das tägliche Mantra-Singen, Länge 16 Zoll\n📿 Design mit 108 (+5) Perlen: Perfekt für das Mantra-Singen (Japa), Meditation, Yoga und Puja-Rituale\n✨ Bequem und langlebig: Die robuste Aufreihung gewährleistet eine lange Lebensdauer und eine geschmeidige Handhabung\n🌿 Spirituelle Vorteile: Hilft, die Konzentration zu verbessern, fördert Ruhe und positive Energie",
+      "src": "6e861169acc8"
+    },
+    "item.9562314219.description": {
+      "text": "Indische Leinenstola aus Handweberei, gefertigt von Meisterhandwerkern aus Westbengalen. Die Jamdani-Webkunst, bekannt für ihre aufwendige Extra-Schuss-Technik, ist eine jahrhundertealte Tradition, bei der Motive mit feinen Fäden direkt in den Stoff eingewebt werden, wodurch Muster entstehen, die an zarte Stickereien erinnern. Leicht und weich eignet sie sich sowohl für den Alltag als auch für festliche Anlässe und verleiht jedem Outfit einen raffinierten ethnischen Touch.",
+      "src": "290887d61cb9"
+    },
+    "item.9565484914.description": {
+      "text": "Positivität, Weisheit und zeitlose indische Kunstfertigkeit vereinen sich in dieser handgefertigten Ganesha-Statue, die eine perfekte Mischung aus spiritueller Eleganz und moderner Einrichtungsästhetik darstellt. Die Statue besticht durch eine ruhige, elfenbeinweiße, strukturierte Oberfläche, die durch edle goldene Details wunderschön akzentuiert wird, und ist damit ein auffälliger Blickfang für moderne Wohnräume.\n\nMaterial: Hochwertiges Kunstharz mit strukturierter, handgefertigter Oberfläche\nFarbe: Elfenbeinweiß & Antikgold",
+      "src": "c50fcfd34c1e"
+    },
+    "item.9602950103.description": {
+      "text": "Die „New York Times“ bezeichnete es als ein Buch, das das Leben verändern kann, und Millionen von Lesern stimmen dem zu. Dieser internationale Nummer-1-Bestseller, der vom Tod selbst erzählt wird, handelt von einem Mädchen, das Bücher stiehlt und einen jüdischen Mann im nationalsozialistischen Deutschland versteckt. Es wurde in über 40 Sprachen übersetzt und 2013 erfolgreich verfilmt; mehr als ein Jahrzehnt lang stand es weltweit auf den Bestsellerlisten. 4,4 Sterne auf Goodreads. #wwiifiction #bookthief #bestseller",
+      "src": "1978d39764d1"
+    },
+    "item.9602746361.description": {
+      "text": "Eine mitreißende, kontraintuitive Untersuchung darüber, warum und wie Außenseiter Erfolg haben – von kleinen Klassen über Bürgerrechtskämpfe bis hin zu Nachteilen, die sich als verborgene Stärken entpuppen. Die „Financial Times“ bezeichnete es als Gladwells bislang unterhaltsamstes Buch, ein Wohlfühl-Spektakel, das Herz und Verstand gleichermaßen nährt. Vom Autor von „The Tipping Point“, „Blink“ und „Outliers“. 3,97 Sterne auf Goodreads. #malcolmgladwell #Sachbuch #Psychologie",
+      "src": "66ab3427c67b"
+    },
+    "item.9438954997.description": {
+      "text": "Goldfarbenes Schmuckset bestehend aus einer auffälligen, mehrreihigen Halskette, passenden Creolen, einem strukturierten Armreif und einem auffälligen Ring. Ein leichtes und dennoch wunderschönes Schmuckset. Minimalistisch und dennoch ein echter Blickfang. Für meinen Halsausschnitt etwas zu eng (Durchmesser 4,5 Zoll), daher verkaufe ich es. \n\nGröße der Halskette: 12 cm x 3,2 cm / 4,72\" x 1,26\" \nGröße der Ohrringe: 4 cm x 1,3 cm / 1,57\" x 0,51\"\nArmbandgröße: 6 cm x 3,5 cm / 2,36\" x 1,38\"\nRinggröße: 1,9 cm x 1,2 cm / 0,75\" x 0,47\"",
+      "src": "0ee64f4f8768"
+    },
+    "item.9641705366.description": {
+      "text": "Wunderschönes und farbenfrohes, handgenähtes Kurzarm-Tunika-Kleid mit einem auffälligen, von afrikanischem Kente- und Ankara-Stoff inspirierten geometrischen Muster. Handgefertigt in Nigeria. Sehr figurschmeichelnde Silhouette mit einem dehnbaren, gesmokten elastischen Bund und einem locker fallenden Schwingrock. Das perfekte Baumwollkleid für den Sommer, Festivals, Boho-Chic-Styling oder lässige Alltagskleidung. Durch die elastische Raffung und den Kaftan-Look ist es größenflexibel und passt für die Größen M bis L. Die Länge beträgt 28 Zoll.",
+      "src": "45399a9701b6"
+    },
+    "item.9602779694.description": {
+      "text": "Ein bahnbrechender, akribisch recherchierter Bericht über die 21-monatige Aussetzung der indischen Demokratie unter Indira Gandhi, der als die beste und umfassendste Darstellung des Ausnahmezustands gilt, die je verfasst wurde. Er deckt auf, wie Kongressabgeordnete, Kommunisten, Geschäftsleute, die Justiz und die städtische Mittelschicht die autoritäre Herrschaft begünstigten – nicht nur Gandhi und ihr Sohn Sanjay. Gewinner des Karwaan-Preises. 3,75 Sterne auf Goodreads. #indianhistory #politics #nonfiction",
+      "src": "8036e25c8ded"
+    },
+    "item.9364938382.description": {
+      "text": "In Indien aus leichter Baumwolle handgenäht, mit einem Druck, der von traditioneller afrikanischer Volkskunst inspiriert ist. Verspieltes und charaktervolles Maxikleid aus Baumwolle in einem verwaschenen Denim-Blau-Ton. \n\nDetails:\nGröße M (Brustumfang 36–38 Zoll)\nLeichte Baumwolle – weich, atmungsaktiv und angenehm zu tragen\nFarbenfroher, figurativer Allover-Druck auf meliertem blauem Grund\nStufige Taille mit gerafftem Rock für einen schönen Schwung\nRunder Ausschnitt\nVolle Maxilänge\nBequeme, lockere Passform – zum Hineinschlüpfen, ohne Verschlüsse",
+      "src": "48251dcb2c90"
+    },
+    "item.9602491240.description": {
+      "text": "Der weltweite Nummer-1-Bestseller der „Sunday Times“, der\ndie Menschheitsgeschichte aus östlicher Perspektive völlig neu schreibt. Der renommierte Oxforder\nHistoriker Peter Frankopan nimmt die Leser mit auf eine aufschlussreiche Reise entlang der\nHandelsrouten, die Weltreiche, den globalen Handel und moderne Machtkämpfe\ngeschaffen haben. Das Buch hat 4,14 Sterne auf Goodreads. Ein den Horizont erweiterndes Phänomen, das\nIhre Sicht auf die Weltgeschichte für immer verändern wird.\n\n#peterfrankopan #weltgeschichte #historytok",
+      "src": "12134ce1de6c"
+    },
+    "item.9602470022.description": {
+      "text": "Diese verstörende schwarze Komödie, die bald als große HBO-Fernsehserie von A24 mit Jodie Comer in der Hauptrolle zu sehen sein wird, wurde von\nCosmopolitan, Vogue und The New Yorker zum Buch des Jahres gekürt. Begleiten Sie eine chaotische Transkriptionistin für Sexualtherapie im Hinterland von New York, die eine gefährliche Besessenheit für einen der\nKlienten ihres Chefs entwickelt. Das Buch hat 3,68 Sterne auf Goodreads. Machen Sie sich bereit für eine fesselnde, voyeuristische Reise voller bissigem Humor und unerwarteter Skandale.\n\n#bigswiss #booktok #queerfiction",
+      "src": "614e72385bec"
+    },
+    "item.9419147643.description": {
+      "text": "Eine 81-jährige Witwe in einem verfallenden Luxushotel in Ägypten liefert sich einen Kampf mit einem 8-jährigen Jungen, und keiner von beiden spielt mit fairen Mitteln. Die „New York Times“ bezeichnete das Buch als „köstlich bösartig“, und Kirkus nannte es ein „bösartiges Vergnügen“ sowie einen „hinterhältigen, wahnsinnigen Thriller“. Stimmungsvoll, verworren und absolut fesselnd – dies ist ein Willenskampf zwischen zwei der unzuverlässigsten Erzähler der jüngeren Literaturgeschichte. Brandneu, ungewolltes Geschenk, ungelesen. #Psychothriller #BookTok #unputdownable",
+      "src": "369dbe6cb41f"
+    },
+    "item.9360886820.description": {
+      "text": "Der Kapitalismus ist nicht kaputt – er wurde bewusst so aufgebaut. Nick Romeo deckt die verborgenen Alternativen auf, die weltweit bereits funktionieren: echte Experimente für gerechtere Märkte, Wohnraum und Arbeit, die das System ersetzen könnten, das Sie gerade im Stich lässt. Von Ha-Joon Chang als „Befreiung unserer wirtschaftlichen Vorstellungskraft“ gelobt. Vom „Observer“ als aufschlussreich und inspirierend bezeichnet. Für Leser von Naomi Klein, Kate Raworth und alle, die es leid sind, sich immer wieder anhören zu müssen, es gäbe keine Alternative. Goodreads-Bewertung: 4,07",
+      "src": "1d409ae01255"
+    },
+    "item.9602788500.description": {
+      "text": "Das einflussreichste Buch, das je über die Ursprünge des Nationalismus geschrieben wurde; es untersucht, was Menschen dazu treibt, für ihre Nation zu leben, zu sterben und zu töten. „The Guardian“ bezeichnete es als brillant, lesenswert und inhaltsreich; es ist nach wie vor eines der meistzitierten Werke in den Geisteswissenschaften und wurde in mehr als dreißig Sprachen übersetzt. Eine unverzichtbare Lektüre für alle, die sich für politische Theorie, Geschichte oder Weltpolitik interessieren. 4,11 Sterne auf Goodreads. #politischeTheorie #Nationalismus #wissenschaftlicheBücher",
+      "src": "361d6b707523"
+    },
+    "item.9602536889.description": {
+      "text": "Dieses mit dem Pulitzer-Preis und dem National Book Award ausgezeichnete,\nfesselnde Phänomen wurde von der\n„New York Times“ zu einem der besten Bücher des 21. Jahrhunderts gekürt. Erleben Sie einen atemberaubenden Kampf um die Freiheit im amerikanischen\nSüden vor dem Bürgerkrieg – in der Geschichte, die als Vorlage für die erfolgreiche Fernsehserie diente. Es\nerhält 4,06 Sterne auf Goodreads. Tief bewegend und einfach nicht aus der Hand zu legen –\ndas ist moderne amerikanische Literatur vom Feinsten.\n\n#pulitzerprize #colsonwhitehead #historicalfiction",
+      "src": "c56cebab1dcb"
+    },
+    "item.9355268622.description": {
+      "text": "„The Netanyahus“ von Joshua Cohen. Gewinner des Pulitzer-Preises für Belletristik 2022. Auf Goodreads gibt es über 81.000 Bewertungen zu Cohens Büchern. Ein humorvoller Campus-Roman über einen jüdischen Historiker, der gezwungen ist, Benzion Netanyahu, den Vater des zukünftigen israelischen Premierministers, zu einem chaotisch verlaufenden Vorstellungsgespräch zu empfangen. Kirkus bezeichnete den Roman als hochintellektuell, energiegeladen und meisterhaft inszeniert. Taschenbuch, gebrauchter Zustand mit Knicken am Einband und Abnutzung an den Kanten (siehe Fotos). Vollständig und gut lesbar. Aus einem rauchfreien Haushalt.",
+      "src": "a64bd9222dd1"
+    },
+    "item.9602556623.description": {
+      "text": "Vom weltberühmten Autor von „Das Ende der Geschichte“ stammt diese dringliche,\naugenöffnende Analyse des modernen populistischen Nationalismus und der globalen Identitätspolitik.\nFrancis Fukuyama liefert einen provokativen Einblick in das Streben nach\nWürde, Identitätsdebatten an Hochschulen und den Groll, der die Demokratie\nheute bedroht. Das Buch hat 3,84 Sterne auf Goodreads. Eine unverzichtbare Lektüre für alle, die versuchen,\ndie aktuellen weltweiten Schlagzeilen und politischen Spaltungen zu verstehen.\n\n#francisfukuyama #politikwissenschaft #aktuelles",
+      "src": "18825964ddbd"
+    },
+    "item.9602879226.description": {
+      "text": "Vor dem Hintergrund des Kaschmirs der 1990er Jahre entfaltet sich eine verbotene Liebesgeschichte zwischen einem sunnitischen Jungen und einem schiitischen Mädchen, während Krieg und politische Gewalt ihre Welt immer mehr einengen. Das Buch stand auf der Shortlist für den DSC-Preis für südasiatische Literatur und auf der Longlist für den Folio-Preis; die „Financial Times“ bezeichnete es als ein Werk, das zweifellos Bestand haben wird. Vom Autor des internationalen Bestsellers „The Collaborator“, der von Arundhati Roy als „Literatur, die zum Zuhören anregt“ gelobt wurde #kashmirliterature #southasianfiction #warfiction",
+      "src": "d61aa89d012b"
+    },
+    "item.9602725968.description": {
+      "text": "Die maßgebliche Sammlung der Gedichte des Sufi-Mystikers Rumi aus dem 13. Jahrhundert, übersetzt von Coleman Barks, dem Mann, dem weithin zugeschrieben wird, Rumi zum meistgelesenen Dichter Amerikas gemacht zu haben. Diese neue, erweiterte Ausgabe enthält mehr als achtzig bisher unveröffentlichte Gedichte sowie eine neue Einleitung. Von Jack Kornfield als ein Werk gelobt, in dem „das Gold Rumis durch Colemans Worte strömt“, und nach wie vor der Bestseller unter allen Rumi-Sammlungen. 4,39 Sterne auf Goodreads. #rumi #poesie #spiritualität\nISBN: 9780062312747",
+      "src": "7a911c9f005a"
+    },
+    "item.9602569998.description": {
+      "text": "Vom Autor des millionenfach verkauften Bestsellers „Der Drachenläufer“\nstammt diese atemberaubende Geschichte über Herzschmerz, Familiengeheimnisse und unzerstörbare\nLiebe. Dieser mit dem Goodreads Choice Award ausgezeichnete Roman, der mehrere Generationen von Kabul bis Paris umfasst, untersucht, wie eine einzige tragische Entscheidung für immer Nachwirkungen auf ganze Familien hat. Er hat 4,08 Sterne auf Goodreads. Halten Sie Ihre Taschentücher bereit für eine unvergessliche emotionale Achterbahnfahrt, die Sie von der ersten Seite an fesseln wird.\n\n#khaledhosseini #derdrachenläufer #emotionaleBücher",
+      "src": "704ecf3638c1"
+    },
+    "item.9602681438.description": {
+      "text": "Von der Pulitzer-Preisträgerin und Autorin von „The Sixth Extinction“\nkommt nun ein schockierender Einblick in die äußerst umstrittenen Versuche der Menschheit,\ndie Natur zu kontrollieren. Die Bestsellerautorin Elizabeth Kolbert nimmt Sie mit auf eine faszinierende Weltreise,\nauf der Sie Wissenschaftler kennenlernen, die Diamantstaub in den Himmel schießen und invasive Arten\ngenetisch manipulieren. Das Buch hat auf Goodreads eine Bewertung von 4,10 Sternen. Umwerfend, beunruhigend und auf düster-komische Weise unterhaltsam – dies ist die ultimative Klimageschichte für neugierige\nGeister.\n\n#Klimawandel #Populärwissenschaft #Umweltbücher",
+      "src": "9721b9a90dcf"
+    },
+    "item.9602413571.description": {
+      "text": "Dieses mit dem renommierten Duff-Cooper-Preis ausgezeichnete, mitreißende\nhistorische Meisterwerk beleuchtet den blutigen Fall Delhis und das tragische Ende\nvon Indiens größter Dynastie im Jahr 1857. Der preisgekrönte Historiker William Dalrymple\ngreift auf seltene persische Hofaufzeichnungen zurück, um eine erstaunliche wahre Geschichte von Belagerung,\nVerrat und dem Zusammenbruch eines Imperiums zu erzählen. Das Buch wird auf Goodreads mit 4,20 Sternen bewertet. Unverzichtbare\nLektüre für alle, die sich für dramatische reale Geschichte und den Untergang großer Reiche begeistern.\n\n#williamdalrymple #indianhistory #historybooks",
+      "src": "e735901e05a2"
+    },
+    "item.9603594529.description": {
+      "text": "Elizabeth Gilbert rät dazu, dieses Buch für immer auf dem Nachttisch zu behalten, und die Leser stimmen ihr zu: Auf Goodreads haben sie ihm hervorragende 4,45 Sterne verliehen. Der Dichter David Whyte interpretiert 52 Alltagswörter wie „Alleinsein“, „Wut“ und „Vergebung“ neu als Zugänge zu tieferer Bedeutung – mit einem Vorwort von Maria Popova und einem lobenden Zitat von Nick Cave auf dem Einband. Lemn Sissay bezeichnet es als ein ungemein kraftvolles, außergewöhnliches Buch, das man für immer behalten möchte. Ein wunderschönes, geschenkfertiges Hardcover für alle, die poetische Sachliteratur lieben. #davidwhyte #consolations #geschenkbücher",
+      "src": "fa3fe7281c41"
+    },
+    "item.9602442603.description": {
+      "text": "Ein unnachgiebiger junger Architekt führt einen erbitterten Kampf gegen konventionelle Normen und eine explosive Liebesaffäre mit der einzigen Frau, die entschlossen ist, ihn zu besiegen. Die „New York Times“ bezeichnete das Werk als „brillant, wunderschön und bitter“ und lobte die Autorin als „Schriftstellerin von großer Kraft“. Diese Signet-Centennial-Ausgabe enthält ein Nachwort von Rands literarischem Nachlassverwalter sowie einen Leitfaden für Leser zu ihrer Philosophie. Einer der umstrittensten und zeitlosesten Romane des 20. Jahrhunderts. 3,96 Sterne auf Goodreads. #aynrand #klassischeLiteratur #philosophischeFiktion",
+      "src": "68e0e27368fe"
+    },
+    "item.9339704755.description": {
+      "text": "Wunderschönes, leichtes Baumwolloberteil in einem satten Senf-Oliven-Grundton mit einem filigranen Blumenblockdruck in Marineblau, Rot, Grün und Creme. Weiche, atmungsaktive indische Baumwolle mit einem lässigen Wickelausschnitt und seitlichen Bindebändern. Ein hübsches, vielseitiges Sommerteil, das sich gut über Jeans oder Shorts ziehen lässt oder im Urlaub getragen werden kann.\n\nDetails:\nV-Ausschnitt mit kurzen Flügelärmeln\nSeitliche Bindebänder im Wickelstil zum Schließen und Anpassen der Passform\nWeiche, leichte Baumwolle, von Hand blockbedruckt\nLocker sitzender, bequemer Schnitt\nFarbe: Senfgelb / Oliv / Marineblau mit Blumenmuster\nMaterial: Baumwolle (von Hand blockbedruckt)\nBrustumfang: 34–36\"",
+      "src": "42265fed3791"
+    },
+    "item.9602870728.description": {
+      "text": "Das zeitlose „Mahabharata“, ganz aus der Perspektive von Panchaali, der Ehefrau der fünf Pandava-Brüder, neu erzählt: Es schildert ihre stürmische Geburt, ihre komplizierte Beziehung zu Krishna und ihre verbotene Zuneigung zum gefährlichsten Feind ihrer Ehemänner. Die „Los Angeles Times“ bezeichnete das Buch als ein strahlendes Juwel wie der Hope-Diamant, und die „Houston Chronicle“ nannte es strahlend und charmant. Eine zutiefst menschliche Geschichte – halb Geschichte, halb Mythos – über eine Frau, die in eine Männerwelt hineingeboren wurde. 4,20 Sterne auf Goodreads. #mahabharata #mythicalfiction #internationalbestseller",
+      "src": "6fa2e4dc854a"
+    },
+    "item.9331197768.description": {
+      "text": "Hübsches, goldfarbenes Metallic-Top von Mango. Mit dezentem Schimmer – lichtreflektierend und elegant, ohne übertrieben zu wirken. Ein vielseitiges Top für den Abend oder festliche Anlässe. Ein lässiges Top für den Abend oder die Party, das sich sowohl elegant zu einer taillierten Hose oder einem Rock als auch leger zu Jeans und einem Blazer kombinieren lässt. Der goldene Schimmer verleiht ihm das gewisse Etwas für besondere Anlässe und die festliche Jahreszeit.\n\nDetails:\n\nV-Ausschnitt vorne und hinten\nFeste Strickträger (Cami-/Trägertop-Stil)\nFeiner, dehnbarer Metallic-Strick\nLeicht durchscheinend – leicht und luftig\nMarke: Mango\nGröße: M",
+      "src": "04cf82d00d17"
+    },
+    "item.9311775029.description": {
+      "text": "Wunderschönes schwarzes Oberteil im Kurti-Stil von Sabhyata mit dezentem, durchgehendem Blockdruck in Ton-in-Ton-Optik und einem wunderschönen kontrastierenden Ausschnitt.\nVon Sabhyata, einem beliebten indischen Label, Größe L. Aus weicher, atmungsaktiver reiner Baumwolle.\nDetails:\n\nKurze Flügelärmel mit roter Einfassung\nDekorativer, bestickter V-Ausschnitt\nKontrastfarbene Paspelierung in Rot und Senfgelb an Saum und Ärmeln\nFarbton-in-Farbton-Blumendruck auf schwarzem Hintergrund\nLässige, bequeme Passform\nLeichte reine Baumwolle\n\nLässt sich gut zu Jeans, Hosen oder einem Rock kombinieren. Ein vielseitiges Kleidungsstück für den Alltag.\n\nGröße: L (Etikett)\nZustand: Sehr gut",
+      "src": "1f0554b459e2"
+    },
+    "item.9359739617.description": {
+      "text": "Miteinander verknüpfte Kurzgeschichten, die im ländlichen und städtischen Pakistan spielen und sich um den Haushalt eines wohlhabenden Feudalgrundbesitzers sowie um die Bediensteten, Verwandten und Mitläufer drehen, die mit seiner Welt verbunden sind. William Dalrymple, Finalist des National Book Award, bezeichnete das Werk als die wahrscheinlich beste in englischer Sprache verfasste Belletristik über Pakistan. Von Kritikern wegen ihrer Zurückhaltung und psychologischen Tiefe mit Tschechow und Turgenjew verglichen. Eine hervorragende Wahl für Fans literarischer Belletristik, südasiatischer Autoren und zusammenhängender Kurzgeschichtensammlungen wie die von Jhumpa Lahiri oder Mohsin Hamid. (Finalist beim National Book Award)",
+      "src": "0937e62d760d"
+    },
+    "item.9602838102.description": {
+      "text": "Ein auf ruhige Weise erschütternder Roman über ein bescheidenes Paar, das von seinen eigenen Familien verbannt wurde, weil es ohne deren Zustimmung geheiratet hatte, und dessen zerbrechlicher Frieden zerbricht, als eine Schuld sie zwingt, sich mit der Vergangenheit auseinanderzusetzen. Natsume Soseki bezeichnete dieses Werk als seinen Lieblingsroman unter all seinen eigenen Werken, und Haruki Murakami hat es als das Buch genannt, mit dem er sich am stärksten identifiziert. Der „New Statesman“ bezeichnete ihn als Meisterwerk des guten Geschmacks und der Klarheit. Diese NYRB-Ausgabe bietet eine neue, genauere Übersetzung als frühere Versionen. 4,07 Sterne auf Goodreads. #japaneseliterature #natsumesoseki #nyrbclassics",
+      "src": "eea3c4b3937a"
+    },
+    "item.9602596973.description": {
+      "text": "Ein zweisprachiger Taschenführer in Hindi und Englisch zu Akupressur und Akupunktur, der sich vollständig auf jeweils einen einzigen Punkt pro Beschwerde konzentriert, um schnelle und einfache Linderung zu erzielen. Er deckt alles ab, von Appetitstörungen bis hin zu Notfallsituationen, und enthält Handdiagramme sowie Schritt-für-Schritt-Anleitungen zur Sedierung und Tonisierung für jeden Punkt. Kompakt genug, um ihn in einer Tasche oder im Hosensack mitzuführen, konzipiert als Nachschlagewerk für den Gebrauch zu Hause. Herausgegeben von ASPEUS, einem auf Naturheilkunde und Akupressur spezialisierten Forschungsinstitut in Prayagraj. #Akupressur #alternativeHeilmethoden #Naturheilkunde #Genesung #Ayurveda",
+      "src": "2cf54aa415ae"
+    },
+    "item.9562192907.description": {
+      "text": "Ulos, das von der UNESCO als Teil des immateriellen Kulturerbes Indonesiens anerkannt ist, kann als Accessoire (Schal/Tuch/Rock) getragen, an die Wand gehängt, als Tischläufer verwendet oder sogar gerahmt ausgestellt werden. Ulos ist mehr als nur ein traditionelles Textil. Es ist ein heiliges Symbol für Wärme, Schutz und den Segen der Ahnen innerhalb der Batak-Gemeinschaft. Von Hand gewebt und mit bedeutungsvollen Farben und Motiven versehen, trägt jedes Stück tiefe philosophische Werte in sich und begleitet die wichtigsten Momente des Lebens, von der Geburt über die Hochzeit bis hin zu Abschiedsfeiern.\nMaterial: Baumwolle und Seide",
+      "src": "3b29df965656"
+    },
+    "item.9602894095.description": {
+      "text": "Vier Frauen ließen ihr gewohntes Leben für 56 Tage hinter sich, um mit dem Motorrad 17.000 Kilometer durch sechs Länder zu fahren – von Hyderabad über den Nordosten Indiens, Myanmar, Thailand, Laos und Vietnam entlang des Mekong bis nach Kambodscha. Piya Bahadur berichtet von einer einmaligen Reise durch Gegenden, die indische Reisende nur selten zu sehen bekommen, und von ihrer eigenen Wandlung von einer zurückhaltenden berufstätigen Mutter zu einer selbstbewussten Abenteurerin. Vom Generaldirektor für Tourismus von „Incredible India“ als mitreißende Lektüre gelobt. #Motorradreise #FrauenaufReisen #Abenteuererinnerungen",
+      "src": "752cf398e4d4"
+    },
+    "item.9602907756.description": {
+      "text": "Der Physiker und Detektiv Manabu Yukawa reist zu einer Bergbaukonferenz in einen krisengeschüttelten Badeort, wird jedoch in eine Mordermittlung verwickelt, als ein Gast am Fuße der Klippen tot aufgefunden wird. Kirkus lobte das Buch als genial, da es in einem Fall, der absolut „twist-sicher“ erscheint, eine Wendung nach der anderen bereithält, und die Times bezeichnete Higashino als den japanischen Stieg Larsson. Der dritte Band der international erfolgreichen „Detective Galileo“-Reihe, der später als japanischer Kinohit verfilmt wurde. 3,96 Sterne auf Goodreads. #japanesekrimis #detectivegalileo #mysterythriller",
+      "src": "6837d2bdb5ef"
+    },
+    "item.9367213932.description": {
+      "text": "Kurzer Jumpsuit von Zara aus weißer Baumwolle mit Crinkle-Struktur. Größe L. Ein lässiges, luftiges Boho-Utility-Kleidungsstück mit vielen hübschen Details. Einige Flecken auf den Taschen, die jedoch kaum sichtbar sind. Ein perfektes Sommerteil zum Überziehen für den Urlaub, den Strand oder heiße Tage – mühelos und bequem mit einer lockeren, leicht übergroßen Passform.\n\n\nDetails:\nMarke: Zara\nWeiche, geknitterte Baumwollgaze – leicht und atmungsaktiv\nKragenausschnitt mit halbknöpfbarer Knopfleiste und Holzknöpfen\nElastischer Kordelzug in der Taille mit Endstücken aus Holzperlen\nHochkrempelbare Ärmel\nZwei aufgesetzte Taschen vorne\nJumpsuit-/Romper-Schnitt (Shorts)\nNatürliche Knitteroptik",
+      "src": "bc8e06af2eae"
+    },
+    "item.9388380417.description": {
+      "text": "Brustumfang: 36–38 Zoll passt perfekt. \n\nWunderschöne indische Baumwoll-Kurta in einem satten Rot mit Shibori-Batikmuster und zarten weißen Resist-Markierungen. Traditionelles Shibori ist eine handgearbeitete Batiktechnik aus Indien. Elegant und bequem, mit hübschen Details am Halsausschnitt und an den Ärmelbündchen. Ein vielseitiges ethnisches Kleidungsstück, das sich sowohl über Leggings, Jeans oder Hosen als auch zu eleganten oder legeren Outfits tragen lässt.\n\nDetails:\n100 % Baumwolle – weich, atmungsaktiv und angenehm zu tragen\nRoter Shibori-/Tie-Dye-Print\nDekorative, bedruckte Knopfleiste am Ausschnitt und passende bedruckte Ärmelbündchen\nRundhalsausschnitt\n3/4-Ärmel\nSeitliche Schlitze für mehr Bewegungsfreiheit\nGerader, knielanger bzw. wadenlanger Kurta-Schnitt",
+      "src": "72daee4fe245"
+    },
+    "item.9330125733.description": {
+      "text": "Elegantes violettes Midikleid von Closet London. In tiefem Aubergine/Violett mit einem figurschmeichelnden V-Ausschnitt und einem weit fallenden, luftigen Rock in A-Linie. Schlicht, vielseitig und bequem zu tragen – ideal für die Arbeit, besondere Anlässe oder den Alltag. Ein bequemes, figurschmeichelndes Kleid, das sich leicht elegant oder leger stylen lässt. Kombinieren Sie es mit Pumps für besondere Anlässe oder mit flachen Schuhen und einer Jacke fürs Büro. Die satte Farbe ist das ganze Jahr über wunderschön.\n\nDetails:\nV-Ausschnitt\n3/4-Ärmel\nPlissierte Taille mit voluminösem, schwungvollem Rock\nWeicher Stretch-Jersey mit schönem Fall\nMidi-Länge\nHergestellt in London\nFarbe: Lila / Aubergine\nStoff: Stretch-Jersey\nGröße: UK 12 / US 8\nZustand: Gut",
+      "src": "7429593b05ae"
+    },
+    "item.9602649617.description": {
+      "text": "Eine junge Frau wird in einer drittklassigen Pension erhängt aufgefunden, auf dem Tisch liegt ein Abschiedsbrief, doch ein scharfsichtiger Polizist entdeckt Details, die nicht zusammenpassen. Die Fahndung von Scotland Yard führt zu Charles Hobart, einem Mann mit Mitteln, Motiv und Gelegenheit, bis der Abgeordnete und Amateurkriminalist Scott Egerton sich daran macht, dessen Unschuld zu beweisen und in letzter Minute den wahren Mörder entlarvt. Der Autor Anthony Gilbert war das Pseudonym von Lucy Malleson, einem Mitglied des Detection Club, das als eine der unbestrittenen Größen der Krimiliteratur gepriesen wurde. Eine seltene Vintage-Taschenbuchausgabe von Pan Books. #vintagecrime #goldenagemystery #detectivefiction",
+      "src": "768df32e0055"
+    },
+    "item.9360475926.description": {
+      "text": "Wunderschönes Midi-Kleid aus Baumwolle mit klassischem indischem Handblockdruck. Fließender, eleganter A-Linien-Schnitt. FabIndia ist eine beliebte traditionelle indische Marke, die für ihre ethisch hergestellten, handgefertigten Blockdrucke bekannt ist und in Europa nur schwer zu finden ist. Ein zeitloses, bequemes Kleid, perfekt für den Sommer, den Urlaub oder zum ganzjährigen Kombinieren.\n\nDetails:\nMarke: FabIndia (Original-Etikett – 100 % Baumwolle, hergestellt in Indien)\nGröße L\nTraditioneller Blockdruck im Ajrakh-Stil – Paisley-Muster, Blumenmotive und Medaillons\nDekorativer Randdruck am Saum und an den Ärmelbündchen in Rot, Blau und Schwarz\nLange Ärmel, Rundhalsausschnitt\nRoter Kordelzug am Rücken zum Betonen der Taille\nWeiche, atmungsaktive, leichte Baumwolle",
+      "src": "da59e38f110c"
+    },
+    "item.9328440121.description": {
+      "text": "Elegantes Midikleid in Marineblau und Weiß von Wardrobe. Lässig-schick mit einem abstrakten geometrischen Print. Ein figurschmeichelndes, vielseitiges Kleidungsstück, das sich sowohl für das Büro als auch für festliche Anlässe oder zum Ausgehen eignet. Bequem, knitterfrei und leicht zu kombinieren – egal ob mit Absätzen oder flachen Schuhen. Fällt wunderschön am Körper und betont die Taille.\n\nDetails:\nGröße: M–L\nU-Boot-/Rundhalsausschnitt mit kurzen Flügelärmeln\nFigurbetonendes Twist-/Raffdetail an der Taille (vorne)\nBindegürtel am Rücken zum Betonen der Taille\nGlatter Stretch-Jersey mit schönem Fall\nReicht bis zur Midi-Länge\nEinfacher Slip-on-Stil, ganz unkompliziert\nFarbe: Marineblau / Weiß\nMaterial: Seidiger Stretch-Jersey (synthetisch)\nZustand: Hervorragend",
+      "src": "0570093c1a5b"
+    },
+    "item.9362130631.description": {
+      "text": "Das Buch, das die „Times“ als „vernichtendes Werk“ bezeichnete, ist die schonungslos ehrliche Auseinandersetzung des Nobelpreisträgers V. S. Naipaul mit Indien nach Indira Gandhis Ausnahmezustand. Goodreads-Bewertung: 3,71 bei über 1.900 Bewertungen. Als zweiter Band von Naipauls gefeierter Indien-Trilogie gilt diese schonungslose, unerbittliche Analyse von Kastenwesen, Religion, Armut und postkolonialer Identität als phänomenales Werk, dessen Einsichten im Rückblick nur noch schärfer erscheinen. Keine bequeme Lektüre – ein kontroverser, unerschrockener Klassiker, unverzichtbar für alle, die sich ernsthaft mit postkolonialer Literatur, indischer Geschichte oder Naipauls mit dem Nobelpreis ausgezeichnetem Gesamtwerk beschäftigen. Taschenbuch, gebrauchter Zustand, leichte Abnutzung des Einbands (siehe Fotos).",
+      "src": "13944c564b01"
+    },
+    "item.9339656344.description": {
+      "text": "Wunderschönes Sommerkleid aus Baumwolle mit Blockdruck von FabNu, Indiens moderner New-Age-Marke. Wunderschöner, abstrakter Handblockdruck mit Tier-/Tigermotiven in Indigo und Salbeigrün auf weicher, atmungsaktiver Baumwolle. Puffärmel, eine durchgehend geknöpfte Vorderseite und ein luftiger, gestufter Rock verleihen dem Kleid mühelose Eleganz und machen es besonders angenehm zu tragen.\n\nDetails:\nV-Ausschnitt mit durchgehender Knopfleiste vorne\nPuffärmel mit elastischen Bündchen\nTaillierter Schnitt mit gestuftem, fließendem Rock\nWeiche, leichte indische Baumwolle, handbedruckt im Blockdruckverfahren\nFabNu by Fabindia – hochwertiger Naturstoff\nFarbe: Indigoblau / Salbeigrün\nStoff: 100 % Baumwolle (handbedruckt)\nGröße: M\nMaße (flach liegend/ca.):\nBrustumfang: 36\"\nTaillenumfang: 32\"\nHüftumfang: locker/weit\nLänge: 47\"",
+      "src": "2b3d48d2cd22"
+    },
+    "item.9311368443.description": {
+      "text": "Wunderschöne Palazzo-Hose mit weitem Bein aus authentischer Baumwolle aus Nigeria, mit einem atemberaubenden Batik-ähnlichen Druck aus Mandala-Blumenmotiven in warmen Braun-, Senf-, Salbeigrün- und Rosétönen. Von vorne sieht sie aus wie ein weiter Rock, ist aber tatsächlich eine weit geschnittene, fließende Hose mit einem Schlitz in der Mitte – so vereinen Sie die Dramatik eines Rocks mit dem Tragekomfort einer Hose. \n\nKombinieren Sie sie elegant mit High Heels und einem figurbetonten Oberteil oder leger mit Sandalen für einen lässigen Boho-Look. Ein echtes Statement-Stück mit wunderschönen Farben.\nHinweis: Baumwolle knittert von Natur aus – kurz bügeln oder dämpfen, und schon ist sie wieder tragbar.\nTaillenweite: Verstellbar mit einem Kordelzug. (Meine Taillenweite beträgt 38 Zoll/96,5 cm und sie passt mir perfekt)\nZustand: Ausgezeichnet / Einmal getragen / Wie neu",
+      "src": "7234c4692ad3"
+    },
+    "item.9314010527.description": {
+      "text": "Atemberaubendes, trägerloses Maxikleid aus authentischer afrikanischer Baumwolle mit Wachsdruck, gekauft in Nigeria. Kräftiges blau-weißes Blattmuster mit auffälligen rot-goldenen ornamentalen Wirbeln – lebhaft, ein echter Blickfang und voller Charakter. Das geraffte Oberteil dehnt sich und passt sich so verschiedenen Größen an, ohne dass Träger nötig sind. Das perfekte Statement-Stück für den Sommer, Urlaub, Festivals oder Partys – einfach überziehen und los geht’s, oder kombiniere es mit einer Jeansjacke und Sandalen.\n\nGröße: passt problemlos von M bis XL\nZustand: Ungetragen\nDetails:\nTrägerloses Bandeau-Modell mit gerafftem/elastischem Oberteil\nDehnbares, gesmoktes Oberteil für eine bequeme, anpassbare Passform\nVoll fließender Maxirock\nAuthentischer afrikanischer Wachsdruck, knackige, strapazierfähige Baumwolle\nSatte, kräftige Farben",
+      "src": "2bb04fbd307b"
+    },
+    "item.9371212323.description": {
+      "text": "Einzigartige, handgefertigte Halskette – ein echtes Unikat. Ideal, um einem schlichten Outfit eine handwerkliche, volkstümliche Note zu verleihen. Auf farbenfrohen Jute-/Schnur-Kordeln (rosa & senfgelb) aufgereiht sind winzige Holzperlen und kleine Messingglöckchen, die zu einem auffälligen, geschnitzten Holzanhänger führen, der mit gewickelter Jute umwickelt und mit handbestickten Stoffquadraten in Rot und Gelb im Kantha-Stich (ein indisches Muster) sowie einem kleinen Pompon-Anhänger verziert ist.\n\nDetails:\nHandgefertigte / kunsthandwerkliche Statement-Halskette\nMischung aus natürlichen Materialien: geschnitztes Holz, Jute/Schnur, Baumwollstoff, Holzperlen, Messingglöckchen\nHandgestickte Stoffdetails (Kantha-Stil, Laufstich)\nLebendige Farbpalette im Folk-/Tribal-Stil\nBindeverschluss – größenverstellbar",
+      "src": "4aafe8192957"
+    },
+    "item.9316357780.description": {
+      "text": "Wunderschönes blaues Blockdruck-Kleid von Anoshk, einem Boutique-Label aus Delhi. Weiche Baumwolle mit einem aufwendigen Blumen-, Palmen- und Schmetterlingsdruck in Senfgelb, Rosa, Blau und Braun sowie zwei Taschen. Ein bequemes, elegantes Kleid zum Überziehen mit einem wunderschönen Druck und einer lockeren, ausgestellt geschnittenen Passform. Perfekt für den Sommer, den Strandurlaub oder den Alltag in Kombination mit Sandalen. Reicht bis etwa zum Knie/Midi-Länge.\n\nDetails:\n\nWeiche, salbeiblaue Baumwolle mit detailliertem Blockdruck aus Blumen- und Schmetterlingsmotiven\nÄrmellos mit rundem Ausschnitt und marineblauer Einfassung\nLocker sitzende A-Linien-/Swing-Form mit schönem Volumen\nSeitentaschen\nLeichte, atmungsaktive reine Baumwolle\nHandgefertigt – kleine Abweichungen im Druck gehören zum Charme der Handarbeit\n\nGröße: M–L\nZustand: Sehr gut",
+      "src": "ca41ac111461"
+    },
+    "item.9312410623.description": {
+      "text": "Wunderschöner, leichter Jumpsuit aus indischer Baumwolle in zartem Blau mit einem zarten weißen Blockdruck – einer Mischung aus floralen und geometrischen Motiven – und hübscher Häkelspitzenborte an der Vorderseite. Perfekt für den Sommer. \n\nDetails:\nGerafftes/elastisches Oberteil für eine bequeme, anpassbare Passform\nVerstellbare Träger\nFließende Hose\nZartes Häkelspitzen-Detail auf der Vorderseite\nLeichte, atmungsaktive reine indische Baumwolle\nSanfter, beruhigender Blauton\n\nPasst mir wunderbar (Brustumfang 40 Zoll / 101 cm, Taillenumfang 38 Zoll / 96 cm, Hüftumfang 43 Zoll / 109 cm). Das geraffte Oberteil sorgt für Tragekomfort im Oberkörperbereich, während die weiten Hosenbeine einen lockeren, eleganten Fall ergeben. Perfekt für heiße Tage, den Urlaub oder Festivals – einfach Sandalen dazu und los geht’s.\n\nGröße: L\nZustand: Sehr gut",
+      "src": "8874261edf0f"
+    },
+    "item.9603636575.description": {
+      "text": "Das alte chinesische Massage- und Wellnessritual, auf das Sportler und Prominente schwören, gibt es jetzt als komplettes Set. Dieses 12-teilige Schröpfglas-Set enthält Schröpfgläser in allen Größen von klein bis extragroß, eine Pumpenpistole für schnelles Ansaugen sowie ein Bonusmodell zur Ohrakupunktur, auf dem die Druckpunkte am Ohr zur Orientierung dargestellt sind. Das Schröpfen hat dank olympischer Athleten und Prominenter der A-Liste, die ihre charakteristischen kreisförmigen Abdrücke zur Schau stellen, einen enormen Popularitätsschub erfahren – und mit diesem Set können Sie den Trend zu Hause ausprobieren. Alle abgebildeten Teile sind im Lieferumfang enthalten, und die Verpackung enthält eine vollständige Anleitung, damit Sie sofort loslegen können. Ein großartiges Geschenk für alle, die sich für alternative Therapien, Massagen oder von der TCM inspirierte Selbstpflege interessieren. #Schröpftherapie #TCM #Selbstpflege",
+      "src": "8a881630cb5a"
+    },
+    "item.9729949801.description": {
+      "text": "Brustumfang: Passend für ca. 36–38 Zoll\nSchulterbreite: 15 Zoll\nTaillenweite: locker sitzend, passt fast jeder \nLänge: 48 Zoll\n\nWunderschönes langes Kleid in zartem Pastellbeige mit einem zarten Blumenmuster in Grau und Senfgelb. \nOriginelles indisches Design der Marke Anoshk, einer beliebten Modeboutique aus Delhi. \nHergestellt aus 100 % leichter Baumwolle, weich, atmungsaktiv und auch an heißen Tagen angenehm zu tragen. \nDas Oberteil ist figurbetont geschnitten, der Rock fällt in einer A-Linie im Vintage-Stil. \nDreiviertelärmel und ein kleiner V-Ausschnitt mit Bindedetail. \nDie Taille ist locker und fließend geschnitten, sodass das Kleid einer Vielzahl von Größen und Figurtypen passt. Perfekt für den Sommer, den Urlaub, Hochzeiten oder jeden Anlass, bei dem Sie sich gleichzeitig elegant und wohl fühlen möchten.",
+      "src": "56972dd4c616"
+    },
+    "item.9371171716.description": {
+      "text": "Ein einzigartiges, auffälliges Schmuckstück, das perfekt zu einem schlichten Oberteil oder Sommerkleid passt und einen Farbtupfer setzt. Leicht und angenehm zu tragen – ein wunderschönes Beispiel für handgefertigten Textilschmuck. Eine farbenfrohe, fröhliche Statement-Halskette aus Indien, die vollständig aus Baumwollstoff gefertigt wurde. Mehrsträngiges Design mit Reihen von handgewickelten Stoffperlen in Rosa, Limettengrün und Gelb, abgerundet durch eine Gruppe handgefertigter Baumwollblumen in Blau, Orange und Grün mit kontrastierend gestickten Mittelpunkten.\n\nDetails:\nHandgefertigter / handwerklich hergestellter Textilschmuck\n100 % Baumwollstoff – leicht und angenehm zu tragen\nMehrsträngiges Perlen-Design mit auffälligem Blumen-Mittelstück\nLebendige, mehrfarbige Farbpalette\nStoffbandverschluss am Rücken – größenverstellbar",
+      "src": "3616e6fbb3fe"
+    },
+    "item.9355082189.description": {
+      "text": "Vor einer Woche gekauft. Sprache: Englisch. Ein fesselnder, gründlich recherchierter Blick auf den Aufstieg von Ozempic und darauf, wie diese Medikamente zur Gewichtsreduktion das Gesundheitswesen, die Fast-Food-Branche, die Modewelt und vieles mehr verändern. Verfasst von einer Reuters-Kolumnistin, deckt das Buch die Geschichte hinter einem epochalen medizinischen Durchbruch auf und wirft gleichzeitig tiefgreifende Fragen zu Ungleichheit, Schönheitsidealen und dem Streben nach Schlankheit auf. Eine aktuelle, fesselnde Lektüre für alle, die sich für Gesundheit, Wissenschaft, die Pharmaindustrie oder die gesellschaftliche Debatte rund um Medikamente zur Gewichtsreduktion interessieren.\n\nDetails:\nAutorin: Aimee Donnellan\nVerlag: 4th Estate\nISBN: 978-0-00-871909-8\nFormat: Taschenbuch\nUVP: 16,99 £\nSprache: Englisch\nZustand: Sehr gut, gebraucht. Seiten sauber und unversehrt, gut lesbar.",
+      "src": "0cd1f661ed6e"
+    },
+    "item.9360542677.description": {
+      "text": "Lebhaftes, handbedrucktes Baumwollkleid in sonnigem Gelb mit Rosa, Rot und Grün – ein fröhliches, durchgehendes indisches Blumen-/Paisley-Muster. Der geraffte, elastische Oberteil macht es zu einem vielseitigen Zwei-in-Eins-Kleid: Tragen Sie es hoch als trägerloses Kleid oder tiefer auf den Hüften als langen Rock. Ein unkompliziertes, fröhliches Sommerkleidungsstück – ideal für Urlaub, Festivals oder Strandtage. Der dehnbare, geraffte Bund passt sich verschiedenen Größen an.\n\n\nDetails:\nGrößen M, L, XL\n100 % leichte Baumwolle – weich, atmungsaktiv, perfekt für warmes Wetter\nTraditionelles indisches Handblockdruck-Muster\nBreiter, geraffter und elastischer Oberteil – passt sich dehnbar an und verrutscht nicht\nZwei Tragevarianten: trägerloses Kleid oder Maxirock\nVoll, luftig geraffter Schnitt mit schönem Schwung\nMaxilänge\nZum Hineinschlüpfen – ohne Reißverschluss oder Knöpfe",
+      "src": "f7e490aaecd5"
+    },
+    "item.9437887059.description": {
+      "text": "Hier sind sowohl die gereinigte als auch die oxidierte Version abgebildet. Der Ohrring ist mit „925“ gestempelt, einem Standard-Feingehaltsstempel, der angibt, dass das Stück zu 92,5 % aus reinem Silber besteht. Diese Ohrringe sind im ethnischen indischen Chandbali-Design aus Silber gefertigt und verfügen über einen grünen Steinstecker sowie baumelnde Silberperlen. Traditionelles böhmisches Schmuckdesign. Mit aufwendig gearbeiteter Mangoform. An der Basis befinden sich fünf herabhängende Quasten aus massiven Metallperlen (Tropfen), die das Licht wunderschön einfangen. Hervorragender Vintage-Zustand mit einem schönen natürlichen Look. Ich habe die Oxidation hier gereinigt und beide Varianten abgebildet. Die Oxidation wirkt sehr natürlich und lässt sich ganz einfach entfernen. Das Reinigungspulver ist im Lieferumfang enthalten. Perfekt als auffälliges Statement-Stück oder als durchdachtes Luxusgeschenk.",
+      "src": "8ce83d7540c3"
+    },
+    "item.9316140580.description": {
+      "text": "Wunderschönes, weißes Sommerkleid aus superweicher Baumwolle aus Indien, verziert mit einem zarten, von Hand im Blockdruckverfahren aufgebrachten Blumenmotiv in sanften Terrakotta-/Orange- und Salbeigrüntönen – ein klassischer Druck im Mughal-Stil. Mit zwei Taschen. Frisch, feminin und mühelos sommerlich. Von Jaypore, einem beliebten indischen Label, das für handwerklich gefertigte Blockdrucke und natürliche Textilien bekannt ist. Ein unkompliziertes, elegantes Sommerkleid, das sich sehr praktisch waschen lässt. Einfach mit Sandalen kombinieren und los geht’s, oder mit einer Jeansjacke darüber tragen. Reicht bis etwa zur Knielänge (siehe Fotos).\n\nDetails:\nFeine weiße Baumwolle mit durchgehendem Blumen-Blockdruck\nSpaghettiträger\nKorsettform\nStufiger, geraffter Rock mit schönem Schwung\nFigurbetonte Fit-and-Flare-Form\nLeichte, atmungsaktive reine Baumwolle – perfekt für heiße Tage\nGröße: Passt perfekt für die Größen M bis L.",
+      "src": "dae2411908ed"
+    },
+    "item.9329298936.description": {
+      "text": "Wunderschönes, leichtes Kaftan-Oberteil von Jaipur Kurti mit einem traumhaften rosa Print im Bandhani-Stil (ein berühmtes indisches Design). Weiche, luftige Baumwolle mit einem atemberaubenden, mit Perlen und Verzierungen versehenen Band unter der Brust. Mühelos im Boho-Stil und gleichzeitig elegant. Vielseitig einsetzbar – trage es als Strandkleid, als kurzes Kleid oder leger über Jeans oder Shorts. Perfekt für den Sommer, Urlaub und Festivals. Die verzierte Taille verleiht ihm eine schöne, figurschmeichelnde Form.\n\nDetails:\nV-Ausschnitt mit fließenden Fledermaus-/Kaftanärmeln\nEmpire-Taille mit wunderschönem, cremefarben-silbernem, mit Perlen und Spiegelsteinchen verziertem Band\nLeichte, halbtransparente Baumwolle – luftig und leicht\nLocker sitzende, bequeme Passform\nMarke: Jaipur Kurti\nFarbe: Beerenrosa / weißer Wirbel-Print\nStoff: Leichte Baumwolle\nGröße: M–L\nZustand: Hervorragend",
+      "src": "bd26e9bf4473"
+    },
+    "item.9331163535.description": {
+      "text": "Größe – M bis L (Brustumfang bis 38)\nWunderschönes besticktes Oberteil von Fabels by Fabindia, einer exklusiven indischen Marke. Edles, blaugrünes Seiden-Baumwoll-Mischgewebe. Der herrliche, juwelenfarbene Stoff hat einen dezenten Schimmer und ist auf der Vorderseite mit eleganten, farblich abgestimmten Blumen- und Wirbelstickereien verziert. Komplett gefüttert und wunderschön verarbeitet. Ein besonderes, vielseitiges Oberteil, das sich perfekt zu einer taillierten Hose oder einem Rock für festliche Anlässe oder zu Jeans für einen smart-casual Look kombinieren lässt. Die satte Farbe und die Stickereien verleihen ihm das gewisse Etwas.\n\nDetails:\n\nRunder Ausschnitt, ärmellos\nWunderschöne, farblich abgestimmte Stickereien (Blumen und Wirbel) auf der Vorderseite\nObermaterial aus Seiden-Baumwoll-Mischung mit weichem Baumwollfutter\nReißverschluss an der Seite\nFigurbetonte, taillierte Passform\nFabels by Fabindia – hergestellt in Indien\nLaut Pflegehinweis nur chemisch reinigen, aber ich wasche es von Hand und es bleibt völlig unbeschadet",
+      "src": "ae3a01617071"
+    },
+    "item.9311896207.description": {
+      "text": "Wunderschönes Midi-Kleid aus indischer Baumwolle, das ein marineblaues Oberteil mit einem weit ausgestellten Plisseerock in einem herrlichen blau-weißen Patchwork-Fliesenmuster kombiniert. Ein elegantes Sommerkleid mit schöner Struktur und liebevollen Details.\nVon Vajor, einem beliebten indischen Label, das für seine von Kunsthandwerk inspirierten Drucke bekannt ist. Größe L.\n\nDetails:\n\nMarineblaues Oberteil mit kurzen Ärmeln\nWeit fallender Plisseerock mit gemischtem blauem Blumen-/Fliesenmuster\nTaillierter Schnitt für eine schmeichelhafte Silhouette\nReißverschluss am Rücken, gefüttertes Oberteil\nAtmungsaktive reine Baumwolle\n\nPasst wunderbar zu meiner Figur (Brustumfang 40 Zoll / 101 cm, Taillenumfang 38 Zoll / 96 cm, Hüftumfang 43 Zoll / 109 cm). Schmeichelhaft und elegant, perfekt für Sommertage, Gartenpartys, den Urlaub oder zum Kombinieren mit Sandalen oder Absatzschuhen.\nHinweis: Baumwolle knittert von Natur aus – kurz bügeln oder mit Dampf glätten, und schon ist das Kleidungsstück wieder tragbar.\nGröße: L (Etikett)\nZustand: Sehr gut",
+      "src": "fbb20b3cba3a"
+    },
+    "item.9370862833.description": {
+      "text": "Atemberaubendes Maxikleid aus Baumwolle von Anoshk by Manisha Singh, einem Boutique-Label aus Delhi, Indien. Gefertigt aus wunderschöner, handgewebter grauer und cremefarbener Ikat-Baumwolle mit einem auffälligen asymmetrischen Saum. Ikat ist eine arbeitsintensive traditionelle Webtechnik, daher ist jedes Stück ein Unikat. Ein raffiniertes, schlichtes Kleid, das sich sowohl für elegante als auch für legerere Anlässe eignet. Ein elegantes, handgefertigtes Stück aus Indien.\n\nDetails:\nMarke: Anoshk by Manisha Singh (Boutique-Label aus Delhi)\nHandgewebte Ikat-Baumwolle – das Muster wird vor dem Weben in das Garn eingefärbt (echter Ikat, kein Aufdruck)\nZweifarbiges graues Design: Ikat-Einsatz in Rautenmuster mit einem Körper aus verstreuten Motiven\nÄrmellos mit rundem Ausschnitt\nAus Einsätzen gefertigte A-Linien-Form mit dramatischem asymmetrischem Saum\nAtmungsaktive, natürliche Baumwolle – kühl und bequem\nMaxi-Länge – 47 Zoll\nBrustumfang – 36 Zoll\nTaillenumfang – 36 Zoll",
+      "src": "78898b94714b"
+    },
+    "item.9328489962.description": {
+      "text": "Wunderschönes, einzigartiges Blumenkleid, maßgefertigt in Nigeria aus herrlich knackigem Baumwollstoff. Ein sattes Marineblau als Grundfarbe, überzogen mit einem malerischen tropischen Blumenmuster in zarten Rosa-, Gelb-, Pfirsich- und Salbeigrüntönen. Wunderschön verarbeitet und absolut einzigartig. Ein echtes Statement-Stück für den Sommer, Hochzeiten, Gartenpartys oder den Urlaub. Die kontrastierenden Manschetten und das Schlüsselloch-Detail verleihen ihm Eleganz und machen es zu etwas Besonderem. Handgefertigt – es gibt kein zweites Exemplar davon!\n\nDetails:\nRunder Ausschnitt mit hübscher Schlüsselloch-/Tropfenöffnung vorne\nKontrastierende, nach oben umgeschlagene Manschetten in gedämpftem Flieder/Mauve an den kurzen Ärmeln\nFigurbetonter, körpernaher Schnitt an Taille und Hüften\nReißverschluss am Rücken\nKnie lang\nStrukturierter, maßgeschneiderter Schnitt – schmeichelt der Figur\nFarbe: Marineblau mit verschiedenen Farbtönen / tropisches Blumenmuster\nMaterial: Baumwolle\nPassform: Figurbetont / körpernah, am besten geeignet für Größe L\nZustand: Hervorragend, einmal getragen",
+      "src": "becd3efbac4b"
+    },
+    "item.9330044272.description": {
+      "text": "Atemberaubendes Statement-Kleid aus leuchtend gelber Baumwolle mit auffälligem Paisley- und Blumenmuster. Kräftiger sonnengelber Grundton mit filigranen Details in Grün, Blau, Schwarz und Creme sowie einem wunderschönen, verzierten Saumrand. Ein Blickfang, vielseitig und voller Charakter. So vielseitig – trage es als Sommerkleid, Strandkleid oder im Urlaub über der Bademode. Der auffällige Druck und die geraffte Taille sorgen dafür, dass es sowohl bequem als auch figurschmeichelnd sitzt. Ein echtes Unikat.\n\nDetails:\n\nRundhalsausschnitt mit Schlüssellochausschnitt vorne und Flügel- bzw. Kimonoärmeln\nGeraffte, elastische Taille für eine figurschmeichelnde, anpassbare Passform\nLeichte, atmungsaktive Baumwolle – perfekt für warmes Wetter\nDekorativer Bordürendruck am Saum\nEinfach zum Überziehen\nFarbe: Gelb / Grün / Blau (Paisley-Muster)\nMaterial: Baumwolle\nPassform: Geraffte Stretch-Taille – passt sich der Figur an, entspricht etwa Größe M–L\nZustand: Brandneu, ungetragen",
+      "src": "20a72c4eecc5"
+    },
+    "item.9315339114.description": {
+      "text": "Auffälliges Wickeloberteil aus leuchtend gelbem und schwarzem afrikanischem Wachsdruck, gekauft in Nigeria. Markantes geometrisches Muster im Kente-Stil, ein figurschmeichelnder V-Ausschnitt mit Wickelfront, dramatische Puffärmel und ein Peplum-ähnlicher Bindegürtel an der Taille. Durch den Wickel- und Bindegürtel an der Taille passt es für verschiedene Größen und betont die Taille auf schmeichelhafte Weise. Kombinieren Sie es elegant mit einer taillierten Hose oder einem Rock oder leger mit Jeans. Perfekt für den Sommer, Partys oder einen großen Auftritt. Ein echtes Statement-Stück voller Farbe und Charakter.\n\nDetails:\nV-förmiger Wickelausschnitt vorne mit Bindebindung an der Taille – verstellbar, schmeichelhafte Passform\nVoluminöse Puff-/Ballonärmel mit elastischen Bündchen\nPeplum-Ausgestellt an der Taille\nKnackige, strukturierte afrikanische Baumwolle – behält ihre Form wunderbar\nLebhaftes geometrisches Muster in Gelb, Schwarz und Weiß\n\nZustand: Einmal getragen\nGröße: L. Passt mir wunderbar, eignet sich dank des Wickelbands jedoch für verschiedene Größen.",
+      "src": "074e51965086"
+    },
+    "item.9311631498.description": {
+      "text": "Von FabIndia, einer der beliebtesten einheimischen Marken Indiens für handgefertigte Naturtextilien. Ein echter Glücksgriff. Wunderschöner, bodenlanger Baumwollrock in leuchtendem Rosa, mit einem zarten, durchgehend aufgedruckten Blumenmotiv im Blockdruck-Stil und einer wunderschönen, eingewebten Gold-Zari-Borte am Saum und am Bund. Opulent, festlich und voller Bewegung.\n\nPasst dank des Kordelzugs bequem für Taillenumfänge von etwa 36–40 Zoll / 91–102 cm und schmiegt sich wunderschön an die Hüften an (passt problemlos über meine 43 Zoll / 109 cm breiten Hüften). Bodelang für einen eleganten, luftigen Look.\nPerfekt für den Sommer, Festivals, Hochzeiten oder den Urlaub; lässt sich leicht mit einem schlichten Oberteil und Sandalen kombinieren. Lebhaft und ein echter Blickfang.\n\nDetails:\nAusgeprägter A-Linien-Schnitt / ausgestellter Schnitt – schöner Schwung und Fall\nKordelzug in der Taille – lässt sich auf verschiedene Größen einstellen\nTraditioneller, blockbedruckter Blumenprint\nGewebte goldene Zari-Borte am Saum und an der Taille\nKontrastierende orangefarbene Paspelierung\nLeichtes, atmungsaktives Material aus reiner Baumwolle",
+      "src": "3bfb0af71fdc"
+    },
+    "item.9312286809.description": {
+      "text": "Wunderschönes Designer-Sommerkleid von Ritu Kumar, einem der renommiertesten Modehäuser Indiens. Indische Baumwolle mit einem atemberaubenden, vom Art-déco-Stil inspirierten Fächer- und Chevron-Print in sanften, gedeckten Farbtönen wie Schwarz, Schieferblau, Braun, Creme und Grau. Lässig, elegant und äußerst bequem zu tragen.\n\nDetails:\nÄrmellos mit schmeichelhaftem U-Ausschnitt\nDekorative Perlenverzierung am Ausschnitt\nElastisches/gerafftes Oberteil für eine bequeme Passform\nLocker sitzender Swing-Schnitt mit gerafftem Ballon-Saum\nSeitentaschen (zwei Taschen!)\nLeichte, atmungsaktive Baumwolle\n\nAngegebene Größe 4 (Ritu Kumars eigene Größenangabe – dies ist KEINE UK/EU-Größe 4). Es passt mir bequem und fällt locker und lässig: Brustumfang 40 Zoll / 101 cm, Taillenumfang 38 Zoll / 96 cm, Hüftumfang 43 Zoll / 109 cm. Der lockere Schnitt passt bequem für etwa UK-Größe 12–14 / M–L und eignet sich aufgrund des lockeren Schnitts für eine Vielzahl von Größen. Auf dem Foto mit dem Kleidungsstück sind Länge und Fall zu sehen (reicht bei mir bis zur Mitte des Oberschenkels).",
+      "src": "250e5855a7f8"
+    },
+    "item.9331108819.description": {
+      "text": "Verschiedene Größen – von M bis XL\nAtemberaubendes Sommer-Baumwolloberteil im Kimono-Stil von Anokhi, einem der exklusivsten Geschäfte Indiens für moderne indische Baumwollmode. Ein wunderschön gearbeitetes Kleidungsstück aus hochwertiger, handblockbedruckter Baumwolle. Weicher weißer Grund mit einem filigranen Paisley-Muster in Blau und Burgunderrot, abgerundet durch kontrastierende, türkisfarbene Paspeln an den Rändern. Lässig-elegant und vielseitig kombinierbar. Ein exklusives, hochwertiges Kleidungsstück. Tragen Sie es offen als leichte Jacke oder gebunden als Wickeloberteil – wunderschön zu Jeans, einem Kleid oder im Urlaub über der Badebekleidung. Die Handwerkskunst und die Farben sind in natura atemberaubend. Ein besonderer Fund einer begehrten Marke.\n\nDetails:\n\nKimono-/Wickelstil mit Bindegürtel zum Taillieren oder offenem Tragen\nElegante, kontrastreiche, türkisfarbene Paspelierung entlang des Ausschnitts und der Vorderseite\nLocker sitzende 3/4-Puffärmel\nHochwertige, leichte, handblockbedruckte Baumwolle – weich und mit wunderschönem Fall\nMarke Anokhi – bekannt für authentische indische Handblockdrucke",
+      "src": "f4243fa4a8c6"
+    },
+    "item.9328560854.description": {
+      "text": "Atemberaubendes, handgefertigtes afrikanisches Kleid mit auffälligem Batik-Print. Hochwertiger Baumwollstoff in leuchtendem Gelb, Schwarz und gebranntem Orange mit einem wunderschönen Crackle-/Tie-Dye-Batikmuster. Ein echter Blickfang – lebhaft, einzigartig und voller Charakter. Perfekt für den Sommer, Festivals, Urlaub, Partys oder jeden Anlass, bei dem Sie auffallen möchten. Die Smokarbeit sorgt für Tragekomfort und eine gute Passform, während der Druck das Kleid unvergesslich macht. Ein Unikat!\n\nDetails:\nGröße: Dehnbares, gerafftes Oberteil und Taillenbereich – passt sich der Figur an, ca. S–L\nQuadratischer/schulterfreier Ausschnitt mit gerafftem Oberteil (dehnt sich an)\nPuffärmel mit hübschen Schleifen an den Ärmelbündchen\nGeraffter, elastischer Bund für eine schmeichelhafte, anpassbare Passform\nStufiger, geraffter Rock mit schönem Volumen und viel Schwung\nMidi-Länge\nHandgefertigt in Nigeria aus authentischer afrikanischer Baumwolle mit Print\nFarbe: Gelb / Orange / Schwarz (Batik)\nStoff: Baumwolle (afrikanischer Wachs-/Batik-Print)\nZustand: Hervorragend, ungetragen",
+      "src": "f485024ca6b6"
+    },
+    "item.9309160145.description": {
+      "text": "Atemberaubendes, handbesticktes mexikanisches Kleid aus schwarzer Baumwolle im traditionellen Huipil-/Oaxaca-Stil. Mit lebhaften, handgestickten Blumen- und Blattmotiven in Rosa, Orange, Gelb, Rot, Blau und Grün verziert. Dicht handbesticktes Blumenpasse und zarte schwarze Häkelspitzenborte an Schultern, Ärmeln und Saum. Quer verlaufendes Satinband.\nHergestellt aus atmungsaktiver Baumwolle, perfekt für den Sommer, Festivals oder zum Schickmachen mit Sandalen und Schmuck. Ein echtes Kunsthandwerksstück mit Charakter und handwerklichem Können, keine Massenware.\nPassform-Hinweis:\nDas Kleid hat einen relativ geraden Schnitt und liegt an der Taille enger an. An meiner Taille sitzt es etwas eng (mein Taillenumfang beträgt 38 Zoll / 96 cm) – das ist der einzige Grund, warum ich es verkaufe. Am besten geeignet für eine Taillenweite von ca. 36 Zoll / 91 cm oder weniger, oder für alle, die an anderen Stellen einen lockereren Fall bevorzugen. Bequem und weit geschnitten im Brust- und Hüftbereich.\n\nZustand: Ausgezeichnet / Einmal getragen / Neuwertig",
+      "src": "00fbde1296d5"
+    }
+  }
+}

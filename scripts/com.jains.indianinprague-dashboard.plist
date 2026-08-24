@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The local dashboard for indianinprague.jains.es — http://127.0.0.1:8093
+
+  It is a bookmark that always answers: launchd starts it at login and restarts it if it
+  ever exits, so there is no command to remember on a Sunday morning.
+
+  To enable:
+    cp scripts/com.jains.indianinprague-dashboard.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.jains.indianinprague-dashboard.plist
+
+  To disable:
+    launchctl unload ~/Library/LaunchAgents/com.jains.indianinprague-dashboard.plist
+
+  To see why it is not answering:
+    tail -20 /Users/webserver/code/indianinprague/scripts/dashboard.log
+
+  UNLIKE THE SYNC AGENT, THIS ONE IS SAFE TO LOAD IMMEDIATELY. It serves a page and writes
+  translation overrides; it deploys nothing on its own. The Publish button does deploy, and
+  that takes a deliberate click and a confirmation.
+
+  The server binds 127.0.0.1 only and rejects requests whose Host header is not localhost,
+  so nothing off this machine can reach it. Do not put it behind the tunnel.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.jains.indianinprague-dashboard</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/local/bin/node</string>
+    <string>/Users/webserver/code/indianinprague/scripts/dashboard-server.mjs</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/webserver/code/indianinprague</string>
+
+  <key>RunAtLoad</key>
+  <true/>
+
+  <!-- It is a server: if it dies, it should come back. launchd throttles restarts to one
+       every 10 seconds, which is what stops a permanent failure (port already taken, say)
+       from spinning. -->
+  <key>KeepAlive</key>
+  <true/>
+
+  <!-- publish.sh, which this can launch, shells out to node, magick, cwebp and wrangler.
+       launchd's default PATH has none of them — the same reason the sync agent sets it. -->
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/webserver/code/indianinprague/scripts/dashboard.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/webserver/code/indianinprague/scripts/dashboard.log</string>
+</dict>
+</plist>

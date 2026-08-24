@@ -1,7 +1,7 @@
 // Translate the scraped Govinda category names into British English, once, into
 // data/categories-en.json. Cheap — 138 short strings, a fraction of one key's allowance.
 import { readFileSync, writeFileSync } from "node:fs";
-import { translate } from "./deepl.mjs";
+import { translate } from "../../scripts/deepl.mjs";
 
 const cats = JSON.parse(readFileSync("vendors/govinda/data/categories.json", "utf8"));
 

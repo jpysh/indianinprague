@@ -138,7 +138,7 @@ if (process.argv.includes("--no-generate")) {
 }
 
 // Pages that exist in the repo root but must never be served.
-const PRIVATE_PAGES = new Set(["inventory.html"]);
+const PRIVATE_PAGES = new Set(["inventory.html", "dashboard.html"]);
 
 // Start clean at the top level so a page deleted from the repo cannot survive in dist/ as
 // a stale URL. images/derived and assets are rsync'd rather than recreated, so this costs

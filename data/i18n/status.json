@@ -1,0 +1,87 @@
+{
+  "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
+  "generated": "2026-08-24T10:09:07.402Z",
+  "sources": 305,
+  "exhausted": false,
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": []
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": []
+    },
+    {
+      "lang": "de",
+      "name": "Deutsch",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": 0,
+      "excluded": []
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": []
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": []
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "total": 305,
+      "translated": 305,
+      "missing": 0,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": []
+    },
+    {
+      "lang": "cs",
+      "name": "Čeština",
+      "total": 305,
+      "translated": 278,
+      "missing": 27,
+      "overridden": 0,
+      "stale": 0,
+      "outstanding": null,
+      "excluded": [
+        "/^attr\\./"
+      ]
+    }
+  ]
+}

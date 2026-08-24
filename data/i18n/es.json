@@ -1,0 +1,1233 @@
+{
+  "_comment": [
+    "DeepL output for es (Español). GENERATED — rewritten by",
+    "scripts/translate.mjs whenever the English changes. Nothing here is precious and",
+    "nothing here is yours: your edits live in overrides/ and are never written by a build.",
+    "",
+    "  src   hash of the English this was translated from; a mismatch means retranslate"
+  ],
+  "generated": "2026-08-24T10:03:20.142Z",
+  "count": 305,
+  "entries": {
+    "attr.color.red": {
+      "text": "Red",
+      "src": "ba19e9c3d5f4"
+    },
+    "attr.color.blue": {
+      "text": "Azul",
+      "src": "ec7d56a01607"
+    },
+    "attr.color.navy": {
+      "text": "Marina",
+      "src": "fb2fc1b3b8cc"
+    },
+    "attr.color.gold": {
+      "text": "Oro",
+      "src": "6249df4367d0"
+    },
+    "attr.condition.good": {
+      "text": "Bien",
+      "src": "c939327ca16d"
+    },
+    "attr.color.grey": {
+      "text": "Gris",
+      "src": "d4ac58091b02"
+    },
+    "attr.color.pink": {
+      "text": "Rosa",
+      "src": "bd38ed773240"
+    },
+    "attr.color.beige": {
+      "text": "Beige",
+      "src": "5f10cf309e5f"
+    },
+    "attr.color.cream": {
+      "text": "Crema",
+      "src": "d5398ba40fe2"
+    },
+    "attr.color.brown": {
+      "text": "Marrón",
+      "src": "18f285592896"
+    },
+    "attr.color.coral": {
+      "text": "Coral",
+      "src": "56ac628a2f10"
+    },
+    "attr.color.black": {
+      "text": "Negro",
+      "src": "c6cfe6e4f129"
+    },
+    "attr.color.lilac": {
+      "text": "Lila",
+      "src": "e3233c699c7d"
+    },
+    "attr.color.white": {
+      "text": "Blanco",
+      "src": "3495e757855a"
+    },
+    "attr.color.purple": {
+      "text": "Morado",
+      "src": "7d465fb9b931"
+    },
+    "attr.color.silver": {
+      "text": "Plata",
+      "src": "a0b43df06f52"
+    },
+    "attr.color.yellow": {
+      "text": "Amarillo",
+      "src": "19dd83f11752"
+    },
+    "attr.color.orange": {
+      "text": "Naranja",
+      "src": "78e7771b8b46"
+    },
+    "attr.color.mustard": {
+      "text": "Mostaza",
+      "src": "4ec51082ce79"
+    },
+    "attr.condition.very-good": {
+      "text": "Muy bien",
+      "src": "06a2935e6f57"
+    },
+    "attr.color.turquoise": {
+      "text": "Turquesa",
+      "src": "27b0da11a987"
+    },
+    "attr.color.dark-green": {
+      "text": "Verde oscuro",
+      "src": "a1f45c459dce"
+    },
+    "attr.color.light-blue": {
+      "text": "Azul claro",
+      "src": "087adcfa7186"
+    },
+    "attr.color.multicolour": {
+      "text": "Multicolor",
+      "src": "a95a6359e765"
+    },
+    "attr.condition.satisfactory": {
+      "text": "Satisfactorio",
+      "src": "6f12a6a702ce"
+    },
+    "attr.condition.new-with-tags": {
+      "text": "Nuevo, con las etiquetas puestas",
+      "src": "3f4d0f75317f"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "Nuevo, sin etiquetas",
+      "src": "b240e472e77d"
+    },
+    "item.9313828257.title": {
+      "text": "Vestido de oficina de ganchillo",
+      "src": "60e6e1f58652"
+    },
+    "item.9330125733.title": {
+      "text": "Vestido midi cruzado morado",
+      "src": "fbe6c501a7de"
+    },
+    "item.9488799404.title": {
+      "text": "Collar boho de cuentas amarillas",
+      "src": "d10bcf137fb9"
+    },
+    "item.9564694739.title": {
+      "text": "Estatua de Ganesha de madera",
+      "src": "b7edd72d8919"
+    },
+    "item.9313953618.title": {
+      "text": "Mono corto | Forever21",
+      "src": "6880f148e307"
+    },
+    "item.9538548234.title": {
+      "text": "Pulsera de perlas de plata 925 pura",
+      "src": "dfa243c2649c"
+    },
+    "item.9488787680.title": {
+      "text": "Collar boho de abalorios morados",
+      "src": "37783cfed7a1"
+    },
+    "item.9328440121.title": {
+      "text": "Vestido midi con estampado geométrico azul marino",
+      "src": "eaec75b2d9e9"
+    },
+    "item.9578974766.title": {
+      "text": "Vestido largo de algodón negro | Talla L",
+      "src": "3757bc8bc02a"
+    },
+    "item.9493474615.title": {
+      "text": "Collar gargantilla de perlas de agua dulce",
+      "src": "9a2dd05afdae"
+    },
+    "item.9313793339.title": {
+      "text": "Vestido de verano de playa con cuello en V y tirantes cruzados",
+      "src": "8f6c0135abc6"
+    },
+    "item.9562314219.title": {
+      "text": "Estola étnica de lino tejida a mano en la India",
+      "src": "62b04577316e"
+    },
+    "item.9562257190.title": {
+      "text": "Vestido midi de verano/de fiesta de Mango | L-XL",
+      "src": "71166c04e526"
+    },
+    "item.9371186724.title": {
+      "text": "Joyas de tela multicolores hechas a mano",
+      "src": "ed8f6d2699d2"
+    },
+    "item.9331197768.title": {
+      "text": "Camiseta sin mangas metalizada en color mango dorado | Talla M",
+      "src": "7bc205f2e6ca"
+    },
+    "item.9561218589.title": {
+      "text": "Top corto de manga larga color crema de croché de ZARA",
+      "src": "5585e00fc540"
+    },
+    "item.9476370273.title": {
+      "text": "Collar llamativo con colgante de cristal vintage",
+      "src": "4516b193e069"
+    },
+    "item.9438031948.title": {
+      "text": "Joyería vintage | Collar boho étnico",
+      "src": "36c11b9255c4"
+    },
+    "item.9367213932.title": {
+      "text": "Mono de Zara de algodón blanco de verano | Talla",
+      "src": "d0934f126f5b"
+    },
+    "item.9498955593.title": {
+      "text": "Conjunto de top y falda con estampado floral en estilo tie-dye | L/XL",
+      "src": "e66906691eac"
+    },
+    "item.9331163535.title": {
+      "text": "Top indio bordado de seda y algodón | Verde azulado",
+      "src": "8428ab2c454e"
+    },
+    "item.9729863208.title": {
+      "text": "Pantalones largos de lana de Mango, de corte ancho y con textura",
+      "src": "f66b84b4f595"
+    },
+    "item.9607321104.title": {
+      "text": "Colgante de cerámica hecho a mano | Estilo boho-hippie",
+      "src": "fe9875c0a3f5"
+    },
+    "item.9388380417.title": {
+      "text": "Túnica étnica de algodón indio teñida con la técnica «tie-dye» | Talla M",
+      "src": "31bb7263dc17"
+    },
+    "item.9339704755.title": {
+      "text": "Top de verano tipo chal de algodón indio | Tallas de la M a la L",
+      "src": "d13a0711c6cd"
+    },
+    "item.9565320171.title": {
+      "text": "Estatuilla de la diosa india Parvati, ídolo espiritual",
+      "src": "cba63dbd90ce"
+    },
+    "item.9561725365.title": {
+      "text": "Pañuelo de diseño de la marca de lujo india Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "item.9311775029.title": {
+      "text": "Blusa kurti de algodón negro · Talla L · Estilo boho indio",
+      "src": "671150bcd5c8"
+    },
+    "item.9675580496.title": {
+      "text": "Bolso vintage | Cuero etíope de color tostado | Bolso boho",
+      "src": "fea2cf673919"
+    },
+    "item.9564918603.title": {
+      "text": "Estatuilla de Ganesha de terracota india",
+      "src": "2112976670e8"
+    },
+    "item.9438792395.title": {
+      "text": "Pendientes boho multicolores con abalorios y aros colgantes",
+      "src": "122be0688a30"
+    },
+    "item.9320744061.title": {
+      "text": "Pantalones indios de algodón | Negro | Diseño con botones rojos",
+      "src": "36f9283855ee"
+    },
+    "item.9371212323.title": {
+      "text": "Collar con colgante artesanal de tela y madera, hecho a mano",
+      "src": "a99e77f4b363"
+    },
+    "item.9360542677.title": {
+      "text": "Vestido de verano sin tirantes de algodón indio estampado con la técnica «block-print»",
+      "src": "21cdb9d32022"
+    },
+    "item.9493332709.title": {
+      "text": "Collar de cadena de ganchillo en color índigo, elaborado artesanalmente en la India",
+      "src": "5c248f4e69b5"
+    },
+    "item.9328489962.title": {
+      "text": "Vestido recto con estampado floral tropical | Hecho a mano en Nigeria",
+      "src": "dad674a2d8c7"
+    },
+    "item.9370862833.title": {
+      "text": "Vestido largo de algodón «Indian Summer» tejido a mano | Talla M",
+      "src": "1b8363f570d9"
+    },
+    "item.9316393171.title": {
+      "text": "Vestido indio de algodón de verano | Versátil | De múltiples usos",
+      "src": "987508937b28"
+    },
+    "item.9561679205.title": {
+      "text": "Estola/bufanda/chal de lino tejido a mano en la India, color rosa coral",
+      "src": "805d29f7f893"
+    },
+    "item.9477421040.title": {
+      "text": "Pulseras de cristal con piedras blancas, chapadas en oro, de dos piezas",
+      "src": "27c1cf4f2006"
+    },
+    "item.9329298936.title": {
+      "text": "Blusa tipo kaftán con estampado bandhani rosa indio – Tallas M a L",
+      "src": "42a380967d08"
+    },
+    "item.9603839908.title": {
+      "text": "Lámpara marroquí tipo farol, de mesa o colgante, con portavelas",
+      "src": "1a3a931a0c7e"
+    },
+    "item.9602470022.title": {
+      "text": "Jen Beagin: Gran serie suiza de HBO protagonizada por Jodie Comer",
+      "src": "8c0072dde9d4"
+    },
+    "item.9552844745.title": {
+      "text": "Vestido indio de algodón puro, corte ajustado y acampanado, con cuello halter | Talla L",
+      "src": "a672a1dda38b"
+    },
+    "item.9316420644.title": {
+      "text": "Vestido caftán «Indian Summer Beach» cosido a mano | Algodón",
+      "src": "1d387995bfc7"
+    },
+    "item.9565381682.title": {
+      "text": "Estatuillas de Ganesha y Parvati de la India. Ídolos espirituales",
+      "src": "986fce8e2f56"
+    },
+    "item.9561602678.title": {
+      "text": "Vestido de verano indio de mezcla de algodón y lino con dos bolsillos",
+      "src": "b0d0d2b71e89"
+    },
+    "item.9511040845.title": {
+      "text": "Pulsera tipo brazalete de cristal en tono dorado, de estilo vintage indio",
+      "src": "5b19cc52987d"
+    },
+    "item.9330044272.title": {
+      "text": "Vestido caftán de verano | Algodón nigeriano | Tallas múltiples: de la M a la L",
+      "src": "7ab3a0220f98"
+    },
+    "item.9578313870.title": {
+      "text": "Blusa de mango | Top de cuello redondo | Mangas cortas con relleno",
+      "src": "5a9adc584493"
+    },
+    "item.9442502622.title": {
+      "text": "Pendientes largos colgantes de tela africana con lunares azules, hechos a mano",
+      "src": "8376001339b6"
+    },
+    "item.9602569998.title": {
+      "text": "Khaled Hosseini, «Y las montañas resonaron», éxito de ventas mundial",
+      "src": "7347b97ae1fe"
+    },
+    "item.9500656843.title": {
+      "text": "Joyas vintage de plata pura 925 | Pendientes étnicos tribales",
+      "src": "0efb043b87f7"
+    },
+    "item.9439083125.title": {
+      "text": "Juego de dijes Swarovski / Plata de ley / Cristal Swarovski",
+      "src": "b323b934ca4c"
+    },
+    "item.9602556623.title": {
+      "text": "Francis Fukuyama: «Identidad», la obra maestra política más vendida",
+      "src": "2e26cadcea20"
+    },
+    "item.9364938382.title": {
+      "text": "Vestido largo de verano de algodón indio cosido a mano | Talla M",
+      "src": "0013e43386ab"
+    },
+    "item.9561251555.title": {
+      "text": "Pañuelo/bufanda/estola de algodón de color amarillo indio con el lema «Hare Rama Radhe Radhe»",
+      "src": "7fdd9f030e4c"
+    },
+    "item.9395042890.title": {
+      "text": "«Predicciones sobre el orden mundial actual», de Bruno Maçães: «El amanecer de Eurasia»",
+      "src": "c317085288ff"
+    },
+    "item.9437887059.title": {
+      "text": "Pendientes indios vintage de plata | Plata al 92,5 % con incrustaciones de piedras",
+      "src": "a06548005c1d"
+    },
+    "item.9316357780.title": {
+      "text": "Vestido de verano de playa de algodón indio | Motivo floral con mariposas | Bolsillos",
+      "src": "655a6fe07105"
+    },
+    "item.9489491094.title": {
+      "text": "Collar tibetano | Budista | Joyería boho | Vintage | Retro",
+      "src": "5fa52213b8ee"
+    },
+    "item.9442502622.description": {
+      "text": "Pendientes largos colgantes de tela azul con lunares, hechos a mano en Nigeria.",
+      "src": "d15d69007904"
+    },
+    "item.9438210918.title": {
+      "text": "Reloj Fastrack de cuarzo analógico con esfera plateada y correa de acero inoxidable",
+      "src": "addae22ca945"
+    },
+    "item.9395142510.title": {
+      "text": "Angie Thomas, «The Hate U Give»: un best-seller impresionante que te cambia la vida",
+      "src": "cccde8351aca"
+    },
+    "item.9331108819.title": {
+      "text": "Kimono/Angrakha de algodón indio | Chaqueta versátil para la playa",
+      "src": "6c0af4c0fd1a"
+    },
+    "item.9629132899.title": {
+      "text": "Gorra de béisbol con corazón bordado con los colores del arcoíris | Regalo para el Mes del Orgullo LGBTQ",
+      "src": "1cf298a98c4a"
+    },
+    "item.9602536889.title": {
+      "text": "Colson Whitehead, ganador del Premio Pulitzer por *El ferrocarril clandestino*",
+      "src": "3f2c694824c6"
+    },
+    "item.9564218918.title": {
+      "text": "Cuenco de sopa de cerámica india con asa | Apto para lavavajillas y microondas",
+      "src": "b6afb00cf9c3"
+    },
+    "item.9360475926.title": {
+      "text": "Vestido midi asimétrico de algodón con estampado en bloque «India Summer» | Talla L",
+      "src": "b95e6b842f8c"
+    },
+    "item.9395334867.title": {
+      "text": "D. H. Lawrence, *El amante de Lady Chatterley*, un clásico escandaloso que en su día fue prohibido",
+      "src": "b607f455419b"
+    },
+    "item.9339656344.title": {
+      "text": "Vestido midi escalonado de algodón «Indian Summer» estampado a mano con bloques de color – Talla M",
+      "src": "fcadc6dab316"
+    },
+    "item.9311896207.title": {
+      "text": "Vestido midi de algodón indio · Estampado de azulejos azul marino · Plisado · Talla L",
+      "src": "189261565d9f"
+    },
+    "item.9602491240.title": {
+      "text": "No te pierdas «Las rutas de la seda», de Peter Frankopan, número 1 en la lista mundial de superventas.",
+      "src": "d5cf44c7b419"
+    },
+    "item.9602442603.title": {
+      "text": "Ayn Rand, «El manantial», Signet, Edición del Centenario, «Clásico instantáneo»",
+      "src": "aa784c057d65"
+    },
+    "item.9602413571.title": {
+      "text": "William Dalrymple, *El último mogol de la India*, ganador del Premio Duff Cooper",
+      "src": "d17787c2f22d"
+    },
+    "item.9581381003.title": {
+      "text": "Pendientes colgantes de elefante de plata alemana | Joyería boho-hippie india",
+      "src": "8aceece80ff8"
+    },
+    "item.9729949801.title": {
+      "text": "Vestido boho indio | Vestido largo vintage | Estilo retro | Algodón de verano",
+      "src": "2bcf06e22b6d"
+    },
+    "item.9575501283.title": {
+      "text": "Pañuelo de oración hindú «Om Namah Shivaya» | Pañuelo espiritual para yoga y meditación",
+      "src": "2ac5edf7ccf5"
+    },
+    "item.9395115967.title": {
+      "text": "Zadie Smith, «Dientes blancos»: la novela de debut más destacada del nuevo milenio",
+      "src": "1499b6f62d00"
+    },
+    "item.9328560854.title": {
+      "text": "Vestido midi con estampado batik africano | Hecho a mano con algodón Ankara nigeriano",
+      "src": "7db37b3795ae"
+    },
+    "item.9500656843.description": {
+      "text": "Joyas indias vintage elaboradas en plata pura de 92,5 | Con el sello «92,5»",
+      "src": "1f26b00b4eec"
+    },
+    "item.9395169253.title": {
+      "text": "Marlon James, *Una breve historia de siete asesinatos*, ganador del Premio Man Booker",
+      "src": "cd3c83aa7fd3"
+    },
+    "item.9395315968.title": {
+      "text": "«Dead Man’s Land», de Robert Ryan: una apasionante historia derivada de Sherlock Holmes ambientada en la Primera Guerra Mundial",
+      "src": "828e4e03636d"
+    },
+    "item.9604783346.title": {
+      "text": "Siete elefantes colgantes con el «mal de ojo» | Decoración de elefantes de la suerte que atraen buena energía",
+      "src": "67c32c70bd47"
+    },
+    "item.9580235622.title": {
+      "text": "Joyas vintage, boho y retro | Pendientes colgantes de ganchillo con forma de girasol, hechos a mano",
+      "src": "ad8f3a40234b"
+    },
+    "item.9311521689.title": {
+      "text": "Falda larga boho de algodón | Falda vintage | Cintura con cordón | Estilo étnico indio",
+      "src": "88306c398e67"
+    },
+    "item.9511040845.description": {
+      "text": "Pulsera tipo brazalete vintage india en tono dorado, de 2,5 pulgadas/6,35 cm. Muy bonita.",
+      "src": "c82f35467db1"
+    },
+    "item.9698274032.title": {
+      "text": "Top retro | Top vintage | Estilo boho | Camisa de manga larga con estampado de mármol de Mango",
+      "src": "4c22644e29fb"
+    },
+    "item.9729863208.description": {
+      "text": "Acabado texturizado\nTalla alta\nCintura elástica\nPera ancha\nPantalones de lana gruesa",
+      "src": "44fe5de25257"
+    },
+    "item.9602838102.title": {
+      "text": "La alucinante obra de Natsume Soseki, *La puerta*, de la colección NYRB Classics, con una introducción de Pico Iyer",
+      "src": "26bce423540f"
+    },
+    "item.9720394316.title": {
+      "text": "Collar boho vintage | gargantilla de joyería tribal retro | estilo mandala tibetano",
+      "src": "36a81d980413"
+    },
+    "item.9565087476.title": {
+      "text": "Estatua antigua india de latón dorado representando a la familia de los dioses Shiva, Parvati y Ganesha",
+      "src": "ea1f305fb753"
+    },
+    "item.9395068524.title": {
+      "text": "Eric Hoffer, «El verdadero creyente»: un clásico aterradoramente actual sobre los movimientos de masas",
+      "src": "72cd8e05b5a3"
+    },
+    "item.9562192907.title": {
+      "text": "Ulos tradicionales indonesios de estilo vintage: complemento, cuadro para colgar, alfombra, camino de mesa",
+      "src": "1a62a29c3c15"
+    },
+    "item.9561780997.title": {
+      "text": "Pañuelo largo y transparente de diseño indio de estilo Art Nouveau: ligero, elegante y suave como la seda",
+      "src": "245b0a58078c"
+    },
+    "item.9355163406.title": {
+      "text": "Del autor de «La vida de Pi» y «Las altas montañas de Portugal», Yann Martel: 3 relatos",
+      "src": "847e36e6e92e"
+    },
+    "item.9311631498.title": {
+      "text": "Falda larga de algodón rosa de FabIndia · Estampado en bloque · Ribete de zari dorado · Estilo boho festivo",
+      "src": "10753dfa7926"
+    },
+    "item.9314010527.title": {
+      "text": "Vestido largo con estampado africano · Azul, blanco y dorado · Sin tirantes y fruncido · Algodón nigeriano",
+      "src": "d60db8510b7c"
+    },
+    "item.9309160145.title": {
+      "text": "Vestido mexicano bordado a mano · Estilo huipil con motivos florales negros · Hecho a mano por artesanos · Estilo boho",
+      "src": "88acfff4c6e5"
+    },
+    "item.9476315818.title": {
+      "text": "Joyería vintage | Joyería boho | Gargantilla de cuentas de plata de ley | Retro",
+      "src": "7294a6525b94"
+    },
+    "item.9362130631.title": {
+      "text": "La India durante el estado de emergencia: «Una civilización herida», de V. S. Naipaul, ganador del Premio Nobel",
+      "src": "915db534f633"
+    },
+    "item.9322734477.title": {
+      "text": "Camisa de verano de algodón indio · Estampado en bloque negro y rojo · Motivo en forma de corazón · Talla L",
+      "src": "135910ef74b3"
+    },
+    "item.9312410623.title": {
+      "text": "Mono de algodón indio · Estampado azul a cuadros · Corpiño elástico de ganchillo · Estilo boho veraniego",
+      "src": "0f59723fe5d3"
+    },
+    "item.9602596973.title": {
+      "text": "M. P. Khemka: «Acupresión y acupuntura: tratamiento de un solo punto», libro 1: «Bindu Ek Upchar Anek»",
+      "src": "7222f7d3e6c0"
+    },
+    "item.9371171716.title": {
+      "text": "Collar de tela de algodón hecho a mano en la India | Joyería textil artesanal | Festival Boho",
+      "src": "a632df3535e4"
+    },
+    "item.9315339114.title": {
+      "text": "Top cruzado con estampado africano | Algodón nigeriano de alta calidad | Estilo peplum | Mangas abullonadas",
+      "src": "8fd44d2b0d81"
+    },
+    "item.9602746361.title": {
+      "text": "No te lo puedes perder: «David y Goliat», de Malcolm Gladwell, número uno en ventas a nivel internacional",
+      "src": "eeec06b9a11d"
+    },
+    "item.9602681438.title": {
+      "text": "El mejor libro de 2021: «Under a White Sky», de Elizabeth Kolbert, autora ganadora del Premio Pulitzer",
+      "src": "adb65f191ebc"
+    },
+    "item.9686505544.title": {
+      "text": "Joyería vintage | Joyería retro | Pulsera de plata 925 | Amatista y perla | estilo boho",
+      "src": "b86a62948d75"
+    },
+    "item.9602879226.title": {
+      "text": "«Emotional Mirza Waheed: El libro de las hojas de oro», finalista del Premio DSC: una historia de amor en Cachemira",
+      "src": "12a2f7e73730"
+    },
+    "item.9562398817.title": {
+      "text": "Pañuelo retro | Accesorios boho | Chal ligero con motivos griegos y lentejuelas grises brillantes",
+      "src": "d90ebf2a469c"
+    },
+    "item.9602894095.title": {
+      "text": "La inspiradora aventura en moto de Piya Bahadur: «De Bahadur al Mekong: cuatro mujeres, 17 000 kilómetros»",
+      "src": "e5acf514b7f2"
+    },
+    "item.9395211212.title": {
+      "text": "Aprender español - Don Quijote de Cervantes: obra maestra atemporal, edición ilustrada en español",
+      "src": "b15b0483441c"
+    },
+    "item.9316140580.title": {
+      "text": "Vestido de verano blanco de algodón con estampado indio a mano y bolsillos | Motivo floral mogol | Talla M-L",
+      "src": "69fbb46f25c7"
+    },
+    "item.9602788500.title": {
+      "text": "Ciencias sociales: Benedict Anderson, «Comunidades imaginadas: Orígenes y expansión del nacionalismo»",
+      "src": "d6f6657d9ec4"
+    },
+    "item.9602649617.title": {
+      "text": "OG, versión de 1970, Anthony Gilbert, «El cadáver en la viga», Vintage Pan Books, Novela negra de la Edad de Oro",
+      "src": "9349f2d7108e"
+    },
+    "item.9579803801.title": {
+      "text": "Hallazgo excepcional: brazalete antiguo victoriano de plata auténtica de ley 925 | Joyería vintage, retro y de estilo real",
+      "src": "57379aef9e8e"
+    },
+    "item.9395292320.title": {
+      "text": "Recién publicado: «Mayyu Ali: Eradicación. Relato de primera mano sobre el genocidio de los rohingya»",
+      "src": "6995f7e3d6d1"
+    },
+    "item.9311368443.title": {
+      "text": "Falda-pantalón Palazzo | Estampado estilo batik | Pata ancha | Estilo boho indio | Algodón nigeriano",
+      "src": "cc9875478f38"
+    },
+    "item.9674633786.description": {
+      "text": "Pendientes de aro vintage de Bali con alambre trenzado\nPlata de ley 92,5 % (certificada)\nDiámetro: 2 cm",
+      "src": "ac8f02eeef5e"
+    },
+    "item.9602779694.title": {
+      "text": "Historia de la India, Christophe Jaffrelot, Pratinav, Anil, «La primera dictadura de la India: el estado de excepción»",
+      "src": "fc1d1c869a3d"
+    },
+    "item.9649545514.title": {
+      "text": "Vestido boho | Conjunto coordinado «Buddha» | Vestido boho | Pantalón de traje de algodón «Indian Summer» | Vestido étnico",
+      "src": "e48310f988ae"
+    },
+    "item.9583027994.title": {
+      "text": "3 pendientes de nariz indios de plata oxidada sin perforación | Pendientes de nariz con clip | Joyería boho chic",
+      "src": "fd0f3d127f08"
+    },
+    "item.9312286809.title": {
+      "text": "Vestido de verano de algodón del diseñador indio Ritu Kumar · Estampado Art Déco con motivos de abanicos · Cuello con abalorios · Bolsillos",
+      "src": "f1cd7e8b75f3"
+    },
+    "item.9603594529.title": {
+      "text": "Tapa dura: David Whyte, «Consolaciones»; Elizabeth Gilbert. Guarda este libro siempre junto a tu cama.",
+      "src": "96c365ffb05c"
+    },
+    "item.9603636575.title": {
+      "text": "Kit completo de terapia china de ventosas para la recuperación de lesiones deportivas: 12 ventosas, kit completo, modelo de acupuntura",
+      "src": "dcadca1579e5"
+    },
+    "item.9355268622.title": {
+      "text": "Contexto funcional, pero posible: «The Netanyahus» – Joshua Cohen, ganador del Premio Pulitzer 2022",
+      "src": "9d37fe2e99a5"
+    },
+    "item.9711247731.title": {
+      "text": "Pulsera espiritual | Joyería budista | Rudraksh, yoga mala, accesorios espirituales, meditación",
+      "src": "3d08649f5144"
+    },
+    "item.9641705366.title": {
+      "text": "Vestido veraniego boho de estilo tribal africano en colores vivos | Túnica caftán holgada con estampado étnico | Talla única: de la M a la L",
+      "src": "e86237e2dca1"
+    },
+    "item.9565484914.title": {
+      "text": "Dios de la riqueza y la prosperidad | Estatua religiosa y espiritual de Ganesha, de la tradición hindú de la India | Espiritual",
+      "src": "63559ef2d9b3"
+    },
+    "item.9359739617.title": {
+      "text": "El mejor libro sobre Pakistán: Daniyal Mueenuddin – Colección de relatos cortos de Pakistán, edición en rústica en inglés",
+      "src": "580a0cb0d3c4"
+    },
+    "item.9602950103.title": {
+      "text": "Una rareza de Markus Zusak: «La ladrona de libros». El «New York Times» la calificó de «una obra que te cambia la vida». Número 1 en la lista internacional de best-sellers.",
+      "src": "e6237bcd94a9"
+    },
+    "item.9581381003.description": {
+      "text": "Diseño intrincado. Un elefante con preciosos detalles, que simboliza la fuerza, la sabiduría y la prosperidad.",
+      "src": "8276f0f14d2f"
+    },
+    "item.9575763651.title": {
+      "text": "Mala india de rudraksha para la meditación, el yoga y los cánticos | Collar de rosario espiritual hindú",
+      "src": "0ef35b30956d"
+    },
+    "item.9529729646.title": {
+      "text": "Gorro de lana del Himalaya hecho a mano con forro 100 % de suave forro polar | Moda boho | Vintage retro",
+      "src": "5b3f11c5a1f5"
+    },
+    "item.9602907756.title": {
+      "text": "El impredecible Keigo Higashino: «La ecuación de verano», «El detective Galileo», «El Stieg Larsson japonés»",
+      "src": "c1ce6a1037c0"
+    },
+    "item.9438954997.title": {
+      "text": "Conjunto de joyas en tono dorado compuesto por un collar tipo gargantilla, unos pendientes de aro a juego, una pulsera tipo brazalete y un anillo",
+      "src": "a9fbff5f2bf2"
+    },
+    "item.9395098362.title": {
+      "text": "Cuentos orientales atemporales. Amita Kanekar. «El miedo a los leones»: un emocionante thriller sobre una rebelión en la era mogol. India.",
+      "src": "ade83197c671"
+    },
+    "item.9360886820.title": {
+      "text": "Ya a la venta: «La alternativa que los economistas no quieren que leas», de Nick Romeo (edición en rústica en inglés)",
+      "src": "8534279891e0"
+    },
+    "item.9602725968.title": {
+      "text": "«Lee antes de morir», de Rumi. «Lo esencial de Rumi», de Coleman Barks. Nueva edición ampliada. Poesía superventas.",
+      "src": "ed9316b0445e"
+    },
+    "item.9561251555.description": {
+      "text": "Pigmentado a mano. Algodón de la mejor calidad, tejido en telar. Estampado con bloques. Espiritual, elegante, que transmite paz. Tamaño grande.",
+      "src": "f108654a518f"
+    },
+    "item.9419147643.title": {
+      "text": "Recién salido a la venta: «Havoc», de Christopher Bollen. Un thriller psicológico deliciosamente perverso, seleccionado por el *New York Times*.",
+      "src": "34399280b05e"
+    },
+    "item.9561218589.description": {
+      "text": "Talla S\nNunca se ha usado, en perfecto estado, como nuevo. Transparente  \nColor crema \nCorte corto  \nTejido a ganchillo",
+      "src": "babd18cf1808"
+    },
+    "item.9355082189.title": {
+      "text": "Los secretos que se esconden tras los medicamentos para adelgazar de GLP: «Off the Scales», de Aimee Donnellan. La historia secreta de Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "item.9674633786.title": {
+      "text": "Joyas vintage | Joyas retro | Pendientes de aro trenzados | Joyas étnicas boho de plata 925",
+      "src": "0fc1f0de3ba8"
+    },
+    "item.9602870728.title": {
+      "text": "Chitra Banerjee Divakaruni, *El palacio de las ilusiones*, éxito de ventas internacional, *El Mahabharata*, una nueva versión de la historia de la India",
+      "src": "e1c706d7ed74"
+    },
+    "item.9565566983.title": {
+      "text": "Estatua antigua india de Radha y Krishna en latón. Escultura religiosa y espiritual hindú de dioses | Latón, 5,5 pulgadas",
+      "src": "8e0e25823725"
+    },
+    "item.9488799404.description": {
+      "text": "Este collar está compuesto por abalorios de color amarillo intenso con detalles de abalorios dorados y cuenta con un cordón de plástico.",
+      "src": "ef548bda8352"
+    },
+    "item.9488787680.description": {
+      "text": "Este collar está compuesto por cuentas de color morado oscuro con detalles de cuentas doradas y un cordón de plástico.",
+      "src": "37c2ffda88bd"
+    },
+    "item.9720394316.description": {
+      "text": "Collar con colgante de latón chapado en oro y cuentas azules multicolores. También queda precioso como gargantilla. Ajustable.",
+      "src": "0222e190d517"
+    },
+    "item.9493332709.description": {
+      "text": "Collar de ganchillo hecho a mano con cuentas, de dos capas, sencillo y ligero. Cuenta con cordones para ajustar la longitud deseada.",
+      "src": "74698620b449"
+    },
+    "item.9580235622.description": {
+      "text": "Pendientes colgantes de ganchillo con forma de girasol y cuentas de madera marrones.\nMateriales: Lana, acero inoxidable, madera\nEstilo: Boho y hippie\nAltura: 7 cm",
+      "src": "3c887561cea9"
+    },
+    "item.9564218918.description": {
+      "text": "Cuenco de sopa de cerámica de la India con asa, apto para microondas y lavavajillas, material apto para uso alimentario, multicolor\nAncho: 11 cm\nAltura: 7 cm",
+      "src": "ae11b01d1e19"
+    },
+    "item.9562398817.description": {
+      "text": "Bufanda de color gris claro con delicados detalles de lentejuelas que forman un motivo geométrico de estilo «greco» a lo largo de los bordes.\nMezcla de algodón, lana y viscosa.",
+      "src": "e3bfed52ad1f"
+    },
+    "item.9675580496.description": {
+      "text": "Bolso bandolera vintage de alta calidad, de cuero auténtico marrón de Etiopía, hecho a mano.\nCorrea ajustable\n1 compartimento principal\n1 bolsillo interior",
+      "src": "778b6215cb8c"
+    },
+    "item.9316420644.description": {
+      "text": "Vestido corto de playa estilo caftán o prenda veraniega sencilla procedente de la India, confeccionado en algodón suave. De color turquesa y verde oscuro, y disponible en tallas M y L.",
+      "src": "f9856a0d7a9f"
+    },
+    "item.9438792395.description": {
+      "text": "Se vende un precioso par de pendientes de abalorios multicolores, de 2,75\" de largo y 1\" de ancho, con cierres plateados. Un par precioso y único de estilo boho.",
+      "src": "36b404572169"
+    },
+    "item.9561602678.description": {
+      "text": "Sin estrenar. \nColor: crema\nTejido: mezcla de algodón y lino\nCorte: holgado, talla L-XL\nManga: corta\nLongitud: midi\nBolsillos: 2\nCierre: botón en la espalda",
+      "src": "7328b2bd4796"
+    },
+    "item.9552844745.description": {
+      "text": "Detalles del producto\n• Vestido ajustado y acampanado con estampado de motivos étnicos indios azules\n• Cuello halter\n• Sin mangas\n• Largo maxi con bajo acampanado\n• Tejido de algodón\nTalla L\nContorno de pecho: 40 pulgadas",
+      "src": "08bba5cc974c"
+    },
+    "item.9489491094.description": {
+      "text": "Un precioso collar de estilo tibetano, de gran volumen, con un grabado de «Om» 🕉️. Incrustaciones de coral y turquesa sobre una placa de latón, con cuentas de cristal de varias hileras y un cierre de botón de madera.",
+      "src": "58db4f121215"
+    },
+    "item.9561725365.description": {
+      "text": "Pañuelo de la marca india de lujo Satya Paul. Con un diseño de bambú de inspiración japonesa y un borde rojo a contraste.\nMaterial: Tejido transparente y ligero, gasa",
+      "src": "705254e0fd36"
+    },
+    "item.9561679205.description": {
+      "text": "Impresionante y elegante. Confeccionada en tela de lino, con un diseño tejido, presenta un aspecto muy clásico y elegante. Combina con diversos conjuntos gracias a su color versátil y a su caída.",
+      "src": "9d8baf77b7ae"
+    },
+    "item.9698274032.description": {
+      "text": "Contorno de pecho: 40 pulgadas / 101,6 cm\nLongitud: 24 pulgadas / 61 cm\nTejido ligero de viscosa, estampado de mármol, corte recto, cuello redondo, mangas largas abotonadas.\nBonita caída y estilo boho.",
+      "src": "ad327c2c5d3d"
+    },
+    "item.9629132899.description": {
+      "text": "🌈 Gorra de béisbol del Orgullo Arcoíris – Gorra con corazón arcoíris bordado, gorra del Orgullo LGBTQ+ 🌈\nMaterial: 100 % algodón de primera calidad\nAjuste: cierre con correa ajustable\nTalla: talla única, apta para la mayoría de los adultos",
+      "src": "d65a9a0498a2"
+    },
+    "item.9313828257.description": {
+      "text": "Elegante vestido entallado de color azul marino con un panel de encaje de ganchillo blanco en la parte delantera y un dobladillo plisado. Una prenda elegante y femenina, perfecta para ocasiones especiales, eventos de trabajo o para llevar en la oficina.\n\nTalla: L (etiqueta)",
+      "src": "0acccc64a7e6"
+    },
+    "item.9493474615.description": {
+      "text": "Piedra preciosa: Perla\nCierre: Cierre de langosta\nEstilo de la cadena: De cuentas\nPerlas: Perlas de agua dulce de 8 mm\nCadena: 16'' + 1''\nResistente al agua e hipoalergénico\n\nCollar de perlas de agua dulce, con formas naturales y distintivas",
+      "src": "00e8a2715383"
+    },
+    "item.9313953618.description": {
+      "text": "Bonito mono azul verdoso de Forever 21 con un frente vaporoso de volantes en capas y tirantes ajustables que se atan a los hombros. Un mono de verano ligero, cómodo y favorecedor, ideal para salir por la noche.",
+      "src": "48ee50f09ef0"
+    },
+    "item.9564918603.description": {
+      "text": "Mini escultura de arcilla de Ganesha: figura decorativa y espiritual del dios Ganesha, hecha a mano, ideal como regalo para la inauguración de una oficina o una casa nueva, o como elemento decorativo para el hogar\nTamaño: 3,1 x 1,9 x 4 pulgadas (largo x ancho x alto), aproximadamente; peso: 200 gramos",
+      "src": "e91c626d75b5"
+    },
+    "item.9355163406.description": {
+      "text": "«Las altas montañas de Portugal», de Yann Martel, autor de «La vida de Pi». Edición en rústica, de segunda mano, con un desgaste leve de la cubierta y marcas de estar en estantería (ver fotos). Completo y legible. Procedente de un hogar libre de humo.",
+      "src": "45282112205b"
+    },
+    "item.9477421040.description": {
+      "text": "2 brazaletes chapados en oro con piedras de diamante americano de color blanco. Joyería de boda india.\n\nColor: dorado, blanco\nMaterial: cobre\nDiseño: motivo en forma de paisley\nChapado: chapado en oro, oro",
+      "src": "4e338240ec1d"
+    },
+    "item.9538548234.description": {
+      "text": "Fabricado en plata auténtica con una pureza del 92,5 %. Lleva el sello de 925. Diseño ajustable para garantizar un ajuste cómodo y seguro. Recubrimiento de rodio para evitar que se empañe, lo que garantiza un brillo duradero.",
+      "src": "598e9459aafc"
+    },
+    "item.9476370273.description": {
+      "text": "Collar llamativo de fabricación artesanal con un colgante rectangular de vidrio fundido. El colgante presenta un precioso diseño metálico en forma de espiral con remolinos en tonos azul océano, bronce, oro y purpurina de cobre.",
+      "src": "b75fa8ed33a0"
+    },
+    "item.9565320171.description": {
+      "text": "Mini escultura de arcilla de Parvati: figura decorativa y espiritual de la diosa hindú Parvati, hecha a mano, ideal como regalo para la inauguración de una oficina o una casa, o como elemento decorativo para el hogar\nTamaño: 3,1 x 1,9 x 4 pulgadas (largo x ancho x alto), aproximadamente; peso: 200 gramos",
+      "src": "fd5d3dd8dc5b"
+    },
+    "item.9561780997.description": {
+      "text": "Pañuelo. Diseño de inspiración Art Nouveau de la diseñadora de moda india Nida Mahmood. Conocida como la «reina del kitsch» de la India, Mahmood suele fusionar movimientos artísticos vintage de todo el mundo con la sensibilidad tradicional india.",
+      "src": "f0e0fd6b1b06"
+    },
+    "item.9565566983.description": {
+      "text": "Estatua de los dioses hindúes Radha y Krishna para la espiritualidad, la paz, la armonía, la buena suerte y el bienestar. Preciosa decoración espiritual para el hogar. \n\nEstatua de latón\nAltura: 5,5 pulgadas\nAncho: 3 pulgadas\nProfundidad: 2 pulgadas\nPeso: 750 g",
+      "src": "719082ea08d4"
+    },
+    "item.9562257190.description": {
+      "text": "Usado una vez. Tejido fluido. Corte en A. Largo midi. Abertura. Cuello redondo. Sin mangas. Cierre con cremallera invisible en la espalda. Aberturas laterales. \nLongitud: 131 cm; pecho: 55 cm; cintura: 45 cm; cadera: 56,5 cm\n85 % viscosa, 15 % poliamida",
+      "src": "0631b4fec421"
+    },
+    "item.9578974766.description": {
+      "text": "Talla: Grande  \nMaterial: Rayón\nUn precioso vestido negro con estampado floral tanto en la parte superior como en la inferior. Además, cuenta con un forro suave en el interior para mayor comodidad. Es el vestido de verano perfecto para la playa o para una excursión de un día, con un corte holgado.",
+      "src": "95cb09e384cc"
+    },
+    "item.9686505544.description": {
+      "text": "Pulsera hecha a mano en auténtica plata de ley 925 (con sello). \nPiedras de amatista con perlas de agua dulce cultivadas\nCierre de palanca\nDos amatistas rectangulares facetadas\nTres perlas redondas de agua dulce\nLa pulsera mide 7 pulgadas de largo",
+      "src": "2347fbe304f1"
+    },
+    "item.9316393171.description": {
+      "text": "Algodón indio supersuave y precioso estampado floral. Los tirantes permiten llevar el vestido con cuello halter o con tirantes normales. Llega hasta la rodilla. Muy transpirable y cómodo para el verano.\nTalla: la M y la L quedan muy bien.",
+      "src": "642b7756fc58"
+    },
+    "item.9603839908.description": {
+      "text": "Diseñada con un asa de transporte, se puede colgar o colocar sobre una mesa para crear una iluminación decorativa. Farol de metal de estilo marroquí, de color amarillo brillante, con intrincados motivos de filigrana.\nAltura: 8 pulgadas / 20 cm\nAncho: 4 pulgadas / 10 cm",
+      "src": "30e1ad9061bf"
+    },
+    "item.9564694739.description": {
+      "text": "La estatua de madera tallada a mano del dios hindú Ganesha, representada sentado sobre un pedestal bellamente tallado, es una obra hermosa, espiritual y elegante que aporta bendiciones, prosperidad y el arte indio atemporal a cualquier espacio y a la decoración del hogar.",
+      "src": "6ff24af8062c"
+    },
+    "item.9607321104.description": {
+      "text": "Collar de cerámica azul marino hecho a mano con cordón con detalles en rosa. El collar es de longitud ajustable. Debido al proceso de esmaltado durante la cocción de la cerámica, la parte trasera de los colgantes no está esmaltada y queda al descubierto. Esto no se nota al llevarlo puesto.",
+      "src": "cb64550e688f"
+    },
+    "item.9565381682.description": {
+      "text": "Mini escultura de arcilla de Ganesha y Parvati: esculturas decorativas y espirituales hechas a mano de los dioses hindúes Ganesha y Parvati, ideales como regalo para la inauguración de una oficina o una casa, o como decoración para el hogar\nTamaño de cada una: 3,1 x 1,9 x 4 pulgadas (largo x ancho x alto) aprox.; peso de cada una: 200 gramos",
+      "src": "359cb158a1ab"
+    },
+    "item.9578313870.description": {
+      "text": "Blusa de color lila y mango, con cuello redondo y mangas cortas entalladas con relleno para mantener la forma. Ideal para llevar en la oficina, en salidas nocturnas o en actos formales. Tiene un brillo precioso y una caída magnífica. \nTalla L\nTejido exterior: 100 % poliéster",
+      "src": "1ab3ad7b8b3d"
+    },
+    "item.9438031948.description": {
+      "text": "Se trata de un collar boho llamativo, elaborado a mano en Nigeria, con un intrincado trabajo de abalorios, piedras y una base con apliques de tela. Presenta un diseño atrevido y colorido con diversos abalorios de colores, piedras sintéticas y pequeños colgantes metálicos en la parte inferior.",
+      "src": "4fc05cf7da8e"
+    },
+    "item.9438210918.description": {
+      "text": "Material de la correa: acero inoxidable\nColor de la correa: plateado\nFunción: analógica\nMecanismo de cierre: cierre deslizante de tres piezas\nMovimiento: cuarzo\nColor de la esfera: plateado\nForma de la caja: ovalada\nMaterial de la caja: metal\nLongitud de la caja: 32,70 mm\nAncho de la caja: 31,45 mm\nGrosor de la caja: 7,15 mm",
+      "src": "e19f6e5ba4d6"
+    },
+    "item.9604783346.description": {
+      "text": "Material: metal\nLongitud: 16 pulgadas / 40,6 cm\nAncho: 2 pulgadas / 5,08 cm\n7 figuras de elefantes y «ojos del mal», que se cree que traen buena suerte y alejan la energía negativa del hogar o la oficina donde se cuelgan. Decoración étnica boho perfecta para la puerta de entrada o las paredes de las habitaciones.",
+      "src": "75599b0b0684"
+    },
+    "item.9320744061.description": {
+      "text": "Preciosos pantalones de algodón de estilo «verano indio» en color negro, con un bonito detalle de botones rojos en el lateral. Muy versátiles y con un corte muy favorecedor. Perfectos para el verano. Cintura de 36 pulgadas. De la famosa marca india Jaypore, conocida por sus diseños artesanales y sus tejidos naturales.",
+      "src": "8c96f64bf862"
+    },
+    "item.9583027994.description": {
+      "text": "Tres pendientes de nariz con clip, fáciles de llevar, fabricados en aleación de plata. Combínalos con una camiseta sin mangas y unos pantalones palazzo o una falda con estampado floral para conseguir un estilo indio rústico y moderno. No me gustan los pendientes de nariz, así que los vendo. La imagen en la que se ven los pendientes de nariz es solo ilustrativa, no es una foto mía.",
+      "src": "0ec6921b8fa4"
+    },
+    "item.9476315818.description": {
+      "text": "Precioso collar de cuentas de estilo bohemio con cuentas en tonos naranja vivo, coral y turquesa, con detalles texturados en tono plateado, de estilo tibetano. Perfecto para combinar con otros collares o para lucirlo como pieza estrella. En excelente estado, ligero y con un cierre clásico.",
+      "src": "057f368848d7"
+    },
+    "item.9395315968.description": {
+      "text": "Una lectura que te engancha desde la primera página. El doctor John Watson ejerce como médico militar en las trincheras de Flanders Fields, donde un asesino en serie acecha a los soldados. Una novela de misterio llena de tensión y atmósfera que combina la historia de la Primera Guerra Mundial con la novela policíaca clásica. #sherlockholmes #ficciónprimerguerramundial #novelasde misterio",
+      "src": "dfa72043f121"
+    },
+    "item.9565087476.description": {
+      "text": "Preciosa figurita antigua de color dorado de carácter espiritual que representa a toda la familia del dios hindú Shiva (Shiva, Parvati y Ganesh sentados sobre Nandi). \nDimensiones: 5,5 x 6 x 2,5 pulgadas; peso: 1695 gramos (1,6 kg); material: latón\nLleva a tu hogar espiritualidad, paz, armonía, buena suerte y bienestar",
+      "src": "90a8bcf8527d"
+    },
+    "item.9371186724.description": {
+      "text": "Una pieza única y llamativa, perfecta para combinar con un top liso o un vestido de verano y dar un toque de color. Ligera y fácil de llevar, es un precioso ejemplo de joyería textil india hecha a mano. Un collar llamativo, alegre y artesanal, confeccionado íntegramente con tela de algodón.",
+      "src": "50f89c8117e6"
+    },
+    "item.9575501283.description": {
+      "text": "Manto o bufanda de algodón de color amarillo/naranja indio para rituales hindúes, oración, mantras, meditación o puja. Estampado a mano con la inscripción «Om Namah Shivaya» en rojo, el Shivalinga y toda la familia de Shiva, incluyendo a Shiva, Parvati y Ganesha. \nLongitud: 55 pulgadas / 139 cm\nAncho: 33 pulgadas / 83 cm",
+      "src": "6a6c4c0cab94"
+    },
+    "item.9439083125.description": {
+      "text": "Nota: las dos últimas fotos del pendiente y el collar son meramente ilustrativas, solo para mostrar cómo se pueden combinar y llevar estos dijes. El pendiente y el collar NO son lo que vendo. ¡Solo los dijes! :)\n\nDos dijes de plata de ley con cristal Swarovski, la piedra natal de abril.\nMaterial: plata / cristal Swarovski",
+      "src": "bdea3cf3bc27"
+    },
+    "item.9529729646.description": {
+      "text": "Muy cálido. Este gorro hecho a mano, con 100 % lana y forro de felpa 100 % suave, está confeccionado por artesanos del Himalaya, en la India. Diseñado con llamativos estampados multicolores, cómodas orejeras y cordones con borlas trenzadas, aporta un toque bohemio e hippie, divertido y desenfadado, a tu look de invierno. Ancho: 9 pulgadas.",
+      "src": "f91fccf4b399"
+    },
+    "item.9711247731.description": {
+      "text": "Preciosa pulsera espiritual de meditación con cuentas.\nElaborada con materiales naturales: semillas de rudraksh de color marrón oscuro y cuentas de semillas del árbol de Bodhi de color marrón claro. Perfecta para practicar yoga, meditación y mindfulness, o para completar un look boho en el día a día.\n14 semillas de rudraksh\n7 semillas del árbol de Bodhi\n2,5 pulgadas de diámetro\nElástico ajustable",
+      "src": "8be1f9bee3ab"
+    },
+    "item.9313793339.description": {
+      "text": "Vestido largo de verano de corte holgado con estampado estilo batik. Verde menta, negro y blanco. Escote en V por delante y por detrás, con cuello halter atado al estilo «halter» y rematado con cuentas de madera. Dobladillo que cae y se mueve con elegancia.\nConfeccionado en un tejido suave y sedoso con tacto de satén. Perfecto como prenda de playa, pareo de resort o vestido de noche.\nTalla L",
+      "src": "b3623b498921"
+    },
+    "item.9395211212.description": {
+      "text": "Una adaptación magníficamente ilustrada de la mejor novela jamás escrita en español, con ilustraciones de Svetlin. Ideal para quienes están aprendiendo español, para estudiantes o para cualquiera que desee una introducción accesible a la legendaria historia de Cervantes sobre el caballero que luchaba contra molinos de viento. #donquijote #aprenderespañol #literaturaclásica",
+      "src": "eed87e0a0db7"
+    },
+    "item.9395115967.description": {
+      "text": "Ganadora del Premio Whitbread a la Mejor Primera Novela de 2000, aclamada como la ópera prima más destacada de su generación. Una extensa y divertidísima saga multigeneracional sobre dos familias en el Londres multicultural. Un clásico moderno y una de las novelas británicas más representativas de la década de 2000. 3,99 estrellas en Goodreads. #zadiesmith #clásicosmodernos #clubdelibro",
+      "src": "f47a506051fe"
+    },
+    "item.9311521689.description": {
+      "text": "Preciosa falda larga de algodón indio en tonos vivos de rojo, naranja y morado, con un estampado en espiral al estilo bandhani y un impresionante ribete en contraste en el dobladillo, con paneles superpuestos con detalles de hojas en dorado, crema y marrón oscuro que le aportan un acabado elegante y festivo. La falda de verano perfecta para combinar con una camiseta sin mangas o una blusa holgada.",
+      "src": "88c3079fb8de"
+    },
+    "item.9395142510.description": {
+      "text": "Elogiada por John Green como «impresionante». Una novela galardonada con múltiples premios y número uno en la lista de best sellers del New York Times, inspirada en el movimiento Black Lives Matter, que narra la historia de Starr, una chica de dieciséis años, después de presenciar cómo la policía dispara a su mejor amiga de la infancia. Adaptada al cine en una gran producción. 4,50 estrellas en Goodreads. #YAbooks #lecturaprecerida #bookish",
+      "src": "8e41fa54fdfb"
+    },
+    "item.9498955593.description": {
+      "text": "El conjunto incluye un top corto de manga corta con escote en V, combinado con una falda a juego con botones en la parte delantera. El diseño general presenta un estampado floral de margaritas blancas sobre un fondo teñido al estilo «tie-dye» en tonos rojos y naranjas.\n\nCintura de la falda: 34 pulgadas\nCaderas de la falda: 42 pulgadas\nLongitud de la falda: 27 pulgadas\nContorno de pecho de la camiseta: 44 pulgadas (corte y ajuste oversize)\nTalla recomendada: L/XL",
+      "src": "2b4c9dfc6029"
+    },
+    "item.9395098362.description": {
+      "text": "Un libro de magnífica edición con una portada dorada. Ambientada en la India de 1673, bajo el reinado de Aurangzeb, dos jóvenes nobles mogoles se ven envueltos en las secuelas de un levantamiento sofocado liderado por una mujer misteriosa y sus seguidores. Se desarrolla como un thriller de investigación, al tiempo que da vida de forma vívida a la India mogol. #ficciónhistórica #india mogol #bookstagram",
+      "src": "dbe7662e55a6"
+    },
+    "item.9395334867.description": {
+      "text": "La novela tan polémica que estuvo prohibida en Gran Bretaña durante más de treinta años y fue juzgada por obscenidad en 1960. Una historia apasionante y transgresora sobre las clases sociales, el deseo y el amor prohibido entre una mujer aristocrática y su guardabosques. Una de las novelas más polémicas e importantes de la literatura inglesa #librosprohibidos #literaturaclásica #dhlawrence",
+      "src": "ac307305c2fa"
+    },
+    "item.9395292320.description": {
+      "text": "Escrita por un poeta rohingya que vivió en primera persona el genocidio, esta autobiografía ha sido elogiada por utilizar la pluma en beneficio de la humanidad. Un testimonio de primera mano, excepcional e imprescindible, de una de las crisis de derechos humanos más determinantes de nuestro tiempo. Una lectura impactante para cualquier persona interesada en los derechos humanos, las historias de los refugiados y la historia contemporánea. #derechoshumanos #autobiografía #noficción",
+      "src": "4038f2d68091"
+    },
+    "item.9322734477.description": {
+      "text": "Preciosa camisa de verano de algodón indio, con un llamativo fondo negro decorado con motivos en forma de corazón en rojo y verde, estampados a mano con la técnica del «block print», y bonitos botones de madera. Una prenda elegante y sencilla que no pasa desapercibida, con auténtico carácter artesanal. Fácil de combinar: llévala con vaqueros y sandalias, metida por dentro de unos pantalones o una falda, o abierta sobre una camiseta. Un precioso toque de color y estampado para cualquier estación del año.",
+      "src": "872b0d5d0a2a"
+    },
+    "item.9395169253.description": {
+      "text": "Ganadora del Premio Man Booker 2015, calificada de «épica» y «magnífica» por los principales críticos. Una novela extensa y caleidoscópica que, a partir del intento de asesinato de Bob Marley, recorre décadas de política jamaicana, guerras entre bandas y la CIA. Ampliamente considerada una de las mejores novelas del siglo XXI. 4,06 estrellas en Goodreads. #bookerprize #ficciónliteraria #bookstagram",
+      "src": "6d6d8ee1187d"
+    },
+    "item.9395068524.description": {
+      "text": "El *New York Times* lo calificó como una lectura impactante e inquietante. Escrito en 1951, este breve clásico explica por qué la gente corriente se une a movimientos fanáticos y se convierte en auténticos creyentes, y se lee como si se hubiera escrito ayer. Uno de los favoritos de los presidentes Eisenhower y Clinton. 4,11 estrellas en Goodreads. #psicología #filosofía #noficción - contiene marcas y notas útiles",
+      "src": "b4705b309873"
+    },
+    "item.9579803801.description": {
+      "text": "Una pieza única. \nMaterial: plata auténtica 925 (con sello) \nTalla: 2,4 pulgadas\nLo vendo porque me queda un poco pequeño. Brazalete de plata elaborado con intrincados motivos de estilo victoriano, con un acabado de textura envejecida y adornado con cristales azul aguamarina, cristales verdes y perlas sintéticas cuidadosamente engastados. \nFabricación: Diseño artesanal hecho a mano\nPonte en contacto conmigo para obtener más detalles o fotos más nítidas.",
+      "src": "a33aafc2eb86"
+    },
+    "item.9395042890.description": {
+      "text": "El exministro portugués de Asuntos Europeos pasó seis meses viajando por tierra desde Bakú hasta Pekín para demostrar que Europa y Asia se están fusionando en un único supercontinente. Un lector afirmó que este libro cambió para siempre su forma de ver la geopolítica. Imprescindible para cualquiera que siga de cerca la actualidad de China, Rusia y los cambios en el equilibrio de poder mundial. 3,84 estrellas en Goodreads. #geopolítica #actualidad #noficción",
+      "src": "7df1b8a748f6"
+    },
+    "item.9649545514.description": {
+      "text": "Kurta/blusa larga/traje/túnica de algodón puro indio negro con estampado de Buda realizado a mano con bloque de tinta por toda la prenda y pantalones a juego. Los pantalones tienen cordones delanteros y una cómoda cintura elástica, además de bolsillos laterales y aberturas laterales. Cuello redondo y mangas tres cuartos. Crea un impresionante estilo espiritual, boho chic y étnico. \nContorno de pecho: 40 pulgadas\nLongitud de la kurta (parte de arriba): 44 pulgadas\nContorno de cintura de los pantalones: 34 pulgadas\nLongitud de los pantalones: 37 pulgadas",
+      "src": "be5938adcbad"
+    },
+    "item.9575763651.description": {
+      "text": "🕉️ Mala de Rudraksha natural: elaborada con auténticas cuentas de Rudraksha de 7 mm, ideal para uso espiritual y recitaciones diarias; longitud: 16 pulgadas\n📿 Diseño de 108 (+5) cuentas: perfecto para el canto de mantras (japa), la meditación, el yoga y los rituales de puja\n✨ Cómodo y duradero: el resistente ensartado garantiza un uso duradero y un manejo suave\n🌿 Beneficios espirituales: ayuda a mejorar la concentración, fomenta la calma y la energía positiva",
+      "src": "6e861169acc8"
+    },
+    "item.9562314219.description": {
+      "text": "Estola de lino tejida a mano en la India por maestros artesanos de Bengala Occidental. El tejido jamdani, conocido por su intrincada técnica de trama adicional, es una tradición centenaria en la que los motivos se tejen directamente en el tejido utilizando hilos finos, creando diseños que se asemejan a delicados bordados. Ligera y suave, es ideal tanto para el día a día como para ocasiones festivas, y aporta un refinado toque étnico a cualquier conjunto.",
+      "src": "290887d61cb9"
+    },
+    "item.9565484914.description": {
+      "text": "Positividad, sabiduría y el arte indio atemporal se unen en esta figura artesanal del dios hindú Ganesha, una combinación perfecta entre elegancia espiritual y la estética de la decoración moderna. Presenta un sereno acabado texturizado en blanco marfil, realzado con elegantes detalles en oro, lo que la convierte en una pieza llamativa e icónica para los hogares contemporáneos.\n\nMaterial: resina de primera calidad con acabado texturizado artesanal\nColor: blanco marfil y oro antiguo",
+      "src": "c50fcfd34c1e"
+    },
+    "item.9602950103.description": {
+      "text": "El New York Times lo calificó como el tipo de libro que puede cambiarte la vida, y millones de lectores están de acuerdo. Narrado por la propia Muerte, este éxito de ventas internacional número uno cuenta la historia de una niña que roba libros y esconde a un hombre judío en la Alemania nazi. Traducido a más de 40 idiomas y adaptado al cine en una gran producción de 2013, permaneció más de una década en las listas de éxitos de ventas de todo el mundo. 4,4 estrellas en Goodreads. #ficción sobre la Primera Guerra Mundial #ladrona de libros #éxito de ventas",
+      "src": "1978d39764d1"
+    },
+    "item.9602746361.description": {
+      "text": "Una exploración enérgica y contraria a lo que parece lógico sobre por qué y cómo triunfan los que parten en desventaja, desde las clases con pocos alumnos hasta las luchas por los derechos civiles, pasando por las desventajas que se convierten en fortalezas ocultas. El Financial Times lo calificó como el libro más entretenido de Gladwell hasta la fecha, un espectáculo que te hace sentir bien y que nutre tanto el corazón como la mente. Del autor de «El punto de inflexión», «Blink» y «Outliers». 3,97 estrellas en Goodreads. #malcolmgladwell #noficción #psicología",
+      "src": "66ab3427c67b"
+    },
+    "item.9438954997.description": {
+      "text": "Conjunto de joyas en tono dorado compuesto por un llamativo collar de varias vueltas, pendientes de aro a juego, una pulsera rígida y un anillo llamativo. Un conjunto de joyas ligero a la vez que precioso. Minimalista pero llamativo. Me queda un poco ajustado para mi escote (diámetro de 4,5 pulgadas), así que lo vendo. \n\nTamaño del collar: 12 cm x 3,2 cm / 4,72\" x 1,26\" \nTamaño de los pendientes: 4 cm x 1,3 cm / 1,57\" x 0,51\"\nTamaño de la pulsera: 6 cm x 3,5 cm / 2,36\" x 1,38\"\nTamaño del anillo: 1,9 cm x 1,2 cm / 0,75\" x 0,47\"",
+      "src": "0ee64f4f8768"
+    },
+    "item.9641705366.description": {
+      "text": "Precioso y llamativo vestido túnica de manga corta cosido a mano, con un llamativo estampado geométrico inspirado en los tejidos africanos Kente y Ankara. Hecho a mano en Nigeria. Silueta muy favorecedora, con una cintura elástica fruncida y una falda holgada y con movimiento. Un vestido de algodón perfecto para el verano, los festivales, un estilo boho chic o para llevar a diario de forma informal. El fruncido elástico y el estilo kaftán lo hacen adaptable en cuanto a talla y se ajusta a las tallas M y L. La longitud es de 28 pulgadas.",
+      "src": "45399a9701b6"
+    },
+    "item.9602779694.description": {
+      "text": "Un relato innovador y meticulosamente documentado sobre los 21 meses de suspensión de la democracia india bajo el mandato de Indira Gandhi, considerado el mejor y más exhaustivo relato sobre el Estado de Excepción que se haya escrito jamás. En él se pone de manifiesto cómo los miembros del Partido del Congreso, los comunistas, los empresarios, el poder judicial y la clase media urbana facilitaron el régimen autoritario, y no solo Gandhi y su hijo Sanjay. Ganador del Premio Karwaan. 3,75 estrellas en Goodreads. #historiaindia #política #noficción",
+      "src": "8036e25c8ded"
+    },
+    "item.9364938382.description": {
+      "text": "Cosido a mano en la India con algodón ligero, con un estampado inspirado en el arte popular tradicional africano. Vestido largo de algodón divertido y con mucho carácter en un tono azul denim desgastado. \n\nDetalles:\nTalla M (36–38\" pulgadas de contorno de pecho)\nAlgodón ligero: suave, transpirable y cómodo de llevar\nEstampado figurativo colorido por toda la prenda sobre un fondo azul jaspeado\nCintura escalonada con falda fruncida que aporta un bonito movimiento\nEscote redondo\nLongitud maxi\nCorte holgado y desenfadado: se pone sin más, sin cierres",
+      "src": "48251dcb2c90"
+    },
+    "item.9602491240.description": {
+      "text": "El gran éxito de ventas internacional número uno del Sunday Times que\nreescribe por completo la historia de la humanidad desde una perspectiva oriental. El reconocido historiador de Oxford\nPeter Frankopan lleva a los lectores a un viaje revelador a través de las\nrutas comerciales que dieron origen a los imperios mundiales, al comercio global y a las luchas de poder\nmodernas. Tiene una puntuación de 4,14 estrellas en Goodreads. Un fenómeno que amplía los horizontes y que\ncambia para siempre tu forma de ver la historia mundial.\n\n#peterfrankopan #historia mundial #historytok",
+      "src": "12134ce1de6c"
+    },
+    "item.9602470022.description": {
+      "text": "Esta desquiciada comedia negra, que pronto se convertirá en una importante serie de televisión de HBO producida por A24 y protagonizada por Jodie Comer, fue nombrada «Libro del Año» por\nCosmopolitan, Vogue y The New Yorker. Sigue las andanzas de una caótica transcriptora de sesiones de terapia sexual en el norte del estado de Nueva York que se obsesiona peligrosamente con uno de los\nclientes de su jefe. Cuenta con una puntuación de 3,68 estrellas en Goodreads. Prepárate para un viaje adictivo y voyeurista repleto de humor mordaz y escándalos inesperados.\n\n#bigswiss #booktok #queerfiction",
+      "src": "614e72385bec"
+    },
+    "item.9419147643.description": {
+      "text": "Una viuda de 81 años, alojada en un hotel de lujo en ruinas de Egipto, se enfrenta a un niño de 8 años, y ninguno de los dos juega limpio. El *New York Times* lo calificó de «deliciosamente perverso», y *Kirkus* lo describió como una «delicia maliciosa» y un «thriller retorcido y desquiciado». Atmosférica, retorcida e imposible de dejar de leer, esta es una batalla de voluntades entre dos de los narradores menos fiables de la ficción reciente. Recién comprada, regalo no deseado, sin leer. #thrillerpsicológico #booktok #imposible de dejar de leer",
+      "src": "369dbe6cb41f"
+    },
+    "item.9360886820.description": {
+      "text": "El capitalismo no está roto: se construyó así. Nick Romeo desvela las alternativas ocultas que ya están funcionando en todo el mundo: experimentos reales en mercados, vivienda y trabajo más justos que podrían sustituir al sistema que ahora mismo te está fallando. Elogiado por Ha-Joon Chang por «liberar nuestra imaginación económica». Calificado de «enriquecedor e inspirador» por The Observer. Para los lectores de Naomi Klein, Kate Raworth y cualquiera que esté cansado de que le digan que no hay alternativa. Puntuación en Goodreads: 4,07",
+      "src": "1d409ae01255"
+    },
+    "item.9602788500.description": {
+      "text": "El libro más influyente jamás escrito sobre los orígenes del nacionalismo, que analiza qué impulsa a las personas a vivir, morir y matar por su nación. The Guardian lo calificó de brillante, ameno y denso, y sigue siendo una de las obras más citadas en las ciencias humanas, traducida a más de treinta idiomas. Lectura imprescindible para cualquier persona interesada en la teoría política, la historia o la política global. 4,11 estrellas en Goodreads. #teoríapolítica #nacionalismo #librosacadémicos",
+      "src": "361d6b707523"
+    },
+    "item.9602536889.description": {
+      "text": "Ganadora del Premio Pulitzer y del Premio Nacional del Libro, esta\nobra fenomenal que no podrás dejar de leer fue nombrada uno de los mejores libros del siglo XXI por\nThe New York Times. Vive una emocionante lucha por la libertad a través del\nSur de Estados Unidos antes de la Guerra Civil en la historia que inspiró la exitosa serie de televisión. Cuenta\ncon una puntuación de 4,06 estrellas en Goodreads. Profundamente emotiva e imposible de dejar de leer,\nesta es la mejor ficción estadounidense contemporánea.\n\n#premioPulitzer #colsonwhitehead #ficciónhistórica",
+      "src": "c56cebab1dcb"
+    },
+    "item.9355268622.description": {
+      "text": "«The Netanyahus», de Joshua Cohen. Ganadora del Premio Pulitzer de Ficción 2022. Goodreads cuenta con más de 81 000 valoraciones de los libros de Cohen. Novela cómica ambientada en un campus universitario sobre un historiador judío obligado a recibir a Benzion Netanyahu, padre del futuro primer ministro de Israel, para una entrevista de trabajo que acaba convirtiéndose en un caos. Kirkus la calificó como una novela de gran densidad intelectual, enérgica y magistralmente controlada. Edición en rústica, de segunda mano, con arrugas en la cubierta y desgaste en los bordes (ver fotos). Completa y legible. Procedente de un hogar donde no se fuma.",
+      "src": "a64bd9222dd1"
+    },
+    "item.9602556623.description": {
+      "text": "Del autor mundialmente famoso de *El fin de la historia* nos llega un análisis urgente y\nrevelador del nacionalismo populista moderno y la política de identidad\nglobal. Francis Fukuyama ofrece una provocativa inmersión en la exigencia de\ndignidad, los debates sobre identidad en los campus universitarios y el resentimiento que amenaza a la democracia\nen la actualidad. Tiene una valoración de 3,84 estrellas en Goodreads. Una lectura imprescindible para cualquiera que intente\nentender los titulares internacionales actuales y las divisiones políticas.\n\n#francisfukuyama #cienciaspolíticas #actualidad",
+      "src": "18825964ddbd"
+    },
+    "item.9602879226.description": {
+      "text": "Una historia de amor prohibido entre un chico suní y una chica chií se desarrolla con el telón de fondo de la Cachemira de los años noventa, mientras la guerra y la violencia política se ciernen sobre su mundo. Finalista del Premio DSC de Literatura del Sur de Asia y preseleccionada para el Premio Folio, el Financial Times la calificó como una obra que, sin duda, perdurará. Del autor del éxito de ventas internacional *The Collaborator*, elogiado por Arundhati Roy como una obra de ficción que te hace escuchar #literaturadecachemira #ficcióndelSurdeAsia #ficciónbélica",
+      "src": "d61aa89d012b"
+    },
+    "item.9602725968.description": {
+      "text": "La colección definitiva de la poesía del místico sufí del siglo XIII Rumi, traducida por Coleman Barks, a quien se le atribuye haber convertido a Rumi en el poeta más leído de Estados Unidos. Esta nueva edición ampliada incluye más de ochenta poemas inéditos y una nueva introducción. Elogiada por Jack Kornfield como una obra en la que «el oro de Rumi se derrama a través de las palabras de Coleman», sigue siendo la más vendida de todas las recopilaciones de Rumi. 4,39 estrellas en Goodreads. #rumi #poesía #espiritualidad\nISBN: 9780062312747",
+      "src": "7a911c9f005a"
+    },
+    "item.9602569998.description": {
+      "text": "Del autor superventas de *El cazador de cometas*, con millones de ejemplares vendidos,\nllega una historia impresionante sobre el desamor, los secretos familiares y el amor indestructible.\nAbarcando varias generaciones, desde Kabul hasta París, esta obra ganadora del Premio Goodreads Choice explora cómo una única decisión trágica repercute para siempre en las generaciones familiares. Cuenta con una valoración de 4,08 estrellas en Goodreads. Prepara los pañuelos para una montaña rusa emocional inolvidable que te cautivará desde la primera página.\n\n#khaledhosseini #elcazador de cometas #librosemocionales",
+      "src": "704ecf3638c1"
+    },
+    "item.9602681438.description": {
+      "text": "De la autora ganadora del Premio Pulitzer por *La sexta extinción*\nnos llega una visión impactante de los intentos tremendamente polémicos de la humanidad por controlar\nla naturaleza. La autora superventas Elizabeth Kolbert te lleva a un fascinante\nrecorrido por el mundo para conocer a científicos que lanzan polvo de diamante al cielo y modifican genéticamente\nespecies invasoras. Cuenta con una puntuación de 4,10 estrellas en Goodreads. Alucinante, inquietante y con un humor negro, esta es la narrativa definitiva sobre el clima para mentes\ncuriosas.\n\n#cambioclimático #cienciapopular #librosmedioambientales",
+      "src": "9721b9a90dcf"
+    },
+    "item.9602413571.description": {
+      "text": "Ganadora del prestigioso Premio Duff Cooper, esta explosiva\nobra maestra histórica narra la sangrienta caída de Delhi y el trágico final\nde la mayor dinastía de la India en 1857. El galardonado historiador William Dalrymple\ndesentraña unos rarísimos registros de la corte persa para narrar una asombrosa historia real de asedio,\ntraición y colapso imperial. Cuenta con una puntuación de 4,20 estrellas en Goodreads. Lectura imprescindible\npara cualquiera que sienta pasión por la historia real dramática y las grandes caídas de imperios.\n\n#williamdalrymple #historiaindia #librosdehistoria",
+      "src": "e735901e05a2"
+    },
+    "item.9603594529.description": {
+      "text": "Elizabeth Gilbert recomienda tener este libro siempre junto a la cama, y los lectores están de acuerdo, ya que le han otorgado una magnífica puntuación de 4,45 estrellas en Goodreads. El poeta David Whyte reinterpreta 52 palabras cotidianas, como «solo», «ira» y «perdón», como puertas de acceso a un significado más profundo, con una introducción de Maria Popova y una reseña en la portada de Nick Cave. Lemn Sissay lo califica como un libro extraordinariamente poderoso que querrás conservar para siempre. Una preciosa edición en tapa dura, ideal para regalar a cualquier amante de la no ficción poética. #davidwhyte #consolations #giftbooks",
+      "src": "fa3fe7281c41"
+    },
+    "item.9602442603.description": {
+      "text": "Un joven arquitecto intransigente libra una violenta batalla contra las normas convencionales y vive una explosiva historia de amor con la única mujer decidida a derrotarle. El *New York Times* la calificó de escritora de gran fuerza, brillante, hermosa y amarga. Esta edición del centenario de Signet incluye un epílogo del albacea literario de Rand y una guía de lectura sobre su filosofía. Una de las novelas más polémicas y perdurables del siglo XX. 3,96 estrellas en Goodreads. #aynrand #literaturaclásica #ficciónfilosófica",
+      "src": "68e0e27368fe"
+    },
+    "item.9339704755.description": {
+      "text": "Preciosa blusa de algodón ligera con un intenso fondo en tonos mostaza y oliva, decorada con un intrincado estampado floral a mano en azul marino, rojo, verde y crema. Algodón indio suave y transpirable, con un lazo lateral de estilo cruzado que aporta un corte desenfadado. Una prenda veraniega preciosa y versátil, ideal para combinar con vaqueros, pantalones cortos o para llevar de vacaciones.\n\nDetalles:\nEscote en V con mangas cortas tipo murciélago\nLazos laterales tipo cruzado para abrochar y ajustar el ajuste\nAlgodón suave y ligero, estampado a mano con bloques\nCorte holgado y cómodo\nColor: Mostaza / oliva / azul marino con motivos florales\nTejido: Algodón (estampado a mano con bloques)\nContorno de pecho: 34-36\"",
+      "src": "42265fed3791"
+    },
+    "item.9602870728.description": {
+      "text": "El atemporal Mahabharata, narrado íntegramente desde la perspectiva de Panchaali, esposa de los cinco hermanos Pandava, que recorre su tormentoso nacimiento, su complicado vínculo con Krishna y su atracción prohibida por el enemigo más peligroso de sus maridos. El *Los Angeles Times* la calificó de «una joya tan brillante como el Diamante Hope», y el *Houston Chronicle* la describió como «radiante y encantadora». Una historia profundamente humana, a medio camino entre la historia y el mito, sobre una mujer que nació en un mundo de hombres. 4,20 estrellas en Goodreads. #mahabharata #ficciónmítica #éxitointernacional",
+      "src": "6fa2e4dc854a"
+    },
+    "item.9331197768.description": {
+      "text": "Precioso top sin mangas metalizado en dorado de Mango. Con un sutil brillo que recorre toda la prenda: refleja la luz y resulta elegante sin resultar excesivo. Un top versátil, ideal tanto para salir como para un look más elegante. Perfecto para la noche o una fiesta sin complicaciones: combínalo con pantalones de corte entallado o una falda para un look elegante, o llévalo de forma informal con vaqueros y una chaqueta blazer. El brillo dorado le da un toque especial para ocasiones especiales y para las fiestas navideñas.\n\nDetalles:\n\nEscote en V por delante y por detrás\nTirantes fijos de punto (estilo camiseta sin mangas)\nPunto metalizado fino y elástico\nLigeramente transparente: ligero y vaporoso\nMarca Mango\nTalla: M",
+      "src": "04cf82d00d17"
+    },
+    "item.9311775029.description": {
+      "text": "Preciosa blusa negra de algodón estilo kurti de Sabhyata, con un sutil estampado en bloques de tonos similares por toda la prenda y un precioso escote en contraste.\nDe Sabhyata, una marca india muy apreciada, talla L. Confeccionada en algodón puro, suave y transpirable.\nDetalles:\n\nMangas cortas tipo casquillo con ribete rojo\nEscote en V decorativo con bordado\nRibete en rojo y mostaza en el dobladillo y las mangas\nEstampado floral tonal sobre fondo negro\nCorte holgado y cómodo\nAlgodón puro ligero\n\nFácil de combinar con vaqueros, pantalones o una falda. Una prenda versátil para el día a día.\n\nTalla: L (etiqueta)\nEstado: Muy bueno",
+      "src": "1f0554b459e2"
+    },
+    "item.9359739617.description": {
+      "text": "Relatos entrelazados ambientados en el Pakistán rural y urbano, que giran en torno a la casa de un acaudalado terrateniente feudal y a los sirvientes, familiares y parásitos vinculados a su mundo. Finalista del National Book Award; William Dalrymple lo calificó como «probablemente la mejor obra de ficción escrita en inglés sobre Pakistán». Los críticos la comparan con Chejov y Turguénev por su sobriedad y profundidad psicológica. Una excelente elección para los aficionados a la ficción literaria, a los escritores del sur de Asia y a las colecciones de relatos interrelacionados, como las de Jhumpa Lahiri o Mohsin Hamid.  (Finalista del National Book Award)",
+      "src": "0937e62d760d"
+    },
+    "item.9602838102.description": {
+      "text": "Una novela silenciosamente desgarradora sobre una humilde pareja exiliada por sus propias familias por haberse casado sin su consentimiento, cuya frágil paz se hace añicos cuando una deuda les obliga a enfrentarse al pasado. Natsume Soseki la consideraba su novela favorita de entre todas las que había escrito, y Haruki Murakami la ha señalado como el libro con el que más se identifica. La revista *New Statesman* la calificó de obra maestra por su buen gusto y claridad. Esta edición de NYRB ofrece una traducción nueva y más precisa que las versiones anteriores. 4,07 estrellas en Goodreads. #literaturajaponesa #natsumesoseki #nyrbclassics",
+      "src": "eea3c4b3937a"
+    },
+    "item.9602596973.description": {
+      "text": "Una guía de bolsillo bilingüe (hindi e inglés) sobre acupresión y acupuntura, estructurada íntegramente en torno a un único punto por dolencia para un alivio rápido y sencillo. Abarca desde trastornos del apetito hasta situaciones de emergencia, con diagramas de las manos e instrucciones paso a paso para la sedación y la tonificación de cada punto. Lo suficientemente compacta como para llevarla en un bolso o en el bolsillo, está diseñada como una guía de consulta rápida para uso doméstico. Publicada por ASPEUS, un instituto especializado en investigación sobre naturopatía y acupresión con sede en Prayagraj. #acupresión #medicinaalternativa #naturopatía #recuperación #ayurveda",
+      "src": "2cf54aa415ae"
+    },
+    "item.9562192907.description": {
+      "text": "Reconocido por la UNESCO como parte del patrimonio cultural inmaterial de Indonesia, el ulos puede llevarse como complemento (chal, bufanda o falda), colgarse en la pared, utilizarse como camino de mesa o incluso enmarcarse para exhibirlo. El ulos es más que un tejido tradicional. Es un símbolo sagrado de calidez, protección y bendiciones ancestrales dentro de la comunidad batak. Tejido a mano con colores y motivos cargados de significado, cada pieza encierra profundos valores filosóficos y acompaña los momentos más importantes de la vida, desde el nacimiento hasta el matrimonio e incluso las ceremonias de despedida.\nMaterial: algodón y seda",
+      "src": "3b29df965656"
+    },
+    "item.9602894095.description": {
+      "text": "Cuatro mujeres dejaron atrás su vida cotidiana durante cincuenta y seis días para recorrer 17 000 kilómetros en moto a través de seis países, desde Hyderabad, pasando por el noreste de la India, Myanmar, Tailandia, Laos y Vietnam, a lo largo del río Mekong, hasta Camboya. Piya Bahadur narra un viaje único en la vida a través de un terreno que los viajeros indios rara vez ven, así como su propia transformación de madre trabajadora e inhibida a aventurera segura de sí misma. El director general de Turismo de «Incredible India» lo ha elogiado como una lectura apasionante. #viajesenmoto #mujeresqueviajan #memoriasdeaventuras",
+      "src": "752cf398e4d4"
+    },
+    "item.9602907756.description": {
+      "text": "El físico y detective Manabu Yukawa viaja a una localidad costera en crisis para asistir a un congreso sobre minería, pero acaba viéndose envuelto en la investigación de un asesinato cuando encuentran a un huésped muerto al pie de los acantilados. Kirkus calificó la novela de ingeniosa por encadenar un giro tras otro en un caso que parece totalmente a prueba de giros, y The Times bautizó a Higashino como el «Stieg Larsson japonés». El tercer libro de la serie «Detective Galileo», éxito de ventas internacional, que más tarde se adaptó a una exitosa película japonesa. 3,96 estrellas en Goodreads. #noveladecrimenjaponesa #detectivegalileo #misterioythriller",
+      "src": "6837d2bdb5ef"
+    },
+    "item.9367213932.description": {
+      "text": "Mono corto de Zara de algodón blanco, con textura arrugada. Talla L. Una prenda boho-utilitaria, sencilla y fresca, con un montón de bonitos detalles. Presenta algunas manchas en los bolsillos, aunque apenas se aprecian. Una prenda veraniega perfecta para las vacaciones, la playa o los días de calor, cómoda y fácil de llevar, con un estilo desenfadado y ligeramente oversize.\n\n\nDetalles:\nMarca: Zara\nGasa de algodón suave y arrugada: ligera y transpirable\nCuello con solapa y tapeta con medio botón, con botones de madera\nCintura elástica con cordón y extremos con cuentas de madera\nMangas remangables\nDos bolsillos de parche delanteros\nEstilo mono corto (pantalones cortos)\nTextura arrugada natural",
+      "src": "bc8e06af2eae"
+    },
+    "item.9388380417.description": {
+      "text": "Talla de pecho: 36-38 pulgadas, te quedará perfecta. \n\nPreciosa kurta india de algodón con un intenso teñido shibori en rojo y suaves motivos blancos creados mediante la técnica de la reserva. El shibori tradicional es una técnica de teñido anudado a mano típica de la India. Elegante y cómoda, con bonitos detalles en el cuello y los puños. Una prenda étnica versátil: llévala con leggings, vaqueros o pantalones, tanto para un look elegante como informal.\n\nDetalles:\n100 % algodón: suave, transpirable y fácil de llevar\nEstampado shibori rojo (tie-dye)\nTapeta decorativa estampada en el escote y puños estampados a juego\nCuello redondo\nMangas 3/4\nAberturas laterales para facilitar el movimiento\nCorte recto de kurta, hasta la rodilla o la pantorrilla",
+      "src": "72daee4fe245"
+    },
+    "item.9330125733.description": {
+      "text": "Elegante vestido midi morado de Closet London. De un intenso tono berenjena/morado, con un favorecedor escote en V y una falda amplia y vaporosa de corte en A. Sencillo, versátil y fácil de llevar: ideal para el trabajo, para ocasiones especiales o para el día a día. Un vestido cómodo y favorecedor que se puede adaptar fácilmente a un estilo más elegante o más informal. Combínalo con tacones para ocasiones especiales o con zapatos planos y una chaqueta para la oficina. Su intenso color queda precioso en cualquier época del año.\n\nDetalles:\nCuello en V\nMangas 3/4\nCintura plisada con una falda amplia y con movimiento\nJersey elástico suave con una bonita caída\nLargo midi\nFabricado en Londres\nColor: Morado / berenjena\nTejido: Jersey elástico\nTalla: UK 12 / US 8\nEstado: Bueno",
+      "src": "7429593b05ae"
+    },
+    "item.9602649617.description": {
+      "text": "Encuentran a una joven ahorcada en una pensión de tercera categoría con una nota de suicidio sobre la mesa, pero un agente de policía perspicaz detecta detalles que no cuadran. La investigación de Scotland Yard apunta a Charles Hobart, un hombre con medios, motivo y oportunidad, hasta que el diputado y criminólogo aficionado Scott Egerton se propone demostrar su inocencia y desenmascara al verdadero asesino en el último momento. El autor Anthony Gilbert era el seudónimo de Lucy Malleson, miembro del Detection Club y considerada sin lugar a dudas una de las grandes figuras de la novela negra. Una escasa edición de bolsillo vintage de Pan Books. #vintagecrime #goldenagemystery #detectivefiction",
+      "src": "768df32e0055"
+    },
+    "item.9360475926.description": {
+      "text": "Precioso vestido midi de algodón con un clásico estampado indio realizado a mano con bloques de impresión. Corte en A fluido y elegante. FabIndia es una querida marca tradicional india conocida por sus estampados artesanales realizados de forma ética, y que resulta difícil de encontrar en Europa. Un vestido atemporal y cómodo, perfecto para el verano, las vacaciones o para llevar en capas durante todo el año.\n\nDetalles:\nMarca: FabIndia (etiqueta original — 100 % algodón, fabricado en la India)\nTalla L\nEstampado tradicional al estilo Ajrakh: motivos paisley, florales y medallones\nEstampado decorativo en el borde del dobladillo y en los puños de las mangas en rojo, azul y negro\nMangas largas, escote redondo\nCordón rojo en la espalda para ceñir la cintura\nAlgodón suave, transpirable y ligero",
+      "src": "da59e38f110c"
+    },
+    "item.9328440121.description": {
+      "text": "Elegante vestido midi azul marino y blanco de Wardrobe. Un look elegante y desenfadado con un estampado geométrico abstracto. Una prenda favorecedora y versátil, ideal para la oficina, para ocasiones especiales o para arreglarse un poco. Cómodo, resistente a las arrugas y fácil de combinar con tacones o zapatos planos. Cae maravillosamente sobre el cuerpo y estiliza la cintura.\n\nDetalles:\nTalla: M-L\nCuello barco/redondo con mangas casquillo cortas\nDetalle de fruncido y retorcido muy favorecedor en la cintura (delante)\nCinturón para atar en la espalda que marca la cintura\nTejido de jersey elástico y suave con una bonita caída\nLongitud midi\nFácil de poner, sin complicaciones\nColor: Azul marino / blanco\nTejido: Jersey elástico sedoso (sintético)\nEstado: Excelente",
+      "src": "0570093c1a5b"
+    },
+    "item.9362130631.description": {
+      "text": "El libro que *The Times* calificó de «obra devastadora»: el análisis brutalmente sincero que el premio Nobel V. S. Naipaul hace de la India tras el estado de excepción de Indira Gandhi. Puntuación en Goodreads: 3,71 a partir de más de 1.900 valoraciones. Segunda entrega de la aclamada «Trilogía de la India» de Naipaul, este análisis feroz e implacable de las castas, la religión, la pobreza y la identidad poscolonial ha sido calificado como una obra fenomenal cuyas reflexiones solo parecen más agudas con la perspectiva del tiempo. No es una lectura cómoda: un clásico polémico e inquebrantable, imprescindible para cualquiera que se tome en serio la literatura poscolonial, la historia de la India o la obra de Naipaul, galardonada con el Premio Nobel. Edición en rústica, en estado de segunda mano, con ligeros signos de desgaste en la cubierta (ver fotos).",
+      "src": "13944c564b01"
+    },
+    "item.9339656344.description": {
+      "text": "Precioso vestido de verano de algodón estampado a mano de FabNu, la marca contemporánea de la nueva era de la India. Magnífico estampado abstracto de animales/tigres en tonos índigo y verde salvia, realizado a mano con la técnica del bloque, sobre un algodón suave y transpirable. Las mangas abullonadas, el cierre frontal con botones y la falda vaporosa en capas le aportan una elegancia natural y lo hacen muy cómodo de llevar.\n\nDetalles:\nCuello en V con botones en toda la parte delantera\nMangas abullonadas con puños elásticos\nCintura entallada con falda en capas y vaporosa\nAlgodón indio suave y ligero, estampado a mano con bloques\nFabNu by Fabindia: tejido natural de calidad\nColor: azul índigo / verde salvia\nTejido: 100 % algodón (estampado a mano con bloques)\nTalla: M\nMedidas (en plano/aprox.):\nContorno de pecho: 36\"\nCintura: 32\"\nCaderas: holgadas/relajadas\nLongitud: 47\"",
+      "src": "2b3d48d2cd22"
+    },
+    "item.9311368443.description": {
+      "text": "Preciosos pantalones palazzo de pierna ancha confeccionados en auténtico algodón de Nigeria, con un impresionante estampado de estilo batik de motivos florales tipo mandala en tonos cálidos de marrón, mostaza, verde salvia y rosa palo. Vistos de frente parecen una falda amplia, pero en realidad son unos pantalones anchos y fluidos con una abertura en el centro, por lo que combinan el efecto espectacular de una falda con la comodidad de unos pantalones. \n\nCombínalos con tacones y un top ajustado para un look elegante, o con sandalias para un estilo boho desenfadado. Una prenda realmente llamativa con colores preciosos.\nNota: el algodón se arruga de forma natural; basta con plancharlo rápidamente o pasarle un poco de vapor y ya está listo para llevar.\nCintura: ajustable con cordón. (Mi cintura mide 38 pulgadas/96,5 cm y me queda perfecta)\nEstado: Excelente / Usado una vez / Como nuevo",
+      "src": "7234c4692ad3"
+    },
+    "item.9314010527.description": {
+      "text": "Espectacular vestido largo sin tirantes confeccionado en auténtico algodón africano con estampado «wax», comprado en Nigeria. Llamativo diseño de hojas en azul y blanco con llamativos remolinos ornamentales en rojo y dorado; vibrante, llamativo y lleno de personalidad. El corpiño fruncido se adapta a varias tallas y se mantiene en su sitio sin tirantes. Una prenda perfecta para destacar en verano, vacaciones, festivales o fiestas; póntelo y listo, o combínalo con una chaqueta vaquera y unas sandalias.\n\nTalla: se adapta fácilmente de la M a la XL\nEstado: sin estrenar\nDetalles:\nEstilo bandeau sin tirantes con corpiño fruncido/elástico\nParte superior elástica y fruncida para un ajuste cómodo y adaptable\nFalda larga, amplia y fluida\nAuténtico estampado africano «wax», de algodón resistente y con buen tacto\nColores intensos y saturados",
+      "src": "2bb04fbd307b"
+    },
+    "item.9371212323.description": {
+      "text": "Collar artesanal único y exclusivo. Ideal para aportar un toque artesanal y rústico a un conjunto sencillo. Confeccionado con coloridos cordones de yute y cordel (rosa y amarillo mostaza) entrelazados con diminutas cuentas de madera y pequeñas campanillas de latón, que culminan en un llamativo colgante de madera tallada envuelto en yute enrollado y rematado con cuadrados de tela bordados a mano con puntada kantha (un diseño indio) en rojo y amarillo, además de un pequeño diablillo de pompón.\n\nDetalles:\nCollar llamativo hecho a mano/artesanal\nMezcla de materiales naturales: madera tallada, yute/cordel, tela de algodón, cuentas de madera, campanillas de latón\nDetalle de tela bordado a mano (punto corrido estilo kantha)\nPaleta de colores vivos de estilo folclórico/tribal\nCierre con lazo — ajustable para adaptarse a cualquier cuello",
+      "src": "4aafe8192957"
+    },
+    "item.9316357780.description": {
+      "text": "Precioso vestido azul estampado a mano de Anoshk, una marca boutique de Delhi. De suave algodón, cubierto con un intrincado estampado floral, de palmeras y mariposas en tonos mostaza, rosa, azul y marrón, y con dos bolsillos. Un vestido sencillo y elegante, fácil de poner, con un estampado precioso y un corte holgado y acampanado. Perfecto para el verano, las vacaciones en la playa o para el día a día con sandalias. Llega aproximadamente hasta la rodilla (longitud midi).\n\nDetalles:\n\nAlgodón suave de color azul salvia con un detallado estampado floral y de mariposas realizado en bloque\nSin mangas, con cuello redondo y ribete azul marino\nCorte holgado en línea A / acampanado con un bonito volumen\nBolsillos laterales\nAlgodón puro, ligero y transpirable\nConfeccionado artesanalmente: las pequeñas variaciones en el estampado forman parte del encanto de lo hecho a mano\n\nTalla: M-L\nEstado: Muy bueno",
+      "src": "ca41ac111461"
+    },
+    "item.9312410623.description": {
+      "text": "Precioso mono ligero de algodón indio en azul suave con un delicado estampado blanco a mano, una mezcla de motivos florales y geométricos, con un bonito ribete de encaje de ganchillo en la parte delantera. Perfecto para el verano. \n\nDetalles:\nCorpiño fruncido y elástico para un ajuste cómodo y adaptable\nTirantes ajustables\nPantalones fluidos\nDelicado detalle de encaje de ganchillo en la parte delantera\nAlgodón indio puro, ligero y transpirable\nTono azul suave y relajante\n\nMe queda de maravilla (busto 40 pulgadas / 101 cm, cintura 38 pulgadas / 96 cm, caderas 43 pulgadas / 109 cm). El corpiño fruncido hace que la parte superior resulte cómoda, mientras que las perneras anchas aportan una caída relajada y elegante. Perfecto para días calurosos, vacaciones o festivales; solo tienes que ponerte unas sandalias y listo.\n\nTalla: L\nEstado: Muy bueno",
+      "src": "8874261edf0f"
+    },
+    "item.9603636575.description": {
+      "text": "El antiguo ritual de bienestar chino basado en el masaje, por el que apuestan atletas y famosos, ahora en un kit completo. Este juego de 12 piezas para ventosas incluye una gama completa de tamaños, desde pequeñas hasta extragrandes, una bomba de succión rápida y, como regalo, un modelo de acupuntura auricular que muestra los puntos de presión para tu referencia. La terapia de ventosas ha ganado una enorme popularidad gracias a que los deportistas olímpicos y las celebridades de primer nivel lucen esas características marcas circulares, y este set te permite probar esta tendencia en casa. Se incluye todo lo que aparece en la imagen y la caja contiene las instrucciones completas para empezar de inmediato. Un regalo genial para cualquier persona interesada en las terapias alternativas, los masajes o el autocuidado inspirado en la medicina tradicional china. #terapiadelasventosas #medicinatradicionalchina #autocuidado",
+      "src": "8a881630cb5a"
+    },
+    "item.9729949801.description": {
+      "text": "Contorno de pecho: se adapta a un contorno aproximado de 36-38 pulgadas\nHombro: 15 pulgadas\nCintura: corte holgado, se adapta a la mayoría de las siluetas \nLongitud: 48 pulgadas\n\nPrecioso vestido largo en un suave tono beige pastel, con un delicado estampado floral en gris y amarillo mostaza. \nDiseño indio original de la marca Anoshk, una boutique de moda de Delhi muy apreciada. \nConfeccionado en algodón 100 % ligero, suave, transpirable y cómodo incluso en los días más calurosos. \nLa parte superior es entallada y la falda tiene una silueta en A de estilo vintage. \nMangas tres cuartos y un pequeño escote en V con detalle de lazo. \nLa cintura es holgada y fluida, por lo que se adapta a una amplia variedad de tallas y tipos de cuerpo. Perfecto para el verano, las vacaciones, las bodas o cualquier ocasión en la que quieras sentirte elegante y cómoda al mismo tiempo.",
+      "src": "56972dd4c616"
+    },
+    "item.9371171716.description": {
+      "text": "Una pieza única y llamativa, perfecta para combinar con un top liso o un vestido de verano y aportar un toque de color. Ligera y fácil de llevar, es un precioso ejemplo de joyería textil artesanal. Collar llamativo, alegre y de fabricación artesanal india, elaborado íntegramente con tela de algodón. Diseño de varias vueltas con hileras de cuentas de tela enrolladas a mano en rosa, verde lima y amarillo, rematado con un ramillete de flores de algodón hechas a mano en azul, naranja y verde con centros cosidos a contraste.\n\nDetalles:\nJoyería textil artesanal hecha a mano\nTejido 100 % algodón: ligero y cómodo de llevar\nDiseño de varias vueltas con cuentas y un llamativo centro floral\nPaleta de colores vivos y variados\nCierre con lazo de tela en la parte trasera, ajustable para adaptarse a la medida",
+      "src": "3616e6fbb3fe"
+    },
+    "item.9355082189.description": {
+      "text": "Comprado hace una semana. Idioma: inglés. Una visión apasionante y minuciosamente documentada sobre el auge de Ozempic y cómo estos medicamentos para adelgazar están transformando la sanidad, la comida rápida, la moda y mucho más. Escrito por una columnista de Reuters, desvela la historia que se esconde tras un avance médico que marca una época, al tiempo que plantea cuestiones más amplias sobre la desigualdad, los ideales de belleza y la búsqueda de la delgadez. Una lectura oportuna y apasionante para cualquiera que esté interesado en la salud, la ciencia, la industria farmacéutica o el debate cultural en torno a los medicamentos para adelgazar.\n\nDetalles:\nAutora: Aimee Donnellan\nEditorial: 4th Estate\nISBN: 978-0-00-871909-8\nFormato: Tapa blanda\nPrecio de cubierta: 16,99 £\nIdioma: inglés\nEstado: Muy bueno, de segunda mano. Páginas limpias e intactas, perfectamente legibles.",
+      "src": "0cd1f661ed6e"
+    },
+    "item.9360542677.description": {
+      "text": "Pieza de algodón de vivos colores, estampada a mano con bloques de color en un amarillo soleado con toques de rosa, rojo y verde: un alegre diseño indio floral y de motivos paisley que cubre toda la prenda. La parte superior fruncida y elástica la convierte en una prenda versátil «dos en uno»: llévala subida como vestido sin tirantes o más baja, a la altura de las caderas, como falda larga. Una prenda veraniega sencilla y alegre, ideal para vacaciones, festivales o días de playa. La cintura fruncida y elástica se adapta a una amplia gama de tallas.\n\n\nDetalles:\nTallas M, L, XL\n100 % algodón ligero: suave, transpirable, perfecto para el calor\nEstampado tradicional indio realizado a mano con bloques de impresión\nParte superior ancha fruncida y elástica: se adapta al cuerpo y no se mueve\nDos formas de llevarlo: vestido sin tirantes o falda larga\nCorte amplio y vaporoso, con un precioso movimiento al girar\nLongitud maxi\nSe pone por la cabeza, sin cremalleras ni botones",
+      "src": "f7e490aaecd5"
+    },
+    "item.9437887059.description": {
+      "text": "Aquí se muestran las versiones tanto limpias como oxidadas. El pendiente lleva el sello «925», que es un sello de contraste estándar que indica que la pieza está fabricada con un 92,5 % de plata pura. Estos pendientes están fabricados en plata con un diseño étnico indio «chandbali», con un pendiente de piedra verde y cuentas de plata colgantes. Diseño de joyería tradicional bohemia. Presenta una intrincada forma de mango. Acabados con cinco borlas colgantes de cuentas metálicas macizas (gotitas) en la base que reflejan la luz de forma preciosa. Excelente estado vintage con un bonito aspecto natural. He limpiado la oxidación y muestro aquí ambas versiones. La oxidación es muy natural y muy fácil de limpiar. El paquete incluye el polvo limpiador. Perfectos como pieza llamativa o como un regalo de lujo bien pensado.",
+      "src": "8ce83d7540c3"
+    },
+    "item.9316140580.description": {
+      "text": "Precioso vestido de verano blanco de algodón supersuave procedente de la India, decorado con un delicado estampado floral realizado a mano con bloques de impresión en suaves tonos terracota, naranja y verde salvia, un estampado clásico de estilo mogol. Cuenta con dos bolsillos. Fresco, femenino y con un aire veraniego natural. De Jaypore, una marca india muy apreciada, conocida por sus estampados artesanales a mano y sus tejidos naturales. Un vestido de verano sencillo y elegante, muy fácil de lavar. Póntelo con unas sandalias y listo, o combínalo con una chaqueta vaquera. Llega aproximadamente hasta la rodilla (ver fotos).\n\nDetalles:\nAlgodón blanco fino con estampado floral integral a mano\nTirantes finos\nCorte entallado\nFalda escalonada y fruncida con un precioso movimiento\nCorte entallado y acampanado muy favorecedor\nAlgodón puro, ligero y transpirable: perfecto para los días calurosos\nTalla: Se adapta perfectamente a las tallas M y L.",
+      "src": "dae2411908ed"
+    },
+    "item.9329298936.description": {
+      "text": "Preciosa blusa tipo caftán ligera de Jaipur Kurti con un magnífico estampado rosa al estilo bandhani (un famoso diseño indio). Algodón suave y ligero con una impresionante banda adornada con abalorios bajo el busto. De estilo boho y elegante al mismo tiempo, sin esfuerzo. Versátil: llévalo como pareo de playa, vestido corto o combínalo con vaqueros o pantalones cortos para un look más informal. Perfecto para el verano, las vacaciones y los festivales. La cintura adornada le da una forma muy favorecedora.\n\nDetalles:\nEscote en V con mangas holgadas tipo murciélago/kaftán\nCintura imperio con una preciosa banda decorada con abalorios en tonos crema y plata y adornos tipo espejo\nAlgodón ligero y semitransparente: vaporoso y fresco\nCorte holgado y cómodo\nMarca Jaipur Kurti\nColor: rosa baya / estampado de remolinos blancos\nTejido: algodón ligero\nTalla: M-L\nEstado: excelente",
+      "src": "bd26e9bf4473"
+    },
+    "item.9331163535.description": {
+      "text": "Talla: de la M a la L (contorno de pecho de 38 o menos)\nPrecioso top bordado de Fabels by Fabindia, una marca india exclusiva. Tejido de mezcla de seda y algodón en un intenso color verde azulado. Este magnífico tejido en tonos joya presenta un sutil brillo, con elegantes bordados florales y en espiral en tonos a juego en la parte delantera. Totalmente forrado y con unos acabados magníficos. Un top especial y versátil, perfecto con pantalones de sastrería o una falda para ocasiones especiales, o con vaqueros para un look elegante e informal. Su color intenso y los bordados le dan un toque realmente especial.\n\nDetalles:\n\nCuello redondo, sin mangas\nPreciosos bordados en hilo a tono (motivos florales y arabescos) en la parte delantera\nTejido exterior de mezcla de seda y algodón con forro de algodón suave\nCierre lateral con cremallera\nCorte entallado y a medida\nFabels by Fabindia — fabricado en la India\nIndica «solo limpieza en seco», pero yo lo lavo a mano y queda perfectamente bien",
+      "src": "ae3a01617071"
+    },
+    "item.9311896207.description": {
+      "text": "Precioso vestido midi de algodón indio, que combina un corpiño azul marino con una falda plisada amplia con un magnífico estampado de azulejos en patchwork azul y blanco. Una elegante prenda de verano con una textura y unos detalles encantadores.\nDe Vajor, una marca india muy apreciada y conocida por sus estampados de inspiración artesanal. Talla L.\n\nDetalles:\n\nCorpiño azul marino con mangas cortas\nFalda amplia plisada con estampado mixto floral y de azulejos en tonos azules\nCintura entallada para una silueta favorecedora\nCierre de cremallera en la espalda, corpiño forrado\nAlgodón puro transpirable\n\nMe queda de maravilla (busto 40 pulgadas / 101 cm, cintura 38 pulgadas / 96 cm, caderas 43 pulgadas / 109 cm). Favorecedora y elegante, perfecta para los días de verano, fiestas en el jardín, vacaciones o para lucirla con sandalias o tacones.\nNota: el algodón se arruga de forma natural; basta con plancharlo rápidamente o pasarle un poco de vapor y ya está lista para llevar.\nTalla: L (según la etiqueta)\nEstado: Muy bueno",
+      "src": "fbb20b3cba3a"
+    },
+    "item.9370862833.description": {
+      "text": "Impresionante vestido largo de algodón de Anoshk by Manisha Singh, una marca boutique de Delhi, India. Confeccionado en un precioso algodón ikat tejido a mano en tonos gris y blanco roto, con un llamativo dobladillo asimétrico. El ikat es una técnica de tejido tradicional que requiere mucho trabajo, por lo que cada pieza es única. Un vestido refinado y discreto que queda bien tanto para un look elegante como informal. Una pieza artesanal y elegante procedente de la India.\n\nDetalles:\nMarca: Anoshk by Manisha Singh (marca boutique de Delhi)\nAlgodón ikat tejido a mano: el estampado se tiñe en el hilo antes de tejerlo (auténtico ikat, no un estampado impreso)\nDiseño en dos tonos de gris: canesú con ikat en forma de rombos y cuerpo con motivos dispersos\nSin mangas y con escote redondeado\nCorte en forma de A con paneles y un espectacular dobladillo asimétrico\nAlgodón natural y transpirable: fresco y cómodo\nLongitud maxi: 47 pulgadas\nContorno de pecho: 36 pulgadas\nContorno de cintura: 36 pulgadas",
+      "src": "78898b94714b"
+    },
+    "item.9328489962.description": {
+      "text": "Precioso vestido floral único, confeccionado a medida en Nigeria con un precioso tejido de algodón de tacto fresco. Una base en azul marino intenso cubierta por un estampado floral tropical de estilo pictórico en suaves tonos rosa, amarillo, melocotón y verde salvia. De magnífica confección y totalmente único. Una auténtica pieza estrella para el verano, bodas, fiestas en el jardín o vacaciones. Los puños en contraste y el detalle de la abertura en forma de ojo de cerradura le aportan un toque elegante y especial. ¡Hecho a mano, así que no hay nada igual en el mercado!\n\nDetalles:\nCuello redondo con una bonita abertura en forma de ojo de cerradura/lágrima en la parte delantera\nPuños remangados en contraste, en tono lila oscuro/malva, en las mangas cortas\nCorte ajustado que se adapta al cuerpo en la cintura y las caderas\nCierre con cremallera en la espalda\nLongitud hasta la rodilla\nEstilo estructurado y entallado, diseñado para realzar la figura\nColor: Azul marino multicolor / estampado floral tropical\nTejido: Algodón\nAjuste: Entallado, ideal para una talla L\nEstado: Excelente, usado una sola vez",
+      "src": "becd3efbac4b"
+    },
+    "item.9330044272.description": {
+      "text": "Impresionante vestido llamativo de algodón en un amarillo vibrante con un atrevido estampado de paisley y motivos florales. Base en un intenso amarillo sol con intrincados detalles en verde, azul, negro y crema, y un precioso dobladillo con borde ornamentado. Llamativo, versátil y lleno de personalidad. Tan versátil que puedes llevarlo como vestido de verano, pareo de playa o sobre el bañador durante las vacaciones. El estampado llamativo y la cintura fruncida lo hacen cómodo y favorecedor. Una pieza verdaderamente única.\n\nDetalles:\n\nCuello redondo con abertura en forma de ojo de cerradura en la parte delantera y mangas casquillo/kimono\nCintura elástica fruncida para un ajuste favorecedor y ajustable\nAlgodón ligero y transpirable: perfecto para el calor\nEstampado decorativo a lo largo del dobladillo\nFácil de poner\nColor: Paisley amarillo / verde / azul\nTejido: Algodón\nAjuste: Cintura elástica fruncida — se ajusta a la figura, aproximadamente talla M–L\nEstado: A estrenar, sin estrenar",
+      "src": "20a72c4eecc5"
+    },
+    "item.9315339114.description": {
+      "text": "Llamativo top cruzado con estampado africano «wax» en tonos amarillo vivo y negro, comprado en Nigeria. Destaca por su atrevido estampado geométrico al estilo «kente», un favorecedor escote en V cruzado en la parte delantera, espectaculares mangas abullonadas y un lazo en la cintura al estilo peplum. El diseño cruzado con lazo en la cintura permite que se adapte a una amplia gama de tallas y se ajuste de forma muy favorecedora. Combínalo con pantalones de sastrería o una falda para un look elegante, o con vaqueros para un estilo más desenfadado. Perfecto para el verano, las fiestas o para causar sensación. Una prenda realmente llamativa, llena de color y personalidad.\n\nDetalles:\nDelantero cruzado en V con lazo en la cintura — ajuste ajustable y favorecedor\nMangas abullonadas voluminosas con puños elásticos\nVolante tipo peplum en la cintura\nAlgodón africano rígido y estructurado — mantiene su forma a la perfección\nEstampado geométrico en amarillo vivo, negro y blanco\n\nEstado: Usado una vez\nTalla: L. A mí me queda de maravilla, pero se adapta a varias tallas gracias al lazo cruzado.",
+      "src": "074e51965086"
+    },
+    "item.9311631498.description": {
+      "text": "De FabIndia, una de las marcas locales más queridas de la India especializada en tejidos naturales hechos a mano. Una auténtica joya. Preciosa falda larga de algodón en un rosa vibrante, con un delicado motivo floral estampado en bloque por toda la prenda y un bonito ribete tejido en zari dorado en el dobladillo y la cintura. Lujosa, festiva y llena de movimiento.\n\nSe adapta cómodamente a una amplia gama de cinturas de entre 36 y 40 pulgadas / 91 y 102 cm gracias al cordón, y se ajusta maravillosamente a las caderas (me queda holgada en mis caderas de 43 pulgadas / 109 cm). De largo hasta los pies para un look elegante y vaporoso.\nPerfecto para el verano, festivales, bodas o vacaciones; combina fácilmente con un top sencillo y unas sandalias. Vibrante y llamativo.\n\nDetalles:\nCorte en línea A / acampanado — precioso movimiento y caída\nCordón en la cintura — se ata para adaptarse a diferentes tallas\nEstampado floral tradicional impreso en bloque\nRibete tejido de zari dorado en el bajo y la cintura\nDetalle de ribete naranja en contraste\nAlgodón puro, ligero y transpirable",
+      "src": "3bfb0af71fdc"
+    },
+    "item.9312286809.description": {
+      "text": "Precioso vestido de verano de diseño de Ritu Kumar, una de las casas de moda más prestigiosas de la India. Confeccionado en algodón indio con un impresionante estampado de abanicos y chevrones de inspiración art déco, en suaves tonos apagados de negro, azul pizarra, marrón, crema y gris. Desenfadado, elegante y muy cómodo de llevar.\n\nDetalles:\nSin mangas, con un favorecedor escote redondeado\nDetalle decorativo de abalorios en el escote\nCorpiño elástico y fruncido para un ajuste cómodo\nCorte holgado y oscilante con detalle de bajo fruncido tipo globo\nBolsillos laterales (¡dos bolsillos!)\nAlgodón ligero y transpirable\n\nTalla 4 según la etiqueta (talla propia de Ritu Kumar; NO corresponde a una talla 4 del Reino Unido ni de la UE). A mí me queda cómoda, con una caída holgada y relajada: contorno de pecho 40 pulgadas / 101 cm, cintura 38 pulgadas / 96 cm, caderas 43 pulgadas / 109 cm. El corte holgado se adapta cómodamente a una talla del Reino Unido de 12 a 14 / M–L, aproximadamente, y quedaría bien en una amplia gama de tallas gracias a su corte holgado. Consulta la foto con el vestido puesto para ver el largo y la caída (a mí me llega hasta la mitad del muslo).",
+      "src": "250e5855a7f8"
+    },
+    "item.9331108819.description": {
+      "text": "Varias tallas: de la M a la XL\nPreciosa blusa de verano de algodón estilo kimono de Anokhi, una de las tiendas más exclusivas de la India especializada en ropa moderna de algodón indio. Una prenda de preciosa confección en algodón de primera calidad estampado a mano con bloques. Base blanca suave con un intrincado estampado de paisley en azul y burdeos, rematada con un ribete en color verde azulado a contraste en los bordes. Elegante y versátil sin esfuerzo. Una prenda exclusiva y de gran calidad. Llévala abierta como una chaqueta ligera o atada a modo de blusa cruzada: queda preciosa sobre unos vaqueros, un vestido o un bañador durante las vacaciones. La artesanía y los colores son impresionantes en persona. Un hallazgo especial de una marca muy codiciada.\n\nDetalles:\n\nEstilo kimono/cruzado con cinturón para atar, que permite ceñirla o llevarla abierta\nElegante ribete en color verde azulado a contraste a lo largo del escote y la parte delantera\nMangas holgadas de tres cuartos abullonadas\nAlgodón ligero de primera calidad estampado a mano con bloques —suave y con una bonita caída—\nMarca Anokhi —conocida por sus auténticos estampados indios realizados a mano con bloques—",
+      "src": "f4243fa4a8c6"
+    },
+    "item.9328560854.description": {
+      "text": "Impresionante vestido africano hecho a mano con un llamativo estampado de estilo batik. Tejido de algodón de gran calidad en tonos amarillo intenso, negro y naranja quemado, con un precioso estampado batik de efecto craquelado y teñido anudado. Una auténtica maravilla: vibrante, único y lleno de personalidad. Perfecto para el verano, festivales, vacaciones, fiestas o cualquier ocasión en la que quieras destacar. Los fruncidos lo hacen cómodo y se adapta a cualquier figura, mientras que el estampado lo convierte en una prenda inolvidable. ¡Una pieza única!\n\nDetalles:\nTalla: Corpiño y cintura fruncidos y elásticos —se ajusta a la figura, aproximadamente de la S a la L\nEscote cuadrado/con hombros al aire y corpiño fruncido (se estira para adaptarse)\nMangas abullonadas con bonitos puños con lazo\nCintura elástica fruncida para un ajuste favorecedor y ajustable\nFalda fruncida en capas con un volumen y un movimiento preciosos\nLongitud midi\nConfeccionado a mano en Nigeria con auténtico algodón de estampado africano\nColor: Amarillo / naranja / batik negro\nTejido: Algodón (estampado africano wax/batik)\nEstado: Excelente, sin estrenar",
+      "src": "f485024ca6b6"
+    },
+    "item.9309160145.description": {
+      "text": "Impresionante vestido mexicano bordado a mano en algodón negro, al estilo tradicional del huipil oaxaqueño. Cubierto de vivos bordados florales y de hojas, cosidos a mano en tonos rosa, naranja, amarillo, rojo, azul y verde. Canesú floral densamente bordado a mano y delicado ribete de encaje de ganchillo negro en los hombros, las mangas y el bajo. Cinta de raso que recorre todo el vestido.\nConfeccionado en algodón transpirable, perfecto para el verano, festivales o para lucir con sandalias y joyas. Una auténtica pieza artesanal con mucho carácter y maestría, no fabricada en serie.\nGuía de tallas:\nTiene un corte bastante recto y se ajusta más a la cintura. A mí me queda un poco ajustado en la cintura (tengo una cintura de 38 pulgadas / 96 cm), y esa es la única razón por la que lo vendo. Ideal para una cintura de aproximadamente 36 pulgadas / 91 cm o menos, o para cualquiera a quien le guste un corte más holgado en el resto de la prenda. Cómodo y amplio en el pecho y las caderas.\n\nEstado: Excelente / Usado una vez / Como nuevo",
+      "src": "00fbde1296d5"
+    }
+  }
+}

@@ -1,0 +1,1233 @@
+{
+  "_comment": [
+    "DeepL output for pl (Polski). GENERATED — rewritten by",
+    "scripts/translate.mjs whenever the English changes. Nothing here is precious and",
+    "nothing here is yours: your edits live in overrides/ and are never written by a build.",
+    "",
+    "  src   hash of the English this was translated from; a mismatch means retranslate"
+  ],
+  "generated": "2026-08-24T10:03:26.671Z",
+  "count": 305,
+  "entries": {
+    "attr.color.red": {
+      "text": "Sieć",
+      "src": "ba19e9c3d5f4"
+    },
+    "attr.color.blue": {
+      "text": "Niebieski",
+      "src": "ec7d56a01607"
+    },
+    "attr.color.navy": {
+      "text": "Marynarka wojenna",
+      "src": "fb2fc1b3b8cc"
+    },
+    "attr.color.gold": {
+      "text": "Złoto",
+      "src": "6249df4367d0"
+    },
+    "attr.condition.good": {
+      "text": "Dobrze",
+      "src": "c939327ca16d"
+    },
+    "attr.color.grey": {
+      "text": "Szary",
+      "src": "d4ac58091b02"
+    },
+    "attr.color.pink": {
+      "text": "Różowy",
+      "src": "bd38ed773240"
+    },
+    "attr.color.beige": {
+      "text": "Beżowy",
+      "src": "5f10cf309e5f"
+    },
+    "attr.color.cream": {
+      "text": "Krem",
+      "src": "d5398ba40fe2"
+    },
+    "attr.color.brown": {
+      "text": "Brązowy",
+      "src": "18f285592896"
+    },
+    "attr.color.coral": {
+      "text": "Koral",
+      "src": "56ac628a2f10"
+    },
+    "attr.color.black": {
+      "text": "Czarny",
+      "src": "c6cfe6e4f129"
+    },
+    "attr.color.lilac": {
+      "text": "Bzy",
+      "src": "e3233c699c7d"
+    },
+    "attr.color.white": {
+      "text": "Biały",
+      "src": "3495e757855a"
+    },
+    "attr.color.purple": {
+      "text": "Fioletowy",
+      "src": "7d465fb9b931"
+    },
+    "attr.color.silver": {
+      "text": "Srebro",
+      "src": "a0b43df06f52"
+    },
+    "attr.color.yellow": {
+      "text": "Żółty",
+      "src": "19dd83f11752"
+    },
+    "attr.color.orange": {
+      "text": "Pomarańczowy",
+      "src": "78e7771b8b46"
+    },
+    "attr.color.mustard": {
+      "text": "Musztarda",
+      "src": "4ec51082ce79"
+    },
+    "attr.condition.very-good": {
+      "text": "Bardzo dobrze",
+      "src": "06a2935e6f57"
+    },
+    "attr.color.turquoise": {
+      "text": "Turkusowy",
+      "src": "27b0da11a987"
+    },
+    "attr.color.dark-green": {
+      "text": "Ciemnozielony",
+      "src": "a1f45c459dce"
+    },
+    "attr.color.light-blue": {
+      "text": "Jasnoniebieski",
+      "src": "087adcfa7186"
+    },
+    "attr.color.multicolour": {
+      "text": "Wielokolorowy",
+      "src": "a95a6359e765"
+    },
+    "attr.condition.satisfactory": {
+      "text": "Zadowalający",
+      "src": "6f12a6a702ce"
+    },
+    "attr.condition.new-with-tags": {
+      "text": "Nowe, z metkami",
+      "src": "3f4d0f75317f"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "Nowe, bez metek",
+      "src": "b240e472e77d"
+    },
+    "item.9313828257.title": {
+      "text": "Sukienka biurowa wykonana na szydełku",
+      "src": "60e6e1f58652"
+    },
+    "item.9330125733.title": {
+      "text": "Fioletowa sukienka midi z kopertowym dekoltem",
+      "src": "fbe6c501a7de"
+    },
+    "item.9488799404.title": {
+      "text": "Naszyjnik z żółtych koralików w stylu boho",
+      "src": "d10bcf137fb9"
+    },
+    "item.9564694739.title": {
+      "text": "Drewniana figurka Ganeshy",
+      "src": "b7edd72d8919"
+    },
+    "item.9313953618.title": {
+      "text": "Krótki kombinezon | Forever21",
+      "src": "6880f148e307"
+    },
+    "item.9538548234.title": {
+      "text": "Bransoletka z pereł z czystego srebra próby 925",
+      "src": "dfa243c2649c"
+    },
+    "item.9488787680.title": {
+      "text": "Naszyjnik w stylu boho z fioletowymi koralikami",
+      "src": "37783cfed7a1"
+    },
+    "item.9328440121.title": {
+      "text": "Sukienka midi w granatowe geometryczne wzory",
+      "src": "eaec75b2d9e9"
+    },
+    "item.9578974766.title": {
+      "text": "Czarna bawełniana sukienka maxi | Rozmiar L",
+      "src": "3757bc8bc02a"
+    },
+    "item.9493474615.title": {
+      "text": "Naszyjnik typu choker z perłami słodkowodnymi",
+      "src": "9a2dd05afdae"
+    },
+    "item.9313793339.title": {
+      "text": "Letnia sukienka plażowa z dekoltem w serek i wiązaniem na szyi",
+      "src": "8f6c0135abc6"
+    },
+    "item.9562314219.title": {
+      "text": "Indyjska, ręcznie tkana etniczna chusta z lnu",
+      "src": "62b04577316e"
+    },
+    "item.9562257190.title": {
+      "text": "Letnia/imprezowa sukienka Mango Midi | rozmiary L–XL",
+      "src": "71166c04e526"
+    },
+    "item.9371186724.title": {
+      "text": "Ręcznie robiona biżuteria z tkanin w różnych kolorach",
+      "src": "ed8f6d2699d2"
+    },
+    "item.9331197768.title": {
+      "text": "Top na ramiączkach w kolorze Mango Gold Metallic | Rozmiar M",
+      "src": "7bc205f2e6ca"
+    },
+    "item.9561218589.title": {
+      "text": "Kremowy top z długim rękawem marki ZARA, wykonany na szydełku",
+      "src": "5585e00fc540"
+    },
+    "item.9476370273.title": {
+      "text": "Wyrazisty naszyjnik z szklanym wisiorkiem w stylu vintage",
+      "src": "4516b193e069"
+    },
+    "item.9438031948.title": {
+      "text": "Biżuteria w stylu vintage | Naszyjnik w stylu etnicznym boho",
+      "src": "36c11b9255c4"
+    },
+    "item.9367213932.title": {
+      "text": "Biały bawełniany kombinezon letni marki Zara | Rozmiar",
+      "src": "d0934f126f5b"
+    },
+    "item.9498955593.title": {
+      "text": "Zestaw bluzka i spódnica w kwiatowy wzór w stylu tie-dye | L/XL",
+      "src": "e66906691eac"
+    },
+    "item.9331163535.title": {
+      "text": "Haftowana bluzka z indyjskiej tkaniny jedwabno-bawełnianej | Turkusowa",
+      "src": "8428ab2c454e"
+    },
+    "item.9729863208.title": {
+      "text": "Wełniane spodnie z szerokimi nogawkami i fakturą w kolorze mango",
+      "src": "f66b84b4f595"
+    },
+    "item.9607321104.title": {
+      "text": "Ręcznie wykonany ceramiczny wisiorek | Styl boho-hippie",
+      "src": "fe9875c0a3f5"
+    },
+    "item.9388380417.title": {
+      "text": "Etniczna tunika z indyjskiej bawełny w stylu tie-dye | Rozmiar M",
+      "src": "31bb7263dc17"
+    },
+    "item.9339704755.title": {
+      "text": "Letnia bluzka z bawełny indyjskiej | Rozmiary od M do L",
+      "src": "d13a0711c6cd"
+    },
+    "item.9565320171.title": {
+      "text": "Indyjska figurka Parvati – posąg, duchowy wizerunek",
+      "src": "cba63dbd90ce"
+    },
+    "item.9561725365.title": {
+      "text": "Szalik od projektanta – luksusowa indyjska marka Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "item.9311775029.title": {
+      "text": "Czarna bawełniana bluzka typu kurti · Rozmiar L · Indyjski styl boho",
+      "src": "671150bcd5c8"
+    },
+    "item.9675580496.title": {
+      "text": "Torba w stylu vintage | Skóra w kolorze etiopskiej brązy | Torba w stylu boho",
+      "src": "fea2cf673919"
+    },
+    "item.9564918603.title": {
+      "text": "Indyjska figurka Ganeshy z terakoty – posążek, wizerunek boga",
+      "src": "2112976670e8"
+    },
+    "item.9438792395.title": {
+      "text": "Wielokolorowe kolczyki w stylu boho z koralikami typu seed, wiszące w kształcie kółek",
+      "src": "122be0688a30"
+    },
+    "item.9320744061.title": {
+      "text": "Indyjskie spodnie bawełniane | Czarne | Z czerwonymi guzikami",
+      "src": "36f9283855ee"
+    },
+    "item.9371212323.title": {
+      "text": "Ręcznie wykonany, artystyczny naszyjnik z zawieszką z tkaniny i drewna",
+      "src": "a99e77f4b363"
+    },
+    "item.9360542677.title": {
+      "text": "Letnia sukienka bez ramiączek z indyjskiej bawełny, z nadrukiem blokowym",
+      "src": "21cdb9d32022"
+    },
+    "item.9493332709.title": {
+      "text": "Naszyjnik z łańcuszkiem wykonany na szydełku w kolorze indygo przez indyjskich rzemieślników",
+      "src": "5c248f4e69b5"
+    },
+    "item.9328489962.title": {
+      "text": "Tropikalna sukienka w kwiaty | Wykonana ręcznie w Nigerii",
+      "src": "dad674a2d8c7"
+    },
+    "item.9370862833.title": {
+      "text": "Ręcznie tkana indyjska letnia sukienka maxi z bawełny | Rozmiar M",
+      "src": "1b8363f570d9"
+    },
+    "item.9316393171.title": {
+      "text": "Letnia bawełniana sukienka w stylu indyjskim | Uniwersalna | Wiele sposobów noszenia",
+      "src": "987508937b28"
+    },
+    "item.9561679205.title": {
+      "text": "Indyjska, ręcznie tkana lniana chusta/szalik/szal w kolorze koralowo-różowym",
+      "src": "805d29f7f893"
+    },
+    "item.9477421040.title": {
+      "text": "Pozłacane bransoletki z dwoma obrączkami i białymi kryształkami",
+      "src": "27c1cf4f2006"
+    },
+    "item.9329298936.title": {
+      "text": "Różowa bluzka typu kaftan z indyjskim nadrukiem bandhani – rozmiary od M do L",
+      "src": "42a380967d08"
+    },
+    "item.9603839908.title": {
+      "text": "Marokańska latarnia stołowa lub wisząca, służąca jako świecznik",
+      "src": "1a3a931a0c7e"
+    },
+    "item.9602470022.title": {
+      "text": "Jen Beagin – wielki szwajcarski serial HBO z Jodie Comer w roli głównej",
+      "src": "8c0072dde9d4"
+    },
+    "item.9552844745.title": {
+      "text": "Indyjska sukienka z czystej bawełny o kroju „fit & flare” z wiązaniem na szyi | Rozmiar L",
+      "src": "a672a1dda38b"
+    },
+    "item.9316420644.title": {
+      "text": "Ręcznie szyta sukienka typu kaftan „Indian Summer Beach” | Bawełna",
+      "src": "1d387995bfc7"
+    },
+    "item.9565381682.title": {
+      "text": "Indyjskie figurki Ganeshy i Parvati – posągi o charakterze duchowym",
+      "src": "986fce8e2f56"
+    },
+    "item.9561602678.title": {
+      "text": "Letnia sukienka z indyjskiej mieszanki bawełny i lnu z dwiema kieszeniami",
+      "src": "b0d0d2b71e89"
+    },
+    "item.9511040845.title": {
+      "text": "Bransoletka w stylu vintage z Indii, w kolorze złotym, z kryształkami",
+      "src": "5b19cc52987d"
+    },
+    "item.9330044272.title": {
+      "text": "Letnia sukienka typu kaftan | Bawełna z Nigerii | Wielorozmiarowa: od M do L",
+      "src": "7ab3a0220f98"
+    },
+    "item.9578313870.title": {
+      "text": "Bluzka w kolorze mango | Bluzka z okrągłym dekoltem | Krótkie rękawy z wyściółką",
+      "src": "5a9adc584493"
+    },
+    "item.9442502622.title": {
+      "text": "Ręcznie wykonane duże kolczyki wiszące z afrykańskiej tkaniny w niebieskie kropki",
+      "src": "8376001339b6"
+    },
+    "item.9602569998.title": {
+      "text": "Khaled Hosseini, „A góry odbiły echem” – światowy bestseller",
+      "src": "7347b97ae1fe"
+    },
+    "item.9500656843.title": {
+      "text": "Biżuteria w stylu vintage z czystego srebra próby 925 | etniczne kolczyki w stylu plemiennym",
+      "src": "0efb043b87f7"
+    },
+    "item.9439083125.title": {
+      "text": "Zestaw zawieszek Swarovski / srebro próby 925 / kryształ Swarovski",
+      "src": "b323b934ca4c"
+    },
+    "item.9602556623.title": {
+      "text": "Francis Fukuyama – „Tożsamość”: bestsellerowe arcydzieło polityczne",
+      "src": "2e26cadcea20"
+    },
+    "item.9364938382.title": {
+      "text": "Letnia długa sukienka maxi z indyjskiej bawełny, szyta ręcznie | Rozmiar M",
+      "src": "0013e43386ab"
+    },
+    "item.9561251555.title": {
+      "text": "Indyjski żółty bawełniany szal/chusta/stola z napisem „Hare Rama Radhe Radhe”",
+      "src": "7fdd9f030e4c"
+    },
+    "item.9395042890.title": {
+      "text": "„Przewidywania dotyczące dzisiejszego porządku świata” – Bruno Maçães, „Świt Eurazji”",
+      "src": "c317085288ff"
+    },
+    "item.9437887059.title": {
+      "text": "Indyjskie kolczyki w stylu vintage | Srebro próby 92,5% z kamieniami",
+      "src": "a06548005c1d"
+    },
+    "item.9316357780.title": {
+      "text": "Letnia sukienka plażowa z indyjskiej bawełny | Kwiatowy motyl | Kieszenie",
+      "src": "655a6fe07105"
+    },
+    "item.9489491094.title": {
+      "text": "Naszyjnik tybetański | Buddyjski | Biżuteria w stylu boho | Vintage | Retro",
+      "src": "5fa52213b8ee"
+    },
+    "item.9442502622.description": {
+      "text": "Ręcznie wykonane w Nigerii, duże kolczyki wiszące z tkaniny w niebieskie kropki.",
+      "src": "d15d69007904"
+    },
+    "item.9438210918.title": {
+      "text": "Zegarek Fastrack z mechanizmem analogowym, kwarcowym, srebrną tarczą i bransoletą ze stali nierdzewnej",
+      "src": "addae22ca945"
+    },
+    "item.9395142510.title": {
+      "text": "Angie Thomas, „The Hate U Give” – oszałamiający, zmieniający życie bestseller",
+      "src": "cccde8351aca"
+    },
+    "item.9331108819.title": {
+      "text": "Kimono/Angrakha z indyjskiej bawełny | Uniwersalna kurtka na plażę",
+      "src": "6c0af4c0fd1a"
+    },
+    "item.9629132899.title": {
+      "text": "Czapka baseballowa z haftowanym sercem w kolorach tęczy | Prezent z okazji Miesiąca Dumy LGBTQ",
+      "src": "1cf298a98c4a"
+    },
+    "item.9602536889.title": {
+      "text": "Colson Whitehead, „Podziemna kolej” – laureat Nagrody Pulitzera",
+      "src": "3f2c694824c6"
+    },
+    "item.9564218918.title": {
+      "text": "Indyjska ceramiczna miska do zupy z uchwytem | Można myć w zmywarce i używać w kuchence mikrofalowej",
+      "src": "b6afb00cf9c3"
+    },
+    "item.9360475926.title": {
+      "text": "Asymetryczna sukienka midi „India Summer” z bawełny z nadrukiem blokowym | Rozmiar L",
+      "src": "b95e6b842f8c"
+    },
+    "item.9395334867.title": {
+      "text": "D. H. Lawrence, „Kochanek Lady Chatterley” – niegdyś zakazana, skandaliczna klasyka",
+      "src": "b607f455419b"
+    },
+    "item.9339656344.title": {
+      "text": "Indyjska letnia sukienka midi z bawełny, z warstwami, z nadrukiem wykonanym techniką ręcznego blokowania – rozmiar M",
+      "src": "fcadc6dab316"
+    },
+    "item.9311896207.title": {
+      "text": "Indyjska sukienka midi z bawełny · Granatowy wzór w kafelki · Plisowana · Rozmiar L",
+      "src": "189261565d9f"
+    },
+    "item.9602491240.title": {
+      "text": "Koniecznie przeczytaj książkę Petera Frankopana „Jedwabne Szlaki” – światowy bestseller nr 1",
+      "src": "d5cf44c7b419"
+    },
+    "item.9602442603.title": {
+      "text": "Ayn Rand, „Źródło”, wydanie stulecia wydawnictwa Signet – natychmiastowy klasyk",
+      "src": "aa784c057d65"
+    },
+    "item.9602413571.title": {
+      "text": "William Dalrymple, „Ostatni Mogoł Indii” – laureat nagrody im. Duffa Coopera",
+      "src": "d17787c2f22d"
+    },
+    "item.9581381003.title": {
+      "text": "Kolczyki wiszące w kształcie słonia z niemieckiego srebra | Biżuteria w stylu boho i hippie z Indii",
+      "src": "8aceece80ff8"
+    },
+    "item.9729949801.title": {
+      "text": "Indyjska sukienka w stylu boho | Długa sukienka w stylu vintage | Styl retro | Letnia bawełna",
+      "src": "2bcf06e22b6d"
+    },
+    "item.9575501283.title": {
+      "text": "Szalik modlitewny „Om Namah Shivaya” | Duchowy szalik do jogi i medytacji",
+      "src": "2ac5edf7ccf5"
+    },
+    "item.9395115967.title": {
+      "text": "Zadie Smith, „Białe zęby” – wybitna debiutancka powieść nowego tysiąclecia",
+      "src": "1499b6f62d00"
+    },
+    "item.9328560854.title": {
+      "text": "Sukienka midi z afrykańskim wzorem batikowym | Ręcznie wykonana z nigeryjskiej bawełny Ankara",
+      "src": "7db37b3795ae"
+    },
+    "item.9500656843.description": {
+      "text": "Vintage indyjska biżuteria wykonana z czystego srebra próby 92,5 | Oznaczona stemplem 92,5",
+      "src": "1f26b00b4eec"
+    },
+    "item.9395169253.title": {
+      "text": "Marlon James, „Krótka historia siedmiu zabójstw” – laureat nagrody Man Booker Prize",
+      "src": "cd3c83aa7fd3"
+    },
+    "item.9395315968.title": {
+      "text": "Robert Ryan w filmie „Dead Man’s Land” – wciągający spin-off o Sherlocku Holmesie, którego akcja rozgrywa się podczas I wojny światowej",
+      "src": "828e4e03636d"
+    },
+    "item.9604783346.title": {
+      "text": "Siedem wiszących słoni z „złym okiem” | Dekoracja „Szczęśliwy słoń” zapewniająca dobrą energię",
+      "src": "67c32c70bd47"
+    },
+    "item.9580235622.title": {
+      "text": "Biżuteria w stylu vintage, boho i retro | Ręcznie robione kolczyki wiszące z motywem słonecznika, wykonane na szydełku",
+      "src": "ad8f3a40234b"
+    },
+    "item.9311521689.title": {
+      "text": "Bawełniana spódnica maxi w stylu boho | Spódnica w stylu vintage | Sznurek w pasie | Indyjski styl etniczny",
+      "src": "88306c398e67"
+    },
+    "item.9511040845.description": {
+      "text": "Retro indyjska bransoletka w kolorze złotym, 2,5 cala/6,35 cm. Bardzo ładna.",
+      "src": "c82f35467db1"
+    },
+    "item.9698274032.title": {
+      "text": "Bluzka w stylu retro | Bluzka w stylu vintage | Styl boho | Koszula z długim rękawem z nadrukiem „Mango Marble”",
+      "src": "4c22644e29fb"
+    },
+    "item.9729863208.description": {
+      "text": "Teksturowane wykończenie\nWysoki stan\nElastyczny pas\nSzerokie nogawki\nGrube wełniane spodnie",
+      "src": "44fe5de25257"
+    },
+    "item.9602838102.title": {
+      "text": "Zaskakująca powieść Natsume Sosekiego „Brama” z serii NYRB Classics, ze wstępem Pico Iyera",
+      "src": "26bce423540f"
+    },
+    "item.9720394316.title": {
+      "text": "Naszyjnik w stylu vintage boho | naszyjnik typu choker w stylu retro tribal | styl tybetańskiej mandali",
+      "src": "36a81d980413"
+    },
+    "item.9565087476.title": {
+      "text": "Antyczna indyjska mosiężna figurka przedstawiająca rodzinę bogów: złocistego Shivę, Parvati i Ganesha",
+      "src": "ea1f305fb753"
+    },
+    "item.9395068524.title": {
+      "text": "Eric Hoffer, „Prawdziwy wyznawca” – przerażająco aktualna klasyka poświęcona ruchom masowym",
+      "src": "72cd8e05b5a3"
+    },
+    "item.9562192907.title": {
+      "text": "Tradycyjne indonezyjskie ulos w stylu vintage – dodatek, ramka na ścianę, dywanik, bieżnik na stół",
+      "src": "1a62a29c3c15"
+    },
+    "item.9561780997.title": {
+      "text": "Długi, prześwitujący szal w stylu secesyjnym autorstwa indyjskiego projektanta – lekki, elegancki, jedwabiście miękki",
+      "src": "245b0a58078c"
+    },
+    "item.9355163406.title": {
+      "text": "autor „Życia Pi” – „Wysokie góry Portugalii” Yann Martel – 3 opowiadania",
+      "src": "847e36e6e92e"
+    },
+    "item.9311631498.title": {
+      "text": "Różowa bawełniana spódnica maxi marki FabIndia · Nadruk blokowy · Złota lamówka z zari · Świąteczny styl boho",
+      "src": "10753dfa7926"
+    },
+    "item.9314010527.title": {
+      "text": "Sukienka maxi w afrykańskie wzory · Niebiesko-biało-złota · Bez ramiączek, marszczona · Z nigeryjskiej bawełny",
+      "src": "d60db8510b7c"
+    },
+    "item.9309160145.title": {
+      "text": "Ręcznie haftowana meksykańska sukienka · Czarna sukienka w kwiatowy wzór w stylu huipil · Wykonana przez rzemieślników · Styl boho",
+      "src": "88acfff4c6e5"
+    },
+    "item.9476315818.title": {
+      "text": "Biżuteria w stylu vintage | Biżuteria w stylu boho | Naszyjnik typu choker ze srebrnymi koralikami | Styl retro",
+      "src": "7294a6525b94"
+    },
+    "item.9362130631.title": {
+      "text": "Indie w okresie stanu wyjątkowego: „Zraniona cywilizacja” autorstwa V.S. Naipaula, laureata Nagrody Nobla",
+      "src": "915db534f633"
+    },
+    "item.9322734477.title": {
+      "text": "Letnia koszula z indyjskiej bawełny · Czarno-czerwony nadruk blokowy · Motyw w kształcie serca · Rozmiar L",
+      "src": "135910ef74b3"
+    },
+    "item.9312410623.title": {
+      "text": "Indyjski kombinezon bawełniany · Niebieski nadruk blokowy · Elastyczny gorset z szydełkowej dzianiny · Letni styl boho",
+      "src": "0f59723fe5d3"
+    },
+    "item.9602596973.title": {
+      "text": "M. P. Khemka – Akupresura i akupunktura: Leczenie jednym punktem, tom 1 – Bindu Ek Upchar Anek",
+      "src": "7222f7d3e6c0"
+    },
+    "item.9371171716.title": {
+      "text": "Ręcznie robiony naszyjnik z indyjskiej bawełny | Rzemieślnicza biżuteria tekstylna | Boho Festival",
+      "src": "a632df3535e4"
+    },
+    "item.9315339114.title": {
+      "text": "Bluzka kopertowa w afrykańskie wzory | Wysokiej jakości nigeryjska bawełna | Krój z falbaną | Rękawy bufiaste",
+      "src": "8fd44d2b0d81"
+    },
+    "item.9602746361.title": {
+      "text": "Nie można tego przegapić – Malcolm Gladwell, „Dawid i Goliat”, międzynarodowy bestseller numer jeden",
+      "src": "eeec06b9a11d"
+    },
+    "item.9602681438.title": {
+      "text": "Najlepsza książka 2021 roku: „Under a White Sky” Elizabeth Kolbert – laureatka Nagrody Pulitzera",
+      "src": "adb65f191ebc"
+    },
+    "item.9686505544.title": {
+      "text": "Biżuteria vintage | biżuteria retro | bransoletka ze srebra próby 925 | ametyst i perła | styl boho",
+      "src": "b86a62948d75"
+    },
+    "item.9602879226.title": {
+      "text": "„Emotional Mirza Waheed”, „The Book of Gold Leaves” – na krótkiej liście do nagrody DSC: „Kashmir Love Story”",
+      "src": "12a2f7e73730"
+    },
+    "item.9562398817.title": {
+      "text": "Szalik w stylu retro | Dodatki w stylu boho | Lekki szal w greckie wzory z szarymi brokatowymi cekinami",
+      "src": "d90ebf2a469c"
+    },
+    "item.9602894095.title": {
+      "text": "Inspirująca wyprawa Piya Bahadura: „Droga do Mekongu – cztery kobiety, 17 000 kilometrów motocyklowej przygody”",
+      "src": "e5acf514b7f2"
+    },
+    "item.9395211212.title": {
+      "text": "nauka hiszpańskiego – „Don Kichot” Cervantesa: ponadczasowe arcydzieło w ilustrowanym wydaniu hiszpańskim",
+      "src": "b15b0483441c"
+    },
+    "item.9316140580.title": {
+      "text": "Biała bawełniana sukienka z kieszeniami, wykonana techniką indyjskiego druku blokowego | Kwiatowy motyw w stylu mogolskim | Rozmiar M–L",
+      "src": "69fbb46f25c7"
+    },
+    "item.9602788500.title": {
+      "text": "Nauki społeczne – Benedict Anderson, „Wspólnoty wyobrażone: Pochodzenie i rozprzestrzenianie się nacjonalizmu”",
+      "src": "d6f6657d9ec4"
+    },
+    "item.9602649617.title": {
+      "text": "OG, wydanie z 1970 r., Anthony Gilbert, „The Body on the Beam”, seria Vintage Pan Books, kryminały z Złotej Ery",
+      "src": "9349f2d7108e"
+    },
+    "item.9579803801.title": {
+      "text": "Rzadko spotykana, autentyczna wiktoriańska bransoletka z srebra próby 925 | Vintage’owa biżuteria w stylu retro i królewskim",
+      "src": "57379aef9e8e"
+    },
+    "item.9395292320.title": {
+      "text": "zupełnie nowa – Mayyu Ali „Eradication”: wstrząsająca relacja z pierwszej ręki o ludobójstwie Rohingów",
+      "src": "6995f7e3d6d1"
+    },
+    "item.9311368443.title": {
+      "text": "Spódnica-spodnie Palazzo | Nadruk w stylu batik | Szerokie nogawki | Indyjski styl boho | Bawełna z Nigerii",
+      "src": "cc9875478f38"
+    },
+    "item.9674633786.description": {
+      "text": "Kolczyki w kształcie kółek w stylu vintage z Bali, wykonane techniką owijania drutem\nSrebro próby 92,5% (sprawdzone)\nŚrednica 2 cm",
+      "src": "ac8f02eeef5e"
+    },
+    "item.9602779694.title": {
+      "text": "Historia Indii – Christophe Jaffrelot, wydawnictwo Pratinav, Anil: „Pierwsza dyktatura w Indiach – stan wyjątkowy”",
+      "src": "fc1d1c869a3d"
+    },
+    "item.9649545514.title": {
+      "text": "Sukienka w stylu boho | Komplet „Buddha” | Sukienka w stylu boho | Bawełniane spodnie w stylu „Indian Summer” | Sukienka w stylu etnicznym",
+      "src": "e48310f988ae"
+    },
+    "item.9583027994.title": {
+      "text": "3 indyjskie kolczyki do nosa z oksydowanego srebra bez przekłuwania | Kolczyki do nosa na zatrzask | Biżuteria w stylu boho chic",
+      "src": "fd0f3d127f08"
+    },
+    "item.9312286809.title": {
+      "text": "Letnia bawełniana sukienka od projektantki Ritu Kumar z Indii · Nadruk w stylu art deco przedstawiający wachlarz · Dekolt z koralikami · Kieszenie",
+      "src": "f1cd7e8b75f3"
+    },
+    "item.9603594529.title": {
+      "text": "W twardej oprawie: David Whyte, „Consolations”; Elizabeth Gilbert – trzymaj tę książkę zawsze przy łóżku",
+      "src": "96c365ffb05c"
+    },
+    "item.9603636575.title": {
+      "text": "Zestaw do chińskiej terapii bańkami do rehabilitacji po urazach sportowych – 12 bańek próżniowych, kompletny zestaw, model do akupunktury",
+      "src": "dcadca1579e5"
+    },
+    "item.9355268622.title": {
+      "text": "Tło fabularne, ale możliwe: „The Netanyahus” – Joshua Cohen, laureat Nagrody Pulitzera 2022",
+      "src": "9d37fe2e99a5"
+    },
+    "item.9711247731.title": {
+      "text": "Bransoletka duchowa | Biżuteria buddyjska | Rudraksha, mala do jogi, akcesoria duchowe, medytacja",
+      "src": "3d08649f5144"
+    },
+    "item.9641705366.title": {
+      "text": "Letnia sukienka w stylu boho z żywymi afrykańskimi motywami plemiennymi | Tunika typu kaftan z etnicznym nadrukiem | Rozmiar uniwersalny od M do L",
+      "src": "e86237e2dca1"
+    },
+    "item.9565484914.title": {
+      "text": "Bóg bogactwa i dobrobytu | Indyjska hinduska figurka Ganeshy – religijna, duchowa statuetka",
+      "src": "63559ef2d9b3"
+    },
+    "item.9359739617.title": {
+      "text": "najlepsza książka o Pakistanie: Daniyal Mueenuddin – „Pakistan: zbiór opowiadań”, wydanie w miękkiej oprawie w języku angielskim",
+      "src": "580a0cb0d3c4"
+    },
+    "item.9602950103.title": {
+      "text": "Rzadki egzemplarz książki Markusa Zusaka „Złodziejka książek” – „New York Times” określił ją jako dzieło zmieniające życie; międzynarodowy bestseller nr 1",
+      "src": "e6237bcd94a9"
+    },
+    "item.9581381003.description": {
+      "text": "Misternie wykonany wzór. Pięknie dopracowany słoń, symbolizujący siłę, mądrość i dobrobyt.",
+      "src": "8276f0f14d2f"
+    },
+    "item.9575763651.title": {
+      "text": "Indyjska mala modlitewna z rudrakszy do medytacji, jogi i intonowania mantr | Hinduski naszyjnik z różańcem duchowym",
+      "src": "0ef35b30956d"
+    },
+    "item.9529729646.title": {
+      "text": "Ręcznie robiona czapka z wełny himalajskiej z podszewką ze 100% miękkiego polaru | Styl boho | Vintage retro",
+      "src": "5b3f11c5a1f5"
+    },
+    "item.9602907756.title": {
+      "text": "nieprzewidywalny Keigo Higashino „Równanie świętojańskie” – Detektyw Galileusz – Japoński Stieg Larsson",
+      "src": "c1ce6a1037c0"
+    },
+    "item.9438954997.title": {
+      "text": "Zestaw biżuterii w złocistym odcieniu, składający się z naszyjnika typu kołnierzyk, pasujących kolczyków kołowych, bransoletki typu mankiet oraz pierścionka",
+      "src": "a9fbff5f2bf2"
+    },
+    "item.9395098362.title": {
+      "text": "Wschodnie opowieści ponadczasowe – Amita Kanekar: „Strach przed lwami” – wciągający thriller o buncie w epoce Mogołów – Indie",
+      "src": "ade83197c671"
+    },
+    "item.9360886820.title": {
+      "text": "W sprzedaży: „Alternatywa. Książka, której ekonomiści nie chcą, byś przeczytał”. Autor: Nick Romeo (angielska wydanie w miękkiej oprawie)",
+      "src": "8534279891e0"
+    },
+    "item.9602725968.title": {
+      "text": "„Przeczytaj, zanim umrzesz” – Rumi, „The Essential Rumi”, Coleman Barks, nowe, rozszerzone wydanie, bestsellerowa poezja",
+      "src": "ed9316b0445e"
+    },
+    "item.9561251555.description": {
+      "text": "Ręcznie barwione. Najwyższej jakości bawełna tkana na krośnie. Nadruk blokowy. Pełne duchowości, eleganckie, dające spokój. Duży rozmiar.",
+      "src": "f108654a518f"
+    },
+    "item.9419147643.title": {
+      "text": "zupełnie nowa – Christopher Bollen, „Havoc: Deliciously Nasty” – thriller psychologiczny, wybór „New York Timesa”",
+      "src": "34399280b05e"
+    },
+    "item.9561218589.description": {
+      "text": "Rozmiar S\nNigdy nie noszona, w doskonałym stanie, jak nowa; prześwitująca  \nW kolorze kremowym \nKrótki fason  \nSzydełkowana",
+      "src": "babd18cf1808"
+    },
+    "item.9355082189.title": {
+      "text": "Sekrety leków odchudzających firmy GLP – „Off the Scales” autorstwa Aimee Donnellan. Kulisy sukcesu preparatu Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "item.9674633786.title": {
+      "text": "Biżuteria vintage | biżuteria retro | Kolczyki-koła ze skręconym sznurkiem | Biżuteria etniczna w stylu boho ze srebra próby 925",
+      "src": "0fc1f0de3ba8"
+    },
+    "item.9602870728.title": {
+      "text": "Chitra Banerjee Divakaruni „Pałac iluzji” – międzynarodowy bestseller, nowa opowieść o Mahabharacie z Indii",
+      "src": "e1c706d7ed74"
+    },
+    "item.9565566983.title": {
+      "text": "Indyjska zabytkowa mosiężna statuetka Radhy i Kriszny – hinduska rzeźba przedstawiająca bóstwa duchowe i religijne | Mosiądz, 5,5 cala",
+      "src": "8e0e25823725"
+    },
+    "item.9488799404.description": {
+      "text": "Ten naszyjnik składa się z ciemnożółtych koralików typu „seed beads” z akcentami w postaci złotych koralików tego samego rodzaju oraz z plastikowego sznurka.",
+      "src": "ef548bda8352"
+    },
+    "item.9488787680.description": {
+      "text": "Ten naszyjnik składa się z ciemnofioletowych koralików typu „seed beads” z akcentami w postaci złotych koralików tego samego rodzaju oraz z plastikowego sznurka.",
+      "src": "37c2ffda88bd"
+    },
+    "item.9720394316.description": {
+      "text": "Naszyjnik z mosiężnym wisiorkiem pokrytym złotem i wielobarwnymi niebieskimi koralikami. Świetnie prezentuje się również jako choker. Regulowany.",
+      "src": "0222e190d517"
+    },
+    "item.9493332709.description": {
+      "text": "Ręcznie wykonany, dwuwarstwowy, prosty i lekki naszyjnik z koralików wykonanych na szydełku. Sznurki umożliwiające dopasowanie długości do własnych potrzeb.",
+      "src": "74698620b449"
+    },
+    "item.9580235622.description": {
+      "text": "Wiszące kolczyki z motywem słonecznika, wykonane na szydełku, z brązowymi drewnianymi koralikami.\nMateriały: wełna, stal nierdzewna, drewno\nStyl: boho i hippie\nWysokość: 7 cm",
+      "src": "3c887561cea9"
+    },
+    "item.9564218918.description": {
+      "text": "Ceramiczna miska do zupy z Indii z uchwytem, nadająca się do mikrofalówki i zmywarki, wykonana z materiału przeznaczonego do kontaktu z żywnością, wielokolorowa\nSzerokość 11 cm\nWysokość 7 cm",
+      "src": "ae11b01d1e19"
+    },
+    "item.9562398817.description": {
+      "text": "Jasnoszary szalik ozdobiony jest delikatnymi cekinami ułożonymi w geometryczny wzór greckiego klucza wzdłuż brzegów.\nMieszanka bawełny, wełny i wiskozy.",
+      "src": "e3bfed52ad1f"
+    },
+    "item.9675580496.description": {
+      "text": "Ręcznie wykonana w Etiopii torba na ramię w stylu vintage, z wysokiej jakości brązowej skóry naturalnej.\nRegulowany pasek\n1 główna komora\n1 kieszeń wewnętrzna",
+      "src": "778b6215cb8c"
+    },
+    "item.9316420644.description": {
+      "text": "Krótka sukienka plażowa w stylu kaftanu lub prosta letnia sukienka z Indii, uszyta z miękkiej bawełny. W kolorze turkusowo-ciemnozielonym, w rozmiarach od M do L.",
+      "src": "f9856a0d7a9f"
+    },
+    "item.9438792395.description": {
+      "text": "Na sprzedaż jest piękna para wielobarwnych kolczyków z koralików typu seed bead, o długości 2,75\" i szerokości 1\", z elementami w srebrnym odcieniu. Piękna i niepowtarzalna para w stylu boho.",
+      "src": "36b404572169"
+    },
+    "item.9561602678.description": {
+      "text": "Nigdy nie noszona. \nKolor – kremowy\nMateriał – mieszanka bawełny i lnu\nKrój – luźny, rozmiar L–XL\nRękawy – krótkie\nDługość – midi\nKieszenie – 2\nZapięcie – guzik z tyłu",
+      "src": "7328b2bd4796"
+    },
+    "item.9552844745.description": {
+      "text": "Szczegóły produktu\n• Niebieska sukienka o kroju fit & flare z etnicznymi motywami indyjskimi\n• Dekolt typu halter\n• Bez rękawów\n• Długość maxi z rozkloszowanym dołem\n• Tkanina bawełniana\nRozmiar L\nObwód biustu 40 cali",
+      "src": "08bba5cc974c"
+    },
+    "item.9489491094.description": {
+      "text": "Wspaniały, masywny naszyjnik w stylu tybetańskim z wygrawerowanym symbolem Om 🕉️. Inkrustacje z korala i turkusu na mosiężnej płytce, z wieloniciowymi szklanymi koralikami i drewnianym zapięciem w formie guzika.",
+      "src": "58db4f121215"
+    },
+    "item.9561725365.description": {
+      "text": "Szalik luksusowej indyjskiej marki Satya Paul. Ozdobiony wzorem bambusa inspirowanym stylem japońskim oraz kontrastującą czerwoną lamówką.\nMateriał: prześwitująca, lekka tkanina – szyfon",
+      "src": "705254e0fd36"
+    },
+    "item.9561679205.description": {
+      "text": "Oszałamiająca i elegancka. Wykonana z tkaniny lnianej o splotowym wzorze, charakteryzująca się bardzo klasycznym i eleganckim wyglądem. Dzięki uniwersalnej kolorystyce i układaniu się materiału pasuje do różnych stylizacji.",
+      "src": "9d8baf77b7ae"
+    },
+    "item.9698274032.description": {
+      "text": "Obwód w biuście 40 cali / 101,6 cm\nDługość 24 cale / 61 cm\nLekka tkanina wiskozowa, wzór „Marble”, prosty krój, okrągły dekolt, długie rękawy zapinane na guziki.\nPięknie opada i ma styl boho.",
+      "src": "ad327c2c5d3d"
+    },
+    "item.9629132899.description": {
+      "text": "🌈 Czapka z daszkiem „Rainbow Pride” – czapka z haftowanym tęczowym sercem, czapka LGBTQ+ Pride 🌈\nMateriał: 100% bawełna najwyższej jakości\nKrój: regulowany pasek\nRozmiar: jeden rozmiar pasujący większości dorosłych",
+      "src": "d65a9a0498a2"
+    },
+    "item.9313828257.description": {
+      "text": "Elegancka, dopasowana sukienka w kolorze granatowym z białym wstawką z koronki szydełkowej z przodu i plisowanym dołem. Szykowna, kobieca sukienka, idealna na specjalne okazje, imprezy służbowe lub do biura.\n\nRozmiar: L (na metce)",
+      "src": "0acccc64a7e6"
+    },
+    "item.9493474615.description": {
+      "text": "Kamień szlachetny: perła\nZapięcie: karabińczyk\nRodzaj łańcuszka: koralikowy\nPerły: perły słodkowodne o średnicy 8 mm\nDługość łańcuszka: 16'' + 1''\nWodoodporny i hipoalergiczny\n\nNaszyjnik z pereł słodkowodnych o naturalnych, charakterystycznych kształtach",
+      "src": "00e8a2715383"
+    },
+    "item.9313953618.description": {
+      "text": "Uroczy kombinezon w kolorze turkusowym marki Forever 21 z zwiewnym, warstwowym falbanowym przodem i regulowanymi ramiączkami wiązanymi na ramionach. Lekki, wygodny i podkreślający figurę letni kombinezon idealny na wieczorne wyjście.",
+      "src": "48ee50f09ef0"
+    },
+    "item.9564918603.description": {
+      "text": "Mini rzeźba Ganeshy z gliny – ręcznie wykonana, dekoracyjna figurka boga Ganeshy, idealna jako prezent na parapetówkę, do biura lub jako element wystroju wnętrz\nWymiary: ok. 3,1 x 1,9 x 4 cali (dł. x szer. x wys.), waga: 200 gramów",
+      "src": "e91c626d75b5"
+    },
+    "item.9355163406.description": {
+      "text": "„Wysokie góry Portugalii” autorstwa Yanna Martela, autora powieści „Życie Pi”. Wydanie w miękkiej oprawie, używane, z niewielkimi śladami zużycia okładki i śladami przechowywania (patrz zdjęcia). Kompletne i czytelne. Pochodzi z domu, w którym nie pali się papierosów.",
+      "src": "45282112205b"
+    },
+    "item.9477421040.description": {
+      "text": "2 pozłacane bransoletki z białymi kryształkami typu „American Diamond”. Indyjska biżuteria ślubna.\n\nKolor – złoty, biały\nMateriał – miedź\nWzór – motyw w kształcie paisley\nPowłoka – pozłacanie, złoto",
+      "src": "4e338240ec1d"
+    },
+    "item.9538548234.description": {
+      "text": "Wykonane z prawdziwego srebra o czystości 92,5%. Opatrzone puncą 925. Regulowana konstrukcja zapewniająca wygodne i pewne noszenie. Powłoka rodowa zapobiegająca matowieniu, gwarantująca długotrwały połysk.",
+      "src": "598e9459aafc"
+    },
+    "item.9476370273.description": {
+      "text": "Ręcznie wykonany naszyjnik o wyrazistym wyglądzie z prostokątnym wisiorkiem ze szkła stapianego. Wisiorek zdobi przepiękny, metaliczny wzór w postaci wirującej spirali w odcieniach błękitu oceanicznego, brązu, złota oraz z brokatem miedzianym.",
+      "src": "b75fa8ed33a0"
+    },
+    "item.9565320171.description": {
+      "text": "Mini rzeźba z gliny przedstawiająca boginię Parvati – ręcznie wykonana, dekoracyjna figurka hinduskiej bogini Parvati, idealna jako prezent na parapetówkę, do biura lub jako element wystroju wnętrz\nWymiary: ok. 3,1 x 1,9 x 4 cali (dł. x szer. x wys.), waga: 200 gramów",
+      "src": "fd5d3dd8dc5b"
+    },
+    "item.9561780997.description": {
+      "text": "Szalik. Projekt inspirowany stylem secesyjnym, autorstwa indyjskiej projektantki mody Nidy Mahmood. Znana jako indyjska „królowa kiczu”, Mahmood często łączy vintage’owe światowe nurty artystyczne z tradycyjną indyjską wrażliwością.",
+      "src": "f0e0fd6b1b06"
+    },
+    "item.9565566983.description": {
+      "text": "Figura hinduskich bóstw Radha i Kryszna – symbol duchowości, spokoju, harmonii, szczęścia i dobrego samopoczucia. Piękna, duchowa dekoracja wnętrz. \n\nFigura z mosiądzu\nWysokość: 5,5 cala\nSzerokość: 3 cale\nGłębokość: 2 cale\nWaga: 750 gramów",
+      "src": "719082ea08d4"
+    },
+    "item.9562257190.description": {
+      "text": "Noszona raz. Elastyczny materiał. Krój w kształcie litery A. Długość midi. Wycięcie. Okrągły dekolt. Bez rękawów. Ukryty zamek błyskawiczny z tyłu. Boczne rozcięcia. \nDługość 131 cm, obwód klatki piersiowej 55 cm, obwód talii 45 cm, obwód bioder 56,5 cm\n85% wiskoza, 15% poliamid",
+      "src": "0631b4fec421"
+    },
+    "item.9578974766.description": {
+      "text": "Rozmiar: L  \nMateriał: sztuczny jedwab\nPiękna czarna sukienka z kwiatowym wzorem zarówno na górze, jak i na dole. Posiada również miękką podszewkę, która zapewnia wygodę noszenia. Idealna letnia sukienka na plażę, na wycieczkę – o luźnym kroju.",
+      "src": "95cb09e384cc"
+    },
+    "item.9686505544.description": {
+      "text": "Ręcznie wykonana bransoletka z autentycznego srebra próby 925 (z sygnaturą). \nKamienie ametystowe z hodowlanymi perłami słodkowodnymi\nZapięcie typu toggle\nDwa prostokątne, fasetowane ametysty\nTrzy okrągłe perły słodkowodne\nBransoletka ma 7 cali długości",
+      "src": "2347fbe304f1"
+    },
+    "item.9316393171.description": {
+      "text": "Niezwykle miękka indyjska bawełna i piękny kwiatowy wzór. Dzięki ramiączkom sukienkę można nosić jako model typu halter lub z tradycyjnymi ramiączkami. Długość sięga do kolan. Bardzo przewiewna i wygodna na lato.\nRozmiar: M–L będzie dobrze pasował",
+      "src": "642b7756fc58"
+    },
+    "item.9603839908.description": {
+      "text": "Wyposażona w uchwyt do przenoszenia, można ją zawiesić lub postawić na blacie jako element dekoracyjny. Ta metalowa latarnia w stylu marokańskim, w jaskrawożółtym kolorze, charakteryzuje się misternie wyciętych filigranowych wzorów.\nWysokość: 8 cali / 20 cm\nSzerokość: 4 cale / 10 cm",
+      "src": "30e1ad9061bf"
+    },
+    "item.9564694739.description": {
+      "text": "Ręcznie rzeźbiona, drewniana figurka hinduskiego boga Ganeszy, siedząca na pięknie wyrzeźbionym cokole – ta piękna, duchowa i elegancka statuetka boga Ganeszy wnosi błogosławieństwa, dobrobyt oraz ponadczasowe indyjskie kunszt artystyczny do każdej przestrzeni i wystroju wnętrz.",
+      "src": "6ff24af8062c"
+    },
+    "item.9607321104.description": {
+      "text": "Ręcznie wykonany naszyjnik z ceramiki w kolorze granatowym z różowym sznurkiem. Długość naszyjnika można regulować. Ze względu na proces glazurowania podczas wypalania ceramiki tył zawieszek nie jest pokryty glazurą i pozostaje surowy. Nie jest to widoczne podczas noszenia.",
+      "src": "cb64550e688f"
+    },
+    "item.9565381682.description": {
+      "text": "Mini rzeźby z gliny przedstawiające Ganesha i Parvati – ręcznie wykonane, dekoracyjne rzeźby hinduskich bóstw, przedstawiające Ganesha i Parvati, idealne jako prezent na parapetówkę, do biura lub jako element wystroju wnętrz\nWymiary każdej figurki: ok. 3,1 x 1,9 x 4 cali (dł. x szer. x wys.), waga każdej figurki: 200 gramów",
+      "src": "359cb158a1ab"
+    },
+    "item.9578313870.description": {
+      "text": "Bluzka w kolorze liliowo-mango z okrągłym dekoltem i krótkimi rękawami, które są wzmocnione wkładkami utrzymującymi kształt. Doskonale nadaje się do noszenia w biurze, na wieczorne wyjścia lub uroczyste okazje. Pięknie się mieni i opada. \nRozmiar L\nMateriał wierzchni: 100% poliester",
+      "src": "1ab3ad7b8b3d"
+    },
+    "item.9438031948.description": {
+      "text": "Jest to ręcznie wykonany naszyjnik w stylu boho, charakteryzujący się misterną kompozycją z koralików, kamieni i tkaninowej aplikacji, wykonany ręcznie w Nigerii. Wyróżnia się odważnym, kolorowym wzorem złożonym z różnorodnych kolorowych koralików, sztucznych kamieni oraz małych metalowych zawieszek u dołu.",
+      "src": "4fc05cf7da8e"
+    },
+    "item.9438210918.description": {
+      "text": "Materiał paska – stal nierdzewna\nKolor paska – srebrny\nTyp wskazówek – analogowy\nMechanizm zapięcia – trzyczęściowe zapięcie przesuwne\nMechanizm – kwarcowy\nKolor tarczy – srebrny\nKształt koperty – owalny\nMateriał koperty – metal\nDługość koperty – 32,70 mm\nSzerokość koperty – 31,45 mm\nGrubość koperty – 7,15 mm",
+      "src": "e19f6e5ba4d6"
+    },
+    "item.9604783346.description": {
+      "text": "Materiał: metal\nDługość: 16 cali / 40,6 cm\nSzerokość: 2 cale / 5,08 cm\n7 figurek przedstawiających słonie i „złe oko”, które według wierzeń przynoszą szczęście i odpędzają negatywną energię z domu lub biura, w którym są zawieszone. Idealna etniczna dekoracja w stylu boho na drzwi wejściowe lub ściany pokoju.",
+      "src": "75599b0b0684"
+    },
+    "item.9320744061.description": {
+      "text": "Piękne letnie bawełniane spodnie z Indii w kolorze czarnym, z uroczymi czerwonymi guzikami po bokach. Niezwykle uniwersalne i bardzo korzystnie podkreślające sylwetkę. Idealne na lato. Obwód w pasie: 36 cali. Pochodzą od znanej indyjskiej marki Jaypore, słynącej z rzemieślniczych wzorów i naturalnych tkanin.",
+      "src": "8c96f64bf862"
+    },
+    "item.9583027994.description": {
+      "text": "Trzy łatwe w noszeniu szpilki do nosa z zatrzaskiem, wykonane ze stopu srebra. Połącz je z podkoszulkiem bez rękawów i kwiecistymi spodniami palazzo lub spódnicą, aby uzyskać rustykalny, nowoczesny styl indyjski. Nie lubię szpilek do nosa, więc je sprzedaję. Zdjęcie przedstawiające osobę noszącą szpilki do nosa ma charakter wyłącznie ilustracyjny – nie jest to moje zdjęcie.",
+      "src": "0ec6921b8fa4"
+    },
+    "item.9476315818.description": {
+      "text": "Piękny naszyjnik w stylu bohemy, wykonany z koralików w żywych odcieniach pomarańczy, koralowca i turkusu, z teksturowanymi akcentami w srebrnym odcieniu, w stylu tybetańskim. Idealny do noszenia w zestawach lub jako wyrazisty element stylizacji. W doskonałym stanie, lekki, zapinany na klasyczne zapięcie.",
+      "src": "057f368848d7"
+    },
+    "item.9395315968.description": {
+      "text": "Książka, od której nie można się oderwać. Dr John Watson służy jako lekarz wojskowy w okopach na polach Flandrii, gdzie żołnierzy prześladuje seryjny morderca. Pełna napięcia, klimatyczna powieść kryminalna łącząca historię I wojny światowej z klasyką literatury detektywistycznej. #sherlockholmes #wwifiction #mysterybooks",
+      "src": "dfa72043f121"
+    },
+    "item.9565087476.description": {
+      "text": "Piękna, duchowa, zabytkowa, złota figurka przedstawiająca całą rodzinę hinduskiego boga Śiwy (Śiwa, Parwati i Ganesza siedzącego na Nandim). \nWymiary – 5,5 x 6 x 2,5 cala; waga 1695 gramów (1,6 kg); materiał: mosiądz\nWprowadź do swojego domu duchowość, spokój, harmonię, szczęście i dobre samopoczucie",
+      "src": "90a8bcf8527d"
+    },
+    "item.9371186724.description": {
+      "text": "Wyjątkowy, przyciągający wzrok dodatek — idealny do noszenia z jednolitym topem lub letnią sukienką, aby dodać odrobinę koloru. Lekki i wygodny w noszeniu, stanowi piękny przykład ręcznie wykonanej indyjskiej biżuterii tekstylnej. Jasny, radosny, ręcznie wykonany naszyjnik, który przyciąga wzrok, wykonany w całości z tkaniny bawełnianej.",
+      "src": "50f89c8117e6"
+    },
+    "item.9575501283.description": {
+      "text": "Indyjski żółto-pomarańczowy bawełniany szal ołtarzowy przeznaczony do hinduskich rytuałów, modlitwy, recytacji mantr, medytacji oraz pudży. Ręcznie zdobiony czerwonym napisem „Om Namah Shivaya”, wizerunkiem Shivalingi oraz pełną rodziną Shivy wraz z Parvati i Ganeszą. \nDługość 55 cali / 139 cm\nSzerokość 33 cale / 83 cm",
+      "src": "6a6c4c0cab94"
+    },
+    "item.9439083125.description": {
+      "text": "Uwaga: dwa ostatnie zdjęcia kolczyka i naszyjnika mają charakter poglądowy i służą wyłącznie pokazaniu, jak można stylizować i nosić te zawieszki. Kolczyk/naszyjnik NIE są przedmiotem sprzedaży. Sprzedaję wyłącznie zawieszki! :)\n\nDwie zawieszki ze srebra próby 925 z kryształami Swarovskiego – kamieniami urodzinowymi na kwiecień.\nMateriał – srebro / kryształ Swarovskiego",
+      "src": "bdea3cf3bc27"
+    },
+    "item.9529729646.description": {
+      "text": "Bardzo ciepła. Ta ręcznie robiona czapka z 100% wełny i podszewką z 100% miękkiego polaru została wykonana przez rzemieślników z Himalajów w Indiach. Dzięki żywym, wielobarwnym wzorom, przytulnym nausznikom i plecionym frędzlom wiązanym na supełki wnosi do Twojej zimowej stylizacji zabawny, swobodny klimat w stylu boho-hippie. Szerokość 9 cali.",
+      "src": "f91fccf4b399"
+    },
+    "item.9711247731.description": {
+      "text": "Piękna, duchowa bransoletka medytacyjna z koralików.\nWykonana z naturalnych materiałów: ciemnobrązowych nasion rudraksz i jasnobrązowych koralików z nasion drzewa bodhi. Idealna do jogi, medytacji, praktyk uważności lub jako element codziennej stylizacji w stylu boho.\n14 nasion rudraksz\n7 nasion drzewa bodhi\nŚrednica 2,5 cala\nElastyczna gumka",
+      "src": "8be1f9bee3ab"
+    },
+    "item.9313793339.description": {
+      "text": "Lekka, letnia sukienka maxi z nadrukiem w stylu batikowym. Kolory: miętowo-zielony, czarny i biały. Dekolt w kształcie litery V z przodu i z tyłu oraz wiązany na szyi dekolt typu halter, wykończony drewnianymi koralikami. Dół sukienki pięknie opada i faluje.\nWykonana z miękkiej, jedwabistej tkaniny o satynowym wykończeniu. Idealna jako strój plażowy, narzutka na strój kąpielowy lub suknia wieczorowa.\nRozmiar L",
+      "src": "b3623b498921"
+    },
+    "item.9395211212.description": {
+      "text": "Pięknie ilustrowana adaptacja najsłynniejszej powieści napisanej kiedykolwiek w języku hiszpańskim, zawierająca grafiki autorstwa Svetlina. Idealna dla osób uczących się hiszpańskiego, studentów oraz wszystkich, którzy szukają przystępnego wprowadzenia do legendarnej opowieści Cervantesa o rycerzu walczącym z wiatrakami. #donquijote #nauka hiszpańskiego #literatura klasyczna",
+      "src": "eed87e0a0db7"
+    },
+    "item.9395115967.description": {
+      "text": "Zwycięzca nagrody Whitbread First Novel Award z 2000 roku, uznany za najwybitniejszy debiut swojego pokolenia. Rozległa, przezabawna, wielopokoleniowa saga dwóch rodzin w wielokulturowym Londynie. Współczesna klasyka i jedna z najważniejszych brytyjskich powieści pierwszej dekady XXI wieku. 3,99 gwiazdek na Goodreads. #zadiesmith #modernclassics #bookclub",
+      "src": "f47a506051fe"
+    },
+    "item.9311521689.description": {
+      "text": "Piękna, długa spódnica z indyjskiej bawełny w żywych odcieniach czerwieni, pomarańczy i fioletu, z wirującym wzorem w stylu bandhani oraz oszałamiającą kontrastową lamówką na brzegu, złożoną z warstwowych paneli ze złotymi, kremowymi i ciemnobrązowymi motywami liści, które nadają jej bogaty, uroczysty wygląd. Idealna letnia spódnica do połączenia z podkoszulkiem bez rękawów lub luźną bluzką.",
+      "src": "88c3079fb8de"
+    },
+    "item.9395142510.description": {
+      "text": "Książka, którą John Green określił jako „oszałamiającą”. Wielokrotnie nagradzany bestseller, który znalazł się na pierwszym miejscu listy „New York Timesa”, zainspirowany ruchem Black Lives Matter. Opowiada historię szesnastoletniej Starr, która jest świadkiem zastrzelenia przez policję swojej najlepszej przyjaciółki z dzieciństwa. Na jej podstawie powstał głośny film. 4,50 gwiazdek na Goodreads. #YAbooks #mustread #bookish",
+      "src": "8e41fa54fdfb"
+    },
+    "item.9498955593.description": {
+      "text": "Zestaw składa się z krótkiego topu z rękawami i dekoltem w kształcie litery V oraz dopasowanej spódnicy zapinanej na guziki z przodu. Całość zdobi biały kwiatowy wzór w stokrotki na tle czerwono-pomarańczowego tie-dye.\n\nObwód w talii spódnicy – 34 cali\nObwód w biodrach spódnicy – 42 cale\nDługość spódnicy – 27 cali\nObwód w biuście topu – 44 cale (krój oversize)\nRozmiar odpowiedni dla L/XL",
+      "src": "2b4c9dfc6029"
+    },
+    "item.9395098362.description": {
+      "text": "Pięknie wydana książka ze złoconą okładką. Akcja rozgrywa się w 1673 roku w Indiach pod panowaniem Aurangzeba, gdzie dwoje młodych szlachciców z dynastii Mogołów natrafia na skutki stłumionego powstania, na czele którego stała tajemnicza kobieta i jej zwolennicy. Akcja toczy się niczym w thrillerze śledczym, a jednocześnie barwnie ożywia obraz Indii z czasów imperium Mogołów. #powieśćhistoryczna #indie mogolskie #bookstagram",
+      "src": "dbe7662e55a6"
+    },
+    "item.9395334867.description": {
+      "text": "Powieść tak kontrowersyjna, że przez ponad trzydzieści lat była zakazana w Wielkiej Brytanii, a w 1960 roku stanęła przed sądem pod zarzutem nieprzyzwoitości. Pełna pasji, przełamująca granice opowieść o podziałach klasowych, pożądaniu i zakazanej miłości między arystokratką a jej gajowym. Jedna z najbardziej znanych i najważniejszych powieści literatury angielskiej #zakazaneksiążki #literaturaklasyczna #dhlawrence",
+      "src": "ac307305c2fa"
+    },
+    "item.9395292320.description": {
+      "text": "Ta autobiografia, napisana przez poetę z ludu Rohingya, który przeżył ludobójstwo, została doceniona jako przykład wykorzystania pióra dla dobra ludzkości. To rzadkie i niezwykle ważne świadectwo z pierwszej ręki dotyczące jednego z najpoważniejszych kryzysów w zakresie praw człowieka naszych czasów. Poruszająca lektura dla wszystkich zainteresowanych prawami człowieka, historiami uchodźców i historią współczesną. #prawa człowieka #autobiografia #literatura faktu",
+      "src": "4038f2d68091"
+    },
+    "item.9322734477.description": {
+      "text": "Piękna letnia koszula z indyjskiej bawełny, w efektownym czarnym tle z wyrazistymi, nadrukowanymi techniką blokową motywami w kształcie serca w kolorach czerwonym i zielonym oraz uroczymi drewnianymi guzikami. Elegancka, swobodna koszula, która przyciąga wzrok i ma prawdziwie rzemieślniczy charakter. Łatwa do stylizacji – noś ją z dżinsami i sandałami, włożoną w spodnie lub spódnicę albo rozpiętą na koszulce. Wspaniały akcent koloru i wzoru na każdą porę roku.",
+      "src": "872b0d5d0a2a"
+    },
+    "item.9395169253.description": {
+      "text": "Laureat nagrody Man Booker Prize 2015, określany przez czołowych krytyków jako epicki i wspaniały. Rozległa, kalejdoskopowa powieść opowiadająca o próbie zamachu na Boba Marleya na tle dziesięcioleci jamajskiej polityki, wojen gangów i działań CIA. Powszechnie uważana za jedną z najwybitniejszych powieści XXI wieku. 4,06 gwiazdek na Goodreads. #bookerprize #literaryfiction #bookstagram",
+      "src": "6d6d8ee1187d"
+    },
+    "item.9395068524.description": {
+      "text": "„The New York Times” określił tę książkę jako poruszającą i niepokojącą lekturę. Ta niewielka, klasyczna pozycja, napisana w 1951 roku, wyjaśnia, dlaczego zwykli ludzie dołączają do fanatycznych ruchów i stają się prawdziwymi wyznawcami, a czyta się ją tak, jakby powstała wczoraj. Ulubiona lektura prezydentów Eisenhowera i Clintona. 4,11 gwiazdek na Goodreads. #psychologia #filozofia #literatura faktu – zawiera zaznaczenia i przydatne notatki",
+      "src": "b4705b309873"
+    },
+    "item.9579803801.description": {
+      "text": "Rzadka okazja. \nMateriał: autentyczne srebro próby 925 (z sygnaturą) \nRozmiar: 2,4 cala\nSprzedaję, ponieważ jest dla mnie nieco za mała. Srebrna bransoletka wykonana z misternie wygrawerowanymi motywami w stylu wiktoriańskim, wykończona w stylu postarzanym i ozdobiona starannie osadzonymi kryształami w kolorze turkusowym, zielonymi kryształami oraz sztucznymi perłami. \nWykonanie: ręcznie wykonany, rzemieślniczy projekt\nSkontaktuj się ze mną, aby uzyskać więcej szczegółów lub wyraźniejsze zdjęcia.",
+      "src": "a33aafc2eb86"
+    },
+    "item.9395042890.description": {
+      "text": "Były portugalski minister ds. Europy spędził sześć miesięcy na podróży lądowej z Baku do Pekinu, aby udowodnić, że Europa i Azja łączą się w jeden superkontynent. Jeden z czytelników stwierdził, że książka ta na zawsze zmieniła jego spojrzenie na geopolitykę. Pozycja niezbędna dla każdego, kto śledzi sytuację w Chinach i Rosji oraz zmieniającą się równowagę sił na świecie. 3,84 gwiazdek na Goodreads. #geopolityka #aktualności #literatura faktu",
+      "src": "7df1b8a748f6"
+    },
+    "item.9649545514.description": {
+      "text": "Czarna indyjska kurta/długa bluzka/komplet/tunika z czystej bawełny, w całości pokryta nadrukiem Buddy wykonanym techniką ręcznego drukowania blokowego, w zestawie z dopasowanymi spodniami. Spodnie mają z przodu sznurki do ściągania oraz wygodną gumkę, a także boczne kieszenie i rozcięcia. Okrągły dekolt i rękawy o długości trzech czwartych. Tworzy oszałamiający klimat duchowy, boho chic i etniczny. \nObwód biustu: 40 cali\nDługość kurty (bluzki): 44 cale\nObwód w pasie spodni: 34 cale\nDługość spodni: 37 cali",
+      "src": "be5938adcbad"
+    },
+    "item.9575763651.description": {
+      "text": "🕉️ Naturalna mala japa z koralików rudraksha: Wykonana z autentycznych koralików rudraksha o średnicy 7 mm, idealna do praktyk duchowych i codziennego intonowania mantr, długość 16 cali\n📿 Konstrukcja ze 108 (+5) koralików: idealna do intonowania mantr (japa), medytacji, jogi i rytuałów pudża\n✨ Wygodna i trwała: mocne nawleczenie zapewnia długotrwałe użytkowanie i płynną obsługę\n🌿 Korzyści duchowe: pomaga poprawić koncentrację, sprzyja wyciszeniu i pozytywnej energii",
+      "src": "6e861169acc8"
+    },
+    "item.9562314219.description": {
+      "text": "Indyjska szal z lnu, tkana ręcznie przez mistrzów rzemiosła z Bengalu Zachodniego. Tkanie w technice jamdani, znane z misternej techniki dodatkowej wątku, to wielowiekowa tradycja, w której motywy są wplatane bezpośrednio w tkaninę przy użyciu cienkich nici, tworząc wzory przypominające delikatny haft. Lekka i miękka, nadaje się zarówno do noszenia na co dzień, jak i na uroczystości, dodając każdemu strojowi wyrafinowanego etnicznego akcentu.",
+      "src": "290887d61cb9"
+    },
+    "item.9565484914.description": {
+      "text": "Pozytywna energia, mądrość i ponadczasowe indyjskie kunszt artystyczne zawarte są w tej ręcznie wykonanej figurce hinduskiego boga Ganeshy – idealnym połączeniu duchowej elegancji i nowoczesnej estetyki wnętrz. Figurka charakteryzuje się spokojnym, teksturowanym wykończeniem w kolorze kości słoniowej, pięknie podkreślonym bogatymi złotymi detalami, co sprawia, że jest przyciągającym wzrok elementem wystroju współczesnych wnętrz.\n\nMateriał: wysokiej jakości żywica z ręcznie wykonanym, teksturowanym wykończeniem\nKolor: kość słoniowa i postarzane złoto",
+      "src": "c50fcfd34c1e"
+    },
+    "item.9602950103.description": {
+      "text": "„The New York Times” określił tę książkę jako taką, która może zmienić życie, a miliony czytelników podzielają tę opinię. Ta opowiadana z perspektywy samej Śmierci międzynarodowa bestsellerowa powieść opowiada o dziewczynie kradnącej książki, która ukrywa Żyda w nazistowskich Niemczech. Przetłumaczona na ponad 40 języków i zekranizowana w 2013 roku, przez ponad dekadę utrzymywała się na listach bestsellerów na całym świecie. 4,4 gwiazdki na Goodreads. #wwiifiction #bookthief #bestseller",
+      "src": "1978d39764d1"
+    },
+    "item.9602746361.description": {
+      "text": "Pełna energii, zaskakująca analiza tego, dlaczego i w jaki sposób osoby z mniej korzystnej pozycji odnoszą sukcesy – od małych klas, przez walkę o prawa obywatelskie, po trudności, które zamieniają się w ukryte atuty. „Financial Times” nazwał tę książkę najprzyjemniejszą jak dotąd pozycją Gladwella – porywającą lekturą, która karmi zarówno serce, jak i umysł. Autorem jest twórca książek „Punkt krytyczny”, „Blink” i „Wyjątkowi”. 3,97 gwiazdek na Goodreads. #malcolmgladwell #literaturafaktowa #psychologia",
+      "src": "66ab3427c67b"
+    },
+    "item.9438954997.description": {
+      "text": "Zestaw biżuterii w złocistym odcieniu, składający się z efektownego naszyjnika warstwowego, pasujących kolczyków kołowych, bransoletki o wyrazistej konstrukcji oraz wyrazistego pierścionka. Lekki, a jednocześnie piękny zestaw biżuterii. Minimalistyczny, ale przyciągający wzrok. Jest nieco za ciasny na mój dekolt (średnica 4,5 cala), więc go sprzedaję. \n\nRozmiar naszyjnika: 12 cm x 3,2 cm / 4,72\" x 1,26\" \nRozmiar kolczyków: 4 cm x 1,3 cm / 1,57\" x 0,51\"\nRozmiar bransoletki: 6 cm x 3,5 cm / 2,36\" x 1,38\"\nRozmiar pierścionka: 1,9 cm x 1,2 cm / 0,75\" x 0,47\"",
+      "src": "0ee64f4f8768"
+    },
+    "item.9641705366.description": {
+      "text": "Piękna i pełna życia, ręcznie szyta sukienka typu tunika z krótkim rękawem, ozdobiona przyciągającym wzrok geometrycznym wzorem inspirowanym afrykańskimi tkaninami Kente i Ankara. Wykonana ręcznie w Nigerii. Bardzo korzystnie podkreślający sylwetkę krój z elastycznym, marszczonym paskiem w talii oraz swobodną, rozkloszowaną spódnicą. Idealna bawełniana sukienka na lato, festiwale, stylizacje w stylu boho chic lub na co dzień. Elastyczne marszczenie i fason przypominający kaftan sprawiają, że sukienka jest uniwersalna pod względem rozmiaru i pasuje na rozmiary od M do L. Długość wynosi 28 cali.",
+      "src": "45399a9701b6"
+    },
+    "item.9602779694.description": {
+      "text": "Przełomowa, skrupulatnie zbadana relacja z 21-miesięcznego zawieszenia demokracji w Indiach za rządów Indiry Gandhi, uznana za najlepszą i najbardziej wszechstronną opowieść o stanie wyjątkowym, jaką kiedykolwiek napisano. Ujawnia ona, w jaki sposób członkowie Partii Kongresowej, komuniści, biznesmeni, wymiar sprawiedliwości oraz miejska klasa średnia – a nie tylko Gandhi i jej syn Sanjay – przyczynili się do powstania rządu autorytarnego. Laureat nagrody Karwaan. 3,75 gwiazdki na Goodreads. #historiaIndii #polityka #literaturafakt",
+      "src": "8036e25c8ded"
+    },
+    "item.9364938382.description": {
+      "text": "Ręcznie szyta w Indiach z lekkiej bawełny, z nadrukiem inspirowanym tradycyjną afrykańską sztuką ludową. Wesoła i pełna charakteru bawełniana sukienka maxi w odcieniu spranego dżinsowego błękitu. \n\nSzczegóły:\nRozmiar M (obwód biustu 36–38 cali)\nLekka bawełna — miękka, oddychająca i wygodna w noszeniu\nKolorowy, figuratywny nadruk na całej powierzchni na cętkowanym niebieskim tle\nWarstwowa talia z marszczoną spódnicą zapewniającą piękny ruch\nOkrągły dekolt\nPełna długość maxi\nSwobodny, luźny krój — zakłada się przez głowę, bez zapięć",
+      "src": "48251dcb2c90"
+    },
+    "item.9602491240.description": {
+      "text": "Ogromny międzynarodowy bestseller nr 1 według listy „Sunday Times”, który\ncałkowicie na nowo opisuje historię ludzkości z perspektywy Wschodu. Znany oksfordzki\nhistoryk Peter Frankopan zabiera czytelników w otwierającą oczy podróż po\nszlakach handlowych, które dały początek światowym imperiom, globalnemu handlowi i współczesnym\nwalkom o władzę. Książka ma 4,14 gwiazdek na Goodreads. To poszerzające horyzonty fenomenalne dzieło, które\nna zawsze zmieni Twoje spojrzenie na historię świata.\n\n#peterfrankopan #historiświata #historytok",
+      "src": "12134ce1de6c"
+    },
+    "item.9602470022.description": {
+      "text": "Ta szalona, mroczna komedia, która wkrótce doczeka się wielkiego serialu telewizyjnego HBO wyprodukowanego przez A24 z Jodie Comer w roli głównej, została uznana za „Książkę Roku” przez\nmagazyny „Cosmopolitan”, „Vogue” i „The New Yorker”. Śledź losy chaotycznej transkrybentki sesji terapii seksualnej z północnej części stanu Nowy Jork, która popada w niebezpieczną obsesję na punkcie jednego z\nklientów swojego szefa. Książka ma 3,68 gwiazdki na Goodreads. Przygotuj się na wciągającą, voyeurystyczną przygodę pełną ostrego humoru i nieoczekiwanych skandali.\n\n#bigswiss #booktok #queerfiction",
+      "src": "614e72385bec"
+    },
+    "item.9419147643.description": {
+      "text": "81-letnia wdowa w podupadającym luksusowym hotelu w Egipcie toczy walkę z 8-letnim chłopcem, a żadne z nich nie gra uczciwie. „The New York Times” nazwał tę książkę „rozkosznie podłą”, a „Kirkus” określił ją jako „nikczemną rozrywkę” oraz „przebiegły, szalony thriller”. Pełna atmosfery, pokręcona i od której nie można się oderwać – to walka charakterów między dwoma najbardziej niewiarygodnymi narratorami w najnowszej literaturze. Zupełnie nowa, niechciana książka, nigdy nie czytana. #thrillerpsychologiczny #booktok #nie można się oderwać",
+      "src": "369dbe6cb41f"
+    },
+    "item.9360886820.description": {
+      "text": "Kapitalizm nie jest zepsuty — po prostu tak został skonstruowany. Nick Romeo ujawnia ukryte alternatywy, które już funkcjonują na całym świecie: prawdziwe eksperymenty w zakresie bardziej sprawiedliwych rynków, mieszkalnictwa i pracy, które mogłyby zastąpić system, który obecnie zawodzi czytelników. Książka została doceniona przez Ha-Joon Changa jako wyzwalająca naszą ekonomiczną wyobraźnię. Gazeta „Observer” określiła ją jako pouczającą i inspirującą. Dla czytelników Naomi Klein, Kate Raworth oraz wszystkich, którzy mają dość powtarzania, że nie ma alternatywy. Ocena na Goodreads: 4,07",
+      "src": "1d409ae01255"
+    },
+    "item.9602788500.description": {
+      "text": "Najbardziej wpływowa książka, jaka kiedykolwiek powstała na temat początków nacjonalizmu, analizująca, co skłania ludzi do życia, umierania i zabijania w imię swojej ojczyzny. Gazeta „The Guardian” określiła ją jako błyskotliwą, przystępną i bogatą w treść; pozostaje ona jedną z najczęściej cytowanych pozycji w naukach humanistycznych, przetłumaczoną na ponad trzydzieści języków. Niezbędna lektura dla wszystkich zainteresowanych teorią polityczną, historią lub polityką światową. 4,11 gwiazdek na Goodreads. #teoriapolityczna #nacjonalizm #książkiakademickie",
+      "src": "361d6b707523"
+    },
+    "item.9602536889.description": {
+      "text": "Ta wciągająca powieść, nagrodzona Nagrodą Pulitzera i National Book Award,\nzostała uznana przez „The New York Times” za jedną z najlepszych książek XXI wieku.\nPrzeżyj trzymającą w napięciu walkę o wolność na południu Stanów Zjednoczonych\nw okresie przedwojennym w opowieści, która stała się inspiracją dla popularnego serialu telewizyjnego. Książka\nma ocenę 4,06 gwiazdek na Goodreads. Głęboko poruszająca i od której nie sposób się oderwać –\nto współczesna literatura amerykańska w najlepszym wydaniu.\n\n#pulitzerprize #colsonwhitehead #historicalfiction",
+      "src": "c56cebab1dcb"
+    },
+    "item.9355268622.description": {
+      "text": "„The Netanyahus” autorstwa Joshuę Cohena. Zdobywca Nagrody Pulitzera w kategorii beletrystyki za rok 2022. Serwis Goodreads zawiera ponad 81 000 ocen książek Cohena. Komiczna powieść studencka opowiadająca o żydowskim historyku zmuszonym do przyjęcia Benziona Netanjahu, ojca przyszłego premiera Izraela, na rozmowę kwalifikacyjną, która przerodziła się w prawdziwy chaos. Magazyn „Kirkus” określił ją jako powieść o głębokim intelektualnym wydźwięku, pełną energii i mistrzowsko skomponowaną. Wydanie w miękkiej oprawie, stan używany, z zagięciami na okładce i przetarciami na krawędziach (patrz zdjęcia). Kompletna i nadająca się do czytania. Pochodzi z domu, w którym nie pali się papierosów.",
+      "src": "a64bd9222dd1"
+    },
+    "item.9602556623.description": {
+      "text": "Autor światowej sławy książki „Koniec historii” przedstawia pilną,\notwierającą oczy analizę współczesnego populistycznego nacjonalizmu i globalnej\npolityki tożsamościowej. Francis Fukuyama w prowokacyjny sposób zagłębia się w temat\npotrzeby godności, debat dotyczących tożsamości na uczelniach oraz niechęci zagrażającej\ndzisiejszej demokracji. Książka ma 3,84 gwiazdki na Goodreads. Niezbędna lektura dla każdego, kto próbuje\nzrozumieć aktualne wydarzenia na świecie i podziały polityczne.\n\n#francisfukuyama #politologia #aktualności",
+      "src": "18825964ddbd"
+    },
+    "item.9602879226.description": {
+      "text": "Na tle Kaszmiru lat 90. rozgrywa się historia zakazanej miłości między chłopcem wyznania sunnickiego a dziewczyną wyznania szyickiego, podczas gdy wojna i przemoc polityczna coraz bardziej zbliżają się do ich świata. Książka znalazła się na krótkiej liście kandydatów do nagrody DSC Prize for South Asian Literature oraz na długiej liście kandydatów do nagrody Folio Prize, a „Financial Times” określił ją jako dzieło, które bez wątpienia przetrwa próbę czasu. Od autora międzynarodowego bestsellera „The Collaborator”, którego Arundhati Roy określiła jako powieść, która sprawia, że zaczynasz słuchać #literatura kaszmirska #powieści południowoazjatyckie #powieści wojenne",
+      "src": "d61aa89d012b"
+    },
+    "item.9602725968.description": {
+      "text": "Kompletny zbiór poezji XIII-wiecznego mistyka sufickiego Rumiego, w tłumaczeniu Colemana Barksa – człowieka, któremu powszechnie przypisuje się uczynienie Rumiego najczęściej czytanym poetą w Ameryce. To nowe, rozszerzone wydanie zawiera ponad osiemdziesiąt nigdy wcześniej niepublikowanych wierszy oraz nowe wprowadzenie. Dzieło to zostało pochwalone przez Jacka Kornfielda jako utwór, w którym złoto Rumiego przelewa się przez słowa Colemana, i pozostaje bestsellerem spośród wszystkich zbiorów Rumiego. 4,39 gwiazdek na Goodreads. #rumi #poezja #duchowość\nISBN: 9780062312747",
+      "src": "7a911c9f005a"
+    },
+    "item.9602569998.description": {
+      "text": "Autor bestsellera „Łowca latawców”, który sprzedał się w wielu milionach egzemplarzy,\nprzedstawia zapierającą dech w piersiach opowieść o złamanym sercu, rodzinnych tajemnicach i niezniszczalnej\nmiłości. Ta nagrodzona nagrodą Goodreads Choice Award powieść, obejmująca kilka pokoleń od Kabulu po Paryż, pokazuje, jak jedna tragiczna decyzja na zawsze odbija się echem w losach całej rodziny. Na Goodreads ma ocenę 4,08 gwiazdek. Przygotuj chusteczki na niezapomnianą emocjonalną huśtawkę, która wciągnie cię już od pierwszej strony.\n\n#khaledhosseini #thekiterunner #emotionalbooks",
+      "src": "704ecf3638c1"
+    },
+    "item.9602681438.description": {
+      "text": "Autorka książki „Szóste wymieranie”, laureatka Nagrody Pulitzera,\nprzedstawia wstrząsające spojrzenie na budzące ogromne kontrowersje próby\nkontrolowania natury przez ludzkość. Bestsellerowa autorka Elizabeth Kolbert zabiera czytelnika w fascynującą podróż po świecie,\npodczas której poznamy naukowców wystrzeliwujących w niebo pył diamentowy oraz zajmujących się edycją genetyczną\ngatunków inwazyjnych. Książka ma ocenę 4,10 gwiazdek na Goodreads. Oszałamiająca, niepokojąca i mrocznie zabawna – to najlepsza opowieść o klimacie dla ciekawskich\numysłów.\n\n#zmianaklimatu #naukapopularna #książkiśrodowiskowe",
+      "src": "9721b9a90dcf"
+    },
+    "item.9602413571.description": {
+      "text": "Ta poruszająca,\nhistoryczna arcydzieło, laureatka prestiżowej nagrody im. Duffa Coopera, przedstawia krwawy upadek Delhi i tragiczny koniec\nnajwiększej dynastii Indii w 1857 roku. Wielokrotnie nagradzany historyk William Dalrymple\nsięga do rzadkich perskich dokumentów dworskich, by opowiedzieć zadziwiającą, prawdziwą historię oblężenia,\nzdrady i upadku imperium. Książka może pochwalić się oceną 4,20 gwiazdek na Goodreads. Niezbędna\nlektura dla każdego, kto ma obsesję na punkcie dramatycznej, prawdziwej historii i upadków wielkich imperiów.\n\n#williamdalrymple #historiaIndii #książkihistoryczne",
+      "src": "e735901e05a2"
+    },
+    "item.9603594529.description": {
+      "text": "Elizabeth Gilbert radzi, by tę książkę trzymać przy łóżku na zawsze, a czytelnicy podzielają tę opinię, przyznając jej znakomitą ocenę 4,45 gwiazdek na Goodreads. Poeta David Whyte przedstawia 52 codzienne słowa, takie jak „samotność”, „gniew” i „wybaczenie”, jako bramy prowadzące do głębszego znaczenia. Książka zawiera wstęp autorstwa Marii Popovej oraz pochlebną recenzję na okładce autorstwa Nicka Cave’a. Lemn Sissay nazywa ją niezwykle poruszającą, wyjątkową książką, którą będziesz chciał zachować na zawsze. Przepiękne, gotowe na prezent wydanie w twardej oprawie dla każdego, kto kocha poetycką literaturę faktu. #davidwhyte #consolations #giftbooks",
+      "src": "fa3fe7281c41"
+    },
+    "item.9602442603.description": {
+      "text": "Nieustępliwy młody architekt toczy zaciekłą walkę z konwencjonalnymi normami oraz przeżywa burzliwy romans z jedyną kobietą, która jest zdeterminowana, by go pokonać. „The New York Times” określił tę powieść jako dzieło pisarki o ogromnej sile, genialne, piękne i pełne goryczy. Niniejsze wydanie z serii Signet Centennial Edition zawiera posłowie autorstwa literackiego wykonawcy testamentu Rand oraz przewodnik dla czytelnika po jej filozofii. Jedna z najbardziej kontrowersyjnych i ponadczasowych powieści XX wieku. 3,96 gwiazdek na Goodreads. #aynrand #literaturaklasyczna #fikcjafilozoficzna",
+      "src": "68e0e27368fe"
+    },
+    "item.9339704755.description": {
+      "text": "Piękna, lekka bawełniana bluzka w intensywnym kolorze musztardowo-oliwkowym z misternym kwiatowym nadrukiem w odcieniach granatu, czerwieni, zieleni i kremu. Miękka, oddychająca indyjska bawełna z luźnym wiązaniem po bokach w stylu kopertowym. Urocza, uniwersalna letnia bluzka, którą można założyć na dżinsy, szorty lub nosić na wakacjach.\n\nSzczegóły:\nDekolt w kształcie litery V z krótkimi rękawkami typu cap sleeves\nBoczne wiązania w stylu kopertowym do zapinania i regulacji dopasowania\nMiękka, lekka bawełna, ręcznie drukowana techniką blokową\nLuźny, swobodny krój\nKolor: musztardowo-oliwkowy z motywem kwiatowym w kolorze granatowym\nMateriał: bawełna (ręcznie drukowana techniką blokową)\nObwód biustu: 34-36\"",
+      "src": "42265fed3791"
+    },
+    "item.9602870728.description": {
+      "text": "Ponadczasowa „Mahabharata” opowiedziana w całości z perspektywy Panchaali, żony pięciu braci Pandawów, przedstawiająca jej burzliwe narodziny, skomplikowaną więź z Kriszną oraz zakazane zauroczenie najniebezpieczniejszym wrogiem jej mężów. „Los Angeles Times” nazwał tę książkę „błyskotliwym klejnotem niczym Diament Nadziei”, a „Houston Chronicle” określił ją jako „promienną i czarującą”. Głęboko ludzka, na pół historyczna, na pół mityczna opowieść o kobiecie urodzonej w świecie mężczyzn. 4,20 gwiazdek na Goodreads. #mahabharata #fikcjamityczna #międzynarodowybestseller",
+      "src": "6fa2e4dc854a"
+    },
+    "item.9331197768.description": {
+      "text": "Urocza złota metaliczna kamizelka marki Mango. Delikatny połysk przeplatający się w całej tkaninie — odbijająca światło i elegancka, ale bez przesady. Uniwersalny model na wyjście lub na specjalne okazje. Idealna na wieczór lub imprezę — można ją połączyć z dopasowanymi spodniami lub spódnicą, albo założyć na co dzień z dżinsami i marynarką. Złoty połysk sprawia, że idealnie nadaje się na specjalne okazje i okres świąteczny.\n\nSzczegóły:\n\nDekolt w kształcie litery V z przodu i z tyłu\nStałe dzianinowe ramiączka (styl cami/kamizelka)\nCienka, elastyczna dzianina metaliczna\nLekko prześwitująca — lekka i zwiewna\nMarka Mango\nRozmiar: M",
+      "src": "04cf82d00d17"
+    },
+    "item.9311775029.description": {
+      "text": "Piękna czarna bawełniana bluzka w stylu kurti marki Sabhyata, z subtelnym, ton-w-ton nadrukiem blokowym na całej powierzchni i przepięknym kontrastowym wykończeniem dekoltu.\nMarka Sabhyata – popularna indyjska marka, rozmiar L. Wykonana z miękkiej, oddychającej czystej bawełny.\nSzczegóły:\n\nKrótkie rękawy z czerwonym wykończeniem\nOzdobny, haftowany dekolt w kształcie litery V\nKontrastowe czerwone i musztardowe lamówki na rękawach i u dołu\nNadruk w kwiaty w tonacji kolorystycznej na czarnym tle\nLuźny, swobodny krój\nLekka, czysta bawełna\n\nŁatwa do połączenia z dżinsami, spodniami lub spódnicą. Uniwersalny element garderoby na co dzień.\n\nRozmiar: L (metka)\nStan: Bardzo dobry",
+      "src": "1f0554b459e2"
+    },
+    "item.9359739617.description": {
+      "text": "Powiązane ze sobą opowiadania, których akcja rozgrywa się na pakistańskiej wsi i w miastach, skupiające się na rodzinie zamożnego feudalnego właściciela ziemskiego oraz służbie, krewnych i osób kręcących się wokół jego świata. Finalista National Book Award, William Dalrymple, nazwał tę książkę prawdopodobnie najlepszą powieścią o Pakistanie napisaną w języku angielskim. Krytycy porównują tę książkę do twórczości Czechowa i Turgieniewa ze względu na jej powściągliwość i głębię psychologiczną. Świetny wybór dla miłośników beletrystyki literackiej, pisarzy z Azji Południowej oraz zbiorów powiązanych opowiadań, takich jak te autorstwa Jhumpa Lahiri czy Mohsina Hamida. (Finalista National Book Award)",
+      "src": "0937e62d760d"
+    },
+    "item.9602838102.description": {
+      "text": "Cicha, ale poruszająca powieść o skromnej parze, wygnanej przez własne rodziny za zawarcie małżeństwa bez zgody, której kruchy spokój zostaje zburzony, gdy dług zmusza bohaterów do rozliczenia się z przeszłością. Natsume Soseki nazwał tę powieść swoją ulubioną spośród wszystkich własnych dzieł, a Haruki Murakami wskazał ją jako książkę, z którą identyfikuje się najsilniej. Magazyn „New Statesman” nazwał ją arcydziełem gustu i klarowności. Niniejsze wydanie NYRB zawiera nowe, dokładniejsze tłumaczenie niż poprzednie wersje. 4,07 gwiazdek na Goodreads. #literaturajapońska #natsumesoseki #nyrbclassics",
+      "src": "eea3c4b3937a"
+    },
+    "item.9602596973.description": {
+      "text": "Dwujęzyczny kieszonkowy przewodnik po akupresurze i akupunkturze w językach hindi i angielskim, oparty wyłącznie na zasadzie „jeden punkt na jedną dolegliwość”, zapewniający szybką i łatwą ulgę. Obejmuje szeroki zakres zagadnień – od zaburzeń apetytu po sytuacje nagłe – wraz z rysunkami dłoni oraz instrukcjami krok po kroku dotyczącymi stosowania technik uspokajających i tonizujących dla każdego punktu. Przewodnik jest na tyle kompaktowy, że można go nosić w torbie lub kieszeni, i został zaprojektowany jako podręcznik do szybkiego korzystania w domu. Wydany przez ASPEUS, specjalistyczny instytut badań nad naturopatią i akupresurą w Prayagraj. #akupresura #medycynaalternatywna #naturopatia #powrótdozdrowia #ajurweda",
+      "src": "2cf54aa415ae"
+    },
+    "item.9562192907.description": {
+      "text": "Ulos, uznany przez UNESCO za część niematerialnego dziedzictwa kulturowego Indonezji, można nosić jako dodatek (szal/chustę/spódnicę), powiesić na ścianie, wykorzystać jako bieżnik na stół, a nawet oprawić w ramkę i wyeksponować. Ulos to coś więcej niż tylko tradycyjna tkanina. Jest to święty symbol ciepła, ochrony i błogosławieństw przodków w społeczności Batak. Tkany ręcznie przy użyciu symbolicznych kolorów i motywów, każdy egzemplarz niesie ze sobą głębokie wartości filozoficzne i towarzyszy najważniejszym momentom życia, od narodzin, przez ślub, aż po ceremonie pożegnalne.\nMateriał – bawełna i jedwab",
+      "src": "3b29df965656"
+    },
+    "item.9602894095.description": {
+      "text": "Cztery kobiety porzuciły na pięćdziesiąt sześć dni swoje codzienne życie, by przejechać motocyklami 17 000 kilometrów przez sześć krajów – od Hyderabad przez północno-wschodnią część Indii, Mjanmę, Tajlandię, Laos i Wietnam wzdłuż rzeki Mekong aż do Kambodży. Piya Bahadur opowiada o tej jedynej w swoim rodzaju podróży przez tereny rzadko odwiedzane przez indyjskich podróżników, a także o swojej przemianie z nieśmiałej, pracującej matki w pewną siebie poszukiwaczkę przygód. Książka została uznana przez dyrektora generalnego ds. turystyki organizacji „Incredible India” za ekscytującą lekturę. #podróże motocyklowe #kobietyktórepodróżują #wspomnienia z przygód",
+      "src": "752cf398e4d4"
+    },
+    "item.9602907756.description": {
+      "text": "Fizyk i detektyw Manabu Yukawa udaje się do borykającego się z problemami nadmorskiego kurortu na konferencję poświęconą górnictwu, by wkrótce zostać wciągniętym w śledztwo w sprawie morderstwa, gdy u podnóża klifów znaleziono zwłoki jednego z gości. Magazyn „Kirkus” uznał tę powieść za genialną dzięki serii kolejnych zwrotów akcji w sprawie, która wydaje się całkowicie pozbawiona niespodzianek, a gazeta „The Times” nazwała Higashino japońskim Stiegem Larssonem. Trzecia książka z cieszącej się międzynarodowym powodzeniem serii o detektywie Galileuszu, na podstawie której powstał później popularny japoński film. 3,96 gwiazdki na Goodreads. #japanesecrimefiction #detectivegalileo #mysterythriller",
+      "src": "6837d2bdb5ef"
+    },
+    "item.9367213932.description": {
+      "text": "Krótki kombinezon marki Zara z białej bawełny o marszczonej fakturze. Rozmiar L. Swobodna, przewiewna kreacja w stylu boho-utility z mnóstwem uroczych detali. Na kieszeniach widoczne są niewielkie plamki, ale są one ledwo zauważalne. Idealna letnia kreacja na wakacje, plażę lub upalne dni – wygodna i komfortowa, o swobodnym, lekko oversize’owym kroju.\n\n\nSzczegóły:\nMarka: Zara\nMiękka, marszczona bawełniana gazy — lekka i przewiewna\nDekolt z kołnierzykiem i półplisą zapinaną na drewniane guziki\nElastyczny pas z sznurkiem do ściągania, zakończony drewnianymi koralikami\nPodwijane rękawy\nDwie naszywane kieszenie z przodu\nKombinezon / romper (szorty)\nNaturalna marszczona faktura",
+      "src": "bc8e06af2eae"
+    },
+    "item.9388380417.description": {
+      "text": "Obwód biustu: 36–38 cali – idealnie pasuje. \n\nPiękna indyjska kurta z bawełny w intensywnym czerwonym kolorze, wykonana techniką shibori, z delikatnymi białymi wzorami powstałymi w wyniku rezerwowania tkaniny. Tradycyjne shibori to technika ręcznego barwienia stosowana w Indiach. Elegancka i wygodna, z uroczymi detalami przy dekolcie i mankietach. Uniwersalny element garderoby w stylu etnicznym, który można nosić do legginsów, dżinsów lub spodni, zarówno na co dzień, jak i na specjalne okazje.\n\nSzczegóły:\n100% bawełna — miękka, oddychająca i wygodna w noszeniu\nCzerwony nadruk w stylu shibori / tie-dye\nOzdobna plisa z nadrukiem przy dekolcie i dopasowane mankiety z nadrukiem\nOkrągły dekolt\nRękawy 3/4\nBoczne rozcięcia ułatwiające ruchy\nProsty krój kurty sięgającej do kolan/łydki",
+      "src": "72daee4fe245"
+    },
+    "item.9330125733.description": {
+      "text": "Elegancka fioletowa sukienka midi marki Closet London. W głębokim odcieniu bakłażana/fioletu, z podkreślającym sylwetkę dekoltem w kształcie litery V oraz pełną, zwiewną spódnicą o kroju litery A. Prosta, uniwersalna i wygodna — idealna do pracy, na specjalne okazje lub na co dzień. Wygodna, podkreślająca figurę sukienka, którą z łatwością można dostosować do okazji. Połącz ją z obcasami na specjalne okazje lub z płaskimi butami i marynarką do biura. Bogaty kolor wygląda pięknie o każdej porze roku.\n\nSzczegóły:\nDekolt w kształcie litery V\nRękawy o długości 3/4\nPlisowana talia z pełną, powiewną spódnicą\nMiękka, elastyczna dzianina dżersejowa o pięknym układaniu się\nDługość midi\nWyprodukowano w Londynie\nKolor: Fioletowy / bakłażanowy\nMateriał: Elastyczna dzianina dżersejowa\nRozmiar: UK 12 / US 8\nStan: Dobry",
+      "src": "7429593b05ae"
+    },
+    "item.9602649617.description": {
+      "text": "W trzeciorzędnym pensjonacie znaleziono powieszoną młodą kobietę, a na stole leżał list pożegnalny, jednak bystry policjant dostrzegł szczegóły, które nie pasowały do siebie. Poszukiwania prowadzone przez Scotland Yard wskazują na Charlesa Hobarta – człowieka, który miał środki, motyw i okazję – aż do momentu, gdy poseł i kryminolog-amator Scott Egerton postanawia udowodnić jego niewinność i w ostatniej chwili demaskuje prawdziwego zabójcę. Autor Anthony Gilbert to pseudonim Lucy Malleson, członkini Detection Club, uznawanej za jedną z niekwestionowanych wielkich postaci literatury kryminalnej. Rzadkie, zabytkowe wydanie w miękkiej oprawie wydawnictwa Pan Books. #vintagecrime #goldenagemystery #detectivefiction",
+      "src": "768df32e0055"
+    },
+    "item.9360475926.description": {
+      "text": "Piękna bawełniana sukienka o długości midi z klasycznym indyjskim nadrukiem wykonanym techniką ręcznego drukowania blokowego. Zwiewna, elegancka sukienka o kroju litery A. FabIndia to uwielbiana indyjska marka o bogatym dziedzictwie, znana z etycznie wytwarzanych, rzemieślniczych nadruków blokowych, której produkty trudno znaleźć w Europie. Ponadczasowa, wygodna sukienka idealna na lato, wakacje lub do noszenia przez cały rok w stylizacjach warstwowych.\n\nSzczegóły:\nMarka: FabIndia (oryginalna metka — 100% bawełna, wyprodukowana w Indiach)\nRozmiar L\nTradycyjny wzór w stylu Ajrakh wykonany techniką blokową — motywy paisley, kwiatowe i medaliony\nOzdobny nadruk na brzegu i mankietach rękawów w kolorach czerwonym, niebieskim i czarnym\nDługie rękawy, okrągły dekolt\nCzerwony sznurek z tyłu do wiązania w talii\nMiękka, oddychająca i lekka bawełna",
+      "src": "da59e38f110c"
+    },
+    "item.9328440121.description": {
+      "text": "Elegancka sukienka midi w kolorze granatowym i białym marki Wardrobe. Wygląda szykownie bez wysiłku dzięki abstrakcyjnemu geometrycznemu nadrukowi. Korzystnie podkreślająca sylwetkę, uniwersalna sukienka, która sprawdzi się w biurze, na specjalne okazje lub na eleganckie wyjścia. Wygodna, odporna na zagniecenia i łatwa do zestawienia zarówno z obcasami, jak i płaskimi butami. Pięknie opada wzdłuż sylwetki i wyszczupla talię.\n\nSzczegóły:\nRozmiar: M-L\nŁódkowy/okrągły dekolt z krótkimi rękawkami typu cap sleeves\nKorzystnie podkreślający sylwetkę skręcony/marszczony detal w talii (z przodu)\nPasek wiązany z tyłu, podkreślający talię\nGładka, elastyczna dzianina dżersejowa o pięknym układzie\nDługość midi\nŁatwa do zakładania, bez zbędnych komplikacji\nKolor: granatowy / biały\nMateriał: jedwabista elastyczna dzianina dżersejowa (syntetyczna)\nStan: doskonały",
+      "src": "0570093c1a5b"
+    },
+    "item.9362130631.description": {
+      "text": "Książka, którą gazeta „The Times” nazwała „działem druzgocącym” – brutalnie szczere rozliczenie Indii autorstwa laureata Nagrody Nobla V.S. Naipaula po wprowadzeniu stanu wyjątkowego przez Indirę Gandhi. Ocena na Goodreads: 3,71 na podstawie ponad 1 900 ocen. Druga część uznanej trylogii indyjskiej Naipaula – ta zaciekła, bezlitosna analiza systemu kastowego, religii, ubóstwa i tożsamości postkolonialnej – została uznana za fenomenalne dzieło, którego spostrzeżenia z perspektywy czasu wydają się jeszcze ostrzejsze. Nie jest to lektura przyjemna – to kontrowersyjny, bezkompromisowy klasyk, niezbędny dla każdego, kto poważnie interesuje się literaturą postkolonialną, historią Indii lub nagrodzonym Nagrodą Nobla dorobkiem Naipaula. Wydanie w miękkiej oprawie, stan używany, niewielkie ślady zużycia na okładce (patrz zdjęcia).",
+      "src": "13944c564b01"
+    },
+    "item.9339656344.description": {
+      "text": "Piękna letnia sukienka bawełniana z nadrukiem blokowym marki FabNu, współczesnej indyjskiej marki nowej generacji. Wspaniały, abstrakcyjny nadruk przedstawiający zwierzęta/tygrysa w kolorach indygo i szałwiowej zieleni, wykonany ręcznie techniką blokową na miękkiej, oddychającej bawełnie. Rękawy bufiaste, zapięcie na guziki z przodu oraz zwiewna, warstwowa spódnica sprawiają, że sukienka jest naturalnie elegancka i wygodna w noszeniu.\n\nSzczegóły:\nDekolt w kształcie litery V z zapięciem na guziki na całej długości z przodu\nRękawy bufiaste z elastycznymi mankietami\nDopasowana talia z warstwową, zwiewną spódnicą\nMiękka, lekka indyjska bawełna, ręcznie drukowana techniką blokową\nFabNu by Fabindia — wysokiej jakości naturalna tkanina\nKolor: niebieski indygo / zieleń szałwiowa\nMateriał: 100% bawełna (ręcznie drukowana)\nRozmiar: M\nWymiary (na płasko/w przybliżeniu):\nObwód biustu: 36\"\nObwód talii: 32\"\nObwód bioder: swobodny/luźny\nDługość: 47\"",
+      "src": "2b3d48d2cd22"
+    },
+    "item.9311368443.description": {
+      "text": "Wspaniałe spodnie palazzo o szerokich nogawkach, wykonane z autentycznej bawełny z Nigerii, w oszałamiającym wzorze w stylu batikowym z motywami kwiatowymi w stylu mandali, utrzymanym w ciepłych odcieniach brązu, musztardowym, szałwiowej zieleni i pudrowego różu. Z przodu wyglądają jak pełna spódnica, ale w rzeczywistości są to szerokie, zwiewne spodnie z rozcięciem pośrodku, dzięki czemu zyskujesz efektowny wygląd spódnicy połączony z wygodą spodni. \n\nMożesz je ubrać na elegancko z obcasami i dopasowanym topem lub na luzie z sandałami, aby uzyskać swobodny styl boho. Prawdziwy element wyróżniający się wspaniałą kolorystyką.\nUwaga: bawełna naturalnie się gniecie — wystarczy szybkie prasowanie lub wyprasowanie parą, a spodnie są gotowe do noszenia.\nTalia: regulowana za pomocą sznurka. (Mój obwód talii wynosi 38 cali/96,5 cm i spodnie pasują na mnie idealnie)\nStan: doskonały / noszone raz / jak nowe",
+      "src": "7234c4692ad3"
+    },
+    "item.9314010527.description": {
+      "text": "Oszałamiająca sukienka maxi bez ramiączek, uszyta z autentycznej bawełny z afrykańskim nadrukiem „wax”, zakupiona w Nigerii. Wyrazisty niebiesko-biały wzór liści z efektownymi czerwono-złotymi ozdobnymi zawijasami – żywa, przyciągająca wzrok i pełna charakteru. Marszczony gorset rozciąga się, dopasowując się do różnych rozmiarów i utrzymuje się na miejscu bez ramiączek. Idealny element garderoby na lato, wakacje, festiwale lub imprezy – wystarczy ją założyć i wyjść, albo dodać dżinsową kurtkę i sandały.\n\nRozmiar: z łatwością pasuje na rozmiary od M do XL\nStan: nigdy nie noszona\nSzczegóły:\nKrój bandeau bez ramiączek z marszczonym/elastycznym gorsetem\nElastyczna, marszczona góra zapewniająca wygodę i możliwość dopasowania\nPełna, zwiewna spódnica maxi\nAutentyczny afrykański wzór w technice „wax print”, sztywna, wytrzymała bawełna\nBogate, nasycone kolory",
+      "src": "2bb04fbd307b"
+    },
+    "item.9371212323.description": {
+      "text": "Wyjątkowy, jedyny w swoim rodzaju naszyjnik rękodzielniczy. Doskonale nadaje się do nadania prostemu strojowi rękodzielniczego, ludowego charakteru. Wykonany z kolorowych sznurków z juty i szpagatu (w kolorze różowym i musztardowo-żółtym), na których nawleczono drobne drewniane koraliki i małe mosiężne dzwoneczki, a na końcu znajduje się efektowny, rzeźbiony drewniany wisiorek owinięty zwiniętą jutą i wykończony ręcznie haftowanymi kwadratami tkaniny w stylu kantha (indyjski wzór) w kolorach czerwonym i żółtym, a także małą zawieszką w kształcie pomponu.\n\nSzczegóły:\nRęcznie wykonany / artystyczny naszyjnik\nMieszanka naturalnych materiałów: rzeźbione drewno, juta/sznurek, tkanina bawełniana, drewniane koraliki, mosiężne dzwoneczki\nRęcznie haftowane detale z tkaniny (ściegiem kantha)\nŻywa paleta barw w stylu ludowym/plemiennym\nZapięcie na wiązanie — regulowane, dopasowujące się do szyi",
+      "src": "4aafe8192957"
+    },
+    "item.9316357780.description": {
+      "text": "Piękna niebieska sukienka z nadrukiem blokowym marki Anoshk, butikowej marki z Delhi. Wykonana z miękkiej bawełny pokrytej misternym wzorem kwiatowym, palmowym i motylkowym w odcieniach musztardowym, różowym, niebieskim i brązowym, z dwiema kieszeniami. Wygodna, elegancka sukienka, którą łatwo się zakłada, z przepięknym nadrukiem i swobodnym, rozkloszowanym krojem. Idealna na lato, wakacje na plaży lub do noszenia na co dzień w połączeniu z sandałami. Długość sięga mniej więcej do kolan (długość midi).\n\nSzczegóły:\n\nMiękka bawełna w kolorze szałwiowo-niebieskim z bogatym nadrukiem blokowym przedstawiającym motywy kwiatowe i motyle\nBez rękawów, z okrągłym dekoltem i granatową lamówką\nLuźny krój w kształcie litery A / rozkloszowany, z piękną objętością\nBoczne kieszenie\nLekka, oddychająca czysta bawełna\nWykonana ręcznie — niewielkie różnice w nadruku stanowią część uroku ręcznego wykonania\n\nRozmiar: M-L\nStan: Bardzo dobry",
+      "src": "ca41ac111461"
+    },
+    "item.9312410623.description": {
+      "text": "Wspaniały, lekki kombinezon z indyjskiej bawełny w delikatnym niebieskim kolorze z subtelnym białym nadrukiem blokowym – połączeniem motywów kwiatowych i geometrycznych – z uroczą koronkową lamówką z szydełka z przodu. Idealny na lato. \n\nSzczegóły:\nMarszczona/elastyczna góra zapewniająca wygodę i możliwość dopasowania\nRegulowane ramiączka\nLuźne spodnie\nDelikatna koronkowa lamówka z przodu\nLekka, oddychająca czysta indyjska bawełna\nDelikatny, uspokajający odcień niebieskiego\n\nPasuje mi idealnie (obwód biustu 40 cali / 101 cm, obwód talii 38 cali / 96 cm, obwód bioder 43 cale / 109 cm). Marszczony gorset zapewnia wygodę w górnej części, a szerokie nogawki nadają swobodny, elegancki krój. Idealny na upalne dni, wakacje lub festiwale – wystarczy założyć sandały i gotowe.\n\nRozmiar: L\nStan: Bardzo dobry",
+      "src": "8874261edf0f"
+    },
+    "item.9603636575.description": {
+      "text": "Starożytny chiński rytuał wellness oparty na masażu, który cenią sobie sportowcy i gwiazdy, teraz w jednym kompletnym zestawie. Ten 12-częściowy zestaw do bańkowania próżniowego zawiera pełną gamę rozmiarów bańki – od małych po bardzo duże – oraz pompkę do szybkiego tworzenia podciśnienia, a także dodatkowy model do akupunktury usznej z zaznaczonymi punktami nacisku dla ułatwienia. Popularność bańkowania gwałtownie wzrosła dzięki olimpijczykom i gwiazdom z pierwszej ligi, którzy chwalą się charakterystycznymi okrągłymi śladami, a ten zestaw pozwala wypróbować ten trend w domu. W zestawie znajduje się wszystko, co widać na zdjęciu, a na opakowaniu zamieszczono pełną instrukcję, dzięki której można od razu rozpocząć zabieg. Doskonały prezent dla każdego, kto interesuje się terapiami alternatywnymi, masażem lub dbaniem o siebie inspirowanym tradycyjną medycyną chińską. #terapiamoką #tcm #dbanieosiebie",
+      "src": "8a881630cb5a"
+    },
+    "item.9729949801.description": {
+      "text": "Obwód klatki piersiowej: pasuje na ok. 36–38 cali\nRamię: 15 cali\nTalia: luźny krój, pasuje większości osób \nDługość: 48 cali\n\nPiękna długa sukienka w delikatnym pastelowym beżu, z subtelnym kwiatowym wzorem w odcieniach szarości i musztardowej żółci. \nOryginalny indyjski projekt marki Anoshk, bardzo popularnego butiku modowego z Delhi. \nWykonana w 100% z lekkiej bawełny, miękkiej, oddychającej i wygodnej nawet w upalne dni. \nGórna część jest dopasowana, a spódnica ma krój w stylu vintage w kształcie litery A. \nRękawy o długości trzech czwartych i niewielki dekolt w kształcie litery V z wiązaniem. \nTalia jest luźna i zwiewna, dzięki czemu sukienka pasuje na różne rozmiary i typy sylwetek. Idealna na lato, wakacje, wesela lub każdą okazję, podczas której chcesz czuć się elegancko i jednocześnie komfortowo.",
+      "src": "56972dd4c616"
+    },
+    "item.9371171716.description": {
+      "text": "Wyjątkowa, przyciągająca wzrok biżuteria, idealna do połączenia z gładkim topem lub letnią sukienką, aby dodać odrobinę koloru. Lekka i wygodna w noszeniu, stanowi piękny przykład ręcznie wykonanej biżuterii tekstylnej. Jasny, radosny, wyrazisty naszyjnik wykonany przez indyjskich rzemieślników, w całości z tkaniny bawełnianej. Wieloniciowa konstrukcja z rzędami ręcznie owiniętych koralików z tkaniny w kolorach różowym, limonkowo-zielonym i żółtym, zwieńczona skupiskiem ręcznie wykonanych bawełnianych kwiatów w kolorach niebieskim, pomarańczowym i zielonym z kontrastującymi, wyszytymi środkami.\n\nSzczegóły:\nRęcznie wykonana / rzemieślnicza biżuteria tekstylna\n100% tkanina bawełniana — lekka i wygodna w noszeniu\nWieloniciowa konstrukcja z koralików z wyrazistym kwiatowym elementem centralnym\nŻywa, wielobarwna paleta kolorów\nZapięcie z tkaniny z tyłu — regulowane, dopasowujące się do szyi",
+      "src": "3616e6fbb3fe"
+    },
+    "item.9355082189.description": {
+      "text": "Kupiona tydzień temu. Język: angielski. Wciągające, dogłębnie zbadane spojrzenie na rosnącą popularność leku Ozempic oraz na to, jak te leki odchudzające zmieniają oblicze opieki zdrowotnej, fast foodów, mody i nie tylko. Napisana przez felietonistkę agencji Reuters książka odkrywa historię stojącą za przełomowym odkryciem medycznym, które zdefiniowało całą epokę, jednocześnie poruszając szersze kwestie dotyczące nierówności społecznych, ideałów piękna oraz dążenia do szczupłości. Aktualna, wciągająca lektura dla wszystkich zainteresowanych zdrowiem, nauką, branżą farmaceutyczną lub dyskusją kulturową na temat leków odchudzających.\n\nSzczegóły:\nAutor: Aimee Donnellan\nWydawca: 4th Estate\nISBN: 978-0-00-871909-8\nOprawa: miękka\nCena katalogowa: 16,99 GBP\nJęzyk: angielski\nStan: Bardzo dobry, używana. Strony czyste i nienaruszone, w pełni czytelne.",
+      "src": "0cd1f661ed6e"
+    },
+    "item.9360542677.description": {
+      "text": "Żywa, ręcznie drukowana bawełniana tkanina w słonecznym żółtym kolorze z akcentami różu, czerwieni i zieleni — wesoły, pokrywający całą powierzchnię indyjski wzór kwiatowo-paisleyowy. Marszczony, elastyczny górny brzeg sprawia, że jest to uniwersalny model „dwa w jednym”: można go nosić wysoko jako sukienkę bez ramiączek lub niżej, na biodrach, jako długą spódnicę. Prosty, radosny letni strój — idealny na wakacje, festiwale lub dni spędzane na plaży. Elastyczny, marszczony pas dopasowuje się do różnych rozmiarów.\n\n\nSzczegóły:\nRozmiary M, L, XL\n100% lekka bawełna — miękka, oddychająca, idealna na ciepłe dni\nTradycyjny indyjski wzór nadrukowany ręcznie techniką blokową\nSzeroka, marszczona i elastyczna górna część — rozciąga się, dopasowując się do sylwetki, i pozostaje na swoim miejscu\nDwa sposoby noszenia: sukienka bez ramiączek lub spódnica maxi\nPełny, zwiewny, marszczony krój, który pięknie się wiruje\nDługość maxi\nWsuwa się przez głowę — bez zamków ani guzików",
+      "src": "f7e490aaecd5"
+    },
+    "item.9437887059.description": {
+      "text": "Poniżej przedstawiono wersję oczyszczoną oraz wersję oksydowaną. Kolczyk posiada stempel 925, który jest standardowym znakiem probierczym wskazującym, że wyroby wykonane są z srebra o czystości 92,5%. Kolczyki te wykonane są ze srebra w etnicznym stylu indyjskim chandbali i charakteryzują się zielonym kamieniem oraz wiszącymi srebrnymi koralikami. Tradycyjny czeski wzór biżuterii. Wyróżnia się misternym kształtem przypominającym mango. Wykończone pięcioma zwisającymi frędzlami z litego metalowego koralika (kropelkami) u podstawy, które pięknie odbijają światło. Doskonały stan vintage z pięknym, naturalnym wyglądem. Oczyszczałam tu ślady oksydacji i pokazuję obie wersje. Oksydacja jest bardzo naturalna i niezwykle łatwa do usunięcia. W zestawie znajduje się proszek do czyszczenia. Idealne jako efektowny dodatek lub przemyślany, luksusowy prezent.",
+      "src": "8ce83d7540c3"
+    },
+    "item.9316140580.description": {
+      "text": "Piękna, biała, niezwykle miękka bawełniana sukienka z Indii, pokryta delikatnym, ręcznie drukowanym motywem kwiatowym w delikatnych odcieniach terakoty, pomarańczy i szałwiowej zieleni – klasyczny wzór w stylu mogolskim. Posiada dwie kieszenie. Świeża, kobieca i naturalnie letnia. Marka Jaypore – uwielbiana indyjska marka znana z rzemieślniczych nadruków blokowych i naturalnych tkanin. Wygodna, elegancka letnia sukienka, bardzo łatwa w praniu. Wystarczy założyć ją do sandałów i gotowe, albo połączyć z dżinsową kurtką. Długość sięga mniej więcej do kolan (patrz zdjęcia).\n\nSzczegóły:\nCienka biała bawełna z nadrukiem kwiatowym na całej powierzchni\nRamiączka typu spaghetti\nKrój gorsetu\nWarstwowa, marszczona spódnica z uroczym falowaniem\nKorzystnie podkreślający sylwetkę krój typu „fit-and-flare”\nLekka, oddychająca czysta bawełna — idealna na upalne dni\nRozmiar: Idealnie pasuje na rozmiary od M do L.",
+      "src": "dae2411908ed"
+    },
+    "item.9329298936.description": {
+      "text": "Piękna, lekka bluzka w stylu kaftanu od Jaipur Kurti w przepięknym różowym wzorze w stylu bandhani (słynny indyjski wzór). Miękka, przewiewna bawełna z oszałamiającym paskiem z koralików i zdobieniami pod biustem. Styl boho i elegancja w jednym. Uniwersalny – można go nosić jako okrycie plażowe, krótką sukienkę lub w stylu casualowym do dżinsów lub szortów. Idealny na lato, wakacje i festiwale. Ozdobna talia nadaje mu piękny, podkreślający sylwetkę kształt.\n\nSzczegóły:\nDekolt w kształcie litery V z powiewnymi rękawami nietoperzowymi/kaftanowymi\nTalia w stylu empire z pięknym kremowo-srebrnym paskiem zdobionym koralikami i lustrzanymi elementami\nLekka, półprzezroczysta bawełna — zwiewna i przewiewna\nLuźny, swobodny krój\nMarka Jaipur Kurti\nKolor: jagodowy róż / biały wzór w wiry\nMateriał: lekka bawełna\nRozmiar: M-L\nStan: doskonały",
+      "src": "bd26e9bf4473"
+    },
+    "item.9331163535.description": {
+      "text": "Rozmiar – od M do L (obwód biustu do 38)\nPiękna haftowana bluzka marki Fabels by Fabindia, ekskluzywnej indyjskiej marki. Wykonana z bogatej mieszanki jedwabiu i bawełny w kolorze turkusowym. Ta wspaniała tkanina w odcieniach klejnotów ma subtelny połysk, a z przodu zdobią ją eleganckie, tonalne hafty w kwiatowe wzory i zawijasy. W całości podszyta i pięknie wykończona. Wyjątkowa, uniwersalna bluzka, idealna do eleganckich spodni lub spódnicy na specjalne okazje, a także do dżinsów w stylu smart-casual. Bogaty kolor i hafty sprawiają, że jest to naprawdę wyjątkowy model.\n\nSzczegóły:\n\nOkrągły dekolt, bez rękawów\nUroczy haft w tonacji tkaniny (motywy kwiatowe i zawijasy) na przodzie\nWierzch z mieszanki jedwabiu i bawełny z miękką bawełnianą podszewką\nZapięcie na zamek błyskawiczny z boku\nDopasowany, szyty na miarę krój\nFabels by Fabindia — wyprodukowano w Indiach\nNa metce podano, że należy prać wyłącznie chemicznie, ale ja piorę ręcznie i nic się nie dzieje",
+      "src": "ae3a01617071"
+    },
+    "item.9311896207.description": {
+      "text": "Piękna indyjska sukienka midi z bawełny, łącząca granatowy gorset z pełną plisowaną spódnicą w przepięknym niebiesko-białym patchworkowym wzorze przypominającym kafelki. Elegancka letnia sukienka o uroczej fakturze i detalu.\nMarka Vajor to bardzo popularna indyjska marka znana z nadruków inspirowanych rzemiosłem artystycznym. Rozmiar L.\n\nSzczegóły:\n\nGranatowy gorset z krótkimi rękawami\nPełna plisowana spódnica w mieszanym niebieskim wzorze kwiatowo-kafelkowym\nDopasowana talia podkreślająca sylwetkę\nZapięcie na zamek z tyłu, podszyty gorset\nOddychająca czysta bawełna\n\nPięknie leży na mojej sylwetce (obwód biustu 40 cali / 101 cm, obwód talii 38 cali / 96 cm, obwód bioder 43 cale / 109 cm). Korzystnie podkreśla figurę i jest elegancka, idealna na letnie dni, przyjęcia w ogrodzie, wakacje lub na specjalne okazje w połączeniu z sandałami lub szpilkami.\nUwaga: bawełna naturalnie się gniecie — wystarczy szybko ją wyprasować lub odparować, a będzie gotowa do noszenia.\nRozmiar: L (metka)\nStan: Bardzo dobry",
+      "src": "fbb20b3cba3a"
+    },
+    "item.9370862833.description": {
+      "text": "Oszałamiająca bawełniana sukienka maxi marki Anoshk by Manisha Singh, butikowej marki z Delhi w Indiach. Wykonana z pięknej, ręcznie tkanej bawełny ikat w odcieniach szarości i złamanej bieli, z efektownym asymetrycznym dołem. Ikat to pracochłonna, tradycyjna technika tkacka, dzięki czemu każdy egzemplarz jest niepowtarzalny. Wyrafinowana, dyskretna sukienka, która sprawdzi się zarówno w eleganckich, jak i codziennych stylizacjach. Elegancki, ręcznie wykonany model z Indii.\n\nSzczegóły:\nMarka: Anoshk by Manisha Singh (marka butikowa z Delhi)\nRęcznie tkana bawełna ikat — wzór jest barwiony na przędzy przed tkaniem (prawdziwy ikat, a nie nadruk)\nDwukolorowy szary wzór: rąbek z rombowym wzorem ikat oraz korpus z rozrzuconymi motywami\nBez rękawów, z okrągłym dekoltem\nKonstrukcja z panelami, krój w kształcie litery A z efektownym asymetrycznym dołem\nOddychająca, naturalna bawełna — chłodna i wygodna\nDługość maxi — 47 cali\nObwód biustu — 36 cali\nObwód talii — 36 cali",
+      "src": "78898b94714b"
+    },
+    "item.9328489962.description": {
+      "text": "Wspaniała, jedyna w swoim rodzaju sukienka w kwiatowy wzór, uszyta na zamówienie w Nigerii z uroczej, sztywnej bawełny. Bogata granatowa podstawa pokryta malarskim tropikalnym wzorem kwiatowym w delikatnych odcieniach różu, żółci, brzoskwini i szałwiowej zieleni. Pięknie wykonana i całkowicie wyjątkowa. Prawdziwy hit na lato, wesela, przyjęcia w ogrodzie czy wakacje. Kontrastowe mankiety i detal w kształcie klucza nadają jej elegancki i wyjątkowy charakter. Wykonana ręcznie, więc nie ma drugiej takiej na świecie!\n\nSzczegóły:\nOkrągły dekolt z uroczym wycięciem w kształcie klucza/łezki z przodu\nKontrastowe mankiety w kolorze przygaszonego bzu/fioletu na krótkich rękawach\nDopasowany krój, podkreślający sylwetkę w talii i na biodrach\nZapięcie na zamek błyskawiczny z tyłu\nDługość do kolan\nSztywna, dopasowana konstrukcja — stworzona, by podkreślać atuty sylwetki\nKolor: granatowy wielobarwny / tropikalny kwiatowy wzór\nMateriał: bawełna\nKrój: dopasowany / obcisły, najlepiej pasuje na rozmiar L\nStan: doskonały, noszona raz",
+      "src": "becd3efbac4b"
+    },
+    "item.9330044272.description": {
+      "text": "Oszałamiająca, przyciągająca uwagę sukienka z bawełny w żywym żółtym kolorze, z wyrazistym wzorem paisley i kwiatowym nadrukiem. Bogata, słoneczna żółć jako tło z misternymi detalami w kolorach zielonym, niebieskim, czarnym i kremowym oraz pięknym, ozdobnym wykończeniem na brzegu. Przyciągająca wzrok, uniwersalna i pełna charakteru. Tak wszechstronna — można ją nosić jako letnią sukienkę, narzutkę na plażę lub zarzucić na strój kąpielowy podczas wakacji. Wyrazisty wzór i podkreślona talia sprawiają, że jest zarówno wygodna, jak i podkreślająca figurę. Prawdziwie niepowtarzalny egzemplarz.\n\nSzczegóły:\n\nOkrągły dekolt z wycięciem z przodu oraz rękawy typu cap/kimono\nMarszczona, elastyczna talia zapewniająca korzystny dla sylwetki, regulowany krój\nLekka, oddychająca bawełna — idealna na ciepłe dni\nOzdobny nadruk wzdłuż rąbka\nŁatwy do zakładania krój\nKolor: żółty / zielony / niebieski wzór paisley\nMateriał: bawełna\nKrój: marszczona, elastyczna talia – dopasowuje się do sylwetki, rozmiar w przybliżeniu M–L\nStan: fabrycznie nowa, nigdy nie noszona",
+      "src": "20a72c4eecc5"
+    },
+    "item.9315339114.description": {
+      "text": "Efektowna bluzka kopertowa w żywych odcieniach żółci i czerni, wykonana z afrykańskiej tkaniny w stylu „wax print”, zakupiona w Nigerii. Wyrazisty geometryczny wzór w stylu kente, podkreślający figurę dekolt w kształcie litery V z kopertowym zapięciem z przodu, efektowne bufiaste rękawy oraz wiązanie w talii w stylu peplum. Kopertowe wiązanie w talii sprawia, że bluzka pasuje na różne rozmiary i ładnie podkreśla sylwetkę. Można ją nosić w eleganckim stylu z dopasowanymi spodniami lub spódnicą, albo w swobodnym stylu z dżinsami. Idealna na lato, imprezy lub gdy chcesz zrobić wielkie wrażenie. Prawdziwy element garderoby pełen koloru i charakteru.\n\nSzczegóły:\nPrzedni dekolt w kształcie litery V z wiązaniem w talii — regulowany, podkreślający figurę krój\nObszerne bufiaste rękawy z elastycznymi mankietami\nRozkloszowany peplum w talii\nSztywna, strukturalna bawełna afrykańska — pięknie zachowuje swój kształt\nŻywy żółty, czarny i biały geometryczny wzór\n\nStan: Noszona raz\nRozmiar: L. Pasuje mi idealnie, ale dzięki wiązaniu w talii będzie pasować na różne rozmiary.",
+      "src": "074e51965086"
+    },
+    "item.9311631498.description": {
+      "text": "Marka FabIndia – jedna z najbardziej lubianych indyjskich marek zajmujących się ręcznie wytwarzanymi, naturalnymi tkaninami. Prawdziwa rzadkość. Przepiękna, długa bawełniana spódnica w intensywnym różowym kolorze, z delikatnym, nadrukowanym blokowo motywem kwiatowym na całej powierzchni oraz piękną, tkaną złotą lamówką zari na brzegu i w pasie. Bogata, uroczysta i pełna ruchu.\n\nDzięki sznurkowi wygodnie dopasowuje się do obwodów talii w zakresie około 36–40 cali / 91–102 cm i pięknie opada na biodra (z łatwością pasuje na moje biodra o obwodzie 43 cali / 109 cm). Długa fason zapewnia elegancki, zwiewny wygląd.\nIdealna na lato, festiwale, wesela lub wakacje; łatwo łączy się z prostym topem i sandałami. Żywa i przyciągająca wzrok.\n\nSzczegóły:\nKrój typu A / rozkloszowany — pięknie się kręci i faluje\nSznurek w pasie — można go zawiązać, aby dopasować do różnych rozmiarów\nTradycyjny kwiatowy wzór nadrukowany techniką blokową\nTkana złota lamówka zari na dole i w pasie\nKontrastowe pomarańczowe wykończenie lamówki\nLekka, oddychająca czysta bawełna",
+      "src": "3bfb0af71fdc"
+    },
+    "item.9312286809.description": {
+      "text": "Piękna, designerska letnia sukienka marki Ritu Kumar, jednego z najbardziej cenionych indyjskich domów mody. Wykonana z indyjskiej bawełny z zachwycającym nadrukiem w stylu art déco – motywami wachlarza i szewronów – w delikatnych, stonowanych odcieniach czerni, niebieskiego łupkowego, brązu, kremu i szarości. Swobodna, elegancka i niezwykle wygodna w noszeniu.\n\nSzczegóły:\nBez rękawów, z podkreślającym figurę dekoltem w kształcie łódki\nOzdobny detal z koralików przy dekolcie\nElastyczny/marszczony stanik zapewniający swobodne dopasowanie\nLuźny, rozkloszowany krój z marszczonym, balonowym wykończeniem u dołu\nBoczne kieszenie (dwie kieszenie!)\nLekka, oddychająca bawełna\n\nRozmiar na metce: 4 (własna rozmiarówka marki Ritu Kumar — NIE jest to rozmiar 4 według standardów brytyjskich/unijnych). Pasuje mi wygodnie, zapewniając swobodny, luźny krój: obwód biustu 40 cali / 101 cm, obwód talii 38 cali / 96 cm, obwód bioder 43 cale / 109 cm. Luźny krój pasuje mniej więcej na rozmiar brytyjski 12–14 / M–L i dzięki swobodnemu krojowi będzie dobrze wyglądał na kobietach o różnych rozmiarach. Zobacz zdjęcie przedstawiające sukienkę na modelce, aby ocenić długość i układ materiału (u mnie sięga do połowy uda).",
+      "src": "250e5855a7f8"
+    },
+    "item.9331108819.description": {
+      "text": "Różne rozmiary – od M do XL\nOszałamiająca letnia bawełniana bluzka w stylu kimono marki Anokhi, jednego z najbardziej ekskluzywnych indyjskich sklepów oferujących nowoczesną odzież z bawełny. Pięknie wykonana bluzka z najwyższej jakości bawełny z ręcznie nadrukowanym wzorem. Miękka biała podstawa z misternym wzorem paisley w odcieniach błękitu i bordowego, wykończona kontrastową lamówką w kolorze turkusowym wzdłuż brzegów. Naturalna elegancja i wszechstronność. Ekskluzywny produkt najwyższej jakości. Noś ją rozpiętą jako lekką kurtkę lub zawiązaną jako bluzkę kopertową – wspaniale prezentuje się na dżinsach, sukience lub stroju kąpielowym na wakacjach. Jakość wykonania i kolory są oszałamiające w rzeczywistości. Wyjątkowe znalezisko od poszukiwanej marki.\n\nSzczegóły:\n\nKrój typu kimono/kopertowy z paskiem do zawiązania, umożliwiającym podkreślenie talii lub noszenie rozpiętej\nElegancka, kontrastowa lamówka w kolorze turkusowym wzdłuż dekoltu i z przodu\nLuźne rękawy 3/4 z bufkami\nWysokiej jakości lekka bawełna z ręcznym nadrukiem blokowym — miękka i pięknie układająca się na ciele\nMarka Anokhi — znana z autentycznych indyjskich nadruków blokowych wykonywanych ręcznie",
+      "src": "f4243fa4a8c6"
+    },
+    "item.9328560854.description": {
+      "text": "Oszałamiająca, ręcznie wykonana afrykańska sukienka w wyrazistym wzorze w stylu batikowym. Bogata bawełniana tkanina w efektownych odcieniach żółci, czerni i spalonej pomarańczy z pięknym wzorem batikowym typu „crackle” lub „tie-dye”. Prawdziwa atrakcja — żywa, wyjątkowa i pełna charakteru. Idealna na lato, festiwale, wakacje, imprezy lub każdą okazję, podczas której chcesz się wyróżnić. Marszczenie sprawia, że sukienka jest wygodna i dobrze dopasowuje się do sylwetki, a nadruk sprawia, że jest niezapomniana. Jedyna w swoim rodzaju!\n\nSzczegóły:\nRozmiar: Elastyczny, marszczony gorset i talia — dopasowują się do sylwetki, w przybliżeniu rozmiary S–L\nKwadratowy dekolt z odkrytymi ramionami i marszczonym gorsetem (rozciąga się, dopasowując się do sylwetki)\nRękawy bufiaste z uroczymi mankietami wiązanymi w kokardkę\nMarszczona, elastyczna talia zapewniająca korzystny dla sylwetki, regulowany krój\nWarstwowa, marszczona spódnica o pięknej objętości i płynnym ruchu\nDługość midi\nRęcznie wykonana w Nigerii z autentycznej bawełny z afrykańskim nadrukiem\nKolor: żółty / pomarańczowy / czarny batik\nMateriał: bawełna (afrykański nadruk typu wax/batik)\nStan: doskonały, nigdy nie noszona",
+      "src": "f485024ca6b6"
+    },
+    "item.9309160145.description": {
+      "text": "Oszałamiająca, ręcznie haftowana meksykańska sukienka z czarnej bawełny, wykonana w tradycyjnym stylu huipil / z Oaxaca. Pokryta żywą, ręcznie wyszywaną kompozycją kwiatowo-liściastą w odcieniach różu, pomarańczy, żółci, czerwieni, błękitu i zieleni. Gęsto ręcznie haftowany kwiatowy karczek oraz delikatna czarna koronka szydełkowa na ramionach, rękawach i na dole sukienki. Przez środek przebiega satynowa wstążka.\nWykonana z przewiewnej bawełny, idealna na lato, festiwale lub jako elegancka stylizacja w połączeniu z sandałami i biżuterią. Prawdziwe rzemieślnicze dzieło o wyjątkowym charakterze i kunszcie wykonania, nie jest to produkt masowej produkcji.\nPrzewodnik po rozmiarach:\nMa dość prosty krój i jest bardziej dopasowana w talii. Na mnie jest lekko ciasna w talii (mam 38 cali / 96 cm w talii) – to jedyny powód, dla którego ją sprzedaję. Najlepiej pasuje na talię o obwodzie około 36 cali / 91 cm lub mniejszej, albo dla osób, które preferują luźniejszy krój w pozostałych miejscach. Wygodna i obszerna w okolicy biustu i bioder.\n\nStan: Doskonały / Noszona raz / Jak nowa",
+      "src": "00fbde1296d5"
+    }
+  }
+}

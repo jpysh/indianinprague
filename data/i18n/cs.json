@@ -1,0 +1,1125 @@
+{
+  "_comment": [
+    "DeepL output for cs (Čeština). GENERATED — rewritten by",
+    "scripts/translate.mjs whenever the English changes. Nothing here is precious and",
+    "nothing here is yours: your edits live in overrides/ and are never written by a build.",
+    "",
+    "  src   hash of the English this was translated from; a mismatch means retranslate"
+  ],
+  "generated": "2026-08-24T10:03:32.859Z",
+  "count": 278,
+  "entries": {
+    "item.9313828257.title": {
+      "text": "Háčkované kancelářské šaty",
+      "src": "60e6e1f58652"
+    },
+    "item.9330125733.title": {
+      "text": "Fialové midi šaty s přezkou",
+      "src": "fbe6c501a7de"
+    },
+    "item.9488799404.title": {
+      "text": "Náhrdelník s žlutými korálky ve stylu boho",
+      "src": "d10bcf137fb9"
+    },
+    "item.9564694739.title": {
+      "text": "Dřevěná soška boha Ganéši",
+      "src": "b7edd72d8919"
+    },
+    "item.9313953618.title": {
+      "text": "Krátká kombinéza | Forever21",
+      "src": "6880f148e307"
+    },
+    "item.9538548234.title": {
+      "text": "Náramek z čistého stříbra 925 s perličkami",
+      "src": "dfa243c2649c"
+    },
+    "item.9488787680.title": {
+      "text": "Náhrdelník z fialových korálků ve stylu boho",
+      "src": "37783cfed7a1"
+    },
+    "item.9328440121.title": {
+      "text": "Midi šaty s geometrickým vzorem v námořnické modré barvě",
+      "src": "eaec75b2d9e9"
+    },
+    "item.9578974766.title": {
+      "text": "Černé bavlněné maxi šaty | Velikost L",
+      "src": "3757bc8bc02a"
+    },
+    "item.9493474615.title": {
+      "text": "Náhrdelník typu choker ze sladkovodních perel",
+      "src": "9a2dd05afdae"
+    },
+    "item.9313793339.title": {
+      "text": "Letní plážové šaty s výstřihem do V a na ramínka",
+      "src": "8f6c0135abc6"
+    },
+    "item.9562314219.title": {
+      "text": "Indický ručně tkaný etnický lněný šál",
+      "src": "62b04577316e"
+    },
+    "item.9562257190.title": {
+      "text": "Letní/společenské šaty Mango Midi | L–XL",
+      "src": "71166c04e526"
+    },
+    "item.9371186724.title": {
+      "text": "Vícebarevné ručně vyráběné šperky z látky",
+      "src": "ed8f6d2699d2"
+    },
+    "item.9331197768.title": {
+      "text": "Tílko s ramínky v barvě Mango Gold Metallic | Velikost M",
+      "src": "7bc205f2e6ca"
+    },
+    "item.9561218589.title": {
+      "text": "Krémový krátký top s dlouhými rukávy a háčkovaným vzorem od ZARA",
+      "src": "5585e00fc540"
+    },
+    "item.9476370273.title": {
+      "text": "Výrazný náhrdelník s vintage skleněným přívěskem",
+      "src": "4516b193e069"
+    },
+    "item.9438031948.title": {
+      "text": "Retro šperky | Etnický náhrdelník ve stylu boho",
+      "src": "36c11b9255c4"
+    },
+    "item.9367213932.title": {
+      "text": "Letní bavlněný kombinéza Zara, bílá | Velikost",
+      "src": "d0934f126f5b"
+    },
+    "item.9498955593.title": {
+      "text": "Sada s květinovým vzorem v technice tie-dye (top a sukně) | L/XL",
+      "src": "e66906691eac"
+    },
+    "item.9331163535.title": {
+      "text": "Indický top z hedvábí a bavlny s výšivkou | Tyrkysová",
+      "src": "8428ab2c454e"
+    },
+    "item.9729863208.title": {
+      "text": "Dlouhé vlněné kalhoty s širokými nohavicemi a texturovaným povrchem v barvě manga",
+      "src": "f66b84b4f595"
+    },
+    "item.9607321104.title": {
+      "text": "Ručně vyrobený keramický přívěsek | Ve stylu boho-hippie",
+      "src": "fe9875c0a3f5"
+    },
+    "item.9388380417.title": {
+      "text": "Etnická tunika z indické bavlny s batikovaným vzorem | Velikost M",
+      "src": "31bb7263dc17"
+    },
+    "item.9339704755.title": {
+      "text": "Letní bavlněný šátekový top z Indie | Velikost M až L",
+      "src": "d13a0711c6cd"
+    },
+    "item.9565320171.title": {
+      "text": "Indická soška Parvati – duchovní modla",
+      "src": "cba63dbd90ce"
+    },
+    "item.9561725365.title": {
+      "text": "Designový šátek luxusní indické značky Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "item.9311775029.title": {
+      "text": "Černý bavlněný top kurti · Velikost L · Indický styl boho",
+      "src": "671150bcd5c8"
+    },
+    "item.9675580496.title": {
+      "text": "Retro taška | Etiopská hnědá kůže | Taška ve stylu boho",
+      "src": "fea2cf673919"
+    },
+    "item.9564918603.title": {
+      "text": "Indická terakotová soška, figurka nebo modla Ganéši",
+      "src": "2112976670e8"
+    },
+    "item.9438792395.title": {
+      "text": "Vícebarevné náušnice ve stylu boho s korálky, visací kruhy",
+      "src": "122be0688a30"
+    },
+    "item.9320744061.title": {
+      "text": "Indické bavlněné kalhoty | Černé | S červenými knoflíky",
+      "src": "36f9283855ee"
+    },
+    "item.9371212323.title": {
+      "text": "Ručně vyrobený řemeslný přívěsek z textilu a dřeva",
+      "src": "a99e77f4b363"
+    },
+    "item.9360542677.title": {
+      "text": "Indické letní šaty bez ramínek z bavlny s blokovým potiskem",
+      "src": "21cdb9d32022"
+    },
+    "item.9493332709.title": {
+      "text": "Indický ručně vyrobený háčkovaný řetízkový náhrdelník z indiga",
+      "src": "5c248f4e69b5"
+    },
+    "item.9328489962.title": {
+      "text": "Tropické květinové šaty | Ručně vyrobené v Nigérii",
+      "src": "dad674a2d8c7"
+    },
+    "item.9370862833.title": {
+      "text": "Ručně tkané indické letní bavlněné maxi šaty | Velikost M",
+      "src": "1b8363f570d9"
+    },
+    "item.9316393171.title": {
+      "text": "Indické letní bavlněné šaty | Univerzální | Různé způsoby nošení",
+      "src": "987508937b28"
+    },
+    "item.9561679205.title": {
+      "text": "Indický ručně tkaný lněný šátek/šála v korálově růžové barvě",
+      "src": "805d29f7f893"
+    },
+    "item.9477421040.title": {
+      "text": "Pozlacené náramky se dvěma náramky s bílými krystaly",
+      "src": "27c1cf4f2006"
+    },
+    "item.9329298936.title": {
+      "text": "Indický růžový kaftan s potiskem bandhani – velikosti M až L",
+      "src": "42a380967d08"
+    },
+    "item.9603839908.title": {
+      "text": "Stolní nebo závěsná marocká lucerna, svícen",
+      "src": "1a3a931a0c7e"
+    },
+    "item.9602470022.title": {
+      "text": "Jen Beagin: Velký švýcarský seriál HBO s Jodie Comerovou v hlavní roli",
+      "src": "8c0072dde9d4"
+    },
+    "item.9552844745.title": {
+      "text": "Indické šaty s výstřihem za krkem z čisté bavlny, střih „fit & flare“ | Velikost L",
+      "src": "a672a1dda38b"
+    },
+    "item.9316420644.title": {
+      "text": "Ručně šité plážové kaftanové šaty „Indian Summer“ | Bavlna",
+      "src": "1d387995bfc7"
+    },
+    "item.9565381682.title": {
+      "text": "Indické sošky Ganéši a Párvatí – duchovní modly",
+      "src": "986fce8e2f56"
+    },
+    "item.9561602678.title": {
+      "text": "Letní šaty z indické směsi bavlny a lnu se dvěma kapsami",
+      "src": "b0d0d2b71e89"
+    },
+    "item.9511040845.title": {
+      "text": "Indický náramek ve vintage stylu, zlaté barvy, s krystaly",
+      "src": "5b19cc52987d"
+    },
+    "item.9330044272.title": {
+      "text": "Letní kaftanové šaty | nigerijská bavlna | univerzální velikost M až L",
+      "src": "7ab3a0220f98"
+    },
+    "item.9578313870.title": {
+      "text": "Mangová blůza | Top s kulatým výstřihem | Krátké rukávy s vycpávkami",
+      "src": "5a9adc584493"
+    },
+    "item.9442502622.title": {
+      "text": "Ručně vyrobené velké visací náušnice z africké modré látky s tečkami",
+      "src": "8376001339b6"
+    },
+    "item.9602569998.title": {
+      "text": "Khaled Hosseini: „A hory se ozývaly“ – světový bestseller",
+      "src": "7347b97ae1fe"
+    },
+    "item.9500656843.title": {
+      "text": "Vintage šperky z ryzího stříbra 925 | etnické kmenové náušnice",
+      "src": "0efb043b87f7"
+    },
+    "item.9439083125.title": {
+      "text": "Sada přívěsků Swarovski / stříbro / krystaly Swarovski",
+      "src": "b323b934ca4c"
+    },
+    "item.9602556623.title": {
+      "text": "Francis Fukuyama: „Identita“ – politické mistrovské dílo, které se stalo bestsellerem",
+      "src": "2e26cadcea20"
+    },
+    "item.9364938382.title": {
+      "text": "Indické letní dlouhé maxi šaty z bavlny, ručně šité | Velikost M",
+      "src": "0013e43386ab"
+    },
+    "item.9561251555.title": {
+      "text": "Indický žlutý bavlněný šátek/šála/stola s nápisem „Hare Rama Radhe Radhe“",
+      "src": "7fdd9f030e4c"
+    },
+    "item.9395042890.title": {
+      "text": "„Predicts Todays World Order“ (Předpověď dnešního světového řádu) – Bruno Maçães: Úsvit Eurasie",
+      "src": "c317085288ff"
+    },
+    "item.9437887059.title": {
+      "text": "Indické vintage stříbrné náušnice | 92,5 % stříbra s kamínky",
+      "src": "a06548005c1d"
+    },
+    "item.9316357780.title": {
+      "text": "Letní plážové šaty z indické bavlny | Květinový vzor s motýly | Kapsy",
+      "src": "655a6fe07105"
+    },
+    "item.9489491094.title": {
+      "text": "Tibetský náhrdelník | buddhistický | šperky ve stylu boho | vintage | retro",
+      "src": "5fa52213b8ee"
+    },
+    "item.9442502622.description": {
+      "text": "Ručně vyrobené v Nigérii, velké visací náušnice z modré látky s tečkami.",
+      "src": "d15d69007904"
+    },
+    "item.9438210918.title": {
+      "text": "Hodinky Fastrack s křemenným ciferníkem, analogovým displejem, stříbrným ciferníkem a nerezovým řemínkem",
+      "src": "addae22ca945"
+    },
+    "item.9395142510.title": {
+      "text": "Angie Thomas: „The Hate U Give“ – ohromující bestseller, který změní život",
+      "src": "cccde8351aca"
+    },
+    "item.9331108819.title": {
+      "text": "Kimono/Angrakha z indické bavlny | Univerzální plážová vesta",
+      "src": "6c0af4c0fd1a"
+    },
+    "item.9629132899.title": {
+      "text": "Baseballová čepice s vyšívaným duhovým srdcem | Dárek k měsíci hrdosti LGBTQ",
+      "src": "1cf298a98c4a"
+    },
+    "item.9602536889.title": {
+      "text": "Colson Whitehead: „Podzemní železnice“ – držitel Pulitzerovy ceny",
+      "src": "3f2c694824c6"
+    },
+    "item.9564218918.title": {
+      "text": "Indická keramická polévková mísa s uchem | Lze mýt v myčce a používat v mikrovlnné troubě",
+      "src": "b6afb00cf9c3"
+    },
+    "item.9360475926.title": {
+      "text": "Asymetrické midi šaty India Summer z bavlny s blokovým potiskem | Velikost L",
+      "src": "b95e6b842f8c"
+    },
+    "item.9395334867.title": {
+      "text": "D. H. Lawrence: Milenec lady Chatterleyové – kdysi zakázaná skandální klasika",
+      "src": "b607f455419b"
+    },
+    "item.9339656344.title": {
+      "text": "Indické letní bavlněné midi šaty s vrstveným střihem a ručně tištěným vzorem – velikost M",
+      "src": "fcadc6dab316"
+    },
+    "item.9311896207.title": {
+      "text": "Indické bavlněné šaty midi · tmavě modrý vzor dlaždic · plisované · velikost L",
+      "src": "189261565d9f"
+    },
+    "item.9602491240.title": {
+      "text": "Určitě si přečtěte knihu Petera Frankopana „Hedvábné stezky“ – světový bestseller č. 1",
+      "src": "d5cf44c7b419"
+    },
+    "item.9602442603.title": {
+      "text": "Ayn Rand: Pramen – vydání Signet k stému výročí – okamžitá klasika",
+      "src": "aa784c057d65"
+    },
+    "item.9602413571.title": {
+      "text": "William Dalrymple: Poslední mogul Indie – laureát ceny Duffa Coopera",
+      "src": "d17787c2f22d"
+    },
+    "item.9581381003.title": {
+      "text": "Náušnice ve tvaru slona z německého stříbra | Šperky ve stylu boho a hippie z Indie",
+      "src": "8aceece80ff8"
+    },
+    "item.9729949801.title": {
+      "text": "Indické šaty ve stylu boho | Dlouhé šaty ve stylu vintage | Retro styl | Letní bavlna",
+      "src": "2bcf06e22b6d"
+    },
+    "item.9575501283.title": {
+      "text": "Šátek s hinduistickou modlitbou „Om Namah Shivaya“ | Duchovní šátek pro jógu a meditaci",
+      "src": "2ac5edf7ccf5"
+    },
+    "item.9395115967.title": {
+      "text": "Zadie Smith: Bílé zuby – výjimečný debutový román nového tisíciletí",
+      "src": "1499b6f62d00"
+    },
+    "item.9328560854.title": {
+      "text": "Midi šaty s africkým batikovým vzorem | Ručně vyrobené z nigerijské bavlny Ankara",
+      "src": "7db37b3795ae"
+    },
+    "item.9500656843.description": {
+      "text": "Retro indické šperky vyrobené z 92,5 % čistého stříbra | Označené puncem 92,5",
+      "src": "1f26b00b4eec"
+    },
+    "item.9395169253.title": {
+      "text": "Marlon James: „Stručná historie sedmi vražd“ – vítěz ceny Man Booker Prize",
+      "src": "cd3c83aa7fd3"
+    },
+    "item.9395315968.title": {
+      "text": "Robert Ryan: „Dead Man’s Land“ – strhující spin-off o Sherlocku Holmesovi odehrávající se během první světové války",
+      "src": "828e4e03636d"
+    },
+    "item.9604783346.title": {
+      "text": "Závěsná dekorace se sedmi slony se zlým okem | Dekorace „Šťastný slon“ přinášející pozitivní energii",
+      "src": "67c32c70bd47"
+    },
+    "item.9580235622.title": {
+      "text": "Retro šperky ve stylu boho | Ručně háčkované visací náušnice s motivem slunečnice",
+      "src": "ad8f3a40234b"
+    },
+    "item.9311521689.title": {
+      "text": "Bavlněná maxi sukně ve stylu boho | Vintage sukně | S tkaničkou v pase | Indický etnický styl",
+      "src": "88306c398e67"
+    },
+    "item.9511040845.description": {
+      "text": "Retro indický náramek ve zlatém odstínu, 2,5 palce/6,35 cm. Velmi hezký.",
+      "src": "c82f35467db1"
+    },
+    "item.9698274032.title": {
+      "text": "Retro top | Vintage top | Styl boho | Košile s dlouhým rukávem s mramorovým potiskem od značky Mango",
+      "src": "4c22644e29fb"
+    },
+    "item.9729863208.description": {
+      "text": "Strukturovaný povrch\nVysoký pas\nElastický pas\nŠiroké nohavice\nTěžké vlněné kalhoty",
+      "src": "44fe5de25257"
+    },
+    "item.9602838102.title": {
+      "text": "Ohromující dílo Natsume Sosekiho „The Gate“ (NYRB Classics) s úvodem od Pica Iyera",
+      "src": "26bce423540f"
+    },
+    "item.9720394316.title": {
+      "text": "Náhrdelník ve stylu vintage boho | retro kmenový šperk typu choker | ve stylu tibetské mandaly",
+      "src": "36a81d980413"
+    },
+    "item.9565087476.title": {
+      "text": "Starožitná indická mosazná soška představující rodinu boha Šivy, bohyně Párvatí a Ganéši",
+      "src": "ea1f305fb753"
+    },
+    "item.9395068524.title": {
+      "text": "Eric Hoffer: „The True Believer“ – děsivě aktuální klasika o hnutích mas",
+      "src": "72cd8e05b5a3"
+    },
+    "item.9562192907.title": {
+      "text": "Tradiční indonéský ulos ve vintage stylu – doplněk, nástěnný rámeček, koberec, prostírání",
+      "src": "1a62a29c3c15"
+    },
+    "item.9561780997.title": {
+      "text": "Dlouhý průsvitný šátek v secesním stylu od indického návrháře – lehký, elegantní, hebký jako hedvábí",
+      "src": "245b0a58078c"
+    },
+    "item.9355163406.title": {
+      "text": "od autora knihy Život na pie: Vysoké hory Portugalska, Yann Martel – 3 povídky",
+      "src": "847e36e6e92e"
+    },
+    "item.9311631498.title": {
+      "text": "Růžová bavlněná maxi sukně FabIndia · blokový potisk · zlatý lem ze zari · slavnostní boho styl",
+      "src": "10753dfa7926"
+    },
+    "item.9314010527.title": {
+      "text": "Maxišaty s africkým potiskem · modrá, bílá, zlatá · bez ramínek, řasené · nigerijská bavlna",
+      "src": "d60db8510b7c"
+    },
+    "item.9309160145.title": {
+      "text": "Ručně vyšívané mexické šaty · Černé s květinovým vzorem ve stylu huipil · Ruční výroba · Boho",
+      "src": "88acfff4c6e5"
+    },
+    "item.9476315818.title": {
+      "text": "Retro šperky | Šperky ve stylu boho | Náhrdelník typu choker ze stříbrných korálků | Retro",
+      "src": "7294a6525b94"
+    },
+    "item.9362130631.title": {
+      "text": "Indie v době výjimečného stavu: „Zraněná civilizace“ od V. S. Naipaula, nositele Nobelovy ceny",
+      "src": "915db534f633"
+    },
+    "item.9322734477.title": {
+      "text": "Letní košile z indické bavlny · Černý a červený blokový potisk · Motiv ve tvaru srdce · Velikost L",
+      "src": "135910ef74b3"
+    },
+    "item.9312410623.title": {
+      "text": "Indický bavlněný overal · Modrý blokový potisk · Elastický háčkovaný živůtek · Letní styl boho",
+      "src": "0f59723fe5d3"
+    },
+    "item.9602596973.title": {
+      "text": "M. P. Khemka: Akupresura a akupunktura – léčba jedním bodem, kniha 1: Bindu Ek Upchar Anek",
+      "src": "7222f7d3e6c0"
+    },
+    "item.9371171716.title": {
+      "text": "Indický ručně vyrobený náhrdelník z bavlněné látky | Ručně vyráběné textilní šperky | Boho Festival",
+      "src": "a632df3535e4"
+    },
+    "item.9315339114.title": {
+      "text": "Top s africkým potiskem | Vysoce kvalitní nigerijská bavlna | Střih s peplumem | Nafouklé rukávy",
+      "src": "8fd44d2b0d81"
+    },
+    "item.9602746361.title": {
+      "text": "To si nesmíte nechat ujít – Malcolm Gladwell: David a Goliáš, mezinárodní bestseller číslo jedna",
+      "src": "eeec06b9a11d"
+    },
+    "item.9602681438.title": {
+      "text": "Nejlepší kniha roku 2021: Elizabeth Kolbertová – *Under a White Sky* (Pod bílou oblohou) – autorka oceněná Pulitzerovou cenou",
+      "src": "adb65f191ebc"
+    },
+    "item.9686505544.title": {
+      "text": "Vintage šperky | retro šperky | náramek ze stříbra 925 | ametyst a perla | boho",
+      "src": "b86a62948d75"
+    },
+    "item.9602879226.title": {
+      "text": "Emocionální Mirza Waheed: Kniha zlatých listů – nominace na cenu DSC: Kašmírský milostný příběh",
+      "src": "12a2f7e73730"
+    },
+    "item.9562398817.title": {
+      "text": "Retro šátek | Doplňky ve stylu boho | Lehký šátek s řeckými vzory a šedými třpytivými flitry",
+      "src": "d90ebf2a469c"
+    },
+    "item.9602894095.title": {
+      "text": "Inspirující cesta Piya Bahadurové k Mekongu: Čtyři ženy a 17 000 kilometrů na motocyklu",
+      "src": "e5acf514b7f2"
+    },
+    "item.9395211212.title": {
+      "text": "Naučte se španělsky – Don Quijote od Cervantese: Nadčasové mistrovské dílo, ilustrované španělské vydání",
+      "src": "b15b0483441c"
+    },
+    "item.9316140580.title": {
+      "text": "Indické bílé bavlněné letní šaty s kapesami a blokovým potiskem | Květinový motiv ve stylu Mughal | Velikost M–L",
+      "src": "69fbb46f25c7"
+    },
+    "item.9602788500.title": {
+      "text": "Společenské vědy – Benedict Anderson: „Vymyšlené společenství“ – Počátky a šíření nacionalismu",
+      "src": "d6f6657d9ec4"
+    },
+    "item.9602649617.title": {
+      "text": "OG, vydání z roku 1970, Anthony Gilbert: The Body on the Beam, Vintage Pan Books, detektivky zlatého věku",
+      "src": "9349f2d7108e"
+    },
+    "item.9579803801.title": {
+      "text": "Vzácný nález: autentický viktoriánský náramek ze stříbra 925 | Vintage retro královské šperky",
+      "src": "57379aef9e8e"
+    },
+    "item.9395292320.title": {
+      "text": "zcela nové – Mayyu Ali: „Eradication“ – zdrcující očitá výpověď o genocidě Rohingyů",
+      "src": "6995f7e3d6d1"
+    },
+    "item.9311368443.title": {
+      "text": "Sukně a kalhoty v jednom – Palazzo | Potisk ve stylu batiky | Široké nohavice | Indický boho styl | Nigérijská bavlna",
+      "src": "cc9875478f38"
+    },
+    "item.9674633786.description": {
+      "text": "Retro balijské kruhové náušnice s drátěným ovinutím\n92,5 % čisté stříbro (ověřeno)\nPrůměr 2 cm",
+      "src": "ac8f02eeef5e"
+    },
+    "item.9602779694.title": {
+      "text": "indická historie, Christophe Jaffrelot, Pratinav, Anil, První indická diktatura, výjimečný stav",
+      "src": "fc1d1c869a3d"
+    },
+    "item.9649545514.title": {
+      "text": "Šaty ve stylu boho | Sada oblečení s motivem Buddhy | Šaty ve stylu boho | Bavlněné kalhoty ve stylu „indického léta“ | Etnické šaty",
+      "src": "e48310f988ae"
+    },
+    "item.9583027994.title": {
+      "text": "3 indické nosní špendlíky z oxidovaného stříbra bez propíchnutí | Nosní špendlíky na zacvaknutí | Šperky ve stylu boho chic",
+      "src": "fd0f3d127f08"
+    },
+    "item.9312286809.title": {
+      "text": "Letní bavlněné šaty od indického návrháře Ritu Kumara · Potisk ve stylu art deco s motivem vějíře · Výstřih zdobený korálky · Kapsy",
+      "src": "f1cd7e8b75f3"
+    },
+    "item.9603594529.title": {
+      "text": "Vázaná kniha: David Whyte – „Consolations“; Elizabeth Gilbert – „Keep This Book By Your Bedside Forever“",
+      "src": "96c365ffb05c"
+    },
+    "item.9603636575.title": {
+      "text": "Sada pro léčbu sportovních zranění – čínská baňková terapie, 12 vakuových baňek, kompletní sada, akupunkturní model",
+      "src": "dcadca1579e5"
+    },
+    "item.9355268622.title": {
+      "text": "Funkční pozadí, ale možné: Rodina Netanjahuových – Joshua Cohen, laureát Pulitzerovy ceny za rok 2022",
+      "src": "9d37fe2e99a5"
+    },
+    "item.9711247731.title": {
+      "text": "Duchovní náramek | Buddhistické šperky | Rudraksha, jóga mala, duchovní doplňky, meditace",
+      "src": "3d08649f5144"
+    },
+    "item.9641705366.title": {
+      "text": "Živé africké letní šaty v kmenovém stylu boho | Etnická tunika typu kaftan s volným střihem | Univerzální velikost M až L",
+      "src": "e86237e2dca1"
+    },
+    "item.9565484914.title": {
+      "text": "Bůh bohatství a prosperity | Indická hinduistická soška Ganéši – náboženská a duchovní socha",
+      "src": "63559ef2d9b3"
+    },
+    "item.9359739617.title": {
+      "text": "nejlepší kniha o Pákistánu: Daniyal Mueenuddin – Sbírka pákistánských povídek, anglické vydání v brožované vazbě",
+      "src": "580a0cb0d3c4"
+    },
+    "item.9602950103.title": {
+      "text": "Vzácná kniha Markuse Zusaka „Zlodějka knih“ – deník NYT ji označil za knihu, která změní život; mezinárodní bestseller č. 1",
+      "src": "e6237bcd94a9"
+    },
+    "item.9581381003.description": {
+      "text": "Propracovaný design. Nádherně detailně zpracovaný slon, symbolizující sílu, moudrost a prosperitu.",
+      "src": "8276f0f14d2f"
+    },
+    "item.9575763651.title": {
+      "text": "Indická modlitební mala z rudrakshy pro meditaci, jógu a zpěv mantry | Hinduistický duchovní růženec",
+      "src": "0ef35b30956d"
+    },
+    "item.9529729646.title": {
+      "text": "Ručně pletená čepice z himálajské vlny s podšívkou ze 100 % měkkého fleece | Boho móda | Vintage retro",
+      "src": "5b3f11c5a1f5"
+    },
+    "item.9602907756.title": {
+      "text": "nepředvídatelný Keigo Higashino Rovnice letního slunovratu Detektiv Galileo Japonský Stieg Larsson",
+      "src": "c1ce6a1037c0"
+    },
+    "item.9438954997.title": {
+      "text": "Sada šperků ve zlatém odstínu, skládající se z náhrdelníku typu „collar“, ladících kruhových náušnic, manžetového náramku a prstenu",
+      "src": "a9fbff5f2bf2"
+    },
+    "item.9395098362.title": {
+      "text": "Orientální nadčasové příběhy Amita Kanekar Strach ze lvů Napínavý thriller o povstání v období Mughalské říše Indie",
+      "src": "ade83197c671"
+    },
+    "item.9360886820.title": {
+      "text": "V prodeji: „Alternativa. Co vám ekonomové nechtějí, abyste četli.“ Autor: Nick Romeo (anglické vydání v brožované vazbě)",
+      "src": "8534279891e0"
+    },
+    "item.9602725968.title": {
+      "text": "Přečti si to, než zemřeš – Rumi: The Essential Rumi, Coleman Barks, nové rozšířené vydání, nejprodávanější sbírka básní",
+      "src": "ed9316b0445e"
+    },
+    "item.9561251555.description": {
+      "text": "Ručně barvené. Nejkvalitnější bavlna z tkaní na stavu. Tisk pomocí dřevěných šablon. Duchovní, elegantní, navozující pocit klidu. Velký rozměr.",
+      "src": "f108654a518f"
+    },
+    "item.9419147643.title": {
+      "text": "zcela nové – Christopher Bollen: Havoc – lahodně drsný psychologický thriller, tip deníku New York Times",
+      "src": "34399280b05e"
+    },
+    "item.9561218589.description": {
+      "text": "Velikost S\nNikdy nošené, ve skvělém stavu, jako nové Průhledné  \nKrémová barva \nZkrácený střih  \nHáčkované",
+      "src": "babd18cf1808"
+    },
+    "item.9355082189.title": {
+      "text": "Tajemství léků na hubnutí od společnosti GLP: Kniha „Off the Scales“ od Aimee Donnellan – Příběh ze zákulisí přípravku Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "item.9674633786.title": {
+      "text": "Vintage šperky | retro šperky | Náušnice – zkroucené kruhy | Etnické šperky ve stylu boho ze stříbra 925",
+      "src": "0fc1f0de3ba8"
+    },
+    "item.9602870728.title": {
+      "text": "Chitra Banerjee Divakaruni: Palác iluzí – mezinárodní bestseller – Mahábhárata: Indický příběh v novém podání",
+      "src": "e1c706d7ed74"
+    },
+    "item.9565566983.title": {
+      "text": "Indická starožitná mosazná soška Radhy a Krišny – hinduistická duchovní a náboženská socha boha | Mosaz, 5,5 palců",
+      "src": "8e0e25823725"
+    },
+    "item.9488799404.description": {
+      "text": "Tento náhrdelník je vyroben z tmavě žlutých korálků s akcenty ze zlatých korálků a plastové šňůrky.",
+      "src": "ef548bda8352"
+    },
+    "item.9488787680.description": {
+      "text": "Tento náhrdelník je tvořen tmavě fialovými korálky s akcenty ze zlatých korálků a plastovou šňůrkou.",
+      "src": "37c2ffda88bd"
+    },
+    "item.9720394316.description": {
+      "text": "Náhrdelník s přívěskem z pozlacené mosazi a modrými korálky v různých barvách. Lze ho krásně nosit i jako obojek. Nastavitelný.",
+      "src": "0222e190d517"
+    },
+    "item.9493332709.description": {
+      "text": "Ručně vyrobený dvouvrstvý, jednoduchý a lehký náhrdelník z háčkovaných korálků. Šňůrky umožňují nastavení požadované délky.",
+      "src": "74698620b449"
+    },
+    "item.9580235622.description": {
+      "text": "Visací háčkované náušnice ve tvaru slunečnice s hnědými dřevěnými korálky.\nMateriály: vlna, nerezová ocel, dřevo\nStyl: boho a hippie\nVýška 7 cm",
+      "src": "3c887561cea9"
+    },
+    "item.9564218918.description": {
+      "text": "Keramická polévková miska z Indie s uchem, vhodná do mikrovlnné trouby i do myčky, z materiálu vhodného pro styk s potravinami, vícebarevná\nŠířka 11 cm\nVýška 7 cm",
+      "src": "ae11b01d1e19"
+    },
+    "item.9562398817.description": {
+      "text": "Světle šedý šátek je po okrajích zdobený jemnými flitry uspořádanými do geometrického vzoru „greek key“.\nSměs bavlny, vlny a viskózy.",
+      "src": "e3bfed52ad1f"
+    },
+    "item.9675580496.description": {
+      "text": "Retro kabelka přes rameno z vysoce kvalitní hnědé pravé kůže, ručně vyrobená v Etiopii.\nNastavitelný popruh\n1 hlavní přihrádka\n1 vnitřní kapsa",
+      "src": "778b6215cb8c"
+    },
+    "item.9316420644.description": {
+      "text": "Krátké plážové šaty ve stylu kaftanu nebo jednoduchý letní oděv z Indie, ušité z měkké bavlny. V tyrkysovo-tmavě zelené barvě, velikost M až L.",
+      "src": "f9856a0d7a9f"
+    },
+    "item.9438792395.description": {
+      "text": "Na prodej je krásná dvojice pestrobarevných náušnic z korálků, dlouhých 2,75\" a širokých 1\", se stříbrnými kováními. Krásná a jedinečná dvojice v boho stylu.",
+      "src": "36b404572169"
+    },
+    "item.9561602678.description": {
+      "text": "Nikdy nošené. \nBarva – krémová\nMateriál – směs bavlny a lnu\nStřih – volný, velikost L–XL\nRukávy – krátké\nDélka – midi\nKapsy – 2\nZapínání – knoflík vzadu",
+      "src": "7328b2bd4796"
+    },
+    "item.9552844745.description": {
+      "text": "Podrobnosti o produktu\n• Modré šaty s rozšiřujícím se střihem a potiskem indických etnických motivů\n• Výstřih za krkem\n• Bez rukávů\n• Maxi délka s rozšiřujícím se lemem\n• Bavlněná látka\nVelikost L\nObvod hrudníku 40 palců",
+      "src": "08bba5cc974c"
+    },
+    "item.9489491094.description": {
+      "text": "Nádherný, masivní náhrdelník v tibetském stylu s vyřezaným symbolem Om 🕉️. Korálové a tyrkysové intarzie na mosazné destičce, doplněné víceřadými skleněnými korálky a dřevěnou knoflíkovou sponou.",
+      "src": "58db4f121215"
+    },
+    "item.9561725365.description": {
+      "text": "Šátek od indické luxusní značky Satya Paul. S bambusovým vzorem inspirovaným japonskou kulturou a kontrastním červeným lemem.\nMateriál: Průsvitná, lehká tkanina, šifon",
+      "src": "705254e0fd36"
+    },
+    "item.9561679205.description": {
+      "text": "Úchvatné a elegantní. Vyrobeno z lněné tkaniny s tkaným vzorem, velmi klasický a elegantní vzhled. Díky své univerzální barvě a střihu se hodí k nejrůznějším outfitům.",
+      "src": "9d8baf77b7ae"
+    },
+    "item.9698274032.description": {
+      "text": "Obvod přes prsa 40 palců / 101,6 cm\nDélka 24 palců / 61 cm\nLehká viskózová látka, mramorový vzor, rovný střih, zaoblený výstřih, dlouhé rukávy s knoflíky.\nKrásně splývá a má bohémský nádech.",
+      "src": "ad327c2c5d3d"
+    },
+    "item.9629132899.description": {
+      "text": "🌈 Baseballová čepice Rainbow Pride – čepice s vyšívaným duhovým srdcem, čepice LGBTQ+ Pride 🌈\nMateriál: 100 % prémiová bavlna\nStřih: nastavitelný pásek\nVelikost: univerzální velikost vhodná pro většinu dospělých",
+      "src": "d65a9a0498a2"
+    },
+    "item.9313828257.description": {
+      "text": "Elegantní přiléhavé námořnicky modré šaty s bílým háčkovaným krajkovým panelem vpředu a plisovaným lemem. Elegantní, ženský kousek, který se skvěle hodí na slavnostní příležitosti, pracovní akce i do kanceláře.\n\nVelikost: L (podle štítku)",
+      "src": "0acccc64a7e6"
+    },
+    "item.9493474615.description": {
+      "text": "Drahokam: Perla\nZapínání: Karabinka\nTyp řetízku: Korálkový\nPerly: 8 mm sladkovodní perly\nŘetízek: 16'' + 1''\nVoděodolný a hypoalergenní\n\nNáhrdelník ze sladkovodních perel, přírodní perly s charakteristickými tvary",
+      "src": "00e8a2715383"
+    },
+    "item.9313953618.description": {
+      "text": "Krásná modrozelená košilová kombinéza značky Forever 21 s volánkovým vrstveným předním dílem a nastavitelnými ramínky, která se zavazují na krku. Lehká, pohodlná a lichotivá letní kombinéza ideální na večerní výlet.",
+      "src": "48ee50f09ef0"
+    },
+    "item.9564918603.description": {
+      "text": "Mini hliněná soška Ganéši – ručně vyrobená dekorativní soška duchovního boha Ganéši jako dárek do kanceláře, k nastěhování do nového domu nebo jako bytový doplněk\nRozměry: přibližně 3,1 × 1,9 × 4 palce (d × š × v), hmotnost: 200 gramů",
+      "src": "e91c626d75b5"
+    },
+    "item.9355163406.description": {
+      "text": "Kniha „The High Mountains of Portugal“ od Yanna Martela, autora knihy „Život Pi“. Brožovaná vazba, použitá, s mírným opotřebením obálky a stopami po skladování (viz fotografie). Kompletní a čitelná. Z nekuřácké domácnosti.",
+      "src": "45282112205b"
+    },
+    "item.9477421040.description": {
+      "text": "2 pozlacené náramky s bílými kameny typu „americký diamant“. Indické svatební šperky.\n\nBarva – zlatá, bílá\nMateriál – měď\nVzor – motiv ve tvaru paisley\nPovrchová úprava – pozlacení, zlato",
+      "src": "4e338240ec1d"
+    },
+    "item.9538548234.description": {
+      "text": "Vyrobeno z pravého stříbra o ryzosti 92,5 %. Označeno puncem 925. Nastavitelný design zajišťující pohodlné a bezpečné nošení. Rhodiová povrchová úprava zabraňující matnění a zajišťující dlouhodobý lesk.",
+      "src": "598e9459aafc"
+    },
+    "item.9476370273.description": {
+      "text": "Ručně vyrobený nápadný náhrdelník s obdélníkovým přívěskem z taveného skla. Přívěsek má nádherný kovově lesklý vzor ve tvaru vířící spirály v odstínech mořské modři, bronzu, zlata a měděných třpytek.",
+      "src": "b75fa8ed33a0"
+    },
+    "item.9565320171.description": {
+      "text": "Mini hliněná soška bohyně Párvatí – ručně vyrobená dekorativní soška hinduistické bohyně Párvatí jako dárek do kanceláře, k nastěhování do nového domu nebo jako dekorace do interiéru\nRozměry: přibližně 3,1 × 1,9 × 4 palce (d × š × v), hmotnost: 200 gramů",
+      "src": "fd5d3dd8dc5b"
+    },
+    "item.9561780997.description": {
+      "text": "Šátek. Design inspirovaný secesí od indické módní návrhářky Nidy Mahmoodové. Mahmoodová, známá jako indická „královna kýče“, často spojuje historická světová umělecká hnutí s tradiční indickou citlivostí.",
+      "src": "f0e0fd6b1b06"
+    },
+    "item.9565566983.description": {
+      "text": "Uctívejte modlu hinduistických bohů Rádhy a Krišny pro duchovno, mír, harmonii, štěstí a pohodu. Krásná duchovní dekorace do interiéru. \n\nMosazná soška\nVýška: 5,5 palce\nŠířka: 3 palce\nHloubka: 2 palce\nHmotnost: 750 g",
+      "src": "719082ea08d4"
+    },
+    "item.9562257190.description": {
+      "text": "Nošeno jednou. Pružná látka. Střih do A. Délka midi. Výřez. Kulatý výstřih. Bez rukávů. Skrytý zip na zádech. Boční rozparky. \nDélka 131 cm, obvod hrudníku 55 cm, obvod pasu 45 cm, obvod boků 56,5 cm\n85 % viskóza, 15 % polyamid",
+      "src": "0631b4fec421"
+    },
+    "item.9578974766.description": {
+      "text": "Velikost L  \nMateriál: viskóza\nKrásné černé šaty s květinovým vzorem v horní i spodní části. Uvnitř mají měkkou podšívku, která zajišťuje pohodlné nošení. Ideální letní šaty na pláž i na celodenní výlet, s volným střihem.",
+      "src": "95cb09e384cc"
+    },
+    "item.9686505544.description": {
+      "text": "Ručně vyrobený náramek z pravého stříbra 925 (s puncem). \nAmetysty s kultivovanými sladkovodními perlami\nZápěstní spona\nDva obdélníkové, broušené ametysty\nTři kulaté sladkovodní perly\nNáramek je dlouhý 7 palců",
+      "src": "2347fbe304f1"
+    },
+    "item.9316393171.description": {
+      "text": "Mimořádně měkká indická bavlna a krásný květinový vzor. Díky ramínkům lze šaty nosit jako halter nebo s běžnými ramínky. Délka sahá ke kolenům. Velmi prodyšné a pohodlné na léto.\nVelikost: Velikosti M až L padnou skvěle",
+      "src": "642b7756fc58"
+    },
+    "item.9603839908.description": {
+      "text": "Díky rukojeti pro přenášení ji lze zavěsit nebo postavit na stůl jako dekorativní osvětlení. Zářivě žlutá kovová lucerna v marockém stylu se vyznačuje složitými filigránovými výřezy.\nVýška 8 palců / 20 cm\nŠířka 4 palce / 10 cm",
+      "src": "30e1ad9061bf"
+    },
+    "item.9564694739.description": {
+      "text": "Ručně vyřezávaná dřevěná socha hinduistického boha Ganéši sedí na nádherně vyřezávaném podstavci. Tato krásná, duchovní a elegantní socha boha Ganéši vnáší do každého prostoru a do každého interiéru požehnání, prosperitu a nadčasové indické umění.",
+      "src": "6ff24af8062c"
+    },
+    "item.9607321104.description": {
+      "text": "Ručně vyrobený náhrdelník z tmavě modré keramiky s růžovými detaily na šňůrce. Délku náhrdelníku lze nastavit. Vzhledem k procesu glazování při vypalování keramiky není zadní strana přívěsků glazovaná a je neopracovaná. Při nošení to však není patrné.",
+      "src": "cb64550e688f"
+    },
+    "item.9565381682.description": {
+      "text": "Mini hliněná soška Ganéši a Párvatí – ručně vyrobené dekorativní sošky hinduistických bohů Ganéši a Párvatí jako dárek do kanceláře, na oslavu nového bydlení nebo jako bytový doplněk\nRozměry každé sošky: přibližně 3,1 × 1,9 × 4 palce (d × š × v), hmotnost každé sošky: 200 gramů",
+      "src": "359cb158a1ab"
+    },
+    "item.9578313870.description": {
+      "text": "Blůza v barvě lila-mango s kulatým výstřihem a krátkými rukávy, které jsou vyztuženy výplní pro zachování tvaru. Skvělá volba do kanceláře, na večerní výlety i na formální akce. Krásně se leskne a hezky padne. \nVelikost L\nMateriál vnějšího materiálu: 100 % polyester",
+      "src": "1ab3ad7b8b3d"
+    },
+    "item.9438031948.description": {
+      "text": "Jedná se o ručně vyrobený výrazný náhrdelník v boho stylu s propracovanou korálkovou výšivkou, kamínky a podkladem z látkové aplikace, ručně vyrobený v Nigérii. Vyznačuje se výrazným, barevným designem s různými barevnými korálky, umělými kamínky a malými kovovými přívěsky na spodní straně.",
+      "src": "4fc05cf7da8e"
+    },
+    "item.9438210918.description": {
+      "text": "Materiál řemínku – nerezová ocel\nBarva řemínku – stříbrná\nFunkce – analogová\nZavírací mechanismus – třídílná posuvná spona\nPohonný mechanismus – quartz\nBarva ciferníku – stříbrná\nTvar pouzdra – oválný\nMateriál pouzdra – kov\nDélka pouzdra – 32,70 mm\nŠířka pouzdra – 31,45 mm\nTloušťka pouzdra – 7,15 mm",
+      "src": "e19f6e5ba4d6"
+    },
+    "item.9604783346.description": {
+      "text": "Materiál: kov\nDélka: 16 palců / 40,6 cm\nŠířka: 2 palce / 5,08 cm\n7 figurek slonů a symbolů „zlého oka“, o nichž se věří, že přinášejí štěstí a vyhánějí negativní energii z domu či kanceláře, kde jsou zavěšeny. Ideální boho-etnická dekorace na vstupní dveře nebo stěny pokojů.",
+      "src": "75599b0b0684"
+    },
+    "item.9320744061.description": {
+      "text": "Krásné indické letní bavlněné kalhoty v černé barvě s půvabnými červenými knoflíky na boku. Velmi univerzální a lichotivý střih. Ideální na léto. Obvod pasu 36 palců. Od známé indické značky Jaypore, která je proslulá ručně vyráběnými vzory a přírodními textiliemi.",
+      "src": "8c96f64bf862"
+    },
+    "item.9583027994.description": {
+      "text": "Tři snadno nasaditelné nosní špendlíky se sponkou, vyrobené ze stříbrné slitiny. Zkombinujte je s tílkem a květinovými palazzo kalhotami nebo sukní a vytvořte si rustikální moderní indický styl. Nosní špendlíky se mi nelíbí, proto je prodávám. Fotografie, na které jsou nosní špendlíky nasazené, slouží pouze pro ilustraci, nejedná se o mou fotku.",
+      "src": "0ec6921b8fa4"
+    },
+    "item.9476315818.description": {
+      "text": "Nádherný náhrdelník v bohémském stylu s korálky v zářivých odstínech oranžové, korálové a tyrkysové barvy, doplněný texturovanými stříbrnými akcenty v tibetském stylu. Ideální pro vrstvení nebo jako výrazný módní doplněk. Ve výborném stavu, lehký, zapíná se na klasickou sponu.",
+      "src": "057f368848d7"
+    },
+    "item.9395315968.description": {
+      "text": "Kniha, od které se nedá odtrhnout. Doktor John Watson slouží jako vojenský lékař v zákopech ve Flandrech, kde vojáky pronásleduje sériový vrah. Napínavá, atmosférická detektivka, která propojuje historii první světové války s klasickým detektivním žánrem. #sherlockholmes #wwifiction #mysterybooks",
+      "src": "dfa72043f121"
+    },
+    "item.9565087476.description": {
+      "text": "Krásná duchovní starožitná zlatá figurka znázorňující celou rodinu hinduistického boha Šivy (Šiva, Párvatí a Ganéša sedící na Nandim). \nRozměry – velikost 5,5 x 6 x 2,5 palce; hmotnost 1695 gramů (1,6 kg); materiál: mosaz\nVneste do svého domova duchovno, mír, harmonii, štěstí a pohodu",
+      "src": "90a8bcf8527d"
+    },
+    "item.9371186724.description": {
+      "text": "Jedinečný, poutavý kousek – ideální k jednobarevnému topu nebo letním šatům, kterým dodá zářivý barevný akcent. Lehký a pohodlný na nošení, krásný příklad ručně vyráběných indických textilních šperků. Zářivý, veselý a výrazný náhrdelník ruční výroby, vyrobený výhradně z bavlněné látky.",
+      "src": "50f89c8117e6"
+    },
+    "item.9575501283.description": {
+      "text": "Indický žlutý/oranžový bavlněný oltářní šál/šátek pro hinduistické rituály, modlitby, mantry, meditaci a púdžu. Ručně potištěný červeným nápisem „Om Namah Shivaya“, vyobrazením Šivalingy a celou Šivovou rodinou včetně Šivy, Párvatí a Ganéši. \nDélka 55 palců / 139 cm\nŠířka 33 palců / 83 cm",
+      "src": "6a6c4c0cab94"
+    },
+    "item.9439083125.description": {
+      "text": "Poznámka: Poslední dvě fotografie náušnice a náhrdelníku slouží pouze jako ilustrace, aby bylo vidět, jak se tyto přívěsky dají kombinovat a nosit. Náušnice ani náhrdelník NEJSOU součástí prodeje. Prodávám pouze přívěsky! :)\n\nDva přívěsky ze stříbra s křišťálem Swarovski – narozeninový kámen pro měsíc duben.\nMateriál – stříbro / křišťál Swarovski",
+      "src": "bdea3cf3bc27"
+    },
+    "item.9529729646.description": {
+      "text": "Velmi teplá. Tato ručně pletená čepice ze 100 % vlny s podšívkou ze 100 % měkkého fleece je vyrobena řemeslníky v indických Himalájích. Díky zářivým vícebarevným vzorům, pohodlným klapkám na uši a spleteným stužkám s třásněmi dodá vašemu zimnímu vzhledu hravou a svobodomyslnou boho-hippie atmosféru. Šířka 9 palců.",
+      "src": "f91fccf4b399"
+    },
+    "item.9711247731.description": {
+      "text": "Krásný duchovní meditační náramek z korálků.\nVyrobený z přírodních materiálů – tmavě hnědých semen rudrakshy a světle hnědých korálků ze semen stromu bodhi. Ideální pro jógu, meditaci, cvičení mindfulness nebo jako doplněk k každodennímu boho stylu.\n14 semen rudrakshy\n7 semen stromu bodhi\nprůměr 2,5 palce\nPružná guma",
+      "src": "8be1f9bee3ab"
+    },
+    "item.9313793339.description": {
+      "text": "Vzdušné letní maxišaty s potiskem ve stylu batiky. Mátově zelená, černá a bílá. Výstřih do V vpředu i vzadu, s vázáním za krkem zakončeným dřevěnými korálky. Lem, který se krásně vlní a vlní.\nVyrobeno z měkké, hedvábně saténové látky. Ideální jako plážové oblečení, plážový přehoz nebo večerní šaty.\nVelikost L",
+      "src": "b3623b498921"
+    },
+    "item.9395211212.description": {
+      "text": "Nádherně ilustrovaná adaptace nejslavnějšího románu, jaký kdy byl napsán ve španělštině, s ilustracemi od Svetlina. Ideální pro ty, kdo se učí španělštinu, studenty nebo kohokoli, kdo hledá srozumitelný úvod do Cervantesova legendárního příběhu o rytíři, který bojoval s větrnými mlýny. #donquijote #učeníšpanělštiny #klasickáliteratura",
+      "src": "eed87e0a0db7"
+    },
+    "item.9395115967.description": {
+      "text": "Vítěz ceny Whitbread First Novel Award za rok 2000, chválený jako výjimečný debut své generace. Rozsáhlá, vtipná mezigenerační sága o dvou rodinách v multikulturním Londýně. Moderní klasika a jeden z nejvýznamnějších britských románů prvního desetiletí 21. století. Hodnocení 3,99 hvězdiček na Goodreads. #zadiesmith #modernclassics #bookclub",
+      "src": "f47a506051fe"
+    },
+    "item.9311521689.description": {
+      "text": "Krásná indická bavlněná sukně v plné délce v zářivých odstínech červené, oranžové a fialové, s vířivým potiskem ve stylu bandhani a nádherným kontrastním lemem na spodním okraji, který tvoří vrstvené panely se zlatými, krémovými a tmavě hnědými listovými motivy, které jí dodávají bohatý, slavnostní vzhled. Ideální letní sukně, kterou lze kombinovat s tílkem nebo volnou blůzou.",
+      "src": "88c3079fb8de"
+    },
+    "item.9395142510.description": {
+      "text": "John Green ji označil za úchvatnou. Mnohonásobně oceněný bestseller, který se umístil na prvním místě žebříčku New York Times, inspirovaný hnutím Black Lives Matter. Příběh sleduje šestnáctiletou Starr poté, co se stala svědkyní policejní střelby na její nejlepší kamarádku z dětství. Byla zfilmována jako velkofilm. 4,50 hvězdiček na Goodreads. #YAbooks #mustread #bookish",
+      "src": "8e41fa54fdfb"
+    },
+    "item.9498955593.description": {
+      "text": "Sada obsahuje krátký top s krátkými rukávy a výstřihem do V, doplněný ladící sukní zapínanou na knoflíky vpředu. Celkový design tvoří bílý květinový vzor s motivem sedmikrásky na červeném a oranžovém pozadí ve stylu tie-dye.\n\nObvod pasu sukně – 34 palců\nObvod boků sukně – 42 palců\nDélka sukně – 27 palců\nObvod přes prsa topu – 44 palců (oversize střih a volný střih)\nVhodné pro velikosti L/XL",
+      "src": "2b4c9dfc6029"
+    },
+    "item.9395098362.description": {
+      "text": "Nádherně zpracovaná kniha se zlaceným obalem. Děj se odehrává v Indii roku 1673 za vlády Aurangzeba, kde se dva mladí mughálští šlechtici náhodou ocitnou uprostřed následků potlačeného povstání vedeného tajemnou ženou a jejími stoupenci. Příběh se odvíjí jako detektivní thriller a zároveň živě oživuje mughálskou Indii. #historickýromán #mughálskáindie #bookstagram",
+      "src": "dbe7662e55a6"
+    },
+    "item.9395334867.description": {
+      "text": "Román, který vyvolal takovou kontroverzi, že byl v Británii více než třicet let zakázán a v roce 1960 se stal předmětem soudního řízení kvůli obscénnosti. Vášnivý, hranice bořící příběh o společenských třídách, touze a zakázané lásce mezi aristokratkou a jejím hajným. Jeden z nejznámějších a nejdůležitějších románů anglické literatury #zakázanéknihy #klasickáliteratura #dhlawrence",
+      "src": "ac307305c2fa"
+    },
+    "item.9395292320.description": {
+      "text": "Tuto autobiografii napsal rohingyjský básník, který genocidu osobně prožil, a je chválena za to, že využívá sílu slova ve prospěch lidstva. Jedná se o vzácné a nepostradatelné svědectví z první ruky o jedné z nejvýznamnějších krizí v oblasti lidských práv naší doby. Působivé čtení pro každého, kdo se zajímá o lidská práva, příběhy uprchlíků a moderní historii. #lidskápráva #autobiografie #literaturafaktu",
+      "src": "4038f2d68091"
+    },
+    "item.9322734477.description": {
+      "text": "Krásná letní košile z indické bavlny, v nápadném černém podkladu s výraznými červeno-zelenými motivy ve tvaru srdce tištěnými blokovou technikou a s roztomilými dřevěnými knoflíky. Elegantní a nenáročný kousek, který upoutá pozornost a má opravdový řemeslný charakter. Snadno se kombinuje – noste ji s džíny a sandály, zastrčenou do kalhot nebo sukně, nebo rozepnutou přes tričko. Nádherný barevný a vzorový akcent pro každé roční období.",
+      "src": "872b0d5d0a2a"
+    },
+    "item.9395169253.description": {
+      "text": "Vítěz Man Bookerovy ceny za rok 2015, který přední kritici označili za epický a velkolepý. Rozsáhlý, kaleidoskopický román, který sleduje pokus o atentát na Boba Marleyho a prochází přitom desetiletími jamajské politiky, války gangů a činnosti CIA. Široce považován za jeden z nejlepších románů 21. století. 4,06 hvězdiček na Goodreads. #bookerprize #literaryfiction #bookstagram",
+      "src": "6d6d8ee1187d"
+    },
+    "item.9395068524.description": {
+      "text": "New York Times ji označil za působivé a znepokojující čtení. Tato útlá klasika z roku 1951 vysvětluje, proč se obyčejní lidé připojují k fanatickým hnutím a stávají se opravdovými stoupenci, a čte se, jako by byla napsána teprve včera. Oblíbená kniha prezidentů Eisenhowera a Clintona. Hodnocení 4,11 hvězdiček na Goodreads. #psychologie #filozofie #literatura faktu – obsahuje záznamy a užitečné poznámky",
+      "src": "b4705b309873"
+    },
+    "item.9579803801.description": {
+      "text": "Vzácný kousek. \nMateriál: Pravé stříbro 925 (s puncem) \nVelikost 2,4 palce\nProdávám, protože je mi trochu malý. Stříbrný náramek zdobený složitými motivy ve viktoriánském stylu, s povrchovou úpravou v antickém vzhledu a ozdobený pečlivě zasazenými aqua modrými krystaly, zelenými krystaly a umělými perlami. \nZpracování: Ručně vyrobený řemeslný design\nPro více informací nebo kvalitnější fotografie mě prosím kontaktujte.",
+      "src": "a33aafc2eb86"
+    },
+    "item.9395042890.description": {
+      "text": "Bývalý portugalský ministr pro evropské záležitosti strávil šest měsíců cestou po zemi z Baku do Pekingu, aby dokázal, že Evropa a Asie se spojují do jednoho superkontinentu. Jeden čtenář uvedl, že to navždy změnilo jeho pohled na geopolitiku. Nezbytná četba pro každého, kdo sleduje Čínu, Rusko a měnící se globální rovnováhu sil. 3,84 hvězdiček na Goodreads. #geopolitika #aktuálnídění #literaturafaktu",
+      "src": "7df1b8a748f6"
+    },
+    "item.9649545514.description": {
+      "text": "Černá indická kurta/dlouhý top/oblek/tunika z čisté bavlny s celoplošným ručně tištěným vzorem Buddhy a ladícími kalhotami. Kalhoty mají vpředu stahovací šňůrky a pohodlný elastický pas s bočními kapsami a bočními rozparky. Kulatý výstřih a tříčtvrteční rukávy. Vytváří úchvatnou duchovní, boho chic a etnickou atmosféru. \nObvod hrudníku 40 palců\nDélka kurty (topu) 44 palců\nObvod pasu kalhot 34 palců \nDélka kalhot 37 palců",
+      "src": "be5938adcbad"
+    },
+    "item.9575763651.description": {
+      "text": "🕉️ Přírodní rudraksha japa mala: Vyrobená z autentických 7mm rudraksha korálků, ideální pro duchovní účely a každodenní recitaci, délka 16 palců\n📿 Sestava 108 (+5) korálků: Ideální pro recitaci manter (japa), meditaci, jógu a rituály púdža\n✨ Pohodlná a odolná: Pevné navlečení zajišťuje dlouhou životnost a hladkou manipulaci\n🌿 Duchovní přínosy: Pomáhá zlepšit soustředění, podporuje klid a pozitivní energii",
+      "src": "6e861169acc8"
+    },
+    "item.9562314219.description": {
+      "text": "Indická lněná šála utkaná na ručním tkalcovském stavu, vyrobená mistry řemesla ze Západního Bengálska. Tkaní jamdani, známé svou složitou technikou s přídavnou útkou, je staletou tradicí, při níž se motivy tkají přímo do látky pomocí jemných nití, čímž vznikají vzory připomínající jemnou výšivku. Lehká a měkká šála je vhodná jak pro každodenní nošení, tak pro slavnostní příležitosti a každému outfitu dodá rafinovaný etnický nádech.",
+      "src": "290887d61cb9"
+    },
+    "item.9565484914.description": {
+      "text": "Pozitivita, moudrost a nadčasové indické umění se snoubí v této ručně vyrobené sošce hinduistického boha Ganéši, která představuje dokonalou kombinaci duchovní elegance a moderní estetiky interiérového designu. Soška se vyznačuje klidným, texturovaným povrchem v barvě slonovinové bílé, který je krásně zdůrazněn bohatými zlatými detaily, díky čemuž je poutavým designovým prvkem pro moderní domácnosti.\n\nMateriál: Prémiová pryskyřice s texturovaným ručně zpracovaným povrchem\nBarva: Slonovinově bílá a starožitná zlatá",
+      "src": "c50fcfd34c1e"
+    },
+    "item.9602950103.description": {
+      "text": "New York Times ji označil za knihu, která může změnit život, a miliony čtenářů s tím souhlasí. Tento mezinárodní bestseller č. 1, vyprávěný samotnou Smrtí, sleduje osudy dívky, která krade knihy a skrývá židovského muže v nacistickém Německu. Kniha byla přeložena do více než 40 jazyků a v roce 2013 vznikl podle ní velkofilm; více než deset let se držela na žebříčcích bestsellerů po celém světě. Hodnocení 4,4 hvězdičky na Goodreads. #wwiifiction #bookthief #bestseller",
+      "src": "1978d39764d1"
+    },
+    "item.9602746361.description": {
+      "text": "Energické a nečekané zkoumání toho, proč a jak se outsiderům daří uspět – od malých tříd přes boje za občanská práva až po nevýhody, které se promění ve skryté silné stránky. Financial Times ji označil za Gladwellovu dosud nejzábavnější knihu, povznášející podívanou, která obohacuje srdce i mysl. Od autora knih The Tipping Point, Blink a Outliers. 3,97 hvězdiček na Goodreads. #malcolmgladwell #literatura faktu #psychologie",
+      "src": "66ab3427c67b"
+    },
+    "item.9438954997.description": {
+      "text": "Sada šperků ve zlatém odstínu, která zahrnuje efektní vrstvený náhrdelník ve stylu límce, ladící kruhové náušnice, strukturovaný náramek a výrazný prsten. Lehká, ale krásná sada šperků.  Minimalistická, ale poutavá. Na můj výstřih je trochu těsná (průměr 4,5 palce), proto ji prodávám. \n\nRozměry náhrdelníku: 12 cm x 3,2 cm / 4,72\" x 1,26\" \nRozměry náušnic: 4 cm x 1,3 cm / 1,57\" x 0,51\"\nRozměry náramku: 6 cm x 3,5 cm / 2,36\" x 1,38\"\nRozměry prstenu: 1,9 cm x 1,2 cm / 0,75\" x 0,47\"",
+      "src": "0ee64f4f8768"
+    },
+    "item.9641705366.description": {
+      "text": "Krásné a zářivé ručně šité tunikové šaty s krátkými rukávy, zdobené poutavým geometrickým potiskem inspirovaným africkými látkami Kente a Ankara. Ručně vyrobené v Nigérii. Velmi lichotivý střih s pružným, smockovaným elastickým pasem a volnou, rozvlněnou sukní. Perfektní bavlněné šaty na léto, festivaly, v boho chic stylu nebo jako ležérní každodenní oblečení. Díky elastickému řasení a kaftanovému střihu jsou šaty velikostně flexibilní a hodí se pro velikosti M až L. Délka je 28 palců.",
+      "src": "45399a9701b6"
+    },
+    "item.9602779694.description": {
+      "text": "Průkopnické, pečlivě zpracované dílo o 21měsíčním pozastavení indické demokracie za vlády Indiry Gándhíové, které je označováno za nejlepší a nejkomplexnější popis výjimečného stavu, jaký kdy byl napsán. Odhaluje, jak k autoritářské vládě přispěli nejen Gándhíová a její syn Sanjay, ale také členové Kongresu, komunisté, podnikatelé, soudnictví i městská střední třída. Vítěz ceny Karwaan. 3,75 hvězdiček na Goodreads. #indianhistory #politics #nonfiction",
+      "src": "8036e25c8ded"
+    },
+    "item.9364938382.description": {
+      "text": "Ručně šité v Indii z lehké bavlny, s potiskem inspirovaným tradičním africkým lidovým uměním. Veselé a osobité bavlněné maxi šaty v odstínu vypraného džínově modrého. \n\nDetaily:\nVelikost M (obvod hrudníku 36–38\" palců)\nLehká bavlna — měkká, prodyšná a pohodlná na nošení\nBarevný figurativní potisk po celé ploše na melírovaném modrém podkladu\nStupňovitý pas se řasenou sukní pro krásný pohyb\nKulatý výstřih\nMaxi délka\nPohodlný, volný střih — navlékací, bez zapínání",
+      "src": "48251dcb2c90"
+    },
+    "item.9602491240.description": {
+      "text": "Obrovský mezinárodní bestseller, který se umístil na prvním místě žebříčku Sunday Times a který\nzcela přepisuje dějiny lidstva z východní perspektivy. Renomovaný oxfordský\nhistorik Peter Frankopan vezme čtenáře na poučnou cestu po\nobchodních cestách, které daly vzniknout světovým říším, globálnímu obchodu a moderním\nmocenským bojům. Na Goodreads má hodnocení 4,14 hvězdiček. Fenomén, který rozšiřuje obzory a\nnavždy změní váš pohled na světové dějiny.\n\n#peterfrankopan #světové dějiny #historytok",
+      "src": "12134ce1de6c"
+    },
+    "item.9602470022.description": {
+      "text": "Tato šílená černá komedie, z níž brzy vznikne velkolepý televizní seriál HBO v produkci společnosti A24 s Jodie Comerovou v hlavní roli, byla časopisy\nCosmopolitan, Vogue a The New Yorker vyhlášena knihou roku. Sledujte chaotickou transkripční pracovnici v sexuální terapii na severu státu New York, která se nebezpečně zamiluje do jednoho z\nklientů svého šéfa. Na Goodreads má hodnocení 3,68 hvězdičky. Připravte se na návykovou, voyeuristickou jízdu plnou ostrovtipu a nečekaných skandálů.\n\n#bigswiss #booktok #queerfiction",
+      "src": "614e72385bec"
+    },
+    "item.9419147643.description": {
+      "text": "81letá vdova v chátrajícím luxusním hotelu v Egyptě se pustí do souboje s 8letým chlapcem, přičemž ani jeden z nich nehraje fér. The New York Times tento román označil za „lahodně zlomyslný“ a Kirkus ho popsal jako „zvrácenou rozkoš“ a „prohnaný, šílený thriller“. Atmosférický, zamotaný a kniha, od které se nedá odtrhnout – jde o souboj vůlí mezi dvěma z nejméně důvěryhodných vypravěčů v současné beletrii. Zcela nová, nechtěná kniha, nikdy nečtená. #psychologickythriller #booktok #kniha,odkteré se nedá odtrhnout",
+      "src": "369dbe6cb41f"
+    },
+    "item.9360886820.description": {
+      "text": "Kapitalismus není nefunkční – byl takhle navržen. Nick Romeo odhaluje skryté alternativy, které již fungují po celém světě: skutečné experimenty se spravedlivějšími trhy, bydlením a prací, které by mohly nahradit systém, jenž vás právě teď zrazuje. Ha-Joon Chang knihu ocenil jako dílo, které osvobozuje naši ekonomickou představivost. Deník Observer ji označil za poučnou a inspirativní. Pro čtenáře Naomi Kleinové, Kate Raworthové a pro všechny, kteří jsou unaveni tvrzením, že neexistuje žádná alternativa. Hodnocení na Goodreads: 4,07",
+      "src": "1d409ae01255"
+    },
+    "item.9602788500.description": {
+      "text": "Nejvlivnější kniha, jaká kdy byla napsána o počátcích nacionalismu, která zkoumá, co vede lidi k tomu, aby žili, umírali a zabíjeli pro svůj národ. Deník The Guardian ji označil za brilantní, čtivou a obsahově bohatou a dodnes patří k nejcitovanějším dílům v oblasti humanitních věd, přeloženým do více než třiceti jazyků. Nezbytná četba pro každého, kdo se zajímá o politickou teorii, historii nebo globální politiku. Hodnocení 4,11 hvězdiček na Goodreads. #politickáteorie #nacionalismus #akademickéknihy",
+      "src": "361d6b707523"
+    },
+    "item.9602536889.description": {
+      "text": "Tento fenomén, který si nelze odložit a který získal Pulitzerovu cenu i Národní knižní cenu,\nbyl deníkem The New York Times označen za jednu z nejlepších knih 21. století.\nZažijte strhující boj o svobodu napříč americkým\njihem v období před občanskou válkou v příběhu, který inspiroval úspěšný televizní seriál. Na\nGoodreads má hodnocení 4,06 hvězdiček. Hluboce emotivní a kniha, kterou nelze odložit –\nto je moderní americká beletrie v té nejlepší podobě.\n\n#pulitzerprize #colsonwhitehead #historicalfiction",
+      "src": "c56cebab1dcb"
+    },
+    "item.9355268622.description": {
+      "text": "The Netanyahus od Joshuu Cohena. Vítěz Pulitzerovy ceny za beletrii za rok 2022. Na Goodreads mají Cohenovy knihy přes 81 000 hodnocení. Vtipný studentský román o židovském historikovi, který je nucen přijmout Benziona Netanjahua, otce budoucího izraelského premiéra, na pracovní pohovor, který se zvrtne v chaos. Kirkus tento román označil za intelektuálně hutný, energický a mistrovsky zvládnutý. Brožovaná vazba, použitý stav s pomačkaným přebalem a opotřebenými okraji (viz fotografie). Kompletní a čtivé. Z nekuřácké domácnosti.",
+      "src": "a64bd9222dd1"
+    },
+    "item.9602556623.description": {
+      "text": "Od světově proslulého autora knihy „Konec historie“ přichází naléhavá a\npoučná analýza moderního populistického nacionalismu a globální identity\nv politice. Francis Fukuyama přináší provokativní pohled na touhu po\ndůstojnosti, debaty o identitě na univerzitách a zášť, která dnes ohrožuje\ndemokracii. Na Goodreads má 3,84 hvězdiček. Nezbytná četba pro každého, kdo se snaží\nporozumět aktuálním světovým událostem a politickým rozporům.\n\n#francisfukuyama #politologie #aktuálnídění",
+      "src": "18825964ddbd"
+    },
+    "item.9602879226.description": {
+      "text": "Příběh zakázané lásky mezi sunnitským chlapcem a šíitskou dívkou se odehrává na pozadí Kašmíru 90. let, kdy se jejich svět ocitá v sevření války a politického násilí. Kniha byla nominována na cenu DSC Prize for South Asian Literature a zařazena do užšího výběru ceny Folio Prize; deník Financial Times ji označil za dílo, které nepochybně přetrvá. Od autora mezinárodního bestselleru The Collaborator, který Arundhati Royová ocenila jako beletrii, která vás donutí naslouchat #kashmirliterature #southasianfiction #warfiction",
+      "src": "d61aa89d012b"
+    },
+    "item.9602725968.description": {
+      "text": "Definitivní sbírka básní súfijského mystika Rúmího ze 13. století, přeložená Colemanem Barksem, mužem, jemuž se obecně připisuje zásluha za to, že se Rúmí stal nejčtenějším básníkem v Americe. Toto nové rozšířené vydání obsahuje více než osmdesát dosud nepublikovaných básní a nový úvod. Jack Kornfield ji ocenil jako dílo, v němž se Rumího zlato rozlévá skrze Colemanova slova, a nadále zůstává nejprodávanější ze všech Rumího sbírek. 4,39 hvězdiček na Goodreads. #rumi #poezie #spiritualita\nISBN: 9780062312747",
+      "src": "7a911c9f005a"
+    },
+    "item.9602569998.description": {
+      "text": "Od autora bestselleru „Lovec draků“, kterého se prodalo několik milionů výtisků,\npřichází dechberoucí příběh o zlomeném srdci, rodinných tajemstvích a nezničitelném\nlásce. Tento držitel ceny Goodreads Choice Award, jehož děj se rozprostírá napříč generacemi od Kábulu po Paříž, zkoumá, jak jediné tragické rozhodnutí navždy ovlivňuje osudy celé rodiny. Na Goodreads má hodnocení 4,08 hvězdiček. Připravte si kapesníky na nezapomenutelnou emocionální horskou dráhu, která vás uchvátí už od první stránky.\n\n#khaledhosseini #thekiterunner #emotionalbooks",
+      "src": "704ecf3638c1"
+    },
+    "item.9602681438.description": {
+      "text": "Od autorky knihy „Šesté vymírání“, oceněné Pulitzerovou cenou,\npřichází šokující pohled na velmi kontroverzní pokusy lidstva ovládnout\npřírodu. Bestsellerová autorka Elizabeth Kolbertová vás vezme na fascinující cestu po světě,\nabyste se seznámili s vědci, kteří vystřelují diamantový prach do nebe a upravují geny\ninvazivních druhů. Na Goodreads má kniha hodnocení 4,10 hvězdiček. Ohromující, znepokojující a temně vtipná – to je ten nejlepší příběh o klimatu pro zvídavé\nmysli.\n\n#klimatickézměny #populárnívěda #knihyok životním prostředí",
+      "src": "9721b9a90dcf"
+    },
+    "item.9602413571.description": {
+      "text": "Toto strhující\nhistorické mistrovské dílo, oceněné prestižní cenou Duff Cooper Prize, odhaluje krvavý pád Dillí a tragický konec\nnejvětší indické dynastie v roce 1857. Oceněný historik William Dalrymple\nodhaluje vzácné perské dvorské záznamy, aby vyprávěl úžasný skutečný příběh o obléhání,\nzradě a rozpadu impéria. Na Goodreads má hodnocení 4,20 hvězdiček. Nezbytná\nčtení pro každého, kdo je fascinován dramatickou skutečnou historií a pádem velkých impérií.\n\n#williamdalrymple #indianhistory #historybooks",
+      "src": "e735901e05a2"
+    },
+    "item.9603594529.description": {
+      "text": "Elizabeth Gilbertová radí, abyste si tuto knihu nechali navždy u postele, a čtenáři s ní souhlasí – na Goodreads ji ohodnotili vynikajícím počtem 4,45 hvězdiček. Básník David Whyte přináší nové pojetí 52 běžných slov, jako jsou „osamělost“, „hněv“ a „odpuštění“, a představuje je jako brány k hlubšímu smyslu. Kniha obsahuje úvod od Marie Popové a na obálce je uvedena pochvalná zmínka od Nicka Cavea. Lemn Sissay ji označuje za nesmírně silnou, mimořádnou knihu, kterou si budete chtít nechat navždy. Nádherné vázané vydání, které se skvěle hodí jako dárek pro každého, kdo miluje poetickou literaturu faktu. #davidwhyte #consolations #giftbooks",
+      "src": "fa3fe7281c41"
+    },
+    "item.9602442603.description": {
+      "text": "Neústupný mladý architekt vede zuřivý boj proti konvenčním normám a prožívá bouřlivý milostný vztah s jedinou ženou, která je odhodlána ho porazit. List „The New York Times“ označil tuto knihu za dílo nesmírné síly, brilantní, krásné a hořké. Toto vydání z edice Signet Centennial Edition obsahuje doslov od Randové literární pozůstalé a průvodce pro čtenáře po její filozofii. Jeden z nejkontroverznějších a nejtrvalejších románů dvacátého století. 3,96 hvězdiček na Goodreads. #aynrand #klasickáliteratura #filozofickábeletrie",
+      "src": "68e0e27368fe"
+    },
+    "item.9339704755.description": {
+      "text": "Krásný lehký bavlněný top v sytém hořčičně-olivovém podkladu s propracovaným květinovým blokovým potiskem v odstínech námořnické modré, červené, zelené a krémové. Měkká, prodyšná indická bavlna s volným zavazováním po stranách ve stylu závoje. Krásný a univerzální letní kousek, který si můžete obléknout přes džíny, šortky nebo nosit na dovolené.\n\nDetaily:\nVýstřih do V s krátkými rukávy\nBoční zavazování ve stylu zavinovacího střihu pro upevnění a úpravu střihu\nMěkká lehká bavlna, ručně tištěná blokovým tiskem\nVolný, pohodlný střih\nBarva: Hořčičná / olivová / tmavě modrá s květinovým vzorem\nMateriál: Bavlna (ručně tištěná blokovým tiskem)\nObvod přes prsa: 34–36\"",
+      "src": "42265fed3791"
+    },
+    "item.9602870728.description": {
+      "text": "Nadčasové Mahábhárata vyprávěné výhradně z pohledu Pančáli, manželky pěti bratrů Pandavů, které sleduje její bouřlivý původ, její komplikovaný vztah s Krišnou a její zakázanou přitažlivost k nejnebezpečnějšímu nepříteli svých manželů. Los Angeles Times ji označil za zářivý klenot jako diamant Hope a Houston Chronicle ji nazval zářivou a okouzlující. Hluboce lidský příběh, napůl historický, napůl mýtický, o ženě narozené do mužského světa. 4,20 hvězdiček na Goodreads. #mahábhárata #mýtickáfikce #mezinárodníbestseller",
+      "src": "6fa2e4dc854a"
+    },
+    "item.9331197768.description": {
+      "text": "Krásný zlatý metalický top od značky Mango. S jemným leskem, který se táhne po celé ploše – odráží světlo a působí elegantně, aniž by byl přehnaný. Univerzální top na večírek nebo do společnosti. Ideální volba pro večer či párty – zkombinujte jej s elegantními kalhotami nebo sukní, nebo ho noste ležérně s džíny a sakem. Díky zlatému lesku působí výjimečně při slavnostních příležitostech i během svátečního období.\n\nDetaily:\n\nVýstřih do V vpředu i vzadu\nPevné pletené ramínka (styl cami/tílko)\nJemný pružný metalický úplet\nMírně průsvitné – lehké a vzdušné\nZnačka Mango\nVelikost: M",
+      "src": "04cf82d00d17"
+    },
+    "item.9311775029.description": {
+      "text": "Krásný černý bavlněný top ve stylu kurti od značky Sabhyata s jemným tónovým blokovým potiskem po celé ploše a nádherným kontrastním výstřihem.\nOd oblíbené indické značky Sabhyata, velikost L. Vyrobeno z měkké, prodyšné čisté bavlny.\nDetaily:\n\nKrátké rukávy s červeným lemováním\nOzdobný vyšívaný výstřih ve tvaru V\nKontrastní červené a hořčičné lemování na spodním okraji a rukávech\nTónový květinový blokový potisk na černém podkladu\nVolný, pohodlný střih\nLehká čistá bavlna\n\nSnadno se kombinuje s džíny, kalhotami nebo sukní. Univerzální kousek pro každodenní nošení.\n\nVelikost: L (podle štítku)\nStav: Velmi dobrý",
+      "src": "1f0554b459e2"
+    },
+    "item.9359739617.description": {
+      "text": "Propojené povídky odehrávající se na venkově i ve městech Pákistánu, které se točí kolem domácnosti bohatého feudálního statkáře a služebnictva, příbuzných a přisluhovačů spjatých s jeho světem. Finalista ceny National Book Award William Dalrymple ji označil za pravděpodobně nejlepší beletrii o Pákistánu napsanou v angličtině. Kritici ji kvůli její zdrženlivosti a psychologické hloubce přirovnávají k Čechovovi a Turgeněvovi. Skvělá volba pro milovníky literární beletrie, jihoasijských autorů a sbírek propojených povídek, jako jsou díla Jhumpa Lahiriové nebo Mohsina Hamida.  (Finalista National Book Award)",
+      "src": "0937e62d760d"
+    },
+    "item.9602838102.description": {
+      "text": "Tichý, ale drtivý román o skromném páru, který byl vlastními rodinami vyhnán za to, že se vzali bez souhlasu, a jehož křehký klid se rozpadne, když je dluh donutí vyrovnat se s minulostí. Natsume Soseki tento román označil za svůj nejoblíbenější ze všech svých děl a Haruki Murakami jej uvádí jako knihu, s níž se nejvíce ztotožňuje. Časopis New Statesman jej označil za mistrovské dílo vkusu a srozumitelnosti. Toto vydání nakladatelství NYRB nabízí nový, přesnější překlad než předchozí verze. 4,07 hvězdiček na Goodreads. #japaneseliterature #natsumesoseki #nyrbclassics",
+      "src": "eea3c4b3937a"
+    },
+    "item.9602596973.description": {
+      "text": "Dvojjazyčná kapesní příručka o akupresuře a akupunktuře v hindštině a angličtině, která se zaměřuje výhradně na jeden bod pro každé onemocnění a umožňuje tak rychlou a snadnou úlevu. Pokrývá vše od poruch chuti k jídlu až po nouzové situace a obsahuje schémata rukou a podrobné pokyny k uklidnění a posílení pro každý bod. Je dostatečně kompaktní, aby se vešel do tašky nebo kapsy, a je koncipován jako rychlý přehled pro domácí použití. Vydalo nakladatelství ASPEUS, specializovaný výzkumný ústav pro naturopatii a akupresuru v Prayagraji. #akupresura #alternativníléčba #naturopatie #uzdravení #ájurvéda",
+      "src": "2cf54aa415ae"
+    },
+    "item.9562192907.description": {
+      "text": "Ulos, uznaný organizací UNESCO jako součást nehmotného kulturního dědictví Indonésie, lze nosit jako doplněk (šál, šátek, sukni), pověsit na zeď, použít jako prostírací běhoun nebo dokonce zarámovat a vystavit. Ulos je více než jen tradiční textilie. V komunitě Bataků je posvátným symbolem tepla, ochrany a požehnání předků. Každý kus, ručně tkaný s významnými barvami a motivy, v sobě nese hluboké filozofické hodnoty a doprovází nejdůležitější životní okamžiky, od narození přes svatbu až po rozloučení.\nMateriál – bavlna a hedvábí",
+      "src": "3b29df965656"
+    },
+    "item.9602894095.description": {
+      "text": "Čtyři ženy na 56 dní opustily svůj běžný život, aby na motocyklech urazily 17 000 kilometrů přes šest zemí – z Hyderabadu přes severovýchod Indie, Myanmar, Thajsko, Laos a Vietnam podél řeky Mekong až do Kambodže. Piya Bahadur vypráví o jedinečné cestě terénem, který indičtí cestovatelé málokdy navštěvují, a o své vlastní proměně z ostýchavé pracující matky v sebevědomou dobrodružku. Kniha byla generálním ředitelem cestovního ruchu organizace Incredible India označena za strhující čtení. #cestovánínamotocyklu #ženycestovatelky #dobrodružnévzpomínky",
+      "src": "752cf398e4d4"
+    },
+    "item.9602907756.description": {
+      "text": "Fyzik a detektiv Manabu Yukawa se vydává do upadajícího přímořského letoviska na konferenci o těžbě nerostných surovin, kde se však ocitne zapleten do vyšetřování vraždy, když je u úpatí útesů nalezen mrtvý host. Kirkus označil knihu za geniální díky tomu, jak se v případu, který se zdá naprosto bez zvratů, objevuje jeden zvrat za druhým, a deník The Times nazval Higashina japonským Stiegem Larssonem. Třetí díl mezinárodně úspěšné série Detektiv Galileo, která byla později zfilmována jako japonský hit. 3,96 hvězdiček na Goodreads. #japanesecrimefiction #detectivegalileo #mysterythriller",
+      "src": "6837d2bdb5ef"
+    },
+    "item.9367213932.description": {
+      "text": "Krátká kombinéza značky Zara z bílé bavlny s pokrčenou texturou. Velikost L. Lehký a vzdušný kousek v boho-utility stylu s mnoha krásnými detaily. Na kapsách jsou některé skvrny, které jsou však téměř neviditelné. Ideální letní kousek na dovolenou, na pláž nebo do horkých dnů – nenáročný a pohodlný s uvolněným, mírně oversized střihem.\n\n\nDetaily:\nZnačka: Zara\nMěkká zvrásněná bavlněná gáza — lehká a prodyšná\nVýstřih s límečkem, poloknoflíkovou légu a dřevěnými knoflíky\nElastický pas se stahovací šňůrkou s koncovkami z dřevěných korálků\nNahrnuté rukávy\nDvě přední našité kapsy\nStyl kombinézy / overalu (šortky)\nPřirozená zvrásněná struktura",
+      "src": "bc8e06af2eae"
+    },
+    "item.9388380417.description": {
+      "text": "Velikost přes prsa: 36–38 palců – bude sedět perfektně. \n\nKrásná indická bavlněná kurta v sytě červené barvě s technikou shibori a jemnými bílými vzory vytvořenými technikou rezerváže. Tradiční shibori je ruční technika batiky používaná v Indii. Elegantní a pohodlná, s krásnými detaily u výstřihu a manžet. Univerzální etnický kousek, který můžete nosit přes legíny, džíny nebo kalhoty, a to jak v elegantním, tak v ležérním stylu.\n\nDetaily:\n100 % bavlna – měkká, prodyšná a pohodlná na nošení\nČervený vzor shibori / batika\nOzdobná potištěná léga u výstřihu a ladící potištěné manžety\nKulatý výstřih\n3/4 rukávy\nBoční rozparky pro volnost pohybu\nRovný střih kurty, délka po kolena/lýtka",
+      "src": "72daee4fe245"
+    },
+    "item.9330125733.description": {
+      "text": "Elegantní fialové midi šaty od značky Closet London. V syté barvě lilku s lichotivým výstřihem do V a bohatou, vzdušnou sukní ve tvaru písmene A. Jednoduché, univerzální a pohodlné – skvěle se hodí do práce, na slavnostní příležitosti i na každý den. Pohodlné, lichotivé šaty, které lze snadno přizpůsobit formálnímu i neformálnímu stylu. Zkombinujte je s podpatky na slavnostní příležitosti nebo s balerínkami a sakem do kanceláře. Sytá barva je krásná po celý rok.\n\nDetaily:\nVýstřih do V\n3/4 rukávy\nPlisovaný pas s bohatou, vlající sukní\nMěkký strečový úplet s krásným splýváním\nMidi délka\nVyrobeno v Londýně\nBarva: Fialová / lilková\nMateriál: Strečový úplet\nVelikost: UK 12 / US 8\nStav: Dobrý",
+      "src": "7429593b05ae"
+    },
+    "item.9602649617.description": {
+      "text": "V podřadném ubytovacím domě je nalezena oběšená mladá žena s dopisem na rozloučenou na stole, ale bystrý strážník si všimne detailů, které nesedí. Pátrání Scotland Yardu vede k Charlesovi Hobartovi, muži, který měl prostředky, motiv i příležitost, dokud se poslanec a amatérský kriminolog Scott Egerton nerozhodl dokázat jeho nevinu a v poslední chvíli odhalit skutečného vraha. Autor Anthony Gilbert byl pseudonymem Lucy Mallesonové, členky Detection Clubu, která je bezesporu považována za jednu z největších osobností detektivní literatury. Vzácné vintage vydání v brožované vazbě od nakladatelství Pan Books. #vintagecrime #goldenagemystery #detectivefiction",
+      "src": "768df32e0055"
+    },
+    "item.9360475926.description": {
+      "text": "Krásné bavlněné šaty midi s klasickým indickým ručním blokovým potiskem. Volný, elegantní střih ve tvaru písmene A. FabIndia je oblíbená indická tradiční značka známá svými eticky vyráběnými, řemeslně zpracovanými blokovými potisky, kterou je v Evropě těžké sehnat. Nadčasové, pohodlné šaty, které se skvěle hodí na léto, dovolenou nebo k vrstvení po celý rok.\n\nDetaily:\nZnačka: FabIndia (originální štítek – 100 % bavlna, vyrobeno v Indii)\nVelikost L\nTradiční blokový potisk ve stylu Ajrakh – paisley vzory, květinové motivy a medailony\nOzdobný potisk na lemu a manžetách v červené, modré a černé barvě\nDlouhé rukávy, kulatý výstřih\nČervená stahovací šňůrka na zádech pro zvýraznění pasu\nMěkká, prodyšná a lehká bavlna",
+      "src": "da59e38f110c"
+    },
+    "item.9328440121.description": {
+      "text": "Elegantní námořnicky modré a bílé midi šaty od značky Wardrobe. Přirozeně elegantní díky abstraktnímu geometrickému vzoru. Lichotivý a univerzální kousek, který se hodí do kanceláře, na slavnostní příležitosti i k elegantnímu oblečení. Pohodlné, nemačkavé a snadno se kombinují s podpatky i plochými botami. Krásně padnou po těle a opticky zeštíhlují pas.\n\nDetaily:\nVelikost: M–L\nČlunkový/kulatý výstřih s krátkými rukávy\nLichotivý zkroucený/nařasený detail v pase (vpředu)\nVázací pásek vzadu pro zdůraznění pasu\nHladký strečový džerzej s krásným splýváním\nDélka midi\nSnadné oblékání, bez zbytečných komplikací\nBarva: Námořnická modrá / bílá\nMateriál: Hedvábný strečový džerzej (syntetický)\nStav: Výborný",
+      "src": "0570093c1a5b"
+    },
+    "item.9362130631.description": {
+      "text": "Kniha, kterou deník The Times označil za „zničující dílo“ – brutálně upřímné zúčtování nositele Nobelovy ceny V. S. Naipaula s Indií po vyhlášení výjimečného stavu Indirou Gándhíovou. Hodnocení na Goodreads: 3,71 na základě více než 1 900 hodnocení. Jako druhý díl Naipaulovy uznávané Indické trilogie je tato drsná a neúprosná analýza kastovního systému, náboženství, chudoby a postkoloniální identity označována za fenomenální dílo, jehož postřehy se s odstupem času jeví ještě ostřejší. Není to pohodlné čtení – jde o kontroverzní, nekompromisní klasiku, která je nezbytná pro každého, kdo se vážně zajímá o postkoloniální literaturu, indickou historii nebo Naipaulovo dílo, za které získal Nobelovu cenu. Brožovaná vazba, použitý stav, mírné opotřebení obálky (viz fotografie).",
+      "src": "13944c564b01"
+    },
+    "item.9339656344.description": {
+      "text": "Krásné letní bavlněné šaty s ručním blokovým potiskem od FabNu, moderní indické značky nové generace. Nádherný abstraktní ruční blokový potisk zvířat a tygrů v odstínech indiga a šalvějové zeleně na měkké prodyšné bavlně. Nafouklé rukávy, zapínání na knoflíky vpředu a vzdušná stupňovitá sukně dodávají šatům nenucenou eleganci a zajišťují pohodlné nošení.\n\nDetaily:\nVýstřih do V s celoplošným zapínáním na knoflíky\nNafouklé rukávy s elastickými manžetami\nPřiléhavý pas s vrstvenou, vzdušnou sukní\nMěkká, lehká indická bavlna, ručně potištěná blokovou technikou\nFabNu by Fabindia — kvalitní přírodní látka\nBarva: indigově modrá / šalvějově zelená\nMateriál: 100 % bavlna (ručně tištěná blokovou technikou)\nVelikost: M\nRozměry (na rovné ploše/přibližně):\nObvod hrudníku: 36\"\nObvod pasu: 32\"\nObvod boků: volný/pohodlný\nDélka: 47\"",
+      "src": "2b3d48d2cd22"
+    },
+    "item.9311368443.description": {
+      "text": "Nádherné kalhoty palazzo se širokými nohavicemi z autentické bavlny z Nigérie, s úchvatným potiskem ve stylu batiky, který zachycuje mandalové květinové motivy v teplých odstínech hnědé, hořčičné, šalvějově zelené a růžové. Zepředu vypadají jako plná sukně, ale ve skutečnosti se jedná o široké, splývavé kalhoty s rozparkem uprostřed, takže získáte dramatický efekt sukně s pohodlím kalhot. \n\nZkombinujte je s podpatky a přiléhavým topem pro elegantní vzhled, nebo se sandály pro ležérní boho styl. Skutečně výrazný kousek s nádhernými barvami.\nPoznámka: bavlna se přirozeně mačká – stačí ji rychle vyžehlit nebo napařit a je připravena k nošení.\nPas: Nastavitelný pomocí stahovací šňůrky. (Můj pas má 38 palců/96,5 cm a kalhoty mi perfektně sedí)\nStav: Výborný / Nošené jednou / Jako nové",
+      "src": "7234c4692ad3"
+    },
+    "item.9314010527.description": {
+      "text": "Úchvatné bezramínkové maxi šaty z autentické africké bavlny s voskovým potiskem, zakoupené v Nigérii. Výrazný modro-bílý listový vzor s nápadnými červeno-zlatými ornamentálními spirálami – zářivé, poutavé a plné charakteru. Nařasený živůtek se přizpůsobí různým velikostem a drží i bez ramínek. Perfektní výrazný kousek na léto, dovolenou, festivaly nebo večírky – stačí si je obléknout a vyrazit, nebo je doplnit džínovou bundou a sandály.\n\nVelikost: snadno padne na velikosti M až XL\nStav: Nikdy nošené\nDetaily:\nBezramínkový bandeau styl se řaseným/elastickým živůtkem\nPružný smockovaný vrch pro pohodlné a nastavitelné nošení\nPlná, vlající maxi sukně\nAutentický africký vzor s voskovým potiskem, pevná a odolná bavlna\nSyté, intenzivní barvy",
+      "src": "2bb04fbd307b"
+    },
+    "item.9371212323.description": {
+      "text": "Jedinečný, zcela originální ručně vyrobený náhrdelník. Skvělý doplněk, který dodá jednoduchému outfitu řemeslný, lidový nádech. Vyrobeno z barevných jutových/provázkových šňůrek (růžové a hořčičně žluté), navlečených s drobnými dřevěnými korálky a malými mosaznými zvonky, zakončených nápadným vyřezávaným dřevěným přívěskem obaleným stočenou jutou a doplněným ručně vyšívanými čtverečky látky s kantha stehem (indický vzor) v červené a žluté barvě, plus malým přívěskem v podobě bambulky.\n\nDetaily:\nRučně vyrobený / řemeslný výrazný náhrdelník\nKombinace přírodních materiálů: vyřezávané dřevo, juta/provázek, bavlněná látka, dřevěné korálky, mosazné zvonky\nRučně vyšívané detaily z látky (běžný steh ve stylu kantha)\nZářivá lidová/kmenová barevná paleta\nVázání na uzel — nastavitelná délka",
+      "src": "4aafe8192957"
+    },
+    "item.9316357780.description": {
+      "text": "Krásné modré šaty s blokovým potiskem od značky Anoshk, butikové značky z Dillí. Měkká bavlna s propracovaným květinovým potiskem, palmami a motýly v barvách hořčičné, růžové, modré a hnědé, se dvěma kapsami. Pohodlné, elegantní šaty, které se snadno oblékají, s nádherným potiskem a volným, rozšiřujícím se střihem. Ideální na léto, dovolenou na pláži nebo na každodenní nošení se sandály. Délka přibližně po kolena / midi.\n\nDetaily:\n\nMěkká bavlna v barvě šalvějové modři s detailním květinovým a motýlími motivy v blokovém tisku\nBez rukávů, se zaobleným výstřihem a tmavě modrým lemováním\nUvolněný střih ve tvaru písmene A / swing s krásným objemem\nBoční kapsy\nLehká, prodyšná čistá bavlna\nRučně vyrobené – drobné odchylky v potisku jsou součástí kouzla ruční výroby\n\nVelikost: M–L\nStav: Velmi dobrý",
+      "src": "ca41ac111461"
+    },
+    "item.9312410623.description": {
+      "text": "Nádherná lehká indická bavlněná kombinéza v jemně modré barvě s delikátním bílým blokovým potiskem, který kombinuje květinové a geometrické motivy, s krásným háčkovaným krajkovým lemem po celé přední straně. Ideální na léto. \n\nDetaily:\nNařasený/elastický živůtek pro pohodlné a nastavitelné nošení\nNastavitelné ramínka\nVlající kalhoty\nJemná háčkovaná krajka vpředu\nLehká, prodyšná čistá indická bavlna\nJemný, uklidňující modrý odstín\n\nSkvěle mi sedí (obvod hrudníku 40 palců / 101 cm, obvod pasu 38 palců / 96 cm, obvod boků 43 palců / 109 cm). Nařasený živůtek zajišťuje pohodlí v horní části, zatímco široké nohavice dodávají volný, elegantní střih. Ideální na horké dny, dovolenou nebo festivaly – stačí si obout sandály a vyrazit.\n\nVelikost: L\nStav: Velmi dobrý",
+      "src": "8874261edf0f"
+    },
+    "item.9603636575.description": {
+      "text": "Starodávný čínský masážní wellness rituál, na který nedají dopustit sportovci ani celebrity, nyní v jedné kompletní sadě. Tato 12dílná sada pro vakuové baňkování obsahuje celou škálu velikostí baněk od malých po extra velké, pumpičku pro rychlé vytvoření podtlaku a jako bonus model pro ušní akupunkturu s vyznačenými akupunkturními body na uchu pro orientaci. Baňkování zažívá obrovský nárůst popularity díky olympijským sportovcům a celebritám první třídy, kteří se chlubí těmito charakteristickými kruhovými stopami, a tato sada vám umožní vyzkoušet tento trend doma. Součástí balení je vše, co je na obrázku, a na krabičce najdete kompletní návod, abyste mohli hned začít. Skvělý dárek pro každého, kdo se zajímá o alternativní terapie, masáže nebo péči o sebe inspirovanou tradiční čínskou medicínou. #baňkování #tcm #péčeosebe",
+      "src": "8a881630cb5a"
+    },
+    "item.9729949801.description": {
+      "text": "Obvod hrudníku: Vhodné pro obvod přibližně 36–38 palců\nŠířka ramen: 15 palců\nPas: volný střih, padne většině žen \nDélka: 48 palců\n\nKrásné dlouhé šaty v jemné pastelově béžové barvě s delikátním šedým a hořčičně žlutým květinovým potiskem. \nOriginální indický design značky Anoshk, oblíbeného módního butiku z Dillí. \nVyrobeno ze 100 % lehké bavlny, která je měkká, prodyšná a pohodlná i v horkých dnech. \nHorní část je přiléhavá a sukně má vintage střih do A. \nTříčtvrteční rukávy a malý výstřih do V s vázacím detailem. \nPas je volný a splývavý, takže se hodí pro širokou škálu velikostí a typů postavy. Ideální na léto, dovolenou, svatby nebo jakoukoli příležitost, při které se chcete cítit elegantně a zároveň pohodlně.",
+      "src": "56972dd4c616"
+    },
+    "item.9371171716.description": {
+      "text": "Jedinečný, poutavý kousek, který se skvěle hodí k jednobarevnému topu nebo letním šatům a dodá jim zářivý barevný akcent. Je lehký a pohodlný na nošení a představuje krásný příklad ručně vyráběných textilních šperků. Zářivý, veselý indický náhrdelník, který upoutá pozornost, vyrobený výhradně z bavlněné látky. Vícepramenný design s řadami ručně navlečených látkových korálků v růžové, limetkově zelené a žluté barvě, zakončený skupinkou ručně vyrobených bavlněných květů v modré, oranžové a zelené barvě s kontrastními prošitými středy.\n\nDetaily:\nRučně vyrobené / řemeslné textilní šperky\n100% bavlněná tkanina — lehká a pohodlná na nošení\nVíceřadý korálkový design s výrazným květinovým středovým prvkem\nŽivá pestrobarevná paleta\nZadní zapínání na textilní stuhu — nastavitelná velikost",
+      "src": "3616e6fbb3fe"
+    },
+    "item.9355082189.description": {
+      "text": "Koupeno před týdnem. Jazyk: angličtina. Poutavý a důkladně podložený pohled na vzestup přípravku Ozempic a na to, jak tyto léky na hubnutí mění podobu zdravotnictví, fast foodu, módy a dalších oblastí. Kniha, jejíž autorkou je komentátorka agentury Reuters, odhaluje historii medicínského průlomu, který definuje celou éru, a zároveň nastoluje zásadní otázky týkající se nerovnosti, ideálů krásy a touhy po štíhlosti. Aktuální a strhující čtení pro každého, kdo se zajímá o zdraví, vědu, farmaceutický průmysl nebo kulturní debatu kolem léků na hubnutí.\n\nDetaily:\nAutorka: Aimee Donnellan\nVydavatel: 4th Estate\nISBN: 978-0-00-871909-8\nVazba: brožovaná\nDoporučená cena: 16,99 £\nJazyk: angličtina\nStav: Velmi dobrý, použité. Stránky čisté a nepoškozené, plně čitelné.",
+      "src": "0cd1f661ed6e"
+    },
+    "item.9360542677.description": {
+      "text": "Zářivý bavlněný kousek s ručním blokovým potiskem v slunečně žluté barvě s růžovou, červenou a zelenou – veselý indický květinový a paisley vzor po celé ploše. Díky nařasenému elastickému hornímu lemu je tento kousek univerzálním kouskem „dva v jednom“: noste jej vysoko jako šaty bez ramínek nebo níže na bocích jako dlouhou sukni. Lehký, radostný letní kousek – ideální na dovolenou, festivaly nebo dny strávené na pláži. Pružný, řasený pas se přizpůsobí různým velikostem.\n\n\nDetaily:\nVelikosti M, L, XL\n100 % lehká bavlna – měkká, prodyšná, ideální do teplého počasí\nTradiční indický vzor tištěný ruční blokovou technikou\nŠiroký řasený/elastický horní díl – přizpůsobí se postavě a drží na místě\nDva způsoby nošení: šaty bez ramínek nebo maxi sukně\nPlný, vzdušný řasený střih s krásným rozvlněním\nMaxi délka\nNavlékací – bez zipů a knoflíků",
+      "src": "f7e490aaecd5"
+    },
+    "item.9437887059.description": {
+      "text": "Zde jsou zobrazeny jak vyčištěné, tak oxidované verze. Náušnice jsou označeny puncem 925, což je standardní punc označující, že šperk je vyroben z 92,5 % čistého stříbra. Tyto náušnice jsou vyrobeny ve stříbrném etnickém indickém stylu „chandbali“ a zdobí je zelený kamínek a visící stříbrné korálky. Tradiční design českého šperku. Vyznačují se složitým tvarem mangového plodu. Na spodní části je doplněna pěti visícími kovovými korálky (kapkami), které krásně odrážejí světlo. Vynikající vintage stav s krásným přírodním vzhledem. Oxidaci jsem zde očistila a ukázala obě verze. Oxidace je velmi přirozená a její odstranění je velmi jednoduché. Součástí balení je čisticí prášek. Ideální jako výrazný módní doplněk nebo promyšlený luxusní dárek.",
+      "src": "8ce83d7540c3"
+    },
+    "item.9316140580.description": {
+      "text": "Krásné bílé, velmi měkké bavlněné letní šaty z Indie, pokryté jemným ručně blokově tištěným květinovým vzorem v jemných odstínech terakoty, oranžové a šalvějově zelené – klasický vzor v mughálském stylu. Mají dvě kapsy. Svěží, ženské a nenuceně letní. Od značky Jaypore, velmi oblíbené indické značky známé pro ruční blokové potisky a přírodní textilie. Lehké, elegantní letní šaty, které se snadno perou. Stačí je obléknout k sandálům a vyrazit, nebo je zkombinovat s džínovou bundou. Délka šatů je přibližně po kolena (viz fotografie).\n\nDetaily:\nJemná bílá bavlna s celoplošným květinovým potiskem\nŠpagetové ramínka\nStřih s vypracovaným živůtkem\nVrstvená, nařasená sukně s krásným rozletem\nLichotivý střih s rozšiřující se sukní\nLehká, prodyšná čistá bavlna – ideální pro horké dny\nVelikost: Perfektně padne velikostem M až L.",
+      "src": "dae2411908ed"
+    },
+    "item.9329298936.description": {
+      "text": "Krásný lehký kaftan od značky Jaipur Kurti v nádherném růžovém potisku ve stylu bandhani (slavný indický vzor). Měkká, vzdušná bavlna s úchvatným lemem zdobeným korálky a výšivkou pod poprsím. Přirozeně boho a zároveň elegantní. Univerzální – noste jej jako plážový přehoz, krátké šaty nebo ho zkombinujte s džíny či šortkami. Ideální na léto, dovolenou a festivaly. Zdobený pas mu dodává krásný, lichotivý tvar.\n\nDetaily:\nVýstřih do V s volnými netopýřími/kaftanovými rukávy\nEmpírový pas s krásným krémovo-stříbrným lemem zdobeným korálky a zrcálkovými prvky\nLehká, poloprůsvitná bavlna – vzdušná a lehká\nVolný, pohodlný střih\nZnačka Jaipur Kurti\nBarva: bobulově růžová / bílý vířivý potisk\nMateriál: lehká bavlna\nVelikost: M–L\nStav: výborný",
+      "src": "bd26e9bf4473"
+    },
+    "item.9331163535.description": {
+      "text": "Velikost – M až L (obvod hrudníku 38 nebo méně)\nNádherný vyšívaný top od značky Fabels by Fabindia, exkluzivní indické značky. Z bohaté směsi hedvábí a bavlny v barvě modrozelené. Nádherná látka v odstínech drahokamů má jemný lesk a na předním díle je zdobena elegantní tónovou květinovou a spirálovou výšivkou. Plně podšité a krásně zpracované. Výjimečný, univerzální top, který se skvěle hodí k elegantním kalhotám nebo sukni na slavnostní příležitosti, případně k džínám pro styl smart-casual. Sytá barva a výšivka mu dodávají opravdu výjimečný charakter.\n\nDetaily:\n\nKruhový výstřih, bez rukávů\nKrásná výšivka v tónech látky (květinové motivy a spirály) na předním dílu\nVrchní materiál z hedvábně-bavlněné směsi s měkkou bavlněnou podšívkou\nBoční zapínání na zip\nPřiléhavý, na míru střižený střih\nFabels by Fabindia — vyrobeno v Indii\nNa štítku je uvedeno pouze chemické čištění, ale já ho peru ručně a je v naprostém pořádku",
+      "src": "ae3a01617071"
+    },
+    "item.9311896207.description": {
+      "text": "Krásné indické bavlněné šaty midi, kombinující tmavě modrý živůtek s bohatě plisovanou sukní v nádherném modro-bílém patchworkovém vzoru připomínajícím dlaždice. Elegantní letní kousek s krásnou texturou a detaily.\nOd značky Vajor, velmi oblíbené indické značky známé potisky inspirovanými řemeslnou tvorbou. Velikost L.\n\nDetaily:\n\nNámořnicky modrý živůtek s krátkými rukávy\nRozvlněná sukně s plisováním v kombinaci modrého květinového a dlaždicového vzoru\nPřiléhavý pas pro lichotivý střih\nZadní zapínání na zip, podšitý živůtek\nProdyšná čistá bavlna\n\nSkvěle mi sedí (obvod hrudníku 40 palců / 101 cm, obvod pasu 38 palců / 96 cm, obvod boků 43 palců / 109 cm). Lichotivý a elegantní, ideální na letní dny, zahradní večírky, dovolenou nebo k sandálům či lodičkám.\nPoznámka: bavlna se přirozeně mačká – stačí ji rychle vyžehlit nebo ošetřit párou a je připravena k nošení.\nVelikost: L (podle štítku)\nStav: Velmi dobrý",
+      "src": "fbb20b3cba3a"
+    },
+    "item.9370862833.description": {
+      "text": "Úchvatné bavlněné maxi šaty od značky Anoshk by Manisha Singh, butikové značky z indického Dillí. Vyrobeny z nádherné ručně tkané šedé a krémově bílé bavlny s ikatovým vzorem, s nápadným asymetrickým lemem. Ikat je tradiční technika tkaní náročná na práci, takže každý kus je jedinečný. Rafinované, decentní šaty, které se hodí jak k elegantnímu, tak k ležérnímu stylu. Elegantní, ručně vyrobený kousek z Indie.\n\nDetaily:\nZnačka: Anoshk by Manisha Singh (butiková značka z Dillí)\nRučně tkaná bavlna s ikatovým vzorem — vzor je barven do příze ještě před tkaním (pravý ikat, nikoli potisk)\nDvoubarevný šedý design: ikatový kšilt ve tvaru kosočtverce s rozptýleným motivem na těle šatů\nBez rukávů se zaobleným výstřihem\nStřih s panely, áčkový tvar s dramatickým asymetrickým lemem\nProdyšná přírodní bavlna – chladivá a pohodlná\nMaxi délka – 47 palců\nObvod přes prsa – 36 palců\nObvod pasu – 36 palců",
+      "src": "78898b94714b"
+    },
+    "item.9328489962.description": {
+      "text": "Nádherné, jedinečné květinové šaty, ušité na míru v Nigérii z krásné, pevné bavlněné látky. Sytě námořnická modrá základna pokrytá malířským tropickým květinovým potiskem v jemných odstínech růžové, žluté, broskvové a šalvějově zelené. Krásně zpracované a naprosto jedinečné. Skutečný výrazný kousek pro léto, svatby, zahradní oslavy nebo dovolenou. Kontrastní manžety a detail v podobě klíční dírky dodávají šatům eleganci a výjimečnost. Ručně vyrobené, takže na světě neexistuje žádný druhý takový kousek!\n\nDetaily:\nKulatý výstřih s roztomilým otvorem ve tvaru klíční dírky/slzy vpředu\nKontrastní manžety v odstínu tmavého lila/fialové na krátkých rukávech\nPřiléhavý střih, který kopíruje postavu v pase a na bocích\nZapínání na zip vzadu\nDélka ke kolenům\nStrukturovaný, na míru šitý střih – navržený tak, aby lichotil postavě\nBarva: Námořnická modrá s tropickými květinovými motivy\nMateriál: Bavlna\nStřih: Přiléhavý / body-con, nejvhodnější pro velikost L\nStav: Výborný, nošeno jednou",
+      "src": "becd3efbac4b"
+    },
+    "item.9330044272.description": {
+      "text": "Úchvatné výrazné šaty z bavlny v zářivé žluté barvě s výrazným paisleyovým a květinovým potiskem. Sytý slunečně žlutý podklad s propracovanými zelenými, modrými, černými a krémovými detaily a krásným zdobeným lemem. Poutavé, univerzální a plné charakteru. Jsou tak univerzální – noste je jako letní šaty, plážový přehoz nebo si je na dovolené přehoďte přes plavky. Díky výraznému potisku a staženému pasu jsou šaty pohodlné a zároveň lichotí postavě. Skutečně jedinečný kousek.\n\nDetaily:\n\nKulatý výstřih s výřezem vpředu a krátkými rukávy ve stylu kimona\nStažený elastický pas pro lichotivý, nastavitelný střih\nLehká prodyšná bavlna – ideální do teplého počasí\nOzdobný potisk podél lemu\nSnadné oblékání\nBarva: Žlutá / zelená / modrý paisley\nMateriál: Bavlna\nStřih: Řasený elastický pas – přizpůsobí se postavě, přibližně velikost M–L\nStav: Zcela nové, nikdy nenošené",
+      "src": "20a72c4eecc5"
+    },
+    "item.9315339114.description": {
+      "text": "Nádherný přehozený top v zářivé žluté a černé barvě s africkým voskovým potiskem, zakoupený v Nigérii. Výrazný geometrický vzor ve stylu kente, lichotivý výstřih do V s přehozeným předním dílem, efektní nafouklé rukávy a vázání v pase ve stylu peplumu. Díky přehozenému a zavazujícímu se pasu se top hodí pro širokou škálu velikostí a lichotivě zvýrazňuje pas. Zkombinujte jej s elegantními kalhotami nebo sukní, nebo ho noste ležérně s džíny. Ideální na léto, večírky nebo pro efektní vstup na scénu. Skutečně výrazný kousek plný barev a charakteru.\n\nDetaily:\nZavinovací výstřih do V vpředu s vázáním v pase – nastavitelný, lichotivý střih\nObjemné nafouklé/balónové rukávy s elastickými manžetami\nRozšiřující se peplum v pase\nPevná, strukturovaná africká bavlna — krásně drží tvar\nZářivý geometrický vzor v žluté, černé a bílé barvě\n\nStav: Nošené jednou\nVelikost: L. Mně sedí skvěle, ale díky zavazování v pase se hodí pro celou řadu velikostí.",
+      "src": "074e51965086"
+    },
+    "item.9311631498.description": {
+      "text": "Od značky FabIndia, jedné z nejoblíbenějších indických značek vyrábějících ručně zpracované přírodní textilie. Skutečný skvost. Nádherná dlouhá bavlněná sukně v zářivé růžové barvě s jemným květinovým motivem v celoplošném blokovém tisku a krásným tkaným zlatým zari lemem na spodním okraji i v pase. Bohatá, slavnostní a plná pohybu.\n\nDíky stahovací šňůrce pohodlně padne na pas v rozmezí přibližně 36–40 palců / 91–102 cm a krásně obepíná boky (bez problémů sedí na mých bocích o obvodu 43 palců / 109 cm). Dlouhá délka zajišťuje elegantní, vzdušný vzhled.\nIdeální na léto, festivaly, svatby nebo dovolenou, snadno se kombinuje s jednoduchým topem a sandály. Živý a poutavý.\n\nDetaily:\nPlný střih do A / rozšiřující se – krásně se točí a vlní\nŠňůrka v pase – lze ji utáhnout tak, aby seděla na různé velikosti\nTradiční květinový vzor tištěný blokovou technikou\nTkaný zlatý zari lem na spodním okraji a v pase\nKontrastní oranžové lemování\nLehká, prodyšná čistá bavlna",
+      "src": "3bfb0af71fdc"
+    },
+    "item.9312286809.description": {
+      "text": "Nádherné letní šaty od značky Ritu Kumar, jednoho z nejuznávanějších indických módních domů. Vyrobené z indické bavlny s úchvatným potiskem ve stylu art deco, který kombinuje motivy vějířů a šipek, v jemných tlumených odstínech černé, břidlicově modré, hnědé, krémové a šedé. Neformální, elegantní a velmi pohodlné na nošení.\n\nDetaily:\nBez rukávů s lichotivým výstřihem do „U“\nOzdobný detail z korálků u výstřihu\nElastický/řasený živůtek pro pohodlné nošení\nVolný, rozvlněný střih s nařaseným balónovým lemem\nBoční kapsy (dvě kapsy!)\nLehká, prodyšná bavlna\n\nVelikost na štítku 4 (vlastní velikostní tabulka značky Ritu Kumar – nejedná se o velikost UK/EU 4). Mně sedí pohodlně a volně splývá: obvod hrudníku 40 palců / 101 cm, obvod pasu 38 palců / 96 cm, obvod boků 43 palců / 109 cm. Volný střih pohodlně padne přibližně velikosti UK 12–14 / M–L a díky volnému střihu bude sedět i na řadu dalších velikostí. Délku a padnutí si prohlédněte na fotografii, kde je šaty na mně (dosahují mi do poloviny stehen).",
+      "src": "250e5855a7f8"
+    },
+    "item.9331108819.description": {
+      "text": "Různé velikosti – od M po XL\nÚchvatný letní bavlněný top ve stylu kimona od značky Anokhi, jednoho z nejexkluzivnějších indických obchodů s moderním indickým bavlněným oblečením. Krásně zpracovaný kousek z prvotřídní bavlny s ručním blokovým potiskem. Měkký bílý základ s propracovaným paisley vzorem v modré a vínové barvě, doplněný kontrastním tyrkysovým lemováním po okrajích. Přirozeně elegantní a univerzální. Exkluzivní, kvalitní kousek. Noste jej rozepnutý jako lehkou bundičku nebo zavázaný jako zavinovací top – skvěle vypadá přes džíny, šaty nebo plavky na dovolené. Řemeslné zpracování a barvy jsou naživo úchvatné. Výjimečný kousek od vyhledávané značky.\n\nDetaily:\n\nStřih ve stylu kimona/zavinovacího topu s vázacím páskem, který lze utáhnout nebo nechat rozepnutý\nElegantní kontrastní tyrkysová lemovka podél výstřihu a vpředu\nVolné 3/4 nafouklé rukávy\nPrémiová lehká bavlna s ručním blokovým potiskem – měkká s krásným splýváním\nZnačka Anokhi – známá autentickým indickým ručním blokovým potiskem",
+      "src": "f4243fa4a8c6"
+    },
+    "item.9328560854.description": {
+      "text": "Úchvatné ručně šité africké šaty s výrazným potiskem ve stylu batiky. Hustá bavlněná látka v nápadných odstínech žluté, černé a spálené oranžové s nádherným batikovým vzorem ve stylu „crackle“ či „tie-dye“. Skutečný magnet pro oči – zářivé, jedinečné a plné charakteru. Ideální na léto, festivaly, dovolenou, večírky nebo jakoukoli příležitost, při které chcete vyniknout. Smockování zajišťuje pohodlí a volnost, zatímco potisk z nich dělá nezapomenutelný kousek. Jedinečný kus!\n\nDetaily:\nVelikost: Pružný nařasený živůtek a pas – přizpůsobí se postavě, přibližně S–L\nČtvercový/odhalený výstřih s nařaseným živůtkem (přilne k postavě)\nNafouklé rukávy s roztomilými manžetami s mašličkou\nSmockovaný elastický pas pro lichotivý, nastavitelný střih\nVrstvená nařasená sukně s krásným objemem a pohybem\nDélka midi\nRučně vyrobeno v Nigérii z bavlny s autentickým africkým potiskem\nBarva: Žlutá / oranžová / černá batika\nLátka: Bavlna (africký voskový/batikový potisk)\nStav: Vynikající, nikdy nošené",
+      "src": "f485024ca6b6"
+    },
+    "item.9309160145.description": {
+      "text": "Úchvatné ručně vyšívané mexické šaty z černé bavlny v tradičním stylu huipil / oaxackém stylu. Pokryté zářivou, ručně vyšívanou výšivkou květin a listů v odstínech růžové, oranžové, žluté, červené, modré a zelené. Hustě ručně vyšívaný květinový sedlový díl a jemná černá háčkovaná krajka na ramenou, rukávech a lemu. Přes celé šaty vede saténová stuha.\nVyrobeno z prodyšné bavlny, ideální na léto, festivaly nebo k elegantnímu outfitu se sandály a šperky. Skutečný řemeslný kousek s opravdovým charakterem a mistrovským zpracováním, není sériově vyráběno.\nPrůvodce velikostmi:\nŠaty mají poměrně rovný střih a v pase jsou přiléhavější. Mně jsou v pase mírně těsné (mám obvod pasu 38 palců / 96 cm), což je jediný důvod, proč je prodávám. Nejvhodnější pro pas přibližně 36 palců / 91 cm nebo menší, případně pro kohokoli, kdo má rád volnější střih v ostatních částech. Pohodlné a prostorné v oblasti poprsí a boků.\n\nStav: Výborný / Nošeno jednou / Jako nové",
+      "src": "00fbde1296d5"
+    }
+  }
+}

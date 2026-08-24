@@ -1,0 +1,11 @@
+{
+  "_comment": [
+    "Hand-written de (Deutsch). YOURS. No build ever writes this file —",
+    "only the dashboard does, and only when you press Save. Always wins over ../[lang].json.",
+    "",
+    "  src  the hash of the English you were shown when you wrote this. When the English",
+    "       changes, this stops matching and the dashboard asks whether to keep or replace.",
+    "",
+    "Delete an entry to fall back to the machine translation."
+  ]
+}

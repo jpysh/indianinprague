@@ -158,10 +158,10 @@ async function fetchWardrobe(cookie) {
 
 // Pull the schema.org Product out of an item page. Vinted renders it server-side, so it
 // survives without executing any of the page's JavaScript.
-async function fetchDetail(itemUrl, cookie) {
-  // Same listing, UK storefront — see DETAIL_HOST. The path carries the id and slug and is
-  // storefront-independent.
-  const url = itemUrl.replace(/^https:\/\/www\.vinted\.[a-z.]+/, DETAIL_HOST);
+async function fetchDetail(itemUrl, cookie, host = DETAIL_HOST) {
+  // Same listing, UK storefront by default — see DETAIL_HOST. The path carries the id and
+  // slug and is storefront-independent, so any host serves the same item.
+  const url = itemUrl.replace(/^https:\/\/www\.vinted\.[a-z.]+/, host);
   const html = await (await get(url, cookie, "text/html")).text();
   const blocks = html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g);
   // ld.category is a flattened two-level string ("Ženy Dlouhé šaty") that drops every
@@ -190,6 +190,27 @@ async function fetchDetail(itemUrl, cookie) {
   // with an empty list, because the closet lives on .cz.
   out.condition = condition(html);
   return out;
+}
+
+// The same item's attribute words in Czech, read from the .cz storefront.
+//
+// Vinted localises its OWN vocabulary — category, condition, colour — per national site,
+// but NOT the seller's title and description: those are typed once and served identically
+// everywhere (measured 24 Aug 2026, .co.uk and .cz returned byte-identical descriptions for
+// the same listing while the category read "Women Summer dresses" and "Ženy Letní šaty").
+//
+// So this fetch is worth exactly three fields, and they are three fields worth having: they
+// are Czech written by Czechs rather than by a translation API, for the market this shop
+// actually ships from. Everything else Czech-facing has to come from somewhere else.
+//
+// One extra request per NEW item, at the same deliberate pace as the rest of this script.
+async function fetchCzech(itemUrl, cookie) {
+  const detail = await fetchDetail(itemUrl, cookie, STOREFRONTS.cz);
+  return {
+    condition: detail.condition,
+    colorRaw: detail.colorRaw,
+    vintedCategory: detail.vintedCategory,
+  };
 }
 
 // The condition, e.g. "Very good", "New without tags".
@@ -473,10 +494,35 @@ async function main() {
     let needsEnrich = false;
     if (cached) {
       detail = cached;
+      // Cached before the Czech pass existed. One request tops it up in place rather than
+      // forcing --full over the whole closet, the same way a missing crumbs array does
+      // above. A failure here is not worth a warning: the item keeps its English attribute
+      // words, the site falls back to them, and the next run tries again.
+      if (!detail.cs) {
+        try {
+          detail.cs = await fetchCzech(r.url, detailCookie);
+          enrichCache[id] = detail;
+          if (++sinceCheckpoint >= CHECKPOINT_EVERY) {
+            await writeJson("enrich-cache.json", enrichCache);
+            sinceCheckpoint = 0;
+          }
+          await sleep(DELAY_MS);
+        } catch {
+          /* next run */
+        }
+      }
     } else {
       process.stdout.write(`  enriching ${id} — ${r.title.slice(0, 50)}…\n`);
       try {
         detail = await fetchDetail(r.url, detailCookie);
+        // Czech attribute words for the same listing — see fetchCzech. Failing this must
+        // not cost the English enrichment that just succeeded, so it is caught separately.
+        try {
+          detail.cs = await fetchCzech(r.url, detailCookie);
+          await sleep(DELAY_MS);
+        } catch (err) {
+          console.warn(`  ⚠ no Czech attributes for ${id}: ${err.message} — will retry next run`);
+        }
         enrichCache[id] = detail;
         // Checkpoint. Without this, a failure 400 items into a cold run threw away every
         // page fetched so far — which is exactly what a Cloudflare 524 did on the first
@@ -532,8 +578,19 @@ async function main() {
       brand: r.brand || "",
       size: r.size || "",
       sizeGroup: sizeGroup(r.size, taxonomy.sizes),
-      condition: { en: translate(taxonomy.conditions, detail.condition) },
-      color: { en: translate(taxonomy.colors, detail.colorRaw) },
+      // English goes through the taxonomy maps, which force Vinted's wording onto this
+      // site's wording. Czech does NOT: it is Vinted's own Czech, already correct for a
+      // Czech reader, and mapping it would only introduce a second vocabulary to maintain.
+      // The key is absent, not empty, when the Czech fetch has not landed yet — an absent
+      // key is what the translation layer reads as "fall back to English".
+      condition: {
+        en: translate(taxonomy.conditions, detail.condition),
+        ...(detail.cs?.condition ? { cs: detail.cs.condition } : {}),
+      },
+      color: {
+        en: translate(taxonomy.colors, detail.colorRaw),
+        ...(detail.cs?.colorRaw ? { cs: detail.cs.colorRaw } : {}),
+      },
       category,
       vintedCategory: detail.vintedCategory,
       // Full path from the item page's breadcrumbs, in English:
