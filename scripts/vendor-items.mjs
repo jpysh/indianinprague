@@ -51,6 +51,14 @@ export function vendorItems(root) {
         .filter(Boolean)
         .map((_, n) => `images/govinda-${sku}-${n + 1}.jpg`);
       const o = overrides[sku] || {};
+      // "lead": 2 promotes the second photo to the card. The vendor shoots the plain back
+      // of a cushion cover first often enough that a blank pink square was the shop front
+      // of ten listings. Kept here rather than in listings.csv because that file is
+      // regenerated wholesale, and the filenames are index-derived so renumbering breaks.
+      const lead = Number(o.lead);
+      const ordered = photos[lead - 1]
+        ? [photos[lead - 1], ...photos.filter((_, i) => i !== lead - 1)]
+        : photos;
       return {
         id: `govinda-${sku}`,
         vendor: "Govinda",
@@ -86,8 +94,8 @@ export function vendorItems(root) {
         // the inventory dashboard can.
         retired: r[col.retired] === "yes",
         delivery: r[col.delivery],
-        photo: photos[0] || null,
-        photos,
+        photo: ordered[0] || null,
+        photos: ordered,
       };
     });
 }

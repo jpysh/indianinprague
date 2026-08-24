@@ -180,9 +180,10 @@ const money = (n) => (n < 2 ? Number(n).toFixed(2) : String(Math.round(n)));
 // form exists only as a filename on disk and never as a link. index.html is the site root.
 const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
 
-// Cards per generated page. 100 keeps the heaviest shelf near the weight of a page the
-// site already served comfortably; the browser then reveals them 24 at a time (shop.js).
-const PER_PAGE = 100;
+// Cards per generated page. 99 keeps the heaviest shelf near the weight of a page the
+// site already served comfortably, and divides by 3 so the desktop grid ends on a full row;
+// the browser then reveals them 24 at a time (shop.js).
+const PER_PAGE = 99;
 
 // URL-safe form of a subcategory name. Diacritics are stripped rather than percent-encoded:
 // /wardrobe/meditation/kanthi-malas is a URL someone can read aloud, and the Sanskrit and

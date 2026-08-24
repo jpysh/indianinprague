@@ -519,7 +519,7 @@
    Wrapped rather than scrolled: a 16-page series on a phone is three short rows, and a
    horizontally scrolling control is one nobody discovers. */
 .pager{
-  display:flex;flex-wrap:wrap;align-items:center;gap:8px;
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;
   margin:28px 0 8px;font-family:var(--mono);font-size:var(--fs-xs);
 }
 .pg-nums{display:flex;flex-wrap:wrap;gap:6px}
@@ -536,10 +536,10 @@
 .pager .pg[aria-current="page"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
 .pager .pg-step{font-weight:600}
 .pg-gap{padding:0 2px;color:var(--bone-dim);opacity:.6}
-/* Pushed to the far end on a wide screen, dropped to its own line on a narrow one. */
-.pg-of{margin-left:auto;color:var(--bone-dim);opacity:.75}
+/* Sits inline with the centred controls, dropped to its own line on a narrow one. */
+.pg-of{color:var(--bone-dim);opacity:.75}
 @media (max-width:560px){
-  .pg-of{margin-left:0;width:100%}
+  .pg-of{width:100%;text-align:center}
   .pager .pg{min-width:34px;height:34px}
 }
 

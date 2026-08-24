@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://indianinprague.jains.es/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/spirituality</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/how-it-works</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -239,9 +239,45 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/10</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2422-1-400.jpg?v=df2fa537</image:loc>
+      <image:title>Kantimála, 1st row: white among red beads</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2421-1-400.jpg?v=0291df3f</image:loc>
+      <image:title>Kantimála, 1st row, coloured, between 2 gold beads</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2420-1-400.jpg?v=66a57edf</image:loc>
+      <image:title>Kantimála 1st series: OM reliefs with ovals</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2419-1-400.jpg?v=d2ff7512</image:loc>
+      <image:title>Kantimála, 1st row: 2 round beads and 1 oval bead</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2418-1-400.jpg?v=3a7f275a</image:loc>
+      <image:title>Kantimála 1st series, small round</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2416-1-400.jpg?v=ddd4b496</image:loc>
+      <image:title>Kantimála, 1st series: gold/coloured bead and tulasi olive</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2414-1-400.jpg?v=e6153ce2</image:loc>
+      <image:title>Kantimála 1st series, solid rollers, 1.5 × 0.6 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2412-1-400.jpg?v=9f8c049c</image:loc>
+      <image:title>Kantimála, 1st series, with a Tulas sharp-toothed version</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2411-1-400.jpg?v=f1a9dc68</image:loc>
+      <image:title>Kantimala, 1st series, with Nrsimhadéva (finer beard)</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2410-1-400.jpg?v=51d30c49</image:loc>
       <image:title>Kantimála 1st series tulasi with large OM relief</image:title>
@@ -254,48 +290,52 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2408-1-400.jpg?v=be9b4543</image:loc>
       <image:title>Kantimála, 1st grade, special</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2407-1-400.jpg?v=8907abb0</image:loc>
-      <image:title>Kantimála, 1st series, solid wood with ‘Om’</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2405-1-400.jpg?v=1f75f67b</image:loc>
-      <image:title>Kantimála, 2nd series, brown, between oval tulasi motifs</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2404-1-400.jpg?v=a86378fb</image:loc>
-      <image:title>Kantimála, 1st series, black with blue beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2402-1-400.jpg?v=85106ea5</image:loc>
-      <image:title>Kantimála, 2nd series, black amongst gold beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2401-1-400.jpg?v=fda59f88</image:loc>
-      <image:title>Kantimála, 1st series, black with black multi-faceted beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2395-1-400.jpg?v=16294ef6</image:loc>
-      <image:title>Bhagavad-gítá taková, jaká je</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2393-1-400.jpg?v=a3a86a1c</image:loc>
-      <image:title>Onyx Bracelet</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2389-1-400.jpg?v=e15ea12c</image:loc>
-      <image:title>3D image of Krishna and Radha amongst the gopis</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2385-1-400.jpg?v=4620388b</image:loc>
-      <image:title>3D image of Prabhupada</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/11</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2130-1-400.jpg?v=48d9a37a</image:loc>
+      <image:title>Earrings with coloured loops, various colours</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2129-1-400.jpg?v=534dc4fe</image:loc>
+      <image:title>Long Indian earrings</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2126-1-400.jpg?v=18c89148</image:loc>
+      <image:title>Earrings and Tikka set, red</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2123-1-400.jpg?v=61c09e6c</image:loc>
+      <image:title>Jaya Nrsimhadeva coffee spoon, 2.5 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2122-1-400.jpg?v=61c09e6c</image:loc>
+      <image:title>Jaya Nrsimhadeva coffee spoon, 2.7 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2121-1-400.jpg?v=8f576045</image:loc>
+      <image:title>The Haré Krishna kavača is 2.8 cm thick</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2118-1-400.jpg?v=6b024272</image:loc>
+      <image:title>Brick-red silk sari</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2117-1-400.jpg?v=2733196b</image:loc>
+      <image:title>Kantimála, 1st series, silver with pearls</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2115-1-400.jpg?v=f871c2c6</image:loc>
+      <image:title>Kantimála, 1st series, silver with minerals</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2114-1-400.jpg?v=926d6486</image:loc>
+      <image:title>Kantimála, 1st series, silver with turquoise</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2110-1-400.jpg?v=f6853809</image:loc>
       <image:title>Kantimála, 1st series, silver with a blue stone</image:title>
@@ -304,376 +344,340 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2109-1-400.jpg?v=46aa1397</image:loc>
       <image:title>Kantimála, 1st class, silver with a red stone</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2088-1-400.jpg?v=f47dab98</image:loc>
-      <image:title>Kantimála, 1st series, light-coloured among brown beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2087-1-400.jpg?v=aa263062</image:loc>
-      <image:title>Kantimála, 1st series, white amongst gold beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2086-1-400.jpg?v=257e0ce7</image:loc>
-      <image:title>Kantimála No. 1, oval amongst round / cylinders</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2085-1-400.jpg?v=d4088808</image:loc>
-      <image:title>Kantimála 2nd class, gold, between the rollers</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2084-1-400.jpg?v=9d09bf77</image:loc>
-      <image:title>Kantimála, 2nd row, 3 brown, 1 oval bead</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2083-1-400.jpg?v=18d20edc</image:loc>
-      <image:title>Knossos Coconut</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2082-1-400.jpg?v=085a9ff7</image:loc>
-      <image:title>The Knossos Rose</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2081-1-400.jpg?v=e1d1d381</image:loc>
-      <image:title>Knossos Chamomile</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2080-1-400.jpg?v=840e87f9</image:loc>
-      <image:title>Knossos pine</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2068-1-400.jpg?v=858c73f6</image:loc>
-      <image:title>Gópínáth – biscuits made from dates, carob and oat flakes, 95 g</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/12</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1871-1-400.jpg?v=48a474c1</image:loc>
+      <image:title>Longí (large chamois) – various colours, 225 x 110 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1864-1-400.jpg?v=e748c641</image:loc>
+      <image:title>Jasmine Incense Sticks</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1852-1-400.jpg?v=cec75a59</image:loc>
+      <image:title>OSWAL headscarf, grey/brown</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1851-1-400.jpg?v=b477e3ec</image:loc>
+      <image:title>Kashgiri woollen shawl</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1850-1-400.jpg?v=cac2536b</image:loc>
+      <image:title>Bindi glue, 1 ml</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1849-1-400.jpg?v=d614b1b0</image:loc>
+      <image:title>Dhariwal luxury shawl, wool and polyester</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1848-1-400.jpg?v=2dd91f37</image:loc>
+      <image:title>Black / deep dark blue woollen shawl</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1820-1-400.jpg?v=bb67332e</image:loc>
+      <image:title>Maháprasádam – Sweet almonds 190 g</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1811-1-400.jpg?v=6884a653</image:loc>
+      <image:title>Vrindavan Flower incense sticks – large pack</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1807-1-400.jpg?v=20ad6e60</image:loc>
+      <image:title>Chant and Be Happy</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1804-1-400.jpg?v=a5f42558</image:loc>
+      <image:title>Patchwork single bedspread</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1790-1-400.jpg?v=21cb277b</image:loc>
       <image:title>A 1-row Kantimála with blue beads on 3 rows of tulas</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1784-1-400.jpg?v=8d22ff32</image:loc>
-      <image:title>Kantimála 1st series, small/large plait</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1781-1-400.jpg?v=68761986</image:loc>
-      <image:title>Keshar Chandan large incense sticks</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1778-1-400.jpg?v=c9e10aa5</image:loc>
-      <image:title>Učení Šrí Kapily</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1769-1-400.jpg?v=4e6b230b</image:loc>
-      <image:title>Striped bowl, 10 cm in diameter</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1768-1-400.jpg?v=dd79ade2</image:loc>
-      <image:title>Oval plate with 4 compartments</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1766-1-400.jpg?v=474464a1</image:loc>
-      <image:title>Round plate with 4 compartments</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1765-1-400.jpg?v=df854336</image:loc>
-      <image:title>Round plate, 25.5 cm in diameter, Fence 11</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1763-1-400.jpg?v=32610243</image:loc>
-      <image:title>Women’s/girls’ top with blue and white print, size S</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1762-1-400.jpg?v=3b8142c0</image:loc>
-      <image:title>Women’s white embroidered kurta, long sleeves, size 40/42</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1760-1-400.jpg?v=ffbced75</image:loc>
-      <image:title>Women’s white embroidered kurta, long-sleeved</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1758-1-400.jpg?v=1a07afa7</image:loc>
-      <image:title>A skirt and blouse set in embroidered chiffon for girls and petite women</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/13</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1338-1-400.jpg?v=0c0ff1b0</image:loc>
-      <image:title>Boys’ set featuring elephants and hunters, size 16</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1391-1-400.jpg?v=ea9c3d5f</image:loc>
+      <image:title>Japa single-colour pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1335-1-400.jpg?v=0f630735</image:loc>
-      <image:title>Boys’ set, yellow and brown, long-sleeved, size 28</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1389-1-400.jpg?v=59445a71</image:loc>
+      <image:title>Women’s Japa pouch, light-coloured pattern</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1334-1-400.jpg?v=c3657ce8</image:loc>
-      <image:title>Boys’ set in yellow and red, sizes 24 and 28</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1387-1-400.jpg?v=24f8e172</image:loc>
+      <image:title>Women’s burgundy Japa pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1333-1-400.jpg?v=5f9f1bb5</image:loc>
-      <image:title>Boys’ striped jumper, size 22</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1386-1-400.jpg?v=b852bafe</image:loc>
+      <image:title>Women’s white japa pouch with a pattern</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1331-1-400.jpg?v=f72e2b9a</image:loc>
-      <image:title>Boys’ yellow T-shirt, short sleeves, size 22</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1385-1-400.jpg?v=e594b0bc</image:loc>
+      <image:title>Women’s blue embroidered japa pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1328-1-400.jpg?v=256eab11</image:loc>
-      <image:title>Larger Rudraksha bracelet, 19 cm</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1375-1-400.jpg?v=0cfd302e</image:loc>
+      <image:title>Women’s green japa pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1324-1-400.jpg?v=8c05b581</image:loc>
-      <image:title>Peacock hanging doorbell with parasol (2 colours)</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1374-1-400.jpg?v=17c68917</image:loc>
+      <image:title>Women’s japa pouch – blue/turquoise</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1322-1-400.jpg?v=0512945c</image:loc>
-      <image:title>Hanging Ganesha figurines</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1373-1-400.jpg?v=db3d2d75</image:loc>
+      <image:title>Women’s golden japa pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1321-1-400.jpg?v=19c91130</image:loc>
-      <image:title>Hanging camels</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1372-1-400.jpg?v=3994fa4f</image:loc>
+      <image:title>Women’s beige embroidered japa pouch</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1320-1-400.jpg?v=e597764a</image:loc>
-      <image:title>Hanging peacocks</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1358-1-400.jpg?v=9fa77585</image:loc>
+      <image:title>Key rack</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1319-1-400.jpg?v=19c91130</image:loc>
-      <image:title>Hanging elephants</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1340-1-400.jpg?v=932c3ec3</image:loc>
+      <image:title>Bhakta white trousers, sizes 26 to 32</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1317-1-400.jpg?v=26a4d464</image:loc>
-      <image:title>Small red Rajasthani box</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1339-1-400.jpg?v=563bce47</image:loc>
+      <image:title>Boys’ set featuring elephants and hunters, sizes 28 and 32</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/14</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-995-1-400.jpg?v=ed1e3249</image:loc>
-      <image:title>Nauka o seberealizaci</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1051-1-400.jpg?v=c975dd21</image:loc>
+      <image:title>Burgundy and gold silk sari</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-994-1-400.jpg?v=9679d383</image:loc>
-      <image:title>Maháprasádam – Mixed nuts and fruit, 200 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1050-1-400.jpg?v=9963575f</image:loc>
+      <image:title>Beige and blue viscose sari with a blouse/choli</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-992-1-400.jpg?v=9679d383</image:loc>
-      <image:title>Maháprasádam – Čidva 200 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1049-1-400.jpg?v=ac607cfb</image:loc>
+      <image:title>Yellow, apricot and pink silk sari with fabric for the choli</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-985-1-400.jpg?v=3d6c9a38</image:loc>
-      <image:title>Dokonalé otázky, dokonalé odpovědi</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1048-1-400.jpg?v=ce4ac92f</image:loc>
+      <image:title>Silk sari in mustard red and green, with fabric for the choli</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-982-1-400.jpg?v=95c5e50f</image:loc>
-      <image:title>Set of 20 painted bracelets with rhinestones</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1047-1-400.jpg?v=7cf1b612</image:loc>
+      <image:title>Green chiffon sari with fabric for the chooli</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-981-1-400.jpg?v=a6eca943</image:loc>
-      <image:title>Kantimála, set of 3 small rollers, 1</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1046-1-400.jpg?v=deca04ea</image:loc>
+      <image:title>Blue viscose sari with red diagonal stripes</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-978-1-400.jpg?v=f00f8ced</image:loc>
-      <image:title>Balaram’s mace (gada) pendant with rudraksha</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1045-1-400.jpg?v=f977b0e6</image:loc>
+      <image:title>Dark blue-magenta viscose sari with a collar, on sale</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-974-1-400.jpg?v=a92f2a7d</image:loc>
-      <image:title>Panca Tattva badge, diameter 4.4 cm</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1040-1-400.jpg?v=f7db3c5b</image:loc>
+      <image:title>Čaitanja-čaritámrita - celý set</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-973-1-400.jpg?v=af374ca4</image:loc>
-      <image:title>Gaura Nitai badge, approx. 4.4 cm</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1038-1-400.jpg?v=506bc62d</image:loc>
+      <image:title>Šrímad Bhágavatam set (Russian Edition)</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-970-1-400.jpg?v=dc1a8d53</image:loc>
-      <image:title>Set of 24 ribbed bracelets</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1037-1-400.jpg?v=22830dfe</image:loc>
+      <image:title>Curios – seashell</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-968-1-400.jpg?v=d0dd0da2</image:loc>
-      <image:title>Set of 4 twisted bracelets</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1036-1-400.jpg?v=ba5de27d</image:loc>
+      <image:title>Nektar pokynů (Russian Edition) - Нектар наставлений</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-967-1-400.jpg?v=9c3ef925</image:loc>
-      <image:title>Set of 18 bracelets, iridescent finish, 4 colours</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1035-1-400.jpg?v=ca45d29e</image:loc>
+      <image:title>Prabhupáda (Russian Edition)</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/15</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-591-1-400.jpg?v=a8eb7cc2</image:loc>
-      <image:title>Roman caraway 30 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-642-1-400.jpg?v=d8282e8d</image:loc>
+      <image:title>1.25-litre copper kettle</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-590-1-400.jpg?v=c66ff8b2</image:loc>
-      <image:title>Fenugreek – Greek hay 40 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-636-1-400.jpg?v=56980eff</image:loc>
+      <image:title>DELUXE bowl, 12.5 cm in diameter</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-567-1-400.jpg?v=8cab1fad</image:loc>
-      <image:title>Kajal 2 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-634-1-400.jpg?v=6d995a4f</image:loc>
+      <image:title>INDIA T-shirt with an elephant, size M</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-560-1-400.jpg?v=d1e64ae7</image:loc>
-      <image:title>CHANDRIKA Soap 75 g</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-609-1-400.jpg?v=df8aac27</image:loc>
+      <image:title>Bedspread</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-559-1-400.jpg?v=28030536</image:loc>
-      <image:title>Knossos sage</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-608-1-400.jpg?v=6d788557</image:loc>
+      <image:title>Whole coriander seeds, 20 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-558-1-400.jpg?v=8feef6f4</image:loc>
-      <image:title>Knossos with olive leaves</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-607-1-400.jpg?v=2099713f</image:loc>
+      <image:title>Blossom honey</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-557-1-400.jpg?v=584dd3c7</image:loc>
-      <image:title>Knossos pomegranate</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-605-1-400.jpg?v=51899286</image:loc>
+      <image:title>Black mustard 50 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-556-1-400.jpg?v=afdfa499</image:loc>
-      <image:title>Knossos Cinnamon</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-604-1-400.jpg?v=9d1be37b</image:loc>
+      <image:title>Ground cardamom 15 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-555-1-400.jpg?v=477ac73f</image:loc>
-      <image:title>Knossos Argan</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-603-1-400.jpg?v=97cace98</image:loc>
+      <image:title>Ground Roman cumin, 15 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-554-1-400.jpg?v=3c11a15d</image:loc>
-      <image:title>Knossos Orange</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-596-1-400.jpg?v=42369b93</image:loc>
+      <image:title>Ground turmeric 30 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-552-1-400.jpg?v=8bd20467</image:loc>
-      <image:title>Knossos Lemon</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-595-1-400.jpg?v=b9a3a734</image:loc>
+      <image:title>Ground ginger 20 g</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-550-1-400.jpg?v=43205490</image:loc>
-      <image:title>Knossos Honey</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-594-1-400.jpg?v=d9f309fd</image:loc>
+      <image:title>Whole black cumin seeds, 25 g – black cumin</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/16</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3851-1-400.jpg?v=6b138178</image:loc>
-      <image:title>Pavitram – the mala of Nrsimhadéva</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-145-1-400.jpg?v=040d33be</image:loc>
+      <image:title>Nektar oddanosti</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3850-1-400.jpg?v=56c35035</image:loc>
-      <image:title>Hanging elephants under a parasol</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-138-1-400.jpg?v=551621c1</image:loc>
+      <image:title>Vjása-púdža 2002</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3805-1-400.jpg?v=79f6a67e</image:loc>
-      <image:title>12.5 cm Ganesha notebooks – various colours</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-137-1-400.jpg?v=033e46c7</image:loc>
+      <image:title>Vjása-púdža 2001</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3801-1-400.jpg?v=20d4e1cc</image:loc>
-      <image:title>Set of 48 bracelets: gold, green and red</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-127-1-400.jpg?v=faffe840</image:loc>
+      <image:title>108 receptů od Góvindy</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3798-1-400.jpg?v=bf2ca261</image:loc>
-      <image:title>Japa warm knitted bag for winter – NEW!</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-119-1-400.jpg?v=72bf3076</image:loc>
+      <image:title>Příručka pro začátečníky o nauce vědomí Krišny</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3779-1-400.jpg?v=3c21c7b6</image:loc>
-      <image:title>Čolí short-sleeved T-shirt, size S</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-118-1-400.jpg?v=5124f83e</image:loc>
+      <image:title>Prabhupáda</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3724-1-400.jpg?v=9f154bba</image:loc>
-      <image:title>Cashmere-patterned shawl, viscose, green background</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-116-1-400.jpg?v=06c5a2a4</image:loc>
+      <image:title>Níti-šástra</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3703-1-400.jpg?v=4de4c2cc</image:loc>
-      <image:title>Jagannath rubber keyring</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-115-1-400.jpg?v=ff5b0cae</image:loc>
+      <image:title>Návraty</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3601-1-400.jpg?v=397301b8</image:loc>
-      <image:title>Krishna T-shirt, size S</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-111-1-400.jpg?v=1846e5ce</image:loc>
+      <image:title>Mahábhárata</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3596-1-400.jpg?v=c57cf5dd</image:loc>
-      <image:title>Cashmere-patterned shawl, viscose</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-109-1-400.jpg?v=469b484b</image:loc>
+      <image:title>Íšávašjópanišad (Šrí íšópanišad)</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3595-1-400.jpg?v=6a4f3d23</image:loc>
-      <image:title>Sheet for hay bales, 210 x 100 cm</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-98-1-400.jpg?v=1905caa3</image:loc>
+      <image:title>Śrī Īśopaniṣad (Vietnamská)</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3522-1-400.jpg?v=8196cab5</image:loc>
-      <image:title>Unadorned wooden stick holder, light/dark</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-96-1-400.jpg?v=bd97e47c</image:loc>
+      <image:title>Bhagavad-gítá як вона є (Ukrainian Edition)</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/17</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-773-1-400.jpg?v=ea304624</image:loc>
-      <image:title>Japa bag: Jagannath, Subhadra, Baladev</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1166-1-400.jpg?v=bea423d7</image:loc>
+      <image:title>Small carved japa beads, neem</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-742-1-400.jpg?v=4f723559</image:loc>
-      <image:title>Flower Earrings, 2 styles</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1116-1-400.jpg?v=e044494c</image:loc>
+      <image:title>Sri Radha Krishna children’s T-shirt, sizes 16 and 18</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-668-1-400.jpg?v=0f8876f2</image:loc>
-      <image:title>Lotus Feet badge, diameter 5.5 cm</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1085-1-400.jpg?v=42ca43d6</image:loc>
+      <image:title>Top with leaf print, S/M, M/L</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-538-1-400.jpg?v=b8756fa5</image:loc>
-      <image:title>Natural golden chestnut hair colour</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1072-1-400.jpg?v=8205aab5</image:loc>
+      <image:title>Women’s kurta with embroidery, short sleeves, S</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9706461112-1-400.jpg?v=c7a5540f</image:loc>
-      <image:title>Spiritual meditation bracelet | Tibetan Buddhist Jewellery| Rudraksh Yoga Mala</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1068-1-400.jpg?v=950beb45</image:loc>
+      <image:title>Women’s kurta with a stand-up collar and 3/4-length sleeves</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9644821969-1-400.jpg?v=eb222c61</image:loc>
-      <image:title>Set of 2 Ceramic Retro Vintage Baking Dish | Cosy Country Kitchen</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1067-1-400.jpg?v=ba7bc183</image:loc>
+      <image:title>Women’s blue kurta with embroidery, short sleeves</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9629050070-1-400.jpg?v=e84a3455</image:loc>
-      <image:title>Limited Edition | Labello lip balm &amp; Nivea moisturiser | LGBTQ Pride Rainbow Theme</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-984-1-400.jpg?v=b49618c6</image:loc>
+      <image:title>Set of 24 yellow bracelets</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602849104-1-400.jpg?v=02241f38</image:loc>
-      <image:title>Bestseller Albert Camus The Stranger Nobel Prize Winner Vintage International Edition</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-983-1-400.jpg?v=94149b0b</image:loc>
+      <image:title>Set of 24 single-colour gold bracelets with gemstones</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
-      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-969-1-400.jpg?v=b44468e5</image:loc>
+      <image:title>Set of 8 metal relief bracelets</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602693296-1-400.jpg?v=43e776bc</image:loc>
-      <image:title>Haruki Murakami Norwegian Wood Multi Million Copy Bestseller</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-963-1-400.jpg?v=94ee24a5</image:loc>
+      <image:title>Set of 8 wedding bracelets</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602615425-1-400.jpg?v=8398b249</image:loc>
-      <image:title>Khaled Hosseini A Thousand Splendid Suns New York Times Bestseller</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-933-1-400.jpg?v=bdf69e86</image:loc>
+      <image:title>Colourful Ganesha</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602511782-1-400.jpg?v=20ba3019</image:loc>
-      <image:title>can’t miss Russian Fyodor Dostoevsky The Brothers Karamazov Literary Masterpiece</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-861-1-400.jpg?v=09439a79</image:loc>
+      <image:title>'Jai Shree Krishna' T-shirt, sizes M, L and XL</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9367213932-1-400.jpg?v=e0dceee4</image:loc>
+      <image:title>Zara Jumpsuit White Cotton Summer | Size</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9364938382-1-400.jpg?v=f5b73fc0</image:loc>
       <image:title>Indian Cotton Hand-Stitched Summer Long Maxi Dress | Size M</image:title>
@@ -718,16 +722,20 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9339656344-1-400.jpg?v=d7c61f8e</image:loc>
       <image:title>Hand Block Printed Indian Summer Cotton Tiered Midi Dress – Size M</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9331197768-1-400.jpg?v=e6b47541</image:loc>
-      <image:title>Mango Gold Metallic Cami Top | Size M</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/3</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3833-1-400.jpg?v=18688031</image:loc>
+      <image:title>Gaura Nitai grey japa bag</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3832-1-400.jpg?v=c05bc16b</image:loc>
+      <image:title>Japa bag, embroidered in burgundy with the Maha Mantra, sizes M and L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3831-1-400.jpg?v=061c90c7</image:loc>
       <image:title>Brown embroidered Nrsimhadév japa bag, sizes M, L</image:title>
@@ -768,20 +776,24 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3822-1-400.jpg?v=28da490c</image:loc>
       <image:title>Black Japa bag with the head of Jagannātha</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3821-1-400.jpg?v=c4002a01</image:loc>
-      <image:title>Yellow Krishna japa bag with gopis</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3819-1-400.jpg?v=6e035ae5</image:loc>
-      <image:title>White Krishna japa bag with a flute</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/4</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3688-1-400.jpg?v=51b55f26</image:loc>
+      <image:title>Radha and Krishna with a cloak, 12 x 9 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3687-1-400.jpg?v=8e7b9745</image:loc>
+      <image:title>Oriental metal ring, with black rings arranged vertically</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3685-1-400.jpg?v=f43b6910</image:loc>
+      <image:title>Jagannath round sticker S/L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3684-1-400.jpg?v=80ab0418</image:loc>
       <image:title>Jagannath sticker with a flag</image:title>
@@ -818,24 +830,28 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3676-1-400.jpg?v=8ab1ad41</image:loc>
       <image:title>A picture featuring the Mahāmantra, to hang on the wall</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3675-1-400.jpg?v=40e675e3</image:loc>
-      <image:title>Tulsi Flora Incense Sticks – Large Pack</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3674-1-400.jpg?v=4c0ad3e2</image:loc>
-      <image:title>Special Nag Champa Incense Sticks</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3672-1-400.jpg?v=4c0ad3e2</image:loc>
-      <image:title>Sarasvati incense sticks</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/5</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3548-1-400.jpg?v=c2d6e426</image:loc>
+      <image:title>Colourful bindi</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3546-1-400.jpg?v=82424a13</image:loc>
+      <image:title>Colourful Bindi discs</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3544-1-400.jpg?v=50134593</image:loc>
+      <image:title>Set of 24 orange and silver bracelets with a faceted finish</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3543-1-400.jpg?v=d3268d74</image:loc>
+      <image:title>Radha Krishna 7 x 5 cm, 4 designs</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3542-1-400.jpg?v=b1c2f8cc</image:loc>
       <image:title>Gaura Nitai 7 x 5 cm</image:title>
@@ -868,28 +884,32 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3533-1-400.jpg?v=54bf0ee6</image:loc>
       <image:title>Jasmine Incense Sticks – Large Pack</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3531-1-400.jpg?v=248a105b</image:loc>
-      <image:title>Small Parampara, 3.5 x 12 cm</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3529-1-400.jpg?v=7604f786</image:loc>
-      <image:title>Shivalingam pendant – glass and silver</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3528-1-400.jpg?v=b8c61dee</image:loc>
-      <image:title>OM pendant – glass and silver</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3526-1-400.jpg?v=4ec440ca</image:loc>
-      <image:title>Star Earrings – Wood</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/6</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3364-1-400.jpg?v=bab4b167</image:loc>
+      <image:title>Red Japa pouch with colourful petals</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3361-1-400.jpg?v=015924f3</image:loc>
+      <image:title>Red Japa pouch with a pattern</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3359-1-400.jpg?v=e38b9672</image:loc>
+      <image:title>Tulsi Flora Incense Sticks</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3357-1-400.jpg?v=0768f33a</image:loc>
+      <image:title>Picture of Prabhupāda, 12 x 9.5 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3356-1-400.jpg?v=47ebd608</image:loc>
+      <image:title>Picture of Krishna and Balarama, 7 x 5 cm</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3354-1-400.jpg?v=8544aeb3</image:loc>
       <image:title>A picture of Prabhupada, 7 x 5 cm, on a blue background</image:title>
@@ -918,32 +938,36 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3344-1-400.jpg?v=20275a1e</image:loc>
       <image:title>Japa Mala – round tulasi beads, a rosary for the initiated</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3343-1-400.jpg?v=036c0353</image:loc>
-      <image:title>Gopi dress with a collar and ruffles, size L</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3341-1-400.jpg?v=8ac584e8</image:loc>
-      <image:title>Gopi dress with footed trousers, soft cotton</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3340-1-400.jpg?v=7b3fccb9</image:loc>
-      <image:title>Gopi dress, cotton</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3339-1-400.jpg?v=d3c8025a</image:loc>
-      <image:title>Kantimála, 1st series, round, large</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3338-1-400.jpg?v=01e5067e</image:loc>
-      <image:title>Bindi, size 8, burgundy</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/7</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3188-1-400.jpg?v=de4b2f23</image:loc>
+      <image:title>Hand-printed cotton sari in blue, white and orange, with a piece of fabric for the choli</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3187-1-400.jpg?v=da918c2f</image:loc>
+      <image:title>Green, red and yellow cotton sari with a choli top</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3185-1-400.jpg?v=b318e5be</image:loc>
+      <image:title>A wider strip of dhoti, a striped border</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3183-1-400.jpg?v=585f467d</image:loc>
+      <image:title>It features purple stripes and a narrow border</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3182-1-400.jpg?v=3e28b22e</image:loc>
+      <image:title>‘Hare Rama Hare Krishna’ T-shirt, sizes S, M, L, XL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3181-1-400.jpg?v=4c638320</image:loc>
+      <image:title>Solid-coloured dhotis with no pattern</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3179-1-400.jpg?v=914f6804</image:loc>
       <image:title>Two strips of dhoti, a border of thin solid strips</image:title>
@@ -968,36 +992,40 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3165-1-400.jpg?v=11f78f28</image:loc>
       <image:title>Kantimála, 1st row: red/green/blue/black, between 2 gold beads</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3164-1-400.jpg?v=18153890</image:loc>
-      <image:title>Kantimála, 1st row: 3 coloured beads interspersed with gold beads</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3163-1-400.jpg?v=89f258ea</image:loc>
-      <image:title>RÁDHE RÁDHE brass bracelet (gold/silver)</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3162-1-400.jpg?v=ebd91ae5</image:loc>
-      <image:title>HANUMÁN metal bracelet</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3156-1-400.jpg?v=0761dfe0</image:loc>
-      <image:title>Goddess Lakshmi 3.5&amp;quot;</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3153-1-400.jpg?v=e45a0d0b</image:loc>
-      <image:title>Carved elephant, 6.5 cm</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3150-1-400.jpg?v=2c61e5d1</image:loc>
-      <image:title>Prayer bead counter in a brown bag, with carved beads</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/8</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2959-1-400.jpg?v=64abefd5</image:loc>
+      <image:title>Braided brass bracelet, 5 styles</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2958-1-400.jpg?v=a69bf6b9</image:loc>
+      <image:title>Small and large brown beads</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2957-1-400.jpg?v=a06efdc1</image:loc>
+      <image:title>Black Salt 100 g</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2952-1-400.jpg?v=e0c90eb5</image:loc>
+      <image:title>Pink and blue batik cotton sari</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2950-1-400.jpg?v=4b98d895</image:loc>
+      <image:title>Viscose sari, size 40/M, orange with a collar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2948-1-400.jpg?v=ee1b1eae</image:loc>
+      <image:title>CD O Králi Paríkšitovi (1. díl ze Š. Bhágavatamu)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2947-1-400.jpg?v=94b82bcd</image:loc>
+      <image:title>CD O Kralevici Prahládovi (2. díl ze Š. Bhágavatamu)</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2945-1-400.jpg?v=1d1277e0</image:loc>
       <image:title>CD Krišna Avatár (audiokniha 2 CD)</image:title>
@@ -1018,40 +1046,44 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2929-1-400.jpg?v=8fd27d32</image:loc>
       <image:title>Dark blue and white cotton sari with a choli</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2926-1-400.jpg?v=18bacd37</image:loc>
-      <image:title>Burgundy batik cotton sari</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2924-1-400.jpg?v=a185df36</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2922-1-400.jpg?v=5ecf7397</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2921-1-400.jpg?v=39feca68</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2920-1-400.jpg?v=1a0b9c52</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2919-1-400.jpg?v=13822317</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2918-1-400.jpg?v=4259e7b0</image:loc>
-      <image:title>Hand-painted painting on canvas</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/9</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2762-1-400.jpg?v=9221f3c7</image:loc>
+      <image:title>Krishna and Balarama 12 x 9 cm, pink</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2752-1-400.jpg?v=fa136571</image:loc>
+      <image:title>Large votive lamp, 21.5 x 7.5 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2751-1-400.jpg?v=5b017012</image:loc>
+      <image:title>Women’s embroidered kurta, short sleeves</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2748-1-400.jpg?v=9b3c7ba9</image:loc>
+      <image:title>Women’s cashmere-patterned kurta, short sleeves</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2735-1-400.jpg?v=89751f4e</image:loc>
+      <image:title>Kantimála, 1st series: OM reliefs with round beads</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2716-1-400.jpg?v=ffd841c3</image:loc>
+      <image:title>Kantimála, 1st series, cylinders 1.5 × 0.4 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2712-1-400.jpg?v=56ff4407</image:loc>
+      <image:title>Gopí Lalita (gold) &amp; Vishakha dolls</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2711-1-400.jpg?v=de1b5151</image:loc>
+      <image:title>Men’s checked shirt, brick red, L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2709-1-400.jpg?v=f1435601</image:loc>
       <image:title>Women’s purple kurta, 3/4 sleeves, M/L</image:title>
@@ -1068,44 +1100,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2705-1-400.jpg?v=b6476bd5</image:loc>
       <image:title>Men’s plain-coloured jacket, long sleeves, XL</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2704-1-400.jpg?v=60ff5a06</image:loc>
-      <image:title>Men’s jacket with a subtle black pattern, stand-up collar, long sleeves</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2703-1-400.jpg?v=7aeb7602</image:loc>
-      <image:title>Women’s black and gold kurta, 3/4 sleeves, M/L</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2702-1-400.jpg?v=8d2c0513</image:loc>
-      <image:title>Men’s striped jacket, long sleeves, size M</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2701-1-400.jpg?v=bd5f2cd9</image:loc>
-      <image:title>Men’s white jacket with brown stripes, long sleeves, size M</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2699-1-400.jpg?v=f39ec0f8</image:loc>
-      <image:title>Men’s plain-coloured jacket, stand-up collar, short sleeves</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2698-1-400.jpg?v=5ab0b03d</image:loc>
-      <image:title>Men’s jacket with marl stripes, short sleeves, size 42</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2687-1-400.jpg?v=a2329b35</image:loc>
-      <image:title>Bindi/stick-on tattoo, circular, single colour, diameter 3.8 cm</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2686-1-400.jpg?v=a5ebb18b</image:loc>
-      <image:title>Colourful, glittery Bindi dots</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-138-1-400.jpg?v=551621c1</image:loc>
+      <image:title>Vjása-púdža 2002</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-137-1-400.jpg?v=033e46c7</image:loc>
       <image:title>Vjása-púdža 2001</image:title>
@@ -1150,14 +1154,10 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602849104-1-400.jpg?v=02241f38</image:loc>
       <image:title>Bestseller Albert Camus The Stranger Nobel Prize Winner Vintage International Edition</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9602824787-1-400.jpg?v=e8c58e9e</image:loc>
-      <image:title>learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/fiction</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1211,7 +1211,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/foreign-languages</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1265,7 +1265,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/non-fiction</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1319,7 +1319,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books/srila-prabhupada</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1373,7 +1373,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/books</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1427,9 +1427,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3343-1-400.jpg?v=036c0353</image:loc>
+      <image:title>Gopi dress with a collar and ruffles, size L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3341-1-400.jpg?v=8ac584e8</image:loc>
       <image:title>Gopi dress with footed trousers, soft cotton</image:title>
@@ -1474,16 +1478,20 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3200-1-400.jpg?v=ddb875ba</image:loc>
       <image:title>Cotton sari with tassels in white, black and magenta, with fabric for the choli</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3196-1-400.jpg?v=e729c126</image:loc>
-      <image:title>Hand-printed cotton sari in pink, blue and white, with fabric for the choli</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/3</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2370-1-400.jpg?v=f903df68</image:loc>
+      <image:title>It features a thick and thin stripe, a zigzag border</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2244-1-400.jpg?v=719cced1</image:loc>
+      <image:title>Women’s long kurta with a dupatta, 3/4 sleeves, size S</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2237-1-400.jpg?v=d7d98d4a</image:loc>
       <image:title>ÓM viscose scarf, 172 x 50 cm, lilac</image:title>
@@ -1524,20 +1532,24 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2027-1-400.jpg?v=edcd05de</image:loc>
       <image:title>Women’s embroidered, cropped, sleeveless blouse, size S</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2026-1-400.jpg?v=c40b330f</image:loc>
-      <image:title>Women’s embroidered sleeveless blouse, S/M</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2025-1-400.jpg?v=2e77ccc2</image:loc>
-      <image:title>Women’s colourfully embroidered kurta, long-sleeved</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/4</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1084-1-400.jpg?v=d49c6475</image:loc>
+      <image:title>Plain embroidered top, wider straps, S</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1083-1-400.jpg?v=e9669780</image:loc>
+      <image:title>Floral print top, S/M</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1079-1-400.jpg?v=1a58a41b</image:loc>
+      <image:title>Strapless dress with Rajasthani embroidery, size M/L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1076-1-400.jpg?v=9c53d8c8</image:loc>
       <image:title>Women’s black blouse with a white pattern, short sleeves, S/M</image:title>
@@ -1574,24 +1586,28 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1053-1-400.jpg?v=de27d201</image:loc>
       <image:title>Cotton-polyester sari, beige and brown</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1052-1-400.jpg?v=24572fb9</image:loc>
-      <image:title>Brick-blue silk sari</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1051-1-400.jpg?v=c975dd21</image:loc>
-      <image:title>Burgundy and gold silk sari</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1050-1-400.jpg?v=9963575f</image:loc>
-      <image:title>Beige and blue viscose sari with a blouse/choli</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/5</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1067-1-400.jpg?v=ba7bc183</image:loc>
+      <image:title>Women’s blue kurta with embroidery, short sleeves</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-861-1-400.jpg?v=09439a79</image:loc>
+      <image:title>'Jai Shree Krishna' T-shirt, sizes M, L and XL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-848-1-400.jpg?v=38f804ce</image:loc>
+      <image:title>T-shirt: Krishna, O Lord, You Yourself, available in M, L and XL.</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-847-1-400.jpg?v=af28c871</image:loc>
+      <image:title>Krisnas ‘Tu Bhagavan Swayam’ T-shirt, print on the back too, size M</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-818-1-400.jpg?v=3d51cfc5</image:loc>
       <image:title>Men’s red and grey trousers</image:title>
@@ -1624,26 +1640,10 @@
       <image:loc>https://indianinprague.jains.es/images/derived/vinted-9328596973-1-400.jpg?v=1bd8448f</image:loc>
       <image:title>Vegan Bros &quot;Eating Animals Is Weird&quot; Slogan T-Shirt</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9316508470-1-400.jpg?v=0925ce61</image:loc>
-      <image:title>Indian Block Print Cotton Tote Bag | Handmade | Beach Bag</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9316468722-1-400.jpg?v=8436e8de</image:loc>
-      <image:title>Vintage Style Navy Bird Print Dress | Draped V-Neck | Zip | Pockets</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9315253483-1-400.jpg?v=9eb5d5c0</image:loc>
-      <image:title>Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/vinted-9313834270-1-400.jpg?v=18243964</image:loc>
-      <image:title>Indian Cotton Summer Dress · Tribal Border Print · Asymmetric Hem · Size L</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/bags</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1697,7 +1697,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/childrens-clothing</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1751,9 +1751,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2209-1-400.jpg?v=e6455284</image:loc>
+      <image:title>Men’s striped jacket, stand-up collar, short sleeves</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1991-1-400.jpg?v=4018d608</image:loc>
       <image:title>Men’s jacket with a subtle check pattern, stand-up collar and short sleeves</image:title>
@@ -1773,7 +1777,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/mens-clothing</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1827,7 +1831,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/summer-dresses</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1881,9 +1885,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/womens-clothing/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1167-1-400.jpg?v=c44872ba</image:loc>
+      <image:title>Orissa women’s kurta with 3/4 sleeves</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1151-1-400.jpg?v=da965408</image:loc>
       <image:title>Red silk sari with a green pattern on the headpiece</image:title>
@@ -1928,14 +1936,10 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1086-1-400.jpg?v=49c1052e</image:loc>
       <image:title>Plain embroidered top, strappy, S</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1084-1-400.jpg?v=d49c6475</image:loc>
-      <image:title>Plain embroidered top, wider straps, S</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion/womens-clothing</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -1989,7 +1993,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/fashion</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2043,7 +2047,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/food/spices</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2097,7 +2101,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/food</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2151,9 +2155,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1320-1-400.jpg?v=e597764a</image:loc>
+      <image:title>Hanging peacocks</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1319-1-400.jpg?v=19c91130</image:loc>
       <image:title>Hanging elephants</image:title>
@@ -2198,14 +2206,10 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1300-1-400.jpg?v=00f8fe6a</image:loc>
       <image:title>Medium-sized pink Rajasthani box</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1299-1-400.jpg?v=f68146c8</image:loc>
-      <image:title>Rajasthan gold box, medium size</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/bedding-and-quilts</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2247,7 +2251,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/cushions-and-throws</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2287,11 +2291,11 @@
       <image:title>40x40 cm Hand Block cushion cover</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2366-1-400.jpg?v=b192e3cb</image:loc>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2366-2-400.jpg?v=ca41162d</image:loc>
       <image:title>41x41 cm Hand Block pillowcase</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2365-1-400.jpg?v=b192e3cb</image:loc>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2365-2-400.jpg?v=4702e14c</image:loc>
       <image:title>40x40 cm Hand Block cushion cover</image:title>
     </image:image>
     <image:image>
@@ -2301,7 +2305,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/decorative-accessories</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2355,7 +2359,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/storage-and-baskets</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2409,7 +2413,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor/table-and-dining</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2463,7 +2467,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/home-decor</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2517,9 +2521,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3513-1-400.jpg?v=e41bcea1</image:loc>
+      <image:title>Oriental metal ring with coloured stones 9</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3512-1-400.jpg?v=885105b5</image:loc>
       <image:title>Oriental metal ring with coloured stones 8</image:title>
@@ -2564,16 +2572,20 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3498-1-400.jpg?v=0d4c44a3</image:loc>
       <image:title>Turtle Ring 6</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3497-1-400.jpg?v=0d4c44a3</image:loc>
-      <image:title>Turtle Ring 5</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/3</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2676-1-400.jpg?v=547a9278</image:loc>
+      <image:title>Bindi/stick-on tattoo, round, single-colour, diameter 2.8–3.8 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2675-1-400.jpg?v=64327e81</image:loc>
+      <image:title>Bindi/stick-on tattoo – round, coloured, 3 cm in diameter</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2674-1-400.jpg?v=f1f44e32</image:loc>
       <image:title>Bindi/stick-on tattoo, circular, silver, 3 cm in diameter (2 types)</image:title>
@@ -2614,20 +2626,16 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2135-1-400.jpg?v=1fec6328</image:loc>
       <image:title>Beads with a rudraksha pendant</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2130-1-400.jpg?v=48d9a37a</image:loc>
-      <image:title>Earrings with coloured loops, various colours</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2129-1-400.jpg?v=534dc4fe</image:loc>
-      <image:title>Long Indian earrings</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2850-1-400.jpg?v=55be7daa</image:loc>
+      <image:title>Stick-on tattoos: Golden/silver butterfly (6 designs)</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2670-1-400.jpg?v=a0aa3255</image:loc>
       <image:title>Coloured Bindi arrows, 2 variants</image:title>
@@ -2635,7 +2643,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bindi</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2689,7 +2697,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/bracelets</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2743,7 +2751,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/earrings</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2797,7 +2805,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/necklaces</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2851,7 +2859,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/other-adornments</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2905,7 +2913,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery/pendants</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -2959,7 +2967,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/jewellery</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3013,7 +3021,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/dolls-and-childrens-gifts</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3067,7 +3075,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/greetings-cards</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3121,7 +3129,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/key-rings</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3175,7 +3183,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes/notebooks</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3213,7 +3221,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/keepsakes</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3267,9 +3275,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3650-1-400.jpg?v=20d36de2</image:loc>
+      <image:title>Kantimála, 1st series, thin rollers</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3647-1-400.jpg?v=f0857e52</image:loc>
       <image:title>Kantimála, 1st series, black with yellow/red beads</image:title>
@@ -3314,16 +3326,20 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3635-1-400.jpg?v=79b1fed0</image:loc>
       <image:title>3D figurine of Krishna with butter, 9x9 cm</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3631-1-400.jpg?v=0761dfe0</image:loc>
-      <image:title>Goddess Lakshmi 5&quot;</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/3</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3301-1-400.jpg?v=0d042ec7</image:loc>
+      <image:title>Kantimála 2nd class, silver, between the rollers</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3295-1-400.jpg?v=ed85627b</image:loc>
+      <image:title>Painted wooden elephant, 5×8 cm</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3294-1-400.jpg?v=ed85627b</image:loc>
       <image:title>Painted wooden elephant, 6 x 9 cm</image:title>
@@ -3364,20 +3380,24 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-3203-1-400.jpg?v=bc3ea221</image:loc>
       <image:title>Gold A3 Shiva poster</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3167-1-400.jpg?v=298dc3a7</image:loc>
-      <image:title>Ganesha (children’s version) 7 x 3.5 cm</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-3166-1-400.jpg?v=b7bcd807</image:loc>
-      <image:title>Kantimála, 1 row of coloured beads in the centre</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/4</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2449-1-400.jpg?v=43736b6a</image:loc>
+      <image:title>Ceramic elephant, 3 x 7 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2440-1-400.jpg?v=e38b9672</image:loc>
+      <image:title>Krishna Priya incense sticks</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2439-1-400.jpg?v=e38b9672</image:loc>
+      <image:title>Manjari incense sticks</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2438-1-400.jpg?v=e38b9672</image:loc>
       <image:title>Herbal Incense Sticks</image:title>
@@ -3414,24 +3434,28 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-2420-1-400.jpg?v=66a57edf</image:loc>
       <image:title>Kantimála 1st series: OM reliefs with ovals</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2419-1-400.jpg?v=d2ff7512</image:loc>
-      <image:title>Kantimála, 1st row: 2 round beads and 1 oval bead</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2418-1-400.jpg?v=3a7f275a</image:loc>
-      <image:title>Kantimála 1st series, small round</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-2416-1-400.jpg?v=ddd4b496</image:loc>
-      <image:title>Kantimála, 1st series: gold/coloured bead and tulasi olive</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/5</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1541-1-400.jpg?v=a3010b0e</image:loc>
+      <image:title>Radhā and Krishna with a little cow, 5 x 7 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1538-1-400.jpg?v=825dea03</image:loc>
+      <image:title>Panca Tattva 7 x 5 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1537-1-400.jpg?v=8fdfa8ab</image:loc>
+      <image:title>Krishna and Balarama 7 x 5 cm</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1536-1-400.jpg?v=41e6c30d</image:loc>
+      <image:title>Yashoda with Krishna 7 x 5 cm</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1511-1-400.jpg?v=2232ffd8</image:loc>
       <image:title>Gaura Nitai 12 x 9.5 cm</image:title>
@@ -3464,26 +3488,24 @@
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1467-1-400.jpg?v=b1b847b2</image:loc>
       <image:title>Krishna Damodar (Makhanchor) metal</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://indianinprague.jains.es/wardrobe/meditation/6</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1465-1-400.jpg?v=fd274dfe</image:loc>
-      <image:title>Ganga water 400 ml</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-933-1-400.jpg?v=bdf69e86</image:loc>
+      <image:title>Colourful Ganesha</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1421-1-400.jpg?v=3d9bf10f</image:loc>
-      <image:title>Men’s japa pouch, sturdy grey, 4 shades</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1420-1-400.jpg?v=31d2e4fa</image:loc>
-      <image:title>Men’s japa pouch, sturdy, green/grey/blue</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1417-1-400.jpg?v=edae12b2</image:loc>
-      <image:title>Men’s sturdy black japa pouch</image:title>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-773-1-400.jpg?v=ea304624</image:loc>
+      <image:title>Japa bag: Jagannath, Subhadra, Baladev</image:title>
     </image:image>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/bead-counters</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3537,7 +3559,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/deities</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3591,7 +3613,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/devotional-pictures</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3645,7 +3667,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/incense-sticks</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3699,7 +3721,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/japa-bead-bags</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3753,9 +3775,13 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/kanthi-malas/2</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/govinda-1669-1-400.jpg?v=a3ec0143</image:loc>
+      <image:title>Kantimála 2-row rollers S/M/L</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/govinda-1668-1-400.jpg?v=473af00f</image:loc>
       <image:title>Kantimála, 2nd series: black amongst red beads</image:title>
@@ -3791,7 +3817,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/kanthi-malas</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3845,7 +3871,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/malas-and-clickers</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3899,7 +3925,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/stickers-and-posters</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -3953,7 +3979,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation/worship-items</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4007,7 +4033,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/meditation</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4061,7 +4087,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/sold</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4107,7 +4133,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/oil-based-perfumes</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4161,7 +4187,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/shampoos-and-hair-dyes</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4215,7 +4241,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness/soaps</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -4269,7 +4295,7 @@
   </url>
   <url>
     <loc>https://indianinprague.jains.es/wardrobe/wellness</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
     <image:image>
