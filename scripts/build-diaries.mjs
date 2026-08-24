@@ -59,6 +59,7 @@
 // Run after sync-chrome.mjs (it lifts the header and footer out of index.html).
 
 import { readFile, writeFile, mkdir, rm } from "node:fs/promises";
+import { execFileSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -118,6 +119,27 @@ const postUrl = (p) => `/diaries/${p.id}`;
 // A category archive lives in the same flat namespace as the posts, on purpose: /diaries/food
 // is the URL a reader would guess, and the id is already the anchor on the index. The build
 // throws if a post ever claims a category's id, which is the only way the two can collide.
+// The byline name. Kept beside the URL helpers rather than inline in the template so the
+// printed byline and the Person node in the structured data cannot drift apart — they are
+// the same claim, and a visible byline that disagrees with the markup is worse than neither.
+const AUTHOR = "Kavyanjali";
+
+// Last edit date for a post, from git. content/<id>.html is the prose; data/posts.json is
+// the metadata, and a change to either is a change to the page. The newer of the two wins.
+// Shallow clones and never-committed drafts fall through to the publication date.
+const modifiedOf = (post) => {
+  const files = [`content/${post.id}.html`, "data/posts.json"];
+  let best = "";
+  for (const f of files) {
+    try {
+      const d = execFileSync("git", ["log", "-1", "--format=%cs", "--", f],
+        { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+      if (/^\d{4}-\d{2}-\d{2}$/.test(d) && d > best) best = d;
+    } catch { /* no git, or the file was never committed */ }
+  }
+  return best && best > post.date ? best : post.date;
+};
+
 const catUrl = (c) => `/diaries/${c.id}`;
 
 /* --------------------------------------------------------------- the cards ---- */
@@ -362,6 +384,10 @@ function postJsonLd(post, cat, manifest) {
         author: { "@id": abs("/#author") },
         publisher: { "@id": abs("/#author") },
         datePublished: post.date,
+        // Same clock as the BlogPosting branch below — a corrected review needs re-crawling
+        // just as much as a corrected article, and the restaurant posts are the ones most
+        // likely to be edited when a place changes.
+        dateModified: modifiedOf(post),
         name: post.verdict?.label,
         reviewBody: post.blurb,
         image: imageOf(post, manifest),
@@ -375,6 +401,14 @@ function postJsonLd(post, cat, manifest) {
         headline: post.title,
         description: post.blurb,
         datePublished: post.date,
+        // dateModified, and it is NOT post.date. Google uses it to decide whether a page is
+        // worth re-crawling, which starts to matter the moment a site publishes daily: a
+        // corrected review that still advertises its original date is a page nothing comes
+        // back for. Sourced from git — the same clock the sitemap's lastmod uses, and for
+        // the same reason: the last commit touching the post's prose IS the last time the
+        // prose changed. Falls back to the publication date when git cannot say, which is
+        // the honest answer for a post that has never been edited.
+        dateModified: modifiedOf(post),
         image: imageOf(post, manifest),
         author: { "@id": abs("/#author") },
         publisher: { "@id": abs("/#author") },
@@ -545,6 +579,42 @@ await writeFile(path.join(ROOT, "diaries.html"), shell({
   body: indexBody,
 }));
 
+
+// Category pages paginate at 12 (24 Aug 2026). The INDEX does not and does not need to:
+// its rails cap at RAIL_MAX, so /diaries stays a fixed size however much is written. A
+// category page lists everything, so at one post a day /diaries/food is a 120-post scroll
+// by December.
+//
+// Twelve, matching RAIL_MAX, so the rail on the index and the first page of the archive
+// hold the same set — a reader who taps "All posts →" after a rail does not meet a
+// different twelve.
+//
+// Built now, at 5 posts, precisely BECAUSE it changes nothing today: page 1 keeps the URL
+// it already has and no second page is written until there are 13. Adding it after the
+// category pages have been indexed would mean rewriting URLs that already rank.
+const CAT_PER_PAGE = 12;
+const catPageUrl = (cat, n) => (n === 1 ? catUrl(cat) : `${catUrl(cat)}/${n}`);
+const catPageFile = (cat, n) => (n === 1 ? `${cat.id}.html` : `${cat.id}/${n}.html`);
+
+// Same markup and class names as the wardrobe's pager, so it inherits that stylesheet
+// wholesale rather than growing a second look for the same control.
+function catPager(cat, no, total) {
+  if (total < 2) return "";
+  const link = (n, label, cls) =>
+    `<a class="pg${cls ? " " + cls : ""}" href="${catPageUrl(cat, n)}"${n === no ? ' aria-current="page"' : ""}>${label}</a>`;
+  const nums = [];
+  const near = (n) => n === 1 || n === total || Math.abs(n - no) <= 2;
+  for (let n = 1; n <= total; n++) {
+    if (near(n)) nums.push(link(n, String(n)));
+    else if (nums[nums.length - 1] !== "\u2026") nums.push("\u2026");
+  }
+  return `<nav class="pager" aria-label="Pagination">` +
+    (no > 1 ? link(no - 1, "\u2190 Previous", "pg-step") : "") +
+    `<span class="pg-nums">${nums.map((n) => (n === "\u2026" ? `<span class="pg-gap">\u2026</span>` : n)).join("")}</span>` +
+    (no < total ? link(no + 1, "Next \u2192", "pg-step") : "") +
+    `</nav>`;
+}
+
 /* ---- one page per category ---- */
 
 // The archive is a plain vertical grid of everything in the category, newest first. Vertical
@@ -553,37 +623,52 @@ await writeFile(path.join(ROOT, "diaries.html"), shell({
 // ponytail: no pagination — 7 posts today. Lift the pager out of build-shop.mjs when a
 // category passes about 60.
 for (const [cat, ps] of cats) {
-  const body = `<div class="page-head"><div class="wrap">
+  const total = Math.max(1, Math.ceil(ps.length / CAT_PER_PAGE));
+  for (let no = 1; no <= total; no++) {
+    const slice = ps.slice((no - 1) * CAT_PER_PAGE, no * CAT_PER_PAGE);
+    const body = `<div class="page-head"><div class="wrap">
   <nav class="crumb crumb-nav" aria-label="Breadcrumb">
-    <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> <span>${esc(cat.name)}</span>
+    <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> ${
+      no === 1 ? `<span>${esc(cat.name)}</span>`
+               : `<a href="${catUrl(cat)}">${esc(cat.name)}</a> <span aria-hidden="true">/</span> <span>Page ${no}</span>`}
   </nav>
   <h1>${esc(cat.name)}</h1>
   <p class="lede">${esc(cat.note)}</p>
-  <p class="cat-count">${ps.length} ${ps.length === 1 ? "post" : "posts"}, newest first</p>
+  <p class="cat-count">${ps.length} ${ps.length === 1 ? "post" : "posts"}, newest first${
+    total > 1 ? ` \u00b7 page ${no} of ${total}` : ""}</p>
 </div></div>
 
 <section class="cat"><div class="wrap">
   ${cat.disclosure ? `<div class="note"><p>${esc(cat.disclosure)}</p></div>` : ""}
   ${cat.id === "food" ? `<div class="key"><span class="real">Tastes like home</span><span class="mild">Toned down</span><span class="trap">Tourist trap</span><span class="vegan">Fully vegan</span></div>` : ""}
   <div class="grid3">
-    ${ps.map((p) => postCard(p, manifest)).join("\n    ")}
+    ${slice.map((p) => postCard(p, manifest)).join("\n    ")}
   </div>
+  ${catPager(cat, no, total)}
   <div class="cta-row">
-    <a class="btn" href="/diaries">← All of the Diaries</a>${
-      cat.all ? `<a class="btn saf" href="${esc(cat.all.href)}">${esc(cat.all.label)} →</a>` : ""}
+    <a class="btn" href="/diaries">\u2190 All of the Diaries</a>${
+      cat.all ? `<a class="btn saf" href="${esc(cat.all.href)}">${esc(cat.all.label)} \u2192</a>` : ""}
   </div>
 </div></section>`;
 
-  await writeFile(path.join(OUT, `${cat.id}.html`), shell({
-    title: `${esc(cat.name)}: Tram 22 Diaries`,
-    description: cat.note,
-    canonical: abs(catUrl(cat)),
-    image: imageOf(ps[0], manifest) || abs("/images/derived/IMG_4126-1200.jpg"),
-    jsonld: catJsonLd(cat, ps, manifest),
-    header: chromeHeader,
-    footer: chromeFooter,
-    body,
-  }));
+    const file = catPageFile(cat, no);
+    if (file.includes("/")) await mkdir(path.join(OUT, cat.id), { recursive: true });
+    await writeFile(path.join(OUT, file), shell({
+      // Page 2 and beyond carry their own canonical, not one pointing back at page 1:
+      // they hold different posts, so they are different pages. Google dropped rel=prev/next
+      // as an indexing signal years ago and asks for exactly this instead.
+      title: no === 1
+        ? `${esc(cat.name)}: Tram 22 Diaries`
+        : `${esc(cat.name)}, page ${no}: Tram 22 Diaries`,
+      description: cat.note,
+      canonical: abs(catPageUrl(cat, no)),
+      image: imageOf(slice[0], manifest) || abs("/images/derived/IMG_4126-1200.jpg"),
+      jsonld: catJsonLd(cat, slice, manifest),
+      header: chromeHeader,
+      footer: chromeFooter,
+      body,
+    }));
+  }
 }
 
 /* ---- one page per post ---- */
@@ -600,6 +685,10 @@ for (const post of posts) {
   const older = siblings[i + 1];
 
   const meta = [
+    // The author's name, printed. It was date and reading time only, which are facts about
+    // the post; who wrote it is a fact about whether to believe it, and it is the one Google
+    // documents as a signal for this kind of writing.
+    `<span class="author">${esc(AUTHOR)}</span>`,
     `<time datetime="${esc(post.date)}">${esc(humanDate(post.date))}</time>`,
     post.reading ? `<span>${post.reading} min read</span>` : "",
     post.meta ? `<span>${esc(post.meta)}</span>` : "",
@@ -609,11 +698,31 @@ for (const post of posts) {
     ? `<div class="post-hero frame ${spice(post.id)}">${picture(post, manifest, HERO_SIZES, post.title, true)}<div class="grain"></div></div>`
     : "";
 
-  const shopCta = post.cat === "fashion"
+  // Every post ends on the shelf its subject lives on (24 Aug 2026).
+  //
+  // Two things changed. It used to appear on FASHION posts only, so six posts in seven ended
+  // with nothing to do; and it pointed at Vinted, in a new tab, sending a reader who had just
+  // spent six minutes here straight off the site. Both were the same mistake — treating the
+  // shop as somewhere else — and the wardrobe now has a shelf per category to point at.
+  //
+  // The target is the CATEGORY's shelf, not /wardrobe. A reader who has just read about block
+  // print arrives with an intent narrower than 1,665 pieces, and handing them the whole closet
+  // spends it. The Vinted link is not lost: it is in the footer, in how-it-works, and on every
+  // card in the shelf this now opens.
+  const CTA = {
+    fashion:    { href: "/wardrobe/fashion",    h: "Shop the look",
+                  p: "The pieces I write about turn up on the Fashion shelf — block print, handloom, contemporary cuts. Hand-picked, in Europe, no slow shipping from India." },
+    food:       { href: "/wardrobe/food",       h: "Cook it at home",
+                  p: "Spices and store-cupboard things from the same kitchens these places cook from, on the Food shelf." },
+    meditation: { href: "/wardrobe/meditation", h: "Objects for the practice",
+                  p: "Malas, incense, deities and the rest of the ritual objects this writing describes, on the Meditation shelf." },
+  };
+  const cta = CTA[post.cat];
+  const shopCta = cta
     ? `<div class="shop-cta">
-        <h2>Shop the look</h2>
-        <p>The pieces I write about here go up on my Vinted closet as I rotate them — block print, handloom, contemporary cuts. Pre-loved, locally available, no slow shipping from India.</p>
-        <a class="btn saf" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Open my Vinted closet →</a>
+        <h2>${esc(cta.h)}</h2>
+        <p>${esc(cta.p)}</p>
+        <a class="btn saf" href="${cta.href}">Shop the wardrobe →</a>
       </div>`
     : "";
 
@@ -628,12 +737,27 @@ for (const post of posts) {
     </nav>`
     : "";
 
+  // Related posts, with a fallback that matters more than it looks.
+  //
+  // Same-category siblings first: a reader who finished a restaurant review wants another
+  // restaurant review, not whatever went up the same week. But a category with one post in
+  // it — which is every category on its first day, and was the state of both `fashion` and
+  // `meditation` — produced NO block at all, so the post simply ended. A dead end at the
+  // bottom of a page someone read to the end of is the most expensive kind.
+  //
+  // So: top up from the newest posts in any category until there are three, and say which
+  // one you are being offered. The heading changes with it, because "More in What I wear"
+  // above a restaurant review would be a lie.
   const related = siblings.filter((p) => p.id !== post.id).slice(0, 3);
-  const relatedBlock = related.length
+  const toppedUp = related.length < 3
+    ? [...related, ...posts.filter((p) => p.id !== post.id && !related.includes(p)).slice(0, 3 - related.length)]
+    : related;
+  const relatedIsCat = related.length >= 3;
+  const relatedBlock = toppedUp.length
     ? `<section class="post-related"><div class="wrap sec-inner">
-    <div class="sec-top"><h2>More in ${esc(cat.name)}</h2><a class="rail-all" href="${catUrl(cat)}">All posts →</a></div>
+    <div class="sec-top"><h2>${relatedIsCat ? `More in ${esc(cat.name)}` : "More from the diaries"}</h2><a class="rail-all" href="${relatedIsCat ? catUrl(cat) : "/diaries"}">All posts →</a></div>
     <div class="grid3">
-      ${related.map((p) => postCard(p, manifest)).join("\n      ")}
+      ${toppedUp.map((p) => postCard(p, manifest)).join("\n      ")}
     </div>
   </div></section>`
     : "";

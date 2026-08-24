@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T13:42:20.696Z",
-  "count": 3763,
+  "generated": "2026-08-24T15:06:26.075Z",
+  "count": 3782,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -15060,6 +15060,82 @@
     "text.6ef40df046f3": {
       "text": "Menú: secciones del sitio web",
       "src": "6ef40df046f3"
+    },
+    "text.d6d381c616aa": {
+      "text": "Diarios →",
+      "src": "d6d381c616aa"
+    },
+    "text.136ca0dfda22": {
+      "text": "Armario →",
+      "src": "136ca0dfda22"
+    },
+    "text.b49785809650": {
+      "text": "La comida que me encanta",
+      "src": "b49785809650"
+    },
+    "text.d5eaaf9daa27": {
+      "text": "Espiritualidad →",
+      "src": "d5eaaf9daa27"
+    },
+    "text.fdc225765789": {
+      "text": "45 opiniones en Vinted →",
+      "src": "fdc225765789"
+    },
+    "text.b23bf521e50c": {
+      "text": "Valorado con un 5,0 sobre 5 según 45 opiniones de compradores. Léelas en Vinted (se abre en una nueva pestaña).",
+      "src": "b23bf521e50c"
+    },
+    "text.a21c38f71d8c": {
+      "text": "En esta web no hay cookies, ni rastreadores, ni herramientas de análisis. Creada con ❤️ utilizando IA, con la intervención de una persona. Traducida automáticamente, por lo que pueden producirse pequeñas imprecisiones.",
+      "src": "a21c38f71d8c"
+    },
+    "text.364eb364526e": {
+      "text": "Vinted Storefront",
+      "src": "364eb364526e"
+    },
+    "text.0e2226b5235f": {
+      "text": "Bienvenidos",
+      "src": "0e2226b5235f"
+    },
+    "text.492b20c939a8": {
+      "text": "Ropa contemporánea del sur de Asia, joyas, objetos de meditación y artículos para el hogar. Seleccionados y elaborados a mano, algunos de ellos proceden de mi propia colección.",
+      "src": "492b20c939a8"
+    },
+    "text.a8ecafc0d8cc": {
+      "text": "Prepáralo en casa",
+      "src": "a8ecafc0d8cc"
+    },
+    "text.0eeaecd8d140": {
+      "text": "Echa un vistazo al armario →",
+      "src": "0eeaecd8d140"
+    },
+    "text.d8e00df9c105": {
+      "text": "Más entradas de los diarios",
+      "src": "d8e00df9c105"
+    },
+    "text.6a834c6cd85f": {
+      "text": "Objetos para la práctica",
+      "src": "6a834c6cd85f"
+    },
+    "text.55de06ce1653": {
+      "text": "Especias y productos básicos de despensa procedentes de las mismas cocinas en las que se cocinan los platos de estos lugares, en la sección de alimentos.",
+      "src": "55de06ce1653"
+    },
+    "text.e1ae58b94a76": {
+      "text": "Las malas, el incienso, las deidades y el resto de los objetos rituales que se describen en este texto se encuentran en la estantería de meditación.",
+      "src": "e1ae58b94a76"
+    },
+    "text.261af7c2ac23": {
+      "text": "Las prendas de las que hablo se pueden encontrar en la sección de Moda: estampados a mano, tejidos a mano, cortes contemporáneos. Seleccionadas personalmente en Europa, sin esperas por envíos desde la India.",
+      "src": "261af7c2ac23"
+    },
+    "text.187fd64f0282": {
+      "text": "Kavyanjali",
+      "src": "187fd64f0282"
+    },
+    "text.5cdfce3c3325": {
+      "text": "En esta web no hay cookies, ni rastreadores, ni herramientas de análisis. Se trata de una traducción automática, por lo que pueden producirse pequeñas imprecisiones. Creado con ❤️ utilizando IA, con la supervisión de una persona.",
+      "src": "5cdfce3c3325"
     }
   }
 }

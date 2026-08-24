@@ -40,7 +40,11 @@ const WHATSAPP = "https://wa.me/420777558262";
 const PERSON = {
   "@type": "Person",
   "@id": `${SITE}/#author`,
-  name: "Guldaar Bazaar",
+  // A PERSON's name, not the shop's. This node said "Guldaar Bazaar" — which described a
+  // Person entity by the name of the business it belongs to, so the one node on the site
+  // asserting that a human is behind the writing named no human. The shop's name lives on
+  // the Organization node, which is where a publisher belongs; a byline needs the author.
+  name: "Kavyanjali",
   description:
     "An Indian living in Prague, writing about contemporary Indian clothing, Indian restaurants in the city, and life between two countries.",
   url: `${SITE}/`,

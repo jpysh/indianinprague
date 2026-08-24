@@ -242,7 +242,15 @@ header.site{
 
 .brand{
   flex:0 0 auto;
-  font-weight:600;font-size:var(--fs-2xs);letter-spacing:0;text-transform:uppercase;
+  /* Enlarged 24 Aug 2026, without touching the 52/64px bar. The room was there vertically —
+     the box was 44px around 17px of text — so the gain comes from line-height:1 tightening
+     the line box and the font growing into the space that frees. The binding constraint is
+     WIDTH, not height: at 375px the bar already carries the menu button (44), the language
+     pill (71), WhatsApp (41), gaps (30) and gutters (40), leaving ~149px. 15px lands the
+     wordmark near 126px and keeps ~23px of slack for a longer language name in the pill;
+     16px was measured at ~135px and spends nearly all of it, which is a squeeze one
+     translation away from wrapping. */
+  font-weight:600;font-size:.9375rem;line-height:1;letter-spacing:0;text-transform:uppercase;
   /* The wordmark is two words and one slash in a monospace face — 16 characters, 101px on
      a 375px bar. Pulling the spaces in around the slash reads as a tighter lockup rather
      than a smaller logo. */
@@ -292,12 +300,16 @@ nav.main a.active{opacity:1;color:var(--magenta)}
    channel, not a destination, and how-it-works and the footer both still link it. It lives
    outside nav.main so the scroll container holding the section links cannot carry it off
    the right edge — contact is always reachable. */
+/* NO DIVIDER any more (24 Aug 2026). The hairline here separated "where you can go on this
+   site" from "where you can reach me", and that reasoning expired twice over: the section
+   links moved behind the menu button below 641px, and the Vinted icon left the bar
+   entirely. What was left was a rule between the language pill and a single WhatsApp icon —
+   two controls of the same kind — with the pill's own border sitting 10px away, so the eye
+   read two vertical lines and no grouping. */
 .bar-ico{
   flex:0 0 auto;
   display:flex;align-items:center;
-  /* A hairline separating "where you can go on this site" from "where you can reach me". */
   padding-left:9px;
-  border-left:1px solid rgba(242,239,230,.16);
 }
 a.ico{
   opacity:.8;
@@ -396,12 +408,12 @@ a.wa:hover{color:#3BE87C}
   :root{--gutter:30px}
   .menu{display:none}
   .bar{min-height:64px;gap:24px}
-  .brand{font-size:var(--fs-s);letter-spacing:.04em}
+  .brand{font-size:1.0625rem;letter-spacing:.04em}
   nav.main{
     gap:24px;font-size:var(--fs-xs);letter-spacing:.04em;overflow-x:visible;
   }
   nav.main a{min-height:0}
-  .bar-ico{padding-left:20px}
+  .bar-ico{padding-left:18px}
 }
 
 /* ---------- image frames ---------- */

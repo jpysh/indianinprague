@@ -214,7 +214,22 @@
   letter-spacing:-.01em;color:var(--bone);max-width:24ch;
 }
 /* 66ch of Plex Sans is 83 characters, not 66 — see the --measure note in site.css. */
-.entry-body{max-width:var(--measure)}
+/* ONE OWNER FOR THE HORIZONTAL GUTTER (24 Aug 2026).
+ *
+ * .post-main is a .wrap with its padding zeroed, so the page gutter used to be reapplied by
+ * each child that happened to need it: p had padding-left:20px, ul had none, and li's
+ * absolutely-positioned "—" marker sits at left:0 — which is the CONTAINER's left edge, so
+ * every bullet dash printed flush against the phone screen while the paragraph text beside
+ * it sat 20px in. A ragged left margin down the whole article.
+ *
+ * The gutter belongs to the column, not to the elements inside it. With it here, an element
+ * type this file has never seen — a blockquote, a figure, a table, whatever tomorrow's post
+ * contains — is correctly inset without anyone remembering to pad it. */
+.entry-body{
+  max-width:var(--measure);
+  padding-left:var(--gutter);
+  padding-right:var(--gutter);
+}
 /* --fs-l and the long leading, not the --fs-m the shared .prose rule hands out: this is the
    one piece of sustained reading on the site — six minutes of it — and it gets the same
    17px/1.72 the standalone article page used. A review is three sentences and stays at 16. */

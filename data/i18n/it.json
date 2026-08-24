@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T13:42:20.529Z",
-  "count": 3763,
+  "generated": "2026-08-24T15:06:25.604Z",
+  "count": 3782,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -15060,6 +15060,82 @@
     "text.6ef40df046f3": {
       "text": "Menu: sezioni del sito",
       "src": "6ef40df046f3"
+    },
+    "text.d6d381c616aa": {
+      "text": "Diari →",
+      "src": "d6d381c616aa"
+    },
+    "text.136ca0dfda22": {
+      "text": "Guardaroba →",
+      "src": "136ca0dfda22"
+    },
+    "text.b49785809650": {
+      "text": "Il cibo che adoro",
+      "src": "b49785809650"
+    },
+    "text.d5eaaf9daa27": {
+      "text": "Spiritualità →",
+      "src": "d5eaaf9daa27"
+    },
+    "text.fdc225765789": {
+      "text": "45 recensioni su Vinted →",
+      "src": "fdc225765789"
+    },
+    "text.b23bf521e50c": {
+      "text": "Valutato 5,0 su 5 in base a 45 recensioni degli acquirenti. Leggile su Vinted (si apre in una nuova scheda).",
+      "src": "b23bf521e50c"
+    },
+    "text.a21c38f71d8c": {
+      "text": "Su questo sito non sono presenti cookie, tracker né strumenti di analisi. Realizzato con ❤️ utilizzando l’intelligenza artificiale, con il coinvolgimento di una persona. Tradotto automaticamente, pertanto potrebbero verificarsi lievi imprecisioni.",
+      "src": "a21c38f71d8c"
+    },
+    "text.364eb364526e": {
+      "text": "Vinted Storefront",
+      "src": "364eb364526e"
+    },
+    "text.0e2226b5235f": {
+      "text": "Benvenuti",
+      "src": "0e2226b5235f"
+    },
+    "text.492b20c939a8": {
+      "text": "Abbigliamento contemporaneo dell’Asia meridionale, gioielli, oggetti per la meditazione e articoli per la casa. Selezionati con cura e realizzati a mano, alcuni dei quali provengono dalla mia collezione personale.",
+      "src": "492b20c939a8"
+    },
+    "text.a8ecafc0d8cc": {
+      "text": "Cucinalo a casa",
+      "src": "a8ecafc0d8cc"
+    },
+    "text.0eeaecd8d140": {
+      "text": "Scopri il guardaroba →",
+      "src": "0eeaecd8d140"
+    },
+    "text.d8e00df9c105": {
+      "text": "Altri estratti dai diari",
+      "src": "d8e00df9c105"
+    },
+    "text.6a834c6cd85f": {
+      "text": "Oggetti per l'esercizio",
+      "src": "6a834c6cd85f"
+    },
+    "text.55de06ce1653": {
+      "text": "Spezie e prodotti da dispensa provenienti dalle stesse cucine in cui si cucina in questi locali, sullo scaffale “Food”.",
+      "src": "55de06ce1653"
+    },
+    "text.e1ae58b94a76": {
+      "text": "Malas, incenso, divinità e tutti gli altri oggetti rituali descritti in questo testo, riposti sullo scaffale dedicato alla meditazione.",
+      "src": "e1ae58b94a76"
+    },
+    "text.261af7c2ac23": {
+      "text": "I capi di cui scrivo si trovano nella sezione Moda: stampe a blocchi, tessuti a mano, tagli contemporanei. Selezionati con cura in Europa, senza lunghe attese per la spedizione dall’India.",
+      "src": "261af7c2ac23"
+    },
+    "text.187fd64f0282": {
+      "text": "Kavyanjali",
+      "src": "187fd64f0282"
+    },
+    "text.5cdfce3c3325": {
+      "text": "Su questo sito non sono presenti cookie, tracker né strumenti di analisi. Il testo è stato tradotto automaticamente, pertanto potrebbero esserci piccole imprecisioni. Realizzato con ❤️ utilizzando l'intelligenza artificiale, con il controllo di una persona.",
+      "src": "5cdfce3c3325"
     }
   }
 }

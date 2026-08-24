@@ -68,9 +68,12 @@ export function glossaryHit(text, to) {
 // The marker is <x> because it must not collide with anything in the site's own HTML
 // fragments, which this pass also translates.
 const MARK = "x";
+// Exported so translate.mjs can spot a CACHED translation that predates a term being added
+// here — see the two-kinds-of-disagreement note there.
+export const KEEP_INLINE = GLOSSARY.keepInline ?? [];
 const protectKeep = (text) => {
   let out = text;
-  for (const term of GLOSSARY.keepInline ?? []) {
+  for (const term of KEEP_INLINE) {
     if (out.includes(term)) out = out.split(term).join(`<${MARK}>${term}</${MARK}>`);
   }
   return out;

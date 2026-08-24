@@ -22,7 +22,7 @@
      as much a first-paint font as the mono is. One file: it is a variable face. -->
 <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css?v=022b8e0e">
-<link rel="stylesheet" href="/assets/site.css?v=a1bf5400">
+<link rel="stylesheet" href="/assets/site.css?v=255c043f">
 <link rel="stylesheet" href="/assets/clothes.css?v=af4bd6f9">
 <link rel="stylesheet" href="/assets/shop.css?v=8632d010">
 <script type="application/ld+json">
@@ -2672,12 +2672,18 @@
     <details class="sb-refine" data-refine>
     <summary><span class="sb-refine-label">Refine &amp; sort</span><span class="sb-refine-n" data-refine-count></span></summary>
     <div class="sb-controls">
-      
-      
+      <label class="sb-sel"><span class="vh">Condition</span><select id="sb-cond" data-filter="sb-cond" data-name="Condition"><option value="">Any condition</option><option value="New with tags">New with tags</option><option value="New without tags">New without tags</option><option value="Very good">Very good</option><option value="Good">Good</option><option value="Satisfactory">Satisfactory</option></select></label>
+      <label class="sb-sel"><span class="vh">Size</span><select id="sb-size" data-filter="sb-size" data-name="Size"><option value="">All sizes</option><option value="L">L</option><option value="M">M</option><option value="One size">One size</option><option value="S">S</option><option value="XL">XL</option></select></label>
       <label class="sb-sel"><span class="vh">Price</span>
         <select id="sb-price" data-filter="sb-price" data-name="Price"><option value="">Any price</option><option value="0-10">Under €10</option><option value="10-25">€10 – €25</option><option value="25-50">€25 – €50</option><option value="50+">Over €50</option></select></label>
-      
-      
+      <label class="sb-sel"><span class="vh">Colour</span><select id="sb-color" data-filter="sb-color" data-name="Colour"><option value="">All colours</option><option value="Apricot">Apricot</option><option value="Beige">Beige</option><option value="Black">Black</option><option value="Blue">Blue</option><option value="Brown">Brown</option><option value="Coral">Coral</option><option value="Cream">Cream</option><option value="Dark green">Dark green</option><option value="Dark pink">Dark pink</option><option value="Gold">Gold</option><option value="Grey">Grey</option><option value="Light blue">Light blue</option><option value="Lilac">Lilac</option><option value="Multicolour">Multicolour</option><option value="Mustard">Mustard</option><option value="Navy">Navy</option><option value="Orange">Orange</option><option value="Pink">Pink</option><option value="Purple">Purple</option><option value="Red">Red</option><option value="Silver">Silver</option><option value="Turquoise">Turquoise</option><option value="White">White</option><option value="Yellow">Yellow</option></select></label>
+      <label class="sb-avail"><span class="vh">Availability</span>
+      <select id="sb-avail" data-avail-select>
+        <option value="">Availability All</option>
+        <option value="available">In stock</option>
+        <option value="oos">Out of stock</option>
+        <option value="sold">Sold</option>
+      </select></label>
       <label class="sb-sel sb-sort"><span class="vh">Sort by</span>
         <select id="sb-sort">
           <option value="new">Newest first</option>
@@ -2815,7 +2821,8 @@
       <a class="item" href="/wardrobe/meditation">Meditation</a>
       <a class="item" href="/wardrobe/home-decor">Home decor</a>
       <a class="item" href="/wardrobe/books">Books</a>
-      <a class="item" href="/wardrobe/sold">Sold</a>
+      <a class="item" href="/wardrobe?avail=sold">Sold</a>
+      <a class="item" href="/how-it-works">How it works</a>
     </div>
     <div class="foot-col">
       <a class="head" href="/spirituality">Spirituality</a>
@@ -2826,15 +2833,15 @@
     </div>
     <div class="foot-col">
       <a class="head" href="/diaries">Diaries</a>
-      <a class="item" href="/diaries#food">Restaurants</a>
-      <a class="item" href="/wardrobe/fashion#vinted">Vinted closet</a>
-      <a class="item" href="/how-it-works">How it works</a>
-      <a class="item" href="/">Home</a>
+      <a class="item" href="/diaries/fashion">What I wear</a>
+      <a class="item" href="/diaries/food">Food I love</a>
+      <a class="item" href="/diaries/meditation">Mindfulness</a>
+      <a class="item" href="https://www.vinted.cz/member/3166447071" target="_blank" rel="noopener">Vinted Storefront</a>
     </div>
   </nav>
 </div>
 <div class="wrap foot-bottom">
-  <span class="foot-note">No cookies, no trackers, no analytics on this site. Made with ❤️ using AI, with a human in the loop. Machine translated, so minor inaccuracies may occur.</span>
+  <span class="foot-note">No cookies, no trackers, no analytics on this site. Machine translated, so minor inaccuracies may occur. Made with ❤️ using AI, with a human in the loop.</span>
 </div></footer>
 <script src="/assets/shop.js?v=f0b3881d" defer></script>
 </body>

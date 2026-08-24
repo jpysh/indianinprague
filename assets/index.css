@@ -87,6 +87,78 @@
    #14110E), which reads as a printing error against this warm palette. Flipping to light
    text on the deeper chilli red gives 4.73:1 while keeping the chip unmistakably red. */
 .hero .label{font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:var(--bone);background:var(--chilli);display:inline-block;padding:6px 12px;margin-bottom:22px;font-weight:500}
+
+/* ---------- the greeting reel ----------
+ *
+ * Replaced the static "Czech-In" chip on 24 Aug 2026. The site is published in eight
+ * languages and nothing above the fold said so; the language pill in the header is a
+ * control, not an announcement, and a visitor who cannot read English does not go looking
+ * in a header for a way out. A greeting cycling through the eight is the announcement.
+ *
+ * CSS ONLY, and not merely out of taste: style-src is 'self', so the per-word delays this
+ * needs cannot be inline style attributes. One keyframe track on one element avoids the
+ * whole question.
+ *
+ * The reel is a column of words translated upward one line at a time. The first word is
+ * REPEATED at the end so the last step slides into an identical frame and the loop closes
+ * without a visible rewind.
+ *
+ * The box never changes size — a chip that resized on each word would shove the H1 below it
+ * on every rotation, eight times a cycle, which is a layout shift a visitor feels even when
+ * they cannot say what moved. min-width is set from the longest greeting (the Russian) and
+ * the words are LEFT-aligned inside it: the chip sits above a left-aligned headline and
+ * lede, so centring would make the text's left edge wander against a strong margin line
+ * while the box itself stayed still.
+ */
+.hero .label.welcome{
+  /* One line tall, and the height is fixed here rather than inherited so the reel's step
+     distance and the chip's height are the same number in both places. */
+  --wh:16px;
+  padding-top:6px;padding-bottom:6px;
+  /* Measured, not guessed: the longest greeting is the Russian at 139px, and box-sizing is
+     border-box, so 139 + 24px of padding = 163px. 14em is 168px at this 12px font — five
+     pixels of slack for the fallback face if the webfont has not landed yet, and no more.
+     The earlier 15.5em was 23px wider than any word in the reel. */
+  min-width:14em;
+  text-align:left;
+}
+/* The clipping window, and it is a SEPARATE element from the chip on purpose: overflow
+   clips to the PADDING box, so hiding the overflow on the padded chip itself left the 6px
+   of padding above and below showing a slice of the previous and next word — three
+   greetings on screen at once. The window is exactly one line tall and carries no padding,
+   so there is nowhere for a neighbour to show through. */
+.hero .label.welcome .reel{
+  display:block;height:var(--wh);overflow:hidden;
+}
+.hero .label.welcome .track{
+  display:block;
+  /* Not steps(): that would snap from word to word. Each word holds for 1.76s and then
+     slides over 0.44s, which is the 80/20 that reads as a reel rather than a flicker. */
+  animation:greet 17.6s cubic-bezier(.65,0,.35,1) infinite;
+}
+.hero .label.welcome .track b{
+  display:block;height:var(--wh);line-height:var(--wh);font-weight:500;white-space:nowrap;
+}
+
+/* Eight words, 2.2s each. Slower than ~3s and most visitors never see a second language;
+   faster than ~2s and it reads as a flicker rather than a greeting. */
+@keyframes greet{
+  0%,10%     {transform:translateY(0)}
+  12.5%,22.5%{transform:translateY(calc(var(--wh) * -1))}
+  25%,35%    {transform:translateY(calc(var(--wh) * -2))}
+  37.5%,47.5%{transform:translateY(calc(var(--wh) * -3))}
+  50%,60%    {transform:translateY(calc(var(--wh) * -4))}
+  62.5%,72.5%{transform:translateY(calc(var(--wh) * -5))}
+  75%,85%    {transform:translateY(calc(var(--wh) * -6))}
+  87.5%,97.5%{transform:translateY(calc(var(--wh) * -7))}
+  100%       {transform:translateY(calc(var(--wh) * -8))}
+}
+
+/* Motion is decoration here: the greeting is not information a visitor loses by seeing only
+   one of them, and the accessible name is a single static "Welcome" either way. */
+@media (prefers-reduced-motion:reduce){
+  .hero .label.welcome .track{animation:none}
+}
 /* line-height must stay above 1 here: the b is a highlight block whose background box is
    taller than the em, so at 1.0 the second line's block bit into the first one's. This
    face's background box measures 1.30em, so anything under that overlaps no matter the

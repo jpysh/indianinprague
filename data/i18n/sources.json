@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-08-24T13:43:02.309Z",
-  "count": 3756,
+  "generated": "2026-08-24T15:06:23.297Z",
+  "count": 3758,
   "entries": {
     "item.9729949801.title": {
       "text": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
@@ -2330,6 +2330,13 @@
       "since": "",
       "changed": ""
     },
+    "text.9c870aa6e5e9": {
+      "text": "How it works",
+      "src": "9c870aa6e5e9",
+      "where": "page text — first seen on 404.html",
+      "since": "",
+      "changed": ""
+    },
     "text.c5588145efba": {
       "text": "Courses &amp; treatments",
       "src": "c5588145efba",
@@ -2358,33 +2365,40 @@
       "since": "",
       "changed": ""
     },
-    "text.ab07c12eca1a": {
-      "text": "Vinted closet",
-      "src": "ab07c12eca1a",
+    "text.868b190b7bda": {
+      "text": "What I wear",
+      "src": "868b190b7bda",
       "where": "page text — first seen on 404.html",
       "since": "",
       "changed": ""
     },
-    "text.9c870aa6e5e9": {
-      "text": "How it works",
-      "src": "9c870aa6e5e9",
+    "text.b49785809650": {
+      "text": "Food I love",
+      "src": "b49785809650",
+      "where": "page text — first seen on 404.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.550795c68908": {
+      "text": "Mindfulness",
+      "src": "550795c68908",
       "where": "page text — first seen on 404.html",
       "since": "",
       "changed": ""
     },
-    "text.880362c92bb5": {
-      "text": "Made with ❤️ using AI, with a human in the loop",
-      "src": "880362c92bb5",
+    "text.364eb364526e": {
+      "text": "Vinted Storefront",
+      "src": "364eb364526e",
       "where": "page text — first seen on 404.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.620e24183224": {
-      "text": "No cookies, no trackers, no analytics on this site.",
-      "src": "620e24183224",
+    "text.a21c38f71d8c": {
+      "text": "No cookies, no trackers, no analytics on this site. Made with ❤️ using AI, with a human in the loop. Machine translated, so minor inaccuracies may occur.",
+      "src": "a21c38f71d8c",
       "where": "page text — first seen on 404.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.6b008dfd4e0a": {
       "text": "Tram 22 Diaries: Indian and vegan restaurants in Prague",
@@ -2435,23 +2449,9 @@
       "since": "",
       "changed": ""
     },
-    "text.868b190b7bda": {
-      "text": "What I wear",
-      "src": "868b190b7bda",
-      "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
-    },
     "text.73d42c69cbc8": {
       "text": "Food I love in the city",
       "src": "73d42c69cbc8",
-      "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.550795c68908": {
-      "text": "Mindfulness",
-      "src": "550795c68908",
       "where": "page text — first seen on diaries.html",
       "since": "",
       "changed": ""
@@ -2827,6 +2827,13 @@
       "since": "",
       "changed": ""
     },
+    "text.187fd64f0282": {
+      "text": "Kavyanjali",
+      "src": "187fd64f0282",
+      "where": "page text — first seen on diaries/annamalai.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
     "text.f808eca70794": {
       "text": "Nové Město · South Indian · sit-down",
       "src": "f808eca70794",
@@ -2854,6 +2861,27 @@
       "where": "page text — first seen on diaries/annamalai.html",
       "since": "",
       "changed": ""
+    },
+    "text.a8ecafc0d8cc": {
+      "text": "Cook it at home",
+      "src": "a8ecafc0d8cc",
+      "where": "page text — first seen on diaries/annamalai.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.55de06ce1653": {
+      "text": "Spices and store-cupboard things from the same kitchens these places cook from, on the Food shelf.",
+      "src": "55de06ce1653",
+      "where": "page text — first seen on diaries/annamalai.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.0eeaecd8d140": {
+      "text": "Shop the wardrobe →",
+      "src": "0eeaecd8d140",
+      "where": "page text — first seen on diaries/annamalai.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.8378bb0750ce": {
       "text": "More in Food I love in the city",
@@ -3072,19 +3100,19 @@
       "since": "",
       "changed": ""
     },
-    "text.04ec28a0aaf8": {
-      "text": "The pieces I write about here go up on my Vinted closet as I rotate them — block print, handloom, contemporary cuts. Pre-loved, locally available, no slow shipping from India.",
-      "src": "04ec28a0aaf8",
+    "text.261af7c2ac23": {
+      "text": "The pieces I write about turn up on the Fashion shelf — block print, handloom, contemporary cuts. Hand-picked, in Europe, no slow shipping from India.",
+      "src": "261af7c2ac23",
       "where": "page text — first seen on diaries/contemporary-indian-wear.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.3293476db705": {
-      "text": "Open my Vinted closet →",
-      "src": "3293476db705",
+    "text.d8e00df9c105": {
+      "text": "More from the diaries",
+      "src": "d8e00df9c105",
       "where": "page text — first seen on diaries/contemporary-indian-wear.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.388e45d8b86e": {
       "text": "Dosa Dosa: Food I love in the city, Tram 22 Diaries",
@@ -3218,6 +3246,20 @@
       "where": "page text — first seen on diaries/hello-world.html",
       "since": "",
       "changed": ""
+    },
+    "text.6a834c6cd85f": {
+      "text": "Objects for the practice",
+      "src": "6a834c6cd85f",
+      "where": "page text — first seen on diaries/hello-world.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.e1ae58b94a76": {
+      "text": "Malas, incense, deities and the rest of the ritual objects this writing describes, on the Meditation shelf.",
+      "src": "e1ae58b94a76",
+      "where": "page text — first seen on diaries/hello-world.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.9e18a2094ea2": {
       "text": "INDelicious Bistro: Food I love in the city, Tram 22 Diaries",
@@ -3765,26 +3807,40 @@
       "since": "",
       "changed": ""
     },
-    "text.2fe1ed1ca766": {
-      "text": "Czech-In",
-      "src": "2fe1ed1ca766",
+    "text.0e2226b5235f": {
+      "text": "Welcome",
+      "src": "0e2226b5235f",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.f554ea8e1c39": {
-      "text": "Contemporary South Asian clothing, jewellery, meditation objects and home things. Hand-picked and hand-crafted, some of it from my own collection. All about that Czech-In life.",
-      "src": "f554ea8e1c39",
+    "text.492b20c939a8": {
+      "text": "Contemporary South Asian clothing, jewellery, meditation objects and home things. Hand-picked and hand-crafted, some of it from my own collection.",
+      "src": "492b20c939a8",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.8ea764186109": {
-      "text": "The diaries →",
-      "src": "8ea764186109",
+    "text.136ca0dfda22": {
+      "text": "Wardrobe →",
+      "src": "136ca0dfda22",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.d5eaaf9daa27": {
+      "text": "Spirituality →",
+      "src": "d5eaaf9daa27",
+      "where": "page text — first seen on index.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
+    "text.d6d381c616aa": {
+      "text": "Diaries →",
+      "src": "d6d381c616aa",
+      "where": "page text — first seen on index.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.5cf3532e21bd": {
       "text": "Ask me anything →",
@@ -3800,33 +3856,19 @@
       "since": "",
       "changed": ""
     },
-    "text.54ed506f3726": {
-      "text": "45 reviews on Vinted",
-      "src": "54ed506f3726",
+    "text.fdc225765789": {
+      "text": "45 reviews on Vinted →",
+      "src": "fdc225765789",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
-    "text.82b4fd426a74": {
-      "text": "Read the reviews",
-      "src": "82b4fd426a74",
+    "text.b23bf521e50c": {
+      "text": "Rated 5.0 out of 5 from 45 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "b23bf521e50c",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.824cb3bb9102": {
-      "text": "on Vinted (opens in a new tab)",
-      "src": "824cb3bb9102",
-      "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e5b4d0da0ad6": {
-      "text": "Rated 5.0 out of 5 from 45 buyer reviews on Vinted.",
-      "src": "e5b4d0da0ad6",
-      "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.df2d7c2fd73f": {
       "text": "426 pieces",
@@ -4017,6 +4059,13 @@
       "since": "",
       "changed": ""
     },
+    "text.5cdfce3c3325": {
+      "text": "No cookies, no trackers, no analytics on this site. Machine translated, so minor inaccuracies may occur. Made with ❤️ using AI, with a human in the loop.",
+      "src": "5cdfce3c3325",
+      "where": "page text — first seen on index.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
+    },
     "text.e86836c0c91f": {
       "text": "Shop Indian clothes, jewellery and home things in Europe",
       "src": "e86836c0c91f",
@@ -4188,6 +4237,48 @@
     "text.6f1b35bad672": {
       "text": "All colours",
       "src": "6f1b35bad672",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.55848726df84": {
+      "text": "Apricot",
+      "src": "55848726df84",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c5ca6990f980": {
+      "text": "Dark pink",
+      "src": "c5ca6990f980",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.12f67f8539c4": {
+      "text": "Availability",
+      "src": "12f67f8539c4",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5ce6a9bc5249": {
+      "text": "Availability All",
+      "src": "5ce6a9bc5249",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f66315eb0e3a": {
+      "text": "In stock",
+      "src": "f66315eb0e3a",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b804f4350903": {
+      "text": "Out of stock",
+      "src": "b804f4350903",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -13418,34 +13509,6 @@
       "since": "",
       "changed": ""
     },
-    "text.12f67f8539c4": {
-      "text": "Availability",
-      "src": "12f67f8539c4",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.5ce6a9bc5249": {
-      "text": "Availability All",
-      "src": "5ce6a9bc5249",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f66315eb0e3a": {
-      "text": "In stock",
-      "src": "f66315eb0e3a",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b804f4350903": {
-      "text": "Out of stock",
-      "src": "b804f4350903",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
     "text.3b3fdd3b0a74": {
       "text": "Nektar oddanosti",
       "src": "3b3fdd3b0a74",
@@ -14716,20 +14779,6 @@
     "text.8663c49a8820": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 17",
       "src": "8663c49a8820",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.55848726df84": {
-      "text": "Apricot",
-      "src": "55848726df84",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c5ca6990f980": {
-      "text": "Dark pink",
-      "src": "c5ca6990f980",
       "where": "page text — first seen on wardrobe/17.html",
       "since": "",
       "changed": ""
@@ -24933,6 +24982,13 @@
       "since": "",
       "changed": ""
     },
+    "text.3293476db705": {
+      "text": "Open my Vinted closet →",
+      "src": "3293476db705",
+      "where": "page text — first seen on wardrobe/fashion.html",
+      "since": "",
+      "changed": ""
+    },
     "text.7c240c867c00": {
       "text": "A quick guide to modern Indian labels",
       "src": "7c240c867c00",
@@ -26141,48 +26197,6 @@
       "text": "18 worship items in the meditation shelf.",
       "src": "93aaa31845fb",
       "where": "page text — first seen on wardrobe/meditation/worship-items.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.8a251434eefd": {
-      "text": "Recently sold: Indian clothes and jewellery in Europe",
-      "src": "8a251434eefd",
-      "where": "page text — first seen on wardrobe/sold.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e9a4c1c3069c": {
-      "text": "The last 10 pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what",
-      "src": "e9a4c1c3069c",
-      "where": "page text — first seen on wardrobe/sold.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.034a7e52c5c9": {
-      "text": "recent",
-      "src": "034a7e52c5c9",
-      "where": "page text — first seen on wardrobe/sold.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.320495caaca4": {
-      "text": "Already",
-      "src": "320495caaca4",
-      "where": "page text — first seen on wardrobe/sold.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.283bb9deef02": {
-      "text": "gone",
-      "src": "283bb9deef02",
-      "where": "page text — first seen on wardrobe/sold.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9a5dbaa3d450": {
-      "text": "The last 10 pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.",
-      "src": "9a5dbaa3d450",
-      "where": "page text — first seen on wardrobe/sold.html",
       "since": "",
       "changed": ""
     },

@@ -588,9 +588,13 @@ function toolbar(items) {
   //
   // Sold spans both catalogues on purpose. A shopper does not care which of them a thing
   // came from, and splitting the view by vendor would make them ask.
+  // Every option is gated on its own count, "In stock" included. It used to be added
+  // unconditionally, which put an "In stock" choice on the sold page that matched nothing —
+  // the exact "click that can only disappoint" the paragraph above rules out.
+  const availableCount = items.filter((i) => !i.sold && !(i.vendor && i.inStock === false)).length;
   const availOpts = [
     ["", "Availability All"],
-    ["available", "In stock"],
+    availableCount ? ["available", "In stock"] : null,
     oosCount ? ["oos", "Out of stock"] : null,
     soldCount ? ["sold", "Sold"] : null,
   ].filter(Boolean);
@@ -1024,7 +1028,10 @@ async function main() {
         // convert.
         const body = cat.module
           ? grid(slice, manifest, false)
-          : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(slice) +
+          // toolbar(items), not toolbar(slice) — the whole shelf, for the reason given at the
+          // other call site: options taken from one page of 99 describe that page, and the
+          // filters act on the shelf.
+          : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(items) +
             "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "") +
             `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
             pager(cat, seq);
@@ -1139,7 +1146,14 @@ async function main() {
   for (let no = 1; no <= allTotal; no++) {
     const slice = live.slice((no - 1) * PER_PAGE, no * PER_PAGE);
     const file = no === 1 ? "wardrobe.html" : `wardrobe/${no}.html`;
-    await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal }));
+    // `live` as shelfItems, not the slice: the toolbar's options are a statement about the
+    // WHOLE closet, and the filters already act on it (shop.js fetches wardrobe.cards the
+    // first time a control is used). Passing the slice meant page 1 — which is all in-stock,
+    // because sold and out-of-stock sort last — reported no sold and no out-of-stock items
+    // and suppressed the Availability control entirely. That in turn made ?avail=sold a
+    // no-op on /wardrobe: shop.js only honours the parameter when the page rendered the
+    // control it belongs to.
+    await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal }, null, live));
   }
   if (allTotal > 1) {
     await writeFile(path.join(ROOT, "wardrobe.cards"), cardsFragment(live, manifest, true));
@@ -1152,31 +1166,27 @@ async function main() {
     console.log(`  shop.html — removed (now wardrobe.html; nginx 301s the old path)`);
   }
 
-  // The sold page. Worth its own URL rather than only a filter state: "has anything here
-  // actually sold" is a question a hesitant buyer asks deliberately, and a URL can be
-  // linked to and indexed where a toggle cannot.
-  if (!sold.length && existsSync(path.join(ROOT, "wardrobe/sold.html"))) await rm(path.join(ROOT, "wardrobe/sold.html"));
-  if (sold.length) {
-    // The last N, not the whole archive. This page answers "does anything here actually
-    // sell?", and that is a question about recency — a 2024 sale is no evidence the shop is
-    // alive today. Ten is enough to be convincing and short enough to stay one screen of
-    // scrolling. archive.json keeps every sale regardless; this is a display cap, so
-    // nothing is lost by raising or lowering it.
-    const RECENT_SOLD = 10;
-    const recent = sold.slice(0, RECENT_SOLD);
-    const soldPage = {
-      name: "Sold", slug: "sold", page: "wardrobe/sold.html",
-      title: "Recently sold: Indian clothes and jewellery in Europe",
-      h1: ["Already", "gone"],
-      // "Sold" here means "left the closet". Vinted deletes a listing the moment it sells
-      // and exposes no sold history, so a disappearance IS the sale event — see the sold
-      // section of sync-vinted.mjs. The rare false positive is a listing pulled by hand.
-      lead: `The last ${recent.length} pieces that found homes. Everything is one of a kind, so once it sells it is genuinely gone — but it shows what tends to move, and most of what I list is similar in spirit.`,
-      expo: ["SOLD", "recent", `last ${recent.length} · sold`],
-    };
-    await writeFile(path.join(ROOT, "wardrobe/sold.html"), page(soldPage, recent, manifest, counts, ch));
-    console.log(`  sold.html — ${recent.length} of ${sold.length} archived items`);
-    written++;
+  // THERE IS NO SOLD PAGE. Removed 24 Aug 2026, along with its RECENT_SOLD = 10 cap.
+  //
+  // It existed because "has anything here actually sold" is a question a hesitant buyer asks
+  // deliberately, and a URL can be linked and indexed where a filter state cannot. That
+  // reasoning was written when the split was sold/not-sold. It stopped holding when
+  // out-of-stock arrived as a third state: nothing gave sold a dedicated page that did not
+  // equally give one to out-of-stock, and there was never a /wardrobe/oos. Two sibling
+  // states, one with a URL and a hand-written lead and a display cap, the other a filter
+  // value — that asymmetry was history, not design.
+  //
+  // Sold is now exactly what out-of-stock is: a value of data-avail, ordered last by `live`
+  // above, reachable at /wardrobe?avail=sold and on any shelf. The cap goes with the page —
+  // it capped the page, never the data, and the filter shows every archived piece.
+  //
+  // The old file is deleted rather than left to rot: on disk it would keep being served and
+  // keep going stale. It is NOT redirected — a deliberate choice, matching the rest of this
+  // hostname, which has no indexing history to preserve.
+  const soldPageFile = path.join(ROOT, "wardrobe/sold.html");
+  if (existsSync(soldPageFile)) {
+    await rm(soldPageFile);
+    console.log("  wardrobe/sold.html — removed (sold is now ?avail=sold, like out-of-stock)");
   }
 
   // The homepage trust strip, in place of a paragraph describing the shop.

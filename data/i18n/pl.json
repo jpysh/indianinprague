@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T13:42:20.839Z",
-  "count": 3763,
+  "generated": "2026-08-24T15:06:26.615Z",
+  "count": 3782,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -15060,6 +15060,82 @@
     "text.6ef40df046f3": {
       "text": "Menu: sekcje strony",
       "src": "6ef40df046f3"
+    },
+    "text.d6d381c616aa": {
+      "text": "Pamiętniki →",
+      "src": "d6d381c616aa"
+    },
+    "text.136ca0dfda22": {
+      "text": "Garderoba →",
+      "src": "136ca0dfda22"
+    },
+    "text.b49785809650": {
+      "text": "Jedzenie, które uwielbiam",
+      "src": "b49785809650"
+    },
+    "text.d5eaaf9daa27": {
+      "text": "Duchowość →",
+      "src": "d5eaaf9daa27"
+    },
+    "text.fdc225765789": {
+      "text": "45 recenzji na stronie Vinted →",
+      "src": "fdc225765789"
+    },
+    "text.b23bf521e50c": {
+      "text": "Ocena 5,0 na 5 na podstawie 45 opinii kupujących. Przeczytaj je na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "b23bf521e50c"
+    },
+    "text.a21c38f71d8c": {
+      "text": "Na tej stronie nie ma plików cookie, modułów śledzących ani narzędzi analitycznych. Strona została stworzona z ❤️ przy użyciu sztucznej inteligencji, z udziałem człowieka. Tekst został przetłumaczony automatycznie, więc mogą wystąpić drobne nieścisłości.",
+      "src": "a21c38f71d8c"
+    },
+    "text.364eb364526e": {
+      "text": "Vinted Storefront",
+      "src": "364eb364526e"
+    },
+    "text.0e2226b5235f": {
+      "text": "Witamy",
+      "src": "0e2226b5235f"
+    },
+    "text.492b20c939a8": {
+      "text": "Współczesna odzież z Azji Południowej, biżuteria, przedmioty do medytacji oraz akcesoria do domu. Starannie wyselekcjonowane i wykonane ręcznie, a część z nich pochodzi z mojej własnej kolekcji.",
+      "src": "492b20c939a8"
+    },
+    "text.a8ecafc0d8cc": {
+      "text": "Przygotuj to w domu",
+      "src": "a8ecafc0d8cc"
+    },
+    "text.0eeaecd8d140": {
+      "text": "Przejrzyj kolekcję →",
+      "src": "0eeaecd8d140"
+    },
+    "text.d8e00df9c105": {
+      "text": "Więcej z pamiętników",
+      "src": "d8e00df9c105"
+    },
+    "text.6a834c6cd85f": {
+      "text": "Przedmioty do ćwiczeń",
+      "src": "6a834c6cd85f"
+    },
+    "text.55de06ce1653": {
+      "text": "Przyprawy i produkty spożywcze z tych samych kuchni, z których korzystają te lokale, dostępne na półce z żywnością.",
+      "src": "55de06ce1653"
+    },
+    "text.e1ae58b94a76": {
+      "text": "Malas, kadzidła, bóstwa oraz pozostałe przedmioty rytualne opisane w niniejszym tekście znajdują się na półce poświęconej medytacji.",
+      "src": "e1ae58b94a76"
+    },
+    "text.261af7c2ac23": {
+      "text": "Artykuły, o których piszę, trafiają na półkę „Moda” — tkaniny drukowane techniką blokową, tkane ręcznie, nowoczesne kroje. Starannie wyselekcjonowane w Europie, bez długiego czasu dostawy z Indii.",
+      "src": "261af7c2ac23"
+    },
+    "text.187fd64f0282": {
+      "text": "Kavyanjali",
+      "src": "187fd64f0282"
+    },
+    "text.5cdfce3c3325": {
+      "text": "Na tej stronie nie ma plików cookie, narzędzi śledzących ani narzędzi analitycznych. Tekst został przetłumaczony automatycznie, więc mogą wystąpić drobne nieścisłości. Stworzono z ❤️ przy użyciu sztucznej inteligencji, pod nadzorem człowieka.",
+      "src": "5cdfce3c3325"
     }
   }
 }

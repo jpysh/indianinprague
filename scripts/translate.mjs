@@ -26,7 +26,7 @@
 // via sync-vinted.mjs, which is real Czech written by Vinted, not by a translator.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import { translate, glossaryHit } from "./deepl.mjs";
+import { translate, glossaryHit, KEEP_INLINE } from "./deepl.mjs";
 import { LANGS, CODES, ROOT, DIR, hash, loadSources, saveSources, loadMachine, saveMachine, source, coverage } from "./i18n.mjs";
 import { strings } from "./extract.mjs";
 import { englishPages } from "./build-i18n.mjs";
@@ -177,10 +177,25 @@ async function fill(lang, sources, budget) {
   // which is the opposite of when you notice you need it. A cached entry that disagrees
   // with the glossary is dropped here and refilled below, at no quota cost: a keep-list hit
   // never reaches the API.
+  //
+  // TWO KINDS OF DISAGREEMENT, and only one of them used to be caught.
+  //
+  //   whole-string  glossaryHit fires when the term IS the string. The cached translation
+  //                 must equal the term exactly.
+  //   embedded      a keepInline term inside a longer sentence. Those are protected at send
+  //                 time by an ignore_tags marker, so a CORRECT translation always contains
+  //                 the term verbatim — and a cached one that does not is therefore known to
+  //                 predate the protection. "Vinted Storefront" came back as "Vinted
+  //                 Výkladní skříň" on 24 Aug 2026 and survived being added to keepInline,
+  //                 because the whole-string check could not see inside the sentence.
   let corrected = 0;
   for (const [key, src] of Object.entries(sources)) {
+    if (!machine[key]) continue;
     const hit = glossaryHit(src.text, LANGS[lang].deepl);
-    if (hit !== undefined && machine[key] && machine[key].text !== hit) {
+    const wrongWhole = hit !== undefined && machine[key].text !== hit;
+    const wrongEmbedded = hit === undefined && KEEP_INLINE.some(
+      (t) => src.text.includes(t) && !machine[key].text.includes(t));
+    if (wrongWhole || wrongEmbedded) {
       delete machine[key];
       corrected++;
     }
