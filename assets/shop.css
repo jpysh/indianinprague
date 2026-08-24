@@ -494,23 +494,36 @@
 
 /* ---------- paint budget ---------- */
 
-/* wardrobe.html holds 157 cards. shop.js keeps most of them `hidden`, revealing 24 at a
- * time, but after a few reveals there are still a hundred laid-out cards above and below the
- * viewport that the browser styles, lays out and paints on every scroll.
+/* THERE IS NO content-visibility HERE ANY MORE, AND THERE CANNOT BE. Removed 24 Aug 2026
+ * because it was corrupting the card grid on every shelf page — the bug looked like the
+ * photo swallowing the title, price and button below it.
  *
- * content-visibility:auto lets it skip all of that for anything off-screen. contain-intrinsic-size
- * supplies a placeholder height so the scrollbar does not jump as cards enter and leave; the
- * `auto` keyword makes the browser remember each card's real height once it has been rendered
- * once, so the estimate only matters for the first pass. 560px is a 4/5 frame plus the meta,
- * tags and ask rows at the widest column.
+ * What it used to say: wardrobe.html holds 157 cards, shop.js reveals 24 at a time, and the
+ * rest still cost style, layout and paint on every scroll — so `.piece:nth-child(n+7)` got
+ * `content-visibility:auto` with `contain-intrinsic-size:auto 560px` to skip the off-screen
+ * ones. Sound reasoning, and it worked when the card was a plain block.
  *
- * Not applied to the first row: an element that has never been rendered has no remembered
- * size, and skipping the cards that are on screen at load would cost a reflow to gain
- * nothing.
+ * WHY IT CANNOT COEXIST WITH THIS CARD. site.css gives `.piece` `grid-template-rows:subgrid`
+ * — that is what makes the frame, title, tags and button line up ACROSS the cards in a row
+ * instead of each card sizing itself. content-visibility:auto applies layout containment,
+ * which makes the element an independent formatting context, and a subgrid cannot inherit
+ * its parent's tracks from inside one. So every card from the seventh onwards silently
+ * dropped out of the subgrid: measured, its rows resolved to `2px 52.59px 25.79px 52px`
+ * instead of `subgrid`, the frame's 495px track collapsed to 2px, and the card laid out at
+ * 132px tall while still containing a 495px photograph. Everything below the photo drew on
+ * top of it.
+ *
+ * `contain-intrinsic-size:auto` then made it self-sustaining: the browser remembers the size
+ * an element had when it was last rendered, so once a card rendered at the broken 132px it
+ * kept being 132px. Both a fixed intrinsic size and a corrected one were tried and neither
+ * helped, because the intrinsic size was never the problem — the lost subgrid was.
+ *
+ * IF THE PAINT COST EVER NEEDS ADDRESSING AGAIN, it must not be done on `.piece`. The
+ * options that do not fight subgrid: put content-visibility on a wrapper INSIDE the card,
+ * or have shop.js keep the far-off cards `hidden` (it already owns that mechanism, and
+ * `display:none` skips strictly more work than content-visibility does). Measure first —
+ * this was an optimisation with no measurement behind it, and it cost more than it bought.
  */
-@supports (content-visibility:auto){
-  .piece:nth-child(n+7){content-visibility:auto;contain-intrinsic-size:auto 560px}
-}
 
 /* ---------- pagination ---------- */
 

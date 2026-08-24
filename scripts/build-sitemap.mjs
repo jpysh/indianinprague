@@ -13,6 +13,7 @@
 
 import { readFile, writeFile, stat } from "node:fs/promises";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { CODES } from "./i18n.mjs";
 
@@ -91,13 +92,26 @@ const walk = (rel) => {
     if (!f.name.endsWith(".html")) continue;
     const stem = f.name.replace(/\.html$/, "");
     const n = Number(stem);
-    // Page 1 of a shelf is written at the level above and is already in PAGES.
-    if (n && n < 2) continue;
+    // NUMBERED CONTINUATION PAGES ARE NOT LISTED (24 Aug 2026).
+    //
+    // /wardrobe/fashion/2 and its siblings were 264 of this file's 745 URLs — 35% of the
+    // sitemap, once the seven language trees are counted. They are not broken and not
+    // duplicates: each self-canonicalises, which is the correct modern shape for
+    // pagination, and every one stays crawlable through the links on page 1. Google's
+    // documentation does not forbid listing them.
+    //
+    // They come out anyway, because a sitemap is a statement of what matters, and this is a
+    // hostname with NO crawl history at all — guldaarbazaar.com was first served on
+    // 24 Aug 2026. Every unit of early crawl attention spent on page 7 of a shelf is a unit
+    // not spent on the shelf itself or on a category page, which are the pages that can
+    // actually rank. Once the site has an established crawl pattern this matters far less,
+    // and adding them back is deleting this block.
+    if (n) continue;
     const loc = `/${rel}/${stem}`;
     PAGES.push({
       file: `${rel}/${f.name}`,
       loc,
-      priority: n ? "0.6" : "0.7",
+      priority: "0.7",
       changefreq: "daily",
     });
   }
@@ -187,6 +201,76 @@ function alternates(page, langs) {
   return rows;
 }
 
+
+// ---------------------------------------------------------------------------
+// lastmod: the date the page's CONTENT last changed, not the date it was last written.
+//
+// This used to be the file's mtime, and mtime is worthless here: every generator rewrites
+// every HTML file on every build, so all 745 URLs carried the same date — today's — on
+// every publish. A page untouched since 15 Aug claimed to have changed this morning.
+// Google's documentation is explicit that it uses lastmod "if it's consistently and
+// verifiably accurate" and that the value should mark "the last significant update"; a
+// field that says today for everything, every day, is neither, so the whole signal was
+// being discarded. Bytes spent, nothing bought — and worse on a hostname with no history,
+// where freshness signals are exactly what has not been established yet.
+//
+// git is the right clock. publish.sh commits the generated tree every morning with a
+// pathspec, and git records a file only when its BYTES changed — so the last commit
+// touching a page is, by construction, the last time its content moved.
+//
+// THE SHALLOW-CLONE FALLBACK. Cloudflare Workers Builds may check out with a truncated
+// history, in which case `git log` reports one commit date for every path and every URL
+// would carry a confident wrong date. The test for that is the REPOSITORY's depth, not the
+// spread of the dates it returns: on 24 Aug 2026 the rebrand touched all 94 pages in one
+// commit, so every page honestly shared a date, and a "fewer than two distinct dates"
+// heuristic read that as a broken clone. Depth answers the actual question — does this
+// checkout know more than one commit — and a repository with real history whose files all
+// changed on the same day is then reported as what it is.
+const gitDate = (file) => {
+  try {
+    const out = execFileSync("git", ["log", "-1", "--format=%cs", "--", file],
+      { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : null;
+  } catch {
+    return null;   // no git, no history for this path, or a file never committed
+  }
+};
+
+// Resolved once, over the English pages, before anything is written.
+const GIT_DATES = new Map();
+let gitUsable = false;
+{
+  let depth = 0;
+  try {
+    depth = Number(execFileSync("git", ["rev-list", "--count", "HEAD"],
+      { cwd: ROOT, encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim()) || 0;
+  } catch { depth = 0; }
+  // `.git/shallow` exists only in a truncated clone, and it is the direct answer where the
+  // commit count alone could still be misleading.
+  const truncated = existsSync(path.join(ROOT, ".git/shallow"));
+  gitUsable = depth > 1 && !truncated;
+
+  if (gitUsable) {
+    for (const page of PAGES) {
+      const d = gitDate(page.file);
+      if (d) GIT_DATES.set(page.file, d);
+    }
+    const distinct = new Set(GIT_DATES.values());
+    console.log(`  lastmod: git (${depth} commits), ${distinct.size} distinct date(s) across ${GIT_DATES.size} pages`);
+  } else {
+    console.log(`  lastmod: mtime — ${truncated ? "shallow clone" : `history is ${depth} commit(s)`}, git cannot date a page here`);
+  }
+}
+
+const lastmodFor = async (file) => {
+  if (gitUsable) {
+    const d = GIT_DATES.get(file);
+    if (d) return d;
+  }
+  const { mtime } = await stat(`${ROOT}/${file}`);
+  return mtime.toISOString().slice(0, 10);
+};
+
 const lines = [
   '<?xml version="1.0" encoding="UTF-8"?>',
   "<!-- Generated by scripts/build-sitemap.mjs — do not hand-edit. -->",
@@ -196,8 +280,7 @@ const lines = [
 ];
 
 for (const page of PAGES) {
-  const { mtime } = await stat(`${ROOT}/${page.file}`);
-  const lastmod = mtime.toISOString().slice(0, 10);
+  const lastmod = await lastmodFor(page.file);
   const imgs = await imagesOf(page.file);
 
   const langs = languagesFor(page);
@@ -229,10 +312,13 @@ for (const page of PAGES) {
   // captions differ, but the image belongs to the English page it was first listed under.
   for (const code of langs) {
     const loc = `/${code}${page.loc === "/" ? "/" : page.loc}`;
-    const { mtime: m } = await stat(path.join(ROOT, code, page.file));
+
     lines.push("  <url>");
     lines.push(`    <loc>${SITE}${loc}</loc>`);
-    lines.push(`    <lastmod>${m.toISOString().slice(0, 10)}</lastmod>`);
+    // Same date as the English page it mirrors: build-i18n rewrites the whole tree from
+    // that page, so a translation's content changes exactly when its source does. Reading
+    // the mirrored file's own mtime just reported the last build again.
+    lines.push(`    <lastmod>${lastmod}</lastmod>`);
     lines.push(`    <changefreq>${page.changefreq}</changefreq>`);
     lines.push(`    <priority>${page.priority}</priority>`);
     lines.push(...alt);
