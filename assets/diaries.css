@@ -83,6 +83,58 @@
   .cat-meta{flex-direction:column;align-items:flex-end;gap:2px;text-align:right;flex:0 0 auto}
 }
 
+/* ---------- a category rail ---------- */
+
+/* Restored 24 Aug 2026, on a different footing to the rails removed on 17 Aug. Those were a
+   hub whose cards left the page for three other URLs; these hold posts that live under
+   /diaries and end in a tile that goes to the category's own archive. Vertical scroll moves
+   across categories, horizontal moves within one.
+   Still no JavaScript: the track is a scroll container with snap points, which is what makes
+   touch swipe and trackpad scroll work natively. tabindex="0" on the container is required —
+   a scrollable region with no focusable wrapper cannot be reached or scrolled by keyboard. */
+.rail{
+  overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x proximity;
+  scroll-padding-left:var(--gutter);
+  /* The track runs off the right edge of the wrap so a card is visibly cut — the overflow
+     has to be legible before the reader touches anything, or the row reads as finished. */
+  margin-right:calc(var(--gutter) * -1);
+  padding-bottom:14px;
+}
+.rail:focus-visible{outline:2px solid var(--magenta);outline-offset:4px}
+.rail-track{display:flex;gap:16px;padding-right:var(--gutter)}
+.rail-track > *{flex:0 0 clamp(258px,78vw,320px);scroll-snap-align:start}
+
+/* Always visible rather than overlay-on-scroll: on a desktop mouse this bar is the only
+   thing that says the row continues, and an overlay scrollbar that fades out says nothing. */
+.rail{scrollbar-width:thin;scrollbar-color:rgba(232,169,60,.5) rgba(242,239,230,.10)}
+.rail::-webkit-scrollbar{height:8px}
+.rail::-webkit-scrollbar-track{background:rgba(242,239,230,.10)}
+.rail::-webkit-scrollbar-thumb{background:rgba(232,169,60,.5)}
+.rail::-webkit-scrollbar-thumb:hover{background:var(--saffron)}
+
+/* The last card in the track: the way into the category's archive. Sized like a card so the
+   row keeps its rhythm, but flat and typographic so it never reads as a post. */
+.rail-tile{
+  display:flex;flex-direction:column;justify-content:center;gap:10px;
+  padding:24px 22px;
+  border:1px dashed rgba(232,169,60,.45);background:var(--void-2);
+  color:var(--bone);
+  transition:background .15s,border-color .15s;
+}
+.rail-tile:hover,.rail-tile:focus-visible{background:var(--band);border-color:var(--saffron)}
+.rail-tile-count{font-size:var(--fs-2xl);line-height:1;color:var(--saffron)}
+.rail-tile-label{
+  font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;color:var(--magenta);
+}
+
+/* Three lines, then an ellipsis. Blurbs in posts.json run to four lines at this width and
+   made neighbouring cards ragged even with .more pinned to the bottom. */
+.post-blurb{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;
+}
+
 /* ---------- a group inside a category ---------- */
 
 /* Food has two: the Indian restaurants, then the vegan places. A group is a heading and a

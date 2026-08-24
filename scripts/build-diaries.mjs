@@ -70,6 +70,13 @@ const OUT = path.join(ROOT, "diaries");
 // into a two-column grid rather than the three-column one — two cards in a three-track grid
 // leaves an empty cell, which reads as a card that failed to load rather than as a choice.
 const HOME_STRIP = 2;
+// A category becomes a horizontal rail at three cards. Below that a rail is a lie: one card
+// in a scroll track reads as a row that failed to load, and there is nothing to swipe.
+const RAIL_MIN = 3;
+// How many cards live in a rail before the "all posts" tile takes over. At a post a day the
+// Food rail would otherwise carry a year of images on the most-linked page of the site.
+// Twelve is about three desktop screens of swipe.
+const RAIL_MAX = 12;
 
 const esc = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -108,6 +115,10 @@ const humanDate = (iso) =>
   });
 
 const postUrl = (p) => `/diaries/${p.id}`;
+// A category archive lives in the same flat namespace as the posts, on purpose: /diaries/food
+// is the URL a reader would guess, and the id is already the anchor on the index. The build
+// throws if a post ever claims a category's id, which is the only way the two can collide.
+const catUrl = (c) => `/diaries/${c.id}`;
 
 /* --------------------------------------------------------------- the cards ---- */
 
@@ -118,23 +129,36 @@ const postUrl = (p) => `/diaries/${p.id}`;
 // Empty alt on the photograph: the heading immediately below is the accessible name, and the
 // image is a decorative crop of a scene the heading already names.
 function postCard(post, manifest, cls) {
+  // On a review the kicker reads "Nové Město · tastes like home" — district and verdict. The
+  // verdict is also a coloured chip on the meta line, and the colour is the scanning aid the
+  // key at the top of the category explains, so the chip wins and the kicker keeps only the
+  // district. Without this the card said the same thing twice, in two type styles.
+  const kickerText = post.verdict && post.kicker
+    ? post.kicker.split("·")[0].trim()
+    : post.kicker;
+  // The verdict rides the meta line rather than sitting between the title and the blurb,
+  // where it broke the one read the card exists for. post.meta is dropped when the kicker
+  // already says it — it is burned into the photograph directly above.
   const bits = [
     `<time datetime="${esc(post.date)}">${esc(humanDate(post.date))}</time>`,
     post.reading ? `<span>${post.reading} min read</span>` : "",
-    post.meta ? `<span>${esc(post.meta)}</span>` : "",
+    // The kicker is burned into the photograph directly above the meta line, and on a review
+    // it already carries the district and the verdict. Repeating either underneath gave a
+    // card three lines of small caps saying the same thing twice.
+    !post.kicker && post.meta ? `<span>${esc(post.meta)}</span>` : "",
+    post.verdict ? `<span class="rv ${esc(post.verdict.tone)}">${esc(post.verdict.label)}</span>` : "",
   ].filter(Boolean);
 
   return (
     `<article class="post${cls ? " " + cls : ""}" id="${esc(post.id)}">` +
     `<a class="post-link" href="${postUrl(post)}">` +
     `<div class="frame ${spice(post.id)}">${picture(post, manifest, CARD_SIZES)}<div class="grain"></div>` +
-    (post.kicker ? `<span class="cap">${esc(post.kicker)}</span>` : "") +
+    (kickerText ? `<span class="cap">${esc(kickerText)}</span>` : "") +
     `</div>` +
     `<div class="pbody">` +
     `<p class="post-meta">${bits.join(" · ")}</p>` +
     `<h3>${esc(post.title)}</h3>` +
-    (post.verdict ? `<span class="rv ${esc(post.verdict.tone)}">${esc(post.verdict.label)}</span>` : "") +
-    `<p>${esc(post.blurb)}</p>` +
+    `<p class="post-blurb">${esc(post.blurb)}</p>` +
     `<span class="more">Read it →</span>` +
     `</div></a></article>`
   );
@@ -163,13 +187,37 @@ function categorySection(cat, posts, manifest) {
   // grid of dated cards it just fragmented five items into two short rows, and the vegan
   // places are already marked by their verdict chip. The category is the level of grouping
   // this page needs.
-  const inner = `<div class="grid3">
-      ${posts.map((p) => postCard(p, manifest)).join("\n      ")}
+  // Three or more posts and the category becomes a horizontal rail: browse across categories
+  // by scrolling down, across a category by scrolling sideways. Below three it stays a grid —
+  // see RAIL_MIN. The rail is CSS only (scroll-snap + overflow-x); there is still no
+  // JavaScript on this page, so the track is given a tabindex and a label, which is what
+  // makes an overflowing scroll container reachable and announced for a keyboard reader.
+  const isRail = posts.length >= RAIL_MIN;
+  const shown = isRail ? posts.slice(0, RAIL_MAX) : posts;
+
+  const allTile =
+    `<a class="rail-tile" href="${catUrl(cat)}">` +
+    `<span class="rail-tile-count">${posts.length}</span>` +
+    `<span class="rail-tile-label">See all posts →</span>` +
+    `</a>`;
+
+  const inner = isRail
+    ? `<div class="rail" tabindex="0" role="group" aria-label="${esc(cat.name)}, horizontal list">
+      <div class="rail-track">
+        ${shown.map((p) => postCard(p, manifest)).join("\n        ")}
+        ${allTile}
+      </div>
+    </div>`
+    : `<div class="grid3">
+      ${shown.map((p) => postCard(p, manifest)).join("\n      ")}
     </div>`;
 
-  const all = cat.all
-    ? `<a class="rail-all" href="${esc(cat.all.href)}">${esc(cat.all.label)} →</a>`
-    : "";
+  // The shelf cross-link stays in the header; the archive link is the tile at the end of the
+  // rail. Two "see more" controls in the same header competed with each other. A grid
+  // category has no tile, so its archive link goes here instead.
+  const all =
+    (cat.all ? `<a class="rail-all" href="${esc(cat.all.href)}">${esc(cat.all.label)} →</a>` : "") +
+    (isRail ? "" : `<a class="rail-all" href="${catUrl(cat)}">All posts →</a>`);
 
   // The verdict key belongs to Food and nothing else, so it is asked for by id rather than
   // rendered for every category.
@@ -251,6 +299,43 @@ function indexJsonLd(posts, cats, manifest) {
   }, null, 2);
 }
 
+// A category archive: a CollectionPage listing the posts it holds, plus its own crumb. The
+// posts themselves are still described once each, on their own pages.
+function catJsonLd(cat, posts, manifest) {
+  return JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": abs(catUrl(cat) + "#page"),
+        url: abs(catUrl(cat)),
+        name: cat.name,
+        description: cat.note,
+        isPartOf: { "@id": abs("/diaries#blog") },
+        inLanguage: "en",
+        mainEntity: {
+          "@type": "ItemList",
+          numberOfItems: posts.length,
+          itemListElement: posts.map((p, n) => ({
+            "@type": "ListItem",
+            position: n + 1,
+            url: abs(postUrl(p)),
+            name: p.title,
+          })),
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
+          { "@type": "ListItem", position: 2, name: "Tram 22 Diaries", item: abs("/diaries") },
+          { "@type": "ListItem", position: 3, name: cat.name, item: abs(catUrl(cat)) },
+        ],
+      },
+    ],
+  }, null, 2);
+}
+
 // A post page carries the node for its own content, and nothing else's. Reviews keep the
 // Review type they had on the old /restaurants page — against the same restaurant names, so
 // the entity a search engine already knows survives every move this content has made.
@@ -308,7 +393,7 @@ function postJsonLd(post, cat, manifest) {
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: abs("/") },
           { "@type": "ListItem", position: 2, name: "Tram 22 Diaries", item: abs("/diaries") },
-          { "@type": "ListItem", position: 3, name: cat.name, item: abs(`/diaries#${cat.id}`) },
+          { "@type": "ListItem", position: 3, name: cat.name, item: abs(catUrl(cat)) },
           { "@type": "ListItem", position: 4, name: post.title, item: url },
         ],
       },
@@ -408,6 +493,15 @@ const cats = data.categories
 
 const catById = Object.fromEntries(data.categories.map((c) => [c.id, c]));
 
+// Posts and category archives share one flat namespace under /diaries/. A post whose id is
+// also a category id would overwrite that category's archive silently — the page would keep
+// appearing in the sitemap and answering with the wrong content. Fail the build instead.
+for (const p of posts) {
+  if (catById[p.id]) {
+    throw new Error(`posts.json: post id "${p.id}" collides with the category of the same id — /diaries/${p.id} cannot be both`);
+  }
+}
+
 /* ---- the index ---- */
 
 const catNav =
@@ -450,6 +544,47 @@ await writeFile(path.join(ROOT, "diaries.html"), shell({
   footer: chromeFooter,
   body: indexBody,
 }));
+
+/* ---- one page per category ---- */
+
+// The archive is a plain vertical grid of everything in the category, newest first. Vertical
+// is the right shape for "show me all of it"; horizontal is for browsing across categories,
+// which is the index's job and not this page's.
+// ponytail: no pagination — 7 posts today. Lift the pager out of build-shop.mjs when a
+// category passes about 60.
+for (const [cat, ps] of cats) {
+  const body = `<div class="page-head"><div class="wrap">
+  <nav class="crumb crumb-nav" aria-label="Breadcrumb">
+    <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> <span>${esc(cat.name)}</span>
+  </nav>
+  <h1>${esc(cat.name)}</h1>
+  <p class="lede">${esc(cat.note)}</p>
+  <p class="cat-count">${ps.length} ${ps.length === 1 ? "post" : "posts"}, newest first</p>
+</div></div>
+
+<section class="cat"><div class="wrap">
+  ${cat.disclosure ? `<div class="note"><p>${esc(cat.disclosure)}</p></div>` : ""}
+  ${cat.id === "food" ? `<div class="key"><span class="real">Tastes like home</span><span class="mild">Toned down</span><span class="trap">Tourist trap</span><span class="vegan">Fully vegan</span></div>` : ""}
+  <div class="grid3">
+    ${ps.map((p) => postCard(p, manifest)).join("\n    ")}
+  </div>
+  <div class="cta-row">
+    <a class="btn" href="/diaries">← All of the Diaries</a>${
+      cat.all ? `<a class="btn saf" href="${esc(cat.all.href)}">${esc(cat.all.label)} →</a>` : ""}
+  </div>
+</div></section>`;
+
+  await writeFile(path.join(OUT, `${cat.id}.html`), shell({
+    title: `${esc(cat.name)}: Tram 22 Diaries`,
+    description: cat.note,
+    canonical: abs(catUrl(cat)),
+    image: imageOf(ps[0], manifest) || abs("/images/derived/IMG_4126-1200.jpg"),
+    jsonld: catJsonLd(cat, ps, manifest),
+    header: chromeHeader,
+    footer: chromeFooter,
+    body,
+  }));
+}
 
 /* ---- one page per post ---- */
 
@@ -496,7 +631,7 @@ for (const post of posts) {
   const related = siblings.filter((p) => p.id !== post.id).slice(0, 3);
   const relatedBlock = related.length
     ? `<section class="post-related"><div class="wrap sec-inner">
-    <div class="sec-top"><h2>More in ${esc(cat.name)}</h2><a class="rail-all" href="/diaries#${esc(cat.id)}">All ${esc(cat.name.toLowerCase())} →</a></div>
+    <div class="sec-top"><h2>More in ${esc(cat.name)}</h2><a class="rail-all" href="${catUrl(cat)}">All posts →</a></div>
     <div class="grid3">
       ${related.map((p) => postCard(p, manifest)).join("\n      ")}
     </div>
@@ -506,7 +641,7 @@ for (const post of posts) {
   const body = `<article class="post-page">
   <div class="post-head"><div class="wrap">
     <nav class="crumb crumb-nav" aria-label="Breadcrumb">
-      <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> <a href="/diaries#${esc(cat.id)}">${esc(cat.name)}</a>
+      <a href="/diaries">Tram 22 Diaries</a> <span aria-hidden="true">/</span> <a href="${catUrl(cat)}">${esc(cat.name)}</a>
     </nav>
     <h1>${esc(post.title)}</h1>
     <p class="post-byline">${meta}${
@@ -540,7 +675,7 @@ ${relatedBlock}`;
 }
 
 console.log(
-  `  diaries.html + diaries/ — index and ${posts.length} post page${posts.length === 1 ? "" : "s"} in ${cats.length} categor${cats.length === 1 ? "y" : "ies"}`);
+  `  diaries.html + diaries/ — index, ${cats.length} categor${cats.length === 1 ? "y" : "ies"} and ${posts.length} post page${posts.length === 1 ? "" : "s"}`);
 
 // The homepage strip. These cards point at the post pages.
 const strip =

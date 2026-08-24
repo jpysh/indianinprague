@@ -179,6 +179,33 @@
     </image:image>
   </url>
   <url>
+    <loc>https://indianinprague.jains.es/diaries/fashion</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/IMG_5564-400.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://indianinprague.jains.es/diaries/food</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/IMG_4126-400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/IMG_5000-400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/IMG_5054-400.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://indianinprague.jains.es/images/derived/IMG_4041-400.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://indianinprague.jains.es/diaries/hello-world</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -202,6 +229,12 @@
     <image:image>
       <image:loc>https://indianinprague.jains.es/images/derived/IMG_4041-400.jpg</image:loc>
     </image:image>
+  </url>
+  <url>
+    <loc>https://indianinprague.jains.es/diaries/meditation</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://indianinprague.jains.es/diaries/palo-verde</loc>

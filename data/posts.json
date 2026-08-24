@@ -56,7 +56,7 @@
       "disclosure": "No paid collaborations or review invites, just my experiences. I compare the food in the city to what I have grown up eating :)"
     },
     {
-      "id": "mindfulness",
+      "id": "meditation",
       "name": "Mindfulness",
       "note": "Practice, stillness, and what Indian spiritual traditions look like from a European weekday.",
       "sub": "practice & stillness",
@@ -176,7 +176,7 @@
     },
     {
       "id": "hello-world",
-      "cat": "mindfulness",
+      "cat": "meditation",
       "kind": "article",
       "title": "Hello world",
       "blurb": "The first note in a new category — why mindfulness gets its own shelf here, and what will land in it.",
