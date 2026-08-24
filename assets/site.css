@@ -228,7 +228,14 @@ img{max-width:100%;height:auto}
  * the content beneath it. That drift is the reason this is a variable and not three
  * numbers. */
 :root{--wrap:1600px;--head-col:820px}
-.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter);width:100%}
+.wrap{
+  max-width:var(--wrap);margin:0 auto;width:100%;
+  /* max() not calc(): in landscape on a notched phone the inset can exceed the gutter, and
+     the content must clear the notch; in portrait, and everywhere else, both insets are 0
+     and this is exactly var(--gutter). */
+  padding-left:max(var(--gutter),env(safe-area-inset-left,0px));
+  padding-right:max(var(--gutter),env(safe-area-inset-right,0px));
+}
 
 /* Lets a keyboard or screen-reader user jump past the header nav. Off-screen until
    focused. */
@@ -258,10 +265,38 @@ html{scroll-behavior:smooth}
 header.site{
   border-bottom:1px solid rgba(242,239,230,.18);
   position:sticky;top:0;z-index:100;
-  /* .94 rather than opaque: now that the tint differs from the page, the blur is a real
-     effect — content darkens softly as it scrolls under the bar instead of meeting a lid. */
-  background:rgba(34,31,22,.94);
-  backdrop-filter:blur(8px);
+  /* SAFE AREA. The viewport meta now carries viewport-fit=cover, so the page fills the
+     screen including the band behind the status bar and the notch. Without this padding the
+     bar would stop below that band and page content would scroll through it — the same
+     symptom this file was already fixing, from a different cause.
+     env() falls back to 0px everywhere that has no inset, so this is inert on desktop.
+     It also makes the env(safe-area-inset-bottom) rule in shop.css start resolving to a
+     real value; it was written before the page opted into the safe area and had been a
+     no-op since. */
+  padding-top:env(safe-area-inset-top,0px);
+  /* OPAQUE, AND NO backdrop-filter. Both were here until 24 Aug 2026 and both had to go.
+   *
+   * On iPhone Safari the page painted THROUGH and ABOVE this bar: the hero's saffron
+   * highlight drew as sharp glyphs in the strip above the header while the page scrolled.
+   * Sharp glyphs are a paint-order failure, not translucency — 6% alpha tints, it does not
+   * redraw text.
+   *
+   * The cause is an interaction, not a single rule. backdrop-filter renders by sampling
+   * everything painted beneath it, and body::before is a fixed, full-viewport grain layer
+   * with mix-blend-mode:overlay at z-index 9999 (see the note there). A blend layer over the
+   * whole page forces one blending group, and WebKit then hands the backdrop-filtered
+   * element the wrong snapshot to sample. The bar is the one element on the site doing both
+   * things at once, which is why it is the one element that broke.
+   *
+   * Opaque removes the class of bug rather than a symptom of it: with nothing to sample
+   * there is no snapshot to get wrong, on any engine or version. What is lost is the soft
+   * darkening as content passed under the bar — a nicety two days old. The separation the
+   * bar actually needs comes from --chrome being 1.70:1 against the page, which is
+   * untouched.
+   *
+   * If the blur is ever wanted back, it cannot come back alone: the grain overlay would have
+   * to go, or the header would need to be lifted out of that blending group. */
+  background:var(--chrome);
 }
 
 /* One row at every width: brand | section links | contact icons. The bar used to wrap onto

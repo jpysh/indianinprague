@@ -287,7 +287,25 @@ function blurb(item) {
   const d = (item.description || "").replace(/\s+/g, " ").trim();
   if (!d) return "";
   const cut = d.length > 150 ? d.slice(0, 149).replace(/\s+\S*$/, "") + "…" : d;
-  return `<p class="blurb">${esc(cut)}</p>`;
+  return `<p class="blurb" id="blurb-${esc(item.id)}">${esc(cut)}</p>`;
+}
+
+// The touch route to the same text. Hover does not exist on a phone, so the blurb above was
+// simply display:none there and a touch visitor never saw a word of it — the one piece of
+// prose on the card, gone on the device most people shop from.
+//
+// A <details> and not a button: the open/closed state, the keyboard handling and the
+// accessible name all come from the browser, and there is no site-wide JavaScript to hang a
+// button off. Only rendered when there IS a description, so the control never appears with
+// nothing behind it.
+//
+// It sits before .blurb in the markup deliberately: CSS can only reach forwards, so
+// `.info[open] ~ .blurb` is what reveals the text.
+function infoToggle(item) {
+  const d = (item.description || "").trim();
+  if (!d) return "";
+  return `<details class="info"><summary aria-label="Description of ${esc(item.title)}" aria-controls="blurb-${esc(item.id)}">` +
+    `<span aria-hidden="true">i</span></summary></details>`;
 }
 
 /* --------------------------------------------------------------- WhatsApp ---- */
@@ -393,6 +411,7 @@ function card(item, manifest, eager, showCat) {
     // glyph would be a lie about where the card goes.
     (sold || item.vendor ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
     `${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${badges}${favBadge}` +
+    infoToggle(item) +
     blurb(item) +
     `</div>` +
     `<div class="meta"><span class="nm">${esc(item.title)}</span>${price}</div>` +
@@ -773,7 +792,7 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>${esc(pageTitle)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">

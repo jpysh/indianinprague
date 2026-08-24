@@ -327,7 +327,55 @@
 /* The caption sits in the same corner, so it steps aside rather than being overprinted. */
 .piece:hover .frame > .cap:not(.flag),.piece:focus-within .frame > .cap:not(.flag){opacity:0}
 .frame > .cap:not(.flag){transition:opacity .18s ease}
-@media (hover:none){.frame .blurb{display:none}}
+/* ---------- the description on touch (24 Aug 2026) ----------
+ *
+ * This line used to read `@media (hover:none){.frame .blurb{display:none}}`. On a phone the
+ * blurb was not merely unreachable, it was removed: the one piece of prose on the card,
+ * absent on the device most people shop from, while desktop got it for free on hover.
+ *
+ * The touch route is an "i" disclosure in the bottom-left corner of the photograph. Desktop
+ * keeps hover exactly as it was — the two live side by side because they suit different
+ * inputs: a pointer can reveal on the way past at no cost, a thumb cannot.
+ *
+ * WHY THE BOTTOM-LEFT CORNER IS FREE. It was the brand caption's (.cap, "Indian"). On touch
+ * that caption is hidden and the toggle takes the slot: the brand is already in the card's
+ * title underneath, so nothing is lost, whereas the description had nowhere else to go.
+ *
+ * Above .go on the z axis, like .ask and .shot-nav, or the card's stretched link would
+ * swallow the tap.
+ */
+@media (hover:none){
+  /* Present but hidden, rather than display:none — the reveal below animates it in, and a
+     display:none element cannot transition. */
+  .frame .blurb{display:block;opacity:0;pointer-events:none}
+
+  .frame > .cap:not(.flag){display:none}
+
+  .piece .info{position:absolute;left:8px;bottom:8px;z-index:7}
+  .piece .info>summary{
+    list-style:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    /* 34px visible, 44px of touch target via the padding-free min sizes below: the WCAG 2.2
+       floor with a mark small enough not to sit on the garment. */
+    width:34px;height:34px;min-width:34px;
+    border-radius:999px;
+    border:1px solid rgba(242,239,230,.42);
+    background:rgba(10,9,8,.72);
+    color:var(--bone);
+    font-family:var(--mono);font-size:var(--fs-s);font-weight:600;line-height:1;
+    font-style:italic;
+  }
+  .piece .info>summary::-webkit-details-marker{display:none}
+  .piece .info[open]>summary{background:var(--magenta);color:var(--void);border-color:var(--magenta)}
+  /* The reveal. Same overlay the pointer gets, same styling, driven by state instead of hover. */
+  .piece .info[open] ~ .blurb{opacity:1;transform:translateY(0)}
+  /* The open blurb must clear the toggle, or the first line sits under it. */
+  .piece .info[open] ~ .blurb{padding-bottom:50px}
+}
+
+/* The toggle is touch-only: a pointer already has hover, and two ways to the same sentence
+   on one card is one too many. */
+@media (hover:hover){.piece .info{display:none}}
 
 /* ---------- card: sold and reserved ---------- */
 
