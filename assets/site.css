@@ -554,6 +554,13 @@ main > section:nth-of-type(even){background:var(--band)}
 .grid3{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
 @media (min-width:521px){.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:801px){.grid3{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+/* Cards share the grid's rows instead of stacking their own, so a three-line title lifts
+   the whole row's title band rather than shoving that one card's meta line and button out
+   of step with its neighbours. Four rows because every card is frame + meta + tags + ask.
+   Pre-subgrid browsers ignore the block and get the ragged column this replaces. */
+@supports (grid-template-rows:subgrid){
+  .grid3>.piece{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+}
 
 .split{display:grid;grid-template-columns:1fr;gap:16px}
 @media (min-width:721px){.split{grid-template-columns:1fr 1fr}}
