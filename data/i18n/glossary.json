@@ -6,6 +6,16 @@
     "  keep   Strings that pass through UNCHANGED in every target language. Brand names,",
     "         book titles, proper nouns, Sanskrit terms. Matched on the exact trimmed string.",
     "  terms  Per-target-language overrides, keyed by DeepL target code (EN-GB, DE, CS, ...).",
+    "  keepInline  Names that must survive UNCHANGED even when they appear INSIDE a longer",
+    "         sentence, not just as the whole string. Sent to DeepL wrapped in an ignore_tags",
+    "         marker, so the prose around them still translates and reorders normally.",
+    "",
+    "         This is deliberately NARROWER than `keep`. `keep` holds Prague and Praha, which",
+    "         are correct as whole-string labels but must NOT be frozen mid-sentence: Czech",
+    "         prose should say Praha and Russian should say Прага. Only names with no correct",
+    "         localisation at all belong here — the brand above all, which came back from",
+    "         DeepL as Гульдар-Базар on 24 Aug 2026 and started this list.",
+    "",
     "         Matched on the exact trimmed source string.",
     "",
     "The EN-GB block came from vendors/govinda/data/glossary.json (Czech transliterations of",
@@ -22,6 +32,13 @@
     "WhatsApp",
     "Prague",
     "Praha"
+  ],
+  "keepInline": [
+    "Guldaar Bazaar",
+    "Czech-In",
+    "Vinted",
+    "WhatsApp",
+    "Govinda"
   ],
   "terms": {
     "EN-GB": {
@@ -80,6 +97,9 @@
       "Jiné ozdoby": "Other adornments",
       "Návraty": "Coming Back: The Science of Reincarnation",
       "108 receptů od Góvindy": "108 Recipes from Govinda"
+    },
+    "FR": {
+      "Menu: site sections": "Menu : sections du site"
     }
   }
 }

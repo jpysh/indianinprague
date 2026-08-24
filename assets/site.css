@@ -236,14 +236,16 @@ header.site{
   display:flex;align-items:center;
   gap:10px;min-height:52px;
   flex-wrap:nowrap;
+  /* The phone nav panel hangs off this box with position:absolute; top:100%. */
+  position:relative;
 }
 
 .brand{
   flex:0 0 auto;
   font-weight:600;font-size:var(--fs-2xs);letter-spacing:0;text-transform:uppercase;
-  /* The wordmark is four words and two slashes in a monospace face — 20 characters that
-     alone would eat half of a 375px bar. Pulling the spaces in around the slashes buys
-     back ~30px and reads as a tighter lockup rather than a smaller logo. */
+  /* The wordmark is two words and one slash in a monospace face — 16 characters, 101px on
+     a 375px bar. Pulling the spaces in around the slash reads as a tighter lockup rather
+     than a smaller logo. */
   word-spacing:-.34em;
   /* Without this the three words wrapped to two lines inside a fixed-height bar and
      spilled over the border. */
@@ -286,11 +288,10 @@ nav.main a{
 nav.main a:hover{opacity:1;color:var(--magenta)}
 nav.main a.active{opacity:1;color:var(--magenta)}
 
-/* Icon links (Vinted, WhatsApp). Text labels for these two would take ~130px of a 335px
-   strip; as icons they take 36 and stay recognisable. The accessible name lives in
-   aria-label, and title gives sighted mouse users the same thing on hover.
-   They live outside nav.main so that the scroll container holding the section links
-   cannot carry them off the right edge — the contact cluster is always reachable. */
+/* The contact icon — WhatsApp alone since 24 Aug 2026. Vinted left the bar: it is a
+   channel, not a destination, and how-it-works and the footer both still link it. It lives
+   outside nav.main so the scroll container holding the section links cannot carry it off
+   the right edge — contact is always reachable. */
 .bar-ico{
   flex:0 0 auto;
   display:flex;align-items:center;
@@ -311,53 +312,89 @@ a.ico:hover{opacity:1;color:var(--magenta)}
 a.wa{color:#25D366}
 a.wa:hover{color:#3BE87C}
 
-/* TWO ROWS on a phone, one row from 641px up.
+/* ONE ROW at every width, with the section links behind a disclosure below 641px
+ * (24 Aug 2026). This replaces the two-row phone bar.
  *
- * This replaces a single scrolling row that hid the contact icons below 641px. Both halves
- * of that arrangement were measured to be failing:
+ * THE MEASUREMENT THAT FORCED IT. Laid out flat at 375px the bar wants 505px: wordmark 101,
+ * the three labels 222, the language pill 71, WhatsApp 41, gaps and gutters 70. Dropping
+ * the Vinted icon returned 41px against a 130px deficit, so "just fit it on one row" was
+ * never available — the row was always going to clip two of the three links, which is worse
+ * than the second row it was meant to replace. Something had to leave the bar, and the only
+ * honest candidate was the labels: they are the widest item and the only one that survives
+ * being one tap away.
  *
- *   - The nav still overflowed. At 375px — an iPhone, not an edge case — the four labels
- *     needed 225px in a 203px box, so the last one was cut off mid-word with no scrollbar
- *     and no fade to say it could be scrolled. The fade existed but was scoped to 339px and
- *     below, i.e. exactly NOT the widths where the clipping happened.
+ * WHAT STAYS VISIBLE, AND WHY THOSE TWO. The language pill and WhatsApp are NOT behind the
+ * disclosure. WhatsApp is the contactPoint in this site's structured data and the one link
+ * a phone opens as an app — burying the primary contact channel behind a tap to save 41px
+ * would be the same mistake as the old layout that hid it below 641px. The language pill is
+ * the control a visitor who cannot read the current page needs FIRST; a non-English speaker
+ * should not have to guess that a hamburger holds the way out. Both are single controls, so
+ * both cost a tap either way — a disclosure buys nothing here and hides something.
  *
- *   - Hiding .bar-ico cost more than it saved. WhatsApp is this site's primary contact
- *     channel — it is the contactPoint in the structured data — and on a phone it survived
- *     only in the footer, 14,000px down on the wardrobe page. The one device where tapping
- *     a WhatsApp link opens the actual app is the one device that had no link to tap.
+ * WHY A <details> AND NOT A SCRIPTED MENU. script-src is 'none'. The language switcher
+ * already proves the pattern works: keyboard, screen readers, and the open/close state all
+ * come from the browser. The trade is real — every section link now costs one extra tap on
+ * a phone, which is exactly the objection that kept the links inline while there was room
+ * for them. There is no longer room for them.
  *
- * Giving the links their own full-width row solves both at once: 28 characters of label fit
- * inside 320px with room to spare, so nothing clips and nothing needs a scroll hint, and the
- * icons keep their place on row one. It costs ~44px of vertical space on a phone, which is
- * the cheapest thing on the screen. */
+ * WHY THE BUTTON IS ON THE LEFT. The hairline before .bar-ico already divides "where you
+ * can go on this site" from "where you can reach me". The menu is navigation, so it belongs
+ * on the navigation side of that line, and grouping it with WhatsApp would put a nav control
+ * inside the contact cluster.
+ *
+ * The sibling selector below is why nav.main sits AFTER the <details> in the markup: CSS can
+ * only reach forwards, so `details[open] ~ nav` is what opens the panel. Keeping the nav
+ * outside the <details> rather than inside it also means the desktop rule is a plain
+ * display:flex — no fighting the UA's closed-details hiding, which is not reliably
+ * overridable across engines. */
 @media (max-width:640px){
-  .bar{flex-wrap:wrap;padding-bottom:0}
-  nav.main{
-    order:3;flex-basis:100%;margin-left:0;
-    gap:18px;
-    /* Optical alignment with the wordmark above it, minus the tap target's own padding. */
-    border-top:1px solid rgba(242,239,230,.10);
+  .menu{flex:0 0 auto;order:-1}
+  .menu>summary{
+    list-style:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;
+    /* 44px square: the WCAG target-size minimum, same as the nav links it replaces. */
+    min-width:44px;min-height:44px;
+    margin-left:-11px;   /* optical: pulls the glyph back to the page gutter */
+    color:var(--bone);opacity:.8;
+    transition:opacity .15s,color .15s;
   }
-  /* Still a scroll container — a future fifth module, or a very narrow phone, should
-     degrade to scrolling rather than clipping. The fade now applies wherever that can
-     happen instead of only below 339px, and it is keyed to the scroll position so it is
-     invisible once you reach the end. */
+  .menu>summary::-webkit-details-marker{display:none}
+  .menu[open]>summary,.menu>summary:hover{opacity:1;color:var(--magenta)}
+
+  /* The panel. Full-bleed under the bar rather than a floating card: it is the whole of the
+     site's navigation, and a 375px-wide sheet has no reason to pretend to be narrower. */
   nav.main{
-    -webkit-mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);
-    mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);
+    display:none;
+    position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;gap:0;
+    padding:4px var(--gutter) 8px;
+    /* Fully opaque, and NOT the header's translucent ground: this panel sits over the hero,
+       and at .98 alpha the display heading behind it still read through the links. A menu
+       you can see the page through is a menu that is hard to read. */
+    background:var(--void);
+    border-bottom:1px solid rgba(242,239,230,.18);
+    /* Above the hero's own stacking context, below nothing. */
+    z-index:99;
+    box-shadow:0 12px 24px rgba(0,0,0,.28);
+    /* The bar is the scroll container's parent; the panel must not inherit its overflow. */
+    overflow:visible;
   }
-  .bar-ico{margin-left:auto}
+  .menu[open] ~ nav.main{display:flex}
+  nav.main a{
+    min-height:48px;
+    border-bottom:1px solid rgba(242,239,230,.08);
+    font-size:var(--fs-xs);letter-spacing:.04em;
+  }
+  nav.main a:last-child{border-bottom:0}
 }
 
-/* Anchor clearance has to match the header that is actually sticking. The header is one row
-   (52px) from 641px up and two (~96px) below it, so a single global value would either park
-   an anchored review under the bar on a phone or leave a gap on a desktop. */
-@media (max-width:640px){
-  :target,[id]{scroll-margin-top:112px}
-}
+/* Anchor clearance. The header is one row at every width now — 52px on a phone, 64px from
+   641px up — so the 88px global value clears both and the 112px phone override that the
+   second row needed is gone with it. */
 
 @media (min-width:641px){
   :root{--gutter:30px}
+  .menu{display:none}
   .bar{min-height:64px;gap:24px}
   .brand{font-size:var(--fs-s);letter-spacing:.04em}
   nav.main{
@@ -490,28 +527,36 @@ main > section:nth-of-type(even){background:var(--band)}
 /* 14px was the gap to the sentence that used to follow this strip; that sentence is gone and
    the strip now sits directly above the shelf tiles, which need the same air the sentence had
    below it. */
-.trust{
-  display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;
+/* The whole strip is one link (24 Aug 2026). It was a div holding a separate "Read the
+   reviews" anchor; the stars and the number — the part a thumb reaches for first — were not
+   clickable, and the anchor took its own row on a phone to repeat what the count said.
+   inline-flex, not flex: the strip should be exactly as wide as its own content, so the
+   hit area does not run the width of the page. */
+a.trust{
+  display:inline-flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;
   margin-bottom:30px;font-size:var(--fs-s);color:var(--bone-dim);
+  /* Still not a card: no border, no background, per the note above. The affordance is the
+     arrow on the count plus the hover, which is enough on a line that reads as a byline. */
+  text-decoration:none;
+  transition:color .15s;
 }
+a.trust:hover,a.trust:focus-visible{color:var(--bone)}
+a.trust:hover .trust-n,a.trust:focus-visible .trust-n{color:var(--bone)}
+/* The count carries the arrow, so it carries the underline too — one unambiguous target
+   rather than an underline dragged across the rating itself. */
+.trust-n{
+  color:var(--magenta);font-weight:500;
+  text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;
+  /* Baseline-aligned text is 23px tall, under the 24px WCAG 2.2 minimum; grow the hit area
+     without moving the text off the baseline. */
+  display:inline-flex;align-items:center;min-height:24px;
+}
+@media (any-pointer:coarse){.trust-n{min-height:44px}}
 .trust-rate{display:inline-flex;align-items:baseline;gap:8px;white-space:nowrap}
 /* letter-spacing because ★ glyphs are drawn tight and read as a smear at small sizes. */
 .trust .stars{color:var(--magenta);letter-spacing:.08em;font-size:1.2em}
 .trust-rate b{color:var(--bone);font-weight:600;font-size:1.15em}
 .trust-n{white-space:nowrap}
-/* The link carries the underline the rest of the strip does not, so the one interactive
-   thing here is unambiguous without a button's weight. */
-.trust-go{
-  color:var(--magenta);font-weight:500;white-space:nowrap;
-  text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;
-  /* 23px tall as plain inline text, which is under the 24px WCAG 2.2 target minimum. The
-     strip is baseline-aligned, so the link cannot simply become a 44px block without
-     dropping off that baseline — inline-flex with a min-height keeps the text where it is
-     and grows only the hit area. */
-  display:inline-flex;align-items:center;min-height:24px;
-}
-.trust-go:hover,.trust-go:focus-visible{color:var(--bone)}
-@media (any-pointer:coarse){.trust-go{min-height:44px}}
 
 /* ---------- buttons ---------- */
 
@@ -667,6 +712,20 @@ a.plate h3{transition:color .15s}
 footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);padding:36px 0 18px}
 .foot{padding-bottom:22px;border-bottom:1px solid rgba(242,239,230,.14)}
 
+/* The wordmark returns to the footer (24 Aug 2026), reversing the note above. What changed:
+   the header is now a 53px sticky bar whose wordmark is 16 characters, and a visitor who has
+   scrolled 14,000px down a shelf page and landed here has no brand in view at the moment
+   they decide whether to trust the place. It anchors the footer above the columns rather
+   than sitting in the basement beside the small print — a wordmark that reads as a footnote
+   is worse than no wordmark. */
+.foot-brand{
+  display:inline-flex;align-items:center;min-height:32px;margin-bottom:18px;
+  font-weight:600;font-size:var(--fs-s);letter-spacing:.04em;text-transform:uppercase;
+  word-spacing:-.34em;white-space:nowrap;color:var(--bone);
+}
+.foot-brand b{color:var(--magenta)}
+.foot-brand:hover{color:var(--magenta)}
+
 /* One sentence, identical on every page including Spirituality — it describes the site, not
    whichever page you happen to be standing on, which is also what makes it useful to a search
    engine reading any single page in isolation. */
@@ -701,8 +760,8 @@ footer{background:var(--void-3);border-top:1px solid rgba(242,239,230,.10);paddi
 
 .foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;padding-top:18px}
 .foot-reach{display:flex;gap:10px;flex:0 0 auto}
-/* The bottom rule is now two notes about the site rather than anything to click. */
-.foot-made{font-size:var(--fs-2xs);color:var(--bone-dim);opacity:.8;letter-spacing:.03em}
+/* One sentence, not two spans pushed to opposite ends. Privacy leads because it is the part
+   a visitor has a stake in; how the site was made is a footnote to it. */
 /* Icon plus one word. At footer scale "WhatsApp me" was carrying no information the green mark
    did not already carry, and email deserved to be a control rather than an address to copy. */
 .chip{

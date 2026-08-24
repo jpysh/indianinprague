@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T10:59:59.372Z",
-  "count": 3756,
+  "generated": "2026-08-24T13:43:02.390Z",
+  "count": 3763,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -15032,6 +15032,34 @@
     "text.ccccc0b9f647": {
       "text": "8 personnes ont ajouté cet article à leurs favoris sur Vinted",
       "src": "ccccc0b9f647"
+    },
+    "text.87bc2416830e": {
+      "text": "Guldaar Bazaar",
+      "src": "87bc2416830e"
+    },
+    "text.ef9a55e12d1e": {
+      "text": "Page introuvable : Guldaar Bazaar",
+      "src": "ef9a55e12d1e"
+    },
+    "text.43ce37a4b96f": {
+      "text": ". Responsable du traitement : Guldaar Bazaar.",
+      "src": "43ce37a4b96f"
+    },
+    "text.20e3a6642b23": {
+      "text": "Guldaar Bazaar : vêtements, bijoux, méditation et livres",
+      "src": "20e3a6642b23"
+    },
+    "text.7facdb12ec9e": {
+      "text": "« Guldaar Bazaar » : Vêtements et bijoux d&#x27;Asie du Sud en Europe",
+      "src": "7facdb12ec9e"
+    },
+    "text.97e350703f9d": {
+      "text": "Comment acheter des vêtements et des articles indiens sur Guldaar Bazaar : Vinted pour les articles d&#x27;occasion, WhatsApp pour les articles neufs, expédition dans toute l&#x27;Europe depuis Prague, retours, prix en euros et politique de confidentialité.",
+      "src": "97e350703f9d"
+    },
+    "text.6ef40df046f3": {
+      "text": "Menu : sections du site",
+      "src": "6ef40df046f3"
     }
   }
 }

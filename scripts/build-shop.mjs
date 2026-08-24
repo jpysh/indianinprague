@@ -1195,8 +1195,15 @@ async function main() {
   //   the number      — "5.0" is the claim; the stars just make it scannable
   //   the count       — 5.0 from 36 is trust, 5.0 from 1 is noise. Never show one alone
   //   "on Vinted"     — a rating is only as good as the place it is checkable
-  //   Read the reviews — the link IS the proof, so it goes to the feedback tab itself,
-  //                     not the profile. An unverifiable rating is worth less than none
+  //   the link itself  — the proof, so it goes to the feedback tab, not the profile. An
+  //                     unverifiable rating is worth less than none
+  //
+  // The WHOLE strip is the link as of 24 Aug 2026, rather than a separate "Read the reviews"
+  // anchor beside it. Two reasons. The rating and the proof were two targets for one
+  // intention, and the stars — the part a thumb goes for first — were not clickable at all.
+  // And on a phone the second anchor wrapped onto its own row, spending ~44px to repeat what
+  // the count already said. The arrow on the count now carries "this goes somewhere", and
+  // the visually-hidden sentence carries the rest for a screen reader.
   //
   // Not included, on purpose: a fourth description of the stock, a follower count, sales
   // totals, badges. Each would dilute the one number doing the work.
@@ -1220,15 +1227,13 @@ async function main() {
   // honest, a restatement is noise.
   const trust = !seller?.count
     ? ``
-    : `<div class="trust">` +
+    : `<a class="trust" href="${esc(seller.feedbackUrl)}" target="_blank" rel="noopener">` +
       `<span class="trust-rate">` +
       `<span class="stars" aria-hidden="true">${"★".repeat(Math.round(seller.rating))}${"☆".repeat(5 - Math.round(seller.rating))}</span>` +
       `<b>${seller.rating.toFixed(1)}</b></span>` +
-      `<span class="trust-n">${seller.count} reviews on Vinted</span>` +
-      `<a class="trust-go" href="${esc(seller.feedbackUrl)}" target="_blank" rel="noopener">` +
-      `Read the reviews<span class="vh"> on Vinted (opens in a new tab)</span> →</a>` +
-      `<span class="vh">Rated ${seller.rating.toFixed(1)} out of 5 from ${seller.count} buyer reviews on Vinted.</span>` +
-      `</div>`;
+      `<span class="trust-n">${seller.count} reviews on Vinted →</span>` +
+      `<span class="vh">Rated ${seller.rating.toFixed(1)} out of 5 from ${seller.count} buyer reviews. Read them on Vinted (opens in a new tab).</span>` +
+      `</a>`;
 
   indexHtml = replaceRegion(indexHtml, "SHOP:TRUST", trust, "index.html");
 

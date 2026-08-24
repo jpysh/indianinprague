@@ -10,7 +10,7 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-08-24T11:47:10.062Z",
+  "generated": "2026-08-24T13:43:02.309Z",
   "count": 3756,
   "entries": {
     "item.9729949801.title": {
@@ -2148,12 +2148,12 @@
       "since": "",
       "changed": ""
     },
-    "text.ff2953a6662c": {
+    "text.ef9a55e12d1e": {
       "text": "Page not found: Guldaar Bazaar",
       "src": "ef9a55e12d1e",
       "where": "page text — first seen on 404.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.ac576a66d456": {
       "text": "Skip to content",
@@ -2161,6 +2161,13 @@
       "where": "page text — first seen on 404.html",
       "since": "",
       "changed": ""
+    },
+    "text.6ef40df046f3": {
+      "text": "Menu: site sections",
+      "src": "6ef40df046f3",
+      "where": "page text — first seen on 404.html",
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.efe10c80ec8a": {
       "text": "Primary",
@@ -2186,20 +2193,6 @@
     "text.fbcea8665907": {
       "text": "Diaries",
       "src": "fbcea8665907",
-      "where": "page text — first seen on 404.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.d91298b7e7be": {
-      "text": "My Vinted closet (opens in a new tab)",
-      "src": "d91298b7e7be",
-      "where": "page text — first seen on 404.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.ab07c12eca1a": {
-      "text": "Vinted closet",
-      "src": "ab07c12eca1a",
       "where": "page text — first seen on 404.html",
       "since": "",
       "changed": ""
@@ -2365,6 +2358,13 @@
       "since": "",
       "changed": ""
     },
+    "text.ab07c12eca1a": {
+      "text": "Vinted closet",
+      "src": "ab07c12eca1a",
+      "where": "page text — first seen on 404.html",
+      "since": "",
+      "changed": ""
+    },
     "text.9c870aa6e5e9": {
       "text": "How it works",
       "src": "9c870aa6e5e9",
@@ -2400,12 +2400,12 @@
       "since": "",
       "changed": ""
     },
-    "text.fd496ed55c46": {
+    "text.87bc2416830e": {
       "text": "Guldaar Bazaar",
       "src": "87bc2416830e",
       "where": "page text — first seen on diaries.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.77daa9af226d": {
       "text": "Tram 22 · the journal",
@@ -3317,12 +3317,12 @@
       "since": "",
       "changed": ""
     },
-    "text.3e2024dafce3": {
+    "text.97e350703f9d": {
       "text": "How to buy Indian clothes and goods from Guldaar Bazaar: Vinted for second-hand pieces, WhatsApp for new stock, shipping across Europe from Prague, returns, prices in euro, and privacy.",
       "src": "97e350703f9d",
       "where": "page text — first seen on how-it-works.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.ca9f3095e726": {
       "text": "Buying, shipping, returns.",
@@ -3681,12 +3681,12 @@
       "since": "",
       "changed": ""
     },
-    "text.51a6f0fad74f": {
+    "text.43ce37a4b96f": {
       "text": ". Data controller: Guldaar Bazaar.",
       "src": "43ce37a4b96f",
       "where": "page text — first seen on how-it-works.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.ede548996483": {
       "text": "Terms",
@@ -3737,12 +3737,12 @@
       "since": "",
       "changed": ""
     },
-    "text.d46bd0accb3a": {
+    "text.7facdb12ec9e": {
       "text": "Guldaar Bazaar: South Asian Clothes and Jewellery in Europe",
       "src": "7facdb12ec9e",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.343f8c16e499": {
       "text": "Contemporary South Asian clothing, jewellery, meditation objects, ritual brass and books in Europe. Hand-picked and hand-crafted, some from my own collection.",
@@ -3751,12 +3751,12 @@
       "since": "",
       "changed": ""
     },
-    "text.e671b17ef603": {
+    "text.20e3a6642b23": {
       "text": "Guldaar Bazaar: clothes, jewellery, meditation and books",
       "src": "20e3a6642b23",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-24",
+      "changed": "2026-08-24"
     },
     "text.bea58a620dad": {
       "text": "Contemporary South Asian clothing, jewellery, meditation objects and home things. Hand-picked and hand-crafted. Not the spice-market cliché.",

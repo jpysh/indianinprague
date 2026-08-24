@@ -49,6 +49,35 @@ export function glossaryHit(text, to) {
   return GLOSSARY.terms[to]?.[key];
 }
 
+// Keep-terms EMBEDDED in a longer string (24 Aug 2026).
+//
+// glossaryHit only fires when the term IS the whole string, which protects a bare
+// "Guldaar Bazaar" and nothing else. The list used here is glossary.keepInline, NOT keep:
+// keep holds Prague and Praha, and freezing those mid-sentence would leave Czech prose
+// saying Prague where it should say Praha. The rebrand exposed the gap: "Page not found: Guldaar
+// Bazaar" went to DeepL as ordinary prose and came back as "Страница не найдена:
+// Гульдар-Базар" — the brand transliterated into Cyrillic on a page title. A brand name is
+// the one thing on a page that must read identically in every language.
+//
+// The fix is DeepL's own ignore_tags: wrap each keep-term in a marker element and name that
+// element as ignored, and the API returns its contents byte-for-byte while still translating
+// and re-ordering the prose around it. Cheaper and more reliable than trying to detect a
+// transliteration after the fact — there is no general test for "this is my brand, spelled
+// differently".
+//
+// The marker is <x> because it must not collide with anything in the site's own HTML
+// fragments, which this pass also translates.
+const MARK = "x";
+const protectKeep = (text) => {
+  let out = text;
+  for (const term of GLOSSARY.keepInline ?? []) {
+    if (out.includes(term)) out = out.split(term).join(`<${MARK}>${term}</${MARK}>`);
+  }
+  return out;
+};
+const unprotect = (text) =>
+  text.replaceAll(`<${MARK}>`, "").replaceAll(`</${MARK}>`, "");
+
 // source_lang is deliberately NOT sent. The Govinda catalogue is mostly Czech but not
 // entirely: the foreign-language book branch carries Ukrainian, Russian and Vietnamese
 // editions, and forcing CS on those returns transliterated nonsense. DeepL detects per
@@ -61,12 +90,19 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
   const pending = texts.map((t, i) => [i, t]).filter(([i]) => out[i] === null);
   if (!pending.length) return out;
 
+  // Wrap keep-terms before sending. Marking the request as HTML is required for ignore_tags
+  // to mean anything; it is a no-op for the plain strings that carry no markup, and the site
+  // pass already sends tag_handling html for its fragments.
+  const wrapped = pending.map(([, t]) => protectKeep(t));
+  const guarded = wrapped.some((t, i) => t !== pending[i][1]);
+
   for (let attempt = 0; attempt < KEYS.length; attempt++) {
     const key = KEYS[current];
     const body = new URLSearchParams();
     body.set("target_lang", to);
-    if (tagHandling) body.set("tag_handling", tagHandling);
-    for (const [, t] of pending) body.append("text", t);
+    if (tagHandling || guarded) body.set("tag_handling", tagHandling || "html");
+    if (guarded) body.set("ignore_tags", MARK);
+    for (const t of wrapped) body.append("text", t);
 
     const res = await fetch("https://api-free.deepl.com/v2/translate", {
       method: "POST",
@@ -80,7 +116,7 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
     }
     if (!res.ok) throw new Error(`DeepL HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
     const { translations } = await res.json();
-    pending.forEach(([i], n) => (out[i] = translations[n].text));
+    pending.forEach(([i], n) => (out[i] = unprotect(translations[n].text)));
     return out;
   }
   throw new Error(`all ${KEYS.length} DeepL keys exhausted`);
@@ -108,6 +144,19 @@ if (isMain && process.argv[2] === "--check") {
   GLOSSARY.keep.forEach((k) =>
     assert(glossaryHit(k, "PL") === k, `keep entry passes through unchanged: ${k}`),
   );
+  // The embedded-keep-term guard. The bare-string path is covered above; this is the one
+  // that regressed a brand name into Cyrillic before it existed.
+  const brand = GLOSSARY.keepInline[0];
+  const sentence = `Page not found: ${brand}`;
+  assert(protectKeep(sentence) === `Page not found: <x>${brand}</x>`, "embedded keep term is wrapped");
+  assert(unprotect(protectKeep(sentence)) === sentence, "wrap/unwrap round-trips");
+  assert(protectKeep("nothing to protect here") === "nothing to protect here", "untouched when no keep term");
+  // The narrowing itself, so a later edit cannot quietly widen it back: place names stay
+  // translatable inside a sentence even though they are whole-string keep entries.
+  assert(!protectKeep("shipping across Europe from Prague").includes("<x>"),
+    "place names are NOT frozen mid-sentence");
+  assert(unprotect("Stránka nenalezena: <x>" + brand + "</x>") === `Stránka nenalezena: ${brand}`,
+    "markers stripped from a translated result");
   assert(KEYS.length > 0, "no DEEPL_KEY_n found in .env");
   const counts = Object.entries(GLOSSARY.terms).map(([l, t]) => `${l}:${Object.keys(t).length}`);
   console.log(`ok — ${KEYS.length} key(s), keep:${GLOSSARY.keep.length}, terms ${counts.join(" ")}`);
