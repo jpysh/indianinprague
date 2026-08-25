@@ -163,10 +163,44 @@ function sourcedCzech(sources) {
 // has since changed. Ordered shortest-first so a run that hits the quota ceiling closes the
 // largest NUMBER of gaps — a shop with every title translated and some descriptions missing
 // reads better than the reverse.
+// WHAT GETS TRANSLATED FIRST, WHEN THERE IS NOT ENOUGH QUOTA FOR EVERYTHING (25 Aug 2026).
+//
+// There was no answer to this before: the list came back in whatever order the sources
+// object happened to hold, shortest string first, and a run that ran out of quota stopped
+// wherever it stopped. With five languages 1,590 strings behind, that meant this week's new
+// arrivals queued behind a backlog of older shelves — and the visitor browsing today is
+// looking at the new arrivals, not at the 1,590th string of something listed in July.
+//
+// So: PRODUCTS BEFORE PAGES, and newest products first.
+//
+//   · Product strings are keyed `item.<id>.*` and `attr.*` (see catalogSources). They are
+//     what a shopper actually reads on a shelf, and they are the ones that keep arriving.
+//   · Page copy — headings, nav, body — changes rarely and is already translated. When it
+//     does change it is usually a handful of strings, so it loses very little by going
+//     second, and gains a complete set of product cards.
+//   · Within products, newest first, by the date in data/first-seen.json — the same clock
+//     the shelves sort by, so "newest" means the same thing in both places.
+//   · Within a tier, shortest first, which is the old behaviour and is simply the cheapest
+//     way to convert quota into finished strings.
+const firstSeen = (() => {
+  try {
+    const raw = JSON.parse(readFileSync(path.join(ROOT, "data/first-seen.json"), "utf8"));
+    return (id) => raw[id] || "";
+  } catch {
+    return () => "";
+  }
+})();
+
 function outstanding(lang, sources, machine) {
+  const rank = (key) => (/^(item|attr)\./.test(key) ? 0 : 1);
+  // `item.<id>.title` -> `<id>`. Non-product keys never reach this.
+  const seenOf = (key) => firstSeen(key.split(".")[1] ?? "");
   return Object.entries(sources)
     .filter(([key, src]) => !blocked(lang, key) && machine[key]?.src !== src.src)
-    .sort((a, b) => a[1].text.length - b[1].text.length);
+    .sort((a, b) =>
+      rank(a[0]) - rank(b[0]) ||
+      (rank(a[0]) === 0 ? seenOf(b[0]).localeCompare(seenOf(a[0])) : 0) ||
+      a[1].text.length - b[1].text.length);
 }
 
 async function fill(lang, sources, budget) {

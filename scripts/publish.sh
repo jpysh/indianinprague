@@ -54,16 +54,17 @@
 #   published pages ARE in scope even when hand-edited, because build-dist stages them from
 #   the working tree: they went live, so they belong in the commit that records what went live.
 #
-# It deliberately does NOT push. A push would trigger Workers Builds, which would deploy the
-# same bytes a second time — and the credentials for it are not in launchd's environment
-# anyway. Pushing stays a human action; the commits queue up until then, and because they
-# hold exactly what is already live, pushing them later is a no-op at the edge.
+# It then PUSHES, and the push is what deploys (changed 25 Aug 2026 — see step 14). Cloudflare
+# Workers Builds regenerates the site from the commit, so git and the edge cannot drift: what
+# is pushed is what is served. There is no wrangler here any more and no Cloudflare token on
+# this Mac.
 #
 # This runs on this Mac and not in the cloud, deliberately. sync-vinted's session handshake
 # works from a residential IP and would be challenged from a datacenter range; build-images
 # shells out to ImageMagick and cwebp; and the 408 MB of camera originals the derivatives
 # come from exist only here. Only the OUTPUT moves — hosting is Cloudflare's, building is
-# ours. No Docker is involved any more: node, magick, cwebp and wrangler are all native.
+# ours. No Docker is involved any more: node, magick and cwebp are all native, and wrangler
+# is now only a local preview tool (`wrangler dev`), not part of publishing.
 
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -129,6 +130,37 @@ fi
 
 step "1/14 sync from Vinted"
 node scripts/sync-vinted.mjs $FULL
+
+# GOVINDA, ONCE A WEEK (25 Aug 2026).
+#
+# Govinda is retail stock on someone else's website, so the questions are "what is new" and
+# "what has gone", and both are weekly questions — their catalogue does not move hourly and
+# their server should not be scraped as though it did. It is one request every two seconds
+# against a robots.txt-permitted path, under a User-Agent that names this site, by written
+# agreement with the vendor.
+#
+# Sunday, and only on the day's FIRST successful run, because --if-needed already guarantees
+# that. If the Mac is off all Sunday the week is skipped rather than doubled up on Monday:
+# a scrape that runs a day late tells you exactly what a scrape that runs on time does, and
+# "catch up on missed weeks" is a queue with nothing in it.
+#
+# Nothing here decides anything. build-listings.mjs writes the four change lists into
+# changes.json for the dashboard, carries any SKU that vanished from their catalogue forward
+# as out of stock rather than dropping it, and never touches data/overrides.json — which is
+# where your own decisions live, including sold, which no vendor can know.
+if [ "$(date +%u)" = "7" ] && [ -z "$LOCAL" ]; then
+  step "1b/14 weekly Govinda sync"
+  node vendors/govinda/scrape.mjs
+  node vendors/govinda/build-listings.mjs
+  # Photographs, in two passes: download what is genuinely new, then composite it onto the
+  # backdrop the rest of the grid uses. A product with no lead image on disk is held back by
+  # scripts/vendor-items.mjs rather than published as an empty card, so a failure in either
+  # of these costs a week's delay on new arrivals and nothing else.
+  node vendors/govinda/fetch-images.mjs
+  node vendors/govinda/compose-images.mjs
+else
+  echo "(not Sunday — skipping the weekly Govinda sync)"
+fi
 
 step "2/14 derive responsive images"
 node scripts/build-images.mjs
@@ -241,51 +273,55 @@ header of publish.sh." -- "${PUBLISHED[@]}" || {
     exit 1
   }
   echo "committed on ${GIT_BRANCH}: $(git log --oneline -1)"
-  echo "not pushed — run: git push origin ${GIT_BRANCH}"
 fi
 
-step "14/14 deploy to Cloudflare"
+step "14/14 push, and let Cloudflare build it"
 
-# Cloudflare credentials, in order of preference.
+# ONE DEPLOY PATH, NOT TWO (25 Aug 2026).
 #
-# 1. A scoped API token in the macOS Keychain, if one is there. This is the tighter option:
-#    the token is scoped to "Workers Scripts:Edit" on this account and nothing else, so it
-#    cannot touch DNS, the zone or the other tunnels, and the worst case if it leaks is a
-#    defaced guldaarbazaar.com rather than a lost domain. Set one up with:
-#      security add-generic-password -a "$USER" -s guldaarbazaar-cf-token -w
+# This step used to run `wrangler deploy` from here and deliberately NOT push, so that the
+# Mac and Workers Builds could never deploy the same commit twice. It worked, and it cost:
+#   · an API token on this Mac, in the Keychain, scoped or not;
+#   · a silent split between what git holds and what the edge serves;
+#   · and on 25 Aug 2026 it simply stopped — wrangler authenticated against the wrong
+#     Cloudflare account and returned `Authentication error [code: 10000]`. Because the
+#     stamp is written after the deploy, every hourly trigger then re-ran the entire
+#     pipeline into the same error, about two dozen times, and the site sat on the 24th.
 #
-# 2. Otherwise, whatever `wrangler login` stored in ~/Library/Preferences/.wrangler. That is
-#    a browser OAuth session, which is far easier to set up but grants broader account
-#    access than the token above. It refreshes itself, so the unattended 07:15 run keeps
-#    working; if it ever does expire, wrangler exits non-zero, this script stops on `set -e`,
-#    and IndexNow is never pinged — a failed publish, not a broken site.
+# So the push IS the deploy now. The repo is connected to Cloudflare Workers Builds, whose
+# build command regenerates the site from committed data and serves the result. That is
+# safe precisely because build-dist.mjs's GENERATORS list reads nothing but committed files
+# — data/*.json, content/, the image manifest — so a cloud build reproduces a Mac build
+# exactly. The three steps that CANNOT move to the cloud (the Vinted session handshake from
+# a residential IP, ImageMagick over 408 MB of camera originals, and the DeepL key) have
+# already run above, and their output is in the commit being pushed.
 #
-# Either way the credential is NEVER put in the launchd plist: that file lives in scripts/
-# and its EnvironmentVariables are readable by anything that can read this directory.
-if CLOUDFLARE_API_TOKEN=$(security find-generic-password -a "$USER" -s guldaarbazaar-cf-token -w 2>/dev/null); then
-  export CLOUDFLARE_API_TOKEN
-  echo "auth: scoped API token from Keychain"
+# What this buys: no token here, no second deploy path, and git as the single record of
+# what is live. What it costs: about a minute of Cloudflare build time before a change is
+# visible, instead of wrangler's direct upload.
+if git push origin "${GIT_BRANCH}"; then
+  echo "pushed ${GIT_BRANCH} — Cloudflare Workers Builds is building it now"
 else
-  echo "auth: wrangler's stored browser login"
-fi
-
-# ./node_modules/.bin/wrangler, NOT npx wrangler. npx resolves the latest version from the
-# npm registry at run time, and this script runs unattended with the token above already in
-# the environment — a newly published (or newly compromised) wrangler, or any of its 37
-# transitive dependencies, would execute here before anyone saw it. The version is pinned in
-# package.json and locked in package-lock.json; upgrading is a decision, not a sunrise.
-if [ ! -x ./node_modules/.bin/wrangler ]; then
-  echo "⚠ wrangler is not installed — run: npm ci" >&2
+  echo "⚠ push failed — nothing was deployed; the commit is still here and can be pushed by hand" >&2
   exit 1
 fi
 
-# A static-assets-only Worker — see wrangler.jsonc for why this is not Cloudflare Pages
-# (short version: Pages force-redirects /wardrobe.html to /wardrobe and cannot be told not
-# to, which would fight every canonical tag on the site).
+# Workers Builds is not instant, and the health check below is the whole reason this script
+# can tell "deployed" from "deploy started". Wait for the edge to answer with the build we
+# just pushed rather than the one before it: poll until the deployed commit shows up, and
+# give up after five minutes so a stuck build fails the run instead of hanging it.
 #
-# wrangler hashes every file and uploads only the ones Cloudflare does not already hold, so
-# a normal morning sends the rebuilt HTML and the day's new photos rather than 171 MB.
-./node_modules/.bin/wrangler deploy
+# The marker is the commit SHA, written into the built pages by build-dist? No — nothing
+# stamps a SHA today, so this waits on availability alone and reports the wait. Upgrading it
+# to a real build marker is worth doing the day a deploy silently serves stale bytes; until
+# then a 200 from the custom domain after the push is what we have.
+printf 'waiting for the edge'
+for _ in $(seq 1 30); do
+  sleep 10
+  printf '.'
+  curl -fsS -o /dev/null "https://guldaarbazaar.com/wardrobe" && break
+done
+printf '\n'
 
 # Confirm the live site is actually serving this build before inviting crawlers to it.
 # Checking the real hostname rather than a local port is the point: it exercises DNS, the

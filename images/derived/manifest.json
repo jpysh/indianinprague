@@ -27881,6 +27881,46 @@
       }
     ]
   },
+  "images/govinda-3161-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "96302bd5",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-3161-1-400.jpg",
+        "webp": "images/derived/govinda-3161-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-3161-1-800.jpg",
+        "webp": "images/derived/govinda-3161-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-3161-2.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "4bae95e2",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-3161-2-400.jpg",
+        "webp": "images/derived/govinda-3161-2-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-3161-2-800.jpg",
+        "webp": "images/derived/govinda-3161-2-800.webp"
+      }
+    ]
+  },
   "images/govinda-3162-1.jpg": {
     "width": 900,
     "height": 1600,
@@ -35085,7 +35125,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "9abb86a7",
+    "v": "054379ea",
     "variants": [
       {
         "w": 400,
@@ -36965,7 +37005,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "9dc5c9f5",
+    "v": "4db2d333",
     "variants": [
       {
         "w": 400,
@@ -36985,7 +37025,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "98162611",
+    "v": "fb0f9bfc",
     "variants": [
       {
         "w": 400,
@@ -45301,6 +45341,26 @@
       }
     ]
   },
+  "images/govinda-711-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "34558ecc",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-711-1-400.jpg",
+        "webp": "images/derived/govinda-711-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-711-1-800.jpg",
+        "webp": "images/derived/govinda-711-1-800.webp"
+      }
+    ]
+  },
   "images/govinda-714-1.jpg": {
     "width": 900,
     "height": 1600,
@@ -45805,7 +45865,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "9abb86a7",
+    "v": "054379ea",
     "variants": [
       {
         "w": 400,

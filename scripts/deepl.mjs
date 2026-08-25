@@ -99,6 +99,27 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
   const wrapped = pending.map(([, t]) => protectKeep(t));
   const guarded = wrapped.some((t, i) => t !== pending[i][1]);
 
+  // 429 IS NOT 456, AND CONFLATING THEM COST FIVE LANGUAGES A DAY'S TRANSLATION.
+  //
+  // 456 means the key's monthly quota is spent: the key is finished until the billing period
+  // rolls over, and rotating to the next one is the only thing that can help.
+  //
+  // 429 means TOO MANY REQUESTS — a temporary throttle on an account that is otherwise fine.
+  // Until 25 Aug 2026 both statuses rotated, so a throttle that arrived mid-run was read as
+  // four dead keys in under a second and the run gave up. Measured on the morning of the
+  // 25th: Russian finished 1,589 strings at full speed, DeepL throttled, and French stopped
+  // 269 short while German, Italian, Spanish, Polish and Czech got nothing at all. Every key
+  // still had quota — the same key translated 23,112 characters by hand two hours later.
+  //
+  // So a 429 now WAITS on the same key instead of spending the pool on it. DeepL sends
+  // Retry-After on these; where it does not, the backoff doubles from one second. Only a 456
+  // rotates, which is what rotation was for.
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const MAX_THROTTLE_WAITS = 5;
+  let waits = 0;
+
+  // `attempt` counts KEYS tried, so a wait-and-retry must not consume one — otherwise a
+  // throttled run still walks the pool, just more slowly.
   for (let attempt = 0; attempt < KEYS.length; attempt++) {
     const key = KEYS[current];
     const body = new URLSearchParams();
@@ -112,9 +133,22 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
       headers: { Authorization: `DeepL-Auth-Key ${key}`, "Content-Type": "application/x-www-form-urlencoded" },
       body,
     });
+    if (res.status === 429 && waits < MAX_THROTTLE_WAITS) {
+      // Retry-After is in seconds when present. The fallback doubles: 1s, 2s, 4s, 8s, 16s,
+      // which is 31 seconds of patience in total before this key is treated as unusable.
+      const after = Number(res.headers.get("retry-after"));
+      const ms = Number.isFinite(after) && after > 0 ? after * 1000 : 1000 * 2 ** waits;
+      waits++;
+      console.warn(`  DeepL rate-limited (HTTP 429) — waiting ${Math.round(ms / 1000)}s and retrying key ${current + 1}/${KEYS.length} (${waits}/${MAX_THROTTLE_WAITS})`);
+      await sleep(ms);
+      attempt--; // this was not a key attempt; the same key is about to be tried again
+      continue;
+    }
     if (res.status === 456 || res.status === 429) {
-      console.warn(`  DeepL key ${current + 1}/${KEYS.length} exhausted (HTTP ${res.status}) — rotating`);
+      const why = res.status === 456 ? "quota spent" : "still rate-limited after backoff";
+      console.warn(`  DeepL key ${current + 1}/${KEYS.length} unusable (HTTP ${res.status}, ${why}) — rotating`);
       current = (current + 1) % KEYS.length;
+      waits = 0;   // the next key gets its own patience, not this one's leftovers
       continue;
     }
     if (!res.ok) throw new Error(`DeepL HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);

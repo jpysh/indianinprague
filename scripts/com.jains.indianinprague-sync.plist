@@ -63,12 +63,18 @@
   <key>RunAtLoad</key>
   <true/>
 
-  <!-- Catch-up trigger 2: hourly, and the only retry in the whole pipeline. Two jobs:
-       a boot-time run that failed because the network was not up yet gets another go an
-       hour later, and a Mac switched on at 3pm publishes at 3pm instead of waiting for
-       tomorrow. On a day that already published, this costs one date comparison. -->
-  <key>StartInterval</key>
-  <integer>3600</integer>
+  <!-- THE HOURLY TRIGGER IS GONE (25 Aug 2026).
+       It was here as the pipeline's only retry, and on 25 Aug it showed what that costs.
+       The Cloudflare deploy failed on an auth error, so the date stamp — written only
+       after a successful deploy — stayed on the 24th, and every hour a fresh trigger found
+       an unstamped date and re-ran the ENTIRE pipeline: Vinted sync, image derivation,
+       every generator, roughly two dozen times, each ending at the same error.
+
+       The two triggers left cover everything it was supposed to: RunAtLoad fires when the
+       Mac is switched on, and the calendar entry fires at 07:15 on a Mac already running.
+       Retry now lives INSIDE the run, where it can back off and give up — as the DeepL
+       client does since the same day — instead of being a full pipeline restart. A run
+       that genuinely fails now fails once, visibly, on the dashboard. -->
 
   <!-- publish.sh shells out to node, docker and magick; launchd's default PATH has none
        of them. -->

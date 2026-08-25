@@ -42,8 +42,28 @@ export function vendorItems(root) {
   const [head, ...body] = rows(readFileSync(file, "utf8").replace(/^﻿/, ""));
   const col = Object.fromEntries(head.map((h, i) => [h, i]));
 
+  // A GOVINDA PRODUCT WITHOUT A PHOTOGRAPH IS NOT PUBLISHED (25 Aug 2026).
+  //
+  // The weekly scrape can return a product hours before its photograph has been fetched and
+  // composited — fetch-images.mjs and compose-images.mjs are separate steps, and a run that
+  // stops between them would otherwise put a card with no picture on a shelf built entirely
+  // out of full-bleed photographs. That card is worse than the product's absence: it is the
+  // one thing on the page that looks broken.
+  //
+  // The test is the LEAD image on disk, because that is what build-images.mjs derives the
+  // shipped sizes from — if it is not there, there is nothing for a card to show. Everything
+  // else about the row is fine and it returns on the next run, once the picture exists.
+  //
+  // Measured when this was added: 1,465 listed rows, 0 of them without a lead image. It is a
+  // guard for the arrival case, not a cull of anything already published.
+  const hasLeadImage = (r) => {
+    const sku = r[col.sku];
+    const first = r[col.images].split(" | ").filter(Boolean).length > 0;
+    return first && existsSync(path.join(root, "vendors/govinda/images", `govinda-${sku}-1.jpg`));
+  };
+
   return body
-    .filter((r) => r.length > 1 && r[col.list] === "yes")
+    .filter((r) => r.length > 1 && r[col.list] === "yes" && hasLeadImage(r))
     .map((r) => {
       const sku = r[col.sku];
       const photos = r[col.images]
