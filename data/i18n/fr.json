@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-24T15:32:19.107Z",
-  "count": 3836,
+  "generated": "2026-08-25T06:00:22.561Z",
+  "count": 5156,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -15352,6 +15352,5286 @@
     "text.990692e99256": {
       "text": "Je souhaite proposer des produits conçus avec un peu plus de soin, sans réduire la culture indienne à un simple déguisement ou à une esthétique marketing. Des objets fabriqués par des personnes, plutôt que conçus pour donner l’impression d’être faits main. Des matières naturelles utilisées là où elles ont véritablement leur place. Des traditions de tissage à la main considérées comme des métiers d’art vivants plutôt que comme des tendances décoratives. Des produits ayurvédiques abordés dans le respect de la tradition qui les sous-tend.",
       "src": "990692e99256"
+    },
+    "text.de7d1b721a1e": {
+      "text": "dans",
+      "src": "de7d1b721a1e"
+    },
+    "text.fba20444aa1a": {
+      "text": "Description d&#x27;AMBER",
+      "src": "fba20444aa1a"
+    },
+    "text.54514dc3094a": {
+      "text": "Description de TULSI",
+      "src": "54514dc3094a"
+    },
+    "text.88b79f2aab4a": {
+      "text": "Description de LOTUS",
+      "src": "88b79f2aab4a"
+    },
+    "text.eaaf0073b151": {
+      "text": "Description du NÉROLI",
+      "src": "eaaf0073b151"
+    },
+    "text.7714cb724dae": {
+      "text": "Description de l&#x27;orchidée",
+      "src": "7714cb724dae"
+    },
+    "text.b350f631fe39": {
+      "text": "47 avis sur « Vinted » →",
+      "src": "b350f631fe39"
+    },
+    "text.c82455f3561b": {
+      "text": "Description du sac à main",
+      "src": "c82455f3561b"
+    },
+    "text.6204299a1c98": {
+      "text": "Description de Návraty",
+      "src": "6204299a1c98"
+    },
+    "text.c95e69ac0ffd": {
+      "text": "Description de MAGNOLIA",
+      "src": "c95e69ac0ffd"
+    },
+    "text.33b57dd5176e": {
+      "text": "Description du porte-clés",
+      "src": "33b57dd5176e"
+    },
+    "text.796efdcf0871": {
+      "text": "Description du collier",
+      "src": "796efdcf0871"
+    },
+    "text.9ad229fcd1cb": {
+      "text": "Description du PATCHOULI",
+      "src": "9ad229fcd1cb"
+    },
+    "text.abd9af1f7f93": {
+      "text": "Description du couvre-lit",
+      "src": "abd9af1f7f93"
+    },
+    "text.c4eb63e9ad8a": {
+      "text": "Description du Kajal 2 g",
+      "src": "c4eb63e9ad8a"
+    },
+    "text.d72cf6ac2f0a": {
+      "text": "Description du porte-stylos",
+      "src": "d72cf6ac2f0a"
+    },
+    "text.0d86610344a5": {
+      "text": "Description de Sarasvati",
+      "src": "0d86610344a5"
+    },
+    "text.828e06c4122f": {
+      "text": "Description de 25 g supplémentaires",
+      "src": "828e06c4122f"
+    },
+    "text.537dc553f93e": {
+      "text": "Description du parfum MUSK 10 ml",
+      "src": "537dc553f93e"
+    },
+    "text.16faaafc4249": {
+      "text": "Description de l&#x27;autocollant « Om »",
+      "src": "16faaafc4249"
+    },
+    "text.6fed68d185b0": {
+      "text": "Description de l&#x27;ANANAS",
+      "src": "6fed68d185b0"
+    },
+    "text.a40aad35a9a5": {
+      "text": "Description de STRAWBERRY",
+      "src": "a40aad35a9a5"
+    },
+    "text.580642f022e4": {
+      "text": "Description de Prabhupáda",
+      "src": "580642f022e4"
+    },
+    "text.cd437673ab15": {
+      "text": "Description de Mango 10 ml",
+      "src": "cd437673ab15"
+    },
+    "text.7dafa0e9332e": {
+      "text": "Description du produit MOGRA 10 ml",
+      "src": "7dafa0e9332e"
+    },
+    "text.7e38faae9310": {
+      "text": "Description de la WHITE WIDOW",
+      "src": "7e38faae9310"
+    },
+    "text.90af43760c95": {
+      "text": "Description du Níti-šástra",
+      "src": "90af43760c95"
+    },
+    "text.14f44ab28a2a": {
+      "text": "Description du Mahábhárata",
+      "src": "14f44ab28a2a"
+    },
+    "text.ace4bba53244": {
+      "text": "Description du pin de Cnossos",
+      "src": "ace4bba53244"
+    },
+    "text.22bdaea5b8dd": {
+      "text": "Description du voile rayé",
+      "src": "22bdaea5b8dd"
+    },
+    "text.968ff2fbe3a1": {
+      "text": "Description du sac isotherme",
+      "src": "968ff2fbe3a1"
+    },
+    "text.548e81eafa8a": {
+      "text": "Description de la statue en bois de Shiva",
+      "src": "548e81eafa8a"
+    },
+    "text.ae01b37df4c5": {
+      "text": "Description de la sauge de Cnossos",
+      "src": "ae01b37df4c5"
+    },
+    "text.e60b49860cd1": {
+      "text": "Description du bracelet en onyx",
+      "src": "e60b49860cd1"
+    },
+    "text.184b165ae998": {
+      "text": "Description des rayures unies",
+      "src": "184b165ae998"
+    },
+    "text.78b18c009f94": {
+      "text": "Description du miel de fleurs",
+      "src": "78b18c009f94"
+    },
+    "text.4de30ddadfdc": {
+      "text": "Description de l&#x27;argan de Knossos",
+      "src": "4de30ddadfdc"
+    },
+    "text.3e723c4f2d48": {
+      "text": "Description du citron de Cnossos",
+      "src": "3e723c4f2d48"
+    },
+    "text.27ee29826ef2": {
+      "text": "Description du miel de Cnossos",
+      "src": "27ee29826ef2"
+    },
+    "text.5d5e3c8deec5": {
+      "text": "Description des instructions d&#x27;utilisation de Nektar",
+      "src": "5d5e3c8deec5"
+    },
+    "text.d8e37e40b5b9": {
+      "text": "Description de Durga (en résine)",
+      "src": "d8e37e40b5b9"
+    },
+    "text.876ad003e7ac": {
+      "text": "Description d'une sculpture de Ganesh",
+      "src": "876ad003e7ac"
+    },
+    "text.7c447cac50eb": {
+      "text": "Description de la bague « Tortue 7 »",
+      "src": "7c447cac50eb"
+    },
+    "text.0e7bc7e0fcb7": {
+      "text": "Description de la bague « Tortue 6 »",
+      "src": "0e7bc7e0fcb7"
+    },
+    "text.767d223a91cd": {
+      "text": "Description de la bague « Tortue 5 »",
+      "src": "767d223a91cd"
+    },
+    "text.f9ec24ee90cc": {
+      "text": "Description de Bhakti śāstri",
+      "src": "f9ec24ee90cc"
+    },
+    "text.95061ef6669c": {
+      "text": "Description de la bague « Tortue 4 »",
+      "src": "95061ef6669c"
+    },
+    "text.4b29dc8dd684": {
+      "text": "Description de la bague « Tortue 3 »",
+      "src": "4b29dc8dd684"
+    },
+    "text.770e674ad371": {
+      "text": "Description de la bague « Tortue 2 »",
+      "src": "770e674ad371"
+    },
+    "text.8db632f5afac": {
+      "text": "Description de la bague « Tortue 1 »",
+      "src": "8db632f5afac"
+    },
+    "text.c70de75d5048": {
+      "text": "Description de la pochette imprimée",
+      "src": "c70de75d5048"
+    },
+    "text.7323ddb3f721": {
+      "text": "Description de « Une rayure bleue »",
+      "src": "7323ddb3f721"
+    },
+    "text.d5ef329685b7": {
+      "text": "Description du grand butor",
+      "src": "d5ef329685b7"
+    },
+    "text.5efc46331932": {
+      "text": "Description de BLUE MOON 3 ml",
+      "src": "5efc46331932"
+    },
+    "text.12141bda27f2": {
+      "text": "Description de la Śrī Iśopaniṣad",
+      "src": "12141bda27f2"
+    },
+    "text.d722c3b32077": {
+      "text": "Description du Kamandala 0,8 l",
+      "src": "d722c3b32077"
+    },
+    "text.2ffffd8cfe64": {
+      "text": "Description du porte-clés Ganesh",
+      "src": "2ffffd8cfe64"
+    },
+    "text.c6643adabd5a": {
+      "text": "Description du porte-clés « Tear »",
+      "src": "c6643adabd5a"
+    },
+    "text.343d7faaa9f2": {
+      "text": "Description des chameaux suspendus",
+      "src": "343d7faaa9f2"
+    },
+    "text.a7d4624b787e": {
+      "text": "Description du miel de miellat",
+      "src": "a7d4624b787e"
+    },
+    "text.3f30b4610c59": {
+      "text": "Description des pantalons pour homme",
+      "src": "3f30b4610c59"
+    },
+    "text.90b2ad46d34d": {
+      "text": "Description de l'orange de Cnossos",
+      "src": "90b2ad46d34d"
+    },
+    "text.dd30d547f202": {
+      "text": "Description of KAMASUTRA 3 ml",
+      "src": "dd30d547f202"
+    },
+    "text.7c374cde4e16": {
+      "text": "Description de l'écharpe en pashmina",
+      "src": "7c374cde4e16"
+    },
+    "text.872bc7fce1e1": {
+      "text": "Description du pain salé",
+      "src": "872bc7fce1e1"
+    },
+    "text.ac913e1ab824": {
+      "text": "Description d'une dupatta en coton",
+      "src": "ac913e1ab824"
+    },
+    "text.3d25153c1f1e": {
+      "text": "Description d'un voile fin en soie",
+      "src": "3d25153c1f1e"
+    },
+    "text.7da29a255d0b": {
+      "text": "Description de la noix de coco de Knossos",
+      "src": "7da29a255d0b"
+    },
+    "text.8851ed462d43": {
+      "text": "Description du Kamandala 1,8 l",
+      "src": "8851ed462d43"
+    },
+    "text.5238deeabffd": {
+      "text": "Description du Kamandala 1,4 l",
+      "src": "5238deeabffd"
+    },
+    "text.94d03ed1ad90": {
+      "text": "Description de la barrette à cheveux, 8 cm",
+      "src": "94d03ed1ad90"
+    },
+    "text.2c4b00f84ae9": {
+      "text": "Description de l'autocollant Hanuman",
+      "src": "2c4b00f84ae9"
+    },
+    "text.938cd1e336ad": {
+      "text": "Description du sac Tulasí Japa",
+      "src": "938cd1e336ad"
+    },
+    "text.3c576fa5b23c": {
+      "text": "Description de l'asafoetida 50 g",
+      "src": "3c576fa5b23c"
+    },
+    "text.d78798775ed7": {
+      "text": "Description du bindi coloré",
+      "src": "d78798775ed7"
+    },
+    "text.4e11f5262830": {
+      "text": "Description des bindis ovales rouges",
+      "src": "4e11f5262830"
+    },
+    "text.958ce7c8841a": {
+      "text": "Description des perles « Red Bindi »",
+      "src": "958ce7c8841a"
+    },
+    "text.6329e5400234": {
+      "text": "Description du crochet mural rond",
+      "src": "6329e5400234"
+    },
+    "text.a96b2716fffe": {
+      "text": "Description de la poudre de curcuma",
+      "src": "a96b2716fffe"
+    },
+    "text.8f9ef5851e62": {
+      "text": "Description de la rose de Cnossos",
+      "src": "8f9ef5851e62"
+    },
+    "text.50e8d281126e": {
+      "text": "Description de la FLEUR DE VRINDAVAN",
+      "src": "50e8d281126e"
+    },
+    "text.48dbeba3483f": {
+      "text": "Description de la colle Bindi, 1 ml",
+      "src": "48dbeba3483f"
+    },
+    "text.b432d9c70f16": {
+      "text": "Description des enseignements de Shri Kapila",
+      "src": "b432d9c70f16"
+    },
+    "text.39ba41856510": {
+      "text": "Description du porte-clés « éléphant »",
+      "src": "39ba41856510"
+    },
+    "text.427983cb98bc": {
+      "text": "Description of Mridanga Pendant",
+      "src": "427983cb98bc"
+    },
+    "text.c6e8b161a823": {
+      "text": "Description des paons suspendus",
+      "src": "c6e8b161a823"
+    },
+    "text.daa1aee240e1": {
+      "text": "Description de la cannelle de Knossos",
+      "src": "daa1aee240e1"
+    },
+    "text.887e0351d4a7": {
+      "text": "Description de la lavande de Cnossos",
+      "src": "887e0351d4a7"
+    },
+    "text.71fdb46de65e": {
+      "text": "Description de « Le nectar de la dévotion »",
+      "src": "71fdb46de65e"
+    },
+    "text.2301a744a147": {
+      "text": "Description de la Vjása-púdža 2002",
+      "src": "2301a744a147"
+    },
+    "text.7e485dde0e27": {
+      "text": "Description de la Vjása-púdža 2001",
+      "src": "7e485dde0e27"
+    },
+    "text.e9108f507a2a": {
+      "text": "Description du bracelet en pierres précieuses",
+      "src": "e9108f507a2a"
+    },
+    "text.19c4916f1dd3": {
+      "text": "Description des sacs à main en promotion",
+      "src": "19c4916f1dd3"
+    },
+    "text.18b2c161b2cb": {
+      "text": "Description de mon bien-aimé Shyam",
+      "src": "18b2c161b2cb"
+    },
+    "text.44b7c5458be5": {
+      "text": "Description de l'eau de rose 60 ml",
+      "src": "44b7c5458be5"
+    },
+    "text.b174860f9278": {
+      "text": "Description du pendentif en coquillage",
+      "src": "b174860f9278"
+    },
+    "text.afe72f361697": {
+      "text": "Description du crochet mural carré",
+      "src": "afe72f361697"
+    },
+    "text.eeba388f9653": {
+      "text": "Description du tatouage de papillon",
+      "src": "eeba388f9653"
+    },
+    "text.92a493577606": {
+      "text": "Description du sel noir 100 g",
+      "src": "92a493577606"
+    },
+    "text.cf8bb772624e": {
+      "text": "Description of Metal OM pendant",
+      "src": "cf8bb772624e"
+    },
+    "text.50195e4c61c4": {
+      "text": "Description d'un bougeoir en laiton",
+      "src": "50195e4c61c4"
+    },
+    "text.83298d17918d": {
+      "text": "Description de la camomille de Cnossos",
+      "src": "83298d17918d"
+    },
+    "text.a9ddab02e12c": {
+      "text": "Description d'un voile en soie plus épais",
+      "src": "a9ddab02e12c"
+    },
+    "text.d0b5e35cd538": {
+      "text": "Description du Kamandala 1 litre",
+      "src": "d0b5e35cd538"
+    },
+    "text.c04c77c28335": {
+      "text": "Description du porte-clés Rudraksha",
+      "src": "c04c77c28335"
+    },
+    "text.c546c60e44a1": {
+      "text": "Description des éléphants suspendus",
+      "src": "c546c60e44a1"
+    },
+    "text.57dcce8bc213": {
+      "text": "Description de la barrette, 5,5 cm",
+      "src": "57dcce8bc213"
+    },
+    "text.4e00da3d0c24": {
+      "text": "Description des objets de curiosité – coquillage",
+      "src": "4e00da3d0c24"
+    },
+    "text.ea2ec8657870": {
+      "text": "Description du garam masala de 25 g",
+      "src": "ea2ec8657870"
+    },
+    "text.11168b85fdbd": {
+      "text": "Description du tampon « Tilak », en bois",
+      "src": "11168b85fdbd"
+    },
+    "text.32496267607b": {
+      "text": "Description de l'aloe vera de Knossos",
+      "src": "32496267607b"
+    },
+    "text.cfcc4eb8068f": {
+      "text": "Description du Ganesha coloré",
+      "src": "cfcc4eb8068f"
+    },
+    "text.f194be1c8803": {
+      "text": "Description du gobelet lisse de 250 ml",
+      "src": "f194be1c8803"
+    },
+    "text.033566ab0527": {
+      "text": "Description du roll-on Love 5 ml",
+      "src": "033566ab0527"
+    },
+    "text.8b3d79f7b77f": {
+      "text": "Description du roll-on à la rose 5 ml",
+      "src": "8b3d79f7b77f"
+    },
+    "text.90520a219a4d": {
+      "text": "Description de l'eau de rose 110 ml",
+      "src": "90520a219a4d"
+    },
+    "text.51fb8eff1363": {
+      "text": "Description du pendentif Jagannath",
+      "src": "51fb8eff1363"
+    },
+    "text.ddeaea171229": {
+      "text": "Description des poupées Gaura Nitai",
+      "src": "ddeaea171229"
+    },
+    "text.b9ed18e285e1": {
+      "text": "Description du CD « Krishna », 1re partie",
+      "src": "b9ed18e285e1"
+    },
+    "text.527665ebce27": {
+      "text": "Description d'un châle orné du symbole « Óm »",
+      "src": "527665ebce27"
+    },
+    "text.f602e03df2f9": {
+      "text": "Description d'une rayure bordeaux",
+      "src": "f602e03df2f9"
+    },
+    "text.e683232d0ccd": {
+      "text": "Description d'un bougeoir en verre",
+      "src": "e683232d0ccd"
+    },
+    "text.4dcc20b60ab0": {
+      "text": "Description du produit HONEY SUCKLE 10 ml",
+      "src": "4dcc20b60ab0"
+    },
+    "text.2214bd01000e": {
+      "text": "Description de l'affiche au format A2, Damodar",
+      "src": "2214bd01000e"
+    },
+    "text.ac2e630880cd": {
+      "text": "Description d'une affiche au format A3, Damodar",
+      "src": "ac2e630880cd"
+    },
+    "text.d7f91b873357": {
+      "text": "Description du tablier en coton vert",
+      "src": "d7f91b873357"
+    },
+    "text.188ad73829cf": {
+      "text": "Description de « Chant and Be Happy »",
+      "src": "188ad73829cf"
+    },
+    "text.f83313ddd4d1": {
+      "text": "Description du porte-bâton en métal",
+      "src": "f83313ddd4d1"
+    },
+    "text.c79ef42632bf": {
+      "text": "Description de l'eau du Gange, 400 ml",
+      "src": "c79ef42632bf"
+    },
+    "text.1efa59f71dae": {
+      "text": "Description de la pochette japa pour femme",
+      "src": "1efa59f71dae"
+    },
+    "text.eb1e160f3dac": {
+      "text": "Description de la moutarde noire 50 g",
+      "src": "eb1e160f3dac"
+    },
+    "text.5810093cf9d2": {
+      "text": "Description du gingembre moulu 20 g",
+      "src": "5810093cf9d2"
+    },
+    "text.8dea78794624": {
+      "text": "Description du carvi romain 30 g",
+      "src": "8dea78794624"
+    },
+    "text.f6cb806f1628": {
+      "text": "Description du muguet",
+      "src": "f6cb806f1628"
+    },
+    "text.2aa6a089a56a": {
+      "text": "Description de OCEAN BREEZE 10 ml",
+      "src": "2aa6a089a56a"
+    },
+    "text.98d33c5b4fd5": {
+      "text": "Description du porte-bâton en laiton",
+      "src": "98d33c5b4fd5"
+    },
+    "text.0201a633aa94": {
+      "text": "Description du porte-clés « Soleil », en métal",
+      "src": "0201a633aa94"
+    },
+    "text.adb3105a3d88": {
+      "text": "Description du bindi, taille 9, rouge",
+      "src": "adb3105a3d88"
+    },
+    "text.d8eb0cde9322": {
+      "text": "Description de la teinte « Knossos Dark Olive »",
+      "src": "d8eb0cde9322"
+    },
+    "text.d13c7ae3c5f4": {
+      "text": "Description de la robe Gopi, en coton",
+      "src": "d13c7ae3c5f4"
+    },
+    "text.768b10463766": {
+      "text": "Description du bindi, taille 6, rouge",
+      "src": "768b10463766"
+    },
+    "text.4869d955d1c1": {
+      "text": "Description du bindi, taille 5, rouge",
+      "src": "4869d955d1c1"
+    },
+    "text.13c4f0c587d4": {
+      "text": "Description du bindi, taille 3, rouge",
+      "src": "13c4f0c587d4"
+    },
+    "text.ba8faa3939a6": {
+      "text": "Description du bindi, taille 4, rouge",
+      "src": "ba8faa3939a6"
+    },
+    "text.d52d5a0f2fff": {
+      "text": "Description du bindi « Om » coloré",
+      "src": "d52d5a0f2fff"
+    },
+    "text.d55d08ea8f57": {
+      "text": "Description d'un hibou orné de pierres précieuses",
+      "src": "d55d08ea8f57"
+    },
+    "text.a937dad39378": {
+      "text": "Description du chameau, 9,5 x 9,5 cm",
+      "src": "a937dad39378"
+    },
+    "text.4f9544678596": {
+      "text": "Description d'un sari en soie rouge brique",
+      "src": "4f9544678596"
+    },
+    "text.88814216b39b": {
+      "text": "Description d'un ballon en cuivre de 900 ml",
+      "src": "88814216b39b"
+    },
+    "text.7af8a0031b50": {
+      "text": "Description du porte-bâtons en bois",
+      "src": "7af8a0031b50"
+    },
+    "text.f5040b4e306b": {
+      "text": "Description des bâtonnets d'encens à la rose",
+      "src": "f5040b4e306b"
+    },
+    "text.4d069c5aa9ab": {
+      "text": "Description de la robe Gopi, bleue, taille L",
+      "src": "4d069c5aa9ab"
+    },
+    "text.d5217eed180f": {
+      "text": "Description du savon CHANDRIKA 75 g",
+      "src": "d5217eed180f"
+    },
+    "text.eb05d9ff2cfa": {
+      "text": "Description de la grenade de Cnossos",
+      "src": "eb05d9ff2cfa"
+    },
+    "text.384d14e12eff": {
+      "text": "Description du sari en viscose orange",
+      "src": "384d14e12eff"
+    },
+    "text.bd082601a659": {
+      "text": "Description du roll-on Majmua 5 ml",
+      "src": "bd082601a659"
+    },
+    "text.5e68b576ab4f": {
+      "text": "Description du roll-on Azzaro 5 ml",
+      "src": "5e68b576ab4f"
+    },
+    "text.bc629225b77f": {
+      "text": "Description du roll-on Sandal 5 ml",
+      "src": "bc629225b77f"
+    },
+    "text.6c3af88871e6": {
+      "text": "Description du Damodar 10 x 7,4 cm",
+      "src": "6c3af88871e6"
+    },
+    "text.21ec19bc8a05": {
+      "text": "Description d'une barrette colorée",
+      "src": "21ec19bc8a05"
+    },
+    "text.92cbaa8886c1": {
+      "text": "Description de l&#x27;image en 3D de Nrsimha",
+      "src": "92cbaa8886c1"
+    },
+    "text.9a5e7e136e09": {
+      "text": "Description de la teinte « Olive White » de Knossos",
+      "src": "9a5e7e136e09"
+    },
+    "text.1f3e6a7d36a1": {
+      "text": "Description du Bindi, taille 11, rouge",
+      "src": "1f3e6a7d36a1"
+    },
+    "text.53c35d48f236": {
+      "text": "Description du curcuma liquide 7 g",
+      "src": "53c35d48f236"
+    },
+    "text.65b369423028": {
+      "text": "Description du crayon Pastelkovník",
+      "src": "65b369423028"
+    },
+    "text.14b810f8e27a": {
+      "text": "Description des poupées : vache et veau",
+      "src": "14b810f8e27a"
+    },
+    "text.b1c1680286af": {
+      "text": "Description du collier en bois de santal",
+      "src": "b1c1680286af"
+    },
+    "text.af9c764475e0": {
+      "text": "Description du collier en bois noir",
+      "src": "af9c764475e0"
+    },
+    "text.ac7fd9952baa": {
+      "text": "Description du dhoti blanc, en coton",
+      "src": "ac7fd9952baa"
+    },
+    "text.3accf5d47559": {
+      "text": "41 personnes ont ajouté cette page à leurs favoris sur Vinted",
+      "src": "3accf5d47559"
+    },
+    "text.3c2b12e855fd": {
+      "text": "Description de « Shiva dansant » – bois",
+      "src": "3c2b12e855fd"
+    },
+    "text.198bf6d3f3d6": {
+      "text": "Description des boucles d&#x27;oreilles indiennes longues",
+      "src": "198bf6d3f3d6"
+    },
+    "text.83b397207134": {
+      "text": "Description de ARABIAN NIGHTS 10 ml",
+      "src": "83b397207134"
+    },
+    "text.397d24a1ed50": {
+      "text": "Description d&#x27;un sari en soie bleu brique",
+      "src": "397d24a1ed50"
+    },
+    "text.b7bccf168453": {
+      "text": "Description de la cardamome moulue 15 g",
+      "src": "b7bccf168453"
+    },
+    "text.f27a9a9d6538": {
+      "text": "Description du curcuma moulu, 30 g",
+      "src": "f27a9a9d6538"
+    },
+    "text.03d86c21c63f": {
+      "text": "Description de la couleur marron naturel",
+      "src": "03d86c21c63f"
+    },
+    "text.22afcfe20237": {
+      "text": "Description de la couleur noire naturelle",
+      "src": "22afcfe20237"
+    },
+    "text.dc0a63dc7dc7": {
+      "text": "Description de « La connaissance scientifique de l&#x27;âme »",
+      "src": "dc0a63dc7dc7"
+    },
+    "text.5eec6b71b8e5": {
+      "text": "27 personnes ont ajouté cette page à leurs favoris sur Vinted",
+      "src": "5eec6b71b8e5"
+    },
+    "text.f5c5089f35bc": {
+      "text": "13 personnes ont enregistré cette page sur Vinted",
+      "src": "f5c5089f35bc"
+    },
+    "text.911142020530": {
+      "text": "Description de la robe de bureau au crochet",
+      "src": "911142020530"
+    },
+    "text.70b1eb09cde7": {
+      "text": "Description de l&#x27;asafoetida L.G. 50 g",
+      "src": "70b1eb09cde7"
+    },
+    "text.9fd9f5332c64": {
+      "text": "Description des dessous de verre avec des feuilles",
+      "src": "9fd9f5332c64"
+    },
+    "text.a409bc55b8c8": {
+      "text": "Description du Bindi, taille 5, noir",
+      "src": "a409bc55b8c8"
+    },
+    "text.d0223a1b9046": {
+      "text": "Description de la Gaura Nitai 7 x 5 cm",
+      "src": "d0223a1b9046"
+    },
+    "text.79ab88fe28c7": {
+      "text": "Description des boucles d&#x27;oreilles « Étoile » – Bois",
+      "src": "79ab88fe28c7"
+    },
+    "text.ed710d7e54d9": {
+      "text": "Description de l&#x27;affiche « Shiva » au format A3 dorée",
+      "src": "ed710d7e54d9"
+    },
+    "text.497eaeb437b7": {
+      "text": "Description du châle en pashmina beige",
+      "src": "497eaeb437b7"
+    },
+    "text.09e7f196ac06": {
+      "text": "Description des rayures rouges et dorées",
+      "src": "09e7f196ac06"
+    },
+    "text.a468034507fe": {
+      "text": "Description du Bindi, taille 3, noir",
+      "src": "a468034507fe"
+    },
+    "text.cbfb1fc25172": {
+      "text": "Description de « Les enseignements de la reine Kuntî »",
+      "src": "cbfb1fc25172"
+    },
+    "text.20d49329da28": {
+      "text": "Description du bindi coloré, 1 cm",
+      "src": "20d49329da28"
+    },
+    "text.9f85f7f9d8d0": {
+      "text": "Description de la chaîne à un rang Kantimála",
+      "src": "9f85f7f9d8d0"
+    },
+    "text.bb7e6ca9969c": {
+      "text": "Description du sac à japa de Prabhupada",
+      "src": "bb7e6ca9969c"
+    },
+    "text.3f46489378f7": {
+      "text": "Description de la grande statue de Jagannath",
+      "src": "3f46489378f7"
+    },
+    "text.8db4ddd01043": {
+      "text": "Description of Hanuman metal pendant",
+      "src": "8db4ddd01043"
+    },
+    "text.ca6753f61012": {
+      "text": "Description de l&#x27;autocollant Rādhā-Krishna",
+      "src": "ca6753f61012"
+    },
+    "text.c7964d3c1284": {
+      "text": "Description du Panca Tattva 7 x 5 cm",
+      "src": "c7964d3c1284"
+    },
+    "text.b59db3206619": {
+      "text": "Description du bracelet à embouts métalliques",
+      "src": "b59db3206619"
+    },
+    "text.7ee1ef2ce502": {
+      "text": "Description du haut à imprimé floral, taille S/M",
+      "src": "7ee1ef2ce502"
+    },
+    "text.39ff77033f0d": {
+      "text": "Description de « La science de l'épanouissement personnel »",
+      "src": "39ff77033f0d"
+    },
+    "text.277417c32308": {
+      "text": "Description de la pochette pour enfants Japa",
+      "src": "277417c32308"
+    },
+    "text.1fc6ade83be8": {
+      "text": "Description de la coriandre moulue, 35 g",
+      "src": "1fc6ade83be8"
+    },
+    "text.6e15d6ef73a4": {
+      "text": "Description de la teinte « cuivre naturel »",
+      "src": "6e15d6ef73a4"
+    },
+    "text.449e89f21184": {
+      "text": "Description du shampooing « Natural Black »",
+      "src": "449e89f21184"
+    },
+    "text.f8ca7f18a47d": {
+      "text": "Description de la robe grise à manches 3/4",
+      "src": "f8ca7f18a47d"
+    },
+    "text.c8001f8fe17f": {
+      "text": "Description de l'asafoetida L.G. 100 g",
+      "src": "c8001f8fe17f"
+    },
+    "text.2e7d0406c435": {
+      "text": "Description de la cannelle moulue, 25 g",
+      "src": "2e7d0406c435"
+    },
+    "text.f95900484b9d": {
+      "text": "Description d'un éléphant sculpté, 5 cm",
+      "src": "f95900484b9d"
+    },
+    "text.2fd9db53fc95": {
+      "text": "Description de la statue de Ganesh (en résine), grand format",
+      "src": "2fd9db53fc95"
+    },
+    "text.ff310d1fe528": {
+      "text": "Description des disques Bindi colorés",
+      "src": "ff310d1fe528"
+    },
+    "text.8f76df83ccce": {
+      "text": "Description du porte-biscuits à motif floral",
+      "src": "8f76df83ccce"
+    },
+    "text.cef635afb5d7": {
+      "text": "Description des bâtonnets d'encens Vrinda",
+      "src": "cef635afb5d7"
+    },
+    "text.569dea5b9c80": {
+      "text": "Description du shampoing « Natural brown »",
+      "src": "569dea5b9c80"
+    },
+    "text.0e88088b1af8": {
+      "text": "Description of Small Nrsimha pendant",
+      "src": "0e88088b1af8"
+    },
+    "text.344df4b2cbd8": {
+      "text": "Description of Large Nrsimha pendant",
+      "src": "344df4b2cbd8"
+    },
+    "text.39817f211a09": {
+      "text": "Description des tatouages autocollants dorés",
+      "src": "39817f211a09"
+    },
+    "text.43c7d458c466": {
+      "text": "Description de l'affiche au format A3 : Rása Dance",
+      "src": "43c7d458c466"
+    },
+    "text.f1fd0909162b": {
+      "text": "Description du fenugrec moulu, 30 g",
+      "src": "f1fd0909162b"
+    },
+    "text.f0896bbb1a0d": {
+      "text": "Description des bâtonnets d'encens à base de plantes",
+      "src": "f0896bbb1a0d"
+    },
+    "text.fb02ea50af9d": {
+      "text": "Description de l'image en 3D de Prabhupada",
+      "src": "fb02ea50af9d"
+    },
+    "text.c288c397a87d": {
+      "text": "Description des bâtonnets d'encens au jasmin",
+      "src": "c288c397a87d"
+    },
+    "text.db9b6f52cf56": {
+      "text": "Description d'un châle en laine de Kashgiri",
+      "src": "db9b6f52cf56"
+    },
+    "text.b00b0bf4669c": {
+      "text": "Description of Medium Nrsimha pendant",
+      "src": "b00b0bf4669c"
+    },
+    "text.c48298cc7eac": {
+      "text": "Description de la pochette Japa rouge pour femme",
+      "src": "c48298cc7eac"
+    },
+    "text.65f6ba037832": {
+      "text": "Description de la machine à coudre, taille L",
+      "src": "65f6ba037832"
+    },
+    "text.cc09931c0ea2": {
+      "text": "Description des aiguilles à coudre, taille M",
+      "src": "cc09931c0ea2"
+    },
+    "text.6537acae6035": {
+      "text": "Description de la machine à coudre, taille S",
+      "src": "6537acae6035"
+    },
+    "text.07fec7c0a36a": {
+      "text": "Description de la pochette brodée",
+      "src": "07fec7c0a36a"
+    },
+    "text.0b67a038eae6": {
+      "text": "Description de la teinture capillaire noire naturelle",
+      "src": "0b67a038eae6"
+    },
+    "text.e10ab4dfd8ae": {
+      "text": "Description d'une teinture capillaire brune naturelle",
+      "src": "e10ab4dfd8ae"
+    },
+    "text.380023bc6f25": {
+      "text": "Description du dentifrice au neem 100 ml",
+      "src": "380023bc6f25"
+    },
+    "text.2ae18c50879e": {
+      "text": "Description des 108 recettes de Góvinda",
+      "src": "2ae18c50879e"
+    },
+    "text.9500a1b1f847": {
+      "text": "Description de la pochette japa blanche pour homme",
+      "src": "9500a1b1f847"
+    },
+    "text.db021b4164a1": {
+      "text": "Description du bindi coloré, 1,8 cm",
+      "src": "db021b4164a1"
+    },
+    "text.788668765ef1": {
+      "text": "Description de la robe midi enveloppante violette",
+      "src": "788668765ef1"
+    },
+    "text.51d0a3e90f9c": {
+      "text": "Description du roll-on Afrodesia 5 ml",
+      "src": "51d0a3e90f9c"
+    },
+    "text.438ae4a894f0": {
+      "text": "Description du sac à main bleu et blanc",
+      "src": "438ae4a894f0"
+    },
+    "text.5d08134eb6c8": {
+      "text": "Description des bâtonnets d'encens Everest",
+      "src": "5d08134eb6c8"
+    },
+    "text.b866ee9e4a55": {
+      "text": "Description du dentifrice Vicco 100 g",
+      "src": "b866ee9e4a55"
+    },
+    "text.dcdbc8036c10": {
+      "text": "Description du bracelet en métal HANUMÁN",
+      "src": "dcdbc8036c10"
+    },
+    "text.e6de326f1dde": {
+      "text": "Description de l'autocollant en bois « Damodar »",
+      "src": "e6de326f1dde"
+    },
+    "text.b4fe676b4183": {
+      "text": "Description du bindi coloré, 1,7 cm",
+      "src": "b4fe676b4183"
+    },
+    "text.98b4b1f5414d": {
+      "text": "Description des tatouages temporaires verts",
+      "src": "98b4b1f5414d"
+    },
+    "text.0c853b7afa83": {
+      "text": "Description d'une rayure rose et dorée",
+      "src": "0c853b7afa83"
+    },
+    "text.8d31a74410e9": {
+      "text": "Description du bindi coloré, 1,6 cm",
+      "src": "8d31a74410e9"
+    },
+    "text.a8aa973e3a59": {
+      "text": "Description des bâtonnets d'encens Darshan",
+      "src": "a8aa973e3a59"
+    },
+    "text.22189e317eac": {
+      "text": "Description d'une rayure bleue et dorée",
+      "src": "22189e317eac"
+    },
+    "text.34a1c6bc3fc3": {
+      "text": "Description de l'affiche au format A3+ : Rása Dance",
+      "src": "34a1c6bc3fc3"
+    },
+    "text.f7634fec15a0": {
+      "text": "Description des bâtonnets d'encens Manjari",
+      "src": "f7634fec15a0"
+    },
+    "text.2b3e59446554": {
+      "text": "Description des poupées représentant Rādhā et Kṛṣṇa",
+      "src": "2b3e59446554"
+    },
+    "text.12dd96b5f072": {
+      "text": "Description de « Que le Champa s'épanouisse »",
+      "src": "12dd96b5f072"
+    },
+    "text.19d77de50d4f": {
+      "text": "Description du pantalon pour homme – bhakta",
+      "src": "19d77de50d4f"
+    },
+    "text.c810dbf6d043": {
+      "text": "Description d'un gobelet rayé de 250 ml",
+      "src": "c810dbf6d043"
+    },
+    "text.de23272ad775": {
+      "text": "Description de la statue de Gaura Nitai, 12 x 9,5 cm",
+      "src": "de23272ad775"
+    },
+    "text.e8d70a089eda": {
+      "text": "Description du Tilak Gopi Chandan 68 g",
+      "src": "e8d70a089eda"
+    },
+    "text.636cabfbdebb": {
+      "text": "Description de la pochette Japa, jaune foncé",
+      "src": "636cabfbdebb"
+    },
+    "text.3a94fc2633a6": {
+      "text": "Description de l'autocollant « Oval Prabhupada »",
+      "src": "3a94fc2633a6"
+    },
+    "text.4133304be046": {
+      "text": "Description de l'autocollant doré « Prabhupada »",
+      "src": "4133304be046"
+    },
+    "text.8c6937ef8294": {
+      "text": "Description de la couleur bordeaux naturelle",
+      "src": "8c6937ef8294"
+    },
+    "text.308f5a0438d5": {
+      "text": "Description de la couleur « châtaigne naturel »",
+      "src": "308f5a0438d5"
+    },
+    "text.17bdfe4b0be9": {
+      "text": "Description du dentifrice Clove 100 ml",
+      "src": "17bdfe4b0be9"
+    },
+    "text.1114bda75e2b": {
+      "text": "Description de « La vie vient de la vie »",
+      "src": "1114bda75e2b"
+    },
+    "text.bc11f0abb88c": {
+      "text": "Description du t-shirt Krishna, taille S",
+      "src": "bc11f0abb88c"
+    },
+    "text.64a10905bd5b": {
+      "text": "Description du bracelet en bois et en pierre",
+      "src": "64a10905bd5b"
+    },
+    "text.38ac50c7eac3": {
+      "text": "Description d'un petit éléphant coloré",
+      "src": "38ac50c7eac3"
+    },
+    "text.a60bfa39343c": {
+      "text": "Description du pendentif Nrsimha de petite taille",
+      "src": "a60bfa39343c"
+    },
+    "text.0b690a59ebd3": {
+      "text": "Description du savon au santal de Mysore, 75 g",
+      "src": "0b690a59ebd3"
+    },
+    "text.d66050b8fcdf": {
+      "text": "Description de la taie d'oreiller « Chouette » 39 x 39 cm",
+      "src": "d66050b8fcdf"
+    },
+    "text.fb5a8f491d7b": {
+      "text": "Description de la taie d'oreiller « Hibou » 40 x 40 cm",
+      "src": "fb5a8f491d7b"
+    },
+    "text.9022a8a835de": {
+      "text": "Description du calendrier vaishnava 2026",
+      "src": "9022a8a835de"
+    },
+    "text.d814adafa759": {
+      "text": "Description du porte-clés Jagannath, en bois",
+      "src": "d814adafa759"
+    },
+    "text.1dd0337fc1ef": {
+      "text": "Description de Radha Krishna, 12 x 9 cm",
+      "src": "1dd0337fc1ef"
+    },
+    "text.4d1952b45889": {
+      "text": "Description d'un éléphant sculpté, 7,8 cm",
+      "src": "4d1952b45889"
+    },
+    "text.27990016baae": {
+      "text": "Description de la déesse Lakshmi, 5&quot;",
+      "src": "27990016baae"
+    },
+    "text.d26e3995ec91": {
+      "text": "Description du roll-on au bois de cèdre, 5 ml",
+      "src": "d26e3995ec91"
+    },
+    "text.074407267e05": {
+      "text": "Description du t-shirt Krishna, taille L",
+      "src": "074407267e05"
+    },
+    "text.94a3da832fc0": {
+      "text": "Description du t-shirt Krishna, taille M",
+      "src": "94a3da832fc0"
+    },
+    "text.c1a84caf7dbc": {
+      "text": "Description du bindi, taille 5, rouge foncé",
+      "src": "c1a84caf7dbc"
+    },
+    "text.159caecb1b6d": {
+      "text": "Description des cartes, d'un diamètre de 8 cm",
+      "src": "159caecb1b6d"
+    },
+    "text.4b96c9308517": {
+      "text": "Description du Bindi, taille 8, bordeaux",
+      "src": "4b96c9308517"
+    },
+    "text.373c51ace74c": {
+      "text": "Description de la teinte « acajou naturel »",
+      "src": "373c51ace74c"
+    },
+    "text.eabae94f341f": {
+      "text": "Description d'un mug rayé de 650 ml",
+      "src": "eabae94f341f"
+    },
+    "text.27507f8df815": {
+      "text": "Description du Bindi, taille 9, bordeaux",
+      "src": "27507f8df815"
+    },
+    "text.121816b98d5c": {
+      "text": "Description d'un éléphant sculpté, 6,5 cm",
+      "src": "121816b98d5c"
+    },
+    "text.f899d4d1beec": {
+      "text": "Description de la statue de Shiva de 5&amp;quot;",
+      "src": "f899d4d1beec"
+    },
+    "text.cce3f51e6e84": {
+      "text": "Description du Bindi, taille 3, dans sa boîte",
+      "src": "cce3f51e6e84"
+    },
+    "text.2de8b1a0c900": {
+      "text": "Description de la pochette Japa en soie naturelle",
+      "src": "2de8b1a0c900"
+    },
+    "text.fa143d944439": {
+      "text": "Description des tatouages temporaires argentés",
+      "src": "fa143d944439"
+    },
+    "text.444ac00acb1f": {
+      "text": "Description des tatouages autocollants jaunes",
+      "src": "444ac00acb1f"
+    },
+    "text.068ef5d4538c": {
+      "text": "Description de la cuillère à café de 12 cm, 6 modèles",
+      "src": "068ef5d4538c"
+    },
+    "text.7803e9c728ad": {
+      "text": "Description des bâtonnets d'encens Ecoaldea",
+      "src": "7803e9c728ad"
+    },
+    "text.7a0b09a3b1f5": {
+      "text": "Description du pot de rinçage nasal – cuivre",
+      "src": "7a0b09a3b1f5"
+    },
+    "text.2eefa50ef5c0": {
+      "text": "Description du bougeoir en laiton « Taller »",
+      "src": "2eefa50ef5c0"
+    },
+    "text.c545ce532fc2": {
+      "text": "Description du t-shirt Arjuna, taille S/M",
+      "src": "c545ce532fc2"
+    },
+    "text.f484d453a1ef": {
+      "text": "Description du Tilak Gopi Chandan 130 g",
+      "src": "f484d453a1ef"
+    },
+    "text.96ea1e0a804a": {
+      "text": "Description de la pochette japa noire pour femme",
+      "src": "96ea1e0a804a"
+    },
+    "text.4f8234346925": {
+      "text": "Description de la pochette unie Japa",
+      "src": "4f8234346925"
+    },
+    "text.419595806ebd": {
+      "text": "Description de la pochette « japa » verte pour femme",
+      "src": "419595806ebd"
+    },
+    "text.33589237718e": {
+      "text": "Description d'une petite boîte rouge du Rajasthan",
+      "src": "33589237718e"
+    },
+    "text.b78575a9aed9": {
+      "text": "Description d'une grande boîte rouge du Rajasthan",
+      "src": "b78575a9aed9"
+    },
+    "text.29fa52a63de5": {
+      "text": "Description de l'éléphant peint, 7 x 9 cm",
+      "src": "29fa52a63de5"
+    },
+    "text.77234f4e5784": {
+      "text": "Description d'un haut bleu pour fille, taille 22",
+      "src": "77234f4e5784"
+    },
+    "text.457cddaa96ea": {
+      "text": "Description du petit pendentif Nrsimhadev",
+      "src": "457cddaa96ea"
+    },
+    "text.ce1d287c6fd6": {
+      "text": "Description des boucles d'oreilles en bois, 2 modèles",
+      "src": "ce1d287c6fd6"
+    },
+    "text.c08cda78427d": {
+      "text": "Description d'une bouilloire en cuivre de 1,25 litre",
+      "src": "c08cda78427d"
+    },
+    "text.48773cc5cd4d": {
+      "text": "Description du cumin romain moulu, 15 g",
+      "src": "48773cc5cd4d"
+    },
+    "text.3e0a88821872": {
+      "text": "Description du shampooing « Mahogany Natural »",
+      "src": "3e0a88821872"
+    },
+    "text.650c1c765948": {
+      "text": "Description du shampoing « Natural Bordeaux »",
+      "src": "650c1c765948"
+    },
+    "text.b97e78dd1ec8": {
+      "text": "Description du shampoing naturel à la châtaigne",
+      "src": "b97e78dd1ec8"
+    },
+    "text.89b5ebf9eb62": {
+      "text": "Description du dentifrice Miswak 100 ml",
+      "src": "89b5ebf9eb62"
+    },
+    "text.087bce63f4f5": {
+      "text": "Description du porte-clés en caoutchouc Jagannath",
+      "src": "087bce63f4f5"
+    },
+    "text.26b07ec2c37e": {
+      "text": "Description du sac à japa « Brown Jagannath »",
+      "src": "26b07ec2c37e"
+    },
+    "text.0fe1e0804241": {
+      "text": "Description du sac à japa beige « Jagannáth »",
+      "src": "0fe1e0804241"
+    },
+    "text.126b47cbf79c": {
+      "text": "Description du sac à japa de Joy Narasimha",
+      "src": "126b47cbf79c"
+    },
+    "text.fcf13a1abcdd": {
+      "text": "Description du porte-clés Jagannath, en métal",
+      "src": "fcf13a1abcdd"
+    },
+    "text.6b231cdca3e8": {
+      "text": "Description des bâtonnets d'encens Sarasvati",
+      "src": "6b231cdca3e8"
+    },
+    "text.380d258b724f": {
+      "text": "Description d'un éléphant sculpté, 10,5 cm",
+      "src": "380d258b724f"
+    },
+    "text.d70131e28d84": {
+      "text": "Description de l'œuvre en 3D « Jagannath », 9 x 9 cm",
+      "src": "d70131e28d84"
+    },
+    "text.f530bb95961a": {
+      "text": "Description de l'autocollant en bois « Jagannath »",
+      "src": "f530bb95961a"
+    },
+    "text.2c9bd117d3b4": {
+      "text": "Description du roll-on à l'ylang-ylang 5 ml",
+      "src": "2c9bd117d3b4"
+    },
+    "text.73fbd6c9a4f8": {
+      "text": "Description du Bindi, taille 11, rouge foncé",
+      "src": "73fbd6c9a4f8"
+    },
+    "text.d8f0232bbb63": {
+      "text": "Description d'une poignée de meuble en céramique",
+      "src": "d8f0232bbb63"
+    },
+    "text.231ead4ffbbe": {
+      "text": "Description de l'écharpe en coton batik vert",
+      "src": "231ead4ffbbe"
+    },
+    "text.100989b73c7c": {
+      "text": "Description du bindi, taille 1, rouge/noir",
+      "src": "100989b73c7c"
+    },
+    "text.7c7696e5b05e": {
+      "text": "Description du bracelet OM double blanc",
+      "src": "7c7696e5b05e"
+    },
+    "text.653cbdc80df9": {
+      "text": "Description de « Une vache avec son veau », en métal",
+      "src": "653cbdc80df9"
+    },
+    "text.bd4eec83df76": {
+      "text": "Description de la robe boutonnée, taille 40",
+      "src": "bd4eec83df76"
+    },
+    "text.98542595dd05": {
+      "text": "Description des bâtonnets d'encens au musc pur",
+      "src": "98542595dd05"
+    },
+    "text.51933f8b9f17": {
+      "text": "Description des bâtonnets d'encens Jagannáth",
+      "src": "51933f8b9f17"
+    },
+    "text.2f589d9263da": {
+      "text": "Description du collier de perles jaune style bohème",
+      "src": "2f589d9263da"
+    },
+    "text.0ff3945db6f8": {
+      "text": "Description de l'ensemble pour garçon, vert, taille 20",
+      "src": "0ff3945db6f8"
+    },
+    "text.6a4203fde250": {
+      "text": "Description de l'ensemble pour garçon, marron, taille 26",
+      "src": "6a4203fde250"
+    },
+    "text.560c9ef7362a": {
+      "text": "Description des bâtonnets d'encens au bois de santal",
+      "src": "560c9ef7362a"
+    },
+    "text.0ddf05eef1ca": {
+      "text": "Description de la pochette japa dorée pour femme",
+      "src": "0ddf05eef1ca"
+    },
+    "text.56d0a7bae673": {
+      "text": "Description des figurines de Ganesha à suspendre",
+      "src": "56d0a7bae673"
+    },
+    "text.33094c92cdbf": {
+      "text": "Description d'une grande boîte bleue du Rajasthan",
+      "src": "33094c92cdbf"
+    },
+    "text.1fce200765b7": {
+      "text": "Description d'une grande boîte rose du Rajasthan",
+      "src": "1fce200765b7"
+    },
+    "text.bc96e8ddf2f3": {
+      "text": "Description d'un grand coffret en or du Rajasthan",
+      "src": "bc96e8ddf2f3"
+    },
+    "text.f1f224110e59": {
+      "text": "Description d'une grande lampe, 10 x 4 x 4 cm",
+      "src": "f1f224110e59"
+    },
+    "text.4f9d59c8e1d2": {
+      "text": "Description des boucles d'oreilles « White/Black Star »",
+      "src": "4f9d59c8e1d2"
+    },
+    "text.d6aa25a8cf78": {
+      "text": "Description de l'autocollant ovale « Hare Krishna »",
+      "src": "d6aa25a8cf78"
+    },
+    "text.dd271da5560b": {
+      "text": "Description de Cnossos ornée de feuilles d'olivier",
+      "src": "dd271da5560b"
+    },
+    "text.f82d40aea776": {
+      "text": "Description des boucles d'oreilles en forme de fleur, 2 modèles",
+      "src": "f82d40aea776"
+    },
+    "text.d77b9102571c": {
+      "text": "Description du bracelet en béryl et cuivre",
+      "src": "d77b9102571c"
+    },
+    "text.9ad275576f0a": {
+      "text": "Description du sac à japa gris « Gaura Nitai »",
+      "src": "9ad275576f0a"
+    },
+    "text.5f3abe323db4": {
+      "text": "Description du Bindi, taille 7, rose/vert",
+      "src": "5f3abe323db4"
+    },
+    "text.818f09574980": {
+      "text": "Description du livre de cuisine « The Higher Taste »",
+      "src": "818f09574980"
+    },
+    "text.93d3a91b63a3": {
+      "text": "Description du présentoir à bâtonnets de bretzel – boîte",
+      "src": "93d3a91b63a3"
+    },
+    "text.9369b7fb6cbb": {
+      "text": "Description des bâtonnets d'encens Nag Champa",
+      "src": "9369b7fb6cbb"
+    },
+    "text.fa8571a92057": {
+      "text": "Description d'un porte-crayons en forme de main",
+      "src": "fa8571a92057"
+    },
+    "text.41dd1fa1637d": {
+      "text": "Description de « Une bande verte est en feu »",
+      "src": "41dd1fa1637d"
+    },
+    "text.5a7429df7341": {
+      "text": "Description du chameau, 8,5 x 8,5 cm, vert",
+      "src": "5a7429df7341"
+    },
+    "text.0188f71f2a28": {
+      "text": "Description des cubes Bindi couleur vin",
+      "src": "0188f71f2a28"
+    },
+    "text.024a16fa7ebf": {
+      "text": "Description d'une statue de Ganesha en bois",
+      "src": "024a16fa7ebf"
+    },
+    "text.e7ef9ba31e3b": {
+      "text": "Description : un couvre-lit simple, un oreiller",
+      "src": "e7ef9ba31e3b"
+    },
+    "text.35a625dfa92e": {
+      "text": "Description du Panca Tattva bleu 7 x 5 cm",
+      "src": "35a625dfa92e"
+    },
+    "text.bfc824b4c89a": {
+      "text": "Description des perles à l'effigie du Bouddha",
+      "src": "bfc824b4c89a"
+    },
+    "text.7408977dd605": {
+      "text": "Description de l'ensemble rayé pour garçon, taille 24",
+      "src": "7408977dd605"
+    },
+    "text.3b81e8b40090": {
+      "text": "Description du t-shirt Trinavarta, taille L",
+      "src": "3b81e8b40090"
+    },
+    "text.0643c5952a63": {
+      "text": "Description du couvre-lit simple en patchwork",
+      "src": "0643c5952a63"
+    },
+    "text.39926215f5f9": {
+      "text": "Description d'une bouilloire à couvercle à charnière",
+      "src": "39926215f5f9"
+    },
+    "text.5f9640d05e9c": {
+      "text": "Description de la boîte « Rajasthan », rouge, taille moyenne",
+      "src": "5f9640d05e9c"
+    },
+    "text.a964ae8859a9": {
+      "text": "Description d'une grande boîte verte du Rajasthan",
+      "src": "a964ae8859a9"
+    },
+    "text.d6abafb022d9": {
+      "text": "Description du t-shirt « Shri Radha Krishna »",
+      "src": "d6abafb022d9"
+    },
+    "text.70f1052bccf9": {
+      "text": "Description du Maháprasádam – Čidva 200 g",
+      "src": "70f1052bccf9"
+    },
+    "text.1ee956a2a948": {
+      "text": "Description du lot de 24 bracelets nervurés",
+      "src": "1ee956a2a948"
+    },
+    "text.e88a096f82c3": {
+      "text": "Description du lot de 4 bracelets torsadés",
+      "src": "e88a096f82c3"
+    },
+    "text.2b0d5279338d": {
+      "text": "Description du fenugrec – « foin grec » 40 g",
+      "src": "2b0d5279338d"
+    },
+    "text.990f33c4e169": {
+      "text": "Description du lot de 24 bracelets jaunes",
+      "src": "990f33c4e169"
+    },
+    "text.f6ec709e49e8": {
+      "text": "Description du lot de 8 bracelets de mariage",
+      "src": "f6ec709e49e8"
+    },
+    "text.35c9c8f8486d": {
+      "text": "Description des boucles d'oreilles pendantes",
+      "src": "35c9c8f8486d"
+    },
+    "text.3551ca8608a7": {
+      "text": "Description de la combinaison courte | Forever21",
+      "src": "3551ca8608a7"
+    },
+    "text.b0899588ba87": {
+      "text": "Description d'une statue en métal représentant Radha et Krishna",
+      "src": "b0899588ba87"
+    },
+    "text.20f504df8f2d": {
+      "text": "Description d'une statue dorée représentant Radha et Krishna",
+      "src": "20f504df8f2d"
+    },
+    "text.eaaf7ae9ff31": {
+      "text": "Description des disques Bindi rouges et dorés 2",
+      "src": "eaaf7ae9ff31"
+    },
+    "text.73b84f90c46e": {
+      "text": "Description des disques Bindi rouges et dorés 1",
+      "src": "73b84f90c46e"
+    },
+    "text.8520592e3458": {
+      "text": "Description de la bague « Fleur » avec un œillet",
+      "src": "8520592e3458"
+    },
+    "text.c5f65bf6376c": {
+      "text": "Description des bâtonnets d'encens Tulsi Flora",
+      "src": "c5f65bf6376c"
+    },
+    "text.10983e010e73": {
+      "text": "Description du bracelet Rudraksha plus petit",
+      "src": "10983e010e73"
+    },
+    "text.ea0e4cfb4c5e": {
+      "text": "Description du sac à japa peint représentant Jagannath",
+      "src": "ea0e4cfb4c5e"
+    },
+    "text.da4b2da1a796": {
+      "text": "Description de la robe boutonnée à bretelles, taille L",
+      "src": "da4b2da1a796"
+    },
+    "text.d838d93fc8d6": {
+      "text": "Description du japa mala à perles rondes",
+      "src": "d838d93fc8d6"
+    },
+    "text.f2f689488bcd": {
+      "text": "Description du bindi, taille 5, vert/noir",
+      "src": "f2f689488bcd"
+    },
+    "text.a0d1807f1034": {
+      "text": "Description d'un sari en coton batik bordeaux",
+      "src": "a0d1807f1034"
+    },
+    "text.60b6a8a74338": {
+      "text": "Description des tatouages autocollants colorés",
+      "src": "60b6a8a74338"
+    },
+    "text.23d1c340be31": {
+      "text": "Description du Bindi, taille 6, vert/noir",
+      "src": "23d1c340be31"
+    },
+    "text.f42fb52ea14d": {
+      "text": "Description du Bindi dans un coffret cadeau plus grand",
+      "src": "f42fb52ea14d"
+    },
+    "text.0ba722bd9f87": {
+      "text": "Description d'une bague en cuivre et en laiton",
+      "src": "0ba722bd9f87"
+    },
+    "text.8e7227beb6d2": {
+      "text": "Description du poivre de Cayenne moulu, 20 g",
+      "src": "8e7227beb6d2"
+    },
+    "text.2d0bac1205be": {
+      "text": "Description de l'éléphant en céramique, 3 x 7 cm",
+      "src": "2d0bac1205be"
+    },
+    "text.0ffafd10ade1": {
+      "text": "Description des poupées Nrsimha et Prahlád",
+      "src": "0ffafd10ade1"
+    },
+    "text.8618f0e92154": {
+      "text": "Description de l'ensemble boucles d'oreilles et tikka, rouge",
+      "src": "8618f0e92154"
+    },
+    "text.256b96d5c07b": {
+      "text": "Description du châle chaud, 20 % laine, marron",
+      "src": "256b96d5c07b"
+    },
+    "text.04abc2cd9c7d": {
+      "text": "Description du t-shirt Jogí, tailles M et L",
+      "src": "04abc2cd9c7d"
+    },
+    "text.9e4847d143fb": {
+      "text": "Description du foulard OSWAL, gris/marron",
+      "src": "9e4847d143fb"
+    },
+    "text.725c4bce3e2b": {
+      "text": "Description de la plaque n° 3 à trois compartiments",
+      "src": "725c4bce3e2b"
+    },
+    "text.bf3ead4f1408": {
+      "text": "Description de la pochette Japa bordeaux pour femme",
+      "src": "bf3ead4f1408"
+    },
+    "text.ebb517b7727f": {
+      "text": "Description d'une petite boîte violette du Rajasthan",
+      "src": "ebb517b7727f"
+    },
+    "text.79209988e443": {
+      "text": "Description d'une grande boîte en argent du Rajasthan",
+      "src": "79209988e443"
+    },
+    "text.913f4c58f3d1": {
+      "text": "Description d'une grande boîte violette du Rajasthan",
+      "src": "913f4c58f3d1"
+    },
+    "text.e440a470c370": {
+      "text": "Description d'une grande boîte orange du Rajasthan",
+      "src": "e440a470c370"
+    },
+    "text.7d36d4260ff9": {
+      "text": "Description d'un sari en soie bordeaux et or",
+      "src": "7d36d4260ff9"
+    },
+    "text.81169e603c50": {
+      "text": "Description du pantalon Bhakta blanc pour homme",
+      "src": "81169e603c50"
+    },
+    "text.174e4e40042c": {
+      "text": "Description du bracelet en laiton HARE KRISHNA",
+      "src": "174e4e40042c"
+    },
+    "text.2d402bc13ce7": {
+      "text": "Description des graines de coriandre entières, 20 g",
+      "src": "2d402bc13ce7"
+    },
+    "text.21ca3e1e9da1": {
+      "text": "Description de la Śrī Īśopaniṣad (version vietnamienne)",
+      "src": "21ca3e1e9da1"
+    },
+    "text.08108a2e64e3": {
+      "text": "Description du pantalon Bhakta pour homme, bleu",
+      "src": "08108a2e64e3"
+    },
+    "text.c5400c1d0033": {
+      "text": "Description du pantalon rouge et gris pour homme",
+      "src": "c5400c1d0033"
+    },
+    "text.05b5eca56b38": {
+      "text": "Description d'une grande lampe, 13,5 x 5 x 5 cm",
+      "src": "05b5eca56b38"
+    },
+    "text.1ae75f53dab2": {
+      "text": "Description des chaussettes avec 3 paires de clochettes",
+      "src": "1ae75f53dab2"
+    },
+    "text.0f28d845e56d": {
+      "text": "Description des bâtonnets d'encens « Tulsí Masala »",
+      "src": "0f28d845e56d"
+    },
+    "text.18c62e8a62d5": {
+      "text": "Description de la bague à œillet avec boucles, en argent",
+      "src": "18c62e8a62d5"
+    },
+    "text.c41bc29b777e": {
+      "text": "Description des chaussettes avec 4 paires de clochettes",
+      "src": "c41bc29b777e"
+    },
+    "text.0188afa9f688": {
+      "text": "Description du savon ayurvédique Medimix 75 g",
+      "src": "0188afa9f688"
+    },
+    "text.3167c6bfe81b": {
+      "text": "Description du porte-clés rond avec miroirs",
+      "src": "3167c6bfe81b"
+    },
+    "text.e2fbcbdb0110": {
+      "text": "Description de l'autocollant rond Jagannath S/L",
+      "src": "e2fbcbdb0110"
+    },
+    "text.fe51503f1e57": {
+      "text": "Description des bâtonnets d'encens « Special Rose »",
+      "src": "fe51503f1e57"
+    },
+    "text.6d7473c5a11a": {
+      "text": "Description d'un collier noir avec fermoir",
+      "src": "6d7473c5a11a"
+    },
+    "text.45566ce33c3f": {
+      "text": "Description du bindi rouge, taille 4, présenté dans une boîte",
+      "src": "45566ce33c3f"
+    },
+    "text.a50064223155": {
+      "text": "Description du Bindi, taille 7, rouge/bordeaux",
+      "src": "a50064223155"
+    },
+    "text.0eea41ea66fc": {
+      "text": "Description du bindi, taille 2, rouge, 2 modèles",
+      "src": "0eea41ea66fc"
+    },
+    "text.f2c91c6847e8": {
+      "text": "Description des perles brunes, petites et grandes",
+      "src": "f2c91c6847e8"
+    },
+    "text.c105c4644c51": {
+      "text": "Description de Ganesha sur un trône – laiton",
+      "src": "c105c4644c51"
+    },
+    "text.bde503d54cc5": {
+      "text": "Description du tatouage autocollant vert clair",
+      "src": "bde503d54cc5"
+    },
+    "text.43e0a15d45eb": {
+      "text": "Description du bindi, taille 0, rouge/bordeaux",
+      "src": "43e0a15d45eb"
+    },
+    "text.72d0e27c3c2e": {
+      "text": "Description : 80 % soie, couleur blanche/ivoire",
+      "src": "72d0e27c3c2e"
+    },
+    "text.ecb9965e65f6": {
+      "text": "Description d'un grand parampara, 7,5 x 26 cm",
+      "src": "ecb9965e65f6"
+    },
+    "text.f79d4f1d57cc": {
+      "text": "Description du Parampara, format moyen, 5 x 16 cm",
+      "src": "f79d4f1d57cc"
+    },
+    "text.5cfacff9d6a6": {
+      "text": "Description de la pochette à japa pour homme, bleu uni",
+      "src": "5cfacff9d6a6"
+    },
+    "text.29987e0ebcf4": {
+      "text": "Description de Prabhupáda (édition russe)",
+      "src": "29987e0ebcf4"
+    },
+    "text.e3a3750aed3b": {
+      "text": "Description du t-shirt Gopas, noir, taille L",
+      "src": "e3a3750aed3b"
+    },
+    "text.f95930d02e44": {
+      "text": "Description des boucles d'oreilles papillon, 2 modèles",
+      "src": "f95930d02e44"
+    },
+    "text.0a4de6caa518": {
+      "text": "Description de la couleur blond doré naturel",
+      "src": "0a4de6caa518"
+    },
+    "text.e1b16413c39e": {
+      "text": "Description de la couleur de cheveux « acajou naturel »",
+      "src": "e1b16413c39e"
+    },
+    "text.c3a8c6840a50": {
+      "text": "Description du modèle MUSK avec un autocollant coloré",
+      "src": "c3a8c6840a50"
+    },
+    "text.341abd876049": {
+      "text": "Description du paon coloré, 9 x 15 cm",
+      "src": "341abd876049"
+    },
+    "text.a98e2a14c602": {
+      "text": "Description de la jupe évasée noire et blanche",
+      "src": "a98e2a14c602"
+    },
+    "text.96dc94e88bde": {
+      "text": "Description de la collection Kantimála, 2e série, ovales",
+      "src": "96dc94e88bde"
+    },
+    "text.ce396b0270fd": {
+      "text": "Description du petit parampara, 3,5 x 12 cm",
+      "src": "ce396b0270fd"
+    },
+    "text.a98a33dc8501": {
+      "text": "Description de la fermeture à l'avant, taille 90 (L)",
+      "src": "a98a33dc8501"
+    },
+    "text.5b82d097599f": {
+      "text": "Description du foulard blanc en coton fin",
+      "src": "5b82d097599f"
+    },
+    "text.f191ce05a063": {
+      "text": "Description du Bindi, taille 10, rouge/bordeaux",
+      "src": "f191ce05a063"
+    },
+    "text.bbb71c1d0f00": {
+      "text": "Description des bâtonnets d'encens Varsana Flora",
+      "src": "bbb71c1d0f00"
+    },
+    "text.5759af90f912": {
+      "text": "Description de la couleur de cheveux « bordeaux naturel »",
+      "src": "5759af90f912"
+    },
+    "text.31d10b395b38": {
+      "text": "Description des petites perles Bindi colorées",
+      "src": "31d10b395b38"
+    },
+    "text.e45f9e9ebbde": {
+      "text": "Description de « Une petite maison pour Františky »",
+      "src": "e45f9e9ebbde"
+    },
+    "text.29036cbfd2cd": {
+      "text": "Description des bâtonnets d'encens Krishna Priya",
+      "src": "29036cbfd2cd"
+    },
+    "text.54516ce06048": {
+      "text": "Description des bâtonnets d'encens Tulasí Masala",
+      "src": "54516ce06048"
+    },
+    "text.aba1ce49cfcb": {
+      "text": "Description du Kantimála, niveau 1, spécial",
+      "src": "aba1ce49cfcb"
+    },
+    "text.138e5ff20201": {
+      "text": "Description de la Bhagavad-gītā telle qu'elle est",
+      "src": "138e5ff20201"
+    },
+    "text.d201cf08cfd0": {
+      "text": "Représentation de Krishna et Balarama, 7 x 5 cm",
+      "src": "d201cf08cfd0"
+    },
+    "text.4a49df62fc62": {
+      "text": "Représentation de Krishna dans une fenêtre, 7 x 5 cm",
+      "src": "4a49df62fc62"
+    },
+    "text.ccf9b4eb2258": {
+      "text": "Description d'une carte accompagnée d'une grande enveloppe",
+      "src": "ccf9b4eb2258"
+    },
+    "text.2b0c63b64b52": {
+      "text": "Description d'un tablier en coton rouge à volants",
+      "src": "2b0c63b64b52"
+    },
+    "text.6ec6be7fc838": {
+      "text": "Description des rouleaux Kantimála à 2 rangées S/M/L",
+      "src": "6ec6be7fc838"
+    },
+    "text.e1dde12749b0": {
+      "text": "Représentation de Yashoda avec Krishna, 7 x 5 cm",
+      "src": "e1dde12749b0"
+    },
+    "text.f951c45c8649": {
+      "text": "Description des bâtonnets d'encens « Saffron Sandal »",
+      "src": "f951c45c8649"
+    },
+    "text.2e0011e8039f": {
+      "text": "Description de la pochette « japa » noire et résistante pour homme",
+      "src": "2e0011e8039f"
+    },
+    "text.52dd22df36c1": {
+      "text": "Description de la pochette « japa » marron résistante pour homme",
+      "src": "52dd22df36c1"
+    },
+    "text.f145344cf188": {
+      "text": "Description du pull rayé pour garçon, taille 22",
+      "src": "f145344cf188"
+    },
+    "text.631a879344fe": {
+      "text": "Description de la pochette « japa » beige et résistante pour homme",
+      "src": "631a879344fe"
+    },
+    "text.830c387b00f4": {
+      "text": "Description de la pochette japa pour femme du Rajasthan",
+      "src": "830c387b00f4"
+    },
+    "text.f2bbbddbdb82": {
+      "text": "Description de l'ensemble pour fille – chemisier et jupe",
+      "src": "f2bbbddbdb82"
+    },
+    "text.9c2c8e6296d0": {
+      "text": "Description des petites perles de japa sculptées, en neem",
+      "src": "9c2c8e6296d0"
+    },
+    "text.e10553ac44cd": {
+      "text": "Description du haut à imprimé feuilles, tailles S/M, M/L",
+      "src": "e10553ac44cd"
+    },
+    "text.e58a545f6358": {
+      "text": "Description du sel de l'Himalaya (en flocons) 175 g",
+      "src": "e58a545f6358"
+    },
+    "text.cb2191542578": {
+      "text": "Description du bracelet en malachite et cuivre",
+      "src": "cb2191542578"
+    },
+    "text.deaf02f98c36": {
+      "text": "Description de la taie d'oreiller 40 x 40 cm – Fleurs",
+      "src": "deaf02f98c36"
+    },
+    "text.5b1b6269b4a7": {
+      "text": "Description de l'autocollant représentant Jagannath avec un drapeau",
+      "src": "5b1b6269b4a7"
+    },
+    "text.078c63f2aa03": {
+      "text": "Description des bâtonnets d'encens Krishna Balram",
+      "src": "078c63f2aa03"
+    },
+    "text.357cba162624": {
+      "text": "Description des bâtonnets d'encens Krishna Kaliya",
+      "src": "357cba162624"
+    },
+    "text.5acd3030b379": {
+      "text": "Description de l'image de Damodar, 18,5 x 13 cm",
+      "src": "5acd3030b379"
+    },
+    "text.a35278d5fd63": {
+      "text": "Description du bracelet Rudraksha avec perles",
+      "src": "a35278d5fd63"
+    },
+    "text.ac9041d8201f": {
+      "text": "Description du pendentif OM – verre et argent",
+      "src": "ac9041d8201f"
+    },
+    "text.0e2abce03c37": {
+      "text": "Description de la robe à bretelles bleu-vert, tailles M/L",
+      "src": "0e2abce03c37"
+    },
+    "text.b08dce103386": {
+      "text": "Description de la pochette « Red Japa » à motifs",
+      "src": "b08dce103386"
+    },
+    "text.066f3531538b": {
+      "text": "Description des bâtonnets d'encens Keshar Chandan",
+      "src": "066f3531538b"
+    },
+    "text.d1d66e2315a2": {
+      "text": "Description de la déesse Lakshmi, 3,5&amp;quot;",
+      "src": "d1d66e2315a2"
+    },
+    "text.dac1b5b50227": {
+      "text": "Description des figurines de Shiva accompagnées d'une petite vache",
+      "src": "dac1b5b50227"
+    },
+    "text.a3cf99f7e475": {
+      "text": "Description des rouleaux pleins à 3 rangées Kantimála",
+      "src": "a3cf99f7e475"
+    },
+    "text.288bafd15623": {
+      "text": "Description des tatouages temporaires rouges/bordeaux",
+      "src": "288bafd15623"
+    },
+    "text.7e43ac5233bf": {
+      "text": "Description du tatouage autocollant « Écrevisse dorée »",
+      "src": "7e43ac5233bf"
+    },
+    "text.9cf59160db26": {
+      "text": "Description des tatouages adhésifs OM (3 modèles)",
+      "src": "9cf59160db26"
+    },
+    "text.551ace31b985": {
+      "text": "Description du bindi rouge de 2,5 cm avec œillets",
+      "src": "551ace31b985"
+    },
+    "text.6ae1c709805e": {
+      "text": "Description d'un coffret carré de luxe en pierre blanche",
+      "src": "6ae1c709805e"
+    },
+    "text.6d771eaf3257": {
+      "text": "Description d'une taie d'oreiller en patchwork de 43 x 43 cm",
+      "src": "6d771eaf3257"
+    },
+    "text.19bdeaf86bce": {
+      "text": "Description du bracelet à perles en argent pur 925",
+      "src": "19bdeaf86bce"
+    },
+    "text.d800e949dfc2": {
+      "text": "Description du collier « Boho Purple » en perles de rocaille",
+      "src": "d800e949dfc2"
+    },
+    "text.bb1ccf0aaea2": {
+      "text": "Description d'un dhoti orange sans motif",
+      "src": "bb1ccf0aaea2"
+    },
+    "text.bf7d1d7730e1": {
+      "text": "Description d'une taie d'oreiller imprimée à la main, 41 x 41 cm",
+      "src": "bf7d1d7730e1"
+    },
+    "text.167928a8bf92": {
+      "text": "Description de la taie d'oreiller matelassée, 40 x 40 cm",
+      "src": "167928a8bf92"
+    },
+    "text.43d1aad815ac": {
+      "text": "Description de la taie d'oreiller matelassée, 42 x 42 cm",
+      "src": "43d1aad815ac"
+    },
+    "text.1f0fa3447dc5": {
+      "text": "Description de la taie d'oreiller matelassée, 41 x 41 cm",
+      "src": "1f0fa3447dc5"
+    },
+    "text.5c4b4bd62e17": {
+      "text": "Description de Radha Krishna, 7 x 5 cm, en bleu",
+      "src": "5c4b4bd62e17"
+    },
+    "text.0632037727b7": {
+      "text": "Description d'un couvre-lit simple avec 1 oreiller",
+      "src": "0632037727b7"
+    },
+    "text.894eccd74607": {
+      "text": "Description des perles avec un pendentif rudraksha",
+      "src": "894eccd74607"
+    },
+    "text.eac8615f51b3": {
+      "text": "Description du thé Dátá Masala 35 g, Yogi Tea",
+      "src": "eac8615f51b3"
+    },
+    "text.e7d6ad05b170": {
+      "text": "Description d'un japa mala à perles irrégulières",
+      "src": "e7d6ad05b170"
+    },
+    "text.b08c0124bdd8": {
+      "text": "Description de l'assiette ovale à 4 compartiments",
+      "src": "b08c0124bdd8"
+    },
+    "text.f97d3c69449c": {
+      "text": "Description du bol DELUXE, 15 cm de diamètre",
+      "src": "f97d3c69449c"
+    },
+    "text.1d2db05dcaff": {
+      "text": "Description de « Les histoires de Krishna » (4 tomes)",
+      "src": "1d2db05dcaff"
+    },
+    "text.aec2bcaff2ed": {
+      "text": "Description du haut rayé rouge et vert, taille M/L",
+      "src": "aec2bcaff2ed"
+    },
+    "text.2bd7dd814218": {
+      "text": "Description de Srila Prabhupada 4,5&amp;quot;",
+      "src": "2bd7dd814218"
+    },
+    "text.fad34074730f": {
+      "text": "Description d'un éléphant avec un dais, doré",
+      "src": "fad34074730f"
+    },
+    "text.4518fd65352b": {
+      "text": "Description du gratte-langue en cuivre, racloir",
+      "src": "4518fd65352b"
+    },
+    "text.b34a7632acd9": {
+      "text": "Description de la *Čaitanya-čaritāmrita*, *Ādi-Līlā*",
+      "src": "b34a7632acd9"
+    },
+    "text.e0a0cf987611": {
+      "text": "Description de l'écharpe à fines rayures, 3 modèles",
+      "src": "e0a0cf987611"
+    },
+    "text.b70121138250": {
+      "text": "Description de boucles d'oreilles indiennes en métal, 3 modèles",
+      "src": "b70121138250"
+    },
+    "text.7694057de6da": {
+      "text": "Description de la taie d'oreiller « Sunshine » de 30 x 30 cm",
+      "src": "7694057de6da"
+    },
+    "text.4dcd7781a026": {
+      "text": "Description d'une housse de coussin en brocart de 39 x 39 cm",
+      "src": "4dcd7781a026"
+    },
+    "text.4377a922fed2": {
+      "text": "Description d'une image en 3D de Prabhupada, 9 x 9 cm",
+      "src": "4377a922fed2"
+    },
+    "text.6de1bf572b74": {
+      "text": "Description de l'autocollant en bois « Rādhā-Krishna »",
+      "src": "6de1bf572b74"
+    },
+    "text.f637ed23019d": {
+      "text": "Description du roll-on Jannat-ul-Firdaus 5 ml",
+      "src": "f637ed23019d"
+    },
+    "text.952be3e1262b": {
+      "text": "Description d'une fiole en cuivre décorée, 900 ml",
+      "src": "952be3e1262b"
+    },
+    "text.108a174fdb1f": {
+      "text": "Description du « classement » de la 1re série de Kantimála",
+      "src": "108a174fdb1f"
+    },
+    "text.79d9ee5e7a71": {
+      "text": "Description du paon coloré, 10,5 x 21 cm",
+      "src": "79d9ee5e7a71"
+    },
+    "text.35e6a014ee9e": {
+      "text": "Description : Ganesh et Kaliya sont mariés.",
+      "src": "35e6a014ee9e"
+    },
+    "text.5bdec6b276b1": {
+      "text": "Description d'un parampara en bois en 3D, 8 x 30 cm",
+      "src": "5bdec6b276b1"
+    },
+    "text.1dfa69c1c41b": {
+      "text": "Description de l'insigne « Damodar », diamètre 4,4 cm",
+      "src": "1dfa69c1c41b"
+    },
+    "text.50dfb2a14fd8": {
+      "text": "Description du bracelet de santé en cuivre torsadé",
+      "src": "50dfb2a14fd8"
+    },
+    "text.4fb155ef880e": {
+      "text": "Description d'une statue de Jagannath en métal doré",
+      "src": "4fb155ef880e"
+    },
+    "text.b622779854bc": {
+      "text": "Description des dhotis en soie de couleur crème à 50 %",
+      "src": "b622779854bc"
+    },
+    "text.f4e4d52a9d12": {
+      "text": "Description du Kantimála à 3 rangées, rond, de taille moyenne",
+      "src": "f4e4d52a9d12"
+    },
+    "text.7c518da50daf": {
+      "text": "Description du Kantimála, à 3 rangées, rond, grand",
+      "src": "7c518da50daf"
+    },
+    "text.ba3bae52ba26": {
+      "text": "Description des points « bindi » colorés et pailletés",
+      "src": "ba3bae52ba26"
+    },
+    "text.0e8a6b3a2a0e": {
+      "text": "Description d'un dhoti marron-bordeaux, 50 % soie",
+      "src": "0e8a6b3a2a0e"
+    },
+    "text.2997e52afd79": {
+      "text": "Description du bol rayé, 10 cm de diamètre",
+      "src": "2997e52afd79"
+    },
+    "text.f17351c9a014": {
+      "text": "Description d'une assiette ronde à 4 compartiments",
+      "src": "f17351c9a014"
+    },
+    "text.c42a7c05d06f": {
+      "text": "Description des bâtonnets d'encens OM SAI, lot de 8",
+      "src": "c42a7c05d06f"
+    },
+    "text.cd3428db4490": {
+      "text": "Description des bâtonnets d'encens « Vrindavan Flower »",
+      "src": "cd3428db4490"
+    },
+    "text.f7c48c3e522a": {
+      "text": "Description d'un coffret en or du Rajasthan, taille moyenne",
+      "src": "f7c48c3e522a"
+    },
+    "text.29f88a2c5f9a": {
+      "text": "Description d'un éléphant en bois peint, 7 x 7 cm",
+      "src": "29f88a2c5f9a"
+    },
+    "text.2d32fc33e119": {
+      "text": "Description de « Čaitanya-charitamrita » - coffret complet",
+      "src": "2d32fc33e119"
+    },
+    "text.5ac57ae1f4f6": {
+      "text": "Description du pendentif Kavača représentant Nrsimhadéva",
+      "src": "5ac57ae1f4f6"
+    },
+    "text.06023694a859": {
+      "text": "Description d'un sari en coton orange et bordeaux",
+      "src": "06023694a859"
+    },
+    "text.96e2ec853003": {
+      "text": "Description du livre de cuisine végétarienne de Krishna",
+      "src": "96e2ec853003"
+    },
+    "text.3c72766749ee": {
+      "text": "Description d'une peinture sur toile réalisée à la main",
+      "src": "3c72766749ee"
+    },
+    "text.fa0814596822": {
+      "text": "Description d'un lot de 8 bracelets en métal en relief",
+      "src": "fa0814596822"
+    },
+    "text.15d2e2dd38c8": {
+      "text": "Description de la robe mi-longue à imprimé géométrique bleu marine",
+      "src": "15d2e2dd38c8"
+    },
+    "text.0770f9f1c252": {
+      "text": "Description du Bindi, taille 8, rose/vert/noir",
+      "src": "0770f9f1c252"
+    },
+    "text.d0ed8ade54af": {
+      "text": "Description du porte-clés « I Love Krishna », en métal",
+      "src": "d0ed8ade54af"
+    },
+    "text.830f82906e9c": {
+      "text": "Description du porte-clés en caoutchouc Jagannath, rond",
+      "src": "830f82906e9c"
+    },
+    "text.3cb73b820dc3": {
+      "text": "Description des autocollants en bois représentant Nrsimha, 3 modèles",
+      "src": "3cb73b820dc3"
+    },
+    "text.a2351a865045": {
+      "text": "Description d'un sac orné de broderies colorées",
+      "src": "a2351a865045"
+    },
+    "text.c94ebeef3d6d": {
+      "text": "Description d'un éléphant en bois peint, 5 × 8 cm",
+      "src": "c94ebeef3d6d"
+    },
+    "text.91df1a22b85f": {
+      "text": "Description d'une assiette ronde à 6 compartiments",
+      "src": "91df1a22b85f"
+    },
+    "text.8e2c0220e22e": {
+      "text": "Description du bol rayé, 13 cm de diamètre",
+      "src": "8e2c0220e22e"
+    },
+    "text.4af9e78ec31d": {
+      "text": "Description du bol rayé, 19 cm de diamètre",
+      "src": "4af9e78ec31d"
+    },
+    "text.c56ebe703199": {
+      "text": "Description de la pochette brodée « Black Nrsimha »",
+      "src": "c56ebe703199"
+    },
+    "text.af17124d7bc5": {
+      "text": "Description d'un sari en coton batik rose et bleu",
+      "src": "af17124d7bc5"
+    },
+    "text.dd78809b85fa": {
+      "text": "Description du ŚRĪ ĪŚOPANIṢAD (édition allemande)",
+      "src": "dd78809b85fa"
+    },
+    "text.b84f4ea5fd40": {
+      "text": "Description des tatouages temporaires « abricot/orange »",
+      "src": "b84f4ea5fd40"
+    },
+    "text.ceb3c08abe44": {
+      "text": "Description des tatouages temporaires bleus/turquoise",
+      "src": "ceb3c08abe44"
+    },
+    "text.0d24ab37d015": {
+      "text": "Description des tatouages autocollants – rose/magenta",
+      "src": "0d24ab37d015"
+    },
+    "text.c41d74edc0b5": {
+      "text": "Description du bindi rouge, 2,3 cm, avec œillets",
+      "src": "c41d74edc0b5"
+    },
+    "text.d3ca08b0a0ca": {
+      "text": "Description des bâtonnets d'encens Chintamani Delux",
+      "src": "d3ca08b0a0ca"
+    },
+    "text.f90d9a0b75e6": {
+      "text": "Description de la robe longue en coton noir | Taille L",
+      "src": "f90d9a0b75e6"
+    },
+    "text.6ed68a81e9ac": {
+      "text": "Description du collier ras-du-cou en perles d'eau douce",
+      "src": "6ed68a81e9ac"
+    },
+    "text.531859d83823": {
+      "text": "Description des divinités GourNitai, taille S (paire)",
+      "src": "531859d83823"
+    },
+    "text.8c42410635e1": {
+      "text": "Description du porte-clés peint à la main, « cathédrale »",
+      "src": "8c42410635e1"
+    },
+    "text.78359e4aefb5": {
+      "text": "Description d'un vase artisanal – grand format, en métal",
+      "src": "78359e4aefb5"
+    },
+    "text.a0df2bf02c78": {
+      "text": "Description de l'autocollant représentant Prabhupāda, environ 9 cm",
+      "src": "a0df2bf02c78"
+    },
+    "text.fe246c0b4e25": {
+      "text": "Description de l'ensemble rouge et noir pour garçon, taille 24",
+      "src": "fe246c0b4e25"
+    },
+    "text.1de8da20904e": {
+      "text": "Description du bracelet Rudraksha de grande taille, 19 cm",
+      "src": "1de8da20904e"
+    },
+    "text.7e60721d2716": {
+      "text": "Description d'une boîte bleue du Rajasthan de taille moyenne",
+      "src": "7e60721d2716"
+    },
+    "text.a741682d3fc2": {
+      "text": "Description de la boîte « Rajasthan », bleu foncé, taille moyenne",
+      "src": "a741682d3fc2"
+    },
+    "text.aa68fd73285d": {
+      "text": "Description d'une boîte rose du Rajasthan de taille moyenne",
+      "src": "aa68fd73285d"
+    },
+    "text.d61ff8b4b0a8": {
+      "text": "Description du sac à bandoulière Parikramka Orange",
+      "src": "d61ff8b4b0a8"
+    },
+    "text.f5bcb4fc324a": {
+      "text": "Description d'un lot de 18 bracelets peints à la main",
+      "src": "f5bcb4fc324a"
+    },
+    "text.0ea55f99045a": {
+      "text": "Description des boucles d'oreilles « Fleur », en nacre",
+      "src": "0ea55f99045a"
+    },
+    "text.a2d57820de71": {
+      "text": "Description du bol DELUXE, 12,5 cm de diamètre",
+      "src": "a2d57820de71"
+    },
+    "text.56591318c0fc": {
+      "text": "Description des reflets dorés-cuivrés naturels",
+      "src": "56591318c0fc"
+    },
+    "text.009383e8d94c": {
+      "text": "Description des reflets blond doré naturel",
+      "src": "009383e8d94c"
+    },
+    "text.e1c4026f6892": {
+      "text": "Description d'un sari en coton orange et bleu foncé",
+      "src": "e1c4026f6892"
+    },
+    "text.e59771fcf110": {
+      "text": "Description de *Les enseignements de la reine Kuntí* (éd. 1994)",
+      "src": "e59771fcf110"
+    },
+    "text.9e3c94a51591": {
+      "text": "Description du *Čaitanya-čaritāmrita*, *Antya-līlā*",
+      "src": "9e3c94a51591"
+    },
+    "text.d135792c07f7": {
+      "text": "Description de l'Ishavasha Upanishad (Sri Isha Upanishad)",
+      "src": "d135792c07f7"
+    },
+    "text.8369cc708745": {
+      "text": "Description des bracelets, lot de 8, bande métallique",
+      "src": "8369cc708745"
+    },
+    "text.26aa061c4787": {
+      "text": "Description du sac à japa : Krishna et Prabhupada",
+      "src": "26aa061c4787"
+    },
+    "text.16793742c6bf": {
+      "text": "Description de la pochette Japa pour homme, résistante, jaune",
+      "src": "16793742c6bf"
+    },
+    "text.fc1e86f1edcc": {
+      "text": "Description de la robe d'été de plage à col en V et bretelles",
+      "src": "fc1e86f1edcc"
+    },
+    "text.0902ec29c93b": {
+      "text": "Description du bracelet en lapis-lazuli et cuivre",
+      "src": "0902ec29c93b"
+    },
+    "text.12fed8892984": {
+      "text": "Description du japa mala en tulasi naturel, chapelet",
+      "src": "12fed8892984"
+    },
+    "text.e30837398414": {
+      "text": "Description de l'image en 3D de Nrsimhadév, 9 x 9 cm",
+      "src": "e30837398414"
+    },
+    "text.709f3bd546d1": {
+      "text": "Description d'une jupe circulaire à 32 panneaux, 10 modèles",
+      "src": "709f3bd546d1"
+    },
+    "text.1a6518ac01fd": {
+      "text": "Description de la couleur de cheveux rouge bordeaux naturel",
+      "src": "1a6518ac01fd"
+    },
+    "text.065245cfe0b7": {
+      "text": "Description d'une écharpe en coton tissé, 100 x 100 cm",
+      "src": "065245cfe0b7"
+    },
+    "text.002ccf2da4a0": {
+      "text": "Description d'un jeu de mémoire sur le thème de l'Inde",
+      "src": "002ccf2da4a0"
+    },
+    "text.d0259d4179ed": {
+      "text": "Description d'un autel en bois peint dédié à Jagannath",
+      "src": "d0259d4179ed"
+    },
+    "text.c10f61f29069": {
+      "text": "Description des trousses pour enfants (2 modèles)",
+      "src": "c10f61f29069"
+    },
+    "text.f61dd566e493": {
+      "text": "Description des poupées : Pierre sacrée – Šíla, grise",
+      "src": "f61dd566e493"
+    },
+    "text.e6a57157a9b3": {
+      "text": "Description du bracelet « Sun Health » avec aimants",
+      "src": "e6a57157a9b3"
+    },
+    "text.60307ba0052c": {
+      "text": "Description d'un gobelet de 200 ml orné d'un motif floral",
+      "src": "60307ba0052c"
+    },
+    "text.83f773c11fd4": {
+      "text": "Description du bracelet en laiton tressé, 5 modèles",
+      "src": "83f773c11fd4"
+    },
+    "text.e8acb66634bb": {
+      "text": "Description d'une grande lampe votive, 21,5 x 7,5 cm",
+      "src": "e8acb66634bb"
+    },
+    "text.50c26f9fa8d4": {
+      "text": "Description : Une large bande rouge la traverse.",
+      "src": "50c26f9fa8d4"
+    },
+    "text.e85151e8f38d": {
+      "text": "Description du Kantimála, 1re série, petit modèle rond",
+      "src": "e85151e8f38d"
+    },
+    "text.c7778ae93216": {
+      "text": "Description de la housse de coussin imprimée à la main, 40 x 40 cm",
+      "src": "c7778ae93216"
+    },
+    "text.aa663e69c803": {
+      "text": "Description de la housse de coussin 39 x 39 cm imprimée à la main",
+      "src": "aa663e69c803"
+    },
+    "text.0c2105c2ea6e": {
+      "text": "Description de la posture Rādhā-Krishna Āsana 3,5&amp;quot;",
+      "src": "0c2105c2ea6e"
+    },
+    "text.f1b874f33fbe": {
+      "text": "Description de la décoration à suspendre Nrsimha, 14 cm",
+      "src": "f1b874f33fbe"
+    },
+    "text.dfc09264da03": {
+      "text": "Description du pot de rinçage nasal – acier inoxydable",
+      "src": "dfc09264da03"
+    },
+    "text.f78ad3204227": {
+      "text": "Description du pendentif « Tête de Ganesha », plaqué or",
+      "src": "f78ad3204227"
+    },
+    "text.e8c3a96b0926": {
+      "text": "Description du pendentif Krishna, disponible en 8 couleurs",
+      "src": "e8c3a96b0926"
+    },
+    "text.c6067fa99ffb": {
+      "text": "Description de l'autocollant ovale « Nrsimhadév » (2 modèles)",
+      "src": "c6067fa99ffb"
+    },
+    "text.b4436344c981": {
+      "text": "Description de la photo de Prabhupāda, 14 x 10 cm",
+      "src": "b4436344c981"
+    },
+    "text.b63af50dd37e": {
+      "text": "Description d'une pochette japa pour femme de couleur ocre",
+      "src": "b63af50dd37e"
+    },
+    "text.e176938e7843": {
+      "text": "Description d'une boîte verte du Rajasthan de taille moyenne",
+      "src": "e176938e7843"
+    },
+    "text.9e7465af6808": {
+      "text": "Description d'une grande boîte du Rajasthan, rouge et bleue",
+      "src": "9e7465af6808"
+    },
+    "text.2cee69a82dd9": {
+      "text": "Description d'une grande boîte du Rajasthan, de couleur bleu foncé",
+      "src": "2cee69a82dd9"
+    },
+    "text.ffdf84cff1f1": {
+      "text": "Description du haut brodé uni, à bretelles, taille S",
+      "src": "ffdf84cff1f1"
+    },
+    "text.e65dfa45b400": {
+      "text": "Description d'un chemisier pour femme teint selon la technique « tie-dye », taille S/M",
+      "src": "e65dfa45b400"
+    },
+    "text.5511afcec9eb": {
+      "text": "Description du badge Gaura Nitai, environ 4,4 cm",
+      "src": "5511afcec9eb"
+    },
+    "text.17d81590541a": {
+      "text": "Description de Damodar (Yashoda attache Krishna)",
+      "src": "17d81590541a"
+    },
+    "text.fd43f4083a1a": {
+      "text": "Description d'une veste blanche pour homme à manches courtes",
+      "src": "fd43f4083a1a"
+    },
+    "text.e29cddb0ab2f": {
+      "text": "Description du Kantimála, 2e série, perles en or",
+      "src": "e29cddb0ab2f"
+    },
+    "text.019b6c8bc985": {
+      "text": "Description de la scène « Éléphants suspendus sous un parasol »",
+      "src": "019b6c8bc985"
+    },
+    "text.204a59f86cea": {
+      "text": "Description du châle à motif cachemire, en viscose",
+      "src": "204a59f86cea"
+    },
+    "text.1b926c67ea25": {
+      "text": "Description de la bâche pour balles de foin, 210 x 100 cm",
+      "src": "1b926c67ea25"
+    },
+    "text.52337bfd2a46": {
+      "text": "Description des flèches « Bindi » colorées, 2 variantes",
+      "src": "52337bfd2a46"
+    },
+    "text.8a9023f72d73": {
+      "text": "Description du badge « Lotus Feet », diamètre 5,5 cm",
+      "src": "8a9023f72d73"
+    },
+    "text.134c962721e9": {
+      "text": "Description du t-shirt Čolí, manches 3/4, taille M",
+      "src": "134c962721e9"
+    },
+    "text.a46b04eefca2": {
+      "text": "Description du t-shirt Čolí, manches 3/4, taille S",
+      "src": "a46b04eefca2"
+    },
+    "text.2b6d815601f3": {
+      "text": "Description de l'ensemble pour garçon avec des éléphants, taille 28",
+      "src": "2b6d815601f3"
+    },
+    "text.2ee8f0ccd4cb": {
+      "text": "Description de la taie d'oreiller 39 x 39 cm – Petites chouettes",
+      "src": "2ee8f0ccd4cb"
+    },
+    "text.eb8f8d433215": {
+      "text": "Description d'un porte-clés rectangulaire avec des miroirs",
+      "src": "eb8f8d433215"
+    },
+    "text.011d50fc2fbf": {
+      "text": "Description de l'autocollant représentant Rama et Sita, 9 x 6,5 cm",
+      "src": "011d50fc2fbf"
+    },
+    "text.4f7cd0aecaac": {
+      "text": "Description des bâtonnets d'encens spéciaux Nag Champa",
+      "src": "4f7cd0aecaac"
+    },
+    "text.c8197179d889": {
+      "text": "Description du petit japa mala en rudraksha, chapelet",
+      "src": "c8197179d889"
+    },
+    "text.91da531d5b9e": {
+      "text": "Description de Radha Krishna, 7 x 5 cm, 4 motifs",
+      "src": "91da531d5b9e"
+    },
+    "text.ef5ef3ebb55a": {
+      "text": "Description des bâtonnets d'encens Gopal – grand format",
+      "src": "ef5ef3ebb55a"
+    },
+    "text.e3455dc384d9": {
+      "text": "Description d'un sac à main en tissu avec finitions en cuir",
+      "src": "e3455dc384d9"
+    },
+    "text.f91c4953f29c": {
+      "text": "Description du compteur de perles de prière en cristal",
+      "src": "f91c4953f29c"
+    },
+    "text.ae96598ff141": {
+      "text": "Description du grand japa mala en rudraksha, chapelet",
+      "src": "ae96598ff141"
+    },
+    "text.deb7e8a48d64": {
+      "text": "Description d'un éléphant en bois peint, 6 x 9 cm",
+      "src": "deb7e8a48d64"
+    },
+    "text.296908f47e8e": {
+      "text": "Description du pantalon Bhakta pour homme, gris-marron",
+      "src": "296908f47e8e"
+    },
+    "text.121b41c2b0e3": {
+      "text": "Description : Fermeture à l'avant, taille 85 (M)",
+      "src": "121b41c2b0e3"
+    },
+    "text.390ae6ca4e35": {
+      "text": "Description : Fermeture à l'avant, taille 80 (S)",
+      "src": "390ae6ca4e35"
+    },
+    "text.ed114d7d82fd": {
+      "text": "Description d'un bindi noir de 1,4 cm muni d'un œillet",
+      "src": "ed114d7d82fd"
+    },
+    "text.0f398db6206b": {
+      "text": "Description de l'autocollant en bois : Krishna et des fruits",
+      "src": "0f398db6206b"
+    },
+    "text.7367be266b87": {
+      "text": "Description de la pochette brodée « Oddaný », noire",
+      "src": "7367be266b87"
+    },
+    "text.24b3b1c0c24e": {
+      "text": "Description des bâtonnets d'encens Shyam – Grand format",
+      "src": "24b3b1c0c24e"
+    },
+    "text.8f600bd4471e": {
+      "text": "Description du t-shirt Čolí, manches 3/4, taille L",
+      "src": "8f600bd4471e"
+    },
+    "text.74b295d83df7": {
+      "text": "Description : une large rayure, une large bordure dorée",
+      "src": "74b295d83df7"
+    },
+    "text.08cfaed63a2e": {
+      "text": "Description du Kantimála, lot de 3 petits rouleaux",
+      "src": "08cfaed63a2e"
+    },
+    "text.79faebe7eb72": {
+      "text": "Description de la chemise à carreaux pour homme, rouge brique, taille L",
+      "src": "79faebe7eb72"
+    },
+    "text.a9a097ac21ee": {
+      "text": "Description du t-shirt « Bhima le guerrier », taille XL",
+      "src": "a9a097ac21ee"
+    },
+    "text.9476e51f77b7": {
+      "text": "Description du t-shirt pour fille Šiva, rose, taille 38",
+      "src": "9476e51f77b7"
+    },
+    "text.86760cc24c0d": {
+      "text": "Description du Maháprasádam – Amandes sucrées 190 g",
+      "src": "86760cc24c0d"
+    },
+    "text.3ebefd32345a": {
+      "text": "Description d'une assiette ronde à 2+3 compartiments",
+      "src": "3ebefd32345a"
+    },
+    "text.0b531154e142": {
+      "text": "Représentation de Radha et Krishna avec les gopis, 5 x 7 cm",
+      "src": "0b531154e142"
+    },
+    "text.8f02a5d18b10": {
+      "text": "Description du métal Krishna Damodar (Makhanchor)",
+      "src": "8f02a5d18b10"
+    },
+    "text.27cce004eeb8": {
+      "text": "Description d'une boîte en argent du Rajasthan de taille moyenne",
+      "src": "27cce004eeb8"
+    },
+    "text.edb713655f43": {
+      "text": "Description d'une boîte violette de taille moyenne originaire du Rajasthan",
+      "src": "edb713655f43"
+    },
+    "text.3816dc85b197": {
+      "text": "Description d'une boîte orange de taille moyenne originaire du Rajasthan",
+      "src": "3816dc85b197"
+    },
+    "text.5118f8375d75": {
+      "text": "Description du sac à bandoulière Parikramka, motif marbré",
+      "src": "5118f8375d75"
+    },
+    "text.9a6b32f80943": {
+      "text": "Description de « Des questions parfaites, des réponses parfaites »",
+      "src": "9a6b32f80943"
+    },
+    "text.286bb3aa6a17": {
+      "text": "Description d'un lot de 24 bracelets verts et dorés",
+      "src": "286bb3aa6a17"
+    },
+    "text.38cd4dce8dc9": {
+      "text": "Description d'un lot de 18 bracelets avec pierres précieuses",
+      "src": "38cd4dce8dc9"
+    },
+    "text.2b46de1fe880": {
+      "text": "Description du t-shirt pour fille « Rádhe Rádhe », taille S",
+      "src": "2b46de1fe880"
+    },
+    "text.a212906ed639": {
+      "text": "Description de la veste pour homme Orrisa à manches courtes",
+      "src": "a212906ed639"
+    },
+    "text.8f0f40974f2b": {
+      "text": "Description du t-shirt à manches courtes Čolí, taille L",
+      "src": "8f0f40974f2b"
+    },
+    "text.6a1d023b2c0e": {
+      "text": "Description de la 2e série Kantimála, rouleaux fins",
+      "src": "6a1d023b2c0e"
+    },
+    "text.41626973d8bd": {
+      "text": "Description du Pavitram – le mala de Nrsimhadéva",
+      "src": "41626973d8bd"
+    },
+    "text.17c2519ad153": {
+      "text": "Description du t-shirt à manches courtes Čolí, taille S",
+      "src": "17c2519ad153"
+    },
+    "text.39448e29e7e2": {
+      "text": "Description de Jagannath Krishna (dhoti à quatre couleurs)",
+      "src": "39448e29e7e2"
+    },
+    "text.763ef8a16c9e": {
+      "text": "Description de l'anarkali pour filles, imprimé à la main au bloc",
+      "src": "763ef8a16c9e"
+    },
+    "text.8d741c91292f": {
+      "text": "Description de la pochette Japa pour femme en brocart foncé",
+      "src": "8d741c91292f"
+    },
+    "text.0b44c86bc659": {
+      "text": "Description de la collection « Kantimála », 3e série, petits ovales",
+      "src": "0b44c86bc659"
+    },
+    "text.68b8c18e3529": {
+      "text": "Description de la lampe à kérosène Japa, « Vache et veau »",
+      "src": "68b8c18e3529"
+    },
+    "text.8caf31f8815b": {
+      "text": "Description du sac à japa « Krishna jaune » avec des gopis",
+      "src": "8caf31f8815b"
+    },
+    "text.8907a21f002f": {
+      "text": "Description du t-shirt Čolí, manches 3/4, taille XL",
+      "src": "8907a21f002f"
+    },
+    "text.05d7cf2e23c5": {
+      "text": "Description de l'autocollant « Hanuman doré », 9 x 6,5 cm",
+      "src": "05d7cf2e23c5"
+    },
+    "text.400898f2515e": {
+      "text": "Description d'une image de Jagannath, 18,5 x 13 cm",
+      "src": "400898f2515e"
+    },
+    "text.5263c23a8d36": {
+      "text": "Description d'une figurine en 3D représentant Goura Nitai, 9 x 9 cm",
+      "src": "5263c23a8d36"
+    },
+    "text.3077fbd5724f": {
+      "text": "Description du dupatta : en coton avec une bordure brillante",
+      "src": "3077fbd5724f"
+    },
+    "text.73aa6cc8d5a5": {
+      "text": "Description des disques « bindi » colorés avec œillets",
+      "src": "73aa6cc8d5a5"
+    },
+    "text.e954b27cb535": {
+      "text": "Description des bâtonnets d'encens Vrinda – Grand format",
+      "src": "e954b27cb535"
+    },
+    "text.3d7a192ba5e4": {
+      "text": "Description de la 1re série de Kantimála, ovales plus grands",
+      "src": "3d7a192ba5e4"
+    },
+    "text.3f8d689856d7": {
+      "text": "Description de la série « Kantimála », 1re série, petits ovales",
+      "src": "3f8d689856d7"
+    },
+    "text.b7196c7f686f": {
+      "text": "Description de la collection « Kantimála », 3e série, grands ovales",
+      "src": "b7196c7f686f"
+    },
+    "text.d92302054c15": {
+      "text": "Description de la photo de Prabhupāda, 12 x 9,5 cm",
+      "src": "d92302054c15"
+    },
+    "text.d571b5e63dfa": {
+      "text": "Description des bâtonnets d'encens aux herbes – Grand format",
+      "src": "d571b5e63dfa"
+    },
+    "text.55827affdd58": {
+      "text": "Description d'un éléphant en bois peint, 7 x 10 cm",
+      "src": "55827affdd58"
+    },
+    "text.5345c6d9fedd": {
+      "text": "Description de « L'Avatar d'or » (broché), 2022",
+      "src": "5345c6d9fedd"
+    },
+    "text.3b7c8883ab3e": {
+      "text": "Description des porte-perles avec 4 perles colorées",
+      "src": "3b7c8883ab3e"
+    },
+    "text.744bf920cb41": {
+      "text": "Description du CD « Krishna Avatar » (livre audio, 2 CD)",
+      "src": "744bf920cb41"
+    },
+    "text.6f8537ab49db": {
+      "text": "Description : une large bande verte, une large bordure",
+      "src": "6f8537ab49db"
+    },
+    "text.fad6fc31681b": {
+      "text": "Description d'un dhoti à rayures roses et turquoise",
+      "src": "fad6fc31681b"
+    },
+    "text.bacdae8e281d": {
+      "text": "Description de la broderie à trois bandes, motif de bordure",
+      "src": "bacdae8e281d"
+    },
+    "text.ce4dae79ddd8": {
+      "text": "Représentation de Radha et Krishna avec les Gopis, 9 x 12 cm",
+      "src": "ce4dae79ddd8"
+    },
+    "text.532d9acea82d": {
+      "text": "Description d'une étole ethnique en lin tissée à la main en Inde",
+      "src": "532d9acea82d"
+    },
+    "text.74c26ebfa43d": {
+      "text": "Description de la housse de coussin imprimée à la main, 38 x 38 cm",
+      "src": "74c26ebfa43d"
+    },
+    "text.e17b10ef44a8": {
+      "text": "Description d'une petite carte de vœux avec enveloppe",
+      "src": "e17b10ef44a8"
+    },
+    "text.60c745bfa6db": {
+      "text": "Description du pantalon Bhakta pour enfant, taille 26",
+      "src": "60c745bfa6db"
+    },
+    "text.60ab00eee0af": {
+      "text": "Description des grands bâtonnets d'encens Keshar Chandan",
+      "src": "60ab00eee0af"
+    },
+    "text.fd5bd682d36e": {
+      "text": "Description d'un sari en soie rose-rouge sans bordure",
+      "src": "fd5bd682d36e"
+    },
+    "text.720e444c76ef": {
+      "text": "Description de la pochette « japa » bleue brodée pour femme",
+      "src": "720e444c76ef"
+    },
+    "text.cc005281433e": {
+      "text": "Description de la pochette japa pour femme – bleu/turquoise",
+      "src": "cc005281433e"
+    },
+    "text.6cd521a13825": {
+      "text": "Description de la kurta marron pour femme, manches 3/4, taille L",
+      "src": "6cd521a13825"
+    },
+    "text.7d1449ab30b6": {
+      "text": "Description du badge « Panca Tattva », diamètre 4,4 cm",
+      "src": "7d1449ab30b6"
+    },
+    "text.ee3c7abb68aa": {
+      "text": "Description du t-shirt « Warrior », rouge, manches 3/4",
+      "src": "ee3c7abb68aa"
+    },
+    "text.6907e38e6b57": {
+      "text": "Description d'un porte-clés ovale en bois avec une photo",
+      "src": "6907e38e6b57"
+    },
+    "text.cb1060f71236": {
+      "text": "Description des boucles d'oreilles « Papillon » – fils violets",
+      "src": "cb1060f71236"
+    },
+    "text.9a827aa4f538": {
+      "text": "Description des boucles d'oreilles papillon – fils orange",
+      "src": "9a827aa4f538"
+    },
+    "text.678b85472973": {
+      "text": "Description du *Čaitanya-čaritāmrita*, *Madhya-Līlā* 2",
+      "src": "678b85472973"
+    },
+    "text.61fe6366a006": {
+      "text": "Description du *Čaitanya-čaritāmrita*, *Madhya-Līlā* 1",
+      "src": "61fe6366a006"
+    },
+    "text.f487d1e478f4": {
+      "text": "Description d'un éléphant en bois peint, 11 x 13 cm",
+      "src": "f487d1e478f4"
+    },
+    "text.ddbfa5b64759": {
+      "text": "Description du t-shirt Krishna avec flûte, taille XL",
+      "src": "ddbfa5b64759"
+    },
+    "text.daeeeb06c902": {
+      "text": "Description de la couleur de cheveux « châtain doré naturel »",
+      "src": "daeeeb06c902"
+    },
+    "text.a2fba34d8295": {
+      "text": "Description d'une statue de Srila Prabhupada de 6,5 pouces",
+      "src": "a2fba34d8295"
+    },
+    "text.1ac3e06410b9": {
+      "text": "Description du Kantimála, 3e série, rond, petit",
+      "src": "1ac3e06410b9"
+    },
+    "text.9b20e2a62a4b": {
+      "text": "Description de la collection Kantimála, 3e série, ovales moyens",
+      "src": "9b20e2a62a4b"
+    },
+    "text.9bf39d90b2a0": {
+      "text": "Description du sac à japa « Krishna blanc » orné d'une flûte",
+      "src": "9bf39d90b2a0"
+    },
+    "text.15a240ad3a06": {
+      "text": "Description de la cuillère à café Jaya Nrsimhadeva, 3 cm",
+      "src": "15a240ad3a06"
+    },
+    "text.cf0256928a6c": {
+      "text": "Description du t-shirt à manches courtes Čolí, taille XL",
+      "src": "cf0256928a6c"
+    },
+    "text.8db8d487a8a0": {
+      "text": "Description du t-shirt Čolí, manches courtes, taille M",
+      "src": "8db8d487a8a0"
+    },
+    "text.05938d318535": {
+      "text": "Description des bâtonnets d'encens Darshan – Grand format",
+      "src": "05938d318535"
+    },
+    "text.54cdfd90c126": {
+      "text": "Description de l'autocollant « Les yeux de Jagannath », 5 x 11 cm",
+      "src": "54cdfd90c126"
+    },
+    "text.cad27947aff8": {
+      "text": "Description d'une image représentant Rādhā et Krishna, 18,5 x 13 cm",
+      "src": "cad27947aff8"
+    },
+    "text.917442875b26": {
+      "text": "Description du Kantimála, 1re série, rouleaux fins",
+      "src": "917442875b26"
+    },
+    "text.411381598b57": {
+      "text": "Description d'une photo de Prabhupada, 18,5 x 13 cm",
+      "src": "411381598b57"
+    },
+    "text.3a890b91e366": {
+      "text": "Description du petit Krishna en métal doré",
+      "src": "3a890b91e366"
+    },
+    "text.6d06ca3dcbf1": {
+      "text": "Description des bâtonnets d'encens au jasmin – Grand format",
+      "src": "6d06ca3dcbf1"
+    },
+    "text.432e8c503726": {
+      "text": "Description du grand ensemble – Pas uniquement destiné aux sacrifices",
+      "src": "432e8c503726"
+    },
+    "text.4f88d763eb0a": {
+      "text": "Description du Kantimála, 1re série, rond, grand",
+      "src": "4f88d763eb0a"
+    },
+    "text.623c9d06ab7f": {
+      "text": "Description du *Kantimala*, tome 1, avec Nrsimhadéva",
+      "src": "623c9d06ab7f"
+    },
+    "text.ce5c426cd5c1": {
+      "text": "Description des bâtonnets d'encens Everest – Grand format",
+      "src": "ce5c426cd5c1"
+    },
+    "text.69995bec96bb": {
+      "text": "Description des bâtonnets d'encens Manjari – Grand format",
+      "src": "69995bec96bb"
+    },
+    "text.e4c916f446cb": {
+      "text": "Description des disques bindi colorés, tailles 6 et 7",
+      "src": "e4c916f446cb"
+    },
+    "text.aeeef9d3340b": {
+      "text": "Description du sac à japa brodé « Jaya Jagannath »",
+      "src": "aeeef9d3340b"
+    },
+    "text.8cdd90e8d4a2": {
+      "text": "Description de l'insigne « Kurma Avatar », environ 4,4 cm",
+      "src": "8cdd90e8d4a2"
+    },
+    "text.a1bbfe402b88": {
+      "text": "Description du crochet mural carré à embout en céramique",
+      "src": "a1bbfe402b88"
+    },
+    "text.bfd7a5e495c2": {
+      "text": "Description des bindis de différentes formes et couleurs",
+      "src": "bfd7a5e495c2"
+    },
+    "text.8a430e15b6e6": {
+      "text": "Description du petit ensemble – pas seulement pour les offrandes",
+      "src": "8a430e15b6e6"
+    },
+    "text.61edf6d99f31": {
+      "text": "Description de la veste rayée pour homme à manches courtes",
+      "src": "61edf6d99f31"
+    },
+    "text.8c24ff99436a": {
+      "text": "Description de la robe d'été/de soirée « Mango Midi » | L-XL",
+      "src": "8c24ff99436a"
+    },
+    "text.3091129613b9": {
+      "text": "Description des bijoux en tissu multicolores faits main",
+      "src": "3091129613b9"
+    },
+    "text.003a6cdd9b72": {
+      "text": "Description de l'écharpe en viscose ÓM, 172 x 50 cm, lilas",
+      "src": "003a6cdd9b72"
+    },
+    "text.feaed53f4aa5": {
+      "text": "Représentation de Krishna et Balarama, bleue, 7 x 5 cm",
+      "src": "feaed53f4aa5"
+    },
+    "text.63eb9213cf7c": {
+      "text": "Description de l'autocollant Jagannath, 10 cm de diamètre",
+      "src": "63eb9213cf7c"
+    },
+    "text.ac3b0c306ba0": {
+      "text": "Description du châle à motif cachemire, bleu/noir",
+      "src": "ac3b0c306ba0"
+    },
+    "text.c4a113bfebc9": {
+      "text": "Description de l'ensemble pour garçon orange et rouge, taille 26",
+      "src": "c4a113bfebc9"
+    },
+    "text.2b9e4ae68e03": {
+      "text": "Description du pendentif Ganesha – plaqué or/argent",
+      "src": "2b9e4ae68e03"
+    },
+    "text.c803a01fddae": {
+      "text": "Description d'un châle en laine noir / bleu foncé très intense",
+      "src": "c803a01fddae"
+    },
+    "text.1b58739e40a8": {
+      "text": "Description de la pochette Japa pour homme, résistante, grise/marron",
+      "src": "1b58739e40a8"
+    },
+    "text.71912dfb985e": {
+      "text": "Description de la pochette « japa » brodée beige pour femme",
+      "src": "71912dfb985e"
+    },
+    "text.4adcf8229e2f": {
+      "text": "Description de l'autocollant ovale : Krishna enfant",
+      "src": "4adcf8229e2f"
+    },
+    "text.6770b8f0c2a2": {
+      "text": "Description d'un sari en coton et polyester jaune et rouge",
+      "src": "6770b8f0c2a2"
+    },
+    "text.7c53f3e54378": {
+      "text": "Description de Kantimála, lot de 3 petits rouleaux, 1",
+      "src": "7c53f3e54378"
+    },
+    "text.42d1c9aae4a2": {
+      "text": "Description du lot de 24 bracelets aux couleurs de l'arc-en-ciel",
+      "src": "42d1c9aae4a2"
+    },
+    "text.ac378c9a5720": {
+      "text": "Description d'un t-shirt en coton de style punjabi, manches longues, taille S",
+      "src": "ac378c9a5720"
+    },
+    "text.005056ab1d37": {
+      "text": "Description du pantalon Bhakta uni pour homme",
+      "src": "005056ab1d37"
+    },
+    "text.a4cfae1872b9": {
+      "text": "Description du badge « Lotus Foot », d'un diamètre de 4,4 cm",
+      "src": "a4cfae1872b9"
+    },
+    "text.1dec12ba1ae9": {
+      "text": "Description du sac à japa noir en toile résistante",
+      "src": "1dec12ba1ae9"
+    },
+    "text.cd957c800af6": {
+      "text": "Description du sac Japa en toile résistante, gris",
+      "src": "cd957c800af6"
+    },
+    "text.ccfc665e016c": {
+      "text": "Description du sac « Green Japa » en toile résistante",
+      "src": "ccfc665e016c"
+    },
+    "text.fb66aee1309c": {
+      "text": "Description du pantalon à carreaux bleu et gris pour homme",
+      "src": "fb66aee1309c"
+    },
+    "text.8533b81d3f46": {
+      "text": "Description du porte-clés « OM » en bois, d'un diamètre de 4 cm",
+      "src": "8533b81d3f46"
+    },
+    "text.62408b545e6a": {
+      "text": "Description du compteur de perles pour un sachet de perles de neem",
+      "src": "62408b545e6a"
+    },
+    "text.cf5c9e2f01cb": {
+      "text": "Description d'un tableau ovale représentant Prabhupada, à l'acrylique",
+      "src": "cf5c9e2f01cb"
+    },
+    "text.cc91a2c14f09": {
+      "text": "Description de l'assiette ronde, 18 cm de diamètre, Fence 8",
+      "src": "cc91a2c14f09"
+    },
+    "text.b4289e713e63": {
+      "text": "Description de la 3e série de Kantimála, ronde, petite 2",
+      "src": "b4289e713e63"
+    },
+    "text.1b4a09659e96": {
+      "text": "Description de la 3e série de Kantimála, ronde, petite 1",
+      "src": "1b4a09659e96"
+    },
+    "text.0beeb3d7c88d": {
+      "text": "Description de l'autocollant en bois représentant Krishna à coller sur la fenêtre",
+      "src": "0beeb3d7c88d"
+    },
+    "text.003ed7a145d1": {
+      "text": "Description de la pochette « Red Japa » ornée de pétales colorés",
+      "src": "003ed7a145d1"
+    },
+    "text.460e2fea54fd": {
+      "text": "Description de Kantimála, lot de 3 petits rouleaux, 2",
+      "src": "460e2fea54fd"
+    },
+    "text.7b4e757416d6": {
+      "text": "Description de la vache plaquée or, en métal, 3,5 x 3,5 cm",
+      "src": "7b4e757416d6"
+    },
+    "text.bd51e31d278c": {
+      "text": "Description : Fermeture à l'avant, taille 100 (XXL)",
+      "src": "bd51e31d278c"
+    },
+    "text.d49e40445c8a": {
+      "text": "Description du sac Japa unicolore rose poudré",
+      "src": "d49e40445c8a"
+    },
+    "text.082aff87e383": {
+      "text": "Description d'une grande sculpture représentant Radha et Krishna",
+      "src": "082aff87e383"
+    },
+    "text.33d6dd05edfc": {
+      "text": "Description de la Bhagavad-gita telle qu'elle est - petite édition",
+      "src": "33d6dd05edfc"
+    },
+    "text.3053a2049f40": {
+      "text": "Description de la série « Kantimála », 3e série, ovales plus petits",
+      "src": "3053a2049f40"
+    },
+    "text.74d74463a800": {
+      "text": "Représentation de Krishna et Balarama, 12 x 9 cm, rose",
+      "src": "74d74463a800"
+    },
+    "text.8421452334a1": {
+      "text": "Description d'une robe brodée pour divinités, taille S",
+      "src": "8421452334a1"
+    },
+    "text.21c72daee80a": {
+      "text": "Représentation de Radha et Krishna, 7 x 5 cm, en bleu pâle",
+      "src": "21c72daee80a"
+    },
+    "text.bc7ce67b267b": {
+      "text": "Description de l'autocollant Jagannath, 6,5 cm de diamètre",
+      "src": "bc7ce67b267b"
+    },
+    "text.faa937db3a40": {
+      "text": "Description de la cuillère à café Jaya Nrsimhadeva, 2,5 cm",
+      "src": "faa937db3a40"
+    },
+    "text.00832372a979": {
+      "text": "Description de la cuillère à café Jaya Nrsimhadeva, 2,7 cm",
+      "src": "00832372a979"
+    },
+    "text.a80681f1445e": {
+      "text": "Description de l'ensemble pour garçon à motifs ondulés, taille 26",
+      "src": "a80681f1445e"
+    },
+    "text.127dcb1f66b6": {
+      "text": "Description du Kantimala, 1re série, avec Jagannath",
+      "src": "127dcb1f66b6"
+    },
+    "text.5f0cf5acb738": {
+      "text": "Description du pendentif représentant le club (gada) de Balaram – Laiton",
+      "src": "5f0cf5acb738"
+    },
+    "text.c66e0dc62aa5": {
+      "text": "Description des pochettes japa colorées pour femmes, 3 modèles",
+      "src": "c66e0dc62aa5"
+    },
+    "text.0349e2451d6f": {
+      "text": "Description du pantalon blanc Bhakta, tailles 26 à 32",
+      "src": "0349e2451d6f"
+    },
+    "text.e471fce57444": {
+      "text": "Description d'une kurta pour femme de l'Orissa à manches 3/4",
+      "src": "e471fce57444"
+    },
+    "text.95bd500ed008": {
+      "text": "Description d'un sari en coton et polyester, rose et vert",
+      "src": "95bd500ed008"
+    },
+    "text.f97dee181fe8": {
+      "text": "Description de la chemise à carreaux fins pour homme, manches courtes",
+      "src": "f97dee181fe8"
+    },
+    "text.bb6a760e8608": {
+      "text": "Description des rayures bordeaux et vertes et de la bordure",
+      "src": "bb6a760e8608"
+    },
+    "text.5dca50a51fb7": {
+      "text": "Description d'un pantalon pour homme, taille M, bleu et gris",
+      "src": "5dca50a51fb7"
+    },
+    "text.1088c3f43e75": {
+      "text": "Description de l'autocollant représentant Durga, doré, d'un diamètre de 7 cm",
+      "src": "1088c3f43e75"
+    },
+    "text.30a9c9dcb37c": {
+      "text": "Description d'un sari en coton et polyester, vert et doré",
+      "src": "30a9c9dcb37c"
+    },
+    "text.2049156ab274": {
+      "text": "Description de Jagannath, Subhadra et Baladev – 5 x 7 cm",
+      "src": "2049156ab274"
+    },
+    "text.b499e48718d3": {
+      "text": "Description du bracelet couleur or | élastique souple",
+      "src": "b499e48718d3"
+    },
+    "text.f6e4b6b307f9": {
+      "text": "Description du caraco « Mango Gold Metallic » | Taille M",
+      "src": "f6e4b6b307f9"
+    },
+    "text.8386e339718e": {
+      "text": "Description des bâtonnets d'encens Jagannáth – Grand format",
+      "src": "8386e339718e"
+    },
+    "text.abd63fdc9f9b": {
+      "text": "Description du bracelet de santé avec aimants, 5 modèles",
+      "src": "abd63fdc9f9b"
+    },
+    "text.33a08315ef91": {
+      "text": "Description d'une image en 3D représentant Radha et Krishna, 9 x 9 cm",
+      "src": "33a08315ef91"
+    },
+    "text.09c0e2904114": {
+      "text": "Description de l'autocollant en bois représentant Yasoda avec Krishna",
+      "src": "09c0e2904114"
+    },
+    "text.ef12bafa6929": {
+      "text": "Description du bracelet Rudraksha avec pierres des chakras",
+      "src": "ef12bafa6929"
+    },
+    "text.8d9134be9680": {
+      "text": "Description des bâtonnets d'encens Nag Champa, grand format",
+      "src": "8d9134be9680"
+    },
+    "text.8225a6874c77": {
+      "text": "Description des dhotis unis, sans motif",
+      "src": "8225a6874c77"
+    },
+    "text.58a35c502011": {
+      "text": "Description d'une image en 3D représentant Krishna et Radha assis",
+      "src": "58a35c502011"
+    },
+    "text.67a7785280f6": {
+      "text": "Description de l'ensemble de strass – collier et boucles d'oreilles",
+      "src": "67a7785280f6"
+    },
+    "text.403f6ea6e792": {
+      "text": "Description d'un ensemble pour garçon avec des chameaux, tailles 22 et 26",
+      "src": "403f6ea6e792"
+    },
+    "text.c0a11b4bf79e": {
+      "text": "Description de l'ensemble pour garçon avec broderie rouge, taille 30",
+      "src": "c0a11b4bf79e"
+    },
+    "text.ac0d107e9c02": {
+      "text": "Description de la « Gamša » – serviette de bain indienne, 180 x 90 cm",
+      "src": "ac0d107e9c02"
+    },
+    "text.b04eaa6e372d": {
+      "text": "Description d'une pochette brodée avec une poignée ornée de perles",
+      "src": "b04eaa6e372d"
+    },
+    "text.174e8d48b043": {
+      "text": "Description d'un haut blanc brodé à bretelles, taille S",
+      "src": "174e8d48b043"
+    },
+    "text.da32a104bc38": {
+      "text": "Description du haut brodé uni, bretelles larges, taille S",
+      "src": "da32a104bc38"
+    },
+    "text.bb0e4c413c0b": {
+      "text": "Description d'un sari en coton et polyester, beige et marron",
+      "src": "bb0e4c413c0b"
+    },
+    "text.64f8d3c67084": {
+      "text": "Description de Nrsimhadév avec Prahlád, 2,5&amp;quot;",
+      "src": "64f8d3c67084"
+    },
+    "text.2092e82cfaae": {
+      "text": "Description du t-shirt « INDIA » avec un éléphant, taille M",
+      "src": "2092e82cfaae"
+    },
+    "text.0905054c2930": {
+      "text": "Description d'un sari en coton vert moutarde à rayures",
+      "src": "0905054c2930"
+    },
+    "text.ab29ded2deca": {
+      "text": "Description d'un sari en viscose rose, violet et vert",
+      "src": "ab29ded2deca"
+    },
+    "text.1eaccdecdb79": {
+      "text": "Description du pantalon de pyjama à jambes larges pour homme et femme",
+      "src": "1eaccdecdb79"
+    },
+    "text.9c924ffbcd1e": {
+      "text": "Description d'une kurta brodée pour femme, à manches 3/4",
+      "src": "9c924ffbcd1e"
+    },
+    "text.ec5cc0499e4b": {
+      "text": "Description de la pochette Japa pour homme, résistante, couleur unie",
+      "src": "ec5cc0499e4b"
+    },
+    "text.5de62cb93b5f": {
+      "text": "Description de la kurta d'été pour femme, manches courtes, taille M",
+      "src": "5de62cb93b5f"
+    },
+    "text.40c18a40a287": {
+      "text": "Description du sac Japa : Jagannath, Subhadra, Baladev",
+      "src": "40c18a40a287"
+    },
+    "text.b5083e30172c": {
+      "text": "Description du t-shirt Jagannáth – vert/orange/noir",
+      "src": "b5083e30172c"
+    },
+    "text.cea97698a401": {
+      "text": "Description de l'autocollant en bois représentant Yasoda avec Damodara",
+      "src": "cea97698a401"
+    },
+    "text.600a3b4466ee": {
+      "text": "Description de l'autocollant doré « Damodar », d'un diamètre de 7 cm",
+      "src": "600a3b4466ee"
+    },
+    "text.c781b9acb159": {
+      "text": "Description du Kantimála, 1re série, rond, petit, 2",
+      "src": "c781b9acb159"
+    },
+    "text.daca7282747e": {
+      "text": "Description du pendentif Shivalingam – verre et argent",
+      "src": "daca7282747e"
+    },
+    "text.38ec3fb83a78": {
+      "text": "Description du CD « Kršna Gopála » (2e tome de la série « Krišna »)",
+      "src": "38ec3fb83a78"
+    },
+    "text.2ef3f84847b4": {
+      "text": "Description du pantalon pour femme bleu indien et vert",
+      "src": "2ef3f84847b4"
+    },
+    "text.3d8f81417f64": {
+      "text": "Description d'un gobelet cylindrique en acier inoxydable de 100 ml",
+      "src": "3d8f81417f64"
+    },
+    "text.a0add4216371": {
+      "text": "Description de la pochette « Japa » beige en toile résistante",
+      "src": "a0add4216371"
+    },
+    "text.c88fc3d92345": {
+      "text": "Description de la couverture chaude, en coton et 20 % de polyester",
+      "src": "c88fc3d92345"
+    },
+    "text.ece1e7bfcc41": {
+      "text": "Description de la kurta violette pour femme, manches 3/4, tailles M/L",
+      "src": "ece1e7bfcc41"
+    },
+    "text.7384b8aa2fa2": {
+      "text": "Description des bâtonnets d'encens « Super Rose » – Grand format",
+      "src": "7384b8aa2fa2"
+    },
+    "text.623025a74b7d": {
+      "text": "Description d'un porte-clés peint à la main représentant Ganesha",
+      "src": "623025a74b7d"
+    },
+    "text.acdd58fb6afd": {
+      "text": "Description d'une lampe de cérémonie de taille moyenne, 17 x 7 cm",
+      "src": "acdd58fb6afd"
+    },
+    "text.58fddc0c2011": {
+      "text": "Description : Le kavača « Hare Krishna » mesure 2,8 cm d'épaisseur.",
+      "src": "58fddc0c2011"
+    },
+    "text.8c373a743fbc": {
+      "text": "Description d’un ensemble pour garçon avec des spirales, tailles 22 et 26",
+      "src": "8c373a743fbc"
+    },
+    "text.5055c5142461": {
+      "text": "Description de la 1re série de Kantimála, petite/grande tresse",
+      "src": "5055c5142461"
+    },
+    "text.f77b3fbc96da": {
+      "text": "Description d'un saladier avec couvercle, 1,4 l, diamètre 21 cm",
+      "src": "f77b3fbc96da"
+    },
+    "text.5f6c1e77e6da": {
+      "text": "Description d'une écharpe en coton tissé, 176 x 50 cm, orange",
+      "src": "5f6c1e77e6da"
+    },
+    "text.0914976fa6bf": {
+      "text": "Description de la pochette japa pour homme, gris résistant, 4 nuances",
+      "src": "0914976fa6bf"
+    },
+    "text.92859d26a66d": {
+      "text": "Description d'une pochette japa blanche pour femme, ornée d'un motif",
+      "src": "92859d26a66d"
+    },
+    "text.4da3b5f90e92": {
+      "text": "Description du coffret du Šrímad Bhágavatam (édition russe)",
+      "src": "4da3b5f90e92"
+    },
+    "text.dd3b1e87dc16": {
+      "text": "Description du sari, en coton, bleu foncé – rose foncé – beige",
+      "src": "dd3b1e87dc16"
+    },
+    "text.625e3b96b507": {
+      "text": "Description du gratte-langue et racloir en acier inoxydable",
+      "src": "625e3b96b507"
+    },
+    "text.6d6dd8461774": {
+      "text": "Description du sac tricoté Japa, idéal pour l'hiver – NOUVEAUTÉ !",
+      "src": "6d6dd8461774"
+    },
+    "text.caf2422e411e": {
+      "text": "Description du mandala « Sri Yantra » sculpté dans le bois, 59 cm",
+      "src": "caf2422e411e"
+    },
+    "text.b22375f82102": {
+      "text": "Description du mandala « Sri Yantra » sculpté dans le bois, 30 cm",
+      "src": "b22375f82102"
+    },
+    "text.726bf80c90ef": {
+      "text": "Description du pantalon blanc Bhakta, tailles 18, 20, 22",
+      "src": "726bf80c90ef"
+    },
+    "text.d8816f809363": {
+      "text": "Description de la taie d'oreiller 30 x 30 cm – L'Arbre du Cœur",
+      "src": "d8816f809363"
+    },
+    "text.a7a12bf8cf94": {
+      "text": "Description de l'autocollant de fenêtre « Gold Krishna », 9 x 6,5 cm",
+      "src": "a7a12bf8cf94"
+    },
+    "text.2a506c9cc493": {
+      "text": "Description des bâtonnets d'encens Tulsi Flora – Grand format",
+      "src": "2a506c9cc493"
+    },
+    "text.dd87894f30e9": {
+      "text": "Description d'une assiette ronde, diamètre 27,5 cm, série « Fence 12 »",
+      "src": "dd87894f30e9"
+    },
+    "text.9b07cd877d64": {
+      "text": "Description de Ganesha (version pour enfants) 7 x 3,5 cm",
+      "src": "9b07cd877d64"
+    },
+    "text.18f3d219449f": {
+      "text": "Description de l'autocollant en bois : Krishna et Radha, bleu",
+      "src": "18f3d219449f"
+    },
+    "text.054a59ed2808": {
+      "text": "Description du bindi, taille 4, rouge foncé avec une pierre précieuse",
+      "src": "054a59ed2808"
+    },
+    "text.7408632bca48": {
+      "text": "Description des poupées Gopí Lalita (en or) et Vishakha",
+      "src": "7408632bca48"
+    },
+    "text.674c05b2a508": {
+      "text": "Description du haut court crème à manches longues en crochet de ZARA",
+      "src": "674c05b2a508"
+    },
+    "text.173a78cc038e": {
+      "text": "Description d'un collier imposant à pendentif en verre vintage",
+      "src": "173a78cc038e"
+    },
+    "text.08d7795d0b9c": {
+      "text": "Description d'un bijou vintage | Collier bohème ethnique",
+      "src": "08d7795d0b9c"
+    },
+    "text.b5df62c2bcc5": {
+      "text": "Description du Kantimála : 2e rangée, 3 perles marron, 1 perle ovale",
+      "src": "b5df62c2bcc5"
+    },
+    "text.6ebb4031b244": {
+      "text": "Description de l'image de Damodar recto-verso à accrocher",
+      "src": "6ebb4031b244"
+    },
+    "text.b8298afcf7d9": {
+      "text": "Description d'une statuette OM plaquée or de 9 cm, avec un liseré rouge",
+      "src": "b8298afcf7d9"
+    },
+    "text.0f1282b16425": {
+      "text": "Description de Jagannath, Baladev et Subhadra – 9,5 x 12 cm",
+      "src": "0f1282b16425"
+    },
+    "text.ad4843fc735a": {
+      "text": "Description d'une nappe en soie et coton, 255 x 115 cm",
+      "src": "ad4843fc735a"
+    },
+    "text.55e750187f86": {
+      "text": "Description d'une kurta bleue pour femme, manches longues, taille L",
+      "src": "55e750187f86"
+    },
+    "text.128d55fc95a5": {
+      "text": "Description du lot de 24 bracelets : dorés, verts et rouges",
+      "src": "128d55fc95a5"
+    },
+    "text.1eae19ff36b9": {
+      "text": "Description d'un jupon uni, taille M, plusieurs coloris disponibles",
+      "src": "1eae19ff36b9"
+    },
+    "text.76aec238cc0c": {
+      "text": "Description d'un jupon uni, taille L, plusieurs couleurs disponibles",
+      "src": "76aec238cc0c"
+    },
+    "text.dc7c68f3b46d": {
+      "text": "Description des boucles d'oreilles papillon en forme de cercle, 2 modèles",
+      "src": "dc7c68f3b46d"
+    },
+    "text.d8d2c8dc485d": {
+      "text": "Description du lot de 48 bracelets : dorés, verts et rouges",
+      "src": "d8d2c8dc485d"
+    },
+    "text.0f30c24fdbaa": {
+      "text": "Description d'un motif « dhotí » à rayures et d'une bordure au point de croix",
+      "src": "0f30c24fdbaa"
+    },
+    "text.b598c6d4d9ee": {
+      "text": "Description du sac à japa : Krishna avec une flûte et Radha",
+      "src": "b598c6d4d9ee"
+    },
+    "text.350d7f7d869f": {
+      "text": "Description de la pochette japa pour homme – résistante, lisse, marron",
+      "src": "350d7f7d869f"
+    },
+    "text.53dee62be07a": {
+      "text": "Description de la combinaison Zara blanche en coton d'été | Taille",
+      "src": "53dee62be07a"
+    },
+    "text.4f528b1dfd49": {
+      "text": "Description du Kantimála, 2e série, petites perles rondes",
+      "src": "4f528b1dfd49"
+    },
+    "text.10ec37504704": {
+      "text": "Description du sac à bandoulière rond noir, diamètre 28 cm",
+      "src": "10ec37504704"
+    },
+    "text.b8b33344b094": {
+      "text": "Description du sac à bandoulière rond blanc, diamètre 28 cm",
+      "src": "b8b33344b094"
+    },
+    "text.c6dd13e8ae21": {
+      "text": "Description d'un jupon uni, taille S, plusieurs couleurs disponibles",
+      "src": "c6dd13e8ae21"
+    },
+    "text.f5b80cc3951b": {
+      "text": "Description d'une peinture représentant Prabhupada, 7 x 5 cm, acrylique",
+      "src": "f5b80cc3951b"
+    },
+    "text.88f46ee18594": {
+      "text": "Description d'une statue en bois de Jagannath sur un socle",
+      "src": "88f46ee18594"
+    },
+    "text.25bca098d89c": {
+      "text": "Description d'un japa mala de rudraksha de taille moyenne, chapelet",
+      "src": "25bca098d89c"
+    },
+    "text.b5c7b15ce980": {
+      "text": "Description d'une figurine en 3D représentant Krishna avec un veau, 9 x 9 cm",
+      "src": "b5c7b15ce980"
+    },
+    "text.973a2f0a3cbc": {
+      "text": "Description des bâtonnets d'encens Tulsi Masala – Grand format",
+      "src": "973a2f0a3cbc"
+    },
+    "text.3d1337f8e3f5": {
+      "text": "Description de la Bhagavad-gítá telle qu'elle est (édition anglaise)",
+      "src": "3d1337f8e3f5"
+    },
+    "text.919b17c55fee": {
+      "text": "Description d'une boîte avec couvercle, diamètre 8 cm, Om Sakthi 4",
+      "src": "919b17c55fee"
+    },
+    "text.2c5776629a8b": {
+      "text": "Description : une bande plus large de dhoti, ornée d'une bordure rayée",
+      "src": "2c5776629a8b"
+    },
+    "text.af1fc50a30a8": {
+      "text": "Description du bracelet en laiton RÁDHE RÁDHE (or/argent)",
+      "src": "af1fc50a30a8"
+    },
+    "text.3cd854f333e2": {
+      "text": "Description du compteur de perles pour sac à japa – perles bleues",
+      "src": "3cd854f333e2"
+    },
+    "text.d982a2ed1abb": {
+      "text": "Description du compteur de perles « Japa bag » – perles jaunes/rouges",
+      "src": "d982a2ed1abb"
+    },
+    "text.4b2291d94561": {
+      "text": "Description d'une boîte avec couvercle, diamètre 6 cm, Om Sakthi 1",
+      "src": "4b2291d94561"
+    },
+    "text.76a5fc54b5cf": {
+      "text": "Description de Kantimála, lot de 3 rouleaux de taille moyenne",
+      "src": "76a5fc54b5cf"
+    },
+    "text.12ff81e8cda3": {
+      "text": "Description de la 1re série Kantimála, ovales de taille moyenne",
+      "src": "12ff81e8cda3"
+    },
+    "text.f9e90bbd7622": {
+      "text": "Description d'une kurta brodée pour femme, à manches courtes",
+      "src": "f9e90bbd7622"
+    },
+    "text.1f3ab478a5e0": {
+      "text": "Description de l'ensemble top et jupe à motifs floraux tie-dye | L/XL",
+      "src": "1f3ab478a5e0"
+    },
+    "text.5abdf5d2c0eb": {
+      "text": "Description du Kantimála, 1er rang : perles blanches parmi des perles rouges",
+      "src": "5abdf5d2c0eb"
+    },
+    "text.0dda04531a06": {
+      "text": "Description des poupées représentant Jagannath, Baladev et Subhadra",
+      "src": "0dda04531a06"
+    },
+    "text.d91d7533e967": {
+      "text": "Description du Kantimála, 1re série, en argent et perles",
+      "src": "d91d7533e967"
+    },
+    "text.5b53a9a0d56f": {
+      "text": "Description des bâtonnets d'encens Krishna Priya – Grand format",
+      "src": "5b53a9a0d56f"
+    },
+    "text.18f0dec366a2": {
+      "text": "Description du châle de luxe Dhariwal, en laine et polyester",
+      "src": "18f0dec366a2"
+    },
+    "text.aec71c6be877": {
+      "text": "Description d'une statuette dorée représentant le petit Krishna sur une balançoire",
+      "src": "aec71c6be877"
+    },
+    "text.069e3526f47c": {
+      "text": "Description de Gamša – Serviette de bain vaishnava, 180 x 92 cm",
+      "src": "069e3526f47c"
+    },
+    "text.6a2d416f9252": {
+      "text": "Description de la pochette à japa pour homme, résistante, verte/grise/bleue",
+      "src": "6a2d416f9252"
+    },
+    "text.229d519c2b58": {
+      "text": "Description d'une boîte du Rajasthan, rouge et bleue, de taille moyenne",
+      "src": "229d519c2b58"
+    },
+    "text.35693aee214d": {
+      "text": "Description d'un sari en coton orné d'un motif tissé bordeaux",
+      "src": "35693aee214d"
+    },
+    "text.3a20abc0623e": {
+      "text": "Description du haut à rayures marron et turquoise, taille M/L",
+      "src": "3a20abc0623e"
+    },
+    "text.91db699ede45": {
+      "text": "Description des boucles d'oreilles « Papillon noir et blanc », en métal",
+      "src": "91db699ede45"
+    },
+    "text.d51f4035106a": {
+      "text": "Description du porte-bâtons en bois sans fioritures, clair/foncé",
+      "src": "d51f4035106a"
+    },
+    "text.6d6093348400": {
+      "text": "Description du porte-crayons à l'effigie de Krishna (2 modèles)",
+      "src": "6d6093348400"
+    },
+    "text.3ca2b6bbb4c2": {
+      "text": "Description d'une photo de Prabhupada souriant, 14 x 10 cm",
+      "src": "3ca2b6bbb4c2"
+    },
+    "text.49efb0f8fb1a": {
+      "text": "Description d'un haut indien brodé en soie et coton | Bleu sarcelle",
+      "src": "49efb0f8fb1a"
+    },
+    "text.25ffb188f645": {
+      "text": "Description du sac à bandoulière rond jaune, diamètre 28 cm",
+      "src": "25ffb188f645"
+    },
+    "text.8e10e01e08ac": {
+      "text": "Description d'un jupon uni, taille XL, plusieurs couleurs disponibles",
+      "src": "8e10e01e08ac"
+    },
+    "text.5696fff58f9d": {
+      "text": "Description des bâtonnets d'encens Varsana Flora – Grand format",
+      "src": "5696fff58f9d"
+    },
+    "text.e49a72da7b4f": {
+      "text": "Description du porte-clés « Paon aux yeux bleus », 4 modèles",
+      "src": "e49a72da7b4f"
+    },
+    "text.f0456c7771ab": {
+      "text": "Description d'une statue en bois de Prabhupada posée sur un socle",
+      "src": "f0456c7771ab"
+    },
+    "text.14c3c83b442e": {
+      "text": "Représentation de Radha et Krishna portant un manteau, 12 x 9 cm",
+      "src": "14c3c83b442e"
+    },
+    "text.f02a6d9aceba": {
+      "text": "Description de l'autocollant Sarasvati, doré, 7 cm de diamètre",
+      "src": "f02a6d9aceba"
+    },
+    "text.67a96eb9d130": {
+      "text": "Représentation de Radha et Krishna sur un lotus, 5&amp;quot;",
+      "src": "67a96eb9d130"
+    },
+    "text.e87bbb0c50de": {
+      "text": "Description du Kantimála, 2e série : rouleaux longs et fins",
+      "src": "e87bbb0c50de"
+    },
+    "text.87606b47209c": {
+      "text": "Description d'une image représentant Krishna et Balarama, 7 x 5 cm",
+      "src": "87606b47209c"
+    },
+    "text.3dd2ce480567": {
+      "text": "Description d'une affiche au format A3 représentant Krishna et Radha sur une balançoire",
+      "src": "3dd2ce480567"
+    },
+    "text.cdf9ea84d2a7": {
+      "text": "Description du service de sacrifice pliable, diamètre 18,5 cm",
+      "src": "cdf9ea84d2a7"
+    },
+    "text.86ad4f188487": {
+      "text": "Description du sac Japa : Krishna enfant, brodé",
+      "src": "86ad4f188487"
+    },
+    "text.bb219b32556b": {
+      "text": "Description de l'autocollant en bois : Krishna et Radha assis",
+      "src": "bb219b32556b"
+    },
+    "text.2747fe1b4272": {
+      "text": "Description d'un compteur de chapelet pour un sac de perles de Tulsí",
+      "src": "2747fe1b4272"
+    },
+    "text.9c8b6610cf44": {
+      "text": "Description du Kantimála, 2e série, perles en or plus épaisses",
+      "src": "9c8b6610cf44"
+    },
+    "text.33cac8020025": {
+      "text": "Description des rayures du dhoti, avec des bordures bordeaux et vertes",
+      "src": "33cac8020025"
+    },
+    "text.2ec3ab9b06de": {
+      "text": "Description : Une large bande de tissu vert et coloré",
+      "src": "2ec3ab9b06de"
+    },
+    "text.0009bbfd03b0": {
+      "text": "Description de la veste beige à rayures pour homme, à manches courtes",
+      "src": "0009bbfd03b0"
+    },
+    "text.3cbd008651d7": {
+      "text": "Description des bâtonnets d'encens Tulsi Chandan – Grand format",
+      "src": "3cbd008651d7"
+    },
+    "text.c4935bb4e7e8": {
+      "text": "Description des bâtonnets d'encens Jay Jagannáth – Grand format",
+      "src": "c4935bb4e7e8"
+    },
+    "text.1a1278a94b6b": {
+      "text": "Description du pantalon long en laine à jambes larges et texture « Mango »",
+      "src": "1a1278a94b6b"
+    },
+    "text.e3fbb553b961": {
+      "text": "Description des poupées représentant Rama, Lakshmana, Hanuman et Sita",
+      "src": "e3fbb553b961"
+    },
+    "text.d98d6fa8122b": {
+      "text": "Description d'un chemisier sans manches brodé pour femme, taille S/M",
+      "src": "d98d6fa8122b"
+    },
+    "text.26be6d1fc20c": {
+      "text": "Description d'un ensemble pour garçon à motifs en diagonale, taille 28",
+      "src": "26be6d1fc20c"
+    },
+    "text.6ce6cb47a7e6": {
+      "text": "Description d'une assiette ronde de 25,5 cm de diamètre, série « Fence 11 »",
+      "src": "6ce6cb47a7e6"
+    },
+    "text.e3bcaa9cff05": {
+      "text": "Description du Kantimála, 2e série, perles rondes et plus grosses",
+      "src": "e3bcaa9cff05"
+    },
+    "text.b788b24a41e7": {
+      "text": "Description de la pochette « japa » pour femme, couleur bordeaux, à motifs",
+      "src": "b788b24a41e7"
+    },
+    "text.3fed2d54ffb7": {
+      "text": "Description de la pochette Japa pour femme, motif clair",
+      "src": "3fed2d54ffb7"
+    },
+    "text.6d7a79d7060b": {
+      "text": "Description du Maháprasádam – Mélange de fruits secs et de fruits, 200 g",
+      "src": "6d7a79d7060b"
+    },
+    "text.a5db7edacd14": {
+      "text": "Description du bracelet « Health » aux couleurs argent et or",
+      "src": "a5db7edacd14"
+    },
+    "text.7a39005910a0": {
+      "text": "Description d'un autocollant en bois représentant Krishna et Radha",
+      "src": "7a39005910a0"
+    },
+    "text.68b530f16cf1": {
+      "text": "Description des dhotis à deux bandes, avec une bordure sur toute la largeur",
+      "src": "68b530f16cf1"
+    },
+    "text.3e8e87487aae": {
+      "text": "Description de la robe longue d'été en coton indien | Taille M-L",
+      "src": "3e8e87487aae"
+    },
+    "text.1ff3efd67d7d": {
+      "text": "Description du porte-clés en bois avec le Mahamantra, 5 x 3 cm",
+      "src": "1ff3efd67d7d"
+    },
+    "text.f8cf99aa887a": {
+      "text": "Description de la 1re série de Kantimála, rouleaux de taille moyenne",
+      "src": "f8cf99aa887a"
+    },
+    "text.c37592f2b974": {
+      "text": "Description du sac Japa noir orné de la tête de Jagannātha",
+      "src": "c37592f2b974"
+    },
+    "text.dbfd7f2bc83a": {
+      "text": "Description du shampoing naturel pour cheveux blonds et dorés",
+      "src": "dbfd7f2bc83a"
+    },
+    "text.8d8e68cbf216": {
+      "text": "Description des bâtonnets d'encens « Special Sandal » – Grand format",
+      "src": "8d8e68cbf216"
+    },
+    "text.7c31e1a5dc8b": {
+      "text": "Description d'une figurine en 3D représentant Krishna avec du beurre, 9 x 9 cm",
+      "src": "7c31e1a5dc8b"
+    },
+    "text.748428e51faf": {
+      "text": "Description of Tilak Rádhe pendant (Sanskrit inscription)",
+      "src": "748428e51faf"
+    },
+    "text.bf1323e5588e": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 9",
+      "src": "bf1323e5588e"
+    },
+    "text.b16f5709a3bc": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 8",
+      "src": "b16f5709a3bc"
+    },
+    "text.1bead99581ef": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 7",
+      "src": "1bead99581ef"
+    },
+    "text.3b06d31bba98": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 6",
+      "src": "3b06d31bba98"
+    },
+    "text.3de3c7ae0ef7": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 5",
+      "src": "3de3c7ae0ef7"
+    },
+    "text.9ccabd6f8b8d": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 4",
+      "src": "9ccabd6f8b8d"
+    },
+    "text.26247448aa6e": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 3",
+      "src": "26247448aa6e"
+    },
+    "text.d747e5f13c5f": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 2",
+      "src": "d747e5f13c5f"
+    },
+    "text.dfd8f2ba669b": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 1",
+      "src": "dfd8f2ba669b"
+    },
+    "text.96f3504e29dd": {
+      "text": "Description du Kantimála : 2 rangées, 2 perles rondes, 1 cylindre",
+      "src": "96f3504e29dd"
+    },
+    "text.447e506726f7": {
+      "text": "Description des bracelets fins – différentes couleurs et tailles",
+      "src": "447e506726f7"
+    },
+    "text.bb0f2894b3b4": {
+      "text": "Description d'une boîte avec couvercle, diamètre 7,5 cm, Om Sakthi 3",
+      "src": "bb0f2894b3b4"
+    },
+    "text.71c76a039027": {
+      "text": "Description du pantalon Bhakta pour enfants, tailles 26 à 34",
+      "src": "71c76a039027"
+    },
+    "text.42e52235d2dd": {
+      "text": "Description des poupées Šíla « Pierre sacrée », 8 x 10 cm, roses",
+      "src": "42e52235d2dd"
+    },
+    "text.93d0d5817f87": {
+      "text": "Description des poupées « Šíla » (« Pierre sacrée »), 9 x 10 cm, bleues",
+      "src": "93d0d5817f87"
+    },
+    "text.dd5684d8d732": {
+      "text": "Description du Kantimála : 2 rangées, 2 perles marron, 2 perles de tulasi",
+      "src": "dd5684d8d732"
+    },
+    "text.8e882366b50c": {
+      "text": "Description de Radha Krishna avec un veau – une statue dorée",
+      "src": "8e882366b50c"
+    },
+    "text.d25615000a4b": {
+      "text": "Description des bâtonnets d'encens Sandal Supreme – Grand format",
+      "src": "d25615000a4b"
+    },
+    "text.e7f6fa337a90": {
+      "text": "Description d'une kurta pour femme à col en V et manches courtes",
+      "src": "e7f6fa337a90"
+    },
+    "text.73f2ed080971": {
+      "text": "Description des tatouages autocollants décoratifs dorés (9 motifs)",
+      "src": "73f2ed080971"
+    },
+    "text.bc57602a3ff2": {
+      "text": "Description de la veste rayée pour homme, manches longues, taille M",
+      "src": "bc57602a3ff2"
+    },
+    "text.75d5ae9d1c88": {
+      "text": "Description d'un pendentif en céramique fait main | Style bohème hippie",
+      "src": "75d5ae9d1c88"
+    },
+    "text.167a3b5f1b76": {
+      "text": "Description de la tunique ethnique en coton indien teinte au nœud | Taille M",
+      "src": "167a3b5f1b76"
+    },
+    "text.e0e3908fda45": {
+      "text": "Description de la 1re série Kantimála : reliefs « OM » avec des ovales",
+      "src": "e0e3908fda45"
+    },
+    "text.4e6457607c76": {
+      "text": "Description du Kantimála, 1re série, en bois massif avec le symbole « Om »",
+      "src": "4e6457607c76"
+    },
+    "text.a9c3e167bc61": {
+      "text": "Description du Kantimála, 1re série, en argent avec des minéraux",
+      "src": "a9c3e167bc61"
+    },
+    "text.15171c365924": {
+      "text": "Description d'une veste orange pour garçon, à manches courtes, taille 26",
+      "src": "15171c365924"
+    },
+    "text.c1e2f23dc688": {
+      "text": "Description d'un sari en viscose bleu à rayures diagonales rouges",
+      "src": "c1e2f23dc688"
+    },
+    "text.53512078a46f": {
+      "text": "Description des rayures bordeaux, bordure bordeaux et verte",
+      "src": "53512078a46f"
+    },
+    "text.13e47af1f2e1": {
+      "text": "Description d'un insigne représentant Krishna avec une flûte, d'un diamètre de 4,4 cm",
+      "src": "13e47af1f2e1"
+    },
+    "text.f42b378cf282": {
+      "text": "Description des graines de cumin noir entières, 25 g – cumin noir",
+      "src": "f42b378cf282"
+    },
+    "text.1cfd7187ee77": {
+      "text": "Description d'un sari en viscose rose avec le tissu pour le choli",
+      "src": "1cfd7187ee77"
+    },
+    "text.38439f70514a": {
+      "text": "Description de la Bhagavad-gítá telle qu'elle est (édition ukrainienne)",
+      "src": "38439f70514a"
+    },
+    "text.22e0ec66fd00": {
+      "text": "Description des carnets Ganesha de 12,5 cm – différentes couleurs",
+      "src": "22e0ec66fd00"
+    },
+    "text.92a980a283ab": {
+      "text": "Description de la pochette japa rouge pour femme avec broderies dorées",
+      "src": "92a980a283ab"
+    },
+    "text.5049ee0ec7f4": {
+      "text": "Description d'une perle en imitation os issue d'un imprimé batik africain fait main",
+      "src": "5049ee0ec7f4"
+    },
+    "text.5b40ce166701": {
+      "text": "Description de la robe d'été à bretelles en coton imprimée à la main à l'indienne",
+      "src": "5b40ce166701"
+    },
+    "text.cdfb41d43dfc": {
+      "text": "Description du haut d'été en coton indien | Tailles M à L",
+      "src": "cdfb41d43dfc"
+    },
+    "text.e33009a10330": {
+      "text": "Description de « 108 Stoosmička » – revue consacrée à la renaissance spirituelle",
+      "src": "e33009a10330"
+    },
+    "text.c350a62d7cdd": {
+      "text": "Description de la « Coupe des dieux » conique, en acier inoxydable",
+      "src": "c350a62d7cdd"
+    },
+    "text.c200ae23cc06": {
+      "text": "Description du sac à bandoulière rond bordeaux, diamètre 28 cm",
+      "src": "c200ae23cc06"
+    },
+    "text.62013ff070b2": {
+      "text": "Description : avec une fermeture à l'avant, taille 95 (XL)",
+      "src": "62013ff070b2"
+    },
+    "text.7800a1d8da55": {
+      "text": "Description de la jupe plissée avec rubans dorés II, 9 modèles",
+      "src": "7800a1d8da55"
+    },
+    "text.d97f8d9edeba": {
+      "text": "Description des bâtonnets d'encens spéciaux Parijat – Grand format",
+      "src": "d97f8d9edeba"
+    },
+    "text.a6bb5d01959f": {
+      "text": "Description de l'autocollant en bois représentant Krishna avec une petite vache",
+      "src": "a6bb5d01959f"
+    },
+    "text.372595fbbe6b": {
+      "text": "Description du jupon à volants, taille M, plusieurs couleurs disponibles",
+      "src": "372595fbbe6b"
+    },
+    "text.29d10fae9846": {
+      "text": "Description du Kantimála n° 1, marron, entre les rouleaux",
+      "src": "29d10fae9846"
+    },
+    "text.6d38594f83d7": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 14",
+      "src": "6d38594f83d7"
+    },
+    "text.210adfd4bb82": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 13",
+      "src": "210adfd4bb82"
+    },
+    "text.5513b255229e": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 12",
+      "src": "5513b255229e"
+    },
+    "text.95f21ebf5910": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 11",
+      "src": "95f21ebf5910"
+    },
+    "text.e67d3a87b50c": {
+      "text": "Description d'une bague orientale en métal sertie de pierres colorées 10",
+      "src": "e67d3a87b50c"
+    },
+    "text.699a2c6693c3": {
+      "text": "Description de la Bhagavad-gītā telle qu’elle est (édition slovaque)",
+      "src": "699a2c6693c3"
+    },
+    "text.6980176eb519": {
+      "text": "Description des poupées « Šíla » (« pierre sacrée »), 8 x 10 cm, marron",
+      "src": "6980176eb519"
+    },
+    "text.7b67946142e5": {
+      "text": "Description des poupées Šíla « Pierre sacrée », 8 x 10 cm, noires",
+      "src": "7b67946142e5"
+    },
+    "text.44122fb5e571": {
+      "text": "Description des grandes poupées représentant Jagannath, Baladev et Subhadra",
+      "src": "44122fb5e571"
+    },
+    "text.47fcda61860e": {
+      "text": "Description : Une fine bande de dhoti, ornée d'une bordure à motifs de feuilles",
+      "src": "47fcda61860e"
+    },
+    "text.e5c162711d6e": {
+      "text": "Description de l'affiche au format A3 : Krishna et Radha dans le jardin",
+      "src": "e5c162711d6e"
+    },
+    "text.570d2c386648": {
+      "text": "Description du Kantimála, 1re série, noir avec des perles bleues",
+      "src": "570d2c386648"
+    },
+    "text.3bb27589695b": {
+      "text": "Description du Kantimála, 1re série, en argent avec turquoise",
+      "src": "3bb27589695b"
+    },
+    "text.4c195710a8aa": {
+      "text": "Description des bâtonnets d'encens « Vrindavan Flower » – grand format",
+      "src": "4c195710a8aa"
+    },
+    "text.35211aa39ccf": {
+      "text": "Description d'un ensemble pour garçon jaune et rouge, tailles 24 et 28",
+      "src": "35211aa39ccf"
+    },
+    "text.1d87cd7c0013": {
+      "text": "Description du t-shirt jaune à manches courtes pour garçon, taille 22",
+      "src": "1d87cd7c0013"
+    },
+    "text.84bcd5b27e6e": {
+      "text": "Description d'un lot de 20 bracelets peints et ornés de strass",
+      "src": "84bcd5b27e6e"
+    },
+    "text.2d3bb16b7889": {
+      "text": "Description du pendentif représentant la masse (gada) de Balaram, orné de rudraksha",
+      "src": "2d3bb16b7889"
+    },
+    "text.d27d6e1145d3": {
+      "text": "Description du Kantimála, 2e série, paires de perles orange",
+      "src": "d27d6e1145d3"
+    },
+    "text.7d8154983af7": {
+      "text": "Description of Tilak Krishna Pendant (Sanskrit inscription)",
+      "src": "7d8154983af7"
+    },
+    "text.0e0ab61307cd": {
+      "text": "Description du sac Japa en toile résistante, de couleur unie",
+      "src": "0e0ab61307cd"
+    },
+    "text.3954212cb792": {
+      "text": "Description d'une kurta matelassée à rayures pour femme, à manches courtes",
+      "src": "3954212cb792"
+    },
+    "text.1b6ff55f774a": {
+      "text": "Description du sac à japa Krishna bleu foncé orné d'une petite vache",
+      "src": "1b6ff55f774a"
+    },
+    "text.0e564b4d9829": {
+      "text": "Description de l'image : Lettre de Prabhupada, acrylique, 2 modèles",
+      "src": "0e564b4d9829"
+    },
+    "text.2d45e0b9ca2e": {
+      "text": "Description du porte-clés en plume de paon avec un œil en turquoise",
+      "src": "2d45e0b9ca2e"
+    },
+    "text.d86e1ab0f738": {
+      "text": "Description du porte-clés « Paon » avec un œil coloré, 3 modèles",
+      "src": "d86e1ab0f738"
+    },
+    "text.63fcf3aed632": {
+      "text": "Description d'une image de Krishna dans une fenêtre, 18,5 x 13 cm",
+      "src": "63fcf3aed632"
+    },
+    "text.0e08780c1861": {
+      "text": "Description de l'illustration représentant Yasoda avec Krishna, 18,5 x 13 cm",
+      "src": "0e08780c1861"
+    },
+    "text.693e569f0b2b": {
+      "text": "Description de la jupe plissée avec rubans dorés I., 9 modèles",
+      "src": "693e569f0b2b"
+    },
+    "text.d63b7aa2a6f4": {
+      "text": "Description d'une bague orientale en métal sertie d'une pierre précieuse colorée",
+      "src": "d63b7aa2a6f4"
+    },
+    "text.c6bc7dd6d6bf": {
+      "text": "Description du t-shirt à dentelle Čolí, manches courtes, tailles S à XL",
+      "src": "c6bc7dd6d6bf"
+    },
+    "text.9d4448f49d46": {
+      "text": "Description d'un jupon brodé uni, tailles M et M/L",
+      "src": "9d4448f49d46"
+    },
+    "text.4932d5a5ed60": {
+      "text": "Description de la robe Gopi à col et volants, taille L",
+      "src": "4932d5a5ed60"
+    },
+    "text.feddff5c55ff": {
+      "text": "Description de la robe Gopi avec pantalon à pieds, en coton doux",
+      "src": "feddff5c55ff"
+    },
+    "text.d3680c9b46f8": {
+      "text": "Description de la Bhagavad-gítá telle qu'elle est (édition russe)",
+      "src": "d3680c9b46f8"
+    },
+    "text.46b5124d8156": {
+      "text": "Description des bâtonnets d'encens Chintamani Delux – Grand format",
+      "src": "46b5124d8156"
+    },
+    "text.b705707e3a51": {
+      "text": "Description d'un sari en coton bleu foncé et blanc, accompagné d'un choli",
+      "src": "b705707e3a51"
+    },
+    "text.d02bcad130cc": {
+      "text": "Description des tatouages temporaires « Black Butterfly » (4 motifs)",
+      "src": "d02bcad130cc"
+    },
+    "text.da0c673d5bcf": {
+      "text": "Description d’une chemise pour homme à fines rayures, manches courtes",
+      "src": "da0c673d5bcf"
+    },
+    "text.a60b3eb9dd4f": {
+      "text": "Description : trois bandes, bordure ornée de trèfles à quatre feuilles",
+      "src": "a60b3eb9dd4f"
+    },
+    "text.241f638b0bee": {
+      "text": "Description des bâtonnets d'encens « Vrindavan Garden » – Grand format",
+      "src": "241f638b0bee"
+    },
+    "text.aaafd2974b27": {
+      "text": "Description de la statuette indienne représentant Parvati, idole spirituelle",
+      "src": "aaafd2974b27"
+    },
+    "text.12181821e9ed": {
+      "text": "Description d'un foulard de créateur de la marque de luxe indienne Satya Paul",
+      "src": "12181821e9ed"
+    },
+    "text.eccbc23a74e7": {
+      "text": "Description des poupées « Šíla » (« pierre sacrée ») 9 x 12 cm (3 modèles)",
+      "src": "eccbc23a74e7"
+    },
+    "text.549d1dc99fdd": {
+      "text": "Description des boucles d'oreilles à anneaux colorés, couleurs variées",
+      "src": "549d1dc99fdd"
+    },
+    "text.22800d4a6e4b": {
+      "text": "Description du Kantimála, 1re classe, en argent avec une pierre rouge",
+      "src": "22800d4a6e4b"
+    },
+    "text.f96fd57b8bf9": {
+      "text": "Description de l'autocollant Ganesha/Durga, doré, 7 cm de diamètre",
+      "src": "f96fd57b8bf9"
+    },
+    "text.ec441dbb7d5d": {
+      "text": "Description d'une kurta blanche brodée pour femme, à manches longues",
+      "src": "ec441dbb7d5d"
+    },
+    "text.232cbd7586c6": {
+      "text": "Représentation de Radhā et Krishna avec une petite vache, 5 x 7 cm",
+      "src": "232cbd7586c6"
+    },
+    "text.f5d178c83193": {
+      "text": "Description d'un sari en mousseline verte avec le tissu nécessaire à la confection du chooli",
+      "src": "f5d178c83193"
+    },
+    "text.a3d03bfdd30b": {
+      "text": "Description d'un lot de 24 bracelets fins dorés unis",
+      "src": "a3d03bfdd30b"
+    },
+    "text.52c94a723550": {
+      "text": "Description de l'autocollant ovale « Krishna enfant » (4 motifs)",
+      "src": "52c94a723550"
+    },
+    "text.c46c1e43e6c7": {
+      "text": "Description du haut en lin rouge Springfield à boutons en bois",
+      "src": "c46c1e43e6c7"
+    },
+    "text.dc81e58476c7": {
+      "text": "Description du haut kurti en coton noir · Taille L · Style bohème indien",
+      "src": "dc81e58476c7"
+    },
+    "text.6636a4006289": {
+      "text": "Description du collier et des boucles d’oreilles « Tears » de Vrinda Creation",
+      "src": "6636a4006289"
+    },
+    "text.369eb587450c": {
+      "text": "Description de la clochette suspendue Ganesha avec parasol (3 couleurs)",
+      "src": "369eb587450c"
+    },
+    "text.a138e0d37194": {
+      "text": "Description d'Ugra Nrsimhadév, 7 x 5 cm, rose, originaire de Mayapur",
+      "src": "a138e0d37194"
+    },
+    "text.bd6e76820597": {
+      "text": "Description d'un porte-clés rectangulaire avec des miroirs et des paillettes",
+      "src": "bd6e76820597"
+    },
+    "text.2da72a3fa1e7": {
+      "text": "Description d'un paon aux plumes de la queue déployées, 14 x 11 cm",
+      "src": "2da72a3fa1e7"
+    },
+    "text.bbe9b7d4b20f": {
+      "text": "Description de l'autocollant représentant les petits Jagannath, Baladev et Subhadra",
+      "src": "bbe9b7d4b20f"
+    },
+    "text.04ad9d8afff0": {
+      "text": "Description d'une statue de l'OM plaquée or de 6,5 cm, ornée d'une bordure rouge",
+      "src": "04ad9d8afff0"
+    },
+    "text.f9445f84787b": {
+      "text": "Description d'un châle à motifs floraux, 20 % laine, marron/vert",
+      "src": "f9445f84787b"
+    },
+    "text.a5adc437b67f": {
+      "text": "Description d'un sari en viscose, taille 40/M, orange, avec un col",
+      "src": "a5adc437b67f"
+    },
+    "text.31ae6c91b755": {
+      "text": "Description des tatouages temporaires « Papillon rose » (2 x 4 motifs)",
+      "src": "31ae6c91b755"
+    },
+    "text.9e497b65b195": {
+      "text": "Description de Kantimála, 1re série, cylindres de 1,5 × 0,4 cm",
+      "src": "9e497b65b195"
+    },
+    "text.5e4d54a74c30": {
+      "text": "Description de la veste unie pour homme, manches longues, taille XL",
+      "src": "5e4d54a74c30"
+    },
+    "text.52c851ff3946": {
+      "text": "Description du sac Japa peint à la main : un fidèle avec Jagannath",
+      "src": "52c851ff3946"
+    },
+    "text.beb78e1fd606": {
+      "text": "Description de la Kantimála, 1er rang, rouge, entre deux perles dorées",
+      "src": "beb78e1fd606"
+    },
+    "text.9dc928aa5e8f": {
+      "text": "Description d'un sac vintage | Cuir éthiopien couleur tan | Sac bohème",
+      "src": "9dc928aa5e8f"
+    },
+    "text.1f9392d95e45": {
+      "text": "Description d'une figurine de Ganesha en terre cuite indienne",
+      "src": "1f9392d95e45"
+    },
+    "text.76a77e31fcb0": {
+      "text": "Description des boucles d'oreilles pendantes en anneaux avec perles de rocaille multicolores style bohème",
+      "src": "76a77e31fcb0"
+    },
+    "text.250225334cad": {
+      "text": "Description d'une taie d'oreiller de 44 x 44 cm avec motif ajouré, rose",
+      "src": "250225334cad"
+    },
+    "text.4540c48af819": {
+      "text": "Description du Kantimála de 2e classe, doré, entre les rouleaux",
+      "src": "4540c48af819"
+    },
+    "text.f23cda611965": {
+      "text": "Description du Kantimála, 2e série, perles blanches parmi des perles rouges",
+      "src": "f23cda611965"
+    },
+    "text.72cfbdd98159": {
+      "text": "Description du Kantimála, 2e série : perles noires parmi des perles rouges",
+      "src": "72cfbdd98159"
+    },
+    "text.fd708af12794": {
+      "text": "Description des cahiers Rádha Krishna de 20 cm, différentes couleurs",
+      "src": "fd708af12794"
+    },
+    "text.4c3c7ecdf944": {
+      "text": "Description du t-shirt Rádha Krishna, gris et jaune, taille M",
+      "src": "4c3c7ecdf944"
+    },
+    "text.2f0b3e83bcb6": {
+      "text": "Description d'un tableau recto-verso représentant Rādhā et Krishna, à accrocher",
+      "src": "2f0b3e83bcb6"
+    },
+    "text.b44bac8cc4b1": {
+      "text": "Description d'une écharpe en cachemire aux motifs délicatement marbrés, 208 x 75 cm",
+      "src": "b44bac8cc4b1"
+    },
+    "text.9f5644ab4666": {
+      "text": "Description du « Guide pour débutants sur la science de la conscience de Krishna »",
+      "src": "9f5644ab4666"
+    },
+    "text.59d4ec4dce17": {
+      "text": "Description d'une image recto-verso de Jagannath, à accrocher",
+      "src": "59d4ec4dce17"
+    },
+    "text.0842ceb1729b": {
+      "text": "Description des cahiers Rádha Krishna de 15 cm, différentes couleurs",
+      "src": "0842ceb1729b"
+    },
+    "text.39459cf8d6f7": {
+      "text": "Description de la pochette Japa pour femme, beige, brillante, brodée",
+      "src": "39459cf8d6f7"
+    },
+    "text.5a6980a104d5": {
+      "text": "Description du t-shirt « Jai Shree Krishna », tailles M, L et XL",
+      "src": "5a6980a104d5"
+    },
+    "text.94d477cf9e5b": {
+      "text": "Description du porte-clés en bambou avec le Mahamantra, 4,5 × 2 cm",
+      "src": "94d477cf9e5b"
+    },
+    "text.f050c048e94d": {
+      "text": "Description du porte-clés « Paon » aux ailes colorées, 3 modèles",
+      "src": "f050c048e94d"
+    },
+    "text.3f838d5981f5": {
+      "text": "Description de l'autocollant représentant Krishna et Radha, doré, diamètre 7 cm",
+      "src": "3f838d5981f5"
+    },
+    "text.b61516f4a514": {
+      "text": "Description du Kantimála, 1re série, en argent et quartz rose",
+      "src": "b61516f4a514"
+    },
+    "text.8dc6d25704d6": {
+      "text": "Description du Kantimála, 1re série, orné du symbole de Rama",
+      "src": "8dc6d25704d6"
+    },
+    "text.f04c3a8c93d5": {
+      "text": "Description : Il présente des rayures violettes et une bordure étroite.",
+      "src": "f04c3a8c93d5"
+    },
+    "text.a0d921100afa": {
+      "text": "Description de la 2e série Kantimála : rouleaux plus petits et plus fins",
+      "src": "a0d921100afa"
+    },
+    "text.4b0019929150": {
+      "text": "Description d'une kurta pour femme noire et dorée, manches 3/4, tailles M/L",
+      "src": "4b0019929150"
+    },
+    "text.e45a7193a58b": {
+      "text": "Description d'un marteau décoratif en forme de chameau / décapsuleur",
+      "src": "e45a7193a58b"
+    },
+    "text.4b69c9163885": {
+      "text": "Description du Kantimála, 2e série, noir parmi des perles dorées",
+      "src": "4b69c9163885"
+    },
+    "text.546ae4cebd29": {
+      "text": "Description d'une image en 3D représentant Krishna et Radha au milieu des gopis",
+      "src": "546ae4cebd29"
+    },
+    "text.ca829894b274": {
+      "text": "Description du Kantimála, 1re série, en argent avec une pierre bleue",
+      "src": "ca829894b274"
+    },
+    "text.67d92eeb2660": {
+      "text": "Description du Kantimála, 1re série, blanc parmi des perles dorées",
+      "src": "67d92eeb2660"
+    },
+    "text.e22d517a0e46": {
+      "text": "Description de Kantimála n° 1, ovale parmi des formes rondes / cylindriques",
+      "src": "e22d517a0e46"
+    },
+    "text.da4c81628eee": {
+      "text": "Description d'une veste pour homme marron clair, à manches courtes, taille M",
+      "src": "da4c81628eee"
+    },
+    "text.08fa746b573c": {
+      "text": "Description des cahiers « Rádha Krišna » de 17,5 cm, disponibles en plusieurs couleurs",
+      "src": "08fa746b573c"
+    },
+    "text.2259805e6ccf": {
+      "text": "Description d'un sari en viscose beige et bleu accompagné d'un chemisier/choli",
+      "src": "2259805e6ccf"
+    },
+    "text.6dfc8502c1ba": {
+      "text": "Description d'un jupon à volants, taille L, plusieurs couleurs disponibles",
+      "src": "6dfc8502c1ba"
+    },
+    "text.3f110a5bb214": {
+      "text": "Description de la 2e série de Kantimála, noir entre les rouleaux",
+      "src": "3f110a5bb214"
+    },
+    "text.fb106e3dd884": {
+      "text": "Description du mandir Šrí Šrí Nitái-Navadvípačandra Gítá-málá",
+      "src": "fb106e3dd884"
+    },
+    "text.c1140fa080ab": {
+      "text": "Description de 4 bandes de dhoti, ornées d'une bordure finement décorée",
+      "src": "c1140fa080ab"
+    },
+    "text.76058f0e2840": {
+      "text": "Description de la kurta pour femme brodée, à manches courtes, taille S",
+      "src": "76058f0e2840"
+    },
+    "text.d6a479e1a8c8": {
+      "text": "Description du pantalon en coton indien | Noir | Motif à boutons rouges",
+      "src": "d6a479e1a8c8"
+    },
+    "text.433efcecc705": {
+      "text": "Description du collier et des boucles d'oreilles « Vrinda Creation » en or rose",
+      "src": "433efcecc705"
+    },
+    "text.dbd998d2d7bd": {
+      "text": "Description du compteur de perles pour sac à japa, perles bicolores",
+      "src": "dbd998d2d7bd"
+    },
+    "text.5ca7a265f925": {
+      "text": "Description du sac à bandoulière rond bleu foncé, d'un diamètre de 28 cm",
+      "src": "5ca7a265f925"
+    },
+    "text.ba3e8fed3bf7": {
+      "text": "Description du collier et des boucles d'oreilles « Red Gold » de Vrinda Creation",
+      "src": "ba3e8fed3bf7"
+    },
+    "text.77538dd01a25": {
+      "text": "Description d'un jupon à volants, taille S, plusieurs couleurs disponibles",
+      "src": "77538dd01a25"
+    },
+    "text.d2e5ed846680": {
+      "text": "Description du cahier de 15 cm représentant Ganesha / Bouddha / OM / un éléphant",
+      "src": "d2e5ed846680"
+    },
+    "text.e778f101a6e4": {
+      "text": "Description de l'autocollant en bois « Hare Krishna », en anglais et en sanskrit",
+      "src": "e778f101a6e4"
+    },
+    "text.8872f3cfc202": {
+      "text": "Description du Kantimála, 1re série, perles blanches parmi des perles bleues",
+      "src": "8872f3cfc202"
+    },
+    "text.6a3ec605cc65": {
+      "text": "Description d'un haut en batik brodé violet, taille unique",
+      "src": "6a3ec605cc65"
+    },
+    "text.eb2a21830866": {
+      "text": "Description du Kantimála, 2e série : rouleaux plus petits et plus épais",
+      "src": "eb2a21830866"
+    },
+    "text.566670cef624": {
+      "text": "Description des cahiers « Rádha Krišna » de 12,5 cm, disponibles en plusieurs couleurs",
+      "src": "566670cef624"
+    },
+    "text.cddba04f32d6": {
+      "text": "Description des dhotis gris sans motif, 20 % seulement",
+      "src": "cddba04f32d6"
+    },
+    "text.16c06846a408": {
+      "text": "Description de la 1re série Kantimála : rouleaux pleins à rainures",
+      "src": "16c06846a408"
+    },
+    "text.a1befdbc09c9": {
+      "text": "Description d'une kurta pour femme à motifs en cachemire, à manches courtes",
+      "src": "a1befdbc09c9"
+    },
+    "text.54d76f41db74": {
+      "text": "Description d'une kurta en coton pour femme avec un motif cachemire, taille L",
+      "src": "54d76f41db74"
+    },
+    "text.4322d4ee2c14": {
+      "text": "Description d'un sari en viscose vertâtre avec tissu pour le choli",
+      "src": "4322d4ee2c14"
+    },
+    "text.5e344120d7f2": {
+      "text": "Description du Kantimála de la 1re série, en tulasi, avec un grand relief représentant le symbole « OM »",
+      "src": "5e344120d7f2"
+    },
+    "text.fd59f1791a28": {
+      "text": "Description des robes pour divinités avec pantalon, tailles S et M",
+      "src": "fd59f1791a28"
+    },
+    "text.bcd72d95c2a7": {
+      "text": "Description d'une veste longue pour homme, à col montant et manches longues",
+      "src": "bcd72d95c2a7"
+    },
+    "text.77b89a27d9ac": {
+      "text": "Description du haut tunique indien | Peplum | Noué dans le dos | Taille L",
+      "src": "77b89a27d9ac"
+    },
+    "text.4df579adfca0": {
+      "text": "Description d'une robe d'été sans bretelles en coton indien, imprimée au bloc",
+      "src": "4df579adfca0"
+    },
+    "text.a22402ca984d": {
+      "text": "Description du collier « Vrinda Creation » avec perles et boucles d'oreilles",
+      "src": "a22402ca984d"
+    },
+    "text.86b0bc39fef3": {
+      "text": "Description d'un jupon à volants, taille XL, plusieurs couleurs disponibles",
+      "src": "86b0bc39fef3"
+    },
+    "text.7c2db87eee35": {
+      "text": "Description d'une figurine en bois de Nrsimhadév sur socle, 3 types",
+      "src": "7c2db87eee35"
+    },
+    "text.4eede503f1aa": {
+      "text": "Description de l'œuvre en 3D : Jagannath, Subhadra et Baladev, 9 × 9 cm",
+      "src": "4eede503f1aa"
+    },
+    "text.4df11a2c933f": {
+      "text": "Description du Kantimála, 2e série, 2 rouleaux marron, 8 rouleaux tulasí",
+      "src": "4df11a2c933f"
+    },
+    "text.3a9893a26292": {
+      "text": "Description du Kantimála, 2e série, perles blanches parmi des perles noires",
+      "src": "3a9893a26292"
+    },
+    "text.ea0c15366725": {
+      "text": "Description du Kantimála de 2e classe, argenté, entre les rouleaux",
+      "src": "ea0c15366725"
+    },
+    "text.2f4a2b7ea9a6": {
+      "text": "Description d'une grande assiette ronde de 27 cm de diamètre, Richi Gold",
+      "src": "2f4a2b7ea9a6"
+    },
+    "text.46b44ed9448f": {
+      "text": "Description du Kantimála : 1 rangée de perles colorées au centre",
+      "src": "46b44ed9448f"
+    },
+    "text.fd0f8cbd94ea": {
+      "text": "Description d'un compteur de grains de chapelet présenté dans un sac à perles bleu et blanc",
+      "src": "fd0f8cbd94ea"
+    },
+    "text.6f677f0f1449": {
+      "text": "Description d'une kurta verte pour femme, brodée, à manches 3/4",
+      "src": "6f677f0f1449"
+    },
+    "text.ace2cdf580db": {
+      "text": "Description des tatouages autocollants : motifs décoratifs colorés (6 modèles)",
+      "src": "ace2cdf580db"
+    },
+    "text.aa0891f492ea": {
+      "text": "Description : rayures bordeaux, bordure bordeaux et bleu clair",
+      "src": "aa0891f492ea"
+    },
+    "text.4061696bb610": {
+      "text": "Description d'un collier à maillons au crochet, teint à l'indigo et fabriqué par des artisans indiens",
+      "src": "4061696bb610"
+    },
+    "text.73369ca944ca": {
+      "text": "Description du Kantimála, 1er rang : 2 perles rondes et 1 perle ovale",
+      "src": "73369ca944ca"
+    },
+    "text.b74ed12f5429": {
+      "text": "Description de la 1re série de Kantimála, rouleaux pleins, 1,5 × 0,6 cm",
+      "src": "b74ed12f5429"
+    },
+    "text.fbf7c1ed5a6a": {
+      "text": "Description d'une statuette d'OM plaquée or sur un carton, en métal, 4,5 x 4 cm",
+      "src": "fbf7c1ed5a6a"
+    },
+    "text.08543df96997": {
+      "text": "Description de la sonnette suspendue « Peacock » avec parasol (2 couleurs)",
+      "src": "08543df96997"
+    },
+    "text.aaf21537c6e6": {
+      "text": "Description d'un lot de 18 bracelets, finition irisée, 4 couleurs",
+      "src": "aaf21537c6e6"
+    },
+    "text.7ac873108076": {
+      "text": "Description d'un sari en coton et polyester, rose et bleu à rayures",
+      "src": "7ac873108076"
+    },
+    "text.1051875e4e31": {
+      "text": "Description des tatouages temporaires « Papillons colorés IX » (2 modèles)",
+      "src": "1051875e4e31"
+    },
+    "text.3625d09394f8": {
+      "text": "Description de Jagannath, Baladev et Subhadra – murti de taille moyenne",
+      "src": "3625d09394f8"
+    },
+    "text.9c925f1f7fe5": {
+      "text": "Description d'une kurta bleue pour femme, brodée, à manches courtes",
+      "src": "9c925f1f7fe5"
+    },
+    "text.53e1c59a4eb6": {
+      "text": "Description du kaftan de plage à imprimé floral « Lotus » – Taille L",
+      "src": "53e1c59a4eb6"
+    },
+    "text.2542e1080b6b": {
+      "text": "Description du collier indien bohème | Pendentif en laiton | Perles bleues",
+      "src": "2542e1080b6b"
+    },
+    "text.143c23c25dea": {
+      "text": "Description de la robe droite à imprimé floral tropical | Fabriquée à la main au Nigeria",
+      "src": "143c23c25dea"
+    },
+    "text.2f1b4d0aef9e": {
+      "text": "Description du sac à japa Nrsimhadév brodé, couleur marron, tailles M et L",
+      "src": "2f1b4d0aef9e"
+    },
+    "text.71ed0ce2b874": {
+      "text": "Description du manteau en tweed et brocart, 80 % laine, 20 % coton, taille S/M",
+      "src": "71ed0ce2b874"
+    },
+    "text.841f3fb2128f": {
+      "text": "Description de la 1re série de Kantimála, or, entre les rouleaux 2",
+      "src": "841f3fb2128f"
+    },
+    "text.d57c2479e279": {
+      "text": "Description de la 1re série de Kantimála, orange, entre les rouleaux",
+      "src": "d57c2479e279"
+    },
+    "text.dc0dc3920058": {
+      "text": "Description de la 1re série de Kantimála, or, entre les rouleaux 1",
+      "src": "dc0dc3920058"
+    },
+    "text.4050897a8087": {
+      "text": "Description du japa mala ovale Tulasi, un chapelet destiné aux initiés",
+      "src": "4050897a8087"
+    },
+    "text.298da0e3be51": {
+      "text": "Description d'une kurta rouge pour femme, brodée, à manches 3/4, taille L",
+      "src": "298da0e3be51"
+    },
+    "text.5e32f1cc2c01": {
+      "text": "Description du CD « Le roi Parikshit » (1er volet du Śrī Bhagavata-purāṇa)",
+      "src": "5e32f1cc2c01"
+    },
+    "text.93425dfb050a": {
+      "text": "Description du Kantimála, 1er rang : perles blanches parmi des perles bleu foncé",
+      "src": "93425dfb050a"
+    },
+    "text.03a1298fdc7d": {
+      "text": "Description de la robe longue en coton « Indian Summer » tissée à la main | Taille M",
+      "src": "03a1298fdc7d"
+    },
+    "text.4be73571506c": {
+      "text": "Description du Kantimála, 1er rang, coloré, entre deux perles dorées",
+      "src": "4be73571506c"
+    },
+    "text.872d096e2b1e": {
+      "text": "Description des robes brodées pour divinités, tailles S et M",
+      "src": "872d096e2b1e"
+    },
+    "text.4d002bb6d897": {
+      "text": "Description d'une photo de Prabhupāda portant un chadar, 14 x 10 cm",
+      "src": "4d002bb6d897"
+    },
+    "text.dbcb33ae819e": {
+      "text": "Description d'un ensemble pour garçon représentant des éléphants et des chasseurs, taille 16",
+      "src": "dbcb33ae819e"
+    },
+    "text.bf3b0f61283d": {
+      "text": "Description d'un ensemble pour garçon, jaune et marron, à manches longues, taille 28",
+      "src": "bf3b0f61283d"
+    },
+    "text.f90f6ff51fc2": {
+      "text": "Description de la kurta orange brodée pour femme, manches courtes, taille S",
+      "src": "f90f6ff51fc2"
+    },
+    "text.8378904bae0a": {
+      "text": "Description d'une veste pour femme, à manches courtes, taille M, avec capuche",
+      "src": "8378904bae0a"
+    },
+    "text.c9dd4d7dbf6c": {
+      "text": "Description d'un lot de 24 bracelets facettés dorés et unicolores",
+      "src": "c9dd4d7dbf6c"
+    },
+    "text.8af44e81682b": {
+      "text": "Description de l'autocollant Hare Krishna, 21,5 x 5,7 cm, jaune/orange",
+      "src": "8af44e81682b"
+    },
+    "text.59b4caa4332a": {
+      "text": "Description du collier « Vrinda Creation » avec une perle et des boucles d'oreilles",
+      "src": "59b4caa4332a"
+    },
+    "text.943b77d4be4a": {
+      "text": "Description d'un sari en coton batik beige / bordeaux / couleur vin",
+      "src": "943b77d4be4a"
+    },
+    "text.0d29395ddd8d": {
+      "text": "Description des tatouages temporaires « Papillons colorés » I (6 motifs)",
+      "src": "0d29395ddd8d"
+    },
+    "text.a4d1ba6f163d": {
+      "text": "Description de la robe indienne d'été en coton | Polyvalente | À multiples usages",
+      "src": "a4d1ba6f163d"
+    },
+    "text.77d9b4ae3d25": {
+      "text": "Description du collier « Vrinda Creation » avec pendentif et boucles d'oreilles",
+      "src": "77d9b4ae3d25"
+    },
+    "text.dadea337572d": {
+      "text": "Description du collier et des boucles d'oreilles à motifs floraux « Vrinda Creation »",
+      "src": "dadea337572d"
+    },
+    "text.9e4cf251a354": {
+      "text": "Description des tatouages temporaires « Colourful Butterfly X » (6 motifs)",
+      "src": "9e4cf251a354"
+    },
+    "text.a554e98e25b3": {
+      "text": "Description de l'image représentant Krishna avec une petite vache, 18,5 x 13 cm",
+      "src": "a554e98e25b3"
+    },
+    "text.ce192e0ca19e": {
+      "text": "Description du Kantimála, 1re série, noir avec des perles jaunes et rouges",
+      "src": "ce192e0ca19e"
+    },
+    "text.4cdd5e4ec5fb": {
+      "text": "Description d'un sari en coton vert, rouge et jaune, accompagné d'un choli",
+      "src": "4cdd5e4ec5fb"
+    },
+    "text.e4a7dfe35787": {
+      "text": "Description : deux bandes de dhoti, ornées d'une bordure composée de fines bandes unies",
+      "src": "e4a7dfe35787"
+    },
+    "text.08fd0b31016c": {
+      "text": "Description des tatouages temporaires « Papillon turquoise » (motifs 2x2)",
+      "src": "08fd0b31016c"
+    },
+    "text.c1124f84717d": {
+      "text": "Description des tatouages autocollants : Fleur à 8/6 pétales (5 modèles)",
+      "src": "c1124f84717d"
+    },
+    "text.a1fbfb0cd428": {
+      "text": "Description d'une veste beige pour homme, à col montant et à manches courtes",
+      "src": "a1fbfb0cd428"
+    },
+    "text.32f07e119b71": {
+      "text": "Description de la série 1 de Kantimála : reliefs « OM » ornés de perles rondes",
+      "src": "32f07e119b71"
+    },
+    "text.1f63db550298": {
+      "text": "Description des perles « bindi » ovales rouges avec un centre vert et blanc",
+      "src": "1f63db550298"
+    },
+    "text.e12107c9ceba": {
+      "text": "Description d'une étole/foulard/châle en lin tissé à la main en Inde, couleur rose corail",
+      "src": "e12107c9ceba"
+    },
+    "text.77823360a53a": {
+      "text": "Description des bracelets plaqués or à deux anneaux avec pierres blanches et cristaux",
+      "src": "77823360a53a"
+    },
+    "text.5ba68cec95d0": {
+      "text": "Description d'une kurta pour femme à manches longues, brodée de couleurs vives",
+      "src": "5ba68cec95d0"
+    },
+    "text.0368c2c46b44": {
+      "text": "Description d'un ensemble pour garçon, couleur ocre et noir, à manches longues, taille 30",
+      "src": "0368c2c46b44"
+    },
+    "text.36f8d81fbc83": {
+      "text": "Description du pantalon bhakta blanc pour homme, avec cordon de serrage à la taille",
+      "src": "36f8d81fbc83"
+    },
+    "text.f8b4c771263b": {
+      "text": "Description du bracelet décoratif en rudraksha (deux perles à la fois)",
+      "src": "f8b4c771263b"
+    },
+    "text.e3284ad4a699": {
+      "text": "Description d'un sari en soie rouge orné d'un motif vert sur la partie supérieure",
+      "src": "e3284ad4a699"
+    },
+    "text.e80e05414731": {
+      "text": "Description d'un châle à motif cachemire, en viscose, fond vert",
+      "src": "e80e05414731"
+    },
+    "text.54f3c1ae481b": {
+      "text": "Description des tatouages temporaires « Papillons colorés II » (6 motifs)",
+      "src": "54f3c1ae481b"
+    },
+    "text.14b4b0c5ac76": {
+      "text": "Description d'un collier ras-du-cou africain Maasai orné de perles, collier tribal blanc",
+      "src": "14b4b0c5ac76"
+    },
+    "text.bf3b63cc293a": {
+      "text": "Description du haut caftan à imprimé bandhani rose indien – Tailles M à L",
+      "src": "bf3b63cc293a"
+    },
+    "text.481606e0dbce": {
+      "text": "Description des tatouages temporaires « Papillons colorés » XX (5 motifs)",
+      "src": "481606e0dbce"
+    },
+    "text.656fc2bf86c9": {
+      "text": "Description des tatouages temporaires « Papillons colorés XV » (6 motifs)",
+      "src": "656fc2bf86c9"
+    },
+    "text.ffab36aab971": {
+      "text": "Description des tatouages temporaires « Papillons colorés XI » (5 motifs)",
+      "src": "ffab36aab971"
+    },
+    "text.bddb1dd4b5fd": {
+      "text": "Description des Kantimála, 3e série, rouleaux mesurant 1,1 × 0,6 cm",
+      "src": "bddb1dd4b5fd"
+    },
+    "text.0cc7b2408254": {
+      "text": "Description de la figurine en bois représentant Radha et Krishna sur un socle, 3 modèles",
+      "src": "0cc7b2408254"
+    },
+    "text.13a5e9547d49": {
+      "text": "Description de la mini-robe/chemisier jaune, taille M/L – soldes de fin de saison",
+      "src": "13a5e9547d49"
+    },
+    "text.26f61fa17ea5": {
+      "text": "Description du t-shirt « Hare Rama Hare Krishna », tailles S, M, L, XL",
+      "src": "26f61fa17ea5"
+    },
+    "text.ec5a3d0ddb20": {
+      "text": "Description des tatouages temporaires « Papillons colorés » V. (6 motifs)",
+      "src": "ec5a3d0ddb20"
+    },
+    "text.40ef6ef9b801": {
+      "text": "Description des tatouages temporaires « Papillons colorés IV » (7 motifs)",
+      "src": "40ef6ef9b801"
+    },
+    "text.12b99c7526e3": {
+      "text": "Description du bindi / tatouage autocollant, rond, doré, diamètre 3,4 cm",
+      "src": "12b99c7526e3"
+    },
+    "text.591b981d1e3e": {
+      "text": "Description d'un bougeoir marocain de table ou d'une lanterne suspendue",
+      "src": "591b981d1e3e"
+    },
+    "text.5684c17cf700": {
+      "text": "Description de la grande série HBO de Jen Beagin intitulée « Big Swiss », avec Jodie Comer dans le rôle principal",
+      "src": "5684c17cf700"
+    },
+    "text.6b36c451f957": {
+      "text": "Description d'un collier artisanal fait main, composé d'un pendentif en tissu et en bois",
+      "src": "6b36c451f957"
+    },
+    "text.6381faa392d2": {
+      "text": "Description : Il présente des rayures épaisses et fines, ainsi qu'une bordure en zigzag.",
+      "src": "6381faa392d2"
+    },
+    "text.edb9a502064b": {
+      "text": "Description d'une veste rayée pour homme, à col montant et manches courtes",
+      "src": "edb9a502064b"
+    },
+    "text.3f68638f187c": {
+      "text": "Description de l'ensemble pour garçon, bleu foncé, 3 modèles, tailles 24, 26 et 28",
+      "src": "3f68638f187c"
+    },
+    "text.0de0711bd5a4": {
+      "text": "Description d'un ensemble pour garçon orné d'éléphants et de gopí, tailles 28 et 30",
+      "src": "0de0711bd5a4"
+    },
+    "text.00801f09a645": {
+      "text": "Description d'un Kantimála à une rangée, composé de perles bleues disposées sur trois rangées de tulas",
+      "src": "00801f09a645"
+    },
+    "text.e54726669bc2": {
+      "text": "Description d'un haut pour femme/fille à imprimé bleu et blanc, taille S",
+      "src": "e54726669bc2"
+    },
+    "text.d52e3ce53316": {
+      "text": "Description des blocs-notes Ganesha / Lakshmi de 17,5 cm – différentes couleurs",
+      "src": "d52e3ce53316"
+    },
+    "text.6452209c4d75": {
+      "text": "Description d'une robe sans bretelles avec broderies du Rajasthan, taille M/L",
+      "src": "6452209c4d75"
+    },
+    "text.f08ce2de13d7": {
+      "text": "Description de « Nektar pokynów » (édition russe) - « Нектар наставлений »",
+      "src": "f08ce2de13d7"
+    },
+    "text.0f682c47526e": {
+      "text": "Description du t-shirt pour fille : « Les empreintes de Rādhārāṇī », rouge, taille 18",
+      "src": "0f682c47526e"
+    },
+    "text.7d2079eaf049": {
+      "text": "Description du sari en viscose rouge et jaune sans bordures, 2 modèles",
+      "src": "7d2079eaf049"
+    },
+    "text.35ec5e3a3605": {
+      "text": "Description de la collection Vrinda : collier et boucles d’oreilles en argent sculpté",
+      "src": "35ec5e3a3605"
+    },
+    "text.361794a0e24b": {
+      "text": "Description d'un chadar pour les harinas, orné du mahamantra, 230 x 112 cm",
+      "src": "361794a0e24b"
+    },
+    "text.af9da7924219": {
+      "text": "Description de la robe d'été indienne bohème hippie tie-dye | Taille M",
+      "src": "af9da7924219"
+    },
+    "text.cc55bae11a13": {
+      "text": "Description des tatouages temporaires « Papillons colorés XXI » (4 motifs)",
+      "src": "cc55bae11a13"
+    },
+    "text.9684696b35b8": {
+      "text": "Description des tatouages temporaires « Papillons colorés » XIX (7 motifs)",
+      "src": "9684696b35b8"
+    },
+    "text.1031d4c5571c": {
+      "text": "Description des tatouages temporaires « Papillons colorés XVI » (7 motifs)",
+      "src": "1031d4c5571c"
+    },
+    "text.08585a05605a": {
+      "text": "Description des tatouages temporaires « Papillons colorés XIV » (5 motifs)",
+      "src": "08585a05605a"
+    },
+    "text.ff799e5008bd": {
+      "text": "Description des tatouages temporaires « Papillons colorés XII » (5 motifs)",
+      "src": "ff799e5008bd"
+    },
+    "text.6ada105f014d": {
+      "text": "Description des tatouages temporaires « Papillons colorés VII » (6 motifs)",
+      "src": "6ada105f014d"
+    },
+    "text.693f1187a3ef": {
+      "text": "Description de la figurine en bois sur socle : Krishna enfant, 4 modèles",
+      "src": "693f1187a3ef"
+    },
+    "text.240cfe93f32a": {
+      "text": "Description de la robe Gopi avec choli et dupatta – violet, taille S/M",
+      "src": "240cfe93f32a"
+    },
+    "text.3e7f3f756268": {
+      "text": "Description d'une petite carte de vœux avec enveloppe : Krishna et Radha",
+      "src": "3e7f3f756268"
+    },
+    "text.05696dae22b7": {
+      "text": "Description de la série Kantimála 3 : deux éléments ronds entre les rouleaux",
+      "src": "05696dae22b7"
+    },
+    "text.d95b24760145": {
+      "text": "Description de la kurta pour femme à boutons, manches 3/4, marron-vert, taille M",
+      "src": "d95b24760145"
+    },
+    "text.830faa8b76f7": {
+      "text": "Description d'une image recto-verso représentant le petit Krishna, à accrocher",
+      "src": "830faa8b76f7"
+    },
+    "text.0c9b07d047e9": {
+      "text": "Description du CD « Le prince Prahlada » (2e partie du Śrī Bhāgavatam)",
+      "src": "0c9b07d047e9"
+    },
+    "text.b1049b8b4585": {
+      "text": "Description de la Bhagavad-gítá telle qu’elle est - Broché (édition néerlandaise)",
+      "src": "b1049b8b4585"
+    },
+    "text.58c712ea5a54": {
+      "text": "Description des tatouages temporaires « Papillons colorés III » (6 motifs)",
+      "src": "58c712ea5a54"
+    },
+    "text.8ab21c8f8d3b": {
+      "text": "Description d'un sari en crêpe de soie rouge-orange avec le tissu pour le choli",
+      "src": "8ab21c8f8d3b"
+    },
+    "text.d3fcb1e95e03": {
+      "text": "Description de Kantimala, 1re série, avec Nrsimhadéva (barbe plus fine)",
+      "src": "d3fcb1e95e03"
+    },
+    "text.4eedf28efc24": {
+      "text": "Description de la veste noire pour homme, col montant, manches longues, taille XL",
+      "src": "4eedf28efc24"
+    },
+    "text.a0717880cae3": {
+      "text": "Description du « Longí » (grand chamois) – plusieurs coloris, 225 x 110 cm",
+      "src": "a0717880cae3"
+    },
+    "text.cbea473f45b9": {
+      "text": "Description d'un sari en viscose rouge et jaune avec le tissu pour le choli",
+      "src": "cbea473f45b9"
+    },
+    "text.ee6fb705fbec": {
+      "text": "Description d'un sari en viscose bleu foncé-magenta à col, en promotion",
+      "src": "ee6fb705fbec"
+    },
+    "text.826a1d8cb41d": {
+      "text": "Description des pantalons pour homme, tailles M et L, à carreaux noirs et gris",
+      "src": "826a1d8cb41d"
+    },
+    "text.8b608b6f1ae8": {
+      "text": "Description d'une kurta blanche brodée pour femme, à manches longues, taille L",
+      "src": "8b608b6f1ae8"
+    },
+    "text.a62288eb0ed9": {
+      "text": "Description d'un lot de 24 bracelets unis avec des détails dorés",
+      "src": "a62288eb0ed9"
+    },
+    "text.3702c5c6e40c": {
+      "text": "Description d'un lot de 24 bracelets dorés et unis, assortis",
+      "src": "3702c5c6e40c"
+    },
+    "text.dc135287d7e3": {
+      "text": "Description des tatouages temporaires : papillon doré/argenté (6 motifs)",
+      "src": "dc135287d7e3"
+    },
+    "text.8f2349699268": {
+      "text": "Description d'une veste pour homme, à rayures, col montant, manches courtes",
+      "src": "8f2349699268"
+    },
+    "text.dd2c8ef1b04e": {
+      "text": "Description du t-shirt marbré pour garçon, manches courtes, tailles 24 et 28",
+      "src": "dd2c8ef1b04e"
+    },
+    "text.cf9b0975f937": {
+      "text": "Description du t-shirt pour enfants « Sri Radha Krishna », tailles 16 et 18",
+      "src": "cf9b0975f937"
+    },
+    "text.0fbf59b58bd2": {
+      "text": "Description d'un lot de 24 bracelets dorés unis ornés de pierres précieuses",
+      "src": "0fbf59b58bd2"
+    },
+    "text.aa7437fe8561": {
+      "text": "Description de la robe caftan « Indian Summer Beach » cousue main | Coton",
+      "src": "aa7437fe8561"
+    },
+    "text.5e33ede68c93": {
+      "text": "Description des tatouages temporaires « Papillons colorés » XVII (5 motifs)",
+      "src": "5e33ede68c93"
+    },
+    "text.02f55e64ad10": {
+      "text": "Description des tatouages temporaires « Papillons colorés VIII » (6 motifs)",
+      "src": "02f55e64ad10"
+    },
+    "text.21d227c2e4ea": {
+      "text": "Description de la série 3 de Kantimála : cylindres plus grands, 0,8 × 0,4 cm",
+      "src": "21d227c2e4ea"
+    },
+    "text.2609093acb42": {
+      "text": "Description d'un sac à bandoulière rond de couleur « Petrol », d'un diamètre de 28 cm",
+      "src": "2609093acb42"
+    },
+    "text.644233736d39": {
+      "text": "Description du Neem Japa Mala, chapelet d'une circonférence de 119 cm",
+      "src": "644233736d39"
+    },
+    "text.24680f51f5e1": {
+      "text": "Description d'une image de Prabhupada, environ 5 cm, acrylique, 4 modèles",
+      "src": "24680f51f5e1"
+    },
+    "text.d7061c2d5a47": {
+      "text": "Description d'une image de Prabhupada, environ 7 cm, acrylique, 6 modèles",
+      "src": "d7061c2d5a47"
+    },
+    "text.c9d83d921e85": {
+      "text": "Description du Kantimála : 2 rangs, 2 perles rondes, 1 perle ovale plus petite",
+      "src": "c9d83d921e85"
+    },
+    "text.c8482f541f47": {
+      "text": "Description d'un t-shirt en coton de style punjabi, à manches longues, beige et marron, taille L",
+      "src": "c8482f541f47"
+    },
+    "text.d11b34c4f2a0": {
+      "text": "Description du Neem Japa Mala, chapelet d'une circonférence de 140 cm",
+      "src": "d11b34c4f2a0"
+    },
+    "text.3e7be91a5a1f": {
+      "text": "Description d'un compteur de grains de chapelet présenté dans un sachet marron, avec des grains sculptés",
+      "src": "3e7be91a5a1f"
+    },
+    "text.739e28dff3a0": {
+      "text": "Description du compteur de perles « Japa bag » – perles bordeaux/rose et blanches",
+      "src": "739e28dff3a0"
+    },
+    "text.ed2e12b8849b": {
+      "text": "Description de l'ensemble à strass rouges – pantalon, jupe, chemisier, dupatta",
+      "src": "ed2e12b8849b"
+    },
+    "text.a3afc5893021": {
+      "text": "Description des tatouages autocollants : ornements d'oiseaux colorés (6 motifs)",
+      "src": "a3afc5893021"
+    },
+    "text.9ce464890e84": {
+      "text": "Description de la figurine indienne représentant Ganesha et Parvati – Statues et idoles spirituelles",
+      "src": "9ce464890e84"
+    },
+    "text.81439baf006e": {
+      "text": "Description d'une kurta longue pour femme avec un dupatta, manches 3/4, taille S",
+      "src": "81439baf006e"
+    },
+    "text.0a2bcd1ca8d4": {
+      "text": "Description du Kantimála : 1er rang, 1 perle blanche entre 2 perles vertes",
+      "src": "0a2bcd1ca8d4"
+    },
+    "text.84e3bd0bc04e": {
+      "text": "Description d'un kantimála à une rangée, composé de perles vertes disposées sur trois rangées de tulasi",
+      "src": "84e3bd0bc04e"
+    },
+    "text.167cc65eb80f": {
+      "text": "Description d'un lot de 24 bracelets noirs et dorés rehaussés de touches de rouge",
+      "src": "167cc65eb80f"
+    },
+    "text.e70db460accd": {
+      "text": "Description de l'ensemble pour fille / robe Gopi sans dupatta, en coton, taille 36",
+      "src": "e70db460accd"
+    },
+    "text.cde167ea316f": {
+      "text": "Description du collier « Vrinda Creation » orné de strass et de ses boucles d'oreilles",
+      "src": "cde167ea316f"
+    },
+    "text.3d822adf6fa9": {
+      "text": "Description du collier « Vrinda Creation » orné d'une pierre rouge et des boucles d'oreilles assorties",
+      "src": "3d822adf6fa9"
+    },
+    "text.842ed5ef79db": {
+      "text": "Description des tatouages temporaires « Papillons colorés XVIII » (6 motifs)",
+      "src": "842ed5ef79db"
+    },
+    "text.14e14c208c2a": {
+      "text": "Description du sac Japa, brodé, Radharani bleu pâle, tailles M et L",
+      "src": "14e14c208c2a"
+    },
+    "text.0e2a428432b8": {
+      "text": "Description d'un kantimala de la 1re série, sur lequel sont sculptés Rādhā et Krishna",
+      "src": "0e2a428432b8"
+    },
+    "text.6314fc42b176": {
+      "text": "Description d'un autocollant ovale représentant Jagannath, Subhadra et Baladev",
+      "src": "6314fc42b176"
+    },
+    "text.63d71e7bdf95": {
+      "text": "Description du Kantimála, 2e rangée : perles blanches parmi les perles bleu clair",
+      "src": "63d71e7bdf95"
+    },
+    "text.5959c0c89098": {
+      "text": "Description d'une veste à col montant et bordures, à manches longues",
+      "src": "5959c0c89098"
+    },
+    "text.1961bb5b9700": {
+      "text": "Description d'une veste beige pour homme, col montant, manches longues, taille XXL",
+      "src": "1961bb5b9700"
+    },
+    "text.55e179277967": {
+      "text": "Description d'une veste pour homme à rayures chinées, manches courtes, taille 42",
+      "src": "55e179277967"
+    },
+    "text.7f9809e71003": {
+      "text": "Description du coffret « Šrímad Bhágavatam », volumes 1 à 10.1 (édition anglaise)",
+      "src": "7f9809e71003"
+    },
+    "text.24de1f9d4126": {
+      "text": "Description d'un sari en crêpe de soie rouge et gris, avec le tissu nécessaire à la confection du choli",
+      "src": "24de1f9d4126"
+    },
+    "text.365839111cff": {
+      "text": "Description d'une robe d'été indienne en mélange de coton et de lin, dotée de deux poches",
+      "src": "365839111cff"
+    },
+    "text.45b13c851a8a": {
+      "text": "Description d'un bracelet rigide en cristal de style vintage indien, couleur or",
+      "src": "45b13c851a8a"
+    },
+    "text.32c604a4f92c": {
+      "text": "Description d'un autocollant représentant Jagannath, d'un diamètre de 8 cm, avec une bordure bleue",
+      "src": "32c604a4f92c"
+    },
+    "text.b3e35a2af67c": {
+      "text": "Description du Kantimála, 1re série, perles de couleur claire parmi des perles marron",
+      "src": "b3e35a2af67c"
+    },
+    "text.7a3d7c648267": {
+      "text": "Description d'un chemisier femme brodé, court et sans manches, taille S",
+      "src": "7a3d7c648267"
+    },
+    "text.21d6a217057e": {
+      "text": "Description d'une coupelle en cuivre en forme de A accompagnée d'une petite cuillère, d'un diamètre de 4,8 cm",
+      "src": "21d6a217057e"
+    },
+    "text.052acce53aa7": {
+      "text": "Description du Kantimála, 2e série, perles blanches parmi des perles vert foncé",
+      "src": "052acce53aa7"
+    },
+    "text.c1adb48322a2": {
+      "text": "Description d'une kurta pour femme à encolure ajourée, manches courtes, taille L",
+      "src": "c1adb48322a2"
+    },
+    "text.010b1b0fd346": {
+      "text": "Description d'un sari en coton à motifs tissés, bordeaux / rose / vert",
+      "src": "010b1b0fd346"
+    },
+    "text.41aa432d187d": {
+      "text": "Description de la robe d'été en coton indien imprimée au bloc | Motif floral rose",
+      "src": "41aa432d187d"
+    },
+    "text.970e9196bcfc": {
+      "text": "Description du t-shirt à manches longues style bohème hippie psychédélique à imprimé marbré mangue",
+      "src": "970e9196bcfc"
+    },
+    "text.1cbee2c69ee5": {
+      "text": "Description du collier à perles argentées à plusieurs rangs | Style bohème | Élégant",
+      "src": "1cbee2c69ee5"
+    },
+    "text.2d5013bbab5e": {
+      "text": "Description du collier « Vrinda Creation » orné de pierres transparentes et des boucles d'oreilles assorties",
+      "src": "2d5013bbab5e"
+    },
+    "text.a2d7ea4e4c5b": {
+      "text": "Description des tatouages temporaires « Papillons colorés XIII » (2 x 3 motifs)",
+      "src": "a2d7ea4e4c5b"
+    },
+    "text.414c67787209": {
+      "text": "Description d'une image représentant le Mahāmantra, à accrocher au mur",
+      "src": "414c67787209"
+    },
+    "text.98f17031c77f": {
+      "text": "Description de la robe Gopi, tailles S à XL, avec un tablier, en coton doux",
+      "src": "98f17031c77f"
+    },
+    "text.6978cf8cd663": {
+      "text": "Description : une photo de Prabhupada, 7 x 5 cm, sur fond bleu",
+      "src": "6978cf8cd663"
+    },
+    "text.4127e486cf70": {
+      "text": "Description du Kantimála, 2e rangée : perles blanches parmi les perles vert clair",
+      "src": "4127e486cf70"
+    },
+    "text.651ae519b4f4": {
+      "text": "Description d'un grand éléphant sculpté avec une couverture sur le dos, 10 cm",
+      "src": "651ae519b4f4"
+    },
+    "text.226540a0d057": {
+      "text": "Description de la kurta turquoise pour femme, brodée, manches 3/4, taille L",
+      "src": "226540a0d057"
+    },
+    "text.595d562f1016": {
+      "text": "Description du sac Japa en toile résistante, gris, à motif à carreaux",
+      "src": "595d562f1016"
+    },
+    "text.3698680bb74f": {
+      "text": "Description du pull pour homme marbré, col montant, manches longues, taille XL",
+      "src": "3698680bb74f"
+    },
+    "text.340d0dad6375": {
+      "text": "Description du Kantimála, 3e série, 2 perles rondes entre des perles ovales",
+      "src": "340d0dad6375"
+    },
+    "text.f9f8e68b571d": {
+      "text": "Description de la robe dos nu indienne ajustée et évasée en pur coton | Taille L",
+      "src": "f9f8e68b571d"
+    },
+    "text.d4097727f4f2": {
+      "text": "Description du Kantimála, 2e série, marron, orné de motifs ovales représentant le tulasi",
+      "src": "d4097727f4f2"
+    },
+    "text.7ab08ff8823c": {
+      "text": "Description d'une kurta blanche brodée pour femme, à manches longues, taille 42/L",
+      "src": "7ab08ff8823c"
+    },
+    "text.4bb1ae09fba8": {
+      "text": "Description d'un ensemble pour garçons orné d'éléphants et de gopis, tailles 14 et 16",
+      "src": "4bb1ae09fba8"
+    },
+    "text.368567dee458": {
+      "text": "Description d'une perle Kantimála blanche, 1re rangée, située entre deux perles noires",
+      "src": "368567dee458"
+    },
+    "text.899b699bea4c": {
+      "text": "Description d'un grand autocollant représentant Jagannath, Baladev et Subhadra",
+      "src": "899b699bea4c"
+    },
+    "text.af6632823168": {
+      "text": "Description du Šrīmad Bhāgavatam, 9e chant « La libération »",
+      "src": "af6632823168"
+    },
+    "text.e8b45bf25e74": {
+      "text": "Description de la robe-kaftan d'été | Coton nigérian | Taille unique M à L",
+      "src": "e8b45bf25e74"
     }
   }
 }
