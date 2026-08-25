@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-25T06:00:10.975Z",
-  "count": 5425,
+  "generated": "2026-08-25T06:40:47.646Z",
+  "count": 5426,
   "entries": {
     "attr.color.red": {
       "text": "Сеть",
@@ -21708,6 +21708,10 @@
     "text.19847ebecc46": {
       "text": "Описание расследования Марка Фроста «Тайная история Твин-Пикс» — бестселлер по версии «Нью-Йорк Таймс» от соавтора сериала",
       "src": "19847ebecc46"
+    },
+    "text.b5658fc8edda": {
+      "text": "На этой странице",
+      "src": "b5658fc8edda"
     }
   }
 }
