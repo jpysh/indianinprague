@@ -320,8 +320,13 @@ header.site{
      pill (71), WhatsApp (41), gaps (30) and gutters (40), leaving ~149px. 15px lands the
      wordmark near 126px and keeps ~23px of slack for a longer language name in the pill;
      16px was measured at ~135px and spends nearly all of it, which is a squeeze one
-     translation away from wrapping. */
-  font-weight:600;font-size:.9375rem;line-height:1;letter-spacing:0;text-transform:uppercase;
+     translation away from wrapping.
+     RE-MEASURED 25 Aug 2026, and the earlier figure was pessimistic. Laid out at 375px the
+     bar spends 272px on its four controls, 30px on gaps and 40px on gutters, leaving 35px
+     genuinely free. 16px costs 9 of it and the wider WhatsApp target below costs 13, so 13
+     remain — enough for a longer language code, and the pill is the only thing that grows
+     with translation. */
+  font-weight:600;font-size:1rem;line-height:1;letter-spacing:0;text-transform:uppercase;
   /* The wordmark is two words and one slash in a monospace face — 16 characters, 101px on
      a 375px bar. Pulling the spaces in around the slash reads as a tighter lockup rather
      than a smaller logo. */
@@ -356,7 +361,10 @@ nav.main{
 }
 nav.main::-webkit-scrollbar{display:none}
 nav.main a{
-  color:var(--bone);opacity:.68;
+  /* Raised from .68 (25 Aug 2026): at 13px on this ground the resting links read as greyed
+     out rather than merely secondary. .8 keeps the active link's full-opacity magenta as the
+     thing that stands out, which is where the contrast should be spent. */
+  color:var(--bone);opacity:.8;
   transition:opacity .15s,color .15s;
   /* flex:0 0 auto matters: as a shrinkable item the label would be squeezed and clipped
      silently, and nav.main would never report an overflow to scroll. */
@@ -443,7 +451,17 @@ a.wa:hover{color:#3BE87C}
   }
   .menu>summary::-webkit-details-marker{display:none}
   .menu[open]>summary,.menu>summary:hover{opacity:1;color:var(--magenta)}
-
+  /* The glyphs grow, the targets do not (25 Aug 2026). Both boxes were already 44px tall
+     around an 18px glyph — the height is the tap target, not padding, so there was never any
+     margin here to trade away. The room was simply unused: 24px inside a 44px box still
+     leaves 10px of clearance on every side and the 52px bar does not move.
+     The two icons bracket the bar at opposite ends, so they are sized as a pair. */
+  .menu>summary svg{width:24px;height:24px}
+  a.ico svg{width:24px;height:24px}
+  /* And the WhatsApp target itself was 31px WIDE against the 44px minimum — under the target
+     size on one axis, which is a defect rather than a preference. It costs 13px of the 35px
+     the bar has spare. */
+  a.ico{min-width:44px}
   /* The panel. Full-bleed under the bar rather than a floating card: it is the whole of the
      site's navigation, and a 375px-wide sheet has no reason to pretend to be narrower. */
   nav.main{
@@ -486,6 +504,27 @@ a.wa:hover{color:#3BE87C}
   nav.main a:last-child{border-bottom:0}
 }
 
+/* SMALL PHONES (359px and under: the SE-class 320px screen, and nothing newer).
+ *
+ * The bar carries four controls that are now 44 + 134 + 71 + 44 = 293px of content. At 375px
+ * that fits with 13px to spare; at 320 it overruns by 22 and the page scrolls sideways, which
+ * is worse than any of the sizes that caused it. Measured before this round, 320px was
+ * already 1px over — the width was never really there.
+ *
+ * The 22px comes back out of SPACING, not out of the controls: nothing shrinks, no label is
+ * dropped, and the language code — the thing a visitor who cannot read the page is looking
+ * for — stays visible. The gutters and the gaps are the only part of a bar nobody taps. */
+@media (max-width:359px){
+  .bar{gap:6px;padding-inline:14px}
+  /* Spacing alone gave back 18 of the 22, and the last 4 had to come from somewhere. The
+     wordmark goes back to the 15px it was until this round: it is the one item here that is
+     read rather than tapped, so shrinking it costs no target, and 320px screens do not get
+     the extra point of brand that a modern phone does. */
+  .brand{font-size:.9375rem}
+  .lang{margin-left:auto}
+  .lang>summary{padding:0 7px}
+}
+
 /* Anchor clearance. The header is one row at every width now — 52px on a phone, 64px from
    641px up — so the 88px global value clears both and the 112px phone override that the
    second row needed is gone with it. */
@@ -496,10 +535,18 @@ a.wa:hover{color:#3BE87C}
   .bar{min-height:64px;gap:24px}
   .brand{font-size:1.0625rem;letter-spacing:.04em}
   nav.main{
-    gap:24px;font-size:var(--fs-xs);letter-spacing:.04em;overflow-x:visible;
+    /* 15px, up from 13px (25 Aug 2026). There is no padding left to reclaim here — the desktop
+       links already sit at min-height:0 — so the size has to come from the type itself, and the
+       64px bar has the room. Stopped short of 16px: that is within a hair of the 17px wordmark
+       and the two start competing for the same rank. */
+    gap:24px;font-size:.9375rem;letter-spacing:.04em;overflow-x:visible;
   }
   nav.main a{min-height:0}
   .bar-ico{padding-left:18px}
+  /* The WhatsApp glyph ships at 18px in the markup, which is right on a 52px phone bar and
+     under-reads beside a 15px label on a 64px one. Sized in CSS rather than in the SVG
+     attributes so it stays 18px on a phone and no generated page has to be touched. */
+  a.ico svg{width:22px;height:22px}
 }
 
 /* ---------- image frames ---------- */
@@ -1033,7 +1080,12 @@ footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);paddi
 .lang>summary{
   list-style:none;cursor:pointer;
   display:flex;align-items:center;gap:7px;
-  min-height:34px;padding:0 10px;
+  /* 40px, up from 34 (25 Aug 2026). Every other control in this bar is a 44px target and the
+     pill was the one under it — the smallest thing to hit, and the one a visitor who cannot
+     read the page needs first. It stops short of 44 on purpose: at 44 the pill outweighs the
+     wordmark beside it and starts reading as the bar's primary control. The change is
+     vertical only, so it costs the 375px bar no width. */
+  min-height:40px;padding:0 10px;
   /* A pill, not a bare word. The border is what makes it read as a control rather than as
      one more nav link, and the shading lifts it off the header bar without the volume of a
      filled button — which would out-shout the nav this header exists to serve. */

@@ -133,7 +133,18 @@
 .post-blurb{
   display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
   overflow:hidden;
+  /* --bone at .88 rather than flat --bone-dim (25 Aug 2026). Same job — the blurb still sits
+     under the title in the hierarchy — but the dimmed bone read as washed out against the
+     card ground, and this is the sentence that decides whether the post gets opened. */
+  /* .post p in site.css sets the dim colour and outranks a bare .post-blurb, so this has to
+     match on both. */
+  color:var(--bone);opacity:.88;
 }
+.post p.post-blurb{color:var(--bone)}
+/* And on hover or keyboard focus the whole card's text comes up to full, so the card the
+   pointer is on is unmistakably the selected one rather than merely the one with a border. */
+.post-link:hover .post-blurb,
+.post-link:focus-visible .post-blurb{opacity:1}
 
 /* ---------- a group inside a category ---------- */
 
@@ -409,11 +420,17 @@
 }
 
 /* Every child of the two heading blocks shares one column, so the crumb, the H1, the byline
-   and the lede finally agree on both edges. */
+   and the lede finally agree on both edges.
+ *
+ * LEFT, not centred (25 Aug 2026). The column is still 720px; what changed is where the
+ * slack goes. Centring put the heading on an axis of its own, disagreeing with the wardrobe
+ * and the homepage, which both hang their heads off the page gutter — and on a post page it
+ * now disagrees with the contents rail in the left margin as well. One left edge down the
+ * whole site. */
 .post-head .wrap > *,
 .page-head .wrap > *{
   max-width:var(--post-col);
-  margin-inline:auto;
+  margin-inline:0;
 }
 /* site.css caps these at 20ch and --measure-s respectively, which is what made the H1 and
    the lede disagree with each other by 240px. */
@@ -426,10 +443,106 @@
 .entry-body,
 .post-main .order,
 .shop-cta,
-.post-nav{margin-inline:auto;max-width:var(--post-col)}
+.post-nav{margin-inline:0;max-width:var(--post-col)}
 
-/* The hero keeps its wider measure and centres on the same axis. */
-.post-hero{max-width:var(--post-media);margin-inline:auto}
+/* The hero keeps its wider measure and shares the same left edge. */
+.post-hero{max-width:var(--post-media);margin-inline:0}
 
 /* Card grids are untouched: .grid3 already fills the wrap, so it has none of the void this
    block exists to remove, and pulling it in would waste the width it uses well. */
+
+/* =====================================================================
+   THE POST PAGE ON A DESKTOP  (25 Aug 2026)
+   =====================================================================
+ * The measure stays 720px. It is the right width for sustained reading and widening it
+ * would cost the eye the line return, so the empty half of a 1440px screen had to be filled
+ * with something other than more text.
+ *
+ * Two columns of running prose was the obvious answer and is the wrong one on a page that
+ * scrolls: the reader reaches the foot of column one, scrolls back up for column two, and
+ * repeats it every screenful. Newspapers get away with it because paper does not scroll.
+ *
+ * So the left margin carries a contents rail instead — the post's own section headings, as
+ * anchors, sticky to the viewport. It gives a six-minute read a spine, it is the width
+ * finally doing something for the reader, and it needs no JavaScript, which this site does
+ * not load. Below 1100px it collapses back to a plain block at the top of the post, and the
+ * page is exactly what it was.
+ *
+ * 1100px, not 1280: 200 + 48 + 860 is 1108 of content, and the gutters carry the rest.
+ * A 1280 breakpoint would leave every 1366 laptop out of a layout it has the room for. */
+
+@media (min-width:1100px){
+  /* The head runs on the SAME two columns with its first cell empty, so the H1, the byline
+     and the lede start on the text's left edge rather than 248px to the left of it. Without
+     this the contents rail is the only thing under the heading, and the page has two left
+     edges instead of one. */
+  .post-head .wrap{
+    display:grid;
+    grid-template-columns:200px minmax(0,var(--post-media));
+    column-gap:48px;
+  }
+  .post-head .wrap > *{grid-column:2}
+  .post-main{
+    /* .post-main is a .wrap, and the rule above zeroes a .wrap's gutters to get the vertical
+       padding it wants. Harmless while everything inside carried its own inset; not harmless
+       once the grid's first column is a real element, which would otherwise sit flush against
+       the edge of the screen. */
+    padding-inline:var(--gutter);
+    display:grid;
+    grid-template-columns:200px minmax(0,var(--post-media));
+    column-gap:48px;
+    align-items:start;
+  }
+  /* Everything that was in the single column stays in the single column. */
+  .post-main > *{grid-column:2}
+  .post-toc{
+    grid-column:1;
+    /* Spanning every row is what gives the sticky element a containing block taller than
+       itself — without it there is nothing to stick within. 99 is simply more rows than a
+       post will ever have; grid ignores the surplus. */
+    grid-row:1 / span 99;
+    position:sticky;
+    /* Clears the 64px bar with the same 88px the site's anchor offset uses. */
+    top:88px;
+    margin:0;padding:0;border:0;background:none;
+  }
+  /* The asides were always allowed to break the measure; now there is somewhere to break
+     into. They run out to the hero's edge, which is the only other width on this page. */
+  .entry-body .fit{
+    margin-right:calc(var(--post-col) - var(--post-media));
+  }
+  /* The gutter is the grid's now. Left on the prose as well it would inset the text 30px
+     from the hero above it, which is the misalignment this layout exists to remove. */
+  .entry-body{padding-inline:0}
+}
+
+/* The contents rail itself. These rules apply at every width — below 1100px it is simply a
+   block sitting above the hero, which is the ordinary mobile shape for a table of contents
+   and needs no disclosure widget to open. */
+.post-toc{
+  border-left:2px solid rgba(232,169,60,.34);
+  padding:2px 0 2px 16px;
+  /* .post-main is a .wrap with its gutters zeroed for the vertical padding it wants, and
+     everything inside carries its own inset. Below 1100px this is one of those things, or
+     its rule would sit hard against the edge of the phone. The desktop block above resets
+     the margin to 0, where the grid owns the gutter instead. */
+  margin:0 var(--gutter) 26px;
+}
+.post-toc-h{
+  font-family:var(--mono);
+  font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--magenta);margin-bottom:10px;
+}
+.post-toc ol{list-style:none;margin:0;padding:0;counter-reset:toc}
+.post-toc li{counter-increment:toc;margin-bottom:2px}
+.post-toc a{
+  display:block;padding:7px 0;
+  font-size:var(--fs-s);line-height:var(--lh-read);
+  color:var(--bone);opacity:.75;
+  transition:opacity .15s,color .15s;
+}
+.post-toc a::before{
+  content:counter(toc);
+  color:var(--magenta);margin-right:10px;font-family:var(--mono);font-size:var(--fs-2xs);
+}
+.post-toc a:hover,.post-toc a:focus-visible{opacity:1;color:var(--magenta)}

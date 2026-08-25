@@ -762,6 +762,50 @@ for (const post of posts) {
   </div></section>`
     : "";
 
+  // THE CONTENTS RAIL (25 Aug 2026).
+  //
+  // A post's own section headings, lifted out as anchors. On a desktop the CSS parks this in
+  // the left margin and makes it sticky, which is what finally puts the empty half of a wide
+  // screen to work; below 1100px it is a plain block above the hero. Either way it is a list
+  // of links to ids on the same page, so it costs no JavaScript — there is none loaded here.
+  //
+  // Built from the body rather than declared in posts.json: a heading that exists is a
+  // section that exists, and two lists of the same thing drift apart. Reviews are three
+  // paragraphs with no headings at all, and correctly get nothing.
+  //
+  // h2 AND h4 for the reason the stylesheet gives: the long-form fashion dispatch predates
+  // the split into post pages and still uses h4, while newer bodies use h2. Both are a
+  // section break inside one piece of writing.
+  const slug = (t) => t.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 60);
+  const toc = [];
+  const entryHtml = bodies[post.id].replace(
+    /<h([24])([^>]*)>([\s\S]*?)<\/h\1>/g,
+    (whole, level, attrs, inner) => {
+      // The leading <span class="no"> is the decorative section number the stylesheet
+      // colours; it is not part of the heading's name and must not reach the link text.
+      const text = inner.replace(/<span class="no">[\s\S]*?<\/span>/, "")
+        .replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim();
+      if (!text) return whole;
+      // A body that already carries its own id keeps it: an existing anchor may be linked
+      // from somewhere this build cannot see.
+      const existing = /\bid="([^"]+)"/.exec(attrs);
+      const id = existing ? existing[1] : slug(text);
+      toc.push({ id, text });
+      return existing ? whole : `<h${level}${attrs} id="${id}">${inner}</h${level}>`;
+    });
+
+  // One heading is not a table of contents, it is a heading. Two is the point at which a
+  // reader can actually choose between somewhere and somewhere else.
+  const tocBlock = toc.length >= 2
+    ? `<nav class="post-toc" aria-labelledby="toc-h">
+      <p class="post-toc-h" id="toc-h">On this page</p>
+      <ol>
+        ${toc.map((t) => `<li><a href="#${t.id}">${esc(t.text)}</a></li>`).join("\n        ")}
+      </ol>
+    </nav>`
+    : "";
+
   const body = `<article class="post-page">
   <div class="post-head"><div class="wrap">
     <nav class="crumb crumb-nav" aria-label="Breadcrumb">
@@ -774,9 +818,10 @@ for (const post of posts) {
   </div></div>
 
   <div class="wrap post-main">
+    ${tocBlock}
     ${hero}
     <div class="entry-body">
-${bodies[post.id]}
+${entryHtml}
     </div>
     ${orderLine}
     ${shopCta}

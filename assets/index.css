@@ -112,11 +112,21 @@
  * the words are LEFT-aligned inside it: the chip sits above a left-aligned headline and
  * lede, so centring would make the text's left edge wander against a strong margin line
  * while the box itself stayed still.
+ *
+ * Centred for an afternoon on 25 Aug 2026 and reverted the same day, on looking at it: the
+ * wandering left edge is the more visible of the two faults, because the H1 immediately
+ * below gives the eye a hard vertical to measure every greeting against.
  */
 .hero .label.welcome{
   /* One line tall, and the height is fixed here rather than inherited so the reel's step
      distance and the chip's height are the same number in both places. */
-  --wh:16px;
+  /* 1.3333em, which is the 16px this was until 25 Aug 2026 at the chip's 12px — the same
+     number, expressed so it follows the type instead of asserting a pixel height over it.
+     A hard 16px is only correct while the line is exactly 12px tall in the loaded face: let
+     the text render larger for any reason — OS text scaling, or the fallback face during the
+     webfont race — and the step distance and the line height stop agreeing, so the words
+     drift out of the one-line window mid-cycle. In em they cannot disagree. */
+  --wh:1.3333em;
   padding-top:6px;padding-bottom:6px;
   /* Measured, not guessed: the longest greeting is the Russian at 139px, and box-sizing is
      border-box, so 139 + 24px of padding = 163px. 14em is 168px at this 12px font — five
