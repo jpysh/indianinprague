@@ -10,9 +10,58 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-08-25T08:53:18.282Z",
-  "count": 5389,
+  "generated": "2026-08-26T05:17:15.723Z",
+  "count": 5401,
   "entries": {
+    "item.9776809246.title": {
+      "text": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
+      "src": "f50fa02e494f",
+      "where": "item 9776809246 — title",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "item.9776809246.description": {
+      "text": "Stunning and comfortable cotton tunic from Indian brand Jaypore. \nTraditional Ajrakh patterns and gorgeous ribbed textures in chest area. \n100 percent pure cotton.\nBust 99 cm / 39 inches\nFront length 81 cm / 32 inches",
+      "src": "bfc8ae7b4b44",
+      "where": "item 9776809246 — description",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "attr.condition.very-good": {
+      "text": "Very good",
+      "src": "06a2935e6f57",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.black": {
+      "text": "Black",
+      "src": "c6cfe6e4f129",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "item.9775845980.title": {
+      "text": "Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL",
+      "src": "bc8ee65949c3",
+      "where": "item 9775845980 — title",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "item.9775845980.description": {
+      "text": "Will comfortably fit L to XL.\nBust 42 inches\nLength 40 inches\nLilac coloured Indian Kurta, to be paired with tights or loose pants/palazzos.\nComes with comfortable double pockets.\nMade of 100 pure cotton.\nStunning Ikat pattern.",
+      "src": "47222d75706d",
+      "where": "item 9775845980 — description",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "attr.color.lilac": {
+      "text": "Lilac",
+      "src": "e3233c699c7d",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.9729949801.title": {
       "text": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
       "src": "2bcf06e22b6d",
@@ -24,13 +73,6 @@
       "text": "Bust: Can fit approx. 36-38 inches\nShoulder: 15 inch\nWaist: free-flow, fits most \nLength: 48 inches\n\nBeautiful long dress in soft pastel beige, with a delicate grey and mustard-yellow floral print. \nOriginal Indian design by the brand Anoshk, a much loved delhi fashion boutique. \nMade from 100% lightweight cotton, soft, breathable, and comfortable even on hot days. \nThe top is fitted and the skirt falls into a vintage style A-line shape. \nThree-quarter sleeves and a small V-notch neckline with a tie detail. \nThe waist is loose and flowing, so it fits a wide range of sizes and body shapes. Perfect for summer, holidays, weddings, or any occasion where you want to feel elegant and comfortable at the same time.",
       "src": "56972dd4c616",
       "where": "item 9729949801 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.condition.very-good": {
-      "text": "Very good",
-      "src": "06a2935e6f57",
-      "where": "condition — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -199,13 +241,6 @@
       "text": "Black Indian pure cotton kurta/long top/suit/tunic with Buddha handblock print all over it and matching pants. Pants have front drawstrings and comfortable elastic with side pockets and side slits. Round neck and three fourth sleeves. Creates a stunning spiritual, boho chic and ethnic vibe. \nBust 40 inches\nLength of kurta (top) 44 inch\nPants waist 34 inches \nLength of pants 37 inches",
       "src": "be5938adcbad",
       "where": "item 9649545514 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.color.black": {
-      "text": "Black",
-      "src": "c6cfe6e4f129",
-      "where": "color — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -703,13 +738,6 @@
       "text": "Lilac Mango blouse with crew-neck top and short sleeves that are fitted with padding to keep shape. Great for office wear or evening outs or formal gatherings. Shines and falls beautifully. \nSize L\nOuter fabric material: 100% polyester",
       "src": "1ab3ad7b8b3d",
       "where": "item 9578313870 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.color.lilac": {
-      "text": "Lilac",
-      "src": "e3233c699c7d",
-      "where": "color — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -4157,12 +4185,12 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.df2d7c2fd73f": {
-      "text": "426 pieces",
-      "src": "df2d7c2fd73f",
+    "text.f4bf4cc082a1": {
+      "text": "428 pieces",
+      "src": "f4bf4cc082a1",
       "where": "page text — first seen on index.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
@@ -4332,12 +4360,12 @@
       "since": "",
       "changed": ""
     },
-    "text.d21050d1bea2": {
-      "text": "1607 pieces for sale · 61 sold",
-      "src": "d21050d1bea2",
+    "text.252d8acd98b0": {
+      "text": "1609 pieces for sale · 61 sold",
+      "src": "252d8acd98b0",
       "where": "page text — first seen on index.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -4612,6 +4640,83 @@
       "since": "",
       "changed": ""
     },
+    "text.7812566c67fa": {
+      "text": "Description of Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
+      "src": "7812566c67fa",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "text.de7d1b721a1e": {
+      "text": "i",
+      "src": "de7d1b721a1e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.a3f972dc2e5d": {
+      "text": "Stunning and comfortable cotton tunic from Indian brand Jaypore. Traditional Ajrakh patterns and gorgeous ribbed textures in chest area. 100 percent…",
+      "src": "a3f972dc2e5d",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "text.a1febfb9d878": {
+      "text": "Very good · Black · M",
+      "src": "a1febfb9d878",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0ee2d655dcd6": {
+      "text": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro — open the Vinted listing in a new tab",
+      "src": "0ee2d655dcd6",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "text.c16236ad956c": {
+      "text": "Ask about this piece",
+      "src": "c16236ad956c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.85f061ad9f47": {
+      "text": "— opens WhatsApp in a new tab",
+      "src": "85f061ad9f47",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5bc986e31e65": {
+      "text": "Description of Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL",
+      "src": "5bc986e31e65",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "text.08b25e3bebd3": {
+      "text": "Will comfortably fit L to XL. Bust 42 inches Length 40 inches Lilac coloured Indian Kurta, to be paired with tights or loose pants/palazzos. Comes…",
+      "src": "08b25e3bebd3",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
+    "text.6d03a30d185e": {
+      "text": "Very good · Lilac · L",
+      "src": "6d03a30d185e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.041701bfabc5": {
+      "text": "Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL — open the Vinted listing in a new tab",
+      "src": "041701bfabc5",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
     "text.9700f2ceded9": {
       "text": "Govinda",
       "src": "9700f2ceded9",
@@ -4622,13 +4727,6 @@
     "text.711c98b2901c": {
       "text": "Description of Chamfered Divine Cup, S and M",
       "src": "711c98b2901c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.de7d1b721a1e": {
-      "text": "i",
-      "src": "de7d1b721a1e",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
@@ -4650,13 +4748,6 @@
     "text.1bb8c68a34e1": {
       "text": "Order on WhatsApp",
       "src": "1bb8c68a34e1",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.85f061ad9f47": {
-      "text": "— opens WhatsApp in a new tab",
-      "src": "85f061ad9f47",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -4699,13 +4790,6 @@
     "text.09ddacbc60de": {
       "text": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton — open the Vinted listing in a new tab",
       "src": "09ddacbc60de",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c16236ad956c": {
-      "text": "Ask about this piece",
-      "src": "c16236ad956c",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -4815,12 +4899,12 @@
       "since": "",
       "changed": ""
     },
-    "text.24a9d23a221e": {
-      "text": "30 people have saved this on Vinted",
-      "src": "24a9d23a221e",
+    "text.eb24e095f164": {
+      "text": "31 people have saved this on Vinted",
+      "src": "eb24e095f164",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.90d8ae7580b6": {
       "text": "people saved this on Vinted",
@@ -5746,13 +5830,6 @@
       "since": "",
       "changed": ""
     },
-    "text.6d03a30d185e": {
-      "text": "Very good · Lilac · L",
-      "src": "6d03a30d185e",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.24c5a24613d4": {
       "text": "Mango blouse | Crew-neck top | Short sleeves with padding — open the Vinted listing in a new tab",
       "src": "24c5a24613d4",
@@ -5787,6 +5864,13 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
+    },
+    "text.008ec7ed40fb": {
+      "text": "15 people have saved this on Vinted",
+      "src": "008ec7ed40fb",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.7586111a1062": {
       "text": "Description of Om Namah Shivaya Hindu Prayer Wrap | Spiritual Yoga Meditation Scarf",
@@ -5921,12 +6005,12 @@
       "since": "",
       "changed": ""
     },
-    "text.4a51407894f6": {
-      "text": "9 people have saved this on Vinted",
-      "src": "4a51407894f6",
+    "text.2971862d4fbe": {
+      "text": "11 people have saved this on Vinted",
+      "src": "2971862d4fbe",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.d69e0e81c135": {
       "text": "Description of Antique Indian Brass Golden Lord Shiva Parvati and Ganesha Family Idol Statue",
@@ -6642,6 +6726,13 @@
       "since": "",
       "changed": ""
     },
+    "text.4a51407894f6": {
+      "text": "9 people have saved this on Vinted",
+      "src": "4a51407894f6",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.80b913a9f8b3": {
       "text": "Description of Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring",
       "src": "80b913a9f8b3",
@@ -6712,12 +6803,12 @@
       "since": "",
       "changed": ""
     },
-    "text.ff0a2f2a0447": {
-      "text": "24 people have saved this on Vinted",
-      "src": "ff0a2f2a0447",
+    "text.fb5938a595ff": {
+      "text": "23 people have saved this on Vinted",
+      "src": "fb5938a595ff",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.08d7795d0b9c": {
       "text": "Description of Vintage Jewellery | Ethnic Boho Necklace",
@@ -7020,55 +7111,6 @@
       "since": "",
       "changed": ""
     },
-    "text.d4971d842dbc": {
-      "text": "Handmade Artisan Textile &amp; Wood Pendant Necklace",
-      "src": "d4971d842dbc",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.6b36c451f957": {
-      "text": "Description of Handmade Artisan Textile &amp; Wood Pendant Necklace",
-      "src": "6b36c451f957",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.04a331b50c73": {
-      "text": "Unique, one-of-a-kind artisan necklace. Wonderful for adding an artisan, folksy statement to a plain outfit. Built on colourful jute/twine cords…",
-      "src": "04a331b50c73",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.1296a02def12": {
-      "text": "Handmade Artisan Textile &amp; Wood Pendant Necklace — open the Vinted listing in a new tab",
-      "src": "1296a02def12",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.3091129613b9": {
-      "text": "Description of Multicolor Handmade Fabric Jewellery",
-      "src": "3091129613b9",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.e7c2828c8458": {
-      "text": "A unique, eye-catching piece — perfect with a plain top or summer dress to add a pop of colour. Lightweight and easy to wear, and a lovely example…",
-      "src": "e7c2828c8458",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.56b2ea08c185": {
-      "text": "Multicolor Handmade Fabric Jewellery — open the Vinted listing in a new tab",
-      "src": "56b2ea08c185",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -7107,6 +7149,48 @@
     "text.e47eae2ba790": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 10",
       "src": "e47eae2ba790",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f16bba47c7e5": {
+      "text": "3D image of Krishna and Radha sitting",
+      "src": "f16bba47c7e5",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.58a35c502011": {
+      "text": "Description of 3D image of Krishna and Radha sitting",
+      "src": "58a35c502011",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8b9aec1a1dae": {
+      "text": "A 3D image with a stand on the back.",
+      "src": "8b9aec1a1dae",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.4edeff9b6e3b": {
+      "text": "Glass candlestick",
+      "src": "4edeff9b6e3b",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e683232d0ccd": {
+      "text": "Description of Glass candlestick",
+      "src": "e683232d0ccd",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.fce7d6a47231": {
+      "text": "A glass candle holder with coloured glass panels for a tea light. It glows beautifully through the coloured glass panels. It will brighten up your…",
+      "src": "fce7d6a47231",
       "where": "page text — first seen on wardrobe/10.html",
       "since": "",
       "changed": ""
@@ -7523,13 +7607,6 @@
       "where": "page text — first seen on wardrobe/10.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.8b9aec1a1dae": {
-      "text": "A 3D image with a stand on the back.",
-      "src": "8b9aec1a1dae",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
     },
     "text.0d3dfd28f949": {
       "text": "3D image of Prabhupada",
@@ -10422,48 +10499,6 @@
       "since": "",
       "changed": ""
     },
-    "text.75a1c32bad08": {
-      "text": "Double-sided Damodar picture for hanging",
-      "src": "75a1c32bad08",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.6ebb4031b244": {
-      "text": "Description of Double-sided Damodar picture for hanging",
-      "src": "6ebb4031b244",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.868702aa1f6d": {
-      "text": "A double-sided picture to hang up, with a green tassel.",
-      "src": "868702aa1f6d",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.5f35ba25ea07": {
-      "text": "Ganesha/Durga sticker, gold, 7 cm in diameter",
-      "src": "5f35ba25ea07",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f96fd57b8bf9": {
-      "text": "Description of Ganesha/Durga sticker, gold, 7 cm in diameter",
-      "src": "f96fd57b8bf9",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.c66a42c52d0d": {
-      "text": "Gold sticker with a picture. 01 Ganesha 02 Durga",
-      "src": "c66a42c52d0d",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cb5673a23602": {
       "text": "Page 11 of 17",
       "src": "cb5673a23602",
@@ -10474,6 +10509,48 @@
     "text.7525e86f11da": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 12",
       "src": "7525e86f11da",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.75a1c32bad08": {
+      "text": "Double-sided Damodar picture for hanging",
+      "src": "75a1c32bad08",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.6ebb4031b244": {
+      "text": "Description of Double-sided Damodar picture for hanging",
+      "src": "6ebb4031b244",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.868702aa1f6d": {
+      "text": "A double-sided picture to hang up, with a green tassel.",
+      "src": "868702aa1f6d",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5f35ba25ea07": {
+      "text": "Ganesha/Durga sticker, gold, 7 cm in diameter",
+      "src": "5f35ba25ea07",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f96fd57b8bf9": {
+      "text": "Description of Ganesha/Durga sticker, gold, 7 cm in diameter",
+      "src": "f96fd57b8bf9",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.c66a42c52d0d": {
+      "text": "Gold sticker with a picture. 01 Ganesha 02 Durga",
+      "src": "c66a42c52d0d",
       "where": "page text — first seen on wardrobe/12.html",
       "since": "",
       "changed": ""
@@ -12396,48 +12473,6 @@
       "since": "",
       "changed": ""
     },
-    "text.077a8ad79ea2": {
-      "text": "Colourful ladies’ japa pouch, 3 types",
-      "src": "077a8ad79ea2",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c66e0dc62aa5": {
-      "text": "Description of Colourful ladies’ japa pouch, 3 types",
-      "src": "c66e0dc62aa5",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.45b66860c851": {
-      "text": "A cotton ladies’ japa pouch. It has a zipped pocket. Choose from the designs and numbers 01 to 03 as shown in the picture, from left to right.",
-      "src": "45b66860c851",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.fc20e5dbfe4d": {
-      "text": "Women's red japa pouch",
-      "src": "fc20e5dbfe4d",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c48298cc7eac": {
-      "text": "Description of Women's red japa pouch",
-      "src": "c48298cc7eac",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.bf354e29e6d7": {
-      "text": "Cotton japa rosary pouch. Zipped pouch. Available in red, with a choice of design and numbers 01 to 03 as shown in the picture from left to right.",
-      "src": "bf354e29e6d7",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cd569e7bcdac": {
       "text": "Page 12 of 17",
       "src": "cd569e7bcdac",
@@ -12448,6 +12483,48 @@
     "text.8a0031e861a2": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 13",
       "src": "8a0031e861a2",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.077a8ad79ea2": {
+      "text": "Colourful ladies’ japa pouch, 3 types",
+      "src": "077a8ad79ea2",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c66e0dc62aa5": {
+      "text": "Description of Colourful ladies’ japa pouch, 3 types",
+      "src": "c66e0dc62aa5",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.45b66860c851": {
+      "text": "A cotton ladies’ japa pouch. It has a zipped pocket. Choose from the designs and numbers 01 to 03 as shown in the picture, from left to right.",
+      "src": "45b66860c851",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.fc20e5dbfe4d": {
+      "text": "Women's red japa pouch",
+      "src": "fc20e5dbfe4d",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c48298cc7eac": {
+      "text": "Description of Women's red japa pouch",
+      "src": "c48298cc7eac",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.bf354e29e6d7": {
+      "text": "Cotton japa rosary pouch. Zipped pouch. Available in red, with a choice of design and numbers 01 to 03 as shown in the picture from left to right.",
+      "src": "bf354e29e6d7",
       "where": "page text — first seen on wardrobe/13.html",
       "since": "",
       "changed": ""
@@ -14286,48 +14363,6 @@
       "since": "",
       "changed": ""
     },
-    "text.d91a29087291": {
-      "text": "Orange and blue silk crepe sari with fabric for the choli",
-      "src": "d91a29087291",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.af87d084b949": {
-      "text": "Description of Orange and blue silk crepe sari with fabric for the choli",
-      "src": "af87d084b949",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.f0519f3cedd7": {
-      "text": "An orange sari with a blue border. Crepe silk, a lovely, flowing fabric. With a blue piece of fabric for the choli (on the floor on the left in the…",
-      "src": "f0519f3cedd7",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.2da1c8857b09": {
-      "text": "Cotton-polyester sari, pink and green",
-      "src": "2da1c8857b09",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.95bd500ed008": {
-      "text": "Description of Cotton-polyester sari, pink and green",
-      "src": "95bd500ed008",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.d4e2671c2478": {
-      "text": "A sari made of cotton and polyester.",
-      "src": "d4e2671c2478",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
     "text.d2fbd96c8720": {
       "text": "Page 13 of 17",
       "src": "d2fbd96c8720",
@@ -14338,6 +14373,48 @@
     "text.33006bb7b1f3": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 14",
       "src": "33006bb7b1f3",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.d91a29087291": {
+      "text": "Orange and blue silk crepe sari with fabric for the choli",
+      "src": "d91a29087291",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.af87d084b949": {
+      "text": "Description of Orange and blue silk crepe sari with fabric for the choli",
+      "src": "af87d084b949",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.f0519f3cedd7": {
+      "text": "An orange sari with a blue border. Crepe silk, a lovely, flowing fabric. With a blue piece of fabric for the choli (on the floor on the left in the…",
+      "src": "f0519f3cedd7",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2da1c8857b09": {
+      "text": "Cotton-polyester sari, pink and green",
+      "src": "2da1c8857b09",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.95bd500ed008": {
+      "text": "Description of Cotton-polyester sari, pink and green",
+      "src": "95bd500ed008",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.d4e2671c2478": {
+      "text": "A sari made of cotton and polyester.",
+      "src": "d4e2671c2478",
       "where": "page text — first seen on wardrobe/14.html",
       "since": "",
       "changed": ""
@@ -16295,48 +16372,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4694e23212d8": {
-      "text": "Hanuman sticker",
-      "src": "4694e23212d8",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.2c4b00f84ae9": {
-      "text": "Description of Hanuman sticker",
-      "src": "2c4b00f84ae9",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.2e7e0ce276a1": {
-      "text": "A tapestry depicting Hanuman.",
-      "src": "2e7e0ce276a1",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c5cc6db0f178": {
-      "text": "Durga sticker, gold, 7 cm in diameter",
-      "src": "c5cc6db0f178",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.1088c3f43e75": {
-      "text": "Description of Durga sticker, gold, 7 cm in diameter",
-      "src": "1088c3f43e75",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ffd82e2a36c6": {
-      "text": "A gold sticker with a picture on it.",
-      "src": "ffd82e2a36c6",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
     "text.77be5ea6f49f": {
       "text": "Page 14 of 17",
       "src": "77be5ea6f49f",
@@ -16347,6 +16382,48 @@
     "text.57b7f3e54df0": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 15",
       "src": "57b7f3e54df0",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.4694e23212d8": {
+      "text": "Hanuman sticker",
+      "src": "4694e23212d8",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2c4b00f84ae9": {
+      "text": "Description of Hanuman sticker",
+      "src": "2c4b00f84ae9",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.2e7e0ce276a1": {
+      "text": "A tapestry depicting Hanuman.",
+      "src": "2e7e0ce276a1",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c5cc6db0f178": {
+      "text": "Durga sticker, gold, 7 cm in diameter",
+      "src": "c5cc6db0f178",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.1088c3f43e75": {
+      "text": "Description of Durga sticker, gold, 7 cm in diameter",
+      "src": "1088c3f43e75",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ffd82e2a36c6": {
+      "text": "A gold sticker with a picture on it.",
+      "src": "ffd82e2a36c6",
       "where": "page text — first seen on wardrobe/15.html",
       "since": "",
       "changed": ""
@@ -18353,41 +18430,6 @@
       "since": "",
       "changed": ""
     },
-    "text.ce8cd0e3a780": {
-      "text": "Čaitanja-čaritámrita, Madhja-Lílá 1",
-      "src": "ce8cd0e3a780",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.61fe6366a006": {
-      "text": "Description of Čaitanja-čaritámrita, Madhja-Lílá 1",
-      "src": "61fe6366a006",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.754d19e67964": {
-      "text": "Sri Srimad A.C. Bhaktivedanta Swami Prabhupada This book presents the first 13 chapters of Lord Chaitanya’s later pastimes following his acceptance…",
-      "src": "754d19e67964",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.68dfa0677fbf": {
-      "text": "Čaitanja-čaritámrita, Ádi-Lílá",
-      "src": "68dfa0677fbf",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b34a7632acd9": {
-      "text": "Description of Čaitanja-čaritámrita, Ádi-Lílá",
-      "src": "b34a7632acd9",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.85e8b5f2f0fc": {
       "text": "Page 15 of 17",
       "src": "85e8b5f2f0fc",
@@ -18401,6 +18443,41 @@
       "where": "page text — first seen on wardrobe/16.html",
       "since": "",
       "changed": ""
+    },
+    "text.ce8cd0e3a780": {
+      "text": "Čaitanja-čaritámrita, Madhja-Lílá 1",
+      "src": "ce8cd0e3a780",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.61fe6366a006": {
+      "text": "Description of Čaitanja-čaritámrita, Madhja-Lílá 1",
+      "src": "61fe6366a006",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.754d19e67964": {
+      "text": "Sri Srimad A.C. Bhaktivedanta Swami Prabhupada This book presents the first 13 chapters of Lord Chaitanya’s later pastimes following his acceptance…",
+      "src": "754d19e67964",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.68dfa0677fbf": {
+      "text": "Čaitanja-čaritámrita, Ádi-Lílá",
+      "src": "68dfa0677fbf",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b34a7632acd9": {
+      "text": "Description of Čaitanja-čaritámrita, Ádi-Lílá",
+      "src": "b34a7632acd9",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.a8fd83c296e2": {
       "text": "Život pochází ze života",
@@ -20264,48 +20341,6 @@
       "since": "",
       "changed": ""
     },
-    "text.14e8c8eb022a": {
-      "text": "Pashmina Scarf",
-      "src": "14e8c8eb022a",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.7c374cde4e16": {
-      "text": "Description of Pashmina Scarf",
-      "src": "7c374cde4e16",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.82c18e250d54": {
-      "text": "A pashmina scarf is suitable and comfortable to wear on both warm and cold days. A pashmina is a practical and stylish accessory.",
-      "src": "82c18e250d54",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.1cc820dbf883": {
-      "text": "Girls’ set – blouse and skirt",
-      "src": "1cc820dbf883",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f2bbbddbdb82": {
-      "text": "Description of Girls’ set – blouse and skirt",
-      "src": "f2bbbddbdb82",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ff043da98709": {
-      "text": "Girls’ set – blouse and tie-up skirt. Bud print. The blouse fastens with a button at the back of the neck.",
-      "src": "ff043da98709",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
     "text.9a5e211cdc04": {
       "text": "Page 16 of 17",
       "src": "9a5e211cdc04",
@@ -20316,6 +20351,48 @@
     "text.8663c49a8820": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 17",
       "src": "8663c49a8820",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.14e8c8eb022a": {
+      "text": "Pashmina Scarf",
+      "src": "14e8c8eb022a",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7c374cde4e16": {
+      "text": "Description of Pashmina Scarf",
+      "src": "7c374cde4e16",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.82c18e250d54": {
+      "text": "A pashmina scarf is suitable and comfortable to wear on both warm and cold days. A pashmina is a practical and stylish accessory.",
+      "src": "82c18e250d54",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.1cc820dbf883": {
+      "text": "Girls’ set – blouse and skirt",
+      "src": "1cc820dbf883",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f2bbbddbdb82": {
+      "text": "Description of Girls’ set – blouse and skirt",
+      "src": "f2bbbddbdb82",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ff043da98709": {
+      "text": "Girls’ set – blouse and tie-up skirt. Bud print. The blouse fastens with a button at the back of the neck.",
+      "src": "ff043da98709",
       "where": "page text — first seen on wardrobe/17.html",
       "since": "",
       "changed": ""
@@ -21734,13 +21811,6 @@
       "since": "",
       "changed": ""
     },
-    "text.a1febfb9d878": {
-      "text": "Very good · Black · M",
-      "src": "a1febfb9d878",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
     "text.2bedbbd55e97": {
       "text": "Wooden drop earrings with faux pearl | Heartshaped | Boho jewellery",
       "src": "2bedbbd55e97",
@@ -22112,6 +22182,55 @@
       "since": "",
       "changed": ""
     },
+    "text.d4971d842dbc": {
+      "text": "Handmade Artisan Textile &amp; Wood Pendant Necklace",
+      "src": "d4971d842dbc",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.6b36c451f957": {
+      "text": "Description of Handmade Artisan Textile &amp; Wood Pendant Necklace",
+      "src": "6b36c451f957",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.04a331b50c73": {
+      "text": "Unique, one-of-a-kind artisan necklace. Wonderful for adding an artisan, folksy statement to a plain outfit. Built on colourful jute/twine cords…",
+      "src": "04a331b50c73",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.1296a02def12": {
+      "text": "Handmade Artisan Textile &amp; Wood Pendant Necklace — open the Vinted listing in a new tab",
+      "src": "1296a02def12",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.3091129613b9": {
+      "text": "Description of Multicolor Handmade Fabric Jewellery",
+      "src": "3091129613b9",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.e7c2828c8458": {
+      "text": "A unique, eye-catching piece — perfect with a plain top or summer dress to add a pop of colour. Lightweight and easy to wear, and a lovely example…",
+      "src": "e7c2828c8458",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.56b2ea08c185": {
+      "text": "Multicolor Handmade Fabric Jewellery — open the Vinted listing in a new tab",
+      "src": "56b2ea08c185",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
     "text.c313355a132d": {
       "text": "Description of Indian Handmade Cotton Fabric Necklace | Artisan Textile Jewellery | Boho Festival",
       "src": "c313355a132d",
@@ -22454,6 +22573,13 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "",
       "changed": ""
+    },
+    "text.0e5e6fadf812": {
+      "text": "19 people have saved this on Vinted",
+      "src": "0e5e6fadf812",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.f6e4b6b307f9": {
       "text": "Description of Mango Gold Metallic Cami Top | Size M",
@@ -22833,13 +22959,6 @@
       "since": "",
       "changed": ""
     },
-    "text.f5c5089f35bc": {
-      "text": "13 people have saved this on Vinted",
-      "src": "f5c5089f35bc",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.8889c58a84a9": {
       "text": "Description of African Print Wrap Top | High Quality Nigerian Cotton | Peplum Style | Puff Sleeve",
       "src": "8889c58a84a9",
@@ -23113,12 +23232,12 @@
       "since": "",
       "changed": ""
     },
-    "text.cff7c30d1a23": {
-      "text": "46 people have saved this on Vinted",
-      "src": "cff7c30d1a23",
+    "text.dc485edeaccc": {
+      "text": "47 people have saved this on Vinted",
+      "src": "dc485edeaccc",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.90446b37865b": {
       "text": "Description of Palazzo Skirt cum Trousers | Batik-Style Print | Wide Leg | Indian Boho | Nigeria Cotton",
@@ -24065,41 +24184,6 @@
       "since": "",
       "changed": ""
     },
-    "text.1c1219a2d892": {
-      "text": "Kantimála, 3rd series, rolls measuring 1.1 × 0.6 cm",
-      "src": "1c1219a2d892",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.bddb1dd4b5fd": {
-      "text": "Description of Kantimála, 3rd series, rolls measuring 1.1 × 0.6 cm",
-      "src": "bddb1dd4b5fd",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ef9daaaca319": {
-      "text": "A three-strand kantimala made from the sacred tulasi shrub. It offers protection. Large beads.",
-      "src": "ef9daaaca319",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.5f197b62761f": {
-      "text": "Kantimála, 3rd series, medium ovals",
-      "src": "5f197b62761f",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9b20e2a62a4b": {
-      "text": "Description of Kantimála, 3rd series, medium ovals",
-      "src": "9b20e2a62a4b",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.9812503c6b74": {
       "text": "Page 2 of 17",
       "src": "9812503c6b74",
@@ -24113,6 +24197,41 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "",
       "changed": ""
+    },
+    "text.1c1219a2d892": {
+      "text": "Kantimála, 3rd series, rolls measuring 1.1 × 0.6 cm",
+      "src": "1c1219a2d892",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.bddb1dd4b5fd": {
+      "text": "Description of Kantimála, 3rd series, rolls measuring 1.1 × 0.6 cm",
+      "src": "bddb1dd4b5fd",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ef9daaaca319": {
+      "text": "A three-strand kantimala made from the sacred tulasi shrub. It offers protection. Large beads.",
+      "src": "ef9daaaca319",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5f197b62761f": {
+      "text": "Kantimála, 3rd series, medium ovals",
+      "src": "5f197b62761f",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.9b20e2a62a4b": {
+      "text": "Description of Kantimála, 3rd series, medium ovals",
+      "src": "9b20e2a62a4b",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.36d92cf61964": {
       "text": "Brown Jagannath japa bag",
@@ -25920,48 +26039,6 @@
       "since": "",
       "changed": ""
     },
-    "text.ff7e02b8e6eb": {
-      "text": "Wooden figurine on a plinth: Infant Krishna, 4 types",
-      "src": "ff7e02b8e6eb",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.693f1187a3ef": {
-      "text": "Description of Wooden figurine on a plinth: Infant Krishna, 4 types",
-      "src": "693f1187a3ef",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.55a0f42d6707": {
-      "text": "A wooden picture depicting a scene from Krishna’s childhood, available in four versions to choose from based on the photo and number: 01 – Krishna…",
-      "src": "55a0f42d6707",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c928191259c5": {
-      "text": "Wooden ‘Hare Krishna’ sticker, English/Sanskrit",
-      "src": "c928191259c5",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e778f101a6e4": {
-      "text": "Description of Wooden ‘Hare Krishna’ sticker, English/Sanskrit",
-      "src": "e778f101a6e4",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ecc872c26878": {
-      "text": "A wooden sticker bearing the words ‘Hare Krishna’ in English (type 01) or Sanskrit (type 02), available in several colours.",
-      "src": "ecc872c26878",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
     "text.7ebc4b659cb5": {
       "text": "Page 3 of 17",
       "src": "7ebc4b659cb5",
@@ -25972,6 +26049,48 @@
     "text.c777caf1196c": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 4",
       "src": "c777caf1196c",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ff7e02b8e6eb": {
+      "text": "Wooden figurine on a plinth: Infant Krishna, 4 types",
+      "src": "ff7e02b8e6eb",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.693f1187a3ef": {
+      "text": "Description of Wooden figurine on a plinth: Infant Krishna, 4 types",
+      "src": "693f1187a3ef",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.55a0f42d6707": {
+      "text": "A wooden picture depicting a scene from Krishna’s childhood, available in four versions to choose from based on the photo and number: 01 – Krishna…",
+      "src": "55a0f42d6707",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c928191259c5": {
+      "text": "Wooden ‘Hare Krishna’ sticker, English/Sanskrit",
+      "src": "c928191259c5",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e778f101a6e4": {
+      "text": "Description of Wooden ‘Hare Krishna’ sticker, English/Sanskrit",
+      "src": "e778f101a6e4",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ecc872c26878": {
+      "text": "A wooden sticker bearing the words ‘Hare Krishna’ in English (type 01) or Sanskrit (type 02), available in several colours.",
+      "src": "ecc872c26878",
       "where": "page text — first seen on wardrobe/4.html",
       "since": "",
       "changed": ""
@@ -27586,34 +27705,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.2627fccf8d5c": {
-      "text": "Gopi dress with choli and dupatta – purple, size S/M",
-      "src": "2627fccf8d5c",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.240cfe93f32a": {
-      "text": "Description of Gopi dress with choli and dupatta – purple, size S/M",
-      "src": "240cfe93f32a",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8e4d413c5ff6": {
-      "text": "A Gopi dress with a choli and dupatta made from a thin, sheer fabric, a blend of cotton and viscose. Must be worn with a dark-coloured petticoat.",
-      "src": "8e4d413c5ff6",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.557cfc959d5b": {
-      "text": "A wall hanging featuring the Mahāmantra, with the following designs to choose from, listed by the numbers below: 01 – Yashoda with the infant…",
-      "src": "557cfc959d5b",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
     "text.87aa4f8d44b2": {
       "text": "Page 4 of 17",
       "src": "87aa4f8d44b2",
@@ -27624,6 +27715,34 @@
     "text.635ac3b97808": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 5",
       "src": "635ac3b97808",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2627fccf8d5c": {
+      "text": "Gopi dress with choli and dupatta – purple, size S/M",
+      "src": "2627fccf8d5c",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.240cfe93f32a": {
+      "text": "Description of Gopi dress with choli and dupatta – purple, size S/M",
+      "src": "240cfe93f32a",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8e4d413c5ff6": {
+      "text": "A Gopi dress with a choli and dupatta made from a thin, sheer fabric, a blend of cotton and viscose. Must be worn with a dark-coloured petticoat.",
+      "src": "8e4d413c5ff6",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.557cfc959d5b": {
+      "text": "A wall hanging featuring the Mahāmantra, with the following designs to choose from, listed by the numbers below: 01 – Yashoda with the infant…",
+      "src": "557cfc959d5b",
       "where": "page text — first seen on wardrobe/5.html",
       "since": "",
       "changed": ""
@@ -29161,41 +29280,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4e8038ee5df7": {
-      "text": "Čolí lace T-shirt, short sleeves, sizes S–XL",
-      "src": "4e8038ee5df7",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c6bc7dd6d6bf": {
-      "text": "Description of Čolí lace T-shirt, short sleeves, sizes S–XL",
-      "src": "c6bc7dd6d6bf",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.5d4171aac992": {
-      "text": "Stretch top with lace short sleeves, elasticated – slips over the head, fits perfectly, comfortable to wear. If you’d like a more precise…",
-      "src": "5d4171aac992",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e5d91486d786": {
-      "text": "Front fastening, size 90 (L)",
-      "src": "e5d91486d786",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a98a33dc8501": {
-      "text": "Description of Front fastening, size 90 (L)",
-      "src": "a98a33dc8501",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.69252d43603b": {
       "text": "Page 5 of 17",
       "src": "69252d43603b",
@@ -29209,6 +29293,41 @@
       "where": "page text — first seen on wardrobe/6.html",
       "since": "",
       "changed": ""
+    },
+    "text.4e8038ee5df7": {
+      "text": "Čolí lace T-shirt, short sleeves, sizes S–XL",
+      "src": "4e8038ee5df7",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c6bc7dd6d6bf": {
+      "text": "Description of Čolí lace T-shirt, short sleeves, sizes S–XL",
+      "src": "c6bc7dd6d6bf",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.5d4171aac992": {
+      "text": "Stretch top with lace short sleeves, elasticated – slips over the head, fits perfectly, comfortable to wear. If you’d like a more precise…",
+      "src": "5d4171aac992",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e5d91486d786": {
+      "text": "Front fastening, size 90 (L)",
+      "src": "e5d91486d786",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.a98a33dc8501": {
+      "text": "Description of Front fastening, size 90 (L)",
+      "src": "a98a33dc8501",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.65319851426e": {
       "text": "Plain embroidered petticoat, sizes M and M/L",
@@ -30813,48 +30932,6 @@
       "since": "",
       "changed": ""
     },
-    "text.7b459cda8b84": {
-      "text": "Hand-printed cotton sari in orange with fabric for the choli",
-      "src": "7b459cda8b84",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.663085b35d12": {
-      "text": "Description of Hand-printed cotton sari in orange with fabric for the choli",
-      "src": "663085b35d12",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.7bd4277097ac": {
-      "text": "Hand-printed fabric using a very old and labour-intensive technique known as ‘hand block’. It also includes fabric for a blouse / choli (shown on…",
-      "src": "7bd4277097ac",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.baf00c67aa17": {
-      "text": "Hand-printed cotton sari in burgundy and green, with fabric for the headpiece",
-      "src": "baf00c67aa17",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.79159db42feb": {
-      "text": "Description of Hand-printed cotton sari in burgundy and green, with fabric for the headpiece",
-      "src": "79159db42feb",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.19fd9b76a672": {
-      "text": "A cotton sari with fabric for the blouse/choli (shown on the floor at the bottom left of the photo). The fabric is hand-printed using a very old and…",
-      "src": "19fd9b76a672",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
     "text.a37b9b1904ae": {
       "text": "Page 6 of 17",
       "src": "a37b9b1904ae",
@@ -30865,6 +30942,48 @@
     "text.0dd09724c6d5": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 7",
       "src": "0dd09724c6d5",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7b459cda8b84": {
+      "text": "Hand-printed cotton sari in orange with fabric for the choli",
+      "src": "7b459cda8b84",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.663085b35d12": {
+      "text": "Description of Hand-printed cotton sari in orange with fabric for the choli",
+      "src": "663085b35d12",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.7bd4277097ac": {
+      "text": "Hand-printed fabric using a very old and labour-intensive technique known as ‘hand block’. It also includes fabric for a blouse / choli (shown on…",
+      "src": "7bd4277097ac",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.baf00c67aa17": {
+      "text": "Hand-printed cotton sari in burgundy and green, with fabric for the headpiece",
+      "src": "baf00c67aa17",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.79159db42feb": {
+      "text": "Description of Hand-printed cotton sari in burgundy and green, with fabric for the headpiece",
+      "src": "79159db42feb",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.19fd9b76a672": {
+      "text": "A cotton sari with fabric for the blouse/choli (shown on the floor at the bottom left of the photo). The fabric is hand-printed using a very old and…",
+      "src": "19fd9b76a672",
       "where": "page text — first seen on wardrobe/7.html",
       "since": "",
       "changed": ""
@@ -32675,34 +32794,6 @@
       "since": "",
       "changed": ""
     },
-    "text.f586f8968b36": {
-      "text": "Bindi, size 5, green/black",
-      "src": "f586f8968b36",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f2f689488bcd": {
-      "text": "Description of Bindi, size 5, green/black",
-      "src": "f2f689488bcd",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.77b8a48cec60": {
-      "text": "Bindi, size 3, in a box",
-      "src": "77b8a48cec60",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cce3f51e6e84": {
-      "text": "Description of Bindi, size 3, in a box",
-      "src": "cce3f51e6e84",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.ab263754f438": {
       "text": "Page 7 of 17",
       "src": "ab263754f438",
@@ -32716,6 +32807,34 @@
       "where": "page text — first seen on wardrobe/8.html",
       "since": "",
       "changed": ""
+    },
+    "text.f586f8968b36": {
+      "text": "Bindi, size 5, green/black",
+      "src": "f586f8968b36",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f2f689488bcd": {
+      "text": "Description of Bindi, size 5, green/black",
+      "src": "f2f689488bcd",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.77b8a48cec60": {
+      "text": "Bindi, size 3, in a box",
+      "src": "77b8a48cec60",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cce3f51e6e84": {
+      "text": "Description of Bindi, size 3, in a box",
+      "src": "cce3f51e6e84",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.95b188158fec": {
       "text": "Coloured bindi, 1.7 cm",
@@ -34264,41 +34383,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.d9390a043591": {
-      "text": "Kantimála, set of 3 small rollers",
-      "src": "d9390a043591",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.08cfaed63a2e": {
-      "text": "Description of Kantimála, set of 3 small rollers",
-      "src": "08cfaed63a2e",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.6c7c2a1eacda": {
-      "text": "TULSI",
-      "src": "6c7c2a1eacda",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.54514dc3094a": {
-      "text": "Description of TULSI",
-      "src": "54514dc3094a",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.73413c81d1f2": {
-      "text": "TULSI Natural Oil Perfume",
-      "src": "73413c81d1f2",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c064375b460b": {
       "text": "Page 8 of 17",
       "src": "c064375b460b",
@@ -34309,6 +34393,41 @@
     "text.5ba9a6fbf958": {
       "text": "Shop Indian clothes, jewellery and home things in Europe, page 9",
       "src": "5ba9a6fbf958",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.d9390a043591": {
+      "text": "Kantimála, set of 3 small rollers",
+      "src": "d9390a043591",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.08cfaed63a2e": {
+      "text": "Description of Kantimála, set of 3 small rollers",
+      "src": "08cfaed63a2e",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.6c7c2a1eacda": {
+      "text": "TULSI",
+      "src": "6c7c2a1eacda",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.54514dc3094a": {
+      "text": "Description of TULSI",
+      "src": "54514dc3094a",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.73413c81d1f2": {
+      "text": "TULSI Natural Oil Perfume",
+      "src": "73413c81d1f2",
       "where": "page text — first seen on wardrobe/9.html",
       "since": "",
       "changed": ""
@@ -35894,41 +36013,6 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.f16bba47c7e5": {
-      "text": "3D image of Krishna and Radha sitting",
-      "src": "f16bba47c7e5",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.58a35c502011": {
-      "text": "Description of 3D image of Krishna and Radha sitting",
-      "src": "58a35c502011",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.4edeff9b6e3b": {
-      "text": "Glass candlestick",
-      "src": "4edeff9b6e3b",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e683232d0ccd": {
-      "text": "Description of Glass candlestick",
-      "src": "e683232d0ccd",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.fce7d6a47231": {
-      "text": "A glass candle holder with coloured glass panels for a tea light. It glows beautifully through the coloured glass panels. It will brighten up your…",
-      "src": "fce7d6a47231",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
     },
     "text.2a0cc8f58c0a": {
       "text": "Page 9 of 17",

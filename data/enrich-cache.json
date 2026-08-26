@@ -3894,5 +3894,63 @@
       "colorRaw": "Béžová",
       "vintedCategory": "Ženy Letní šaty"
     }
+  },
+  "9776809246": {
+    "description": "Stunning and comfortable cotton tunic from Indian brand Jaypore. \nTraditional Ajrakh patterns and gorgeous ribbed textures in chest area. \n100 percent pure cotton.\nBust 99 cm / 39 inches\nFront length 81 cm / 32 inches",
+    "vintedCategory": "Women Tunics",
+    "colorRaw": "Black",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 12,
+        "name": "Tops & t-shirts"
+      },
+      {
+        "id": 227,
+        "name": "Tunics"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Černá",
+      "vintedCategory": "Ženy Tuniky"
+    }
+  },
+  "9775845980": {
+    "description": "Will comfortably fit L to XL.\nBust 42 inches\nLength 40 inches\nLilac coloured Indian Kurta, to be paired with tights or loose pants/palazzos.\nComes with comfortable double pockets.\nMade of 100 pure cotton.\nStunning Ikat pattern.",
+    "vintedCategory": "Women Long dresses",
+    "colorRaw": "Lilac",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 10,
+        "name": "Dresses"
+      },
+      {
+        "id": 1055,
+        "name": "Long dresses"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Lila",
+      "vintedCategory": "Ženy Dlouhé šaty"
+    }
   }
 }

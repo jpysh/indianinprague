@@ -1,12 +1,122 @@
 {
-  "syncedAt": "2026-08-25T08:40:14.540Z",
+  "syncedAt": "2026-08-26T05:15:14.696Z",
   "rate": {
-    "czkPerEur": 24.1,
-    "fetched": "2026-08-25",
+    "czkPerEur": 24.099,
+    "fetched": "2026-08-26",
     "source": "ECB"
   },
-  "count": 140,
+  "count": 142,
   "items": [
+    {
+      "id": "9776809246",
+      "title": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
+      "priceCzk": 320,
+      "priceEur": 13,
+      "brand": "Indian",
+      "size": "M / 38 / 10",
+      "sizeGroup": "M",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Black",
+        "cs": "Černá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Tunics",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 12,
+          "name": "Tops & t-shirts"
+        },
+        {
+          "id": 227,
+          "name": "Tunics"
+        }
+      ],
+      "description": "Stunning and comfortable cotton tunic from Indian brand Jaypore. \nTraditional Ajrakh patterns and gorgeous ribbed textures in chest area. \n100 percent pure cotton.\nBust 99 cm / 39 inches\nFront length 81 cm / 32 inches",
+      "photo": "images/vinted-9776809246-1.jpg",
+      "photos": [
+        "images/vinted-9776809246-1.jpg",
+        "images/vinted-9776809246-2.jpg",
+        "images/vinted-9776809246-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9776809246-ethnic-top-indian-cotton-tunic-m-to-l-sizes-vintage-retro",
+        "es": "https://www.vinted.es/items/9776809246-ethnic-top-indian-cotton-tunic-m-to-l-sizes-vintage-retro",
+        "com": "https://www.vinted.com/items/9776809246-ethnic-top-indian-cotton-tunic-m-to-l-sizes-vintage-retro",
+        "uk": "https://www.vinted.co.uk/items/9776809246-ethnic-top-indian-cotton-tunic-m-to-l-sizes-vintage-retro"
+      }
+    },
+    {
+      "id": "9775845980",
+      "title": "Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL",
+      "priceCzk": 320,
+      "priceEur": 13,
+      "brand": "Indian",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Lilac",
+        "cs": "Lila"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Long dresses",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 10,
+          "name": "Dresses"
+        },
+        {
+          "id": 1055,
+          "name": "Long dresses"
+        }
+      ],
+      "description": "Will comfortably fit L to XL.\nBust 42 inches\nLength 40 inches\nLilac coloured Indian Kurta, to be paired with tights or loose pants/palazzos.\nComes with comfortable double pockets.\nMade of 100 pure cotton.\nStunning Ikat pattern.",
+      "photo": "images/vinted-9775845980-1.jpg",
+      "photos": [
+        "images/vinted-9775845980-1.jpg",
+        "images/vinted-9775845980-2.jpg",
+        "images/vinted-9775845980-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9775845980-cotton-indian-kurta-double-packets-ikat-pattern-ethnic-vintage-retro-outfit-l-xl",
+        "es": "https://www.vinted.es/items/9775845980-cotton-indian-kurta-double-packets-ikat-pattern-ethnic-vintage-retro-outfit-l-xl",
+        "com": "https://www.vinted.com/items/9775845980-cotton-indian-kurta-double-packets-ikat-pattern-ethnic-vintage-retro-outfit-l-xl",
+        "uk": "https://www.vinted.co.uk/items/9775845980-cotton-indian-kurta-double-packets-ikat-pattern-ethnic-vintage-retro-outfit-l-xl"
+      }
+    },
     {
       "id": "9729949801",
       "title": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
@@ -376,7 +486,7 @@
         "images/vinted-9686505544-2.jpg",
         "images/vinted-9686505544-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 31,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -537,7 +647,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2261,8 +2371,8 @@
     {
       "id": "9575763651",
       "title": "Indian Rudraksha Prayer Mala for Meditation, Yoga & Chanting | Hindu Spiritual Rosary Necklace",
-      "priceCzk": 250,
-      "priceEur": 10,
+      "priceCzk": 225,
+      "priceEur": 9,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -2316,8 +2426,8 @@
     {
       "id": "9575501283",
       "title": "Om Namah Shivaya Hindu Prayer Wrap | Spiritual Yoga Meditation Scarf",
-      "priceCzk": 240,
-      "priceEur": 10,
+      "priceCzk": 220,
+      "priceEur": 9,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -2352,7 +2462,7 @@
         "images/vinted-9575501283-2.jpg",
         "images/vinted-9575501283-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2454,7 +2564,7 @@
         "images/vinted-9565484914-2.jpg",
         "images/vinted-9565484914-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2505,7 +2615,7 @@
         "images/vinted-9565381682-2.jpg",
         "images/vinted-9565381682-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2607,7 +2717,7 @@
         "images/vinted-9565087476-2.jpg",
         "images/vinted-9565087476-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2709,7 +2819,7 @@
         "images/vinted-9564694739-2.jpg",
         "images/vinted-9564694739-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2866,7 +2976,7 @@
         "images/vinted-9562314219-2.jpg",
         "images/vinted-9562314219-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3231,7 +3341,7 @@
         "images/vinted-9561251555-2.jpg",
         "images/vinted-9561251555-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3341,7 +3451,7 @@
         "images/vinted-9552844745-2.jpg",
         "images/vinted-9552844745-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4378,7 +4488,7 @@
         "images/vinted-9438031948-2.jpg",
         "images/vinted-9438031948-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5939,7 +6049,7 @@
         "images/vinted-9331197768-2.jpg",
         "images/vinted-9331197768-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6269,7 +6379,7 @@
         "images/vinted-9328560854-2.jpg",
         "images/vinted-9328560854-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6434,7 +6544,7 @@
         "images/vinted-9322734477-2.jpg",
         "images/vinted-9322734477-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6764,7 +6874,7 @@
         "images/vinted-9315339114-2.jpg",
         "images/vinted-9315339114-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7263,7 +7373,7 @@
         "images/vinted-9311631498-2.jpg",
         "images/vinted-9311631498-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7318,7 +7428,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7373,7 +7483,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,
