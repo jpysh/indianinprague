@@ -189,7 +189,7 @@ const graphs = {
       "@type": "CollectionPage",
       "@id": `${SITE}/#webpage`,
       url: `${SITE}/`,
-      name: "Guldaar Bazaar: clothes, jewellery, home things, meditation and books",
+      name: "Guldaar Bazaar: clothes, jewellery, home decor, meditation and books",
       isPartOf: { "@id": `${SITE}/#website` },
       // Follows the page. The restaurant and vegan entries were dropped on 22 Aug 2026 when
       // the home page stopped leading with the Diaries — the reviews are still first-hand and

@@ -29,6 +29,7 @@ import { promisify } from "node:util";
 import { readFileSync, existsSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { buildTree, flatten } from "./tree.mjs";
+import { keyUsage } from "./deepl.mjs";
 import { LANGS, CODES, ROOT, loadSources, loadMachine, loadOverrides, saveOverrides, resolve, coverage, englishSummary } from "./i18n.mjs";
 
 const PORT = Number(process.env.DASHBOARD_PORT || 8093);
@@ -65,7 +66,7 @@ const PAGES = {
 // inventory's table headers stick at a hardcoded top:104px measured from it. A second sticky
 // bar would either overlap that or require changing an offset in a file this feature has no
 // business touching.
-function tabBar(current, dark) {
+function tabBar(current, dark, badge = 0) {
   const ink = dark ? "#F2EFE6" : "#1c1a17";
   const bg = dark ? "#353022" : "#efeae0";
   const on = dark ? "#DCE775" : "#1c1a17";
@@ -87,69 +88,21 @@ function tabBar(current, dark) {
     tab("/inventory", "Inventory", "inventory") +
     tab("/tree", "Product Tree", "tree") +
     tab("/translations", "Translations", "translations") +
+    // THE BADGE IS THE WHOLE NOTIFICATION SYSTEM, as far as the other tabs are concerned.
+    //
+    // A notifications tab you have to remember to open is a notifications tab you stop
+    // opening — and the banner this replaces worked precisely because it was unavoidable. So
+    // the count travels with the bar: red with a number when something needs you, plain and
+    // quiet when nothing does. One glyph, on every page, instead of the same sentence three
+    // times.
+    tab("/notifications", `Notifications${badge ? ` <b style="background:#a8321f;color:#fff;border-radius:9px;padding:1px 6px;margin-left:5px">${badge}</b>` : ""}`, "notifications") +
     `</nav>`
   );
 }
 
-// THE BANNER: did this morning's publish reach the live site? (27 Aug 2026)
-//
-// This is the reason to open the admin dashboard at all — one line, at the top of whichever
-// view you land on, answering "is my attention needed today". Everything else on both pages
-// is work you choose to do; this is the only thing that comes and finds you.
-//
-// It exists because for two days nothing did. The 07:15 job pushed, Cloudflare's build
-// failed, the edge went on serving the 25th, and the run wrote "live origin healthy" into a
-// 116,000-line log. publish.sh now verifies the deployed commit and records its verdict in
-// .publish-status.json; this renders it.
-//
-// GREEN IS SHOWN, not just red. A dashboard that is blank when things are fine teaches you
-// nothing about whether it is working — the absence of a warning and the absence of a run
-// look identical. Today's success says so, in the past tense, with the time.
-//
-// Rendered server-side into static HTML rather than fetched: both pages must keep working
-// when opened straight off disk, and a banner that needs an API call would be a permanent
-// spinner in that context.
-// The message is written by publish.sh from a failing command's own words, so it reaches
-// here as text of unknown shape. It is going into HTML: escape it.
+// Text from publish.sh, the catalogue and DeepL all reaches the page as strings of unknown
+// shape. It is going into HTML: escape it.
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-
-function publishBanner(dark) {
-  const file = path.join(ROOT, ".publish-status.json");
-  const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD, local, matches publish.sh
-  let s = null;
-  try {
-    if (existsSync(file)) s = JSON.parse(readFileSync(file, "utf8"));
-  } catch {
-    s = null; // a truncated write mid-run is not worth an error page
-  }
-
-  // Yesterday's success is not today's. A run that never fired — Mac off, launchd missed,
-  // the failure mode DEPLOY.md records for 17 Aug — leaves a stale `ok` behind, and showing
-  // it in green would be the same lie in a nicer colour.
-  const stale = s && s.date !== today;
-  const state = !s ? "none" : stale ? "stale" : s.state;
-
-  const tone = {
-    ok:     { bg: "#1f7a3f", ink: "#fff", lead: "All good.", },
-    failed: { bg: "#a8321f", ink: "#fff", lead: "Needs you.", },
-    stale:  { bg: "#8a6d16", ink: "#fff", lead: "No run today.", },
-    none:   { bg: dark ? "#3a3529" : "#e6e0d2", ink: dark ? "#F2EFE6" : "#1c1a17", lead: "No publish recorded yet.", },
-  }[state];
-
-  const when = s?.at ? new Date(s.at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "";
-  const detail =
-    state === "ok"     ? `Today's publish went out at ${when} and the live site is serving it.`
-    : state === "failed" ? `${s.message} (stopped at ${s.step}, ${when})`
-    : state === "stale"  ? `The last run was on ${s.date}. Today's has not finished — if the Mac was off, the next hourly trigger picks it up.`
-    : "Nothing has published since this was set up. The first 07:15 run will fill this in.";
-
-  return (
-    `<div role="status" style="padding:10px 16px;background:${tone.bg};color:${tone.ink};` +
-    `font:600 13px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;` +
-    `display:flex;gap:8px;align-items:baseline;flex-wrap:wrap">` +
-    `<b>${tone.lead}</b><span style="font-weight:400;opacity:.95">${esc(detail)}</span></div>`
-  );
-}
 
 // inventory.html is generated once a day by publish.sh, so opened in the afternoon it shows
 // the morning's closet. Regenerating it when the catalogue is newer costs one stat and, at
@@ -360,6 +313,235 @@ function state(lang) {
     publishing: publishing ? { started: publishing.started, code: publishing.code, out: publishing.out.slice(-60) } : null,
     rows,
   };
+}
+
+/* -------------------------------------------------------------- notifications ---- */
+
+// EVERYTHING THAT WANTS YOUR ATTENTION, IN ONE PLACE (27 Aug 2026).
+//
+// Before this there were three places: a publish banner repeated at the top of every tab, a
+// checklist buried on Translations, and a set of warnings that only ever appeared in a
+// terminal nobody watches — which is how three of four DeepL keys ran dry unnoticed.
+//
+// TWO LEVELS AND NO MORE. "Needs you" is something broken or blocked that will not fix
+// itself and that no other process will act on. "Worth knowing" is a number that drifts on
+// its own and is handled by the nightly run. A middle tier becomes a place to file things
+// you have decided not to do, and once that exists the badge stops meaning anything.
+//
+// NOTHING IS DISMISSIBLE, deliberately. Every item is computed from current state on each
+// load and disappears the moment the underlying thing is fixed. A "seen" flag would be a
+// second source of truth whose failure mode is a dashboard reading all-clear over a broken
+// site — which is the exact failure this whole feature exists to end. The comment on
+// checklist() below made the same argument years earlier: a checklist that can go out of
+// date is a checklist that gets ignored.
+const ACT = "act";
+const NOTE = "note";
+
+function publishNotice() {
+  const file = path.join(ROOT, ".publish-status.json");
+  const today = new Date().toLocaleDateString("en-CA");
+  let s = null;
+  try {
+    if (existsSync(file)) s = JSON.parse(readFileSync(file, "utf8"));
+  } catch { s = null; }
+
+  const when = s?.at ? new Date(s.at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "";
+  if (!s) return [{ level: NOTE, kind: "publish", text: "No publish has been recorded yet. The first 07:15 run will fill this in." }];
+  if (s.date !== today) {
+    return [{
+      level: NOTE, kind: "publish",
+      text: `No finished publish today — the last was ${s.date}. If the Mac was off, the next trigger picks it up.`,
+    }];
+  }
+  if (s.state === "ok") {
+    return [{ level: NOTE, kind: "publish", good: true, text: `Today's publish went out at ${when} and the live site is serving it.` }];
+  }
+  return [{ level: ACT, kind: "publish", text: `Publish failed at ${s.step} (${when}). ${s.message}` }];
+}
+
+function deeplNotice(usage) {
+  if (!usage?.length) return [];
+  const dead = usage.filter((k) => k.ok && k.left <= 0);
+  const broken = usage.filter((k) => !k.ok);
+  const alive = usage.filter((k) => k.ok && k.left > 0);
+  const out = [];
+
+  if (!alive.length) {
+    out.push({
+      level: ACT, kind: "deepl",
+      text: `All ${usage.length} DeepL keys are spent. New and changed English will publish untranslated until you add a key — ` +
+        "put DEEPL_KEY_5= in .env at the repo root, then press Refresh here.",
+    });
+  } else if (alive.length === 1) {
+    const k = alive[0];
+    out.push({
+      level: ACT, kind: "deepl",
+      text: `Only DeepL key ${k.n} has quota left (${Math.round(k.left / 1000)}k characters, ${Math.round((1 - k.pct) * 100)}% of its month). ` +
+        `${dead.length} of ${usage.length} are spent — add another key to .env before this one goes.`,
+    });
+  } else if (dead.length) {
+    out.push({
+      level: NOTE, kind: "deepl",
+      text: `${dead.length} of ${usage.length} DeepL keys are spent; ${alive.length} still have quota.`,
+    });
+  }
+  for (const k of broken) {
+    out.push({ level: NOTE, kind: "deepl", text: `DeepL key ${k.n} could not be read (${k.why}) — network, or the key is wrong.` });
+  }
+  return out;
+}
+
+// The taxonomy gap and the unphotographed nodes both come from the tree, so it is built once
+// here rather than by each check.
+function catalogueNotices() {
+  const out = [];
+  const { tree, totals } = buildTree(ROOT);
+  const all = flatten(tree);
+  const featured = readFeatured();
+
+  const unfiled = tree.find((s) => s.name === "Uncategorised");
+  if (unfiled?.inStock) {
+    const names = unfiled.children.map((c) => c.name).slice(0, 3).join(", ");
+    out.push({
+      level: ACT, kind: "taxonomy",
+      text: `${unfiled.inStock} item(s) have no shelf and sit in More${names ? ` (${names})` : ""} — ` +
+        "add a rule in data/taxonomy.json or a category in data/overrides.json.",
+    });
+  }
+
+  // A node with stock and no face will fall back to whatever is newest wherever it is used.
+  // Worth knowing, not blocking: pick-featured.mjs fills these on the next publish.
+  const faceless = all.filter((n) => n.inStock > 0 && !featured[n.path]).length;
+  if (faceless) {
+    out.push({ level: NOTE, kind: "tree", text: `${faceless} tree node(s) with stock have no featured photograph.` });
+  }
+  if (totals.inStock === 0) {
+    out.push({ level: ACT, kind: "tree", text: "Nothing is in stock — the shop would build empty." });
+  }
+  return out;
+}
+
+// The pre-existing checklist covers translation coverage, unenriched items and photoless
+// stock. It is reused rather than reimplemented: it already knows the rules, and two
+// implementations of "what needs doing" would disagree within a month.
+function notifications(usage) {
+  const items = [
+    ...publishNotice(),
+    ...deeplNotice(usage),
+    ...catalogueNotices(),
+    // checklist() was written for a page of its own and ends with a summary line
+    // ("Nothing needs a decision…") that is the job of this page's own two headings. Its
+    // `ok` level is that line and nothing else, so dropping the level drops the filler.
+    ...checklist()
+      .filter((c) => c.level !== "ok")
+      .map((c) => ({ level: c.level === "act" ? ACT : NOTE, kind: c.lang ? "translation" : "catalogue", text: c.text })),
+  ];
+  // Deduplicate: checklist() raises its own DeepL line from status.exhausted, and the richer
+  // one above says the same thing with numbers on it.
+  // The same fact must not appear twice under two headings. checklist() replays publish.sh's
+  // own warnings verbatim ("1 item(s) need a rule in data/taxonomy.json") and raises a bare
+  // DeepL line from status.exhausted; both are said better above, with numbers and with what
+  // to do about them. A duplicate in a notification list is worse than a missing one — it
+  // teaches you that the count is noise.
+  const dropped = [/need a rule in data\/taxonomy/i, /DeepL quota ran out/i];
+  const seen = new Set();
+  return items.filter((i) => {
+    if (i.kind === "catalogue" && dropped.some((re) => re.test(i.text))) return false;
+    const k = i.level + i.kind + i.text;
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+}
+
+const actCount = (items) => items.filter((i) => i.level === ACT).length;
+
+// What the last nightly run recorded about the DeepL keys. Stored rather than probed on
+// every page load: quota moves once a day in normal use, four network calls per visit would
+// put a spinner on a page whose whole job is to be readable at a glance, and a dashboard
+// that needs the internet to tell you the site is broken is the wrong dashboard. The
+// Refresh button on the tab does the live probe when it actually matters — right after you
+// have pasted a new key.
+const storedUsage = () => readJson("data/i18n/status.json", {}).keys || null;
+
+function notificationsPage(usage, live) {
+  const items = notifications(usage);
+  const act = items.filter((i) => i.level === ACT);
+  const note = items.filter((i) => i.level !== ACT);
+  const stamp = readJson("data/i18n/status.json", {}).generated;
+
+  const row = (i) =>
+    `<li class="${i.level}${i.good ? " good" : ""}"><span class="kind">${esc(i.kind)}</span>` +
+    `<span class="txt">${esc(i.text)}</span></li>`;
+
+  const keyRow = (k) =>
+    `<tr><td>Key ${k.n}</td>` +
+    (k.ok
+      ? `<td class="n">${Math.round(k.used / 1000)}k / ${Math.round(k.limit / 1000)}k</td>` +
+        `<td class="bar"><span style="width:${Math.min(100, Math.round(k.pct * 100))}%;` +
+        `background:${k.left <= 0 ? "#a8321f" : k.pct > 0.8 ? "#8a6d16" : "#1f7a3f"}"></span></td>` +
+        `<td class="n">${k.left <= 0 ? "spent" : Math.round(k.left / 1000) + "k left"}</td>`
+      : `<td colspan="3" class="dim">unreadable — ${esc(k.why)}</td>`) +
+    `</tr>`;
+
+  return `<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin dashboard — Notifications</title>
+<style>
+  :root{color-scheme:dark}
+  body{margin:0;background:#241f16;color:#F2EFE6;font:14px/1.55 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+  main{padding:18px 16px 60px;max-width:920px}
+  h1{margin:0 0 3px;font-size:19px}
+  h2{margin:26px 0 9px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:#9e9686}
+  .sub{margin:0 0 6px;color:#b8b0a0;font-size:13px}
+  ul{list-style:none;margin:0;padding:0}
+  li{display:flex;gap:11px;align-items:flex-start;padding:11px 13px;border-radius:9px;margin-bottom:7px;
+     background:#2e2819;border-left:3px solid #4a4433}
+  li.act{border-left-color:#a8321f;background:#33241d}
+  li.good{border-left-color:#1f7a3f}
+  .kind{flex:0 0 84px;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#9e9686;padding-top:2px}
+  .txt{flex:1}
+  .clear{padding:16px;border-radius:9px;background:#22301f;border-left:3px solid #1f7a3f;color:#cfe6cf}
+  table{border-collapse:collapse;margin-top:6px;width:100%;max-width:560px}
+  td{padding:5px 9px;border-bottom:1px solid rgba(255,255,255,.07);font-size:13px}
+  td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+  td.bar{width:46%}
+  td.bar span{display:block;height:7px;border-radius:4px}
+  td.dim{color:#9e9686}
+  button{background:transparent;color:#DCE775;border:1px solid rgba(220,231,117,.4);border-radius:6px;
+         padding:5px 11px;font:600 11px/1 inherit;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
+  .khead{display:flex;align-items:baseline;gap:12px}
+  .stamp{color:#7d7666;font-size:11px}
+</style></head><body>
+<main>
+  <h1>Notifications</h1>
+  <p class="sub">Everything that wants your attention, computed fresh on every load. Nothing here can be
+     dismissed — an item disappears when the thing behind it is actually fixed.</p>
+
+  <h2>Needs you${act.length ? ` — ${act.length}` : ""}</h2>
+  ${act.length ? `<ul>${act.map(row).join("")}</ul>` : `<div class="clear">Nothing is blocked. The site is publishing and the catalogue is filed.</div>`}
+
+  <h2>Worth knowing</h2>
+  ${note.length ? `<ul>${note.map(row).join("")}</ul>` : `<p class="sub">Nothing to report.</p>`}
+
+  <h2>DeepL quota</h2>
+  <div class="khead">
+    <button id="refresh" type="button">Refresh</button>
+    <span class="stamp">${live ? "checked just now" : stamp ? "as of the last translation run, " + esc(new Date(stamp).toLocaleString()) : "never checked"}</span>
+  </div>
+  ${usage?.length ? `<table>${usage.map(keyRow).join("")}</table>`
+    : `<p class="sub">No key usage recorded yet — run <code>node scripts/translate.mjs</code>, or press Refresh.</p>`}
+  <p class="sub" style="margin-top:9px">Add a key by putting <code>DEEPL_KEY_5=…</code> in <code>.env</code> at the repo root,
+     then pressing Refresh. Keys are read from there and never stored in the repo or shown here.</p>
+</main>
+<script>
+  document.getElementById("refresh").addEventListener("click", function () {
+    this.textContent = "Checking…";
+    location.href = "/notifications?live=1";
+  });
+</script>
+</body></html>`;
 }
 
 /* --------------------------------------------------------------- product tree ---- */
@@ -581,8 +763,24 @@ const server = createServer(async (req, res) => {
         return json(res, { error: `${page.file} has not been generated yet — run node scripts/build-inventory.mjs` }, 503);
       }
       const dark = page.file === "inventory.html";
+      // No banner here any more. Everything that wants attention lives on /notifications and
+      // announces itself through the count on the tab — see the note in tabBar().
       const html = readFileSync(file, "utf8")
-        .replace(/<body([^>]*)>/, `<body$1>${tabBar(page.tab, dark)}${publishBanner(dark)}`);
+        .replace(/<body([^>]*)>/, `<body$1>${tabBar(page.tab, dark, actCount(notifications(storedUsage())))}`);
+      res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
+      return res.end(html);
+    }
+
+    // Notifications. ?live=1 probes DeepL for current quota instead of reading what the last
+    // nightly run recorded — the Refresh button, and the only thing on this page that touches
+    // the network. A failed probe falls back to the stored numbers rather than an error page:
+    // the other twenty notifications on here do not deserve to disappear because the wifi is
+    // down.
+    if (req.method === "GET" && url.pathname === "/notifications") {
+      const live = url.searchParams.get("live") === "1";
+      const usage = live ? await keyUsage().catch(() => null) || storedUsage() : storedUsage();
+      const html = notificationsPage(usage, live)
+        .replace(/<body([^>]*)>/, `<body$1>${tabBar("notifications", true, actCount(notifications(usage)))}`);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
       return res.end(html);
     }
@@ -591,7 +789,7 @@ const server = createServer(async (req, res) => {
     // off-disk life the way inventory.html deliberately does, and a generated page cannot
     // drift from the data it describes.
     if (req.method === "GET" && url.pathname === "/tree") {
-      const html = treePage().replace(/<body([^>]*)>/, `<body$1>${tabBar("tree", true)}${publishBanner(true)}`);
+      const html = treePage().replace(/<body([^>]*)>/, `<body$1>${tabBar("tree", true, actCount(notifications(storedUsage())))}`);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
       return res.end(html);
     }

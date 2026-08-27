@@ -26,7 +26,7 @@
 // via sync-vinted.mjs, which is real Czech written by Vinted, not by a translator.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import path from "node:path";
-import { translate, glossaryHit, KEEP_INLINE } from "./deepl.mjs";
+import { translate, glossaryHit, KEEP_INLINE, keyUsage } from "./deepl.mjs";
 import { LANGS, CODES, ROOT, DIR, hash, loadSources, saveSources, loadMachine, saveMachine, source, coverage } from "./i18n.mjs";
 import { strings } from "./extract.mjs";
 import { englishPages } from "./build-i18n.mjs";
@@ -321,6 +321,18 @@ for (const lang of ONLY) {
   );
 }
 
+// How much quota each key has left, recorded on every run.
+//
+// `exhausted` below only catches a run that DIED with nothing to rotate to. It says nothing
+// about a run that finished on its last surviving key, which is the state that actually
+// wants a warning: three keys spent is a week's notice, four is a silent stop. Costs nothing
+// — DeepL's usage endpoint is metadata, not translation — and carries no key material.
+const keys = DRY ? null : await keyUsage().catch(() => null);
+if (keys) {
+  const dead = keys.filter((k) => k.ok && k.left <= 0).length;
+  if (dead) console.log(`  DeepL quota: ${keys.length - dead} of ${keys.length} keys still have characters left`);
+}
+
 // status.json is what the dashboard and the weekly checklist read. It is derived state and
 // safe to delete; the next run rewrites it.
 if (!DRY) {
@@ -332,6 +344,7 @@ if (!DRY) {
         generated: new Date().toISOString(),
         sources: Object.keys(sources).length,
         exhausted: results.some((r) => r.exhausted),
+        keys,
         languages: CODES.map((c) => ({
           ...coverage(c, sources),
           outstanding: results.find((r) => r.lang === c)?.remaining ?? null,

@@ -556,7 +556,7 @@ ${cats.map(([cat, ps]) => categorySection(cat, ps, manifest)).join("\n\n")}
 <section class="rail-end"><div class="wrap sec-inner">
   <div class="holding">
     <h2>More is coming</h2>
-    <p>Jewellery, home things, brass, and the long one about paperwork and winters. They appear here as they are written — there is no list to join and nothing to unsubscribe from, but if you want a nudge when the next one lands, message me.</p>
+    <p>Jewellery, home decor, brass, and the long one about paperwork and winters. They appear here as they are written — there is no list to join and nothing to unsubscribe from, but if you want a nudge when the next one lands, message me.</p>
     <div class="cta-row">
       <a class="btn saf" href="https://wa.me/420777558262?text=${encodeURIComponent("Hi! Nudge me when there is a new diary on guldaarbazaar.com.")}" target="_blank" rel="noopener">Nudge me when there's a new one →</a>
       <a class="btn" href="/wardrobe">The wardrobe →</a>
@@ -729,7 +729,7 @@ for (const post of posts) {
     // The prose goes with the link. "on the Food shelf" is a lie once the link is the whole
     // closet, and a CTA that names a shelf the reader cannot reach reads as a broken site.
     ? { href: "/wardrobe", h: shelf.h,
-        p: "Clothing, jewellery, home things, meditation objects and books, hand-picked and already in Europe." }
+        p: "Clothing, jewellery, home decor, meditation objects and books, hand-picked and already in Europe." }
     : shelf;
   const shopCta = cta
     ? `<div class="shop-cta">

@@ -198,3 +198,39 @@ if (isMain && process.argv[2] === "--check") {
   const counts = Object.entries(GLOSSARY.terms).map(([l, t]) => `${l}:${Object.keys(t).length}`);
   console.log(`ok — ${KEYS.length} key(s), keep:${GLOSSARY.keep.length}, terms ${counts.join(" ")}`);
 }
+
+/* ---------------------------------------------------------------- key health ---- */
+
+// How much of each key's monthly free quota is gone, from DeepL's own /v2/usage endpoint.
+//
+// This costs NO quota — usage is metadata, not a translation — which is what makes it safe to
+// call from the dashboard on demand and from every nightly run.
+//
+// It exists because "all keys spent" was only ever noticed the hard way. status.json's
+// `exhausted` flag is set when a run dies MID-WAY with nothing left to rotate to; a run that
+// limps home on the last surviving key reports plain success. On 27 Aug 2026 three of four
+// keys were spent and every run looked fine — the only symptom would have been the day the
+// fourth ran out and new copy silently stopped being translated.
+//
+// NO KEY MATERIAL IS RETURNED. The index and the numbers, nothing else: this feeds a file in
+// the repo (data/i18n/status.json) and a page in the dashboard, and a secret that reaches
+// either is a secret that reaches a commit.
+export async function keyUsage() {
+  return Promise.all(
+    KEYS.map(async (key, i) => {
+      const n = i + 1;
+      try {
+        const res = await fetch("https://api-free.deepl.com/v2/usage", {
+          headers: { Authorization: `DeepL-Auth-Key ${key}` },
+        });
+        if (!res.ok) return { n, ok: false, why: `HTTP ${res.status}` };
+        const { character_count: used, character_limit: limit } = await res.json();
+        return { n, ok: true, used, limit, left: Math.max(0, limit - used), pct: limit ? used / limit : 1 };
+      } catch (err) {
+        // A key that cannot be reached is not a key that is spent, and saying so matters:
+        // one is "top me up", the other is "your wifi is down".
+        return { n, ok: false, why: err.message.slice(0, 60) };
+      }
+    }),
+  );
+}
