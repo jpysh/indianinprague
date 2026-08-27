@@ -321,11 +321,37 @@ async function fetchSoldMeta(id, cookie) {
   };
   const title = og("title").replace(/\s*\|\s*Vinted\s*$/, "").trim();
   if (!title) return null;
+
+  // THE PRICE SURVIVES AFTER ALL (27 Aug 2026).
+  //
+  // This function used to take title, description and photo from the Open Graph tags and
+  // record `priceCzk: null`, on the belief that Vinted strips price from a sold listing.
+  // That was measured, and it has stopped being true: a sold item page still returns 200
+  // with its real body, and the price sits in the same `data-testid="item-price"` node a
+  // live listing uses. Forty of the sixty-one sold cards were showing the word "Sold" where
+  // a price belongs purely because nobody re-checked the assumption.
+  //
+  // Read from HOST, which is vinted.cz, so the figure is in Kč like every other price in
+  // this pipeline — the .co.uk storefront answers the same question in £ and would need a
+  // second conversion with a rate this script does not carry.
+  //
+  // It is the LISTED price, not what the buyer finally paid: the page has no record of an
+  // accepted offer, and the sold cards that DO have a price got it the same way, captured
+  // from the listing while the item was live. Two meanings in one slot would be worse than
+  // the gap this fills. The number next to it in the markup is the buyer-protection total,
+  // which is Vinted's fee and not what the piece fetched — deliberately not read.
+  //
+  // "250,00 Kč" — Czech decimal comma, thin space or nbsp before the unit. Everything after
+  // the comma is discarded rather than rounded: these are whole-koruna prices, and the
+  // decimals are formatting.
+  const priceNode = /data-testid="item-price"><p[^>]*>([^<]+)</.exec(html);
+  const czk = priceNode ? Number(priceNode[1].replace(/[^\d,]/g, "").split(",")[0]) : NaN;
+  const priceCzk = Number.isFinite(czk) && czk > 0 ? czk : null;
   // og:description is "<title> - <the actual description>", so the title would otherwise
   // appear twice on the card: once as the name and again at the head of the blurb.
   let description = og("description").trim();
   if (description.startsWith(title)) description = description.slice(title.length).replace(/^\s*[-–—]\s*/, "");
-  return { title, description: description.trim(), image: og("image") };
+  return { title, description: description.trim(), image: og("image"), priceCzk };
 }
 
 /* --------------------------------------------------------------- currency ---- */
@@ -618,12 +644,12 @@ async function main() {
   let newlySold = 0;
   for (const old of previous.items) {
     if (!liveIds.has(old.id) && !knownArchived.has(old.id)) {
-      // Keep everything: the photos are already on disk and the shop renders sold pieces
-      // as proof that things sell here. Drop the outbound urls — Vinted 307s a sold
-      // listing to a page with its structured data stripped, so linking there is a dead
-      // end and the card is deliberately not a link.
-      const { urls, ...rest } = old;
-      archive.items.push({ ...rest, sold: true, soldAt });
+      // Keep everything, the outbound urls included (27 Aug 2026). They used to be
+      // stripped here, on the same stale measurement that cost the sold cards their prices:
+      // a sold listing was believed to 307 to a stripped page. It does not. Checked with no
+      // session at all, /items/<id> answers 200 and redirects to the item's own slug URL,
+      // photographs and description intact.
+      archive.items.push({ ...old, sold: true, soldAt });
       newlySold++;
     }
   }
@@ -662,10 +688,12 @@ async function main() {
       id,
       title: meta.title,
       description: meta.description,
-      // Deliberately absent rather than guessed: Vinted strips price, size, condition and
-      // colour from a sold listing, and a made-up price on a "sold" card would be a lie
-      // about what something fetched.
-      priceCzk: null, priceEur: null,
+      // Read from the listing, which still carries it (see fetchSoldMeta). Null only when
+      // the page genuinely has no price node — the card then shows "Sold" in that slot, as
+      // all forty of these did until 27 Aug 2026. Converted with the same ECB rate as every
+      // live item, so one currency means one thing across the whole grid.
+      priceCzk: meta.priceCzk,
+      priceEur: meta.priceCzk == null ? null : Math.round(meta.priceCzk / rate.czkPerEur),
       brand: "", size: "", sizeGroup: "",
       condition: { en: "", cs: "" }, color: { en: "", cs: "" },
       // A sold listing has no category left on it either, so overrides.json is the only
@@ -674,9 +702,56 @@ async function main() {
       category: overrides[id]?.category || "Uncategorised", vintedCategory: "",
       photo: photoPath, photos: photoPath ? [photoPath] : [],
       favourites: 0, reserved: false,
+      // The listing is still there and still worth linking to — see the note where the diff
+      // archives an item. Built from the id rather than recovered from the page: Vinted
+      // redirects the bare /items/<id> to the slug form itself, so the id is the durable
+      // address and the slug is decoration.
+      urls: Object.fromEntries(Object.entries(STOREFRONTS).map(([k, base]) => [k, `${base}/items/${id}`])),
       sold: true, soldAt: "earlier", recovered: true,
     });
     seeded++;
+  }
+
+  // BACKFILL: sold items already in the archive with no price on them.
+  //
+  // The forty recovered before 27 Aug 2026 were written with `priceCzk: null` under the old
+  // belief that a sold listing has no price left. They are already in knownArchived, so the
+  // seed loop above skips them forever and the fix above would only ever help items that
+  // sell from here on. This is the one-off that repairs the back catalogue — and it costs
+  // nothing on every later run, because an item is only fetched while its price is missing.
+  //
+  // Nothing else about the archived record is touched. Re-recovering the title or photo of
+  // an item that has been on the site for weeks would churn the pages for no reason, and
+  // hand edits in overrides.json would be silently overwritten by a scrape.
+  // Same one-off shape as the price backfill below, and for the same reason: every item
+  // archived before 27 Aug 2026 had its urls deleted on the way in, so without this they
+  // would stay unlinkable forever. The id is all that is needed to rebuild them.
+  let relinked = 0;
+  for (const item of archive.items) {
+    if (item.urls) continue;
+    item.urls = Object.fromEntries(Object.entries(STOREFRONTS).map(([k, base]) => [k, `${base}/items/${item.id}`]));
+    relinked++;
+  }
+  if (relinked) console.log(`relinked ${relinked} sold item(s) to their Vinted listings`);
+
+  const needPrice = archive.items.filter((i) => i.recovered && i.priceCzk == null);
+  if (needPrice.length) {
+    console.log(`backfilling prices for ${needPrice.length} sold item(s) recovered before prices were read`);
+    let filled = 0;
+    for (const item of needPrice) {
+      let meta = null;
+      try {
+        meta = await fetchSoldMeta(item.id, cookie);
+      } catch (err) {
+        console.warn(`  ⚠ could not read a price for ${item.id}: ${err.message}`);
+      }
+      await sleep(DELAY_MS);
+      if (meta?.priceCzk == null) continue;
+      item.priceCzk = meta.priceCzk;
+      item.priceEur = Math.round(meta.priceCzk / rate.czkPerEur);
+      filled++;
+    }
+    console.log(`  ${filled}/${needPrice.length} priced; the rest keep "Sold" in the price slot`);
   }
 
   items.sort((a, b) => Number(b.id) - Number(a.id)); // newest listing first

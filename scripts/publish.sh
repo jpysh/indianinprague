@@ -201,6 +201,17 @@ node scripts/build-images.mjs
 step "3/14 sync the chrome into the hand-written pages"
 node scripts/sync-chrome.mjs
 
+step "3b/14 give any new node a featured photograph"
+
+# Fills the gaps in data/featured.json and nothing else — a node you chose a photo for in the
+# admin dashboard is marked `by: "you"` and is never touched (see pick-featured.mjs). It runs
+# BEFORE build-shop because build-shop reads the file for the homepage tiles.
+#
+# On the Mac only, and that is not an oversight: this WRITES a data file, and a Cloudflare
+# build's writes are thrown away with the container. The file is committed by step 13 like
+# every other piece of data, so the cloud build reads exactly what was decided here.
+node scripts/pick-featured.mjs
+
 step "4/14 build shop pages"
 node scripts/build-shop.mjs
 

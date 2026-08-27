@@ -407,9 +407,10 @@ function card(item, manifest, eager, showCat) {
     `<div class="frame ${spice(item.id)}">` +
     `<div class="shots" data-track><div class="shot">${picture(item, manifest, eager)}</div></div>` +
     `<div class="grain"></div>` +
-    // The ↗ promises a link out. Vendor cards have none — they are bought here — so the
-    // glyph would be a lie about where the card goes.
-    (sold || item.vendor ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
+    // The ↗ promises a link out, so it tracks `go` exactly. Vendor cards have no
+    // destination — they are bought here — and the glyph would be a lie about where the
+    // card goes. Sold cards DO link out again (see the note on `go`), so they get it back.
+    (item.vendor || !item.urls?.[STOREFRONT] ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
     `${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${badges}${favBadge}` +
     infoToggle(item) +
     blurb(item) +
@@ -427,17 +428,23 @@ function card(item, manifest, eager, showCat) {
   // .ask sits above it on the z axis so it stays independently clickable. This is the
   // standard "stretched link" pattern; assets/shop.css carries the two rules.
   //
-  // A sold card gets no .go: Vinted 307s a sold listing to a page with its structured data
-  // stripped, so every one of those would be a dead end. It keeps .ask, because "do you have
-  // anything like this?" is the single most useful thing a sold card can be asked.
+  // A SOLD CARD LINKS TOO (27 Aug 2026). It used to be the one kind that did not, on the
+  // belief that Vinted 307s a sold listing to a stripped page — the same stale measurement
+  // that left forty sold cards with no price. Checked without a session: /items/<id> answers
+  // 200 and redirects to the item's own slug URL, photographs, description and price intact.
+  // A shopper who wants to see the piece as it was listed, or what else the seller had, can
+  // now get there from a sold card exactly as from a live one. It keeps .ask as well,
+  // because "do you have anything like this?" is the most useful thing to ask about a piece
+  // that has gone. `item.urls &&` guards the handful of archived records written before the
+  // urls were kept — they are relinked by the next sync, and a missing link beats a crash.
   // Vendor cards get no .go at all: there is no destination. Vinted items link to their
   // listing because that is where the sale happens; a Govinda item is bought here, through
   // the ask link, and linking to the vendor's own shop would send the buyer to the same
   // item at the vendor's own price.
-  const go = sold || item.vendor
+  const go = item.vendor || !item.urls?.[STOREFRONT]
     ? ""
     : `<a class="go" href="${esc(item.urls[STOREFRONT])}" target="_blank" rel="noopener"` +
-      ` aria-label="${esc(item.title)} — open the Vinted listing in a new tab"></a>`;
+      ` aria-label="${esc(item.title)} — ${sold ? "open the sold Vinted listing" : "open the Vinted listing"} in a new tab"></a>`;
 
   // No WhatsApp glyph here, deliberately. The icon's path data is ~700 bytes and there are
   // 157 cards on wardrobe.html — the mark alone would have added ~110 KB to the page to
@@ -1286,6 +1293,13 @@ async function main() {
 
   indexHtml = replaceRegion(indexHtml, "SHOP:TRUST", trust, "index.html");
 
+  // The chosen faces, keyed by product-tree path — "Fashion", "Fashion/Women's clothing",
+  // and so on. Absent file, absent key and a pick that no longer resolves all degrade to the
+  // same thing: the tile falls back to the newest piece, as it always did.
+  const featured = existsSync(path.join(ROOT, "data/featured.json"))
+    ? JSON.parse(await readFile(path.join(ROOT, "data/featured.json"), "utf8"))
+    : {};
+
   // Homepage: SHELVES, not six individual pieces.
   //
   // The front page used to show six garments picked by recency. That made sense when the
@@ -1309,11 +1323,33 @@ async function main() {
       const newest = available
         .filter((i) => names.includes(i.category) && canBuy(i))
         .sort(byNewest)[0];
+
+      // A CHOSEN FACE BEATS THE NEWEST ONE (27 Aug 2026).
+      //
+      // data/featured.json holds a photograph per node of the product tree, picked in the
+      // admin dashboard or by pick-featured.mjs's most-favourited rule. The homepage tiles
+      // are the first consumer; the file is keyed by tree path so the shelf pages, the
+      // subcategory pages and whatever comes next can read the same choice.
+      //
+      // It resolves back to the ITEM, not straight to the file path, because picture() needs
+      // the whole record — the derived widths, the dimensions that stop the grid reflowing,
+      // the alt text. A pick naming an item that has since sold falls through to `newest`,
+      // which is exactly the old behaviour and is why nothing here can end up with no photo.
+      // Keyed by the shelf's LABEL, not its internal name. The Meditation shelf is called
+      // "Spirituality" in this file (see its CATEGORIES entry — the data still says
+      // Spirituality and renaming it would break the sync) and "Meditation" everywhere a
+      // person looks, which is what tree.mjs and the dashboard use. Keying on c.name here
+      // silently missed that one shelf and only that one.
+      const pick = featured[label(c.name)];
+      const chosen = pick?.itemId
+        ? available.find((i) => String(i.id) === pick.itemId && canBuy(i))
+        : null;
+      const face = chosen || newest;
       const n = counts[c.name];
       return (
         `<a class="tile" href="${url(c.page)}">` +
-        `<div class="frame ${newest ? spice(newest.id) : "sp-oli"}">` +
-        (newest ? picture(newest, manifest, false) : "") +
+        `<div class="frame ${face ? spice(face.id) : "sp-oli"}">` +
+        (face ? picture(face, manifest, false) : "") +
         `<div class="grain"></div>` +
         `<span class="cap">${n} ${n === 1 ? "piece" : "pieces"}</span></div>` +
         `<div class="tbody"><h3>${esc(label(c.name))}</h3>` +

@@ -412,9 +412,9 @@
   font-size:var(--fs-2xs);letter-spacing:.06em;
 }
 .piece.sold .pr .czk{text-decoration:line-through}
-/* Not a link, so it must not pretend to be one. */
-.piece.sold{cursor:default}
-.piece.sold:hover .frame{outline:none}
+/* A sold card IS a link again (27 Aug 2026): the Vinted listing survives the sale and is
+   worth seeing. These two rules removed the pointer and the hover outline back when it was
+   not one, and left behind they would hide a working link. */
 
 /* ---------- card: price pair and favourites ---------- */
 
