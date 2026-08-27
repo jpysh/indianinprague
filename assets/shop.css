@@ -395,6 +395,33 @@
    provenance — it must be readable at a glance without competing with the photograph.
    --bone on --chicory measures 10.9:1, so it stays legible at 12px over any image. */
 .frame .cap.vendor-flag{background:var(--chicory);color:var(--bone);font-weight:500}
+/* THE VINTED MARK. Logo alone, no pill — the brand's own logotype in the brand's own teal,
+   which is the whole point of using the mark instead of the word.
+   
+   No background means no contrast ratio to lean on, so legibility over an arbitrary
+   photograph is bought with a shadow instead: a tight dark halo that disappears on a light
+   photo and separates the mark from a dark one. Cheaper than a pill and it does not add a
+   second rectangle to a corner that already stacks Sold and Reserved.
+   
+   Sized in em off the flag's own font-size so it scales with the rest of the badge system
+   rather than being a magic pixel number. */
+.frame .cap.vinted-flag{
+  background:none;padding:0;color:#007782;
+  /* A WHITE halo, not a dark one, and it was measured rather than guessed. A dark shadow
+     works over pale photographs and fails exactly where teal needs help most: the Vinted
+     teal sits at #007782, and on the blue-tiled jewellery shots the mark all but vanished.
+     White is the ground Vinted itself sets this logotype on, so the halo reads as the mark's
+     own edge rather than as an effect, and it disappears against a pale photo where nothing
+     is needed. The faint dark shadow underneath keeps it off pure white. */
+  filter:drop-shadow(0 0 2px #fff) drop-shadow(0 0 5px rgba(255,255,255,.9))
+         drop-shadow(0 1px 1px rgba(0,0,0,.3));
+}
+.frame .cap.vinted-flag .vinted-mark{display:block;width:4.6em;height:auto}
+/* A sold card is greyscaled at .72 and its price is dimmed; a full-strength teal mark would
+   be the brightest thing left on it. Fade it with the photograph — provenance still readable,
+   the Sold flag still the loudest thing in the corner. */
+.piece.sold .frame .cap.vinted-flag{color:#5c8a8f;opacity:.85}
+
 /* Sold or out-of-stock cards carry two flags in the same corner; stack rather than overlap. */
 .frame .cap.flag ~ .cap.flag{top:34px}
 /* A sold card carries a flag AND the counter in the top-left; push the flag clear. */
