@@ -395,6 +395,13 @@
    provenance — it must be readable at a glance without competing with the photograph.
    --bone on --chicory measures 10.9:1, so it stays legible at 12px over any image. */
 .frame .cap.vendor-flag{background:var(--chicory);color:var(--bone);font-weight:500}
+/* The Partner control on a shelf that has only one partner. It keeps its slot in the row
+   (every other select disappears when it cannot change anything) because here the answer is
+   worth stating: on Food it reads "Govinda", which is a fact a shopper wants and would
+   otherwise have to infer from the badges. Muted and without the caret's promise of choice,
+   so it does not look like a control that has stopped working. */
+.sb-sel-static select{opacity:.62;cursor:default;pointer-events:none}
+
 /* THE VINTED MARK. Logo alone, no pill — the brand's own logotype in the brand's own teal,
    which is the whole point of using the mark instead of the word.
    

@@ -23,6 +23,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
+import { vendorItems } from "./vendor-items.mjs";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 
@@ -38,26 +39,50 @@ function daysListed(id, newest, oldest, span) {
 
 async function main() {
   const catalog = JSON.parse(await readFile(path.join(ROOT, "data/catalog.json"), "utf8"));
+  // BOTH CATALOGUES, as of 27 Aug 2026. This page was Vinted-only for its whole life, which
+  // made it a stock-taking view of 141 pieces while the shop itself sold 1,671. The Partner
+  // column and its filter are the point: the default view is still everything, and one click
+  // gives back the old Vinted-only page.
+  //
+  // What deliberately did NOT change is the meaning of the headline cards. Stock value,
+  // average price and favourites are questions about MY stock — what I paid attention to,
+  // what is sitting unsold in a flat in Prague. Govinda stock is a supplier's shelf that I do
+  // not own and cannot value the same way, so those cards stay Vinted and say so, and the
+  // vendor count sits beside them as its own number.
+  const vendor = vendorItems(ROOT);
   const archivePath = path.join(ROOT, "data/archive.json");
   const sold = existsSync(archivePath)
     ? JSON.parse(await readFile(archivePath, "utf8")).items
     : [];
   const live = catalog.items;
-  const all = [...live.map((i) => ({ ...i, _s: i.reserved ? "reserved" : "available" })),
-               ...sold.map((i) => ({ ...i, _s: "sold" }))];
+  const partnerOf = (i) => (i.vendor ? i.vendor : "Vinted");
+  const all = [
+    ...live.map((i) => ({ ...i, _s: i.reserved ? "reserved" : "available", _p: "Vinted" })),
+    ...sold.map((i) => ({ ...i, _s: "sold", _p: "Vinted" })),
+    // A vendor row the supplier has run out of is neither sold nor buyable — the shop already
+    // draws that distinction on the cards, and flattening it to "available" here would
+    // overstate what can actually be ordered.
+    ...vendor.map((i) => ({ ...i, _s: i.inStock === false ? "oos" : "available", _p: partnerOf(i) })),
+  ];
 
   const ids = live.map((i) => Number(i.id));
   const newest = Math.max(...ids), oldest = Math.min(...ids);
   const span = newest - oldest;
 
   // Everything worth being told about without going looking.
+  //
+  // Scoped to what each check can actually mean. "Description not fetched yet" is a Vinted
+  // enrichment state that does not exist for vendor rows; colour and size are recorded by
+  // Vinted and simply absent from the vendor CSV, so counting their absence as a fault would
+  // invent 1,468 problems nobody can fix. A missing photograph or an unfiled category is a
+  // real fault on either side, so those span both.
   const warn = {
     "Needs a taxonomy rule": all.filter((i) => i.category === "Uncategorised"),
     "No photo": all.filter((i) => !i.photo),
-    "Fewer than 3 photos": live.filter((i) => (i.photos || []).length < 3),
+    "Fewer than 3 photos (Vinted)": live.filter((i) => (i.photos || []).length < 3),
     "No description": all.filter((i) => !i.description),
-    "Description not fetched yet": all.filter((i) => i.needsEnrich),
-    "No colour recorded": live.filter((i) => !i.color?.en),
+    "Description not fetched yet (Vinted)": all.filter((i) => i.needsEnrich),
+    "No colour recorded (Vinted)": live.filter((i) => !i.color?.en),
   };
 
   const byCat = {};
@@ -70,12 +95,15 @@ async function main() {
   const rate = catalog.rate?.czkPerEur || 24.254;
 
   const rows = all.map((i) => {
-    const age = i._s === "sold" ? "" : daysListed(i.id, newest, oldest, span);
-    return `<tr data-status="${i._s}" data-cat="${esc(i.category)}">
+    // Vendor SKUs are their own number sequence and say nothing about when a thing was
+    // listed here, so the age proxy is left blank rather than computed into nonsense.
+    const age = i._s === "sold" || i._p !== "Vinted" ? "" : daysListed(i.id, newest, oldest, span);
+    return `<tr data-status="${i._s}" data-cat="${esc(i.category)}" data-partner="${esc(i._p)}">
       <td class="im">${i.photo ? `<img src="${esc(i.photo)}" alt="" loading="lazy">` : ""}</td>
       <td class="ti"><a href="${esc(i.urls?.cz || "#")}"${i.urls ? ' target="_blank" rel="noopener"' : ""}>${esc(i.title)}</a>
         <span class="id">${esc(i.id)}</span></td>
       <td>${esc(i.category)}</td>
+      <td class="pt ${i._p.toLowerCase()}">${esc(i._p)}</td>
       <td class="st ${i._s}">${i._s}</td>
       <td class="n" data-v="${i.priceCzk ?? -1}">${i.priceCzk != null ? `${i.priceCzk} Kč` : "—"}</td>
       <td>${esc(i.condition?.en || "—")}</td>
@@ -91,7 +119,7 @@ async function main() {
 <html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Admin dashboard — Inventory: ${live.length} live, ${sold.length} sold</title>
+<title>Admin dashboard — Inventory: ${live.length} live, ${sold.length} sold, ${vendor.length} Govinda</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#4A4433;color:#F2EFE6;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}
@@ -123,6 +151,10 @@ td.st{text-transform:uppercase;font-size:10px;letter-spacing:.05em}
 td.st.sold{color:#D3502F}
 td.st.reserved{color:#DCE775}
 td.st.available{color:#D6CFB8}
+td.st.oos{color:#E8A93C}
+td.pt{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em}
+td.pt.vinted{color:#5fb6bf}
+td.pt.govinda{color:#C9A227}
 tr:hover{background:#413C2D}
 </style></head><body>
 <h1>Inventory</h1>
@@ -135,7 +167,10 @@ tr:hover{background:#413C2D}
   <div class="card"><b>${Math.round(totalCzk / rate).toLocaleString()} €</b><span>Stock value</span></div>
   <div class="card"><b>${Math.round(totalCzk / live.length)} Kč</b><span>Avg price</span></div>
   <div class="card"><b>${live.reduce((s, i) => s + (i.favourites || 0), 0)}</b><span>Total favourites</span></div>
+  <div class="card"><b>${vendor.length}</b><span>Govinda items</span></div>
 </div>
+<p class="sub">Stock value, average price and favourites count MY stock only — the Vinted side.
+   Govinda is a supplier's shelf, listed here and filterable below, but not mine to value.</p>
 
 <h2>Attention</h2>
 ${Object.entries(warn).filter(([, v]) => v.length).map(([k, v]) =>
@@ -143,7 +178,7 @@ ${Object.entries(warn).filter(([, v]) => v.length).map(([k, v]) =>
     v.slice(0, 12).map((i) => esc(i.id)).join(", ")}${v.length > 12 ? ` … +${v.length - 12} more` : ""}</div></div>`
 ).join("\n") || '<p class="ok">Nothing needs attention — every item is categorised, photographed and described.</p>'}
 
-<h2>By category</h2>
+<h2>By category — Vinted only</h2>
 <div class="cards">
 ${Object.entries(byCat).sort((a, b) => b[1].n - a[1].n).map(([k, v]) =>
   `<div class="card"><b>${v.n}</b><span>${esc(k)} · ${Math.round(v.czk / v.n)} Kč avg · ♥${v.favs}</span></div>`
@@ -153,14 +188,15 @@ ${Object.entries(byCat).sort((a, b) => b[1].n - a[1].n).map(([k, v]) =>
 <h2>All items</h2>
 <div class="controls">
   <input id="q" type="search" placeholder="Filter by title or id…" autocomplete="off">
-  <select id="st"><option value="">All statuses</option><option>available</option><option>reserved</option><option>sold</option></select>
+  <select id="pt"><option value="">Partner All</option><option>Vinted</option><option>Govinda</option></select>
+  <select id="st"><option value="">All statuses</option><option>available</option><option>reserved</option><option>oos</option><option>sold</option></select>
   <select id="ct"><option value="">All categories</option>${
-    Object.keys(byCat).sort().map((c) => `<option>${esc(c)}</option>`).join("")}</select>
+    [...new Set(all.map((i) => i.category))].sort().map((c) => `<option>${esc(c)}</option>`).join("")}</select>
   <span id="n" style="align-self:center;color:#D6CFB8"></span>
 </div>
 <table id="t">
 <thead><tr>
-  <th data-t="s"></th><th data-t="s">Title</th><th data-t="s">Category</th><th data-t="s">Status</th>
+  <th data-t="s"></th><th data-t="s">Title</th><th data-t="s">Category</th><th data-t="s">Partner</th><th data-t="s">Status</th>
   <th data-t="n">Price</th><th data-t="s">Condition</th><th data-t="s">Size</th><th data-t="s">Colour</th>
   <th data-t="n">♥</th><th data-t="n">Photos</th><th data-t="n">Age</th>
 </tr></thead>
@@ -171,17 +207,18 @@ ${rows}
 <script>
 (function(){
   var tb=document.querySelector('#t tbody'),rows=[].slice.call(tb.rows);
-  var q=document.getElementById('q'),st=document.getElementById('st'),ct=document.getElementById('ct'),n=document.getElementById('n');
+  var q=document.getElementById('q'),st=document.getElementById('st'),ct=document.getElementById('ct'),
+      pt=document.getElementById('pt'),n=document.getElementById('n');
   function filter(){
-    var term=q.value.toLowerCase(),s=st.value,c=ct.value,shown=0;
+    var term=q.value.toLowerCase(),s=st.value,c=ct.value,p=pt.value,shown=0;
     rows.forEach(function(r){
-      var ok=(!s||r.dataset.status===s)&&(!c||r.dataset.cat===c)&&
+      var ok=(!s||r.dataset.status===s)&&(!c||r.dataset.cat===c)&&(!p||r.dataset.partner===p)&&
              (!term||r.cells[1].textContent.toLowerCase().indexOf(term)!==-1);
       r.style.display=ok?'':'none'; if(ok)shown++;
     });
     n.textContent=shown+' of '+rows.length;
   }
-  [q,st,ct].forEach(function(el){el.addEventListener('input',filter);el.addEventListener('change',filter);});
+  [q,st,ct,pt].forEach(function(el){el.addEventListener('input',filter);el.addEventListener('change',filter);});
   filter();
   [].slice.call(document.querySelectorAll('#t th')).forEach(function(th,i){
     var asc=false;
@@ -205,7 +242,7 @@ ${rows}
 
   await writeFile(path.join(ROOT, "inventory.html"), html);
   const issues = Object.values(warn).reduce((s, v) => s + v.length, 0);
-  console.log(`inventory.html: ${live.length} live, ${sold.length} sold, ${issues} item(s) flagged`);
+  console.log(`inventory.html: ${live.length} live, ${sold.length} sold, ${vendor.length} Govinda, ${issues} item(s) flagged`);
 }
 
 main().catch((err) => {

@@ -377,6 +377,9 @@ function card(item, manifest, eager, showCat) {
     ` data-color="${esc(item.color?.en || "")}" data-brand="${esc(item.brand || "")}"` +
     ` data-cond="${esc(item.condition?.en || "")}" data-price="${item.priceCzk ?? ""}"` +
     ` data-fav="${item.favourites || 0}" data-avail="${sold ? "sold" : oos ? "oos" : "available"}"` +
+    // Which catalogue the piece came from. The two badges on the photograph already say this
+    // — the Govinda flag and the Vinted mark — and the filter needs it as data.
+    ` data-partner="${item.vendor ? esc(item.vendor) : "Vinted"}"` +
     ` data-title="${esc((item.title || "").toLowerCase())}"` +
     (shots ? ` data-shots="${esc(shots)}"` : "");
 
@@ -614,6 +617,34 @@ function toolbar(items) {
     `<select id="${id}" data-filter="${id}" data-name="${esc(name)}">` +
     `<option value="">${esc(allLabel)}</option>${opts(vals)}</select></label>`;
 
+  // WHO THE PIECE CAME FROM, first among the refinements.
+  //
+  // It goes before Condition because it is the coarsest cut in the shop: "second-hand from
+  // my wardrobe" versus "new from Govinda" divides 1,671 items into two piles, where
+  // Condition divides one of those piles further. A filter row reads best widest-first.
+  //
+  // Ordered Vinted then Govinda, not alphabetically: Vinted is the older half of the shop and
+  // the one a returning buyer knows.
+  const partners = ["Vinted", "Govinda"].filter((pn) =>
+    items.some((i) => (i.vendor ? i.vendor : "Vinted") === pn));
+
+  // UNLIKE EVERY OTHER SELECT HERE, this one is rendered even when it has a single value.
+  // The rest of the bar hides a control that cannot change anything; this one keeps its slot
+  // and shows the answer instead — on the Food shelf it reads "Govinda", which tells a
+  // shopper something true and saves them wondering. `data-single` marks that state so
+  // shop.js leaves it out of the URL and out of the active-filter count: it is a label in the
+  // shape of a control, not a filter someone applied.
+  const partnerSel = partners.length > 1
+    ? `<label class="sb-sel"><span class="vh">Partner</span>` +
+      `<select id="sb-partner" data-filter="sb-partner" data-name="Partner">` +
+      `<option value="">Partner All</option>${partners.map((pn) => `<option value="${esc(pn)}">${esc(pn)}</option>`).join("")}` +
+      `</select></label>`
+    : partners.length === 1
+      ? `<label class="sb-sel sb-sel-static"><span class="vh">Partner</span>` +
+        `<select id="sb-partner" data-filter="sb-partner" data-name="Partner" data-single="1">` +
+        `<option value="">${esc(partners[0])}</option></select></label>`
+      : "";
+
   const conditions = CONDITION_ORDER.filter((c) => items.some((i) => i.condition?.en === c));
   const sizes = uniq((i) => i.sizeGroup).sort();
   const colors = uniq((i) => i.color?.en).sort();
@@ -670,6 +701,7 @@ function toolbar(items) {
     <details class="sb-refine" data-refine>
     <summary><span class="sb-refine-label">Refine &amp; sort</span><span class="sb-refine-n" data-refine-count></span></summary>
     <div class="sb-controls">
+      ${partnerSel}
       ${sel("sb-cond", "Any condition", conditions, "Condition")}
       ${sel("sb-size", "All sizes", sizes, "Size")}
       ${bands.length < 2 ? "" : `<label class="sb-sel"><span class="vh">Price</span>

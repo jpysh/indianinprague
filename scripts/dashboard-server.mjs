@@ -798,16 +798,33 @@ const server = createServer(async (req, res) => {
     // this is deliberately the narrowest possible door: one directory, and a filename that
     // must be a plain basename — no slashes, no dots leading anywhere. images/derived is
     // already public on the live site, so nothing here is newly exposed.
-    if (req.method === "GET" && url.pathname.startsWith("/img/")) {
-      const name = url.pathname.slice(5);
+    // /img/<name> is the Product Tree's thumbnails; /images/<name> is what inventory.html
+    // asks for, because that page writes the repo-relative path it is given and must keep
+    // working when opened straight off disk. Both land here.
+    //
+    // The lookup order matters for vendor rows: govinda originals live in
+    // vendors/govinda/images/, which .gitignore excludes, so images/derived is where a
+    // thumbnail for one actually exists. Try the original, then the derivative, then the
+    // scrape directory — the first hit wins and a miss is a 404, never a directory walk.
+    if (req.method === "GET" && (url.pathname.startsWith("/img/") || url.pathname.startsWith("/images/"))) {
+      const name = url.pathname.replace(/^\/(img|images)\//, "");
       if (!/^[A-Za-z0-9._-]+\.(webp|jpg|jpeg|png)$/.test(name) || name.includes("..")) {
         return json(res, { error: "bad image name" }, 400);
       }
-      const file = path.join(ROOT, "images/derived", name);
-      const alt = path.join(ROOT, "images", name);
-      const found = existsSync(file) ? file : existsSync(alt) ? alt : null;
+      const derivedThumb = name.replace(/\.[a-z]+$/i, "") + "-400.webp";
+      // The 400px derivative FIRST, deliberately. inventory.html names originals, and a
+      // Vinted original is ~670 KB against 18 KB for its derivative — 203 of those in one
+      // table is 130 MB of thumbnails for cells drawn at 38x50 px. An explicit request for a
+      // derivative (…-400.webp) misses this rule harmlessly and matches on the next line.
+      const candidates = [
+        path.join(ROOT, "images/derived", derivedThumb),
+        path.join(ROOT, "images/derived", name),
+        path.join(ROOT, "images", name),
+        path.join(ROOT, "vendors/govinda/images", name),
+      ];
+      const found = candidates.find((f) => existsSync(f)) || null;
       if (!found) return json(res, { error: "not found" }, 404);
-      const type = name.endsWith(".webp") ? "image/webp" : name.endsWith(".png") ? "image/png" : "image/jpeg";
+      const type = found.endsWith(".webp") ? "image/webp" : found.endsWith(".png") ? "image/png" : "image/jpeg";
       res.writeHead(200, { "Content-Type": type, "Cache-Control": "max-age=300" });
       return res.end(readFileSync(found));
     }

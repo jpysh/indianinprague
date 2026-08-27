@@ -191,14 +191,17 @@
 
   var BANDS = { "0-10": [0, 10], "10-25": [10, 25], "25-50": [25, 50], "50+": [50, Infinity] };
 
-  var ATTR = { "sb-cond": "data-cond", "sb-size": "data-size", "sb-color": "data-color" };
+  var ATTR = { "sb-cond": "data-cond", "sb-size": "data-size", "sb-color": "data-color",
+               "sb-partner": "data-partner" };
 
   function matches(card) {
     if (avail && card.getAttribute("data-avail") !== avail) return false;
 
     for (var i = 0; i < selects.length; i++) {
       var s = selects[i];
-      if (!s.value) continue;
+      // A single-partner shelf renders the Partner control as a label (data-single): it
+      // states what everything here is rather than filtering it, so it never narrows.
+      if (!s.value || s.hasAttribute("data-single")) continue;
       if (s.id === "sb-price") {
         var band = BANDS[s.value];
         var eur = Number(card.getAttribute("data-price")) / 24.254;
@@ -434,13 +437,14 @@
   // replaceState, not pushState. Every keystroke in the search box calls apply(), and
   // pushing a history entry per keystroke would mean thirty presses of Back to leave the
   // page. The URL stays current and shareable; the history stays honest.
-  var PARAMS = { "sb-cond": "cond", "sb-size": "size", "sb-color": "color", "sb-price": "price" };
+  var PARAMS = { "sb-cond": "cond", "sb-size": "size", "sb-color": "color", "sb-price": "price",
+                 "sb-partner": "partner" };
 
   function writeUrl() {
     var p = new URLSearchParams();
     if ((q.value || "").trim()) p.set("q", q.value.trim());
     selects.forEach(function (s) {
-      if (s.value && PARAMS[s.id]) p.set(PARAMS[s.id], s.value);
+      if (s.value && PARAMS[s.id] && !s.hasAttribute("data-single")) p.set(PARAMS[s.id], s.value);
     });
     if (sort.value && sort.value !== "new") p.set("sort", sort.value);
     if (avail) p.set("avail", avail);
