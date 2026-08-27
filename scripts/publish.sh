@@ -81,7 +81,35 @@ for arg in "$@"; do
   esac
 done
 
-step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
+step() { CURRENT_STEP="$1"; printf '\n\033[1m== %s\033[0m\n' "$1"; }
+
+# THE ONE PLACE THAT SAYS WHETHER TODAY WORKED (27 Aug 2026)
+# ----------------------------------------------------------
+# This job runs unattended and reports into .sync.log, which is 116,000 lines long. On 26 and
+# 27 Aug the Cloudflare build failed both mornings and nothing said so anywhere a person
+# would look: the run itself was green, because from here a push looks like a success.
+#
+# So the run now records its own verdict in a file the admin dashboard reads, and the
+# dashboard leads with it. The contract is deliberately small — a state, a step, a sentence —
+# because the point is one glance answering "is my attention needed", not a second log.
+#
+# Not committed (see .gitignore). It is machine-local state about THIS Mac's last run, the
+# same category as .sync-stamp, and on a fresh checkout its absence correctly reads as
+# "no run yet" rather than as someone else's stale verdict.
+STATUS_FILE="$(dirname "$0")/../.publish-status.json"
+status() {                       # status <state> <step> <message...>
+  local state="$1" stage="$2"; shift 2
+  local msg="$*"
+  printf '{"state":"%s","step":"%s","message":"%s","at":"%s","date":"%s"}\n' \
+    "$state" "$stage" "${msg//\"/\'}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$(date +%Y-%m-%d)" \
+    > "$STATUS_FILE"
+}
+
+# set -e means most failures leave through here, so the trap is what makes the dashboard
+# honest about a run that died at step 4 rather than only about the ones that finish. It
+# records the LAST step announced, which is the failing one.
+CURRENT_STEP="starting"
+trap 'code=$?; [ $code -ne 0 ] && status failed "$CURRENT_STEP" "the run stopped here — see .sync.log"; exit $code' EXIT
 
 # ONCE A DAY, WHENEVER THE MACHINE HAPPENS TO BE ON (added 17 Aug 2026)
 # ---------------------------------------------------------------------
@@ -275,6 +303,25 @@ header of publish.sh." -- "${PUBLISHED[@]}" || {
   echo "committed on ${GIT_BRANCH}: $(git log --oneline -1)"
 fi
 
+step "13b/14 prove the commit builds from committed bytes alone"
+
+# The pre-push hook runs this too, and would catch the same thing a second later. Calling it
+# here anyway is deliberate: this job runs unattended at 07:15, and a failure inside a hook
+# surfaces as a one-line "pre-push hook declined" at the bottom of a launchd log. Here it
+# prints as a numbered step, in the run's own output, with the failing build above it.
+#
+# It also fails BEFORE the commit is pushed rather than during the push, which keeps this
+# script's own rule intact: git and the edge stay in step, both on yesterday.
+#
+# See scripts/check-clean-build.sh. Roughly 15s, and it is the only thing standing between a
+# gitignored input and a silently wrong deploy — which is exactly how 27 Aug 2026 went.
+if [ -z "$LOCAL" ]; then
+  ./scripts/check-clean-build.sh HEAD || {
+    echo "⚠ the commit does not build from committed files alone — NOT pushing" >&2
+    exit 1
+  }
+fi
+
 step "14/14 push, and let Cloudflare build it"
 
 # ONE DEPLOY PATH, NOT TWO (25 Aug 2026).
@@ -306,28 +353,35 @@ else
   exit 1
 fi
 
-# Workers Builds is not instant, and the health check below is the whole reason this script
-# can tell "deployed" from "deploy started". Wait for the edge to answer with the build we
-# just pushed rather than the one before it: poll until the deployed commit shows up, and
-# give up after five minutes so a stuck build fails the run instead of hanging it.
+# WAIT FOR THE EDGE TO SERVE *THIS* COMMIT (rewritten 27 Aug 2026)
 #
-# The marker is the commit SHA, written into the built pages by build-dist? No — nothing
-# stamps a SHA today, so this waits on availability alone and reports the wait. Upgrading it
-# to a real build marker is worth doing the day a deploy silently serves stale bytes; until
-# then a 200 from the custom domain after the push is what we have.
-printf 'waiting for the edge'
+# What was here polled for a 200 from /wardrobe and printed "live origin healthy". That
+# sentence was true and worthless, and it cost two days. On the 26th and the 27th the
+# Workers build failed; the edge went on serving the 25th's bytes, answered 200 to every
+# poll, and the run declared itself healthy and pinged Seznam, Yandex and Bing about pages
+# that had not changed. Live sat five items behind and nobody was told.
+#
+# A push is not a deploy. The only question worth asking the edge is "are you serving the
+# commit I just pushed", and the answer is /build-id.txt, written last by build-dist.mjs
+# after every check in it has passed (see the block that writes it).
+#
+# cache-busted with ?t=: the marker is a static asset on a CDN, and asking Cloudflare for a
+# cached copy of the answer to "have you updated yet" is a question that answers itself
+# wrong. Five minutes at ten-second intervals — a Workers build of this site takes about
+# one, so a timeout here is a real failure and not impatience.
+PUSHED_SHA="$(git rev-parse HEAD)"
+printf 'waiting for the edge to serve %s' "$(git rev-parse --short HEAD)"
+LIVE_SHA=""
 for _ in $(seq 1 30); do
   sleep 10
   printf '.'
-  curl -fsS -o /dev/null "https://guldaarbazaar.com/wardrobe" && break
+  LIVE_SHA="$(curl -fsS "https://guldaarbazaar.com/build-id.txt?t=$(date +%s)" 2>/dev/null | tr -d '[:space:]' || true)"
+  [ "$LIVE_SHA" = "$PUSHED_SHA" ] && break
 done
 printf '\n'
 
-# Confirm the live site is actually serving this build before inviting crawlers to it.
-# Checking the real hostname rather than a local port is the point: it exercises DNS, the
-# custom domain binding and the edge, which is the whole surface that replaced nginx.
-if curl -fsS -o /dev/null "https://guldaarbazaar.com/wardrobe"; then
-  echo "live origin healthy"
+if [ "$LIVE_SHA" = "$PUSHED_SHA" ]; then
+  echo "live: guldaarbazaar.com is serving $(git rev-parse --short HEAD)"
 
   # NOT fatal, and the reason is a bug this caused. IndexNow is a NOTIFICATION: it tells
   # Bing and Seznam that URLs changed, after a deploy that has already succeeded and been
@@ -348,7 +402,17 @@ if curl -fsS -o /dev/null "https://guldaarbazaar.com/wardrobe"; then
   # --local, which deploys nothing.
   echo "$TODAY" > "$STAMP"
   echo "stamped $TODAY — the launchd triggers will now no-op until tomorrow"
+  status ok "14/14 deployed" "live is serving today's catalogue ($(git rev-parse --short HEAD))"
 else
-  echo "⚠ guldaarbazaar.com did not answer — skipping IndexNow so crawlers are not sent to a broken build" >&2
+  # The push happened and the commit is safe; what failed is Cloudflare turning it into a
+  # site. Do NOT stamp: an unstamped date is what makes the hourly trigger retry, and a
+  # retry is the right response to a build that timed out or a Workers outage.
+  #
+  # The message names what a person can actually do about it, because this is the sentence
+  # the dashboard shows and it is all they will read.
+  SEEN="${LIVE_SHA:0:7}"; [ -n "$SEEN" ] || SEEN="no build marker at all"
+  echo "⚠ the edge is not serving ${PUSHED_SHA:0:7} after five minutes (it has ${SEEN}) — skipping IndexNow" >&2
+  status failed "14/14 deploy not confirmed" \
+    "Cloudflare did not build it: pushed ${PUSHED_SHA:0:7}, the live site still serves ${SEEN}. Open the Cloudflare build log. Your commit is safe and the next hourly run retries."
   exit 1
 fi

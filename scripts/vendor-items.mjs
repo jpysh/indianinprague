@@ -50,16 +50,24 @@ export function vendorItems(root) {
   // out of full-bleed photographs. That card is worse than the product's absence: it is the
   // one thing on the page that looks broken.
   //
-  // The test is the LEAD image on disk, because that is what build-images.mjs derives the
-  // shipped sizes from — if it is not there, there is nothing for a card to show. Everything
-  // else about the row is fine and it returns on the next run, once the picture exists.
+  // The test is the LEAD image, and it is satisfied by EITHER the scrape original or the
+  // derivative built from it. The original alone was wrong (27 Aug 2026): the originals live
+  // in vendors/govinda/images/, which .gitignore excludes as disposable, so the test passed
+  // on this Mac and failed on every one of 1,465 rows inside Workers Builds — which has the
+  // commit and nothing else. That silently emptied the vendor shelves there, build-shop.mjs
+  // then deleted the now-empty category pages, and the links into them took the deploy down.
   //
-  // Measured when this was added: 1,465 listed rows, 0 of them without a lead image. It is a
-  // guard for the arrival case, not a cull of anything already published.
+  // The derivative is the honest test anyway: images/derived/ is what a card actually loads,
+  // and it is committed. If neither exists there is genuinely nothing to show, which is the
+  // arrival case this guard was written for — the row returns on the next run, once the
+  // picture exists. It was never meant to cull anything already published.
   const hasLeadImage = (r) => {
     const sku = r[col.sku];
     const first = r[col.images].split(" | ").filter(Boolean).length > 0;
-    return first && existsSync(path.join(root, "vendors/govinda/images", `govinda-${sku}-1.jpg`));
+    return first && (
+      existsSync(path.join(root, "vendors/govinda/images", `govinda-${sku}-1.jpg`)) ||
+      existsSync(path.join(root, "images/derived", `govinda-${sku}-1-400.webp`))
+    );
   };
 
   return body

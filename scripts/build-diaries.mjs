@@ -717,7 +717,20 @@ for (const post of posts) {
     meditation: { href: "/wardrobe/meditation", h: "Objects for the practice",
                   p: "Malas, incense, deities and the rest of the ritual objects this writing describes, on the Meditation shelf." },
   };
-  const cta = CTA[post.cat];
+  // A shelf is not permanent. build-shop.mjs deletes a category page the moment its last
+  // item sells — no redirect, deliberately — so a CTA hard-coded to /wardrobe/food is a 404
+  // waiting for the day the last jar of spice goes. It did: 27 Aug 2026, five posts.
+  //
+  // Fall back to the whole closet rather than dropping the CTA. /wardrobe is the one shelf
+  // URL that is always written, and a reader sent there still lands in the shop. The
+  // narrower link comes back by itself the day the shelf does.
+  const shelf = CTA[post.cat];
+  const cta = shelf && !existsSync(path.join(ROOT, shelf.href.slice(1) + ".html"))
+    // The prose goes with the link. "on the Food shelf" is a lie once the link is the whole
+    // closet, and a CTA that names a shelf the reader cannot reach reads as a broken site.
+    ? { href: "/wardrobe", h: shelf.h,
+        p: "Clothing, jewellery, home things, meditation objects and books, hand-picked and already in Europe." }
+    : shelf;
   const shopCta = cta
     ? `<div class="shop-cta">
         <h2>${esc(cta.h)}</h2>

@@ -77,9 +77,75 @@ function tabBar(current, dark) {
   return (
     `<nav aria-label="Views" style="display:flex;gap:6px;align-items:center;padding:8px 16px;` +
     `background:${bg};border-bottom:1px solid rgba(128,128,128,.25)">` +
+    // The wordmark names what this is: the ADMIN DASHBOARD, one bookmark covering stock,
+    // translations and — since 27 Aug 2026 — whether the site actually published today.
+    // It is not a link: there is no third page for it to go to, and a control that only
+    // reloads the page you are on is a control that teaches you to distrust the others.
+    `<span style="font:700 12px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;` +
+    `letter-spacing:.1em;text-transform:uppercase;color:${ink};opacity:.55;margin-right:6px">Admin</span>` +
     tab("/inventory", "Inventory", "inventory") +
     tab("/translations", "Translations", "translations") +
     `</nav>`
+  );
+}
+
+// THE BANNER: did this morning's publish reach the live site? (27 Aug 2026)
+//
+// This is the reason to open the admin dashboard at all — one line, at the top of whichever
+// view you land on, answering "is my attention needed today". Everything else on both pages
+// is work you choose to do; this is the only thing that comes and finds you.
+//
+// It exists because for two days nothing did. The 07:15 job pushed, Cloudflare's build
+// failed, the edge went on serving the 25th, and the run wrote "live origin healthy" into a
+// 116,000-line log. publish.sh now verifies the deployed commit and records its verdict in
+// .publish-status.json; this renders it.
+//
+// GREEN IS SHOWN, not just red. A dashboard that is blank when things are fine teaches you
+// nothing about whether it is working — the absence of a warning and the absence of a run
+// look identical. Today's success says so, in the past tense, with the time.
+//
+// Rendered server-side into static HTML rather than fetched: both pages must keep working
+// when opened straight off disk, and a banner that needs an API call would be a permanent
+// spinner in that context.
+// The message is written by publish.sh from a failing command's own words, so it reaches
+// here as text of unknown shape. It is going into HTML: escape it.
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function publishBanner(dark) {
+  const file = path.join(ROOT, ".publish-status.json");
+  const today = new Date().toLocaleDateString("en-CA"); // YYYY-MM-DD, local, matches publish.sh
+  let s = null;
+  try {
+    if (existsSync(file)) s = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    s = null; // a truncated write mid-run is not worth an error page
+  }
+
+  // Yesterday's success is not today's. A run that never fired — Mac off, launchd missed,
+  // the failure mode DEPLOY.md records for 17 Aug — leaves a stale `ok` behind, and showing
+  // it in green would be the same lie in a nicer colour.
+  const stale = s && s.date !== today;
+  const state = !s ? "none" : stale ? "stale" : s.state;
+
+  const tone = {
+    ok:     { bg: "#1f7a3f", ink: "#fff", lead: "All good.", },
+    failed: { bg: "#a8321f", ink: "#fff", lead: "Needs you.", },
+    stale:  { bg: "#8a6d16", ink: "#fff", lead: "No run today.", },
+    none:   { bg: dark ? "#3a3529" : "#e6e0d2", ink: dark ? "#F2EFE6" : "#1c1a17", lead: "No publish recorded yet.", },
+  }[state];
+
+  const when = s?.at ? new Date(s.at).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) : "";
+  const detail =
+    state === "ok"     ? `Today's publish went out at ${when} and the live site is serving it.`
+    : state === "failed" ? `${s.message} (stopped at ${s.step}, ${when})`
+    : state === "stale"  ? `The last run was on ${s.date}. Today's has not finished — if the Mac was off, the next hourly trigger picks it up.`
+    : "Nothing has published since this was set up. The first 07:15 run will fill this in.";
+
+  return (
+    `<div role="status" style="padding:10px 16px;background:${tone.bg};color:${tone.ink};` +
+    `font:600 13px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;` +
+    `display:flex;gap:8px;align-items:baseline;flex-wrap:wrap">` +
+    `<b>${tone.lead}</b><span style="font-weight:400;opacity:.95">${esc(detail)}</span></div>`
   );
 }
 
@@ -333,7 +399,8 @@ const server = createServer(async (req, res) => {
         return json(res, { error: `${page.file} has not been generated yet — run node scripts/build-inventory.mjs` }, 503);
       }
       const dark = page.file === "inventory.html";
-      const html = readFileSync(file, "utf8").replace(/<body([^>]*)>/, `<body$1>${tabBar(page.tab, dark)}`);
+      const html = readFileSync(file, "utf8")
+        .replace(/<body([^>]*)>/, `<body$1>${tabBar(page.tab, dark)}${publishBanner(dark)}`);
       res.writeHead(200, { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" });
       return res.end(html);
     }

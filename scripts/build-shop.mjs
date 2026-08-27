@@ -1177,6 +1177,26 @@ async function main() {
   if (allTotal > 1) {
     await writeFile(path.join(ROOT, "wardrobe.cards"), cardsFragment(live, manifest, true));
   }
+
+  // Sweep the numbered pages the storefront no longer has. Every shelf above does this for
+  // its own directory; the storefront did not, and its numbered pages are the one set that
+  // lives in wardrobe/ beside the shelves rather than in a directory of its own.
+  //
+  // Left behind, they are worse than stale: a page written when the closet held 1,670 pieces
+  // still carries that build's shelf strip, so it links to shelves that have since emptied
+  // out and been removed by the block above. That is what broke the 27 Aug 2026 deploy —
+  // wardrobe/4..17 pointing at /wardrobe/food and /wardrobe/keepsakes, mirrored into seven
+  // languages, 280 dead links in build-dist.mjs's checker.
+  //
+  // Only /^\d+\.html$/ is swept: a shelf may never be called by a number (see pageFile), so
+  // a numeric page in here is the storefront's or it is nothing.
+  for (const f of await readdir(path.join(ROOT, "wardrobe"))) {
+    const m = /^(\d+)\.html$/.exec(f);
+    // Page 1 is wardrobe.html, never wardrobe/1.html, so a 1 here is stale as well.
+    if (!m || (+m[1] > 1 && +m[1] <= allTotal)) continue;
+    await rm(path.join(ROOT, "wardrobe", f));
+    console.log(`  wardrobe/${f} — removed (storefront is ${allTotal} page${allTotal === 1 ? "" : "s"} now)`);
+  }
   console.log(`  wardrobe.html — ${live.length} items (${sold.length} sold) across ${allTotal} pages`);
   // The old page is not left on disk to rot: it would still be reachable, still be
   // indexable, and would go stale the first time the closet changed.

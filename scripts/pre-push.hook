@@ -1,0 +1,22 @@
+#!/bin/bash
+# Nothing reaches Cloudflare without building from committed bytes first.
+#
+# A push to main IS the deploy here (publish.sh step 14), so this is the last point at which
+# a broken build is still cheap. See scripts/check-clean-build.sh for what it does and why it
+# exists. Bypass with SKIP_CLEAN_BUILD=1, not --no-verify.
+#
+# NOT tracked by git — .git/hooks never is. To reinstall on another checkout:
+#   ln -sf ../../scripts/pre-push.hook .git/hooks/pre-push
+set -euo pipefail
+
+REPO="$(git rev-parse --show-toplevel)"
+
+# stdin gives one line per ref being pushed: <local ref> <local sha> <remote ref> <remote sha>.
+# Check the commit actually going out, not HEAD, which can be something else entirely on a
+# `git push origin <sha>:main`. The all-zero local sha is a branch DELETION — nothing is being
+# built, so there is nothing to check.
+while read -r _local_ref local_sha _remote_ref _remote_sha; do
+  case "$local_sha" in
+    *[!0]*) "$REPO/scripts/check-clean-build.sh" "$local_sha" ;;
+  esac
+done

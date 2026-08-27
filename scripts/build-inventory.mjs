@@ -91,7 +91,7 @@ async function main() {
 <html lang="en"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Inventory — ${live.length} live, ${sold.length} sold</title>
+<title>Admin dashboard — Inventory: ${live.length} live, ${sold.length} sold</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#4A4433;color:#F2EFE6;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}

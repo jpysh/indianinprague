@@ -30,7 +30,7 @@
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { readdir, rm, mkdir, cp, stat, readFile } from "node:fs/promises";
+import { readdir, rm, mkdir, cp, stat, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { CODES } from "./i18n.mjs";
@@ -357,6 +357,31 @@ if (dead.length || badAnchor.length) {
   );
 }
 console.log(`  links checked: ${pageText.size} pages, every internal href and anchor resolves`);
+
+// THE BUILD MARKER: which commit these bytes were built from, served at /build-id.txt.
+//
+// publish.sh used to confirm a deploy by asking guldaarbazaar.com for a 200 and calling it
+// "live origin healthy". A 200 says the site is up, not that it is THIS site: on 26 and 27
+// Aug 2026 the Workers build failed both mornings, the edge kept serving the 25th happily,
+// and the run reported healthy and pinged three search engines about it. Two days of
+// catalogue updates sat in git, live never moved, and nothing anywhere said so.
+//
+// A marker the edge can be asked for closes that. It is one line of text and it is written
+// LAST, after every check above has passed, so its presence at a URL means a build that
+// satisfied all of them produced the bytes being served.
+//
+// The SHA comes from git, with the CI environment as the fallback — in Workers Builds the
+// clone is shallow but real, so git wins there too; the env vars are belt and braces for a
+// container that ever ships without git. "unknown" is not fatal here: it makes the poll in
+// publish.sh time out and report, which is the correct outcome for a build that cannot say
+// what it is.
+const buildSha = await new Promise((resolve) => {
+  execFile("git", ["rev-parse", "HEAD"], { cwd: ROOT }, (err, out) =>
+    resolve(err ? (process.env.WORKERS_CI_COMMIT_SHA || process.env.CF_PAGES_COMMIT_SHA || "unknown") : out.trim()),
+  );
+});
+await writeFile(path.join(DIST, "build-id.txt"), buildSha + "\n");
+console.log(`  build-id.txt: ${buildSha.slice(0, 7)}`);
 
 console.log(
   `dist/ staged: ${count} files, largest ${biggest.file} ` +

@@ -50,3 +50,8 @@ scripts/dashboard.log
 /es/
 /pl/
 /cs/
+
+# The last run's verdict, written by scripts/publish.sh and read by the admin dashboard.
+# Machine-local state about THIS Mac, like .sync-stamp: on a fresh checkout its absence must
+# read as "no run yet", not as a stale verdict copied from another machine.
+.publish-status.json

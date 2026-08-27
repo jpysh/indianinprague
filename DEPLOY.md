@@ -314,6 +314,41 @@ worth knowing:
 Also note the build container **has no rsync** — `build-dist.mjs` probes for it and falls
 back to a recursive node copy. Assume no system binaries are available there.
 
+### A push is not a deploy (27 Aug 2026)
+
+Two days were lost to the gap between those two words, and three things now close it.
+
+**What happened.** `vendor-items.mjs` decided whether a Govinda product had a photograph by
+looking for the scrape original in `vendors/govinda/images/` — a directory `.gitignore`
+excludes as disposable. On this Mac all 1,465 rows passed. In Workers Builds, which has the
+commit and nothing else, all 1,465 failed. The vendor shelves came out empty, `build-shop.mjs`
+deleted the now-empty category pages exactly as designed, and the links into them failed the
+link checker. The build went red on the 26th and again on the 27th. The edge kept serving the
+25th. `publish.sh` reported `live origin healthy` both mornings, because it was asking for a
+200 and getting one, and then told Seznam, Yandex and Bing to re-crawl 200 unchanged URLs.
+
+1. **`scripts/check-clean-build.sh`** builds the commit in a throwaway `git worktree` — the
+   committed tree only, no working-tree files to fall back on. It is wired in twice: the
+   `pre-push` hook (installed from `scripts/pre-push.hook`; reinstall on a fresh clone with
+   `ln -sf ../../scripts/pre-push.hook .git/hooks/pre-push`) and step 13b of `publish.sh`,
+   so an unattended failure prints as a numbered step rather than as a hook decline at the
+   bottom of a launchd log. ~28s. Bypass with `SKIP_CLEAN_BUILD=1`, never `--no-verify` —
+   that disables every hook this repo will ever have.
+
+2. **`/build-id.txt`** — `build-dist.mjs` writes the commit SHA into `dist/` last, after
+   every check has passed. Step 14 polls the live site for it and only continues when the
+   edge is serving *the commit it just pushed*. IndexNow and the `.sync-stamp` are both gated
+   behind that, so "we told the crawlers" now implies "it is live", and a failed deploy
+   leaves the date unstamped for the hourly trigger to retry.
+
+3. **The admin dashboard leads with the verdict.** `publish.sh` writes
+   `.publish-status.json` (gitignored, machine-local, like `.sync-stamp`); the server renders
+   it as a banner on both views. Green says today's publish is live and at what time — shown
+   on success too, because a dashboard that is blank when things are fine cannot be told from
+   one that is broken. Amber for a day with no finished run, red with the failing step and
+   what to do. **This is the one thing to look at**, and it is why nothing else needs
+   watching: no run, or a run that did not reach the edge, both say so here.
+
 ### Sold pieces
 
 Sold items stay on the site, desaturated with a SOLD badge — proof that things sell. They
