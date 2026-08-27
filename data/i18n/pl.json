@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-26T05:17:20.253Z",
-  "count": 5454,
+  "generated": "2026-08-27T05:17:37.532Z",
+  "count": 5462,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -218,8 +218,8 @@
       "src": "d13a0711c6cd"
     },
     "item.9565320171.title": {
-      "text": "Indyjska figurka Parvati – posąg, duchowy wizerunek",
-      "src": "cba63dbd90ce"
+      "text": "Indyjska figurka bogini Lakszmi – posążek o charakterze duchowym",
+      "src": "e582665e8299"
     },
     "item.9561725365.title": {
       "text": "Szalik od projektanta – luksusowa indyjska marka Satya Paul",
@@ -298,8 +298,8 @@
       "src": "1d387995bfc7"
     },
     "item.9565381682.title": {
-      "text": "Indyjskie figurki Ganeshy i Parvati – posągi o charakterze duchowym",
-      "src": "986fce8e2f56"
+      "text": "Indyjskie figurki i posążki Ganeshy i Lakshmi – figurki o charakterze duchowym",
+      "src": "1b435e118cf9"
     },
     "item.9561602678.title": {
       "text": "Letnia sukienka z indyjskiej mieszanki bawełny i lnu z dwiema kieszeniami",
@@ -626,8 +626,8 @@
       "src": "9d37fe2e99a5"
     },
     "item.9711247731.title": {
-      "text": "Bransoletka duchowa | Biżuteria buddyjska | Rudraksha, mala do jogi, akcesoria duchowe, medytacja",
-      "src": "3d08649f5144"
+      "text": "Bransoletka duchowa | Tybetańska biżuteria buddyjska z symbolem „Om” | Rudraksha – mala do jogi i medytacji",
+      "src": "a0db5ed958fb"
     },
     "item.9641705366.title": {
       "text": "Letnia sukienka w stylu boho z żywymi afrykańskimi motywami plemiennymi | Tunika typu kaftan z etnicznym nadrukiem | Rozmiar uniwersalny od M do L",
@@ -21824,6 +21824,38 @@
     "text.a3f972dc2e5d": {
       "text": "Oszałamiająca i wygodna bawełniana tunika indyjskiej marki Jaypore. Tradycyjne wzory Ajrakh i przepiękne prążkowane tekstury w okolicy klatki piersiowej. 100 procent…",
       "src": "a3f972dc2e5d"
+    },
+    "text.5271c474a855": {
+      "text": "1608 sztuk na sprzedaż · 62 sprzedane",
+      "src": "5271c474a855"
+    },
+    "text.7bc205f2e6ca": {
+      "text": "Top na ramiączkach w kolorze mango gold metallic | Rozmiar M",
+      "src": "7bc205f2e6ca"
+    },
+    "text.aeddf3db370d": {
+      "text": "Opis indyjskiej figurki bogini Lakshmi – duchowego wizerunku",
+      "src": "aeddf3db370d"
+    },
+    "text.f9489c8c0247": {
+      "text": "Opis indyjskiej figurki Ganeshy i Lakszmi – duchowe wizerunki",
+      "src": "f9489c8c0247"
+    },
+    "text.7b55d56812a8": {
+      "text": "Indyjska figurka bogini Lakszmi – figurka o znaczeniu duchowym — otwórz aukcję „Vinted” w nowej karcie",
+      "src": "7b55d56812a8"
+    },
+    "text.bd08019809d5": {
+      "text": "Indyjskie figurki i posągi Ganeshy i Lakszmi – posągi o znaczeniu duchowym — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "bd08019809d5"
+    },
+    "text.94626baefc8f": {
+      "text": "Opis bransoletki duchowej | Tybetańska biżuteria buddyjska z symbolem „Om” | Rudraksha – mala do jogi i medytacji",
+      "src": "94626baefc8f"
+    },
+    "text.38afc010bb48": {
+      "text": "Bransoletka duchowa | Tybetańska biżuteria buddyjska z symbolem „Om” | Rudraksha – mala do jogi i medytacji — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "38afc010bb48"
     }
   }
 }

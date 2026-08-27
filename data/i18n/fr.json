@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-26T05:17:17.746Z",
-  "count": 5454,
+  "generated": "2026-08-27T05:17:34.882Z",
+  "count": 5462,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -218,8 +218,8 @@
       "src": "d13a0711c6cd"
     },
     "item.9565320171.title": {
-      "text": "Figurine indienne de Parvati, statue, idole spirituelle",
-      "src": "cba63dbd90ce"
+      "text": "Figurine indienne de Lakshmi, statue, idole spirituelle",
+      "src": "e582665e8299"
     },
     "item.9561725365.title": {
       "text": "Écharpe de créateur de la marque de luxe indienne Satya Paul",
@@ -298,8 +298,8 @@
       "src": "1d387995bfc7"
     },
     "item.9565381682.title": {
-      "text": "Figurines et statues indiennes de Ganesha et Parvati – Idoles spirituelles",
-      "src": "986fce8e2f56"
+      "text": "Figurines et statues indiennes de Ganesha et Lakshmi – Images sacrées",
+      "src": "1b435e118cf9"
     },
     "item.9561602678.title": {
       "text": "Robe d'été indienne en mélange de coton et de lin, avec deux poches",
@@ -626,8 +626,8 @@
       "src": "9d37fe2e99a5"
     },
     "item.9711247731.title": {
-      "text": "Bracelet spirituel | Bijoux bouddhistes | Rudraksh, mala de yoga, accessoires spirituels, méditation",
-      "src": "3d08649f5144"
+      "text": "Bracelet spirituel | Bijoux bouddhistes tibétains « Om » | Mala de yoga et de méditation Rudraksh",
+      "src": "a0db5ed958fb"
     },
     "item.9641705366.title": {
       "text": "Robe d'été bohème aux motifs tribaux africains éclatants | Tunique-kaftan ample à imprimé ethnique | Taille unique M à L",
@@ -21824,6 +21824,38 @@
     "text.a3f972dc2e5d": {
       "text": "Superbe tunique confortable en coton de la marque indienne Jaypore. Motifs Ajrakh traditionnels et magnifiques textures côtelées au niveau de la poitrine. 100 %…",
       "src": "a3f972dc2e5d"
+    },
+    "text.5271c474a855": {
+      "text": "1 608 pièces à vendre · 62 vendues",
+      "src": "5271c474a855"
+    },
+    "text.7bc205f2e6ca": {
+      "text": "Débardeur Mango doré métallisé | Taille M",
+      "src": "7bc205f2e6ca"
+    },
+    "text.aeddf3db370d": {
+      "text": "Description de la statuette indienne de Lakshmi, idole spirituelle",
+      "src": "aeddf3db370d"
+    },
+    "text.f9489c8c0247": {
+      "text": "Description de la statuette indienne représentant Ganesha et Lakshmi – Statues spirituelles",
+      "src": "f9489c8c0247"
+    },
+    "text.7b55d56812a8": {
+      "text": "Statuette indienne de Lakshmi, idole spirituelle — ouvrir la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "7b55d56812a8"
+    },
+    "text.bd08019809d5": {
+      "text": "Figurines et statues indiennes de Ganesha et Lakshmi — des idoles spirituelles — ouvrez la page Vinted dans un nouvel onglet",
+      "src": "bd08019809d5"
+    },
+    "text.94626baefc8f": {
+      "text": "Description du bracelet spirituel | Bijoux bouddhistes tibétains « Om » | Rudraksh, mala de yoga et de méditation",
+      "src": "94626baefc8f"
+    },
+    "text.38afc010bb48": {
+      "text": "Bracelet spirituel | Bijoux bouddhistes tibétains « Om » | Rudraksha, mala de yoga et méditation — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "38afc010bb48"
     }
   }
 }

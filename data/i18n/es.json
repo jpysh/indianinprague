@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-26T05:17:19.442Z",
-  "count": 5454,
+  "generated": "2026-08-27T05:17:36.888Z",
+  "count": 5462,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -218,8 +218,8 @@
       "src": "d13a0711c6cd"
     },
     "item.9565320171.title": {
-      "text": "Estatuilla de la diosa india Parvati, ídolo espiritual",
-      "src": "cba63dbd90ce"
+      "text": "Estatuilla de la diosa india Lakshmi, ídolo espiritual",
+      "src": "e582665e8299"
     },
     "item.9561725365.title": {
       "text": "Pañuelo de diseño de la marca de lujo india Satya Paul",
@@ -298,8 +298,8 @@
       "src": "1d387995bfc7"
     },
     "item.9565381682.title": {
-      "text": "Estatuillas de Ganesha y Parvati de la India. Ídolos espirituales",
-      "src": "986fce8e2f56"
+      "text": "Estatuillas de Ganesha y Lakshmi de la India: figuras espirituales",
+      "src": "1b435e118cf9"
     },
     "item.9561602678.title": {
       "text": "Vestido de verano indio de mezcla de algodón y lino con dos bolsillos",
@@ -626,8 +626,8 @@
       "src": "9d37fe2e99a5"
     },
     "item.9711247731.title": {
-      "text": "Pulsera espiritual | Joyería budista | Rudraksh, yoga mala, accesorios espirituales, meditación",
-      "src": "3d08649f5144"
+      "text": "Pulsera espiritual | Joyería budista tibetana «Om» | Rudraksha, mala de yoga y meditación",
+      "src": "a0db5ed958fb"
     },
     "item.9641705366.title": {
       "text": "Vestido veraniego boho de estilo tribal africano en colores vivos | Túnica caftán holgada con estampado étnico | Talla única: de la M a la L",
@@ -21824,6 +21824,38 @@
     "text.a3f972dc2e5d": {
       "text": "Impresionante y cómoda túnica de algodón de la marca india Jaypore. Motivos tradicionales de Ajrakh y preciosas texturas acanaladas en la zona del pecho. 100 %…",
       "src": "a3f972dc2e5d"
+    },
+    "text.5271c474a855": {
+      "text": "1608 piezas a la venta · 62 vendidas",
+      "src": "5271c474a855"
+    },
+    "text.7bc205f2e6ca": {
+      "text": "Camiseta sin mangas metalizada color mango dorado | Talla M",
+      "src": "7bc205f2e6ca"
+    },
+    "text.aeddf3db370d": {
+      "text": "Descripción de la estatuilla de Lakshmi de la India: figura espiritual",
+      "src": "aeddf3db370d"
+    },
+    "text.f9489c8c0247": {
+      "text": "Descripción de la estatuilla india de Ganesha y Lakshmi: figuras espirituales",
+      "src": "f9489c8c0247"
+    },
+    "text.7b55d56812a8": {
+      "text": "Estatuilla de la diosa india Lakshmi, ídolo espiritual — abre el anuncio de Vinted en una nueva pestaña",
+      "src": "7b55d56812a8"
+    },
+    "text.bd08019809d5": {
+      "text": "Estatuillas e ídolos espirituales de Ganesha y Lakshmi de la India — abre el anuncio de Vinted en una nueva pestaña",
+      "src": "bd08019809d5"
+    },
+    "text.94626baefc8f": {
+      "text": "Descripción de la pulsera espiritual | Joyería budista tibetana «Om» | Rudraksha, mala de yoga y meditación",
+      "src": "94626baefc8f"
+    },
+    "text.38afc010bb48": {
+      "text": "Pulsera espiritual | Joyería budista tibetana «Om» | Rudraksh, mala de yoga y meditación — abre el anuncio de Vinted en una nueva pestaña",
+      "src": "38afc010bb48"
     }
   }
 }

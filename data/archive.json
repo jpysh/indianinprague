@@ -1867,6 +1867,56 @@
       "sold": true,
       "soldAt": "earlier",
       "recovered": true
+    },
+    {
+      "id": "9331197768",
+      "title": "Mango Gold Metallic Cami Top | Size M",
+      "priceCzk": 89,
+      "priceEur": 4,
+      "brand": "Mango",
+      "size": "M / 38 / 10",
+      "sizeGroup": "M",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Gold",
+        "cs": "Zlatá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Vest tops",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 12,
+          "name": "Tops & t-shirts"
+        },
+        {
+          "id": 534,
+          "name": "Vest tops"
+        }
+      ],
+      "description": "Pretty gold metallic vest top from Mango. Subtle shimmer running through it — light-catching and elegant without being over the top. A versatile going-out or dress-up top. Effortless evening or party top, dress it up with tailored trousers or a skirt, or wear casually with jeans and a blazer. The gold shimmer makes it feel special for occasions and the festive season.\n\nDetails:\n\nV-neckline front and back\nFixed knit shoulder straps (cami/vest style)\nFine stretchy metallic knit\nSlightly sheer — light and floaty\nMango brand\nSize: M",
+      "photo": "images/vinted-9331197768-1.jpg",
+      "photos": [
+        "images/vinted-9331197768-1.jpg",
+        "images/vinted-9331197768-2.jpg",
+        "images/vinted-9331197768-3.jpg"
+      ],
+      "favourites": 19,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "soldAt": "2026-08-27"
     }
   ]
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-26T05:17:18.877Z",
-  "count": 5454,
+  "generated": "2026-08-27T05:17:36.174Z",
+  "count": 5462,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -218,8 +218,8 @@
       "src": "d13a0711c6cd"
     },
     "item.9565320171.title": {
-      "text": "Statuetta indiana di Parvati, statua, idolo spirituale",
-      "src": "cba63dbd90ce"
+      "text": "Statuetta indiana di Lakshmi, statua, idolo spirituale",
+      "src": "e582665e8299"
     },
     "item.9561725365.title": {
       "text": "Sciarpa firmata del marchio di lusso indiano Satya Paul",
@@ -298,8 +298,8 @@
       "src": "1d387995bfc7"
     },
     "item.9565381682.title": {
-      "text": "Statuette indiane di Ganesha e Parvati – Statue spirituali",
-      "src": "986fce8e2f56"
+      "text": "Statuette indiane di Ganesha e Lakshmi – Statue spirituali",
+      "src": "1b435e118cf9"
     },
     "item.9561602678.title": {
       "text": "Abito estivo indiano in misto cotone e lino con due tasche",
@@ -626,8 +626,8 @@
       "src": "9d37fe2e99a5"
     },
     "item.9711247731.title": {
-      "text": "Braccialetto spirituale | Gioielli buddisti | Rudraksh, Yoga Mala, accessori spirituali, meditazione",
-      "src": "3d08649f5144"
+      "text": "Braccialetto spirituale | Gioielli buddisti tibetani con il simbolo Om | Rudraksha, mala per lo yoga e la meditazione",
+      "src": "a0db5ed958fb"
     },
     "item.9641705366.title": {
       "text": "Abito estivo boho in stile tribale africano dai colori vivaci | Tunica kaftan svasata con stampa etnica | Taglia unica da M a L",
@@ -21824,6 +21824,38 @@
     "text.a3f972dc2e5d": {
       "text": "Splendida e comoda tunica in cotone del marchio indiano Jaypore. Motivi tradizionali Ajrakh e splendide trame a coste nella zona del petto. 100%…",
       "src": "a3f972dc2e5d"
+    },
+    "text.5271c474a855": {
+      "text": "1608 articoli in vendita · 62 venduti",
+      "src": "5271c474a855"
+    },
+    "text.7bc205f2e6ca": {
+      "text": "Top a spalline Mango Gold Metallic | Taglia M",
+      "src": "7bc205f2e6ca"
+    },
+    "text.aeddf3db370d": {
+      "text": "Descrizione della statuetta indiana di Lakshmi, statua sacra",
+      "src": "aeddf3db370d"
+    },
+    "text.f9489c8c0247": {
+      "text": "Descrizione delle statuette indiane di Ganesha e Lakshmi – Immagini sacre",
+      "src": "f9489c8c0247"
+    },
+    "text.7b55d56812a8": {
+      "text": "Statuetta indiana di Lakshmi, idolo spirituale — apri l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "7b55d56812a8"
+    },
+    "text.bd08019809d5": {
+      "text": "Statuette e statue spirituali indiane di Ganesha e Lakshmi — apri l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "bd08019809d5"
+    },
+    "text.94626baefc8f": {
+      "text": "Descrizione del braccialetto spirituale | Gioielli buddisti tibetani con il simbolo Om | Rudraksha, mala da yoga e meditazione",
+      "src": "94626baefc8f"
+    },
+    "text.38afc010bb48": {
+      "text": "Braccialetto spirituale | Gioielli buddisti tibetani con il simbolo Om | Rudraksh Yoga Mala per la meditazione — apri l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "38afc010bb48"
     }
   }
 }
