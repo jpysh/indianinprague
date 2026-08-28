@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-27T10:32:14.608Z",
-  "count": 5545,
+  "generated": "2026-08-28T05:17:19.211Z",
+  "count": 5558,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -22188,6 +22188,58 @@
     "text.bf79079d6bf8": {
       "text": "Joyería, decoración del hogar, latón y ese artículo largo sobre el papeleo y los inviernos. Aparecen aquí tal y como están escritos: no hay que apuntarse a ninguna lista ni darse de baja de nada, pero si quieres que te avise cuando salga el próximo, envíame un mensaje.",
       "src": "bf79079d6bf8"
+    },
+    "item.9794561854.title": {
+      "text": "Vestido boho | Estampado indio y algodón | Talla ajustable de la M a la XL",
+      "src": "b2856784a5f8"
+    },
+    "item.9794561854.description": {
+      "text": "Tallas M, L y XL gracias a la parte superior fruncida y elástica: se adapta al cuerpo y no se mueve\n100 % algodón\nEstampado tradicional indio realizado a mano con bloques de impresión\nDos formas de llevarlo: vestido sin tirantes o falda maxi\nCorte amplio y vaporoso, con fruncidos que le dan un precioso movimiento al girar. Longitud maxi\nSe pone por la cabeza — sin cremalleras ni botones\n\nPieza de algodón de vivos colores, estampada a mano con bloques de color en un amarillo soleado con toques de rosa, rojo y verde — un alegre diseño indio de flores y motivos de cachemira que cubre toda la prenda.\nLa parte superior fruncida y elástica la convierte en una prenda versátil dos en uno: llévala subida como vestido sin tirantes o más baja, a la altura de las caderas, como falda larga. Una prenda veraniega sencilla y alegre, ideal para las vacaciones, los festivales o los días de playa.\nLa cintura fruncida y elástica se adapta a una amplia gama de tallas.",
+      "src": "5561056ff374"
+    },
+    "text.a9be867223e0": {
+      "text": "Vinted",
+      "src": "a9be867223e0"
+    },
+    "text.29035e784f93": {
+      "text": "Socios",
+      "src": "29035e784f93"
+    },
+    "text.5811b4eb3a28": {
+      "text": "429 piezas",
+      "src": "5811b4eb3a28"
+    },
+    "text.7d663e8e0470": {
+      "text": "Socios: todos",
+      "src": "7d663e8e0470"
+    },
+    "text.329335dbed2d": {
+      "text": "Publicado en Vinted",
+      "src": "329335dbed2d"
+    },
+    "text.0b05120a7762": {
+      "text": "1608 piezas a la venta · 63 vendidas",
+      "src": "0b05120a7762"
+    },
+    "text.21cdb9d32022": {
+      "text": "Vestido de verano sin tirantes de algodón indio estampado a mano",
+      "src": "21cdb9d32022"
+    },
+    "text.675f50ad79c8": {
+      "text": "Descripción del vestido boho | Estampado indio y algodón | Tallas ajustables de la M a la XL",
+      "src": "675f50ad79c8"
+    },
+    "text.519ef373d6be": {
+      "text": "Vestido de verano sin tirantes de algodón indio estampado a mano — abre el anuncio de «Vinted» (agotado) en una nueva pestaña",
+      "src": "519ef373d6be"
+    },
+    "text.fc0a357f0d97": {
+      "text": "Vestido boho | Estampado indio y algodón | Tallas ajustables de la M a la XL — abre el anuncio de «Vinted» en una nueva pestaña",
+      "src": "fc0a357f0d97"
+    },
+    "text.8bc7a0d71ad2": {
+      "text": "Tallas M, L y XL gracias a la parte superior fruncida y elástica: se adapta al cuerpo y no se mueve. 100 % algodón. Estampado tradicional indio realizado a mano con bloques. Dos…",
+      "src": "8bc7a0d71ad2"
     }
   }
 }

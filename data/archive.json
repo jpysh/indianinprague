@@ -2289,6 +2289,62 @@
         "com": "https://www.vinted.com/items/9331197768",
         "uk": "https://www.vinted.co.uk/items/9331197768"
       }
+    },
+    {
+      "id": "9360542677",
+      "title": "Indian Cotton Summer Block-Print Strapless Dress",
+      "priceCzk": 300,
+      "priceEur": 12,
+      "brand": "House",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Yellow",
+        "cs": "Žlutá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Summer dresses",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 10,
+          "name": "Dresses"
+        },
+        {
+          "id": 1065,
+          "name": "Summer dresses"
+        }
+      ],
+      "description": "Vibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design. The shirred elasticated top makes it a versatile two-in-one: wear it high as a strapless dress, or lower on the hips as a long skirt. An easy, joyful summer piece — ideal for holidays, festivals or beach days. The stretchy shirred waist fits a range of sizes.\n\n\nDetails:\nSize M, L, XL\n100% lightweight cotton — soft, breathable, perfect for warm weather\nTraditional Indian hand block-print pattern\nWide shirred/elasticated top section — stretches to fit and stays put\nTwo ways to wear: strapless dress or maxi skirt\nFull, floaty gathered shape with lovely twirl\nMaxi length\nPull-on — no zips or buttons",
+      "photo": "images/vinted-9360542677-1.jpg",
+      "photos": [
+        "images/vinted-9360542677-1.jpg",
+        "images/vinted-9360542677-2.jpg",
+        "images/vinted-9360542677-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": true,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
+        "es": "https://www.vinted.es/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
+        "com": "https://www.vinted.com/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
+        "uk": "https://www.vinted.co.uk/items/9360542677-indian-cotton-summer-block-print-strapless-dress"
+      },
+      "soldAt": "2026-08-28"
     }
   ]
 }

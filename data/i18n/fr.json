@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-27T10:32:12.929Z",
-  "count": 5545,
+  "generated": "2026-08-28T05:17:17.266Z",
+  "count": 5558,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -22188,6 +22188,58 @@
     "text.bf79079d6bf8": {
       "text": "Bijoux, décoration d'intérieur, laiton, et ce long article sur la paperasse et les hivers. Ils apparaissent ici tels qu’ils ont été rédigés — il n’y a pas de liste à rejoindre ni de newsletter à laquelle se désabonner, mais si vous souhaitez recevoir un petit rappel lorsque le prochain article sera publié, envoyez-moi un message.",
       "src": "bf79079d6bf8"
+    },
+    "item.9794561854.title": {
+      "text": "Robe bohème | Motifs indiens et coton | Taille ajustable du M au XL",
+      "src": "b2856784a5f8"
+    },
+    "item.9794561854.description": {
+      "text": "Tailles M, L, XL grâce à la partie supérieure froncée/élastiquée — s&#x27;étire pour s&#x27;adapter à votre silhouette et reste bien en place\n100 % coton\nMotif traditionnel indien imprimé à la main au bloc\nDeux façons de le porter : robe sans bretelles ou jupe longue\nCoupe ample et vaporeuse, froncée, qui virevolte joliment. Longueur maxi\nÀ enfiler — sans fermeture éclair ni boutons\n\nVêtement en coton aux couleurs vives, imprimé à la main au bloc, dans un jaune ensoleillé rehaussé de touches de rose, de rouge et de vert — un motif floral/paisley indien joyeux sur toute la surface.\nLa taille froncée et élastiquée en fait un modèle deux-en-un polyvalent : portez-la haute comme une robe sans bretelles, ou plus basse sur les hanches comme une jupe longue. Une pièce estivale simple et joyeuse — idéale pour les vacances, les festivals ou les journées à la plage.\nLa taille froncée et extensible s’adapte à différentes tailles.",
+      "src": "5561056ff374"
+    },
+    "text.a9be867223e0": {
+      "text": "Vinted",
+      "src": "a9be867223e0"
+    },
+    "text.29035e784f93": {
+      "text": "Partenaires",
+      "src": "29035e784f93"
+    },
+    "text.5811b4eb3a28": {
+      "text": "429 pièces",
+      "src": "5811b4eb3a28"
+    },
+    "text.7d663e8e0470": {
+      "text": "Tous les partenaires",
+      "src": "7d663e8e0470"
+    },
+    "text.329335dbed2d": {
+      "text": "Répertorié sur Vinted",
+      "src": "329335dbed2d"
+    },
+    "text.0b05120a7762": {
+      "text": "1 608 pièces en vente · 63 vendues",
+      "src": "0b05120a7762"
+    },
+    "text.21cdb9d32022": {
+      "text": "Robe d&#x27;été sans bretelles en coton indien, imprimée au bloc",
+      "src": "21cdb9d32022"
+    },
+    "text.675f50ad79c8": {
+      "text": "Description de la robe bohème | Motifs indiens et coton | Taille ajustable du M au XL",
+      "src": "675f50ad79c8"
+    },
+    "text.519ef373d6be": {
+      "text": "Robe d&#x27;été sans bretelles en coton indien imprimée au bloc — ouvrez l&#x27;annonce vendue Vinted dans un nouvel onglet",
+      "src": "519ef373d6be"
+    },
+    "text.fc0a357f0d97": {
+      "text": "Robe bohème | Motifs indiens et coton | Taille ajustable du M au XL — ouvrez la fiche produit « Vinted » dans un nouvel onglet",
+      "src": "fc0a357f0d97"
+    },
+    "text.8bc7a0d71ad2": {
+      "text": "Tailles M, L, XL grâce à la partie supérieure froncée/élastiquée — s&#x27;étire pour s&#x27;adapter à la silhouette et reste bien en place. 100 % coton. Motif traditionnel indien imprimé à la main à l&#x27;aide de blocs. Deux…",
+      "src": "8bc7a0d71ad2"
     }
   }
 }

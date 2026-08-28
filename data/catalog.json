@@ -1,12 +1,67 @@
 {
-  "syncedAt": "2026-08-27T09:56:36.368Z",
+  "syncedAt": "2026-08-28T05:15:09.706Z",
   "rate": {
-    "czkPerEur": 24.083,
-    "fetched": "2026-08-27",
+    "czkPerEur": 24.139,
+    "fetched": "2026-08-28",
     "source": "ECB"
   },
   "count": 141,
   "items": [
+    {
+      "id": "9794561854",
+      "title": "Boho dress | Indian pattern and cotton | Flexible size M to XL",
+      "priceCzk": 320,
+      "priceEur": 13,
+      "brand": "Indian",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Yellow",
+        "cs": "Žlutá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Summer dresses",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 10,
+          "name": "Dresses"
+        },
+        {
+          "id": 1065,
+          "name": "Summer dresses"
+        }
+      ],
+      "description": "Size M, L, XL due to shirred/elasticated top section — stretches to fit and stays put\n100% cotton\nTraditional Indian hand block-print pattern\nTwo ways to wear: strapless dress or maxi skirt\nFull, floaty gathered shape with lovely twirl Maxi length\nPull-on — no zips or buttons\n\nVibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design.\nThe shirred elasticated top makes it a versatile two-in-one: wear it high as a strapless dress, or lower on the hips as a long skirt. An easy, joyful summer piece — ideal for holidays, festivals or beach days.\nThe stretchy shirred waist fits a range of sizes.",
+      "photo": "images/vinted-9794561854-1.jpg",
+      "photos": [
+        "images/vinted-9794561854-1.jpg",
+        "images/vinted-9794561854-2.jpg",
+        "images/vinted-9794561854-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9794561854-boho-dress-indian-pattern-and-cotton-flexible-size-m-to-xl",
+        "es": "https://www.vinted.es/items/9794561854-boho-dress-indian-pattern-and-cotton-flexible-size-m-to-xl",
+        "com": "https://www.vinted.com/items/9794561854-boho-dress-indian-pattern-and-cotton-flexible-size-m-to-xl",
+        "uk": "https://www.vinted.co.uk/items/9794561854-boho-dress-indian-pattern-and-cotton-flexible-size-m-to-xl"
+      }
+    },
     {
       "id": "9776809246",
       "title": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
@@ -1526,7 +1581,7 @@
         "images/vinted-9602725968-2.jpg",
         "images/vinted-9602725968-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2207,7 +2262,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 208,
+      "priceEur": 207,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -2513,7 +2568,7 @@
         "images/vinted-9565566983-2.jpg",
         "images/vinted-9565566983-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": true,
@@ -2784,7 +2839,7 @@
       "id": "9564694739",
       "title": "Wooden Ganesha Idol Statue",
       "priceCzk": 1650,
-      "priceEur": 69,
+      "priceEur": 68,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -3133,7 +3188,7 @@
         "images/vinted-9561780997-2.jpg",
         "images/vinted-9561780997-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3612,7 +3667,7 @@
         "images/vinted-9511040845-2.jpg",
         "images/vinted-9511040845-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4233,7 +4288,7 @@
       "id": "9439083125",
       "title": "Swarovski Charms Set / Sterling Silver / Swarovski Crystal",
       "priceCzk": 350,
-      "priceEur": 15,
+      "priceEur": 14,
       "brand": "Swarovski",
       "size": "",
       "sizeGroup": "",
@@ -4398,7 +4453,7 @@
       "id": "9438210918",
       "title": "Fastrack Quartz Analog Silver Dial Stainless Steel Strap Watch",
       "priceCzk": 470,
-      "priceEur": 20,
+      "priceEur": 19,
       "brand": "Fastrack",
       "size": "30–38 mm",
       "sizeGroup": "",
@@ -4504,7 +4559,7 @@
       "id": "9437887059",
       "title": "Indian Vintage Silver Earrings | 92.5% Silver With Stone Work",
       "priceCzk": 1700,
-      "priceEur": 71,
+      "priceEur": 70,
       "brand": "Quirksmith",
       "size": "",
       "sizeGroup": "",
@@ -5587,61 +5642,6 @@
       }
     },
     {
-      "id": "9360542677",
-      "title": "Indian Cotton Summer Block-Print Strapless Dress",
-      "priceCzk": 300,
-      "priceEur": 12,
-      "brand": "House",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": "Yellow",
-        "cs": "Žlutá"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Summer dresses",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 4,
-          "name": "Clothing"
-        },
-        {
-          "id": 10,
-          "name": "Dresses"
-        },
-        {
-          "id": 1065,
-          "name": "Summer dresses"
-        }
-      ],
-      "description": "Vibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design. The shirred elasticated top makes it a versatile two-in-one: wear it high as a strapless dress, or lower on the hips as a long skirt. An easy, joyful summer piece — ideal for holidays, festivals or beach days. The stretchy shirred waist fits a range of sizes.\n\n\nDetails:\nSize M, L, XL\n100% lightweight cotton — soft, breathable, perfect for warm weather\nTraditional Indian hand block-print pattern\nWide shirred/elasticated top section — stretches to fit and stays put\nTwo ways to wear: strapless dress or maxi skirt\nFull, floaty gathered shape with lovely twirl\nMaxi length\nPull-on — no zips or buttons",
-      "photo": "images/vinted-9360542677-1.jpg",
-      "photos": [
-        "images/vinted-9360542677-1.jpg",
-        "images/vinted-9360542677-2.jpg",
-        "images/vinted-9360542677-3.jpg"
-      ],
-      "favourites": 0,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
-        "es": "https://www.vinted.es/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
-        "com": "https://www.vinted.com/items/9360542677-indian-cotton-summer-block-print-strapless-dress",
-        "uk": "https://www.vinted.co.uk/items/9360542677-indian-cotton-summer-block-print-strapless-dress"
-      }
-    },
-    {
       "id": "9360475926",
       "title": "India Summer Cotton Block-Print Asymmetrical Midi Dress | Size L",
       "priceCzk": 270,
@@ -6175,7 +6175,7 @@
       "id": "9330044272",
       "title": "Summer Kaftan Dress | Nigerian Cotton | Multisize M to L",
       "priceCzk": 350,
-      "priceEur": 15,
+      "priceEur": 14,
       "brand": "House",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -6725,7 +6725,7 @@
       "id": "9316140580",
       "title": "Indian Block Print White Cotton Sundress With Pockets | Floral Mughal Motif | Size M-L",
       "priceCzk": 470,
-      "priceEur": 20,
+      "priceEur": 19,
       "brand": "Jaypore",
       "size": "L / 40 / 12",
       "sizeGroup": "L",

@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-08-27T10:37:30.050Z",
-  "count": 5460,
+  "generated": "2026-08-28T05:17:15.100Z",
+  "count": 5468,
   "entries": {
+    "item.9794561854.title": {
+      "text": "Boho dress | Indian pattern and cotton | Flexible size M to XL",
+      "src": "b2856784a5f8",
+      "where": "item 9794561854 — title",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "item.9794561854.description": {
+      "text": "Size M, L, XL due to shirred/elasticated top section — stretches to fit and stays put\n100% cotton\nTraditional Indian hand block-print pattern\nTwo ways to wear: strapless dress or maxi skirt\nFull, floaty gathered shape with lovely twirl Maxi length\nPull-on — no zips or buttons\n\nVibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design.\nThe shirred elasticated top makes it a versatile two-in-one: wear it high as a strapless dress, or lower on the hips as a long skirt. An easy, joyful summer piece — ideal for holidays, festivals or beach days.\nThe stretchy shirred waist fits a range of sizes.",
+      "src": "5561056ff374",
+      "where": "item 9794561854 — description",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "attr.condition.very-good": {
+      "text": "Very good",
+      "src": "06a2935e6f57",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.yellow": {
+      "text": "Yellow",
+      "src": "19dd83f11752",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.9776809246.title": {
       "text": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
       "src": "f50fa02e494f",
@@ -26,13 +54,6 @@
       "where": "item 9776809246 — description",
       "since": "2026-08-26",
       "changed": "2026-08-26"
-    },
-    "attr.condition.very-good": {
-      "text": "Very good",
-      "src": "06a2935e6f57",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "attr.color.black": {
       "text": "Black",
@@ -255,13 +276,6 @@
       "text": "Beautiful and vibrant handstiched short-sleeve tunic dress featuring an eye-catching African Kente / Ankara inspired geometric print. Handmade in Nigeria. Very flattering silhouette with a stretchy, smocked elastic waistband and a relaxed swing skirt. Perfect cotton dress for summer, festivals, boho chic styling, or casual everyday wear. The elastic gathering and kaftan look makes it flexible in size and would fit M to L. Length is 28 inches.",
       "src": "45399a9701b6",
       "where": "item 9641705366 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.color.yellow": {
-      "text": "Yellow",
-      "src": "19dd83f11752",
-      "where": "color — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -1634,20 +1648,6 @@
       "text": "Capitalism isn't broken — it was built this way. Nick Romeo exposes the hidden alternatives already working around the world: real experiments in fairer markets, housing, and work that could replace the system failing you right now. Praised by Ha-Joon Chang as liberating our economic imagination. Called enlightening and inspiring by the Observer. For readers of Naomi Klein, Kate Raworth, and anyone tired of being told there is no alternative. Goodreads rating 4.07",
       "src": "1d409ae01255",
       "where": "item 9360886820 — description",
-      "since": "",
-      "changed": ""
-    },
-    "item.9360542677.title": {
-      "text": "Indian Cotton Summer Block-Print Strapless Dress",
-      "src": "21cdb9d32022",
-      "where": "item 9360542677 — title",
-      "since": "",
-      "changed": ""
-    },
-    "item.9360542677.description": {
-      "text": "Vibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design. The shirred elasticated top makes it a versatile two-in-one: wear it high as a strapless dress, or lower on the hips as a long skirt. An easy, joyful summer piece — ideal for holidays, festivals or beach days. The stretchy shirred waist fits a range of sizes.\n\n\nDetails:\nSize M, L, XL\n100% lightweight cotton — soft, breathable, perfect for warm weather\nTraditional Indian hand block-print pattern\nWide shirred/elasticated top section — stretches to fit and stays put\nTwo ways to wear: strapless dress or maxi skirt\nFull, floaty gathered shape with lovely twirl\nMaxi length\nPull-on — no zips or buttons",
-      "src": "f7e490aaecd5",
-      "where": "item 9360542677 — description",
       "since": "",
       "changed": ""
     },
@@ -4171,16 +4171,23 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.f4bf4cc082a1": {
-      "text": "428 pieces",
-      "src": "f4bf4cc082a1",
+    "text.5811b4eb3a28": {
+      "text": "429 pieces",
+      "src": "5811b4eb3a28",
       "where": "page text — first seen on index.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
       "src": "7f80a29b8b31",
+      "where": "page text — first seen on index.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cf08587189ad": {
+      "text": "41x41 cm Hand Block pillowcase",
+      "src": "cf08587189ad",
       "where": "page text — first seen on index.html",
       "since": "",
       "changed": ""
@@ -4220,9 +4227,9 @@
       "since": "",
       "changed": ""
     },
-    "text.ba08e422eb1e": {
-      "text": "Indian Rudraksha Prayer Mala for Meditation, Yoga &amp; Chanting | Hindu Spiritual Rosary Necklace",
-      "src": "ba08e422eb1e",
+    "text.28c679dbc84e": {
+      "text": "Medium-sized Rudraksha Japa Mala, rosary",
+      "src": "28c679dbc84e",
       "where": "page text — first seen on index.html",
       "since": "",
       "changed": ""
@@ -4255,6 +4262,13 @@
       "since": "",
       "changed": ""
     },
+    "text.6c7c2a1eacda": {
+      "text": "TULSI",
+      "src": "6c7c2a1eacda",
+      "where": "page text — first seen on index.html",
+      "since": "",
+      "changed": ""
+    },
     "text.eddf58dbb8ca": {
       "text": "86 pieces",
       "src": "eddf58dbb8ca",
@@ -4276,9 +4290,9 @@
       "since": "",
       "changed": ""
     },
-    "text.a27122e8fac2": {
-      "text": "Krishna badge with a flute, diameter 4.4 cm",
-      "src": "a27122e8fac2",
+    "text.febaf2b13d04": {
+      "text": "17.5 cm Rádha Krišna notebooks, various colours",
+      "src": "febaf2b13d04",
       "where": "page text — first seen on index.html",
       "since": "",
       "changed": ""
@@ -4304,9 +4318,9 @@
       "since": "",
       "changed": ""
     },
-    "text.5a33dbc0f500": {
-      "text": "Fenugreek – Greek hay 40 g",
-      "src": "5a33dbc0f500",
+    "text.93cb7aeb500d": {
+      "text": "Himalayan salt (flakes) 175 g",
+      "src": "93cb7aeb500d",
       "where": "page text — first seen on index.html",
       "since": "",
       "changed": ""
@@ -4339,12 +4353,12 @@
       "since": "",
       "changed": ""
     },
-    "text.5271c474a855": {
-      "text": "1608 pieces for sale · 62 sold",
-      "src": "5271c474a855",
+    "text.0b05120a7762": {
+      "text": "1608 pieces for sale · 63 sold",
+      "src": "0b05120a7762",
       "where": "page text — first seen on index.html",
-      "since": "2026-08-27",
-      "changed": "2026-08-27"
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -4433,6 +4447,34 @@
     "text.5f6d34d2d3a5": {
       "text": "Refine &amp; sort",
       "src": "5f6d34d2d3a5",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.29035e784f93": {
+      "text": "Partner",
+      "src": "29035e784f93",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.7d663e8e0470": {
+      "text": "Partner All",
+      "src": "7d663e8e0470",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.a9be867223e0": {
+      "text": "Vinted",
+      "src": "a9be867223e0",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.9700f2ceded9": {
+      "text": "Govinda",
+      "src": "9700f2ceded9",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -4619,12 +4661,19 @@
       "since": "",
       "changed": ""
     },
-    "text.7812566c67fa": {
-      "text": "Description of Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
-      "src": "7812566c67fa",
+    "text.329335dbed2d": {
+      "text": "Listed on Vinted",
+      "src": "329335dbed2d",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.675f50ad79c8": {
+      "text": "Description of Boho dress | Indian pattern and cotton | Flexible size M to XL",
+      "src": "675f50ad79c8",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
     },
     "text.de7d1b721a1e": {
       "text": "i",
@@ -4632,6 +4681,48 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
+    },
+    "text.8bc7a0d71ad2": {
+      "text": "Size M, L, XL due to shirred/elasticated top section — stretches to fit and stays put 100% cotton Traditional Indian hand block-print pattern Two…",
+      "src": "8bc7a0d71ad2",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.195c976b26d1": {
+      "text": "Very good · Yellow · L",
+      "src": "195c976b26d1",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.fc0a357f0d97": {
+      "text": "Boho dress | Indian pattern and cotton | Flexible size M to XL — open the Vinted listing in a new tab",
+      "src": "fc0a357f0d97",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.c16236ad956c": {
+      "text": "Ask about this piece",
+      "src": "c16236ad956c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.85f061ad9f47": {
+      "text": "— opens WhatsApp in a new tab",
+      "src": "85f061ad9f47",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7812566c67fa": {
+      "text": "Description of Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
+      "src": "7812566c67fa",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.a3f972dc2e5d": {
       "text": "Stunning and comfortable cotton tunic from Indian brand Jaypore. Traditional Ajrakh patterns and gorgeous ribbed textures in chest area. 100 percent…",
@@ -4653,20 +4744,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-26",
       "changed": "2026-08-26"
-    },
-    "text.c16236ad956c": {
-      "text": "Ask about this piece",
-      "src": "c16236ad956c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.85f061ad9f47": {
-      "text": "— opens WhatsApp in a new tab",
-      "src": "85f061ad9f47",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.5bc986e31e65": {
       "text": "Description of Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL",
@@ -4702,13 +4779,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.9700f2ceded9": {
-      "text": "Govinda",
-      "src": "9700f2ceded9",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.711c98b2901c": {
       "text": "Description of Chamfered Divine Cup, S and M",
@@ -5424,9 +5494,9 @@
       "since": "",
       "changed": ""
     },
-    "text.e26856ae1138": {
-      "text": "17 people have saved this on Vinted",
-      "src": "e26856ae1138",
+    "text.4e295b703185": {
+      "text": "18 people have saved this on Vinted",
+      "src": "4e295b703185",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -5830,6 +5900,20 @@
       "since": "",
       "changed": ""
     },
+    "text.ba08e422eb1e": {
+      "text": "Indian Rudraksha Prayer Mala for Meditation, Yoga &amp; Chanting | Hindu Spiritual Rosary Necklace",
+      "src": "ba08e422eb1e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e26856ae1138": {
+      "text": "17 people have saved this on Vinted",
+      "src": "e26856ae1138",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.3e28684c8c84": {
       "text": "Description of Indian Rudraksha Prayer Mala for Meditation, Yoga &amp; Chanting | Hindu Spiritual Rosary Necklace",
       "src": "3e28684c8c84",
@@ -5882,13 +5966,6 @@
     "text.59e6728f77dd": {
       "text": "Om Namah Shivaya Hindu Prayer Wrap | Spiritual Yoga Meditation Scarf — open the Vinted listing in a new tab",
       "src": "59e6728f77dd",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.afd99cda0a21": {
-      "text": "5 people have saved this on Vinted",
-      "src": "afd99cda0a21",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -6817,6 +6894,13 @@
       "since": "",
       "changed": ""
     },
+    "text.afd99cda0a21": {
+      "text": "5 people have saved this on Vinted",
+      "src": "afd99cda0a21",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.b531a346309a": {
       "text": "Description of Indian Vintage Silver Earrings | 92.5% Silver With Stone Work",
       "src": "b531a346309a",
@@ -7065,34 +7149,6 @@
     "text.4640be1e5807": {
       "text": "Predicts Todays World Order Bruno Maçães The Dawn of Eurasia — open the Vinted listing in a new tab",
       "src": "4640be1e5807",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.167a3b5f1b76": {
-      "text": "Description of Indian Cotton Tie-Dye Ethnic Tunic | Size M",
-      "src": "167a3b5f1b76",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.1e2e73ac9631": {
-      "text": "Size bust: 36-38 inch will fit perfectly. Beautiful Indian cotton kurta in a rich red shibori tie-dye with soft white resist markings. Traditional…",
-      "src": "1e2e73ac9631",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e74437b6caa3": {
-      "text": "Very good · Red · M",
-      "src": "e74437b6caa3",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.4917bd1ba15a": {
-      "text": "Indian Cotton Tie-Dye Ethnic Tunic | Size M — open the Vinted listing in a new tab",
-      "src": "4917bd1ba15a",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7716,13 +7772,6 @@
     "text.7bf9b3a060ab": {
       "text": "Hand-printed cotton pillowcase. The fabric is hand-printed in Jaipur using a very old and labour-intensive technique known as ‘hand block’. The…",
       "src": "7bf9b3a060ab",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cf08587189ad": {
-      "text": "41x41 cm Hand Block pillowcase",
-      "src": "cf08587189ad",
       "where": "page text — first seen on wardrobe/10.html",
       "since": "",
       "changed": ""
@@ -13586,13 +13635,6 @@
       "since": "",
       "changed": ""
     },
-    "text.febaf2b13d04": {
-      "text": "17.5 cm Rádha Krišna notebooks, various colours",
-      "src": "febaf2b13d04",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
     "text.08fa746b573c": {
       "text": "Description of 17.5 cm Rádha Krišna notebooks, various colours",
       "src": "08fa746b573c",
@@ -16421,6 +16463,13 @@
       "since": "",
       "changed": ""
     },
+    "text.a27122e8fac2": {
+      "text": "Krishna badge with a flute, diameter 4.4 cm",
+      "src": "a27122e8fac2",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
     "text.13e47af1f2e1": {
       "text": "Description of Krishna badge with a flute, diameter 4.4 cm",
       "src": "13e47af1f2e1",
@@ -16767,6 +16816,13 @@
     "text.fc05180807b5": {
       "text": "Roman caraway – shabrej – is related to spice caraway.",
       "src": "fc05180807b5",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5a33dbc0f500": {
+      "text": "Fenugreek – Greek hay 40 g",
+      "src": "5a33dbc0f500",
       "where": "page text — first seen on wardrobe/15.html",
       "since": "",
       "changed": ""
@@ -22245,13 +22301,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4e295b703185": {
-      "text": "18 people have saved this on Vinted",
-      "src": "4e295b703185",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cdec9ccba1ea": {
       "text": "Description of Haruki Murakami Kafka on the Shore Spellbinding International Bestseller",
       "src": "cdec9ccba1ea",
@@ -22300,6 +22349,34 @@
       "where": "page text — first seen on wardrobe/17.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.21cdb9d32022": {
+      "text": "Indian Cotton Summer Block-Print Strapless Dress",
+      "src": "21cdb9d32022",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.4df579adfca0": {
+      "text": "Description of Indian Cotton Summer Block-Print Strapless Dress",
+      "src": "4df579adfca0",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.33ff125da8c5": {
+      "text": "Vibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design. The shirred…",
+      "src": "33ff125da8c5",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.519ef373d6be": {
+      "text": "Indian Cotton Summer Block-Print Strapless Dress — open the sold Vinted listing in a new tab",
+      "src": "519ef373d6be",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
     },
     "text.00803fdc03f7": {
       "text": "Indian Cotton Summer Maxi Dress | Size M-L",
@@ -22602,6 +22679,34 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.167a3b5f1b76": {
+      "text": "Description of Indian Cotton Tie-Dye Ethnic Tunic | Size M",
+      "src": "167a3b5f1b76",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.1e2e73ac9631": {
+      "text": "Size bust: 36-38 inch will fit perfectly. Beautiful Indian cotton kurta in a rich red shibori tie-dye with soft white resist markings. Traditional…",
+      "src": "1e2e73ac9631",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e74437b6caa3": {
+      "text": "Very good · Red · M",
+      "src": "e74437b6caa3",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.4917bd1ba15a": {
+      "text": "Indian Cotton Tie-Dye Ethnic Tunic | Size M — open the Vinted listing in a new tab",
+      "src": "4917bd1ba15a",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
     "text.d4971d842dbc": {
       "text": "Handmade Artisan Textile &amp; Wood Pendant Necklace",
       "src": "d4971d842dbc",
@@ -22794,34 +22899,6 @@
     "text.ca7d9d4e948f": {
       "text": "On Stands, The Alternative. Economists Don't Want You to Read. By Nick Romeo (English Paperback) — open the Vinted listing in a new tab",
       "src": "ca7d9d4e948f",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.4df579adfca0": {
-      "text": "Description of Indian Cotton Summer Block-Print Strapless Dress",
-      "src": "4df579adfca0",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.33ff125da8c5": {
-      "text": "Vibrant hand block-printed cotton piece in sunny yellow with pink, red and green — a cheerful all-over Indian floral/paisley design. The shirred…",
-      "src": "33ff125da8c5",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.195c976b26d1": {
-      "text": "Very good · Yellow · L",
-      "src": "195c976b26d1",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e3ff51e24699": {
-      "text": "Indian Cotton Summer Block-Print Strapless Dress — open the Vinted listing in a new tab",
-      "src": "e3ff51e24699",
       "where": "page text — first seen on wardrobe/2.html",
       "since": "",
       "changed": ""
@@ -23676,13 +23753,6 @@
     "text.2ca2ac62998a": {
       "text": "Hand-Embroidered Mexican Dress · Black Floral Huipil Style · Artisan Made · Boho — open the Vinted listing in a new tab",
       "src": "2ca2ac62998a",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.93cb7aeb500d": {
-      "text": "Himalayan salt (flakes) 175 g",
-      "src": "93cb7aeb500d",
       "where": "page text — first seen on wardrobe/2.html",
       "since": "",
       "changed": ""
@@ -27039,13 +27109,6 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.28c679dbc84e": {
-      "text": "Medium-sized Rudraksha Japa Mala, rosary",
-      "src": "28c679dbc84e",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
     },
     "text.25bca098d89c": {
       "text": "Description of Medium-sized Rudraksha Japa Mala, rosary",
@@ -34809,13 +34872,6 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.6c7c2a1eacda": {
-      "text": "TULSI",
-      "src": "6c7c2a1eacda",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
     },
     "text.54514dc3094a": {
       "text": "Description of TULSI",

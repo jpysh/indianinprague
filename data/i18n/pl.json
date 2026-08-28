@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-27T10:32:15.307Z",
-  "count": 5545,
+  "generated": "2026-08-28T05:17:19.954Z",
+  "count": 5558,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -22188,6 +22188,58 @@
     "text.bf79079d6bf8": {
       "text": "Biżuteria, dekoracje wnętrz, mosiądz oraz ten długi wpis o papierkowej robocie i zimach. Pojawiają się tu tak, jak zostały napisane — nie ma tu żadnej listy mailingowej, do której można by się zapisać, ani z której można by się wypisać, ale jeśli chcesz dostać powiadomienie, gdy pojawi się kolejny wpis, napisz do mnie.",
       "src": "bf79079d6bf8"
+    },
+    "item.9794561854.title": {
+      "text": "Sukienka w stylu boho | Indyjski wzór i bawełna | Elastyczny rozmiar od M do XL",
+      "src": "b2856784a5f8"
+    },
+    "item.9794561854.description": {
+      "text": "Rozmiary M, L, XL dzięki marszczonej/elastycznej górnej części — rozciąga się, dopasowując się do sylwetki, i nie zsuwa się\n100% bawełna\nTradycyjny indyjski wzór nadrukowany ręcznie techniką blokową\nDwa sposoby noszenia: sukienka bez ramiączek lub spódnica maxi\nPełny, zwiewny, marszczony krój, który pięknie się wiruje; długość maxi\nWsuwa się – bez zamków ani guzików\n\nŻywa, ręcznie drukowana bawełniana tkanina w słonecznym żółtym kolorze z akcentami różu, czerwieni i zieleni — wesoły, pokrywający całą powierzchnię indyjski wzór kwiatowo-paisleyowy.\nMarszczona, elastyczna górna część sprawia, że jest to uniwersalny model „dwa w jednym”: można go nosić wysoko jako sukienkę bez ramiączek lub niżej, na biodrach, jako długą spódnicę. Swobodny, radosny letni strój — idealny na wakacje, festiwale lub dni spędzane na plaży.\nElastyczny, marszczony pas pasuje na różne rozmiary.",
+      "src": "5561056ff374"
+    },
+    "text.a9be867223e0": {
+      "text": "Vinted",
+      "src": "a9be867223e0"
+    },
+    "text.29035e784f93": {
+      "text": "Partnerzy",
+      "src": "29035e784f93"
+    },
+    "text.5811b4eb3a28": {
+      "text": "429 sztuk",
+      "src": "5811b4eb3a28"
+    },
+    "text.7d663e8e0470": {
+      "text": "Wszyscy partnerzy",
+      "src": "7d663e8e0470"
+    },
+    "text.329335dbed2d": {
+      "text": "Opublikowano na stronie Vinted",
+      "src": "329335dbed2d"
+    },
+    "text.0b05120a7762": {
+      "text": "1608 przedmiotów na sprzedaż · 63 sprzedane",
+      "src": "0b05120a7762"
+    },
+    "text.21cdb9d32022": {
+      "text": "Letnia sukienka bez ramiączek z indyjskiej bawełny, z nadrukiem blokowym",
+      "src": "21cdb9d32022"
+    },
+    "text.675f50ad79c8": {
+      "text": "Opis sukienki w stylu boho | Indyjski wzór i bawełna | Elastyczny rozmiar od M do XL",
+      "src": "675f50ad79c8"
+    },
+    "text.519ef373d6be": {
+      "text": "Letnia sukienka bez ramiączek z indyjskiej bawełny, z nadrukiem blokowym — otwórz wyprzedaną ofertę na stronie Vinted w nowej karcie",
+      "src": "519ef373d6be"
+    },
+    "text.fc0a357f0d97": {
+      "text": "Sukienka w stylu boho | Indyjski wzór i bawełna | Elastyczny rozmiar od M do XL — otwórz aukcję „Vinted” w nowej karcie",
+      "src": "fc0a357f0d97"
+    },
+    "text.8bc7a0d71ad2": {
+      "text": "Rozmiary M, L, XL dzięki marszczonej/elastycznej górnej części — rozciąga się, dopasowując się do sylwetki, i nie zsuwa się. 100% bawełna. Tradycyjny indyjski wzór nadrukowany ręcznie techniką blokową. Dwa…",
+      "src": "8bc7a0d71ad2"
     }
   }
 }
