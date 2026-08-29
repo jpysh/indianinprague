@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-28T05:17:19.211Z",
-  "count": 5558,
+  "generated": "2026-08-29T05:17:48.249Z",
+  "count": 5567,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -210,8 +210,8 @@
       "src": "fe9875c0a3f5"
     },
     "item.9388380417.title": {
-      "text": "Túnica étnica de algodón indio teñida con la técnica «tie-dye» | Talla M",
-      "src": "31bb7263dc17"
+      "text": "Kurta étnica de estilo boho | Túnica étnica india de algodón teñida con la técnica tie-dye | Talla M",
+      "src": "1c624afca39e"
     },
     "item.9339704755.title": {
       "text": "Top de verano tipo chal de algodón indio | Tallas de la M a la L",
@@ -22240,6 +22240,42 @@
     "text.8bc7a0d71ad2": {
       "text": "Tallas M, L y XL gracias a la parte superior fruncida y elástica: se adapta al cuerpo y no se mueve. 100 % algodón. Estampado tradicional indio realizado a mano con bloques. Dos…",
       "src": "8bc7a0d71ad2"
+    },
+    "item.9802654698.title": {
+      "text": "Bandeja de madera de estilo boho con motivo de mandala | Decoración rústica y étnica india para el hogar",
+      "src": "8b139dd03ada"
+    },
+    "item.9802654698.description": {
+      "text": "Medidas en las fotos.\nEstá usado y tiene arañazos, pero estos no se aprecian en el uso diario.\nCon un lavado a mano normal, la madera recupera su brillo.",
+      "src": "20edd4d2c0cd"
+    },
+    "text.24bff53a840b": {
+      "text": "135 piezas",
+      "src": "24bff53a840b"
+    },
+    "text.2a1b1c79c52e": {
+      "text": "1609 piezas a la venta · 63 vendidas",
+      "src": "2a1b1c79c52e"
+    },
+    "text.1e2ccaf77020": {
+      "text": "Descripción de la kurta étnica boho | Túnica étnica india de algodón teñida con la técnica tie-dye | Talla M",
+      "src": "1e2ccaf77020"
+    },
+    "text.f4293d49c7f6": {
+      "text": "Descripción de la bandeja de madera de estilo boho con motivo de mandala | Decoración rústica y étnica india para el hogar",
+      "src": "f4293d49c7f6"
+    },
+    "text.b2f28176c6e4": {
+      "text": "Kurta étnica de estilo boho | Túnica étnica india de algodón teñida con la técnica tie-dye | Talla M — abre el anuncio de «Vinted» en una nueva pestaña",
+      "src": "b2f28176c6e4"
+    },
+    "text.8cf2fe9a0a7d": {
+      "text": "Bandeja de madera de estilo boho con motivo mandala | Decoración rústica étnica india para el hogar — abre el anuncio de Vinted en una nueva pestaña",
+      "src": "8cf2fe9a0a7d"
+    },
+    "text.944fe78ae9bc": {
+      "text": "Medidas en las fotos. Está usado y tiene arañazos, pero no se aprecian en el uso diario. Basta con lavarlo a mano como de costumbre para que la madera recupere su brillo.",
+      "src": "944fe78ae9bc"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-28T05:17:20.735Z",
-  "count": 5558,
+  "generated": "2026-08-29T05:17:49.207Z",
+  "count": 5567,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -102,8 +102,8 @@
       "src": "fe9875c0a3f5"
     },
     "item.9388380417.title": {
-      "text": "Etnická tunika z indické bavlny s batikovaným vzorem | Velikost M",
-      "src": "31bb7263dc17"
+      "text": "Etnická kurta ve stylu boho | Indická bavlněná etnická tunika s batikovaným vzorem | Velikost M",
+      "src": "1c624afca39e"
     },
     "item.9339704755.title": {
       "text": "Letní bavlněný šátekový top z Indie | Velikost M až L",
@@ -24220,6 +24220,42 @@
     "text.8bc7a0d71ad2": {
       "text": "Velikosti M, L, XL díky řasené/elastické horní části – přizpůsobí se postavě a drží na místě. 100 % bavlna. Tradiční indický vzor s ručním blokovým potiskem. Dva…",
       "src": "8bc7a0d71ad2"
+    },
+    "item.9802654698.title": {
+      "text": "Dřevěný servírovací podnos ve stylu boho s mandalovým vzorem | Rustikální indický etnický dekor do interiéru",
+      "src": "8b139dd03ada"
+    },
+    "item.9802654698.description": {
+      "text": "Rozměry na fotografiích.\nJe použitý a má škrábance, které však při běžném používání nejsou vidět.\nStačí ho normálně umýt ručně a dřevo se leskne.",
+      "src": "20edd4d2c0cd"
+    },
+    "text.24bff53a840b": {
+      "text": "135 kusů",
+      "src": "24bff53a840b"
+    },
+    "text.2a1b1c79c52e": {
+      "text": "1609 kusů na prodej · 63 prodáno",
+      "src": "2a1b1c79c52e"
+    },
+    "text.1e2ccaf77020": {
+      "text": "Popis etnické kurty ve stylu boho | Indická bavlněná etnická tunika s batikovaným vzorem | Velikost M",
+      "src": "1e2ccaf77020"
+    },
+    "text.f4293d49c7f6": {
+      "text": "Popis dřevěného servírovacího podnosu ve stylu boho s mandalovým vzorem | Rustikální indický etnický bytový dekor",
+      "src": "f4293d49c7f6"
+    },
+    "text.b2f28176c6e4": {
+      "text": "Etnická kurta ve stylu boho | Indická bavlněná etnická tunika s batikovaným vzorem | Velikost M — otevřete nabídku na Vinted v nové záložce",
+      "src": "b2f28176c6e4"
+    },
+    "text.8cf2fe9a0a7d": {
+      "text": "Dřevěný servírovací podnos ve stylu boho s mandalovým vzorem | Rustikální indický etnický bytový doplněk — otevřete nabídku na Vinted v nové záložce",
+      "src": "8cf2fe9a0a7d"
+    },
+    "text.944fe78ae9bc": {
+      "text": "Rozměry jsou uvedeny na fotografiích. Je použitý a má škrábance, které však při běžném používání nejsou vidět. Stačí jej ručně umýt a dřevo získá lesk.",
+      "src": "944fe78ae9bc"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-28T05:17:18.602Z",
-  "count": 5558,
+  "generated": "2026-08-29T05:17:47.890Z",
+  "count": 5567,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -210,8 +210,8 @@
       "src": "fe9875c0a3f5"
     },
     "item.9388380417.title": {
-      "text": "Tunica etnica indiana in cotone con stampa tie-dye | Taglia M",
-      "src": "31bb7263dc17"
+      "text": "Kurta etnica in stile boho | Tunica etnica indiana in cotone con stampa tie-dye | Taglia M",
+      "src": "1c624afca39e"
     },
     "item.9339704755.title": {
       "text": "Top estivo avvolgente in cotone indiano | Taglie da M a L",
@@ -22240,6 +22240,42 @@
     "text.8bc7a0d71ad2": {
       "text": "Taglie M, L, XL grazie alla parte superiore arricciata/elasticizzata — si adatta alla forma del corpo e rimane ben salda. 100% cotone. Motivo tradizionale indiano stampato a mano con tecnica “hand block”. Due…",
       "src": "8bc7a0d71ad2"
+    },
+    "item.9802654698.title": {
+      "text": "Vassoio da portata in legno stile boho con motivo mandala | Decorazioni per la casa in stile rustico etnico indiano",
+      "src": "8b139dd03ada"
+    },
+    "item.9802654698.description": {
+      "text": "Misure riportate nelle foto.\nÈ usato e presenta alcuni graffi, che però non si notano nell&#x27;uso quotidiano.\nÈ sufficiente lavarlo a mano con cura e il legno tornerà a brillare.",
+      "src": "20edd4d2c0cd"
+    },
+    "text.24bff53a840b": {
+      "text": "135 pezzi",
+      "src": "24bff53a840b"
+    },
+    "text.2a1b1c79c52e": {
+      "text": "1609 articoli in vendita · 63 venduti",
+      "src": "2a1b1c79c52e"
+    },
+    "text.1e2ccaf77020": {
+      "text": "Descrizione della kurta etnica in stile boho | Tunica etnica indiana in cotone con stampa tie-dye | Taglia M",
+      "src": "1e2ccaf77020"
+    },
+    "text.f4293d49c7f6": {
+      "text": "Descrizione del vassoio da portata in legno stile boho con motivo mandala | Arredamento etnico indiano in stile rustico",
+      "src": "f4293d49c7f6"
+    },
+    "text.b2f28176c6e4": {
+      "text": "Kurta etnica in stile boho | Tunica etnica indiana in cotone con stampa tie-dye | Taglia M — apri l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "b2f28176c6e4"
+    },
+    "text.8cf2fe9a0a7d": {
+      "text": "Vassoio da portata in legno stile boho con motivo mandala | Decorazioni per la casa in stile rustico etnico indiano — apri l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "8cf2fe9a0a7d"
+    },
+    "text.944fe78ae9bc": {
+      "text": "Misure riportate nelle foto. È usato e presenta alcuni graffi, che però non si notano nell&#x27;uso quotidiano. Basta lavarlo a mano come di consueto e il legno tornerà a brillare.",
+      "src": "944fe78ae9bc"
     }
   }
 }

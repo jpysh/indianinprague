@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-28T05:17:19.954Z",
-  "count": 5558,
+  "generated": "2026-08-29T05:17:48.688Z",
+  "count": 5567,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -210,8 +210,8 @@
       "src": "fe9875c0a3f5"
     },
     "item.9388380417.title": {
-      "text": "Etniczna tunika z indyjskiej bawełny w stylu tie-dye | Rozmiar M",
-      "src": "31bb7263dc17"
+      "text": "Kurta w stylu boho | Indyjska bawełniana tunika etniczna w stylu tie-dye | Rozmiar M",
+      "src": "1c624afca39e"
     },
     "item.9339704755.title": {
       "text": "Letnia bluzka z bawełny indyjskiej | Rozmiary od M do L",
@@ -22240,6 +22240,42 @@
     "text.8bc7a0d71ad2": {
       "text": "Rozmiary M, L, XL dzięki marszczonej/elastycznej górnej części — rozciąga się, dopasowując się do sylwetki, i nie zsuwa się. 100% bawełna. Tradycyjny indyjski wzór nadrukowany ręcznie techniką blokową. Dwa…",
       "src": "8bc7a0d71ad2"
+    },
+    "item.9802654698.title": {
+      "text": "Drewniana taca serwująca w stylu boho z motywem mandali | Rustykalne indyjskie dekoracje wnętrz w stylu etnicznym",
+      "src": "8b139dd03ada"
+    },
+    "item.9802654698.description": {
+      "text": "Wymiary na zdjęciach.\nProdukt jest używany i ma zadrapania, które jednak nie rzucają się w oczy podczas codziennego użytkowania.\nWystarczy myć ręcznie, a drewno nabierze połysku.",
+      "src": "20edd4d2c0cd"
+    },
+    "text.24bff53a840b": {
+      "text": "135 sztuk",
+      "src": "24bff53a840b"
+    },
+    "text.2a1b1c79c52e": {
+      "text": "1609 przedmiotów na sprzedaż · 63 sprzedane",
+      "src": "2a1b1c79c52e"
+    },
+    "text.1e2ccaf77020": {
+      "text": "Opis etnicznej kurty w stylu boho | Indyjska bawełniana tunika etniczna w stylu tie-dye | Rozmiar M",
+      "src": "1e2ccaf77020"
+    },
+    "text.f4293d49c7f6": {
+      "text": "Opis drewnianej tacy serwującej w stylu boho z wzorem mandali | Rustykalne indyjskie elementy wystroju wnętrz w stylu etnicznym",
+      "src": "f4293d49c7f6"
+    },
+    "text.b2f28176c6e4": {
+      "text": "Kurta w stylu boho | Indyjska bawełniana tunika etniczna w stylu tie-dye | Rozmiar M — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "b2f28176c6e4"
+    },
+    "text.8cf2fe9a0a7d": {
+      "text": "Drewniana taca w stylu boho z motywem mandali | Rustykalne indyjskie dekoracje wnętrz w stylu etnicznym — otwórz ofertę na stronie Vinted w nowej karcie",
+      "src": "8cf2fe9a0a7d"
+    },
+    "text.944fe78ae9bc": {
+      "text": "Wymiary podane na zdjęciach. Produkt jest używany i ma rysy, ale nie są one widoczne podczas codziennego użytkowania. Wystarczy zwykłe ręczne mycie, a drewno nabiera połysku.",
+      "src": "944fe78ae9bc"
     }
   }
 }

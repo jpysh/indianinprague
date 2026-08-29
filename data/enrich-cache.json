@@ -3981,5 +3981,34 @@
       "colorRaw": "Žlutá",
       "vintedCategory": "Ženy Letní šaty"
     }
+  },
+  "9802654698": {
+    "description": "Measurements in photos.\nIt’s used and has scratches but is not visible in day to day use. \nNormal hand wash care and the wood becomes shiny.",
+    "vintedCategory": "Home Trays",
+    "colorRaw": "Multi",
+    "crumbs": [
+      {
+        "id": 1918,
+        "name": "Home"
+      },
+      {
+        "id": 1920,
+        "name": "Tableware"
+      },
+      {
+        "id": 3854,
+        "name": "Serveware"
+      },
+      {
+        "id": 3862,
+        "name": "Trays"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Smíšená",
+      "vintedCategory": "Bydlení Podnosy a tácy"
+    }
   }
 }

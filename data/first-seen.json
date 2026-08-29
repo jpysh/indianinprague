@@ -203,6 +203,7 @@
   "9775845980": "2026-08-26",
   "9776809246": "2026-08-26",
   "9794561854": "2026-08-28",
+  "9802654698": "2026-08-29",
   "_comment": [
     "id -> the date a build first saw this item. Written by scripts/build-shop.mjs, once per",
     "id, and never rewritten. This is the only shared clock the two catalogues have: Vinted",

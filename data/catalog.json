@@ -1,17 +1,72 @@
 {
-  "syncedAt": "2026-08-28T05:15:09.706Z",
+  "syncedAt": "2026-08-29T05:15:13.200Z",
   "rate": {
-    "czkPerEur": 24.139,
-    "fetched": "2026-08-28",
+    "czkPerEur": 24.148,
+    "fetched": "2026-08-29",
     "source": "ECB"
   },
-  "count": 141,
+  "count": 142,
   "items": [
+    {
+      "id": "9802654698",
+      "title": "Boho Wooden Serving Tray with Mandala Pattern | Rustic Indian Ethnic Home Decor",
+      "priceCzk": 598,
+      "priceEur": 25,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Trays",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1920,
+          "name": "Tableware"
+        },
+        {
+          "id": 3854,
+          "name": "Serveware"
+        },
+        {
+          "id": 3862,
+          "name": "Trays"
+        }
+      ],
+      "description": "Measurements in photos.\nIt’s used and has scratches but is not visible in day to day use. \nNormal hand wash care and the wood becomes shiny.",
+      "photo": "images/vinted-9802654698-1.jpg",
+      "photos": [
+        "images/vinted-9802654698-1.jpg",
+        "images/vinted-9802654698-2.jpg",
+        "images/vinted-9802654698-3.jpg"
+      ],
+      "favourites": 27,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9802654698-boho-wooden-serving-tray-with-mandala-pattern-rustic-indian-ethnic-home-decor",
+        "es": "https://www.vinted.es/items/9802654698-boho-wooden-serving-tray-with-mandala-pattern-rustic-indian-ethnic-home-decor",
+        "com": "https://www.vinted.com/items/9802654698-boho-wooden-serving-tray-with-mandala-pattern-rustic-indian-ethnic-home-decor",
+        "uk": "https://www.vinted.co.uk/items/9802654698-boho-wooden-serving-tray-with-mandala-pattern-rustic-indian-ethnic-home-decor"
+      }
+    },
     {
       "id": "9794561854",
       "title": "Boho dress | Indian pattern and cotton | Flexible size M to XL",
-      "priceCzk": 320,
-      "priceEur": 13,
+      "priceCzk": 220,
+      "priceEur": 9,
       "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -65,8 +120,8 @@
     {
       "id": "9776809246",
       "title": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro",
-      "priceCzk": 299,
-      "priceEur": 12,
+      "priceCzk": 225,
+      "priceEur": 9,
       "brand": "Indian",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -120,8 +175,8 @@
     {
       "id": "9775845980",
       "title": "Cotton Indian Kurta | Double packets | Ikat Pattern | Ethnic Vintage Retro Outfit | L - XL",
-      "priceCzk": 299,
-      "priceEur": 12,
+      "priceCzk": 225,
+      "priceEur": 9,
       "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -160,7 +215,7 @@
         "images/vinted-9775845980-2.jpg",
         "images/vinted-9775845980-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -175,8 +230,8 @@
     {
       "id": "9729949801",
       "title": "Indian Boho Dress | Vintage Long Dress | Retro Style | Summer Cotton",
-      "priceCzk": 320,
-      "priceEur": 13,
+      "priceCzk": 270,
+      "priceEur": 11,
       "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -1581,7 +1636,7 @@
         "images/vinted-9602725968-2.jpg",
         "images/vinted-9602725968-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2316,8 +2371,8 @@
     {
       "id": "9578974766",
       "title": "Black cotton maxi dress | Size L",
-      "priceCzk": 240,
-      "priceEur": 10,
+      "priceCzk": 220,
+      "priceEur": 9,
       "brand": "",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -2466,7 +2521,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2568,7 +2623,7 @@
         "images/vinted-9565566983-2.jpg",
         "images/vinted-9565566983-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": true,
@@ -2737,7 +2792,7 @@
       "id": "9565087476",
       "title": "Antique Indian Brass Golden Lord Shiva Parvati and Ganesha Family Idol Statue",
       "priceCzk": 1799,
-      "priceEur": 75,
+      "priceEur": 74,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -2772,7 +2827,7 @@
         "images/vinted-9565087476-2.jpg",
         "images/vinted-9565087476-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5162,9 +5217,9 @@
     },
     {
       "id": "9388380417",
-      "title": "Indian Cotton Tie-Dye Ethnic Tunic | Size M",
-      "priceCzk": 300,
-      "priceEur": 12,
+      "title": "Boho Ethnic Kurta | Indian Cotton Tie-Dye Ethnic Tunic | Size M",
+      "priceCzk": 220,
+      "priceEur": 9,
       "brand": "House",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -5209,10 +5264,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9388380417-indian-cotton-tie-dye-ethnic-tunic-size-m",
-        "es": "https://www.vinted.es/items/9388380417-indian-cotton-tie-dye-ethnic-tunic-size-m",
-        "com": "https://www.vinted.com/items/9388380417-indian-cotton-tie-dye-ethnic-tunic-size-m",
-        "uk": "https://www.vinted.co.uk/items/9388380417-indian-cotton-tie-dye-ethnic-tunic-size-m"
+        "cz": "https://www.vinted.cz/items/9388380417-boho-ethnic-kurta-indian-cotton-tie-dye-ethnic-tunic-size-m",
+        "es": "https://www.vinted.es/items/9388380417-boho-ethnic-kurta-indian-cotton-tie-dye-ethnic-tunic-size-m",
+        "com": "https://www.vinted.com/items/9388380417-boho-ethnic-kurta-indian-cotton-tie-dye-ethnic-tunic-size-m",
+        "uk": "https://www.vinted.co.uk/items/9388380417-boho-ethnic-kurta-indian-cotton-tie-dye-ethnic-tunic-size-m"
       }
     },
     {

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-08-28T05:17:17.266Z",
-  "count": 5558,
+  "generated": "2026-08-29T05:17:47.043Z",
+  "count": 5567,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -210,8 +210,8 @@
       "src": "fe9875c0a3f5"
     },
     "item.9388380417.title": {
-      "text": "Tunique ethnique en coton indien teinte au nœud | Taille M",
-      "src": "31bb7263dc17"
+      "text": "Kurta ethnique bohème | Tunique ethnique indienne en coton tie-dye | Taille M",
+      "src": "1c624afca39e"
     },
     "item.9339704755.title": {
       "text": "Haut d'été en coton indien | Tailles M à L",
@@ -22240,6 +22240,42 @@
     "text.8bc7a0d71ad2": {
       "text": "Tailles M, L, XL grâce à la partie supérieure froncée/élastiquée — s&#x27;étire pour s&#x27;adapter à la silhouette et reste bien en place. 100 % coton. Motif traditionnel indien imprimé à la main à l&#x27;aide de blocs. Deux…",
       "src": "8bc7a0d71ad2"
+    },
+    "item.9802654698.title": {
+      "text": "Plateau de service en bois style bohème avec motif mandala | Décoration d&#x27;intérieur ethnique indienne rustique",
+      "src": "8b139dd03ada"
+    },
+    "item.9802654698.description": {
+      "text": "Dimensions indiquées sur les photos.\nL&#x27;article a déjà servi et présente des rayures, mais celles-ci ne se remarquent pas dans le cadre d&#x27;une utilisation quotidienne.\nUn simple lavage à la main suffit pour que le bois retrouve son éclat.",
+      "src": "20edd4d2c0cd"
+    },
+    "text.24bff53a840b": {
+      "text": "135 pièces",
+      "src": "24bff53a840b"
+    },
+    "text.2a1b1c79c52e": {
+      "text": "1 609 pièces à vendre · 63 vendues",
+      "src": "2a1b1c79c52e"
+    },
+    "text.1e2ccaf77020": {
+      "text": "Description de la kurta ethnique bohème | Tunique ethnique indienne en coton tie-dye | Taille M",
+      "src": "1e2ccaf77020"
+    },
+    "text.f4293d49c7f6": {
+      "text": "Description du plateau de service en bois style bohème avec motif mandala | Décoration d&#x27;intérieur ethnique indienne rustique",
+      "src": "f4293d49c7f6"
+    },
+    "text.b2f28176c6e4": {
+      "text": "Kurta ethnique bohème | Tunique ethnique indienne en coton tie-dye | Taille M — ouvrir la fiche produit sur Vinted dans un nouvel onglet",
+      "src": "b2f28176c6e4"
+    },
+    "text.8cf2fe9a0a7d": {
+      "text": "Plateau de service en bois style bohème avec motif mandala | Décoration d&#x27;intérieur ethnique indienne rustique — ouvrir la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "8cf2fe9a0a7d"
+    },
+    "text.944fe78ae9bc": {
+      "text": "Dimensions indiquées sur les photos. L&#x27;objet a été utilisé et présente des rayures, mais celles-ci ne sont pas visibles au quotidien. Il suffit de le laver à la main pour que le bois retrouve son éclat.",
+      "src": "944fe78ae9bc"
     }
   }
 }
