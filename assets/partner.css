@@ -311,7 +311,9 @@ main.p > section.p-end{background:var(--saffron)}
   font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.65;white-space:pre-wrap}
 .p-ask .cta{display:grid;gap:12px;margin-top:22px}
 .p-ask .direct{margin-top:20px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.7}
-.p-ask .direct a{color:var(--saffron)}
+/* 18px tall as plain inline links. They are the fallback route for anyone who does not
+   trust a prefilled button, so they get a real target rather than a courtesy mention. */
+.p-ask .direct a{color:var(--saffron);display:inline-block;padding:9px 0;min-height:44px;line-height:26px}
 
 /* ---------- closing call ---------- */
 .p-end{background:var(--saffron);color:var(--void);text-align:center}
@@ -451,8 +453,18 @@ main.p > section.p-end{background:var(--saffron)}
 .p-step .k{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim)}
 .p-step h3{margin:8px 0 8px;font-size:var(--fs-xl)}
 .p-step p{font-size:var(--fs-m)}
-.js-on .p-step{opacity:.42}
+/* Inactive stages were at .42 opacity. That is a chrome value applied to CONTENT: 16px body
+   copy at 6.22:1 fell to roughly 2.6:1 against the ground, under the 4.5:1 floor, and three
+   of the four stages are inactive at any moment — so most of this section was unreadable to
+   anyone whose eye wandered ahead of the scroll position.
+   .85 is the value the measurement chose, not a guess: .72 still composited to 4.08:1, under
+   the floor, so it went up until the inactive text cleared 4.5:1 against the ground. The
+   emphasis given up is paid back by the saffron rule and heading on the active stage, which
+   was always the stronger signal — dimming the other three was doing the same job twice and
+   damaging legibility to do it. */
+.js-on .p-step{opacity:.85}
 .js-on .p-step.on{opacity:1;border-left-color:var(--saffron)}
+.js-on .p-step.on h3{color:var(--saffron)}
 @media (min-width:960px){
   .p-rail .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
   .p-rail .sticky{top:104px}
@@ -496,8 +508,11 @@ main.p > section.p-end{background:var(--saffron)}
 .p .light .p-calc .out .us{background:#F7F4EA}
 .p-calc .out .us,.p-calc .out .us b{color:var(--saffron)}
 .p .light .p-calc .out .us,.p .light .p-calc .out .us b{color:#5C6B0E}
-.p-calc .foot{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--bone-dim);margin-top:16px;line-height:1.7}
-.p .light .p-calc .foot{color:#7A7360}
+/* This is the one piece of fine print a merchant will actually read, because it is where
+   the arithmetic is justified. 12px at 4.72:1 cleared AA and no more; 13px and a darker ink
+   put it comfortably clear on the light ground it sits on. */
+.p-calc .foot{font-family:var(--mono);font-size:var(--fs-xs);color:var(--bone-dim);margin-top:16px;line-height:1.75}
+.p .light .p-calc .foot{color:#615B4B}
 
 /* ---------- disclosure rows ----------
  * The detail that used to be body copy. Same words, one tap away, and the tap is the

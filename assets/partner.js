@@ -30,12 +30,18 @@
    * visitors never even get the hidden state applied. */
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
   var page = document.querySelector("main.p");
+
+  /* .js-on says "this page is being driven by script", and it gates the CSS that hides
+     things the script is responsible for showing: the corridor's photographs and badges.
+     It is set on the SAME condition the corridor runs on — motion allowed — and not, as it
+     was, inside the IntersectionObserver branch below. In a browser with motion allowed but
+     no IntersectionObserver, the corridor still ran and set .on while .js-on was absent, so
+     the CSS fallback kept stage one's photograph visible underneath the stage the script
+     had switched to: two images stacked. */
+  if (page && !reduce) page.classList.add("js-on");
+
   if (!reduce && "IntersectionObserver" in window) {
     document.documentElement.classList.add("js-rv");
-    /* The comparison bars start at scaleX(0) ONLY once this class is on. Without it
-       partner.css draws them full width, so a visitor with no JavaScript sees the
-       comparison rather than six empty tracks. */
-    if (page) page.classList.add("js-on");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); }
