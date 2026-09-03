@@ -171,10 +171,14 @@ main.p > section.p-end{background:var(--saffron)}
 /* ---------- audience switch ---------- */
 .p-switch{position:sticky;top:0;z-index:40;background:var(--chrome);border-bottom:1px solid var(--chicory)}
 .p-switch .inner{display:flex;gap:8px;padding:10px var(--gutter);max-width:1140px;margin:0 auto}
+/* white-space:nowrap because "European retailers" wrapped to two lines while "Indian
+   merchants" did not, which made the two tabs different heights and read as a mistake. The
+   label steps down a size on a narrow phone rather than breaking. */
 .p-switch button{flex:1;min-height:56px;border:2px solid transparent;border-radius:999px;cursor:pointer;
-  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-s);font-weight:600;
-  letter-spacing:.04em;transition:background .2s ease,color .2s ease;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:2px;line-height:1.2}
+  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-xs);font-weight:600;
+  letter-spacing:.02em;transition:background .2s ease,color .2s ease;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2px;line-height:1.2;white-space:nowrap;padding:0 8px}
+@media (min-width:420px){.p-switch button{font-size:var(--fs-s);letter-spacing:.04em}}
 .p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
 .p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void)}
 .p-switch button[aria-selected="true"] .who{opacity:.8}

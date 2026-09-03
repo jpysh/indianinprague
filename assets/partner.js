@@ -154,11 +154,20 @@
     };
     var onScroll = function () {
       if (ticking) return;
+      /* requestAnimationFrame does not run while the document is hidden, so a scroll that
+         happens in a background tab — restored scroll position, an anchor followed before
+         the tab is focused — would queue a frame that never arrives and leave the sequence
+         on whichever stage it was last given. Measuring synchronously when hidden costs
+         nothing, because there is no paint to align with anyway. */
+      if (document.hidden) { measure(); return; }
       ticking = true;
       requestAnimationFrame(measure);
     };
     addEventListener("scroll", onScroll, { passive: true });
     addEventListener("resize", onScroll);
+    /* And recompute on the way back, so returning to the tab never shows a stage that does
+       not match where the reader actually is. */
+    document.addEventListener("visibilitychange", function () { ticking = false; measure(); });
     measure();
   }
 
