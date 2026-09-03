@@ -114,6 +114,20 @@
     });
   });
 
+  /* In-page links that name a track switch it, rather than dropping an unused hash on the
+     URL. The hero carries one of these so a European buyer can leave the merchant framing
+     in the first screen instead of scrolling two of them to find the tabs. */
+  [].forEach.call(document.querySelectorAll('a[href="#merchant"], a[href="#retailer"]'), function (a) {
+    a.addEventListener("click", function (e) {
+      var name = a.getAttribute("href").slice(1);
+      if (!tracks[name]) return;
+      e.preventDefault();
+      show(name, true);
+      var sw = document.querySelector(".p-switch");
+      if (sw) sw.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    });
+  });
+
   /* ---------- 3. the scroll corridor ----------
    * Four stages; the active one drives which photograph shows and which compliance badges
    * are stamped on. The active stage is whichever one is nearest the middle of the

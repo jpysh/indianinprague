@@ -200,13 +200,22 @@ main.p > section.p-end{background:var(--saffron)}
 /* white-space:nowrap because "European retailers" wrapped to two lines while "Indian
    merchants" did not, which made the two tabs different heights and read as a mistake. The
    label steps down a size on a narrow phone rather than breaking. */
-.p-switch button{flex:1;min-height:56px;border:2px solid transparent;border-radius:999px;cursor:pointer;
-  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-xs);font-weight:600;
-  letter-spacing:.02em;transition:background .2s ease,color .2s ease;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:2px;line-height:1.2;white-space:nowrap;padding:0 8px}
-@media (min-width:420px){.p-switch button{font-size:var(--fs-s);letter-spacing:.04em}}
+/* THE UNSELECTED TAB HAS TO LOOK LIKE A CONTROL.
+ *
+ * It had a transparent background AND a transparent border, so the only tab that looked
+ * tappable was the one already chosen. To half the audience this page's second half simply
+ * did not advertise itself: "European retailers" read as a caption sitting beside a button.
+ * A visible outline is the whole fix, and it is the difference between a segmented control
+ * and a label with a highlight on it. */
+.p-switch button{flex:1;min-height:58px;border:2px solid var(--chicory);border-radius:999px;cursor:pointer;
+  background:transparent;color:var(--bone);font-family:var(--mono);font-size:var(--fs-s);font-weight:600;
+  letter-spacing:.02em;transition:background .2s ease,color .2s ease,border-color .2s ease;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;
+  white-space:nowrap;padding:0 10px}
+.p-switch button:hover{border-color:var(--avocado)}
+@media (min-width:420px){.p-switch button{font-size:var(--fs-m);letter-spacing:.03em}}
 .p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
-.p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void)}
+.p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
 .p-switch button[aria-selected="true"] .who{opacity:.8}
 .p-switch button:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
 
@@ -432,6 +441,13 @@ main.p > section.p-end{background:var(--saffron)}
   .p-hero .shot img{object-position:72% 42%}
 }
 .p-hero .inner{position:relative;z-index:2}
+/* The one line in the first screen that tells a European buyer this page is also for them.
+   Measured before it existed: the audience switch sat 1,689px down, 2.08 screens on a
+   phone, behind a hero and a stat band written entirely for merchants. */
+.p-alt{margin-top:26px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim)}
+.p-alt a{color:var(--saffron);text-underline-offset:5px;display:inline-block;padding:8px 0;min-height:44px;line-height:28px}
+.p-alt a:hover{color:var(--bone)}
+
 .p-scroll-cue{display:flex;align-items:center;gap:10px;margin-top:40px;font-family:var(--mono);
   font-size:var(--fs-2xs);letter-spacing:.2em;text-transform:uppercase;color:var(--bone-dim)}
 .p-scroll-cue i{display:block;width:1px;height:34px;background:linear-gradient(var(--saffron),transparent);
