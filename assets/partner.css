@@ -94,6 +94,32 @@ main.p > section.p-end{background:var(--saffron)}
  * where there is room for both to be at full strength. */
 .p-hero{padding:44px 0 56px!important;overflow:hidden}
 .p-hero .inner{position:relative;z-index:2}
+
+/* WHY THE HERO'S SELECTION HIGHLIGHT IS A COLOUR SWAP AND NOT A BLOCK.
+ *
+ * The display headings are set at line-height .96 and .98 — tighter than 1, which is the
+ * whole look. A browser does not draw the selection highlight at the LINE BOX height
+ * though; it draws it at the font's own ascent + descent. Measured here at 375px: font-size
+ * 48.55px, line box 46.6px, selection rectangle 67px. Each line therefore overlaps the one
+ * above by 20.4px, and because the backgrounds paint in document order, every line's
+ * highlight covers the descenders of the line before it. Selecting the headline made it
+ * look broken.
+ *
+ * Loosening the leading to ~1.38 would fix it and would also throw away the typography, so
+ * the highlight stops being a rectangle instead: selection is shown by changing the text
+ * colour, which cannot overlap anything. Only these two headings are affected; selection
+ * everywhere else on the page stays conventional, because everything else is set above 1.
+ *
+ * The swap colour is amber rather than saffron: the second half of the headline is already
+ * saffron at rest, so a saffron highlight would have left half the line looking unselected.
+ *
+ * Both ::selection and ::-moz-selection are needed and CANNOT be combined into one rule —
+ * an unrecognised selector invalidates the whole list, so a shared block would apply in
+ * neither engine. */
+.p-hero h1::selection,.p-hero h1 em::selection{background:transparent;color:var(--magenta)}
+.p-hero h1::-moz-selection,.p-hero h1 em::-moz-selection{background:transparent;color:var(--magenta)}
+.p-end h2::selection{background:transparent;color:var(--chilli)}
+.p-end h2::-moz-selection{background:transparent;color:var(--chilli)}
 .p-hero h1{
   font-family:var(--disp);font-size:var(--fs-hero);line-height:.96;font-weight:800;
   letter-spacing:-.045em;text-wrap:balance;margin:20px 0 0;color:var(--bone);
