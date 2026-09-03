@@ -56,3 +56,24 @@ scripts/dashboard.log
 # read as "no run yet", not as a stale verdict copied from another machine.
 .publish-status.json
 PRFAQ*.md
+
+# The shelf card fragments, written by scripts/build-shop.mjs from data/catalog.json and
+# shipped into dist/ by build-dist.mjs. Derived, rebuilt on every publish — including in the
+# Workers Builds container, which runs build-shop.mjs as one of build-dist's generators.
+# Same rule as /ru/ and dist/: the source is committed, the output is not. Tracked until
+# 3 Sep 2026, where they were the main reason the tree was dirty after every 07:15 run.
+*.cards
+
+# The stock-taking view, written by scripts/build-inventory.mjs from data/catalog.json and
+# data/archive.json. Never staged into dist/ (build-dist.mjs's PRIVATE_PAGES), never linked
+# from navigation, sitemap or JSON-LD, and it holds cost prices and unlisted stock. It is
+# 1.1 MB rewritten in full every morning, so tracking it bought a daily diff of that size
+# and nothing else. Regenerate with ./scripts/publish.sh.
+/inventory.html
+
+# The IndexNow submission ledger, written by scripts/indexnow.mjs. Machine-local state about
+# THIS Mac, like .sync-stamp: it is written at step 14, AFTER step 13 commits, deliberately
+# (indexnow must follow the deploy — see publish.sh's header), so it could never ride in the
+# commit that produced it and was permanently a day stale in git. Deleting it costs one
+# round of re-submission, which is harmless.
+data/indexnow-state.json

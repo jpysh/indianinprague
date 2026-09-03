@@ -286,7 +286,15 @@ step "13/14 commit what is about to be published"
 # it is a master the pages are generated FROM, and committing diaries.html without the prose
 # it was built from would record a result with no cause. It is never uploaded — build-dist
 # ships root .html/.txt, assets/ and images/derived/ only — so it is source, not output.
-PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images/derived edge data content )
+# 'images' replaced 'images/derived' on 3 Sep 2026, and it is not a widening for tidiness:
+# build-images.mjs builds the derivative manifest by ITERATING the source .jpgs, so a cloud
+# build with the derivatives but not the originals writes a manifest missing every new
+# photo. That is the same failure class as the vendors/govinda/images/ break on 27 Aug —
+# present on disk, absent from the commit. The originals were already tracked (611 of them);
+# what was missing was any step that committed the NEW ones, so every morning left them
+# behind for a hand commit. inventory.html and *.cards left the repo the same day, so the
+# ':!inventory.html' exclusion below is now belt and braces rather than the only guard.
+PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images edge data content )
 
 # `git add` first, and not only because of modified files: build-images writes NEW
 # derivatives every time a listing gains a photo, and build-shop can write a page that did
