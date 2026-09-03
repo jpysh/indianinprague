@@ -128,6 +128,24 @@
     });
   });
 
+  /* An in-page link can point at something inside the OTHER track, which is hidden. The
+     hero's "Watch a piece travel" points at #rail, and #rail lives in the merchant track:
+     a retailer who switched tracks and then used that link jumped nowhere at all, silently.
+     So: if the target is inside a hidden track, switch to that track first, then scroll. */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute("href").slice(1);
+    if (!id || tracks[id]) return;                 // track links are handled above
+    var target = document.getElementById(id);
+    if (!target) return;
+    var panel = target.closest("[data-track]");
+    if (!panel || !panel.hidden) return;
+    e.preventDefault();
+    show(panel.getAttribute("data-track"), true);
+    target.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  });
+
   /* ---------- 3. the scroll corridor ----------
    * Four stages; the active one drives which photograph shows and which compliance badges
    * are stamped on. The active stage is whichever one is nearest the middle of the
