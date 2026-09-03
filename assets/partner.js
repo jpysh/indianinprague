@@ -29,8 +29,13 @@
    * Skipped entirely under reduced motion and without IntersectionObserver, so those
    * visitors never even get the hidden state applied. */
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var page = document.querySelector("main.p");
   if (!reduce && "IntersectionObserver" in window) {
     document.documentElement.classList.add("js-rv");
+    /* The comparison bars start at scaleX(0) ONLY once this class is on. Without it
+       partner.css draws them full width, so a visitor with no JavaScript sees the
+       comparison rather than six empty tracks. */
+    if (page) page.classList.add("js-on");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); }
@@ -103,7 +108,102 @@
     });
   });
 
-  /* ---------- 3. contact composer ---------- */
+  /* ---------- 3. the scroll corridor ----------
+   * Four stages; the active one drives which photograph shows and which compliance badges
+   * are stamped on. The active stage is whichever one is nearest the middle of the
+   * viewport, recomputed on scroll and throttled to one animation frame.
+   *
+   * Two things this deliberately is NOT:
+   *
+   *   GSAP + ScrollTrigger, though both are already vendored on this origin. They earn
+   *   their 70KB on a continuous scrub; this is a switch between four discrete states.
+   *
+   *   IntersectionObserver with a narrow rootMargin band, which was the first version.
+   *   It is the textbook tool and it works, but it delivers nothing while a document is
+   *   hidden, and a band narrow enough to pick one stage is also narrow enough to be
+   *   skipped by a fast flick on a phone. Measuring distance to the centre always yields
+   *   exactly one active stage, at any scroll speed, and never leaves the sequence stuck.
+   *
+   * partner.css shows stage one's photograph and every badge until .js-on is set, so with
+   * no JavaScript this section is a picture and four readable stages. */
+  var steps = [].slice.call(document.querySelectorAll("[data-step]"));
+  if (steps.length && !reduce) {
+    var shots = [].slice.call(document.querySelectorAll(".p-rail .frame picture img"));
+    var badges = [].slice.call(document.querySelectorAll("[data-badge]"));
+    var current = -1;
+    var setStage = function (i) {
+      if (i === current) return;
+      current = i;
+      steps.forEach(function (s, n) { s.classList.toggle("on", n === i); });
+      shots.forEach(function (img, n) { img.classList.toggle("on", n === i); });
+      badges.forEach(function (b) {
+        b.classList.toggle("on", Number(b.getAttribute("data-badge")) <= i);
+      });
+    };
+    var ticking = false;
+    var measure = function () {
+      ticking = false;
+      var mid = window.innerHeight / 2;
+      var best = 0, bestD = Infinity;
+      for (var i = 0; i < steps.length; i++) {
+        var r = steps[i].getBoundingClientRect();
+        var d = Math.abs(r.top + r.height / 2 - mid);
+        if (d < bestD) { bestD = d; best = i; }
+      }
+      setStage(best);
+    };
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(measure);
+    };
+    addEventListener("scroll", onScroll, { passive: true });
+    addEventListener("resize", onScroll);
+    measure();
+  }
+
+  /* ---------- 4. take-rate calculator ----------
+   * Every rate below is the published rate quoted in the page copy; nothing is invented,
+   * and logistics is excluded on all sides because every party bills it separately.
+   * The output is deliberately "what you keep", not "what they take" — the same
+   * arithmetic, read the way a person actually thinks about their own money. */
+  var gmv = document.getElementById("calc-gmv");
+  var gmvOut = document.getElementById("calc-gmv-out");
+  var calcOut = document.getElementById("calc-out");
+  if (gmv && calcOut) {
+    var eur = function (n) {
+      return "\u20ac" + Math.round(n).toLocaleString("en-GB");
+    };
+    var PLANS = [
+      { k: "Guldaar", f: function (x) { return 29 + x * 0.05; }, us: true },
+      { k: "Global-e style blended", f: function (x) { return x * 0.17; } },
+      { k: "EU agency retainer", f: function (x) { return x * 0.20 + 1500; } },
+      { k: "Not On The High Street", f: function (x) { return x * 0.25; } }
+    ];
+    var draw = function () {
+      var x = Number(gmv.value);
+      if (gmvOut) gmvOut.textContent = eur(x);
+      calcOut.innerHTML = "";
+      /* Sorted by what is left, so the list reads as a ranking rather than as four
+         unordered facts. Guldaar comes top because the arithmetic puts it there. */
+      PLANS.slice().sort(function (a, b) { return (x - a.f(x)) < (x - b.f(x)) ? 1 : -1; })
+        .forEach(function (p) {
+        var row = document.createElement("div");
+        if (p.us) row.className = "us";
+        var name = document.createElement("span");
+        name.textContent = p.us ? "You keep with Guldaar" : "You keep with " + p.k;
+        var val = document.createElement("b");
+        val.textContent = eur(Math.max(0, x - p.f(x)));
+        row.appendChild(name);
+        row.appendChild(val);
+        calcOut.appendChild(row);
+      });
+    };
+    gmv.addEventListener("input", draw);
+    draw();
+  }
+
+  /* ---------- 5. contact composer ---------- */
   var role = document.getElementById("ask-role");
   var topic = document.getElementById("ask-topic");
   var where = document.getElementById("ask-where");

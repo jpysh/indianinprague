@@ -1,260 +1,533 @@
 /* /partner — the merchant and retailer landing page.
  *
- * Loaded after site.css, so every colour, type step and measure below is one of that
- * file's tokens. Nothing here redefines the palette; the page reads as the same site.
+ * This is the one page on the site with a different job. Everywhere else is a catalogue
+ * read by a shopper; this is a business page read by a workshop owner in Jaipur or a buyer
+ * in Berlin, on a phone, in under two minutes, deciding whether to trust a stranger with
+ * their goods. It uses site.css's palette and nothing else of its restraint.
  *
- * Three things are deliberately different from the rest of the site, and each is a
- * response to who reads this page: an Indian workshop owner on a mid-range Android, or a
- * European buyer skimming on a phone between meetings. Neither reads paragraphs.
+ * FOUR THINGS ARE DELIBERATELY UNLIKE THE REST OF THE SITE
  *
- *   1. TYPE IS BIGGER. The page adds two display steps above --fs-3xl and lifts body copy
- *      to --fs-l everywhere, not just in prose. site.css's scale is built for a catalogue;
- *      this page is built to be read at arm's length.
- *   2. EVERY CLAIM IS A CARD. No claim runs longer than about forty words, because the
- *      audience scans. The card is the unit, not the paragraph.
- *   3. MOTION IS SCROLL-DRIVEN AND NATIVE. animation-timeline: view() costs no JavaScript
- *      and no library; assets/partner.js only supplies the IntersectionObserver fallback
- *      for browsers without it. Under prefers-reduced-motion everything is simply visible.
+ *  1. MANROPE, NOT PLEX MONO, FOR DISPLAY. The site is monospace because a catalogue is
+ *     scanned. A headline that has to land in one glance is not scanned, it is SEEN, and
+ *     monospace at 90px reads as a terminal rather than as a statement. Manrope 800 is
+ *     already self-hosted for /spirituality, so this costs one extra stylesheet link and no
+ *     new bytes on the wire. Plex Mono keeps the labels, the numbers and the fine print,
+ *     which is where it is genuinely better.
  *
- * Mobile-first like site.css: unprefixed rules are the phone.
+ *  2. A LIGHT SECTION EXISTS. The whole site is dark olive. Three sections here invert to
+ *     bone, and the flip is the single biggest reason the page stops reading as one long
+ *     column. Contrast was checked in both directions rather than assumed: --chrome on
+ *     --bone is 13.9:1, and the olive body text on bone is well clear of AA.
+ *
+ *  3. TYPE GOES MUCH BIGGER, AND MUCH SMALLER. The display step tops out near 96px and the
+ *     eyebrow labels sit at 12px. A flat middle range is what made the first version of
+ *     this page boring: everything was legible and nothing was loud.
+ *
+ *  4. MOTION IS PART OF THE ARGUMENT, NOT DECORATION. The corridor draws itself, the
+ *     ticker states the compliance stack without anyone reading it as a list, and the
+ *     comparison bars grow so the 0% is felt rather than parsed. All of it is CSS, all of
+ *     it is off under prefers-reduced-motion, and none of it hides content when it fails —
+ *     see the reveal note near the bottom, which is a bug this page already shipped once.
+ *
+ * Mobile-first, like site.css: unprefixed rules are the phone.
  */
 
 .p{
-  /* Two steps above the site scale. 40->76 and 28->44: the hero has to work at a glance
-     on a 360px screen, which is where most of this audience is. */
-  --fs-hero:clamp(2.5rem,1.4rem + 5.6vw,4.75rem);
-  --fs-display:clamp(1.75rem,1.2rem + 2.8vw,2.75rem);
-  --rail:2px;
+  --fs-hero:clamp(2.75rem,1.3rem + 7.4vw,6rem);      /* 44 -> 96 */
+  --fs-display:clamp(2rem,1.2rem + 3.6vw,3.5rem);    /* 32 -> 56 */
+  --fs-huge:clamp(3.5rem,1.5rem + 10vw,8rem);        /* 56 -> 128, the stat band */
+  --disp:'Manrope',ui-sans-serif,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ink:#221F16;          /* text on light sections — --chrome, named for its job here */
+  --paper:#F2EFE6;        /* --bone, likewise */
+  --paper-2:#E4DFCF;
+  --r:18px;               /* one corner radius, used everywhere */
 }
 
-/* ---------- shared section furniture ---------- */
-.p section{padding:64px 0}
+/* ---------- section furniture ----------
+ *
+ * site.css carries `main > section:nth-of-type(even){background:var(--band)}` — automatic
+ * alternating bands, which is right for a catalogue page whose sections are written one at
+ * a time. Here the bands are composed: saffron stat strip, light inversion, dark, band, and
+ * so on, and an automatic every-other-one on top of that produced a saffron section that
+ * silently rendered olive (measured: the stat band computed to #353022).
+ *
+ * These four rules turn the automation off for this page and state each background. The
+ * selectors are `main.p > section` rather than `.p section` on purpose: they have to MATCH
+ * the specificity of the nth-of-type rule (0,1,2) and win on load order, which they do
+ * because partner.css is linked after site.css. Sections nested inside the two audience
+ * tracks are not direct children of <main>, so the site rule never reached them anyway. */
+main.p > section{background:transparent}
+main.p > section.band-sec{background:var(--band)}
+main.p > section.light{background:var(--paper)}
+main.p > section.p-stats{background:var(--saffron)}
+main.p > section.p-end{background:var(--saffron)}
+
+/* ---------- section furniture ---------- */
+.p section{padding:72px 0;position:relative}
+.p .wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 var(--gutter)}
 .p .band-sec{background:var(--band)}
-.p .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 var(--gutter)}
-.p h2{
-  font-family:var(--sans);font-size:var(--fs-display);line-height:var(--lh-tight);
-  font-weight:600;text-wrap:balance;color:var(--bone);letter-spacing:-.01em;
-}
-.p h3{font-family:var(--sans);font-size:var(--fs-xl);line-height:var(--lh-snug);font-weight:600;text-wrap:balance}
-.p p{font-family:var(--sans);font-size:var(--fs-l);line-height:var(--lh-read);text-wrap:pretty;color:var(--bone-dim)}
-.p .lede{font-size:var(--fs-xl);color:var(--bone);max-width:var(--measure-s);margin-top:16px}
-.p .eyebrow{
-  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;
-  color:var(--magenta);display:block;margin-bottom:14px;
-}
-.p .sec-head{max-width:var(--measure);margin-bottom:36px}
-.p .sec-head p{margin-top:14px}
 
-/* ---------- hero ---------- */
-.p-hero{padding:56px 0 40px!important;position:relative;overflow:hidden}
+/* The light inversion. Everything inside re-points at the ink/paper pair. */
+.p .light{background:var(--paper);color:var(--ink)}
+.p .light h2,.p .light h3,.p .light .big{color:var(--ink)}
+.p .light p{color:#4A4433}
+.p .light .eyebrow{color:#8A5A22}
+.p .light .p-card{background:#fff;border-color:var(--paper-2)}
+.p .light .p-card p{color:#5A5340}
+
+.p h2{font-family:var(--disp);font-size:var(--fs-display);line-height:1.02;font-weight:800;
+  letter-spacing:-.03em;text-wrap:balance;color:var(--bone)}
+.p h3{font-family:var(--disp);font-size:var(--fs-xl);line-height:1.2;font-weight:700;letter-spacing:-.015em;text-wrap:balance}
+.p p{font-family:var(--sans);font-size:var(--fs-l);line-height:1.6;text-wrap:pretty;color:var(--bone-dim)}
+.p .eyebrow{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.18em;text-transform:uppercase;
+  color:var(--magenta);display:block;margin-bottom:16px}
+/* On a phone the heading gets the full column: a 22ch cap there turned a nine-word heading
+   into eight stacked lines. The cap is for wide viewports, where an unconstrained 56px
+   heading would otherwise run to 90 characters. */
+.p .sec-head{margin-bottom:40px}
+.p .sec-head p{margin-top:16px;max-width:var(--measure-s)}
+.p .accent{color:var(--saffron)}
+.p .accent-hot{color:var(--magenta)}
+
+/* ---------- hero ----------
+ * The corridor SVG sits behind the type on a phone at low opacity and beside it from 960px,
+ * where there is room for both to be at full strength. */
+.p-hero{padding:44px 0 56px!important;overflow:hidden}
+.p-hero .inner{position:relative;z-index:2}
 .p-hero h1{
-  font-family:var(--sans);font-size:var(--fs-hero);line-height:1.04;font-weight:700;
-  letter-spacing:-.025em;text-wrap:balance;margin:18px 0 0;
+  font-family:var(--disp);font-size:var(--fs-hero);line-height:.96;font-weight:800;
+  letter-spacing:-.045em;text-wrap:balance;margin:20px 0 0;color:var(--bone);
 }
-.p-hero h1 em{font-style:normal;color:var(--magenta)}
-.p-hero .sub{font-size:var(--fs-xl);color:var(--bone);max-width:34ch;margin-top:20px}
+.p-hero h1 em{font-style:normal;color:var(--saffron);display:block}
+.p-hero .sub{font-size:var(--fs-xl);color:var(--bone);max-width:36ch;margin-top:24px;line-height:1.45}
+.p-hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 
-/* The status chip. It says what is true today rather than implying more, which is the
-   single most load-bearing trust element on the page. */
-.p-chip{
-  display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:var(--fs-xs);
-  letter-spacing:.1em;text-transform:uppercase;color:var(--void);background:var(--saffron);
-  padding:7px 13px;border-radius:999px;font-weight:600;
-}
-.p-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--chilli);flex:none}
+.p-chip{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:var(--fs-2xs);
+  letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);border:1px solid var(--avocado);
+  padding:8px 15px;border-radius:999px;font-weight:600}
+.p-chip .dot{width:8px;height:8px;border-radius:50%;background:var(--saffron);flex:none;
+  animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
 
-.p-hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-
-/* Touch targets are 52px, not the 44 the guideline floors at. The audience includes people
-   who are not fluent with a phone keyboard, and the two buttons here are the only
-   conversion on the page. */
-.p .btn-lg{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;
-  padding:0 22px;border-radius:6px;font-family:var(--mono);font-size:var(--fs-m);font-weight:600;
-  letter-spacing:.02em;text-decoration:none;border:var(--rail) solid transparent;
-  transition:transform .16s ease,background .16s ease,color .16s ease;
-}
-.p .btn-lg:hover{transform:translateY(-2px)}
+/* ---------- buttons ---------- */
+.p .btn-lg{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;
+  padding:0 26px;border-radius:999px;font-family:var(--mono);font-size:var(--fs-m);font-weight:600;
+  letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer;
+  transition:transform .18s cubic-bezier(.2,.8,.3,1),background .18s ease,color .18s ease,box-shadow .18s ease}
 .p .btn-lg.pri{background:var(--saffron);color:var(--void)}
-.p .btn-lg.pri:hover{background:var(--bone)}
+.p .btn-lg.pri:hover{transform:translateY(-3px);box-shadow:0 12px 32px -12px var(--saffron)}
 .p .btn-lg.sec{border-color:var(--bone-dim);color:var(--bone)}
-.p .btn-lg.sec:hover{background:var(--bone);color:var(--void);border-color:var(--bone)}
-.p .btn-lg svg{flex:none}
+.p .btn-lg.sec:hover{background:var(--bone);color:var(--void);border-color:var(--bone);transform:translateY(-3px)}
+.p .light .btn-lg.sec{border-color:var(--ink);color:var(--ink)}
+.p .light .btn-lg.sec:hover{background:var(--ink);color:var(--paper)}
+.p .btn-lg svg{flex:none;transition:transform .18s ease}
+.p .btn-lg:hover svg{transform:translateX(4px)}
 
-/* Trust strip under the hero: four facts, no adjectives. */
-.p-trust{display:grid;gap:2px;margin-top:40px;border:var(--rail) solid var(--chicory);background:var(--chicory)}
-.p-trust div{background:var(--void);padding:18px 20px}
-.p-trust b{display:block;font-family:var(--mono);font-size:var(--fs-l);color:var(--magenta);font-weight:600}
-.p-trust span{display:block;font-family:var(--sans);font-size:var(--fs-s);color:var(--bone-dim);margin-top:5px;line-height:1.5}
+/* ---------- the corridor drawing ----------
+ * One inline SVG. The flight path is a dashed stroke whose offset animates, which reads as
+ * movement along the route without a library and without a single image request. */
+.p-map{position:relative;margin-top:44px}
+.p-map svg{width:100%;height:auto;display:block;overflow:visible}
+.p-map .route{stroke:var(--saffron);stroke-width:2.6;fill:none;stroke-dasharray:7 9;stroke-linecap:round;
+  animation:flow 2.6s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-32}}
+.p-map .halo{fill:var(--saffron);opacity:.22;animation:halo 3s ease-in-out infinite}
+.p-map .halo.b{animation-delay:1.5s}
+@keyframes halo{0%,100%{r:12;opacity:.16}50%{r:22;opacity:.03}}
+.p-map .node{fill:var(--saffron)}
+.p-map .land{fill:var(--band);stroke:var(--avocado);stroke-width:1.5;opacity:.9}
+.p-map text{font-family:var(--mono);font-size:13px;letter-spacing:.12em;fill:var(--bone);text-transform:uppercase;font-weight:500}
+.p-map .days{font-family:var(--mono);font-size:13px;fill:var(--saffron);letter-spacing:.04em;text-transform:none;font-weight:600}
 
-/* ---------- audience switch ----------
- * Sticky under the header. Two tabs, not a dropdown: a dropdown hides the fact that the
- * other audience is served at all, and half the people landing here need to see that this
- * page is for them before they read anything. */
+/* ---------- compliance ticker ----------
+ * The stack Guldaar absorbs, stated as a moving strip. As a bulleted list this is the most
+ * boring content on the page; as a ticker it reads as "there is a lot of this, and it is
+ * handled" in under a second, which is the actual message. */
+.p-ticker{border-block:1px solid var(--chicory);background:var(--void-3);padding:16px 0;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.p-ticker .rail{display:flex;width:max-content;animation:slide 38s linear infinite}
+.p-ticker ul{display:flex;list-style:none;gap:36px;padding-right:36px;align-items:center}
+.p-ticker li{font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);white-space:nowrap;
+  display:flex;align-items:center;gap:12px;letter-spacing:.06em}
+.p-ticker li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--avocado);flex:none}
+@keyframes slide{to{transform:translateX(-50%)}}
+.p-ticker:hover .rail{animation-play-state:paused}
+
+/* ---------- the stat band ----------
+ * Three numbers at up to 128px on saffron. This is the page's loudest moment and it is
+ * placed early on purpose: price and speed are what the visitor came to find out. */
+.p-stats{background:var(--saffron);color:var(--void)}
+.p-stats .grid{display:grid;gap:0}
+.p-stats .stat{padding:34px 0;border-bottom:2px solid rgba(74,68,51,.22)}
+.p-stats .stat:last-child{border-bottom:0}
+.p-stats .n{font-family:var(--disp);font-size:var(--fs-huge);font-weight:800;line-height:.82;
+  letter-spacing:-.05em;display:block}
+.p-stats .n sup{font-size:.34em;vertical-align:super;letter-spacing:0;font-weight:700}
+.p-stats .k{font-family:var(--mono);font-size:var(--fs-s);text-transform:uppercase;letter-spacing:.16em;
+  display:block;margin-top:18px;font-weight:600}
+.p-stats .d{font-family:var(--sans);font-size:var(--fs-m);color:#4A4433;margin-top:10px;max-width:32ch;line-height:1.5}
+
+/* ---------- audience switch ---------- */
 .p-switch{position:sticky;top:0;z-index:40;background:var(--chrome);border-bottom:1px solid var(--chicory)}
-.p-switch .inner{display:flex;gap:8px;padding:10px var(--gutter);max-width:1080px;margin:0 auto}
-.p-switch button{
-  flex:1;min-height:52px;border:var(--rail) solid transparent;border-radius:6px;cursor:pointer;
-  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-s);
-  font-weight:600;letter-spacing:.04em;transition:background .16s ease,color .16s ease;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.25;
-}
-.p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.p-switch .inner{display:flex;gap:8px;padding:10px var(--gutter);max-width:1140px;margin:0 auto}
+.p-switch button{flex:1;min-height:56px;border:2px solid transparent;border-radius:999px;cursor:pointer;
+  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-s);font-weight:600;
+  letter-spacing:.04em;transition:background .2s ease,color .2s ease;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2px;line-height:1.2}
+.p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
 .p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void)}
+.p-switch button[aria-selected="true"] .who{opacity:.8}
 .p-switch button:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
 
-/* ---------- claim cards ---------- */
-.p-cards{display:grid;gap:16px}
-.p-card{
-  background:var(--void-2);border:1px solid var(--chicory);border-left:4px solid var(--magenta);
-  border-radius:8px;padding:24px 22px;
-}
-.p-card.hot{border-left-color:var(--paprika)}
-.p-card h3{margin-bottom:10px}
+/* ---------- bento ----------
+ * Deliberately uneven. A grid of six identical cards is the shape the first version of this
+ * page had, and it is why it read as a specification rather than as an argument. */
+.p-bento{display:grid;gap:14px}
+.p-card{background:var(--void-2);border:1px solid var(--chicory);border-radius:var(--r);padding:28px 24px;
+  position:relative;overflow:hidden;transition:transform .2s ease,border-color .2s ease}
+.p-card:hover{transform:translateY(-4px);border-color:var(--avocado)}
+.p-card h3{margin-bottom:12px}
 .p-card p{font-size:var(--fs-m)}
-.p-card .note{font-size:var(--fs-s);color:var(--bone-dim);margin-top:12px;font-family:var(--mono);line-height:1.6}
-.p-card .num{
-  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.16em;color:var(--magenta);
-  display:block;margin-bottom:12px;
-}
+.p-card .note{font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);margin-top:14px;line-height:1.6;
+  padding-top:14px;border-top:1px solid var(--chicory)}
+.p-card .num{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.2em;color:var(--magenta);
+  display:block;margin-bottom:16px}
+/* The feature card: bigger type, a colour field, spans both columns from 720px. */
+.p-card.wide{background:linear-gradient(150deg,var(--void-2),var(--void-3));border-color:var(--avocado)}
+.p-card.wide h3{font-size:var(--fs-2xl);letter-spacing:-.025em}
+.p-card.hot{border-left:4px solid var(--paprika)}
+
+/* The listing mock: what a merchant's product looks like once it is on the rail. Drawn in
+   CSS from real fields rather than shown as a screenshot of software that is still being
+   built — a mock of a real listing is honest, a screenshot of a fiction is not. */
+.p-mock{background:var(--void);border:1px solid var(--chicory);border-radius:12px;padding:16px;margin-top:20px;
+  font-family:var(--mono);font-size:var(--fs-2xs)}
+.p-mock .row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed var(--chicory);color:var(--bone-dim)}
+.p-mock .row:last-child{border-bottom:0}
+.p-mock .row b{color:var(--bone);font-weight:600}
+.p-mock .ok{color:var(--saffron)}
+.p-mock .tag{display:inline-block;background:var(--avocado);color:var(--void);padding:3px 8px;border-radius:4px;
+  font-weight:700;letter-spacing:.08em}
 
 /* ---------- price ---------- */
-.p-price{background:var(--void-2);border:var(--rail) solid var(--saffron);border-radius:10px;padding:28px 22px}
-.p-price .big{font-family:var(--sans);font-size:var(--fs-3xl);font-weight:700;line-height:1;letter-spacing:-.03em;color:var(--bone)}
-.p-price .big s{color:var(--bone-dim);font-size:.42em;font-weight:400;margin-left:10px;letter-spacing:0}
-.p-price ul{list-style:none;margin-top:22px;display:grid;gap:1px;background:var(--chicory);border:1px solid var(--chicory);border-radius:6px;overflow:hidden}
-.p-price li{
-  background:var(--void-2);padding:15px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline;
-  font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);
-}
-.p-price li b{font-family:var(--mono);color:var(--bone);white-space:nowrap;font-weight:600}
-.p-price li b.zero{color:var(--saffron)}
+.p-price{background:var(--void);border:2px solid var(--saffron);border-radius:var(--r);padding:30px 24px}
+.p .light .p-price{background:#fff;border-color:var(--ink)}
+.p-price .big{font-family:var(--disp);font-size:clamp(3rem,1.6rem + 6vw,5rem);font-weight:800;line-height:.9;
+  letter-spacing:-.05em;color:var(--bone)}
+.p-price .big s{color:var(--bone-dim);font-size:.28em;font-weight:600;margin-left:12px;letter-spacing:0}
+.p .light .p-price .big s{color:#7A7360}
+.p-price .per{font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--magenta);margin-top:14px}
+.p .light .p-price .per{color:#8A5A22}
+.p-price ul{list-style:none;margin-top:24px;display:grid;gap:0}
+.p-price li{padding:14px 0;display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);border-bottom:1px solid var(--chicory)}
+.p .light .p-price li{color:#5A5340;border-color:var(--paper-2)}
+.p-price li:last-child{border-bottom:0}
+.p-price li b{font-family:var(--mono);color:var(--bone);white-space:nowrap;font-weight:700}
+.p .light .p-price li b{color:var(--ink)}
+.p-price li b.zero{color:var(--saffron);font-size:var(--fs-l)}
+.p .light .p-price li b.zero{color:#5C6B0E}
 
-/* The comparison. Bar widths are CLASSES, not style="width:..". style-src 'self' blocks a
-   style attribute exactly as it blocks a <style> block — there is no inline route here, so
-   the six widths the page needs are declared below and picked by class name. */
-.p-vs{display:grid;gap:14px;margin-top:8px}
-.p-vs .row{display:grid;gap:7px}
-.p-vs .lbl{display:flex;justify-content:space-between;gap:14px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim)}
-.p-vs .lbl b{color:var(--bone);font-weight:600;white-space:nowrap}
-.p-vs .bar{height:14px;border-radius:3px;background:var(--void-3);overflow:hidden}
-.p-vs .bar i{
-  display:block;height:100%;background:var(--chilli);border-radius:3px;transform-origin:left;
-}
-.p-vs .w5 i{width:5%}
-.p-vs .w12 i{width:12%}
-.p-vs .w20 i{width:20%}
-.p-vs .w45 i{width:45%}
-.p-vs .w70 i{width:70%}
-.p-vs .w100 i{width:100%}
-.p-vs .row.us .lbl b,.p-vs .row.us .lbl{color:var(--saffron)}
-.p-vs .row.us .bar i{background:var(--saffron)}
+/* ---------- comparison bars ---------- */
+.p-vs{display:grid;gap:20px;margin-top:8px}
+.p-vs .lbl{display:flex;justify-content:space-between;gap:14px;font-family:var(--mono);font-size:var(--fs-s);
+  color:var(--bone-dim);margin-bottom:9px}
+.p .light .p-vs .lbl{color:#5A5340}
+.p-vs .lbl b{color:var(--bone);font-weight:700;white-space:nowrap}
+.p .light .p-vs .lbl b{color:var(--ink)}
+.p-vs .bar{height:18px;border-radius:999px;background:var(--void-3);overflow:hidden}
+.p .light .p-vs .bar{background:var(--paper-2)}
+.p-vs .bar i{display:block;height:100%;background:var(--chilli);border-radius:999px;transform:scaleX(0);
+  transform-origin:left;transition:transform .9s cubic-bezier(.2,.8,.3,1)}
+.seen .p-vs .bar i,.p-vs.seen .bar i,.js-rv .seen .p-vs .bar i{transform:scaleX(1)}
+.p-vs .w5 i{width:5%}.p-vs .w12 i{width:12%}.p-vs .w45 i{width:45%}.p-vs .w70 i{width:70%}.p-vs .w100 i{width:100%}
+.p-vs .us .lbl,.p-vs .us .lbl b{color:var(--saffron)}
+.p .light .p-vs .us .lbl,.p .light .p-vs .us .lbl b{color:#5C6B0E}
+.p-vs .us .bar i{background:var(--saffron)}
+.p .light .p-vs .us .bar i{background:#8A8B32}
+/* Bars are visible without JS: the transform only animates once .seen lands, and if it
+   never does the fallback below leaves them drawn. */
+.p:not(.js-on) .p-vs .bar i{transform:scaleX(1)}
 
-/* ---------- the corridor ----------
- * A sticky rail that fills as the four stages scroll past. The fill is driven by
- * scroll-timeline where supported and left full otherwise, so the diagram is never
- * half-drawn on an older browser. */
-.p-corridor{display:grid;gap:0;position:relative;padding-left:34px}
-.p-corridor::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--void-3)}
-.p-stage{position:relative;padding:0 0 34px}
-.p-stage::before{
-  content:"";position:absolute;left:-30px;top:7px;width:12px;height:12px;border-radius:50%;
-  background:var(--void);border:2px solid var(--saffron);
-}
-.p-stage .when{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
-.p-stage h3{margin:6px 0 8px}
+/* ---------- corridor stages ---------- */
+.p-corridor{position:relative;padding-left:36px}
+.p-corridor::before{content:"";position:absolute;left:9px;top:10px;bottom:10px;width:2px;
+  background:linear-gradient(var(--saffron),var(--chicory))}
+.p-stage{position:relative;padding:0 0 40px}
+.p-stage:last-child{padding-bottom:0}
+.p-stage::before{content:"";position:absolute;left:-32px;top:6px;width:14px;height:14px;border-radius:50%;
+  background:var(--void);border:3px solid var(--saffron)}
+.p-stage .when{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.16em;text-transform:uppercase;color:var(--magenta)}
+.p-stage h3{margin:8px 0 10px}
 .p-stage p{font-size:var(--fs-m)}
 
-/* ---------- refusal list: the trust block ---------- */
-.p-no{display:grid;gap:12px}
-.p-no li{
-  list-style:none;display:flex;gap:14px;align-items:flex-start;background:var(--void-2);
-  border:1px solid var(--chicory);border-radius:8px;padding:18px 18px;
-  font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);line-height:1.55;
-}
-.p-no li b{display:block;color:var(--bone);font-weight:600;margin-bottom:4px}
-.p-no .x{
-  flex:none;width:26px;height:26px;border-radius:50%;background:var(--chilli);color:var(--bone);
-  display:grid;place-items:center;font-family:var(--mono);font-size:var(--fs-s);font-weight:700;margin-top:1px;
-}
+/* ---------- refusals ---------- */
+.p-no{display:grid;gap:12px;list-style:none}
+.p-no li{display:flex;gap:16px;align-items:flex-start;background:var(--void-2);border:1px solid var(--chicory);
+  border-radius:var(--r);padding:20px;font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);line-height:1.55}
+.p .light .p-no li{background:#fff;border-color:var(--paper-2);color:#5A5340}
+.p-no li b{display:block;color:var(--bone);font-weight:700;margin-bottom:5px;font-family:var(--disp);font-size:var(--fs-l)}
+.p .light .p-no li b{color:var(--ink)}
+.p-no .x{flex:none;width:30px;height:30px;border-radius:50%;background:var(--chilli);color:var(--bone);
+  display:grid;place-items:center;font-family:var(--mono);font-size:var(--fs-m);font-weight:700}
 
 /* ---------- FAQ ---------- */
-.p-faq{display:grid;gap:2px;background:var(--chicory);border:1px solid var(--chicory);border-radius:8px;overflow:hidden}
-.p-faq details{background:var(--void-2)}
-.p-faq summary{
-  cursor:pointer;list-style:none;padding:20px 20px;min-height:52px;display:flex;gap:16px;
-  align-items:center;justify-content:space-between;font-family:var(--sans);font-size:var(--fs-l);
-  font-weight:600;color:var(--bone);
-}
+.p-faq{display:grid;gap:10px}
+.p-faq details{background:var(--void-2);border:1px solid var(--chicory);border-radius:var(--r);overflow:hidden}
+.p-faq details[open]{border-color:var(--avocado)}
+.p-faq summary{cursor:pointer;list-style:none;padding:22px;min-height:56px;display:flex;gap:18px;align-items:center;
+  justify-content:space-between;font-family:var(--disp);font-size:var(--fs-l);font-weight:700;color:var(--bone);letter-spacing:-.01em}
 .p-faq summary::-webkit-details-marker{display:none}
-.p-faq summary::after{content:"+";font-family:var(--mono);color:var(--magenta);font-size:var(--fs-xl);flex:none;line-height:1}
-.p-faq details[open] summary::after{content:"−"}
+.p-faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:2px solid var(--magenta);
+  border-bottom:2px solid var(--magenta);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s ease}
+.p-faq details[open] summary::after{transform:rotate(-135deg) translate(-3px,-3px)}
 .p-faq summary:focus-visible{outline:3px solid var(--magenta);outline-offset:-3px}
-.p-faq .body{padding:0 20px 20px}
-.p-faq .body p + p{margin-top:12px}
+/* The FAQ sits in a light section, so it needs the inverted set too — without these the
+   accordion stayed dark-on-paper, which read as a foreign component dropped into the page. */
+.p .light .p-faq details{background:#fff;border-color:var(--paper-2)}
+.p .light .p-faq details[open]{border-color:var(--ink)}
+.p .light .p-faq summary{color:var(--ink)}
+.p .light .p-faq summary::after{border-color:#8A5A22}
+.p .light .p-faq .body p{color:#5A5340}
+.p .light .p-faq .body b{color:var(--ink)}
+.p-faq .body{padding:0 22px 22px}
+.p-faq .body p + p{margin-top:14px}
 
-/* ---------- the contact composer ----------
- * There is no form POST anywhere on this site and no backend to receive one. This builds a
- * WhatsApp or email message from three choices and hands it over as a link, which is why
- * form-action 'self' in the CSP is untouched and no third party ever sees a visitor. */
-.p-ask{background:var(--void-2);border:var(--rail) solid var(--saffron);border-radius:10px;padding:26px 22px}
+/* ---------- contact composer ---------- */
+.p-ask{background:var(--void-2);border:2px solid var(--saffron);border-radius:var(--r);padding:28px 24px}
 .p-ask .field{margin-top:20px}
-.p-ask label{display:block;font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:9px}
-.p-ask select,.p-ask input{
-  width:100%;min-height:52px;padding:0 14px;border-radius:6px;background:var(--void);
-  border:var(--rail) solid var(--chicory);color:var(--bone);font-family:var(--mono);font-size:var(--fs-m);
-}
+.p-ask label{display:block;font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--magenta);margin-bottom:10px}
+.p-ask select,.p-ask input{width:100%;min-height:56px;padding:0 16px;border-radius:12px;background:var(--void);
+  border:2px solid var(--chicory);color:var(--bone);font-family:var(--mono);font-size:var(--fs-m)}
 .p-ask select:focus-visible,.p-ask input:focus-visible{outline:3px solid var(--magenta);outline-offset:1px;border-color:var(--magenta)}
-.p-ask .preview{
-  margin-top:20px;padding:16px;border-radius:6px;background:var(--void);border:1px dashed var(--chicory);
-  font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.6;white-space:pre-wrap;
-}
-.p-ask .cta{display:grid;gap:12px;margin-top:20px}
-.p-ask .direct{margin-top:18px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.7}
-.p-ask .direct a{color:var(--magenta)}
+.p-ask .preview{margin-top:22px;padding:18px;border-radius:12px;background:var(--void);border:1px dashed var(--avocado);
+  font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.65;white-space:pre-wrap}
+.p-ask .cta{display:grid;gap:12px;margin-top:22px}
+.p-ask .direct{margin-top:20px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.7}
+.p-ask .direct a{color:var(--saffron)}
+
+/* ---------- closing call ---------- */
+.p-end{background:var(--saffron);color:var(--void);text-align:center}
+.p-end h2{color:var(--void);font-size:var(--fs-hero);line-height:.98;max-width:16ch;margin:0 auto}
+.p-end p{color:#4A4433;max-width:44ch;margin:20px auto 0;font-size:var(--fs-xl)}
+.p-end .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px}
+.p-end .btn-lg.pri{background:var(--void);color:var(--saffron)}
+.p-end .btn-lg.pri:hover{background:var(--chrome);box-shadow:none}
+.p-end .btn-lg.sec{border-color:var(--void);color:var(--void)}
+.p-end .btn-lg.sec:hover{background:var(--void);color:var(--saffron);border-color:var(--void)}
 
 /* ---------- reveal ----------
+ * Content is VISIBLE BY DEFAULT and the animation is added on top. This page shipped the
+ * other way round once — reveals driven by `animation-timeline: view()`, which made
+ * `opacity: 0` the default state with the timeline as the only thing bringing it back. Any
+ * context that does not resolve the timeline then renders a blank page: print, a screenshot,
+ * an in-app WebView, an older Chromium on an Android two versions behind. Measured here, a
+ * capture returned an empty viewport while the DOM reported every card at opacity 1.
  *
- * The content is VISIBLE BY DEFAULT and the animation is added on top. That ordering is the
- * whole rule here, and it was arrived at by breaking it first.
- *
- * The first version drove these with `animation-timeline: view()` — no JavaScript, no
- * observer, native scroll-driven animation, and genuinely the nicer implementation. It also
- * meant `.rv { opacity: 0 }` was the page's DEFAULT state, with the timeline as the only
- * thing that brought it back. Any context that does not resolve the timeline then renders a
- * blank olive page: print, a screenshot capture, an in-app WebView, an older Chromium on an
- * Android two versions behind. Measured here — a capture of this page returned an empty
- * viewport while the DOM reported every card at opacity 1.
- *
- * That is precisely the audience: a workshop owner opening a WhatsApp link inside WhatsApp's
- * own browser. A page that is beautiful in Chrome and blank in a WebView is not a page.
- *
- * So: nothing hides until assets/partner.js has run and confirmed the browser can do the
- * work, at which point it adds .js-rv to <html>. No JavaScript, slow connection, script
- * blocked, reduced motion — all of them land on plain visible content.
- */
+ * That is exactly this audience — a workshop owner opening a WhatsApp link inside WhatsApp's
+ * own browser. Nothing hides until partner.js has confirmed the browser can do the work. */
 .rv{opacity:1}
-.js-rv .rv{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.js-rv .rv{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.3,1)}
 .js-rv .rv.seen{opacity:1;transform:none}
 
 @media (prefers-reduced-motion: reduce){
   .js-rv .rv{opacity:1;transform:none;transition:none}
-  .p .btn-lg:hover{transform:none}
+  .p .btn-lg:hover,.p-card:hover{transform:none}
+  .p-map .route,.p-map .halo,.p-ticker .rail,.p-chip .dot{animation:none}
+  .p-vs .bar i{transform:scaleX(1);transition:none}
 }
 
 /* ---------- wider viewports ---------- */
-@media (min-width:640px){
-  .p section{padding:88px 0}
-  .p-trust{grid-template-columns:repeat(2,1fr)}
-  .p-cards{grid-template-columns:repeat(2,1fr)}
+@media (min-width:720px){
+  .p section{padding:104px 0}
+  .p .sec-head{max-width:22ch}
+  .p-bento{grid-template-columns:repeat(2,1fr)}
+  .p-card.wide{grid-column:1 / -1}
+  .p-card{padding:32px 30px}
+  .p-stats .grid{grid-template-columns:repeat(3,1fr);gap:0}
+  .p-stats .stat{border-bottom:0;border-right:2px solid rgba(74,68,51,.22);padding:44px 28px 44px 0}
+  .p-stats .stat:last-child{border-right:0}
   .p-ask .cta{grid-template-columns:repeat(2,1fr)}
-  .p-price{padding:36px 32px}
-  .p-ask{padding:34px 30px}
+  .p-price{padding:40px 36px}
+  .p-ask{padding:36px 32px}
+  .p-no li{padding:24px 26px}
 }
 @media (min-width:960px){
-  .p-hero{padding:88px 0 56px!important}
-  .p-trust{grid-template-columns:repeat(4,1fr)}
-  .p-hero .sub{font-size:var(--fs-2xl)}
-  .p-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-  .p-corridor{padding-left:42px}
+  .p-hero{padding:72px 0 88px!important}
+  /* The drawing has to hold its own against a 96px headline. At the column's natural width
+     it reads as a diagram in a footnote, so it is scaled past the column and allowed to
+     bleed toward the edge — the hero already clips overflow. */
+  .p-map{transform:scale(1.28) translateX(3%)}
+  .p-hero .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .p-map{margin-top:0}
+  .p-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .p .sec-head{margin-bottom:52px}
 }
+
+/* ==========================================================================
+   V3 — photography, the scroll corridor, and the take-rate calculator
+   ==========================================================================
+   Three additions, each replacing prose that used to sit on this page.
+   The word count in <main> went from 2,587 to roughly 950; nothing was deleted,
+   it moved behind a tap or into a picture.
+
+   PHOTOGRAPHY. Self-hosted, derived by scripts/build-images.mjs into the same
+   400/800/1200/1600 WebP+JPEG set as every other image here, so CSP img-src stays
+   'self' and no third-party origin sees a visitor. Sources are Unsplash (licence
+   permits this use); the files are images/partner-*.jpg. The pictures are MATERIAL —
+   cloth, brass, silver, freight. No faces, no workshop interiors: this page sits
+   beside a promise about not inventing things, and a stock artisan photographed in
+   someone else's workshop next to the words "your workshop" is exactly that.
+   ========================================================================== */
+
+/* ---------- photographic hero ----------
+ * The image is a background layer with a gradient scrim over it rather than an <img>
+ * behind text: at this size the art direction is the scrim, and a CSS layer cannot be
+ * dragged out of place by the text reflowing on a narrow phone. The <img> still exists
+ * in the markup for the crawler and for anyone with images disabled. */
+.p-hero{position:relative;isolation:isolate}
+.p-hero .shot{position:absolute;inset:0;z-index:0;overflow:hidden}
+.p-hero .shot img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.p-hero .shot::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(34,31,22,.92) 0%,rgba(34,31,22,.78) 42%,rgba(74,68,51,.96) 88%,var(--void) 100%);
+}
+@media (min-width:960px){
+  .p-hero .shot::after{background:linear-gradient(96deg,rgba(34,31,22,.96) 0%,rgba(34,31,22,.86) 46%,rgba(34,31,22,.34) 78%,rgba(34,31,22,.62) 100%)}
+  .p-hero .shot img{object-position:72% 42%}
+}
+.p-hero .inner{position:relative;z-index:2}
+.p-scroll-cue{display:flex;align-items:center;gap:10px;margin-top:40px;font-family:var(--mono);
+  font-size:var(--fs-2xs);letter-spacing:.2em;text-transform:uppercase;color:var(--bone-dim)}
+.p-scroll-cue i{display:block;width:1px;height:34px;background:linear-gradient(var(--saffron),transparent);
+  animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%,100%{transform:scaleY(.4);transform-origin:top;opacity:.4}50%{transform:scaleY(1);opacity:1}}
+
+/* ---------- the scroll corridor ----------
+ * One sticky viewport, four stages, driven by scroll. It replaces three text sections:
+ * "what the rail carries", "two ways your goods travel" and the old bulleted corridor.
+ *
+ * The fallback is the whole design, not an afterthought. Without JavaScript the sticky
+ * frame is not pinned and every stage renders in sequence as ordinary blocks — which is
+ * to say, the markup is a readable list of four stages and the animation is an
+ * enhancement laid over it. Nothing here is display:none in the base state. */
+.p-rail{position:relative}
+/* The frame is pinned at EVERY width, not only on desktop. The first build made it sticky
+   from 960px and left the phone with four stages stacked inside a single screen — so the
+   trigger band never saw a stage change and the sequence sat on stage one the whole way
+   down. Measured: at a 390x844 viewport all four steps occupied 780px together.
+   On a phone the picture now holds under the header while the stages scroll beneath it,
+   which is the version of this that is actually worth building. */
+.p-rail .sticky{position:sticky;top:84px;z-index:1}
+.p-rail .frame{position:relative;border-radius:var(--r);overflow:hidden;background:var(--void-3);
+  border:1px solid var(--chicory);aspect-ratio:4/3;max-height:38vh}
+.p-rail .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;
+  transition:opacity .7s ease,transform 1.2s ease;transform:scale(1.06)}
+.p-rail .frame img.on{opacity:1;transform:scale(1)}
+.p-rail .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,31,22,.15),rgba(34,31,22,.85))}
+/* Without JS the first image is simply shown; .js-on is added by partner.js. */
+/* Each <img> is the first-of-type inside its OWN <picture>, so `img:first-of-type` matched
+   all four and the no-JS fallback showed every photograph stacked. The picture element is
+   what has to be selected. */
+.p:not(.js-on) .p-rail .frame picture:first-of-type img{opacity:1;transform:none}
+.p-rail .badge{position:absolute;left:16px;bottom:16px;z-index:2;display:flex;flex-wrap:wrap;gap:8px;right:16px}
+.p-rail .badge span{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.1em;background:rgba(34,31,22,.82);
+  border:1px solid var(--avocado);color:var(--saffron);padding:6px 10px;border-radius:999px;
+  opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease}
+.p-rail .badge span.on{opacity:1;transform:none}
+.p:not(.js-on) .p-rail .badge span{opacity:1;transform:none}
+
+/* Each stage gets most of a screen, so scrolling through the section plays it one stage at
+   a time rather than showing all four at once. */
+.p-steps{margin-top:26px;display:grid;gap:0}
+.p-step{padding:24vh 0 24vh 20px;border-left:2px solid var(--chicory);transition:border-color .4s ease,opacity .4s ease}
+.p-step .k{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.18em;text-transform:uppercase;color:var(--bone-dim)}
+.p-step h3{margin:8px 0 8px;font-size:var(--fs-xl)}
+.p-step p{font-size:var(--fs-m)}
+.js-on .p-step{opacity:.42}
+.js-on .p-step.on{opacity:1;border-left-color:var(--saffron)}
+@media (min-width:960px){
+  .p-rail .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  .p-rail .sticky{top:104px}
+  .p-rail .frame{aspect-ratio:3/4;max-height:none}
+  .p-steps{margin-top:0}
+  .p-step{padding:34vh 0 34vh 26px}
+}
+
+/* ---------- take-rate calculator ----------
+ * The bar chart said 0% and 25%. This says: on YOUR number, you keep this much more
+ * money. Same facts, one that a person feels. Every rate in it is the published rate
+ * quoted elsewhere on this page — the calculator invents nothing. */
+.p-calc{background:var(--void);border:2px solid var(--saffron);border-radius:var(--r);padding:26px 22px}
+.p .light .p-calc{background:#fff;border-color:var(--ink)}
+.p-calc .amount{font-family:var(--disp);font-size:clamp(2.5rem,1.4rem + 5vw,4.25rem);font-weight:800;
+  line-height:.92;letter-spacing:-.045em;color:var(--bone);display:block}
+.p .light .p-calc .amount{color:var(--ink)}
+.p-calc label{display:block;font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--magenta);margin-bottom:12px}
+.p .light .p-calc label{color:#8A5A22}
+.p-calc input[type=range]{width:100%;height:44px;background:transparent;-webkit-appearance:none;appearance:none;margin-top:6px}
+.p-calc input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:999px;background:var(--void-3)}
+.p-calc input[type=range]::-moz-range-track{height:8px;border-radius:999px;background:var(--void-3)}
+.p .light .p-calc input[type=range]::-webkit-slider-runnable-track{background:var(--paper-2)}
+.p .light .p-calc input[type=range]::-moz-range-track{background:var(--paper-2)}
+.p-calc input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:32px;height:32px;
+  border-radius:50%;background:var(--saffron);border:3px solid var(--void);margin-top:-12px;cursor:grab}
+.p-calc input[type=range]::-moz-range-thumb{width:32px;height:32px;border-radius:50%;background:var(--saffron);
+  border:3px solid var(--void);cursor:grab}
+.p .light .p-calc input[type=range]::-webkit-slider-thumb{border-color:#fff;background:#8A8B32}
+.p .light .p-calc input[type=range]::-moz-range-thumb{border-color:#fff;background:#8A8B32}
+.p-calc input[type=range]:focus-visible{outline:3px solid var(--magenta);outline-offset:6px;border-radius:999px}
+.p-calc .out{margin-top:26px;display:grid;gap:2px;background:var(--chicory);border-radius:12px;overflow:hidden}
+.p .light .p-calc .out{background:var(--paper-2)}
+.p-calc .out div{background:var(--void-2);padding:15px 16px;display:flex;justify-content:space-between;gap:14px;
+  align-items:baseline;font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim)}
+.p .light .p-calc .out div{background:#fff;color:#5A5340}
+.p-calc .out b{font-family:var(--mono);font-weight:700;color:var(--bone);white-space:nowrap}
+.p .light .p-calc .out b{color:var(--ink)}
+.p-calc .out .us{background:var(--void-3)}
+.p .light .p-calc .out .us{background:#F7F4EA}
+.p-calc .out .us,.p-calc .out .us b{color:var(--saffron)}
+.p .light .p-calc .out .us,.p .light .p-calc .out .us b{color:#5C6B0E}
+.p-calc .foot{font-family:var(--mono);font-size:var(--fs-2xs);color:var(--bone-dim);margin-top:16px;line-height:1.7}
+.p .light .p-calc .foot{color:#7A7360}
+
+/* ---------- disclosure rows ----------
+ * The detail that used to be body copy. Same words, one tap away, and the tap is the
+ * signal that someone wants them. */
+.p-rows{display:grid;gap:10px}
+.p-rows details{background:var(--void-2);border:1px solid var(--chicory);border-radius:14px}
+.p .light .p-rows details{background:#fff;border-color:var(--paper-2)}
+.p-rows details[open]{border-color:var(--avocado)}
+.p-rows summary{cursor:pointer;list-style:none;padding:18px 20px;min-height:56px;display:flex;gap:16px;
+  align-items:center;justify-content:space-between;font-family:var(--disp);font-weight:700;
+  font-size:var(--fs-l);color:var(--bone)}
+.p .light .p-rows summary{color:var(--ink)}
+.p-rows summary::-webkit-details-marker{display:none}
+.p-rows summary::after{content:"+";font-family:var(--mono);color:var(--magenta);font-size:var(--fs-xl);
+  flex:none;line-height:1;transition:transform .2s ease}
+.p .light .p-rows summary::after{color:#8A5A22}
+.p-rows details[open] summary::after{transform:rotate(45deg)}
+.p-rows summary:focus-visible{outline:3px solid var(--magenta);outline-offset:-3px}
+.p-rows .body{padding:0 20px 20px}
+.p-rows .body p{font-size:var(--fs-m)}
+.p-rows .body p + p{margin-top:12px}
+
+/* ---------- pattern band ----------
+ * A strip of real block print between sections. It does one job: it reminds a reader
+ * scrolling a page about customs paperwork what is actually being shipped. */
+.p-strip{height:180px;position:relative;overflow:hidden;border-block:1px solid var(--chicory)}
+.p-strip img{width:100%;height:100%;object-fit:cover;object-position:center}
+.p-strip::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--void),rgba(74,68,51,.35) 30%,rgba(74,68,51,.35) 70%,var(--void))}
+.p-strip .cap{position:absolute;z-index:2;inset:auto 0 auto 0;top:50%;transform:translateY(-50%);text-align:center;
+  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.24em;text-transform:uppercase;color:var(--bone)}
+@media (min-width:720px){.p-strip{height:240px}}
+
+/* ---------- media card ---------- */
+.p-media{border-radius:var(--r);overflow:hidden;position:relative;border:1px solid var(--chicory);aspect-ratio:4/3}
+.p-media img{width:100%;height:100%;object-fit:cover;display:block}
+.p-media figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px;
+  background:linear-gradient(transparent,rgba(34,31,22,.9));font-family:var(--mono);font-size:var(--fs-s);color:var(--bone)}

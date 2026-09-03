@@ -48309,6 +48309,166 @@
       }
     ]
   },
+  "images/partner-brass.jpg": {
+    "width": 2000,
+    "height": 1333,
+    "aspect": 1.5004,
+    "v": "91d72b44",
+    "variants": [
+      {
+        "w": 400,
+        "h": 267,
+        "jpg": "images/derived/partner-brass-400.jpg",
+        "webp": "images/derived/partner-brass-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 533,
+        "jpg": "images/derived/partner-brass-800.jpg",
+        "webp": "images/derived/partner-brass-800.webp"
+      },
+      {
+        "w": 1200,
+        "h": 800,
+        "jpg": "images/derived/partner-brass-1200.jpg",
+        "webp": "images/derived/partner-brass-1200.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1066,
+        "jpg": "images/derived/partner-brass-1600.jpg",
+        "webp": "images/derived/partner-brass-1600.webp"
+      }
+    ]
+  },
+  "images/partner-freight.jpg": {
+    "width": 2000,
+    "height": 1333,
+    "aspect": 1.5004,
+    "v": "b69cdf70",
+    "variants": [
+      {
+        "w": 400,
+        "h": 267,
+        "jpg": "images/derived/partner-freight-400.jpg",
+        "webp": "images/derived/partner-freight-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 533,
+        "jpg": "images/derived/partner-freight-800.jpg",
+        "webp": "images/derived/partner-freight-800.webp"
+      },
+      {
+        "w": 1200,
+        "h": 800,
+        "jpg": "images/derived/partner-freight-1200.jpg",
+        "webp": "images/derived/partner-freight-1200.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1066,
+        "jpg": "images/derived/partner-freight-1600.jpg",
+        "webp": "images/derived/partner-freight-1600.webp"
+      }
+    ]
+  },
+  "images/partner-pattern.jpg": {
+    "width": 2000,
+    "height": 2464,
+    "aspect": 0.8117,
+    "v": "7a4c2840",
+    "variants": [
+      {
+        "w": 400,
+        "h": 493,
+        "jpg": "images/derived/partner-pattern-400.jpg",
+        "webp": "images/derived/partner-pattern-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 986,
+        "jpg": "images/derived/partner-pattern-800.jpg",
+        "webp": "images/derived/partner-pattern-800.webp"
+      },
+      {
+        "w": 1200,
+        "h": 1478,
+        "jpg": "images/derived/partner-pattern-1200.jpg",
+        "webp": "images/derived/partner-pattern-1200.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1971,
+        "jpg": "images/derived/partner-pattern-1600.jpg",
+        "webp": "images/derived/partner-pattern-1600.webp"
+      }
+    ]
+  },
+  "images/partner-silver.jpg": {
+    "width": 2000,
+    "height": 2500,
+    "aspect": 0.8,
+    "v": "3912b9d1",
+    "variants": [
+      {
+        "w": 400,
+        "h": 500,
+        "jpg": "images/derived/partner-silver-400.jpg",
+        "webp": "images/derived/partner-silver-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1000,
+        "jpg": "images/derived/partner-silver-800.jpg",
+        "webp": "images/derived/partner-silver-800.webp"
+      },
+      {
+        "w": 1200,
+        "h": 1500,
+        "jpg": "images/derived/partner-silver-1200.jpg",
+        "webp": "images/derived/partner-silver-1200.webp"
+      },
+      {
+        "w": 1600,
+        "h": 2000,
+        "jpg": "images/derived/partner-silver-1600.jpg",
+        "webp": "images/derived/partner-silver-1600.webp"
+      }
+    ]
+  },
+  "images/partner-textile.jpg": {
+    "width": 2000,
+    "height": 1333,
+    "aspect": 1.5004,
+    "v": "9b274bf2",
+    "variants": [
+      {
+        "w": 400,
+        "h": 267,
+        "jpg": "images/derived/partner-textile-400.jpg",
+        "webp": "images/derived/partner-textile-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 533,
+        "jpg": "images/derived/partner-textile-800.jpg",
+        "webp": "images/derived/partner-textile-800.webp"
+      },
+      {
+        "w": 1200,
+        "h": 800,
+        "jpg": "images/derived/partner-textile-1200.jpg",
+        "webp": "images/derived/partner-textile-1200.webp"
+      },
+      {
+        "w": 1600,
+        "h": 1066,
+        "jpg": "images/derived/partner-textile-1600.jpg",
+        "webp": "images/derived/partner-textile-1600.webp"
+      }
+    ]
+  },
   "images/post-europe-in-india.jpg": {
     "width": 1187,
     "height": 792,
