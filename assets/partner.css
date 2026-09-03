@@ -1,0 +1,260 @@
+/* /partner — the merchant and retailer landing page.
+ *
+ * Loaded after site.css, so every colour, type step and measure below is one of that
+ * file's tokens. Nothing here redefines the palette; the page reads as the same site.
+ *
+ * Three things are deliberately different from the rest of the site, and each is a
+ * response to who reads this page: an Indian workshop owner on a mid-range Android, or a
+ * European buyer skimming on a phone between meetings. Neither reads paragraphs.
+ *
+ *   1. TYPE IS BIGGER. The page adds two display steps above --fs-3xl and lifts body copy
+ *      to --fs-l everywhere, not just in prose. site.css's scale is built for a catalogue;
+ *      this page is built to be read at arm's length.
+ *   2. EVERY CLAIM IS A CARD. No claim runs longer than about forty words, because the
+ *      audience scans. The card is the unit, not the paragraph.
+ *   3. MOTION IS SCROLL-DRIVEN AND NATIVE. animation-timeline: view() costs no JavaScript
+ *      and no library; assets/partner.js only supplies the IntersectionObserver fallback
+ *      for browsers without it. Under prefers-reduced-motion everything is simply visible.
+ *
+ * Mobile-first like site.css: unprefixed rules are the phone.
+ */
+
+.p{
+  /* Two steps above the site scale. 40->76 and 28->44: the hero has to work at a glance
+     on a 360px screen, which is where most of this audience is. */
+  --fs-hero:clamp(2.5rem,1.4rem + 5.6vw,4.75rem);
+  --fs-display:clamp(1.75rem,1.2rem + 2.8vw,2.75rem);
+  --rail:2px;
+}
+
+/* ---------- shared section furniture ---------- */
+.p section{padding:64px 0}
+.p .band-sec{background:var(--band)}
+.p .wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 var(--gutter)}
+.p h2{
+  font-family:var(--sans);font-size:var(--fs-display);line-height:var(--lh-tight);
+  font-weight:600;text-wrap:balance;color:var(--bone);letter-spacing:-.01em;
+}
+.p h3{font-family:var(--sans);font-size:var(--fs-xl);line-height:var(--lh-snug);font-weight:600;text-wrap:balance}
+.p p{font-family:var(--sans);font-size:var(--fs-l);line-height:var(--lh-read);text-wrap:pretty;color:var(--bone-dim)}
+.p .lede{font-size:var(--fs-xl);color:var(--bone);max-width:var(--measure-s);margin-top:16px}
+.p .eyebrow{
+  font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--magenta);display:block;margin-bottom:14px;
+}
+.p .sec-head{max-width:var(--measure);margin-bottom:36px}
+.p .sec-head p{margin-top:14px}
+
+/* ---------- hero ---------- */
+.p-hero{padding:56px 0 40px!important;position:relative;overflow:hidden}
+.p-hero h1{
+  font-family:var(--sans);font-size:var(--fs-hero);line-height:1.04;font-weight:700;
+  letter-spacing:-.025em;text-wrap:balance;margin:18px 0 0;
+}
+.p-hero h1 em{font-style:normal;color:var(--magenta)}
+.p-hero .sub{font-size:var(--fs-xl);color:var(--bone);max-width:34ch;margin-top:20px}
+
+/* The status chip. It says what is true today rather than implying more, which is the
+   single most load-bearing trust element on the page. */
+.p-chip{
+  display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:var(--fs-xs);
+  letter-spacing:.1em;text-transform:uppercase;color:var(--void);background:var(--saffron);
+  padding:7px 13px;border-radius:999px;font-weight:600;
+}
+.p-chip .dot{width:7px;height:7px;border-radius:50%;background:var(--chilli);flex:none}
+
+.p-hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+/* Touch targets are 52px, not the 44 the guideline floors at. The audience includes people
+   who are not fluent with a phone keyboard, and the two buttons here are the only
+   conversion on the page. */
+.p .btn-lg{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;
+  padding:0 22px;border-radius:6px;font-family:var(--mono);font-size:var(--fs-m);font-weight:600;
+  letter-spacing:.02em;text-decoration:none;border:var(--rail) solid transparent;
+  transition:transform .16s ease,background .16s ease,color .16s ease;
+}
+.p .btn-lg:hover{transform:translateY(-2px)}
+.p .btn-lg.pri{background:var(--saffron);color:var(--void)}
+.p .btn-lg.pri:hover{background:var(--bone)}
+.p .btn-lg.sec{border-color:var(--bone-dim);color:var(--bone)}
+.p .btn-lg.sec:hover{background:var(--bone);color:var(--void);border-color:var(--bone)}
+.p .btn-lg svg{flex:none}
+
+/* Trust strip under the hero: four facts, no adjectives. */
+.p-trust{display:grid;gap:2px;margin-top:40px;border:var(--rail) solid var(--chicory);background:var(--chicory)}
+.p-trust div{background:var(--void);padding:18px 20px}
+.p-trust b{display:block;font-family:var(--mono);font-size:var(--fs-l);color:var(--magenta);font-weight:600}
+.p-trust span{display:block;font-family:var(--sans);font-size:var(--fs-s);color:var(--bone-dim);margin-top:5px;line-height:1.5}
+
+/* ---------- audience switch ----------
+ * Sticky under the header. Two tabs, not a dropdown: a dropdown hides the fact that the
+ * other audience is served at all, and half the people landing here need to see that this
+ * page is for them before they read anything. */
+.p-switch{position:sticky;top:0;z-index:40;background:var(--chrome);border-bottom:1px solid var(--chicory)}
+.p-switch .inner{display:flex;gap:8px;padding:10px var(--gutter);max-width:1080px;margin:0 auto}
+.p-switch button{
+  flex:1;min-height:52px;border:var(--rail) solid transparent;border-radius:6px;cursor:pointer;
+  background:transparent;color:var(--bone-dim);font-family:var(--mono);font-size:var(--fs-s);
+  font-weight:600;letter-spacing:.04em;transition:background .16s ease,color .16s ease;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.25;
+}
+.p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void)}
+.p-switch button:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
+
+/* ---------- claim cards ---------- */
+.p-cards{display:grid;gap:16px}
+.p-card{
+  background:var(--void-2);border:1px solid var(--chicory);border-left:4px solid var(--magenta);
+  border-radius:8px;padding:24px 22px;
+}
+.p-card.hot{border-left-color:var(--paprika)}
+.p-card h3{margin-bottom:10px}
+.p-card p{font-size:var(--fs-m)}
+.p-card .note{font-size:var(--fs-s);color:var(--bone-dim);margin-top:12px;font-family:var(--mono);line-height:1.6}
+.p-card .num{
+  font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.16em;color:var(--magenta);
+  display:block;margin-bottom:12px;
+}
+
+/* ---------- price ---------- */
+.p-price{background:var(--void-2);border:var(--rail) solid var(--saffron);border-radius:10px;padding:28px 22px}
+.p-price .big{font-family:var(--sans);font-size:var(--fs-3xl);font-weight:700;line-height:1;letter-spacing:-.03em;color:var(--bone)}
+.p-price .big s{color:var(--bone-dim);font-size:.42em;font-weight:400;margin-left:10px;letter-spacing:0}
+.p-price ul{list-style:none;margin-top:22px;display:grid;gap:1px;background:var(--chicory);border:1px solid var(--chicory);border-radius:6px;overflow:hidden}
+.p-price li{
+  background:var(--void-2);padding:15px 16px;display:flex;justify-content:space-between;gap:16px;align-items:baseline;
+  font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);
+}
+.p-price li b{font-family:var(--mono);color:var(--bone);white-space:nowrap;font-weight:600}
+.p-price li b.zero{color:var(--saffron)}
+
+/* The comparison. Bar widths are CLASSES, not style="width:..". style-src 'self' blocks a
+   style attribute exactly as it blocks a <style> block — there is no inline route here, so
+   the six widths the page needs are declared below and picked by class name. */
+.p-vs{display:grid;gap:14px;margin-top:8px}
+.p-vs .row{display:grid;gap:7px}
+.p-vs .lbl{display:flex;justify-content:space-between;gap:14px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim)}
+.p-vs .lbl b{color:var(--bone);font-weight:600;white-space:nowrap}
+.p-vs .bar{height:14px;border-radius:3px;background:var(--void-3);overflow:hidden}
+.p-vs .bar i{
+  display:block;height:100%;background:var(--chilli);border-radius:3px;transform-origin:left;
+}
+.p-vs .w5 i{width:5%}
+.p-vs .w12 i{width:12%}
+.p-vs .w20 i{width:20%}
+.p-vs .w45 i{width:45%}
+.p-vs .w70 i{width:70%}
+.p-vs .w100 i{width:100%}
+.p-vs .row.us .lbl b,.p-vs .row.us .lbl{color:var(--saffron)}
+.p-vs .row.us .bar i{background:var(--saffron)}
+
+/* ---------- the corridor ----------
+ * A sticky rail that fills as the four stages scroll past. The fill is driven by
+ * scroll-timeline where supported and left full otherwise, so the diagram is never
+ * half-drawn on an older browser. */
+.p-corridor{display:grid;gap:0;position:relative;padding-left:34px}
+.p-corridor::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--void-3)}
+.p-stage{position:relative;padding:0 0 34px}
+.p-stage::before{
+  content:"";position:absolute;left:-30px;top:7px;width:12px;height:12px;border-radius:50%;
+  background:var(--void);border:2px solid var(--saffron);
+}
+.p-stage .when{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.p-stage h3{margin:6px 0 8px}
+.p-stage p{font-size:var(--fs-m)}
+
+/* ---------- refusal list: the trust block ---------- */
+.p-no{display:grid;gap:12px}
+.p-no li{
+  list-style:none;display:flex;gap:14px;align-items:flex-start;background:var(--void-2);
+  border:1px solid var(--chicory);border-radius:8px;padding:18px 18px;
+  font-family:var(--sans);font-size:var(--fs-m);color:var(--bone-dim);line-height:1.55;
+}
+.p-no li b{display:block;color:var(--bone);font-weight:600;margin-bottom:4px}
+.p-no .x{
+  flex:none;width:26px;height:26px;border-radius:50%;background:var(--chilli);color:var(--bone);
+  display:grid;place-items:center;font-family:var(--mono);font-size:var(--fs-s);font-weight:700;margin-top:1px;
+}
+
+/* ---------- FAQ ---------- */
+.p-faq{display:grid;gap:2px;background:var(--chicory);border:1px solid var(--chicory);border-radius:8px;overflow:hidden}
+.p-faq details{background:var(--void-2)}
+.p-faq summary{
+  cursor:pointer;list-style:none;padding:20px 20px;min-height:52px;display:flex;gap:16px;
+  align-items:center;justify-content:space-between;font-family:var(--sans);font-size:var(--fs-l);
+  font-weight:600;color:var(--bone);
+}
+.p-faq summary::-webkit-details-marker{display:none}
+.p-faq summary::after{content:"+";font-family:var(--mono);color:var(--magenta);font-size:var(--fs-xl);flex:none;line-height:1}
+.p-faq details[open] summary::after{content:"−"}
+.p-faq summary:focus-visible{outline:3px solid var(--magenta);outline-offset:-3px}
+.p-faq .body{padding:0 20px 20px}
+.p-faq .body p + p{margin-top:12px}
+
+/* ---------- the contact composer ----------
+ * There is no form POST anywhere on this site and no backend to receive one. This builds a
+ * WhatsApp or email message from three choices and hands it over as a link, which is why
+ * form-action 'self' in the CSP is untouched and no third party ever sees a visitor. */
+.p-ask{background:var(--void-2);border:var(--rail) solid var(--saffron);border-radius:10px;padding:26px 22px}
+.p-ask .field{margin-top:20px}
+.p-ask label{display:block;font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:9px}
+.p-ask select,.p-ask input{
+  width:100%;min-height:52px;padding:0 14px;border-radius:6px;background:var(--void);
+  border:var(--rail) solid var(--chicory);color:var(--bone);font-family:var(--mono);font-size:var(--fs-m);
+}
+.p-ask select:focus-visible,.p-ask input:focus-visible{outline:3px solid var(--magenta);outline-offset:1px;border-color:var(--magenta)}
+.p-ask .preview{
+  margin-top:20px;padding:16px;border-radius:6px;background:var(--void);border:1px dashed var(--chicory);
+  font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.6;white-space:pre-wrap;
+}
+.p-ask .cta{display:grid;gap:12px;margin-top:20px}
+.p-ask .direct{margin-top:18px;font-family:var(--mono);font-size:var(--fs-s);color:var(--bone-dim);line-height:1.7}
+.p-ask .direct a{color:var(--magenta)}
+
+/* ---------- reveal ----------
+ *
+ * The content is VISIBLE BY DEFAULT and the animation is added on top. That ordering is the
+ * whole rule here, and it was arrived at by breaking it first.
+ *
+ * The first version drove these with `animation-timeline: view()` — no JavaScript, no
+ * observer, native scroll-driven animation, and genuinely the nicer implementation. It also
+ * meant `.rv { opacity: 0 }` was the page's DEFAULT state, with the timeline as the only
+ * thing that brought it back. Any context that does not resolve the timeline then renders a
+ * blank olive page: print, a screenshot capture, an in-app WebView, an older Chromium on an
+ * Android two versions behind. Measured here — a capture of this page returned an empty
+ * viewport while the DOM reported every card at opacity 1.
+ *
+ * That is precisely the audience: a workshop owner opening a WhatsApp link inside WhatsApp's
+ * own browser. A page that is beautiful in Chrome and blank in a WebView is not a page.
+ *
+ * So: nothing hides until assets/partner.js has run and confirmed the browser can do the
+ * work, at which point it adds .js-rv to <html>. No JavaScript, slow connection, script
+ * blocked, reduced motion — all of them land on plain visible content.
+ */
+.rv{opacity:1}
+.js-rv .rv{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.js-rv .rv.seen{opacity:1;transform:none}
+
+@media (prefers-reduced-motion: reduce){
+  .js-rv .rv{opacity:1;transform:none;transition:none}
+  .p .btn-lg:hover{transform:none}
+}
+
+/* ---------- wider viewports ---------- */
+@media (min-width:640px){
+  .p section{padding:88px 0}
+  .p-trust{grid-template-columns:repeat(2,1fr)}
+  .p-cards{grid-template-columns:repeat(2,1fr)}
+  .p-ask .cta{grid-template-columns:repeat(2,1fr)}
+  .p-price{padding:36px 32px}
+  .p-ask{padding:34px 30px}
+}
+@media (min-width:960px){
+  .p-hero{padding:88px 0 56px!important}
+  .p-trust{grid-template-columns:repeat(4,1fr)}
+  .p-hero .sub{font-size:var(--fs-2xl)}
+  .p-split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .p-corridor{padding-left:42px}
+}

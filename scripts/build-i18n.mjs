@@ -50,7 +50,12 @@ const NOINDEX_ABOVE = 0.1;
 //                      until it is ported onto the site's own chrome.
 //   inventory.html     Never public.
 //   dashboard.html     Never public.
-const SKIP = new Set(["spirituality.html", "inventory.html", "dashboard.html"]);
+// partner.html is English-only on purpose (3 Sep 2026). The eight language trees exist for
+// CONSUMERS; /partner addresses Indian merchants and European trade buyers, who read it in
+// English, and a machine-translated commercial and regulatory page is a liability rather
+// than a courtesy — a mistranslated compliance obligation is a claim we did not make.
+// Remove it from this set when a page is translated by a person, not before.
+const SKIP = new Set(["spirituality.html", "inventory.html", "dashboard.html", "partner.html"]);
 
 // Directories holding generated English pages. Language trees live beside them and are
 // skipped here so a second run never mirrors a mirror.

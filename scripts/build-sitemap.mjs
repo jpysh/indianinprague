@@ -45,6 +45,7 @@ const PAGES = [
   // "what if it does not fit") that both a search engine and an assistant get asked, so it
   // is not a low-priority afterthought.
   { file: "how-it-works.html", loc: "/how-it-works", priority: "0.7", changefreq: "monthly" },
+  { file: "partner.html", loc: "/partner", priority: "0.8", changefreq: "monthly" },
 ];
 
 // Every post now has a page of its own (17 Aug 2026 — see the header of build-diaries.mjs),

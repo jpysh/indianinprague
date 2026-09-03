@@ -56,6 +56,7 @@ scripts/dashboard.log
 # read as "no run yet", not as a stale verdict copied from another machine.
 .publish-status.json
 PRFAQ*.md
+Business case/
 
 # The shelf card fragments, written by scripts/build-shop.mjs from data/catalog.json and
 # shipped into dist/ by build-dist.mjs. Derived, rebuilt on every publish — including in the

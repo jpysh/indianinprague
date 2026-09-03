@@ -40,6 +40,7 @@ const PAGES = {
   // Reached from the footer, from every module, and belonging to none of them — buying,
   // shipping, returns and privacy are not the wardrobe any more than they are the diaries.
   "how-it-works.html": null,
+  "partner.html": null,
   "wardrobe/fashion.html": "wardrobe",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.

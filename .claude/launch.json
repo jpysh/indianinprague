@@ -4,8 +4,26 @@
     {
       "name": "dist",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "-l", "4321", "dist"],
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "-l",
+        "4321",
+        "dist"
+      ],
       "port": 4321
+    },
+    {
+      "name": "site-root",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "-y",
+        "serve",
+        "-l",
+        "4322",
+        "."
+      ],
+      "port": 4322
     }
   ]
 }
