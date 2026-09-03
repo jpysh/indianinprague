@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-02T05:19:03.392Z",
-  "count": 5562,
+  "generated": "2026-09-03T05:17:20.959Z",
+  "count": 5572,
   "entries": {
+    "item.9861491149.title": {
+      "text": "Vintage Bag Retro Straw Woven Cross Body Bag Boho Bag",
+      "src": "e29bb7e2c34c",
+      "where": "item 9861491149 — title",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "item.9861491149.description": {
+      "text": "Well made and durable, manual weaving, cute and stylish.\nSpacious enough to hold your wallet, cellphone, cash, lipstick, keys and other essentials.\nPush lock closure and adjustable shoulder strap. \nCute floral cloth lining inside. \nTwo ways of carrying, used as shoulder bags or crossbody bags. \nGreat for summer beach, resorts, travel or casual daily.\nBoho vibes, retro look.",
+      "src": "0541c5a207c8",
+      "where": "item 9861491149 — description",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "New without tags",
+      "src": "b240e472e77d",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.beige": {
+      "text": "Beige",
+      "src": "5f10cf309e5f",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.9851163929.title": {
       "text": "portable solar rechargeable wireless bluetooth retro speaker vintage radio",
       "src": "07b713b0582a",
@@ -54,13 +82,6 @@
       "where": "item 9843116673 — description",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "attr.condition.new-without-tags": {
-      "text": "New without tags",
-      "src": "b240e472e77d",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "item.9839115628.title": {
       "text": "remember everything memory expert Joshua Foer Moonwalking with Einstein Bestseller Science",
@@ -124,6 +145,20 @@
       "where": "item 9824330920 — description",
       "since": "2026-09-02",
       "changed": "2026-09-02"
+    },
+    "item.9824321071.title": {
+      "text": "Stainless Steel Cutlery Set Tableware Knives Forks Spoons Flatware",
+      "src": "fc8bb026ce46",
+      "where": "item 9824321071 — title",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "item.9824321071.description": {
+      "text": "as per images. Complete your kitchen setup with this comprehensive stainless steel\ncutlery set featuring dinner knives, forks, tablespoons, and teaspoons. Durable and easy to clean, this flatware set brings timeless\nfunctionality to everyday dining and dinner parties. Great search match for\nstainless steel flatware, kitchen utensils, home dining sets, and modern cutlery\ncollections.",
+      "src": "63227f66d647",
+      "where": "item 9824321071 — description",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "item.9824291422.title": {
       "text": "Woven Straw Placemat Round Seagrass Trivet Natural Tableware Decor",
@@ -353,13 +388,6 @@
       "text": "Bust: Can fit approx. 36-38 inches\nShoulder: 15 inch\nWaist: free-flow, fits most \nLength: 48 inches\n\nBeautiful long dress in soft pastel beige, with a delicate grey and mustard-yellow floral print. \nOriginal Indian design by the brand Anoshk, a much loved delhi fashion boutique. \nMade from 100% lightweight cotton, soft, breathable, and comfortable even on hot days. \nThe top is fitted and the skirt falls into a vintage style A-line shape. \nThree-quarter sleeves and a small V-notch neckline with a tie detail. \nThe waist is loose and flowing, so it fits a wide range of sizes and body shapes. Perfect for summer, holidays, weddings, or any occasion where you want to feel elegant and comfortable at the same time.",
       "src": "56972dd4c616",
       "where": "item 9729949801 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.color.beige": {
-      "text": "Beige",
-      "src": "5f10cf309e5f",
-      "where": "color — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -4353,26 +4381,26 @@
       "since": "",
       "changed": ""
     },
-    "text.35f6e4dbd6b6": {
-      "text": "51 reviews on Vinted →",
-      "src": "35f6e4dbd6b6",
+    "text.9b4b95591b24": {
+      "text": "52 reviews on Vinted →",
+      "src": "9b4b95591b24",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
-    "text.bd6ce4c0f1ff": {
-      "text": "Rated 5.0 out of 5 from 51 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "bd6ce4c0f1ff",
+    "text.43790a5f7f6d": {
+      "text": "Rated 5.0 out of 5 from 52 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "43790a5f7f6d",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
-    "text.8124799f6b72": {
-      "text": "431 pieces",
-      "src": "8124799f6b72",
+    "text.269b36a2ab9f": {
+      "text": "432 pieces",
+      "src": "269b36a2ab9f",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
@@ -4388,12 +4416,12 @@
       "since": "",
       "changed": ""
     },
-    "text.56b40da58df3": {
-      "text": "136 pieces",
-      "src": "56b40da58df3",
+    "text.a425c05e5789": {
+      "text": "137 pieces",
+      "src": "a425c05e5789",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "text.054287bc37db": {
       "text": "Home Decor",
@@ -4570,12 +4598,12 @@
       "since": "",
       "changed": ""
     },
-    "text.0be50f336e61": {
-      "text": "1622 pieces for sale · 64 sold",
-      "src": "0be50f336e61",
+    "text.23dae8cef768": {
+      "text": "1624 pieces for sale · 64 sold",
+      "src": "23dae8cef768",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -4885,9 +4913,79 @@
       "since": "2026-08-28",
       "changed": "2026-08-28"
     },
-    "text.6f08dc1cfa4c": {
-      "text": "7 people have saved this on Vinted",
-      "src": "6f08dc1cfa4c",
+    "text.e0bfd16968fb": {
+      "text": "Description of Vintage Bag Retro Straw Woven Cross Body Bag Boho Bag",
+      "src": "e0bfd16968fb",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.de7d1b721a1e": {
+      "text": "i",
+      "src": "de7d1b721a1e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ae4d55ed30f1": {
+      "text": "Well made and durable, manual weaving, cute and stylish. Spacious enough to hold your wallet, cellphone, cash, lipstick, keys and other essentials.…",
+      "src": "ae4d55ed30f1",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.a6121b9f7fff": {
+      "text": "New without tags · Beige",
+      "src": "a6121b9f7fff",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.5846de520b5c": {
+      "text": "Vintage Bag Retro Straw Woven Cross Body Bag Boho Bag — open the Vinted listing in a new tab",
+      "src": "5846de520b5c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.c16236ad956c": {
+      "text": "Ask about this piece",
+      "src": "c16236ad956c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.85f061ad9f47": {
+      "text": "— opens WhatsApp in a new tab",
+      "src": "85f061ad9f47",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2d82b36ea724": {
+      "text": "Description of Stainless Steel Cutlery Set Tableware Knives Forks Spoons Flatware",
+      "src": "2d82b36ea724",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.0ce2e5fe2889": {
+      "text": "as per images. Complete your kitchen setup with this comprehensive stainless steel cutlery set featuring dinner knives, forks, tablespoons, and…",
+      "src": "0ce2e5fe2889",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.f28bb129fb82": {
+      "text": "Stainless Steel Cutlery Set Tableware Knives Forks Spoons Flatware — open the Vinted listing in a new tab",
+      "src": "f28bb129fb82",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
+    "text.fea856223973": {
+      "text": "10 people have saved this on Vinted",
+      "src": "fea856223973",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -4905,13 +5003,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.de7d1b721a1e": {
-      "text": "i",
-      "src": "de7d1b721a1e",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
     },
     "text.9f5d3e2581c0": {
       "text": "Retro Vintage Style Radio FM and Speaker. Length 7.5 inches. Height 5 inches. Width 2.5 inches. Features: solar rechargeable batteries charging port…",
@@ -4933,20 +5024,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.c16236ad956c": {
-      "text": "Ask about this piece",
-      "src": "c16236ad956c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.85f061ad9f47": {
-      "text": "— opens WhatsApp in a new tab",
-      "src": "85f061ad9f47",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.93dfb4281e40": {
       "text": "Description of greatest thinkers on common everyday problems What Would Nietzsche Do? | Psychology Philosophy",
@@ -5291,12 +5368,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.c99c07999b7c": {
-      "text": "34 people have saved this on Vinted",
-      "src": "c99c07999b7c",
+    "text.57bbb12527f9": {
+      "text": "33 people have saved this on Vinted",
+      "src": "57bbb12527f9",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "",
+      "changed": ""
     },
     "text.f4293d49c7f6": {
       "text": "Description of Boho Wooden Serving Tray with Mandala Pattern | Rustic Indian Ethnic Home Decor",
@@ -5599,13 +5676,6 @@
       "since": "",
       "changed": ""
     },
-    "text.57bbb12527f9": {
-      "text": "33 people have saved this on Vinted",
-      "src": "57bbb12527f9",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c0fca8fae754": {
       "text": "Description of Vintage jewellery | retro jewellery | 925 Silver Bracelet | Amethyst and Pearl | boho",
       "src": "c0fca8fae754",
@@ -5893,6 +5963,13 @@
       "since": "",
       "changed": ""
     },
+    "text.6f08dc1cfa4c": {
+      "text": "7 people have saved this on Vinted",
+      "src": "6f08dc1cfa4c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.def20ba7bb2d": {
       "text": "Description of Hardcover David Whyte Consolations Elizabeth Gilbert Keep This Book By Your Bedside Forever",
       "src": "def20ba7bb2d",
@@ -6110,12 +6187,12 @@
       "since": "",
       "changed": ""
     },
-    "text.0e5e6fadf812": {
-      "text": "19 people have saved this on Vinted",
-      "src": "0e5e6fadf812",
+    "text.d9239828b2de": {
+      "text": "20 people have saved this on Vinted",
+      "src": "d9239828b2de",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "text.3ad93d22f08e": {
       "text": "Description of read before you die Rumi The Essential Rumi Coleman Barks New Expanded Edition Bestselling Poetry",
@@ -6222,13 +6299,6 @@
       "since": "",
       "changed": ""
     },
-    "text.fea856223973": {
-      "text": "10 people have saved this on Vinted",
-      "src": "fea856223973",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.2c56d422f40a": {
       "text": "Description of Francis Fukuyama Identity Bestselling Political Masterpiece",
       "src": "2c56d422f40a",
@@ -6270,6 +6340,13 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
+    },
+    "text.f5c5089f35bc": {
+      "text": "13 people have saved this on Vinted",
+      "src": "f5c5089f35bc",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-02",
+      "changed": "2026-09-02"
     },
     "text.e1da947cda0c": {
       "text": "Description of must read Peter Frankopan The Silk Roads Number 1 Global Bestseller",
@@ -6561,13 +6638,6 @@
     "text.0e38e66011d0": {
       "text": "Positivity, wisdom, and timeless Indian artistry in this handcrafted Hindu god Ganesha Idol, a perfect blend of spiritual elegance and modern décor…",
       "src": "0e38e66011d0",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a6121b9f7fff": {
-      "text": "New without tags · Beige",
-      "src": "a6121b9f7fff",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7314,62 +7384,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4a51407894f6": {
-      "text": "9 people have saved this on Vinted",
-      "src": "4a51407894f6",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.80b913a9f8b3": {
-      "text": "Description of Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring",
-      "src": "80b913a9f8b3",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.90f447df7d89": {
-      "text": "Gold-toned jewellery set featuring a dramatic layered collar necklace, matching hoop earrings, a structured cuff bracelet, and a statement ring.…",
-      "src": "90f447df7d89",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.1dbe0d1e005d": {
-      "text": "Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring — open the Vinted listing in a new tab",
-      "src": "1dbe0d1e005d",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f5c5089f35bc": {
-      "text": "13 people have saved this on Vinted",
-      "src": "f5c5089f35bc",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
-    },
-    "text.76a77e31fcb0": {
-      "text": "Description of Multicolor Boho Seed Bead Earrings Dangle Hoop",
-      "src": "76a77e31fcb0",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.a8ad75f4d1ef": {
-      "text": "For sale is a beautiful pair of multicolor seed bead earrings, 2.75&quot; long and 1&quot; wide, with silvertone hardware. Beautiful and unique boho pair.",
-      "src": "a8ad75f4d1ef",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.45f83a322ab8": {
-      "text": "Multicolor Boho Seed Bead Earrings Dangle Hoop — open the Vinted listing in a new tab",
-      "src": "45f83a322ab8",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -7411,6 +7425,48 @@
       "where": "page text — first seen on wardrobe/10.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.62e120b90cb9": {
+      "text": "Red and grey silk crepe sari with fabric for the choli",
+      "src": "62e120b90cb9",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.24de1f9d4126": {
+      "text": "Description of Red and grey silk crepe sari with fabric for the choli",
+      "src": "24de1f9d4126",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8d1d3bea0523": {
+      "text": "A red sari with a grey border. Crepe silk, a lovely, flowing fabric. With a grey piece of fabric on the choli (on the floor to the left in the photo).",
+      "src": "8d1d3bea0523",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.9246179142e1": {
+      "text": "Red-orange silk crepe sari with fabric for the choli",
+      "src": "9246179142e1",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.8ab21c8f8d3b": {
+      "text": "Description of Red-orange silk crepe sari with fabric for the choli",
+      "src": "8ab21c8f8d3b",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.f23c8312d218": {
+      "text": "A red sari with an orange pattern. Crepe silk, a lovely, flowing fabric. With a red piece of fabric for the choli (on the floor on the left in the…",
+      "src": "f23c8312d218",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
     },
     "text.dc9d2f65dcf2": {
       "text": "Greenish viscose sari with fabric for the choli",
@@ -9015,41 +9071,6 @@
       "since": "",
       "changed": ""
     },
-    "text.297201003da4": {
-      "text": "Jagannath sticker, 8 cm in diameter, with a blue border",
-      "src": "297201003da4",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.32c604a4f92c": {
-      "text": "Description of Jagannath sticker, 8 cm in diameter, with a blue border",
-      "src": "32c604a4f92c",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.504b65d5ac91": {
-      "text": "A card with a larger envelope",
-      "src": "504b65d5ac91",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.ccf9b4eb2258": {
-      "text": "Description of A card with a larger envelope",
-      "src": "ccf9b4eb2258",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.60b1a85583ab": {
-      "text": "Make your loved ones happy and let them know how much you care – perfect as a birthday card. The back features the mahā-mantra. Comes with an…",
-      "src": "60b1a85583ab",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
     "text.435567b14289": {
       "text": "← Previous",
       "src": "435567b14289",
@@ -9070,6 +9091,41 @@
       "where": "page text — first seen on wardrobe/11.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.297201003da4": {
+      "text": "Jagannath sticker, 8 cm in diameter, with a blue border",
+      "src": "297201003da4",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.32c604a4f92c": {
+      "text": "Description of Jagannath sticker, 8 cm in diameter, with a blue border",
+      "src": "32c604a4f92c",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.504b65d5ac91": {
+      "text": "A card with a larger envelope",
+      "src": "504b65d5ac91",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ccf9b4eb2258": {
+      "text": "Description of A card with a larger envelope",
+      "src": "ccf9b4eb2258",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.60b1a85583ab": {
+      "text": "Make your loved ones happy and let them know how much you care – perfect as a birthday card. The back features the mahā-mantra. Comes with an…",
+      "src": "60b1a85583ab",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
     },
     "text.f35158d3d2ae": {
       "text": "Smaller greeting card with envelope",
@@ -10681,48 +10737,6 @@
       "since": "",
       "changed": ""
     },
-    "text.9fdceaa0bb22": {
-      "text": "Red cotton apron with a frill",
-      "src": "9fdceaa0bb22",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.2b0c63b64b52": {
-      "text": "Description of Red cotton apron with a frill",
-      "src": "2b0c63b64b52",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.0b0663490cc3": {
-      "text": "A cotton apron with two pockets and a frill. It adapts to your figure – it ties at the neck and around the waist.",
-      "src": "0b0663490cc3",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.19ae371f9687": {
-      "text": "Dátá Masala Tea 35 g, Yogi Tea",
-      "src": "19ae371f9687",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.eac8615f51b3": {
-      "text": "Description of Dátá Masala Tea 35 g, Yogi Tea",
-      "src": "eac8615f51b3",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.db2ede1a0330": {
-      "text": "Dátá tea (Dátá Masala tea, Indian white tea, Yogi tea) is a blend of spices used to make Indian white tea. It is a traditional Indian drink which in…",
-      "src": "db2ede1a0330",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e8d03aa51709": {
       "text": "Page 11 of 18",
       "src": "e8d03aa51709",
@@ -10736,6 +10750,48 @@
       "where": "page text — first seen on wardrobe/12.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.9fdceaa0bb22": {
+      "text": "Red cotton apron with a frill",
+      "src": "9fdceaa0bb22",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2b0c63b64b52": {
+      "text": "Description of Red cotton apron with a frill",
+      "src": "2b0c63b64b52",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.0b0663490cc3": {
+      "text": "A cotton apron with two pockets and a frill. It adapts to your figure – it ties at the neck and around the waist.",
+      "src": "0b0663490cc3",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.19ae371f9687": {
+      "text": "Dátá Masala Tea 35 g, Yogi Tea",
+      "src": "19ae371f9687",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.eac8615f51b3": {
+      "text": "Description of Dátá Masala Tea 35 g, Yogi Tea",
+      "src": "eac8615f51b3",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.db2ede1a0330": {
+      "text": "Dátá tea (Dátá Masala tea, Indian white tea, Yogi tea) is a blend of spices used to make Indian white tea. It is a traditional Indian drink which in…",
+      "src": "db2ede1a0330",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
     },
     "text.a8ece1281179": {
       "text": "Japa mala with irregular beads",
@@ -12662,34 +12718,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.413be71b9cd7": {
-      "text": "Sandalwood Incense Sticks",
-      "src": "413be71b9cd7",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.560c9ef7362a": {
-      "text": "Description of Sandalwood Incense Sticks",
-      "src": "560c9ef7362a",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8ecfcb8ba355": {
-      "text": "Tilak Gopi Chandan 68 g",
-      "src": "8ecfcb8ba355",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e8d70a089eda": {
-      "text": "Description of Tilak Gopi Chandan 68 g",
-      "src": "e8d70a089eda",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.4ed7f0084498": {
       "text": "Page 12 of 18",
       "src": "4ed7f0084498",
@@ -12703,6 +12731,34 @@
       "where": "page text — first seen on wardrobe/13.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.413be71b9cd7": {
+      "text": "Sandalwood Incense Sticks",
+      "src": "413be71b9cd7",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.560c9ef7362a": {
+      "text": "Description of Sandalwood Incense Sticks",
+      "src": "560c9ef7362a",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8ecfcb8ba355": {
+      "text": "Tilak Gopi Chandan 68 g",
+      "src": "8ecfcb8ba355",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e8d70a089eda": {
+      "text": "Description of Tilak Gopi Chandan 68 g",
+      "src": "e8d70a089eda",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.01302b0b057d": {
       "text": "Krishna Damodar (Makhanchor) metal",
@@ -14538,48 +14594,6 @@
       "since": "",
       "changed": ""
     },
-    "text.1c8eb04160c1": {
-      "text": "Cotton sari with a burgundy woven pattern",
-      "src": "1c8eb04160c1",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.35693aee214d": {
-      "text": "Description of Cotton sari with a burgundy woven pattern",
-      "src": "35693aee214d",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.342e9aea6514": {
-      "text": "Cotton sari",
-      "src": "342e9aea6514",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.bd9132d66e88": {
-      "text": "Cotton sari with woven pattern, burgundy / pink / green",
-      "src": "bd9132d66e88",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.010b1b0fd346": {
-      "text": "Description of Cotton sari with woven pattern, burgundy / pink / green",
-      "src": "010b1b0fd346",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.b189508adaf5": {
-      "text": "Cotton sari, heavy cotton. Available in a range of colours.",
-      "src": "b189508adaf5",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
     "text.6de41d249856": {
       "text": "Page 13 of 18",
       "src": "6de41d249856",
@@ -14593,6 +14607,48 @@
       "where": "page text — first seen on wardrobe/14.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.1c8eb04160c1": {
+      "text": "Cotton sari with a burgundy woven pattern",
+      "src": "1c8eb04160c1",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.35693aee214d": {
+      "text": "Description of Cotton sari with a burgundy woven pattern",
+      "src": "35693aee214d",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.342e9aea6514": {
+      "text": "Cotton sari",
+      "src": "342e9aea6514",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.bd9132d66e88": {
+      "text": "Cotton sari with woven pattern, burgundy / pink / green",
+      "src": "bd9132d66e88",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.010b1b0fd346": {
+      "text": "Description of Cotton sari with woven pattern, burgundy / pink / green",
+      "src": "010b1b0fd346",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.b189508adaf5": {
+      "text": "Cotton sari, heavy cotton. Available in a range of colours.",
+      "src": "b189508adaf5",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
     },
     "text.b182699c7909": {
       "text": "Green and blue viscose sari with beads, with fabric for the choli",
@@ -16568,48 +16624,6 @@
       "since": "",
       "changed": ""
     },
-    "text.7106605ad0b1": {
-      "text": "Flower Earrings, mother-of-pearl",
-      "src": "7106605ad0b1",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0ea55f99045a": {
-      "text": "Description of Flower Earrings, mother-of-pearl",
-      "src": "0ea55f99045a",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.b72f92a9443b": {
-      "text": "Painted mother-of-pearl earrings.",
-      "src": "b72f92a9443b",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.fe837017e659": {
-      "text": "Butterfly Earrings – purple threads",
-      "src": "fe837017e659",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cb1060f71236": {
-      "text": "Description of Butterfly Earrings – purple threads",
-      "src": "cb1060f71236",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.2bb003907ac0": {
-      "text": "Butterfly earrings with silk threads.",
-      "src": "2bb003907ac0",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e5a311afe784": {
       "text": "Page 14 of 18",
       "src": "e5a311afe784",
@@ -16623,6 +16637,48 @@
       "where": "page text — first seen on wardrobe/15.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.7106605ad0b1": {
+      "text": "Flower Earrings, mother-of-pearl",
+      "src": "7106605ad0b1",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0ea55f99045a": {
+      "text": "Description of Flower Earrings, mother-of-pearl",
+      "src": "0ea55f99045a",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.b72f92a9443b": {
+      "text": "Painted mother-of-pearl earrings.",
+      "src": "b72f92a9443b",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.fe837017e659": {
+      "text": "Butterfly Earrings – purple threads",
+      "src": "fe837017e659",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cb1060f71236": {
+      "text": "Description of Butterfly Earrings – purple threads",
+      "src": "cb1060f71236",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.2bb003907ac0": {
+      "text": "Butterfly earrings with silk threads.",
+      "src": "2bb003907ac0",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
     },
     "text.00bf845a977e": {
       "text": "Butterfly Earrings – orange threads",
@@ -18591,48 +18647,6 @@
       "since": "",
       "changed": ""
     },
-    "text.c666a7ed2d8e": {
-      "text": "Šrímad Bhágavatam 8. zpěv &amp;quot;Zničení vesmíru&amp;quot;",
-      "src": "c666a7ed2d8e",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b903b536c03e": {
-      "text": "Description of Šrímad Bhágavatam 8. zpěv &amp;quot;Zničení vesmíru&amp;quot;",
-      "src": "b903b536c03e",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.5e5231635d42": {
-      "text": "Śrī Śrīmad A.C. Bhaktivedanta Swami Prabhupāda: Another incarnation of Śrī Kṛṣṇa described in this canto is in the form of a fish that saves Mahār…",
-      "src": "5e5231635d42",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.43a07687ea13": {
-      "text": "Šrímad Bhágavatam 7. zpěv &amp;quot;Věda o Bohu&amp;quot;",
-      "src": "43a07687ea13",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.d4562bf962cb": {
-      "text": "Description of Šrímad Bhágavatam 7. zpěv &amp;quot;Věda o Bohu&amp;quot;",
-      "src": "d4562bf962cb",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.d1c6ca5aa42c": {
-      "text": "Sri Srimad A.C. Bhaktivedanta Swami Prabhupada’s Seventh Canto goes on to explore topics relating to social coexistence. It deals with the…",
-      "src": "d1c6ca5aa42c",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cfc00ad12d5a": {
       "text": "Page 15 of 18",
       "src": "cfc00ad12d5a",
@@ -18646,6 +18660,48 @@
       "where": "page text — first seen on wardrobe/16.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.c666a7ed2d8e": {
+      "text": "Šrímad Bhágavatam 8. zpěv &amp;quot;Zničení vesmíru&amp;quot;",
+      "src": "c666a7ed2d8e",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b903b536c03e": {
+      "text": "Description of Šrímad Bhágavatam 8. zpěv &amp;quot;Zničení vesmíru&amp;quot;",
+      "src": "b903b536c03e",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.5e5231635d42": {
+      "text": "Śrī Śrīmad A.C. Bhaktivedanta Swami Prabhupāda: Another incarnation of Śrī Kṛṣṇa described in this canto is in the form of a fish that saves Mahār…",
+      "src": "5e5231635d42",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.43a07687ea13": {
+      "text": "Šrímad Bhágavatam 7. zpěv &amp;quot;Věda o Bohu&amp;quot;",
+      "src": "43a07687ea13",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.d4562bf962cb": {
+      "text": "Description of Šrímad Bhágavatam 7. zpěv &amp;quot;Věda o Bohu&amp;quot;",
+      "src": "d4562bf962cb",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.d1c6ca5aa42c": {
+      "text": "Sri Srimad A.C. Bhaktivedanta Swami Prabhupada’s Seventh Canto goes on to explore topics relating to social coexistence. It deals with the…",
+      "src": "d1c6ca5aa42c",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
     },
     "text.c5bf6081a082": {
       "text": "Šrímad Bhágavatam 6. zpěv &amp;quot;Předepsané povinnosti lidstva&amp;quot;",
@@ -20530,48 +20586,6 @@
       "since": "",
       "changed": ""
     },
-    "text.e763b83e5a5b": {
-      "text": "Boys’ mottled T-shirt, short sleeves, sizes 24 and 28",
-      "src": "e763b83e5a5b",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.dd2c8ef1b04e": {
-      "text": "Description of Boys’ mottled T-shirt, short sleeves, sizes 24 and 28",
-      "src": "dd2c8ef1b04e",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.879068576a42": {
-      "text": "A high-quality button-up shirt made from sturdy cotton. Short sleeves and sewn-in side pockets.",
-      "src": "879068576a42",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.21b39f007ed7": {
-      "text": "Men’s jacket with a subtle check pattern, stand-up collar and short sleeves",
-      "src": "21b39f007ed7",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.085d1308a595": {
-      "text": "Description of Men’s jacket with a subtle check pattern, stand-up collar and short sleeves",
-      "src": "085d1308a595",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.860c1b1cd891": {
-      "text": "A men’s short-sleeved kurta with a stand-up collar, made from lightweight cotton with a subtle grey-blue chequered pattern. Comfortable fit. One…",
-      "src": "860c1b1cd891",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
     "text.7deafed7d0eb": {
       "text": "Page 16 of 18",
       "src": "7deafed7d0eb",
@@ -20585,6 +20599,48 @@
       "where": "page text — first seen on wardrobe/17.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.e763b83e5a5b": {
+      "text": "Boys’ mottled T-shirt, short sleeves, sizes 24 and 28",
+      "src": "e763b83e5a5b",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.dd2c8ef1b04e": {
+      "text": "Description of Boys’ mottled T-shirt, short sleeves, sizes 24 and 28",
+      "src": "dd2c8ef1b04e",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.879068576a42": {
+      "text": "A high-quality button-up shirt made from sturdy cotton. Short sleeves and sewn-in side pockets.",
+      "src": "879068576a42",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.21b39f007ed7": {
+      "text": "Men’s jacket with a subtle check pattern, stand-up collar and short sleeves",
+      "src": "21b39f007ed7",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.085d1308a595": {
+      "text": "Description of Men’s jacket with a subtle check pattern, stand-up collar and short sleeves",
+      "src": "085d1308a595",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.860c1b1cd891": {
+      "text": "A men’s short-sleeved kurta with a stand-up collar, made from lightweight cotton with a subtle grey-blue chequered pattern. Comfortable fit. One…",
+      "src": "860c1b1cd891",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
     },
     "text.617f2c8def03": {
       "text": "Dresses for the Goddesses, embellished with costume jewellery, sizes S and M",
@@ -22917,6 +22973,13 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.0e5e6fadf812": {
+      "text": "19 people have saved this on Vinted",
+      "src": "0e5e6fadf812",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
     "text.f6e4b6b307f9": {
       "text": "Description of Mango Gold Metallic Cami Top | Size M",
       "src": "f6e4b6b307f9",
@@ -23043,34 +23106,6 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
-    "text.7db322dc5297": {
-      "text": "Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L",
-      "src": "7db322dc5297",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b61da2829796": {
-      "text": "Description of Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L",
-      "src": "b61da2829796",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8da99cfb7c67": {
-      "text": "Beautiful handmade Indian block-print summer dress in classic green with a contrast deep-red, a traditional Indian design called Ajrakh. Made with…",
-      "src": "8da99cfb7c67",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.2cb693d019d2": {
-      "text": "Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L — open the sold Vinted listing in a new tab",
-      "src": "2cb693d019d2",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-27",
-      "changed": "2026-08-27"
-    },
     "text.b45621998931": {
       "text": "Page 17 of 18",
       "src": "b45621998931",
@@ -23084,6 +23119,34 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
+    },
+    "text.7db322dc5297": {
+      "text": "Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L",
+      "src": "7db322dc5297",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b61da2829796": {
+      "text": "Description of Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L",
+      "src": "b61da2829796",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8da99cfb7c67": {
+      "text": "Beautiful handmade Indian block-print summer dress in classic green with a contrast deep-red, a traditional Indian design called Ajrakh. Made with…",
+      "src": "8da99cfb7c67",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2cb693d019d2": {
+      "text": "Indian Cotton Block-Print Summer Midi Dress | Green &amp; Rust Red | Boho Ajrakh Style | Size L — open the sold Vinted listing in a new tab",
+      "src": "2cb693d019d2",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-27",
+      "changed": "2026-08-27"
     },
     "text.012bd7fb477a": {
       "text": "Indian Cotton Maxi Skirt · Kalamkari Floral Print · Elasticated Waist · Boho Summer",
@@ -23183,6 +23246,48 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.80b913a9f8b3": {
+      "text": "Description of Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring",
+      "src": "80b913a9f8b3",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.90f447df7d89": {
+      "text": "Gold-toned jewellery set featuring a dramatic layered collar necklace, matching hoop earrings, a structured cuff bracelet, and a statement ring.…",
+      "src": "90f447df7d89",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.1dbe0d1e005d": {
+      "text": "Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring — open the Vinted listing in a new tab",
+      "src": "1dbe0d1e005d",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.76a77e31fcb0": {
+      "text": "Description of Multicolor Boho Seed Bead Earrings Dangle Hoop",
+      "src": "76a77e31fcb0",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.a8ad75f4d1ef": {
+      "text": "For sale is a beautiful pair of multicolor seed bead earrings, 2.75&quot; long and 1&quot; wide, with silvertone hardware. Beautiful and unique boho pair.",
+      "src": "a8ad75f4d1ef",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.45f83a322ab8": {
+      "text": "Multicolor Boho Seed Bead Earrings Dangle Hoop — open the Vinted listing in a new tab",
+      "src": "45f83a322ab8",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
     "text.ad49277e93a3": {
       "text": "Description of Fastrack Quartz Analog Silver Dial Stainless Steel Strap Watch",
       "src": "ad49277e93a3",
@@ -23204,12 +23309,12 @@
       "since": "",
       "changed": ""
     },
-    "text.fb5938a595ff": {
-      "text": "23 people have saved this on Vinted",
-      "src": "fb5938a595ff",
+    "text.ff0a2f2a0447": {
+      "text": "24 people have saved this on Vinted",
+      "src": "ff0a2f2a0447",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
     },
     "text.08d7795d0b9c": {
       "text": "Description of Vintage Jewellery | Ethnic Boho Necklace",
@@ -25206,34 +25311,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.708c9c5991dd": {
-      "text": "Colourful Butterfly Stick-on Tattoos XII (5 designs)",
-      "src": "708c9c5991dd",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.ff799e5008bd": {
-      "text": "Description of Colourful Butterfly Stick-on Tattoos XII (5 designs)",
-      "src": "ff799e5008bd",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.c5457d7c4792": {
-      "text": "Colourful Butterfly Stick-on Tattoos XI (5 designs)",
-      "src": "c5457d7c4792",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.ffab36aab971": {
-      "text": "Description of Colourful Butterfly Stick-on Tattoos XI (5 designs)",
-      "src": "ffab36aab971",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.c6a7f0fa47dd": {
       "text": "Page 2 of 18",
       "src": "c6a7f0fa47dd",
@@ -25247,6 +25324,34 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.708c9c5991dd": {
+      "text": "Colourful Butterfly Stick-on Tattoos XII (5 designs)",
+      "src": "708c9c5991dd",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ff799e5008bd": {
+      "text": "Description of Colourful Butterfly Stick-on Tattoos XII (5 designs)",
+      "src": "ff799e5008bd",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.c5457d7c4792": {
+      "text": "Colourful Butterfly Stick-on Tattoos XI (5 designs)",
+      "src": "c5457d7c4792",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ffab36aab971": {
+      "text": "Description of Colourful Butterfly Stick-on Tattoos XI (5 designs)",
+      "src": "ffab36aab971",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.893784d922f8": {
       "text": "Colourful Butterfly X Stick-on Tattoos (6 designs)",
@@ -26998,48 +27103,6 @@
       "since": "",
       "changed": ""
     },
-    "text.f75b8d488803": {
-      "text": "Picture of Prabhupada, approx. 7 cm, acrylic, 6 types",
-      "src": "f75b8d488803",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.d7061c2d5a47": {
-      "text": "Description of Picture of Prabhupada, approx. 7 cm, acrylic, 6 types",
-      "src": "d7061c2d5a47",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.d46d6c806842": {
-      "text": "Acrylic picture on a stand featuring an image of Prabhupāda, to be selected based on the photo and number: 01 – smiling on the lawn 02 – looking…",
-      "src": "d46d6c806842",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e209e1f3854c": {
-      "text": "Jagannath keyring, metal",
-      "src": "e209e1f3854c",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.fcf13a1abcdd": {
-      "text": "Description of Jagannath keyring, metal",
-      "src": "fcf13a1abcdd",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ee6f492cee01": {
-      "text": "Jagannath round metal key ring.",
-      "src": "ee6f492cee01",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e72b61a125f4": {
       "text": "Page 3 of 18",
       "src": "e72b61a125f4",
@@ -27053,6 +27116,48 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.f75b8d488803": {
+      "text": "Picture of Prabhupada, approx. 7 cm, acrylic, 6 types",
+      "src": "f75b8d488803",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.d7061c2d5a47": {
+      "text": "Description of Picture of Prabhupada, approx. 7 cm, acrylic, 6 types",
+      "src": "d7061c2d5a47",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.d46d6c806842": {
+      "text": "Acrylic picture on a stand featuring an image of Prabhupāda, to be selected based on the photo and number: 01 – smiling on the lawn 02 – looking…",
+      "src": "d46d6c806842",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e209e1f3854c": {
+      "text": "Jagannath keyring, metal",
+      "src": "e209e1f3854c",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.fcf13a1abcdd": {
+      "text": "Description of Jagannath keyring, metal",
+      "src": "fcf13a1abcdd",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ee6f492cee01": {
+      "text": "Jagannath round metal key ring.",
+      "src": "ee6f492cee01",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
     },
     "text.df488675d6f6": {
       "text": "Sun Keyring, metal",
@@ -28720,41 +28825,6 @@
       "since": "",
       "changed": ""
     },
-    "text.deb5eb6e54e8": {
-      "text": "Gilded Radha-Krishna murti",
-      "src": "deb5eb6e54e8",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.20f504df8f2d": {
-      "text": "Description of Gilded Radha-Krishna murti",
-      "src": "20f504df8f2d",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.e073fba95fc5": {
-      "text": "A Murti of Radha Krishna made from gold-plated metal. In a gift box. A beautiful background.",
-      "src": "e073fba95fc5",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.185bb0b934a4": {
-      "text": "Tilak Rádhe pendant (Sanskrit inscription)",
-      "src": "185bb0b934a4",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.748428e51faf": {
-      "text": "Description of Tilak Rádhe pendant (Sanskrit inscription)",
-      "src": "748428e51faf",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.564b9e644a95": {
       "text": "Page 4 of 18",
       "src": "564b9e644a95",
@@ -28768,6 +28838,41 @@
       "where": "page text — first seen on wardrobe/5.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.deb5eb6e54e8": {
+      "text": "Gilded Radha-Krishna murti",
+      "src": "deb5eb6e54e8",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.20f504df8f2d": {
+      "text": "Description of Gilded Radha-Krishna murti",
+      "src": "20f504df8f2d",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.e073fba95fc5": {
+      "text": "A Murti of Radha Krishna made from gold-plated metal. In a gift box. A beautiful background.",
+      "src": "e073fba95fc5",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.185bb0b934a4": {
+      "text": "Tilak Rádhe pendant (Sanskrit inscription)",
+      "src": "185bb0b934a4",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.748428e51faf": {
+      "text": "Description of Tilak Rádhe pendant (Sanskrit inscription)",
+      "src": "748428e51faf",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.9919084b7133": {
       "text": "Larger Ganesh (resin)",
@@ -30246,41 +30351,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.db4303ec67c4": {
-      "text": "Wooden Krishna sticker in the window",
-      "src": "db4303ec67c4",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0beeb3d7c88d": {
-      "text": "Description of Wooden Krishna sticker in the window",
-      "src": "0beeb3d7c88d",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.e692bcd932a5": {
-      "text": "Small Jagannath, Baladev and Subhadra sticker",
-      "src": "e692bcd932a5",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.bbe9b7d4b20f": {
-      "text": "Description of Small Jagannath, Baladev and Subhadra sticker",
-      "src": "bbe9b7d4b20f",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.2166f928c38a": {
-      "text": "Nálepka Jagannáth, Baladév and Subhadra.",
-      "src": "2166f928c38a",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c5fef85c51c0": {
       "text": "Page 5 of 18",
       "src": "c5fef85c51c0",
@@ -30294,6 +30364,41 @@
       "where": "page text — first seen on wardrobe/6.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.db4303ec67c4": {
+      "text": "Wooden Krishna sticker in the window",
+      "src": "db4303ec67c4",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0beeb3d7c88d": {
+      "text": "Description of Wooden Krishna sticker in the window",
+      "src": "0beeb3d7c88d",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.e692bcd932a5": {
+      "text": "Small Jagannath, Baladev and Subhadra sticker",
+      "src": "e692bcd932a5",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.bbe9b7d4b20f": {
+      "text": "Description of Small Jagannath, Baladev and Subhadra sticker",
+      "src": "bbe9b7d4b20f",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.2166f928c38a": {
+      "text": "Nálepka Jagannáth, Baladév and Subhadra.",
+      "src": "2166f928c38a",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
     },
     "text.1f8b635f7192": {
       "text": "Crystal prayer bead pouch counter",
@@ -31926,34 +32031,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.aa440a63983c": {
-      "text": "Red oval bindis",
-      "src": "aa440a63983c",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.4e11f5262830": {
-      "text": "Description of Red oval bindis",
-      "src": "4e11f5262830",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.278a58d88d95": {
-      "text": "Coloured Bindi discs, sizes 6 and 7",
-      "src": "278a58d88d95",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e4c916f446cb": {
-      "text": "Description of Coloured Bindi discs, sizes 6 and 7",
-      "src": "e4c916f446cb",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.a2d6a53f5283": {
       "text": "Page 6 of 18",
       "src": "a2d6a53f5283",
@@ -31967,6 +32044,34 @@
       "where": "page text — first seen on wardrobe/7.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.aa440a63983c": {
+      "text": "Red oval bindis",
+      "src": "aa440a63983c",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.4e11f5262830": {
+      "text": "Description of Red oval bindis",
+      "src": "4e11f5262830",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.278a58d88d95": {
+      "text": "Coloured Bindi discs, sizes 6 and 7",
+      "src": "278a58d88d95",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e4c916f446cb": {
+      "text": "Description of Coloured Bindi discs, sizes 6 and 7",
+      "src": "e4c916f446cb",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.8e25f7670278": {
       "text": "Red Bindi beads",
@@ -33781,34 +33886,6 @@
       "since": "",
       "changed": ""
     },
-    "text.ea1122ea0935": {
-      "text": "Square wall hook",
-      "src": "ea1122ea0935",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.afe72f361697": {
-      "text": "Description of Square wall hook",
-      "src": "afe72f361697",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.b4dbcae71b92": {
-      "text": "Square wall hook with a ceramic tip",
-      "src": "b4dbcae71b92",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a1bbfe402b88": {
-      "text": "Description of Square wall hook with a ceramic tip",
-      "src": "a1bbfe402b88",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.538c168d477d": {
       "text": "Page 7 of 18",
       "src": "538c168d477d",
@@ -33822,6 +33899,34 @@
       "where": "page text — first seen on wardrobe/8.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.ea1122ea0935": {
+      "text": "Square wall hook",
+      "src": "ea1122ea0935",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.afe72f361697": {
+      "text": "Description of Square wall hook",
+      "src": "afe72f361697",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.b4dbcae71b92": {
+      "text": "Square wall hook with a ceramic tip",
+      "src": "b4dbcae71b92",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.a1bbfe402b88": {
+      "text": "Description of Square wall hook with a ceramic tip",
+      "src": "a1bbfe402b88",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.564a6a9ad969": {
       "text": "Butterfly Tattoo",
@@ -35391,41 +35496,6 @@
       "since": "",
       "changed": ""
     },
-    "text.fd02d1ea3e85": {
-      "text": "Učení královny Kuntí",
-      "src": "fd02d1ea3e85",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cbfb1fc25172": {
-      "text": "Description of Učení královny Kuntí",
-      "src": "cbfb1fc25172",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.6f3dc6876e7e": {
-      "text": "Pen stand",
-      "src": "6f3dc6876e7e",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.d72cf6ac2f0a": {
-      "text": "Description of Pen stand",
-      "src": "d72cf6ac2f0a",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8cb5803572b9": {
-      "text": "A wooden, coloured stand for pens and pencils.",
-      "src": "8cb5803572b9",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
     "text.58bf6c203a7c": {
       "text": "Page 8 of 18",
       "src": "58bf6c203a7c",
@@ -35439,6 +35509,41 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.fd02d1ea3e85": {
+      "text": "Učení královny Kuntí",
+      "src": "fd02d1ea3e85",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cbfb1fc25172": {
+      "text": "Description of Učení královny Kuntí",
+      "src": "cbfb1fc25172",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.6f3dc6876e7e": {
+      "text": "Pen stand",
+      "src": "6f3dc6876e7e",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.d72cf6ac2f0a": {
+      "text": "Description of Pen stand",
+      "src": "d72cf6ac2f0a",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8cb5803572b9": {
+      "text": "A wooden, coloured stand for pens and pencils.",
+      "src": "8cb5803572b9",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
     },
     "text.3b337ed33859": {
       "text": "Thin silk veil",
@@ -37001,48 +37106,6 @@
       "since": "",
       "changed": ""
     },
-    "text.62e120b90cb9": {
-      "text": "Red and grey silk crepe sari with fabric for the choli",
-      "src": "62e120b90cb9",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.24de1f9d4126": {
-      "text": "Description of Red and grey silk crepe sari with fabric for the choli",
-      "src": "24de1f9d4126",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8d1d3bea0523": {
-      "text": "A red sari with a grey border. Crepe silk, a lovely, flowing fabric. With a grey piece of fabric on the choli (on the floor to the left in the photo).",
-      "src": "8d1d3bea0523",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9246179142e1": {
-      "text": "Red-orange silk crepe sari with fabric for the choli",
-      "src": "9246179142e1",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.8ab21c8f8d3b": {
-      "text": "Description of Red-orange silk crepe sari with fabric for the choli",
-      "src": "8ab21c8f8d3b",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.f23c8312d218": {
-      "text": "A red sari with an orange pattern. Crepe silk, a lovely, flowing fabric. With a red piece of fabric for the choli (on the floor on the left in the…",
-      "src": "f23c8312d218",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
     "text.1c27a1b96faa": {
       "text": "Page 9 of 18",
       "src": "1c27a1b96faa",
@@ -37340,6 +37403,13 @@
     "text.b2569be0afcd": {
       "text": "Summer dresses",
       "src": "b2569be0afcd",
+      "where": "page text — first seen on wardrobe/fashion.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f2a9c5f1636c": {
+      "text": "Vintage Love",
+      "src": "f2a9c5f1636c",
       "where": "page text — first seen on wardrobe/fashion.html",
       "since": "",
       "changed": ""
@@ -37946,6 +38016,13 @@
       "since": "",
       "changed": ""
     },
+    "text.ea875a30f29d": {
+      "text": "stainless stell",
+      "src": "ea875a30f29d",
+      "where": "page text — first seen on wardrobe/home-decor.html",
+      "since": "2026-09-03",
+      "changed": "2026-09-03"
+    },
     "text.354daa875227": {
       "text": "Handmade",
       "src": "354daa875227",
@@ -38124,13 +38201,6 @@
     "text.fb6f2e996e96": {
       "text": "Antik",
       "src": "fb6f2e996e96",
-      "where": "page text — first seen on wardrobe/jewellery.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f2a9c5f1636c": {
-      "text": "Vintage Love",
-      "src": "f2a9c5f1636c",
       "where": "page text — first seen on wardrobe/jewellery.html",
       "since": "",
       "changed": ""
