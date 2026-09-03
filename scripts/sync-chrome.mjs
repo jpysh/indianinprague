@@ -40,7 +40,7 @@ const PAGES = {
   // Reached from the footer, from every module, and belonging to none of them — buying,
   // shipping, returns and privacy are not the wardrobe any more than they are the diaries.
   "how-it-works.html": null,
-  "partner.html": null,
+  "partner.html": "partner",
   "wardrobe/fashion.html": "wardrobe",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.
@@ -68,9 +68,12 @@ const FOOTER = /<footer>[\s\S]*?<\/footer>/;
 // because nothing ever set the class.
 function markNav(header, module) {
   if (!module) return header;
+  // Matches the href attribute rather than the whole opening tag: the Partner link carries
+  // hreflang after its href, and an exact `<a href="/partner">` match silently found nothing
+  // — the page would have shipped with no active nav item and no error anywhere.
   return header.replace(
-    new RegExp(`<a href="/${module}">`),
-    `<a href="/${module}" class="active" aria-current="page">`);
+    new RegExp(`<a href="/${module}"(?=[ >])`),
+    `<a href="/${module}" class="active" aria-current="page"`);
 }
 
 const index = await readFile(path.join(ROOT, "index.html"), "utf8");

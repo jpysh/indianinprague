@@ -375,6 +375,26 @@ nav.main a{
 nav.main a:hover{opacity:1;color:var(--magenta)}
 nav.main a.active{opacity:1;color:var(--magenta)}
 
+/* THE PARTNER LINK IS A UTILITY LINK, NOT A FOURTH SECTION.
+ *
+ * Wardrobe, Spirituality and Diaries are one audience doing one thing: browsing. /partner
+ * addresses Indian makers and European trade buyers, which is a different person entirely.
+ * Presented as a fourth peer it would take equal rank from the three links that carry the
+ * shop, and a shopper scanning four words would hit one that means nothing to them.
+ *
+ * So: same destination, same tap count, lower visual rank. A hairline separates it from the
+ * browse links and it rests dimmer, coming to full strength on hover and focus like any
+ * other. It is selected by its href rather than a class because sync-chrome.mjs injects
+ * class="active" into this same tag, and two class attributes on one element is the kind of
+ * thing that works until it does not. */
+nav.main a[href="/partner"]{
+  margin-left:16px;padding-left:16px;
+  border-left:1px solid rgba(242,239,230,.22);
+  opacity:.62;
+}
+nav.main a[href="/partner"]:hover,nav.main a[href="/partner"]:focus-visible{opacity:1}
+nav.main a[href="/partner"].active{opacity:1}
+
 /* The contact icon — WhatsApp alone since 24 Aug 2026. Vinted left the bar: it is a
    channel, not a destination, and how-it-works and the footer both still link it. It lives
    outside nav.main so the scroll container holding the section links cannot carry it off
@@ -502,6 +522,14 @@ a.wa:hover{color:#3BE87C}
     font-size:var(--fs-xs);letter-spacing:.04em;
   }
   nav.main a:last-child{border-bottom:0}
+  /* In the panel the links are stacked, so the desktop hairline on the left becomes a
+     heavier rule above: the same "this one is different" signal in a column. */
+  nav.main a[href="/partner"]{
+    margin-left:0;padding-left:0;border-left:0;
+    margin-top:6px;padding-top:6px;
+    border-top:1px solid rgba(242,239,230,.18);
+    opacity:.72;
+  }
 }
 
 /* SMALL PHONES (359px and under: the SE-class 320px screen, and nothing newer).
