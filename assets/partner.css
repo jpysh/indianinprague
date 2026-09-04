@@ -364,15 +364,24 @@ main.p > section.p-end{background:var(--saffron)}
   .p-ticker .rail,.p-chip .dot{animation:none}
 }
 
-/* ---------- wider viewports ---------- */
+/* ---------- wider viewports ----------
+ * Everything above this comment is the phone. These blocks add columns to it; none of them
+ * is required for the page to be readable, which is why the base state is the one written
+ * without a query around it. */
 @media (min-width:720px){
-  .p section{padding:104px 0}
+  /* 104px top AND bottom, on eleven sections, was about 1,700px of the merchant track
+     spent on nothing. 80 is the working rhythm; the three full-width moments keep more,
+     below, because a loud section only reads as loud against a quieter neighbour. */
+  .p section{padding:80px 0}
   .p .sec-head{max-width:min(46rem,100%)}
   .p-bento{grid-template-columns:repeat(2,1fr)}
   .p-card.wide{grid-column:1 / -1}
   .p-card{padding:32px 30px}
   .p-stats .grid{grid-template-columns:repeat(3,1fr);gap:0}
-  .p-stats .stat{border-bottom:0;border-right:2px solid rgba(74,68,51,.22);padding:44px 28px 44px 0}
+  /* The band was 522px tall to hold roughly 300px of content: 104 of section padding with
+     another 44 stacked inside every stat. The numbers were never the problem. */
+  .p section.p-stats{padding:72px 0}
+  .p-stats .stat{border-bottom:0;border-right:2px solid rgba(74,68,51,.22);padding:32px 28px 32px 0}
   .p-stats .stat:last-child{border-right:0}
   .p-ask .cta{grid-template-columns:repeat(2,1fr)}
   .p-price{padding:40px 36px}
@@ -383,6 +392,45 @@ main.p > section.p-end{background:var(--saffron)}
   .p-hero{padding:72px 0 88px!important}
   .p-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
   .p .sec-head{margin-bottom:52px}
+}
+
+/* THE DEAD HALF.
+ *
+ * A section was one column of full-width blocks: a heading capped at 736px inside a 1280px
+ * container, and under it a stack of accordion rows running the full 1220. That left 544px
+ * of empty column beside every heading on a laptop, and put a four-word summary like "Who
+ * carries the legal responsibility" on a line a metre wide, where the eye has to travel the
+ * whole width to find the value at the other end.
+ *
+ * So: heading left, content right, from 1024px up. The selector asks what a section
+ * CONTAINS rather than requiring a class on each one — the page already had five sections
+ * in exactly this shape and adding a sixth should not mean remembering to tag it. Sections
+ * built on .p-split are excluded by the same test, because they already own their columns.
+ *
+ * :has() is unsupported in older browsers, and there the page keeps the single column it
+ * has always had. That is the correct failure: the layout is an improvement on a wide
+ * screen, never a requirement for reading. */
+@media (min-width:1024px){
+  .p section .wrap:has(> .sec-head + .p-rows){
+    display:grid;grid-template-columns:minmax(300px,1fr) 1.9fr;gap:0 64px;align-items:start;
+  }
+  .p section .wrap:has(> .sec-head + .p-rows) > .sec-head{margin-bottom:0;position:sticky;top:88px}
+  .p .wrap:has(> .sec-head + .p-rows) .sec-head{max-width:none}
+  /* The heading column is narrower than the 46rem cap, so the cap would do nothing here
+     except stop a two-line heading from using its own column. */
+}
+
+/* The trade-terms card is shorter than the rows beside it, so the section used to end with
+   a dead corner under it. Sticky instead: the price stays on screen while the buyer reads
+   what the price includes, which is the one place on this page where two things genuinely
+   want to be visible at once. */
+@media (min-width:1024px){
+  #terms .p-price{position:sticky;top:88px}
+}
+
+/* The loud full-width moments keep their air, so the rhythm varies instead of flattening. */
+@media (min-width:720px){
+  .p section#rail,.p section.p-end{padding:104px 0}
 }
 
 /* ==========================================================================
