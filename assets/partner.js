@@ -66,14 +66,22 @@
    * The chosen track is remembered in the URL hash rather than storage — it survives a
    * share, which storage does not, and it needs no consent banner, which is the whole
    * posture of this site. */
+  /* Each audience now owns TWO regions, not one: its hero (headline, subhead, chip and
+     buttons, above the switch's own position) and its track further down. So a name maps to
+     a list of elements rather than to one, which it did when the hero was shared. Written as
+     a list rather than two lookups because the shape stops being a special case the moment a
+     third region is added. */
   var tabs = [].slice.call(document.querySelectorAll("[data-track-tab]"));
   var tracks = {};
   [].forEach.call(document.querySelectorAll("[data-track]"), function (el) {
-    tracks[el.getAttribute("data-track")] = el;
+    var k = el.getAttribute("data-track");
+    (tracks[k] || (tracks[k] = [])).push(el);
   });
 
   function paint(name) {
-    Object.keys(tracks).forEach(function (k) { tracks[k].hidden = k !== name; });
+    Object.keys(tracks).forEach(function (k) {
+      tracks[k].forEach(function (el) { el.hidden = k !== name; });
+    });
     tabs.forEach(function (t) {
       var on = t.getAttribute("data-track-tab") === name;
       t.setAttribute("aria-selected", on ? "true" : "false");

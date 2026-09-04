@@ -282,3 +282,34 @@ All five phases below are done except Phase 5, which waits on your confirmation.
 **Phase 5 — translation**
 
 18. Held until you confirm the English page is final, then the eight locales.
+
+
+---
+
+## 8. Second pass, same day
+
+Three changes on top of the plan above, after you flagged the audience switch and the hero.
+
+**S1 — The switch moved above the hero, and stopped being sticky.** It sat below the hero and
+the ticker, `position:sticky; top:0; z-index:40`, against a site header that is also sticky at
+`top:0` with `z-index:100`. The two claimed the same 65px band, so the moment the switch stuck
+it parked underneath the bar. It now runs directly under the site nav, where the choice is made
+before a headline written for the other audience has a chance to land. Once it is the first
+thing on the page, stickiness has nothing left to rescue.
+
+**S2 — The hero now belongs to the audience.** Chip, headline, subhead and both CTAs swap with
+the track. Both heroes ship in the HTML with one `hidden`, the same pattern the tracks use, so
+crawlers read both and the page still works with JavaScript off. One photograph serves both;
+a second would cost eight derivative files and a second LCP candidate for no argument gained.
+The retailer headline is "Import Indian craft without importing the liability" — the one claim
+on this page that no competitor on this corridor can copy.
+
+**S3 — Free returns on the opening sample pack.** Faire, the default for independent European
+retail buying, offers net-60 and free opening-order returns; a buyer measures you against that
+whether or not you mention it. Matching on credit is impossible at 50% of RRP, since Faire's
+terms are funded by a 15 to 25% take already inside the shop's cost. Matching on the opening
+order alone removes the objection at a bounded cost. Recorded for sign-off in
+`Business case/PARTNER_CLAIMS_TO_VERIFY.md` as D1, along with the cap it still needs.
+
+Also: one line of proof above the fold, naming Ayur Sen as the operator and first merchant,
+because that argument was sitting eight sections down in the FAQ.

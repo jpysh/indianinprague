@@ -182,7 +182,13 @@ main.p > section.p-end{background:var(--saffron)}
 .p-stats .d{font-family:var(--sans);font-size:var(--fs-m);color:#4A4433;margin-top:10px;max-width:32ch;line-height:1.5}
 
 /* ---------- audience switch ---------- */
-.p-switch{position:sticky;top:0;z-index:40;background:var(--chrome);border-bottom:1px solid var(--chicory)}
+/* NOT STICKY, AND FIRST.
+   It used to sit below the hero and the ticker, sticky at top:0 — the same 0 the site
+   header claims, at z-index 40 against the header's 100, so the moment it stuck it parked
+   underneath the bar. It now runs directly under the site nav, where a visitor decides
+   which page they are on before reading a headline written for someone else. Once it is
+   the first thing on the page there is nothing left for stickiness to rescue. */
+.p-switch{background:var(--chrome);border-bottom:1px solid var(--chicory)}
 .p-switch .inner{display:flex;gap:8px;padding:10px var(--gutter);max-width:1280px;margin:0 auto}
 /* white-space:nowrap because "European retailers" wrapped to two lines while "Indian
    merchants" did not, which made the two tabs different heights and read as a mistake. The
@@ -414,6 +420,11 @@ main.p > section.p-end{background:var(--saffron)}
   border-radius:999px;padding:10px 18px!important;text-decoration:none;line-height:1.2!important;
   min-height:44px;transition:background .2s ease,color .2s ease,border-color .2s ease}
 .p-alt-btn:hover{background:var(--saffron);border-color:var(--saffron);color:var(--void)!important}
+/* One line of proof above the fold, because the argument that this is operated rather than
+   announced was sitting eight sections down in the FAQ. */
+.p-trust{margin-top:22px;font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.04em;
+  color:var(--bone-dim);display:flex;align-items:center;gap:10px}
+.p-trust::before{content:"";flex:none;width:22px;height:1px;background:var(--saffron)}
 .p .light .p-alt-btn{border-color:var(--ink)}
 
 .p-scroll-cue{display:flex;align-items:center;gap:10px;margin-top:40px;font-family:var(--mono);
