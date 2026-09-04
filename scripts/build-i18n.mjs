@@ -50,12 +50,22 @@ const NOINDEX_ABOVE = 0.1;
 //                      until it is ported onto the site's own chrome.
 //   inventory.html     Never public.
 //   dashboard.html     Never public.
-// partner.html is English-only on purpose (3 Sep 2026). The eight language trees exist for
-// CONSUMERS; /partner addresses Indian merchants and European trade buyers, who read it in
-// English, and a machine-translated commercial and regulatory page is a liability rather
-// than a courtesy — a mistranslated compliance obligation is a claim we did not make.
-// Remove it from this set when a page is translated by a person, not before.
-const SKIP = new Set(["spirituality.html", "inventory.html", "dashboard.html", "partner.html"]);
+// partner.html WAS English-only (3 Sep 2026), on the argument that a machine-translated
+// commercial and regulatory page is a liability rather than a courtesy: a mistranslated
+// compliance obligation is a claim we did not make. That rule was lifted by an explicit
+// owner decision on 4 Sep 2026, and the page now mirrors like every other.
+//
+// What guards it instead: every legal term of art on that page — Responsible Person, GPSR,
+// REACH, EORI, IOSS, TARIC, EPR, RoDTEP, IEC, LUT, e-BRC, DGFT, EDPMS — is in glossary.json
+// under keepInline, so DeepL never sees them and cannot paraphrase a named instrument into
+// a description of one. The prose around them still translates and reorders normally.
+//
+// What is still true, and is the reason this comment is long: nobody who speaks these seven
+// languages has read the result. The page states who carries GPSR liability, that it does
+// not transfer to a buyer, how reverse-charge VAT applies, payment terms and a returns
+// remedy. If one of those drifts in translation it is a claim in a language we cannot check.
+// A native reading, per language, is the outstanding work — not a rebuild.
+const SKIP = new Set(["spirituality.html", "inventory.html", "dashboard.html"]);
 
 // Directories holding generated English pages. Language trees live beside them and are
 // skipped here so a second run never mirrors a mirror.

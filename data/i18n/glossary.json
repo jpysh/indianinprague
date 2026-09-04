@@ -22,7 +22,9 @@
     "Sanskrit, which machine translation reads as Czech words and returns nonsense for). It is",
     "shared now: both the Govinda vendor pipeline and the site translation pass read this file.",
     "",
-    "Adding an entry costs nothing and saves a character of quota every time the term recurs."
+    "Adding an entry costs nothing and saves a character of quota every time the term recurs.",
+    "",
+    "4 Sep 2026: the /partner instrument names were added to keepInline — GPSR, REACH, EORI, IOSS, TARIC, EPR, RoDTEP, IEC, LUT, e-BRC, DGFT, EDPMS. Those name specific legal acts and a paraphrase of one describes a role instead of naming it. The page is machine-translated from this date by an explicit decision that overrode the 3 Sep English-only rule.\n\nWhat is NOT frozen, and why the first attempt had to be undone: VAT, GST, IGST, RRP, FOB and Responsible Person are common nouns or have official translations in the regulation's own language versions. Freezing them produced 'EU-VATn' in German and \"l'VATs de l'UE\" in French — an English noun cannot take a German plural or a French elision. GPSR itself is published in every EU language, so 'verantwortliche Person' and 'personne responsable' ARE the legal terms, not paraphrases of one."
   ],
   "keep": [
     "Guldaar Bazaar",
@@ -32,7 +34,23 @@
     "WhatsApp",
     "Prague",
     "Praha",
-    "Kavyanjali"
+    "Kavyanjali",
+    "GPSR",
+    "REACH",
+    "EORI",
+    "IOSS",
+    "TARIC",
+    "EPR",
+    "RoDTEP",
+    "IEC",
+    "LUT",
+    "e-BRC",
+    "DGFT",
+    "EDPMS",
+    "Ayur Sen",
+    "Miravia",
+    "TikTok Shop",
+    "Amazon.de"
   ],
   "keepInline": [
     "Kavyanjali",
@@ -41,7 +59,23 @@
     "Czech-In",
     "Vinted",
     "WhatsApp",
-    "Govinda"
+    "Govinda",
+    "GPSR",
+    "REACH",
+    "EORI",
+    "IOSS",
+    "TARIC",
+    "EPR",
+    "RoDTEP",
+    "IEC",
+    "LUT",
+    "e-BRC",
+    "DGFT",
+    "EDPMS",
+    "Ayur Sen",
+    "Miravia",
+    "TikTok Shop",
+    "Amazon.de"
   ],
   "terms": {
     "EN-GB": {
@@ -102,7 +136,29 @@
       "108 receptů od Góvindy": "108 Recipes from Govinda"
     },
     "FR": {
-      "Menu: site sections": "Menu : sections du site"
+      "Menu: site sections": "Menu : sections du site",
+      "From the second order": "À partir de la deuxième commande"
+    },
+    "DE": {
+      "Minimum opening order": "Mindestwert der Erstbestellung",
+      "Minimum restock order": "Mindestwert der Nachbestellung",
+      "From the second order": "Ab der zweiten Bestellung",
+      "First order": "Erste Bestellung"
+    },
+    "ES": {
+      "From the second order": "A partir del segundo pedido"
+    },
+    "PL": {
+      "From the second order": "Od drugiego zamówienia"
+    },
+    "CS": {
+      "From the second order": "Od druhé objednávky"
+    },
+    "RU": {
+      "From the second order": "Со второго заказа"
+    },
+    "IT": {
+      "From the second order": "Dal secondo ordine"
     }
   }
 }

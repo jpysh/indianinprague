@@ -114,6 +114,7 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
   // So a 429 now WAITS on the same key instead of spending the pool on it. DeepL sends
   // Retry-After on these; where it does not, the backoff doubles from one second. Only a 456
   // rotates, which is what rotation was for.
+  const FORMAL = new Set(["DE", "ES", "FR", "IT", "PL", "RU"]);
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const MAX_THROTTLE_WAITS = 5;
   let waits = 0;
@@ -124,6 +125,14 @@ export async function translate(texts, { to = "EN-GB", tagHandling } = {}) {
     const key = KEYS[current];
     const body = new URLSearchParams();
     body.set("target_lang", to);
+    // FORMAL ADDRESS WHERE THE LANGUAGE HAS ONE.
+    // Left at DeepL's default, Spanish came back addressing a trade buyer as tú — 39 informal
+    // forms against 1 formal on /partner alone — and Italian came back mixed. German and
+    // French happened to land on Sie and vous, but that was luck rather than instruction.
+    // A page that quotes payment terms to a shop owner cannot address them as a friend.
+    // Czech is omitted because DeepL rejects the parameter for CS; its formality comes from
+    // the source phrasing instead.
+    if (FORMAL.has(to)) body.set("formality", "prefer_more");
     if (tagHandling || guarded) body.set("tag_handling", tagHandling || "html");
     if (guarded) body.set("ignore_tags", MARK);
     for (const t of wrapped) body.append("text", t);

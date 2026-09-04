@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T05:17:41.383Z",
-  "count": 5728,
+  "generated": "2026-09-04T15:23:51.677Z",
+  "count": 6010,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -1312,10 +1312,6 @@
     "text.ede548996483": {
       "text": "Begriffe",
       "src": "ede548996483"
-    },
-    "text.93c91c851e7a": {
-      "text": "Preis",
-      "src": "93c91c851e7a"
     },
     "text.cb4bbac4effc": {
       "text": "AMBER",
@@ -22920,6 +22916,1138 @@
     "text.23a8c445eeb5": {
       "text": "Verspielte, gesteppte Reisetasche im Wald-Look – Hippie-Boho-Wochenendtasche mit Pilz- und Froschmotiv im Vintage-Stil — das Angebot auf Vinted in einem neuen Tab öffnen",
       "src": "23a8c445eeb5"
+    },
+    "text.a45df708c4c5": {
+      "text": "EORI",
+      "src": "a45df708c4c5"
+    },
+    "text.36a8eb583288": {
+      "text": "IOSS",
+      "src": "36a8eb583288"
+    },
+    "text.dc937b598926": {
+      "text": "Keine",
+      "src": "dc937b598926"
+    },
+    "text.afa497455f37": {
+      "text": "Ich bin",
+      "src": "afa497455f37"
+    },
+    "text.93c91c851e7a": {
+      "text": "Preis",
+      "src": "93c91c851e7a"
+    },
+    "text.4efca0d10c5f": {
+      "text": "Über",
+      "src": "4efca0d10c5f"
+    },
+    "text.291873e31ccb": {
+      "text": "Scrollen",
+      "src": "291873e31ccb"
+    },
+    "text.7a4d7ede30df": {
+      "text": "€",
+      "src": "7a4d7ede30df"
+    },
+    "text.2036ca779c46": {
+      "text": "→",
+      "src": "2036ca779c46"
+    },
+    "text.ab9eb2e090e0": {
+      "text": "Warum gerade jetzt?",
+      "src": "ab9eb2e090e0"
+    },
+    "text.6e8883d99e3c": {
+      "text": "×",
+      "src": "6e8883d99e3c"
+    },
+    "text.ffd7280513ce": {
+      "text": "30 Tage",
+      "src": "ffd7280513ce"
+    },
+    "text.7e4daa5b5632": {
+      "text": "0 €",
+      "src": "7e4daa5b5632"
+    },
+    "text.b18847900777": {
+      "text": "Ayur Sen",
+      "src": "b18847900777"
+    },
+    "text.52ccbc4a7617": {
+      "text": "wird nicht",
+      "src": "52ccbc4a7617"
+    },
+    "text.7173e79ec929": {
+      "text": "·",
+      "src": "7173e79ec929"
+    },
+    "text.212505bdbacd": {
+      "text": "eins bis vier",
+      "src": "212505bdbacd"
+    },
+    "text.7dc3e28def9a": {
+      "text": "und wann.",
+      "src": "7dc3e28def9a"
+    },
+    "text.4f85c3ea1d1a": {
+      "text": "drei bis fünf",
+      "src": "4f85c3ea1d1a"
+    },
+    "text.86a047ee7070": {
+      "text": "Ihnen verkaufen.",
+      "src": "86a047ee7070"
+    },
+    "text.662a507a0360": {
+      "text": "500 €",
+      "src": "662a507a0360"
+    },
+    "text.56dfa1ed599d": {
+      "text": "Ihr Geld",
+      "src": "56dfa1ed599d"
+    },
+    "text.44f0260230ef": {
+      "text": "Kosten + 10 %",
+      "src": "44f0260230ef"
+    },
+    "text.69fcd5e18c18": {
+      "text": "50 % des UVP",
+      "src": "69fcd5e18c18"
+    },
+    "text.e98da2001f98": {
+      "text": "Kostenlos, einmalig",
+      "src": "e98da2001f98"
+    },
+    "text.0059798b7f70": {
+      "text": "(optional)",
+      "src": "0059798b7f70"
+    },
+    "text.8558ed4bcd43": {
+      "text": "TextilEPR",
+      "src": "8558ed4bcd43"
+    },
+    "text.0d4a0e4529c4": {
+      "text": "5.000 €",
+      "src": "0d4a0e4529c4"
+    },
+    "text.00d6df817ad1": {
+      "text": "Geschäftsbedingungen",
+      "src": "00d6df817ad1"
+    },
+    "text.a3bdad046b10": {
+      "text": "Erste Bestellung",
+      "src": "a3bdad046b10"
+    },
+    "text.9a0d25418583": {
+      "text": "RoDTEP Scrip",
+      "src": "9a0d25418583"
+    },
+    "text.0d6be5b36387": {
+      "text": "Der Korridor",
+      "src": "0d6be5b36387"
+    },
+    "text.2027f9631869": {
+      "text": "Sendung:",
+      "src": "2027f9631869"
+    },
+    "text.4b24962f0724": {
+      "text": "teilweise verwaltet",
+      "src": "4b24962f0724"
+    },
+    "text.aead9a58ed9d": {
+      "text": "Oder direkt:",
+      "src": "aead9a58ed9d"
+    },
+    "text.60c6bc42d9d4": {
+      "text": "Verpackungs-EPR",
+      "src": "60c6bc42d9d4"
+    },
+    "text.c8b19778ce15": {
+      "text": "IEC &amp; LUT",
+      "src": "c8b19778ce15"
+    },
+    "text.d2f13ccbd994": {
+      "text": "Kauf auf FOB-Basis:",
+      "src": "d2f13ccbd994"
+    },
+    "text.794d98887189": {
+      "text": "man öffnet es.",
+      "src": "794d98887189"
+    },
+    "text.fbbde49b40ee": {
+      "text": "Der Katalog",
+      "src": "fbbde49b40ee"
+    },
+    "text.5be6c065d299": {
+      "text": "Testpreise",
+      "src": "5be6c065d299"
+    },
+    "text.059edc1616ab": {
+      "text": "Im Voraus bezahlt",
+      "src": "059edc1616ab"
+    },
+    "text.649d5d936751": {
+      "text": "ein bis zwei Tage",
+      "src": "649d5d936751"
+    },
+    "text.8337ac9be665": {
+      "text": "2–4 Tage",
+      "src": "8337ac9be665"
+    },
+    "text.068a9ab1a919": {
+      "text": "Bei Ankunft fällig",
+      "src": "068a9ab1a919"
+    },
+    "text.8b027a36049a": {
+      "text": "Siehe Geschäftsbedingungen",
+      "src": "8b027a36049a"
+    },
+    "text.da3403b5d9fb": {
+      "text": "Ein Luftfrachtbrief",
+      "src": "da3403b5d9fb"
+    },
+    "text.8d30447bbbd8": {
+      "text": "8–14 Tage",
+      "src": "8d30447bbbd8"
+    },
+    "text.830247ab7266": {
+      "text": "Inlandsbestellung.",
+      "src": "830247ab7266"
+    },
+    "text.0010a9f91e03": {
+      "text": "Tage, nicht Wochen",
+      "src": "0010a9f91e03"
+    },
+    "text.4dfc2c4b7983": {
+      "text": "Zahlung bei Lieferung",
+      "src": "4dfc2c4b7983"
+    },
+    "text.d071d4a4360a": {
+      "text": "Stadt oder Land",
+      "src": "d071d4a4360a"
+    },
+    "text.4c2347e4d886": {
+      "text": "Ich stelle her oder liefere",
+      "src": "4c2347e4d886"
+    },
+    "text.f03471183f26": {
+      "text": "Indische Kaufleute",
+      "src": "f03471183f26"
+    },
+    "text.4b6d8a1c8364": {
+      "text": "Ich kaufe und verkaufe weiter",
+      "src": "4b6d8a1c8364"
+    },
+    "text.87c40c88a89a": {
+      "text": "IEC · LUT",
+      "src": "87c40c88a89a"
+    },
+    "text.5334d36fe0d9": {
+      "text": "Klare Antworten",
+      "src": "5334d36fe0d9"
+    },
+    "text.c4d246d0800c": {
+      "text": "Sprechen Sie mit jemandem",
+      "src": "c4d246d0800c"
+    },
+    "text.92e97824d4be": {
+      "text": "Jaipur, Rajasthan",
+      "src": "92e97824d4be"
+    },
+    "text.c16f37c29be9": {
+      "text": "WhatsApp direkt",
+      "src": "c16f37c29be9"
+    },
+    "text.4ed05b90df63": {
+      "text": "Europäische Einzelhändler",
+      "src": "4ed05b90df63"
+    },
+    "text.438f5b1c0e81": {
+      "text": "EU-Rücksendeadresse",
+      "src": "438f5b1c0e81"
+    },
+    "text.80b5e4ce8667": {
+      "text": "Was Sie verdienen,",
+      "src": "80b5e4ce8667"
+    },
+    "text.7bcbd9ee56e2": {
+      "text": "Indisches Kunsthandwerk importieren",
+      "src": "7bcbd9ee56e2"
+    },
+    "text.8951bbc3b4da": {
+      "text": "Aufgeschobene Einfuhrumsatzsteuer",
+      "src": "8951bbc3b4da"
+    },
+    "text.91bd62458ff3": {
+      "text": "REACH Zertifizierung",
+      "src": "91bd62458ff3"
+    },
+    "text.657065caae29": {
+      "text": "Verantwortlichkeitsvermerk",
+      "src": "657065caae29"
+    },
+    "text.e4d8e79b3772": {
+      "text": "Tage, ab EU-Lagerbestand",
+      "src": "e4d8e79b3772"
+    },
+    "text.51ad52a6fd11": {
+      "text": "Nein. Der Vertrag ist",
+      "src": "51ad52a6fd11"
+    },
+    "text.091666b351b7": {
+      "text": "Für europäische Käufer",
+      "src": "091666b351b7"
+    },
+    "text.2f9053fc2040": {
+      "text": "Rücksendungen und Mängel",
+      "src": "2f9053fc2040"
+    },
+    "text.955e96066687": {
+      "text": "Wohnaccessoires und Teppiche",
+      "src": "955e96066687"
+    },
+    "text.535d2f386308": {
+      "text": "Andenken und Geschenke",
+      "src": "535d2f386308"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Verfolgen Sie den Weg eines Stücks",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.3018b6ff0149": {
+      "text": "TARIC Klassifizierung",
+      "src": "3018b6ff0149"
+    },
+    "text.8c701af0b871": {
+      "text": "e-BRC selbstbescheinigt",
+      "src": "8c701af0b871"
+    },
+    "text.04b83da39799": {
+      "text": "Warum ist es so günstig?",
+      "src": "04b83da39799"
+    },
+    "text.c883fc4c48b0": {
+      "text": "Wenn das Geld fließt",
+      "src": "c883fc4c48b0"
+    },
+    "text.2fd173e1da2a": {
+      "text": "Mode und Handweberei",
+      "src": "2fd173e1da2a"
+    },
+    "text.0687de50b353": {
+      "text": "Bücher und Schreibwaren",
+      "src": "0687de50b353"
+    },
+    "text.bc79f18a0380": {
+      "text": "Wellness-Zubehör",
+      "src": "bc79f18a0380"
+    },
+    "text.224b4b637a38": {
+      "text": "Fordern Sie ein Musterpaket an",
+      "src": "224b4b637a38"
+    },
+    "text.769bab3eb1e6": {
+      "text": "Ursprungszeugnis",
+      "src": "769bab3eb1e6"
+    },
+    "text.ee5492d86184": {
+      "text": "Zollabgaben werden an der Kasse entrichtet",
+      "src": "ee5492d86184"
+    },
+    "text.16e15714b916": {
+      "text": "Was wird zusätzlich in Rechnung gestellt?",
+      "src": "16e15714b916"
+    },
+    "text.3e4fd00b1ef5": {
+      "text": "Wie Ihr Preis festgelegt wird",
+      "src": "3e4fd00b1ef5"
+    },
+    "text.5cecb367e1e6": {
+      "text": "Was wir von Ihnen benötigen",
+      "src": "5cecb367e1e6"
+    },
+    "text.29caee212398": {
+      "text": "Artikelnummern in einer Probepackung",
+      "src": "29caee212398"
+    },
+    "text.23c5be12fc52": {
+      "text": "Mindestwert der Erstbestellung",
+      "src": "23c5be12fc52"
+    },
+    "text.5e655ea239ad": {
+      "text": "Mindestwert der Nachbestellung",
+      "src": "5e655ea239ad"
+    },
+    "text.4120b620610f": {
+      "text": "Ab der zweiten Bestellung",
+      "src": "4120b620610f"
+    },
+    "text.c64da37708c0": {
+      "text": "So funktioniert die Rechnung",
+      "src": "c64da37708c0"
+    },
+    "text.a0f081f388ca": {
+      "text": "Eine Nachricht. Kein Formular,",
+      "src": "a0f081f388ca"
+    },
+    "text.b06a3f3de82f": {
+      "text": "Marktplatzprovision",
+      "src": "b06a3f3de82f"
+    },
+    "text.89a0a64995dd": {
+      "text": "Etappe 3 · Spanien",
+      "src": "89a0a64995dd"
+    },
+    "text.c2090d6b3608": {
+      "text": "Eine E-Mail-Adresse IEC und eine gültige E-Mail-Adresse LUT",
+      "src": "c2090d6b3608"
+    },
+    "text.ae8fc8ff2d7b": {
+      "text": "Zahlungsbedingungen – leicht verständlich",
+      "src": "ae8fc8ff2d7b"
+    },
+    "text.616a81bae6ca": {
+      "text": "Sehen Sie sich den Live-Katalog an",
+      "src": "616a81bae6ca"
+    },
+    "text.485ebf1386f5": {
+      "text": "keine Folge-Sequenz.",
+      "src": "485ebf1386f5"
+    },
+    "text.e5e09a778387": {
+      "text": "Das Gespräch beginnen",
+      "src": "e5e09a778387"
+    },
+    "text.eac946b12be7": {
+      "text": "GPSR Verantwortliche Person",
+      "src": "eac946b12be7"
+    },
+    "text.8740968a75eb": {
+      "text": "Ein Stück. Vier Akte.",
+      "src": "8740968a75eb"
+    },
+    "text.4abef8314b1d": {
+      "text": "Etappe 4 · Europa",
+      "src": "4abef8314b1d"
+    },
+    "text.979b62b1d9e3": {
+      "text": "Wenn aus den 5 % 10 % werden",
+      "src": "979b62b1d9e3"
+    },
+    "text.0bc8349e90b4": {
+      "text": "e-BRC Selbstzertifizierung",
+      "src": "0bc8349e90b4"
+    },
+    "text.68f7d373e38e": {
+      "text": "Zoll und Mehrwertsteuer an der Kasse",
+      "src": "68f7d373e38e"
+    },
+    "text.95c1b6f5a15f": {
+      "text": "Pro Monat, Gründungssatz",
+      "src": "95c1b6f5a15f"
+    },
+    "text.30c56d3f01f5": {
+      "text": "Sie müssen nichts einreichen.",
+      "src": "30c56d3f01f5"
+    },
+    "text.6ba6f6498902": {
+      "text": "Bislang noch keine Kosmetika oder Lebensmittel",
+      "src": "6ba6f6498902"
+    },
+    "text.c9f800a8c8aa": {
+      "text": "Verkauf von Indien nach Europa",
+      "src": "c9f800a8c8aa"
+    },
+    "text.0b6b55ebb941": {
+      "text": "KYC für Händler gemäß Artikel 30 des DSA",
+      "src": "0b6b55ebb941"
+    },
+    "text.0b6acc20b6ac": {
+      "text": "Was ist im Lieferumfang enthalten?",
+      "src": "0b6acc20b6ac"
+    },
+    "text.ff73c39b4cb5": {
+      "text": "Die Zahlen, die ein Käufer benötigt",
+      "src": "ff73c39b4cb5"
+    },
+    "text.5b3f1bb1caa0": {
+      "text": "Erkundigen Sie sich nach einem Gründungsort",
+      "src": "5b3f1bb1caa0"
+    },
+    "text.637d5073585f": {
+      "text": "Was in den 29 € enthalten ist",
+      "src": "637d5073585f"
+    },
+    "text.5e60a0307707": {
+      "text": "bevor die Probe eintrifft.",
+      "src": "5e60a0307707"
+    },
+    "text.e137ecb67821": {
+      "text": "Rücksendungen des Probierpakets",
+      "src": "e137ecb67821"
+    },
+    "text.929197c35609": {
+      "text": "Wählen Sie aus, was Sie hierher führt",
+      "src": "929197c35609"
+    },
+    "text.3c15e8d34f10": {
+      "text": "EU-Technisches Dossier, 10 Jahre",
+      "src": "3c15e8d34f10"
+    },
+    "text.97fdbfb9068b": {
+      "text": "Block print · Jaipur",
+      "src": "97fdbfb9068b"
+    },
+    "text.353a83aa4c37": {
+      "text": "Was kostet das genau?",
+      "src": "353a83aa4c37"
+    },
+    "text.e5d19d80a69b": {
+      "text": "Musterpaket, 3–5 Artikelnummern",
+      "src": "e5d19d80a69b"
+    },
+    "text.b56372a02195": {
+      "text": "Ihre GST bleibt nicht hängen",
+      "src": "b56372a02195"
+    },
+    "text.0e7cc173a1ff": {
+      "text": "Keine einnehmbaren AYUSH-Produkte",
+      "src": "0e7cc173a1ff"
+    },
+    "text.1d4dda0f3d13": {
+      "text": "Großhandelspreis für vorrätige Artikel",
+      "src": "1d4dda0f3d13"
+    },
+    "text.5f195383d5d9": {
+      "text": "Ein Hersteller oder Lieferant in Indien",
+      "src": "5f195383d5d9"
+    },
+    "text.4bc5b482aa75": {
+      "text": "Stellen für Gründungshändler sind zu besetzen",
+      "src": "4bc5b482aa75"
+    },
+    "text.1ba1654d99ae": {
+      "text": "Bedingungen, Muster und Mengen",
+      "src": "1ba1654d99ae"
+    },
+    "text.8e9a3a6e2d91": {
+      "text": "Meditations- und Ritualgegenstände",
+      "src": "8e9a3a6e2d91"
+    },
+    "text.453b0d60025b": {
+      "text": "Ein Einzelhändler oder Einkäufer in Europa",
+      "src": "453b0d60025b"
+    },
+    "text.b7f45f7f12f8": {
+      "text": "Faserbezeichnung gemäß Verordnung (EU) Nr. 1007/2011",
+      "src": "b7f45f7f12f8"
+    },
+    "text.6c3c2a668cf6": {
+      "text": "Phase 1 · Ihr Workshop",
+      "src": "6c3c2a668cf6"
+    },
+    "text.7d06d8e2c033": {
+      "text": "Ehrliche Fotos und ehrliche technische Daten",
+      "src": "7d06d8e2c033"
+    },
+    "text.b51fd75d5d54": {
+      "text": "Ein Lieferant, sieben Kategorien",
+      "src": "b51fd75d5d54"
+    },
+    "text.235f482bad2d": {
+      "text": "Ihr Umsatz in den eigenen Filialen, pro Monat",
+      "src": "235f482bad2d"
+    },
+    "text.93fdd9e47e3a": {
+      "text": "sowie Deutschland, Frankreich oder Italien in",
+      "src": "93fdd9e47e3a"
+    },
+    "text.b043e0b74245": {
+      "text": "Indischer Filigran-Silberschmuck",
+      "src": "b043e0b74245"
+    },
+    "text.db0f20501c62": {
+      "text": "ohne die Haftung zu übernehmen.",
+      "src": "db0f20501c62"
+    },
+    "text.e49dc90ad34e": {
+      "text": "Etappe 2 · Jaipur oder Delhi",
+      "src": "e49dc90ad34e"
+    },
+    "text.d8fbd28e7a1b": {
+      "text": "Provision auf Marktplatzverkäufe,",
+      "src": "d8fbd28e7a1b"
+    },
+    "text.e7730a15b5e8": {
+      "text": "Die dafür verantwortliche Person ist",
+      "src": "e7730a15b5e8"
+    },
+    "text.76f1987c4af8": {
+      "text": "Ein indisches Schiff, das wie ein",
+      "src": "76f1987c4af8"
+    },
+    "text.a9fe08726aa5": {
+      "text": "ohne Papierkram und Stress.",
+      "src": "a9fe08726aa5"
+    },
+    "text.2305b500cc0a": {
+      "text": "EORI · aufgeschobene Einfuhrumsatzsteuer",
+      "src": "2305b500cc0a"
+    },
+    "text.64b03e01084d": {
+      "text": "Baumwollstoff mit Paisley-Muster, im Handblockdruckverfahren bedruckt",
+      "src": "64b03e01084d"
+    },
+    "text.2aabcaa4fb34": {
+      "text": "Vier Dinge. Dann kümmern wir uns um den Rest.",
+      "src": "2aabcaa4fb34"
+    },
+    "text.0cfdb4440559": {
+      "text": "Warum sollte ich irgendetwas davon glauben?",
+      "src": "0cfdb4440559"
+    },
+    "text.4bd8cd2a99c7": {
+      "text": "Sie stellen es her. Wir liefern es nach Europa.",
+      "src": "4bd8cd2a99c7"
+    },
+    "text.668544a7df08": {
+      "text": "Eine Nachhaltigkeitskennzeichnung auf Schmuckstücken",
+      "src": "668544a7df08"
+    },
+    "text.7a2c5ecb54da": {
+      "text": "Die Fragen, die die Menschen tatsächlich stellen.",
+      "src": "7a2c5ecb54da"
+    },
+    "text.9df600ee8852": {
+      "text": "Musterpakete für europäische Geschäfte",
+      "src": "9df600ee8852"
+    },
+    "text.a8dd7898d38e": {
+      "text": "Es fliegt mit allen anderen",
+      "src": "a8dd7898d38e"
+    },
+    "text.e76c1526df0b": {
+      "text": "Betriebskapital und wann es vorhanden ist",
+      "src": "e76c1526df0b"
+    },
+    "text.11d3c8aeb7aa": {
+      "text": "Wem gehört die Kundenbeziehung?",
+      "src": "11d3c8aeb7aa"
+    },
+    "text.bca6e20ecdaf": {
+      "text": "Großhandel gegenüber veröffentlichten Einzelhandelspreisen",
+      "src": "bca6e20ecdaf"
+    },
+    "text.baefb31cebed": {
+      "text": "Ein Frachtflugzeug, das in der Abenddämmerung abhebt",
+      "src": "baefb31cebed"
+    },
+    "text.7389179b1f99": {
+      "text": "Auf unbestimmte Zeit ausgeschlossen, nicht aufgeschoben.",
+      "src": "7389179b1f99"
+    },
+    "text.a85a8877a16f": {
+      "text": "Wer trägt die rechtliche Verantwortung?",
+      "src": "a85a8877a16f"
+    },
+    "text.48c226ff91f7": {
+      "text": "Es wird einmalig verzollt, da es sich um unsere Einfuhr handelt",
+      "src": "48c226ff91f7"
+    },
+    "text.0f10c81b52d3": {
+      "text": "Ab 2027 gilt für Ihre Kategorie ein Zollsatz von null",
+      "src": "0f10c81b52d3"
+    },
+    "text.8e8215053737": {
+      "text": "Wie gelangt das Geld zurück nach Indien?",
+      "src": "8e8215053737"
+    },
+    "text.2b5c2a4a45a1": {
+      "text": "Falls eine Sendung beschädigt oder falsch geliefert wird",
+      "src": "2b5c2a4a45a1"
+    },
+    "text.d53f2427aeca": {
+      "text": "Wenn ein Konsolidierungsvorgang zu gering ist, um zu funktionieren",
+      "src": "d53f2427aeca"
+    },
+    "text.f9b75cfe6300": {
+      "text": "Lieferzeiten, Nachlieferungen und Sonderanfertigungen",
+      "src": "f9b75cfe6300"
+    },
+    "text.f2982ab5ee3f": {
+      "text": "Die Ausfuhr erfolgt auf der Grundlage Ihrer eigenen Ausfuhrgenehmigung",
+      "src": "f2982ab5ee3f"
+    },
+    "text.572f3f65b91a": {
+      "text": "Es verkauft sich gut, und das Geld fließt sauber nach Hause",
+      "src": "572f3f65b91a"
+    },
+    "text.871372306725": {
+      "text": "Drei Regeln wurden geändert. Zwei davon haben die Tür zugemacht,",
+      "src": "871372306725"
+    },
+    "text.06ccd32799db": {
+      "text": "Ein Zertifikat „REACH“ pro Werkstofffamilie",
+      "src": "06ccd32799db"
+    },
+    "text.3153d72c77d5": {
+      "text": "Sieben Kategorien und eine Liste dessen, was wir",
+      "src": "3153d72c77d5"
+    },
+    "text.f0244218d9f6": {
+      "text": "Was geschieht mit Waren, die sich nicht verkaufen lassen?",
+      "src": "f0244218d9f6"
+    },
+    "text.80be3a9d66fb": {
+      "text": "3 € pro Paket, seit Juli 2026",
+      "src": "80be3a9d66fb"
+    },
+    "text.6d3ea92a2563": {
+      "text": "wobei Ihnen die zugrunde liegenden Kosten ersichtlich sind.",
+      "src": "6d3ea92a2563"
+    },
+    "text.bc51a9328ae7": {
+      "text": "Jede dieser Modellreihen wird bereits in Europa verkauft.",
+      "src": "bc51a9328ae7"
+    },
+    "text.e9d0c52ee1ff": {
+      "text": "Bewegen Sie den Schieberegler. Sehen Sie, was jeder nimmt.",
+      "src": "e9d0c52ee1ff"
+    },
+    "text.e28b2c253ff7": {
+      "text": "Indischer Filigranschmuck aus Silber im Detail",
+      "src": "e28b2c253ff7"
+    },
+    "text.f6c4901eea64": {
+      "text": "In einer Werkstatt gestapelte indische Messinggefäße",
+      "src": "f6c4901eea64"
+    },
+    "text.47658dedffbb": {
+      "text": "In einer Reihe aufgehängte, handbedruckte Baumwollstoffe",
+      "src": "47658dedffbb"
+    },
+    "text.45155cf2bd90": {
+      "text": ". Alle anderen Artikel werden aus dem Atelier in",
+      "src": "45155cf2bd90"
+    },
+    "text.6d0b017023d4": {
+      "text": "Keine Produkte mit therapeutischen oder medizinischen Wirkungsversprechen",
+      "src": "6d0b017023d4"
+    },
+    "text.1eb46e1997f8": {
+      "text": "Keine Produktfamilie ohne Konformitätsunterlagen",
+      "src": "1eb46e1997f8"
+    },
+    "text.1a62998f82ed": {
+      "text": "Keine EU-Person, keine Notierung – seit Dezember 2024",
+      "src": "1a62998f82ed"
+    },
+    "text.9ae88b0c14de": {
+      "text": "Zwei Strukturen, und ein Gründungskaufmann trifft die Wahl.",
+      "src": "9ae88b0c14de"
+    },
+    "text.952cfdd5a90b": {
+      "text": "Wie schnell erreicht die Lieferung den Kunden tatsächlich?",
+      "src": "952cfdd5a90b"
+    },
+    "text.ec4e0b339908": {
+      "text": "Muss ich meine Aktien oder meine anderen Kanäle aufgeben?",
+      "src": "ec4e0b339908"
+    },
+    "text.aa1d26dedda8": {
+      "text": "Was geschieht, wenn ein Produkt eine Konformitätsprüfung nicht besteht?",
+      "src": "aa1d26dedda8"
+    },
+    "text.f471d51dab1f": {
+      "text": "Wer ist in Europa rechtlich für meine Produkte verantwortlich?",
+      "src": "f471d51dab1f"
+    },
+    "text.03bd66c32e0e": {
+      "text": "Baumwollstoff mit Handblockdruck, der als EU-Lagerbestand in Spanien vorrätig ist.",
+      "src": "03bd66c32e0e"
+    },
+    "text.fd663aa845c6": {
+      "text": "29 € pro Monat zum Einführungspreis, 79 € zum Listenpreis.",
+      "src": "fd663aa845c6"
+    },
+    "text.638d43b173fd": {
+      "text": "Verkaufen Sie von Indien nach Europa – ganz ohne Papierkram und Stress",
+      "src": "638d43b173fd"
+    },
+    "text.5b0e7e244d40": {
+      "text": "auf Verkäufe über guldaarbazaar.com sowie auf die in Rechnung gestellten Logistikkosten in Höhe von",
+      "src": "5b0e7e244d40"
+    },
+    "text.3fd7ee48c3b5": {
+      "text": "Betreut wird die Plattform von „Ayur Sen“ aus Spanien, das zugleich der erste Händler auf dieser Plattform ist.",
+      "src": "3fd7ee48c3b5"
+    },
+    "text.3b5dc13c2fc8": {
+      "text": ", Zoll und Mehrwertsteuer werden bereits an der Kasse entrichtet, sodass an der Tür keine weiteren Zahlungen fällig werden.",
+      "src": "3b5dc13c2fc8"
+    },
+    "text.fde17fe40fbf": {
+      "text": "Findet in Spanien statt. Bestellen Sie für eine Saison, anstatt die nächste zu erraten.",
+      "src": "fde17fe40fbf"
+    },
+    "text.89ec3e3dfd52": {
+      "text": "Verkauf von Indien nach Europa: Die Guldaar-Bahn für Händler und Einzelhändler",
+      "src": "89ec3e3dfd52"
+    },
+    "text.d602df64a502": {
+      "text": "Veröffentlicht, damit Sie den Preis für einen Stellplatz ermitteln und ein Budget planen können, ohne zuvor anrufen zu müssen.",
+      "src": "d602df64a502"
+    },
+    "text.3486dd554c74": {
+      "text": "Amazon und „Miravia“ haben ihren Anteil bereits einbehalten. Wir erheben keine zusätzliche Provision.",
+      "src": "3486dd554c74"
+    },
+    "text.88d3562d63bb": {
+      "text": "79 € (Listenpreis). Die Logistikkosten werden zum Selbstkostenpreis zuzüglich 10 % berechnet, wobei Ihnen die Kosten offengelegt werden.",
+      "src": "88d3562d63bb"
+    },
+    "text.56f5f8725fc3": {
+      "text": "Zwei Ebenen. Bestseller, die als EU-Lagerbestand in Spanien vorrätig sind, werden an eine spanische Adresse geliefert in",
+      "src": "56f5f8725fc3"
+    },
+    "text.d70fe615c602": {
+      "text": "Diese Regel gilt uneingeschränkt, und sie ist der Grund, warum man dem Rest dieser Liste vertrauen kann.",
+      "src": "d70fe615c602"
+    },
+    "text.1aa560b1e7f8": {
+      "text": "Zoll und EU-Mehrwertsteuer wurden bereits entrichtet; die Rechnung wurde von einem in Spanien ansässigen Lieferanten in Euro ausgestellt.",
+      "src": "1aa560b1e7f8"
+    },
+    "text.0d94fcd08660": {
+      "text": "Der Gewinn ergibt sich aus dem erfolgreichen Betrieb der Strecke und nicht daraus, dass Ihnen der Zugang dazu vermietet wird.",
+      "src": "0d94fcd08660"
+    },
+    "text.12bd48d3443c": {
+      "text": "Übergangsregelung bis zur Einführung des EU-Datenhubs im Jahr 2028; eine Bearbeitungsgebühr für den Import ist bis November 2026 zu entrichten.",
+      "src": "12bd48d3443c"
+    },
+    "text.2dd9f13a6f8a": {
+      "text": "Nur zur äußerlichen Anwendung. Kupfergefäße, Zungenschaber, Massagegeräte. Niemals etwas, das Sie verschlucken könnten.",
+      "src": "2dd9f13a6f8a"
+    },
+    "text.4f76e3c41782": {
+      "text": "Die Sammelladung im Luftfrachtverkehr hat die Paketgebühr in Höhe von 3 € überstanden. Einzelpakete hingegen nicht.",
+      "src": "4f76e3c41782"
+    },
+    "text.28e655b5a991": {
+      "text": "Handgebundene Bücher, mit Blockdruck verzierte Tagebücher und Titel, die dem Rest des Regals seinen Kontext verleihen.",
+      "src": "28e655b5a991"
+    },
+    "text.65b745f1825d": {
+      "text": "Sollte ein Kanal für Sie Verluste verursachen, werden Sie dies in diesem Kontoauszug erkennen, bevor wir entsprechende Maßnahmen ergreifen.",
+      "src": "65b745f1825d"
+    },
+    "text.12235a8eace2": {
+      "text": "Versand ab EU-Lager zu Test-Großhandelspreisen, kostenlose Rücksendung. Kein Akkreditiv, kein Mindestbestellwert.",
+      "src": "12235a8eace2"
+    },
+    "text.ba408485e854": {
+      "text": "1–2 Tage an eine Adresse in Spanien, 2–4 Tage nach Deutschland, Frankreich und Italien – bei allen Artikeln, die als EU-Lagerbestand vorrätig sind.",
+      "src": "ba408485e854"
+    },
+    "text.444d2eb230da": {
+      "text": "Klangschalen, Räuchergefäße, Altargegenstände. Als Objekte verkauft, als Objekte beschrieben, ohne jeglichen Anspruch.",
+      "src": "444d2eb230da"
+    },
+    "text.9968094273e3": {
+      "text": "Die größte Herausforderung, die ein kleiner indischer Hersteller allein kaum bewältigen kann – und genau dafür wurde Guldaar gegründet.",
+      "src": "9968094273e3"
+    },
+    "text.c2d3d736ed49": {
+      "text": "Blockdruck, Khadi und handgewebte Stoffe, deren Faserzusammensetzung in der Sprache des Landes, in dem sie verkauft werden, angegeben ist.",
+      "src": "c2d3d736ed49"
+    },
+    "text.f855271b8e6b": {
+      "text": "Der Teil, den die meisten Banken einem Telefonat überlassen. Er wird hier festgehalten, da ein Hersteller kein Silber gegen ein Versprechen kaufen kann.",
+      "src": "f855271b8e6b"
+    },
+    "text.16e470f533a1": {
+      "text": "Maßgefertigte und personalisierte Stücke werden in denselben Ateliers hergestellt, wobei die Lieferzeiten pro Stück angegeben werden, bevor Sie sich festlegen.",
+      "src": "16e470f533a1"
+    },
+    "text.5271658bfb34": {
+      "text": "Wir kaufen die Sendung bei der Luftfrachtübergabe an, und Sie erhalten Ihre Zahlung bei Versand aus Indien – das bedeutet schnellere Auszahlung, jedoch zu einem geringeren Preis.",
+      "src": "5271658bfb34"
+    },
+    "text.c50c83e900ee": {
+      "text": "Echte Materialien, echte Gewichte, echte Abmessungen. Wir überarbeiten, übersetzen und bereinigen die Bilder. Wir erfinden das Produkt nicht.",
+      "src": "c50c83e900ee"
+    },
+    "text.23c801b24f58": {
+      "text": "Bodenbeläge aus Messing, Holz, Keramik und handgeknüpfte Bodenbeläge. Die schwerste Kategorie, in der Sammelguttransporte am wichtigsten sind.",
+      "src": "23c801b24f58"
+    },
+    "text.013fef40215f": {
+      "text": "Eine Messingschale ist eine Messingschale. Durch eine entsprechende Angabe wird sie zu einem regulierten Medizinprodukt, und dieses Risiko werden wir nicht in Ihr Geschäft tragen.",
+      "src": "013fef40215f"
+    },
+    "text.6013bf07142a": {
+      "text": "Oder innerhalb von 8 bis 14 Tagen direkt aus Ihrer Werkstatt. In beiden Fällen sind die Zollgebühren bereits entrichtet, und es fallen für den Kunden keine zusätzlichen Kosten an.",
+      "src": "6013bf07142a"
+    },
+    "text.a70a61ec61c7": {
+      "text": "Jedes in die EU verkaufte Stück ist mit der Herstellermarke und dem gesetzlich vorgeschriebenen Feingehalt versehen. Wir erklären Ihnen genau, was Sie wo anbringen müssen.",
+      "src": "a70a61ec61c7"
+    },
+    "text.34b5f56b156b": {
+      "text": "Die Waren verbleiben in unserem EU-Lager in Ihrem Besitz, und Sie erhalten monatlich eine Zahlung, sobald sie verkauft werden, auf der Grundlage einer Abrechnung, aus der jede Bestellung und deren Kosten hervorgehen.",
+      "src": "34b5f56b156b"
+    },
+    "text.0af5aa659087": {
+      "text": "Für jede Sendung müssen Ursprungsnachweise ausgestellt werden. Das bedeutet ein weiteres Dokument pro Sendung, und dieses Dokument erstellen wir, nicht Sie.",
+      "src": "0af5aa659087"
+    },
+    "text.7f980178a8d9": {
+      "text": "Guldaar erwirbt FOB India und wird zum offiziellen Importeur in Spanien. Es verbleibt kein Betrag auf einem Zwischenkonto, der auf seinen Ausgleich wartet.",
+      "src": "7f980178a8d9"
+    },
+    "text.9fdef76cc9f2": {
+      "text": ": Sie behalten die Ware während des gesamten Prozesses in Ihrem Besitz, während Guldaar für Logistik, Compliance, Listung und Nachfrage zuständig ist. Verkaufen Sie weiterhin dort, wo Sie bereits verkaufen.",
+      "src": "9fdef76cc9f2"
+    },
+    "text.82f7c1f6af69": {
+      "text": "Die Shops der Gründungshändler sind geöffnet, und europäische Käufer können Muster anfordern. In jedem Fall genügt eine Nachricht, und Ayur Sen beantwortet diese.",
+      "src": "82f7c1f6af69"
+    },
+    "text.5f4e4fb2fae2": {
+      "text": "Die Alternative – die Zahlung der IGST und deren anschließende Rückforderung – bindet 15 bis 18 % des Rechnungsbetrags für zwei bis drei Monate. Wir werden Sie nicht in diese Situation bringen.",
+      "src": "5f4e4fb2fae2"
+    },
+    "text.001ded44fb51": {
+      "text": "Sie exportieren in Ihrem eigenen Namen, sodass die Exportvorteile Ihnen erhalten bleiben. Sollte Ihre „LUT“ abgelaufen sein, müssen Sie ein Formular ausfüllen; wir werden Sie dabei unterstützen.",
+      "src": "001ded44fb51"
+    },
+    "text.89c4e3e83fe5": {
+      "text": "Sie sind ein Vertreiber eines konformen Produkts und nicht der Importeur eines Produkts, dessen Konformität ungewiss ist. Genau dieser Unterschied ist der Grund, warum diese Seite überhaupt existiert.",
+      "src": "89c4e3e83fe5"
+    },
+    "text.ca27e89d7625": {
+      "text": "Alles aus einer Hand: EU-Verantwortlicher, Zoll und Abgaben, Mehrwertsteuer, Expressversand aus EU-Lagern, Marktplatz-Angebote und Abgleich der Exporteinnahmen.",
+      "src": "ca27e89d7625"
+    },
+    "text.b828a0fc2aec": {
+      "text": "Ihre IEC, Ihre LUT, Ihre RoDTEP. Der Rabatt bleibt Ihnen erhalten. Wir reichen das Ursprungszeugnis und das Konformitätspaket für Ihre Produktfamilie ein.",
+      "src": "b828a0fc2aec"
+    },
+    "text.cc6daea2bf31": {
+      "text": "Das kategorienübergreifende Sortiment, das einem kleinen Geschäft den Dezember überbrückt: Artikel mit geringem Verkaufspreis, hoher Gewinnspanne, in Spanien als Geschenk verpackt und noch am selben Tag versandt.",
+      "src": "cc6daea2bf31"
+    },
+    "text.fb940bebc13d": {
+      "text": "Bei Kosmetika ist die Einreichung eines CPSR-Sicherheitsdossiers und einer CPNP-Meldung erforderlich, jeweils eine pro Produkt. Bei Lebensmitteln ist die Freigabe durch die Grenzkontrolle sowie eine Rückstandsuntersuchung erforderlich.",
+      "src": "fb940bebc13d"
+    },
+    "text.4fac028b4906": {
+      "text": "Die Nachlieferungen erfolgen im Anschluss an die zweiwöchentliche Bestandsaufnahme, sodass eine Produktlinie, die in Ihrem Geschäft ausverkauft ist, bereits innerhalb von drei Wochen statt erst nach drei Monaten wieder bei Ihnen eintrifft.",
+      "src": "4fac028b4906"
+    },
+    "text.8247cffa0c29": {
+      "text": "Sollte ein Test fehlschlagen, teilen wir Ihnen mit, was fehlgeschlagen ist und wie Sie das Problem beheben können. Was wir jedoch nicht tun werden, ist, das Produkt trotzdem aufzulisten und auf das Beste zu hoffen – denn der Name auf dem Eintrag ist der unsere.",
+      "src": "8247cffa0c29"
+    },
+    "text.0a523e43a6d0": {
+      "text": "Schmuck, Textilien, Dekorationsartikel und Ritualgegenstände werden auf einer Rechnung, über einen einzigen Ansprechpartner und in einer einzigen Lieferung geliefert. Sie müssen nicht sieben Importbeziehungen aufbauen.",
+      "src": "0a523e43a6d0"
+    },
+    "text.ce17246a94c9": {
+      "text": ", der den Korridor von Spanien aus betreibt und die von dieser Seite gesendeten Nachrichten beantwortet. Ein Name in der Konformitätsdatei, auf der Zolleinführung und in der Antwort.",
+      "src": "ce17246a94c9"
+    },
+    "text.6bafdc5eacbe": {
+      "text": "Sie lagern ein Produkt, für das bereits jemand in der EU die rechtliche Verantwortung übernommen hat. Diese Verantwortung geht nicht auf Sie über, sobald die Sendung bei Ihnen eintrifft.",
+      "src": "6bafdc5eacbe"
+    },
+    "text.8f9fdc5e839d": {
+      "text": "Silberfiligran, Messing und Stein. Jedes Stück ist mit einer Herstellermarke und der gesetzlich vorgeschriebenen Feingehaltsangabe versehen, und das Zertifikat von „REACH“ liegt bereits vor der Veröffentlichung des Angebots vor.",
+      "src": "8f9fdc5e839d"
+    },
+    "text.2faacb2ef08c": {
+      "text": "Im Rahmen des Handelsabkommens zwischen Indien und der EU werden Textilien, Schmuck, Kunsthandwerk und Leder zollfrei, wobei mit einer vorläufigen Anwendung ab Ende 2026 gerechnet wird.",
+      "src": "2faacb2ef08c"
+    },
+    "text.0997bddb728c": {
+      "text": "Die Provision für Verkäufe über den Marktplatz beträgt null, da der Marktplatz bereits 8–15 % einbehält und eine zweite Provision zu erheben genau dem Geschäftsmodell widerspricht, gegen das dieses Modell entwickelt wurde.",
+      "src": "0997bddb728c"
+    },
+    "text.e8adc0e4f1e4": {
+      "text": "Fragen Sie nach den Informationen, die nicht öffentlich zugänglich sind. Eine ernst gemeinte Frage erhält eine konkrete Antwort – auch in den Fällen, in denen die Antwort lautet, dass etwas noch in der Entwicklung ist.",
+      "src": "e8adc0e4f1e4"
+    },
+    "text.6cb2a5239982": {
+      "text": "Wir sind der eingetragene Importeur und die in der Auflistung genannte verantwortliche Person in der EU. Ein Eintrag, eine Registrierung – statt einer pro Land, in das Sie verkaufen.",
+      "src": "6cb2a5239982"
+    },
+    "text.341b3139d258": {
+      "text": "Wenn Sie einen besitzen, gehört er Ihnen; andernfalls kostet ein Labortest etwa 50–150 € pro Familie. Bei Schmuck und Metallwaren ist dies eine unumgängliche Hürde, bevor etwas eingestellt werden kann.",
+      "src": "341b3139d258"
+    },
+    "text.0837163bd78e": {
+      "text": "Alle zwei Wochen werden die Waren aller Lieferanten an einem Ort gesammelt und unter einem einzigen Luftfrachtbrief versandt. Aus diesem Grund ist es überhaupt erst möglich, das Paket eines einzelnen Handwerkers kostengünstig per Luftfracht zu versenden.",
+      "src": "0837163bd78e"
+    },
+    "text.5c684d2e852d": {
+      "text": "Eine Rücksendeadresse innerhalb der EU, bei der Annahme in die Klassen A bis D eingestufte Waren und eine dazugehörige Lieferantenbewertung. Ein Mangel ist ein Datenpunkt, auf den wir reagieren – und kein Streitpunkt, über den Sie sich über sechs Zeitzonen hinweg streiten.",
+      "src": "5c684d2e852d"
+    },
+    "text.5744035f28ef": {
+      "text": "Verkaufen Sie von Indien aus nach Europa über einen einzigen Kanal: EU-Verantwortlicher, Zoll, Einfuhrzölle und Mehrwertsteuer werden abgewickelt, Lieferungen aus dem EU-Lager erfolgen innerhalb von 1–4 Tagen, und die Zahlung erfolgt an Sie unter Ihrer eigenen Ausfuhrgenehmigung.",
+      "src": "5744035f28ef"
+    },
+    "text.7a56a5716206": {
+      "text": "Teilen Sie uns dies bitte innerhalb von vierzehn Tagen nach Lieferung unter Beifügung eines Fotos mit. Sie erhalten eine Gutschrift oder einen Ersatz bei der nächsten Lieferung, und sofern der Fehler auf unsere Seite zurückzuführen ist, übernehmen wir die Rücksendekosten.",
+      "src": "7a56a5716206"
+    },
+    "text.c0ac463683bf": {
+      "text": "Ein Produkt qualifiziert sich aufgrund seiner eigenen Verkaufszahlen, die wöchentlich überprüft werden, für den Aufstieg von der zweiten in die erste Stufe, und keine Ware belegt länger als acht Wochen Lagerfläche, nachdem der Absatz nachweislich stattgefunden hat.",
+      "src": "c0ac463683bf"
+    },
+    "text.ca07c5df09b6": {
+      "text": "Die Zollreform der EU führte eine Gebühr pro Sendung für Importe von geringem Wert ein und beendete das Modell der Billigpakete endgültig. Ein einzelnes per Post versandtes Paket aus Indien ist preislich nicht mehr wettbewerbsfähig.",
+      "src": "ca07c5df09b6"
+    },
+    "text.8a10435bdbbf": {
+      "text": "Wählen Sie drei Dinge aus, und die Seite verfasst die Nachricht für Sie. Ayur Sen antwortet in der Regel noch am selben Tag, und es ist jedes Mal dieselbe Person. Diese Website setzt keine Cookies und führt keine Analysen durch.",
+      "src": "8a10435bdbbf"
+    },
+    "text.62ce83bc4e03": {
+      "text": "Sie nennen einen Preis FOB Indien, pro Stück, pro Material. Wir kaufen zu diesem Preis ein. Der Preis ändert sich weder, weil ein Angebot gut gelaufen ist, noch, weil ein Marktplatz eine Werbeaktion durchgeführt hat.",
+      "src": "62ce83bc4e03"
+    },
+    "text.c6b8247e106e": {
+      "text": "Sie erhalten von einem in Spanien ansässigen Lieferanten eine Rechnung in Euro, wobei der Zoll und die Einfuhrumsatzsteuer bereits an der Grenze beglichen wurden. Bei der Ankunft werden weder von Ihnen noch von Ihrem Kurierdienst irgendwelche Zahlungen verlangt.",
+      "src": "c6b8247e106e"
+    },
+    "text.3da93b4c2ae4": {
+      "text": "Wir sind Ihr EU-Verantwortlicher, Ihr offizieller Importeur, Ihr Lager in Spanien und kümmern uns um Ihre Produktlistungen in acht Sprachen. Sie behalten Ihre Ausfuhrgenehmigung, Ihre Rückerstattung und Ihren Namen als Urheber.",
+      "src": "3da93b4c2ae4"
+    },
+    "text.692ef8204bbe": {
+      "text": "Logistik und Frachtkosten: zu Selbstkosten zuzüglich 10 %, wobei Ihnen die zugrunde liegenden Kosten offengelegt werden. „REACH“-Prüfung, sofern noch kein Zertifikat vorliegt, zu einem Preis von etwa 50–150 € pro Materialgruppe.",
+      "src": "692ef8204bbe"
+    },
+    "text.55a73225f751": {
+      "text": "Handgefertigte Waren weisen Abweichungen auf. Eine Abweichung bei einem Blockdruck oder eine Hammerspur auf Messing ist Teil des Produkts und kein Mangel; wir beschreiben die Bandbreite bereits bei der Bestellung, anstatt sie im Nachhinein rechtfertigen zu müssen.",
+      "src": "55a73225f751"
+    },
+    "text.b2a991afff3a": {
+      "text": "Die Zahlung geht über einen zugelassenen Kanal, der am nächsten Werktag erfolgt, auf Ihrem indischen Bankkonto ein – gegen Vorlage einer von Ihnen selbst bestätigten Überweisungsbestätigung. Der Rabatt, den Sie in Phase eins geltend gemacht haben, steht Ihnen weiterhin zu.",
+      "src": "b2a991afff3a"
+    },
+    "text.c886d512c1be": {
+      "text": "Bei der Wiedereinfuhr reichen wir für Sie die Stornierung der „EDPMS“-Meldung ein. Ein nicht stornierter Ausfuhrposten führt dazu, dass ein Exporteur auf die Beobachtungsliste gesetzt wird, und es ist unsere Aufgabe, dies durch ordnungsgemäße Abwicklung zu verhindern – nicht Ihre, dies aufzudecken.",
+      "src": "c886d512c1be"
+    },
+    "text.28768a6dff8b": {
+      "text": "Zollgebühren und EU-Mehrwertsteuer werden vor dem Versand entrichtet; die Rechnung wird in Euro aus Spanien ausgestellt, die Lieferung erfolgt innerhalb von ein bis vier Tagen. Wir sind die in den Unterlagen angegebene verantwortliche Person in der EU, und diese Rolle geht bei Ankunft des Pakets nicht auf Sie über.",
+      "src": "28768a6dff8b"
+    },
+    "text.0769c071c9e7": {
+      "text": "Die Rolle als EU-Verantwortlicher, Zollabfertigung und Zollabwicklung, EU-Mehrwertsteuer, VerpackungsEPRen, Erstellung von Produktlisten und deren Übersetzung in acht Sprachen sowie die Veröffentlichung auf Amazon.de, Miravia und TikTok Shop.",
+      "src": "0769c071c9e7"
+    },
+    "text.7aa0a016156f": {
+      "text": "Erst wenn der Umsatz in den eigenen Filialen drei Monate in Folge bei 25.000 € pro Monat liegt. Händler, die sich vor diesem Zeitpunkt angemeldet haben, behalten weitere zwölf Monate lang 5 %. Diese Bedingung wird veröffentlicht und nicht nur vorbehalten.",
+      "src": "7aa0a016156f"
+    },
+    "text.59be9dd1d411": {
+      "text": "Es wird nicht in den Katalog aufgenommen. Die Zertifizierung nach „REACH“ stellt für Schmuck und Metallwaren eine hohe Hürde vor der Aufnahme in den Katalog dar; die Konformitätsunterlagen werden pro Produktfamilie und nicht pro Einzelartikel eingereicht, und keine Produktfamilie wird ohne entsprechende Unterlagen in den Katalog aufgenommen.",
+      "src": "59be9dd1d411"
+    },
+    "text.8cdd6c3c9250": {
+      "text": "Das tun wir, und diese Verantwortung geht nicht auf Sie über, wenn die Sendung bei Ihnen eintrifft. Wir sind die auf dem Produkt angegebene EU-Verantwortliche Person, bewahren die technischen Unterlagen zehn Jahre lang auf und sind der eingetragene Importeur für alle in Spanien gelagerten Waren.",
+      "src": "8cdd6c3c9250"
+    },
+    "text.7407d433ca97": {
+      "text": "Bei der Ausfuhr im Rahmen des „LUT“-Verfahrens werden die Waren mit einem IGST-Satz von 0 % abgefertigt, sodass kein Teil Ihres Betriebskapitals an der Grenze gebunden wird. Die Vorsteuer, die Sie bereits auf Silber, Stoff oder Messing entrichtet haben, wird Ihnen gegen Vorlage Ihrer Frachtbriefe in bar erstattet.",
+      "src": "7407d433ca97"
+    },
+    "text.a777654894ef": {
+      "text": "Guldaar wickelt die Bestellung, die Zahlung und die Rücksendungen ab, sodass der Kunde seine Transaktionen direkt mit Guldaar abwickelt. Sie erhalten monatlich eine Übersicht über Ihre eigenen Umsätze, aufgeschlüsselt nach Produkten und Vertriebskanälen, einschließlich der Kosten pro Bestellung, die zu diesen Umsätzen geführt haben.",
+      "src": "a777654894ef"
+    },
+    "text.01f92872fd4a": {
+      "text": "Beginnen Sie mit einem sorgfältig zusammengestellten Mustersortiment, das auf die Art Ihres Geschäfts zugeschnitten ist, und nicht mit einem Katalog mit 45.000 Artikeln. Kleine Bestellungen sind kein Problem, denn die vierzehntägige Sammelsendung dient genau dem Zweck, dass auch eine kleine Bestellung per Luftfracht noch wirtschaftlich ist.",
+      "src": "01f92872fd4a"
+    },
+    "text.b7627ffec6ba": {
+      "text": "Im Rahmen der EU-Zollreform 2026 gilt Guldaar auch bei Waren, die direkt aus dem Atelier versandt werden, als fiktiver Importeur, und als Marktplatzbetreiber führt das Unternehmen Aufzeichnungen zur Rückverfolgbarkeit der Händler gemäß Artikel 30 des Gesetzes über digitale Dienste.",
+      "src": "b7627ffec6ba"
+    },
+    "text.adb1e9172328": {
+      "text": "Eine technische Dokumentation gemäß „GPSR“ für jede Produktfamilie, ein Zertifikat gemäß „REACH“ für Schmuck und Metallwaren bereits vor deren Listung, ein Verantwortlichkeitszeichen auf jedem Einzelstück, eine Faserkennzeichnung gemäß Verordnung (EU) Nr. 1007/2011 sowie eine registrierte Verpackungs-EPR.",
+      "src": "adb1e9172328"
+    },
+    "text.a5341964275a": {
+      "text": "Musterpakete werden in jedem Fall im Voraus bezahlt. Sie sind so klein, dass uns Zahlungsaufschübe mehr Verwaltungsaufwand verursachen würden, als die Bestellung wert ist, und die Rücksendung Ihres ersten Pakets ist ohnehin kostenlos, sodass Sie durch die Vorauszahlung keinerlei Risiko eingehen.",
+      "src": "a5341964275a"
+    },
+    "text.4f220f8f8fa6": {
+      "text": "Sie führen den Export unter Ihren eigenen Domains IEC und LUT durch, sodass der Export in Ihrem Besitz bleibt: Das Skript unter RoDTEP steht Ihnen zur Verfügung, und die Seite e-BRC wird anhand der auf Ihrem eigenen Kontoauszug ausgewiesenen eingehenden Überweisung selbstzertifiziert, wie es das Rahmenwerk „DGFT“ vorsieht.",
+      "src": "4f220f8f8fa6"
+    },
+    "text.c79384903d75": {
+      "text": "Die Verordnung über die allgemeine Produktsicherheit verbietet den Verkauf durch Anbieter aus Nicht-EU-Ländern, sofern diese keine in der EU ansässige verantwortliche Person benannt haben. Im Juni 2026 führten deutsche und französische Behörden eine gemeinsame Razzia bei Amazon-Angeboten durch, bei denen Konformitätsdaten fehlten, und erließen 14-tägige Aufforderungen zur Entfernung der Angebote.",
+      "src": "c79384903d75"
+    },
+    "text.2d474bc8faa8": {
+      "text": "Ihre Waren werden im nächsten zweiwöchentlichen Zyklus versandt oder direkt vom Atelier aus per Expressversand mit verzollter Sendung geliefert – je nachdem, welche Option den Kunden früher erreicht. Es kommt nicht vor, dass Ihr Lagerbestand einen Monat lang am Sammelpunkt verbleibt, während nach einer entsprechenden Versandmenge gesucht wird.",
+      "src": "2d474bc8faa8"
+    },
+    "text.63be5a24e11e": {
+      "text": "Es liegt an uns, den europäischen Verkaufspreis festzulegen und über alle Vertriebskanäle hinweg einheitlich zu halten, da die Preisregeln der Marktplätze einen Verkäufer bestrafen, der unter seinem eigenen Angebotspreis verkauft. Ihre Marge steht fest, sobald Sie sie angeben – dies ist das Gegenteil einer Provision.",
+      "src": "63be5a24e11e"
+    },
+    "text.02b02ca424aa": {
+      "text": "In beiden Fällen erfolgt die Zahlung über einen von der RBI zugelassenen grenzüberschreitenden Kanal, der am nächsten Werktag abgerechnet wird und automatisch die elektronische Benachrichtigung über den eingehenden Auslandsüberweisungsbetrag ausstellt. Es verbleibt kein Betrag auf einem Zwischenkonto, der manuell abgeglichen werden muss.",
+      "src": "02b02ca424aa"
+    },
+    "text.620ef62e5a7f": {
+      "text": "Außerhalb Spaniens handelt es sich um eine innergemeinschaftliche Lieferung: Wir stellen Ihnen im Rahmen des Reverse-Charge-Verfahrens eine Rechnung ohne Mehrwertsteuer aus, und Sie weisen diese zu Ihrem eigenen Steuersatz unter Ihrer Umsatzsteuer-Identifikationsnummer aus, die Sie uns einmalig mitteilen. Einem spanischen Geschäft wird die Rechnung wie üblich mit spanischer Mehrwertsteuer ausgestellt.",
+      "src": "620ef62e5a7f"
+    },
+    "text.d54c00a22c2f": {
+      "text": "Es gelten ausschließlich die veröffentlichten Sätze. Guldaar: 29 € pro Monat zuzüglich 5 %; Not On The High Street: 25 % zuzüglich einer Anmeldegebühr von 199 £; Agenturprovisionen: effektiv 15–30 %; Global-e: ca. 16–17,5 %. Die Logistikkosten werden von allen Anbietern separat in Rechnung gestellt und sind daher auf allen Seiten nicht enthalten.",
+      "src": "d54c00a22c2f"
+    },
+    "text.7271f115f60e": {
+      "text": "Für den Eigenhandelssatz ist ein veröffentlichter Fahrplan bis zu 10 % vorgesehen, wobei die Bedingung ausdrücklich festgelegt und nicht nur vorbehalten ist: Er tritt erst dann in Kraft, wenn der Umsatz im Eigenhandel drei Monate in Folge 25.000 € pro Monat erreicht; Händler, die bereits zuvor beigetreten sind, behalten für weitere zwölf Monate den Satz von 5 %.",
+      "src": "7271f115f60e"
+    },
+    "text.bb2be31f3d9c": {
+      "text": "Artikel, die auf Lager sind, werden am nächsten Werktag aus Spanien versandt: Die Lieferzeit beträgt ein bis zwei Tage an eine Adresse in Spanien sowie zwei bis vier Tage nach Deutschland, Frankreich und Italien. Sonderanfertigungen und personalisierte Artikel werden in Indien innerhalb von etwa drei Tagen gefertigt und treffen innerhalb von fünf bis sieben Tagen als Expresssendung mit entrichteten Einfuhrzöllen bei Ihnen ein.",
+      "src": "bb2be31f3d9c"
+    },
+    "text.ac360246dcd7": {
+      "text": "Noch nicht. Ab 2027 ist vorgesehen, dass Handelsfinanzierungspartner innerhalb von zwei Tagen nach der Luftfrachtübergabe einen Vorschuss auf den verifizierten FOB-Wert gewähren, der aus den Verkaufserlösen zurückgezahlt wird. Dabei handelt es sich um die Bilanz eines Partners und nicht um unsere eigene, und dies wird hier als Plan und nicht als Angebot aufgeführt, da es noch nicht in Kraft ist.",
+      "src": "ac360246dcd7"
+    },
+    "text.300746c88f56": {
+      "text": "Denn der Betreiber ist der erste Händler auf dieser Strecke. Guldaar Bazaar verkauft seine eigenen Waren über dieselbe Bahnstrecke, mit denselben Konformitätsunterlagen und derselben Lieferzusage nach Europa, und die Zahlen auf dieser Seite basieren auf den tatsächlichen Betriebsdaten des Unternehmens und nicht auf Prognosen Dritter.",
+      "src": "300746c88f56"
+    },
+    "text.329fbaaff9f4": {
+      "text": "Die erste Bestellung wird vor dem Versand per Überweisung oder Kreditkarte bezahlt. Ab der zweiten Bestellung haben Sie dreißig Tage ab Rechnungsdatum Zeit, sofern die Umsatzsteuer-Identifikationsnummer überprüft wurde und eine Handelsreferenz vorliegt. Zu keinem Zeitpunkt wird ein Akkreditiv verlangt, was der einzige Grund dafür ist, dass ein kleines Geschäft indische Waren überhaupt auf diese Weise beziehen kann.",
+      "src": "329fbaaff9f4"
+    },
+    "text.9bf1ac1f6962": {
+      "text": "Lagerfläche wird nicht länger als acht Wochen bereitgehalten, sofern kein nachweisbarer Absatz vorliegt. Drei Ausstiegsmöglichkeiten, und Ihre wird bereits vor der ersten Lieferung schriftlich vereinbart, anstatt später darüber zu verhandeln: Rückkauf zum von uns gezahlten Preis, Outlet-Liquidation zu zehn Prozent unter dem Listenpreis oder eine zollfreie Rückfuhr der Ware nach Indien gemäß der Bekanntmachung 45/2017-Zoll.",
+      "src": "9bf1ac1f6962"
+    },
+    "text.14c9a5a6c026": {
+      "text": "Guldaar ist dies. Die Verordnung über die allgemeine Produktsicherheit schreibt vor, dass für jedes an Verbraucher in der EU verkaufte Verbraucherprodukt eine in der EU ansässige verantwortliche Person benannt werden muss, die in der Produktliste aufgeführt ist, für die Behörden erreichbar ist und die technische Unterlagen zehn Jahre lang aufbewahrt. Guldaar übernimmt diese Rolle für alle Produkte im Schienenverkehr und ist der registrierte Importeur für die in der EU gelagerten Bestände.",
+      "src": "14c9a5a6c026"
+    },
+    "text.dd5ed68afc14": {
+      "text": "Bei Ihrer ersten Bestellung, dem Probierpaket, übernehmen wir die Kosten in jedem Fall. Senden Sie einfach zurück, was Ihnen aus welchem Grund auch immer – oder ganz ohne Grund – nicht zusagt, und wir erstatten Ihnen den Betrag. Dies gilt für ein Paket pro Käufer, was wir hier ausdrücklich erwähnen, anstatt es in einer Fußnote zu vermerken: Diese Regelung soll Ihnen ermöglichen, uns kostenlos zu testen, und ist nicht als dauerhafte Möglichkeit gedacht, Waren zu entliehen. Bei späteren Bestellungen müssen Sie die Kosten für eine Rücksendung aus persönlichen Gründen selbst tragen.",
+      "src": "dd5ed68afc14"
+    },
+    "text.805c8dc8103e": {
+      "text": "Guldaar übernimmt Folgendes, sodass ein Händler dies nicht tun muss und ein Käufer es nicht übernimmt: GPSR Verantwortliche Person, EU-Technisches Dossier, 10 Jahre, EORI, IOSS, Aufgeschobene Einfuhrumsatzsteuer, TARIC-Klassifizierung, Ursprungszeugnis, REACH-Zertifizierung, Verantwortlichkeitskennzeichnung, VerpackungsEPR, Textil EPR, Faserkennzeichnung Verordnung 1007/2011, DSA Artikel 30 – KYC für Händler, IEC und LUT, RoDTEP-Gutschein, e-BRC-Selbstzertifizierung, Zoll und Umsatzsteuer an der Kasse, EU-Rücksendeadresse.",
+      "src": "805c8dc8103e"
     }
   }
 }
