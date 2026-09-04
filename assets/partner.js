@@ -274,8 +274,24 @@
     return lines.filter(Boolean).join("\n");
   }
 
+  /* A merchant lives on WhatsApp; a European retail buyer opening a trade account mostly
+     does not, and a green chat button as the only prominent channel reads as informal for
+     a relationship that involves credit terms and a VAT number. Both channels stay, and
+     the primary one follows the audience. */
+  function primaryChannel(r) {
+    if (!waLink || !mailLink) return;
+    var mailIsPrimary = r === "retailer";
+    mailLink.className = "btn-lg " + (mailIsPrimary ? "pri" : "sec");
+    waLink.className = "btn-lg " + (mailIsPrimary ? "sec" : "pri");
+    var cta = waLink.parentNode;
+    if (cta && cta.firstChild !== (mailIsPrimary ? mailLink : waLink)) {
+      cta.insertBefore(mailIsPrimary ? mailLink : waLink, cta.firstChild);
+    }
+  }
+
   function compose() {
     var body = message();
+    primaryChannel(role && role.value === "retailer" ? "retailer" : "merchant");
     if (preview) preview.textContent = body;
     if (waLink) waLink.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(body);
     if (mailLink) {
