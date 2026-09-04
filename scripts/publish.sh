@@ -278,9 +278,8 @@ step "13/14 commit what is about to be published"
 # hand-authored and stays out, so an unfinished edit to scripts/ or a half-written note in
 # DEPLOY.md is never swept into a 07:15 commit.
 #
-# ':!inventory.html' excludes the stock-taking view for the same reason build-dist withholds
-# it from the upload: cost prices and unlisted stock. It is tracked from before that rule
-# existed, so it is excluded explicitly here rather than silently riding along on the glob.
+# inventory.html — the stock-taking view, with cost prices and unlisted stock — is kept out
+# by .gitignore since 3 Sep 2026, which is also why build-dist withholds it from the upload.
 # content/ joined this list on 17 Aug 2026, when the Diaries stopped pointing at two other
 # pages and started holding the writing itself. It is the same argument that put data/ here:
 # it is a master the pages are generated FROM, and committing diaries.html without the prose
@@ -293,8 +292,16 @@ step "13/14 commit what is about to be published"
 # present on disk, absent from the commit. The originals were already tracked (611 of them);
 # what was missing was any step that committed the NEW ones, so every morning left them
 # behind for a hand commit. inventory.html and *.cards left the repo the same day, so the
-# ':!inventory.html' exclusion below is now belt and braces rather than the only guard.
-PUBLISHED=( '*.html' ':!inventory.html' '*.txt' sitemap.xml assets images edge data content )
+# ':!inventory.html' exclusion is GONE for that reason, and its removal is not cosmetic.
+# On 4 Sep 2026 this step failed and took the whole publish with it. Once inventory.html was
+# gitignored, the negative pathspec changed how `git add` treats it: a bare glob skips an
+# ignored file silently, but a glob PLUS an exclude makes git report "paths are ignored by
+# one of your .gitignore files" and exit 1 — under `set -e`, that is the run over, before the
+# commit and before the push. The morning's work sat uncommitted until it was pushed by hand.
+#   git add -n -- '*.html'                      # exit 0
+#   git add -n -- '*.html' ':!inventory.html'   # exit 1
+# .gitignore is the guard now; a second one that changes the exit code is a liability.
+PUBLISHED=( '*.html' '*.txt' sitemap.xml assets images edge data content )
 
 # `git add` first, and not only because of modified files: build-images writes NEW
 # derivatives every time a listing gains a photo, and build-shop can write a page that did
