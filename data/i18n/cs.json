@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:22:13.797Z",
-  "count": 6006,
+  "generated": "2026-09-04T15:34:39.597Z",
+  "count": 6009,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -25053,10 +25053,6 @@
       "text": "Splatné při příjezdu",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Viz obchodní podmínky",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Jeden letecký nákladní list",
       "src": "da3403b5d9fb"
@@ -25161,10 +25157,6 @@
       "text": "Suvenýry a dárky",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Sledujte, jak se kus posouvá",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC klasifikace",
       "src": "3018b6ff0149"
@@ -25192,10 +25184,6 @@
     "text.bc79f18a0380": {
       "text": "Wellness doplňky",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Požádejte o vzorkový balíček",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Osvědčení o původu",
@@ -25300,10 +25288,6 @@
     "text.ff73c39b4cb5": {
       "text": "Údaje, které kupující potřebuje",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Zeptejte se na místo založení",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Co je zahrnuto v ceně 29 €",
@@ -26012,6 +25996,34 @@
     "text.4120b620610f": {
       "text": "Od druhé objednávky",
       "src": "4120b620610f"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Zeptejte se na cokoli na této stránce",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Tato stránka byla přeložena strojově.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "Platná je anglická verze. Pokud vám některý pojem v tomto textu připadá podivný nebo si chcete nechat určitou věc písemně potvrdit, než se k něčemu zavážete, obraťte se na nás: někdo vám odpoví v angličtině nebo ve vašem jazyce.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Sledujte cestu jednoho kusu",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Zeptejte se na místo zakládajícího obchodníka",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Zobrazit obchodní podmínky",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Požádejte o vzorkový balíček",
+      "src": "224b4b637a38"
     }
   }
 }

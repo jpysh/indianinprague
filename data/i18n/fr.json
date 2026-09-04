@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:23:46.616Z",
-  "count": 6006,
+  "generated": "2026-09-04T15:34:38.960Z",
+  "count": 6009,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -23081,10 +23081,6 @@
       "text": "À régler à votre arrivée",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Consultez les conditions commerciales",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Un bordereau d&#x27;expédition aérien",
       "src": "da3403b5d9fb"
@@ -23193,10 +23189,6 @@
       "text": "Souvenirs et cadeaux",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Suivez le parcours d&#x27;une pièce",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC classification",
       "src": "3018b6ff0149"
@@ -23224,10 +23216,6 @@
     "text.bc79f18a0380": {
       "text": "Accessoires de bien-être",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Demandez un pack d&#x27;échantillons",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Certificat d&#x27;origine",
@@ -23352,10 +23340,6 @@
     "text.ff73c39b4cb5": {
       "text": "Les chiffres dont un acheteur a besoin",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Renseignez-vous sur le lieu de fondation",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Ce que comprennent ces 29 €",
@@ -24032,6 +24016,34 @@
     "text.805c8dc8103e": {
       "text": "Guldaar prend en charge les éléments suivants, de sorte qu’un commerçant n’ait pas à s’en charger et qu’un acheteur n’en hérite pas : GPSR Personne responsable, dossier technique UE, 10 ans, EORI, IOSS, TVA à l’importation différée, classification «TARIC», certificat d’origine, certification «REACH», marque de responsabilité, emballage «EPR», textiles «EPR», étiquetage des fibres (règlement n° 1007/2011), article 30 de la DSA (vérification de l’identité du client par le commerçant), «IEC» et «LUT», bon d’achat «RoDTEP», autocertification «e-BRC», droits de douane et TVA à la caisse, adresse de retour dans l’UE.",
       "src": "805c8dc8103e"
+    },
+    "text.0e49837d2ac4": {
+      "text": "N'hésitez pas à poser des questions sur tout ce qui figure sur cette page",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Cette page a été traduite automatiquement.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "C'est la version anglaise qui fait foi. Si un terme vous semble étrange ou si vous souhaitez obtenir une confirmation par écrit avant de vous engager, n'hésitez pas à nous contacter : une personne vous répondra, en anglais ou dans votre langue.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Suivez le parcours d'une pièce",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Demander une place de marchand fondateur",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Voir les conditions commerciales",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Demandez un coffret d'échantillons",
+      "src": "224b4b637a38"
     }
   }
 }

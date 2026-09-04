@@ -308,6 +308,14 @@ if (isMain) {
       let out = head(relink(html, lang, known), lang, url);
       out = out.replace(SWITCH_RE, switcher(lang, url));
 
+      // A machine-translated page says so, in the language it was translated into, and gives
+      // the reader a way to ask. The block is written into the English source carrying
+      // `hidden` — so it never shows on the English page, and so its text is an ordinary
+      // source string that gets translated with everything else — and the attribute is
+      // dropped here, on the copies where it is true. It matters most on /partner, where the
+      // sentences around it are commercial and regulatory, but it is honest on any page.
+      out = out.replace(/(<div class="p-i18n" data-i18n-note) hidden>/, "$1>");
+
       // Any MEANINGFUL amount of English left on the page keeps it out of the index.
       // `follow` so the links on it still carry weight to the pages that ARE translated.
       //

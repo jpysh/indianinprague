@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:24:06.963Z",
-  "count": 6006,
+  "generated": "2026-09-04T15:34:39.406Z",
+  "count": 6009,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -23081,10 +23081,6 @@
       "text": "Należy uiścić po przyjeździe",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Zobacz warunki handlowe",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Jeden list przewozowy",
       "src": "da3403b5d9fb"
@@ -23193,10 +23189,6 @@
       "text": "Pamiątki i upominki",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Proszę obejrzeć, jak przemieszcza się dany element",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC klasyfikacja",
       "src": "3018b6ff0149"
@@ -23224,10 +23216,6 @@
     "text.bc79f18a0380": {
       "text": "Akcesoria wellness",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Proszę poprosić o pakiet próbek",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Świadectwo pochodzenia",
@@ -23352,10 +23340,6 @@
     "text.ff73c39b4cb5": {
       "text": "Dane liczbowe, których potrzebuje nabywca",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Proszę zapytać o miejsce powstania",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Co obejmuje kwota 29 euro",
@@ -24032,6 +24016,34 @@
     "text.805c8dc8103e": {
       "text": "Firma Guldaar zapewnia następujące elementy, dzięki czemu sprzedawca nie musi się tym zajmować, a nabywca nie przejmuje tych obowiązków: GPSR Osoba odpowiedzialna, dokumentacja techniczna UE, 10 lat, EORI, IOSS, Odroczony podatek VAT od importu, TARIC klasyfikacja, Świadectwo pochodzenia, REACH certyfikacja, Znak odpowiedzialności, Opakowania EPR, Tekstylia EPR, Oznakowanie włókien zgodnie z rozporządzeniem nr 1007/2011, KYC dla przedsiębiorców zgodnie z art. 30 ustawy DSA, IEC oraz LUT, RoDTEP dokument, e-BRC samocertyfikacja, Cło i VAT przy kasie, Adres zwrotów w UE.",
       "src": "805c8dc8103e"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Proszę zapytać o wszystko, co znajduje się na tej stronie",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Niniejsza strona została przetłumaczona automatycznie.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "Obowiązuje wersja angielska. Jeśli któreś z sformułowań wydaje się Państwu niejasne lub chcą Państwo uzyskać pisemne potwierdzenie danej kwestii przed podjęciem jakichkolwiek zobowiązań, prosimy o kontakt: odpowiedź udzieli Państwu jeden z naszych pracowników w języku angielskim lub w Państwa języku.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Zobacz, jak wyrób podróżuje do Europy",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Zapytaj o miejsce kupca założyciela",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Zobacz warunki handlowe",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Zamów pakiet próbek",
+      "src": "224b4b637a38"
     }
   }
 }

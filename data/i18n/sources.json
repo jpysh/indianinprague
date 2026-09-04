@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-04T15:23:35.025Z",
-  "count": 5865,
+  "generated": "2026-09-04T15:34:38.061Z",
+  "count": 5868,
   "entries": {
     "item.9877064473.title": {
       "text": "Moroccan Vintage Bracelet | Vintage Jewellery | Boho Jewellery | Tribal Ethnic Style",
@@ -4766,9 +4766,9 @@
       "since": "2026-09-04",
       "changed": "2026-09-04"
     },
-    "text.5b3f1bb1caa0": {
-      "text": "Ask about a founding place",
-      "src": "5b3f1bb1caa0",
+    "text.c7e4fc92b944": {
+      "text": "Ask about a founding merchant place",
+      "src": "c7e4fc92b944",
       "where": "page text — first seen on partner.html",
       "since": "2026-09-04",
       "changed": "2026-09-04"
@@ -4832,6 +4832,27 @@
     "text.291873e31ccb": {
       "text": "Scroll",
       "src": "291873e31ccb",
+      "where": "page text — first seen on partner.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
+    },
+    "text.72de76e86e4b": {
+      "text": "This page was translated by machine.",
+      "src": "72de76e86e4b",
+      "where": "page text — first seen on partner.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
+    },
+    "text.7b036e206ccf": {
+      "text": "The English version is the one we are held to. If a term here reads oddly, or you want a point confirmed in writing before you commit to anything, ask us: a person replies, in English or in your language.",
+      "src": "7b036e206ccf",
+      "where": "page text — first seen on partner.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Ask about anything on this page",
+      "src": "0e49837d2ac4",
       "where": "page text — first seen on partner.html",
       "since": "2026-09-04",
       "changed": "2026-09-04"

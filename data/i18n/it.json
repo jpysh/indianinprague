@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:23:57.105Z",
-  "count": 6006,
+  "generated": "2026-09-04T15:34:39.185Z",
+  "count": 6009,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -23081,10 +23081,6 @@
       "text": "Da versare all’arrivo",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Consultare le condizioni commerciali",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Una lettera di trasporto aereo",
       "src": "da3403b5d9fb"
@@ -23193,10 +23189,6 @@
       "text": "Souvenir e regali",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Osservate il percorso di un pezzo",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC classificazione",
       "src": "3018b6ff0149"
@@ -23224,10 +23216,6 @@
     "text.bc79f18a0380": {
       "text": "Accessori per il benessere",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Richieda un pacchetto di campioni",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Certificato di origine",
@@ -23352,10 +23340,6 @@
     "text.ff73c39b4cb5": {
       "text": "I dati di cui un acquirente ha bisogno",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Chieda informazioni sul luogo di fondazione",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Cosa è compreso nei 29 €",
@@ -24032,6 +24016,34 @@
     "text.805c8dc8103e": {
       "text": "Guldaar si fa carico di quanto segue, pertanto il commerciante non è tenuto a farlo e l’acquirente non ne eredita la responsabilità: GPSR Responsabile, Scheda tecnica UE, 10 anni, EORI, IOSS, IVA all’importazione differita, classificazione TARIC, certificato di origine, certificazione REACH, marchio di responsabilità, imballaggio EPR, tessili EPR, etichettatura delle fibre ai sensi del Reg. 1007/2011, KYC per gli operatori commerciali ai sensi dell’articolo 30 della DSA, IEC e LUT, documento RoDTEP, autocertificazione e-BRC, dazi e IVA al momento del pagamento, indirizzo per i resi nell’UE.",
       "src": "805c8dc8103e"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Chieda qualsiasi cosa riguardo a questa pagina",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Questa pagina è stata tradotta automaticamente.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "La versione inglese è quella a cui facciamo riferimento. Se un termine qui vi sembra strano, o se desiderate una conferma scritta prima di impegnarvi in qualsiasi cosa, rivolgetevi a noi: un nostro collaboratore vi risponderà, in inglese o nella vostra lingua.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Osservi il percorso di un pezzo",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Chieda un posto da commerciante fondatore",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Consultare le condizioni commerciali",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Richieda un pacchetto di campioni",
+      "src": "224b4b637a38"
     }
   }
 }

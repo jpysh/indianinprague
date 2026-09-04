@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:23:51.677Z",
-  "count": 6010,
+  "generated": "2026-09-04T15:34:39.154Z",
+  "count": 6013,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -23097,10 +23097,6 @@
       "text": "Bei Ankunft fällig",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Siehe Geschäftsbedingungen",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Ein Luftfrachtbrief",
       "src": "da3403b5d9fb"
@@ -23209,10 +23205,6 @@
       "text": "Andenken und Geschenke",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Verfolgen Sie den Weg eines Stücks",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC Klassifizierung",
       "src": "3018b6ff0149"
@@ -23240,10 +23232,6 @@
     "text.bc79f18a0380": {
       "text": "Wellness-Zubehör",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Fordern Sie ein Musterpaket an",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Ursprungszeugnis",
@@ -23368,10 +23356,6 @@
     "text.ff73c39b4cb5": {
       "text": "Die Zahlen, die ein Käufer benötigt",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Erkundigen Sie sich nach einem Gründungsort",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Was in den 29 € enthalten ist",
@@ -24048,6 +24032,34 @@
     "text.805c8dc8103e": {
       "text": "Guldaar übernimmt Folgendes, sodass ein Händler dies nicht tun muss und ein Käufer es nicht übernimmt: GPSR Verantwortliche Person, EU-Technisches Dossier, 10 Jahre, EORI, IOSS, Aufgeschobene Einfuhrumsatzsteuer, TARIC-Klassifizierung, Ursprungszeugnis, REACH-Zertifizierung, Verantwortlichkeitskennzeichnung, VerpackungsEPR, Textil EPR, Faserkennzeichnung Verordnung 1007/2011, DSA Artikel 30 – KYC für Händler, IEC und LUT, RoDTEP-Gutschein, e-BRC-Selbstzertifizierung, Zoll und Umsatzsteuer an der Kasse, EU-Rücksendeadresse.",
       "src": "805c8dc8103e"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Stellen Sie Fragen zu allen Inhalten auf dieser Seite",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Diese Seite wurde maschinell übersetzt.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "Die englische Fassung ist für uns verbindlich. Sollte ein Begriff hier ungewöhnlich klingen oder sollten Sie eine Bestätigung schriftlich wünschen, bevor Sie sich zu etwas verpflichten, wenden Sie sich bitte an uns: Ein Mitarbeiter wird Ihnen antworten – auf Englisch oder in Ihrer Sprache.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Verfolgen Sie den Weg eines Schmuckstücks",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Nach einem Platz als Gründungshändler fragen",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Handelskonditionen ansehen",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Fordern Sie ein Probepaket an",
+      "src": "224b4b637a38"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:24:01.568Z",
-  "count": 6006,
+  "generated": "2026-09-04T15:34:39.372Z",
+  "count": 6009,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -23081,10 +23081,6 @@
       "text": "A pagar a la llegada",
       "src": "068a9ab1a919"
     },
-    "text.8b027a36049a": {
-      "text": "Consulte las condiciones comerciales",
-      "src": "8b027a36049a"
-    },
     "text.da3403b5d9fb": {
       "text": "Una carta de porte aéreo",
       "src": "da3403b5d9fb"
@@ -23193,10 +23189,6 @@
       "text": "Recuerdos y regalos",
       "src": "535d2f386308"
     },
-    "text.8e7a4d2b63e8": {
-      "text": "Observe el recorrido de una pieza",
-      "src": "8e7a4d2b63e8"
-    },
     "text.3018b6ff0149": {
       "text": "TARIC clasificación",
       "src": "3018b6ff0149"
@@ -23224,10 +23216,6 @@
     "text.bc79f18a0380": {
       "text": "Accesorios para el bienestar",
       "src": "bc79f18a0380"
-    },
-    "text.224b4b637a38": {
-      "text": "Solicite un paquete de muestras",
-      "src": "224b4b637a38"
     },
     "text.769bab3eb1e6": {
       "text": "Certificado de origen",
@@ -23352,10 +23340,6 @@
     "text.ff73c39b4cb5": {
       "text": "Las cifras que necesita un comprador",
       "src": "ff73c39b4cb5"
-    },
-    "text.5b3f1bb1caa0": {
-      "text": "Pregunte por el lugar de fundación",
-      "src": "5b3f1bb1caa0"
     },
     "text.637d5073585f": {
       "text": "Qué incluye el importe de 29 €",
@@ -24032,6 +24016,34 @@
     "text.805c8dc8103e": {
       "text": "Guldaar se hace cargo de lo siguiente, por lo que el comerciante no tiene que hacerlo y el comprador no lo hereda: GPSR Persona responsable, expediente técnico de la UE, 10 años, EORI, IOSS, IVA de importación diferido, TARIC clasificación, certificado de origen, REACH certificación, marca de responsabilidad, embalaje EPR, textiles EPR, etiquetado de fibras (Reg. 1007/2011), artículo 30 de la DSA (verificación de la identidad del operador), IEC y LUT, RoDTEP certificado, e-BRC autocertificación, aranceles e IVA en el momento del pago, dirección de devoluciones de la UE.",
       "src": "805c8dc8103e"
+    },
+    "text.0e49837d2ac4": {
+      "text": "Pregunte lo que desee sobre esta página",
+      "src": "0e49837d2ac4"
+    },
+    "text.72de76e86e4b": {
+      "text": "Esta página ha sido traducida automáticamente.",
+      "src": "72de76e86e4b"
+    },
+    "text.7b036e206ccf": {
+      "text": "La versión en inglés es la que prevalece. Si algún término le resulta extraño o desea que se le confirme algún punto por escrito antes de comprometerse a nada, no dude en consultarnos: una persona le responderá, ya sea en inglés o en su idioma.",
+      "src": "7b036e206ccf"
+    },
+    "text.8e7a4d2b63e8": {
+      "text": "Siga el recorrido de una pieza",
+      "src": "8e7a4d2b63e8"
+    },
+    "text.c7e4fc92b944": {
+      "text": "Pregunte por una plaza de comerciante fundador",
+      "src": "c7e4fc92b944"
+    },
+    "text.8b027a36049a": {
+      "text": "Consultar las condiciones comerciales",
+      "src": "8b027a36049a"
+    },
+    "text.224b4b637a38": {
+      "text": "Solicite un paquete de muestras",
+      "src": "224b4b637a38"
     }
   }
 }

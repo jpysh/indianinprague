@@ -152,6 +152,18 @@ main.p > section.p-end{background:var(--saffron)}
 .p .btn-lg svg{flex:none;transition:transform .18s ease}
 .p .btn-lg:hover svg{transform:translateX(4px)}
 
+/* ---------- the machine-translation notice ----------
+ * Present in the English source carrying `hidden`, so its text is an ordinary translatable
+ * string; build-i18n.mjs drops the attribute on the seven copies where the statement is
+ * true. It sits under the hero rather than at the foot, because a reader deciding whether
+ * to trust a payment term should meet it before the term, not after. */
+.p-i18n{background:var(--void-3);border-block:1px solid var(--chicory);padding:14px 0}
+.p-i18n p{font-family:var(--mono);font-size:var(--fs-xs);line-height:1.6;color:var(--bone-dim);
+  max-width:80ch}
+.p-i18n b{color:var(--bone);font-weight:600}
+.p-i18n a{color:var(--saffron);text-underline-offset:4px;display:inline-block;padding:6px 0;min-height:44px;line-height:32px}
+.p-i18n a:hover{color:var(--bone)}
+
 /* ---------- compliance ticker ----------
  * The stack Guldaar absorbs, stated as a moving strip. As a bulleted list this is the most
  * boring content on the page; as a ticker it reads as "there is a lot of this, and it is

@@ -137,28 +137,52 @@
     },
     "FR": {
       "Menu: site sections": "Menu : sections du site",
-      "From the second order": "À partir de la deuxième commande"
+      "From the second order": "À partir de la deuxième commande",
+      "Ask about a founding merchant place": "Demander une place de marchand fondateur",
+      "Watch a piece travel": "Suivez le parcours d'une pièce",
+      "See trade terms": "Voir les conditions commerciales"
     },
     "DE": {
       "Minimum opening order": "Mindestwert der Erstbestellung",
       "Minimum restock order": "Mindestwert der Nachbestellung",
       "From the second order": "Ab der zweiten Bestellung",
-      "First order": "Erste Bestellung"
+      "First order": "Erste Bestellung",
+      "Ask about a founding merchant place": "Nach einem Platz als Gründungshändler fragen",
+      "Watch a piece travel": "Verfolgen Sie den Weg eines Schmuckstücks",
+      "See trade terms": "Handelskonditionen ansehen"
     },
     "ES": {
-      "From the second order": "A partir del segundo pedido"
+      "From the second order": "A partir del segundo pedido",
+      "Ask about a founding merchant place": "Pregunte por una plaza de comerciante fundador",
+      "Watch a piece travel": "Siga el recorrido de una pieza",
+      "See trade terms": "Consultar las condiciones comerciales"
     },
     "PL": {
-      "From the second order": "Od drugiego zamówienia"
+      "From the second order": "Od drugiego zamówienia",
+      "Ask about a founding merchant place": "Zapytaj o miejsce kupca założyciela",
+      "Watch a piece travel": "Zobacz, jak wyrób podróżuje do Europy",
+      "Ask for a sample pack": "Zamów pakiet próbek",
+      "See trade terms": "Zobacz warunki handlowe"
     },
     "CS": {
-      "From the second order": "Od druhé objednávky"
+      "From the second order": "Od druhé objednávky",
+      "Ask about a founding merchant place": "Zeptejte se na místo zakládajícího obchodníka",
+      "Watch a piece travel": "Sledujte cestu jednoho kusu",
+      "See trade terms": "Zobrazit obchodní podmínky"
     },
     "RU": {
-      "From the second order": "Со второго заказа"
+      "From the second order": "Со второго заказа",
+      "Ask about a founding merchant place": "Узнать о месте торговца-основателя",
+      "Watch a piece travel": "Проследите путь изделия",
+      "See trade terms": "Посмотреть коммерческие условия",
+      "Ask for a sample pack": "Запросить пробный набор"
     },
     "IT": {
-      "From the second order": "Dal secondo ordine"
+      "From the second order": "Dal secondo ordine",
+      "Ask about a founding merchant place": "Chieda un posto da commerciante fondatore",
+      "Watch a piece travel": "Osservi il percorso di un pezzo",
+      "See trade terms": "Consultare le condizioni commerciali",
+      "Ask for a sample pack": "Richieda un pacchetto di campioni"
     }
   }
 }
