@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-04T15:34:38.960Z",
-  "count": 6009,
+  "generated": "2026-09-05T05:17:37.768Z",
+  "count": 6054,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -22318,8 +22318,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "Les plus grands penseurs face aux problèmes quotidiens : « Que ferait Nietzsche ? » | Psychologie, philosophie",
-      "src": "d973365f901f"
+      "text": "Des philosophes s&#x27;expriment sur des problèmes quotidiens courants : « Que ferait Nietzsche ? » | Psychologie, philosophie",
+      "src": "cbf2d7493ef9"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovic - Chaussures de tennis et de padel Asics Solution Swift FF, non marquantes, technologie FlyteFoam CM, taille 28,5, 45 (EURO)",
@@ -24044,6 +24044,186 @@
     "text.224b4b637a38": {
       "text": "Demandez un coffret d'échantillons",
       "src": "224b4b637a38"
+    },
+    "item.9882975952.title": {
+      "text": "Bijoux bohèmes : boucles d&#x27;oreilles tribales vintage en argent sterling 925",
+      "src": "02ed3e0f3581"
+    },
+    "item.9887235817.description": {
+      "text": "Un accessoire unique. \nL&#x27;art et le féminisme de Frida Kahlo sur un porte-clés.",
+      "src": "771d5c6c890e"
+    },
+    "item.9882151449.title": {
+      "text": "Sac à dos bohème à imprimé aztèque « Wanderer » | Sac à dos tribal",
+      "src": "91a504c3bf0a"
+    },
+    "item.9887235817.title": {
+      "text": "Porte-clés féministe, cadeaux bohèmes : porte-clés en métal émaillé Frida Kahlo, ambiance hippie",
+      "src": "45bddf2db3c9"
+    },
+    "item.9881678354.title": {
+      "text": "Lecture d&#x27;une traite : « Cloud Atlas » de David Mitchell, finaliste du prix Booker, édition « Major Motion Picture »",
+      "src": "8fb95afa9107"
+    },
+    "item.9881670398.title": {
+      "text": "Un ouvrage véritablement perspicace sur les pays du Sud : « In Spite of the Gods » d&#x27;Edward Luce, une analyse très appréciée de l&#x27;Inde moderne",
+      "src": "54d03bed21ca"
+    },
+    "item.9882151449.description": {
+      "text": "Sac à dos d&#x27;inspiration aztèque, aux tons terreux, aux motifs géométriques colorés et à la doublure d&#x27;un brun intense.\nBretelles réglables.\nPoches à rabat sur le devant pour un accès facile.\nDétails de boucles.\nEsthétique bohème décontractée d&#x27;inspiration tribale.\nIdéal pour un usage quotidien, les festivals et les voyages.",
+      "src": "776168341f0d"
+    },
+    "item.9882975952.description": {
+      "text": "Poinçonné 925. \nMinuscule, délicat et menu. \nIdéal pour les perçages secondaires, tertiaires ou supérieurs de l&#x27;oreille plutôt que pour le lobe principal, mais convient également à cet emplacement. \nMotifs tribaux complexes, travail de l&#x27;argent texturé et une finition magnifiquement patinée.\nStyle bohème, gitan et vintage.\nConsultez mon profil pour découvrir d’autres pièces ethniques :)",
+      "src": "9157e18d3880"
+    },
+    "item.9881670398.description": {
+      "text": "Très salué par le lauréat du prix Nobel Amartya Sen, cet ouvrage de référence en matière de\nrécit politique explore l&#x27;essor économique fulgurant et l&#x27;avenir social complexe\nde l&#x27;Inde moderne. Prix de vente neuf : environ 16 €. ISBN 9780349118741. Il\nbénéficie d’une note de 4,03 étoiles sur Goodreads. Un récit profondément perspicace et plein d’esprit, salué comme\nun guide généraliste incontournable par le Financial Times et The Economist.\nExcellent choix pour les recherches portant sur la géopolitique, l’histoire économique, les études asiatiques et\nla non-fiction politique.",
+      "src": "d86338594439"
+    },
+    "item.9881678354.description": {
+      "text": "Sélectionné pour le prestigieux prix Booker et adapté au cinéma en un\nfilm à grand succès avec Tom Hanks, ce roman épique qui défie les genres relie\nsix récits époustouflants à travers le temps. Prix de vente neuf : environ 15 €.\nISBN 9780812984415. Il affiche une note de 4,04 étoiles sur Goodreads. Découvrez le\npuzzle littéraire visionnaire de David Mitchell qui a captivé des millions de lecteurs\nà travers le monde. Une référence idéale pour la fiction spéculative, les romans adaptés au cinéma,\nles coups de cœur des clubs de lecture et la fiction littéraire.",
+      "src": "833c1c0e08bf"
+    },
+    "text.6e2b9a49e87c": {
+      "text": "Frida",
+      "src": "6e2b9a49e87c"
+    },
+    "text.99960bd0fde0": {
+      "text": "435 pièces",
+      "src": "99960bd0fde0"
+    },
+    "text.bd77a861c1e6": {
+      "text": "294 pièces",
+      "src": "bd77a861c1e6"
+    },
+    "text.a686ee7e148d": {
+      "text": "133 pièces",
+      "src": "a686ee7e148d"
+    },
+    "text.b970d48d2619": {
+      "text": "54 avis sur Vinted →",
+      "src": "b970d48d2619"
+    },
+    "text.f2573570e45a": {
+      "text": "Neuf, avec étiquette · Multicolore",
+      "src": "f2573570e45a"
+    },
+    "text.8e4a90d4bc20": {
+      "text": "1 628 pièces à vendre · 67 vendues",
+      "src": "8e4a90d4bc20"
+    },
+    "text.c68a6be0b010": {
+      "text": "18 ouvrages documentaires sur l&#x27;étagère.",
+      "src": "c68a6be0b010"
+    },
+    "text.0aab40b5dd49": {
+      "text": "49 personnes ont enregistré cette page sur Vinted",
+      "src": "0aab40b5dd49"
+    },
+    "text.6f91c51f624a": {
+      "text": "23 boucles d&#x27;oreilles dans le présentoir à bijoux.",
+      "src": "6f91c51f624a"
+    },
+    "text.cb87c6eb1034": {
+      "text": "Bracelet ethnique vintage. Acheté au Maroc.",
+      "src": "cb87c6eb1034"
+    },
+    "text.9fc0558178d9": {
+      "text": "Un accessoire unique. L&#x27;art et le féminisme de Frida Kahlo sur un porte-clés.",
+      "src": "9fc0558178d9"
+    },
+    "text.aadf9cae36a9": {
+      "text": "Description des boucles d&#x27;oreilles tribales vintage de la collection Boho, en argent sterling 925",
+      "src": "aadf9cae36a9"
+    },
+    "text.0ef8b03c2d57": {
+      "text": "Description du sac à dos bohème « Wanderer » à imprimé aztèque | Sac à dos tribal",
+      "src": "0ef8b03c2d57"
+    },
+    "text.15adaa86f860": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 54 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "15adaa86f860"
+    },
+    "text.31f16f12b1b1": {
+      "text": "Bracelet vintage marocain | Bijoux vintage | Bijoux bohèmes | Style tribal et ethnique",
+      "src": "31f16f12b1b1"
+    },
+    "text.b8562f929437": {
+      "text": "Description du porte-clés féministe « Boho Gifts » : porte-clés en métal émaillé à l&#x27;effigie de Frida Kahlo, style hippie",
+      "src": "b8562f929437"
+    },
+    "text.2ce67b0f8d01": {
+      "text": "Sac de voyage matelassé fantaisie sur le thème de la forêt – Sac de week-end hippie-boho – Motifs champignons et grenouilles – Style vintage",
+      "src": "2ce67b0f8d01"
+    },
+    "text.91908a1156b5": {
+      "text": "Bijoux bohèmes : boucles d&#x27;oreilles tribales vintage en argent sterling 925 — ouvrez l&#x27;annonce «Vinted» dans un nouvel onglet",
+      "src": "91908a1156b5"
+    },
+    "text.ed9316b0445e": {
+      "text": "À lire avant de mourir : Rumi – L&#x27;essentiel de Rumi, par Coleman Barks, nouvelle édition augmentée, best-seller de poésie",
+      "src": "ed9316b0445e"
+    },
+    "text.b1f2344a579d": {
+      "text": "Sac à dos bohème à imprimé aztèque « Wanderer » | Sac à dos tribal — ouvrez la fiche produit « Vinted » dans un nouvel onglet",
+      "src": "b1f2344a579d"
+    },
+    "text.9ef214df34cb": {
+      "text": "Description de « Cloud Atlas » de David Mitchell, finaliste du Booker Prize, édition cinéma",
+      "src": "9ef214df34cb"
+    },
+    "text.5720af48df01": {
+      "text": "Description par des philosophes de problèmes courants de la vie quotidienne moderne : « Que ferait Nietzsche ? » | Psychologie, philosophie",
+      "src": "5720af48df01"
+    },
+    "text.28faf0ff0dbd": {
+      "text": "Porte-clés féministe, cadeaux bohèmes : porte-clés en métal émaillé Frida Kahlo, ambiance hippie — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "28faf0ff0dbd"
+    },
+    "text.b85e5460a38b": {
+      "text": "Description d&#x27;un ouvrage véritablement éclairant sur les pays du Sud : « In Spite of the Gods » d&#x27;Edward Luce, une analyse saluée de l&#x27;Inde moderne",
+      "src": "b85e5460a38b"
+    },
+    "text.fd6607ea8dec": {
+      "text": "Bracelet vintage marocain | Bijoux vintage | Bijoux bohèmes | Style tribal et ethnique — ouvrez l&#x27;annonce vendue sur Vinted dans un nouvel onglet",
+      "src": "fd6607ea8dec"
+    },
+    "text.1c2671f6c03f": {
+      "text": "Lecture intensive : « Cloud Atlas » de David Mitchell, finaliste du prix Booker, édition « Major Motion Picture » — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "1c2671f6c03f"
+    },
+    "text.19409ddc207c": {
+      "text": "Des philosophes s&#x27;expriment sur des problèmes quotidiens courants : « Que ferait Nietzsche ? » | Psychologie et philosophie — ouvrez la page Vinted dans un nouvel onglet",
+      "src": "19409ddc207c"
+    },
+    "text.95a4955c3747": {
+      "text": "Sac de voyage matelassé « Woodland Whimsical » – Sac de week-end hippie bohème avec motif champignon et grenouille vintage — ouvrez l&#x27;annonce vendue «Vinted» dans un nouvel onglet",
+      "src": "95a4955c3747"
+    },
+    "text.85adb2f4eab3": {
+      "text": "Un ouvrage véritablement perspicace sur les pays du Sud : « In Spite of the Gods » d&#x27;Edward Luce, une analyse saluée de l&#x27;Inde moderne — ouvrez la fiche « Vinted » dans un nouvel onglet",
+      "src": "85adb2f4eab3"
+    },
+    "text.0ed8239af5ab": {
+      "text": "À lire avant de mourir : Rumi, « The Essential Rumi » de Coleman Barks, nouvelle édition augmentée. Un best-seller de poésie — ouvrez l&#x27;annonce vendue sur Vinted dans un nouvel onglet",
+      "src": "0ed8239af5ab"
+    },
+    "text.58db75a4a7c5": {
+      "text": "Poinçonné 925. Minuscule, délicat et fin. Idéal pour les perçages secondaires, tertiaires ou supérieurs de l&#x27;oreille plutôt que pour le lobe principal, mais convient également à celui-ci…",
+      "src": "58db75a4a7c5"
+    },
+    "text.0d21895b1c23": {
+      "text": "Sélectionné pour le prestigieux prix Booker et adapté au cinéma dans un film à grand succès mettant en vedette Tom Hanks, ce roman épique qui défie les genres relie six…",
+      "src": "0d21895b1c23"
+    },
+    "text.75a47c0f11ff": {
+      "text": "Très appréciée par le lauréat du prix Nobel Amartya Sen, cette véritable leçon de maître en matière de récit politique explore l&#x27;essor économique fulgurant et l&#x27;avenir social complexe…",
+      "src": "75a47c0f11ff"
+    },
+    "text.6977c10d3010": {
+      "text": "Sac à dos d&#x27;inspiration aztèque, aux teintes naturelles, orné de motifs géométriques colorés et doté d&#x27;une doublure d&#x27;un brun intense. Bretelles réglables. Poches à rabat sur le devant…",
+      "src": "6977c10d3010"
     }
   }
 }

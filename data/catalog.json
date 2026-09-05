@@ -1,30 +1,81 @@
 {
-  "syncedAt": "2026-09-04T05:15:13.494Z",
+  "syncedAt": "2026-09-05T05:15:28.608Z",
   "rate": {
-    "czkPerEur": 24.221,
-    "fetched": "2026-09-04",
+    "czkPerEur": 24.189,
+    "fetched": "2026-09-05",
     "source": "ECB"
   },
-  "count": 159,
+  "count": 161,
   "items": [
     {
-      "id": "9877064473",
-      "title": "Moroccan Vintage Bracelet | Vintage Jewellery | Boho Jewellery | Tribal Ethnic Style",
-      "priceCzk": 289,
-      "priceEur": 12,
-      "brand": "Vintage Love",
+      "id": "9887235817",
+      "title": "Feminist Keychain Boho Gifts Frida Kahlo metal enamel keychain Hippie Vibes",
+      "priceCzk": 150,
+      "priceEur": 6,
+      "brand": "Frida",
       "size": "",
       "sizeGroup": "",
       "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
       },
       "color": {
-        "en": "Turquoise",
-        "cs": "Tyrkysová"
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Keyrings",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 1187,
+          "name": "Accessories"
+        },
+        {
+          "id": 1852,
+          "name": "Keyrings"
+        }
+      ],
+      "description": "Unique accessory. \nArt and feminism of Frida Kahlo on a keychain.",
+      "photo": "images/vinted-9887235817-1.jpg",
+      "photos": [
+        "images/vinted-9887235817-1.jpg",
+        "images/vinted-9887235817-2.jpg",
+        "images/vinted-9887235817-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9887235817-feminist-keychain-boho-gifts-frida-kahlo-metal-enamel-keychain-hippie-vibes",
+        "es": "https://www.vinted.es/items/9887235817-feminist-keychain-boho-gifts-frida-kahlo-metal-enamel-keychain-hippie-vibes",
+        "com": "https://www.vinted.com/items/9887235817-feminist-keychain-boho-gifts-frida-kahlo-metal-enamel-keychain-hippie-vibes",
+        "uk": "https://www.vinted.co.uk/items/9887235817-feminist-keychain-boho-gifts-frida-kahlo-metal-enamel-keychain-hippie-vibes"
+      }
+    },
+    {
+      "id": "9882975952",
+      "title": "Boho Jewellery Vintage Tribal Earrings 925 Sterling Silver",
+      "priceCzk": 210,
+      "priceEur": 9,
+      "brand": "Accessories",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Silver",
+        "cs": "Stříbrná"
       },
       "category": "Jewellery",
-      "vintedCategory": "Women Bracelets",
+      "vintedCategory": "Women Earrings",
       "crumbs": [
         {
           "id": 1904,
@@ -39,34 +90,34 @@
           "name": "Jewellery"
         },
         {
-          "id": 165,
-          "name": "Bracelets"
+          "id": 163,
+          "name": "Earrings"
         }
       ],
-      "description": "Vintage ethnic bracelet. Bought in Morocco.",
-      "photo": "images/vinted-9877064473-1.jpg",
+      "description": "Stamped 925. \nTiny, delicate and petite. \nPerfect for second, third or upper ear piercings rather than for the main lobe, but fits there as well. \nIntricate tribal detailing, textured silverwork and a beautifully aged finish.\nBoho, gypsy and vintage jewellery feel.\nSee my profile for more ethnic pieces :)",
+      "photo": "images/vinted-9882975952-1.jpg",
       "photos": [
-        "images/vinted-9877064473-1.jpg",
-        "images/vinted-9877064473-2.jpg",
-        "images/vinted-9877064473-3.jpg"
+        "images/vinted-9882975952-1.jpg",
+        "images/vinted-9882975952-2.jpg",
+        "images/vinted-9882975952-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9877064473-moroccan-vintage-bracelet-vintage-jewellery-boho-jewellery-tribal-ethnic-style",
-        "es": "https://www.vinted.es/items/9877064473-moroccan-vintage-bracelet-vintage-jewellery-boho-jewellery-tribal-ethnic-style",
-        "com": "https://www.vinted.com/items/9877064473-moroccan-vintage-bracelet-vintage-jewellery-boho-jewellery-tribal-ethnic-style",
-        "uk": "https://www.vinted.co.uk/items/9877064473-moroccan-vintage-bracelet-vintage-jewellery-boho-jewellery-tribal-ethnic-style"
+        "cz": "https://www.vinted.cz/items/9882975952-boho-jewellery-vintage-tribal-earrings-925-sterling-silver",
+        "es": "https://www.vinted.es/items/9882975952-boho-jewellery-vintage-tribal-earrings-925-sterling-silver",
+        "com": "https://www.vinted.com/items/9882975952-boho-jewellery-vintage-tribal-earrings-925-sterling-silver",
+        "uk": "https://www.vinted.co.uk/items/9882975952-boho-jewellery-vintage-tribal-earrings-925-sterling-silver"
       }
     },
     {
-      "id": "9872934649",
-      "title": "Woodland Whimsical Quilted Travel Duffel Bag Hippie Boho Weekender Bag Mushroom Frog Vintage",
-      "priceCzk": 595,
-      "priceEur": 25,
+      "id": "9882151449",
+      "title": "Boho Backpack Aztec Print Wanderer Bohemian Bag | Tribal Ruscksack",
+      "priceCzk": 330,
+      "priceEur": 14,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -79,7 +130,7 @@
         "cs": "Smíšená"
       },
       "category": "Fashion",
-      "vintedCategory": "Women Holdalls & duffel bags",
+      "vintedCategory": "Women Backpacks",
       "crumbs": [
         {
           "id": 1904,
@@ -90,27 +141,127 @@
           "name": "Bags"
         },
         {
-          "id": 1849,
-          "name": "Holdalls & duffel bags"
+          "id": 157,
+          "name": "Backpacks"
         }
       ],
-      "description": "Quilted weekend bag, vibrant woodland colour and whimsical character.\nLightweight, great for picnic, outdoors, gym.",
-      "photo": "images/vinted-9872934649-1.jpg",
+      "description": "Aztec-inspired backpack, featuring earthy tones, colourful geometric patterns, and rich brown lining.\nAdjustable shoulder straps.\nFront flap pockets for easy access.\nBuckle detailing.\nRelaxed boho, tribal-inspired aesthetic.\nPerfect for everyday wear, festivals and travel.",
+      "photo": "images/vinted-9882151449-1.jpg",
       "photos": [
-        "images/vinted-9872934649-1.jpg",
-        "images/vinted-9872934649-2.jpg",
-        "images/vinted-9872934649-3.jpg"
+        "images/vinted-9882151449-1.jpg",
+        "images/vinted-9882151449-2.jpg",
+        "images/vinted-9882151449-3.jpg"
       ],
-      "favourites": 65,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9872934649-woodland-whimsical-quilted-travel-duffel-bag-hippie-boho-weekender-bag-mushroom-frog-vintage",
-        "es": "https://www.vinted.es/items/9872934649-woodland-whimsical-quilted-travel-duffel-bag-hippie-boho-weekender-bag-mushroom-frog-vintage",
-        "com": "https://www.vinted.com/items/9872934649-woodland-whimsical-quilted-travel-duffel-bag-hippie-boho-weekender-bag-mushroom-frog-vintage",
-        "uk": "https://www.vinted.co.uk/items/9872934649-woodland-whimsical-quilted-travel-duffel-bag-hippie-boho-weekender-bag-mushroom-frog-vintage"
+        "cz": "https://www.vinted.cz/items/9882151449-boho-backpack-aztec-print-wanderer-bohemian-bag-tribal-ruscksack",
+        "es": "https://www.vinted.es/items/9882151449-boho-backpack-aztec-print-wanderer-bohemian-bag-tribal-ruscksack",
+        "com": "https://www.vinted.com/items/9882151449-boho-backpack-aztec-print-wanderer-bohemian-bag-tribal-ruscksack",
+        "uk": "https://www.vinted.co.uk/items/9882151449-boho-backpack-aztec-print-wanderer-bohemian-bag-tribal-ruscksack"
+      }
+    },
+    {
+      "id": "9881678354",
+      "title": "binge reading booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition",
+      "priceCzk": 299,
+      "priceEur": 12,
+      "brand": "",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": ""
+      },
+      "category": "Books",
+      "vintedCategory": "Books & Media Fiction",
+      "crumbs": [
+        {
+          "id": 2309,
+          "name": "Books & Media"
+        },
+        {
+          "id": 2312,
+          "name": "Books"
+        },
+        {
+          "id": 2319,
+          "name": "Fiction"
+        }
+      ],
+      "description": "Shortlisted for the prestigious Booker Prize and adapted into a\nblockbuster motion picture starring Tom Hanks, this genre defying epic connects\nsix mind-bending stories across time. Retails new for around €15.\nISBN 9780812984415. It maintains 4.04 stars on Goodreads. Experience David\nMitchell's visionary literary puzzle that has spellbound millions of readers\nworldwide. Fantastic search match for speculative fiction, movie adaptation\nnovels, book club favorites, and literary fiction.",
+      "photo": "images/vinted-9881678354-1.jpg",
+      "photos": [
+        "images/vinted-9881678354-1.jpg",
+        "images/vinted-9881678354-2.jpg",
+        "images/vinted-9881678354-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9881678354-binge-reading-booker-prize-shortlisted-david-mitchell-cloud-atlas-major-motion-picture-edition",
+        "es": "https://www.vinted.es/items/9881678354-binge-reading-booker-prize-shortlisted-david-mitchell-cloud-atlas-major-motion-picture-edition",
+        "com": "https://www.vinted.com/items/9881678354-binge-reading-booker-prize-shortlisted-david-mitchell-cloud-atlas-major-motion-picture-edition",
+        "uk": "https://www.vinted.co.uk/items/9881678354-binge-reading-booker-prize-shortlisted-david-mitchell-cloud-atlas-major-motion-picture-edition"
+      }
+    },
+    {
+      "id": "9881670398",
+      "title": "truly insightful global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis",
+      "priceCzk": 299,
+      "priceEur": 12,
+      "brand": "",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": ""
+      },
+      "category": "Books",
+      "vintedCategory": "Books & Media Non-fiction",
+      "crumbs": [
+        {
+          "id": 2309,
+          "name": "Books & Media"
+        },
+        {
+          "id": 2312,
+          "name": "Books"
+        },
+        {
+          "id": 2320,
+          "name": "Non-fiction"
+        }
+      ],
+      "description": "Highly praised by Nobel laureate Amartya Sen, this masterclass in\npolitical narrative explores the meteoric economic rise and complex social\nfuture of modern India. Retails new for around €16. ISBN 9780349118741. It\nholds 4.03 stars on Goodreads. A deeply perceptive and witty account hailed as\nan essential generalist guide by the Financial Times and The Economist.\nExcellent search choice for geopolitics, economic history, Asian studies, and\npolitical nonfiction.",
+      "photo": "images/vinted-9881670398-1.jpg",
+      "photos": [
+        "images/vinted-9881670398-1.jpg",
+        "images/vinted-9881670398-2.jpg",
+        "images/vinted-9881670398-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/9881670398-truly-insightful-global-south-book-edward-luce-in-spite-of-the-gods-acclaimed-modern-india-analysis",
+        "es": "https://www.vinted.es/items/9881670398-truly-insightful-global-south-book-edward-luce-in-spite-of-the-gods-acclaimed-modern-india-analysis",
+        "com": "https://www.vinted.com/items/9881670398-truly-insightful-global-south-book-edward-luce-in-spite-of-the-gods-acclaimed-modern-india-analysis",
+        "uk": "https://www.vinted.co.uk/items/9881670398-truly-insightful-global-south-book-edward-luce-in-spite-of-the-gods-acclaimed-modern-india-analysis"
       }
     },
     {
@@ -217,8 +368,8 @@
     },
     {
       "id": "9843116673",
-      "title": "greatest thinkers on common everyday problems What Would Nietzsche Do? | Psychology Philosophy",
-      "priceCzk": 299,
+      "title": "philosophers on common modern everyday problems What Would Nietzsche Do? | Psychology Philosophy",
+      "priceCzk": 279,
       "priceEur": 12,
       "brand": "",
       "size": "",
@@ -259,10 +410,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9843116673-greatest-thinkers-on-common-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
-        "es": "https://www.vinted.es/items/9843116673-greatest-thinkers-on-common-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
-        "com": "https://www.vinted.com/items/9843116673-greatest-thinkers-on-common-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
-        "uk": "https://www.vinted.co.uk/items/9843116673-greatest-thinkers-on-common-everyday-problems-what-would-nietzsche-do-psychology-philosophy"
+        "cz": "https://www.vinted.cz/items/9843116673-philosophers-on-common-modern-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
+        "es": "https://www.vinted.es/items/9843116673-philosophers-on-common-modern-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
+        "com": "https://www.vinted.com/items/9843116673-philosophers-on-common-modern-everyday-problems-what-would-nietzsche-do-psychology-philosophy",
+        "uk": "https://www.vinted.co.uk/items/9843116673-philosophers-on-common-modern-everyday-problems-what-would-nietzsche-do-psychology-philosophy"
       }
     },
     {
@@ -953,8 +1104,8 @@
     {
       "id": "9802654698",
       "title": "Boho Wooden Serving Tray with Mandala Pattern | Rustic Indian Ethnic Home Decor",
-      "priceCzk": 540,
-      "priceEur": 22,
+      "priceCzk": 495,
+      "priceEur": 20,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1645,7 +1796,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2542,56 +2693,6 @@
       }
     },
     {
-      "id": "9602725968",
-      "title": "read before you die Rumi The Essential Rumi Coleman Barks New Expanded Edition Bestselling Poetry",
-      "priceCzk": 239,
-      "priceEur": 10,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2319,
-          "name": "Fiction"
-        }
-      ],
-      "description": "The definitive collection of thirteenth century Sufi mystic Rumi's poetry, translated by Coleman Barks, the man widely credited with making Rumi the most read poet in America. This new expanded edition adds more than eighty never before published poems and a new introduction. Praised by Jack Kornfield as work where the gold of Rumi pours down through Coleman's words, and remains the bestselling of all Rumi collections. 4.39 stars on Goodreads. #rumi #poetry #spirituality\nISBN: 9780062312747",
-      "photo": "images/vinted-9602725968-1.jpg",
-      "photos": [
-        "images/vinted-9602725968-1.jpg",
-        "images/vinted-9602725968-2.jpg",
-        "images/vinted-9602725968-3.jpg"
-      ],
-      "favourites": 21,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9602725968-read-before-you-die-rumi-the-essential-rumi-coleman-barks-new-expanded-edition-bestselling-poetry",
-        "es": "https://www.vinted.es/items/9602725968-read-before-you-die-rumi-the-essential-rumi-coleman-barks-new-expanded-edition-bestselling-poetry",
-        "com": "https://www.vinted.com/items/9602725968-read-before-you-die-rumi-the-essential-rumi-coleman-barks-new-expanded-edition-bestselling-poetry",
-        "uk": "https://www.vinted.co.uk/items/9602725968-read-before-you-die-rumi-the-essential-rumi-coleman-barks-new-expanded-edition-bestselling-poetry"
-      }
-    },
-    {
       "id": "9602681438",
       "title": "Best book of 2021 Elizabeth Kolbert Under a White Sky Pulitzer Prize Winning Author",
       "priceCzk": 199,
@@ -3029,7 +3130,7 @@
         "images/vinted-9602413571-2.jpg",
         "images/vinted-9602413571-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3210,7 +3311,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 206,
+      "priceEur": 207,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -3516,7 +3617,7 @@
         "images/vinted-9565566983-2.jpg",
         "images/vinted-9565566983-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": true,
@@ -3567,7 +3668,7 @@
         "images/vinted-9565484914-2.jpg",
         "images/vinted-9565484914-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7826,7 +7927,7 @@
         "images/vinted-9314010527-2.jpg",
         "images/vinted-9314010527-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8266,7 +8367,7 @@
         "images/vinted-9311631498-2.jpg",
         "images/vinted-9311631498-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8376,7 +8477,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 48,
+      "favourites": 49,
       "reserved": false,
       "sold": false,
       "featured": false,
