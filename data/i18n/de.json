@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-05T05:17:38.849Z",
-  "count": 6058,
+  "generated": "2026-09-06T09:45:39.221Z",
+  "count": 6140,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -162,8 +162,8 @@
       "src": "8f6c0135abc6"
     },
     "item.9562314219.title": {
-      "text": "Indische, handgewebte Stola aus Leinen im Ethno-Stil",
-      "src": "62b04577316e"
+      "text": "Indische, handgewebte, ethnische Leinenstola",
+      "src": "e3bb7912f245"
     },
     "item.9562257190.title": {
       "text": "Mango Midi-Sommer-/Partykleid | L–XL",
@@ -24240,6 +24240,334 @@
     "text.6977c10d3010": {
       "text": "Rucksack im Azteken-Stil mit Erdtönen, farbenfrohen geometrischen Mustern und einem satten braunen Futter. Verstellbare Schulterriemen. Fronttaschen mit Klappe…",
       "src": "6977c10d3010"
+    },
+    "text.1eeaa4034d33": {
+      "text": "7 Stück",
+      "src": "1eeaa4034d33"
+    },
+    "text.faed9771a35f": {
+      "text": "28 Stück",
+      "src": "faed9771a35f"
+    },
+    "text.58d8d553748a": {
+      "text": "436 Stück",
+      "src": "58d8d553748a"
+    },
+    "text.53aede098cf6": {
+      "text": "138 Stück",
+      "src": "53aede098cf6"
+    },
+    "text.baf7e73efa75": {
+      "text": "521 Teile",
+      "src": "baf7e73efa75"
+    },
+    "text.639713f73aa3": {
+      "text": "Poster „Panca Tattva“.",
+      "src": "639713f73aa3"
+    },
+    "text.7f2dd98a90a2": {
+      "text": "Geschnitzter Elefant, 4 cm",
+      "src": "7f2dd98a90a2"
+    },
+    "text.952d56b9e4f3": {
+      "text": "Geschnitzter Elefant, 8 cm",
+      "src": "952d56b9e4f3"
+    },
+    "text.d9f0f213c11f": {
+      "text": "A2-Poster: Rása Dance",
+      "src": "d9f0f213c11f"
+    },
+    "text.140aaa605c5b": {
+      "text": "55 Bewertungen zu „Vinted“ →",
+      "src": "140aaa605c5b"
+    },
+    "text.f7d6d27855f6": {
+      "text": "Geschnitzter Elefant, 10 cm",
+      "src": "f7d6d27855f6"
+    },
+    "text.1fca8553daa8": {
+      "text": "A3-Poster: Tattva-Bank",
+      "src": "1fca8553daa8"
+    },
+    "text.7af9a2cc9128": {
+      "text": "A3+-Poster: Tattva-Bank",
+      "src": "7af9a2cc9128"
+    },
+    "text.9d4751dc3bf1": {
+      "text": "Poster im Format A3+: Hanuman im Lauf",
+      "src": "9d4751dc3bf1"
+    },
+    "text.39570a22746d": {
+      "text": "Ein Plakat, auf dem Hanuma zu sehen ist, wie er läuft.",
+      "src": "39570a22746d"
+    },
+    "text.5e6328757a88": {
+      "text": "Poster im Format A3+: Hanuman im Stehen",
+      "src": "5e6328757a88"
+    },
+    "text.7643edb32a1d": {
+      "text": "22 Gewürze im Vorratsregal.",
+      "src": "7643edb32a1d"
+    },
+    "text.5d0c7e859d64": {
+      "text": "Gemahlener Kardamom 15 g RABATT",
+      "src": "5d0c7e859d64"
+    },
+    "text.d6a1a92912ea": {
+      "text": "Ein Plakat, auf dem Hanumam stehend abgebildet ist.",
+      "src": "d6a1a92912ea"
+    },
+    "text.8e41ac95e633": {
+      "text": "A3-Poster von Śrīla Prabhupāda",
+      "src": "8e41ac95e633"
+    },
+    "text.da6ccb506583": {
+      "text": "1.650 Artikel zum Verkauf · 69 verkauft",
+      "src": "da6ccb506583"
+    },
+    "text.61e076484b65": {
+      "text": "A3-Poster von Yasoda mit Krishna",
+      "src": "61e076484b65"
+    },
+    "text.e606e4e94c27": {
+      "text": "A2-Plakat: Yasoda fesselt Krishna",
+      "src": "e606e4e94c27"
+    },
+    "text.5fa90af72668": {
+      "text": "A3-Poster: Yasoda fesselt Krishna",
+      "src": "5fa90af72668"
+    },
+    "text.cc2543573ba5": {
+      "text": "16 Sachbücher im Bücherregal.",
+      "src": "cc2543573ba5"
+    },
+    "text.a74a187f6565": {
+      "text": "67 Gottheiten auf dem Meditationsregal.",
+      "src": "a74a187f6565"
+    },
+    "text.336b7eac306b": {
+      "text": "Beschreibung des geschnitzten Elefanten, 4 cm",
+      "src": "336b7eac306b"
+    },
+    "text.1471605e9f38": {
+      "text": "A2-Poster: Yasoda jagt Krishna hinterher",
+      "src": "1471605e9f38"
+    },
+    "text.8e3977a36b1f": {
+      "text": "Beschreibung des geschnitzten Elefanten, 8 cm",
+      "src": "8e3977a36b1f"
+    },
+    "text.43c8ad0693c0": {
+      "text": "Beschreibung des A2-Plakats: Rása Dance",
+      "src": "43c8ad0693c0"
+    },
+    "text.918c79b43f47": {
+      "text": "A3-Poster: Yashoda jagt Krishna hinterher",
+      "src": "918c79b43f47"
+    },
+    "text.a9ef60e2136b": {
+      "text": "Beschreibung des geschnitzten Elefanten, 10 cm",
+      "src": "a9ef60e2136b"
+    },
+    "text.d00aca598fa1": {
+      "text": "Beschreibung des A3-Posters: Panca Tattva",
+      "src": "d00aca598fa1"
+    },
+    "text.fe625b430073": {
+      "text": "Beschreibung des A3+-Posters: Panca Tattva",
+      "src": "fe625b430073"
+    },
+    "text.fa86b6ce6bd8": {
+      "text": "Kupferkessel, Fassungsvermögen 1,25 l (Innenvolumen)",
+      "src": "fa86b6ce6bd8"
+    },
+    "text.296b20c90da2": {
+      "text": "Poster im Format A3+: Radha und Krishna auf einer Schaukel",
+      "src": "296b20c90da2"
+    },
+    "text.a5ed70a10491": {
+      "text": "Poster im Format A3+: Krishna und Radha auf einer Schaukel.",
+      "src": "a5ed70a10491"
+    },
+    "text.4a7ecfabb306": {
+      "text": "Ein Plakat von Śrīla Prabhupāda auf dem Rasen.",
+      "src": "4a7ecfabb306"
+    },
+    "text.8c4f5dd41e80": {
+      "text": "A2-Poster: Krishna segnet einen Obstverkäufer",
+      "src": "8c4f5dd41e80"
+    },
+    "text.96089f6c4aa3": {
+      "text": "A3-Poster: Krishna segnet einen Obstverkäufer",
+      "src": "96089f6c4aa3"
+    },
+    "text.16750502e244": {
+      "text": "82 Damenbekleidungsartikel im Moderegal.",
+      "src": "16750502e244"
+    },
+    "text.f04d25a11bfd": {
+      "text": "Beschreibung des A3+-Posters: Hanuman im Lauf",
+      "src": "f04d25a11bfd"
+    },
+    "text.006acc90ce5c": {
+      "text": "Beschreibung des A3+-Posters: Hanuman im Stehen",
+      "src": "006acc90ce5c"
+    },
+    "text.67f1d60f5285": {
+      "text": "Produktbeschreibung: Gemahlener Kardamom, 15 g – RABATT",
+      "src": "67f1d60f5285"
+    },
+    "text.e1a47390f4b7": {
+      "text": "Beschreibung eines A3-Posters von Śrīla Prabhupāda",
+      "src": "e1a47390f4b7"
+    },
+    "text.b734bf8a771c": {
+      "text": "Plakat: Krishna bestraft die Schlange Kaliya.",
+      "src": "b734bf8a771c"
+    },
+    "text.73f68a3e7cec": {
+      "text": "36 Artikel zum Thema „Tisch und Essen“ im Regal für Wohnaccessoires.",
+      "src": "73f68a3e7cec"
+    },
+    "text.00dbb1aefffb": {
+      "text": "A3-Poster: Radha, Krishna und die acht Gopis",
+      "src": "00dbb1aefffb"
+    },
+    "text.927209d94609": {
+      "text": "A3-Poster: Krishna bestraft die Schlange Kaliya",
+      "src": "927209d94609"
+    },
+    "text.d0e3aeb19555": {
+      "text": "Beschreibung eines A3-Posters von Yasoda mit Krishna",
+      "src": "d0e3aeb19555"
+    },
+    "text.6833d8916898": {
+      "text": "87 Andachtsbilder im Meditationsregal.",
+      "src": "6833d8916898"
+    },
+    "text.b8f285b60a44": {
+      "text": "Beschreibung des A2-Plakats: Yasoda fesselt Krishna",
+      "src": "b8f285b60a44"
+    },
+    "text.1de9619becc4": {
+      "text": "Beschreibung des A3-Plakats: Yasoda fesselt Krishna",
+      "src": "1de9619becc4"
+    },
+    "text.8545479f203a": {
+      "text": "A3-Poster von Radha und Krishna mit einer kleinen Kuh",
+      "src": "8545479f203a"
+    },
+    "text.bda523336bee": {
+      "text": "66 Aufkleber und Poster im Meditationsregal.",
+      "src": "bda523336bee"
+    },
+    "text.78103836f252": {
+      "text": "Ein Plakat, auf dem Krishna einen Obstverkäufer segnet.",
+      "src": "78103836f252"
+    },
+    "text.485a5ec90d21": {
+      "text": "Beschreibung eines ethnischen Leinen-Schals aus handgewebtem indischem Leinen",
+      "src": "485a5ec90d21"
+    },
+    "text.9cab69212c67": {
+      "text": "A3-Poster: Krishna genießt das Mittagessen mit den Kuhhirten",
+      "src": "9cab69212c67"
+    },
+    "text.f8e51810f0fb": {
+      "text": "Beschreibung des A2-Plakats: Yasoda jagt Krishna hinterher",
+      "src": "f8e51810f0fb"
+    },
+    "text.8666e06b35dc": {
+      "text": "Poster mit Radha, Krishna und den acht Gopis.",
+      "src": "8666e06b35dc"
+    },
+    "text.58f99b1b4476": {
+      "text": "Beschreibung des A3-Plakats: Yashoda jagt Krishna hinterher",
+      "src": "58f99b1b4476"
+    },
+    "text.0350546cc9f9": {
+      "text": "Beschreibung des Kupferkessels, Fassungsvermögen 1,25 l (Innenvolumen)",
+      "src": "0350546cc9f9"
+    },
+    "text.63167b0d643e": {
+      "text": "Beschreibung des A3+-Posters: Radha und Krishna auf einer Schaukel",
+      "src": "63167b0d643e"
+    },
+    "text.5c523d0a013f": {
+      "text": "Beschreibung des A2-Plakats: Krishna segnet einen Obstverkäufer",
+      "src": "5c523d0a013f"
+    },
+    "text.644a551cb087": {
+      "text": "Beschreibung des A3-Plakats: Krishna segnet einen Obstverkäufer",
+      "src": "644a551cb087"
+    },
+    "text.dd90c45a41db": {
+      "text": "Plakat: Yashoda fesselt Krishna Damodara, weil er Ghee gestohlen hat.",
+      "src": "dd90c45a41db"
+    },
+    "text.b2c2ad7360b6": {
+      "text": "Beschreibung des A3-Posters: Radha, Krishna und die acht Gopis",
+      "src": "b2c2ad7360b6"
+    },
+    "text.ae5bffb9864e": {
+      "text": "Beschreibung des A3-Plakats: Krishna bestraft die Schlange Kaliya",
+      "src": "ae5bffb9864e"
+    },
+    "text.ed1752ea12d1": {
+      "text": "Beschreibung eines A3-Posters mit Radha und Krishna sowie einer kleinen Kuh",
+      "src": "ed1752ea12d1"
+    },
+    "text.27a2d935b6f1": {
+      "text": "Beschreibung des A3-Posters: Krishna genießt das Mittagessen mit den Kuhhirten",
+      "src": "27a2d935b6f1"
+    },
+    "text.14d2f188c206": {
+      "text": "A3-Poster: Das göttliche Paar – Radha und Krishna mit einer kleinen Kuh.",
+      "src": "14d2f188c206"
+    },
+    "text.d5cf44c7b419": {
+      "text": "Unbedingt lesen: Peter Frankopan – „Die Seidenstraßen“ – weltweiter Nummer-1-Bestseller",
+      "src": "d5cf44c7b419"
+    },
+    "text.502209ea7ade": {
+      "text": "Ein Plakat, auf dem Yashoda Krishna Damodara verfolgt, weil er Ghee gestohlen hat.",
+      "src": "502209ea7ade"
+    },
+    "text.df13cc121c0f": {
+      "text": "A3-Poster: Krishna genießt sein Mittagessen mit den Kuhhirten im Wald.",
+      "src": "df13cc121c0f"
+    },
+    "text.c907317fed90": {
+      "text": "Ein Plakat, das den kleinen Krishna in den Armen seiner Mutter Yashoda zeigt.",
+      "src": "c907317fed90"
+    },
+    "text.afce3ca104bc": {
+      "text": "Indische, handgewebte Stola aus Leinen im Ethno-Stil – öffnen Sie das Angebot auf Vinted in einem neuen Tab",
+      "src": "afce3ca104bc"
+    },
+    "text.d0deb9066b56": {
+      "text": "Ein Plakat der Panca Tattvas – der Gefährten von Chaitanya und Nityananda.",
+      "src": "d0deb9066b56"
+    },
+    "text.0aabd453dce7": {
+      "text": "Bewertung: 5,0 von 5 bei 55 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "0aabd453dce7"
+    },
+    "text.d162df3cc1c5": {
+      "text": "Die Geheimnisse hinter den GLP-Medikamenten zur Gewichtsreduktion: „Off the Scales“ von Aimee Donnellan – Die Insider-Geschichte zu Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "text.2c4193e1a107": {
+      "text": "Lesen Sie unbedingt Peter Frankopans „Die Seidenstraßen“ – den weltweiten Nummer-1-Bestseller – und öffnen Sie den Eintrag „Vinted“ in einem neuen Tab.",
+      "src": "2c4193e1a107"
+    },
+    "text.2dccfee69728": {
+      "text": "Eine einzigartige Handtasche aus Stoff. In Jaipur unter Verwendung traditioneller Techniken meisterhaft gefertigt. Sie verfügt über ein einzelnes Reißverschlussfach auf der Rückseite und ein Hauptfach mit Reißverschluss…",
+      "src": "2dccfee69728"
+    },
+    "text.ec34b3de03a9": {
+      "text": "Die Geheimnisse hinter den GLP-Abnehmmedikamenten: „Off the Scales“ von Aimee Donnellan – Die Insider-Geschichte zu Ozempic – Öffnen Sie den verkauften Eintrag „Vinted“ in einem neuen Tab",
+      "src": "ec34b3de03a9"
     }
   }
 }

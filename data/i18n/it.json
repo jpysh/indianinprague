@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-05T05:17:39.963Z",
-  "count": 6054,
+  "generated": "2026-09-06T09:45:41.644Z",
+  "count": 6136,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -162,8 +162,8 @@
       "src": "8f6c0135abc6"
     },
     "item.9562314219.title": {
-      "text": "Scialle etnico indiano in lino tessuto a mano",
-      "src": "62b04577316e"
+      "text": "Scialle etnico in lino tessuto a mano in India",
+      "src": "e3bb7912f245"
     },
     "item.9562257190.title": {
       "text": "Abito estivo/da festa Mango Midi | L-XL",
@@ -24224,6 +24224,334 @@
     "text.6977c10d3010": {
       "text": "Zaino di ispirazione azteca, caratterizzato da tonalità terrose, motivi geometrici colorati e una fodera marrone intenso. Spallacci regolabili. Tasche frontali con patta…",
       "src": "6977c10d3010"
+    },
+    "text.1eeaa4034d33": {
+      "text": "7 pezzi",
+      "src": "1eeaa4034d33"
+    },
+    "text.faed9771a35f": {
+      "text": "28 pezzi",
+      "src": "faed9771a35f"
+    },
+    "text.58d8d553748a": {
+      "text": "436 pezzi",
+      "src": "58d8d553748a"
+    },
+    "text.53aede098cf6": {
+      "text": "138 pezzi",
+      "src": "53aede098cf6"
+    },
+    "text.baf7e73efa75": {
+      "text": "521 pezzi",
+      "src": "baf7e73efa75"
+    },
+    "text.639713f73aa3": {
+      "text": "Panca Tattva poster.",
+      "src": "639713f73aa3"
+    },
+    "text.7f2dd98a90a2": {
+      "text": "Elefante intagliato, 4 cm",
+      "src": "7f2dd98a90a2"
+    },
+    "text.952d56b9e4f3": {
+      "text": "Elefante intagliato, 8 cm",
+      "src": "952d56b9e4f3"
+    },
+    "text.d9f0f213c11f": {
+      "text": "Poster A2: Rása Dance",
+      "src": "d9f0f213c11f"
+    },
+    "text.140aaa605c5b": {
+      "text": "55 recensioni su Vinted →",
+      "src": "140aaa605c5b"
+    },
+    "text.f7d6d27855f6": {
+      "text": "Elefante intagliato, 10 cm",
+      "src": "f7d6d27855f6"
+    },
+    "text.1fca8553daa8": {
+      "text": "A3 Poster: Panca Tattva",
+      "src": "1fca8553daa8"
+    },
+    "text.7af9a2cc9128": {
+      "text": "A3+ Poster: Panca Tattva",
+      "src": "7af9a2cc9128"
+    },
+    "text.9d4751dc3bf1": {
+      "text": "Poster in formato A3+: Hanuman che corre",
+      "src": "9d4751dc3bf1"
+    },
+    "text.39570a22746d": {
+      "text": "Un poster che raffigura Hanuma mentre corre.",
+      "src": "39570a22746d"
+    },
+    "text.5e6328757a88": {
+      "text": "Poster in formato A3+: Hanuman in piedi",
+      "src": "5e6328757a88"
+    },
+    "text.7643edb32a1d": {
+      "text": "22 spezie nella dispensa.",
+      "src": "7643edb32a1d"
+    },
+    "text.5d0c7e859d64": {
+      "text": "Cardamomo macinato 15 g SCONTO",
+      "src": "5d0c7e859d64"
+    },
+    "text.d6a1a92912ea": {
+      "text": "Un poster raffigurante Hanumam in piedi.",
+      "src": "d6a1a92912ea"
+    },
+    "text.8e41ac95e633": {
+      "text": "Poster in formato A3 di Śrīla Prabhupāda",
+      "src": "8e41ac95e633"
+    },
+    "text.da6ccb506583": {
+      "text": "1650 pezzi in vendita · 69 venduti",
+      "src": "da6ccb506583"
+    },
+    "text.61e076484b65": {
+      "text": "Poster in formato A3 raffigurante Yasoda con Krishna",
+      "src": "61e076484b65"
+    },
+    "text.e606e4e94c27": {
+      "text": "Poster A2: Yasoda lega Krishna",
+      "src": "e606e4e94c27"
+    },
+    "text.5fa90af72668": {
+      "text": "Poster in formato A3: Yasoda lega Krishna",
+      "src": "5fa90af72668"
+    },
+    "text.cc2543573ba5": {
+      "text": "16 libri di saggistica sulla libreria.",
+      "src": "cc2543573ba5"
+    },
+    "text.a74a187f6565": {
+      "text": "67 divinità sulla mensola dedicata alla meditazione.",
+      "src": "a74a187f6565"
+    },
+    "text.336b7eac306b": {
+      "text": "Descrizione dell’elefante intagliato, 4 cm",
+      "src": "336b7eac306b"
+    },
+    "text.1471605e9f38": {
+      "text": "Poster in formato A2: Yasoda sta inseguendo Krishna",
+      "src": "1471605e9f38"
+    },
+    "text.8e3977a36b1f": {
+      "text": "Descrizione dell’elefante intagliato, 8 cm",
+      "src": "8e3977a36b1f"
+    },
+    "text.43c8ad0693c0": {
+      "text": "Descrizione del poster in formato A2: Rása Dance",
+      "src": "43c8ad0693c0"
+    },
+    "text.918c79b43f47": {
+      "text": "Poster in formato A3: Yashoda sta inseguendo Krishna",
+      "src": "918c79b43f47"
+    },
+    "text.a9ef60e2136b": {
+      "text": "Descrizione dell’elefante intagliato, 10 cm",
+      "src": "a9ef60e2136b"
+    },
+    "text.d00aca598fa1": {
+      "text": "Descrizione del poster in formato A3: Panca Tattva",
+      "src": "d00aca598fa1"
+    },
+    "text.fe625b430073": {
+      "text": "Descrizione del poster in formato A3+: Panca Tattva",
+      "src": "fe625b430073"
+    },
+    "text.fa86b6ce6bd8": {
+      "text": "Bollitore in rame, capacità interna di 1,25 l",
+      "src": "fa86b6ce6bd8"
+    },
+    "text.296b20c90da2": {
+      "text": "Poster in formato A3+: Radha e Krishna sull’altalena",
+      "src": "296b20c90da2"
+    },
+    "text.a5ed70a10491": {
+      "text": "Poster in formato A3+: Krishna e Radha sull’altalena.",
+      "src": "a5ed70a10491"
+    },
+    "text.4a7ecfabb306": {
+      "text": "Un poster di Śrīla Prabhupāda sul prato.",
+      "src": "4a7ecfabb306"
+    },
+    "text.8c4f5dd41e80": {
+      "text": "Poster in formato A2: Krishna benedice un venditore di frutta",
+      "src": "8c4f5dd41e80"
+    },
+    "text.96089f6c4aa3": {
+      "text": "Poster in formato A3: Krishna benedice un venditore di frutta",
+      "src": "96089f6c4aa3"
+    },
+    "text.16750502e244": {
+      "text": "82 capi di abbigliamento femminile nello scaffale dedicato alla moda.",
+      "src": "16750502e244"
+    },
+    "text.f04d25a11bfd": {
+      "text": "Descrizione del poster in formato A3+: Hanuman che corre",
+      "src": "f04d25a11bfd"
+    },
+    "text.006acc90ce5c": {
+      "text": "Descrizione del poster in formato A3+: Hanuman in piedi",
+      "src": "006acc90ce5c"
+    },
+    "text.67f1d60f5285": {
+      "text": "Descrizione del cardamomo macinato 15 g SCONTO",
+      "src": "67f1d60f5285"
+    },
+    "text.e1a47390f4b7": {
+      "text": "Descrizione del poster in formato A3 raffigurante Śrīla Prabhupāda",
+      "src": "e1a47390f4b7"
+    },
+    "text.b734bf8a771c": {
+      "text": "Manifesto: Krishna punisce il serpente Kaliya.",
+      "src": "b734bf8a771c"
+    },
+    "text.73f68a3e7cec": {
+      "text": "36 tavoli e soluzioni per la sala da pranzo nella sezione dedicata all’arredamento della casa.",
+      "src": "73f68a3e7cec"
+    },
+    "text.00dbb1aefffb": {
+      "text": "Poster in formato A3: Radha, Krishna e le otto gopi",
+      "src": "00dbb1aefffb"
+    },
+    "text.927209d94609": {
+      "text": "Poster in formato A3: Krishna punisce il serpente Kaliya",
+      "src": "927209d94609"
+    },
+    "text.d0e3aeb19555": {
+      "text": "Descrizione del poster in formato A3 raffigurante Yasoda con Krishna",
+      "src": "d0e3aeb19555"
+    },
+    "text.6833d8916898": {
+      "text": "87 immagini devozionali nella sezione dedicata alla meditazione.",
+      "src": "6833d8916898"
+    },
+    "text.b8f285b60a44": {
+      "text": "Descrizione del poster in formato A2: Yasoda lega Krishna",
+      "src": "b8f285b60a44"
+    },
+    "text.1de9619becc4": {
+      "text": "Descrizione del poster in formato A3: Yasoda lega Krishna",
+      "src": "1de9619becc4"
+    },
+    "text.8545479f203a": {
+      "text": "Poster in formato A3 raffigurante Radha e Krishna con una mucca piccola",
+      "src": "8545479f203a"
+    },
+    "text.bda523336bee": {
+      "text": "66 adesivi e poster sullo scaffale dedicato alla meditazione.",
+      "src": "bda523336bee"
+    },
+    "text.78103836f252": {
+      "text": "Un manifesto raffigurante Krishna mentre benedice un venditore di frutta.",
+      "src": "78103836f252"
+    },
+    "text.485a5ec90d21": {
+      "text": "Descrizione della stola etnica in lino tessuta a mano in India",
+      "src": "485a5ec90d21"
+    },
+    "text.9cab69212c67": {
+      "text": "Poster in formato A3: Krishna che pranza in compagnia dei pastori",
+      "src": "9cab69212c67"
+    },
+    "text.f8e51810f0fb": {
+      "text": "Descrizione del poster in formato A2: Yasoda sta inseguendo Krishna",
+      "src": "f8e51810f0fb"
+    },
+    "text.8666e06b35dc": {
+      "text": "Poster raffigurante Radha, Krishna e le otto gopi.",
+      "src": "8666e06b35dc"
+    },
+    "text.58f99b1b4476": {
+      "text": "Descrizione del poster in formato A3: Yashoda sta inseguendo Krishna",
+      "src": "58f99b1b4476"
+    },
+    "text.0350546cc9f9": {
+      "text": "Descrizione del bollitore in rame, capacità interna di 1,25 l",
+      "src": "0350546cc9f9"
+    },
+    "text.63167b0d643e": {
+      "text": "Descrizione del poster in formato A3+: Radha e Krishna su un&#x27;altalena",
+      "src": "63167b0d643e"
+    },
+    "text.5c523d0a013f": {
+      "text": "Descrizione del poster in formato A2: Krishna benedice un venditore di frutta",
+      "src": "5c523d0a013f"
+    },
+    "text.644a551cb087": {
+      "text": "Descrizione del poster in formato A3: Krishna benedice un venditore di frutta",
+      "src": "644a551cb087"
+    },
+    "text.dd90c45a41db": {
+      "text": "Manifesto: Yashoda lega Krishna Damodara per aver rubato del ghee.",
+      "src": "dd90c45a41db"
+    },
+    "text.b2c2ad7360b6": {
+      "text": "Descrizione del poster in formato A3: Radha, Krishna e le otto gopi",
+      "src": "b2c2ad7360b6"
+    },
+    "text.ae5bffb9864e": {
+      "text": "Descrizione del poster in formato A3: Krishna punisce il serpente Kaliya",
+      "src": "ae5bffb9864e"
+    },
+    "text.ed1752ea12d1": {
+      "text": "Descrizione del poster in formato A3 raffigurante Radha e Krishna con una piccola mucca",
+      "src": "ed1752ea12d1"
+    },
+    "text.27a2d935b6f1": {
+      "text": "Descrizione del poster in formato A3: Krishna che pranza in compagnia dei pastori",
+      "src": "27a2d935b6f1"
+    },
+    "text.14d2f188c206": {
+      "text": "Poster in formato A3: La coppia divina – Radha e Krishna con una piccola mucca.",
+      "src": "14d2f188c206"
+    },
+    "text.d5cf44c7b419": {
+      "text": "Da non perdere: “Le vie della seta” di Peter Frankopan, bestseller mondiale al primo posto",
+      "src": "d5cf44c7b419"
+    },
+    "text.502209ea7ade": {
+      "text": "Un poster che raffigura Yashoda mentre insegue Krishna Damodara per aver rubato del ghee.",
+      "src": "502209ea7ade"
+    },
+    "text.df13cc121c0f": {
+      "text": "Poster in formato A3: Krishna sta pranzando con i pastori di vacche nella foresta.",
+      "src": "df13cc121c0f"
+    },
+    "text.c907317fed90": {
+      "text": "Un poster raffigurante il piccolo Krishna tra le braccia di sua madre, Yashoda.",
+      "src": "c907317fed90"
+    },
+    "text.afce3ca104bc": {
+      "text": "Scialle etnico in lino tessuto a mano in India — apra l’annuncio su Vinted in una nuova scheda",
+      "src": "afce3ca104bc"
+    },
+    "text.d0deb9066b56": {
+      "text": "Un poster raffigurante i Panca Tattva, i compagni di Chaitanya e Nityananda.",
+      "src": "d0deb9066b56"
+    },
+    "text.0aabd453dce7": {
+      "text": "Valutato 5,0 su 5 in base a 55 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "0aabd453dce7"
+    },
+    "text.d162df3cc1c5": {
+      "text": "I segreti dei farmaci dimagranti GLP: “Off the Scales” di Aimee Donnellan – La storia dietro le quinte di Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "text.2c4193e1a107": {
+      "text": "Da non perdere: “Le vie della seta” di Peter Frankopan, bestseller mondiale al primo posto — apra l’annuncio venduto su Vinted in una nuova scheda",
+      "src": "2c4193e1a107"
+    },
+    "text.2dccfee69728": {
+      "text": "Una borsa in tessuto davvero unica. Realizzata con maestria a Jaipur utilizzando tecniche tradizionali. Presenta una singola tasca con cerniera sul retro e uno scomparto principale con cerniera…",
+      "src": "2dccfee69728"
+    },
+    "text.ec34b3de03a9": {
+      "text": "I segreti dei farmaci dimagranti GLP: “Off the Scales” di Aimee Donnellan. La storia dietro le quinte di Ozempic — apra l’annuncio venduto su Vinted in una nuova scheda",
+      "src": "ec34b3de03a9"
     }
   }
 }

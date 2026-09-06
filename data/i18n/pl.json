@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-05T05:17:42.764Z",
-  "count": 6054,
+  "generated": "2026-09-06T09:45:47.158Z",
+  "count": 6136,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -162,8 +162,8 @@
       "src": "8f6c0135abc6"
     },
     "item.9562314219.title": {
-      "text": "Indyjska, ręcznie tkana etniczna chusta z lnu",
-      "src": "62b04577316e"
+      "text": "Etniczna chusta lniana wykonana na ręcznym krośnie w Indiach",
+      "src": "e3bb7912f245"
     },
     "item.9562257190.title": {
       "text": "Letnia/imprezowa sukienka Mango Midi | rozmiary L–XL",
@@ -24224,6 +24224,334 @@
     "text.6977c10d3010": {
       "text": "Plecak inspirowany kulturą Azteków, utrzymany w ziemistych odcieniach, z kolorowymi geometrycznymi wzorami i podszewką w intensywnym brązie. Regulowane paski na ramię. Przednie kieszenie z klapką…",
       "src": "6977c10d3010"
+    },
+    "text.1eeaa4034d33": {
+      "text": "7 sztuk",
+      "src": "1eeaa4034d33"
+    },
+    "text.faed9771a35f": {
+      "text": "28 sztuk",
+      "src": "faed9771a35f"
+    },
+    "text.58d8d553748a": {
+      "text": "436 sztuk",
+      "src": "58d8d553748a"
+    },
+    "text.53aede098cf6": {
+      "text": "138 sztuk",
+      "src": "53aede098cf6"
+    },
+    "text.baf7e73efa75": {
+      "text": "521 sztuk",
+      "src": "baf7e73efa75"
+    },
+    "text.639713f73aa3": {
+      "text": "Plakat przedstawiający ławkę Tattva.",
+      "src": "639713f73aa3"
+    },
+    "text.7f2dd98a90a2": {
+      "text": "Rzeźbiony słoń, 4 cm",
+      "src": "7f2dd98a90a2"
+    },
+    "text.952d56b9e4f3": {
+      "text": "Rzeźbiony słoń, 8 cm",
+      "src": "952d56b9e4f3"
+    },
+    "text.d9f0f213c11f": {
+      "text": "Plakat A2: Rása Dance",
+      "src": "d9f0f213c11f"
+    },
+    "text.140aaa605c5b": {
+      "text": "55 recenzji na stronie Vinted →",
+      "src": "140aaa605c5b"
+    },
+    "text.f7d6d27855f6": {
+      "text": "Rzeźbiony słoń, 10 cm",
+      "src": "f7d6d27855f6"
+    },
+    "text.1fca8553daa8": {
+      "text": "Plakat formatu A3: Ławka Tattva",
+      "src": "1fca8553daa8"
+    },
+    "text.7af9a2cc9128": {
+      "text": "Plakat formatu A3+: Ławka Tattva",
+      "src": "7af9a2cc9128"
+    },
+    "text.9d4751dc3bf1": {
+      "text": "Plakat formatu A3+: Hanuman w biegu",
+      "src": "9d4751dc3bf1"
+    },
+    "text.39570a22746d": {
+      "text": "Plakat przedstawiający biegającego Hanumę.",
+      "src": "39570a22746d"
+    },
+    "text.5e6328757a88": {
+      "text": "Plakat formatu A3+: Hanuman w pozycji stojącej",
+      "src": "5e6328757a88"
+    },
+    "text.7643edb32a1d": {
+      "text": "22 przyprawy na półce z produktami spożywczymi.",
+      "src": "7643edb32a1d"
+    },
+    "text.5d0c7e859d64": {
+      "text": "Kardamon mielony 15 g RABAT",
+      "src": "5d0c7e859d64"
+    },
+    "text.d6a1a92912ea": {
+      "text": "Plakat przedstawiający stojącego Hanumama.",
+      "src": "d6a1a92912ea"
+    },
+    "text.8e41ac95e633": {
+      "text": "Plakat formatu A3 przedstawiający Śrīlę Prabhupadę",
+      "src": "8e41ac95e633"
+    },
+    "text.da6ccb506583": {
+      "text": "1650 sztuk na sprzedaż · 69 sprzedanych",
+      "src": "da6ccb506583"
+    },
+    "text.61e076484b65": {
+      "text": "Plakat formatu A3 przedstawiający Yasodę z Kryszną",
+      "src": "61e076484b65"
+    },
+    "text.e606e4e94c27": {
+      "text": "Plakat formatu A2: Yasoda wiąże Krysznę",
+      "src": "e606e4e94c27"
+    },
+    "text.5fa90af72668": {
+      "text": "Plakat formatu A3: Yasoda wiąże Krysznę",
+      "src": "5fa90af72668"
+    },
+    "text.cc2543573ba5": {
+      "text": "16 pozycji literatury faktu na półce z książkami.",
+      "src": "cc2543573ba5"
+    },
+    "text.a74a187f6565": {
+      "text": "67 bóstw na półce do medytacji.",
+      "src": "a74a187f6565"
+    },
+    "text.336b7eac306b": {
+      "text": "Opis rzeźbionego słonia, 4 cm",
+      "src": "336b7eac306b"
+    },
+    "text.1471605e9f38": {
+      "text": "Plakat formatu A2: Yasoda goni Krysznę",
+      "src": "1471605e9f38"
+    },
+    "text.8e3977a36b1f": {
+      "text": "Opis rzeźbionego słonia, 8 cm",
+      "src": "8e3977a36b1f"
+    },
+    "text.43c8ad0693c0": {
+      "text": "Opis plakatu formatu A2: Rása Dance",
+      "src": "43c8ad0693c0"
+    },
+    "text.918c79b43f47": {
+      "text": "Plakat formatu A3: Yashoda goni Krysznę",
+      "src": "918c79b43f47"
+    },
+    "text.a9ef60e2136b": {
+      "text": "Opis rzeźbionego słonia, 10 cm",
+      "src": "a9ef60e2136b"
+    },
+    "text.d00aca598fa1": {
+      "text": "Opis plakatu formatu A3: Panca Tattva",
+      "src": "d00aca598fa1"
+    },
+    "text.fe625b430073": {
+      "text": "Opis plakatu formatu A3+: Panca Tattva",
+      "src": "fe625b430073"
+    },
+    "text.fa86b6ce6bd8": {
+      "text": "Miedziany czajnik o pojemności 1,25 l (wewnętrznej)",
+      "src": "fa86b6ce6bd8"
+    },
+    "text.296b20c90da2": {
+      "text": "Plakat formatu A3+: Radha i Kryszna na huśtawce",
+      "src": "296b20c90da2"
+    },
+    "text.a5ed70a10491": {
+      "text": "Plakat formatu A3+: Kryszna i Radha na huśtawce.",
+      "src": "a5ed70a10491"
+    },
+    "text.4a7ecfabb306": {
+      "text": "Plakat przedstawiający Śrīlę Prabhupadę na trawniku.",
+      "src": "4a7ecfabb306"
+    },
+    "text.8c4f5dd41e80": {
+      "text": "Plakat formatu A2: Kryszna błogosławi sprzedawcę owoców",
+      "src": "8c4f5dd41e80"
+    },
+    "text.96089f6c4aa3": {
+      "text": "Plakat formatu A3: Kryszna błogosławi sprzedawcę owoców",
+      "src": "96089f6c4aa3"
+    },
+    "text.16750502e244": {
+      "text": "Na półce z modą znajduje się 82 sztuki odzieży damskiej.",
+      "src": "16750502e244"
+    },
+    "text.f04d25a11bfd": {
+      "text": "Opis plakatu formatu A3+: Hanuman w biegu",
+      "src": "f04d25a11bfd"
+    },
+    "text.006acc90ce5c": {
+      "text": "Opis plakatu formatu A3+: Hanuman w pozycji stojącej",
+      "src": "006acc90ce5c"
+    },
+    "text.67f1d60f5285": {
+      "text": "Opis: Kardamon mielony 15 g – PROMOCJA",
+      "src": "67f1d60f5285"
+    },
+    "text.e1a47390f4b7": {
+      "text": "Opis plakatu formatu A3 przedstawiającego Śrīlę Prabhupadę",
+      "src": "e1a47390f4b7"
+    },
+    "text.b734bf8a771c": {
+      "text": "Plakat: Kryszna karze węża Kaliyę.",
+      "src": "b734bf8a771c"
+    },
+    "text.73f68a3e7cec": {
+      "text": "36 pozycji z kategorii „stoły i jadalnie” w dziale wyposażenia wnętrz.",
+      "src": "73f68a3e7cec"
+    },
+    "text.00dbb1aefffb": {
+      "text": "Plakat formatu A3: Radha, Kryszna i osiem gopi",
+      "src": "00dbb1aefffb"
+    },
+    "text.927209d94609": {
+      "text": "Plakat formatu A3: Kryszna karze węża Kaliyę",
+      "src": "927209d94609"
+    },
+    "text.d0e3aeb19555": {
+      "text": "Opis plakatu formatu A3 przedstawiającego Yasodę z Kryszną",
+      "src": "d0e3aeb19555"
+    },
+    "text.6833d8916898": {
+      "text": "87 obrazków religijnych na półce do medytacji.",
+      "src": "6833d8916898"
+    },
+    "text.b8f285b60a44": {
+      "text": "Opis plakatu formatu A2: Yasoda wiąże Krysznę",
+      "src": "b8f285b60a44"
+    },
+    "text.1de9619becc4": {
+      "text": "Opis plakatu formatu A3: Yasoda wiąże Krysznę",
+      "src": "1de9619becc4"
+    },
+    "text.8545479f203a": {
+      "text": "Plakat formatu A3 przedstawiający Radhę i Krisznę z małą krową",
+      "src": "8545479f203a"
+    },
+    "text.bda523336bee": {
+      "text": "66 naklejek i plakatów na półce z materiałami do medytacji.",
+      "src": "bda523336bee"
+    },
+    "text.78103836f252": {
+      "text": "Plakat przedstawiający Krisznę błogosławiącego sprzedawcę owoców.",
+      "src": "78103836f252"
+    },
+    "text.485a5ec90d21": {
+      "text": "Opis etnicznej lnianej chusty wykonanej na ręcznym krośnie w Indiach",
+      "src": "485a5ec90d21"
+    },
+    "text.9cab69212c67": {
+      "text": "Plakat formatu A3: Kryszna delektujący się obiadem w towarzystwie pasterzy",
+      "src": "9cab69212c67"
+    },
+    "text.f8e51810f0fb": {
+      "text": "Opis plakatu formatu A2: Yasoda goni Krysznę",
+      "src": "f8e51810f0fb"
+    },
+    "text.8666e06b35dc": {
+      "text": "Plakat przedstawiający Radhę, Krisznę i osiem gopi.",
+      "src": "8666e06b35dc"
+    },
+    "text.58f99b1b4476": {
+      "text": "Opis plakatu formatu A3: Yashoda goni Krisznę",
+      "src": "58f99b1b4476"
+    },
+    "text.0350546cc9f9": {
+      "text": "Opis czajnika miedzianego o pojemności 1,25 l (wewnętrznej)",
+      "src": "0350546cc9f9"
+    },
+    "text.63167b0d643e": {
+      "text": "Opis plakatu formatu A3+: Radha i Kryszna na huśtawce",
+      "src": "63167b0d643e"
+    },
+    "text.5c523d0a013f": {
+      "text": "Opis plakatu formatu A2: Kryszna błogosławi sprzedawcę owoców",
+      "src": "5c523d0a013f"
+    },
+    "text.644a551cb087": {
+      "text": "Opis plakatu formatu A3: Kryszna błogosławi sprzedawcę owoców",
+      "src": "644a551cb087"
+    },
+    "text.dd90c45a41db": {
+      "text": "Plakat: Yashoda wiąże Krysznę Damodarę za kradzież ghee.",
+      "src": "dd90c45a41db"
+    },
+    "text.b2c2ad7360b6": {
+      "text": "Opis plakatu formatu A3: Radha, Kryszna i osiem gopi",
+      "src": "b2c2ad7360b6"
+    },
+    "text.ae5bffb9864e": {
+      "text": "Opis plakatu formatu A3: Kryszna karze węża Kaliyę",
+      "src": "ae5bffb9864e"
+    },
+    "text.ed1752ea12d1": {
+      "text": "Opis plakatu formatu A3 przedstawiającego Radhę i Krisznę z małą krową",
+      "src": "ed1752ea12d1"
+    },
+    "text.27a2d935b6f1": {
+      "text": "Opis plakatu formatu A3: Kryszna delektujący się obiadem w towarzystwie pasterzy",
+      "src": "27a2d935b6f1"
+    },
+    "text.14d2f188c206": {
+      "text": "Plakat formatu A3: Boska Para – Radha i Kryszna z małą krową.",
+      "src": "14d2f188c206"
+    },
+    "text.d5cf44c7b419": {
+      "text": "Koniecznie przeczytajcie książkę Petera Frankopana „Szlaki jedwabiu” – światowy bestseller nr 1",
+      "src": "d5cf44c7b419"
+    },
+    "text.502209ea7ade": {
+      "text": "Plakat przedstawiający Yashodę goniącą Krisznę Damodarę za kradzież ghee.",
+      "src": "502209ea7ade"
+    },
+    "text.df13cc121c0f": {
+      "text": "Plakat formatu A3: Kryszna spożywa obiad wraz z pasterzami w lesie.",
+      "src": "df13cc121c0f"
+    },
+    "text.c907317fed90": {
+      "text": "Plakat przedstawiający niemowlę Krysznę w ramionach swojej matki, Yashody.",
+      "src": "c907317fed90"
+    },
+    "text.afce3ca104bc": {
+      "text": "Etniczna lniana chusta z Indii, tkana na ręcznym krośnie — proszę otworzyć ofertę na stronie Vinted w nowej karcie",
+      "src": "afce3ca104bc"
+    },
+    "text.d0deb9066b56": {
+      "text": "Plakat przedstawiający Panca Tattvas – towarzyszy Czaitanyi i Nityanandy.",
+      "src": "d0deb9066b56"
+    },
+    "text.0aabd453dce7": {
+      "text": "Ocena 5,0 na 5 na podstawie 55 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "0aabd453dce7"
+    },
+    "text.d162df3cc1c5": {
+      "text": "Sekrety leków odchudzających firmy GLP – „Off the Scales” autorstwa Aimee Donnellan: Kulisy historii leku Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "text.2c4193e1a107": {
+      "text": "Koniecznie przeczytajcie książkę Petera Frankopana „Szlaki jedwabiu” – światowy bestseller nr 1 — otwórzcie aukcję „Vinted” w nowej karcie",
+      "src": "2c4193e1a107"
+    },
+    "text.2dccfee69728": {
+      "text": "Wyjątkowa torebka z tkaniny. Wykonana z najwyższą starannością w Jaipurze przy użyciu tradycyjnych technik. Posiada jedną kieszeń zapinaną na zamek z tyłu oraz główną komorę zapinaną na zamek…",
+      "src": "2dccfee69728"
+    },
+    "text.ec34b3de03a9": {
+      "text": "Sekrety leków odchudzających firmy GLP: „Off the Scales” autorstwa Aimee Donnellan – „The Inside Story of Ozempic” — proszę otworzyć sprzedaną ofertę „Vinted” w nowej karcie",
+      "src": "ec34b3de03a9"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-05T05:17:44.153Z",
-  "count": 6054,
+  "generated": "2026-09-06T09:45:48.823Z",
+  "count": 6136,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -55,7 +55,7 @@
     },
     "item.9562314219.title": {
       "text": "Indický ručně tkaný etnický lněný šál",
-      "src": "62b04577316e"
+      "src": "e3bb7912f245"
     },
     "item.9562257190.title": {
       "text": "Letní/společenské šaty Mango Midi | L–XL",
@@ -26204,6 +26204,371 @@
     "text.6977c10d3010": {
       "text": "Batoh inspirovaný aztéckým stylem, v zemitých odstínech, s barevnými geometrickými vzory a s podšívkou v syté hnědé barvě. Nastavitelné ramenní popruhy. Přední kapsy s klopou…",
       "src": "6977c10d3010"
+    },
+    "text.1fca8553daa8": {
+      "text": "Plakát A3 Panca Tattva",
+      "src": "1fca8553daa8",
+      "via": "govinda-cs"
+    },
+    "text.7f2dd98a90a2": {
+      "text": "Slon vyřezávaný 4 cm",
+      "src": "7f2dd98a90a2",
+      "via": "govinda-cs"
+    },
+    "text.296b20c90da2": {
+      "text": "Plakát A3+ Rádha Krišna na houpačce",
+      "src": "296b20c90da2",
+      "via": "govinda-cs"
+    },
+    "text.a5ed70a10491": {
+      "text": "Plakát A3+ Krišna s Rádhou na houpačce.",
+      "src": "a5ed70a10491",
+      "via": "govinda-cs"
+    },
+    "text.5d0c7e859d64": {
+      "text": "Kardamom mletý 15 g SLEVA",
+      "src": "5d0c7e859d64",
+      "via": "govinda-cs"
+    },
+    "text.7af9a2cc9128": {
+      "text": "Plakát A3+ Panca Tattva",
+      "src": "7af9a2cc9128",
+      "via": "govinda-cs"
+    },
+    "text.639713f73aa3": {
+      "text": "Plakát Panca Tattva.",
+      "src": "639713f73aa3",
+      "via": "govinda-cs"
+    },
+    "text.d0deb9066b56": {
+      "text": "Plakát Panca Tattvy - společníků Čaitanji a Nitjánandy.",
+      "src": "d0deb9066b56",
+      "via": "govinda-cs"
+    },
+    "text.00dbb1aefffb": {
+      "text": "Plakát A3 Rádha Krišna a 8 gópí",
+      "src": "00dbb1aefffb",
+      "via": "govinda-cs"
+    },
+    "text.8666e06b35dc": {
+      "text": "Plakát Rádha Krišna a 8 gópí.",
+      "src": "8666e06b35dc",
+      "via": "govinda-cs"
+    },
+    "text.e606e4e94c27": {
+      "text": "Plakát A2 Yašoda uvazuje Krišnu",
+      "src": "e606e4e94c27",
+      "via": "govinda-cs"
+    },
+    "text.5fa90af72668": {
+      "text": "Plakát A3 Yašoda uvazuje Krišnu",
+      "src": "5fa90af72668",
+      "via": "govinda-cs"
+    },
+    "text.dd90c45a41db": {
+      "text": "Plakát Yašoda uvazuje Krišnu Damodara pro krádeže ghí.",
+      "src": "dd90c45a41db",
+      "via": "govinda-cs"
+    },
+    "text.9d4751dc3bf1": {
+      "text": "Plakát A3+ Hanumán běžící",
+      "src": "9d4751dc3bf1",
+      "via": "govinda-cs"
+    },
+    "text.39570a22746d": {
+      "text": "Plakát Hanumám v běhu.",
+      "src": "39570a22746d",
+      "via": "govinda-cs"
+    },
+    "text.5e6328757a88": {
+      "text": "Plakát A3+ Hanumán stojící",
+      "src": "5e6328757a88",
+      "via": "govinda-cs"
+    },
+    "text.d6a1a92912ea": {
+      "text": "Plakát Hanumám ve stoji.",
+      "src": "d6a1a92912ea",
+      "via": "govinda-cs"
+    },
+    "text.8e41ac95e633": {
+      "text": "Plakát A3 Šríla Prabhupád",
+      "src": "8e41ac95e633",
+      "via": "govinda-cs"
+    },
+    "text.4a7ecfabb306": {
+      "text": "Plakát Šríla Prabhupád na trávníku.",
+      "src": "4a7ecfabb306",
+      "via": "govinda-cs"
+    },
+    "text.8545479f203a": {
+      "text": "Plakát A3 Rádha Krišna s kravičkou",
+      "src": "8545479f203a",
+      "via": "govinda-cs"
+    },
+    "text.14d2f188c206": {
+      "text": "Plakát A3 Božský pár - Rádha Krišna s kravičkou.",
+      "src": "14d2f188c206",
+      "via": "govinda-cs"
+    },
+    "text.927209d94609": {
+      "text": "Plakát A3 Krišna trestá hada Kaliyu",
+      "src": "927209d94609",
+      "via": "govinda-cs"
+    },
+    "text.b734bf8a771c": {
+      "text": "Plakát Krišna trestá hada Kaliyu.",
+      "src": "b734bf8a771c",
+      "via": "govinda-cs"
+    },
+    "text.9cab69212c67": {
+      "text": "Plakát A3 Krišna si vychutnává oběd s pasáčky",
+      "src": "9cab69212c67",
+      "via": "govinda-cs"
+    },
+    "text.df13cc121c0f": {
+      "text": "Plakát A3 Krišna si vychutnává oběd s pasáčky v lese.",
+      "src": "df13cc121c0f",
+      "via": "govinda-cs"
+    },
+    "text.8c4f5dd41e80": {
+      "text": "Plakát A2 Krišna požehnává prodavačku ovoce",
+      "src": "8c4f5dd41e80",
+      "via": "govinda-cs"
+    },
+    "text.78103836f252": {
+      "text": "Plakát Krišna požehnává prodavačku ovoce.",
+      "src": "78103836f252",
+      "via": "govinda-cs"
+    },
+    "text.96089f6c4aa3": {
+      "text": "Plakát A3 Krišna požehnává prodavačku ovoce",
+      "src": "96089f6c4aa3",
+      "via": "govinda-cs"
+    },
+    "text.1471605e9f38": {
+      "text": "Plakát A2 Yašoda nahání Krišnu",
+      "src": "1471605e9f38",
+      "via": "govinda-cs"
+    },
+    "text.502209ea7ade": {
+      "text": "Plakát Yašoda nahání Krišnu Damodara za kradení ghí.",
+      "src": "502209ea7ade",
+      "via": "govinda-cs"
+    },
+    "text.918c79b43f47": {
+      "text": "Plakát A3 Yašoda nahání Krišnu",
+      "src": "918c79b43f47",
+      "via": "govinda-cs"
+    },
+    "text.61e076484b65": {
+      "text": "Plakát A3 Yašoda s Krišnou",
+      "src": "61e076484b65",
+      "via": "govinda-cs"
+    },
+    "text.c907317fed90": {
+      "text": "Plakát s malým Krišnou v náručí matky Yašody.",
+      "src": "c907317fed90",
+      "via": "govinda-cs"
+    },
+    "text.fa86b6ce6bd8": {
+      "text": "Konvice měděná uvnitř 1,25 l",
+      "src": "fa86b6ce6bd8",
+      "via": "govinda-cs"
+    },
+    "text.f7d6d27855f6": {
+      "text": "Slon vyřezávaný 10 cm",
+      "src": "f7d6d27855f6",
+      "via": "govinda-cs"
+    },
+    "text.952d56b9e4f3": {
+      "text": "Slon vyřezávaný 8 cm",
+      "src": "952d56b9e4f3",
+      "via": "govinda-cs"
+    },
+    "text.d9f0f213c11f": {
+      "text": "Plakát A2 Tanec Rása",
+      "src": "d9f0f213c11f",
+      "via": "govinda-cs"
+    },
+    "text.1eeaa4034d33": {
+      "text": "7 kusů",
+      "src": "1eeaa4034d33"
+    },
+    "text.faed9771a35f": {
+      "text": "28 kusů",
+      "src": "faed9771a35f"
+    },
+    "text.58d8d553748a": {
+      "text": "436 kusů",
+      "src": "58d8d553748a"
+    },
+    "text.53aede098cf6": {
+      "text": "138 kusů",
+      "src": "53aede098cf6"
+    },
+    "text.baf7e73efa75": {
+      "text": "521 kusů",
+      "src": "baf7e73efa75"
+    },
+    "text.140aaa605c5b": {
+      "text": "55 recenzí na Vinted →",
+      "src": "140aaa605c5b"
+    },
+    "text.7643edb32a1d": {
+      "text": "22 koření v police na potraviny.",
+      "src": "7643edb32a1d"
+    },
+    "text.da6ccb506583": {
+      "text": "1650 kusů na prodej · 69 prodáno",
+      "src": "da6ccb506583"
+    },
+    "text.cc2543573ba5": {
+      "text": "16 knih z žánru literatury faktu v knihovně.",
+      "src": "cc2543573ba5"
+    },
+    "text.a74a187f6565": {
+      "text": "67 božstev na meditační polici.",
+      "src": "a74a187f6565"
+    },
+    "text.336b7eac306b": {
+      "text": "Popis: Vyřezávaný slon, 4 cm",
+      "src": "336b7eac306b"
+    },
+    "text.8e3977a36b1f": {
+      "text": "Popis: Vyřezávaný slon, 8 cm",
+      "src": "8e3977a36b1f"
+    },
+    "text.43c8ad0693c0": {
+      "text": "Popis plakátu formátu A2: Rása Dance",
+      "src": "43c8ad0693c0"
+    },
+    "text.a9ef60e2136b": {
+      "text": "Popis: Vyřezávaný slon, 10 cm",
+      "src": "a9ef60e2136b"
+    },
+    "text.d00aca598fa1": {
+      "text": "Popis plakátu formátu A3: Panca Tattva",
+      "src": "d00aca598fa1"
+    },
+    "text.fe625b430073": {
+      "text": "Popis plakátu formátu A3+: Panca Tattva",
+      "src": "fe625b430073"
+    },
+    "text.16750502e244": {
+      "text": "82 kusů dámského oblečení v regálu s módou.",
+      "src": "16750502e244"
+    },
+    "text.f04d25a11bfd": {
+      "text": "Popis plakátu formátu A3+: Hanuman v běhu",
+      "src": "f04d25a11bfd"
+    },
+    "text.006acc90ce5c": {
+      "text": "Popis plakátu formátu A3+: Stojící Hanuman",
+      "src": "006acc90ce5c"
+    },
+    "text.67f1d60f5285": {
+      "text": "Popis: Mletý kardamom 15 g SLEVA",
+      "src": "67f1d60f5285"
+    },
+    "text.e1a47390f4b7": {
+      "text": "Popis plakátu formátu A3 se Šrílou Prabhupádou",
+      "src": "e1a47390f4b7"
+    },
+    "text.73f68a3e7cec": {
+      "text": "36 stolů a jídelních koutů v sekci „Domácí dekorace“.",
+      "src": "73f68a3e7cec"
+    },
+    "text.d0e3aeb19555": {
+      "text": "Popis plakátu formátu A3 s vyobrazením Jasódy a Krišny",
+      "src": "d0e3aeb19555"
+    },
+    "text.6833d8916898": {
+      "text": "87 náboženských obrázků v regálu na meditaci.",
+      "src": "6833d8916898"
+    },
+    "text.b8f285b60a44": {
+      "text": "Popis plakátu formátu A2: Jasoda svazuje Krišnu",
+      "src": "b8f285b60a44"
+    },
+    "text.1de9619becc4": {
+      "text": "Popis plakátu formátu A3: Jasoda svazuje Krišnu",
+      "src": "1de9619becc4"
+    },
+    "text.bda523336bee": {
+      "text": "66 samolepek a plakátů v poličce na meditaci.",
+      "src": "bda523336bee"
+    },
+    "text.485a5ec90d21": {
+      "text": "Popis indického etnického lněného šálu z ručně tkaného plátna",
+      "src": "485a5ec90d21"
+    },
+    "text.f8e51810f0fb": {
+      "text": "Popis plakátu formátu A2: Jasoda honí Krišnu",
+      "src": "f8e51810f0fb"
+    },
+    "text.58f99b1b4476": {
+      "text": "Popis plakátu formátu A3: Yashoda honí Krišnu",
+      "src": "58f99b1b4476"
+    },
+    "text.0350546cc9f9": {
+      "text": "Popis měděné konvice, objem 1,25 l (vnitřní)",
+      "src": "0350546cc9f9"
+    },
+    "text.63167b0d643e": {
+      "text": "Popis plakátu formátu A3+: Radha a Krišna na houpačce",
+      "src": "63167b0d643e"
+    },
+    "text.5c523d0a013f": {
+      "text": "Popis plakátu formátu A2: Krišna žehná prodavači ovoce",
+      "src": "5c523d0a013f"
+    },
+    "text.644a551cb087": {
+      "text": "Popis plakátu formátu A3: Krišna žehná prodejci ovoce",
+      "src": "644a551cb087"
+    },
+    "text.b2c2ad7360b6": {
+      "text": "Popis plakátu formátu A3: Radha, Krišna a osm gópí",
+      "src": "b2c2ad7360b6"
+    },
+    "text.ae5bffb9864e": {
+      "text": "Popis plakátu formátu A3: Krišna trestá hada Kaliyu",
+      "src": "ae5bffb9864e"
+    },
+    "text.ed1752ea12d1": {
+      "text": "Popis plakátu formátu A3 s Radhou a Krišnou a malou krávou",
+      "src": "ed1752ea12d1"
+    },
+    "text.27a2d935b6f1": {
+      "text": "Popis plakátu formátu A3: Krišna si užívá oběd s pastevci",
+      "src": "27a2d935b6f1"
+    },
+    "text.d5cf44c7b419": {
+      "text": "Určitě si přečtěte knihu Petera Frankopana „Hedvábné stezky“ – světový bestseller č. 1",
+      "src": "d5cf44c7b419"
+    },
+    "text.afce3ca104bc": {
+      "text": "Indická etnická lněná šála z ručně tkané látky — otevřete nabídku na Vinted v nové záložce",
+      "src": "afce3ca104bc"
+    },
+    "text.0aabd453dce7": {
+      "text": "Hodnocení 5,0 z 5 na základě 55 recenzí kupujících. Přečtěte si je na Vinted (otevře se v nové záložce).",
+      "src": "0aabd453dce7"
+    },
+    "text.d162df3cc1c5": {
+      "text": "Tajemství léků na hubnutí od společnosti GLP: Kniha „Off the Scales“ od Aimee Donnellanové – Příběh z zákulisí přípravku Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "text.2c4193e1a107": {
+      "text": "Určitě si přečtěte knihu Petera Frankopana „The Silk Roads“ (Hedvábné stezky), světový bestseller č. 1 – otevřete odkaz na vyprodaný výpis na Vinted v nové záložce",
+      "src": "2c4193e1a107"
+    },
+    "text.2dccfee69728": {
+      "text": "Jedinečná látková kabelka. Odborně vyrobená v Džajpuru pomocí tradičních technik. Má jednu kapsu na zip na zadní straně a hlavní přihrádku na zip…",
+      "src": "2dccfee69728"
+    },
+    "text.ec34b3de03a9": {
+      "text": "Tajemství léků na hubnutí od společnosti GLP: „Off the Scales“ od Aimee Donnellanové – Příběh z zákulisí přípravku Ozempic — otevřete inzerát „Vinted“ v nové záložce",
+      "src": "ec34b3de03a9"
     }
   }
 }

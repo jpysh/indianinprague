@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-05T05:17:37.768Z",
-  "count": 6054,
+  "generated": "2026-09-06T09:45:36.858Z",
+  "count": 6136,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -163,7 +163,7 @@
     },
     "item.9562314219.title": {
       "text": "Étole ethnique en lin tissée à la main en Inde",
-      "src": "62b04577316e"
+      "src": "e3bb7912f245"
     },
     "item.9562257190.title": {
       "text": "Robe d'été/de soirée Midi Mango | L-XL",
@@ -24224,6 +24224,334 @@
     "text.6977c10d3010": {
       "text": "Sac à dos d&#x27;inspiration aztèque, aux teintes naturelles, orné de motifs géométriques colorés et doté d&#x27;une doublure d&#x27;un brun intense. Bretelles réglables. Poches à rabat sur le devant…",
       "src": "6977c10d3010"
+    },
+    "text.1eeaa4034d33": {
+      "text": "7 pièces",
+      "src": "1eeaa4034d33"
+    },
+    "text.faed9771a35f": {
+      "text": "28 pièces",
+      "src": "faed9771a35f"
+    },
+    "text.58d8d553748a": {
+      "text": "436 pièces",
+      "src": "58d8d553748a"
+    },
+    "text.53aede098cf6": {
+      "text": "138 pièces",
+      "src": "53aede098cf6"
+    },
+    "text.baf7e73efa75": {
+      "text": "521 pièces",
+      "src": "baf7e73efa75"
+    },
+    "text.639713f73aa3": {
+      "text": "Affiche « Panca Tattva ».",
+      "src": "639713f73aa3"
+    },
+    "text.7f2dd98a90a2": {
+      "text": "Éléphant sculpté, 4 cm",
+      "src": "7f2dd98a90a2"
+    },
+    "text.952d56b9e4f3": {
+      "text": "Éléphant sculpté, 8 cm",
+      "src": "952d56b9e4f3"
+    },
+    "text.d9f0f213c11f": {
+      "text": "Affiche A2 : Rása Dance",
+      "src": "d9f0f213c11f"
+    },
+    "text.140aaa605c5b": {
+      "text": "55 avis sur Vinted →",
+      "src": "140aaa605c5b"
+    },
+    "text.f7d6d27855f6": {
+      "text": "Éléphant sculpté, 10 cm",
+      "src": "f7d6d27855f6"
+    },
+    "text.1fca8553daa8": {
+      "text": "Affiche A3 : Banc Tattva",
+      "src": "1fca8553daa8"
+    },
+    "text.7af9a2cc9128": {
+      "text": "Affiche A3+ : Banc Tattva",
+      "src": "7af9a2cc9128"
+    },
+    "text.9d4751dc3bf1": {
+      "text": "Affiche au format A3+ : Hanuman en pleine course",
+      "src": "9d4751dc3bf1"
+    },
+    "text.39570a22746d": {
+      "text": "Une affiche représentant Hanuma en train de courir.",
+      "src": "39570a22746d"
+    },
+    "text.5e6328757a88": {
+      "text": "Affiche au format A3+ : Hanuman debout",
+      "src": "5e6328757a88"
+    },
+    "text.7643edb32a1d": {
+      "text": "22 épices dans le placard à provisions.",
+      "src": "7643edb32a1d"
+    },
+    "text.5d0c7e859d64": {
+      "text": "Cardamome moulue 15 g RÉDUCTION",
+      "src": "5d0c7e859d64"
+    },
+    "text.d6a1a92912ea": {
+      "text": "Une affiche représentant Hanumam debout.",
+      "src": "d6a1a92912ea"
+    },
+    "text.8e41ac95e633": {
+      "text": "Affiche au format A3 représentant Śrīla Prabhupāda",
+      "src": "8e41ac95e633"
+    },
+    "text.da6ccb506583": {
+      "text": "1 650 pièces à vendre · 69 vendues",
+      "src": "da6ccb506583"
+    },
+    "text.61e076484b65": {
+      "text": "Affiche au format A3 représentant Yasoda avec Krishna",
+      "src": "61e076484b65"
+    },
+    "text.e606e4e94c27": {
+      "text": "Affiche A2 : Yasoda attache Krishna",
+      "src": "e606e4e94c27"
+    },
+    "text.5fa90af72668": {
+      "text": "Affiche au format A3 : Yasoda attache Krishna",
+      "src": "5fa90af72668"
+    },
+    "text.cc2543573ba5": {
+      "text": "16 ouvrages documentaires sur l&#x27;étagère.",
+      "src": "cc2543573ba5"
+    },
+    "text.a74a187f6565": {
+      "text": "67 divinités sur l&#x27;étagère de méditation.",
+      "src": "a74a187f6565"
+    },
+    "text.336b7eac306b": {
+      "text": "Description d&#x27;un éléphant sculpté, 4 cm",
+      "src": "336b7eac306b"
+    },
+    "text.1471605e9f38": {
+      "text": "Affiche au format A2 : Yasoda poursuit Krishna",
+      "src": "1471605e9f38"
+    },
+    "text.8e3977a36b1f": {
+      "text": "Description d&#x27;un éléphant sculpté, 8 cm",
+      "src": "8e3977a36b1f"
+    },
+    "text.43c8ad0693c0": {
+      "text": "Description de l&#x27;affiche au format A2 : Rása Dance",
+      "src": "43c8ad0693c0"
+    },
+    "text.918c79b43f47": {
+      "text": "Affiche au format A3 : Yashoda poursuit Krishna",
+      "src": "918c79b43f47"
+    },
+    "text.a9ef60e2136b": {
+      "text": "Description d&#x27;un éléphant sculpté, 10 cm",
+      "src": "a9ef60e2136b"
+    },
+    "text.d00aca598fa1": {
+      "text": "Description de l&#x27;affiche au format A3 : Panca Tattva",
+      "src": "d00aca598fa1"
+    },
+    "text.fe625b430073": {
+      "text": "Description de l&#x27;affiche au format A3+ : Panca Tattva",
+      "src": "fe625b430073"
+    },
+    "text.fa86b6ce6bd8": {
+      "text": "Bouilloire en cuivre, capacité de 1,25 l (capacité intérieure)",
+      "src": "fa86b6ce6bd8"
+    },
+    "text.296b20c90da2": {
+      "text": "Affiche au format A3+ : Radha et Krishna sur une balançoire",
+      "src": "296b20c90da2"
+    },
+    "text.a5ed70a10491": {
+      "text": "Affiche au format A3+ : Krishna et Radha sur une balançoire.",
+      "src": "a5ed70a10491"
+    },
+    "text.4a7ecfabb306": {
+      "text": "Une affiche de Śrīla Prabhupāda sur la pelouse.",
+      "src": "4a7ecfabb306"
+    },
+    "text.8c4f5dd41e80": {
+      "text": "Affiche A2 : Krishna bénit un vendeur de fruits",
+      "src": "8c4f5dd41e80"
+    },
+    "text.96089f6c4aa3": {
+      "text": "Affiche au format A3 : Krishna bénit un vendeur de fruits",
+      "src": "96089f6c4aa3"
+    },
+    "text.16750502e244": {
+      "text": "82 vêtements pour femmes dans le rayon mode.",
+      "src": "16750502e244"
+    },
+    "text.f04d25a11bfd": {
+      "text": "Description de l&#x27;affiche au format A3+ : Hanuman en train de courir",
+      "src": "f04d25a11bfd"
+    },
+    "text.006acc90ce5c": {
+      "text": "Description de l&#x27;affiche au format A3+ : Hanuman debout",
+      "src": "006acc90ce5c"
+    },
+    "text.67f1d60f5285": {
+      "text": "Description de la cardamome moulue, 15 g - OFFRE SPÉCIALE",
+      "src": "67f1d60f5285"
+    },
+    "text.e1a47390f4b7": {
+      "text": "Description d&#x27;une affiche au format A3 représentant Śrīla Prabhupāda",
+      "src": "e1a47390f4b7"
+    },
+    "text.b734bf8a771c": {
+      "text": "Affiche : Krishna punit le serpent Kaliya.",
+      "src": "b734bf8a771c"
+    },
+    "text.73f68a3e7cec": {
+      "text": "36 tables et articles de salle à manger dans la rubrique « Décoration d&#x27;intérieur ».",
+      "src": "73f68a3e7cec"
+    },
+    "text.00dbb1aefffb": {
+      "text": "Affiche au format A3 : Radha, Krishna et les huit gopis",
+      "src": "00dbb1aefffb"
+    },
+    "text.927209d94609": {
+      "text": "Affiche au format A3 : Krishna punit le serpent Kaliya",
+      "src": "927209d94609"
+    },
+    "text.d0e3aeb19555": {
+      "text": "Description d&#x27;une affiche au format A3 représentant Yasoda avec Krishna",
+      "src": "d0e3aeb19555"
+    },
+    "text.6833d8916898": {
+      "text": "87 images de dévotion dans la rubrique « Méditation ».",
+      "src": "6833d8916898"
+    },
+    "text.b8f285b60a44": {
+      "text": "Description de l&#x27;affiche au format A2 : Yasoda attache Krishna",
+      "src": "b8f285b60a44"
+    },
+    "text.1de9619becc4": {
+      "text": "Description de l&#x27;affiche au format A3 : Yasoda attache Krishna",
+      "src": "1de9619becc4"
+    },
+    "text.8545479f203a": {
+      "text": "Affiche au format A3 représentant Radha et Krishna avec une petite vache",
+      "src": "8545479f203a"
+    },
+    "text.bda523336bee": {
+      "text": "66 autocollants et affiches dans le rayonnage dédié à la méditation.",
+      "src": "bda523336bee"
+    },
+    "text.78103836f252": {
+      "text": "Une affiche représentant Krishna en train de bénir un vendeur de fruits.",
+      "src": "78103836f252"
+    },
+    "text.485a5ec90d21": {
+      "text": "Description d&#x27;une étole ethnique en lin tissée à la main en Inde",
+      "src": "485a5ec90d21"
+    },
+    "text.9cab69212c67": {
+      "text": "Affiche au format A3 : Krishna déjeunant en compagnie des bergers",
+      "src": "9cab69212c67"
+    },
+    "text.f8e51810f0fb": {
+      "text": "Description de l&#x27;affiche au format A2 : Yasoda poursuit Krishna",
+      "src": "f8e51810f0fb"
+    },
+    "text.8666e06b35dc": {
+      "text": "Affiche représentant Radha, Krishna et les huit gopis.",
+      "src": "8666e06b35dc"
+    },
+    "text.58f99b1b4476": {
+      "text": "Description de l&#x27;affiche au format A3 : Yashoda poursuit Krishna",
+      "src": "58f99b1b4476"
+    },
+    "text.0350546cc9f9": {
+      "text": "Description d&#x27;une bouilloire en cuivre d&#x27;une capacité de 1,25 l (capacité intérieure)",
+      "src": "0350546cc9f9"
+    },
+    "text.63167b0d643e": {
+      "text": "Description de l&#x27;affiche au format A3+ : Radha et Krishna sur une balançoire",
+      "src": "63167b0d643e"
+    },
+    "text.5c523d0a013f": {
+      "text": "Description de l&#x27;affiche au format A2 : Krishna bénit un vendeur de fruits",
+      "src": "5c523d0a013f"
+    },
+    "text.644a551cb087": {
+      "text": "Description de l&#x27;affiche au format A3 : Krishna bénit un vendeur de fruits",
+      "src": "644a551cb087"
+    },
+    "text.dd90c45a41db": {
+      "text": "Affiche : Yashoda attache Krishna Damodara pour avoir volé du ghee.",
+      "src": "dd90c45a41db"
+    },
+    "text.b2c2ad7360b6": {
+      "text": "Description de l&#x27;affiche au format A3 : Radha, Krishna et les huit gopis",
+      "src": "b2c2ad7360b6"
+    },
+    "text.ae5bffb9864e": {
+      "text": "Description de l&#x27;affiche au format A3 : Krishna punit le serpent Kaliya",
+      "src": "ae5bffb9864e"
+    },
+    "text.ed1752ea12d1": {
+      "text": "Description d&#x27;une affiche au format A3 représentant Radha et Krishna avec une petite vache",
+      "src": "ed1752ea12d1"
+    },
+    "text.27a2d935b6f1": {
+      "text": "Description de l&#x27;affiche au format A3 : Krishna dégustant son déjeuner en compagnie des bergers",
+      "src": "27a2d935b6f1"
+    },
+    "text.14d2f188c206": {
+      "text": "Affiche au format A3 : Le couple divin – Radha et Krishna avec une petite vache.",
+      "src": "14d2f188c206"
+    },
+    "text.d5cf44c7b419": {
+      "text": "À lire absolument : « Les Routes de la soie » de Peter Frankopan, n° 1 des ventes mondiales",
+      "src": "d5cf44c7b419"
+    },
+    "text.502209ea7ade": {
+      "text": "Une affiche représentant Yashoda poursuivant Krishna Damodara parce qu&#x27;il a volé du ghee.",
+      "src": "502209ea7ade"
+    },
+    "text.df13cc121c0f": {
+      "text": "Affiche au format A3 : Krishna déjeune en compagnie des bergers dans la forêt.",
+      "src": "df13cc121c0f"
+    },
+    "text.c907317fed90": {
+      "text": "Une affiche représentant le petit Krishna dans les bras de sa mère, Yashoda.",
+      "src": "c907317fed90"
+    },
+    "text.afce3ca104bc": {
+      "text": "Étole ethnique en lin tissée à la main en Inde — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "afce3ca104bc"
+    },
+    "text.d0deb9066b56": {
+      "text": "Une affiche représentant les Panca Tattvas, les compagnons de Chaitanya et de Nityananda.",
+      "src": "d0deb9066b56"
+    },
+    "text.0aabd453dce7": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 55 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "0aabd453dce7"
+    },
+    "text.d162df3cc1c5": {
+      "text": "Les secrets des médicaments amaigrissants de GLP : « Off the Scales » d&#x27;Aimee Donnellan – Les coulisses d&#x27;Ozempic",
+      "src": "d162df3cc1c5"
+    },
+    "text.2c4193e1a107": {
+      "text": "À lire absolument : « Les Routes de la soie » de Peter Frankopan, n° 1 des ventes mondiales — ouvrez la fiche du produit vendu sur Vinted dans un nouvel onglet",
+      "src": "2c4193e1a107"
+    },
+    "text.2dccfee69728": {
+      "text": "Un sac à main en tissu unique. Confectionné avec savoir-faire à Jaipur selon des techniques traditionnelles. Il comporte une poche zippée à l&#x27;arrière et un compartiment principal zippé…",
+      "src": "2dccfee69728"
+    },
+    "text.ec34b3de03a9": {
+      "text": "Les secrets des médicaments amaigrissants de GLP : « Off the Scales » d&#x27;Aimee Donnellan. Les coulisses d&#x27;Ozempic — ouvrez la fiche du produit vendu «Vinted» dans un nouvel onglet",
+      "src": "ec34b3de03a9"
     }
   }
 }
