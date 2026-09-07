@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:48.823Z",
-  "count": 6136,
+  "generated": "2026-09-07T05:17:42.239Z",
+  "count": 6138,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -26569,6 +26569,14 @@
     "text.ec34b3de03a9": {
       "text": "Tajemství léků na hubnutí od společnosti GLP: „Off the Scales“ od Aimee Donnellanové – Příběh z zákulisí přípravku Ozempic — otevřete inzerát „Vinted“ v nové záložce",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 recenzí na Vinted →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Hodnocení 5,0 z 5 na základě 56 recenzí kupujících. Přečtěte si je na Vinted (otevře se v nové záložce).",
+      "src": "c14a810aea41"
     }
   }
 }

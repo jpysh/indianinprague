@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:34.148Z",
-  "count": 6136,
+  "generated": "2026-09-07T05:17:40.150Z",
+  "count": 6138,
   "entries": {
     "attr.color.red": {
       "text": "Сеть",
@@ -24552,6 +24552,14 @@
     "text.ec34b3de03a9": {
       "text": "Секреты препаратов для похудения GLP: «Off the Scales» Эйми Доннеллан. «The Inside Story of Ozempic» — откройте объявление о продаже «Vinted» в новой вкладке",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 отзывов на сайте Vinted →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Оценка 5,0 из 5 по результатам 56 отзывов покупателей. Ознакомьтесь с ними на сайте Vinted (откроется в новой вкладке).",
+      "src": "c14a810aea41"
     }
   }
 }

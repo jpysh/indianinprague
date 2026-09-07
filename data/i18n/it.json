@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:41.644Z",
-  "count": 6136,
+  "generated": "2026-09-07T05:17:41.176Z",
+  "count": 6138,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -24552,6 +24552,14 @@
     "text.ec34b3de03a9": {
       "text": "I segreti dei farmaci dimagranti GLP: “Off the Scales” di Aimee Donnellan. La storia dietro le quinte di Ozempic — apra l’annuncio venduto su Vinted in una nuova scheda",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 recensioni su Vinted →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Valutato 5,0 su 5 in base a 56 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "c14a810aea41"
     }
   }
 }

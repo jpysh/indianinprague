@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:36.858Z",
-  "count": 6136,
+  "generated": "2026-09-07T05:17:40.488Z",
+  "count": 6138,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -24552,6 +24552,14 @@
     "text.ec34b3de03a9": {
       "text": "Les secrets des médicaments amaigrissants de GLP : « Off the Scales » d&#x27;Aimee Donnellan. Les coulisses d&#x27;Ozempic — ouvrez la fiche du produit vendu «Vinted» dans un nouvel onglet",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 avis sur Vinted →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 56 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "c14a810aea41"
     }
   }
 }

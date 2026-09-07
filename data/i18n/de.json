@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:39.221Z",
-  "count": 6140,
+  "generated": "2026-09-07T05:17:40.826Z",
+  "count": 6142,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -24568,6 +24568,14 @@
     "text.ec34b3de03a9": {
       "text": "Die Geheimnisse hinter den GLP-Abnehmmedikamenten: „Off the Scales“ von Aimee Donnellan – Die Insider-Geschichte zu Ozempic – Öffnen Sie den verkauften Eintrag „Vinted“ in einem neuen Tab",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 Bewertungen zu „Vinted“ →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Bewertung: 5,0 von 5, basierend auf 56 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "c14a810aea41"
     }
   }
 }

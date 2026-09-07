@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-06T09:45:44.603Z",
-  "count": 6136,
+  "generated": "2026-09-07T05:17:41.492Z",
+  "count": 6138,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -24552,6 +24552,14 @@
     "text.ec34b3de03a9": {
       "text": "Los secretos que se esconden tras los medicamentos para adelgazar de GLP: «Off the Scales», de Aimee Donnellan. La historia secreta de Ozempic: abra el enlace Vinted (ya vendido) en una nueva pestaña.",
       "src": "ec34b3de03a9"
+    },
+    "text.bd305916d817": {
+      "text": "56 opiniones en Vinted →",
+      "src": "bd305916d817"
+    },
+    "text.c14a810aea41": {
+      "text": "Valoración de 5,0 sobre 5 según 56 opiniones de compradores. Puede consultarlas en Vinted (se abre en una nueva pestaña).",
+      "src": "c14a810aea41"
     }
   }
 }
