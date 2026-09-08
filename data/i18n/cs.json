@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-07T05:17:42.239Z",
-  "count": 6138,
+  "generated": "2026-09-08T07:04:35.790Z",
+  "count": 6151,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -24302,8 +24302,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "filozofové o běžných problémech moderního každodenního života Co by udělal Nietzsche? | Psychologie Filozofie",
-      "src": "cbf2d7493ef9"
+      "text": "Co by udělal Nietzsche? Běžné moderní každodenní problémy | Psychologie Filozofie",
+      "src": "0d22e2642fff"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovič – tenisové a padelové boty Asics Solution Swift FF s nešpinící podrážkou, technologie FlyteFoam CM, velikost 28,5, cena 45 EUR",
@@ -26042,12 +26042,12 @@
       "src": "45bddf2db3c9"
     },
     "item.9881678354.title": {
-      "text": "Kniha pro náruživé čtenáře – David Mitchell: Atlas mraků (finalista ceny Booker Prize), vydání pro filmovou adaptaci",
-      "src": "8fb95afa9107"
+      "text": "bestseller Davida Mitchella „Atlas mraků“, nominovaný na cenu Booker Prize – vydání pro filmovou adaptaci",
+      "src": "a1b13405ff71"
     },
     "item.9881670398.title": {
-      "text": "skutečně pronikavá kniha o globálním jihu: Edward Luce, *In Spite of the Gods* – uznávaná analýza současné Indie",
-      "src": "54d03bed21ca"
+      "text": "vzácná kniha o globálním Jihu: Edward Luce – „In Spite of the Gods“ – uznávaná analýza moderní Indie",
+      "src": "95380c27f3fa"
     },
     "item.9882151449.description": {
       "text": "Batoh inspirovaný aztéckým stylem, v zemitých tónech, s barevnými geometrickými vzory a sytě hnědou podšívkou.\nNastavitelné ramenní popruhy.\nPřední kapsy s klopou pro snadný přístup.\nDetaily v podobě spon.\nUvolněný styl boho inspirovaný kmenovými motivy.\nIdeální pro každodenní nošení, festivaly i cestování.",
@@ -26577,6 +26577,58 @@
     "text.c14a810aea41": {
       "text": "Hodnocení 5,0 z 5 na základě 56 recenzí kupujících. Přečtěte si je na Vinted (otevře se v nové záložce).",
       "src": "c14a810aea41"
+    },
+    "item.9920405528.title": {
+      "text": "Nostalgický retro vintage přívěsek na klíče ve tvaru kazety | Dárek pro milovníky hudby | Kolekce Audiotape Hipster",
+      "src": "12c74807a830"
+    },
+    "item.9920405528.description": {
+      "text": "Klíčenka ve stylu vintage z nerezové oceli ve tvaru kazety – ideální dárek pro DJ, hudebníka nebo milovníka hudby",
+      "src": "dc4dbc52d5df"
+    },
+    "text.3dc86cb84956": {
+      "text": "8 kusů",
+      "src": "3dc86cb84956"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "Nové s visačkami · Stříbrné",
+      "src": "ca1cd7cdd5f9"
+    },
+    "text.04be3ab9d6ea": {
+      "text": "1651 kusů na prodej · 69 prodáno",
+      "src": "04be3ab9d6ea"
+    },
+    "text.640a954710af": {
+      "text": "Popis knihy „Co by udělal Nietzsche?“ – běžné problémy moderního každodenního života | Psychologie, filozofie",
+      "src": "640a954710af"
+    },
+    "text.0119d7b9b81b": {
+      "text": "Popis vzácné knihy o globálním Jihu: Edward Luce – „In Spite of the Gods“ – uznávaná analýza moderní Indie",
+      "src": "0119d7b9b81b"
+    },
+    "text.bd1377948c39": {
+      "text": "Popis přívěsku na klíče Nostalgia Retro Vintage Cassette | Dárek pro milovníky hudby | Kolekce Audiotape Hipster",
+      "src": "bd1377948c39"
+    },
+    "text.399cecdabdb6": {
+      "text": "Popis knihy Davida Mitchella „Atlas mraků“, která se dostala do užšího výběru o cenu Booker Prize – edice k velkofilmu",
+      "src": "399cecdabdb6"
+    },
+    "text.3a3e7576dd3d": {
+      "text": "Co by udělal Nietzsche? Běžné moderní každodenní problémy | Psychologie, filozofie — otevřít seznam „Vinted“ v nové záložce",
+      "src": "3a3e7576dd3d"
+    },
+    "text.2be3d60a7724": {
+      "text": "vzácná kniha o globálním jihu: Edward Luce, *In Spite of the Gods* – uznávaná analýza moderní Indie — otevřete záznam na stránce „Vinted“ v nové záložce",
+      "src": "2be3d60a7724"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Nostalgický retro vintage přívěsek na klíče ve tvaru kazety | Dárek pro milovníky hudby | Kolekce Audiotape Hipster — otevřete nabídku „Vinted“ v nové záložce",
+      "src": "b06e51e97ffb"
+    },
+    "text.3f75c4d27c90": {
+      "text": "Bestseller Davida Mitchella „Atlas mraků“, nominovaný na cenu Booker Prize, ve verzi pro filmové zpracování — otevřete nabídku na Vinted v nové záložce",
+      "src": "3f75c4d27c90"
     }
   }
 }

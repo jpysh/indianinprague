@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-07T05:17:39.020Z",
-  "count": 5953,
+  "generated": "2026-09-08T07:04:30.780Z",
+  "count": 5959,
   "entries": {
+    "item.9920405528.title": {
+      "text": "Nostalgia Retro Vintage Cassette Keychain | Music Lover Gift | Audiotape Hipster Collection",
+      "src": "12c74807a830",
+      "where": "item 9920405528 — title",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
+    },
+    "item.9920405528.description": {
+      "text": "Stainless Steel Vintage Cassette Keychain - Perfect Gift for a DJ, Musician, or Music Lover",
+      "src": "dc4dbc52d5df",
+      "where": "item 9920405528 — description",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
+    },
+    "attr.condition.new-with-tags": {
+      "text": "New with tags",
+      "src": "3f4d0f75317f",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.silver": {
+      "text": "Silver",
+      "src": "a0b43df06f52",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.9887235817.title": {
       "text": "Feminist Keychain Boho Gifts Frida Kahlo metal enamel keychain Hippie Vibes",
       "src": "45bddf2db3c9",
@@ -26,13 +54,6 @@
       "where": "item 9887235817 — description",
       "since": "2026-09-05",
       "changed": "2026-09-05"
-    },
-    "attr.condition.new-with-tags": {
-      "text": "New with tags",
-      "src": "3f4d0f75317f",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "attr.color.multicolour": {
       "text": "Multicolour",
@@ -62,13 +83,6 @@
       "since": "",
       "changed": ""
     },
-    "attr.color.silver": {
-      "text": "Silver",
-      "src": "a0b43df06f52",
-      "where": "color — used across the shop",
-      "since": "",
-      "changed": ""
-    },
     "item.9882151449.title": {
       "text": "Boho Backpack Aztec Print Wanderer Bohemian Bag | Tribal Ruscksack",
       "src": "91a504c3bf0a",
@@ -84,11 +98,11 @@
       "changed": "2026-09-05"
     },
     "item.9881678354.title": {
-      "text": "binge reading booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition",
-      "src": "8fb95afa9107",
+      "text": "bestseller booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition",
+      "src": "a1b13405ff71",
       "where": "item 9881678354 — title",
       "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "changed": "2026-09-08"
     },
     "item.9881678354.description": {
       "text": "Shortlisted for the prestigious Booker Prize and adapted into a\nblockbuster motion picture starring Tom Hanks, this genre defying epic connects\nsix mind-bending stories across time. Retails new for around €15.\nISBN 9780812984415. It maintains 4.04 stars on Goodreads. Experience David\nMitchell's visionary literary puzzle that has spellbound millions of readers\nworldwide. Fantastic search match for speculative fiction, movie adaptation\nnovels, book club favorites, and literary fiction.",
@@ -98,11 +112,11 @@
       "changed": "2026-09-05"
     },
     "item.9881670398.title": {
-      "text": "truly insightful global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis",
-      "src": "54d03bed21ca",
+      "text": "rare global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis",
+      "src": "95380c27f3fa",
       "where": "item 9881670398 — title",
       "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "changed": "2026-09-08"
     },
     "item.9881670398.description": {
       "text": "Highly praised by Nobel laureate Amartya Sen, this masterclass in\npolitical narrative explores the meteoric economic rise and complex social\nfuture of modern India. Retails new for around €16. ISBN 9780349118741. It\nholds 4.03 stars on Goodreads. A deeply perceptive and witty account hailed as\nan essential generalist guide by the Financial Times and The Economist.\nExcellent search choice for geopolitics, economic history, Asian studies, and\npolitical nonfiction.",
@@ -161,11 +175,11 @@
       "changed": ""
     },
     "item.9843116673.title": {
-      "text": "philosophers on common modern everyday problems What Would Nietzsche Do? | Psychology Philosophy",
-      "src": "cbf2d7493ef9",
+      "text": "What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy",
+      "src": "0d22e2642fff",
       "where": "item 9843116673 — title",
       "since": "2026-09-02",
-      "changed": "2026-09-05"
+      "changed": "2026-09-08"
     },
     "item.9843116673.description": {
       "text": "Ever wondered what Nietzsche, Aristotle, Plato, Marx, Schopenhauer, John Stuart Mill or Simone de Beauvoir would make of modern life? This book offers a fun, thought-provoking crash course in philosophy without feeling like a dry academic textbook.\n“What Would Nietzsche Do? – Philosophical Solutions to Everyday Problems” by Marcus Weeks is a witty and accessible introduction to philosophy, using the ideas of some of history’s greatest thinkers to tackle real-life questions and everyday dilemmas.",
@@ -4605,19 +4619,12 @@
       "since": "",
       "changed": ""
     },
-    "text.1fca8553daa8": {
-      "text": "A3 Poster: Panca Tattva",
-      "src": "1fca8553daa8",
+    "text.3dc86cb84956": {
+      "text": "8 pieces",
+      "src": "3dc86cb84956",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-06",
-      "changed": "2026-09-06"
-    },
-    "text.1eeaa4034d33": {
-      "text": "7 pieces",
-      "src": "1eeaa4034d33",
-      "where": "page text — first seen on index.html",
-      "since": "2026-09-06",
-      "changed": "2026-09-06"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.ebdad9ba4c5e": {
       "text": "Others",
@@ -4640,12 +4647,12 @@
       "since": "",
       "changed": ""
     },
-    "text.da6ccb506583": {
-      "text": "1650 pieces for sale · 69 sold",
-      "src": "da6ccb506583",
+    "text.04be3ab9d6ea": {
+      "text": "1651 pieces for sale · 69 sold",
+      "src": "04be3ab9d6ea",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-06",
-      "changed": "2026-09-06"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -6943,6 +6950,55 @@
       "since": "",
       "changed": ""
     },
+    "text.329335dbed2d": {
+      "text": "Listed on Vinted",
+      "src": "329335dbed2d",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.bd1377948c39": {
+      "text": "Description of Nostalgia Retro Vintage Cassette Keychain | Music Lover Gift | Audiotape Hipster Collection",
+      "src": "bd1377948c39",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
+    },
+    "text.de7d1b721a1e": {
+      "text": "i",
+      "src": "de7d1b721a1e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "New with tags · Silver",
+      "src": "ca1cd7cdd5f9",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Nostalgia Retro Vintage Cassette Keychain | Music Lover Gift | Audiotape Hipster Collection — open the Vinted listing in a new tab",
+      "src": "b06e51e97ffb",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
+    },
+    "text.c16236ad956c": {
+      "text": "Ask about this piece",
+      "src": "c16236ad956c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.85f061ad9f47": {
+      "text": "— opens WhatsApp in a new tab",
+      "src": "85f061ad9f47",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.4bf750e0d85a": {
       "text": "Carved elephant, 6.5 cm",
       "src": "4bf750e0d85a",
@@ -6953,13 +7009,6 @@
     "text.121816b98d5c": {
       "text": "Description of Carved elephant, 6.5 cm",
       "src": "121816b98d5c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.de7d1b721a1e": {
-      "text": "i",
-      "src": "de7d1b721a1e",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
@@ -6981,13 +7030,6 @@
     "text.1bb8c68a34e1": {
       "text": "Order on WhatsApp",
       "src": "1bb8c68a34e1",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.85f061ad9f47": {
-      "text": "— opens WhatsApp in a new tab",
-      "src": "85f061ad9f47",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7065,6 +7107,13 @@
     "text.639713f73aa3": {
       "text": "Panca Tattva poster.",
       "src": "639713f73aa3",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-06",
+      "changed": "2026-09-06"
+    },
+    "text.1fca8553daa8": {
+      "text": "A3 Poster: Panca Tattva",
+      "src": "1fca8553daa8",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-06",
       "changed": "2026-09-06"
@@ -7363,13 +7412,6 @@
       "since": "2026-09-06",
       "changed": "2026-09-06"
     },
-    "text.329335dbed2d": {
-      "text": "Listed on Vinted",
-      "src": "329335dbed2d",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-28",
-      "changed": "2026-08-28"
-    },
     "text.af0365148933": {
       "text": "3 people have saved this on Vinted",
       "src": "af0365148933",
@@ -7412,16 +7454,9 @@
       "since": "2026-09-05",
       "changed": "2026-09-05"
     },
-    "text.c16236ad956c": {
-      "text": "Ask about this piece",
-      "src": "c16236ad956c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.45489b95c8c2": {
-      "text": "32 people have saved this on Vinted",
-      "src": "45489b95c8c2",
+    "text.57bbb12527f9": {
+      "text": "33 people have saved this on Vinted",
+      "src": "57bbb12527f9",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7489,12 +7524,12 @@
       "since": "2026-09-05",
       "changed": "2026-09-05"
     },
-    "text.9ef214df34cb": {
-      "text": "Description of binge reading booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition",
-      "src": "9ef214df34cb",
+    "text.399cecdabdb6": {
+      "text": "Description of bestseller booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition",
+      "src": "399cecdabdb6",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.0d21895b1c23": {
       "text": "Shortlisted for the prestigious Booker Prize and adapted into a blockbuster motion picture starring Tom Hanks, this genre defying epic connects six…",
@@ -7503,19 +7538,19 @@
       "since": "2026-09-05",
       "changed": "2026-09-05"
     },
-    "text.1c2671f6c03f": {
-      "text": "binge reading booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition — open the Vinted listing in a new tab",
-      "src": "1c2671f6c03f",
+    "text.3f75c4d27c90": {
+      "text": "bestseller booker prize shortlisted David Mitchell Cloud Atlas Major Motion Picture Edition — open the Vinted listing in a new tab",
+      "src": "3f75c4d27c90",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
-    "text.b85e5460a38b": {
-      "text": "Description of truly insightful global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis",
-      "src": "b85e5460a38b",
+    "text.0119d7b9b81b": {
+      "text": "Description of rare global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis",
+      "src": "0119d7b9b81b",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.75a47c0f11ff": {
       "text": "Highly praised by Nobel laureate Amartya Sen, this masterclass in political narrative explores the meteoric economic rise and complex social future…",
@@ -7524,12 +7559,12 @@
       "since": "2026-09-05",
       "changed": "2026-09-05"
     },
-    "text.85adb2f4eab3": {
-      "text": "truly insightful global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis — open the Vinted listing in a new tab",
-      "src": "85adb2f4eab3",
+    "text.2be3d60a7724": {
+      "text": "rare global south book Edward Luce In Spite of the Gods Acclaimed Modern India Analysis — open the Vinted listing in a new tab",
+      "src": "2be3d60a7724",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.565199fb56b4": {
       "text": "Description of Vintage Bag Retro Style Straw Woven Cross Body Bag Boho Bag Ethnic Fashion",
@@ -7615,12 +7650,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.5720af48df01": {
-      "text": "Description of philosophers on common modern everyday problems What Would Nietzsche Do? | Psychology Philosophy",
-      "src": "5720af48df01",
+    "text.640a954710af": {
+      "text": "Description of What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy",
+      "src": "640a954710af",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.134b7c8b3071": {
       "text": "Ever wondered what Nietzsche, Aristotle, Plato, Marx, Schopenhauer, John Stuart Mill or Simone de Beauvoir would make of modern life? This book…",
@@ -7629,12 +7664,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.19409ddc207c": {
-      "text": "philosophers on common modern everyday problems What Would Nietzsche Do? | Psychology Philosophy — open the Vinted listing in a new tab",
-      "src": "19409ddc207c",
+    "text.3a3e7576dd3d": {
+      "text": "What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy — open the Vinted listing in a new tab",
+      "src": "3a3e7576dd3d",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.80b2aa45b50d": {
       "text": "Description of remember everything memory expert Joshua Foer Moonwalking with Einstein Bestseller Science",
@@ -7909,13 +7944,6 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.e26856ae1138": {
-      "text": "17 people have saved this on Vinted",
-      "src": "e26856ae1138",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.d3bddca17bf6": {
       "text": "Description of Vintage Boho Necklace | Antique Silver-Tone Multi-Strand Artisan Necklace | Retro Layered Jewellery",
       "src": "d3bddca17bf6",
@@ -7936,13 +7964,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.57bbb12527f9": {
-      "text": "33 people have saved this on Vinted",
-      "src": "57bbb12527f9",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.f4293d49c7f6": {
       "text": "Description of Boho Wooden Serving Tray with Mandala Pattern | Rustic Indian Ethnic Home Decor",
@@ -8230,6 +8251,13 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
+    },
+    "text.c99c07999b7c": {
+      "text": "34 people have saved this on Vinted",
+      "src": "c99c07999b7c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.c0fca8fae754": {
       "text": "Description of Vintage jewellery | retro jewellery | 925 Silver Bracelet | Amethyst and Pearl | boho",
@@ -8640,6 +8668,13 @@
     "text.c5d89d3f9e85": {
       "text": "Chitra Banerjee Divakaruni The Palace of Illusions International Bestseller Mahabharata India Retold — open the Vinted listing in a new tab",
       "src": "c5d89d3f9e85",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e26856ae1138": {
+      "text": "17 people have saved this on Vinted",
+      "src": "e26856ae1138",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -9330,34 +9365,6 @@
       "since": "2026-09-06",
       "changed": "2026-09-06"
     },
-    "text.8c24ff99436a": {
-      "text": "Description of Mango Midi Summer/Party Dress | L-XL",
-      "src": "8c24ff99436a",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ca6e73be1533": {
-      "text": "Worn once. Fluid fabric. A-line design. Midi design. Cut-out. Crew neck. Sleeveless. Invisible back zip fastening. Side slits. Length 131 cm, chest…",
-      "src": "ca6e73be1533",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.143af1e7b23e": {
-      "text": "New without tags · Purple · XL",
-      "src": "143af1e7b23e",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c36269ca5b24": {
-      "text": "Mango Midi Summer/Party Dress | L-XL — open the Vinted listing in a new tab",
-      "src": "c36269ca5b24",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -9400,6 +9407,27 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.19c23f6f092f": {
+      "text": "Super Rose Incense Sticks – Large Pack",
+      "src": "19c23f6f092f",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7384b8aa2fa2": {
+      "text": "Description of Super Rose Incense Sticks – Large Pack",
+      "src": "7384b8aa2fa2",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ed2b91487a0d": {
+      "text": "Incense sticks, approximately 160 pieces.",
+      "src": "ed2b91487a0d",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
     "text.32445a6bb3c9": {
       "text": "Tulsi Chandan Incense Sticks – Large Pack",
       "src": "32445a6bb3c9",
@@ -9413,13 +9441,6 @@
       "where": "page text — first seen on wardrobe/10.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.ed2b91487a0d": {
-      "text": "Incense sticks, approximately 160 pieces.",
-      "src": "ed2b91487a0d",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
     },
     "text.117d77aa5d87": {
       "text": "Vrindavan Garden Incense Sticks – Large Pack",
@@ -11003,27 +11024,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4138b05186d2": {
-      "text": "Rādhā-Krishna Āsana 3.5&amp;quot;",
-      "src": "4138b05186d2",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0c2105c2ea6e": {
-      "text": "Description of Rādhā-Krishna Āsana 3.5&amp;quot;",
-      "src": "0c2105c2ea6e",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.0799d950b2ba": {
-      "text": "Murti of Radha Krishna seated in the lotus asana.",
-      "src": "0799d950b2ba",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
     "text.435567b14289": {
       "text": "← Previous",
       "src": "435567b14289",
@@ -11044,6 +11044,27 @@
       "where": "page text — first seen on wardrobe/11.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.4138b05186d2": {
+      "text": "Rādhā-Krishna Āsana 3.5&amp;quot;",
+      "src": "4138b05186d2",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0c2105c2ea6e": {
+      "text": "Description of Rādhā-Krishna Āsana 3.5&amp;quot;",
+      "src": "0c2105c2ea6e",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.0799d950b2ba": {
+      "text": "Murti of Radha Krishna seated in the lotus asana.",
+      "src": "0799d950b2ba",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
     },
     "text.6abfa2e47e22": {
       "text": "Hand-painted key rack, cathedral",
@@ -12662,27 +12683,6 @@
       "since": "",
       "changed": ""
     },
-    "text.9de2c807cdca": {
-      "text": "Men’s striped jacket, stand-up collar, short sleeves",
-      "src": "9de2c807cdca",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.edb9a502064b": {
-      "text": "Description of Men’s striped jacket, stand-up collar, short sleeves",
-      "src": "edb9a502064b",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.3455585c4a2e": {
-      "text": "A men’s or boys’ kurta: a short-sleeved shirt with a stand-up collar and a breast pocket. Elegant for any occasion.",
-      "src": "3455585c4a2e",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e8d03aa51709": {
       "text": "Page 11 of 18",
       "src": "e8d03aa51709",
@@ -12696,6 +12696,27 @@
       "where": "page text — first seen on wardrobe/12.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.9de2c807cdca": {
+      "text": "Men’s striped jacket, stand-up collar, short sleeves",
+      "src": "9de2c807cdca",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.edb9a502064b": {
+      "text": "Description of Men’s striped jacket, stand-up collar, short sleeves",
+      "src": "edb9a502064b",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.3455585c4a2e": {
+      "text": "A men’s or boys’ kurta: a short-sleeved shirt with a stand-up collar and a breast pocket. Elegant for any occasion.",
+      "src": "3455585c4a2e",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
     },
     "text.e70635753520": {
       "text": "Men’s jacket with white stripes on a grey background, stand-up collar, short sleeves",
@@ -14671,27 +14692,6 @@
       "since": "",
       "changed": ""
     },
-    "text.e7af44dc278b": {
-      "text": "Rudraksha keyring",
-      "src": "e7af44dc278b",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c04c77c28335": {
-      "text": "Description of Rudraksha keyring",
-      "src": "c04c77c28335",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.8066b616bc30": {
-      "text": "A lightweight key ring with rudraksha beads and bells. Rudraksha beads generate immense positive energy for the body, mind and soul. – removes…",
-      "src": "8066b616bc30",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
     "text.4ed7f0084498": {
       "text": "Page 12 of 18",
       "src": "4ed7f0084498",
@@ -14705,6 +14705,27 @@
       "where": "page text — first seen on wardrobe/13.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.e7af44dc278b": {
+      "text": "Rudraksha keyring",
+      "src": "e7af44dc278b",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c04c77c28335": {
+      "text": "Description of Rudraksha keyring",
+      "src": "c04c77c28335",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.8066b616bc30": {
+      "text": "A lightweight key ring with rudraksha beads and bells. Rudraksha beads generate immense positive energy for the body, mind and soul. – removes…",
+      "src": "8066b616bc30",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
     },
     "text.2ed5a2cc92ea": {
       "text": "‘Tear’ Keyring",
@@ -16463,27 +16484,6 @@
       "since": "",
       "changed": ""
     },
-    "text.dcd4eec79162": {
-      "text": "Women’s kurta with a cut-out neckline, short sleeves, L",
-      "src": "dcd4eec79162",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.c1adb48322a2": {
-      "text": "Description of Women’s kurta with a cut-out neckline, short sleeves, L",
-      "src": "c1adb48322a2",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.e6c557bc48d6": {
-      "text": "A lovely kurta-style blouse, with a very flattering cut and a fitted waist. Perfect for everyday wear.",
-      "src": "e6c557bc48d6",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
     "text.6de41d249856": {
       "text": "Page 13 of 18",
       "src": "6de41d249856",
@@ -16497,6 +16497,27 @@
       "where": "page text — first seen on wardrobe/14.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.dcd4eec79162": {
+      "text": "Women’s kurta with a cut-out neckline, short sleeves, L",
+      "src": "dcd4eec79162",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c1adb48322a2": {
+      "text": "Description of Women’s kurta with a cut-out neckline, short sleeves, L",
+      "src": "c1adb48322a2",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.e6c557bc48d6": {
+      "text": "A lovely kurta-style blouse, with a very flattering cut and a fitted waist. Perfect for everyday wear.",
+      "src": "e6c557bc48d6",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
     },
     "text.9845b8d6b649": {
       "text": "Women’s black and white kurta with embroidery, short sleeves",
@@ -18507,27 +18528,6 @@
       "since": "",
       "changed": ""
     },
-    "text.0af1ba742a27": {
-      "text": "Women’s white embroidered kurta, long sleeves, size L",
-      "src": "0af1ba742a27",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.8b608b6f1ae8": {
-      "text": "Description of Women’s white embroidered kurta, long sleeves, size L",
-      "src": "8b608b6f1ae8",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.29ef021a867c": {
-      "text": "A richly embroidered blouse with ruffles beneath a straight neckline. A stand-up collar with embroidery.",
-      "src": "29ef021a867c",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e5a311afe784": {
       "text": "Page 14 of 18",
       "src": "e5a311afe784",
@@ -18541,6 +18541,27 @@
       "where": "page text — first seen on wardrobe/15.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.0af1ba742a27": {
+      "text": "Women’s white embroidered kurta, long sleeves, size L",
+      "src": "0af1ba742a27",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.8b608b6f1ae8": {
+      "text": "Description of Women’s white embroidered kurta, long sleeves, size L",
+      "src": "8b608b6f1ae8",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.29ef021a867c": {
+      "text": "A richly embroidered blouse with ruffles beneath a straight neckline. A stand-up collar with embroidery.",
+      "src": "29ef021a867c",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
     },
     "text.5c87c8850e52": {
       "text": "Women’s white kurta with colourful embroidery, long sleeves",
@@ -20481,27 +20502,6 @@
       "since": "",
       "changed": ""
     },
-    "text.23ec0777e699": {
-      "text": "Orange viscose sari",
-      "src": "23ec0777e699",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.384d14e12eff": {
-      "text": "Description of Orange viscose sari",
-      "src": "384d14e12eff",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.9183ddb48531": {
-      "text": "A viscose sari with a delicate orange and white pattern.",
-      "src": "9183ddb48531",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cfc00ad12d5a": {
       "text": "Page 15 of 18",
       "src": "cfc00ad12d5a",
@@ -20515,6 +20515,27 @@
       "where": "page text — first seen on wardrobe/16.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.23ec0777e699": {
+      "text": "Orange viscose sari",
+      "src": "23ec0777e699",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.384d14e12eff": {
+      "text": "Description of Orange viscose sari",
+      "src": "384d14e12eff",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.9183ddb48531": {
+      "text": "A viscose sari with a delicate orange and white pattern.",
+      "src": "9183ddb48531",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
     },
     "text.7dba2b2bb6e9": {
       "text": "Orange and dark blue cotton sari",
@@ -22455,27 +22476,6 @@
       "since": "",
       "changed": ""
     },
-    "text.d8db80a0b43a": {
-      "text": "Black japa bag made of sturdy canvas",
-      "src": "d8db80a0b43a",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.1dec12ba1ae9": {
-      "text": "Description of Black japa bag made of sturdy canvas",
-      "src": "1dec12ba1ae9",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.4cced184ed32": {
-      "text": "High-quality, sturdy canvas in black, available in the following shades: 01 – steel (blue-grey) 02 – black",
-      "src": "4cced184ed32",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
     "text.7deafed7d0eb": {
       "text": "Page 16 of 18",
       "src": "7deafed7d0eb",
@@ -22489,6 +22489,27 @@
       "where": "page text — first seen on wardrobe/17.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.d8db80a0b43a": {
+      "text": "Black japa bag made of sturdy canvas",
+      "src": "d8db80a0b43a",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.1dec12ba1ae9": {
+      "text": "Description of Black japa bag made of sturdy canvas",
+      "src": "1dec12ba1ae9",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.4cced184ed32": {
+      "text": "High-quality, sturdy canvas in black, available in the following shades: 01 – steel (blue-grey) 02 – black",
+      "src": "4cced184ed32",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
     },
     "text.9151a5491686": {
       "text": "Japa bag made of sturdy canvas, grey",
@@ -24681,34 +24702,6 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
-    "text.644acf03ce45": {
-      "text": "African Print Maxi Summer Long Dress | Nigerian Ankara Cotton",
-      "src": "644acf03ce45",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.33eb882d3514": {
-      "text": "Description of African Print Maxi Summer Long Dress | Nigerian Ankara Cotton",
-      "src": "33eb882d3514",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.889a934d2f7a": {
-      "text": "Vibrant handmade maxi dress in a bold, colourful African print. Striking stained-glass style pattern with kaleidoscope circles in purple, teal,…",
-      "src": "889a934d2f7a",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.3f5e101a6a8e": {
-      "text": "African Print Maxi Summer Long Dress | Nigerian Ankara Cotton — open the sold Vinted listing in a new tab",
-      "src": "3f5e101a6a8e",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-27",
-      "changed": "2026-08-27"
-    },
     "text.b45621998931": {
       "text": "Page 17 of 18",
       "src": "b45621998931",
@@ -24722,6 +24715,34 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
+    },
+    "text.644acf03ce45": {
+      "text": "African Print Maxi Summer Long Dress | Nigerian Ankara Cotton",
+      "src": "644acf03ce45",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.33eb882d3514": {
+      "text": "Description of African Print Maxi Summer Long Dress | Nigerian Ankara Cotton",
+      "src": "33eb882d3514",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.889a934d2f7a": {
+      "text": "Vibrant handmade maxi dress in a bold, colourful African print. Striking stained-glass style pattern with kaleidoscope circles in purple, teal,…",
+      "src": "889a934d2f7a",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.3f5e101a6a8e": {
+      "text": "African Print Maxi Summer Long Dress | Nigerian Ankara Cotton — open the sold Vinted listing in a new tab",
+      "src": "3f5e101a6a8e",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-27",
+      "changed": "2026-08-27"
     },
     "text.368d035790ef": {
       "text": "Floral Lotus Print Kaftan Beach Cover-Up – Size L",
@@ -25591,6 +25612,13 @@
       "since": "",
       "changed": ""
     },
+    "text.45489b95c8c2": {
+      "text": "32 people have saved this on Vinted",
+      "src": "45489b95c8c2",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
     "text.3991251a9b3c": {
       "text": "Description of Vegan Bros &quot;Eating Animals Is Weird&quot; Slogan T-Shirt",
       "src": "3991251a9b3c",
@@ -25800,6 +25828,34 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.8c24ff99436a": {
+      "text": "Description of Mango Midi Summer/Party Dress | L-XL",
+      "src": "8c24ff99436a",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ca6e73be1533": {
+      "text": "Worn once. Fluid fabric. A-line design. Midi design. Cut-out. Crew neck. Sleeveless. Invisible back zip fastening. Side slits. Length 131 cm, chest…",
+      "src": "ca6e73be1533",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.143af1e7b23e": {
+      "text": "New without tags · Purple · XL",
+      "src": "143af1e7b23e",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.c36269ca5b24": {
+      "text": "Mango Midi Summer/Party Dress | L-XL — open the Vinted listing in a new tab",
+      "src": "c36269ca5b24",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
     },
     "text.74d89829c901": {
       "text": "Description of Vintage Traditional Indonesian Ulos - accessory, wall frame, rug, table runner",
@@ -27159,13 +27215,6 @@
       "since": "",
       "changed": ""
     },
-    "text.008ec7ed40fb": {
-      "text": "15 people have saved this on Vinted",
-      "src": "008ec7ed40fb",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
-    },
     "text.e6c626440847": {
       "text": "Description of African Batik Print Midi Dress | Handmade With Nigerian Ankara Cotton",
       "src": "e6c626440847",
@@ -27628,6 +27677,13 @@
       "since": "",
       "changed": ""
     },
+    "text.008ec7ed40fb": {
+      "text": "15 people have saved this on Vinted",
+      "src": "008ec7ed40fb",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
     "text.9eae39c5dd01": {
       "text": "Description of Boho Cotton Maxi Skirt | Vintage Skirt | Drawstring Waist | Indian Ethnic",
       "src": "9eae39c5dd01",
@@ -27964,20 +28020,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.2617da098a53": {
-      "text": "Vrinda Creation Necklace with a butterfly and matching earrings",
-      "src": "2617da098a53",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.08430f47f6af": {
-      "text": "Description of Vrinda Creation Necklace with a butterfly and matching earrings",
-      "src": "08430f47f6af",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.c6a7f0fa47dd": {
       "text": "Page 2 of 18",
       "src": "c6a7f0fa47dd",
@@ -27991,6 +28033,20 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.2617da098a53": {
+      "text": "Vrinda Creation Necklace with a butterfly and matching earrings",
+      "src": "2617da098a53",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.08430f47f6af": {
+      "text": "Description of Vrinda Creation Necklace with a butterfly and matching earrings",
+      "src": "08430f47f6af",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.e1a1854543c6": {
       "text": "6.5-inch statue of Srila Prabhupada",
@@ -29742,27 +29798,6 @@
       "since": "",
       "changed": ""
     },
-    "text.9525022812d2": {
-      "text": "Medimix Ayurvedic Soap 75 g",
-      "src": "9525022812d2",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0188afa9f688": {
-      "text": "Description of Medimix Ayurvedic Soap 75 g",
-      "src": "0188afa9f688",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.ea73e74656cf": {
-      "text": "Medimix Classic, with its blend of 18 Ayurvedic herbs, nourishes and protects your skin. This traditionally handcrafted 18-herb Ayurvedic soap,…",
-      "src": "ea73e74656cf",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e72b61a125f4": {
       "text": "Page 3 of 18",
       "src": "e72b61a125f4",
@@ -29776,6 +29811,27 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.9525022812d2": {
+      "text": "Medimix Ayurvedic Soap 75 g",
+      "src": "9525022812d2",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0188afa9f688": {
+      "text": "Description of Medimix Ayurvedic Soap 75 g",
+      "src": "0188afa9f688",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.ea73e74656cf": {
+      "text": "Medimix Classic, with its blend of 18 Ayurvedic herbs, nourishes and protects your skin. This traditionally handcrafted 18-herb Ayurvedic soap,…",
+      "src": "ea73e74656cf",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
     },
     "text.920ad678b8b9": {
       "text": "Pleated skirt with gold ribbons II, 9 types",
@@ -31464,20 +31520,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.27e1aab1900c": {
-      "text": "Majmua Roll-on 5 ml",
-      "src": "27e1aab1900c",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.bd082601a659": {
-      "text": "Description of Majmua Roll-on 5 ml",
-      "src": "bd082601a659",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.564b9e644a95": {
       "text": "Page 4 of 18",
       "src": "564b9e644a95",
@@ -31491,6 +31533,20 @@
       "where": "page text — first seen on wardrobe/5.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.27e1aab1900c": {
+      "text": "Majmua Roll-on 5 ml",
+      "src": "27e1aab1900c",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.bd082601a659": {
+      "text": "Description of Majmua Roll-on 5 ml",
+      "src": "bd082601a659",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.1dffb0fc99b5": {
       "text": "Azzaro Roll-on 5 ml",
@@ -33081,27 +33137,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4d0053abfa26": {
-      "text": "Blue-green strappy dress, M/L",
-      "src": "4d0053abfa26",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0e2abce03c37": {
-      "text": "Description of Blue-green strappy dress, M/L",
-      "src": "0e2abce03c37",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.55c81a4b330c": {
-      "text": "A short, lightweight summer dress made from 100% cotton, with elasticated panels at the back to ensure a flattering fit.",
-      "src": "55c81a4b330c",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c5fef85c51c0": {
       "text": "Page 5 of 18",
       "src": "c5fef85c51c0",
@@ -33115,6 +33150,27 @@
       "where": "page text — first seen on wardrobe/6.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.4d0053abfa26": {
+      "text": "Blue-green strappy dress, M/L",
+      "src": "4d0053abfa26",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0e2abce03c37": {
+      "text": "Description of Blue-green strappy dress, M/L",
+      "src": "0e2abce03c37",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.55c81a4b330c": {
+      "text": "A short, lightweight summer dress made from 100% cotton, with elasticated panels at the back to ensure a flattering fit.",
+      "src": "55c81a4b330c",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
     },
     "text.931e8364042c": {
       "text": "Kantimála 1st series, gold, between the rollers 1",
@@ -34670,27 +34726,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.699fdc4f25d5": {
-      "text": "Large round plate, 27 cm in diameter, Richi Gold",
-      "src": "699fdc4f25d5",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.2f4a2b7ea9a6": {
-      "text": "Description of Large round plate, 27 cm in diameter, Richi Gold",
-      "src": "2f4a2b7ea9a6",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.a107c130acf3": {
-      "text": "Stainless steel plate.",
-      "src": "a107c130acf3",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
     "text.a2d6a53f5283": {
       "text": "Page 6 of 18",
       "src": "a2d6a53f5283",
@@ -34704,6 +34739,27 @@
       "where": "page text — first seen on wardrobe/7.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.699fdc4f25d5": {
+      "text": "Large round plate, 27 cm in diameter, Richi Gold",
+      "src": "699fdc4f25d5",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.2f4a2b7ea9a6": {
+      "text": "Description of Large round plate, 27 cm in diameter, Richi Gold",
+      "src": "2f4a2b7ea9a6",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.a107c130acf3": {
+      "text": "Stainless steel plate.",
+      "src": "a107c130acf3",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
     },
     "text.27838e46b03e": {
       "text": "Round plate, diameter 27.5 cm, Fence 12",
@@ -36497,20 +36553,6 @@
       "since": "",
       "changed": ""
     },
-    "text.9c80d4a5f9eb": {
-      "text": "Wooden sticker featuring Krishna and Radha with a little cow",
-      "src": "9c80d4a5f9eb",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.ad6b7d19db2e": {
-      "text": "Description of Wooden sticker featuring Krishna and Radha with a little cow",
-      "src": "ad6b7d19db2e",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.538c168d477d": {
       "text": "Page 7 of 18",
       "src": "538c168d477d",
@@ -36524,6 +36566,20 @@
       "where": "page text — first seen on wardrobe/8.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.9c80d4a5f9eb": {
+      "text": "Wooden sticker featuring Krishna and Radha with a little cow",
+      "src": "9c80d4a5f9eb",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ad6b7d19db2e": {
+      "text": "Description of Wooden sticker featuring Krishna and Radha with a little cow",
+      "src": "ad6b7d19db2e",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.4ddbbb8947ac": {
       "text": "Wooden sticker: Krishna and Radha, blue",
@@ -38100,27 +38156,6 @@
       "since": "",
       "changed": ""
     },
-    "text.2ff9c1c99f0a": {
-      "text": "Kantimála, 1st series: small cylinders between round/cylindrical beads",
-      "src": "2ff9c1c99f0a",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e1f92e2bfac6": {
-      "text": "Description of Kantimála, 1st series: small cylinders between round/cylindrical beads",
-      "src": "e1f92e2bfac6",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.573323e63415": {
-      "text": "A single-strand kantimala made from the sacred tulasi shrub. It offers protection. Choose from two variants, 01 and 02: 01 – 2 cylindrical beads and…",
-      "src": "573323e63415",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
     "text.58bf6c203a7c": {
       "text": "Page 8 of 18",
       "src": "58bf6c203a7c",
@@ -38134,6 +38169,27 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.2ff9c1c99f0a": {
+      "text": "Kantimála, 1st series: small cylinders between round/cylindrical beads",
+      "src": "2ff9c1c99f0a",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e1f92e2bfac6": {
+      "text": "Description of Kantimála, 1st series: small cylinders between round/cylindrical beads",
+      "src": "e1f92e2bfac6",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.573323e63415": {
+      "text": "A single-strand kantimala made from the sacred tulasi shrub. It offers protection. Choose from two variants, 01 and 02: 01 – 2 cylindrical beads and…",
+      "src": "573323e63415",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
     },
     "text.dee21b41f6ef": {
       "text": "Red and gold stripes",
@@ -39751,20 +39807,6 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "",
       "changed": ""
-    },
-    "text.19c23f6f092f": {
-      "text": "Super Rose Incense Sticks – Large Pack",
-      "src": "19c23f6f092f",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.7384b8aa2fa2": {
-      "text": "Description of Super Rose Incense Sticks – Large Pack",
-      "src": "7384b8aa2fa2",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
     },
     "text.1c27a1b96faa": {
       "text": "Page 9 of 18",

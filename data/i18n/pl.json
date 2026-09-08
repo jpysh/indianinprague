@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-07T05:17:41.869Z",
-  "count": 6138,
+  "generated": "2026-09-08T07:04:35.137Z",
+  "count": 6151,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -22318,8 +22318,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "Filozofowie o typowych współczesnych problemach dnia codziennego: „Co zrobiłby Nietzsche?” | Psychologia i filozofia",
-      "src": "cbf2d7493ef9"
+      "text": "Co zrobiłby Nietzsche? Typowe współczesne problemy dnia codziennego | Psychologia, filozofia",
+      "src": "0d22e2642fff"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovic – buty do tenisa i padla Asics Solution Swift FF, niebrudzące, z podeszwą FlyteFoam CM, rozmiar 28,5 (45 euro)",
@@ -24062,12 +24062,12 @@
       "src": "45bddf2db3c9"
     },
     "item.9881678354.title": {
-      "text": "Książka Davida Mitchella „Atlas chmur” – nominowana do nagrody Bookera – wydanie filmowe, idealna do intensywnego czytania",
-      "src": "8fb95afa9107"
+      "text": "Bestseller Davida Mitchella, nominowany do nagrody Bookera – „Atlas chmur” – wydanie filmowe",
+      "src": "a1b13405ff71"
     },
     "item.9881670398.title": {
-      "text": "naprawdę wnikliwa książka poświęcona krajom Południa – „In Spite of the Gods” autorstwa Edwarda Luce’a – uznana analiza współczesnych Indii",
-      "src": "54d03bed21ca"
+      "text": "rzadka książka poświęcona krajom Południa – „In Spite of the Gods” autorstwa Edwarda Luce’a – uznana analiza współczesnych Indii",
+      "src": "95380c27f3fa"
     },
     "item.9882151449.description": {
       "text": "Plecak inspirowany kulturą Azteków, utrzymany w ziemistych odcieniach, z kolorowymi geometrycznymi wzorami i podszewką w intensywnym brązie.\nRegulowane paski na ramię.\nPrzednie kieszenie z klapką zapewniające łatwy dostęp.\nDetale w postaci klamer.\nSwobodna estetyka w stylu boho, inspirowana motywami plemiennymi.\nIdealny do codziennego noszenia, na festiwale i w podróże.",
@@ -24560,6 +24560,58 @@
     "text.c14a810aea41": {
       "text": "Ocena 5,0 na 5 na podstawie 56 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
       "src": "c14a810aea41"
+    },
+    "item.9920405528.title": {
+      "text": "Breloczek w stylu retro i vintage z motywem kasety | Prezent dla miłośnika muzyki | Kolekcja „Audiotape Hipster”",
+      "src": "12c74807a830"
+    },
+    "item.9920405528.description": {
+      "text": "Breloczek ze stali nierdzewnej w stylu vintage w kształcie kasety – idealny prezent dla DJ-a, muzyka lub miłośnika muzyki",
+      "src": "dc4dbc52d5df"
+    },
+    "text.3dc86cb84956": {
+      "text": "8 sztuk",
+      "src": "3dc86cb84956"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "Nowe, z metkami · Srebrne",
+      "src": "ca1cd7cdd5f9"
+    },
+    "text.04be3ab9d6ea": {
+      "text": "1651 przedmiotów na sprzedaż · 69 sprzedanych",
+      "src": "04be3ab9d6ea"
+    },
+    "text.640a954710af": {
+      "text": "Opis książki „Co zrobiłby Nietzsche?” – typowe współczesne problemy dnia codziennego | Psychologia, filozofia",
+      "src": "640a954710af"
+    },
+    "text.0119d7b9b81b": {
+      "text": "Opis rzadkiej książki poświęconej krajom globalnego południa: „In Spite of the Gods” autorstwa Edwarda Luce’a – uznana analiza współczesnych Indii",
+      "src": "0119d7b9b81b"
+    },
+    "text.bd1377948c39": {
+      "text": "Opis breloczka do kluczy „Nostalgia Retro Vintage Cassette” | Prezent dla miłośnika muzyki | Kolekcja „Audiotape Hipster”",
+      "src": "bd1377948c39"
+    },
+    "text.399cecdabdb6": {
+      "text": "Opis książki Davida Mitchella „Atlas chmur” – nominowanej do nagrody Bookera, w wydaniu filmowym",
+      "src": "399cecdabdb6"
+    },
+    "text.3a3e7576dd3d": {
+      "text": "Co zrobiłby Nietzsche? Typowe współczesne problemy dnia codziennego | Psychologia i filozofia — proszę otworzyć stronę Vinted w nowej karcie",
+      "src": "3a3e7576dd3d"
+    },
+    "text.2be3d60a7724": {
+      "text": "rzadka książka poświęcona krajom Południa: „In Spite of the Gods” Edwarda Luce’a – uznana analiza współczesnych Indii — proszę otworzyć wpis w serwisie „Vinted” w nowej karcie",
+      "src": "2be3d60a7724"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Breloczek w stylu retro i vintage z kasetą | Prezent dla miłośnika muzyki | Kolekcja „Audiotape Hipster” — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "b06e51e97ffb"
+    },
+    "text.3f75c4d27c90": {
+      "text": "Bestseller Davida Mitchella „Atlas chmur”, nominowany do nagrody Bookera – wydanie filmowe — proszę otworzyć ofertę na stronie Vinted w nowej karcie",
+      "src": "3f75c4d27c90"
     }
   }
 }

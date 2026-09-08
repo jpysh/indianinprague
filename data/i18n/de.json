@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-07T05:17:40.826Z",
-  "count": 6142,
+  "generated": "2026-09-08T07:04:33.177Z",
+  "count": 6155,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -22334,8 +22334,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "Philosophen zu alltäglichen Problemen der heutigen Zeit: Was würde Nietzsche tun? | Psychologie, Philosophie",
-      "src": "cbf2d7493ef9"
+      "text": "Was würde Nietzsche tun? Alltägliche Probleme der heutigen Zeit | Psychologie, Philosophie",
+      "src": "0d22e2642fff"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovic Asics Solution Swift FF Tennis- und Padel-Schuhe, spurfrei, FlyteFoam CM, Größe 28,5, 45 EURO",
@@ -24078,12 +24078,12 @@
       "src": "45bddf2db3c9"
     },
     "item.9881678354.title": {
-      "text": "„Cloud Atlas“ von David Mitchell, nominiert für den Booker-Preis – Ausgabe zur Verfilmung, ideal zum intensiven Lesen",
-      "src": "8fb95afa9107"
+      "text": "Bestseller, für den Booker-Preis nominiert: David Mitchell – „Cloud Atlas“ – Ausgabe zur Verfilmung",
+      "src": "a1b13405ff71"
     },
     "item.9881670398.title": {
-      "text": "Ein wahrhaft aufschlussreiches Buch über den Globalen Süden: Edward Luce – „In Spite of the Gods“ – Eine vielgelobte Analyse des modernen Indiens",
-      "src": "54d03bed21ca"
+      "text": "Seltenes Buch über den Globalen Süden: Edward Luce – „In Spite of the Gods“ – Eine hochgelobte Analyse des modernen Indiens",
+      "src": "95380c27f3fa"
     },
     "item.9882151449.description": {
       "text": "Rucksack im Azteken-Stil mit Erdtönen, farbenfrohen geometrischen Mustern und einem satten braunen Innenfutter.\nVerstellbare Schulterriemen.\nFronttaschen mit Klappe für einfachen Zugriff.\nSchnallenverzierungen.\nLässiger Boho-Stil mit Tribal-Inspiration.\nPerfekt für den Alltag, Festivals und Reisen.",
@@ -24576,6 +24576,58 @@
     "text.c14a810aea41": {
       "text": "Bewertung: 5,0 von 5, basierend auf 56 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
       "src": "c14a810aea41"
+    },
+    "item.9920405528.title": {
+      "text": "Nostalgie-Retro-Vintage-Kassetten-Schlüsselanhänger | Geschenk für Musikliebhaber | Audiotape-Hipster-Kollektion",
+      "src": "12c74807a830"
+    },
+    "item.9920405528.description": {
+      "text": "Schlüsselanhänger im Vintage-Stil aus Edelstahl in Kassettenform – das perfekte Geschenk für einen DJ, Musiker oder Musikliebhaber",
+      "src": "dc4dbc52d5df"
+    },
+    "text.3dc86cb84956": {
+      "text": "8 Stück",
+      "src": "3dc86cb84956"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "Neu mit Etikett · Silber",
+      "src": "ca1cd7cdd5f9"
+    },
+    "text.04be3ab9d6ea": {
+      "text": "1651 Artikel zum Verkauf · 69 verkauft",
+      "src": "04be3ab9d6ea"
+    },
+    "text.640a954710af": {
+      "text": "Beschreibung von „Was würde Nietzsche tun?“ – Typische moderne Alltagsprobleme | Psychologie, Philosophie",
+      "src": "640a954710af"
+    },
+    "text.0119d7b9b81b": {
+      "text": "Beschreibung des seltenen Buches aus dem Globalen Süden: Edward Luce – „In Spite of the Gods“ – Eine hochgelobte Analyse des modernen Indiens",
+      "src": "0119d7b9b81b"
+    },
+    "text.bd1377948c39": {
+      "text": "Beschreibung des Nostalgie-Retro-Vintage-Kassetten-Schlüsselanhängers | Geschenk für Musikliebhaber | Audiotape-Hipster-Kollektion",
+      "src": "bd1377948c39"
+    },
+    "text.399cecdabdb6": {
+      "text": "Beschreibung des Buches „Cloud Atlas“ von David Mitchell, das in die engere Auswahl für den Booker-Preis kam – Ausgabe zur Verfilmung",
+      "src": "399cecdabdb6"
+    },
+    "text.3a3e7576dd3d": {
+      "text": "Was würde Nietzsche tun? Häufige moderne Alltagsprobleme | Psychologie, Philosophie – öffnen Sie den Eintrag „Vinted“ in einem neuen Tab",
+      "src": "3a3e7576dd3d"
+    },
+    "text.2be3d60a7724": {
+      "text": "Seltenes Buch aus dem Globalen Süden: Edward Luce, „In Spite of the Gods“ – eine hochgelobte Analyse des modernen Indiens – öffnen Sie den Eintrag auf Vinted in einem neuen Tab",
+      "src": "2be3d60a7724"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Nostalgie-Retro-Vintage-Kassetten-Schlüsselanhänger | Geschenk für Musikliebhaber | Audiotape-Hipster-Kollektion – öffnen Sie den Artikel „Vinted“ in einem neuen Tab",
+      "src": "b06e51e97ffb"
+    },
+    "text.3f75c4d27c90": {
+      "text": "Bestseller, für den Booker-Preis nominiert: David Mitchell – „Cloud Atlas“, Ausgabe zur Verfilmung – öffnen Sie den Eintrag bei „Vinted“ in einem neuen Tab",
+      "src": "3f75c4d27c90"
     }
   }
 }

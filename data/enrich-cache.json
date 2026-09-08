@@ -4621,5 +4621,30 @@
       "colorRaw": "",
       "vintedCategory": "Knihy, hudba, video Literatura faktu"
     }
+  },
+  "9920405528": {
+    "description": "Stainless Steel Vintage Cassette Keychain - Perfect Gift for a DJ, Musician, or Music Lover",
+    "vintedCategory": "Hobbies & collectables Music memorabilia",
+    "colorRaw": "Silver",
+    "crumbs": [
+      {
+        "id": 4824,
+        "name": "Hobbies & collectables"
+      },
+      {
+        "id": 4901,
+        "name": "Memorabilia"
+      },
+      {
+        "id": 4903,
+        "name": "Music memorabilia"
+      }
+    ],
+    "condition": "New with tags",
+    "cs": {
+      "condition": "Nový s visačkou",
+      "colorRaw": "Stříbrná",
+      "vintedCategory": "Koníčky a sběratelství Hudební memorabilie"
+    }
   }
 }

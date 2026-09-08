@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-07T05:17:41.492Z",
-  "count": 6138,
+  "generated": "2026-09-08T07:04:34.510Z",
+  "count": 6151,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -22318,8 +22318,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "Filósofos y los problemas cotidianos comunes de la vida moderna: «¿Qué haría Nietzsche?» | Psicología y filosofía",
-      "src": "cbf2d7493ef9"
+      "text": "¿Qué haría Nietzsche? Problemas cotidianos comunes de la vida moderna | Psicología y filosofía",
+      "src": "0d22e2642fff"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovic: Zapatillas de tenis y pádel Asics Solution Swift FF, que no dejan marcas, con tecnología FlyteFoam CM, talla 28,5 (45 euros)",
@@ -24062,12 +24062,12 @@
       "src": "45bddf2db3c9"
     },
     "item.9881678354.title": {
-      "text": "Lectura intensiva de «El atlas de las nubes», de David Mitchell, finalista del Premio Booker, edición para la gran pantalla",
-      "src": "8fb95afa9107"
+      "text": "«El atlas de las nubes», de David Mitchell, superventas y finalista del Premio Booker, edición para la gran pantalla",
+      "src": "a1b13405ff71"
     },
     "item.9881670398.title": {
-      "text": "Un libro verdaderamente revelador sobre el Sur Global: «In Spite of the Gods», de Edward Luce, un aclamado análisis de la India moderna",
-      "src": "54d03bed21ca"
+      "text": "Libro poco común sobre el Sur Global: «A pesar de los dioses», de Edward Luce, un aclamado análisis de la India moderna",
+      "src": "95380c27f3fa"
     },
     "item.9882151449.description": {
       "text": "Mochila de inspiración azteca, con tonos tierra, coloridos motivos geométricos y un forro de un intenso color marrón.\nCorreas ajustables para los hombros.\nBolsillos con solapa en la parte delantera para un fácil acceso.\nDetalles de hebillas.\nEstilo bohemio desenfadado de inspiración tribal.\nPerfecta para el día a día, festivales y viajes.",
@@ -24560,6 +24560,58 @@
     "text.c14a810aea41": {
       "text": "Valoración de 5,0 sobre 5 según 56 opiniones de compradores. Puede consultarlas en Vinted (se abre en una nueva pestaña).",
       "src": "c14a810aea41"
+    },
+    "item.9920405528.title": {
+      "text": "Llavero retro vintage con casete | Regalo para amantes de la música | Colección «Audiotape Hipster»",
+      "src": "12c74807a830"
+    },
+    "item.9920405528.description": {
+      "text": "Llavero vintage de acero inoxidable con forma de casete: el regalo perfecto para un DJ, un músico o un amante de la música",
+      "src": "dc4dbc52d5df"
+    },
+    "text.3dc86cb84956": {
+      "text": "8 unidades",
+      "src": "3dc86cb84956"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "Nuevo con etiquetas · Plata",
+      "src": "ca1cd7cdd5f9"
+    },
+    "text.04be3ab9d6ea": {
+      "text": "1651 piezas a la venta · 69 vendidas",
+      "src": "04be3ab9d6ea"
+    },
+    "text.640a954710af": {
+      "text": "Descripción de «¿Qué haría Nietzsche?»: problemas cotidianos comunes de la vida moderna | Psicología y filosofía",
+      "src": "640a954710af"
+    },
+    "text.0119d7b9b81b": {
+      "text": "Descripción de un libro poco común sobre el Sur Global: «In Spite of the Gods», de Edward Luce, un aclamado análisis de la India moderna",
+      "src": "0119d7b9b81b"
+    },
+    "text.bd1377948c39": {
+      "text": "Descripción del llavero retro vintage con casete «Nostalgia» | Regalo para amantes de la música | Colección «Audiotape Hipster»",
+      "src": "bd1377948c39"
+    },
+    "text.399cecdabdb6": {
+      "text": "Descripción de la edición cinematográfica de «El atlas de las nubes», de David Mitchell, obra finalista del Premio Booker y éxito de ventas",
+      "src": "399cecdabdb6"
+    },
+    "text.3a3e7576dd3d": {
+      "text": "¿Qué haría Nietzsche? Problemas cotidianos comunes de la vida moderna | Psicología y filosofía — abra la entrada «Vinted» en una nueva pestaña",
+      "src": "3a3e7576dd3d"
+    },
+    "text.2be3d60a7724": {
+      "text": "Libro poco común sobre el Sur Global: «In Spite of the Gods», de Edward Luce, un aclamado análisis de la India moderna — abra la ficha de «Vinted» en una nueva pestaña",
+      "src": "2be3d60a7724"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Llavero retro vintage con casete | Regalo para amantes de la música | Colección «Audiotape Hipster» — abra el anuncio de «Vinted» en una nueva pestaña",
+      "src": "b06e51e97ffb"
+    },
+    "text.3f75c4d27c90": {
+      "text": "«Cloud Atlas», de David Mitchell, best seller y finalista del Premio Booker, edición para la gran pantalla — abra el anuncio de Vinted en una nueva pestaña",
+      "src": "3f75c4d27c90"
     }
   }
 }

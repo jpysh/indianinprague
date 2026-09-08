@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-07T05:17:40.488Z",
-  "count": 6138,
+  "generated": "2026-09-08T07:04:32.605Z",
+  "count": 6151,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -22318,8 +22318,8 @@
       "src": "2bad17b09e2b"
     },
     "item.9843116673.title": {
-      "text": "Des philosophes s&#x27;expriment sur des problèmes quotidiens courants : « Que ferait Nietzsche ? » | Psychologie, philosophie",
-      "src": "cbf2d7493ef9"
+      "text": "Que ferait Nietzsche ? Problèmes courants de la vie quotidienne | Psychologie, philosophie",
+      "src": "0d22e2642fff"
     },
     "item.9820649736.title": {
       "text": "Novak Djokovic - Chaussures de tennis et de padel Asics Solution Swift FF, non marquantes, technologie FlyteFoam CM, taille 28,5, 45 (EURO)",
@@ -24062,12 +24062,12 @@
       "src": "45bddf2db3c9"
     },
     "item.9881678354.title": {
-      "text": "Lecture d&#x27;une traite : « Cloud Atlas » de David Mitchell, finaliste du prix Booker, édition « Major Motion Picture »",
-      "src": "8fb95afa9107"
+      "text": "« Cloud Atlas » de David Mitchell, best-seller sélectionné pour le Booker Prize, édition spéciale cinéma",
+      "src": "a1b13405ff71"
     },
     "item.9881670398.title": {
-      "text": "Un ouvrage véritablement perspicace sur les pays du Sud : « In Spite of the Gods » d&#x27;Edward Luce, une analyse très appréciée de l&#x27;Inde moderne",
-      "src": "54d03bed21ca"
+      "text": "Un ouvrage rare sur les pays du Sud : « In Spite of the Gods » d&#x27;Edward Luce, une analyse saluée de l&#x27;Inde moderne",
+      "src": "95380c27f3fa"
     },
     "item.9882151449.description": {
       "text": "Sac à dos d&#x27;inspiration aztèque, aux tons terreux, aux motifs géométriques colorés et à la doublure d&#x27;un brun intense.\nBretelles réglables.\nPoches à rabat sur le devant pour un accès facile.\nDétails de boucles.\nEsthétique bohème décontractée d&#x27;inspiration tribale.\nIdéal pour un usage quotidien, les festivals et les voyages.",
@@ -24560,6 +24560,58 @@
     "text.c14a810aea41": {
       "text": "Note de 5,0 sur 5 d&#x27;après 56 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
       "src": "c14a810aea41"
+    },
+    "item.9920405528.title": {
+      "text": "Porte-clés rétro vintage en forme de cassette | Cadeau pour les amateurs de musique | Collection « Audiotape Hipster »",
+      "src": "12c74807a830"
+    },
+    "item.9920405528.description": {
+      "text": "Porte-clés vintage en forme de cassette en acier inoxydable - Le cadeau idéal pour un DJ, un musicien ou un mélomane",
+      "src": "dc4dbc52d5df"
+    },
+    "text.3dc86cb84956": {
+      "text": "8 pièces",
+      "src": "3dc86cb84956"
+    },
+    "text.ca1cd7cdd5f9": {
+      "text": "Neuf, avec étiquette · Argent",
+      "src": "ca1cd7cdd5f9"
+    },
+    "text.04be3ab9d6ea": {
+      "text": "1 651 pièces en vente · 69 vendues",
+      "src": "04be3ab9d6ea"
+    },
+    "text.640a954710af": {
+      "text": "Description de « Que ferait Nietzsche ? » : problèmes courants de la vie quotidienne moderne | Psychologie, philosophie",
+      "src": "640a954710af"
+    },
+    "text.0119d7b9b81b": {
+      "text": "Description d&#x27;un ouvrage rare consacré au Sud du monde : « In Spite of the Gods » d&#x27;Edward Luce, une analyse très appréciée de l&#x27;Inde moderne",
+      "src": "0119d7b9b81b"
+    },
+    "text.bd1377948c39": {
+      "text": "Description du porte-clés rétro « Nostalgia » en forme de cassette | Cadeau pour les passionnés de musique | Collection « Audiotape Hipster »",
+      "src": "bd1377948c39"
+    },
+    "text.399cecdabdb6": {
+      "text": "Description de l’édition « Major Motion Picture » du livre *Cloud Atlas* de David Mitchell, finaliste du Booker Prize",
+      "src": "399cecdabdb6"
+    },
+    "text.3a3e7576dd3d": {
+      "text": "« Que ferait Nietzsche ? » Problèmes courants de la vie quotidienne | Psychologie, philosophie — ouvrez la page Vinted dans un nouvel onglet",
+      "src": "3a3e7576dd3d"
+    },
+    "text.2be3d60a7724": {
+      "text": "Un ouvrage rare sur les pays du Sud : « In Spite of the Gods » d’Edward Luce, une analyse saluée de l’Inde contemporaine — ouvrez la fiche « Vinted » dans un nouvel onglet",
+      "src": "2be3d60a7724"
+    },
+    "text.b06e51e97ffb": {
+      "text": "Porte-clés rétro vintage « Nostalgia » en forme de cassette | Cadeau pour les passionnés de musique | Collection « Audiotape Hipster » — ouvrez la fiche produit « Vinted » dans un nouvel onglet",
+      "src": "b06e51e97ffb"
+    },
+    "text.3f75c4d27c90": {
+      "text": "« Cloud Atlas » de David Mitchell, best-seller finaliste du Booker Prize, édition spéciale adaptée au grand écran — ouvrez la fiche du produit sur Vinted dans un nouvel onglet",
+      "src": "3f75c4d27c90"
     }
   }
 }
