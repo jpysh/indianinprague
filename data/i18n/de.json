@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-08T07:04:33.177Z",
-  "count": 6155,
+  "generated": "2026-09-09T05:17:15.035Z",
+  "count": 6161,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -24628,6 +24628,30 @@
     "text.3f75c4d27c90": {
       "text": "Bestseller, für den Booker-Preis nominiert: David Mitchell – „Cloud Atlas“, Ausgabe zur Verfilmung – öffnen Sie den Eintrag bei „Vinted“ in einem neuen Tab",
       "src": "3f75c4d27c90"
+    },
+    "text.29f371413eb0": {
+      "text": "57 Bewertungen auf Vinted →",
+      "src": "29f371413eb0"
+    },
+    "text.0ff5ae8ce74f": {
+      "text": "1.650 Artikel zum Verkauf · 70 verkauft",
+      "src": "0ff5ae8ce74f"
+    },
+    "text.a29fa5f3a1b8": {
+      "text": "35 Personen haben diesen Beitrag auf Vinted gespeichert",
+      "src": "a29fa5f3a1b8"
+    },
+    "text.45bddf2db3c9": {
+      "text": "Feministischer Schlüsselanhänger – Boho-Geschenke – Frida Kahlo – Metall-Schlüsselanhänger mit Emaille – Hippie-Flair",
+      "src": "45bddf2db3c9"
+    },
+    "text.2b86103134e0": {
+      "text": "Bewertung: 5,0 von 5, basierend auf 57 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "2b86103134e0"
+    },
+    "text.2d5c26638c04": {
+      "text": "Feministischer Schlüsselanhänger, Boho-Geschenke, Frida Kahlo, Metall-Emaille-Schlüsselanhänger, Hippie-Flair – öffnen Sie das verkaufte Angebot „Vinted“ in einem neuen Tab",
+      "src": "2d5c26638c04"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-08T07:04:35.137Z",
-  "count": 6151,
+  "generated": "2026-09-09T05:17:16.609Z",
+  "count": 6157,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -24612,6 +24612,30 @@
     "text.3f75c4d27c90": {
       "text": "Bestseller Davida Mitchella „Atlas chmur”, nominowany do nagrody Bookera – wydanie filmowe — proszę otworzyć ofertę na stronie Vinted w nowej karcie",
       "src": "3f75c4d27c90"
+    },
+    "text.29f371413eb0": {
+      "text": "57 recenzji na stronie Vinted →",
+      "src": "29f371413eb0"
+    },
+    "text.0ff5ae8ce74f": {
+      "text": "1650 sztuk na sprzedaż · 70 sprzedanych",
+      "src": "0ff5ae8ce74f"
+    },
+    "text.a29fa5f3a1b8": {
+      "text": "35 osób dodało tę pozycję do ulubionych na stronie Vinted",
+      "src": "a29fa5f3a1b8"
+    },
+    "text.45bddf2db3c9": {
+      "text": "Feministyczny brelok do kluczy – prezenty w stylu boho: metalowy emaliowany brelok z wizerunkiem Fridy Kahlo w stylu hippisowskim",
+      "src": "45bddf2db3c9"
+    },
+    "text.2b86103134e0": {
+      "text": "Ocena 5,0 na 5 na podstawie 57 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "2b86103134e0"
+    },
+    "text.2d5c26638c04": {
+      "text": "Feministyczny brelok – prezenty w stylu boho: metalowy emaliowany brelok z wizerunkiem Fridy Kahlo w stylu hippisowskim — proszę otworzyć wyprzedaną ofertę na stronie Vinted w nowej karcie",
+      "src": "2d5c26638c04"
     }
   }
 }

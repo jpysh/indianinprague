@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-08T07:04:33.706Z",
-  "count": 6151,
+  "generated": "2026-09-09T05:17:15.471Z",
+  "count": 6157,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -24612,6 +24612,30 @@
     "text.3f75c4d27c90": {
       "text": "&quot;Cloud Atlas&quot; di David Mitchell, bestseller finalista al Booker Prize, edizione dedicata al film — apra la scheda &quot;Vinted&quot; in una nuova scheda",
       "src": "3f75c4d27c90"
+    },
+    "text.29f371413eb0": {
+      "text": "57 recensioni su Vinted →",
+      "src": "29f371413eb0"
+    },
+    "text.0ff5ae8ce74f": {
+      "text": "1650 pezzi in vendita · 70 venduti",
+      "src": "0ff5ae8ce74f"
+    },
+    "text.a29fa5f3a1b8": {
+      "text": "35 persone hanno aggiunto questa pagina ai preferiti su Vinted",
+      "src": "a29fa5f3a1b8"
+    },
+    "text.45bddf2db3c9": {
+      "text": "Portachiavi femminista, regali in stile boho: portachiavi in metallo smaltato con Frida Kahlo, atmosfera hippie",
+      "src": "45bddf2db3c9"
+    },
+    "text.2b86103134e0": {
+      "text": "Valutato 5,0 su 5 in base a 57 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "2b86103134e0"
+    },
+    "text.2d5c26638c04": {
+      "text": "Portachiavi femminista, regali in stile boho, portachiavi in metallo smaltato con Frida Kahlo, atmosfera hippie — apra l’annuncio “Vinted” (esaurito) in una nuova scheda",
+      "src": "2d5c26638c04"
     }
   }
 }

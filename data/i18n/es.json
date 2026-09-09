@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-08T07:04:34.510Z",
-  "count": 6151,
+  "generated": "2026-09-09T05:17:15.944Z",
+  "count": 6157,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -24612,6 +24612,30 @@
     "text.3f75c4d27c90": {
       "text": "«Cloud Atlas», de David Mitchell, best seller y finalista del Premio Booker, edición para la gran pantalla — abra el anuncio de Vinted en una nueva pestaña",
       "src": "3f75c4d27c90"
+    },
+    "text.29f371413eb0": {
+      "text": "57 opiniones en Vinted →",
+      "src": "29f371413eb0"
+    },
+    "text.0ff5ae8ce74f": {
+      "text": "1650 piezas a la venta · 70 vendidas",
+      "src": "0ff5ae8ce74f"
+    },
+    "text.a29fa5f3a1b8": {
+      "text": "35 personas han guardado esto en Vinted",
+      "src": "a29fa5f3a1b8"
+    },
+    "text.45bddf2db3c9": {
+      "text": "Llavero feminista, regalos de estilo boho: llavero metálico esmaltado de Frida Kahlo, estilo hippie",
+      "src": "45bddf2db3c9"
+    },
+    "text.2b86103134e0": {
+      "text": "Valoración de 5,0 sobre 5 según 57 opiniones de compradores. Puede leerlas en Vinted (se abre en una pestaña nueva).",
+      "src": "2b86103134e0"
+    },
+    "text.2d5c26638c04": {
+      "text": "Llavero feminista, regalos de estilo boho: llavero metálico esmaltado de Frida Kahlo con aire hippie — abra el anuncio vendido de Vinted en una nueva pestaña",
+      "src": "2d5c26638c04"
     }
   }
 }
