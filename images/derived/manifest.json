@@ -60918,5 +60918,95 @@
         "webp": "images/derived/vinted-9942518252-3-400.webp"
       }
     ]
+  },
+  "images/vinted-9950092080-1.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "735d6639",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-9950092080-1-400.jpg",
+        "webp": "images/derived/vinted-9950092080-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-9950092080-2.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "37e1cd45",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-9950092080-2-400.jpg",
+        "webp": "images/derived/vinted-9950092080-2-400.webp"
+      }
+    ]
+  },
+  "images/vinted-9950092080-3.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "0b92bd1e",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-9950092080-3-400.jpg",
+        "webp": "images/derived/vinted-9950092080-3-400.webp"
+      }
+    ]
+  },
+  "images/vinted-9952595078-1.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "f04cf298",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-9952595078-1-400.jpg",
+        "webp": "images/derived/vinted-9952595078-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-9952595078-2.jpg": {
+    "width": 800,
+    "height": 800,
+    "aspect": 1,
+    "v": "7a913c9a",
+    "variants": [
+      {
+        "w": 400,
+        "h": 400,
+        "jpg": "images/derived/vinted-9952595078-2-400.jpg",
+        "webp": "images/derived/vinted-9952595078-2-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 800,
+        "jpg": "images/derived/vinted-9952595078-2-800.jpg",
+        "webp": "images/derived/vinted-9952595078-2-800.webp"
+      }
+    ]
+  },
+  "images/vinted-9952595078-3.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "ddd91580",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-9952595078-3-400.jpg",
+        "webp": "images/derived/vinted-9952595078-3-400.webp"
+      }
+    ]
   }
 }

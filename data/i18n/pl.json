@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-10T05:17:55.424Z",
-  "count": 6198,
+  "generated": "2026-09-11T05:17:33.812Z",
+  "count": 6214,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -24800,6 +24800,70 @@
     "text.13b40959df97": {
       "text": "Autor światowej sławy powieści „Prorok” przedstawia ceniony zbiór wizjonerskich wierszy, przypowieści i esejów duchowych poświęconych ludzkiej egzystencji. ISBN…",
       "src": "13b40959df97"
+    },
+    "item.9952595078.title": {
+      "text": "Kolczyki w stylu vintage z miedzi | Z grawerowanym motywem kwiatowym | Biżuteria w stylu bohemy, boho, etnicznym i retro",
+      "src": "06168c1f41cf"
+    },
+    "item.9952595078.description": {
+      "text": "Miedziane kolczyki w kształcie kółek\nDługość: 1,5 cala\nSolidna konstrukcja\nStyl vintage\nKolor różowego złota",
+      "src": "443128c72588"
+    },
+    "item.9950092080.title": {
+      "text": "Srebrne kolczyki w kształcie grzybów – magiczna zawieszka z motywem grzybów | Biżuteria w stylu boho, fantazyjna, hipisowska i vintage",
+      "src": "0f7594f2bb69"
+    },
+    "item.9950092080.description": {
+      "text": "Kolczyki o wzornictwie inspirowanym grzybami.\nTrzy zawieszki w kształcie grzybów na każdym kolczyku.\nBezpieczne i łatwe w użyciu zapięcie typu kółko.\nOksydowane srebro na trwałym stopie cynku.\nIdealne na sezon grzybowy oraz dla miłośników fantazyjnej biżuterii.",
+      "src": "d35213cd7025"
+    },
+    "text.56eeaa229693": {
+      "text": "296 sztuk",
+      "src": "56eeaa229693"
+    },
+    "text.4eabc944c186": {
+      "text": "58 recenzji na stronie Vinted →",
+      "src": "4eabc944c186"
+    },
+    "text.a51c3d53f3d3": {
+      "text": "1657 przedmiotów na sprzedaż · 70 sprzedanych",
+      "src": "a51c3d53f3d3"
+    },
+    "text.4336d0d4c387": {
+      "text": "36 osób dodało tę pozycję do ulubionych na stronie Vinted",
+      "src": "4336d0d4c387"
+    },
+    "text.f3e733c8eb50": {
+      "text": "25 kolczyków na półce z biżuterią.",
+      "src": "f3e733c8eb50"
+    },
+    "text.ad9068a1d4e9": {
+      "text": "Miedziane kolczyki w kształcie kółek o długości 1,5 cala. Solidna konstrukcja. Styl vintage. Kolor różowego złota.",
+      "src": "ad9068a1d4e9"
+    },
+    "text.1acbf4926fda": {
+      "text": "Ocena 5,0 na 5 na podstawie 58 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "1acbf4926fda"
+    },
+    "text.fd499a81c737": {
+      "text": "Opis kolczyków w stylu vintage z miedzi | Z motywem kwiatowym | Biżuteria w stylu bohemy, boho, etnicznym i retro",
+      "src": "fd499a81c737"
+    },
+    "text.1eaf287dd646": {
+      "text": "Opis kolczyków „Srebrny Grzyb” z zawieszką „Fungi Magic” | Biżuteria w stylu boho, fantazyjna, hipisowska i vintage",
+      "src": "1eaf287dd646"
+    },
+    "text.28a7d23bcaf2": {
+      "text": "Kolczyki w stylu vintage z miedzi | Z motywem kwiatowym | Biżuteria w stylu bohemy, boho, etnicznym i retro — proszę otworzyć ofertę „Vinted” w nowej karcie",
+      "src": "28a7d23bcaf2"
+    },
+    "text.8e851270b1b3": {
+      "text": "Srebrne kolczyki w kształcie grzybów z motywem „Fungi Magic” | Biżuteria w stylu boho, fantazyjna, hipisowska i vintage — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "8e851270b1b3"
+    },
+    "text.cdc4d8ec86dc": {
+      "text": "Kolczyki o wzornictwie inspirowanym grzybami. Trzy zawieszki w kształcie grzybów na każdym kolczyku. Bezpieczne i łatwe w użyciu zapięcie typu kółko. Srebro pokryte powłoką oksydowaną na…",
+      "src": "cdc4d8ec86dc"
     }
   }
 }
