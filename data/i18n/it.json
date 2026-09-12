@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-11T05:17:32.451Z",
-  "count": 6214,
+  "generated": "2026-09-12T06:55:21.188Z",
+  "count": 6250,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -154,8 +154,8 @@
       "src": "3757bc8bc02a"
     },
     "item.9493474615.title": {
-      "text": "Collana a girocollo con perle d'acqua dolce",
-      "src": "9a2dd05afdae"
+      "text": "Collana a girocollo con perle d&#x27;acqua dolce | Gioielli vintage e retrò",
+      "src": "e3e16ef08c08"
     },
     "item.9313793339.title": {
       "text": "Abito estivo da spiaggia con scollo a V e scollo all’americana",
@@ -22286,8 +22286,8 @@
       "src": "139d3fcf8758"
     },
     "item.9851163929.title": {
-      "text": "altoparlante portatile solare ricaricabile, wireless, Bluetooth, in stile retrò, radio vintage",
-      "src": "07b713b0582a"
+      "text": "Radio retrò | Altoparlante Bluetooth wireless ricaricabile a energia solare e portatile",
+      "src": "ccb44b351a1d"
     },
     "item.9839067822.title": {
       "text": "Libro di viaggi di Edward Enfield: “Passeggiando lungo il Danubio” – Bestseller di viaggi in bicicletta",
@@ -24864,6 +24864,150 @@
     "text.cdc4d8ec86dc": {
       "text": "Orecchini dal design ispirato ai funghi. 3 ciondoli a forma di fungo su ciascun orecchino. Chiusura ad anello sicura e facile da usare. Argento placcato ossidato su una…",
       "src": "cdc4d8ec86dc"
+    },
+    "item.9962547392.title": {
+      "text": "Bandierine di preghiera buddiste, Buddha tibetano, stile boho per la casa, energia pura",
+      "src": "758c87e700d4"
+    },
+    "item.9959888912.title": {
+      "text": "Borsa tote lavorata a maglia | Mini borsa a secchiello | Stile boho chic retrò",
+      "src": "3acf4b0bdbab"
+    },
+    "item.9969986465.title": {
+      "text": "Orecchini vintage in rame | Motivo floreale vintage | Moda boho | Look retrò d’altri tempi",
+      "src": "c9add54a3262"
+    },
+    "item.9969756327.title": {
+      "text": "Fasce elastiche per yoga (livello leggero) | Esercizi per i glutei e per rafforzare le gambe | Fascia elastica per l’allenamento della forza",
+      "src": "05ed136ac580"
+    },
+    "item.9959888912.description": {
+      "text": "Altezza: 13 pollici\nLarghezza: 7,5 pollici\nTessuto a maglia, elastico come la lana. Di dimensioni moderatamente ridotte, facile da trasportare per contenere portafoglio, telefono, un libricino o una borsa della spesa riutilizzabile.",
+      "src": "0edd18da923b"
+    },
+    "item.9962547392.description": {
+      "text": "Aumentate l’energia positiva del luogo con queste 10 mini bandierine di preghiera. \nRealizzate in velluto, non sbiadiscono facilmente. \nAltezza: 4,4 pollici\nLarghezza: 3,3 pollici",
+      "src": "3a6a2708cbb0"
+    },
+    "item.9969756327.description": {
+      "text": "Set di 3 fasce con livelli di resistenza leggero e medio. \n2 fasce per le caviglie. \nLa resistenza non è molto elevata, ma è sufficiente per un allenamento di forza leggero. \nIdeale per iniziare una routine regolare di allenamento a casa o per esercizi di stretching di recupero.",
+      "src": "7ca499f1726e"
+    },
+    "item.9969986465.description": {
+      "text": "Bellissimo rame con incisioni floreali.\nGli orecchini sono lunghi 1,5 pollici.\nHanno un peso leggero e presentano un design robusto.\nEffetto vintage ossidato.\nEsclusiva tonalità oro rosa.\nConsulti il mio profilo per creare set di gioielli in metallo vero, come l’argento antico.",
+      "src": "13753644c007"
+    },
+    "text.bc2cdc0908ea": {
+      "text": "Tibet",
+      "src": "bc2cdc0908ea"
+    },
+    "text.1ad04569ee47": {
+      "text": "9 pezzi",
+      "src": "1ad04569ee47"
+    },
+    "text.566a9d880264": {
+      "text": "438 pezzi",
+      "src": "566a9d880264"
+    },
+    "text.a28f7a77a314": {
+      "text": "140 pezzi",
+      "src": "a28f7a77a314"
+    },
+    "text.7db5d9f52f6e": {
+      "text": "297 pezzi",
+      "src": "7db5d9f52f6e"
+    },
+    "text.c1681cc1ddce": {
+      "text": "59 recensioni su Vinted →",
+      "src": "c1681cc1ddce"
+    },
+    "text.df90fa10942c": {
+      "text": "1660 pezzi in vendita · 71 venduti",
+      "src": "df90fa10942c"
+    },
+    "text.c200aa4ec86c": {
+      "text": "37 persone hanno salvato questo contenuto su Vinted",
+      "src": "c200aa4ec86c"
+    },
+    "text.98e0b2824309": {
+      "text": "29 persone hanno salvato questo contenuto su Vinted",
+      "src": "98e0b2824309"
+    },
+    "text.a3dbd7b86d02": {
+      "text": "Descrizione delle bandierine di preghiera buddiste: Buddha tibetano, stile boho, per la casa, energia pura",
+      "src": "a3dbd7b86d02"
+    },
+    "text.11377673f0ac": {
+      "text": "Descrizione della collana a girocollo con perle d&#x27;acqua dolce | Gioielli vintage e retrò",
+      "src": "11377673f0ac"
+    },
+    "text.4cf2b0bc29f4": {
+      "text": "Descrizione della borsa tote lavorata a maglia | Borsa a secchiello mini | Stile boho chic retrò",
+      "src": "4cf2b0bc29f4"
+    },
+    "text.06168c1f41cf": {
+      "text": "Orecchini vintage in rame | Con incisioni floreali | Gioielli retrò in stile bohémien, boho ed etnico",
+      "src": "06168c1f41cf"
+    },
+    "text.52e9f140b7a3": {
+      "text": "Valutato 5,0 su 5 sulla base di 59 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "52e9f140b7a3"
+    },
+    "text.da97a7b756eb": {
+      "text": "Descrizione della radio retrò | Altoparlante Bluetooth wireless portatile, ricaricabile tramite energia solare",
+      "src": "da97a7b756eb"
+    },
+    "text.2abb8200eb7f": {
+      "text": "Bandierine di preghiera buddiste, Buddha tibetano, stile boho, energia pura — apra l’annuncio su Vinted in una nuova scheda",
+      "src": "2abb8200eb7f"
+    },
+    "text.221433dbd8f0": {
+      "text": "Collana girocollo con perle d&#x27;acqua dolce | Gioielli vintage retrò — apra l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "221433dbd8f0"
+    },
+    "text.9f41071f93b4": {
+      "text": "Borsa tote lavorata a maglia | Borsa a secchiello mini | Stile retrò boho chic — apra l’annuncio su Vinted in una nuova scheda",
+      "src": "9f41071f93b4"
+    },
+    "text.5b0ff60c0ba2": {
+      "text": "Descrizione degli orecchini vintage in rame | Motivo floreale vintage | Stile boho | Look retrò d&#x27;altri tempi",
+      "src": "5b0ff60c0ba2"
+    },
+    "text.24918ecb3810": {
+      "text": "Descrizione delle fasce elastiche da yoga leggere | Esercizi per i glutei e il rafforzamento delle gambe | Fascia per l’allenamento della forza",
+      "src": "24918ecb3810"
+    },
+    "text.a7d64f824b08": {
+      "text": "Radio retrò | altoparlante Bluetooth wireless portatile, ricaricabile tramite energia solare — apra la scheda del prodotto “Vinted” in una nuova scheda",
+      "src": "a7d64f824b08"
+    },
+    "text.9306da1586c5": {
+      "text": "Orecchini vintage in rame | Incisioni floreali | Gioielli bohemien, boho, etnici e retrò — apra l’annuncio venduto su Vinted in una nuova scheda",
+      "src": "9306da1586c5"
+    },
+    "text.9f8e1e43b3cb": {
+      "text": "Orecchini vintage in rame | Motivo floreale vintage | Stile boho | Look retrò d’altri tempi — apra l’inserzione su Vinted in una nuova scheda",
+      "src": "9f8e1e43b3cb"
+    },
+    "text.148ae15a48d9": {
+      "text": "Fasce elastiche per yoga (livello leggero) | Esercizi per i glutei e per rafforzare le gambe | Fascia per l’allenamento della forza — apra la scheda del prodotto su Vinted in una nuova scheda",
+      "src": "148ae15a48d9"
+    },
+    "text.4e7fa97d5686": {
+      "text": "Altezza 13 pollici, larghezza 7,5 pollici. Tessuto a maglia, elastico come la lana. Di dimensioni moderatamente ridotte, facile da portare con sé per riporre portafoglio, telefono, un libricino, …",
+      "src": "4e7fa97d5686"
+    },
+    "text.4f1b59046f67": {
+      "text": "Splendido rame con incisioni floreali. Gli orecchini sono lunghi 1,5 pollici. Sono leggermente pesanti e presentano un design robusto. Aspetto vintage ossidato. Unici…",
+      "src": "4f1b59046f67"
+    },
+    "text.20fb57b2c037": {
+      "text": "Set di 3 fasce con livelli di resistenza leggero e medio. 2 cinturini per le caviglie. La resistenza non è molto elevata, ma è sufficiente per un allenamento di forza leggero. Perfetto per…",
+      "src": "20fb57b2c037"
+    },
+    "text.5037aac6f927": {
+      "text": "Aumentate l’energia positiva del luogo con questo set di 10 mini bandierine di preghiera. Realizzate in velluto, non sbiadiscono facilmente. Altezza: 4,4 pollici…",
+      "src": "5037aac6f927"
     }
   }
 }

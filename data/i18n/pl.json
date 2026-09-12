@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-11T05:17:33.812Z",
-  "count": 6214,
+  "generated": "2026-09-12T06:55:22.985Z",
+  "count": 6250,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -154,8 +154,8 @@
       "src": "3757bc8bc02a"
     },
     "item.9493474615.title": {
-      "text": "Naszyjnik typu choker z perłami słodkowodnymi",
-      "src": "9a2dd05afdae"
+      "text": "Naszyjnik typu choker z perłami słodkowodnymi | Biżuteria w stylu vintage i retro",
+      "src": "e3e16ef08c08"
     },
     "item.9313793339.title": {
       "text": "Letnia sukienka plażowa z dekoltem w serek i wiązaniem na szyi",
@@ -22286,8 +22286,8 @@
       "src": "139d3fcf8758"
     },
     "item.9851163929.title": {
-      "text": "przenośny, zasilany energią słoneczną, bezprzewodowy głośnik w stylu retro z funkcją ładowania i łącznością Bluetooth oraz radio w stylu vintage",
-      "src": "07b713b0582a"
+      "text": "Radio w stylu retro | przenośny, bezprzewodowy głośnik Bluetooth z zasilaniem słonecznym i funkcją ładowania",
+      "src": "ccb44b351a1d"
     },
     "item.9839067822.title": {
       "text": "Książka podróżnicza Edwarda Enfielda „Spacerując wzdłuż Dunaju” – bestseller w kategorii podróży rowerowych",
@@ -24864,6 +24864,150 @@
     "text.cdc4d8ec86dc": {
       "text": "Kolczyki o wzornictwie inspirowanym grzybami. Trzy zawieszki w kształcie grzybów na każdym kolczyku. Bezpieczne i łatwe w użyciu zapięcie typu kółko. Srebro pokryte powłoką oksydowaną na…",
       "src": "cdc4d8ec86dc"
+    },
+    "item.9962547392.title": {
+      "text": "Buddyjskie flagi modlitewne, tybetański Budda, styl boho, dom, czysta energia",
+      "src": "758c87e700d4"
+    },
+    "item.9959888912.title": {
+      "text": "Dzianinowa torba na ramię | Mini torebka typu „bucket” | Styl boho chic w klimacie retro",
+      "src": "3acf4b0bdbab"
+    },
+    "item.9969986465.title": {
+      "text": "Kolczyki z miedzi w stylu vintage | Vintage motyw kwiatowy | Styl boho | Styl retro",
+      "src": "c9add54a3262"
+    },
+    "item.9969756327.title": {
+      "text": "Lekkie taśmy do jogi | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśmy do treningu siłowego",
+      "src": "05ed136ac580"
+    },
+    "item.9959888912.description": {
+      "text": "Wysokość: 13 cali\nSzerokość: 7,5 cala\nTkanina dzianinowa, rozciągliwa niczym wełna. Stosunkowo niewielka, łatwa do noszenia przy sobie; idealna na portfel, telefon, małą książkę lub torbę na zakupy wielokrotnego użytku.",
+      "src": "0edd18da923b"
+    },
+    "item.9962547392.description": {
+      "text": "Podnieście pozytywną energię tego miejsca dzięki tym 10 mini flagom modlitewnym. \nWykonane są z aksamitu, dzięki czemu nie blakną tak łatwo. \nWysokość: 4,4 cala\nSzerokość: 3,3 cala",
+      "src": "3a6a2708cbb0"
+    },
+    "item.9969756327.description": {
+      "text": "Zestaw 3 taśm o lekkim i średnim oporze. \n2 paski na kostki. \nOpór nie jest zbyt duży, ale wystarczający do lekkiego treningu siłowego. \nIdealne do rozpoczęcia regularnych ćwiczeń w domu lub do rozciągania regeneracyjnego.",
+      "src": "7ca499f1726e"
+    },
+    "item.9969986465.description": {
+      "text": "Piękna miedź z wygrawerowanym motywem kwiatowym.\nKolczyki mają 1,5 cala długości.\nSą nieco ciężkie i charakteryzują się solidną konstrukcją.\nWygląd w stylu vintage z efektem oksydacji.\nWyjątkowy odcień różowego złota.\nZapraszamy do zapoznania się z moim profilem, aby stworzyć zestawy biżuterii z prawdziwego metalu, np. ze srebra w stylu antycznym.",
+      "src": "13753644c007"
+    },
+    "text.bc2cdc0908ea": {
+      "text": "Tybet",
+      "src": "bc2cdc0908ea"
+    },
+    "text.1ad04569ee47": {
+      "text": "9 sztuk",
+      "src": "1ad04569ee47"
+    },
+    "text.566a9d880264": {
+      "text": "438 sztuk",
+      "src": "566a9d880264"
+    },
+    "text.a28f7a77a314": {
+      "text": "140 sztuk",
+      "src": "a28f7a77a314"
+    },
+    "text.7db5d9f52f6e": {
+      "text": "297 sztuk",
+      "src": "7db5d9f52f6e"
+    },
+    "text.c1681cc1ddce": {
+      "text": "59 recenzji na stronie Vinted →",
+      "src": "c1681cc1ddce"
+    },
+    "text.df90fa10942c": {
+      "text": "1660 sztuk na sprzedaż · 71 sprzedanych",
+      "src": "df90fa10942c"
+    },
+    "text.c200aa4ec86c": {
+      "text": "37 osób dodało tę pozycję do ulubionych na stronie Vinted",
+      "src": "c200aa4ec86c"
+    },
+    "text.98e0b2824309": {
+      "text": "29 osób dodało tę pozycję do ulubionych na stronie Vinted",
+      "src": "98e0b2824309"
+    },
+    "text.a3dbd7b86d02": {
+      "text": "Opis buddyjskich flag modlitewnych – tybetański Budda, styl boho, do domu, czysta energia",
+      "src": "a3dbd7b86d02"
+    },
+    "text.11377673f0ac": {
+      "text": "Opis naszyjnika typu choker z perłami słodkowodnymi | Biżuteria w stylu vintage i retro",
+      "src": "11377673f0ac"
+    },
+    "text.4cf2b0bc29f4": {
+      "text": "Opis dzianinowej torby na ramię | Mini torebka typu „bucket” | Styl boho chic retro",
+      "src": "4cf2b0bc29f4"
+    },
+    "text.06168c1f41cf": {
+      "text": "Kolczyki w stylu vintage z miedzi | Z motywem kwiatowym | Biżuteria w stylu bohemy, boho, etnicznym i retro",
+      "src": "06168c1f41cf"
+    },
+    "text.52e9f140b7a3": {
+      "text": "Ocena 5,0 na 5 na podstawie 59 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "52e9f140b7a3"
+    },
+    "text.da97a7b756eb": {
+      "text": "Opis radia w stylu retro | przenośny głośnik bezprzewodowy z funkcją Bluetooth, zasilany energią słoneczną i wyposażony w akumulator",
+      "src": "da97a7b756eb"
+    },
+    "text.2abb8200eb7f": {
+      "text": "Buddyjskie flagi modlitewne z wizerunkiem tybetańskiego Buddy w stylu boho — czysta energia — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "2abb8200eb7f"
+    },
+    "text.221433dbd8f0": {
+      "text": "Naszyjnik typu choker z perłami słodkowodnymi | Biżuteria vintage w stylu retro — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "221433dbd8f0"
+    },
+    "text.9f41071f93b4": {
+      "text": "Dzianinowa torba na ramię | Mini torebka typu bucket | Styl boho chic retro — proszę otworzyć ofertę „Vinted” w nowej karcie",
+      "src": "9f41071f93b4"
+    },
+    "text.5b0ff60c0ba2": {
+      "text": "Opis kolczyków z miedzi w stylu vintage | Motyw kwiatowy w stylu vintage | Moda boho | Styl retro",
+      "src": "5b0ff60c0ba2"
+    },
+    "text.24918ecb3810": {
+      "text": "Opis taśm oporowych do jogi – wersja lekka | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśma do treningu siłowego",
+      "src": "24918ecb3810"
+    },
+    "text.a7d64f824b08": {
+      "text": "Radio w stylu retro | przenośny, bezprzewodowy głośnik Bluetooth z zasilaniem słonecznym i funkcją ładowania — otwórz stronę produktu „Vinted” w nowej karcie",
+      "src": "a7d64f824b08"
+    },
+    "text.9306da1586c5": {
+      "text": "Kolczyki w stylu vintage z miedzi | Z grawerowanym motywem kwiatowym | Biżuteria w stylu bohemy, boho, etnicznym i retro — otwórz wyprzedaną ofertę „Vinted” w nowej karcie",
+      "src": "9306da1586c5"
+    },
+    "text.9f8e1e43b3cb": {
+      "text": "Kolczyki z miedzi w stylu vintage | Motyw kwiatowy w stylu vintage | Moda boho | Styl retro — proszę otworzyć ofertę „Vinted” w nowej karcie",
+      "src": "9f8e1e43b3cb"
+    },
+    "text.148ae15a48d9": {
+      "text": "Lekkie taśmy oporowe do jogi | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśma do treningu siłowego — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "148ae15a48d9"
+    },
+    "text.4e7fa97d5686": {
+      "text": "Wysokość 13 cali, szerokość 7,5 cala. Tkanina dziana, rozciągliwa niczym wełna. Stosunkowo niewielka, łatwa do noszenia przy sobie – idealna na portfel, telefon, małą książkę…",
+      "src": "4e7fa97d5686"
+    },
+    "text.4f1b59046f67": {
+      "text": "Piękna miedź z wygrawerowanym motywem kwiatowym. Kolczyki mają 1,5 cala długości. Są nieco ciężkie i charakteryzują się solidną konstrukcją. Wykończenie w stylu vintage z efektem oksydacji. Wyjątkowe…",
+      "src": "4f1b59046f67"
+    },
+    "text.20fb57b2c037": {
+      "text": "Zestaw trzech taśm o lekkim i średnim oporze. Dwa paski na kostki. Opór nie jest zbyt duży, ale wystarczający do lekkiego treningu siłowego. Idealne do…",
+      "src": "20fb57b2c037"
+    },
+    "text.5037aac6f927": {
+      "text": "Podnieście pozytywną energię tego miejsca dzięki tym 10 mini flagom modlitewnym. Wykonane są z aksamitu, dzięki czemu nie blakną tak łatwo. Wysokość 4,4 cala…",
+      "src": "5037aac6f927"
     }
   }
 }
