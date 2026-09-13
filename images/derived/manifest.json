@@ -3501,6 +3501,46 @@
       }
     ]
   },
+  "images/govinda-1230-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "201981c5",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1230-1-400.jpg",
+        "webp": "images/derived/govinda-1230-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1230-1-800.jpg",
+        "webp": "images/derived/govinda-1230-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-1231-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "0ba238a8",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1231-1-400.jpg",
+        "webp": "images/derived/govinda-1231-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1231-1-800.jpg",
+        "webp": "images/derived/govinda-1231-1-800.webp"
+      }
+    ]
+  },
   "images/govinda-1235-1.jpg": {
     "width": 900,
     "height": 1600,
@@ -3958,6 +3998,46 @@
         "h": 1422,
         "jpg": "images/derived/govinda-127-1-800.jpg",
         "webp": "images/derived/govinda-127-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-1277-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "4e7ec83d",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1277-1-400.jpg",
+        "webp": "images/derived/govinda-1277-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1277-1-800.jpg",
+        "webp": "images/derived/govinda-1277-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-1278-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "38cc3551",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1278-1-400.jpg",
+        "webp": "images/derived/govinda-1278-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1278-1-800.jpg",
+        "webp": "images/derived/govinda-1278-1-800.webp"
       }
     ]
   },
@@ -6221,6 +6301,26 @@
       }
     ]
   },
+  "images/govinda-1427-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "e601adcd",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1427-1-400.jpg",
+        "webp": "images/derived/govinda-1427-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1427-1-800.jpg",
+        "webp": "images/derived/govinda-1427-1-800.webp"
+      }
+    ]
+  },
   "images/govinda-1428-1.jpg": {
     "width": 900,
     "height": 1600,
@@ -6258,6 +6358,26 @@
         "h": 1422,
         "jpg": "images/derived/govinda-1429-1-800.jpg",
         "webp": "images/derived/govinda-1429-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-1431-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "5becd414",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1431-1-400.jpg",
+        "webp": "images/derived/govinda-1431-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1431-1-800.jpg",
+        "webp": "images/derived/govinda-1431-1-800.webp"
       }
     ]
   },
@@ -16038,6 +16158,66 @@
         "h": 1422,
         "jpg": "images/derived/govinda-2324-1-800.jpg",
         "webp": "images/derived/govinda-2324-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-2325-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "cf3412ce",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-2325-1-400.jpg",
+        "webp": "images/derived/govinda-2325-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-2325-1-800.jpg",
+        "webp": "images/derived/govinda-2325-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-2326-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "bbae16af",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-2326-1-400.jpg",
+        "webp": "images/derived/govinda-2326-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-2326-1-800.jpg",
+        "webp": "images/derived/govinda-2326-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-2327-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "3a2bef2d",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-2327-1-400.jpg",
+        "webp": "images/derived/govinda-2327-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-2327-1-800.jpg",
+        "webp": "images/derived/govinda-2327-1-800.webp"
       }
     ]
   },
@@ -37325,7 +37505,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "8e50db1f",
+    "v": "94699191",
     "variants": [
       {
         "w": 400,
@@ -37345,7 +37525,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "bd0268f9",
+    "v": "dec1cb92",
     "variants": [
       {
         "w": 400,

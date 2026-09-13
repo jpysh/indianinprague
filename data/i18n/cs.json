@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-12T06:55:25.029Z",
-  "count": 6250,
+  "generated": "2026-09-13T05:19:52.372Z",
+  "count": 6283,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -27025,6 +27025,154 @@
     "text.5037aac6f927": {
       "text": "Zvyšte pozitivní energii místnosti pomocí těchto 10 mini modlitebních vlaječek. Jsou vyrobeny ze sametové látky, takže se tak snadno nevyblednou. Výška 4,4 palce…",
       "src": "5037aac6f927"
+    },
+    "text.eef6ee5a0d10": {
+      "text": "Plakát A3+ Krišna s flétnou na lotosu s kravičkami",
+      "src": "eef6ee5a0d10",
+      "via": "govinda-cs"
+    },
+    "text.a5854b3d854c": {
+      "text": "Krišna s flétnou na lotosu s kravičkami.",
+      "src": "a5854b3d854c",
+      "via": "govinda-cs"
+    },
+    "text.4effeb03c4bc": {
+      "text": "Plakát A3+ Makhan Chor ve stoje",
+      "src": "4effeb03c4bc",
+      "via": "govinda-cs"
+    },
+    "text.65c1f60f4d48": {
+      "text": "Krišna a Balarám kradou máslo - zloději másla - Makhan Chor.",
+      "src": "65c1f60f4d48",
+      "via": "govinda-cs"
+    },
+    "text.29249c60627e": {
+      "text": "Plakát A3+ Makhan Chor v sedě",
+      "src": "29249c60627e",
+      "via": "govinda-cs"
+    },
+    "text.ef376ffca237": {
+      "text": "Plakát A3+ Krišna s flétnou",
+      "src": "ef376ffca237",
+      "via": "govinda-cs"
+    },
+    "text.033f58b9874d": {
+      "text": "Krišna s flétnou v jeho typickém postoji.",
+      "src": "033f58b9874d",
+      "via": "govinda-cs"
+    },
+    "text.6d3563a378fa": {
+      "text": "Plakát A3+ Krišna s flétnou na lotosu s pávy",
+      "src": "6d3563a378fa",
+      "via": "govinda-cs"
+    },
+    "text.59b8c3a92e78": {
+      "text": "Krišna s flétnou na lotosu s pávy.",
+      "src": "59b8c3a92e78",
+      "via": "govinda-cs"
+    },
+    "text.45ee99271ff2": {
+      "text": "Plakát A3+ Šrí Krišna s flétnou, portrét",
+      "src": "45ee99271ff2",
+      "via": "govinda-cs"
+    },
+    "text.a0f57e8bf19d": {
+      "text": "Malý Krišna s pavím perem a flétnou v portrétovém zobrazení.",
+      "src": "a0f57e8bf19d",
+      "via": "govinda-cs"
+    },
+    "text.112e9852339d": {
+      "text": "Plakát A2 Krišna drží kopec Govardhan",
+      "src": "112e9852339d",
+      "via": "govinda-cs"
+    },
+    "text.7193d74e7ffb": {
+      "text": "Plakát A3+ Krišna drží kopec Govardhan",
+      "src": "7193d74e7ffb",
+      "via": "govinda-cs"
+    },
+    "text.4ed0f06aae10": {
+      "text": "Plakát A2 Gopináth",
+      "src": "4ed0f06aae10",
+      "via": "govinda-cs"
+    },
+    "text.abb937992256": {
+      "text": "Plakát A2 Makhan Chor Damodar",
+      "src": "abb937992256",
+      "via": "govinda-cs"
+    },
+    "text.c2dd8bb41d8e": {
+      "text": "Plakát Makhan Chor (zloděj másla) - malý Krišna mlsající máslo.",
+      "src": "c2dd8bb41d8e",
+      "via": "govinda-cs"
+    },
+    "text.17471b0c6342": {
+      "text": "534 kusů",
+      "src": "17471b0c6342"
+    },
+    "text.54f95f581da5": {
+      "text": "60 recenzí na Vinted →",
+      "src": "54f95f581da5"
+    },
+    "text.13550c9bc433": {
+      "text": "1673 kusů na prodej · 71 prodáno",
+      "src": "13550c9bc433"
+    },
+    "text.53bcabdfc9e7": {
+      "text": "Popis plakátu formátu A2 od Gopinátha",
+      "src": "53bcabdfc9e7"
+    },
+    "text.80cc81ac542e": {
+      "text": "Popis plakátu formátu A3+: Makhan Chor v sedě",
+      "src": "80cc81ac542e"
+    },
+    "text.e6c579e15b9a": {
+      "text": "Popis plakátu formátu A2: Makhan Chor Damodar",
+      "src": "e6c579e15b9a"
+    },
+    "text.4a555d8b1be0": {
+      "text": "Popis plakátu formátu A3+: Makhan Chor ve stoje",
+      "src": "4a555d8b1be0"
+    },
+    "text.4a206b7fcc8c": {
+      "text": "Popis plakátu formátu A3+: Krišna s flétnou",
+      "src": "4a206b7fcc8c"
+    },
+    "text.e333c238cd6f": {
+      "text": "79 samolepek a plakátů v poličce na meditaci.",
+      "src": "e333c238cd6f"
+    },
+    "text.bc26e8c28b9f": {
+      "text": "Popis plakátu formátu A2: Krišna zvedající horu Govárdhan",
+      "src": "bc26e8c28b9f"
+    },
+    "text.12db93f802b8": {
+      "text": "Popis plakátu formátu A3+: Šrí Krišna s flétnou, portrét",
+      "src": "12db93f802b8"
+    },
+    "text.430b6a444f3c": {
+      "text": "Popis plakátu formátu A3+: Krišna zvedající horu Góvardhan",
+      "src": "430b6a444f3c"
+    },
+    "text.16d4bfa95c75": {
+      "text": "Popis plakátu formátu A3+: Krišna s flétnou na lotosovém květu, s pávy",
+      "src": "16d4bfa95c75"
+    },
+    "text.29a7e12984a5": {
+      "text": "Hodnocení 5,0 z 5 na základě 60 recenzí od kupujících. Přečtěte si je na stránkách Vinted (otevře se v nové záložce).",
+      "src": "29a7e12984a5"
+    },
+    "text.1d8545472989": {
+      "text": "Popis plakátu formátu A3+: Krišna hrající na flétnu na lotosovém květu s malými krávami",
+      "src": "1d8545472989"
+    },
+    "text.ac1636f098fd": {
+      "text": "Plakát zobrazující Krišnu – Gopinatha –, jak hraje na flétnu pro pasáčky krav. Gopinath v překladu ze sanskrtu znamená „Pán pasáčků krav…“",
+      "src": "ac1636f098fd"
+    },
+    "text.878ef8392d02": {
+      "text": "Krišna drží horu Góvardhan na malíčku své levé ruky, aby ochránil obyvatele a zvířata z Vradže před přívalovým deštěm, který seslal bůh…",
+      "src": "878ef8392d02"
     }
   }
 }
