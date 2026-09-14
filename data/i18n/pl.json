@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-13T05:19:51.868Z",
-  "count": 6283,
+  "generated": "2026-09-14T05:17:50.851Z",
+  "count": 6298,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -626,8 +626,8 @@
       "src": "c282d80e1c08"
     },
     "item.9711247731.title": {
-      "text": "Bransoletka duchowa | Tybetańska biżuteria buddyjska z symbolem „Om” | Rudraksha – mala do jogi i medytacji",
-      "src": "a0db5ed958fb"
+      "text": "Bransoletka Om Spiritual Jewellery | Biżuteria buddyjska tybetańska | Rudraksha, joga, medytacja, styl boho i hippie",
+      "src": "a6047f908f27"
     },
     "item.9641705366.title": {
       "text": "Letnia sukienka w stylu boho z żywymi afrykańskimi motywami plemiennymi | Tunika typu kaftan z etnicznym nadrukiem | Rozmiar uniwersalny od M do L",
@@ -24638,8 +24638,8 @@
       "src": "2d5c26638c04"
     },
     "item.9942373135.title": {
-      "text": "Peruwiański brelok w kształcie alpaki i lamy, wykonany ręcznie z wełny alpaki",
-      "src": "8d4b5d188d92"
+      "text": "Peruwiański brelok w kształcie alpaki i lamy, wykonany ręcznie z wełny alpaki | Pamiątka, przedmiot kolekcjonerski, styl vintage i boho",
+      "src": "4f3aac8a259f"
     },
     "item.9942518252.title": {
       "text": "Kwadratowe lustro ścienne z naturalnego drewna – minimalistyczny drewniany element wystroju wnętrz w stylu boho chic",
@@ -24878,8 +24878,8 @@
       "src": "c9add54a3262"
     },
     "item.9969756327.title": {
-      "text": "Lekkie taśmy do jogi | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśmy do treningu siłowego",
-      "src": "05ed136ac580"
+      "text": "Taśmy oporowe | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśma do treningu siłowego | Joga i pilates",
+      "src": "12cd58eeb625"
     },
     "item.9959888912.description": {
       "text": "Wysokość: 13 cali\nSzerokość: 7,5 cala\nTkanina dzianinowa, rozciągliwa niczym wełna. Stosunkowo niewielka, łatwa do noszenia przy sobie; idealna na portfel, telefon, małą książkę lub torbę na zakupy wielokrotnego użytku.",
@@ -25140,6 +25140,66 @@
     "text.878ef8392d02": {
       "text": "Kryszna trzyma górę Govardhan na małym palcu lewej dłoni, aby chronić mieszkańców i zwierzęta z Vraja przed ulewą zesłaną przez boga…",
       "src": "878ef8392d02"
+    },
+    "text.c39cb773cebf": {
+      "text": "61 recenzji na stronie Vinted →",
+      "src": "c39cb773cebf"
+    },
+    "text.e93d3040c88d": {
+      "text": "1670 sztuk na sprzedaż · 74 sprzedane",
+      "src": "e93d3040c88d"
+    },
+    "text.915db534f633": {
+      "text": "„Indie w okresie stanu wyjątkowego: Zraniona cywilizacja” autorstwa V.S. Naipaula, laureata Nagrody Nobla",
+      "src": "915db534f633"
+    },
+    "text.ca4aca63a7ae": {
+      "text": "Ocena 5,0 na 5 na podstawie 61 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "ca4aca63a7ae"
+    },
+    "text.b15b0483441c": {
+      "text": "nauka języka hiszpańskiego – „Don Kichot” Cervantesa: ponadczasowe arcydzieło w ilustrowanym wydaniu hiszpańskim",
+      "src": "b15b0483441c"
+    },
+    "text.580a0cb0d3c4": {
+      "text": "Najlepsza książka o Pakistanie: Daniyal Mueenuddin – Zbiór opowiadań pakistańskich, wydanie w miękkiej oprawie w języku angielskim",
+      "src": "580a0cb0d3c4"
+    },
+    "text.d9075d992386": {
+      "text": "Opis peruwiańskiego breloczka z motywem alpaki i lamy, wykonanego ręcznie z wełny alpaki | Pamiątka kolekcjonerska w stylu vintage i boho",
+      "src": "d9075d992386"
+    },
+    "text.726dfdefe2ac": {
+      "text": "Opis taśm oporowych | Ćwiczenia wzmacniające mięśnie pośladkowe i nogi | Taśma do treningu siłowego | Joga i pilates",
+      "src": "726dfdefe2ac"
+    },
+    "text.51aa9dae5edb": {
+      "text": "Opis bransoletki Om Spiritual Jewellery | Biżuteria buddyjska tybetańska | Rudraksha, joga, medytacja, styl boho i hippie",
+      "src": "51aa9dae5edb"
+    },
+    "text.82dc14e65081": {
+      "text": "„Indie w stanie wyjątkowym: zraniona cywilizacja” autorstwa V.S. Naipaula, laureata Nagrody Nobla — proszę otworzyć wyprzedaną ofertę „Vinted” w nowej karcie",
+      "src": "82dc14e65081"
+    },
+    "text.3e1441c0fea2": {
+      "text": "Ręcznie wykonany brelok z peruwiańskiej wełny alpaki i lamy | Pamiątka, przedmiot kolekcjonerski, styl vintage i boho — proszę otworzyć aukcję „Vinted” w nowej karcie",
+      "src": "3e1441c0fea2"
+    },
+    "text.a30576184ae7": {
+      "text": "nauka języka hiszpańskiego – „Don Kichot” Cervantesa, ponadczasowe arcydzieło w ilustrowanym wydaniu hiszpańskim — proszę otworzyć wyprzedaną aukcję „Vinted” w nowej karcie",
+      "src": "a30576184ae7"
+    },
+    "text.f48fcd5cd608": {
+      "text": "Taśmy oporowe | Ćwiczenia na mięśnie pośladkowe i wzmocnienie nóg | Taśma do treningu siłowego | Joga i pilates — proszę otworzyć stronę Vinted w nowej karcie",
+      "src": "f48fcd5cd608"
+    },
+    "text.8652dfba4c66": {
+      "text": "najlepsza książka o Pakistanie: Daniyal Mueenuddin – „Pakistan Short Story Collection”, angielska wydanie w miękkiej oprawie — proszę otworzyć w nowej karcie stronę z aukcją „Vinted”, która została już sprzedana",
+      "src": "8652dfba4c66"
+    },
+    "text.ccca0091e0e9": {
+      "text": "Bransoletka Om Spiritual Jewellery | Biżuteria buddyjska tybetańska | Rudraksha, joga, medytacja, styl boho i hippie — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "ccca0091e0e9"
     }
   }
 }

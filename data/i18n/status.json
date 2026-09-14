@@ -1,7 +1,7 @@
 {
   "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
-  "generated": "2026-09-13T05:19:52.568Z",
-  "sources": 6042,
+  "generated": "2026-09-14T05:17:51.657Z",
+  "sources": 6039,
   "exhausted": false,
   "keys": [
     {
@@ -31,18 +31,18 @@
     {
       "n": 4,
       "ok": true,
-      "used": 866225,
+      "used": 878496,
       "limit": 1000000,
-      "left": 133775,
-      "pct": 0.866225
+      "left": 121504,
+      "pct": 0.878496
     }
   ],
   "languages": [
     {
       "lang": "ru",
       "name": "Русский",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -52,8 +52,8 @@
     {
       "lang": "fr",
       "name": "Français",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -63,8 +63,8 @@
     {
       "lang": "de",
       "name": "Deutsch",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -74,8 +74,8 @@
     {
       "lang": "it",
       "name": "Italiano",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -85,8 +85,8 @@
     {
       "lang": "es",
       "name": "Español",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -96,8 +96,8 @@
     {
       "lang": "pl",
       "name": "Polski",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,
@@ -107,8 +107,8 @@
     {
       "lang": "cs",
       "name": "Čeština",
-      "total": 6042,
-      "translated": 6042,
+      "total": 6039,
+      "translated": 6039,
       "missing": 0,
       "overridden": 0,
       "stale": 0,

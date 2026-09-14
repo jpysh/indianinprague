@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-09-13T05:15:08.264Z",
+  "syncedAt": "2026-09-14T05:15:04.331Z",
   "rate": {
     "czkPerEur": 24.264,
-    "fetched": "2026-09-13",
+    "fetched": "2026-09-14",
     "source": "ECB"
   },
-  "count": 169,
+  "count": 166,
   "items": [
     {
       "id": "9969986465",
@@ -50,7 +50,7 @@
         "images/vinted-9969986465-2.jpg",
         "images/vinted-9969986465-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -64,9 +64,9 @@
     },
     {
       "id": "9969756327",
-      "title": "Yoga Resistance Bands Light | Exercise for Glutes And Leg Strength | Strength Training Band",
-      "priceCzk": 260,
-      "priceEur": 11,
+      "title": "Resistance Bands | Exercise for Glutes And Leg Strength | Strength Training Band | Yoga Pilates",
+      "priceCzk": 199,
+      "priceEur": 8,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -111,10 +111,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9969756327-yoga-resistance-bands-light-exercise-for-glutes-and-leg-strength-strength-training-band",
-        "es": "https://www.vinted.es/items/9969756327-yoga-resistance-bands-light-exercise-for-glutes-and-leg-strength-strength-training-band",
-        "com": "https://www.vinted.com/items/9969756327-yoga-resistance-bands-light-exercise-for-glutes-and-leg-strength-strength-training-band",
-        "uk": "https://www.vinted.co.uk/items/9969756327-yoga-resistance-bands-light-exercise-for-glutes-and-leg-strength-strength-training-band"
+        "cz": "https://www.vinted.cz/items/9969756327-resistance-bands-exercise-for-glutes-and-leg-strength-strength-training-band-yoga-pilates",
+        "es": "https://www.vinted.es/items/9969756327-resistance-bands-exercise-for-glutes-and-leg-strength-strength-training-band-yoga-pilates",
+        "com": "https://www.vinted.com/items/9969756327-resistance-bands-exercise-for-glutes-and-leg-strength-strength-training-band-yoga-pilates",
+        "uk": "https://www.vinted.co.uk/items/9969756327-resistance-bands-exercise-for-glutes-and-leg-strength-strength-training-band-yoga-pilates"
       }
     },
     {
@@ -156,7 +156,7 @@
         "images/vinted-9962547392-2.jpg",
         "images/vinted-9962547392-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -222,8 +222,8 @@
     {
       "id": "9950092080",
       "title": "Silver Mushroom Earrings Fungi Magic Charm | Boho whimsical hippie vintage jewellery",
-      "priceCzk": 235,
-      "priceEur": 10,
+      "priceCzk": 190,
+      "priceEur": 8,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -262,7 +262,7 @@
         "images/vinted-9950092080-2.jpg",
         "images/vinted-9950092080-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -427,7 +427,7 @@
     },
     {
       "id": "9942373135",
-      "title": "Peruvian Alpaca Llama Keychain Handmade Alpaca Wool",
+      "title": "Peruvian Alpaca Llama Keychain Handmade Alpaca Wool | Memorabilia Collectible Vintage Boho",
       "priceCzk": 295,
       "priceEur": 12,
       "brand": "Peruvian",
@@ -470,10 +470,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool",
-        "es": "https://www.vinted.es/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool",
-        "com": "https://www.vinted.com/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool",
-        "uk": "https://www.vinted.co.uk/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool"
+        "cz": "https://www.vinted.cz/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
+        "es": "https://www.vinted.es/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
+        "com": "https://www.vinted.com/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
+        "uk": "https://www.vinted.co.uk/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho"
       }
     },
     {
@@ -565,7 +565,7 @@
         "images/vinted-9920405528-2.jpg",
         "images/vinted-9920405528-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -580,8 +580,8 @@
     {
       "id": "9882975952",
       "title": "Boho Jewellery Vintage Tribal Earrings 925 Sterling Silver",
-      "priceCzk": 210,
-      "priceEur": 9,
+      "priceCzk": 167,
+      "priceEur": 7,
       "brand": "Accessories",
       "size": "",
       "sizeGroup": "",
@@ -635,8 +635,8 @@
     {
       "id": "9882151449",
       "title": "Boho Backpack Aztec Print Wanderer Bohemian Bag | Tribal Ruscksack",
-      "priceCzk": 330,
-      "priceEur": 14,
+      "priceCzk": 270,
+      "priceEur": 11,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -786,8 +786,8 @@
     {
       "id": "9861491149",
       "title": "Vintage Bag Retro Style Straw Woven Cross Body Bag Boho Bag Ethnic Fashion",
-      "priceCzk": 199,
-      "priceEur": 8,
+      "priceCzk": 170,
+      "priceEur": 7,
       "brand": "Vintage Love",
       "size": "",
       "sizeGroup": "",
@@ -873,7 +873,7 @@
         "images/vinted-9851163929-2.jpg",
         "images/vinted-9851163929-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -973,7 +973,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1553,7 +1553,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2007,7 +2007,7 @@
     },
     {
       "id": "9711247731",
-      "title": "Spiritual Bracelet | Tibetan Om Buddhist Jewellery | Rudraksh Yoga Mala Meditation",
+      "title": "Om Spiritual Jewellery Bracelet | Tibetan Buddhist Jewellery | Rudraksh Yoga Meditation Boho Hippie",
       "priceCzk": 99,
       "priceEur": 4,
       "brand": "Handmade Beauty",
@@ -2054,10 +2054,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9711247731-spiritual-bracelet-tibetan-om-buddhist-jewellery-rudraksh-yoga-mala-meditation",
-        "es": "https://www.vinted.es/items/9711247731-spiritual-bracelet-tibetan-om-buddhist-jewellery-rudraksh-yoga-mala-meditation",
-        "com": "https://www.vinted.com/items/9711247731-spiritual-bracelet-tibetan-om-buddhist-jewellery-rudraksh-yoga-mala-meditation",
-        "uk": "https://www.vinted.co.uk/items/9711247731-spiritual-bracelet-tibetan-om-buddhist-jewellery-rudraksh-yoga-mala-meditation"
+        "cz": "https://www.vinted.cz/items/9711247731-om-spiritual-jewellery-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-meditation-boho-hippie",
+        "es": "https://www.vinted.es/items/9711247731-om-spiritual-jewellery-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-meditation-boho-hippie",
+        "com": "https://www.vinted.com/items/9711247731-om-spiritual-jewellery-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-meditation-boho-hippie",
+        "uk": "https://www.vinted.co.uk/items/9711247731-om-spiritual-jewellery-bracelet-tibetan-buddhist-jewellery-rudraksh-yoga-meditation-boho-hippie"
       }
     },
     {
@@ -3014,8 +3014,8 @@
     {
       "id": "9602838102",
       "title": "mind bending Natsume Soseki The Gate NYRB Classics Introduction by Pico Iyer",
-      "priceCzk": 299,
-      "priceEur": 12,
+      "priceCzk": 250,
+      "priceEur": 10,
       "brand": "",
       "size": "",
       "sizeGroup": "",
@@ -3049,7 +3049,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5024,7 +5024,7 @@
         "images/vinted-9552844745-2.jpg",
         "images/vinted-9552844745-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6329,56 +6329,6 @@
       }
     },
     {
-      "id": "9395211212",
-      "title": "learn spanish - Don Quijote Cervantes Timeless Masterpiece Illustrated Spanish Edition",
-      "priceCzk": 199,
-      "priceEur": 8,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2319,
-          "name": "Fiction"
-        }
-      ],
-      "description": "A beautifully illustrated adaptation of the greatest novel ever written in Spanish, featuring artwork by Svetlin. Ideal for Spanish learners, students, or anyone wanting an accessible entry into Cervantes's legendary tale of the knight who tilted at windmills. #donquijote #spanishlearning #classicliterature",
-      "photo": "images/vinted-9395211212-1.jpg",
-      "photos": [
-        "images/vinted-9395211212-1.jpg",
-        "images/vinted-9395211212-2.jpg",
-        "images/vinted-9395211212-3.jpg"
-      ],
-      "favourites": 3,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9395211212-learn-spanish-don-quijote-cervantes-timeless-masterpiece-illustrated-spanish-edition",
-        "es": "https://www.vinted.es/items/9395211212-learn-spanish-don-quijote-cervantes-timeless-masterpiece-illustrated-spanish-edition",
-        "com": "https://www.vinted.com/items/9395211212-learn-spanish-don-quijote-cervantes-timeless-masterpiece-illustrated-spanish-edition",
-        "uk": "https://www.vinted.co.uk/items/9395211212-learn-spanish-don-quijote-cervantes-timeless-masterpiece-illustrated-spanish-edition"
-      }
-    },
-    {
       "id": "9395169253",
       "title": "Marlon James A Brief History of Seven Killings Man Booker Prize Winner",
       "priceCzk": 148,
@@ -7060,56 +7010,6 @@
       }
     },
     {
-      "id": "9362130631",
-      "title": "India during emergency A Wounded Civilization by V.S. Naipaul, Nobel Prize Winner",
-      "priceCzk": 149,
-      "priceEur": 6,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Good",
-        "cs": "Dobrý"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Non-fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2320,
-          "name": "Non-fiction"
-        }
-      ],
-      "description": "The book The Times called \"a devastating work\" Nobel laureate V.S. Naipaul's brutally honest reckoning with India after Indira Gandhi's Emergency. Goodreads rating 3.71 from over 1,900 ratings. Second in Naipaul's acclaimed India Trilogy, this fierce, unsparing dissection of caste, religion, poverty, and post-colonial identity has been called a phenomenal piece of work whose insights only look sharper with hindsight. Not a comfortable read a controversial, unflinching classic essential for anyone serious about postcolonial literature, Indian history, or Naipaul's Nobel Prize-winning body of work. Paperback, used condition, light cover wear (see photos).",
-      "photo": "images/vinted-9362130631-1.jpg",
-      "photos": [
-        "images/vinted-9362130631-1.jpg",
-        "images/vinted-9362130631-2.jpg",
-        "images/vinted-9362130631-3.jpg"
-      ],
-      "favourites": 2,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9362130631-india-during-emergency-a-wounded-civilization-by-vs-naipaul-nobel-prize-winner",
-        "es": "https://www.vinted.es/items/9362130631-india-during-emergency-a-wounded-civilization-by-vs-naipaul-nobel-prize-winner",
-        "com": "https://www.vinted.com/items/9362130631-india-during-emergency-a-wounded-civilization-by-vs-naipaul-nobel-prize-winner",
-        "uk": "https://www.vinted.co.uk/items/9362130631-india-during-emergency-a-wounded-civilization-by-vs-naipaul-nobel-prize-winner"
-      }
-    },
-    {
       "id": "9360886820",
       "title": "On Stands, The Alternative. Economists Don't Want You to Read. By Nick Romeo (English Paperback)",
       "priceCzk": 99,
@@ -7147,7 +7047,7 @@
         "images/vinted-9360886820-2.jpg",
         "images/vinted-9360886820-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7212,56 +7112,6 @@
         "es": "https://www.vinted.es/items/9360475926-india-summer-cotton-block-print-asymmetrical-midi-dress-size-l",
         "com": "https://www.vinted.com/items/9360475926-india-summer-cotton-block-print-asymmetrical-midi-dress-size-l",
         "uk": "https://www.vinted.co.uk/items/9360475926-india-summer-cotton-block-print-asymmetrical-midi-dress-size-l"
-      }
-    },
-    {
-      "id": "9359739617",
-      "title": "best book on pakistan Daniyal Mueenuddin – Pakistan Short Story Collection, English Paperback",
-      "priceCzk": 97,
-      "priceEur": 4,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2319,
-          "name": "Fiction"
-        }
-      ],
-      "description": "Interlinked short stories set in rural and urban Pakistan, orbiting the household of a wealthy feudal landowner and the servants, relatives, and hangers-on tied to his world. National Book Award finalist, William Dalrymple called it probably the best fiction written in English about Pakistan. Compared by critics to Chekhov and Turgenev for its restraint and psychological depth. Great pick for fans of literary fiction, South Asian writers, and linked short-story collections like Jhumpa Lahiri or Mohsin Hamid.  (National Book Award Finalist)",
-      "photo": "images/vinted-9359739617-1.jpg",
-      "photos": [
-        "images/vinted-9359739617-1.jpg",
-        "images/vinted-9359739617-2.jpg",
-        "images/vinted-9359739617-3.jpg"
-      ],
-      "favourites": 12,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9359739617-best-book-on-pakistan-daniyal-mueenuddin-pakistan-short-story-collection-english-paperback",
-        "es": "https://www.vinted.es/items/9359739617-best-book-on-pakistan-daniyal-mueenuddin-pakistan-short-story-collection-english-paperback",
-        "com": "https://www.vinted.com/items/9359739617-best-book-on-pakistan-daniyal-mueenuddin-pakistan-short-story-collection-english-paperback",
-        "uk": "https://www.vinted.co.uk/items/9359739617-best-book-on-pakistan-daniyal-mueenuddin-pakistan-short-story-collection-english-paperback"
       }
     },
     {
