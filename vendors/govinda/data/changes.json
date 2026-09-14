@@ -1,96 +1,45 @@
 {
-  "at": "2026-09-06T09:40:48.530Z",
+  "at": "2026-09-13T05:15:39.081Z",
   "first": false,
   "added": [
     {
-      "sku": "1093",
-      "title": "A3 poster of Yasoda with Krishna"
+      "sku": "1230",
+      "title": "A2 poster by Gopináth"
     },
     {
-      "sku": "1142",
-      "title": "A3 poster: Yashoda is chasing Krishna"
+      "sku": "1231",
+      "title": "A3+ poster: Krishna holding up Mount Govardhan"
     },
     {
-      "sku": "1155",
-      "title": "A2 poster: Yasoda is chasing Krishna"
+      "sku": "1277",
+      "title": "A2 poster: Krishna holding up Mount Govardhan"
     },
     {
-      "sku": "1156",
-      "title": "A3 poster: Krishna blesses a fruit seller"
+      "sku": "1278",
+      "title": "A3+ poster: Sri Krishna with a flute, portrait"
     },
     {
-      "sku": "1159",
-      "title": "A2 poster: Krishna blesses a fruit seller"
+      "sku": "1427",
+      "title": "A3+ poster: Krishna with a flute on a lotus flower, with peacocks"
     },
     {
-      "sku": "1160",
-      "title": "A3 poster: Krishna enjoying lunch with the cowherds"
+      "sku": "1431",
+      "title": "A3+ poster: Krishna with a flute"
     },
     {
-      "sku": "1161",
-      "title": "A3 poster: Krishna punishes the serpent Kaliya"
+      "sku": "2325",
+      "title": "A3+ poster: Makhan Chor seated"
     },
     {
-      "sku": "1163",
-      "title": "A3 poster of Radha and Krishna with a little cow"
+      "sku": "2326",
+      "title": "A3+ poster: Makhan Chor standing"
     },
     {
-      "sku": "1227",
-      "title": "A3 poster of Śrīla Prabhupāda"
-    },
-    {
-      "sku": "1228",
-      "title": "A3+ poster: Hanuman standing"
-    },
-    {
-      "sku": "1229",
-      "title": "A3+ poster: Hanuman running"
-    },
-    {
-      "sku": "2322",
-      "title": "A3 poster: Yasoda ties up Krishna"
-    },
-    {
-      "sku": "2323",
-      "title": "A2 poster: Yasoda ties Krishna up"
-    },
-    {
-      "sku": "2324",
-      "title": "A3 poster: Radha, Krishna and the eight gopis"
-    },
-    {
-      "sku": "2606",
-      "title": "A3 Poster: Panca Tattva"
-    },
-    {
-      "sku": "2608",
-      "title": "A3+ Poster: Panca Tattva"
-    },
-    {
-      "sku": "3905",
-      "title": "Ground cardamom 15 g DISCOUNT"
-    },
-    {
-      "sku": "3906",
-      "title": "A3+ poster: Radha and Krishna on a swing"
-    },
-    {
-      "sku": "3907",
-      "title": "Carved elephant, 4 cm"
-    },
-    {
-      "sku": "3908",
-      "title": "Carved elephant, 6.5 cm"
+      "sku": "2327",
+      "title": "A3+ poster: Krishna playing the flute on a lotus flower with little cows"
     }
   ],
   "gone": [],
-  "price": [
-    {
-      "sku": "2629",
-      "title": "A2 poster: Rása Dance",
-      "from": 280,
-      "to": 350
-    }
-  ],
+  "price": [],
   "stock": []
 }
