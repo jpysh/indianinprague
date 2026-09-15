@@ -180,10 +180,12 @@ const money = (n) => (n < 2 ? Number(n).toFixed(2) : String(Math.round(n)));
 // form exists only as a filename on disk and never as a link. index.html is the site root.
 const url = (page) => (page === "index.html" ? "/" : "/" + String(page).replace(/\.html$/, ""));
 
-// Cards per generated page. 99 keeps the heaviest shelf near the weight of a page the
-// site already served comfortably, and divides by 3 so the desktop grid ends on a full row;
-// the browser then reveals them 24 at a time (shop.js).
-const PER_PAGE = 99;
+// Cards per generated page. 48 (15 Sep 2026, was 99) divides by 2, 3, 4 and 6, so every
+// grid density ends on a full row, and all of them render at once: at six cards a phone
+// screen that is eight screens, short enough to need no reveal-as-you-scroll. 24 would have
+// been nicer still but roughly quadruples the page count, and with eight languages that
+// pushes the deploy past the 20,000-file limit of the Cloudflare free tier.
+const PER_PAGE = 48;
 
 // URL-safe form of a subcategory name. Diacritics are stripped rather than percent-encoded:
 // /wardrobe/meditation/kanthi-malas is a URL someone can read aloud, and the Sanskrit and
@@ -279,39 +281,26 @@ function extraShots(item, manifest) {
     .join(",");
 }
 
-// A one-line taste of the listing, revealed over the bottom of the photo on hover or
-// keyboard focus. Deliberately an enhancement, never the only home for anything: condition,
-// colour, size and price all live in the card's own text below the image, where a touch
-// visitor (who has no hover) and a screen reader both get them regardless.
+// The listing's description. Hidden on the card and read by shop.js into the detail sheet
+// that opens when a card is tapped.
 function blurb(item) {
   const d = (item.description || "").replace(/\s+/g, " ").trim();
   if (!d) return "";
+  // Still cut at 150 even though the detail sheet has room for more: the cut strings are
+  // what the seven translations already hold. The full partner descriptions would be ~3.9M
+  // characters of new DeepL quota.
   const cut = d.length > 150 ? d.slice(0, 149).replace(/\s+\S*$/, "") + "…" : d;
   return `<p class="blurb" id="blurb-${esc(item.id)}">${esc(cut)}</p>`;
-}
-
-// The touch route to the same text. Hover does not exist on a phone, so the blurb above was
-// simply display:none there and a touch visitor never saw a word of it — the one piece of
-// prose on the card, gone on the device most people shop from.
-//
-// A <details> and not a button: the open/closed state, the keyboard handling and the
-// accessible name all come from the browser, and there is no site-wide JavaScript to hang a
-// button off. Only rendered when there IS a description, so the control never appears with
-// nothing behind it.
-//
-// It sits before .blurb in the markup deliberately: CSS can only reach forwards, so
-// `.info[open] ~ .blurb` is what reveals the text.
-function infoToggle(item) {
-  const d = (item.description || "").trim();
-  if (!d) return "";
-  return `<details class="info"><summary aria-label="Description of ${esc(item.title)}" aria-controls="blurb-${esc(item.id)}">` +
-    `<span aria-hidden="true">i</span></summary></details>`;
 }
 
 /* --------------------------------------------------------------- WhatsApp ---- */
 
 // One number, one place to change it.
 const WA = "https://wa.me/420777558262?text=";
+// The header's WhatsApp mark. The ask control is this icon alone; its words are for screen
+// readers only.
+const WA_ICON =
+  `<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>`;
 const wa = (body) => WA + encodeURIComponent(body);
 
 // The per-card "ask" link, prefilled.
@@ -422,13 +411,11 @@ function card(item, manifest, eager, showCat) {
     // The ↗ promises a link out, so it tracks `go` exactly. Vendor cards have no
     // destination — they are bought here — and the glyph would be a lie about where the
     // card goes. Sold cards DO link out again (see the note on `go`), so they get it back.
-    (item.vendor || !item.urls?.[STOREFRONT] ? "" : `<span class="ext" aria-hidden="true">↗</span>`) +
     `${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${badges}${favBadge}` +
-    infoToggle(item) +
     blurb(item) +
     `</div>` +
     `<div class="meta"><span class="nm">${esc(item.title)}</span>${price}</div>` +
-    `<div class="tags">${esc(item.vendor ? `New · ${item.delivery}` : tags) || (sold ? "No longer available" : "")}</div>`;
+    `<div class="tags">${esc(item.vendor ? "" : tags) || (sold ? "No longer available" : "")}</div>`;
 
   // Every card is a <div>, never an <a>. It carries TWO destinations now — the Vinted
   // listing and a WhatsApp message about this specific piece — and an anchor cannot legally
@@ -453,18 +440,22 @@ function card(item, manifest, eager, showCat) {
   // listing because that is where the sale happens; a Govinda item is bought here, through
   // the ask link, and linking to the vendor's own shop would send the buyer to the same
   // item at the vendor's own price.
-  const go = item.vendor || !item.urls?.[STOREFRONT]
-    ? ""
-    : `<a class="go" href="${esc(item.urls[STOREFRONT])}" target="_blank" rel="noopener"` +
-      ` aria-label="${esc(item.title)} — ${sold ? "open the sold Vinted listing" : "open the Vinted listing"} in a new tab"></a>`;
+  // Every card has one now (15 Sep 2026). shop.js turns a click on it into the detail sheet,
+  // which carries the photos, description, WhatsApp and the Vinted link. The href is the
+  // no-JavaScript fallback: the Vinted listing where there is one, the card's own anchor
+  // otherwise, and either way the card stays one keyboard stop with the title as its name.
+  const vintedUrl = !item.vendor && item.urls?.[STOREFRONT];
+  const go = vintedUrl
+    ? `<a class="go" href="${esc(vintedUrl)}" target="_blank" rel="noopener" aria-label="${esc(item.title)}"></a>`
+    : `<a class="go" href="#${itemSlug(item)}" aria-label="${esc(item.title)}"></a>`;
 
   // No WhatsApp glyph here, deliberately. The icon's path data is ~700 bytes and there are
   // 157 cards on wardrobe.html — the mark alone would have added ~110 KB to the page to
   // decorate a link whose label already says what it does. The green carries the recognition.
   const ask =
-    `<a class="ask" href="${esc(askUrl(item))}" target="_blank" rel="noopener">` +
+    `<a class="ask" href="${esc(askUrl(item))}" target="_blank" rel="noopener">${WA_ICON}<span class="vh">` +
     `${oos ? "Notify when back" : item.vendor ? "Order on WhatsApp" : sold ? "Ask for something similar" : "Ask about this piece"}` +
-    `<span class="vh"> — opens WhatsApp in a new tab</span></a>`;
+    `</span><span class="vh"> — opens WhatsApp in a new tab</span></a>`;
 
   // The id is the item's address. There is no page per piece — a card on a shelf is what an
   // item IS here — so the anchor is the only way to link to one, for a shopper pasting it
@@ -557,13 +548,16 @@ const VINTED_SYMBOL =
   `<path fill="currentColor" d="M16.642 11c-.285 0-.631.24-1.563 1.052-.331.12-.692.03-1.113.677-2.375 3.413-4.224 16.176-5.803 19.86-.316-1.594-.977-11.968-1.233-14.809-.03-.526.03-1.188.03-1.578 0-2.616-.57-3.94-3.187-3.94-1.323 0-2.63.482-3.322 1.354-.33.45-.451.782-.451 1.593 0 5.428 1.293 14.327 2.736 20.13.451 1.82 2.075 2.165 3.608 2.165.722 0 1.443-.09 2.466-.601 3.547-1.73 4.495-6.45 5.412-11.035.165-.827.992-4.826 1.383-6.93.526-2.872 1.127-6.119 1.488-7.307.12-.36-.105-.631-.45-.631Zm60.254 12.989c-.48 3.593-2.315 9.742-4.36 9.742-.586 0-.886-.677-.886-1.504 0-2.36 1.593-7.08 5.246-8.238Zm-17.844 4.044c.466-2.105 2.48-5.322 4.284-5.322.33 0 .511.21.466.722-.105 1.593-1.293 4.24-4.75 4.6ZM83 12.623c0-.63-.39-1.187-1.278-1.187-.721 0-1.563.36-2.09.812-.63-.15-1.473.33-1.578.902-.541 2.54-.782 5.186-1.082 7.366-3.638.33-6.405 2.345-7.758 5.638a12.824 12.824 0 0 1-.781 1.578c-1.925 3.278-4.33 5.172-6.69 5.172-1.73 0-2.721-1.218-2.842-2.872.617.15 1.203.226 1.744.226 3.909 0 5.893-3.698 5.893-6.194 0-2.42-1.623-3.653-4.029-3.653-4.39.03-8.043 5.262-8.043 10.042 0 3.398 1.519 6.089 4.977 6.089 2.675 0 6.374-1.473 8.884-5.262-.165 2.691.541 5.322 2.842 5.578 1.293.12 3.638-.692 5.201-3.879.12 2.646.962 3.924 1.639 3.924 1.218 0 1.984-.436 2.931-.481.301-.015.391-.286.391-.526 0-.391-.45-1.835-.45-3.91 0-3.171.63-8.132 1.969-18.25.06-.24.15-.737.15-1.112Zm-60.134 6.48c1.173 0 2.135-.962 2.135-2.014 0-1.383-.421-2.706-1.985-2.706-1.067 0-2.916 1.202-2.916 2.24 0 1.217 1.338 2.48 2.766 2.48Zm31.976-.842c-.676-.135-1.413-.15-2.165-.15.03-.526-.015-1.534 0-2.42 0-.136.06-.376.06-.677 0-.3-.06-.631-.27-.932.075-.21.12-.391.12-.526 0-.722-1.067-.992-2.074-.992-.872 0-1.684.315-1.97 1.262-.466 1.669-.601 2.39-.721 4.134-1.053.06-3.097.076-3.052.722.12 1.669 1.729 2.21 2.886 2.24-.135 4.585-3.969 12.012-5.156 12.012-.226 0-.316-.36-.316-1.128 0-1.503.316-3.518.316-5.652 0-1.323-.136-2.526-.541-3.293-.512-.917-2.195-1.368-3.518-1.368-.512 0-.932.06-1.263.18-2.195.888-4.044 5.879-4.736 6.991.331-3.021.827-5.382.827-6.614 0-.692-.616-1.308-1.308-1.308-.27 0-.51.09-.736.3-.993.361-2.316 0-2.541 1.413-.06.376-.135.827-.165 1.339-.241 3.668-3.91 10.463-5.788 10.463-.466 0-.572-.601-.572-1.368 0-2.556 1.323-7.938 1.353-9.02.076-.166.12-.361.12-.526 0-1.023-1.202-2.015-2.435-2.015-.36 0-.616-.075-.902-.075-.18 0-.376.03-.586.165-1.368.872-2.57 5.863-2.57 8.93 0 3.383 1.969 6.089 5.096 6.089 2.24 0 4.134-2.045 5.742-4.871 0 .436-.09 2.555 0 3.758.06.827.917.466 1.955.887.39.33.751.481 1.067.481.526 0 .932-.466 1.233-1.278 1.233-3.382 4.21-10.974 5.051-10.974.631 0-.015 4.886-.015 7.306 0 1.383.135 2.571.616 3.082.887.932 1.834 1.383 2.827 1.383 2.195 0 4.51-2.345 6.404-6.705-.12 1.864-.135 2.436-.135 3.082 0 1.082.06 2.285.21 3.157.09.421.136.722.511.992.511.286.977.451 1.233.632.586.285.541.436 1.353.436.286 0 .677-.27.737-.917.721-7.141 1.473-15.95 1.473-15.95.481-.016 1.85-.362 3.127-.512.541-.06 1.188-.39 1.188-.782 0-.39-.857-1.142-1.97-1.383Z"/>` +
   `</symbol></svg>`;
 
-const grid = (items, manifest, showCat, allUrl = "") =>
+// seq, when given, lets shop.js say "1–48 of 439": where this page starts in its shelf and
+// how big the shelf is. Without it the count falls back to the cards in the grid.
+const grid = (items, manifest, showCat, allUrl = "", seq = null) =>
   // The symbol rides with the grid rather than the page shell, because that is the one
   // insertion point both kinds of page share: generated shelves get it inside page(), and the
   // hand-written ones (wardrobe.html, fashion.html) get it when their SHOP:GRID region is
   // replaced. Cards injected later by shop.js reference it from the DOM it is already in.
   VINTED_SYMBOL +
-  `<div class="grid3" id="grid"${allUrl ? ` data-all="${allUrl}"` : ""}>\n` +
+  `<div class="grid3" id="grid"${allUrl ? ` data-all="${allUrl}"` : ""}` +
+  (seq?.count ? ` data-start="${(seq.no - 1) * PER_PAGE}" data-total="${seq.count}"` : "") + `>\n` +
   items.map((it, i) => "    " + card(it, manifest, i < 3, showCat)).join("\n") +
   `\n  </div>`;
 
@@ -858,7 +852,7 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
   const self = sub ? subFile(cat, sub, seq.no) : pageFile(cat, seq.no);
   // Only when there is more to fetch: a shelf that fits on one page already holds every
   // card the filters could match.
-  const allUrl = seq.total > 1 && !sub ? url(cat.page).replace(/\/$/, "") + ".cards" : "";
+  const allUrl = seq.total > 1 ? url(sub ? subFile(cat, sub, 1) : cat.page).replace(/\/$/, "") + ".cards" : "";
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -908,7 +902,7 @@ ${markNav(ch.header, "wardrobe")}
         count taken from the hundred cards on screen would promise "Out of stock 13" and
         then find 107. */ ""}${toolbar(shelfItems || items)}
 
-  ${grid(items, manifest, cat.name === "Everything", allUrl)}
+  ${grid(items, manifest, cat.name === "Everything", allUrl, seq)}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>
   ${pager(cat, seq, sub)}
 </div></section>
@@ -1101,7 +1095,7 @@ async function main() {
 
     for (let no = 1; no <= total; no++) {
       const slice = items.slice((no - 1) * PER_PAGE, no * PER_PAGE);
-      const seq = { no, total };
+      const seq = { no, total, count: items.length };
       const file = pageFile(cat, no);
 
       // First shelf to claim an item wins. Two CATEGORIES can list the same source category
@@ -1122,7 +1116,7 @@ async function main() {
           // other call site: options taken from one page of 99 describe that page, and the
           // filters act on the shelf.
           : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(items) +
-            "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "") +
+            "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "", seq) +
             `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
             pager(cat, seq);
         await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
@@ -1154,13 +1148,20 @@ async function main() {
     for (const [name, subItems] of bySub) {
       if (subItems.length < SUB_MIN) continue;
       const subTotal = Math.max(1, Math.ceil(subItems.length / PER_PAGE));
+      // Same as a shelf: a subcategory past one page gets its .cards, so its filters search
+      // all of it rather than the page on screen.
+      if (subTotal > 1) {
+        const cardsFile = subFile(cat, name, 1).replace(/\.html$/, ".cards");
+        await writeFile(path.join(ROOT, cardsFile), cardsFragment(subItems, manifest, false));
+        wrote.add(path.resolve(ROOT, cardsFile));
+      }
       for (let no = 1; no <= subTotal; no++) {
         const file = subFile(cat, name, no);
         await mkdir(path.dirname(path.join(ROOT, file)), { recursive: true });
         await writeFile(
           path.join(ROOT, file),
           page(cat, subItems.slice((no - 1) * PER_PAGE, no * PER_PAGE), manifest, counts, ch,
-               { no, total: subTotal }, name, items),
+               { no, total: subTotal, count: subItems.length }, name, items),
         );
         wrote.add(path.resolve(ROOT, file));
         subPages++;
@@ -1187,7 +1188,7 @@ async function main() {
         for (const f of await readdir(d, { withFileTypes: true })) {
           const full = path.join(d, f.name);
           if (f.isDirectory()) { await sweep(full); continue; }
-          if (!f.name.endsWith(".html") || wrote.has(path.resolve(full))) continue;
+          if (!/\.(html|cards)$/.test(f.name) || wrote.has(path.resolve(full))) continue;
           await rm(full);
           console.log(`  ${path.relative(ROOT, full)} — removed (no longer generated)`);
         }
@@ -1243,7 +1244,7 @@ async function main() {
     // and suppressed the Availability control entirely. That in turn made ?avail=sold a
     // no-op on /wardrobe: shop.js only honours the parameter when the page rendered the
     // control it belongs to.
-    await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal }, null, live));
+    await writeFile(path.join(ROOT, file), page(all, slice, manifest, counts, ch, { no, total: allTotal, count: live.length }, null, live));
   }
   if (allTotal > 1) {
     await writeFile(path.join(ROOT, "wardrobe.cards"), cardsFragment(live, manifest, true));
@@ -1374,7 +1375,10 @@ async function main() {
   // A shelf with a count answers the question the homepage is actually asked ("what do you
   // have?") and lets someone pick a lane before they browse. The photo on each tile is the
   // newest piece on that shelf, so the front page still turns over as the closet does.
-  const tiles = CATEGORIES.filter((c) => !c.module && counts[c.name])
+  // Others is left off the front page (15 Sep 2026): "odds and ends" is not a lane anyone
+  // picks, and those pieces are uncategorised only for want of a sorting rule. The shelf
+  // itself stays live and linked from the wardrobe nav.
+  const tiles = CATEGORIES.filter((c) => !c.module && counts[c.name] && c.slug !== "others")
     .map((c) => {
       // (c.names || [c.name]), matching the shelf and the counts. Filtering on c.name alone
       // meant the Others tile drew from the single item whose category literally reads

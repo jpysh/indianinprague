@@ -48,6 +48,20 @@
   background:linear-gradient(150deg,rgba(232,169,60,.14),transparent 70%),var(--void-2);
   justify-content:center;
 }
+/* It spans whatever is left of its row, so the grid never ends on an empty cell however
+   many shelves there are. Order matters: each wider breakpoint resets the narrower spans. */
+.tile-all:nth-child(odd){grid-column:span 2}
+@media (min-width:641px){
+  .tile-all:nth-child(odd){grid-column:auto}
+  .tile-all:nth-child(3n+1){grid-column:span 3}
+  .tile-all:nth-child(3n+2){grid-column:span 2}
+}
+@media (min-width:1400px){
+  .tile-all:nth-child(n){grid-column:auto}
+  .tile-all:nth-child(4n+1){grid-column:span 4}
+  .tile-all:nth-child(4n+2){grid-column:span 3}
+  .tile-all:nth-child(4n+3){grid-column:span 2}
+}
 .tile-all .tbody{padding:18px 14px;gap:6px;justify-content:center}
 .tile-all h3{font-size:var(--fs-m);color:var(--magenta)}
 .tile-all .more{

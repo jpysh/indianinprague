@@ -17,7 +17,7 @@
   // resolve to /wardrobe/images/derived/.
   var IMG = "/images/derived/";
   var SIZES = "(min-width:801px) 400px, (min-width:521px) 50vw, calc(100vw - 40px)";
-  var PAGE = 24; // cards revealed per step
+  var PAGE = 48; // cards revealed per step once a filter has pulled in the whole shelf
   // The sticky site header is 52px; leave a little air so the toolbar does not land flush
   // underneath it when the jump control scrolls back to it.
   var HEADER_CLEARANCE = 68;
@@ -160,11 +160,140 @@
     card.classList.add("has-shots");
   }
 
-  cards.forEach(function (card) {
+  // Galleries only in the large view. In the grid a finger scrolling past six cards a screen
+  // would touchstart every one of them and fetch photos nobody is looking at; there, the
+  // detail sheet is where the other photos live.
+  function wireCarousel(card) {
     if (!card.getAttribute("data-shots")) return;
     ["pointerenter", "focusin", "touchstart"].forEach(function (ev) {
-      card.addEventListener(ev, function () { buildCarousel(card); }, { once: true, passive: true });
+      card.addEventListener(ev, function () {
+        if (grid.classList.contains("list")) buildCarousel(card);
+      }, { passive: true });
     });
+  }
+  cards.forEach(wireCarousel);
+
+  /* ------------------------------------------------------------ view toggle ---- */
+
+  // Grid (two across on a phone) is the default; the large view is one across. Remembered
+  // in this browser only, and a blocked localStorage simply means the default every time.
+  var VIEW_KEY = "wardrobe-view";
+  var ICON_GRID = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor">' +
+    '<rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/>' +
+    '<rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>';
+  var ICON_LIST = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor">' +
+    '<rect x="4" y="3" width="16" height="18"/></svg>';
+  var viewBtns = [];
+
+  function viewButton() {
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "sb-view";
+    b.addEventListener("click", function () { setView(!grid.classList.contains("list")); });
+    viewBtns.push(b);
+    return b;
+  }
+
+  // The icon shows the view a press switches TO, like a play/pause button.
+  function setView(list, keep) {
+    grid.classList.toggle("list", list);
+    viewBtns.forEach(function (b) {
+      b.innerHTML = list ? ICON_GRID : ICON_LIST;
+      b.setAttribute("aria-label", "Large photos");
+      b.setAttribute("aria-pressed", String(list));
+    });
+    if (keep) return;
+    try { localStorage.setItem(VIEW_KEY, list ? "list" : "grid"); } catch (e) {}
+  }
+
+  var savedView = "";
+  try { savedView = localStorage.getItem(VIEW_KEY) || ""; } catch (e) {}
+
+  /* ----------------------------------------------------------- detail sheet ---- */
+
+  // One <dialog> for every card, filled from the card that was tapped. Everything it shows
+  // is already in that card's markup (the description rides along hidden), so opening it
+  // costs no request. Its URL is the card's own #anchor, pushed as a history entry so the
+  // phone's Back button closes the sheet instead of leaving the shelf.
+  var sheet = document.createElement("dialog");
+  sheet.className = "sheet";
+  sheet.setAttribute("aria-labelledby", "sheet-title");
+  sheet.innerHTML =
+    '<button type="button" class="sheet-x" aria-label="Close">&times;</button>' +
+    '<div class="sheet-media"></div>' +
+    '<div class="sheet-body"><h2 id="sheet-title"></h2><p class="sheet-pr"></p>' +
+    '<p class="sheet-tags"></p><p class="sheet-desc"></p>' +
+    '<div class="sheet-acts"><a class="sheet-wa" target="_blank" rel="noopener"></a>' +
+    '<a class="sheet-vinted" target="_blank" rel="noopener">Vinted &#8599;</a></div></div>';
+  document.body.appendChild(sheet);
+  var sheetPushed = false;
+
+  function openSheet(card, push) {
+    var text = function (sel) { var el = card.querySelector(sel); return el ? el.textContent.trim() : ""; };
+
+    // A fresh frame each time: buildCarousel appends its arrows and counter to it.
+    var media = sheet.querySelector(".sheet-media");
+    media.innerHTML = '<div class="frame"><div class="shots" data-track></div></div>';
+    var first = card.querySelector(".shot");
+    if (first) media.querySelector("[data-track]").appendChild(first.cloneNode(true));
+    card.querySelectorAll(".frame > .cap.flag").forEach(function (f) {
+      media.firstChild.appendChild(f.cloneNode(true));
+    });
+    media._built = false;
+    if (card.getAttribute("data-shots")) media.setAttribute("data-shots", card.getAttribute("data-shots"));
+    else media.removeAttribute("data-shots");
+    buildCarousel(media);
+
+    sheet.querySelector("h2").textContent = text(".nm");
+    sheet.querySelector(".sheet-pr").textContent = text(".pr");
+    sheet.querySelector(".sheet-tags").textContent = text(".tags");
+    sheet.querySelector(".sheet-desc").textContent = text(".blurb");
+
+    var ask = card.querySelector(".ask");
+    var wa = sheet.querySelector(".sheet-wa");
+    wa.hidden = !ask;
+    if (ask) {
+      wa.href = ask.href;
+      wa.innerHTML = ask.innerHTML;
+    }
+    var go = card.querySelector(".go");
+    var vinted = sheet.querySelector(".sheet-vinted");
+    vinted.hidden = !(go && /^https?:/.test(go.getAttribute("href")));
+    if (!vinted.hidden) vinted.href = go.href;
+
+    if (push) {
+      history.pushState({ sheet: card.id }, "", location.pathname + location.search + "#" + card.id);
+      sheetPushed = true;
+    }
+    if (!sheet.open) sheet.showModal();
+    sheet.scrollTop = 0;
+  }
+
+  // Every way out goes through history when the sheet put an entry there, so the entry is
+  // never left behind for Back to land on a second time.
+  function closeSheet() {
+    if (sheetPushed) { history.back(); return; }
+    if (sheet.open) sheet.close();
+    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  }
+
+  window.addEventListener("popstate", function () {
+    sheetPushed = false;
+    if (sheet.open) sheet.close();
+  });
+  sheet.querySelector(".sheet-x").addEventListener("click", closeSheet);
+  sheet.addEventListener("cancel", function (e) { e.preventDefault(); closeSheet(); });
+  // A click on the dialog element itself is a click on the backdrop.
+  sheet.addEventListener("click", function (e) { if (e.target === sheet) closeSheet(); });
+
+  // Delegated, so cards the filters fetch later behave the same. Only the card's stretched
+  // link opens the sheet; the arrows and the WhatsApp control keep their own jobs, and a
+  // modified click still opens the link the way the visitor asked.
+  grid.addEventListener("click", function (e) {
+    var go = e.target.closest ? e.target.closest(".go") : null;
+    if (!go || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    openSheet(go.closest(".piece"), true);
   });
 
   if (!bar) return;
@@ -261,8 +390,10 @@
   var shown = [];
   var revealed = 0;
 
+  // A generated page holds 48 cards and shows them all. Batches only matter once a filter
+  // has swapped the whole shelf in, which can be hundreds.
   function reveal() {
-    var to = Math.min(revealed + PAGE, shown.length);
+    var to = allUrl && full ? Math.min(revealed + PAGE, shown.length) : shown.length;
     for (var i = revealed; i < to; i++) shown[i].hidden = false;
     revealed = to;
     more.hidden = revealed >= shown.length;
@@ -270,10 +401,18 @@
     tally();
   }
 
+  // "1–48 of 439". Unfiltered, a page counts from where it sits in its shelf, whose size the
+  // build wrote on the grid; filtered, the grid is the whole shelf and counts from one.
+  var pageStart = Number(grid.getAttribute("data-start")) || 0;
+  var shelfTotal = Number(grid.getAttribute("data-total")) || 0;
+
   function tally() {
-    count.textContent = revealed >= shown.length
-      ? (shown.length === cards.length ? cards.length + " pieces" : shown.length + " of " + cards.length + " pieces")
-      : "Showing " + revealed + " of " + shown.length;
+    var paged = !anyActive() && shelfTotal > shown.length;
+    var from = paged ? pageStart : 0;
+    var of = paged ? shelfTotal : shown.length;
+    count.textContent = revealed >= of
+      ? of + (of === 1 ? " piece" : " pieces")
+      : (revealed ? from + 1 : 0) + "–" + (from + revealed) + " of " + of;
   }
 
   more.addEventListener("click", reveal);
@@ -519,11 +658,7 @@
         cards.forEach(function (c, i) { c._i = i; });
         // Galleries are built on first interaction with a card, so the new ones need the
         // same listeners the original hundred got.
-        cards.forEach(function (card) {
-          ["pointerenter", "focusin", "touchstart"].forEach(function (ev) {
-            card.addEventListener(ev, function () { buildCarousel(card); }, { once: true, passive: true });
-          });
-        });
+        cards.forEach(wireCarousel);
         // The pager is now meaningless: every card of the shelf is in this grid, and the
         // reveal button below takes over from it.
         var pg = document.querySelector(".pager");
@@ -602,7 +737,11 @@
     '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false" fill="none" ' +
     'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M12 19V5M5 12l7-7 7 7"/></svg></button>';
+  jump.insertBefore(viewButton(), jump.querySelector(".sb-jump-top"));
   document.body.appendChild(jump);
+  // Beside the count, so the toggle can be found without scrolling first.
+  count.parentNode.appendChild(viewButton());
+  setView(savedView === "list", true);
 
   // Honour the OS setting the rest of the site already honours.
   var smooth = matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
@@ -668,4 +807,9 @@
   syncRefine();
   apply();
   onScroll();
+
+  // A shared or indexed link to one piece (the item URLs in the structured data are
+  // /wardrobe/fashion#slug) opens that piece's sheet.
+  var landed = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (landed && landed.classList.contains("piece")) openSheet(landed, false);
 })();

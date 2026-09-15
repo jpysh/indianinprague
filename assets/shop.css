@@ -288,94 +288,17 @@
        top-left      SOLD / Reserved flag
        top-right     favourites badge
        bottom-left   brand or category caption
-       bottom-right  external-link mark, with the photo counter to its left
-   The blurb slides over the bottom edge on hover and deliberately covers both. */
+       bottom-right  photo counter */
 .shot-count{
-  position:absolute;bottom:9px;right:40px;z-index:3;
+  position:absolute;bottom:9px;right:8px;z-index:3;
   background:rgba(10,9,8,.62);color:var(--bone);
   font-size:var(--fs-2xs);letter-spacing:.05em;padding:3px 7px;
 }
 
-/* site.css puts this mark top-right, which is now the favourites badge's corner. */
-.piece .ext{top:auto;bottom:9px;right:8px}
 
 /* A long brand name would otherwise run under the counter in the opposite corner. */
 .frame > .cap:not(.flag){max-width:58%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-/* ---------- card: hover blurb ---------- */
-
-/* The listing's own words, over the bottom of the photo on hover or keyboard focus.
-   Strictly an extra: condition, colour, size and price all live in the card's text below
-   the image, so a touch visitor (who has no hover) and a screen reader lose nothing. */
-.frame .blurb{
-  position:absolute;left:0;right:0;bottom:0;z-index:5;
-  margin:0;padding:14px 12px 12px;
-  background:linear-gradient(to top,rgba(10,9,8,.94),rgba(10,9,8,.86) 65%,transparent);
-  /* Plex SANS here, not the site's Plex Mono. This is the only text on a shop page that is
-     read rather than scanned, and a monospace face gives every letter the same width, so
-     word shapes flatten and reading slows. Plex Sans is the same family's proportional
-     sibling, so it sits with the rest of the page instead of fighting it.
-     12.5px/1.65 rather than 11px/1.5 — small text in a dark overlay needs the extra leading
-     more than body copy on a light ground does. */
-  font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
-  color:var(--bone);font-size:var(--fs-s);line-height:var(--lh-read);letter-spacing:.005em;
-  opacity:0;transform:translateY(6px);
-  transition:opacity .18s ease,transform .18s ease;
-  pointer-events:none;
-}
-.piece:hover .blurb,.piece:focus-within .blurb{opacity:1;transform:none}
-/* The caption sits in the same corner, so it steps aside rather than being overprinted. */
-.piece:hover .frame > .cap:not(.flag),.piece:focus-within .frame > .cap:not(.flag){opacity:0}
-.frame > .cap:not(.flag){transition:opacity .18s ease}
-/* ---------- the description on touch (24 Aug 2026) ----------
- *
- * This line used to read `@media (hover:none){.frame .blurb{display:none}}`. On a phone the
- * blurb was not merely unreachable, it was removed: the one piece of prose on the card,
- * absent on the device most people shop from, while desktop got it for free on hover.
- *
- * The touch route is an "i" disclosure in the bottom-left corner of the photograph. Desktop
- * keeps hover exactly as it was — the two live side by side because they suit different
- * inputs: a pointer can reveal on the way past at no cost, a thumb cannot.
- *
- * WHY THE BOTTOM-LEFT CORNER IS FREE. It was the brand caption's (.cap, "Indian"). On touch
- * that caption is hidden and the toggle takes the slot: the brand is already in the card's
- * title underneath, so nothing is lost, whereas the description had nowhere else to go.
- *
- * Above .go on the z axis, like .ask and .shot-nav, or the card's stretched link would
- * swallow the tap.
- */
-@media (hover:none){
-  /* Present but hidden, rather than display:none — the reveal below animates it in, and a
-     display:none element cannot transition. */
-  .frame .blurb{display:block;opacity:0;pointer-events:none}
-
-  .frame > .cap:not(.flag){display:none}
-
-  .piece .info{position:absolute;left:8px;bottom:8px;z-index:7}
-  .piece .info>summary{
-    list-style:none;cursor:pointer;
-    display:flex;align-items:center;justify-content:center;
-    /* 34px visible, 44px of touch target via the padding-free min sizes below: the WCAG 2.2
-       floor with a mark small enough not to sit on the garment. */
-    width:34px;height:34px;min-width:34px;
-    border-radius:999px;
-    border:1px solid rgba(242,239,230,.42);
-    background:rgba(10,9,8,.72);
-    color:var(--bone);
-    font-family:var(--mono);font-size:var(--fs-s);font-weight:600;line-height:1;
-    font-style:italic;
-  }
-  .piece .info>summary::-webkit-details-marker{display:none}
-  .piece .info[open]>summary{background:var(--magenta);color:var(--void);border-color:var(--magenta)}
-  /* The reveal. Same overlay the pointer gets, same styling, driven by state instead of hover. */
-  .piece .info[open] ~ .blurb{opacity:1;transform:translateY(0)}
-  /* The open blurb must clear the toggle, or the first line sits under it. */
-  .piece .info[open] ~ .blurb{padding-bottom:50px}
-}
-
-/* The toggle is touch-only: a pointer already has hover, and two ways to the same sentence
-   on one card is one too many. */
-@media (hover:hover){.piece .info{display:none}}
 
 /* ---------- card: sold and reserved ---------- */
 
@@ -542,10 +465,8 @@
 /* The carousel arrows used to be inside the card's anchor and cancelled its navigation with
    preventDefault. They are outside it now, so they simply need to be on top. */
 .shot-nav{z-index:7}
-/* Decorative overlays must not eat clicks meant for the card beneath them. .blurb covers the
-   bottom third of the photograph on hover, which is a large dead zone if it is left
-   interactive. */
-.piece .blurb,.piece .grain,.piece .cap,.piece .ext,.piece .fav-badge{pointer-events:none}
+/* Decorative overlays must not eat clicks meant for the card beneath them. */
+.piece .grain,.piece .cap,.piece .fav-badge{pointer-events:none}
 
 /* The focus ring belongs to the card, not to the invisible rectangle on top of it. */
 .piece:focus-within .frame{outline:2px solid var(--magenta);outline-offset:2px}
@@ -712,5 +633,104 @@
  * and those cards carry a title and an excerpt: four across turns an article into a tile.
  * shop.css is only ever loaded on wardrobe pages, so the split needs no extra class. */
 @media (min-width:1400px){
-  .grid3{grid-template-columns:repeat(4,minmax(0,1fr))}
+  #grid.list{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+
+/* ---------- two densities: the catalogue grid and the large view (15 Sep 2026) ----------
+ *
+ * The grid is the default: two across and six cards on a 375x812 phone, so a shelf can be
+ * glanced at rather than read. It is a 4:5 photograph and one line under it, price first,
+ * because at ~170px wide there is room for what a thing costs and what it is and nothing
+ * else. Text stays OFF the photograph: this stock is block prints, embroidery and silver,
+ * and a scrim legible over those would cover the thing being sold.
+ *
+ * #grid.list is the large view, one across on a phone, and is the card as it was: tags and
+ * the WhatsApp control under the photo. shop.js toggles the class. Everything else about a
+ * piece — every photo, the description, the Vinted link — is in the detail sheet a tap on
+ * either card opens. */
+/* Row gap 0 and the space as a card margin: a card spans four subgrid rows, and a row gap
+   would also open between its own photo, title, tags and button. */
+#grid{gap:0 8px;grid-template-columns:repeat(2,minmax(0,1fr))}
+#grid>.piece{margin-bottom:12px}
+@media (min-width:521px){#grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:801px){#grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:12px}#grid>.piece{margin-bottom:20px}}
+@media (min-width:1400px){#grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+#grid.list{column-gap:12px;grid-template-columns:minmax(0,1fr)}
+#grid.list>.piece{margin-bottom:20px}
+@media (min-width:521px){#grid.list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:801px){#grid.list{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:16px}}
+
+/* The card is its own grid (subgrid rows, site.css) with an implicit auto column, which
+   sizes to the 4:5 frame's ~560px min-content and burst out of a 163px track. */
+#grid>.piece{grid-template-columns:minmax(0,1fr)}
+.piece .blurb{display:none}
+#grid:not(.list) .tags,#grid:not(.list) .ask,#grid:not(.list) .shot-nav,#grid:not(.list) .shot-count,
+#grid:not(.list) .frame > .cap:not(.flag),#grid:not(.list) .cap.vendor-flag,#grid:not(.list) .cap.vinted-flag{display:none}
+#grid:not(.list) .meta{padding:5px 1px 0;gap:6px;align-items:baseline;justify-content:flex-start}
+#grid:not(.list) .meta .pr{order:-1;font-size:var(--fs-s);align-self:baseline}
+#grid:not(.list) .meta .nm{font-size:var(--fs-2xs);color:var(--bone-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#grid:not(.list) .fav-badge{top:6px;right:6px;padding:3px 6px;gap:4px;font-size:var(--fs-2xs)}
+#grid:not(.list) .fav-badge svg{width:12px;height:12px}
+#grid:not(.list) .cap.flag{top:6px;left:6px;font-size:10px;padding:2px 5px}
+#grid:not(.list) .cap.flag ~ .cap.flag{top:28px}
+
+/* The ask control is the WhatsApp mark alone, its words kept for screen readers. */
+.piece .ask svg{display:block}
+
+/* ---------- view toggle ---------- */
+.sb-view{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;padding:0;
+  background:none;color:var(--bone);border:1px solid rgba(242,239,230,.22);cursor:pointer;
+}
+.sb-view:hover{border-color:var(--bone)}
+.sb-view:focus-visible{outline:2px solid var(--magenta);outline-offset:2px}
+.sb-jump .sb-view{width:46px;min-width:46px;padding:0;border:1px solid var(--magenta);background:var(--magenta);color:var(--void)}
+
+/* ---------- detail sheet ----------
+ * A native <dialog>: focus trap, Escape and the backdrop come from the browser. A bottom
+ * sheet on a phone, a centred two-column panel on a wide screen. */
+.sheet{
+  width:100%;max-width:100%;max-height:92dvh;margin:auto auto 0;padding:0;
+  border:0;border-top:1px solid rgba(232,169,60,.4);
+  background:var(--void-2);color:var(--bone);overflow:auto;overscroll-behavior:contain;
+}
+.sheet::backdrop{background:rgba(10,9,8,.72)}
+.sheet-x{
+  position:sticky;top:0;float:right;z-index:9;
+  width:44px;height:44px;margin:6px 6px -50px 0;
+  background:rgba(10,9,8,.72);color:var(--bone);border:1px solid rgba(242,239,230,.3);
+  font-size:24px;line-height:1;cursor:pointer;
+}
+.sheet-media .frame{aspect-ratio:4/5;border:0;max-height:62dvh;margin:0 auto}
+.sheet .shot-nav{opacity:.85}
+.sheet .cap.flag{position:absolute;z-index:3}
+.sheet-body{padding:16px 16px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:10px}
+.sheet-body h2{font-size:var(--fs-m);font-weight:500;line-height:var(--lh-snug);margin:0}
+.sheet-pr{font-size:var(--fs-xl);font-weight:600;color:var(--magenta);margin:0}
+.sheet-tags{font-size:var(--fs-2xs);letter-spacing:.04em;text-transform:uppercase;color:var(--bone-dim);margin:0}
+.sheet-desc{
+  margin:0;white-space:pre-line;color:var(--bone);
+  font-family:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:var(--fs-s);line-height:var(--lh-read);
+}
+.sheet-acts{display:flex;gap:8px;align-items:stretch;margin-top:4px}
+.sheet-acts a{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 16px;
+  font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
+}
+.sheet-wa{flex:1 1 auto;background:#25D366;color:var(--void)}
+.sheet-wa svg{width:26px;height:26px}
+.sheet-vinted{border:1px solid rgba(242,239,230,.3);color:var(--bone)}
+.sheet-vinted[hidden]{display:none}
+@media (min-width:801px){
+  .sheet{
+    max-width:min(960px,calc(100% - 48px));max-height:88vh;margin:auto;
+    border:1px solid rgba(232,169,60,.4);
+    display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);
+  }
+  .sheet:not([open]){display:none}
+  .sheet-x{position:absolute;right:0;top:0;float:none;margin:8px}
+  .sheet-media .frame{max-height:88vh}
+  .sheet-body{padding:28px 28px 28px;overflow:auto}
 }
