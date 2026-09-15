@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-14T05:17:48.737Z",
-  "count": 6298,
+  "generated": "2026-09-15T05:17:26.277Z",
+  "count": 6307,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -25200,6 +25200,42 @@
     "text.ccca0091e0e9": {
       "text": "Bracelet « Om Spiritual Jewellery » | Bijoux bouddhistes tibétains | Rudraksh, yoga, méditation, bohème, hippie — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
       "src": "ccca0091e0e9"
+    },
+    "item.10001568911.title": {
+      "text": "Veste longue matelassée | réversible | 100 % coton | automne | veste indienne | style bohème",
+      "src": "66226ae0065d"
+    },
+    "item.10001568911.description": {
+      "text": "Veste longue matelassée, confectionnée à la main en Inde. \nImprimés floraux. \nCoutures matelassées pour une meilleure isolation thermique et un aspect texturé.\nCoton de grande qualité.\nDeux poches d’un côté du modèle ; l’envers ne comporte pas de poches. \nEntretien facile, lavable en machine.\nL’étiquette indique « L », mais je n’en suis pas certaine. Elle correspond plutôt à une taille M.\nDimensions :\nTour de poitrine : 38 pouces \nLongueur : 36 pouces",
+      "src": "8577ab5f83a5"
+    },
+    "text.4b4187b087bc": {
+      "text": "439 pièces",
+      "src": "4b4187b087bc"
+    },
+    "text.5782df8ada0f": {
+      "text": "63 avis sur Vinted →",
+      "src": "5782df8ada0f"
+    },
+    "text.82d18acf8fc0": {
+      "text": "1 671 pièces en vente · 74 vendues",
+      "src": "82d18acf8fc0"
+    },
+    "text.7155c858ff83": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 63 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "7155c858ff83"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Description de la veste longue matelassée | réversible | 100 % coton | automne | veste indienne | style bohème",
+      "src": "b43c8269a9ec"
+    },
+    "text.a64f154dc7aa": {
+      "text": "Veste longue matelassée | réversible | pur coton | automne | veste indienne | style bohème — ouvrez la fiche produit «Vinted» dans un nouvel onglet",
+      "src": "a64f154dc7aa"
+    },
+    "text.eed03c211aea": {
+      "text": "Veste longue matelassée, confectionnée à la main en Inde. Motifs floraux. Coutures matelassées pour une meilleure isolation thermique et un aspect texturé. Coton de grande qualité. Deux poches…",
+      "src": "eed03c211aea"
     }
   }
 }

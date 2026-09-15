@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-14T05:17:50.264Z",
-  "count": 6298,
+  "generated": "2026-09-15T05:17:28.106Z",
+  "count": 6307,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -25200,6 +25200,42 @@
     "text.ccca0091e0e9": {
       "text": "Pulsera de joyería espiritual Om | Joyería budista tibetana | Rudraksh, yoga, meditación, estilo boho y hippie — abra el anuncio de Vinted en una nueva pestaña",
       "src": "ccca0091e0e9"
+    },
+    "item.10001568911.title": {
+      "text": "Chaqueta larga acolchada | reversible | algodón puro | otoño | chaqueta india | estilo boho",
+      "src": "66226ae0065d"
+    },
+    "item.10001568911.description": {
+      "text": "Chaqueta larga acolchada confeccionada a mano en la India. \nEstampados florales. \nCosturas acolchadas que aportan aislamiento y un aspecto texturizado.\nAlgodón de alta calidad.\nDos bolsillos en un lado del diseño; el lado reversible no tiene bolsillos. \nFácil mantenimiento, lavable a máquina.\nLa etiqueta indica una talla L, pero no estoy segura. Se ajusta más a una M.\nMedidas:\nContorno de pecho: 38 pulgadas \nLongitud: 36 pulgadas",
+      "src": "8577ab5f83a5"
+    },
+    "text.4b4187b087bc": {
+      "text": "439 piezas",
+      "src": "4b4187b087bc"
+    },
+    "text.5782df8ada0f": {
+      "text": "63 opiniones en Vinted →",
+      "src": "5782df8ada0f"
+    },
+    "text.82d18acf8fc0": {
+      "text": "1671 piezas a la venta · 74 vendidas",
+      "src": "82d18acf8fc0"
+    },
+    "text.7155c858ff83": {
+      "text": "Valoración de 5,0 sobre 5 según 63 opiniones de compradores. Puede leerlas en Vinted (se abre en una nueva pestaña).",
+      "src": "7155c858ff83"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Descripción de la chaqueta larga acolchada | reversible | algodón puro | otoño | chaqueta india | estilo boho",
+      "src": "b43c8269a9ec"
+    },
+    "text.a64f154dc7aa": {
+      "text": "Chaqueta larga acolchada | reversible | algodón 100 % | otoño | chaqueta india | estilo boho — abra el anuncio de «Vinted» en una nueva pestaña",
+      "src": "a64f154dc7aa"
+    },
+    "text.eed03c211aea": {
+      "text": "Chaqueta larga acolchada, confeccionada a mano en la India. Estampados florales. Costuras acolchadas que aportan aislamiento térmico y un aspecto con textura. Algodón de alta calidad. Dos bolsillos…",
+      "src": "eed03c211aea"
     }
   }
 }

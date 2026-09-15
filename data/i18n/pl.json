@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-14T05:17:50.851Z",
-  "count": 6298,
+  "generated": "2026-09-15T05:17:29.044Z",
+  "count": 6307,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -25200,6 +25200,42 @@
     "text.ccca0091e0e9": {
       "text": "Bransoletka Om Spiritual Jewellery | Biżuteria buddyjska tybetańska | Rudraksha, joga, medytacja, styl boho i hippie — otwórz ofertę „Vinted” w nowej karcie",
       "src": "ccca0091e0e9"
+    },
+    "item.10001568911.title": {
+      "text": "Długa pikowana kurtka | dwustronna | czysta bawełna | jesień | kurtka w stylu indyjskim | styl boho",
+      "src": "66226ae0065d"
+    },
+    "item.10001568911.description": {
+      "text": "Długa pikowana kurtka wykonana ręcznie w Indiach. \nKwiatowe nadruki. \nPikowane szwy zapewniające izolację termiczną i teksturowany wygląd.\nWysokiej jakości bawełna.\nDwie kieszenie po jednej stronie modelu; strona odwracalna nie posiada kieszeni. \nŁatwa w pielęgnacji, można prać w pralce.\nNa metce widnieje rozmiar L, ale nie jestem pewna. Bardziej przypomina rozmiar M.\nWymiary:\nObwód klatki piersiowej: 38 cali \nDługość: 36 cali",
+      "src": "8577ab5f83a5"
+    },
+    "text.4b4187b087bc": {
+      "text": "439 sztuk",
+      "src": "4b4187b087bc"
+    },
+    "text.5782df8ada0f": {
+      "text": "63 recenzje na stronie Vinted →",
+      "src": "5782df8ada0f"
+    },
+    "text.82d18acf8fc0": {
+      "text": "1671 przedmiotów na sprzedaż · 74 sprzedane",
+      "src": "82d18acf8fc0"
+    },
+    "text.7155c858ff83": {
+      "text": "Ocena 5,0 na 5 na podstawie 63 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "7155c858ff83"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Opis długiej pikowanej kurtki | dwustronna | czysta bawełna | jesień | kurtka w stylu indyjskim | styl boho",
+      "src": "b43c8269a9ec"
+    },
+    "text.a64f154dc7aa": {
+      "text": "Długa pikowana kurtka | dwustronna | czysta bawełna | jesień | kurtka w stylu indyjskim | Boho — otwórz ofertę „Vinted” w nowej karcie",
+      "src": "a64f154dc7aa"
+    },
+    "text.eed03c211aea": {
+      "text": "Długa pikowana kurtka wykonana ręcznie w Indiach. Kwiatowe nadruki. Pikowane szwy zapewniające izolację termiczną i nadające jej teksturowany wygląd. Wysokiej jakości bawełna. Dwie kieszenie…",
+      "src": "eed03c211aea"
     }
   }
 }

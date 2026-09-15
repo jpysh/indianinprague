@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-14T05:17:46.843Z",
-  "count": 6039,
+  "generated": "2026-09-15T05:17:24.320Z",
+  "count": 6044,
   "entries": {
+    "item.10001568911.title": {
+      "text": "Long quilted jacket | reversible | pure cotton | autumn | Indian jacket | Boho",
+      "src": "66226ae0065d",
+      "where": "item 10001568911 — title",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "item.10001568911.description": {
+      "text": "Long quilted jacket handmade in India. \nFloral prints. \nQuilted stitching for insulation and a textured appearance.\nHigh-quality cotton.\nTwo pockets on one side of the design, the reversible side does not have pockets. \nEasy maintenance, machine washable.\nThe tag says L but I’m not sure. More of an M.\nMeasurements:\nChest 38 inches \nLength 36 inches",
+      "src": "8577ab5f83a5",
+      "where": "item 10001568911 — description",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "attr.condition.very-good": {
+      "text": "Very good",
+      "src": "06a2935e6f57",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.black": {
+      "text": "Black",
+      "src": "c6cfe6e4f129",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.9969986465.title": {
       "text": "Vintage Jewellery Copper Earrings | Vintage Floral Design | Boho Fashion | Old Retro Look",
       "src": "c9add54a3262",
@@ -97,13 +125,6 @@
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
-    "attr.color.black": {
-      "text": "Black",
-      "src": "c6cfe6e4f129",
-      "where": "color — used across the shop",
-      "since": "",
-      "changed": ""
-    },
     "item.9950092080.title": {
       "text": "Silver Mushroom Earrings Fungi Magic Charm | Boho whimsical hippie vintage jewellery",
       "src": "0f7594f2bb69",
@@ -159,13 +180,6 @@
       "where": "item 9942454144 — description",
       "since": "2026-09-10",
       "changed": "2026-09-10"
-    },
-    "attr.condition.very-good": {
-      "text": "Very good",
-      "src": "06a2935e6f57",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "item.9942382928.title": {
       "text": "greatest 'prophet' writings Kahlil Gibran A Third Treasury Internationally Bestselling Poet",
@@ -4514,26 +4528,26 @@
       "since": "",
       "changed": ""
     },
-    "text.c39cb773cebf": {
-      "text": "61 reviews on Vinted →",
-      "src": "c39cb773cebf",
+    "text.5782df8ada0f": {
+      "text": "63 reviews on Vinted →",
+      "src": "5782df8ada0f",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-14",
-      "changed": "2026-09-14"
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
     },
-    "text.ca4aca63a7ae": {
-      "text": "Rated 5.0 out of 5 from 61 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "ca4aca63a7ae",
+    "text.7155c858ff83": {
+      "text": "Rated 5.0 out of 5 from 63 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "7155c858ff83",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-14",
-      "changed": "2026-09-14"
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
     },
-    "text.566a9d880264": {
-      "text": "438 pieces",
-      "src": "566a9d880264",
+    "text.4b4187b087bc": {
+      "text": "439 pieces",
+      "src": "4b4187b087bc",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
@@ -4731,12 +4745,12 @@
       "since": "",
       "changed": ""
     },
-    "text.e93d3040c88d": {
-      "text": "1670 pieces for sale · 74 sold",
-      "src": "e93d3040c88d",
+    "text.82d18acf8fc0": {
+      "text": "1671 pieces for sale · 74 sold",
+      "src": "82d18acf8fc0",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-14",
-      "changed": "2026-09-14"
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -7034,6 +7048,62 @@
       "since": "",
       "changed": ""
     },
+    "text.329335dbed2d": {
+      "text": "Listed on Vinted",
+      "src": "329335dbed2d",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-28",
+      "changed": "2026-08-28"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Description of Long quilted jacket | reversible | pure cotton | autumn | Indian jacket | Boho",
+      "src": "b43c8269a9ec",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "text.de7d1b721a1e": {
+      "text": "i",
+      "src": "de7d1b721a1e",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.eed03c211aea": {
+      "text": "Long quilted jacket handmade in India. Floral prints. Quilted stitching for insulation and a textured appearance. High-quality cotton. Two pockets…",
+      "src": "eed03c211aea",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "text.a1febfb9d878": {
+      "text": "Very good · Black · M",
+      "src": "a1febfb9d878",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.a64f154dc7aa": {
+      "text": "Long quilted jacket | reversible | pure cotton | autumn | Indian jacket | Boho — open the Vinted listing in a new tab",
+      "src": "a64f154dc7aa",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "text.c16236ad956c": {
+      "text": "Ask about this piece",
+      "src": "c16236ad956c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.85f061ad9f47": {
+      "text": "— opens WhatsApp in a new tab",
+      "src": "85f061ad9f47",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.eef6ee5a0d10": {
       "text": "A3+ poster: Krishna playing the flute on a lotus flower with little cows",
       "src": "eef6ee5a0d10",
@@ -7047,13 +7117,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-13",
       "changed": "2026-09-13"
-    },
-    "text.de7d1b721a1e": {
-      "text": "i",
-      "src": "de7d1b721a1e",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
     },
     "text.a5854b3d854c": {
       "text": "Krishna with his flute, sitting on a lotus flower with his cows.",
@@ -7072,13 +7135,6 @@
     "text.1bb8c68a34e1": {
       "text": "Order on WhatsApp",
       "src": "1bb8c68a34e1",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.85f061ad9f47": {
-      "text": "— opens WhatsApp in a new tab",
-      "src": "85f061ad9f47",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7237,16 +7293,9 @@
       "since": "2026-09-13",
       "changed": "2026-09-13"
     },
-    "text.329335dbed2d": {
-      "text": "Listed on Vinted",
-      "src": "329335dbed2d",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-28",
-      "changed": "2026-08-28"
-    },
-    "text.13412caa3780": {
-      "text": "4 people have saved this on Vinted",
-      "src": "13412caa3780",
+    "text.6f08dc1cfa4c": {
+      "text": "7 people have saved this on Vinted",
+      "src": "6f08dc1cfa4c",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7286,13 +7335,6 @@
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
-    "text.c16236ad956c": {
-      "text": "Ask about this piece",
-      "src": "c16236ad956c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.726dfdefe2ac": {
       "text": "Description of Resistance Bands | Exercise for Glutes And Leg Strength | Strength Training Band | Yoga Pilates",
       "src": "726dfdefe2ac",
@@ -7321,12 +7363,12 @@
       "since": "2026-09-14",
       "changed": "2026-09-14"
     },
-    "text.2971862d4fbe": {
-      "text": "11 people have saved this on Vinted",
-      "src": "2971862d4fbe",
+    "text.27448566af05": {
+      "text": "12 people have saved this on Vinted",
+      "src": "27448566af05",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "",
+      "changed": ""
     },
     "text.a3dbd7b86d02": {
       "text": "Description of Buddhist Prayer Flags Tibetan Buddha Boho Home Pure Energy",
@@ -7384,12 +7426,12 @@
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
-    "text.2b19b2bb5844": {
-      "text": "21 people have saved this on Vinted",
-      "src": "2b19b2bb5844",
+    "text.eeb96019d372": {
+      "text": "22 people have saved this on Vinted",
+      "src": "eeb96019d372",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-04",
-      "changed": "2026-09-04"
+      "since": "",
+      "changed": ""
     },
     "text.1eaf287dd646": {
       "text": "Description of Silver Mushroom Earrings Fungi Magic Charm | Boho whimsical hippie vintage jewellery",
@@ -7544,6 +7586,13 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-10",
       "changed": "2026-09-10"
+    },
+    "text.13412caa3780": {
+      "text": "4 people have saved this on Vinted",
+      "src": "13412caa3780",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
     },
     "text.bd1377948c39": {
       "text": "Description of Nostalgia Retro Vintage Cassette Keychain | Music Lover Gift | Audiotape Hipster Collection",
@@ -8399,12 +8448,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.27448566af05": {
-      "text": "12 people have saved this on Vinted",
-      "src": "27448566af05",
+    "text.f5c5089f35bc": {
+      "text": "13 people have saved this on Vinted",
+      "src": "f5c5089f35bc",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-02",
+      "changed": "2026-09-02"
     },
     "text.f073e0ce6945": {
       "text": "Description of Palestine Protest Scarf Keffiyeh Satin Anti Colonial Sovereignty Sash",
@@ -8531,13 +8580,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-08-26",
       "changed": "2026-08-26"
-    },
-    "text.a1febfb9d878": {
-      "text": "Very good · Black · M",
-      "src": "a1febfb9d878",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.0ee2d655dcd6": {
       "text": "Ethnic Top | Indian Cotton Tunic | M to L sizes | Vintage Retro — open the Vinted listing in a new tab",
@@ -9169,6 +9211,13 @@
       "since": "",
       "changed": ""
     },
+    "text.0e5e6fadf812": {
+      "text": "19 people have saved this on Vinted",
+      "src": "0e5e6fadf812",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
+    },
     "text.53452789a002": {
       "text": "Description of mind bending Natsume Soseki The Gate NYRB Classics Introduction by Pico Iyer",
       "src": "53452789a002",
@@ -9337,27 +9386,6 @@
       "since": "",
       "changed": ""
     },
-    "text.2c56d422f40a": {
-      "text": "Description of Francis Fukuyama Identity Bestselling Political Masterpiece",
-      "src": "2c56d422f40a",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.7fe067c41077": {
-      "text": "From the world-famous author of The End of History comes an urgent, eye-opening breakdown of modern populist nationalism and global identity…",
-      "src": "7fe067c41077",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.39b2dacb0092": {
-      "text": "Francis Fukuyama Identity Bestselling Political Masterpiece — open the Vinted listing in a new tab",
-      "src": "39b2dacb0092",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -9400,6 +9428,27 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.eadab7f608da": {
+      "text": "A pink and gold stripe",
+      "src": "eadab7f608da",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0c853b7afa83": {
+      "text": "Description of A pink and gold stripe",
+      "src": "0c853b7afa83",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.a1a6ef84a902": {
+      "text": "White dhotis",
+      "src": "a1a6ef84a902",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
     "text.32702219ef30": {
       "text": "A thin strip of dhoti, a border with leaves",
       "src": "32702219ef30",
@@ -9434,13 +9483,6 @@
       "where": "page text — first seen on wardrobe/10.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.a1a6ef84a902": {
-      "text": "White dhotis",
-      "src": "a1a6ef84a902",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
     },
     "text.0e7c067d61b4": {
       "text": "Brown-burgundy dhoti, 50% silk",
@@ -11157,20 +11199,6 @@
       "since": "",
       "changed": ""
     },
-    "text.a1be1e39670a": {
-      "text": "38 x 38 cm Hand Block cushion cover",
-      "src": "a1be1e39670a",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.74c26ebfa43d": {
-      "text": "Description of 38 x 38 cm Hand Block cushion cover",
-      "src": "74c26ebfa43d",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.435567b14289": {
       "text": "← Previous",
       "src": "435567b14289",
@@ -11191,6 +11219,20 @@
       "where": "page text — first seen on wardrobe/11.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.a1be1e39670a": {
+      "text": "38 x 38 cm Hand Block cushion cover",
+      "src": "a1be1e39670a",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.74c26ebfa43d": {
+      "text": "Description of 38 x 38 cm Hand Block cushion cover",
+      "src": "74c26ebfa43d",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.37666ce56f5f": {
       "text": "Single bedspread, 1 pillow",
@@ -12620,27 +12662,6 @@
       "since": "",
       "changed": ""
     },
-    "text.5e73d76086e7": {
-      "text": "Children’s Bhakta trousers, size 26",
-      "src": "5e73d76086e7",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.60c745bfa6db": {
-      "text": "Description of Children’s Bhakta trousers, size 26",
-      "src": "60c745bfa6db",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.1f8e35ccfff5": {
-      "text": "Elasticated trousers with a subtle marl pattern. Also available in other colours.",
-      "src": "1f8e35ccfff5",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e8d03aa51709": {
       "text": "Page 11 of 18",
       "src": "e8d03aa51709",
@@ -12654,6 +12675,27 @@
       "where": "page text — first seen on wardrobe/12.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.5e73d76086e7": {
+      "text": "Children’s Bhakta trousers, size 26",
+      "src": "5e73d76086e7",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.60c745bfa6db": {
+      "text": "Description of Children’s Bhakta trousers, size 26",
+      "src": "60c745bfa6db",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.1f8e35ccfff5": {
+      "text": "Elasticated trousers with a subtle marl pattern. Also available in other colours.",
+      "src": "1f8e35ccfff5",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
     },
     "text.8f4ea2131c87": {
       "text": "Cashmere-patterned shawl, blue/black",
@@ -14608,27 +14650,6 @@
       "since": "",
       "changed": ""
     },
-    "text.2868fea888ca": {
-      "text": "Kantimála, 2nd series, white amongst red beads",
-      "src": "2868fea888ca",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f23cda611965": {
-      "text": "Description of Kantimála, 2nd series, white amongst red beads",
-      "src": "f23cda611965",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.56644ba6372e": {
-      "text": "A double-row kantimala with red beads and pearls, made from the sacred tulasi plant. It offers protection.",
-      "src": "56644ba6372e",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
     "text.4ed7f0084498": {
       "text": "Page 12 of 18",
       "src": "4ed7f0084498",
@@ -14642,6 +14663,27 @@
       "where": "page text — first seen on wardrobe/13.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.2868fea888ca": {
+      "text": "Kantimála, 2nd series, white amongst red beads",
+      "src": "2868fea888ca",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f23cda611965": {
+      "text": "Description of Kantimála, 2nd series, white amongst red beads",
+      "src": "f23cda611965",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.56644ba6372e": {
+      "text": "A double-row kantimala with red beads and pearls, made from the sacred tulasi plant. It offers protection.",
+      "src": "56644ba6372e",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
     },
     "text.bdb638ed37d0": {
       "text": "Kantimala, 1st series, with Jagannath",
@@ -16498,20 +16540,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.3278974b3e59": {
-      "text": "Rajasthan gold box, medium size",
-      "src": "3278974b3e59",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f7c48c3e522a": {
-      "text": "Description of Rajasthan gold box, medium size",
-      "src": "f7c48c3e522a",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.6de41d249856": {
       "text": "Page 13 of 18",
       "src": "6de41d249856",
@@ -16525,6 +16553,20 @@
       "where": "page text — first seen on wardrobe/14.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.3278974b3e59": {
+      "text": "Rajasthan gold box, medium size",
+      "src": "3278974b3e59",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f7c48c3e522a": {
+      "text": "Description of Rajasthan gold box, medium size",
+      "src": "f7c48c3e522a",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.415cf67047ff": {
       "text": "Medium-sized orange Rajasthani box",
@@ -18437,27 +18479,6 @@
       "since": "",
       "changed": ""
     },
-    "text.bc9fe2bee2d7": {
-      "text": "Damodar (Yashoda ties Krishna up)",
-      "src": "bc9fe2bee2d7",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.17d81590541a": {
-      "text": "Description of Damodar (Yashoda ties Krishna up)",
-      "src": "17d81590541a",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.9f6579755bd1": {
-      "text": "A statuette of Krishna being tied up by his mother, Yasoda.",
-      "src": "9f6579755bd1",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
-    },
     "text.e5a311afe784": {
       "text": "Page 14 of 18",
       "src": "e5a311afe784",
@@ -18471,6 +18492,27 @@
       "where": "page text — first seen on wardrobe/15.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.bc9fe2bee2d7": {
+      "text": "Damodar (Yashoda ties Krishna up)",
+      "src": "bc9fe2bee2d7",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.17d81590541a": {
+      "text": "Description of Damodar (Yashoda ties Krishna up)",
+      "src": "17d81590541a",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.9f6579755bd1": {
+      "text": "A statuette of Krishna being tied up by his mother, Yasoda.",
+      "src": "9f6579755bd1",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
     },
     "text.23aadda0e98b": {
       "text": "‘Warrior’ T-shirt, red, 3/4 sleeves",
@@ -20425,27 +20467,6 @@
       "since": "",
       "changed": ""
     },
-    "text.b0f1bf3377e2": {
-      "text": "Natural golden blonde colour",
-      "src": "b0f1bf3377e2",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0a4de6caa518": {
-      "text": "Description of Natural golden blonde colour",
-      "src": "0a4de6caa518",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.1ae0bb06a19e": {
-      "text": "Golden Blonde contains colourless henna, rhubarb, chamomile and rosemary. Henna strengthens and nourishes the hair, protects it from harmful…",
-      "src": "1ae0bb06a19e",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
     "text.cfc00ad12d5a": {
       "text": "Page 15 of 18",
       "src": "cfc00ad12d5a",
@@ -20459,6 +20480,27 @@
       "where": "page text — first seen on wardrobe/16.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.b0f1bf3377e2": {
+      "text": "Natural golden blonde colour",
+      "src": "b0f1bf3377e2",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0a4de6caa518": {
+      "text": "Description of Natural golden blonde colour",
+      "src": "0a4de6caa518",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.1ae0bb06a19e": {
+      "text": "Golden Blonde contains colourless henna, rhubarb, chamomile and rosemary. Henna strengthens and nourishes the hair, protects it from harmful…",
+      "src": "1ae0bb06a19e",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
     },
     "text.a2a90e72c987": {
       "text": "Natural copper colour",
@@ -22413,27 +22455,6 @@
       "since": "",
       "changed": ""
     },
-    "text.66e0737a42fb": {
-      "text": "Black and white flared skirt",
-      "src": "66e0737a42fb",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a98e2a14c602": {
-      "text": "Description of Black and white flared skirt",
-      "src": "a98e2a14c602",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.1d5123df1464": {
-      "text": "A beautifully tailored flared skirt for all women. Tied at the waist. Adapts to your figure.",
-      "src": "1d5123df1464",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
     "text.7deafed7d0eb": {
       "text": "Page 16 of 18",
       "src": "7deafed7d0eb",
@@ -22447,6 +22468,27 @@
       "where": "page text — first seen on wardrobe/17.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.66e0737a42fb": {
+      "text": "Black and white flared skirt",
+      "src": "66e0737a42fb",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.a98e2a14c602": {
+      "text": "Description of Black and white flared skirt",
+      "src": "a98e2a14c602",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.1d5123df1464": {
+      "text": "A beautifully tailored flared skirt for all women. Tied at the waist. Adapts to your figure.",
+      "src": "1d5123df1464",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
     },
     "text.96148dcc019c": {
       "text": "Wood and stone bracelet",
@@ -24100,6 +24142,13 @@
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
+    "text.2971862d4fbe": {
+      "text": "11 people have saved this on Vinted",
+      "src": "2971862d4fbe",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "2026-09-05",
+      "changed": "2026-09-05"
+    },
     "text.fd499a81c737": {
       "text": "Description of Vintage Copper Earrings | Floral Engraved | Bohemian Boho Ethnic Retro Jewellery",
       "src": "fd499a81c737",
@@ -24457,34 +24506,6 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
-    "text.bfaea623483b": {
-      "text": "6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack",
-      "src": "bfaea623483b",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9c97474dc386": {
-      "text": "Description of 6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack",
-      "src": "9c97474dc386",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.17d71b7791f3": {
-      "text": "Unique Indian home decor yet useful at the same time. Handpainted, versatile and beautiful ethnic 6 drawers ceramic and wooden mini chest. Can be…",
-      "src": "17d71b7791f3",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.100111f8444a": {
-      "text": "6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack — open the sold Vinted listing in a new tab",
-      "src": "100111f8444a",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-08-27",
-      "changed": "2026-08-27"
-    },
     "text.b45621998931": {
       "text": "Page 17 of 18",
       "src": "b45621998931",
@@ -24498,6 +24519,34 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
+    },
+    "text.bfaea623483b": {
+      "text": "6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack",
+      "src": "bfaea623483b",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.9c97474dc386": {
+      "text": "Description of 6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack",
+      "src": "9c97474dc386",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.17d71b7791f3": {
+      "text": "Unique Indian home decor yet useful at the same time. Handpainted, versatile and beautiful ethnic 6 drawers ceramic and wooden mini chest. Can be…",
+      "src": "17d71b7791f3",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.100111f8444a": {
+      "text": "6 Drawers Chest | Ceramic Indian Ethnic Drawers|  Jewellery Organiser | Spice Rack — open the sold Vinted listing in a new tab",
+      "src": "100111f8444a",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-08-27",
+      "changed": "2026-08-27"
     },
     "text.7168374fea1e": {
       "text": "Hare Ram Hare Krishna Printed Maha Mantra Stole/Scarf/Shawl",
@@ -25325,13 +25374,6 @@
       "since": "",
       "changed": ""
     },
-    "text.6f08dc1cfa4c": {
-      "text": "7 people have saved this on Vinted",
-      "src": "6f08dc1cfa4c",
-      "where": "page text — first seen on wardrobe/18.html",
-      "since": "",
-      "changed": ""
-    },
     "text.889e903bf35a": {
       "text": "Description of learn spanish Pablo Neruda Twenty Love Poems and a Song of Despair Penguin Deluxe Nobel Prize Poet",
       "src": "889e903bf35a",
@@ -25359,6 +25401,13 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-05",
       "changed": "2026-09-05"
+    },
+    "text.2b19b2bb5844": {
+      "text": "21 people have saved this on Vinted",
+      "src": "2b19b2bb5844",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
     },
     "text.3ad93d22f08e": {
       "text": "Description of read before you die Rumi The Essential Rumi Coleman Barks New Expanded Edition Bestselling Poetry",
@@ -25471,13 +25520,6 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-06",
       "changed": "2026-09-06"
-    },
-    "text.f5c5089f35bc": {
-      "text": "13 people have saved this on Vinted",
-      "src": "f5c5089f35bc",
-      "where": "page text — first seen on wardrobe/18.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
     },
     "text.e1da947cda0c": {
       "text": "Description of must read Peter Frankopan The Silk Roads Number 1 Global Bestseller",
@@ -26011,13 +26053,6 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
-    "text.0e5e6fadf812": {
-      "text": "19 people have saved this on Vinted",
-      "src": "0e5e6fadf812",
-      "where": "page text — first seen on wardrobe/18.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
-    },
     "text.f6e4b6b307f9": {
       "text": "Description of Mango Gold Metallic Cami Top | Size M",
       "src": "f6e4b6b307f9",
@@ -26269,6 +26304,27 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.2c56d422f40a": {
+      "text": "Description of Francis Fukuyama Identity Bestselling Political Masterpiece",
+      "src": "2c56d422f40a",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.7fe067c41077": {
+      "text": "From the world-famous author of The End of History comes an urgent, eye-opening breakdown of modern populist nationalism and global identity…",
+      "src": "7fe067c41077",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.39b2dacb0092": {
+      "text": "Francis Fukuyama Identity Bestselling Political Masterpiece — open the Vinted listing in a new tab",
+      "src": "39b2dacb0092",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
     },
     "text.0587fd1613b9": {
       "text": "Description of Colson Whitehead The Underground Railroad Pulitzer Prize Winner",
@@ -28377,13 +28433,6 @@
       "since": "",
       "changed": ""
     },
-    "text.eeb96019d372": {
-      "text": "22 people have saved this on Vinted",
-      "src": "eeb96019d372",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
     "text.fc1e86f1edcc": {
       "text": "Description of Halter V-Neck Summer Beach Dress",
       "src": "fc1e86f1edcc",
@@ -28552,41 +28601,6 @@
       "since": "",
       "changed": ""
     },
-    "text.dc485edeaccc": {
-      "text": "47 people have saved this on Vinted",
-      "src": "dc485edeaccc",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-11",
-      "changed": "2026-09-11"
-    },
-    "text.90446b37865b": {
-      "text": "Description of Palazzo Skirt cum Trousers | Batik-Style Print | Wide Leg | Indian Boho | Nigeria Cotton",
-      "src": "90446b37865b",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.a537fdc7deab": {
-      "text": "Gorgeous wide-leg palazzo trousers in authentic cotton from Nigeria, in a stunning batik-style print of mandala florals in warm brown, mustard, sage…",
-      "src": "a537fdc7deab",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.223e728cf80f": {
-      "text": "New without tags · Brown · L",
-      "src": "223e728cf80f",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e2513bca5cfa": {
-      "text": "Palazzo Skirt cum Trousers | Batik-Style Print | Wide Leg | Indian Boho | Nigeria Cotton — open the Vinted listing in a new tab",
-      "src": "e2513bca5cfa",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c6a7f0fa47dd": {
       "text": "Page 2 of 18",
       "src": "c6a7f0fa47dd",
@@ -28600,6 +28614,41 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.dc485edeaccc": {
+      "text": "47 people have saved this on Vinted",
+      "src": "dc485edeaccc",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-09-11",
+      "changed": "2026-09-11"
+    },
+    "text.90446b37865b": {
+      "text": "Description of Palazzo Skirt cum Trousers | Batik-Style Print | Wide Leg | Indian Boho | Nigeria Cotton",
+      "src": "90446b37865b",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.a537fdc7deab": {
+      "text": "Gorgeous wide-leg palazzo trousers in authentic cotton from Nigeria, in a stunning batik-style print of mandala florals in warm brown, mustard, sage…",
+      "src": "a537fdc7deab",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.223e728cf80f": {
+      "text": "New without tags · Brown · L",
+      "src": "223e728cf80f",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e2513bca5cfa": {
+      "text": "Palazzo Skirt cum Trousers | Batik-Style Print | Wide Leg | Indian Boho | Nigeria Cotton — open the Vinted listing in a new tab",
+      "src": "e2513bca5cfa",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
     },
     "text.754c1dbecbf3": {
       "text": "Description of Hand-Embroidered Mexican Dress · Black Floral Huipil Style · Artisan Made · Boho",
@@ -30302,20 +30351,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.777ffe74dd16": {
-      "text": "Plain petticoat, size XL, various colours",
-      "src": "777ffe74dd16",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.8e10e01e08ac": {
-      "text": "Description of Plain petticoat, size XL, various colours",
-      "src": "8e10e01e08ac",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.e72b61a125f4": {
       "text": "Page 3 of 18",
       "src": "e72b61a125f4",
@@ -30329,6 +30364,20 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.777ffe74dd16": {
+      "text": "Plain petticoat, size XL, various colours",
+      "src": "777ffe74dd16",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.8e10e01e08ac": {
+      "text": "Description of Plain petticoat, size XL, various colours",
+      "src": "8e10e01e08ac",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.e51d42de7487": {
       "text": "Plain petticoat, size S, various colours",
@@ -32045,20 +32094,6 @@
       "since": "",
       "changed": ""
     },
-    "text.284fe089cff9": {
-      "text": "Picture of Prabhupada, 18.5 x 13 cm",
-      "src": "284fe089cff9",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.411381598b57": {
-      "text": "Description of Picture of Prabhupada, 18.5 x 13 cm",
-      "src": "411381598b57",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.564b9e644a95": {
       "text": "Page 4 of 18",
       "src": "564b9e644a95",
@@ -32072,6 +32107,20 @@
       "where": "page text — first seen on wardrobe/5.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.284fe089cff9": {
+      "text": "Picture of Prabhupada, 18.5 x 13 cm",
+      "src": "284fe089cff9",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.411381598b57": {
+      "text": "Description of Picture of Prabhupada, 18.5 x 13 cm",
+      "src": "411381598b57",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.7debb7512a2c": {
       "text": "Damodar picture, 18.5 x 13 cm",
@@ -33620,27 +33669,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.83ee3ca1a410": {
-      "text": "CD Kršna Gopála (2. díl Krišna knížky)",
-      "src": "83ee3ca1a410",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.38ec3fb83a78": {
-      "text": "Description of CD Kršna Gopála (2. díl Krišna knížky)",
-      "src": "38ec3fb83a78",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.f43158e2d66e": {
-      "text": "The second instalment in a series of dramatic adaptations for children based on the book *Krishna: The Supreme Personality of Godhead*.",
-      "src": "f43158e2d66e",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
-    },
     "text.c5fef85c51c0": {
       "text": "Page 5 of 18",
       "src": "c5fef85c51c0",
@@ -33654,6 +33682,27 @@
       "where": "page text — first seen on wardrobe/6.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.83ee3ca1a410": {
+      "text": "CD Kršna Gopála (2. díl Krišna knížky)",
+      "src": "83ee3ca1a410",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.38ec3fb83a78": {
+      "text": "Description of CD Kršna Gopála (2. díl Krišna knížky)",
+      "src": "38ec3fb83a78",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
+    },
+    "text.f43158e2d66e": {
+      "text": "The second instalment in a series of dramatic adaptations for children based on the book *Krishna: The Supreme Personality of Godhead*.",
+      "src": "f43158e2d66e",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
     },
     "text.c44993902ee5": {
       "text": "Small greeting card with envelope: Krishna and Radha",
@@ -37036,20 +37085,6 @@
       "since": "",
       "changed": ""
     },
-    "text.08f1ac82fc63": {
-      "text": "Double-sided picture of Radha and Krishna sitting, for hanging",
-      "src": "08f1ac82fc63",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.478e68a51388": {
-      "text": "Description of Double-sided picture of Radha and Krishna sitting, for hanging",
-      "src": "478e68a51388",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.538c168d477d": {
       "text": "Page 7 of 18",
       "src": "538c168d477d",
@@ -37063,6 +37098,20 @@
       "where": "page text — first seen on wardrobe/8.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.08f1ac82fc63": {
+      "text": "Double-sided picture of Radha and Krishna sitting, for hanging",
+      "src": "08f1ac82fc63",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.478e68a51388": {
+      "text": "Description of Double-sided picture of Radha and Krishna sitting, for hanging",
+      "src": "478e68a51388",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.6cfe4a65a69e": {
       "text": "A double-sided picture to hang up. With a blue tassel.",
@@ -38695,20 +38744,6 @@
       "since": "2026-08-25",
       "changed": "2026-08-25"
     },
-    "text.354ff6622fc1": {
-      "text": "Red/burgundy stick-on tattoos",
-      "src": "354ff6622fc1",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.288bafd15623": {
-      "text": "Description of Red/burgundy stick-on tattoos",
-      "src": "288bafd15623",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
     "text.58bf6c203a7c": {
       "text": "Page 8 of 18",
       "src": "58bf6c203a7c",
@@ -38722,6 +38757,20 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.354ff6622fc1": {
+      "text": "Red/burgundy stick-on tattoos",
+      "src": "354ff6622fc1",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.288bafd15623": {
+      "text": "Description of Red/burgundy stick-on tattoos",
+      "src": "288bafd15623",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "2026-08-25",
+      "changed": "2026-08-25"
     },
     "text.5206c31f2dbd": {
       "text": "Stick-on tattoos – pink/magenta",
@@ -39076,20 +39125,6 @@
     "text.2ec3ab9b06de": {
       "text": "Description of A wide strip of green and coloured fabric",
       "src": "2ec3ab9b06de",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-08-25",
-      "changed": "2026-08-25"
-    },
-    "text.eadab7f608da": {
-      "text": "A pink and gold stripe",
-      "src": "eadab7f608da",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0c853b7afa83": {
-      "text": "Description of A pink and gold stripe",
-      "src": "0c853b7afa83",
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
@@ -40648,6 +40683,13 @@
       "since": "",
       "changed": ""
     },
+    "text.67081fb2a08a": {
+      "text": "Indian",
+      "src": "67081fb2a08a",
+      "where": "page text — first seen on wardrobe/fashion.html",
+      "since": "",
+      "changed": ""
+    },
     "text.b59b72be37f3": {
       "text": "Alternative",
       "src": "b59b72be37f3",
@@ -40682,13 +40724,6 @@
       "where": "page text — first seen on wardrobe/fashion.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.67081fb2a08a": {
-      "text": "Indian",
-      "src": "67081fb2a08a",
-      "where": "page text — first seen on wardrobe/fashion.html",
-      "since": "",
-      "changed": ""
     },
     "text.6455dbcb9597": {
       "text": "Mango",

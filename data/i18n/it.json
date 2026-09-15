@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-14T05:17:49.807Z",
-  "count": 6298,
+  "generated": "2026-09-15T05:17:27.490Z",
+  "count": 6307,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -25200,6 +25200,42 @@
     "text.ccca0091e0e9": {
       "text": "Bracciale Om Spiritual Jewellery | Gioielli buddisti tibetani | Rudraksh Yoga Meditazione Boho Hippie — apra l’annuncio su Vinted in una nuova scheda",
       "src": "ccca0091e0e9"
+    },
+    "item.10001568911.title": {
+      "text": "Giacca lunga trapuntata | reversibile | puro cotone | autunno | giacca indiana | Boho",
+      "src": "66226ae0065d"
+    },
+    "item.10001568911.description": {
+      "text": "Giacca lunga trapuntata realizzata a mano in India. \nStampe floreali. \nCuciture trapuntate per garantire isolamento termico e conferire un effetto materico.\nCotone di alta qualità.\nDue tasche su un lato del capo; il lato reversibile non presenta tasche. \nFacile da lavare, lavabile in lavatrice.\nL’etichetta riporta la taglia L, ma non ne sono certa. Sembra più una M.\nMisure:\nCirconferenza torace 38 pollici \nLunghezza 36 pollici",
+      "src": "8577ab5f83a5"
+    },
+    "text.4b4187b087bc": {
+      "text": "439 pezzi",
+      "src": "4b4187b087bc"
+    },
+    "text.5782df8ada0f": {
+      "text": "63 recensioni su Vinted →",
+      "src": "5782df8ada0f"
+    },
+    "text.82d18acf8fc0": {
+      "text": "1671 pezzi in vendita · 74 venduti",
+      "src": "82d18acf8fc0"
+    },
+    "text.7155c858ff83": {
+      "text": "Valutato 5,0 su 5 in base a 63 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "7155c858ff83"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Descrizione della giacca lunga trapuntata | reversibile | puro cotone | autunnale | giacca indiana | stile boho",
+      "src": "b43c8269a9ec"
+    },
+    "text.a64f154dc7aa": {
+      "text": "Giacca lunga trapuntata | reversibile | puro cotone | autunno | giacca indiana | Boho — apra l&#x27;annuncio su Vinted in una nuova scheda",
+      "src": "a64f154dc7aa"
+    },
+    "text.eed03c211aea": {
+      "text": "Giacca lunga trapuntata realizzata a mano in India. Stampe floreali. Cuciture trapuntate per garantire isolamento termico e conferire un effetto materico. Cotone di alta qualità. Due tasche…",
+      "src": "eed03c211aea"
     }
   }
 }

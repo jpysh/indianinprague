@@ -4937,5 +4937,38 @@
       "colorRaw": "Černá",
       "vintedCategory": "Ženy Kabelky do ruky"
     }
+  },
+  "10001568911": {
+    "description": "Long quilted jacket handmade in India. \nFloral prints. \nQuilted stitching for insulation and a textured appearance.\nHigh-quality cotton.\nTwo pockets on one side of the design, the reversible side does not have pockets. \nEasy maintenance, machine washable.\nThe tag says L but I’m not sure. More of an M.\nMeasurements:\nChest 38 inches \nLength 36 inches",
+    "vintedCategory": "Women Quilted jackets",
+    "colorRaw": "Black",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 1037,
+        "name": "Outerwear"
+      },
+      {
+        "id": 1908,
+        "name": "Jackets"
+      },
+      {
+        "id": 2596,
+        "name": "Quilted jackets"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Černá",
+      "vintedCategory": "Ženy Prošívané bundy"
+    }
   }
 }

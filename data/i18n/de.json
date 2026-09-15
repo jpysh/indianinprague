@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-14T05:17:49.298Z",
-  "count": 6302,
+  "generated": "2026-09-15T05:17:26.871Z",
+  "count": 6311,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -25216,6 +25216,42 @@
     "text.ccca0091e0e9": {
       "text": "Om Spiritual Jewellery Armband | Tibetisch-buddhistischer Schmuck | Rudraksh, Yoga, Meditation, Boho, Hippie – öffnen Sie das Angebot auf Vinted in einem neuen Tab",
       "src": "ccca0091e0e9"
+    },
+    "item.10001568911.title": {
+      "text": "Lange Steppjacke | wendbar | reine Baumwolle | Herbst | indische Jacke | Boho",
+      "src": "66226ae0065d"
+    },
+    "item.10001568911.description": {
+      "text": "Lange, gesteppte Jacke, handgefertigt in Indien. \nBlumenmuster. \nSteppnähte sorgen für Wärmeisolierung und eine strukturierte Optik.\nHochwertige Baumwolle.\nZwei Taschen auf einer Seite des Modells, die Wende-Seite hat keine Taschen. \nPflegeleicht, maschinenwaschbar.\nAuf dem Etikett steht „L“, aber ich bin mir nicht sicher. Eher eine „M“.\nMaße:\nBrustumfang 38 Zoll \nLänge 36 Zoll",
+      "src": "8577ab5f83a5"
+    },
+    "text.4b4187b087bc": {
+      "text": "439 Stück",
+      "src": "4b4187b087bc"
+    },
+    "text.5782df8ada0f": {
+      "text": "63 Bewertungen auf Vinted →",
+      "src": "5782df8ada0f"
+    },
+    "text.82d18acf8fc0": {
+      "text": "1.671 Artikel zum Verkauf · 74 verkauft",
+      "src": "82d18acf8fc0"
+    },
+    "text.7155c858ff83": {
+      "text": "Bewertung: 5,0 von 5 bei 63 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "7155c858ff83"
+    },
+    "text.b43c8269a9ec": {
+      "text": "Beschreibung der langen Steppjacke | wendbar | reine Baumwolle | Herbst | indische Jacke | Boho",
+      "src": "b43c8269a9ec"
+    },
+    "text.a64f154dc7aa": {
+      "text": "Lange Steppjacke | wendbar | reine Baumwolle | Herbst | Indische Jacke | Boho – öffnen Sie das Angebot auf Vinted in einem neuen Tab",
+      "src": "a64f154dc7aa"
+    },
+    "text.eed03c211aea": {
+      "text": "Lange, gesteppte Jacke, handgefertigt in Indien. Blumenmuster. Steppnähte sorgen für Wärmeisolierung und eine strukturierte Optik. Hochwertige Baumwolle. Zwei Taschen…",
+      "src": "eed03c211aea"
     }
   }
 }
