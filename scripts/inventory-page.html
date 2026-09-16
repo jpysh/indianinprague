@@ -170,7 +170,13 @@
   $("q").addEventListener("input", render);
 
   $("save").addEventListener("click", function () {
-    fetch("/api/save", { method: "POST", body: JSON.stringify(patch) })
+    fetch("/api/save", {
+      method: "POST",
+      // Explicit: the server refuses anything that is not application/json, because a
+      // cross-site form can send text/plain without a preflight and JSON.parse would take it.
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(patch),
+    })
       .then(function (r) { return r.json(); })
       .then(function (res) {
         if (!res.ok) throw new Error(res.error);

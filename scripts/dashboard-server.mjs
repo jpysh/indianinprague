@@ -12,10 +12,12 @@
 // loopback interface only, so nothing on the network — or on the café wifi this laptop
 // joins — can reach it. The Host header is checked too: a hostile web page you happen to
 // visit can point a DNS name at 127.0.0.1 and have your browser POST here, and a Host
-// check is what stops that (the browser sends the attacker's name, not localhost).
+// check is what stops that (the browser sends the attacker's name, not localhost). A page
+// that POSTs to 127.0.0.1 directly sends the *allowed* Host, so the Host check alone never
+// stopped that case — the Sec-Fetch-Site check in the request handler does.
 //
-// It has no authentication, and it does not need any as long as both of those hold. Do not
-// "just expose it for a minute" through the tunnel.
+// It has no authentication, and it does not need any as long as all three of those hold. Do
+// not "just expose it for a minute" through the tunnel.
 //
 // WHAT IT MAY WRITE
 // -----------------
@@ -732,8 +734,13 @@ const json = (res, body, code = 200) => {
   res.end(text);
 };
 
+// JSON only, deliberately. A cross-site form can send text/plain without a preflight, and
+// JSON.parse would happily accept the result — so the content type is the second lock on
+// the writes below, behind the Sec-Fetch-Site check in the request handler.
 const body = (req) =>
   new Promise((ok, bad) => {
+    const ct = (req.headers["content-type"] || "").split(";")[0].trim();
+    if (ct !== "application/json") return bad(new Error("expected application/json"));
     const chunks = [];
     let size = 0;
     req.on("data", (c) => {
@@ -752,6 +759,19 @@ const body = (req) =>
 
 const server = createServer(async (req, res) => {
   if (!ALLOWED_HOSTS.has(req.headers.host || "")) return json(res, { error: "bad host" }, 403);
+  // The Host check above stops DNS rebinding; it does NOT stop cross-site request forgery.
+  // A hostile page can POST straight to http://127.0.0.1:8093 — that request carries the
+  // allowed Host, so it passes the line above, no preflight happens, and the side effect
+  // lands even though the attacker can never read the reply. /api/publish takes no body at
+  // all, so a bare auto-submitting <form> was enough to deploy the working tree live.
+  //
+  // Sec-Fetch-Site is set by the browser and cannot be forged from page JavaScript: the
+  // dashboard's own fetch() calls arrive "same-origin", a drive-by POST arrives "cross-site".
+  // Requests with no such header (curl, older browsers) are refused for writes — reach for
+  // the scripts directly rather than loosening this.
+  if (req.method !== "GET" && req.headers["sec-fetch-site"] !== "same-origin") {
+    return json(res, { error: "cross-site request refused" }, 403);
+  }
   const url = new URL(req.url, `http://${HOST}:${PORT}`);
 
   try {
