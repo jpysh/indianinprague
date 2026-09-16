@@ -17,6 +17,6 @@
     "node_modules/ is never staged into dist/ — build-dist.mjs copies an explicit list."
   ],
   "devDependencies": {
-    "wrangler": "4.123.0"
+    "wrangler": "4.132.0"
   }
 }
