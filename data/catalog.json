@@ -1,18 +1,73 @@
 {
-  "syncedAt": "2026-09-15T05:15:14.397Z",
+  "syncedAt": "2026-09-16T05:15:14.179Z",
   "rate": {
-    "czkPerEur": 24.294,
-    "fetched": "2026-09-15",
+    "czkPerEur": 24.292,
+    "fetched": "2026-09-16",
     "source": "ECB"
   },
-  "count": 167,
+  "count": 168,
   "items": [
+    {
+      "id": "10007670761",
+      "title": "Luxury silk bedcover with 2 pillow cases",
+      "priceCzk": 2300,
+      "priceEur": 95,
+      "brand": "Indian",
+      "size": "Extra velké dvoulůžko (220–240 cm x 220–260 cm)",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Coral",
+        "cs": "Korálová"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Bedding sets",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1919,
+          "name": "Textiles"
+        },
+        {
+          "id": 1924,
+          "name": "Bedding"
+        },
+        {
+          "id": 1942,
+          "name": "Bedding sets"
+        }
+      ],
+      "description": "Heavy bed cover in raw Indian silk with two pillow cases. \nCrafted by skilled Indian artisans using premium quality raw silk.\nTraditional embroidery.\nHigh quality and durability.\nNever used.",
+      "photo": "images/vinted-10007670761-1.jpg",
+      "photos": [
+        "images/vinted-10007670761-1.jpg",
+        "images/vinted-10007670761-2.jpg",
+        "images/vinted-10007670761-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10007670761-luxury-silk-bedcover-with-2-pillow-cases",
+        "es": "https://www.vinted.es/items/10007670761-luxury-silk-bedcover-with-2-pillow-cases",
+        "com": "https://www.vinted.com/items/10007670761-luxury-silk-bedcover-with-2-pillow-cases",
+        "uk": "https://www.vinted.co.uk/items/10007670761-luxury-silk-bedcover-with-2-pillow-cases"
+      }
+    },
     {
       "id": "10001568911",
       "title": "Long quilted jacket | reversible | pure cotton | autumn | Indian jacket | Boho",
       "priceCzk": 990,
       "priceEur": 41,
-      "brand": "Indian",
+      "brand": "Top Vintage",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
       "condition": {
@@ -54,7 +109,7 @@
         "images/vinted-10001568911-2.jpg",
         "images/vinted-10001568911-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -179,8 +234,8 @@
     {
       "id": "9962547392",
       "title": "Buddhist Prayer Flags Tibetan Buddha Boho Home Pure Energy",
-      "priceCzk": 120,
-      "priceEur": 5,
+      "priceCzk": 99,
+      "priceEur": 4,
       "brand": "Tibet",
       "size": "",
       "sizeGroup": "",
@@ -215,7 +270,7 @@
         "images/vinted-9962547392-2.jpg",
         "images/vinted-9962547392-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -321,7 +376,7 @@
         "images/vinted-9950092080-2.jpg",
         "images/vinted-9950092080-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 26,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1667,7 +1722,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 20,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2213,7 +2268,7 @@
         "images/vinted-9696606450-2.jpg",
         "images/vinted-9696606450-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2374,7 +2429,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2594,7 +2649,7 @@
         "images/vinted-9607321104-2.jpg",
         "images/vinted-9607321104-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4094,7 +4149,7 @@
         "images/vinted-9575501283-2.jpg",
         "images/vinted-9575501283-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4349,7 +4404,7 @@
         "images/vinted-9565087476-2.jpg",
         "images/vinted-9565087476-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4663,7 +4718,7 @@
         "images/vinted-9562257190-2.jpg",
         "images/vinted-9562257190-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4765,7 +4820,7 @@
         "images/vinted-9561780997-2.jpg",
         "images/vinted-9561780997-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4816,7 +4871,7 @@
         "images/vinted-9561725365-2.jpg",
         "images/vinted-9561725365-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7701,7 +7756,7 @@
         "images/vinted-9328560854-2.jpg",
         "images/vinted-9328560854-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8156,11 +8211,11 @@
     {
       "id": "9315339114",
       "title": "African Print Wrap Top | High Quality Nigerian Cotton | Peplum Style | Puff Sleeve",
-      "priceCzk": 460,
-      "priceEur": 19,
+      "priceCzk": 420,
+      "priceEur": 17,
       "brand": "Nigerian brand",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
+      "size": "Univerzální",
+      "sizeGroup": "One size",
       "condition": {
         "en": "New without tags",
         "cs": "Nový bez visačky"
@@ -8196,7 +8251,7 @@
         "images/vinted-9315339114-2.jpg",
         "images/vinted-9315339114-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8805,7 +8860,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 47,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,

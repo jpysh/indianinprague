@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-15T05:17:27.490Z",
-  "count": 6307,
+  "generated": "2026-09-16T05:17:35.877Z",
+  "count": 6455,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -25236,6 +25236,598 @@
     "text.eed03c211aea": {
       "text": "Giacca lunga trapuntata realizzata a mano in India. Stampe floreali. Cuciture trapuntate per garantire isolamento termico e conferire un effetto materico. Cotone di alta qualità. Due tasche…",
       "src": "eed03c211aea"
+    },
+    "item.10007670761.title": {
+      "text": "Copriletto di lusso in seta con 2 federe",
+      "src": "7657144eec56"
+    },
+    "item.10007670761.description": {
+      "text": "Copriletto pesante in seta grezza indiana con due federe. \nRealizzato da abili artigiani indiani utilizzando seta grezza di prima qualità.\nRicamo tradizionale.\nElevata qualità e resistenza.\nMai utilizzato.",
+      "src": "6e2daf73681b"
+    },
+    "text.ce1652874339": {
+      "text": "141 pezzi",
+      "src": "ce1652874339"
+    },
+    "text.f59498284098": {
+      "text": "Il meglio del vintage",
+      "src": "f59498284098"
+    },
+    "text.a7b71a29550f": {
+      "text": "Pagina 1 di 4",
+      "src": "a7b71a29550f"
+    },
+    "text.f3a874df5c24": {
+      "text": "Pagina 2 di 4",
+      "src": "f3a874df5c24"
+    },
+    "text.cd2ae08b79e0": {
+      "text": "Pagina 3 di 4",
+      "src": "cd2ae08b79e0"
+    },
+    "text.15fc5c2c83ce": {
+      "text": "Pagina 4 di 4",
+      "src": "15fc5c2c83ce"
+    },
+    "text.f5c77a3dd7cc": {
+      "text": "Pagina 1 di 7",
+      "src": "f5c77a3dd7cc"
+    },
+    "text.1c7fe3551107": {
+      "text": "Pagina 2 di 7",
+      "src": "1c7fe3551107"
+    },
+    "text.0cb772f79399": {
+      "text": "Pagina 3 di 7",
+      "src": "0cb772f79399"
+    },
+    "text.1b276a6f3bcd": {
+      "text": "Pagina 4 di 7",
+      "src": "1b276a6f3bcd"
+    },
+    "text.514559417b27": {
+      "text": "Pagina 5 di 7",
+      "src": "514559417b27"
+    },
+    "text.8490bb402499": {
+      "text": "Pagina 6 di 7",
+      "src": "8490bb402499"
+    },
+    "text.4a43556995bd": {
+      "text": "Pagina 7 di 7",
+      "src": "4a43556995bd"
+    },
+    "text.8473f2562b73": {
+      "text": "Pagina 1 di 37",
+      "src": "8473f2562b73"
+    },
+    "text.308f44ec6733": {
+      "text": "Pagina 2 di 37",
+      "src": "308f44ec6733"
+    },
+    "text.22cad1d9483b": {
+      "text": "Pagina 3 di 37",
+      "src": "22cad1d9483b"
+    },
+    "text.4cb48f08ea22": {
+      "text": "Pagina 4 di 37",
+      "src": "4cb48f08ea22"
+    },
+    "text.9bd80dadfa9e": {
+      "text": "Pagina 5 di 37",
+      "src": "9bd80dadfa9e"
+    },
+    "text.3b41ea5b93a8": {
+      "text": "Pagina 6 di 37",
+      "src": "3b41ea5b93a8"
+    },
+    "text.439064dcfeec": {
+      "text": "Pagina 7 di 37",
+      "src": "439064dcfeec"
+    },
+    "text.a3837c219ee3": {
+      "text": "Pagina 8 di 37",
+      "src": "a3837c219ee3"
+    },
+    "text.9e7ce6a4739d": {
+      "text": "Pagina 9 di 37",
+      "src": "9e7ce6a4739d"
+    },
+    "text.84b2201d5737": {
+      "text": "Pagina 1 di 10",
+      "src": "84b2201d5737"
+    },
+    "text.193ab2efb88f": {
+      "text": "Pagina 2 di 10",
+      "src": "193ab2efb88f"
+    },
+    "text.36327c9d5b69": {
+      "text": "Pagina 3 di 10",
+      "src": "36327c9d5b69"
+    },
+    "text.4ea5baec0a64": {
+      "text": "Pagina 4 di 10",
+      "src": "4ea5baec0a64"
+    },
+    "text.db9ee0c44fa1": {
+      "text": "Pagina 5 di 10",
+      "src": "db9ee0c44fa1"
+    },
+    "text.b5fbf9519eee": {
+      "text": "Pagina 6 di 10",
+      "src": "b5fbf9519eee"
+    },
+    "text.a0a35cdc73a0": {
+      "text": "Pagina 7 di 10",
+      "src": "a0a35cdc73a0"
+    },
+    "text.583e3dba7ea5": {
+      "text": "Pagina 8 di 10",
+      "src": "583e3dba7ea5"
+    },
+    "text.7b47d7620da9": {
+      "text": "Pagina 9 di 10",
+      "src": "7b47d7620da9"
+    },
+    "text.3eefdfeb14c8": {
+      "text": "Pagina 1 di 12",
+      "src": "3eefdfeb14c8"
+    },
+    "text.6e44c9213c2a": {
+      "text": "Pagina 2 di 12",
+      "src": "6e44c9213c2a"
+    },
+    "text.f682dc714c03": {
+      "text": "Pagina 3 di 12",
+      "src": "f682dc714c03"
+    },
+    "text.adc28520cf0c": {
+      "text": "Pagina 4 di 12",
+      "src": "adc28520cf0c"
+    },
+    "text.96d3f5cf825c": {
+      "text": "Pagina 5 di 12",
+      "src": "96d3f5cf825c"
+    },
+    "text.b9e639a1d2b4": {
+      "text": "Pagina 6 di 12",
+      "src": "b9e639a1d2b4"
+    },
+    "text.e007ea1ceb49": {
+      "text": "Pagina 7 di 12",
+      "src": "e007ea1ceb49"
+    },
+    "text.2e0b09636b05": {
+      "text": "Pagina 8 di 12",
+      "src": "2e0b09636b05"
+    },
+    "text.1329a7b7bc6c": {
+      "text": "Pagina 9 di 12",
+      "src": "1329a7b7bc6c"
+    },
+    "text.5a48f0a37013": {
+      "text": "Pagina 10 di 37",
+      "src": "5a48f0a37013"
+    },
+    "text.a4837d3a7538": {
+      "text": "Pagina 11 di 37",
+      "src": "a4837d3a7538"
+    },
+    "text.27fa9ec25b37": {
+      "text": "Pagina 12 di 37",
+      "src": "27fa9ec25b37"
+    },
+    "text.02e34cda7db3": {
+      "text": "Pagina 13 di 37",
+      "src": "02e34cda7db3"
+    },
+    "text.cfb3bd579ca0": {
+      "text": "Pagina 14 di 37",
+      "src": "cfb3bd579ca0"
+    },
+    "text.07cc399c7b5c": {
+      "text": "Pagina 15 di 37",
+      "src": "07cc399c7b5c"
+    },
+    "text.44bd101e0f4f": {
+      "text": "Pagina 16 di 37",
+      "src": "44bd101e0f4f"
+    },
+    "text.dcdb66389330": {
+      "text": "Pagina 17 di 37",
+      "src": "dcdb66389330"
+    },
+    "text.f2145ecffa3b": {
+      "text": "Pagina 18 di 37",
+      "src": "f2145ecffa3b"
+    },
+    "text.0bd16e3d17c3": {
+      "text": "Pagina 19 di 37",
+      "src": "0bd16e3d17c3"
+    },
+    "text.c5b07f6cd7d2": {
+      "text": "Pagina 20 di 37",
+      "src": "c5b07f6cd7d2"
+    },
+    "text.7c13d55668ce": {
+      "text": "Pagina 21 di 37",
+      "src": "7c13d55668ce"
+    },
+    "text.c1018f64ed1f": {
+      "text": "Pagina 22 di 37",
+      "src": "c1018f64ed1f"
+    },
+    "text.3531e4f378b7": {
+      "text": "Pagina 23 di 37",
+      "src": "3531e4f378b7"
+    },
+    "text.242a65e83439": {
+      "text": "Pagina 24 di 37",
+      "src": "242a65e83439"
+    },
+    "text.e593ac1b6974": {
+      "text": "Pagina 25 di 37",
+      "src": "e593ac1b6974"
+    },
+    "text.03b3559923b6": {
+      "text": "Pagina 26 di 37",
+      "src": "03b3559923b6"
+    },
+    "text.9c1a8f3b4688": {
+      "text": "Pagina 27 di 37",
+      "src": "9c1a8f3b4688"
+    },
+    "text.ca8619060927": {
+      "text": "Pagina 28 di 37",
+      "src": "ca8619060927"
+    },
+    "text.4d2e67c6ab4e": {
+      "text": "Pagina 29 di 37",
+      "src": "4d2e67c6ab4e"
+    },
+    "text.42f5f55c86d5": {
+      "text": "Pagina 30 di 37",
+      "src": "42f5f55c86d5"
+    },
+    "text.da372fa8b240": {
+      "text": "Pagina 31 di 37",
+      "src": "da372fa8b240"
+    },
+    "text.a927a82946b8": {
+      "text": "Pagina 32 di 37",
+      "src": "a927a82946b8"
+    },
+    "text.fa172223f633": {
+      "text": "Pagina 33 di 37",
+      "src": "fa172223f633"
+    },
+    "text.402dde99b460": {
+      "text": "Pagina 34 di 37",
+      "src": "402dde99b460"
+    },
+    "text.295d16571c20": {
+      "text": "Pagina 35 di 37",
+      "src": "295d16571c20"
+    },
+    "text.eee84db2695a": {
+      "text": "Pagina 36 di 37",
+      "src": "eee84db2695a"
+    },
+    "text.cd255f9f32e6": {
+      "text": "Pagina 37 di 37",
+      "src": "cd255f9f32e6"
+    },
+    "text.9602c92b1569": {
+      "text": "Pagina 10 di 10",
+      "src": "9602c92b1569"
+    },
+    "text.1a78c261ba59": {
+      "text": "Pagina 10 di 12",
+      "src": "1a78c261ba59"
+    },
+    "text.0bc2119c920d": {
+      "text": "Pagina 11 di 12",
+      "src": "0bc2119c920d"
+    },
+    "text.0a4dd298faa4": {
+      "text": "Pagina 12 di 12",
+      "src": "0a4dd298faa4"
+    },
+    "text.be9cc782402a": {
+      "text": "64 recensioni su Vinted →",
+      "src": "be9cc782402a"
+    },
+    "text.7597db246894": {
+      "text": "1672 pezzi in vendita · 74 venduti",
+      "src": "7597db246894"
+    },
+    "text.e5a60681aace": {
+      "text": "5 bindi nello scaffale dei gioielli.",
+      "src": "e5a60681aace"
+    },
+    "text.fad21417bf00": {
+      "text": "48 bindi nella vetrina dei gioielli.",
+      "src": "fad21417bf00"
+    },
+    "text.01c6480a1753": {
+      "text": "2 braccialetti nello scaffale dei gioielli.",
+      "src": "01c6480a1753"
+    },
+    "text.929b81781eda": {
+      "text": "48 divinità sulla mensola dedicata alla meditazione.",
+      "src": "929b81781eda"
+    },
+    "text.09680e0a6741": {
+      "text": "19 divinità sulla mensola dedicata alla meditazione.",
+      "src": "09680e0a6741"
+    },
+    "text.80b016a624b7": {
+      "text": "Nuovo, senza etichette · Giallo · Taglia unica",
+      "src": "80b016a624b7"
+    },
+    "text.7f3cc27be934": {
+      "text": "48 braccialetti nella vetrina dei gioielli.",
+      "src": "7f3cc27be934"
+    },
+    "text.22b4af860a22": {
+      "text": "8 capi di abbigliamento maschile nello scaffale dedicato alla moda.",
+      "src": "22b4af860a22"
+    },
+    "text.acc37ceb2081": {
+      "text": "48 capi di abbigliamento maschile nello scaffale dedicato alla moda.",
+      "src": "acc37ceb2081"
+    },
+    "text.4082f9eb0c01": {
+      "text": "48 kanthi malas sullo scaffale dedicato alla meditazione.",
+      "src": "4082f9eb0c01"
+    },
+    "text.49a3c9cd07a2": {
+      "text": "13 kanthi malas sulla mensola dedicata alla meditazione.",
+      "src": "49a3c9cd07a2"
+    },
+    "text.f9384cb4d90b": {
+      "text": "48 capi di abbigliamento femminile nello scaffale dedicato alla moda.",
+      "src": "f9384cb4d90b"
+    },
+    "text.90c5ad4c3f59": {
+      "text": "37 capi di abbigliamento femminile nello scaffale dedicato alla moda.",
+      "src": "90c5ad4c3f59"
+    },
+    "text.6b3e6fc19242": {
+      "text": "5 bastoncini di incenso nella mensola dedicata alla meditazione.",
+      "src": "6b3e6fc19242"
+    },
+    "text.8ff5d0ef3528": {
+      "text": "48 bastoncini di incenso nella mensola dedicata alla meditazione.",
+      "src": "8ff5d0ef3528"
+    },
+    "text.d52c8c758173": {
+      "text": "48 sacchetti contenenti perline japa sullo scaffale dedicato alla meditazione.",
+      "src": "d52c8c758173"
+    },
+    "text.a14c87476bff": {
+      "text": "13 sacchetti contenenti perline japa sullo scaffale dedicato alla meditazione.",
+      "src": "a14c87476bff"
+    },
+    "text.def42ef951ca": {
+      "text": "Bindi: acquistare gioielli indiani in Europa, pagina 3",
+      "src": "def42ef951ca"
+    },
+    "text.8f3fe45c4b05": {
+      "text": "48 immagini devozionali nella mensola dedicata alla meditazione.",
+      "src": "8f3fe45c4b05"
+    },
+    "text.65beef0c87ea": {
+      "text": "39 immagini devozionali nella mensola dedicata alla meditazione.",
+      "src": "65beef0c87ea"
+    },
+    "text.74c542d7402c": {
+      "text": "48 adesivi e poster nello scaffale dedicato alla meditazione.",
+      "src": "74c542d7402c"
+    },
+    "text.e1f419a3b23a": {
+      "text": "31 adesivi e poster nello scaffale dedicato alla meditazione.",
+      "src": "e1f419a3b23a"
+    },
+    "text.4ed27ce35b0e": {
+      "text": "Bracciali: acquistare gioielli indiani in Europa, pagina 2",
+      "src": "4ed27ce35b0e"
+    },
+    "text.86ef404d38e0": {
+      "text": "Divinità: acquisto di oggetti rituali indiani in Europa, pagina 2",
+      "src": "86ef404d38e0"
+    },
+    "text.c317cfa61ff9": {
+      "text": "Abbigliamento maschile: acquistate capi di abbigliamento indiani in Europa, pagina 3",
+      "src": "c317cfa61ff9"
+    },
+    "text.4c9959390cc8": {
+      "text": "Abbigliamento femminile: acquistate capi di abbigliamento indiani in Europa, pagina 3",
+      "src": "4c9959390cc8"
+    },
+    "text.7d2584c62e14": {
+      "text": "Abbigliamento femminile: acquistate capi di abbigliamento indiani in Europa, pagina 4",
+      "src": "7d2584c62e14"
+    },
+    "text.1ae4e27a391b": {
+      "text": "Kanthi malas: acquisto di oggetti rituali indiani in Europa, pagina 3",
+      "src": "1ae4e27a391b"
+    },
+    "text.21b62d419001": {
+      "text": "Libri indiani in Europa: narrativa, cucina, testi sacri, pagina 3",
+      "src": "21b62d419001"
+    },
+    "text.367165a82f65": {
+      "text": "Gioielli indiani in Europa: argento, perline, realizzati a mano, pagina 4",
+      "src": "367165a82f65"
+    },
+    "text.e3303006cc52": {
+      "text": "Gioielli indiani in Europa: argento, perline, realizzati a mano, pagina 5",
+      "src": "e3303006cc52"
+    },
+    "text.ddb228bfe3fb": {
+      "text": "Gioielli indiani in Europa: argento, perline, realizzati a mano, pagina 6",
+      "src": "ddb228bfe3fb"
+    },
+    "text.b380ed54a86a": {
+      "text": "Gioielli indiani in Europa: argento, perline, realizzati a mano, pagina 7",
+      "src": "b380ed54a86a"
+    },
+    "text.eb5400e039c6": {
+      "text": "Bastoncini d'incenso: acquistate oggetti rituali indiani in Europa, pagina 2",
+      "src": "eb5400e039c6"
+    },
+    "text.28af76f8f5ae": {
+      "text": "Borsette con grani da japa: acquistate oggetti rituali indiani in Europa, pagina 2",
+      "src": "28af76f8f5ae"
+    },
+    "text.4005542870eb": {
+      "text": "Benessere ayurvedico in Europa: oli, saponi, profumi, pagina 2",
+      "src": "4005542870eb"
+    },
+    "text.2b37b6ff47e5": {
+      "text": "Abbigliamento indiano in Europa: kurta, sari, stampe a blocchi, pagina 6",
+      "src": "2b37b6ff47e5"
+    },
+    "text.a64bc6fd5aa5": {
+      "text": "Abbigliamento indiano in Europa: kurta, sari, stampe a blocchi, pagina 7",
+      "src": "a64bc6fd5aa5"
+    },
+    "text.9db35651ea46": {
+      "text": "Abbigliamento indiano in Europa: kurta, sari, stampe a blocchi, pagina 8",
+      "src": "9db35651ea46"
+    },
+    "text.42f275929f91": {
+      "text": "Abbigliamento indiano in Europa: kurta, sari, stampe a blocchi, pagina 9",
+      "src": "42f275929f91"
+    },
+    "text.214708de9ad6": {
+      "text": "Abbigliamento indiano in Europa: kurta, sari, stampe a blocchi, pagina 10",
+      "src": "214708de9ad6"
+    },
+    "text.da7bf068364f": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 7",
+      "src": "da7bf068364f"
+    },
+    "text.8615e6d5534d": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 8",
+      "src": "8615e6d5534d"
+    },
+    "text.ee371213a14d": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 9",
+      "src": "ee371213a14d"
+    },
+    "text.4ee5742204b8": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 10",
+      "src": "4ee5742204b8"
+    },
+    "text.69310853d11a": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 11",
+      "src": "69310853d11a"
+    },
+    "text.5a6dc6f7b625": {
+      "text": "Oggetti rituali indiani in Europa: incenso, ottone, mala, pagina 12",
+      "src": "5a6dc6f7b625"
+    },
+    "text.eb5ea9d12d91": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 19",
+      "src": "eb5ea9d12d91"
+    },
+    "text.139fcf8fb268": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 20",
+      "src": "139fcf8fb268"
+    },
+    "text.808c4d14644e": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 21",
+      "src": "808c4d14644e"
+    },
+    "text.17ef7afbff92": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 22",
+      "src": "17ef7afbff92"
+    },
+    "text.89a51929cfc3": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 23",
+      "src": "89a51929cfc3"
+    },
+    "text.8436f66ba807": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 24",
+      "src": "8436f66ba807"
+    },
+    "text.0a4b8379ca32": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 25",
+      "src": "0a4b8379ca32"
+    },
+    "text.bb211632f58a": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 26",
+      "src": "bb211632f58a"
+    },
+    "text.c39e889ec712": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 27",
+      "src": "c39e889ec712"
+    },
+    "text.8ed0eb5bae20": {
+      "text": "Acquistate abiti, gioielli e articoli di arredamento indiani in Europa, pagina 28",
+      "src": "8ed0eb5bae20"
+    },
+    "text.2000590b2c60": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 29",
+      "src": "2000590b2c60"
+    },
+    "text.5065a9ee4b0e": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 30",
+      "src": "5065a9ee4b0e"
+    },
+    "text.eb17ad71ea83": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 31",
+      "src": "eb17ad71ea83"
+    },
+    "text.3f56656650e0": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 32",
+      "src": "3f56656650e0"
+    },
+    "text.2cd91eae590d": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 33",
+      "src": "2cd91eae590d"
+    },
+    "text.7fb2a31aaff5": {
+      "text": "Acquistate abbigliamento, gioielli e articoli per la casa indiani in Europa, pagina 34",
+      "src": "7fb2a31aaff5"
+    },
+    "text.05ea4ea691b1": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 35",
+      "src": "05ea4ea691b1"
+    },
+    "text.8c408085f119": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 36",
+      "src": "8c408085f119"
+    },
+    "text.5697e8060f78": {
+      "text": "Acquistate abiti, gioielli e articoli per la casa indiani in Europa, pagina 37",
+      "src": "5697e8060f78"
+    },
+    "text.3cc651ce2d94": {
+      "text": "Immagini devozionali: acquisto di oggetti rituali indiani in Europa, pagina 2",
+      "src": "3cc651ce2d94"
+    },
+    "text.8b0fe350594f": {
+      "text": "Arredamento indiano in Europa: tessuti, ceramiche, oggetti artigianali, pagina 3",
+      "src": "8b0fe350594f"
+    },
+    "text.844ffb25b49e": {
+      "text": "Articoli da regalo indiani in Europa: biglietti, quaderni, bambole, portachiavi, pagina 2",
+      "src": "844ffb25b49e"
+    },
+    "text.ee415c1b37ba": {
+      "text": "Adesivi e poster: acquistate oggetti rituali indiani in Europa, pagina 2",
+      "src": "ee415c1b37ba"
+    },
+    "text.96e03b5ff955": {
+      "text": "Valutato 5,0 su 5 in base a 64 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "96e03b5ff955"
+    },
+    "text.7d147bf47090": {
+      "text": "Copriletto pesante in seta grezza indiana con due federe. Realizzato da abili artigiani indiani utilizzando seta grezza di prima qualità. Ricami tradizionali…",
+      "src": "7d147bf47090"
     }
   }
 }

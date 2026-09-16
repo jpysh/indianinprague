@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-15T05:17:29.044Z",
-  "count": 6307,
+  "generated": "2026-09-16T05:17:43.009Z",
+  "count": 6455,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -25236,6 +25236,598 @@
     "text.eed03c211aea": {
       "text": "Długa pikowana kurtka wykonana ręcznie w Indiach. Kwiatowe nadruki. Pikowane szwy zapewniające izolację termiczną i nadające jej teksturowany wygląd. Wysokiej jakości bawełna. Dwie kieszenie…",
       "src": "eed03c211aea"
+    },
+    "item.10007670761.title": {
+      "text": "Luksusowa jedwabna narzuta na łóżko wraz z 2 poszewkami na poduszki",
+      "src": "7657144eec56"
+    },
+    "item.10007670761.description": {
+      "text": "Gruba narzuta na łóżko z surowego jedwabiu indyjskiego wraz z dwiema poszewkami na poduszki. \nWykonana przez wykwalifikowanych indyjskich rzemieślników z najwyższej jakości surowego jedwabiu.\nTradycyjny haft.\nWysoka jakość i trwałość.\nNigdy nie używana.",
+      "src": "6e2daf73681b"
+    },
+    "text.ce1652874339": {
+      "text": "141 sztuk",
+      "src": "ce1652874339"
+    },
+    "text.f59498284098": {
+      "text": "Top Vintage",
+      "src": "f59498284098"
+    },
+    "text.a7b71a29550f": {
+      "text": "Strona 1 z 4",
+      "src": "a7b71a29550f"
+    },
+    "text.f3a874df5c24": {
+      "text": "Strona 2 z 4",
+      "src": "f3a874df5c24"
+    },
+    "text.cd2ae08b79e0": {
+      "text": "Strona 3 z 4",
+      "src": "cd2ae08b79e0"
+    },
+    "text.15fc5c2c83ce": {
+      "text": "Strona 4 z 4",
+      "src": "15fc5c2c83ce"
+    },
+    "text.f5c77a3dd7cc": {
+      "text": "Strona 1 z 7",
+      "src": "f5c77a3dd7cc"
+    },
+    "text.1c7fe3551107": {
+      "text": "Strona 2 z 7",
+      "src": "1c7fe3551107"
+    },
+    "text.0cb772f79399": {
+      "text": "Strona 3 z 7",
+      "src": "0cb772f79399"
+    },
+    "text.1b276a6f3bcd": {
+      "text": "Strona 4 z 7",
+      "src": "1b276a6f3bcd"
+    },
+    "text.514559417b27": {
+      "text": "Strona 5 z 7",
+      "src": "514559417b27"
+    },
+    "text.8490bb402499": {
+      "text": "Strona 6 z 7",
+      "src": "8490bb402499"
+    },
+    "text.4a43556995bd": {
+      "text": "Strona 7 z 7",
+      "src": "4a43556995bd"
+    },
+    "text.8473f2562b73": {
+      "text": "Strona 1 z 37",
+      "src": "8473f2562b73"
+    },
+    "text.308f44ec6733": {
+      "text": "Strona 2 z 37",
+      "src": "308f44ec6733"
+    },
+    "text.22cad1d9483b": {
+      "text": "Strona 3 z 37",
+      "src": "22cad1d9483b"
+    },
+    "text.4cb48f08ea22": {
+      "text": "Strona 4 z 37",
+      "src": "4cb48f08ea22"
+    },
+    "text.9bd80dadfa9e": {
+      "text": "Strona 5 z 37",
+      "src": "9bd80dadfa9e"
+    },
+    "text.3b41ea5b93a8": {
+      "text": "Strona 6 z 37",
+      "src": "3b41ea5b93a8"
+    },
+    "text.439064dcfeec": {
+      "text": "Strona 7 z 37",
+      "src": "439064dcfeec"
+    },
+    "text.a3837c219ee3": {
+      "text": "Strona 8 z 37",
+      "src": "a3837c219ee3"
+    },
+    "text.9e7ce6a4739d": {
+      "text": "Strona 9 z 37",
+      "src": "9e7ce6a4739d"
+    },
+    "text.84b2201d5737": {
+      "text": "Strona 1 z 10",
+      "src": "84b2201d5737"
+    },
+    "text.193ab2efb88f": {
+      "text": "Strona 2 z 10",
+      "src": "193ab2efb88f"
+    },
+    "text.36327c9d5b69": {
+      "text": "Strona 3 z 10",
+      "src": "36327c9d5b69"
+    },
+    "text.4ea5baec0a64": {
+      "text": "Strona 4 z 10",
+      "src": "4ea5baec0a64"
+    },
+    "text.db9ee0c44fa1": {
+      "text": "Strona 5 z 10",
+      "src": "db9ee0c44fa1"
+    },
+    "text.b5fbf9519eee": {
+      "text": "Strona 6 z 10",
+      "src": "b5fbf9519eee"
+    },
+    "text.a0a35cdc73a0": {
+      "text": "Strona 7 z 10",
+      "src": "a0a35cdc73a0"
+    },
+    "text.583e3dba7ea5": {
+      "text": "Strona 8 z 10",
+      "src": "583e3dba7ea5"
+    },
+    "text.7b47d7620da9": {
+      "text": "Strona 9 z 10",
+      "src": "7b47d7620da9"
+    },
+    "text.3eefdfeb14c8": {
+      "text": "Strona 1 z 12",
+      "src": "3eefdfeb14c8"
+    },
+    "text.6e44c9213c2a": {
+      "text": "Strona 2 z 12",
+      "src": "6e44c9213c2a"
+    },
+    "text.f682dc714c03": {
+      "text": "Strona 3 z 12",
+      "src": "f682dc714c03"
+    },
+    "text.adc28520cf0c": {
+      "text": "Strona 4 z 12",
+      "src": "adc28520cf0c"
+    },
+    "text.96d3f5cf825c": {
+      "text": "Strona 5 z 12",
+      "src": "96d3f5cf825c"
+    },
+    "text.b9e639a1d2b4": {
+      "text": "Strona 6 z 12",
+      "src": "b9e639a1d2b4"
+    },
+    "text.e007ea1ceb49": {
+      "text": "Strona 7 z 12",
+      "src": "e007ea1ceb49"
+    },
+    "text.2e0b09636b05": {
+      "text": "Strona 8 z 12",
+      "src": "2e0b09636b05"
+    },
+    "text.1329a7b7bc6c": {
+      "text": "Strona 9 z 12",
+      "src": "1329a7b7bc6c"
+    },
+    "text.5a48f0a37013": {
+      "text": "Strona 10 z 37",
+      "src": "5a48f0a37013"
+    },
+    "text.a4837d3a7538": {
+      "text": "Strona 11 z 37",
+      "src": "a4837d3a7538"
+    },
+    "text.27fa9ec25b37": {
+      "text": "Strona 12 z 37",
+      "src": "27fa9ec25b37"
+    },
+    "text.02e34cda7db3": {
+      "text": "Strona 13 z 37",
+      "src": "02e34cda7db3"
+    },
+    "text.cfb3bd579ca0": {
+      "text": "Strona 14 z 37",
+      "src": "cfb3bd579ca0"
+    },
+    "text.07cc399c7b5c": {
+      "text": "Strona 15 z 37",
+      "src": "07cc399c7b5c"
+    },
+    "text.44bd101e0f4f": {
+      "text": "Strona 16 z 37",
+      "src": "44bd101e0f4f"
+    },
+    "text.dcdb66389330": {
+      "text": "Strona 17 z 37",
+      "src": "dcdb66389330"
+    },
+    "text.f2145ecffa3b": {
+      "text": "Strona 18 z 37",
+      "src": "f2145ecffa3b"
+    },
+    "text.0bd16e3d17c3": {
+      "text": "Strona 19 z 37",
+      "src": "0bd16e3d17c3"
+    },
+    "text.c5b07f6cd7d2": {
+      "text": "Strona 20 z 37",
+      "src": "c5b07f6cd7d2"
+    },
+    "text.7c13d55668ce": {
+      "text": "Strona 21 z 37",
+      "src": "7c13d55668ce"
+    },
+    "text.c1018f64ed1f": {
+      "text": "Strona 22 z 37",
+      "src": "c1018f64ed1f"
+    },
+    "text.3531e4f378b7": {
+      "text": "Strona 23 z 37",
+      "src": "3531e4f378b7"
+    },
+    "text.242a65e83439": {
+      "text": "Strona 24 z 37",
+      "src": "242a65e83439"
+    },
+    "text.e593ac1b6974": {
+      "text": "Strona 25 z 37",
+      "src": "e593ac1b6974"
+    },
+    "text.03b3559923b6": {
+      "text": "Strona 26 z 37",
+      "src": "03b3559923b6"
+    },
+    "text.9c1a8f3b4688": {
+      "text": "Strona 27 z 37",
+      "src": "9c1a8f3b4688"
+    },
+    "text.ca8619060927": {
+      "text": "Strona 28 z 37",
+      "src": "ca8619060927"
+    },
+    "text.4d2e67c6ab4e": {
+      "text": "Strona 29 z 37",
+      "src": "4d2e67c6ab4e"
+    },
+    "text.42f5f55c86d5": {
+      "text": "Strona 30 z 37",
+      "src": "42f5f55c86d5"
+    },
+    "text.da372fa8b240": {
+      "text": "Strona 31 z 37",
+      "src": "da372fa8b240"
+    },
+    "text.a927a82946b8": {
+      "text": "Strona 32 z 37",
+      "src": "a927a82946b8"
+    },
+    "text.fa172223f633": {
+      "text": "Strona 33 z 37",
+      "src": "fa172223f633"
+    },
+    "text.402dde99b460": {
+      "text": "Strona 34 z 37",
+      "src": "402dde99b460"
+    },
+    "text.295d16571c20": {
+      "text": "Strona 35 z 37",
+      "src": "295d16571c20"
+    },
+    "text.eee84db2695a": {
+      "text": "Strona 36 z 37",
+      "src": "eee84db2695a"
+    },
+    "text.cd255f9f32e6": {
+      "text": "Strona 37 z 37",
+      "src": "cd255f9f32e6"
+    },
+    "text.9602c92b1569": {
+      "text": "Strona 10 z 10",
+      "src": "9602c92b1569"
+    },
+    "text.1a78c261ba59": {
+      "text": "Strona 10 z 12",
+      "src": "1a78c261ba59"
+    },
+    "text.0bc2119c920d": {
+      "text": "Strona 11 z 12",
+      "src": "0bc2119c920d"
+    },
+    "text.0a4dd298faa4": {
+      "text": "Strona 12 z 12",
+      "src": "0a4dd298faa4"
+    },
+    "text.be9cc782402a": {
+      "text": "64 recenzje na stronie Vinted →",
+      "src": "be9cc782402a"
+    },
+    "text.7597db246894": {
+      "text": "1672 sztuki na sprzedaż · 74 sprzedane",
+      "src": "7597db246894"
+    },
+    "text.e5a60681aace": {
+      "text": "5 bindi na półce z biżuterią.",
+      "src": "e5a60681aace"
+    },
+    "text.fad21417bf00": {
+      "text": "48 bindi na półce z biżuterią.",
+      "src": "fad21417bf00"
+    },
+    "text.01c6480a1753": {
+      "text": "2 bransoletki na półce z biżuterią.",
+      "src": "01c6480a1753"
+    },
+    "text.929b81781eda": {
+      "text": "48 bóstw na półce do medytacji.",
+      "src": "929b81781eda"
+    },
+    "text.09680e0a6741": {
+      "text": "19 bóstw na półce do medytacji.",
+      "src": "09680e0a6741"
+    },
+    "text.80b016a624b7": {
+      "text": "Nowe, bez metek · Żółte · Jeden rozmiar",
+      "src": "80b016a624b7"
+    },
+    "text.7f3cc27be934": {
+      "text": "48 bransoletek na półce z biżuterią.",
+      "src": "7f3cc27be934"
+    },
+    "text.22b4af860a22": {
+      "text": "8 ubrań męskich na półce z modą.",
+      "src": "22b4af860a22"
+    },
+    "text.acc37ceb2081": {
+      "text": "48 sztuk odzieży męskiej na półce z modą.",
+      "src": "acc37ceb2081"
+    },
+    "text.4082f9eb0c01": {
+      "text": "48 kanthi malas na półce do medytacji.",
+      "src": "4082f9eb0c01"
+    },
+    "text.49a3c9cd07a2": {
+      "text": "13 kanthi malas na półce do medytacji.",
+      "src": "49a3c9cd07a2"
+    },
+    "text.f9384cb4d90b": {
+      "text": "48 sztuk odzieży damskiej na półce z modą.",
+      "src": "f9384cb4d90b"
+    },
+    "text.90c5ad4c3f59": {
+      "text": "37 sztuk odzieży damskiej na półce z modą.",
+      "src": "90c5ad4c3f59"
+    },
+    "text.6b3e6fc19242": {
+      "text": "5 pałeczek kadzidła na półce do medytacji.",
+      "src": "6b3e6fc19242"
+    },
+    "text.8ff5d0ef3528": {
+      "text": "48 pałeczek kadzidła na półce do medytacji.",
+      "src": "8ff5d0ef3528"
+    },
+    "text.d52c8c758173": {
+      "text": "48 woreczków z koralikami japa na półce do medytacji.",
+      "src": "d52c8c758173"
+    },
+    "text.a14c87476bff": {
+      "text": "Na półce do medytacji znajduje się 13 woreczków z koralikami do japa.",
+      "src": "a14c87476bff"
+    },
+    "text.def42ef951ca": {
+      "text": "Bindi: zakup indyjskiej biżuterii w Europie, strona 3",
+      "src": "def42ef951ca"
+    },
+    "text.8f3fe45c4b05": {
+      "text": "48 obrazków religijnych na półce do medytacji.",
+      "src": "8f3fe45c4b05"
+    },
+    "text.65beef0c87ea": {
+      "text": "39 obrazków religijnych na półce do medytacji.",
+      "src": "65beef0c87ea"
+    },
+    "text.74c542d7402c": {
+      "text": "48 naklejek i plakatów na półce do medytacji.",
+      "src": "74c542d7402c"
+    },
+    "text.e1f419a3b23a": {
+      "text": "31 naklejek i plakatów na półce z materiałami do medytacji.",
+      "src": "e1f419a3b23a"
+    },
+    "text.4ed27ce35b0e": {
+      "text": "Bransoletki: zakup indyjskiej biżuterii w Europie, strona 2",
+      "src": "4ed27ce35b0e"
+    },
+    "text.86ef404d38e0": {
+      "text": "Bóstwa: zakup indyjskich przedmiotów rytualnych w Europie, strona 2",
+      "src": "86ef404d38e0"
+    },
+    "text.c317cfa61ff9": {
+      "text": "Odzież męska: zakupy indyjskiej odzieży w Europie, strona 3",
+      "src": "c317cfa61ff9"
+    },
+    "text.4c9959390cc8": {
+      "text": "Odzież damska: zakupy indyjskiej odzieży w Europie, strona 3",
+      "src": "4c9959390cc8"
+    },
+    "text.7d2584c62e14": {
+      "text": "Odzież damska: zakupy indyjskiej odzieży w Europie, strona 4",
+      "src": "7d2584c62e14"
+    },
+    "text.1ae4e27a391b": {
+      "text": "Kanthi malas: zakup indyjskich przedmiotów rytualnych w Europie, strona 3",
+      "src": "1ae4e27a391b"
+    },
+    "text.21b62d419001": {
+      "text": "Książki indyjskie w Europie: beletrystyka, książki kucharskie, pisma święte, strona 3",
+      "src": "21b62d419001"
+    },
+    "text.367165a82f65": {
+      "text": "Biżuteria indyjska w Europie: srebro, koraliki, ręczne wykonanie, strona 4",
+      "src": "367165a82f65"
+    },
+    "text.e3303006cc52": {
+      "text": "Biżuteria indyjska w Europie: srebro, koraliki, ręczne wykonanie, strona 5",
+      "src": "e3303006cc52"
+    },
+    "text.ddb228bfe3fb": {
+      "text": "Biżuteria indyjska w Europie: srebro, koraliki, ręczne wykonanie, strona 6",
+      "src": "ddb228bfe3fb"
+    },
+    "text.b380ed54a86a": {
+      "text": "Biżuteria indyjska w Europie: srebro, koraliki, ręczne wykonanie, strona 7",
+      "src": "b380ed54a86a"
+    },
+    "text.eb5400e039c6": {
+      "text": "Pałeczki kadzidlane: zakup indyjskich przedmiotów rytualnych w Europie, strona 2",
+      "src": "eb5400e039c6"
+    },
+    "text.28af76f8f5ae": {
+      "text": "Torby na koraliki japa: zakup indyjskich przedmiotów rytualnych w Europie, strona 2",
+      "src": "28af76f8f5ae"
+    },
+    "text.4005542870eb": {
+      "text": "Dobre samopoczucie w duchu ajurwedy w Europie: olejki, mydła, perfumy, strona 2",
+      "src": "4005542870eb"
+    },
+    "text.2b37b6ff47e5": {
+      "text": "Indyjskie stroje w Europie: kurtki, sari, tkaniny z nadrukiem blokowym, strona 6",
+      "src": "2b37b6ff47e5"
+    },
+    "text.a64bc6fd5aa5": {
+      "text": "Indyjskie stroje w Europie: kurtki, sari, tkaniny z nadrukiem blokowym, strona 7",
+      "src": "a64bc6fd5aa5"
+    },
+    "text.9db35651ea46": {
+      "text": "Indyjskie stroje w Europie: kurty, sari, tkaniny z nadrukiem blokowym, strona 8",
+      "src": "9db35651ea46"
+    },
+    "text.42f275929f91": {
+      "text": "Indyjskie stroje w Europie: kurty, sari, tkaniny z nadrukiem blokowym, strona 9",
+      "src": "42f275929f91"
+    },
+    "text.214708de9ad6": {
+      "text": "Indyjskie stroje w Europie: kurty, sari, tkaniny z nadrukiem blokowym, strona 10",
+      "src": "214708de9ad6"
+    },
+    "text.da7bf068364f": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 7",
+      "src": "da7bf068364f"
+    },
+    "text.8615e6d5534d": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 8",
+      "src": "8615e6d5534d"
+    },
+    "text.ee371213a14d": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 9",
+      "src": "ee371213a14d"
+    },
+    "text.4ee5742204b8": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 10",
+      "src": "4ee5742204b8"
+    },
+    "text.69310853d11a": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 11",
+      "src": "69310853d11a"
+    },
+    "text.5a6dc6f7b625": {
+      "text": "Indyjskie przedmioty rytualne w Europie: kadzidła, mosiądz, mala, strona 12",
+      "src": "5a6dc6f7b625"
+    },
+    "text.eb5ea9d12d91": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 19",
+      "src": "eb5ea9d12d91"
+    },
+    "text.139fcf8fb268": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 20",
+      "src": "139fcf8fb268"
+    },
+    "text.808c4d14644e": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 21",
+      "src": "808c4d14644e"
+    },
+    "text.17ef7afbff92": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 22",
+      "src": "17ef7afbff92"
+    },
+    "text.89a51929cfc3": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 23",
+      "src": "89a51929cfc3"
+    },
+    "text.8436f66ba807": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 24",
+      "src": "8436f66ba807"
+    },
+    "text.0a4b8379ca32": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 25",
+      "src": "0a4b8379ca32"
+    },
+    "text.bb211632f58a": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 26",
+      "src": "bb211632f58a"
+    },
+    "text.c39e889ec712": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 27",
+      "src": "c39e889ec712"
+    },
+    "text.8ed0eb5bae20": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 28",
+      "src": "8ed0eb5bae20"
+    },
+    "text.2000590b2c60": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 29",
+      "src": "2000590b2c60"
+    },
+    "text.5065a9ee4b0e": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 30",
+      "src": "5065a9ee4b0e"
+    },
+    "text.eb17ad71ea83": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 31",
+      "src": "eb17ad71ea83"
+    },
+    "text.3f56656650e0": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 32",
+      "src": "3f56656650e0"
+    },
+    "text.2cd91eae590d": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 33",
+      "src": "2cd91eae590d"
+    },
+    "text.7fb2a31aaff5": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 34",
+      "src": "7fb2a31aaff5"
+    },
+    "text.05ea4ea691b1": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów do wystroju wnętrz w Europie, strona 35",
+      "src": "05ea4ea691b1"
+    },
+    "text.8c408085f119": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 36",
+      "src": "8c408085f119"
+    },
+    "text.5697e8060f78": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 37",
+      "src": "5697e8060f78"
+    },
+    "text.3cc651ce2d94": {
+      "text": "Obrazy religijne: zakup indyjskich przedmiotów rytualnych w Europie, strona 2",
+      "src": "3cc651ce2d94"
+    },
+    "text.8b0fe350594f": {
+      "text": "Indyjskie akcesoria wnętrzarskie w Europie: tkaniny, ceramika, wyroby rękodzielnicze, strona 3",
+      "src": "8b0fe350594f"
+    },
+    "text.844ffb25b49e": {
+      "text": "Prezenty z Indii w Europie: kartki, zeszyty, lalki, breloczki, strona 2",
+      "src": "844ffb25b49e"
+    },
+    "text.ee415c1b37ba": {
+      "text": "Naklejki i plakaty: zakup indyjskich przedmiotów rytualnych w Europie, strona 2",
+      "src": "ee415c1b37ba"
+    },
+    "text.96e03b5ff955": {
+      "text": "Ocena 5,0 na 5 na podstawie 64 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "96e03b5ff955"
+    },
+    "text.7d147bf47090": {
+      "text": "Gruba narzuta na łóżko z surowego jedwabiu indyjskiego wraz z dwiema poszewkami na poduszki. Wykonana przez wykwalifikowanych indyjskich rzemieślników z najwyższej jakości surowego jedwabiu. Tradycyjny haft…",
+      "src": "7d147bf47090"
     }
   }
 }

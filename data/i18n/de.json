@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-15T05:17:26.871Z",
-  "count": 6311,
+  "generated": "2026-09-16T05:17:32.800Z",
+  "count": 6459,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -25252,6 +25252,598 @@
     "text.eed03c211aea": {
       "text": "Lange, gesteppte Jacke, handgefertigt in Indien. Blumenmuster. Steppnähte sorgen für Wärmeisolierung und eine strukturierte Optik. Hochwertige Baumwolle. Zwei Taschen…",
       "src": "eed03c211aea"
+    },
+    "item.10007670761.title": {
+      "text": "Luxuriöse Seidenbettdecke mit 2 Kissenbezügen",
+      "src": "7657144eec56"
+    },
+    "item.10007670761.description": {
+      "text": "Schwere Bettdecke aus roher indischer Seide mit zwei Kissenbezügen. \nVon erfahrenen indischen Kunsthandwerkern aus hochwertiger Rohseide gefertigt.\nTraditionelle Stickerei.\nHohe Qualität und Langlebigkeit.\nUnbenutzt.",
+      "src": "6e2daf73681b"
+    },
+    "text.ce1652874339": {
+      "text": "141 Stück",
+      "src": "ce1652874339"
+    },
+    "text.f59498284098": {
+      "text": "Top Vintage",
+      "src": "f59498284098"
+    },
+    "text.a7b71a29550f": {
+      "text": "Seite 1 von 4",
+      "src": "a7b71a29550f"
+    },
+    "text.f3a874df5c24": {
+      "text": "Seite 2 von 4",
+      "src": "f3a874df5c24"
+    },
+    "text.cd2ae08b79e0": {
+      "text": "Seite 3 von 4",
+      "src": "cd2ae08b79e0"
+    },
+    "text.15fc5c2c83ce": {
+      "text": "Seite 4 von 4",
+      "src": "15fc5c2c83ce"
+    },
+    "text.f5c77a3dd7cc": {
+      "text": "Seite 1 von 7",
+      "src": "f5c77a3dd7cc"
+    },
+    "text.1c7fe3551107": {
+      "text": "Seite 2 von 7",
+      "src": "1c7fe3551107"
+    },
+    "text.0cb772f79399": {
+      "text": "Seite 3 von 7",
+      "src": "0cb772f79399"
+    },
+    "text.1b276a6f3bcd": {
+      "text": "Seite 4 von 7",
+      "src": "1b276a6f3bcd"
+    },
+    "text.514559417b27": {
+      "text": "Seite 5 von 7",
+      "src": "514559417b27"
+    },
+    "text.8490bb402499": {
+      "text": "Seite 6 von 7",
+      "src": "8490bb402499"
+    },
+    "text.4a43556995bd": {
+      "text": "Seite 7 von 7",
+      "src": "4a43556995bd"
+    },
+    "text.8473f2562b73": {
+      "text": "Seite 1 von 37",
+      "src": "8473f2562b73"
+    },
+    "text.308f44ec6733": {
+      "text": "Seite 2 von 37",
+      "src": "308f44ec6733"
+    },
+    "text.22cad1d9483b": {
+      "text": "Seite 3 von 37",
+      "src": "22cad1d9483b"
+    },
+    "text.4cb48f08ea22": {
+      "text": "Seite 4 von 37",
+      "src": "4cb48f08ea22"
+    },
+    "text.9bd80dadfa9e": {
+      "text": "Seite 5 von 37",
+      "src": "9bd80dadfa9e"
+    },
+    "text.3b41ea5b93a8": {
+      "text": "Seite 6 von 37",
+      "src": "3b41ea5b93a8"
+    },
+    "text.439064dcfeec": {
+      "text": "Seite 7 von 37",
+      "src": "439064dcfeec"
+    },
+    "text.a3837c219ee3": {
+      "text": "Seite 8 von 37",
+      "src": "a3837c219ee3"
+    },
+    "text.9e7ce6a4739d": {
+      "text": "Seite 9 von 37",
+      "src": "9e7ce6a4739d"
+    },
+    "text.84b2201d5737": {
+      "text": "Seite 1 von 10",
+      "src": "84b2201d5737"
+    },
+    "text.193ab2efb88f": {
+      "text": "Seite 2 von 10",
+      "src": "193ab2efb88f"
+    },
+    "text.36327c9d5b69": {
+      "text": "Seite 3 von 10",
+      "src": "36327c9d5b69"
+    },
+    "text.4ea5baec0a64": {
+      "text": "Seite 4 von 10",
+      "src": "4ea5baec0a64"
+    },
+    "text.db9ee0c44fa1": {
+      "text": "Seite 5 von 10",
+      "src": "db9ee0c44fa1"
+    },
+    "text.b5fbf9519eee": {
+      "text": "Seite 6 von 10",
+      "src": "b5fbf9519eee"
+    },
+    "text.a0a35cdc73a0": {
+      "text": "Seite 7 von 10",
+      "src": "a0a35cdc73a0"
+    },
+    "text.583e3dba7ea5": {
+      "text": "Seite 8 von 10",
+      "src": "583e3dba7ea5"
+    },
+    "text.7b47d7620da9": {
+      "text": "Seite 9 von 10",
+      "src": "7b47d7620da9"
+    },
+    "text.3eefdfeb14c8": {
+      "text": "Seite 1 von 12",
+      "src": "3eefdfeb14c8"
+    },
+    "text.6e44c9213c2a": {
+      "text": "Seite 2 von 12",
+      "src": "6e44c9213c2a"
+    },
+    "text.f682dc714c03": {
+      "text": "Seite 3 von 12",
+      "src": "f682dc714c03"
+    },
+    "text.adc28520cf0c": {
+      "text": "Seite 4 von 12",
+      "src": "adc28520cf0c"
+    },
+    "text.96d3f5cf825c": {
+      "text": "Seite 5 von 12",
+      "src": "96d3f5cf825c"
+    },
+    "text.b9e639a1d2b4": {
+      "text": "Seite 6 von 12",
+      "src": "b9e639a1d2b4"
+    },
+    "text.e007ea1ceb49": {
+      "text": "Seite 7 von 12",
+      "src": "e007ea1ceb49"
+    },
+    "text.2e0b09636b05": {
+      "text": "Seite 8 von 12",
+      "src": "2e0b09636b05"
+    },
+    "text.1329a7b7bc6c": {
+      "text": "Seite 9 von 12",
+      "src": "1329a7b7bc6c"
+    },
+    "text.5a48f0a37013": {
+      "text": "Seite 10 von 37",
+      "src": "5a48f0a37013"
+    },
+    "text.a4837d3a7538": {
+      "text": "Seite 11 von 37",
+      "src": "a4837d3a7538"
+    },
+    "text.27fa9ec25b37": {
+      "text": "Seite 12 von 37",
+      "src": "27fa9ec25b37"
+    },
+    "text.02e34cda7db3": {
+      "text": "Seite 13 von 37",
+      "src": "02e34cda7db3"
+    },
+    "text.cfb3bd579ca0": {
+      "text": "Seite 14 von 37",
+      "src": "cfb3bd579ca0"
+    },
+    "text.07cc399c7b5c": {
+      "text": "Seite 15 von 37",
+      "src": "07cc399c7b5c"
+    },
+    "text.44bd101e0f4f": {
+      "text": "Seite 16 von 37",
+      "src": "44bd101e0f4f"
+    },
+    "text.dcdb66389330": {
+      "text": "Seite 17 von 37",
+      "src": "dcdb66389330"
+    },
+    "text.f2145ecffa3b": {
+      "text": "Seite 18 von 37",
+      "src": "f2145ecffa3b"
+    },
+    "text.0bd16e3d17c3": {
+      "text": "Seite 19 von 37",
+      "src": "0bd16e3d17c3"
+    },
+    "text.c5b07f6cd7d2": {
+      "text": "Seite 20 von 37",
+      "src": "c5b07f6cd7d2"
+    },
+    "text.7c13d55668ce": {
+      "text": "Seite 21 von 37",
+      "src": "7c13d55668ce"
+    },
+    "text.c1018f64ed1f": {
+      "text": "Seite 22 von 37",
+      "src": "c1018f64ed1f"
+    },
+    "text.3531e4f378b7": {
+      "text": "Seite 23 von 37",
+      "src": "3531e4f378b7"
+    },
+    "text.242a65e83439": {
+      "text": "Seite 24 von 37",
+      "src": "242a65e83439"
+    },
+    "text.e593ac1b6974": {
+      "text": "Seite 25 von 37",
+      "src": "e593ac1b6974"
+    },
+    "text.03b3559923b6": {
+      "text": "Seite 26 von 37",
+      "src": "03b3559923b6"
+    },
+    "text.9c1a8f3b4688": {
+      "text": "Seite 27 von 37",
+      "src": "9c1a8f3b4688"
+    },
+    "text.ca8619060927": {
+      "text": "Seite 28 von 37",
+      "src": "ca8619060927"
+    },
+    "text.4d2e67c6ab4e": {
+      "text": "Seite 29 von 37",
+      "src": "4d2e67c6ab4e"
+    },
+    "text.42f5f55c86d5": {
+      "text": "Seite 30 von 37",
+      "src": "42f5f55c86d5"
+    },
+    "text.da372fa8b240": {
+      "text": "Seite 31 von 37",
+      "src": "da372fa8b240"
+    },
+    "text.a927a82946b8": {
+      "text": "Seite 32 von 37",
+      "src": "a927a82946b8"
+    },
+    "text.fa172223f633": {
+      "text": "Seite 33 von 37",
+      "src": "fa172223f633"
+    },
+    "text.402dde99b460": {
+      "text": "Seite 34 von 37",
+      "src": "402dde99b460"
+    },
+    "text.295d16571c20": {
+      "text": "Seite 35 von 37",
+      "src": "295d16571c20"
+    },
+    "text.eee84db2695a": {
+      "text": "Seite 36 von 37",
+      "src": "eee84db2695a"
+    },
+    "text.cd255f9f32e6": {
+      "text": "Seite 37 von 37",
+      "src": "cd255f9f32e6"
+    },
+    "text.9602c92b1569": {
+      "text": "Seite 10 von 10",
+      "src": "9602c92b1569"
+    },
+    "text.1a78c261ba59": {
+      "text": "Seite 10 von 12",
+      "src": "1a78c261ba59"
+    },
+    "text.0bc2119c920d": {
+      "text": "Seite 11 von 12",
+      "src": "0bc2119c920d"
+    },
+    "text.0a4dd298faa4": {
+      "text": "Seite 12 von 12",
+      "src": "0a4dd298faa4"
+    },
+    "text.be9cc782402a": {
+      "text": "64 Bewertungen auf Vinted →",
+      "src": "be9cc782402a"
+    },
+    "text.7597db246894": {
+      "text": "1672 Artikel zum Verkauf · 74 verkauft",
+      "src": "7597db246894"
+    },
+    "text.e5a60681aace": {
+      "text": "5 Bindis im Schmuckregal.",
+      "src": "e5a60681aace"
+    },
+    "text.fad21417bf00": {
+      "text": "48 Bindi im Schmuckregal.",
+      "src": "fad21417bf00"
+    },
+    "text.01c6480a1753": {
+      "text": "2 Armbänder im Schmuckregal.",
+      "src": "01c6480a1753"
+    },
+    "text.929b81781eda": {
+      "text": "48 Gottheiten auf dem Meditationsregal.",
+      "src": "929b81781eda"
+    },
+    "text.09680e0a6741": {
+      "text": "19 Gottheiten auf dem Meditationsregal.",
+      "src": "09680e0a6741"
+    },
+    "text.80b016a624b7": {
+      "text": "Neu, ohne Etiketten · Gelb · Einheitsgröße",
+      "src": "80b016a624b7"
+    },
+    "text.7f3cc27be934": {
+      "text": "48 Armbänder im Schmuckregal.",
+      "src": "7f3cc27be934"
+    },
+    "text.22b4af860a22": {
+      "text": "8 Kleidungsstücke für Herren im Moderegal.",
+      "src": "22b4af860a22"
+    },
+    "text.acc37ceb2081": {
+      "text": "48 Kleidungsstücke für Herren im Moderegal.",
+      "src": "acc37ceb2081"
+    },
+    "text.4082f9eb0c01": {
+      "text": "48 Kanthi-Malas im Meditationsregal.",
+      "src": "4082f9eb0c01"
+    },
+    "text.49a3c9cd07a2": {
+      "text": "13 Kanthi-Malas im Meditationsregal.",
+      "src": "49a3c9cd07a2"
+    },
+    "text.f9384cb4d90b": {
+      "text": "48 Damenbekleidungsartikel im Moderegal.",
+      "src": "f9384cb4d90b"
+    },
+    "text.90c5ad4c3f59": {
+      "text": "37 Damenbekleidungsartikel im Moderegal.",
+      "src": "90c5ad4c3f59"
+    },
+    "text.6b3e6fc19242": {
+      "text": "5 Räucherstäbchen im Meditationsregal.",
+      "src": "6b3e6fc19242"
+    },
+    "text.8ff5d0ef3528": {
+      "text": "48 Räucherstäbchen im Meditationsregal.",
+      "src": "8ff5d0ef3528"
+    },
+    "text.d52c8c758173": {
+      "text": "48 Beutel mit Japa-Perlen im Meditationsregal.",
+      "src": "d52c8c758173"
+    },
+    "text.a14c87476bff": {
+      "text": "13 Beutel mit Japa-Perlen im Meditationsregal.",
+      "src": "a14c87476bff"
+    },
+    "text.def42ef951ca": {
+      "text": "Bindi: Indischen Schmuck in Europa kaufen, Seite 3",
+      "src": "def42ef951ca"
+    },
+    "text.8f3fe45c4b05": {
+      "text": "48 Andachtsbilder im Meditationsregal.",
+      "src": "8f3fe45c4b05"
+    },
+    "text.65beef0c87ea": {
+      "text": "39 Andachtsbilder im Meditationsregal.",
+      "src": "65beef0c87ea"
+    },
+    "text.74c542d7402c": {
+      "text": "48 Aufkleber und Poster im Meditationsregal.",
+      "src": "74c542d7402c"
+    },
+    "text.e1f419a3b23a": {
+      "text": "31 Aufkleber und Poster im Meditationsregal.",
+      "src": "e1f419a3b23a"
+    },
+    "text.4ed27ce35b0e": {
+      "text": "Armbänder: Indischen Schmuck in Europa kaufen, Seite 2",
+      "src": "4ed27ce35b0e"
+    },
+    "text.86ef404d38e0": {
+      "text": "Gottheiten: Indische Ritualgegenstände in Europa kaufen, Seite 2",
+      "src": "86ef404d38e0"
+    },
+    "text.c317cfa61ff9": {
+      "text": "Herrenbekleidung: Indische Kleidung in Europa kaufen, Seite 3",
+      "src": "c317cfa61ff9"
+    },
+    "text.4c9959390cc8": {
+      "text": "Damenbekleidung: Indische Kleidung in Europa kaufen, Seite 3",
+      "src": "4c9959390cc8"
+    },
+    "text.7d2584c62e14": {
+      "text": "Damenbekleidung: Indische Kleidung in Europa kaufen, Seite 4",
+      "src": "7d2584c62e14"
+    },
+    "text.1ae4e27a391b": {
+      "text": "Kanthi Malas: Indische Ritualgegenstände in Europa kaufen, Seite 3",
+      "src": "1ae4e27a391b"
+    },
+    "text.21b62d419001": {
+      "text": "Indische Bücher in Europa: Belletristik, Kochbücher, Heilige Schriften, Seite 3",
+      "src": "21b62d419001"
+    },
+    "text.367165a82f65": {
+      "text": "Indischer Schmuck in Europa: Silber, Perlen, handgefertigt, Seite 4",
+      "src": "367165a82f65"
+    },
+    "text.e3303006cc52": {
+      "text": "Indischer Schmuck in Europa: Silber, Perlen, handgefertigt, Seite 5",
+      "src": "e3303006cc52"
+    },
+    "text.ddb228bfe3fb": {
+      "text": "Indischer Schmuck in Europa: Silber, Perlen, handgefertigt, Seite 6",
+      "src": "ddb228bfe3fb"
+    },
+    "text.b380ed54a86a": {
+      "text": "Indischer Schmuck in Europa: Silber, Perlen, handgefertigt, Seite 7",
+      "src": "b380ed54a86a"
+    },
+    "text.eb5400e039c6": {
+      "text": "Räucherstäbchen: Indische Ritualgegenstände in Europa kaufen, Seite 2",
+      "src": "eb5400e039c6"
+    },
+    "text.28af76f8f5ae": {
+      "text": "Japa-Perlen-Täschchen: Indische Ritualgegenstände in Europa kaufen, Seite 2",
+      "src": "28af76f8f5ae"
+    },
+    "text.4005542870eb": {
+      "text": "Ayurvedisches Wellness in Europa: Öle, Seifen, Parfüms, Seite 2",
+      "src": "4005542870eb"
+    },
+    "text.2b37b6ff47e5": {
+      "text": "Indische Kleidung in Europa: Kurtas, Saris, Blockdruck, Seite 6",
+      "src": "2b37b6ff47e5"
+    },
+    "text.a64bc6fd5aa5": {
+      "text": "Indische Kleidung in Europa: Kurtas, Saris, Blockdruck, Seite 7",
+      "src": "a64bc6fd5aa5"
+    },
+    "text.9db35651ea46": {
+      "text": "Indische Kleidung in Europa: Kurtas, Saris, Blockdruck, Seite 8",
+      "src": "9db35651ea46"
+    },
+    "text.42f275929f91": {
+      "text": "Indische Kleidung in Europa: Kurtas, Saris, Blockdruck, Seite 9",
+      "src": "42f275929f91"
+    },
+    "text.214708de9ad6": {
+      "text": "Indische Kleidung in Europa: Kurtas, Saris, Blockdruck, Seite 10",
+      "src": "214708de9ad6"
+    },
+    "text.da7bf068364f": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 7",
+      "src": "da7bf068364f"
+    },
+    "text.8615e6d5534d": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 8",
+      "src": "8615e6d5534d"
+    },
+    "text.ee371213a14d": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 9",
+      "src": "ee371213a14d"
+    },
+    "text.4ee5742204b8": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 10",
+      "src": "4ee5742204b8"
+    },
+    "text.69310853d11a": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 11",
+      "src": "69310853d11a"
+    },
+    "text.5a6dc6f7b625": {
+      "text": "Indische Ritualgegenstände in Europa: Weihrauch, Messing, Malas, Seite 12",
+      "src": "5a6dc6f7b625"
+    },
+    "text.eb5ea9d12d91": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 19",
+      "src": "eb5ea9d12d91"
+    },
+    "text.139fcf8fb268": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 20",
+      "src": "139fcf8fb268"
+    },
+    "text.808c4d14644e": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 21",
+      "src": "808c4d14644e"
+    },
+    "text.17ef7afbff92": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 22",
+      "src": "17ef7afbff92"
+    },
+    "text.89a51929cfc3": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 23",
+      "src": "89a51929cfc3"
+    },
+    "text.8436f66ba807": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 24",
+      "src": "8436f66ba807"
+    },
+    "text.0a4b8379ca32": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 25",
+      "src": "0a4b8379ca32"
+    },
+    "text.bb211632f58a": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 26",
+      "src": "bb211632f58a"
+    },
+    "text.c39e889ec712": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 27",
+      "src": "c39e889ec712"
+    },
+    "text.8ed0eb5bae20": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 28",
+      "src": "8ed0eb5bae20"
+    },
+    "text.2000590b2c60": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 29",
+      "src": "2000590b2c60"
+    },
+    "text.5065a9ee4b0e": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 30",
+      "src": "5065a9ee4b0e"
+    },
+    "text.eb17ad71ea83": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 31",
+      "src": "eb17ad71ea83"
+    },
+    "text.3f56656650e0": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 32",
+      "src": "3f56656650e0"
+    },
+    "text.2cd91eae590d": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 33",
+      "src": "2cd91eae590d"
+    },
+    "text.7fb2a31aaff5": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 34",
+      "src": "7fb2a31aaff5"
+    },
+    "text.05ea4ea691b1": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 35",
+      "src": "05ea4ea691b1"
+    },
+    "text.8c408085f119": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 36",
+      "src": "8c408085f119"
+    },
+    "text.5697e8060f78": {
+      "text": "Indische Kleidung, Schmuck und Wohnaccessoires in Europa kaufen, Seite 37",
+      "src": "5697e8060f78"
+    },
+    "text.3cc651ce2d94": {
+      "text": "Andachtsbilder: Kaufen Sie indische Ritualgegenstände in Europa, Seite 2",
+      "src": "3cc651ce2d94"
+    },
+    "text.8b0fe350594f": {
+      "text": "Indische Wohnaccessoires in Europa: Textilien, Keramik, Handarbeit, Seite 3",
+      "src": "8b0fe350594f"
+    },
+    "text.844ffb25b49e": {
+      "text": "Indische Geschenke in Europa: Karten, Notizbücher, Puppen, Schlüsselanhänger, Seite 2",
+      "src": "844ffb25b49e"
+    },
+    "text.ee415c1b37ba": {
+      "text": "Aufkleber und Poster: Indische Ritualgegenstände in Europa kaufen, Seite 2",
+      "src": "ee415c1b37ba"
+    },
+    "text.96e03b5ff955": {
+      "text": "Bewertung: 5,0 von 5, basierend auf 64 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "96e03b5ff955"
+    },
+    "text.7d147bf47090": {
+      "text": "Schwere Bettdecke aus roher indischer Seide mit zwei Kissenbezügen. Von erfahrenen indischen Kunsthandwerkern aus hochwertiger Rohseide gefertigt. Traditionelle Stickerei.…",
+      "src": "7d147bf47090"
     }
   }
 }

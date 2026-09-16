@@ -4970,5 +4970,34 @@
       "colorRaw": "Černá",
       "vintedCategory": "Ženy Prošívané bundy"
     }
+  },
+  "10007670761": {
+    "description": "Heavy bed cover in raw Indian silk with two pillow cases. \nCrafted by skilled Indian artisans using premium quality raw silk.\nTraditional embroidery.\nHigh quality and durability.\nNever used.",
+    "vintedCategory": "Home Bedding sets",
+    "colorRaw": "Coral",
+    "crumbs": [
+      {
+        "id": 1918,
+        "name": "Home"
+      },
+      {
+        "id": 1919,
+        "name": "Textiles"
+      },
+      {
+        "id": 1924,
+        "name": "Bedding"
+      },
+      {
+        "id": 1942,
+        "name": "Bedding sets"
+      }
+    ],
+    "condition": "New without tags",
+    "cs": {
+      "condition": "Nový bez visačky",
+      "colorRaw": "Korálová",
+      "vintedCategory": "Bydlení Povlečení"
+    }
   }
 }
