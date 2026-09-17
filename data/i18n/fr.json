@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-16T05:17:30.089Z",
-  "count": 6455,
+  "generated": "2026-09-17T07:42:32.782Z",
+  "count": 6469,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -25828,6 +25828,62 @@
     "text.7d147bf47090": {
       "text": "Couverture épaisse en soie brute indienne, accompagnée de deux taies d&#x27;oreiller. Réalisée par des artisans indiens expérimentés à partir de soie brute de première qualité. Broderie traditionnelle…",
       "src": "7d147bf47090"
+    },
+    "item.10024831634.title": {
+      "text": "Bracelet en cuivre magnétique",
+      "src": "20818118c3c0"
+    },
+    "item.10024560141.title": {
+      "text": "Coussin bohème | coussin de style vintage | coussin pour tapis de yoga | coussin pour chaise ou canapé",
+      "src": "606263f08818"
+    },
+    "item.10024560141.description": {
+      "text": "Coussin carré. \nConfortable pour les chaises. \n15 pouces (côtés carrés) sur 2 pouces (épaisseur).\nMotif vintage et style bohème. \nPompons colorés sur le pourtour. \nTissu doux. \nJamais utilisé.",
+      "src": "56d990cecc81"
+    },
+    "item.10024831634.description": {
+      "text": "Réglable et unisexe, car il convient aussi bien à moi qu’à mon mari. \nCharme traditionnel et bienfaisant. \nLe principe est que les aimants agissent sur le fer présent dans le sang pour stimuler la circulation. \nQuant au cuivre, en Inde, il est traditionnellement porté pour ancrer les énergies du corps et repousser les ondes négatives. \nDans la science moderne, le cuivre possède de puissantes propriétés antimicrobiennes, car les ions de cuivre se dissolvent pour éliminer efficacement les bactéries nocives (l&#x27;idée étant que la sueur de votre corps se mélange au bracelet en cuivre et se dissout dans la peau😄).\nJamais porté.",
+      "src": "3909bfb5baeb"
+    },
+    "attr.color.burgundy": {
+      "text": "Bourgogne",
+      "src": "4c19d796103a"
+    },
+    "text.f55f66a75823": {
+      "text": "142 pièces",
+      "src": "f55f66a75823"
+    },
+    "text.ff37df1621a4": {
+      "text": "298 pièces",
+      "src": "ff37df1621a4"
+    },
+    "text.c361b9cb3d34": {
+      "text": "66 avis sur « Vinted » →",
+      "src": "c361b9cb3d34"
+    },
+    "text.8a9daa4605f6": {
+      "text": "Neuf, sans étiquettes · Bourgogne",
+      "src": "8a9daa4605f6"
+    },
+    "text.2ff06dfa97f7": {
+      "text": "1 674 pièces en vente · 74 vendues",
+      "src": "2ff06dfa97f7"
+    },
+    "text.7cbd8b29bab8": {
+      "text": "3 bracelets dans le porte-bijoux.",
+      "src": "7cbd8b29bab8"
+    },
+    "text.7137a1c5a42c": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 66 avis d&#x27;acheteurs. Découvrez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "7137a1c5a42c"
+    },
+    "text.bda5cc0d54cb": {
+      "text": "Réglable et unisexe, il convient aussi bien à moi qu&#x27;à mon mari. Il présente un attrait lié aux méthodes de guérison traditionnelles. Le principe est que les aimants agissent sur le fer présent dans le sang pour stimuler…",
+      "src": "bda5cc0d54cb"
+    },
+    "text.bfc4b24e5ea9": {
+      "text": "Coussin carré. Confortable pour les chaises. 15 pouces (côtés) sur 2 pouces (épaisseur). Motif vintage et style bohème. Pompons colorés…",
+      "src": "bfc4b24e5ea9"
     }
   }
 }

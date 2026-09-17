@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-16T05:17:43.009Z",
-  "count": 6455,
+  "generated": "2026-09-17T07:42:35.674Z",
+  "count": 6469,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -25828,6 +25828,62 @@
     "text.7d147bf47090": {
       "text": "Gruba narzuta na łóżko z surowego jedwabiu indyjskiego wraz z dwiema poszewkami na poduszki. Wykonana przez wykwalifikowanych indyjskich rzemieślników z najwyższej jakości surowego jedwabiu. Tradycyjny haft…",
       "src": "7d147bf47090"
+    },
+    "item.10024831634.title": {
+      "text": "Miedziana bransoletka z zapięciem magnetycznym",
+      "src": "20818118c3c0"
+    },
+    "item.10024560141.title": {
+      "text": "Poduszka w stylu boho | poduszka w stylu vintage | poduszka na matę do jogi | poduszka na krzesło lub sofę",
+      "src": "606263f08818"
+    },
+    "item.10024560141.description": {
+      "text": "Kwadratowa poduszka. \nWygodna do stosowania na krzesłach. \n15 cali (długość boku) na 2 cale (grubość).\nWzór w stylu vintage i styl boho. \nKolorowe frędzle wzdłuż krawędzi. \nMiękka tkanina. \nNigdy nieużywana.",
+      "src": "56d990cecc81"
+    },
+    "item.10024831634.description": {
+      "text": "Regulowana i unisex – pasuje zarówno mnie, jak i mojemu mężowi. \nTradycyjne właściwości lecznicze. \nZasada działania polega na tym, że magnesy przyciągają żelazo zawarte we krwi, pobudzając krążenie. \nZ kolei miedź, zgodnie z indyjską tradycją, noszona jest w celu uziemienia energii ciała i ochrony przed negatywnymi wibracjami. \nZgodnie z nowoczesną nauką miedź wykazuje silne działanie antybakteryjne, ponieważ jony miedzi rozpuszczają się, skutecznie zabijając szkodliwe bakterie (chodzi o to, że pot z ciała miesza się z miedzianą bransoletką i rozpuszcza się na skórze😄).\nNigdy nie noszona.",
+      "src": "3909bfb5baeb"
+    },
+    "attr.color.burgundy": {
+      "text": "Burgundia",
+      "src": "4c19d796103a"
+    },
+    "text.f55f66a75823": {
+      "text": "142 sztuki",
+      "src": "f55f66a75823"
+    },
+    "text.ff37df1621a4": {
+      "text": "298 sztuk",
+      "src": "ff37df1621a4"
+    },
+    "text.c361b9cb3d34": {
+      "text": "66 recenzji na stronie Vinted →",
+      "src": "c361b9cb3d34"
+    },
+    "text.8a9daa4605f6": {
+      "text": "Nowe, bez metek · Burgund",
+      "src": "8a9daa4605f6"
+    },
+    "text.2ff06dfa97f7": {
+      "text": "1674 sztuki na sprzedaż · 74 sprzedane",
+      "src": "2ff06dfa97f7"
+    },
+    "text.7cbd8b29bab8": {
+      "text": "3 bransoletki na półce z biżuterią.",
+      "src": "7cbd8b29bab8"
+    },
+    "text.7137a1c5a42c": {
+      "text": "Ocena 5,0 na 5 na podstawie 66 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "7137a1c5a42c"
+    },
+    "text.bda5cc0d54cb": {
+      "text": "Regulowany i unisex – pasuje zarówno mnie, jak i mojemu mężowi. Ma tradycyjny, leczniczy charakter. Zasadą działania jest to, że magnesy oddziałują na żelazo zawarte we krwi, aby wzmocnić…",
+      "src": "bda5cc0d54cb"
+    },
+    "text.bfc4b24e5ea9": {
+      "text": "Kwadratowa poduszka. Wygodna do krzeseł. 15 cali (długość boku) na 2 cale (grubość). Wzór w stylu vintage i styl boho. Kolorowe frędzle…",
+      "src": "bfc4b24e5ea9"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-16T05:17:38.476Z",
-  "count": 6455,
+  "generated": "2026-09-17T07:42:34.808Z",
+  "count": 6469,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -25828,6 +25828,62 @@
     "text.7d147bf47090": {
       "text": "Colcha gruesa de seda india en bruto con dos fundas de almohada. Elaborada por expertos artesanos indios con seda en bruto de primera calidad. Bordado tradicional…",
       "src": "7d147bf47090"
+    },
+    "item.10024831634.title": {
+      "text": "Pulsera de cobre con cierre magnético",
+      "src": "20818118c3c0"
+    },
+    "item.10024560141.title": {
+      "text": "Cojín boho | cojín de estilo vintage | cojín para esterilla de yoga | cojín para silla o sofá",
+      "src": "606263f08818"
+    },
+    "item.10024560141.description": {
+      "text": "Cojín cuadrado. \nCómodo para sillas. \n15 pulgadas (lado de cada lado) por 2 pulgadas (grosor).\nEstampado vintage y diseño boho. \nBorlas de colores alrededor del borde. \nTejido suave. \nSin estrenar.",
+      "src": "56d990cecc81"
+    },
+    "item.10024831634.description": {
+      "text": "Ajustable y unisex, ya que nos queda bien tanto a mí como a mi marido. \nAtractivo curativo tradicional. \nLa idea es que los imanes atraen el hierro presente en la sangre para estimular la circulación. \nY el cobre, en la India, se lleva tradicionalmente para equilibrar las energías del cuerpo y alejar las vibraciones negativas. \nSegún la ciencia moderna, el cobre tiene un gran poder antimicrobiano, ya que los iones de cobre se disuelven y eliminan eficazmente las bacterias nocivas (la idea es que el sudor del cuerpo se mezcle con la pulsera de cobre y se disuelva en la piel😄).\nNunca se ha usado.",
+      "src": "3909bfb5baeb"
+    },
+    "attr.color.burgundy": {
+      "text": "Borgoña",
+      "src": "4c19d796103a"
+    },
+    "text.f55f66a75823": {
+      "text": "142 piezas",
+      "src": "f55f66a75823"
+    },
+    "text.ff37df1621a4": {
+      "text": "298 piezas",
+      "src": "ff37df1621a4"
+    },
+    "text.c361b9cb3d34": {
+      "text": "66 opiniones en Vinted →",
+      "src": "c361b9cb3d34"
+    },
+    "text.8a9daa4605f6": {
+      "text": "Nuevo, sin etiquetas · Borgoña",
+      "src": "8a9daa4605f6"
+    },
+    "text.2ff06dfa97f7": {
+      "text": "1674 piezas a la venta · 74 vendidas",
+      "src": "2ff06dfa97f7"
+    },
+    "text.7cbd8b29bab8": {
+      "text": "Tres pulseras en el estante de las joyas.",
+      "src": "7cbd8b29bab8"
+    },
+    "text.7137a1c5a42c": {
+      "text": "Valoración de 5,0 sobre 5 según 66 opiniones de compradores. Puede leerlas en Vinted (se abre en una nueva pestaña).",
+      "src": "7137a1c5a42c"
+    },
+    "text.bda5cc0d54cb": {
+      "text": "Ajustable y unisex, ya que nos queda bien tanto a mí como a mi marido. Tiene un atractivo terapeutico tradicional. La idea es que los imanes atraen el hierro presente en la sangre para potenciar…",
+      "src": "bda5cc0d54cb"
+    },
+    "text.bfc4b24e5ea9": {
+      "text": "Cojín cuadrado. Cómodo para sillas. 15 pulgadas (lado de cada lado) por 2 pulgadas (grosor). Estampado vintage y diseño boho. Borlas de colores…",
+      "src": "bfc4b24e5ea9"
     }
   }
 }

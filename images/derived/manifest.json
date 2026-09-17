@@ -49171,6 +49171,102 @@
       }
     ]
   },
+  "images/vinted-10024560141-1.jpg": {
+    "width": 848,
+    "height": 1264,
+    "aspect": 0.6709,
+    "v": "5f2a3a73",
+    "variants": [
+      {
+        "w": 400,
+        "h": 596,
+        "jpg": "images/derived/vinted-10024560141-1-400.jpg",
+        "webp": "images/derived/vinted-10024560141-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1192,
+        "jpg": "images/derived/vinted-10024560141-1-800.jpg",
+        "webp": "images/derived/vinted-10024560141-1-800.webp"
+      }
+    ]
+  },
+  "images/vinted-10024560141-2.jpg": {
+    "width": 1148,
+    "height": 1600,
+    "aspect": 0.7175,
+    "v": "79e9f097",
+    "variants": [
+      {
+        "w": 400,
+        "h": 557,
+        "jpg": "images/derived/vinted-10024560141-2-400.jpg",
+        "webp": "images/derived/vinted-10024560141-2-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1115,
+        "jpg": "images/derived/vinted-10024560141-2-800.jpg",
+        "webp": "images/derived/vinted-10024560141-2-800.webp"
+      }
+    ]
+  },
+  "images/vinted-10024560141-3.jpg": {
+    "width": 768,
+    "height": 1365,
+    "aspect": 0.5626,
+    "v": "4d9b33b1",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-10024560141-3-400.jpg",
+        "webp": "images/derived/vinted-10024560141-3-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10024831634-1.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "a4f58ef8",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-10024831634-1-400.jpg",
+        "webp": "images/derived/vinted-10024831634-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10024831634-2.jpg": {
+    "width": 450,
+    "height": 800,
+    "aspect": 0.5625,
+    "v": "ecf55d66",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/vinted-10024831634-2-400.jpg",
+        "webp": "images/derived/vinted-10024831634-2-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10024831634-3.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "a36c9d06",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10024831634-3-400.jpg",
+        "webp": "images/derived/vinted-10024831634-3-400.webp"
+      }
+    ]
+  },
   "images/vinted-9309067629-1.jpg": {
     "width": 600,
     "height": 800,

@@ -1,12 +1,118 @@
 {
-  "syncedAt": "2026-09-16T05:15:14.179Z",
+  "syncedAt": "2026-09-17T07:40:24.570Z",
   "rate": {
-    "czkPerEur": 24.292,
-    "fetched": "2026-09-16",
+    "czkPerEur": 24.313,
+    "fetched": "2026-09-17",
     "source": "ECB"
   },
-  "count": 168,
+  "count": 170,
   "items": [
+    {
+      "id": "10024831634",
+      "title": "Copper bracelet magnetic",
+      "priceCzk": 220,
+      "priceEur": 9,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Orange",
+        "cs": "Oranžová"
+      },
+      "category": "Jewellery",
+      "vintedCategory": "Men Bracelets",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 82,
+          "name": "Accessories"
+        },
+        {
+          "id": 95,
+          "name": "Jewellery"
+        },
+        {
+          "id": 243,
+          "name": "Bracelets"
+        }
+      ],
+      "description": "Adjustable and unisex as fits both me and my husband. \nTraditional healing appeal. \nThe idea is that magnets pull on the iron in blood to boost circulation. \nAnd copper, in India, is traditionally worn to ground the body’s energies and fend off negative vibes. \nIn modern science, copper is highly anti microbial because copper ions dissolve to effectively kill harmful bacteria (idea is that sweat from your body mixes with copper bracelet and dissolves in skin😄).\nNever worn.",
+      "photo": "images/vinted-10024831634-1.jpg",
+      "photos": [
+        "images/vinted-10024831634-1.jpg",
+        "images/vinted-10024831634-2.jpg",
+        "images/vinted-10024831634-3.jpg"
+      ],
+      "favourites": 15,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10024831634-copper-bracelet-magnetic",
+        "es": "https://www.vinted.es/items/10024831634-copper-bracelet-magnetic",
+        "com": "https://www.vinted.com/items/10024831634-copper-bracelet-magnetic",
+        "uk": "https://www.vinted.co.uk/items/10024831634-copper-bracelet-magnetic"
+      }
+    },
+    {
+      "id": "10024560141",
+      "title": "Boho cushion | vintage style pillow | yoga mat pillow | chair sofa cushion",
+      "priceCzk": 325,
+      "priceEur": 13,
+      "brand": "Alternative",
+      "size": "Jiná",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Burgundy",
+        "cs": "Vínově červená"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Cushions",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1919,
+          "name": "Textiles"
+        },
+        {
+          "id": 1974,
+          "name": "Cushions"
+        }
+      ],
+      "description": "Square pillow cushion. \nComfortable for chairs. \n15 inches (square sides) by 2 inches (thickness).\nVintage pattern and boho design. \nColourful tassels around the edge. \nSoft fabric. \nNever used.",
+      "photo": "images/vinted-10024560141-1.jpg",
+      "photos": [
+        "images/vinted-10024560141-1.jpg",
+        "images/vinted-10024560141-2.jpg",
+        "images/vinted-10024560141-3.jpg"
+      ],
+      "favourites": 33,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10024560141-boho-cushion-vintage-style-pillow-yoga-mat-pillow-chair-sofa-cushion",
+        "es": "https://www.vinted.es/items/10024560141-boho-cushion-vintage-style-pillow-yoga-mat-pillow-chair-sofa-cushion",
+        "com": "https://www.vinted.com/items/10024560141-boho-cushion-vintage-style-pillow-yoga-mat-pillow-chair-sofa-cushion",
+        "uk": "https://www.vinted.co.uk/items/10024560141-boho-cushion-vintage-style-pillow-yoga-mat-pillow-chair-sofa-cushion"
+      }
+    },
     {
       "id": "10007670761",
       "title": "Luxury silk bedcover with 2 pillow cases",
@@ -270,7 +376,7 @@
         "images/vinted-9962547392-2.jpg",
         "images/vinted-9962547392-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -285,8 +391,8 @@
     {
       "id": "9959888912",
       "title": "Knitted Tote Bag | Mini Bucket Handbag | Boho Chic Retro Style",
-      "priceCzk": 197,
-      "priceEur": 8,
+      "priceCzk": 180,
+      "priceEur": 7,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -376,7 +482,7 @@
         "images/vinted-9950092080-2.jpg",
         "images/vinted-9950092080-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -952,7 +1058,7 @@
       "id": "9851163929",
       "title": "Retro radio | portable solar rechargeable wireless bluetooth speaker",
       "priceCzk": 960,
-      "priceEur": 40,
+      "priceEur": 39,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -2268,7 +2374,7 @@
         "images/vinted-9696606450-2.jpg",
         "images/vinted-9696606450-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2323,7 +2429,7 @@
         "images/vinted-9686505544-2.jpg",
         "images/vinted-9686505544-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3163,7 +3269,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 20,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4149,7 +4255,7 @@
         "images/vinted-9575501283-2.jpg",
         "images/vinted-9575501283-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4353,7 +4459,7 @@
         "images/vinted-9565320171-2.jpg",
         "images/vinted-9565320171-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4734,7 +4840,7 @@
       "id": "9562192907",
       "title": "Vintage Traditional Indonesian Ulos - accessory, wall frame, rug, table runner",
       "priceCzk": 1300,
-      "priceEur": 54,
+      "priceEur": 53,
       "brand": "Handmade Beauty",
       "size": "",
       "sizeGroup": "",
@@ -5154,7 +5260,7 @@
       "id": "9538548234",
       "title": "Pure 925 silver pearl bracelet",
       "priceCzk": 1300,
-      "priceEur": 54,
+      "priceEur": 53,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -8750,7 +8856,7 @@
         "images/vinted-9311631498-2.jpg",
         "images/vinted-9311631498-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,

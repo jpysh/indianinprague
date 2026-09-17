@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-16T05:17:35.877Z",
-  "count": 6455,
+  "generated": "2026-09-17T07:42:34.068Z",
+  "count": 6469,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -25828,6 +25828,62 @@
     "text.7d147bf47090": {
       "text": "Copriletto pesante in seta grezza indiana con due federe. Realizzato da abili artigiani indiani utilizzando seta grezza di prima qualità. Ricami tradizionali…",
       "src": "7d147bf47090"
+    },
+    "item.10024831634.title": {
+      "text": "Bracciale in rame con chiusura magnetica",
+      "src": "20818118c3c0"
+    },
+    "item.10024560141.title": {
+      "text": "Cuscino in stile boho | cuscino in stile vintage | cuscino per tappetino da yoga | cuscino per poltrona o divano",
+      "src": "606263f08818"
+    },
+    "item.10024560141.description": {
+      "text": "Cuscino quadrato. \nComodo per le sedie. \n15 pollici (lato del quadrato) per 2 pollici (spessore).\nMotivo vintage e design boho. \nNappine colorate lungo il bordo. \nTessuto morbido. \nMai utilizzato.",
+      "src": "56d990cecc81"
+    },
+    "item.10024831634.description": {
+      "text": "Regolabile e unisex, poiché si adatta sia a me che a mio marito. \nFascino terapeutico tradizionale. \nL&#x27;idea è che i magneti attraggano il ferro presente nel sangue per stimolare la circolazione. \nInoltre, in India, il rame viene tradizionalmente indossato per radicare le energie del corpo e respingere le vibrazioni negative. \nNella scienza moderna, il rame possiede elevate proprietà antimicrobiche poiché gli ioni di rame si dissolvono uccidendo efficacemente i batteri nocivi (l’idea è che il sudore del corpo si mescoli con il bracciale di rame e si dissolva sulla pelle😄).\nMai indossato.",
+      "src": "3909bfb5baeb"
+    },
+    "attr.color.burgundy": {
+      "text": "Borgogna",
+      "src": "4c19d796103a"
+    },
+    "text.f55f66a75823": {
+      "text": "142 pezzi",
+      "src": "f55f66a75823"
+    },
+    "text.ff37df1621a4": {
+      "text": "298 pezzi",
+      "src": "ff37df1621a4"
+    },
+    "text.c361b9cb3d34": {
+      "text": "66 recensioni su Vinted →",
+      "src": "c361b9cb3d34"
+    },
+    "text.8a9daa4605f6": {
+      "text": "Nuovo senza etichette · Borgogna",
+      "src": "8a9daa4605f6"
+    },
+    "text.2ff06dfa97f7": {
+      "text": "1674 pezzi in vendita · 74 venduti",
+      "src": "2ff06dfa97f7"
+    },
+    "text.7cbd8b29bab8": {
+      "text": "3 braccialetti nella vetrina dei gioielli.",
+      "src": "7cbd8b29bab8"
+    },
+    "text.7137a1c5a42c": {
+      "text": "Valutato 5,0 su 5 sulla base di 66 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "7137a1c5a42c"
+    },
+    "text.bda5cc0d54cb": {
+      "text": "Regolabile e unisex, poiché si adatta sia a me che a mio marito. Ha un fascino tradizionale legato alla medicina naturale. L’idea è che i magneti attraggano il ferro presente nel sangue per potenziare…",
+      "src": "bda5cc0d54cb"
+    },
+    "text.bfc4b24e5ea9": {
+      "text": "Cuscino quadrato. Comodo per le sedie. 15 pollici (lato per lato) per 2 pollici (spessore). Motivo vintage e design boho. Nappine colorate…",
+      "src": "bfc4b24e5ea9"
     }
   }
 }

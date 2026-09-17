@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-16T05:17:32.800Z",
-  "count": 6459,
+  "generated": "2026-09-17T07:42:33.391Z",
+  "count": 6473,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -25844,6 +25844,62 @@
     "text.7d147bf47090": {
       "text": "Schwere Bettdecke aus roher indischer Seide mit zwei Kissenbezügen. Von erfahrenen indischen Kunsthandwerkern aus hochwertiger Rohseide gefertigt. Traditionelle Stickerei.…",
       "src": "7d147bf47090"
+    },
+    "item.10024831634.title": {
+      "text": "Magnetisches Kupferarmband",
+      "src": "20818118c3c0"
+    },
+    "item.10024560141.title": {
+      "text": "Boho-Kissen | Kissen im Vintage-Stil | Kissen für die Yogamatte | Kissen für Stühle und Sofas",
+      "src": "606263f08818"
+    },
+    "item.10024560141.description": {
+      "text": "Quadratisches Kissen.\nBequem für Stühle.\n15 Zoll (Seitenlänge) × 2 Zoll (Dicke).\nVintage-Muster und Boho-Design.\nFarbenfrohe Quasten am Rand.\nWeicher Stoff.\nNie benutzt.",
+      "src": "56d990cecc81"
+    },
+    "item.10024831634.description": {
+      "text": "Verstellbar und unisex, da es sowohl mir als auch meinem Mann passt. \nTraditionelle Heilwirkung. \nDie Idee dahinter ist, dass Magnete das Eisen im Blut anziehen, um die Durchblutung anzuregen. \nUnd Kupfer wird in Indien traditionell getragen, um die Energien des Körpers zu erden und negative Schwingungen abzuwehren. \nIn der modernen Wissenschaft gilt Kupfer als äußerst antimikrobiell, da sich Kupferionen auflösen und so schädliche Bakterien wirksam abtöten (die Idee dahinter ist, dass sich der Schweiß Ihres Körpers mit dem Kupferarmband vermischt und in der Haut auflöst😄).\nUnbenutzt.",
+      "src": "3909bfb5baeb"
+    },
+    "attr.color.burgundy": {
+      "text": "Burgund",
+      "src": "4c19d796103a"
+    },
+    "text.f55f66a75823": {
+      "text": "142 Stück",
+      "src": "f55f66a75823"
+    },
+    "text.ff37df1621a4": {
+      "text": "298 Stück",
+      "src": "ff37df1621a4"
+    },
+    "text.c361b9cb3d34": {
+      "text": "66 Bewertungen auf Vinted →",
+      "src": "c361b9cb3d34"
+    },
+    "text.8a9daa4605f6": {
+      "text": "Neu, ohne Etiketten · Burgunderrot",
+      "src": "8a9daa4605f6"
+    },
+    "text.2ff06dfa97f7": {
+      "text": "1.674 Artikel zum Verkauf · 74 verkauft",
+      "src": "2ff06dfa97f7"
+    },
+    "text.7cbd8b29bab8": {
+      "text": "3 Armbänder im Schmuckregal.",
+      "src": "7cbd8b29bab8"
+    },
+    "text.7137a1c5a42c": {
+      "text": "Bewertung: 5,0 von 5 bei 66 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "7137a1c5a42c"
+    },
+    "text.bda5cc0d54cb": {
+      "text": "Verstellbar und unisex, da es sowohl mir als auch meinem Mann passt. Traditioneller Heilcharakter. Die Idee dahinter ist, dass Magnete das Eisen im Blut anziehen, um …",
+      "src": "bda5cc0d54cb"
+    },
+    "text.bfc4b24e5ea9": {
+      "text": "Quadratisches Kissen. Bequem für Stühle. 15 Zoll (Seitenlänge) mal 2 Zoll (Dicke). Vintage-Muster und Boho-Design. Bunte Quasten…",
+      "src": "bfc4b24e5ea9"
     }
   }
 }
