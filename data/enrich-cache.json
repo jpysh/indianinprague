@@ -5053,5 +5053,63 @@
       "colorRaw": "Vínově červená",
       "vintedCategory": "Bydlení Dekorační polštáře"
     }
+  },
+  "10035026195": {
+    "description": "Gold plating on steel. \nBeautiful U shape. \nSymbolises lucky horseshoe shape. \nSize 7, 1.7 cm diameter.",
+    "vintedCategory": "Women Rings",
+    "colorRaw": "Gold",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 1187,
+        "name": "Accessories"
+      },
+      {
+        "id": 21,
+        "name": "Jewellery"
+      },
+      {
+        "id": 553,
+        "name": "Rings"
+      }
+    ],
+    "condition": "New without tags",
+    "cs": {
+      "condition": "Nový bez visačky",
+      "colorRaw": "Zlatá",
+      "vintedCategory": "Ženy Prstýnky"
+    }
+  },
+  "10030160017": {
+    "description": "Elegant, gold-toned cuff features the seven sacred chakra symbols, engraved onto minimalist circular disks. \nLightweight, sleek, and easy to wear during yoga or meditation. \nAdjustable. \nWaterproof and made from stainless steel.\nWearable reminder to stay centered, open, and connected to positive energies 😊",
+    "vintedCategory": "Men Bracelets",
+    "colorRaw": "Gold",
+    "crumbs": [
+      {
+        "id": 5,
+        "name": "Men"
+      },
+      {
+        "id": 82,
+        "name": "Accessories"
+      },
+      {
+        "id": 95,
+        "name": "Jewellery"
+      },
+      {
+        "id": 243,
+        "name": "Bracelets"
+      }
+    ],
+    "condition": "New without tags",
+    "cs": {
+      "condition": "Nový bez visačky",
+      "colorRaw": "Zlatá",
+      "vintedCategory": "Muži Náramky"
+    }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-17T07:42:34.808Z",
-  "count": 6469,
+  "generated": "2026-09-18T07:20:20.532Z",
+  "count": 6485,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -626,8 +626,8 @@
       "src": "c282d80e1c08"
     },
     "item.9711247731.title": {
-      "text": "Pulsera de joyería espiritual Om | Joyería budista tibetana | Rudraksh, yoga, meditación, estilo boho y hippie",
-      "src": "a6047f908f27"
+      "text": "Pulsera de joyería espiritual hindú | Budismo tibetano | Yoga, meditación, estilo boho, hippie, vintage y retro",
+      "src": "5b7302b0a1ea"
     },
     "item.9641705366.title": {
       "text": "Vestido veraniego boho de estilo tribal africano en colores vivos | Túnica caftán holgada con estampado étnico | Talla única: de la M a la L",
@@ -25202,8 +25202,8 @@
       "src": "ccca0091e0e9"
     },
     "item.10001568911.title": {
-      "text": "Chaqueta larga acolchada | reversible | algodón puro | otoño | chaqueta india | estilo boho",
-      "src": "66226ae0065d"
+      "text": "Chaqueta larga acolchada | reversible | algodón puro | otoño | abrigo indio | estilo boho, vintage y retro",
+      "src": "aba4efe3c247"
     },
     "item.10001568911.description": {
       "text": "Chaqueta larga acolchada confeccionada a mano en la India. \nEstampados florales. \nCosturas acolchadas que aportan aislamiento y un aspecto texturizado.\nAlgodón de alta calidad.\nDos bolsillos en un lado del diseño; el lado reversible no tiene bolsillos. \nFácil mantenimiento, lavable a máquina.\nLa etiqueta indica una talla L, pero no estoy segura. Se ajusta más a una M.\nMedidas:\nContorno de pecho: 38 pulgadas \nLongitud: 36 pulgadas",
@@ -25884,6 +25884,70 @@
     "text.bfc4b24e5ea9": {
       "text": "Cojín cuadrado. Cómodo para sillas. 15 pulgadas (lado de cada lado) por 2 pulgadas (grosor). Estampado vintage y diseño boho. Borlas de colores…",
       "src": "bfc4b24e5ea9"
+    },
+    "item.10035026195.title": {
+      "text": "Anillo con forma de herradura | Joyería boho | Vintage, retro y clásica",
+      "src": "bb2b3eabcea5"
+    },
+    "item.10030160017.title": {
+      "text": "Pulsera hindú de los 7 chakras | Joyería boho para la sanación, el yoga y la meditación",
+      "src": "f9b48d1b0772"
+    },
+    "item.10035026195.description": {
+      "text": "Chapado en oro sobre acero. \nPreciosa forma de «U». \nSimboliza la forma de la herradura de la suerte. \nTalla 7, 1,7 cm de diámetro.",
+      "src": "8b3a1f1d6518"
+    },
+    "item.10030160017.description": {
+      "text": "Elegante brazalete en tono dorado que presenta los siete símbolos sagrados de los chakras, grabados en discos circulares de diseño minimalista. \nLigero, elegante y fácil de llevar durante la práctica de yoga o la meditación. \nAjustable. \nResistente al agua y fabricado en acero inoxidable.\nUn recordatorio que puede llevar consigo para mantenerse centrado, abierto y conectado con las energías positivas 😊",
+      "src": "0dd3e553c475"
+    },
+    "text.215585893462": {
+      "text": "300 unidades",
+      "src": "215585893462"
+    },
+    "text.32df5a2f8afa": {
+      "text": "67 opiniones en Vinted →",
+      "src": "32df5a2f8afa"
+    },
+    "text.20818118c3c0": {
+      "text": "Pulsera de cobre con imán",
+      "src": "20818118c3c0"
+    },
+    "text.aee684161d33": {
+      "text": "1672 piezas a la venta · 78 vendidas",
+      "src": "aee684161d33"
+    },
+    "text.792a82fd4a3a": {
+      "text": "54 personas han guardado esto en Vinted",
+      "src": "792a82fd4a3a"
+    },
+    "text.40abbd38e579": {
+      "text": "38 personas han guardado esto en Vinted",
+      "src": "40abbd38e579"
+    },
+    "text.49f35d42294c": {
+      "text": "Pañuelo de diseño de la marca de lujo india Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "text.245b0a58078c": {
+      "text": "Pañuelo largo y transparente de diseño indio de estilo Art Nouveau: ligero, elegante y suave como la seda",
+      "src": "245b0a58078c"
+    },
+    "text.3a7c4107589b": {
+      "text": "Valoración de 5,0 sobre 5 según 67 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "3a7c4107589b"
+    },
+    "text.12cd58eeb625": {
+      "text": "Bandas de resistencia | Ejercicios para fortalecer los glúteos y las piernas | Banda de entrenamiento de fuerza | Yoga y Pilates",
+      "src": "12cd58eeb625"
+    },
+    "text.02aa16d18db7": {
+      "text": "Chapado en oro sobre acero. Preciosa forma de «U». Simboliza la forma de una herradura de la suerte. Talla 7, 1,7 cm de diámetro.",
+      "src": "02aa16d18db7"
+    },
+    "text.9c73a419be40": {
+      "text": "Este elegante brazalete en tonos dorados presenta los siete símbolos sagrados de los chakras, grabados en discos circulares de diseño minimalista. Ligero, elegante y fácil de llevar…",
+      "src": "9c73a419be40"
     }
   }
 }

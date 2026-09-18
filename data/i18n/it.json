@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-17T07:42:34.068Z",
-  "count": 6469,
+  "generated": "2026-09-18T07:20:19.871Z",
+  "count": 6485,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -626,8 +626,8 @@
       "src": "c282d80e1c08"
     },
     "item.9711247731.title": {
-      "text": "Bracciale Om Spiritual Jewellery | Gioielli buddisti tibetani | Rudraksha, yoga, meditazione, stile boho e hippie",
-      "src": "a6047f908f27"
+      "text": "Bracciale di gioielleria spirituale indù | Buddismo tibetano | Yoga, meditazione, stile boho, hippie, vintage, retrò",
+      "src": "5b7302b0a1ea"
     },
     "item.9641705366.title": {
       "text": "Abito estivo boho in stile tribale africano dai colori vivaci | Tunica kaftan svasata con stampa etnica | Taglia unica da M a L",
@@ -25202,8 +25202,8 @@
       "src": "ccca0091e0e9"
     },
     "item.10001568911.title": {
-      "text": "Giacca lunga trapuntata | reversibile | puro cotone | autunno | giacca indiana | Boho",
-      "src": "66226ae0065d"
+      "text": "Giacca lunga trapuntata | reversibile | puro cotone | autunno | cappotto indiano | Boho Vintage Retro",
+      "src": "aba4efe3c247"
     },
     "item.10001568911.description": {
       "text": "Giacca lunga trapuntata realizzata a mano in India. \nStampe floreali. \nCuciture trapuntate per garantire isolamento termico e conferire un effetto materico.\nCotone di alta qualità.\nDue tasche su un lato del capo; il lato reversibile non presenta tasche. \nFacile da lavare, lavabile in lavatrice.\nL’etichetta riporta la taglia L, ma non ne sono certa. Sembra più una M.\nMisure:\nCirconferenza torace 38 pollici \nLunghezza 36 pollici",
@@ -25884,6 +25884,70 @@
     "text.bfc4b24e5ea9": {
       "text": "Cuscino quadrato. Comodo per le sedie. 15 pollici (lato per lato) per 2 pollici (spessore). Motivo vintage e design boho. Nappine colorate…",
       "src": "bfc4b24e5ea9"
+    },
+    "item.10035026195.title": {
+      "text": "Anello a ferro di cavallo | Gioielli boho | Vintage, retrò, classico",
+      "src": "bb2b3eabcea5"
+    },
+    "item.10030160017.title": {
+      "text": "Braccialetto indù con 7 chakra | Gioielli boho per la meditazione, lo yoga e la guarigione spirituale",
+      "src": "f9b48d1b0772"
+    },
+    "item.10035026195.description": {
+      "text": "Placcatura in oro su acciaio. \nSplendida forma a U. \nSimboleggia la forma del ferro di cavallo portafortuna. \nMisura 7, diametro 1,7 cm.",
+      "src": "8b3a1f1d6518"
+    },
+    "item.10030160017.description": {
+      "text": "Elegante bracciale color oro che riproduce i sette simboli sacri dei chakra, incisi su dischi circolari dal design minimalista. \nLeggero, raffinato e comodo da indossare durante lo yoga o la meditazione. \nRegolabile. \nImpermeabile e realizzato in acciaio inossidabile.\nUn promemoria da indossare per rimanere centrati, aperti e in contatto con le energie positive 😊",
+      "src": "0dd3e553c475"
+    },
+    "text.215585893462": {
+      "text": "300 pezzi",
+      "src": "215585893462"
+    },
+    "text.32df5a2f8afa": {
+      "text": "67 recensioni su Vinted →",
+      "src": "32df5a2f8afa"
+    },
+    "text.20818118c3c0": {
+      "text": "Bracciale in rame con chiusura magnetica",
+      "src": "20818118c3c0"
+    },
+    "text.aee684161d33": {
+      "text": "1672 pezzi in vendita · 78 venduti",
+      "src": "aee684161d33"
+    },
+    "text.792a82fd4a3a": {
+      "text": "54 persone hanno salvato questo contenuto su Vinted",
+      "src": "792a82fd4a3a"
+    },
+    "text.40abbd38e579": {
+      "text": "38 persone hanno salvato questo contenuto su Vinted",
+      "src": "40abbd38e579"
+    },
+    "text.49f35d42294c": {
+      "text": "Sciarpa firmata del marchio di lusso indiano Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "text.245b0a58078c": {
+      "text": "Sciarpa lunga trasparente in stile Art Nouveau, realizzata da un designer indiano – Leggera, elegante, morbida come la seta",
+      "src": "245b0a58078c"
+    },
+    "text.3a7c4107589b": {
+      "text": "Valutato 5,0 su 5 in base a 67 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "3a7c4107589b"
+    },
+    "text.12cd58eeb625": {
+      "text": "Fasce elastiche | Esercizi per i glutei e per rafforzare le gambe | Fascia per l&#x27;allenamento della forza | Yoga e Pilates",
+      "src": "12cd58eeb625"
+    },
+    "text.02aa16d18db7": {
+      "text": "Placcatura in oro su acciaio. Splendida forma a U. Simboleggia il ferro di cavallo portafortuna. Misura 7, diametro 1,7 cm.",
+      "src": "02aa16d18db7"
+    },
+    "text.9c73a419be40": {
+      "text": "Questo elegante bracciale color oro presenta i sette simboli sacri dei chakra, incisi su dischi circolari dal design minimalista. Leggero, raffinato e comodo da indossare…",
+      "src": "9c73a419be40"
     }
   }
 }

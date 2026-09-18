@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-17T07:42:32.782Z",
-  "count": 6469,
+  "generated": "2026-09-18T07:20:18.520Z",
+  "count": 6485,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -626,8 +626,8 @@
       "src": "c282d80e1c08"
     },
     "item.9711247731.title": {
-      "text": "Bracelet Om Spiritual Jewellery | Bijoux bouddhistes tibétains | Rudraksh, yoga, méditation, bohème, hippie",
-      "src": "a6047f908f27"
+      "text": "Bracelet spirituel hindou | Bouddhisme tibétain | Yoga, méditation, bohème, hippie, vintage, rétro",
+      "src": "5b7302b0a1ea"
     },
     "item.9641705366.title": {
       "text": "Robe d'été bohème aux motifs tribaux africains éclatants | Tunique-kaftan ample à imprimé ethnique | Taille unique M à L",
@@ -25202,8 +25202,8 @@
       "src": "ccca0091e0e9"
     },
     "item.10001568911.title": {
-      "text": "Veste longue matelassée | réversible | 100 % coton | automne | veste indienne | style bohème",
-      "src": "66226ae0065d"
+      "text": "Veste longue matelassée | réversible | 100 % coton | automne | manteau indien | Boho Vintage Rétro",
+      "src": "aba4efe3c247"
     },
     "item.10001568911.description": {
       "text": "Veste longue matelassée, confectionnée à la main en Inde. \nImprimés floraux. \nCoutures matelassées pour une meilleure isolation thermique et un aspect texturé.\nCoton de grande qualité.\nDeux poches d’un côté du modèle ; l’envers ne comporte pas de poches. \nEntretien facile, lavable en machine.\nL’étiquette indique « L », mais je n’en suis pas certaine. Elle correspond plutôt à une taille M.\nDimensions :\nTour de poitrine : 38 pouces \nLongueur : 36 pouces",
@@ -25884,6 +25884,70 @@
     "text.bfc4b24e5ea9": {
       "text": "Coussin carré. Confortable pour les chaises. 15 pouces (côtés) sur 2 pouces (épaisseur). Motif vintage et style bohème. Pompons colorés…",
       "src": "bfc4b24e5ea9"
+    },
+    "item.10035026195.title": {
+      "text": "Bague en fer à cheval | Bijoux bohèmes | Vintage, rétro, classique",
+      "src": "bb2b3eabcea5"
+    },
+    "item.10030160017.title": {
+      "text": "Bracelet hindou aux 7 chakras | Bijoux bohèmes pour la guérison, la spiritualité, le yoga et la méditation",
+      "src": "f9b48d1b0772"
+    },
+    "item.10035026195.description": {
+      "text": "Plaqué or sur acier. \nMagnifique forme en U. \nSymbolise la forme du fer à cheval porte-bonheur. \nTaille 7, 1,7 cm de diamètre.",
+      "src": "8b3a1f1d6518"
+    },
+    "item.10030160017.description": {
+      "text": "Élégant bracelet aux reflets dorés, orné des sept symboles sacrés des chakras, gravés sur des disques circulaires minimalistes. \nLéger, raffiné et facile à porter pendant vos séances de yoga ou de méditation. \nRéglable. \nÉtanche et fabriqué en acier inoxydable.\nUn rappel à porter sur vous pour rester centré(e), ouvert(e) et connecté(e) aux énergies positives 😊",
+      "src": "0dd3e553c475"
+    },
+    "text.215585893462": {
+      "text": "300 pièces",
+      "src": "215585893462"
+    },
+    "text.32df5a2f8afa": {
+      "text": "67 avis sur Vinted →",
+      "src": "32df5a2f8afa"
+    },
+    "text.20818118c3c0": {
+      "text": "Bracelet en cuivre magnétique",
+      "src": "20818118c3c0"
+    },
+    "text.aee684161d33": {
+      "text": "1 672 pièces à vendre · 78 vendues",
+      "src": "aee684161d33"
+    },
+    "text.792a82fd4a3a": {
+      "text": "54 personnes ont enregistré cette page sur Vinted",
+      "src": "792a82fd4a3a"
+    },
+    "text.40abbd38e579": {
+      "text": "38 personnes ont enregistré cette page sur Vinted",
+      "src": "40abbd38e579"
+    },
+    "text.49f35d42294c": {
+      "text": "Écharpe de créateur de la marque de luxe indienne Satya Paul",
+      "src": "49f35d42294c"
+    },
+    "text.245b0a58078c": {
+      "text": "Longue écharpe transparente de style Art nouveau, créée par un créateur indien – Légère, élégante, douce comme de la soie",
+      "src": "245b0a58078c"
+    },
+    "text.3a7c4107589b": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 67 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "3a7c4107589b"
+    },
+    "text.12cd58eeb625": {
+      "text": "Bandes de résistance | Exercices pour renforcer les fessiers et les jambes | Bandes de musculation | Yoga et Pilates",
+      "src": "12cd58eeb625"
+    },
+    "text.02aa16d18db7": {
+      "text": "Plaqué or sur acier. Magnifique forme en U. Symbolise la forme du fer à cheval porte-bonheur. Taille 7, 1,7 cm de diamètre.",
+      "src": "02aa16d18db7"
+    },
+    "text.9c73a419be40": {
+      "text": "Ce bracelet élégant aux reflets dorés arbore les sept symboles sacrés des chakras, gravés sur des disques circulaires minimalistes. Léger, raffiné et facile à porter…",
+      "src": "9c73a419be40"
     }
   }
 }
