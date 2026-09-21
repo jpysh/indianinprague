@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-20T05:19:45.855Z",
-  "count": 6518,
+  "generated": "2026-09-21T06:27:00.681Z",
+  "count": 6540,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -26080,6 +26080,94 @@
     "text.4f27a884752f": {
       "text": "Mélange d&#x27;épices pour pain d&#x27;épices – pas uniquement destiné aux plats sucrés. Contient du fenouil, de la coriandre, de la cannelle, des graines d&#x27;anis, du zeste d&#x27;orange, du piment de la Jamaïque, des clous de girofle, du macis, de la noix de muscade...",
       "src": "4f27a884752f"
+    },
+    "item.10074836950.title": {
+      "text": "Blazer vintage | Tenue de bureau rétro à fines rayures | Style bohème rétro Y2K",
+      "src": "122508845908"
+    },
+    "item.10065438847.title": {
+      "text": "Robe en maille à imprimé bohème vintage | Mode rétro Y2K | Style bohème hippie",
+      "src": "b5640efa3bb9"
+    },
+    "item.10067667788.title": {
+      "text": "Veste en tricot de cyclisme vintage rare « Luna Pro Team » de l&#x27;an 2000 | Pull universitaire vintage | style bohème rétro",
+      "src": "e03e06de5455"
+    },
+    "item.10072166426.title": {
+      "text": "Boucles d&#x27;oreilles en forme de feuilles de chêne | Bijoux vintage en cuivre | Mode d&#x27;automne | Style rétro, bohème, fantaisiste et « cottagecore »",
+      "src": "0f7091cdb9c8"
+    },
+    "item.10065438847.description": {
+      "text": "Robe ajustée et évasée à manches longues, dotée d&#x27;un col foulard à capuche de couleur marron foncé. \nElle affiche un style bohème rétro grunge et décontracté. \nDéjà portée.\n\n#ModeBoho #StyleVintage #RobeEnMaille #BohoChic #AmbianceRétro #RobeVintage #StyleBohème #ModeD&#x27;automne",
+      "src": "8a45bfc7a5fa"
+    },
+    "item.10074836950.description": {
+      "text": "Blazer vintage à fines rayures.\nStyle bureau rétro\nUne coupe sur mesure oversize classique, des fines rayures blanches verticales, un revers cranté classique et des poches à rabat. \nPolyvalent : portez-le boutonné pour un look professionnel soigné, ou enfilez-le par-dessus un t-shirt pour un style grunge rétro des années 90.\nTaille M-L",
+      "src": "d5270c9c7414"
+    },
+    "item.10067667788.description": {
+      "text": "Conçue exclusivement pour les athlètes et jamais commercialisée dans le grand public. Portée par des athlètes d’élite légendaires.\nUn véritable morceau de l’histoire du cyclisme professionnel : une veste vintage authentique et rare en maille « Luna Pro Team » à fermeture éclair intégrale.\nElle présente une esthétique sportive typique des années 2000.\nIdéale pour les collectionneurs de vêtements de sport vintage, les passionnés de cyclisme ou toute personne à la recherche d’un look streetwear rétro qui se démarque.\n\n#VintageSportswear #RetroAthletic #BlockCore #Gorpcore #VarsityAesthetic #CollegeStyle #Y2KStyle #90sVibe #BabyBlue",
+      "src": "dc09cf7efa96"
+    },
+    "item.10072166426.description": {
+      "text": "Boucles d&#x27;oreilles légères en alliage de cuivre, ornées d&#x27;un magnifique motif de feuilles gravées. \nElles présentent une finition métallique vieillie couleur or rose.\nInspirées par l&#x27;automne, une ode à cette saison. \nFabriquées en alliage de cuivre. \nEnviron 3 cm de longueur et 2 cm de largeur. \nJe propose une autre paire de boucles d&#x27;oreilles en cuivre sur mon profil ici :)\nhttps://www.vinted.cz/items/9969986465-vintage-jewellery-copper-earrings-vintage-floral-design-boho-fashion-old-retro-look\n\n#vintagedepop #cottagecore #bijouxbotaniques #bijouxencuivre #bouclesd&#x27;oreillesfeuilles #bouclesd&#x27;oreillescercles #stylérétro #bouclesd&#x27;oreillesboho #ambiancechaleureuse #fairycore #modenaturelle #modey2k #stylévintage",
+      "src": "38832418b57c"
+    },
+    "text.9d77a24d0f4c": {
+      "text": "La Lune",
+      "src": "9d77a24d0f4c"
+    },
+    "text.b7b7294e79db": {
+      "text": "442 pièces",
+      "src": "b7b7294e79db"
+    },
+    "text.90f982628d9e": {
+      "text": "304 pièces",
+      "src": "90f982628d9e"
+    },
+    "text.c2ff8ad28ebd": {
+      "text": "Bon état · Multicolore · M",
+      "src": "c2ff8ad28ebd"
+    },
+    "text.e699f11d1f13": {
+      "text": "Très bon état · Bleu clair · S",
+      "src": "e699f11d1f13"
+    },
+    "text.89fc9132310d": {
+      "text": "1 682 pièces en vente · 80 vendues",
+      "src": "89fc9132310d"
+    },
+    "text.c8fc0302bce9": {
+      "text": "64 personnes ont enregistré cette page sur Vinted",
+      "src": "c8fc0302bce9"
+    },
+    "text.57658f291423": {
+      "text": "42 personnes ont enregistré cette page sur Vinted",
+      "src": "57658f291423"
+    },
+    "text.1ab3d6e95d17": {
+      "text": "26 boucles d&#x27;oreilles dans le présentoir à bijoux.",
+      "src": "1ab3d6e95d17"
+    },
+    "text.e15e44f5e9c4": {
+      "text": "Bague « Forager Moon and Mushroom » | Style bohème, hippie, folkcore, vintage, argenté, fantaisiste, gothique, aspect antique",
+      "src": "e15e44f5e9c4"
+    },
+    "text.4bf6ff07b1a9": {
+      "text": "Blazer vintage à fines rayures. Style bureau rétro. Une coupe sur mesure oversize classique, des fines rayures blanches verticales, un revers cranté classique et un rabat…",
+      "src": "4bf6ff07b1a9"
+    },
+    "text.209e6544fe79": {
+      "text": "Boucles d’oreilles légères en alliage de cuivre, ornées d’un magnifique motif de feuilles gravé. Elles présentent une finition métallique vieillie couleur or rose. Inspirées par l’automne, une…",
+      "src": "209e6544fe79"
+    },
+    "text.103a585be04d": {
+      "text": "Robe ajustée et évasée à manches longues, dotée d&#x27;un col châle marron foncé. Elle affiche un style bohème rétro grunge et décontracté. Portée. #BohoFashion #VintageStyle…",
+      "src": "103a585be04d"
+    },
+    "text.3fcace6f8009": {
+      "text": "Conçu exclusivement pour les sportifs et n&#x27;ayant jamais été commercialisé. Porté par des athlètes d&#x27;élite légendaires. Un morceau de l&#x27;histoire du cyclisme professionnel, authentique, une pièce vintage rare…",
+      "src": "3fcace6f8009"
     }
   }
 }
