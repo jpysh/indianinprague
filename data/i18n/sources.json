@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-22T05:17:58.185Z",
-  "count": 4301,
+  "generated": "2026-09-23T07:13:55.093Z",
+  "count": 4302,
   "entries": {
     "item.10083582654.title": {
       "text": "Reusable bread bag | knit tote bag | cottagecore",
@@ -304,20 +304,6 @@
       "text": "Beautiful floral engraved copper.\nEarrings are 1.5 inches long.\nHave a slight weight to them and have sturdy design.\nOxidised vintage look.\nUnique rose gold tint.\nSee my profile to create bundles of real metal jewellery like antique silver.",
       "src": "13753644c007",
       "where": "item 9969986465 — description",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
-    },
-    "item.9962547392.title": {
-      "text": "Buddhist Prayer Flags Tibetan Buddha Boho Home Pure Energy",
-      "src": "758c87e700d4",
-      "where": "item 9962547392 — title",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
-    },
-    "item.9962547392.description": {
-      "text": "Raise the positive energy of the place with these 10 pieces mini prayer flags. \nVelvet fabric material so they don’t fade easily. \nHeight 4.4 inches\nWidth 3.3 inches",
-      "src": "3a6a2708cbb0",
-      "where": "item 9962547392 — description",
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
@@ -4633,19 +4619,19 @@
       "since": "",
       "changed": ""
     },
-    "text.915679d08b20": {
-      "text": "69 reviews on Vinted →",
-      "src": "915679d08b20",
+    "text.a29f04477a5b": {
+      "text": "71 reviews on Vinted →",
+      "src": "a29f04477a5b",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-20",
-      "changed": "2026-09-20"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
-    "text.92030255d77b": {
-      "text": "Rated 5.0 out of 5 from 69 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "92030255d77b",
+    "text.2b9b0c8090c1": {
+      "text": "Rated 5.0 out of 5 from 71 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "2b9b0c8090c1",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-20",
-      "changed": "2026-09-20"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.8c9d0a8d756e": {
       "text": "443 pieces",
@@ -4829,12 +4815,12 @@
       "since": "",
       "changed": ""
     },
-    "text.a64df60946e0": {
-      "text": "1683 pieces for sale · 82 sold",
-      "src": "a64df60946e0",
+    "text.0e70350def60": {
+      "text": "1682 pieces for sale · 83 sold",
+      "src": "0e70350def60",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-22",
-      "changed": "2026-09-22"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -7146,12 +7132,12 @@
       "since": "2026-08-28",
       "changed": "2026-08-28"
     },
-    "text.5eec6b71b8e5": {
-      "text": "27 people have saved this on Vinted",
-      "src": "5eec6b71b8e5",
+    "text.24a9d23a221e": {
+      "text": "30 people have saved this on Vinted",
+      "src": "24a9d23a221e",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-19",
-      "changed": "2026-09-19"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.90d8ae7580b6": {
       "text": "people saved this on Vinted",
@@ -7202,9 +7188,9 @@
       "since": "2026-09-22",
       "changed": "2026-09-22"
     },
-    "text.13412caa3780": {
-      "text": "4 people have saved this on Vinted",
-      "src": "13412caa3780",
+    "text.afd99cda0a21": {
+      "text": "5 people have saved this on Vinted",
+      "src": "afd99cda0a21",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7237,12 +7223,12 @@
       "since": "",
       "changed": ""
     },
-    "text.ba843804d558": {
-      "text": "26 people have saved this on Vinted",
-      "src": "ba843804d558",
+    "text.5eec6b71b8e5": {
+      "text": "27 people have saved this on Vinted",
+      "src": "5eec6b71b8e5",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-19",
+      "changed": "2026-09-19"
     },
     "text.209e6544fe79": {
       "text": "Lightweight copper alloy earrings with a beautiful engraved leaf design. They have an antiqued, metallic rose gold finish. Inspired by autumn, an…",
@@ -7271,6 +7257,13 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-21",
       "changed": "2026-09-21"
+    },
+    "text.13412caa3780": {
+      "text": "4 people have saved this on Vinted",
+      "src": "13412caa3780",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
     },
     "text.103a585be04d": {
       "text": "Fit-and-flare dress with long sleeves and dark brown cowl-neck scarf collar. Has a fun, grunge retro boho fashion. Worn. #BohoFashion #VintageStyle…",
@@ -7580,33 +7573,12 @@
       "since": "2026-09-12",
       "changed": "2026-09-12"
     },
-    "text.0e5e6fadf812": {
-      "text": "19 people have saved this on Vinted",
-      "src": "0e5e6fadf812",
+    "text.054b7309e9a7": {
+      "text": "39 people have saved this on Vinted",
+      "src": "054b7309e9a7",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-08-26",
-      "changed": "2026-08-26"
-    },
-    "text.5037aac6f927": {
-      "text": "Raise the positive energy of the place with these 10 pieces mini prayer flags. Velvet fabric material so they don’t fade easily. Height 4.4 inches…",
-      "src": "5037aac6f927",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
-    },
-    "text.f2573570e45a": {
-      "text": "New with tags · Multicolour",
-      "src": "f2573570e45a",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
-    },
-    "text.c200aa4ec86c": {
-      "text": "37 people have saved this on Vinted",
-      "src": "c200aa4ec86c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-22",
-      "changed": "2026-09-22"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.cdc4d8ec86dc": {
       "text": "Mushroom / fungi inspired design earrings. 3 mushroom charms on each earring Secure and easy-to-use hoop latch. Oxidized plated silver over a…",
@@ -7797,6 +7769,20 @@
       "since": "2026-09-06",
       "changed": "2026-09-06"
     },
+    "text.9d4751dc3bf1": {
+      "text": "A3+ poster: Hanuman running",
+      "src": "9d4751dc3bf1",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-06",
+      "changed": "2026-09-06"
+    },
+    "text.39570a22746d": {
+      "text": "A poster of Hanuma running.",
+      "src": "39570a22746d",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-06",
+      "changed": "2026-09-06"
+    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -7839,9 +7825,9 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
-    "text.8a25ebf6f46d": {
-      "text": "Jannat-ul-Firdaus Roll-on 5 ml",
-      "src": "8a25ebf6f46d",
+    "text.68d6ccc128f0": {
+      "text": "Sandal Roll-on 5 ml",
+      "src": "68d6ccc128f0",
       "where": "page text — first seen on wardrobe/10.html",
       "since": "",
       "changed": ""
@@ -7849,13 +7835,6 @@
     "text.ae04a7be8c38": {
       "text": "A natural oil-based perfume in a roll-on bottle, presented in a protective case.",
       "src": "ae04a7be8c38",
-      "where": "page text — first seen on wardrobe/10.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.68d6ccc128f0": {
-      "text": "Sandal Roll-on 5 ml",
-      "src": "68d6ccc128f0",
       "where": "page text — first seen on wardrobe/10.html",
       "since": "",
       "changed": ""
@@ -8385,6 +8364,20 @@
       "since": "",
       "changed": ""
     },
+    "text.e9faab36803e": {
+      "text": "Gopal incense sticks – large pack",
+      "src": "e9faab36803e",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.f1e5009a278c": {
+      "text": "Your favourite incense sticks are now available in new packaging. There are many varieties to choose from. 100% natural incense sticks – your…",
+      "src": "f1e5009a278c",
+      "where": "page text — first seen on wardrobe/10.html",
+      "since": "",
+      "changed": ""
+    },
     "text.435567b14289": {
       "text": "← Previous",
       "src": "435567b14289",
@@ -8405,20 +8398,6 @@
       "where": "page text — first seen on wardrobe/11.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.e9faab36803e": {
-      "text": "Gopal incense sticks – large pack",
-      "src": "e9faab36803e",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.f1e5009a278c": {
-      "text": "Your favourite incense sticks are now available in new packaging. There are many varieties to choose from. 100% natural incense sticks – your…",
-      "src": "f1e5009a278c",
-      "where": "page text — first seen on wardrobe/11.html",
-      "since": "",
-      "changed": ""
     },
     "text.0787811ec24d": {
       "text": "Vrinda Incense Sticks – Large Pack",
@@ -8910,6 +8889,20 @@
       "since": "",
       "changed": ""
     },
+    "text.ceb31a9ab35e": {
+      "text": "Cards, 8 cm in diameter",
+      "src": "ceb31a9ab35e",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.19f6e7508660": {
+      "text": "A musical instrument, brass cymbals.",
+      "src": "19f6e7508660",
+      "where": "page text — first seen on wardrobe/11.html",
+      "since": "",
+      "changed": ""
+    },
     "text.a4837d3a7538": {
       "text": "Page 11 of 37",
       "src": "a4837d3a7538",
@@ -8923,20 +8916,6 @@
       "where": "page text — first seen on wardrobe/12.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.ceb31a9ab35e": {
-      "text": "Cards, 8 cm in diameter",
-      "src": "ceb31a9ab35e",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.19f6e7508660": {
-      "text": "A musical instrument, brass cymbals.",
-      "src": "19f6e7508660",
-      "where": "page text — first seen on wardrobe/12.html",
-      "since": "",
-      "changed": ""
     },
     "text.420e649f1dbf": {
       "text": "Kantimála, 2nd series, 2 black ones between the tulasí rollers",
@@ -9442,6 +9421,20 @@
       "since": "",
       "changed": ""
     },
+    "text.79b9ec8965b3": {
+      "text": "Oval sticker featuring Jagannath, Subhadra and Baladev",
+      "src": "79b9ec8965b3",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.56ee39de3a43": {
+      "text": "An oval-shaped sticker featuring an image of Jagannātha, Subhadra and Baladēva.",
+      "src": "56ee39de3a43",
+      "where": "page text — first seen on wardrobe/12.html",
+      "since": "",
+      "changed": ""
+    },
     "text.27fa9ec25b37": {
       "text": "Page 12 of 37",
       "src": "27fa9ec25b37",
@@ -9455,20 +9448,6 @@
       "where": "page text — first seen on wardrobe/13.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.79b9ec8965b3": {
-      "text": "Oval sticker featuring Jagannath, Subhadra and Baladev",
-      "src": "79b9ec8965b3",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.56ee39de3a43": {
-      "text": "An oval-shaped sticker featuring an image of Jagannātha, Subhadra and Baladēva.",
-      "src": "56ee39de3a43",
-      "where": "page text — first seen on wardrobe/13.html",
-      "since": "",
-      "changed": ""
     },
     "text.a4a436b21015": {
       "text": "Everest Incense Sticks",
@@ -9974,6 +9953,13 @@
       "since": "",
       "changed": ""
     },
+    "text.8f7be0035b55": {
+      "text": "Box with lid, diameter 7.5 cm, Om Sakthi 3",
+      "src": "8f7be0035b55",
+      "where": "page text — first seen on wardrobe/13.html",
+      "since": "",
+      "changed": ""
+    },
     "text.02e34cda7db3": {
       "text": "Page 13 of 37",
       "src": "02e34cda7db3",
@@ -9987,13 +9973,6 @@
       "where": "page text — first seen on wardrobe/14.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.8f7be0035b55": {
-      "text": "Box with lid, diameter 7.5 cm, Om Sakthi 3",
-      "src": "8f7be0035b55",
-      "where": "page text — first seen on wardrobe/14.html",
-      "since": "",
-      "changed": ""
     },
     "text.699fdc4f25d5": {
       "text": "Large round plate, 27 cm in diameter, Richi Gold",
@@ -10562,6 +10541,20 @@
       "since": "",
       "changed": ""
     },
+    "text.198ac2f83286": {
+      "text": "It features purple stripes and a narrow border",
+      "src": "198ac2f83286",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.9eb47c5ef05b": {
+      "text": "The white fabric features purple stripes and a narrow purple border.",
+      "src": "9eb47c5ef05b",
+      "where": "page text — first seen on wardrobe/14.html",
+      "since": "",
+      "changed": ""
+    },
     "text.cfb3bd579ca0": {
       "text": "Page 14 of 37",
       "src": "cfb3bd579ca0",
@@ -10575,20 +10568,6 @@
       "where": "page text — first seen on wardrobe/15.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.198ac2f83286": {
-      "text": "It features purple stripes and a narrow border",
-      "src": "198ac2f83286",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9eb47c5ef05b": {
-      "text": "The white fabric features purple stripes and a narrow purple border.",
-      "src": "9eb47c5ef05b",
-      "where": "page text — first seen on wardrobe/15.html",
-      "since": "",
-      "changed": ""
     },
     "text.39a8ca6f8fdd": {
       "text": "‘Hare Rama Hare Krishna’ T-shirt, sizes S, M, L, XL",
@@ -11206,6 +11185,20 @@
       "since": "",
       "changed": ""
     },
+    "text.b9c71cd1a7c3": {
+      "text": "Large sculpture of Radha and Krishna",
+      "src": "b9c71cd1a7c3",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.4fe666646724": {
+      "text": "A luxurious carved piece depicting Radha and Krishna – a must-have for any connoisseur. A large sculpture featuring exceptionally precise…",
+      "src": "4fe666646724",
+      "where": "page text — first seen on wardrobe/15.html",
+      "since": "",
+      "changed": ""
+    },
     "text.07cc399c7b5c": {
       "text": "Page 15 of 37",
       "src": "07cc399c7b5c",
@@ -11219,20 +11212,6 @@
       "where": "page text — first seen on wardrobe/16.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.b9c71cd1a7c3": {
-      "text": "Large sculpture of Radha and Krishna",
-      "src": "b9c71cd1a7c3",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.4fe666646724": {
-      "text": "A luxurious carved piece depicting Radha and Krishna – a must-have for any connoisseur. A large sculpture featuring exceptionally precise…",
-      "src": "4fe666646724",
-      "where": "page text — first seen on wardrobe/16.html",
-      "since": "",
-      "changed": ""
     },
     "text.9bb05a129014": {
       "text": "Large carved elephant with a blanket on its back, 10 cm",
@@ -11752,6 +11731,20 @@
       "since": "",
       "changed": ""
     },
+    "text.0a47f9108358": {
+      "text": "Braided brass bracelet, 5 styles",
+      "src": "0a47f9108358",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.0ed7dd5bd0dd": {
+      "text": "A brass bracelet woven in various patterns from several strips. Choose from 4 styles as shown in the photo, numbered 01 to 05. The bracelet adjusts…",
+      "src": "0ed7dd5bd0dd",
+      "where": "page text — first seen on wardrobe/16.html",
+      "since": "",
+      "changed": ""
+    },
     "text.44bd101e0f4f": {
       "text": "Page 16 of 37",
       "src": "44bd101e0f4f",
@@ -11765,20 +11758,6 @@
       "where": "page text — first seen on wardrobe/17.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.0a47f9108358": {
-      "text": "Braided brass bracelet, 5 styles",
-      "src": "0a47f9108358",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.0ed7dd5bd0dd": {
-      "text": "A brass bracelet woven in various patterns from several strips. Choose from 4 styles as shown in the photo, numbered 01 to 05. The bracelet adjusts…",
-      "src": "0ed7dd5bd0dd",
-      "where": "page text — first seen on wardrobe/17.html",
-      "since": "",
-      "changed": ""
     },
     "text.18fb46b45412": {
       "text": "Small and large brown beads",
@@ -12221,6 +12200,13 @@
       "since": "",
       "changed": ""
     },
+    "text.7df9bf6eeb44": {
+      "text": "Stick-on tattoos: Flower with 8/6 petals (5 types)",
+      "src": "7df9bf6eeb44",
+      "where": "page text — first seen on wardrobe/17.html",
+      "since": "",
+      "changed": ""
+    },
     "text.dcdb66389330": {
       "text": "Page 17 of 37",
       "src": "dcdb66389330",
@@ -12234,13 +12220,6 @@
       "where": "page text — first seen on wardrobe/18.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.7df9bf6eeb44": {
-      "text": "Stick-on tattoos: Flower with 8/6 petals (5 types)",
-      "src": "7df9bf6eeb44",
-      "where": "page text — first seen on wardrobe/18.html",
-      "since": "",
-      "changed": ""
     },
     "text.d4801965694f": {
       "text": "OM stick-on tattoos (3 types)",
@@ -12767,6 +12746,13 @@
       "since": "",
       "changed": ""
     },
+    "text.73413c81d1f2": {
+      "text": "TULSI Natural Oil Perfume",
+      "src": "73413c81d1f2",
+      "where": "page text — first seen on wardrobe/18.html",
+      "since": "",
+      "changed": ""
+    },
     "text.f2145ecffa3b": {
       "text": "Page 18 of 37",
       "src": "f2145ecffa3b",
@@ -12780,13 +12766,6 @@
       "where": "page text — first seen on wardrobe/19.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.73413c81d1f2": {
-      "text": "TULSI Natural Oil Perfume",
-      "src": "73413c81d1f2",
-      "where": "page text — first seen on wardrobe/19.html",
-      "since": "",
-      "changed": ""
     },
     "text.c00a7b1e7a8d": {
       "text": "LOTUS",
@@ -13264,6 +13243,20 @@
       "since": "",
       "changed": ""
     },
+    "text.a3d3ed17ea2a": {
+      "text": "A3+ poster: Rása Dance",
+      "src": "a3d3ed17ea2a",
+      "where": "page text — first seen on wardrobe/19.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.de41f0263a9d": {
+      "text": "A3+ poster: ‘Rása Dance’.",
+      "src": "de41f0263a9d",
+      "where": "page text — first seen on wardrobe/19.html",
+      "since": "",
+      "changed": ""
+    },
     "text.0bd16e3d17c3": {
       "text": "Page 19 of 37",
       "src": "0bd16e3d17c3",
@@ -13277,20 +13270,6 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.9d4751dc3bf1": {
-      "text": "A3+ poster: Hanuman running",
-      "src": "9d4751dc3bf1",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-06",
-      "changed": "2026-09-06"
-    },
-    "text.39570a22746d": {
-      "text": "A poster of Hanuma running.",
-      "src": "39570a22746d",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-06",
-      "changed": "2026-09-06"
     },
     "text.5e6328757a88": {
       "text": "A3+ poster: Hanuman standing",
@@ -13509,12 +13488,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.4e295b703185": {
-      "text": "18 people have saved this on Vinted",
-      "src": "4e295b703185",
+    "text.e26856ae1138": {
+      "text": "17 people have saved this on Vinted",
+      "src": "e26856ae1138",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.2000e314544b": {
       "text": "Master the ancient art of strategy with this complete magnetic folding Go game set featuring a portable board and full magnetic black and white…",
@@ -13565,13 +13544,6 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.afd99cda0a21": {
-      "text": "5 people have saved this on Vinted",
-      "src": "afd99cda0a21",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
-    },
     "text.72f6f5824eba": {
       "text": "Improve your posture and keep your workspace tidy with this heavy duty black anodized aluminum laptop stand riser. Retails new for around €40.…",
       "src": "72f6f5824eba",
@@ -13600,12 +13572,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.2b19b2bb5844": {
-      "text": "21 people have saved this on Vinted",
-      "src": "2b19b2bb5844",
+    "text.d9239828b2de": {
+      "text": "20 people have saved this on Vinted",
+      "src": "d9239828b2de",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-04",
-      "changed": "2026-09-04"
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
     },
     "text.1e3ca6178233": {
       "text": "Multi-strand design of silver-tone beads and textured elements. Antique, retro-inspired look.",
@@ -13614,12 +13586,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.a29fa5f3a1b8": {
-      "text": "35 people have saved this on Vinted",
-      "src": "a29fa5f3a1b8",
+    "text.c99c07999b7c": {
+      "text": "34 people have saved this on Vinted",
+      "src": "c99c07999b7c",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-21",
-      "changed": "2026-09-21"
+      "since": "2026-09-08",
+      "changed": "2026-09-08"
     },
     "text.944fe78ae9bc": {
       "text": "Measurements in photos. It’s used and has scratches but is not visible in day to day use. Normal hand wash care and the wood becomes shiny.",
@@ -13761,12 +13733,12 @@
       "since": "",
       "changed": ""
     },
-    "text.c99c07999b7c": {
-      "text": "34 people have saved this on Vinted",
-      "src": "c99c07999b7c",
+    "text.a29fa5f3a1b8": {
+      "text": "35 people have saved this on Vinted",
+      "src": "a29fa5f3a1b8",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-08",
-      "changed": "2026-09-08"
+      "since": "2026-09-21",
+      "changed": "2026-09-21"
     },
     "text.c28cd1524c2d": {
       "text": "Handcrafted bracelet in authentic 925 sterling silver (marked). Amethyst stones with cultured freshwater pearls Toggle clasp Two rectangular,…",
@@ -13852,6 +13824,27 @@
       "since": "",
       "changed": ""
     },
+    "text.ba843804d558": {
+      "text": "26 people have saved this on Vinted",
+      "src": "ba843804d558",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.761d224c75d4": {
+      "text": "Handmade navy blue ceramic necklace with pink detailing chord. Necklace is length adjustable. Due to the glazing process when firing ceramics, the…",
+      "src": "761d224c75d4",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.405cb8c0f926": {
+      "text": "Very good · Navy",
+      "src": "405cb8c0f926",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
     "text.308f44ec6733": {
       "text": "Page 2 of 37",
       "src": "308f44ec6733",
@@ -13865,20 +13858,6 @@
       "where": "page text — first seen on wardrobe/20.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.a3d3ed17ea2a": {
-      "text": "A3+ poster: Rása Dance",
-      "src": "a3d3ed17ea2a",
-      "where": "page text — first seen on wardrobe/20.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.de41f0263a9d": {
-      "text": "A3+ poster: ‘Rása Dance’.",
-      "src": "de41f0263a9d",
-      "where": "page text — first seen on wardrobe/20.html",
-      "since": "",
-      "changed": ""
     },
     "text.d9f0f213c11f": {
       "text": "A2 poster: Rása Dance",
@@ -14412,6 +14391,13 @@
       "since": "",
       "changed": ""
     },
+    "text.3e09db26158f": {
+      "text": "Herbal Incense Sticks",
+      "src": "3e09db26158f",
+      "where": "page text — first seen on wardrobe/20.html",
+      "since": "",
+      "changed": ""
+    },
     "text.c5b07f6cd7d2": {
       "text": "Page 20 of 37",
       "src": "c5b07f6cd7d2",
@@ -14425,13 +14411,6 @@
       "where": "page text — first seen on wardrobe/21.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.3e09db26158f": {
-      "text": "Herbal Incense Sticks",
-      "src": "3e09db26158f",
-      "where": "page text — first seen on wardrobe/21.html",
-      "since": "",
-      "changed": ""
     },
     "text.f5eb502b592b": {
       "text": "Jagannáth incense sticks",
@@ -15777,6 +15756,20 @@
       "since": "",
       "changed": ""
     },
+    "text.66df9fd7a35d": {
+      "text": "Striped veil",
+      "src": "66df9fd7a35d",
+      "where": "page text — first seen on wardrobe/23.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.76d381221865": {
+      "text": "A horizontally striped chador made from cotton and viscose in subtle Indian colours.",
+      "src": "76d381221865",
+      "where": "page text — first seen on wardrobe/23.html",
+      "since": "",
+      "changed": ""
+    },
     "text.3531e4f378b7": {
       "text": "Page 23 of 37",
       "src": "3531e4f378b7",
@@ -15790,20 +15783,6 @@
       "where": "page text — first seen on wardrobe/24.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.66df9fd7a35d": {
-      "text": "Striped veil",
-      "src": "66df9fd7a35d",
-      "where": "page text — first seen on wardrobe/24.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.76d381221865": {
-      "text": "A horizontally striped chador made from cotton and viscose in subtle Indian colours.",
-      "src": "76d381221865",
-      "where": "page text — first seen on wardrobe/24.html",
-      "since": "",
-      "changed": ""
     },
     "text.1815587eb9be": {
       "text": "Warm shawl, 20% wool, brown",
@@ -16400,6 +16379,20 @@
       "since": "",
       "changed": ""
     },
+    "text.6a1a8c83193a": {
+      "text": "Hanuman metal pendant",
+      "src": "6a1a8c83193a",
+      "where": "page text — first seen on wardrobe/24.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cdc73fa06bbf": {
+      "text": "Hanuman metal pendant.",
+      "src": "cdc73fa06bbf",
+      "where": "page text — first seen on wardrobe/24.html",
+      "since": "",
+      "changed": ""
+    },
     "text.242a65e83439": {
       "text": "Page 24 of 37",
       "src": "242a65e83439",
@@ -16413,20 +16406,6 @@
       "where": "page text — first seen on wardrobe/25.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.6a1a8c83193a": {
-      "text": "Hanuman metal pendant",
-      "src": "6a1a8c83193a",
-      "where": "page text — first seen on wardrobe/25.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cdc73fa06bbf": {
-      "text": "Hanuman metal pendant.",
-      "src": "cdc73fa06bbf",
-      "where": "page text — first seen on wardrobe/25.html",
-      "since": "",
-      "changed": ""
     },
     "text.6712ffdcf7a8": {
       "text": "Men’s trousers – bhakta",
@@ -17037,6 +17016,20 @@
       "since": "",
       "changed": ""
     },
+    "text.2868fea888ca": {
+      "text": "Kantimála, 2nd series, white amongst red beads",
+      "src": "2868fea888ca",
+      "where": "page text — first seen on wardrobe/25.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.56644ba6372e": {
+      "text": "A double-row kantimala with red beads and pearls, made from the sacred tulasi plant. It offers protection.",
+      "src": "56644ba6372e",
+      "where": "page text — first seen on wardrobe/25.html",
+      "since": "",
+      "changed": ""
+    },
     "text.e593ac1b6974": {
       "text": "Page 25 of 37",
       "src": "e593ac1b6974",
@@ -17050,20 +17043,6 @@
       "where": "page text — first seen on wardrobe/26.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.2868fea888ca": {
-      "text": "Kantimála, 2nd series, white amongst red beads",
-      "src": "2868fea888ca",
-      "where": "page text — first seen on wardrobe/26.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.56644ba6372e": {
-      "text": "A double-row kantimala with red beads and pearls, made from the sacred tulasi plant. It offers protection.",
-      "src": "56644ba6372e",
-      "where": "page text — first seen on wardrobe/26.html",
-      "since": "",
-      "changed": ""
     },
     "text.bdb638ed37d0": {
       "text": "Kantimala, 1st series, with Jagannath",
@@ -17583,6 +17562,20 @@
       "since": "",
       "changed": ""
     },
+    "text.01302b0b057d": {
+      "text": "Krishna Damodar (Makhanchor) metal",
+      "src": "01302b0b057d",
+      "where": "page text — first seen on wardrobe/26.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.80b89d96b588": {
+      "text": "A statue of Krishna on an ornate metal base.",
+      "src": "80b89d96b588",
+      "where": "page text — first seen on wardrobe/26.html",
+      "since": "",
+      "changed": ""
+    },
     "text.03b3559923b6": {
       "text": "Page 26 of 37",
       "src": "03b3559923b6",
@@ -17596,20 +17589,6 @@
       "where": "page text — first seen on wardrobe/27.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.01302b0b057d": {
-      "text": "Krishna Damodar (Makhanchor) metal",
-      "src": "01302b0b057d",
-      "where": "page text — first seen on wardrobe/27.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.80b89d96b588": {
-      "text": "A statue of Krishna on an ornate metal base.",
-      "src": "80b89d96b588",
-      "where": "page text — first seen on wardrobe/27.html",
-      "since": "",
-      "changed": ""
     },
     "text.8a9bf10cb87d": {
       "text": "Ganga water 400 ml",
@@ -18213,6 +18192,13 @@
       "since": "",
       "changed": ""
     },
+    "text.dbca27050981": {
+      "text": "Rajasthan box, red and blue, medium-sized",
+      "src": "dbca27050981",
+      "where": "page text — first seen on wardrobe/27.html",
+      "since": "",
+      "changed": ""
+    },
     "text.9c1a8f3b4688": {
       "text": "Page 27 of 37",
       "src": "9c1a8f3b4688",
@@ -18226,13 +18212,6 @@
       "where": "page text — first seen on wardrobe/28.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.dbca27050981": {
-      "text": "Rajasthan box, red and blue, medium-sized",
-      "src": "dbca27050981",
-      "where": "page text — first seen on wardrobe/28.html",
-      "since": "",
-      "changed": ""
     },
     "text.0066faff0d81": {
       "text": "Rajasthan box, dark blue, medium",
@@ -18738,6 +18717,20 @@
       "since": "",
       "changed": ""
     },
+    "text.e6fa0f7309c8": {
+      "text": "Girls’ blue top, size 22",
+      "src": "e6fa0f7309c8",
+      "where": "page text — first seen on wardrobe/28.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.09706f9d04f9": {
+      "text": "Girls’ top – flares out at the bottom.",
+      "src": "09706f9d04f9",
+      "where": "page text — first seen on wardrobe/28.html",
+      "since": "",
+      "changed": ""
+    },
     "text.ca8619060927": {
       "text": "Page 28 of 37",
       "src": "ca8619060927",
@@ -18751,20 +18744,6 @@
       "where": "page text — first seen on wardrobe/29.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.e6fa0f7309c8": {
-      "text": "Girls’ blue top, size 22",
-      "src": "e6fa0f7309c8",
-      "where": "page text — first seen on wardrobe/29.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.09706f9d04f9": {
-      "text": "Girls’ top – flares out at the bottom.",
-      "src": "09706f9d04f9",
-      "where": "page text — first seen on wardrobe/29.html",
-      "since": "",
-      "changed": ""
     },
     "text.1c8eb04160c1": {
       "text": "Cotton sari with a burgundy woven pattern",
@@ -19389,6 +19368,20 @@
       "since": "",
       "changed": ""
     },
+    "text.033ec3268f88": {
+      "text": "Set of 24 bracelets: gold, green and red",
+      "src": "033ec3268f88",
+      "where": "page text — first seen on wardrobe/29.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7837930a76e4": {
+      "text": "A set of 24 bracelets in matching colours: gold, green and red.",
+      "src": "7837930a76e4",
+      "where": "page text — first seen on wardrobe/29.html",
+      "since": "",
+      "changed": ""
+    },
     "text.4d2e67c6ab4e": {
       "text": "Page 29 of 37",
       "src": "4d2e67c6ab4e",
@@ -19402,27 +19395,6 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.0f6ce6792efb": {
-      "text": "25 people have saved this on Vinted",
-      "src": "0f6ce6792efb",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-09-16",
-      "changed": "2026-09-16"
-    },
-    "text.761d224c75d4": {
-      "text": "Handmade navy blue ceramic necklace with pink detailing chord. Necklace is length adjustable. Due to the glazing process when firing ceramics, the…",
-      "src": "761d224c75d4",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.405cb8c0f926": {
-      "text": "Very good · Navy",
-      "src": "405cb8c0f926",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
     },
     "text.ccccc0b9f647": {
       "text": "8 people have saved this on Vinted",
@@ -19514,6 +19486,13 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "",
       "changed": ""
+    },
+    "text.2b19b2bb5844": {
+      "text": "21 people have saved this on Vinted",
+      "src": "2b19b2bb5844",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
     },
     "text.8bb617b39993": {
       "text": "A quietly devastating novel about a humble couple exiled by their own families for marrying without consent, whose fragile peace is shattered when a…",
@@ -19647,6 +19626,13 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "",
       "changed": ""
+    },
+    "text.0e5e6fadf812": {
+      "text": "19 people have saved this on Vinted",
+      "src": "0e5e6fadf812",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-08-26",
+      "changed": "2026-08-26"
     },
     "text.3df7b18821e8": {
       "text": "🕉️ Natural Rudraksha Japa Mala: Made with authentic 7mm Rudraksha beads, ideal for spiritual use and daily chanting, length 16 inches 📿 108 (+5)…",
@@ -19795,6 +19781,13 @@
       "since": "",
       "changed": ""
     },
+    "text.4e295b703185": {
+      "text": "18 people have saved this on Vinted",
+      "src": "4e295b703185",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
     "text.a5ed50040b76": {
       "text": "Hand-pigmented. Finest Loom Cotton. Block printed. Spiritual, elegant, peace giving. Large size.",
       "src": "a5ed50040b76",
@@ -19878,20 +19871,6 @@
       "where": "page text — first seen on wardrobe/30.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.033ec3268f88": {
-      "text": "Set of 24 bracelets: gold, green and red",
-      "src": "033ec3268f88",
-      "where": "page text — first seen on wardrobe/30.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.7837930a76e4": {
-      "text": "A set of 24 bracelets in matching colours: gold, green and red.",
-      "src": "7837930a76e4",
-      "where": "page text — first seen on wardrobe/30.html",
-      "since": "",
-      "changed": ""
     },
     "text.9d0362d77e3b": {
       "text": "Set of 18 bracelets with gemstones",
@@ -20488,6 +20467,20 @@
       "since": "",
       "changed": ""
     },
+    "text.db00c6c08fb2": {
+      "text": "Butterfly Earrings, 2 styles",
+      "src": "db00c6c08fb2",
+      "where": "page text — first seen on wardrobe/30.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.cb77e2c8b5e0": {
+      "text": "Ornate metal earrings.",
+      "src": "cb77e2c8b5e0",
+      "where": "page text — first seen on wardrobe/30.html",
+      "since": "",
+      "changed": ""
+    },
     "text.42f5f55c86d5": {
       "text": "Page 30 of 37",
       "src": "42f5f55c86d5",
@@ -20501,20 +20494,6 @@
       "where": "page text — first seen on wardrobe/31.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.db00c6c08fb2": {
-      "text": "Butterfly Earrings, 2 styles",
-      "src": "db00c6c08fb2",
-      "where": "page text — first seen on wardrobe/31.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.cb77e2c8b5e0": {
-      "text": "Ornate metal earrings.",
-      "src": "cb77e2c8b5e0",
-      "where": "page text — first seen on wardrobe/31.html",
-      "since": "",
-      "changed": ""
     },
     "text.66c75a2e1f20": {
       "text": "Butterfly Earrings in a Circle, 2 styles",
@@ -21111,6 +21090,20 @@
       "since": "",
       "changed": ""
     },
+    "text.b8db3ae8cdeb": {
+      "text": "Knossos Orange",
+      "src": "b8db3ae8cdeb",
+      "where": "page text — first seen on wardrobe/31.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.56faf411e6a1": {
+      "text": "TRADITIONAL GREEK SOLID PURE OLIVE SOAP – ORANGE",
+      "src": "56faf411e6a1",
+      "where": "page text — first seen on wardrobe/31.html",
+      "since": "",
+      "changed": ""
+    },
     "text.da372fa8b240": {
       "text": "Page 31 of 37",
       "src": "da372fa8b240",
@@ -21124,20 +21117,6 @@
       "where": "page text — first seen on wardrobe/32.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.b8db3ae8cdeb": {
-      "text": "Knossos Orange",
-      "src": "b8db3ae8cdeb",
-      "where": "page text — first seen on wardrobe/32.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.56faf411e6a1": {
-      "text": "TRADITIONAL GREEK SOLID PURE OLIVE SOAP – ORANGE",
-      "src": "56faf411e6a1",
-      "where": "page text — first seen on wardrobe/32.html",
-      "since": "",
-      "changed": ""
     },
     "text.65299d8bec2c": {
       "text": "Knossos Lemon",
@@ -21755,6 +21734,20 @@
       "since": "",
       "changed": ""
     },
+    "text.6a224b14513d": {
+      "text": "Prabhupáda",
+      "src": "6a224b14513d",
+      "where": "page text — first seen on wardrobe/32.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.58f3b8685ac0": {
+      "text": "Satsvarupa das Goswami: The gripping life story of a pure devotee who, during the turbulent era of hippies, drugs and free love, sets off for…",
+      "src": "58f3b8685ac0",
+      "where": "page text — first seen on wardrobe/32.html",
+      "since": "",
+      "changed": ""
+    },
     "text.a927a82946b8": {
       "text": "Page 32 of 37",
       "src": "a927a82946b8",
@@ -21768,20 +21761,6 @@
       "where": "page text — first seen on wardrobe/33.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.6a224b14513d": {
-      "text": "Prabhupáda",
-      "src": "6a224b14513d",
-      "where": "page text — first seen on wardrobe/33.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.58f3b8685ac0": {
-      "text": "Satsvarupa das Goswami: The gripping life story of a pure devotee who, during the turbulent era of hippies, drugs and free love, sets off for…",
-      "src": "58f3b8685ac0",
-      "where": "page text — first seen on wardrobe/33.html",
-      "since": "",
-      "changed": ""
     },
     "text.a79d23e9271b": {
       "text": "Šrí Šrí Nitái-Navadvípačandra mandira Gítá-málá",
@@ -22378,6 +22357,13 @@
       "since": "",
       "changed": ""
     },
+    "text.564703b63f78": {
+      "text": "Čolí short-sleeved T-shirt, size S",
+      "src": "564703b63f78",
+      "where": "page text — first seen on wardrobe/33.html",
+      "since": "",
+      "changed": ""
+    },
     "text.fa172223f633": {
       "text": "Page 33 of 37",
       "src": "fa172223f633",
@@ -22391,13 +22377,6 @@
       "where": "page text — first seen on wardrobe/34.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.564703b63f78": {
-      "text": "Čolí short-sleeved T-shirt, size S",
-      "src": "564703b63f78",
-      "where": "page text — first seen on wardrobe/34.html",
-      "since": "",
-      "changed": ""
     },
     "text.0e58d6a6c34a": {
       "text": "Cashmere-patterned shawl, viscose, green background",
@@ -22938,6 +22917,20 @@
       "since": "",
       "changed": ""
     },
+    "text.7b4876ea3e81": {
+      "text": "Gents women’s wide-leg pyjama trousers",
+      "src": "7b4876ea3e81",
+      "where": "page text — first seen on wardrobe/34.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.9fd378cd8e9d": {
+      "text": "Comfortable, wide, gathered trousers. Elasticated waist. Sizes M, L and XL. Suitable for leisure, walks and wearing at home.",
+      "src": "9fd378cd8e9d",
+      "where": "page text — first seen on wardrobe/34.html",
+      "since": "",
+      "changed": ""
+    },
     "text.402dde99b460": {
       "text": "Page 34 of 37",
       "src": "402dde99b460",
@@ -22951,20 +22944,6 @@
       "where": "page text — first seen on wardrobe/35.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.7b4876ea3e81": {
-      "text": "Gents women’s wide-leg pyjama trousers",
-      "src": "7b4876ea3e81",
-      "where": "page text — first seen on wardrobe/35.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.9fd378cd8e9d": {
-      "text": "Comfortable, wide, gathered trousers. Elasticated waist. Sizes M, L and XL. Suitable for leisure, walks and wearing at home.",
-      "src": "9fd378cd8e9d",
-      "where": "page text — first seen on wardrobe/35.html",
-      "since": "",
-      "changed": ""
     },
     "text.d34bbe636278": {
       "text": "Indian metal earrings, 3 types",
@@ -23561,6 +23540,20 @@
       "since": "",
       "changed": ""
     },
+    "text.c3aacef959cc": {
+      "text": "Flower Earrings, 2 styles",
+      "src": "c3aacef959cc",
+      "where": "page text — first seen on wardrobe/35.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e1041ea85c72": {
+      "text": "Floral earrings made from thin, golden-coloured metal. Choose from two styles.",
+      "src": "e1041ea85c72",
+      "where": "page text — first seen on wardrobe/35.html",
+      "since": "",
+      "changed": ""
+    },
     "text.295d16571c20": {
       "text": "Page 35 of 37",
       "src": "295d16571c20",
@@ -23574,20 +23567,6 @@
       "where": "page text — first seen on wardrobe/36.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
-    },
-    "text.c3aacef959cc": {
-      "text": "Flower Earrings, 2 styles",
-      "src": "c3aacef959cc",
-      "where": "page text — first seen on wardrobe/36.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e1041ea85c72": {
-      "text": "Floral earrings made from thin, golden-coloured metal. Choose from two styles.",
-      "src": "e1041ea85c72",
-      "where": "page text — first seen on wardrobe/36.html",
-      "since": "",
-      "changed": ""
     },
     "text.197b73aa3b7f": {
       "text": "Lotus Feet badge, diameter 5.5 cm",
@@ -23662,6 +23641,27 @@
     "text.20fb57b2c037": {
       "text": "Set of 3 bands with light and medium levels of pull. 2 ankle straps. Not very strong pull but good enough for light strength training. Perfect for…",
       "src": "20fb57b2c037",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-09-12",
+      "changed": "2026-09-12"
+    },
+    "text.f2573570e45a": {
+      "text": "New with tags · Multicolour",
+      "src": "f2573570e45a",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-09-05",
+      "changed": "2026-09-05"
+    },
+    "text.758c87e700d4": {
+      "text": "Buddhist Prayer Flags Tibetan Buddha Boho Home Pure Energy",
+      "src": "758c87e700d4",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-09-23",
+      "changed": "2026-09-23"
+    },
+    "text.5037aac6f927": {
+      "text": "Raise the positive energy of the place with these 10 pieces mini prayer flags. Velvet fabric material so they don’t fade easily. Height 4.4 inches…",
+      "src": "5037aac6f927",
       "where": "page text — first seen on wardrobe/36.html",
       "since": "2026-09-12",
       "changed": "2026-09-12"
@@ -25297,6 +25297,13 @@
       "since": "",
       "changed": ""
     },
+    "text.b187c7565c9d": {
+      "text": "Elegant navy and white midi dress from Wardrobe. Effortlessly smart with an abstract geometric print. A flattering, versatile piece that works for…",
+      "src": "b187c7565c9d",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
+    },
     "text.4cb48f08ea22": {
       "text": "Page 4 of 37",
       "src": "4cb48f08ea22",
@@ -25310,13 +25317,6 @@
       "where": "page text — first seen on wardrobe/5.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.b187c7565c9d": {
-      "text": "Elegant navy and white midi dress from Wardrobe. Effortlessly smart with an abstract geometric print. A flattering, versatile piece that works for…",
-      "src": "b187c7565c9d",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "",
-      "changed": ""
     },
     "text.7169c9167702": {
       "text": "Indian Cotton Summer Shirt · Black &amp; Red Block Print · Heart Shape Motif · Size L",
@@ -25815,6 +25815,20 @@
       "since": "",
       "changed": ""
     },
+    "text.001aabe91426": {
+      "text": "Sri Yantra wooden carved mandala, 59 cm",
+      "src": "001aabe91426",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7181426402fa": {
+      "text": "The Shri Yantra (often referred to as the ‘queen of yantras’) is an ancient sacred geometric symbol representing the universe, divine energy…",
+      "src": "7181426402fa",
+      "where": "page text — first seen on wardrobe/5.html",
+      "since": "",
+      "changed": ""
+    },
     "text.9bd80dadfa9e": {
       "text": "Page 5 of 37",
       "src": "9bd80dadfa9e",
@@ -25828,20 +25842,6 @@
       "where": "page text — first seen on wardrobe/6.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.001aabe91426": {
-      "text": "Sri Yantra wooden carved mandala, 59 cm",
-      "src": "001aabe91426",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.7181426402fa": {
-      "text": "The Shri Yantra (often referred to as the ‘queen of yantras’) is an ancient sacred geometric symbol representing the universe, divine energy…",
-      "src": "7181426402fa",
-      "where": "page text — first seen on wardrobe/6.html",
-      "since": "",
-      "changed": ""
     },
     "text.7f8b73e9d3ae": {
       "text": "Sri Yantra wooden carved mandala, 30 cm",
@@ -26319,6 +26319,13 @@
       "since": "",
       "changed": ""
     },
+    "text.c29758adac39": {
+      "text": "Round burgundy shoulder bag, diameter 28 cm",
+      "src": "c29758adac39",
+      "where": "page text — first seen on wardrobe/6.html",
+      "since": "",
+      "changed": ""
+    },
     "text.3b41ea5b93a8": {
       "text": "Page 6 of 37",
       "src": "3b41ea5b93a8",
@@ -26332,13 +26339,6 @@
       "where": "page text — first seen on wardrobe/7.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.c29758adac39": {
-      "text": "Round burgundy shoulder bag, diameter 28 cm",
-      "src": "c29758adac39",
-      "where": "page text — first seen on wardrobe/7.html",
-      "since": "",
-      "changed": ""
     },
     "text.4b088af5de4e": {
       "text": "Yellow round shoulder bag, diameter 28 cm",
@@ -26809,6 +26809,13 @@
       "since": "",
       "changed": ""
     },
+    "text.f5dad1613196": {
+      "text": "39x39 cm pillowcase – Little Owls",
+      "src": "f5dad1613196",
+      "where": "page text — first seen on wardrobe/7.html",
+      "since": "",
+      "changed": ""
+    },
     "text.439064dcfeec": {
       "text": "Page 7 of 37",
       "src": "439064dcfeec",
@@ -26822,13 +26829,6 @@
       "where": "page text — first seen on wardrobe/8.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.f5dad1613196": {
-      "text": "39x39 cm pillowcase – Little Owls",
-      "src": "f5dad1613196",
-      "where": "page text — first seen on wardrobe/8.html",
-      "since": "",
-      "changed": ""
     },
     "text.71bed6139f4d": {
       "text": "39x39 cm brocade cushion cover",
@@ -27348,6 +27348,13 @@
       "since": "",
       "changed": ""
     },
+    "text.4e8cd02c9ae5": {
+      "text": "Sarasvati incense sticks",
+      "src": "4e8cd02c9ae5",
+      "where": "page text — first seen on wardrobe/8.html",
+      "since": "",
+      "changed": ""
+    },
     "text.a3837c219ee3": {
       "text": "Page 8 of 37",
       "src": "a3837c219ee3",
@@ -27361,13 +27368,6 @@
       "where": "page text — first seen on wardrobe/9.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
-    },
-    "text.4e8cd02c9ae5": {
-      "text": "Sarasvati incense sticks",
-      "src": "4e8cd02c9ae5",
-      "where": "page text — first seen on wardrobe/9.html",
-      "since": "",
-      "changed": ""
     },
     "text.a880f7084407": {
       "text": "Krishna Balram incense sticks",
@@ -27757,6 +27757,13 @@
     "text.2b1e85681f3a": {
       "text": "Cedar Wood Roll-on 5 ml",
       "src": "2b1e85681f3a",
+      "where": "page text — first seen on wardrobe/9.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.8a25ebf6f46d": {
+      "text": "Jannat-ul-Firdaus Roll-on 5 ml",
+      "src": "8a25ebf6f46d",
       "where": "page text — first seen on wardrobe/9.html",
       "since": "",
       "changed": ""
@@ -28839,13 +28846,6 @@
       "since": "",
       "changed": ""
     },
-    "text.bc2cdc0908ea": {
-      "text": "Tibet",
-      "src": "bc2cdc0908ea",
-      "where": "page text — first seen on wardrobe/home-decor.html",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
-    },
     "text.1d7906c798c9": {
       "text": "handicraft",
       "src": "1d7906c798c9",
@@ -28887,6 +28887,13 @@
       "where": "page text — first seen on wardrobe/home-decor/3.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
+    },
+    "text.bc2cdc0908ea": {
+      "text": "Tibet",
+      "src": "bc2cdc0908ea",
+      "where": "page text — first seen on wardrobe/home-decor/3.html",
+      "since": "2026-09-12",
+      "changed": "2026-09-12"
     },
     "text.d17c04c1c0e2": {
       "text": "Bedding and quilts: buy Indian home decor in Europe",

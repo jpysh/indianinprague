@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-22T05:18:03.194Z",
-  "count": 6557,
+  "generated": "2026-09-23T07:13:58.082Z",
+  "count": 6561,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -26236,6 +26236,22 @@
     "text.fab3eefadbd4": {
       "text": "Chleb nie wchodzi w skład zestawu ;) Wysokość 13 cali, szerokość 7,5 cala. Wykonany z grubego, elastycznego materiału. Geometryczny wzór tworzący iluzję optyczną. Dość niewielki,…",
       "src": "fab3eefadbd4"
+    },
+    "text.a29f04477a5b": {
+      "text": "71 recenzji na stronie Vinted →",
+      "src": "a29f04477a5b"
+    },
+    "text.0e70350def60": {
+      "text": "1682 sztuki na sprzedaż · 83 sprzedane",
+      "src": "0e70350def60"
+    },
+    "text.758c87e700d4": {
+      "text": "Buddyjskie flagi modlitewne, tybetański Budda, styl boho, do domu, czysta energia",
+      "src": "758c87e700d4"
+    },
+    "text.2b9b0c8090c1": {
+      "text": "Ocena 5,0 na 5 na podstawie 71 opinii kupujących. Zapoznajcie się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "2b9b0c8090c1"
     }
   }
 }
