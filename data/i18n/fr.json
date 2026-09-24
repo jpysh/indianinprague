@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-23T07:13:56.334Z",
-  "count": 6561,
+  "generated": "2026-09-24T07:12:12.364Z",
+  "count": 6582,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -342,8 +342,8 @@
       "src": "0013e43386ab"
     },
     "item.9561251555.title": {
-      "text": "Châle/écharpe/étole en coton jaune indien « Hare Rama Radhe Radhe »",
-      "src": "7fdd9f030e4c"
+      "text": "Châle/écharpe/étole en coton jaune indien « Hare Rama Radha Krishna »",
+      "src": "b9d0867280a5"
     },
     "item.9395042890.title": {
       "text": "« L'ordre mondial d'aujourd'hui », par Bruno Maçães : « L'aube de l'Eurasie »",
@@ -26252,6 +26252,90 @@
     "text.2b9b0c8090c1": {
       "text": "Note de 5,0 sur 5 d&#x27;après 71 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
       "src": "2b9b0c8090c1"
+    },
+    "item.10110122527.title": {
+      "text": "Haut en velours | textures côtelées | T-shirt rétro vintage | Streetwear",
+      "src": "e03177b9c6d9"
+    },
+    "item.10104577760.title": {
+      "text": "Pochette indienne vintage de style bohème | Broderie du Cachemire | Petit sac ethnique",
+      "src": "6c0166adb822"
+    },
+    "item.10111151684.title": {
+      "text": "Déesse hindoue Lakshmi plaquée or | Symbole de prospérité | Art spirituel et religieux indien",
+      "src": "0c72aa1ef181"
+    },
+    "item.10110122527.description": {
+      "text": "Tissu en velours doux à côtes. \nTexture verticale de type velours côtelé. \nIdéal à associer à un jean ample. \n\n#streetwear #esthétiquerétro #ambiance70 #chemiseenvelours #chemiseenvelourscordé #modehomme #ambiancevintage #styledécontracté #y2k #lookrétro #styledeskateur",
+      "src": "4225de59cbc4"
+    },
+    "item.10111151684.description": {
+      "text": "Un billet de 1 000 roupies plaqué or, magnifiquement réalisé, représentant Lakshmi et Kuber, symboles de richesse, de sagesse et de prospérité. \nDécoration murale. \nIdéal pour être accroché dans un temple, à la maison ou au bureau.\n\nJ&#x27;ai une autre statuette de Lakshmi et une de Ganesha :)\nhttps://www.vinted.cz/items/9565320171-indian-lakshmi-figurine-statue-spiritual-idol",
+      "src": "bd8110aaf424"
+    },
+    "item.10104577760.description": {
+      "text": "Broderie cachemirienne authentique réalisée à la main. \nMagnifique pochette de poignet confectionnée à la main, ornée d’une broderie florale traditionnelle cachemirienne qui lui confère une riche touche ethnique.\nRéalisée dans un velours doux et somptueux.\nUne taille idéale pour transporter facilement vos indispensables du quotidien, tels que votre téléphone portable, votre argent, vos cartes, vos clés et vos petits produits de beauté.\n\n#pochettedevellours #sacsbrodé #pochettedevellours #trousse de maquillage #trousse de cosmétiques #trousse de voyage #marron #bordeaux #ambianceboho #fairycore #gothiquefantaisiste #coquette #faitmain #esthétiquevintage #bohochic",
+      "src": "27e2c40d579b"
+    },
+    "text.e6f38e47c830": {
+      "text": "445 pièces",
+      "src": "e6f38e47c830"
+    },
+    "text.f5ea5dbaacb1": {
+      "text": "145 pièces",
+      "src": "f5ea5dbaacb1"
+    },
+    "text.ea2fc02ffd44": {
+      "text": "ASOS Design",
+      "src": "ea2fc02ffd44"
+    },
+    "text.102949f7f7d9": {
+      "text": "72 avis sur Vinted →",
+      "src": "102949f7f7d9"
+    },
+    "text.cf4edbc35a4d": {
+      "text": "Très bien · Moutarde · L",
+      "src": "cf4edbc35a4d"
+    },
+    "text.855a576a5988": {
+      "text": "1 681 pièces en vente · 87 vendues",
+      "src": "855a576a5988"
+    },
+    "text.ceb2a20e4170": {
+      "text": "Décoration d&#x27;intérieur indienne en Europe : textiles, céramiques, objets artisanaux, page 4",
+      "src": "ceb2a20e4170"
+    },
+    "text.2ac5edf7ccf5": {
+      "text": "Écharpe de prière hindoue « Om Namah Shivaya » | Écharpe de yoga et de méditation spirituelle",
+      "src": "2ac5edf7ccf5"
+    },
+    "text.605e13eccd38": {
+      "text": "Bague Om | Bijoux spirituels de l&#x27;Inde hindoue | yoga et méditation | style bohème et hippie",
+      "src": "605e13eccd38"
+    },
+    "text.606263f08818": {
+      "text": "Coussin bohème | coussin de style vintage | coussin pour tapis de yoga | coussin pour chaise ou canapé",
+      "src": "606263f08818"
+    },
+    "text.07c0533f2c25": {
+      "text": "Bracelet enroulé « Snake Watch » en serpentine dorée | Montre de luxe de style vintage",
+      "src": "07c0533f2c25"
+    },
+    "text.b77e5ad995d6": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 72 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "b77e5ad995d6"
+    },
+    "text.2f7ebfa5d84f": {
+      "text": "Tissu en velours doux à côtes. Texture verticale de type velours côtelé. Idéal à associer à un jean ample. #streetwear #esthétiquerétro #ambiance70 #chemiseenvelours…",
+      "src": "2f7ebfa5d84f"
+    },
+    "text.d01ffdbc42dd": {
+      "text": "Véritable broderie cachemirienne réalisée à la main. Magnifique pochette à porter au poignet, confectionnée à la main et ornée d’une broderie florale traditionnelle cachemirienne qui lui confère une riche touche ethnique…",
+      "src": "d01ffdbc42dd"
+    },
+    "text.86e801428726": {
+      "text": "Un billet de 1 000 roupies plaqué or, magnifiquement réalisé, représentant Lakshmi et Kuber, symboles de richesse, de sagesse et de prospérité. Décoration murale. Idéal pour être accroché…",
+      "src": "86e801428726"
     }
   }
 }
