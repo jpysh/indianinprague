@@ -333,11 +333,11 @@
     var t = topic ? topic.options[topic.selectedIndex].text : "";
     var w = where && where.value.trim();
     var lines = r === "retailer"
-      ? ["Hello Guldaar — I am a retailer and I found /partner on guldaarbazaar.com.",
+      ? ["Hello Guldaar — I am a retailer and I found your wholesale page on guldaarbazaar.com.",
          "What I am looking for: " + t + ".",
          w ? "Where I sell: " + w + "." : "",
          "Please tell me about EU-stocked availability, trade terms and the compliance file."]
-      : ["Hello Guldaar — I make or supply goods in India and I found /partner on guldaarbazaar.com.",
+      : ["Hello Guldaar — I make or supply goods in India and I found your merchant page on guldaarbazaar.com.",
          "What I make: " + t + ".",
          w ? "Where I am based: " + w + "." : "",
          "I would like to start selling to Europe with you."];

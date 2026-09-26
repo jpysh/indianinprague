@@ -10,7 +10,7 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-26T11:33:28.846Z",
+  "generated": "2026-09-26T11:43:15.938Z",
   "count": 4288,
   "entries": {
     "item.10129560822.title": {
@@ -6033,9 +6033,9 @@
       "since": "2026-09-26",
       "changed": "2026-09-26"
     },
-    "text.67f7d6c2670a": {
-      "text": "Pick three things and it writes the message for you. Ayur Sen replies, usually the same day, and it is the same person every time.",
-      "src": "67f7d6c2670a",
+    "text.4cc06e9d3666": {
+      "text": "Pick three things and it writes the message for you. The same person replies every time.",
+      "src": "4cc06e9d3666",
       "where": "page text — first seen on partner/merchant.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"
@@ -6572,9 +6572,9 @@
       "since": "2026-09-26",
       "changed": "2026-09-26"
     },
-    "text.c09b3fc260bf": {
-      "text": "Pick three things and it writes the message for you. Ask for a sample pack, the line sheet or a price. Ayur Sen replies, usually the same day.",
-      "src": "c09b3fc260bf",
+    "text.47e801d07603": {
+      "text": "Pick three things and it writes the message for you. Ask for a sample pack, the line sheet or a price.",
+      "src": "47e801d07603",
       "where": "page text — first seen on partner/retailer.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"

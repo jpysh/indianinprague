@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:33:32.741Z",
-  "count": 6829,
+  "generated": "2026-09-26T11:43:18.398Z",
+  "count": 6831,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -29367,6 +29367,14 @@
     "text.1c892a7619b9": {
       "text": "Doplnění zásob probíhá v rámci našeho čtrnáctidenního souhrnného odesílání: zboží dorazí do vašeho obchodu přibližně za tři týdny. Zboží vyráběné na zakázku a personalizované výrobky se vyrábějí přibližně za tři dny a dorazí s již zaplaceným clem za pět až sedm dní.",
       "src": "1c892a7619b9"
+    },
+    "text.4cc06e9d3666": {
+      "text": "Vyberte si tři věci a systém za vás napíše zprávu. Pokaždé odpovídá stejná osoba.",
+      "src": "4cc06e9d3666"
+    },
+    "text.47e801d07603": {
+      "text": "Vyberte si tři položky a systém za vás sestaví zprávu. Požádejte o vzorový balíček, katalog nebo cenovou nabídku.",
+      "src": "47e801d07603"
     }
   }
 }

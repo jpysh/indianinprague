@@ -862,3 +862,5 @@ main.p > section.p-end{background:var(--saffron)}
 }
 .poster .p-grid .sold{top:6px;left:6px;font-size:9px;padding:3px 7px}
 .p-grid .t{min-height:calc(2 * 1.3em + 10px);line-height:1.3}
+#ask h2 + p{margin-top:12px}
+#ask .direct{margin-bottom:28px}

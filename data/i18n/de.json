@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:33:30.666Z",
-  "count": 6833,
+  "generated": "2026-09-26T11:43:17.178Z",
+  "count": 6835,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -27340,6 +27340,14 @@
     "text.1c892a7619b9": {
       "text": "Nachschub erfolgt im Rahmen unserer vierzehntägigen Sammelbestellung: Die Ware ist in etwa drei Wochen wieder in Ihrem Shop erhältlich. Sonderanfertigungen und personalisierte Artikel werden in etwa drei Tagen hergestellt und treffen in fünf bis sieben Tagen ein, wobei die Zollgebühren bereits entrichtet sind.",
       "src": "1c892a7619b9"
+    },
+    "text.4cc06e9d3666": {
+      "text": "Wählen Sie drei Dinge aus, und das System verfasst die Nachricht für Sie. Es antwortet jedes Mal dieselbe Person.",
+      "src": "4cc06e9d3666"
+    },
+    "text.47e801d07603": {
+      "text": "Wählen Sie drei Dinge aus, und das System verfasst die Nachricht für Sie. Fordern Sie ein Musterpaket, das Produktblatt oder einen Preis an.",
+      "src": "47e801d07603"
     }
   }
 }

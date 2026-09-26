@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:33:30.246Z",
-  "count": 6829,
+  "generated": "2026-09-26T11:43:16.854Z",
+  "count": 6831,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -27324,6 +27324,14 @@
     "text.1c892a7619b9": {
       "text": "Les réapprovisionnements s'effectuent selon notre calendrier de regroupement bimensuel : les articles seront de retour dans votre boutique dans un délai d'environ trois semaines. Les articles fabriqués sur commande et personnalisés sont réalisés en trois jours environ et vous sont livrés, droits de douane déjà acquittés, dans un délai de cinq à sept jours.",
       "src": "1c892a7619b9"
+    },
+    "text.4cc06e9d3666": {
+      "text": "Choisissez trois éléments et le système rédige le message à votre place. C'est toujours la même personne qui répond.",
+      "src": "4cc06e9d3666"
+    },
+    "text.47e801d07603": {
+      "text": "Choisissez trois éléments et le système rédige le message à votre place. Demandez un échantillon, la fiche produit ou un devis.",
+      "src": "47e801d07603"
     }
   }
 }
