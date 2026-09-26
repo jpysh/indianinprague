@@ -69,7 +69,8 @@ const SKIP = new Set(["spirituality.html", "inventory.html", "dashboard.html"]);
 
 // Directories holding generated English pages. Language trees live beside them and are
 // skipped here so a second run never mirrors a mirror.
-const PAGE_DIRS = ["wardrobe", "diaries"];
+// partner/ since 26 Sep 2026: the merchant and retailer pages (and their posters) are hand-written.
+const PAGE_DIRS = ["wardrobe", "diaries", "partner"];
 
 export function englishPages() {
   const out = readdirSync(ROOT).filter((f) => f.endsWith(".html") && !SKIP.has(f));

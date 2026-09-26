@@ -840,3 +840,5 @@ main.p > section.p-end{background:var(--saffron)}
 /* Route on wide screens: a readable size, labels under their stops. */
 .p-route{max-width:880px}
 .p .light .p-alt a:not(.p-alt-btn){color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.p-grid li{display:flex;flex-direction:column}
+.p-grid .sold{margin-top:auto}

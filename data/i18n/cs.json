@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T05:18:08.536Z",
-  "count": 6609,
+  "generated": "2026-09-26T11:29:47.089Z",
+  "count": 6821,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -28487,6 +28487,854 @@
     "text.e9aaf4787be1": {
       "text": "Průsvitný tyrkysově modrý vzhled připomínající „mořské sklo“. Připomíná lucitové vzory z 80. a 90. let. Úchvatný vintage kousek s výrazným tvarem. Nádherná matná textura, která odráží…",
       "src": "e9aaf4787be1"
+    },
+    "text.76900f1bfd16": {
+      "text": "Zpět",
+      "src": "76900f1bfd16"
+    },
+    "text.204a5eb2cd28": {
+      "text": "Náklady",
+      "src": "204a5eb2cd28"
+    },
+    "text.281cbd01b4b9": {
+      "text": "Předplacené",
+      "src": "281cbd01b4b9"
+    },
+    "text.60acc36e5d51": {
+      "text": "14 dní",
+      "src": "60acc36e5d51"
+    },
+    "text.5e1a0ebc939d": {
+      "text": "Trendy",
+      "src": "5e1a0ebc939d"
+    },
+    "text.811ace97bcf2": {
+      "text": "Expedice",
+      "src": "811ace97bcf2"
+    },
+    "text.d5033b7bbabc": {
+      "text": "Zasíláte",
+      "src": "d5033b7bbabc"
+    },
+    "text.5909e90a0f61": {
+      "text": "Obchodníci",
+      "src": "5909e90a0f61"
+    },
+    "text.4145ade206c4": {
+      "text": "Maloobchodníci",
+      "src": "4145ade206c4"
+    },
+    "text.c995be24c46c": {
+      "text": "Citujete:",
+      "src": "c995be24c46c"
+    },
+    "text.f6c260d29d68": {
+      "text": "Za měsíc",
+      "src": "f6c260d29d68"
+    },
+    "text.13e34df494c1": {
+      "text": "Trasa",
+      "src": "13e34df494c1"
+    },
+    "text.ed12ffaf116a": {
+      "text": "Bestseller",
+      "src": "ed12ffaf116a"
+    },
+    "text.d998dc0f3443": {
+      "text": "Vaše cena",
+      "src": "d998dc0f3443"
+    },
+    "text.4cab70e9226b": {
+      "text": "Uložit jako PDF",
+      "src": "4cab70e9226b"
+    },
+    "text.5a68a23d1629": {
+      "text": "Doporučená maloobchodní cena 9 €",
+      "src": "5a68a23d1629"
+    },
+    "text.b774996992aa": {
+      "text": "Velkoobchodní cena",
+      "src": "b774996992aa"
+    },
+    "text.532049bc328c": {
+      "text": "Vzorový balíček",
+      "src": "532049bc328c"
+    },
+    "text.ffc73160e1fe": {
+      "text": "osm týdnů",
+      "src": "ffc73160e1fe"
+    },
+    "text.40e0bca100aa": {
+      "text": "Tři kroky",
+      "src": "40e0bca100aa"
+    },
+    "text.46b396c85919": {
+      "text": "Stručný přehled",
+      "src": "46b396c85919"
+    },
+    "text.8d7f9ba88bef": {
+      "text": "Doporučená maloobchodní cena 68 €",
+      "src": "8d7f9ba88bef"
+    },
+    "text.e37fd97b72e2": {
+      "text": "Doporučená maloobchodní cena 66 €",
+      "src": "e37fd97b72e2"
+    },
+    "text.d6269cbb16fd": {
+      "text": "Doporučená maloobchodní cena 46 €",
+      "src": "d6269cbb16fd"
+    },
+    "text.b75b752deac3": {
+      "text": "Doporučená maloobchodní cena 29 €",
+      "src": "b75b752deac3"
+    },
+    "text.5dd7cb558616": {
+      "text": "Doporučená maloobchodní cena 23 €",
+      "src": "5dd7cb558616"
+    },
+    "text.e5b3f946c3e3": {
+      "text": "Doporučená maloobchodní cena 24 €",
+      "src": "e5b3f946c3e3"
+    },
+    "text.3d49abe94e7c": {
+      "text": "Doporučená maloobchodní cena 21 €",
+      "src": "3d49abe94e7c"
+    },
+    "text.6e436e3622cb": {
+      "text": "Doporučená maloobchodní cena 20 €",
+      "src": "6e436e3622cb"
+    },
+    "text.464f7a5bad9a": {
+      "text": "Doporučená maloobchodní cena 16 €",
+      "src": "464f7a5bad9a"
+    },
+    "text.ebb51ac55ee6": {
+      "text": "Doporučená maloobchodní cena 17 €",
+      "src": "ebb51ac55ee6"
+    },
+    "text.e531c72cf811": {
+      "text": "Doporučená maloobchodní cena 12 €",
+      "src": "e531c72cf811"
+    },
+    "text.5ece48a8b23c": {
+      "text": "Neprodané zásoby",
+      "src": "5ece48a8b23c"
+    },
+    "text.32a0dccbea2f": {
+      "text": "Tři kroky.",
+      "src": "32a0dccbea2f"
+    },
+    "text.b1f3170a03dd": {
+      "text": "na první pohled.",
+      "src": "b1f3170a03dd"
+    },
+    "text.414773b4ea0a": {
+      "text": "Lyon, Francie",
+      "src": "414773b4ea0a"
+    },
+    "text.a4a7de16cae0": {
+      "text": "Cena: 8 eur",
+      "src": "a4a7de16cae0"
+    },
+    "text.fc37325d86d1": {
+      "text": "Obchod 6 €",
+      "src": "fc37325d86d1"
+    },
+    "text.e17c85cc990b": {
+      "text": "Co budete potřebovat",
+      "src": "e17c85cc990b"
+    },
+    "text.157ff886b56e": {
+      "text": "Cena: 34 eur",
+      "src": "157ff886b56e"
+    },
+    "text.3cc51f790aee": {
+      "text": "Obchodní cena 33 €",
+      "src": "3cc51f790aee"
+    },
+    "text.7329fae8b8bb": {
+      "text": "Obchodní cena 23 €",
+      "src": "7329fae8b8bb"
+    },
+    "text.e33d4986978b": {
+      "text": "Cena: 12 €",
+      "src": "e33d4986978b"
+    },
+    "text.3e4409383a39": {
+      "text": "Obchod za 10 €",
+      "src": "3e4409383a39"
+    },
+    "text.eb27d52ebea9": {
+      "text": "Kde se prodává",
+      "src": "eb27d52ebea9"
+    },
+    "text.4e24f844beb9": {
+      "text": "1–4 dny",
+      "src": "4e24f844beb9"
+    },
+    "text.1538a40f9144": {
+      "text": "před hovorem.",
+      "src": "1538a40f9144"
+    },
+    "text.74fb9f2da317": {
+      "text": "Minimální doplňovací množství",
+      "src": "74fb9f2da317"
+    },
+    "text.b6059e10570d": {
+      "text": "Celá ta záležitost,",
+      "src": "b6059e10570d"
+    },
+    "text.9260a79ea863": {
+      "text": "Již v prodeji",
+      "src": "9260a79ea863"
+    },
+    "text.7146023dc7e3": {
+      "text": "Akcie EU, Španělsko",
+      "src": "7146023dc7e3"
+    },
+    "text.58c2988739e4": {
+      "text": "Odeslat na WhatsApp",
+      "src": "58c2988739e4"
+    },
+    "text.231bb25fd1db": {
+      "text": "Cena: 8,50 €",
+      "src": "231bb25fd1db"
+    },
+    "text.da93a1575813": {
+      "text": "Cena: 4,50 €",
+      "src": "da93a1575813"
+    },
+    "text.5473a6fa50a0": {
+      "text": "29 € měsíčně",
+      "src": "5473a6fa50a0"
+    },
+    "text.7090ee3d291a": {
+      "text": "Jednostránkové shrnutí",
+      "src": "7090ee3d291a"
+    },
+    "text.c9cf19076b88": {
+      "text": "Workshopy, Indie",
+      "src": "c9cf19076b88"
+    },
+    "text.b00eeeee599b": {
+      "text": "Styly, které se dobře prodávají",
+      "src": "b00eeeee599b"
+    },
+    "text.620dddecd9b0": {
+      "text": "na navázaných vlascích",
+      "src": "620dddecd9b0"
+    },
+    "text.e5d498d5dd6a": {
+      "text": "3–5 kusů",
+      "src": "e5d498d5dd6a"
+    },
+    "text.97fa55b690a1": {
+      "text": "Příští pracovní den",
+      "src": "97fa55b690a1"
+    },
+    "text.2528777a52a4": {
+      "text": "Poškozené nebo nesprávné",
+      "src": "2528777a52a4"
+    },
+    "text.fbbfaf841427": {
+      "text": "Cena: 14,50 €",
+      "src": "fbbfaf841427"
+    },
+    "text.12be61bc226a": {
+      "text": "Cena: 11,50 €",
+      "src": "12be61bc226a"
+    },
+    "text.22a4e3dacf28": {
+      "text": "Cena: 10,50 €",
+      "src": "22a4e3dacf28"
+    },
+    "text.e2d0526d3a72": {
+      "text": "Kdy dostanete výplatu",
+      "src": "e2d0526d3a72"
+    },
+    "text.82ec397872e7": {
+      "text": "Nic nezůstane ležet",
+      "src": "82ec397872e7"
+    },
+    "text.d899b291786f": {
+      "text": "na jednu objednávku na doplnění zásob",
+      "src": "d899b291786f"
+    },
+    "text.5ecfc2f74f86": {
+      "text": "Letecky, každé 2 týdny",
+      "src": "5ecfc2f74f86"
+    },
+    "text.19176ef32aa7": {
+      "text": "Podívejte se na katalog",
+      "src": "19176ef32aa7"
+    },
+    "text.6e110db4b447": {
+      "text": "Minimální první objednávka",
+      "src": "6e110db4b447"
+    },
+    "text.1c261bba540e": {
+      "text": "Cena FOB Indie za kus",
+      "src": "1c261bba540e"
+    },
+    "text.fa7e4b633e70": {
+      "text": "Zaplaceno před odesláním",
+      "src": "fa7e4b633e70"
+    },
+    "text.c603c1c45610": {
+      "text": "následující pracovní den",
+      "src": "c603c1c45610"
+    },
+    "text.43253d9776ec": {
+      "text": "Pro koho je tato stránka určena",
+      "src": "43253d9776ec"
+    },
+    "text.e1885ee35768": {
+      "text": "Dny pro zákazníky z EU",
+      "src": "e1885ee35768"
+    },
+    "text.e3158bc54d76": {
+      "text": "Váš workshop, Indie",
+      "src": "e3158bc54d76"
+    },
+    "text.ebe20aad99bb": {
+      "text": "Vyřizujeme to ve Španělsku",
+      "src": "ebe20aad99bb"
+    },
+    "text.fd5ad5cd46e6": {
+      "text": "Pošlete jednu zprávu",
+      "src": "fd5ad5cd46e6"
+    },
+    "text.cd2d94dbea09": {
+      "text": "Velkoobchod (maloobchodníci)",
+      "src": "cd2d94dbea09"
+    },
+    "text.93f66c083027": {
+      "text": "Ručně tkaná tunika z khadi",
+      "src": "93f66c083027"
+    },
+    "text.0c9f632a69a4": {
+      "text": "Dodání zákazníkům",
+      "src": "0c9f632a69a4"
+    },
+    "text.b01f24bc6422": {
+      "text": "Během několika dní ve vašem obchodě.",
+      "src": "b01f24bc6422"
+    },
+    "text.7e807c19876b": {
+      "text": "Doručení do 1–4 dnů",
+      "src": "7e807c19876b"
+    },
+    "text.a7fc08723846": {
+      "text": "vrácení zdarma, jednou",
+      "src": "a7fc08723846"
+    },
+    "text.5da1e246ad79": {
+      "text": "Udělejte jen to první.",
+      "src": "5da1e246ad79"
+    },
+    "text.4d8526c820bc": {
+      "text": "Kdo je vlastníkem zákazníka?",
+      "src": "4d8526c820bc"
+    },
+    "text.fdb2ff1328b0": {
+      "text": "Řekněte nám, co vyrábíte.",
+      "src": "fdb2ff1328b0"
+    },
+    "text.99239a45d342": {
+      "text": "Začněte prodávat do Evropy",
+      "src": "99239a45d342"
+    },
+    "text.74a4b689ab2c": {
+      "text": "Zákazníci z celé Evropy",
+      "src": "74a4b689ab2c"
+    },
+    "text.33f7b55bab84": {
+      "text": "Co neprodáte?",
+      "src": "33f7b55bab84"
+    },
+    "text.a1b0e9ac84bf": {
+      "text": "1–4 dny pro kupující",
+      "src": "a1b0e9ac84bf"
+    },
+    "text.c53adebd8422": {
+      "text": "Celní záležitosti a skladové zásoby, Španělsko",
+      "src": "c53adebd8422"
+    },
+    "text.cae5928f3f27": {
+      "text": "zákazníci z celé Evropy.",
+      "src": "cae5928f3f27"
+    },
+    "text.53b6a6ee460d": {
+      "text": "Proč bych tomu měl věřit?",
+      "src": "53b6a6ee460d"
+    },
+    "text.73b6813fdbe4": {
+      "text": "Výrobce nebo dodavatel, Indie",
+      "src": "73b6813fdbe4"
+    },
+    "text.8843fce1ef95": {
+      "text": "Určeno pro všechny indické tvůrce",
+      "src": "8843fce1ef95"
+    },
+    "text.46dc974d8804": {
+      "text": "Evropa nakupuje, vy dostanete zaplaceno",
+      "src": "46dc974d8804"
+    },
+    "text.65c1df550280": {
+      "text": "Takovéto kousky se prodávají za",
+      "src": "65c1df550280"
+    },
+    "text.2d70509b7b93": {
+      "text": "WhatsApp +420 777 558 262",
+      "src": "2d70509b7b93"
+    },
+    "text.b7b2980a5dc9": {
+      "text": "Maloobchodník nebo odběratel, Evropa",
+      "src": "b7b2980a5dc9"
+    },
+    "text.a6677961a0f3": {
+      "text": "Vzorkové balíčky pro obchody v EU",
+      "src": "a6677961a0f3"
+    },
+    "text.e2893add1e0c": {
+      "text": "Clo zaplaceno, ze skladu v EU.",
+      "src": "e2893add1e0c"
+    },
+    "text.9db1787227fc": {
+      "text": "Váš obchod, 1–4 dny",
+      "src": "9db1787227fc"
+    },
+    "text.d45290bab72f": {
+      "text": "objednat to, co obchod potřebuje",
+      "src": "d45290bab72f"
+    },
+    "text.04fb03a56d56": {
+      "text": "Prodej do Evropy (obchodníci)",
+      "src": "04fb03a56d56"
+    },
+    "text.2bd99fad8182": {
+      "text": "Ručně vyřezávaná dřevěná soška Ganéši",
+      "src": "2bd99fad8182"
+    },
+    "text.8f09d6d62612": {
+      "text": "Věšák na keramické dlaždice se 6 háčky",
+      "src": "8f09d6d62612"
+    },
+    "text.c4cb96eaaeb9": {
+      "text": "Údaje, které kupující potřebuje,",
+      "src": "c4cb96eaaeb9"
+    },
+    "text.4cbaa97660ec": {
+      "text": "Co je v balení?",
+      "src": "4cbaa97660ec"
+    },
+    "text.1c72deaf0dd9": {
+      "text": "Jak funguje faktura?",
+      "src": "1c72deaf0dd9"
+    },
+    "text.c18e5ef38b1b": {
+      "text": "Mosazná figurka z rodiny Šivy",
+      "src": "c18e5ef38b1b"
+    },
+    "text.9963c0987808": {
+      "text": "Bavlněná maxi sukně Kalamkari",
+      "src": "9963c0987808"
+    },
+    "text.ffc9005d1a88": {
+      "text": "50 % doporučené maloobchodní ceny u skladových položek",
+      "src": "ffc9005d1a88"
+    },
+    "text.520d2f9bc659": {
+      "text": "Bronzový přívěsek s buddhistickým amuletem",
+      "src": "520d2f9bc659"
+    },
+    "text.986e162b127c": {
+      "text": "Modlitební šátek „Om Namah Shivaya“",
+      "src": "986e162b127c"
+    },
+    "text.3e035d530052": {
+      "text": "Amazon, Miravia, TikTok Shop",
+      "src": "3e035d530052"
+    },
+    "text.dc46d8f19a5b": {
+      "text": "Obchodní cena jako podíl na doporučené maloobchodní ceně",
+      "src": "dc46d8f19a5b"
+    },
+    "text.6d6dc5dfab12": {
+      "text": "Přehled produktů k tisku nebo sdílení",
+      "src": "6d6dc5dfab12"
+    },
+    "text.4a666a03678d": {
+      "text": "Bavlněné midi šaty s blokovým potiskem",
+      "src": "4a666a03678d"
+    },
+    "text.c33ff9976dfc": {
+      "text": "Šaty s bavlněnými ramínky s ručně tištěným vzorem",
+      "src": "c33ff9976dfc"
+    },
+    "text.60de28d97090": {
+      "text": "zaplatit, a to od data vystavení faktury",
+      "src": "60de28d97090"
+    },
+    "text.a3ec5167455a": {
+      "text": "Řekněte nám, co váš obchod potřebuje.",
+      "src": "a3ec5167455a"
+    },
+    "text.4d701965371f": {
+      "text": "Otázky, které si kupující kladou jako první.",
+      "src": "4d701965371f"
+    },
+    "text.146c85c2d07f": {
+      "text": "Vyrobeno v Indii. Skladem ve Španělsku.",
+      "src": "146c85c2d07f"
+    },
+    "text.b9f109de9562": {
+      "text": "Prohlédněte si kompletní maloobchodní katalog",
+      "src": "b9f109de9562"
+    },
+    "text.98008070613d": {
+      "text": "již zaplacená daň z dovozu a dovozní DPH",
+      "src": "98008070613d"
+    },
+    "text.ffd60f8325dd": {
+      "text": "Mosazný přívěsek na krk, modré korálky",
+      "src": "ffd60f8325dd"
+    },
+    "text.98c54bdbb5a9": {
+      "text": "0 % provize z prodejů na tržišti",
+      "src": "98c54bdbb5a9"
+    },
+    "text.78f966c1ffcd": {
+      "text": "Otázky, které si obchodníci kladou jako první.",
+      "src": "78f966c1ffcd"
+    },
+    "text.8226b0d3b39c": {
+      "text": "Jedinečné indické řemeslné výrobky pro váš obchod.",
+      "src": "8226b0d3b39c"
+    },
+    "text.91929439f64a": {
+      "text": "Ručně malovaná keramická komoda se 6 zásuvkami",
+      "src": "91929439f64a"
+    },
+    "text.93cd063c3902": {
+      "text": "převodem nebo kartou, před odesláním",
+      "src": "93cd063c3902"
+    },
+    "text.8d68f5e56fa8": {
+      "text": "Náušnice z ryzího stříbra s motivem věčného uzlu",
+      "src": "8d68f5e56fa8"
+    },
+    "text.57699cd68a82": {
+      "text": "Kdo nese právní odpovědnost?",
+      "src": "57699cd68a82"
+    },
+    "text.68f03cc746e8": {
+      "text": "Modely z této řady se již prodávají v",
+      "src": "68f03cc746e8"
+    },
+    "text.521c8cff2ed8": {
+      "text": "Mohu je prodávat i na internetových tržištích?",
+      "src": "521c8cff2ed8"
+    },
+    "text.056ccaa5aa5c": {
+      "text": "3–5 kusů, bezplatný vratný obal, jednou",
+      "src": "056ccaa5aa5c"
+    },
+    "text.6f67860cf06c": {
+      "text": ", přičemž e-FIRA se vystavuje automaticky.",
+      "src": "6f67860cf06c"
+    },
+    "text.c176563813d0": {
+      "text": "Přepravné v ceně plus 10 %, jak je uvedeno.",
+      "src": "c176563813d0"
+    },
+    "text.ebc4e236abf1": {
+      "text": "0 €. Clo a DPH z dovozu již byly zaplaceny",
+      "src": "ebc4e236abf1"
+    },
+    "text.f103de9a85ae": {
+      "text": "Zašlete nám fotografie, technické údaje a vaši cenu FOB.",
+      "src": "f103de9a85ae"
+    },
+    "text.1551244540c4": {
+      "text": "Indické bavlněné textilie s ručně tištěnými vzory",
+      "src": "1551244540c4"
+    },
+    "text.1558eeaba9dc": {
+      "text": "Zkontrolujeme, zda splňujete podmínky, zařadíme vás do seznamu a vy zboží odešlete",
+      "src": "1558eeaba9dc"
+    },
+    "text.43a76dbfa069": {
+      "text": "Katalog: Indické řemeslné výrobky pro evropské obchody",
+      "src": "43a76dbfa069"
+    },
+    "text.454894c6db15": {
+      "text": "Mám se vzdát svých akcií, nebo svých ostatních kanálů?",
+      "src": "454894c6db15"
+    },
+    "text.f760bb196c55": {
+      "text": "Co se stane, když výrobek neprojde kontrolou shody?",
+      "src": "f760bb196c55"
+    },
+    "text.640330d6aa60": {
+      "text": "Ruční výroba znamená rozdíly. Je to vada?",
+      "src": "640330d6aa60"
+    },
+    "text.04dc71657ba4": {
+      "text": "Guldaar Bazaar · Pro indické obchodníky",
+      "src": "04dc71657ba4"
+    },
+    "text.428d627ed241": {
+      "text": "Jedinečné indické řemeslné výrobky, clo již zaplaceno, skladem v EU.",
+      "src": "428d627ed241"
+    },
+    "text.e4b8772e9e3d": {
+      "text": "Orientační ceny vycházející z našich vlastních prodejů v Evropě.",
+      "src": "e4b8772e9e3d"
+    },
+    "text.8258a744053e": {
+      "text": "Jak rychle se doplňují zásoby a jak dlouho trvá výroba zboží na zakázku?",
+      "src": "8258a744053e"
+    },
+    "text.77c1d6e5f27c": {
+      "text": "Prodej z Indie do Evropy: shrnutí na jedné stránce",
+      "src": "77c1d6e5f27c"
+    },
+    "text.282087c77775": {
+      "text": "Zůstane mi moje vývozní sleva a vrácená daň z přidané hodnoty (GST)?",
+      "src": "282087c77775"
+    },
+    "text.544418f78c0e": {
+      "text": "Váš vzorkový balíček bude odeslán ze Španělska následující pracovní den",
+      "src": "544418f78c0e"
+    },
+    "text.a2a4da6edd6c": {
+      "text": "Již zaplacené clo a DPH z dovozu, fakturováno v eurech.",
+      "src": "a2a4da6edd6c"
+    },
+    "text.f46d183624d4": {
+      "text": "a velkoobchodní platformy, od kterých nakupují evropské obchody.",
+      "src": "f46d183624d4"
+    },
+    "text.3a122c6cd265": {
+      "text": "Guldaar Bazaar · Katalog kolekce · Podzim 2026",
+      "src": "3a122c6cd265"
+    },
+    "text.390be169b551": {
+      "text": "Velkoobchod s indickými řemeslnými výrobky pro evropské obchody, clo zaplaceno",
+      "src": "390be169b551"
+    },
+    "text.9be149e7fbf4": {
+      "text": "Zveřejněno, abyste si mohli spočítat marži ještě předtím, než se zeptáte.",
+      "src": "9be149e7fbf4"
+    },
+    "text.c62005a779c5": {
+      "text": "Koná se ve Španělsku. Objednávejte s ohledem na sezónu, ne s několikaměsíčním předstihem.",
+      "src": "c62005a779c5"
+    },
+    "text.7cdf47c61092": {
+      "text": "Prodávejte z Indie do Evropy bez papírování a stresu.",
+      "src": "7cdf47c61092"
+    },
+    "text.0dca15d5ec99": {
+      "text": "Pod vašimi vlastními doménami IEC a LUT. Vaše vývozní sleva zůstane vaše.",
+      "src": "0dca15d5ec99"
+    },
+    "text.318893525b4e": {
+      "text": "Prodej z Indie do Evropy: GPSR, celní předpisy a tržiště v EU",
+      "src": "318893525b4e"
+    },
+    "text.288ffc0e3c50": {
+      "text": "Ayur odpoví, obvykle ještě týž den, a sdělí nám, co od vás potřebujeme",
+      "src": "288ffc0e3c50"
+    },
+    "text.5dd139b916e0": {
+      "text": "Z našeho skladu ve Španělsku. Clo je zaplaceno, při doručení se nic neúčtuje.",
+      "src": "5dd139b916e0"
+    },
+    "text.2b454fccd574": {
+      "text": "Ayur odpoví, obvykle ještě týž den, a přiloží přehled sortimentu a ceny",
+      "src": "2b454fccd574"
+    },
+    "text.c391e32e24c6": {
+      "text": "Amazon a ostatní si už vzali svůj podíl. My si nebereme žádný další podíl.",
+      "src": "c391e32e24c6"
+    },
+    "text.0541b2494e45": {
+      "text": "při nahlášení s fotografií: náhrada nebo výměna, náklady na zpáteční dopravu hradíme my",
+      "src": "0541b2494e45"
+    },
+    "text.ddf824277620": {
+      "text": "ze Španělska. 1–2 dny do Španělska, 2–4 dny do Německa, Francie a Itálie",
+      "src": "ddf824277620"
+    },
+    "text.98363b139dce": {
+      "text": "Celní předpisy, cla, DPH a dodržování předpisů EU v roli dovozce a odpovědné osoby.",
+      "src": "98363b139dce"
+    },
+    "text.05152b3e7e19": {
+      "text": "V našem obchodě a na hlavních tržištích v EU. Peníze na účtu již následující pracovní den.",
+      "src": "05152b3e7e19"
+    },
+    "text.9c71ac8f3b60": {
+      "text": "Dvanáct modelů s velkoobchodní cenou a doporučenou maloobchodní cenou, včetně našich obchodních podmínek, na jedné stránce k tisku.",
+      "src": "9c71ac8f3b60"
+    },
+    "text.66662c99fb4a": {
+      "text": "Ověřujeme soulad s předpisy a zařadíme vás do nabídky v osmi jazycích a na hlavních tržištích v EU.",
+      "src": "66662c99fb4a"
+    },
+    "text.ccdf32a4c0b9": {
+      "text": ", 5 % z tržeb na guldaarbazaar.com. Přepravné se účtuje podle skutečných nákladů plus 10 %, přičemž tyto náklady vám budou sděleny.",
+      "src": "ccdf32a4c0b9"
+    },
+    "text.96302ee9d4c4": {
+      "text": "Ještě není skladem v EU? Zásilka bude odeslána přímo z vaší dílny do 8–14 dnů, včetně zaplaceného cla.",
+      "src": "96302ee9d4c4"
+    },
+    "text.7484dadbb3b5": {
+      "text": "Následující pracovní den ze Španělska. 1–2 dny do Španělska, 2–4 dny do Německa, Francie a Itálie",
+      "src": "7484dadbb3b5"
+    },
+    "text.9011c07ad3f8": {
+      "text": "Zboží zasíláte na základě své vlastní smlouvy o prodeji (IEC). My zajistíme celní odbavení ve Španělsku, prodáme zboží a vyplatíme vám peníze následující pracovní den.",
+      "src": "9011c07ad3f8"
+    },
+    "text.fdfb63a9d47a": {
+      "text": "Zboží putuje z dílen v Indii do skladu v EU ve Španělsku a odtud do vašeho obchodu během jednoho až čtyř dnů",
+      "src": "fdfb63a9d47a"
+    },
+    "text.1a1e4d583df8": {
+      "text": "Cena, platba, dodání, neprodané zásoby a vše, co potřebujete – na jedné stránce k vytištění pro indické obchodníky.",
+      "src": "1a1e4d583df8"
+    },
+    "text.e398145b92c6": {
+      "text": "Náš vlastní internetový obchod v osmi jazycích a navíc zajistíme zřízení a aktualizaci vašich nabídek na hlavních tržištích v EU:",
+      "src": "e398145b92c6"
+    },
+    "text.822705cef07f": {
+      "text": "0 % provize z prodeje na tržišti. Výplata následující pracovní den. Postaráme se o dodržování předpisů EU, celní záležitosti a zveřejňování nabídek.",
+      "src": "822705cef07f"
+    },
+    "text.c85583e0c92d": {
+      "text": "Ne. Budete prodávat tam, kde prodáváte i nadále. V případě prodeje na konsignační bázi zůstává zboží vaším majetkem, dokud se neprodá.",
+      "src": "c85583e0c92d"
+    },
+    "text.e0421e6ac40a": {
+      "text": "WhatsApp +420 777 558 262 · helloayursen@gmail.com · guldaarbazaar.com/partner/retailer",
+      "src": "e0421e6ac40a"
+    },
+    "text.adc9203c7d10": {
+      "text": "WhatsApp +420 777 558 262 · helloayursen@gmail.com · guldaarbazaar.com/partner/merchant",
+      "src": "adc9203c7d10"
+    },
+    "text.d35ed44973b2": {
+      "text": ". Nakupujeme za tuto cenu a ta se nemění ani v době, kdy probíhá akční nabídka. Vaše marže je pevně stanovena v okamžiku, kdy ji uvedete v nabídce.",
+      "src": "d35ed44973b2"
+    },
+    "text.771c3c3d3906": {
+      "text": "Zásilka putuje z vaší dílny v Indii přes celní odbavení a sklad ve Španělsku až k zákazníkům po celé Evropě",
+      "src": "771c3c3d3906"
+    },
+    "text.e0e9f2623063": {
+      "text": "Zboží vyráběné na zakázku je dodáváno přímo z Indie do 5–7 dnů, včetně zaplaceného cla. Nové dodávky dorazí přibližně do 3 týdnů.",
+      "src": "e0e9f2623063"
+    },
+    "text.67f7d6c2670a": {
+      "text": "Vyberte si tři věci a služba za vás napíše zprávu. Ayur Sen odpovídá obvykle ještě ten samý den a pokaždé je to stejná osoba.",
+      "src": "67f7d6c2670a"
+    },
+    "text.3796e32f4938": {
+      "text": "Dodání ze Španělska do 1–4 dnů, při doručení se nic neplatí. Splňujeme předpisy EU a můžeme zasílat údaje do vašich tržišť.",
+      "src": "3796e32f4938"
+    },
+    "text.17783c806156": {
+      "text": "z našeho skladu v rámci EU ve Španělsku, nebo za 8–14 dní přímo z vaší dílny. Cla a DPH se hradí při placení, při doručení se nic neúčtuje.",
+      "src": "17783c806156"
+    },
+    "text.1822e74ed106": {
+      "text": "Není to uvedeno v seznamu. Řekneme vám, co se nepovedlo a jak to napravit. Nebudeme to jen uvést v seznamu a doufat, že to vyjde, protože název v seznamu je náš.",
+      "src": "1822e74ed106"
+    },
+    "text.c09b3fc260bf": {
+      "text": "Vyberte si tři věci a systém za vás napíše zprávu. Požádejte o vzorový balíček, katalog nebo cenovou nabídku. Odpověď na adresu Ayur Sen obvykle obdržíte ještě týž den.",
+      "src": "c09b3fc260bf"
+    },
+    "text.787b64bffb6b": {
+      "text": "Ne. Posun v blokovém tisku nebo stopa po úderu kladivem na mosazi jsou součástí výrobku. Při objednávce vám popíšeme rozsah, abyste věděli, co můžete očekávat.",
+      "src": "787b64bffb6b"
+    },
+    "text.e1652c4557a2": {
+      "text": "Žádné výrobky s terapeutickými či léčebnými tvrzeními, žádné poživatelné výrobky AYUSH, zatím žádné kosmetické přípravky ani potraviny a žádná produktová řada bez dokumentace o shodě.",
+      "src": "e1652c4557a2"
+    },
+    "text.829b7d727c71": {
+      "text": ". Certifikát „REACH“ pro každou skupinu materiálů (nebo laboratorní test, cca 50–150 €). Značka odpovědnosti na špercích. Pravdivé fotografie a technické údaje. O vše ostatní se postaráme my.",
+      "src": "829b7d727c71"
+    },
+    "text.df10bcf0e590": {
+      "text": "Pro indické výrobce a vývozce: jsme vaší odpovědnou osobou v EU a dovozcem, zařadíme vás na Amazon a tržiště v EU s 0 % provizí a vyplatíme vám peníze hned následující pracovní den.",
+      "src": "df10bcf0e590"
+    },
+    "text.8693979f23bf": {
+      "text": "Velkoobchodní dodavatel indických řemeslných výrobků, šperků a textilu pro evropské maloobchodníky: 50 % doporučené maloobchodní ceny, žádné minimální množství pro první objednávku, clo zaplaceno, dodání do 1–4 dnů ze skladu v EU ve Španělsku.",
+      "src": "8693979f23bf"
+    },
+    "text.f46f1f633e10": {
+      "text": "Pro každou produktovou řadu je k dispozici certifikát „GPSR“, certifikát „REACH“ pro šperky a kovové výrobky, značka odpovědnosti na každém kusu, označení složení vláken u textilií a registrované obaly „EPR“.",
+      "src": "f46f1f633e10"
+    },
+    "text.2e6e2f23ca04": {
+      "text": "Doplnění zásob probíhá v rámci našeho čtrnáctidenního souhrnného odeslání: zboží dorazí do vašeho obchodu přibližně za tři týdny. Zboží vyráběné na zakázku a personalizované kusy se vyrobí přibližně za tři dny a dorazí s uhrazeným clem za pět až sedm dní.",
+      "src": "2e6e2f23ca04"
+    },
+    "text.4d747fd7955b": {
+      "text": "Na tomto webu nejsou žádné soubory cookie ani sledovací nástroje, pouze anonymní počítání návštěv bez použití souborů cookie prováděné službou Cloudflare. Text byl přeložen strojově, proto se mohou vyskytnout drobné nepřesnosti. Vytvořeno s ❤️ pomocí umělé inteligence, pod dohledem člověka.",
+      "src": "4d747fd7955b"
+    },
+    "text.2fedc0972d78": {
+      "text": "Je to na vás. Prodej na konsignační bázi: platba měsíčně podle prodaných kusů, s vyúčtováním ke každé objednávce. Nákup na základě FOB: platba při odeslání z Indie, rychlejší výplata za nižší cenu. V obou případech se platba připíše na váš indický bankovní účet.",
+      "src": "2fedc0972d78"
+    },
+    "text.06926b63bed6": {
+      "text": "bez prodeje. Jedna možnost ukončení smlouvy, písemně dohodnutá před první dodávkou: zpětný odkup za cenu, kterou jsme zaplatili, prodej v outletu s 10% slevou oproti katalogové ceně nebo bezcelní zpětný dovoz do Indie s žádostí o vrácení daně (EDPMS) podanou naší společností.",
+      "src": "06926b63bed6"
+    },
+    "text.55f249e246b5": {
+      "text": "Dodavatel se sídlem ve Španělsku vystavuje faktury v eurech, clo a dovozní DPH se vypořádávají na hranicích. Mimo Španělsko fakturujeme na základě mechanismu přenesení daňové povinnosti na vaše DIČ. Španělskému obchodu vystavujeme faktury se španělskou DPH.",
+      "src": "55f249e246b5"
+    },
+    "text.5ca5f1a0c1f9": {
+      "text": "Tato stránka neukládá žádné soubory cookie a neobsahuje žádné sledovací nástroje ani reklamy. Cloudflare počítá návštěvy anonymně, bez použití souborů cookie. Není třeba si zakládat žádný účet ani vyplňovat žádný formulář, takže stránka sama o vás nepožaduje vůbec nic.",
+      "src": "5ca5f1a0c1f9"
+    },
+    "text.68c9217e738a": {
+      "text": "Ano. Vývoz provádíte pod svými vlastními čísly IEC a LUT, takže doklad RoDTEP je vystaven na vaše jméno a zboží je procleno s 0 % sazbou IGST, aniž by byl na hranicích vázán provozní kapitál. Doklad e-BRC je vystaven na základě vlastního potvrzení o převodu na vašem bankovním výpisu.",
+      "src": "68c9217e738a"
+    },
+    "text.160a971122dd": {
+      "text": "Ano, kdekoli v EU. Můžeme pro vás nastavit a spravovat vaše nabídky na platformách Faire, Ankorstore, Amazon a dalších významných tržištích a pomoci vám s nastavením přeshraničního elektronického obchodu, abyste se mohli soustředit na výběr zboží. Požádejte o cenovou nabídku.",
+      "src": "160a971122dd"
+    },
+    "text.6c10bc085e94": {
+      "text": "Ano, máme, a tato odpovědnost se na vás nepřevádí, jakmile balík dorazí. Jsme odpovědnou osobou v rámci EU pro každý výrobek, vedeme technickou dokumentaci po dobu deseti let a jsme registrovaným dovozcem. Vy jste distributorem výrobku, který splňuje předpisy, nikoli dovozcem výrobku s nejistým statusem.",
+      "src": "6c10bc085e94"
+    },
+    "text.1a64110344e7": {
+      "text": "Zákazníci z tržiště patří vám, stejně jako účty na tržišti, které jsou vedeny na vaše jméno. Pokud byste chtěli, abychom za vás spravovali i vztahy se zákazníky, můžeme to pro vás zajistit. V každém případě máte přehled o svých tržbách v měsíčním rozčlenění, podle jednotlivých produktů i kanálů, včetně nákladů na každou objednávku.",
+      "src": "1a64110344e7"
+    },
+    "text.78779bec4346": {
+      "text": "To jsme my. Jsme odpovědnou osobou v EU uvedenou u každé nabídky v souladu s nařízením o obecné bezpečnosti výrobků, technickou dokumentaci uchováváme po dobu deseti let a jsme registrovaným dovozcem zboží skladovaného v EU. Bez odpovědné osoby v EU nemůže prodejce ze zemí mimo EU své nabídky vůbec zveřejňovat a tržiště již začaly odstranit nabídky, u nichž tato osoba chybí.",
+      "src": "78779bec4346"
+    },
+    "text.3c34bdf3c062": {
+      "text": "Protože tento provozovatel je prvním obchodníkem na této trase. Naše vlastní zboží putuje do Evropy po stejné trase, se stejnými dokumenty a se stejným slibem dodání, a čísla, která zde uvádíme, jsou ta, podle nichž se řídíme. Zeptejte se na cokoli, co není veřejně dostupné: na seriózní dotaz dostanete konkrétní odpověď, a to i v případě, že se jedná o projekt, který je teprve ve fázi výstavby.",
+      "src": "3c34bdf3c062"
+    },
+    "text.f54dd1d5bd7d": {
+      "text": "Platná je anglická verze. Pokud vám nějaký termín připadá podivný nebo si přejete písemné potvrzení určitého bodu, obraťte se na nás: odpoví vám některý z našich pracovníků, a to buď v angličtině, nebo ve vašem jazyce.",
+      "src": "f54dd1d5bd7d"
     }
   }
 }

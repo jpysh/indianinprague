@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T05:18:05.678Z",
-  "count": 6609,
+  "generated": "2026-09-26T11:29:45.164Z",
+  "count": 6821,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -26444,6 +26444,854 @@
     "text.e9aaf4787be1": {
       "text": "Aspect « verre de mer » bleu turquoise translucide. Rappelle les créations en lucite des années 80 et 90. Superbe bijou vintage imposant. Magnifique texture mate qui capte…",
       "src": "e9aaf4787be1"
+    },
+    "text.76900f1bfd16": {
+      "text": "Retour",
+      "src": "76900f1bfd16"
+    },
+    "text.204a5eb2cd28": {
+      "text": "Coût",
+      "src": "204a5eb2cd28"
+    },
+    "text.281cbd01b4b9": {
+      "text": "Prépayé",
+      "src": "281cbd01b4b9"
+    },
+    "text.60acc36e5d51": {
+      "text": "14 jours",
+      "src": "60acc36e5d51"
+    },
+    "text.5e1a0ebc939d": {
+      "text": "Tendances",
+      "src": "5e1a0ebc939d"
+    },
+    "text.811ace97bcf2": {
+      "text": "Communiqué",
+      "src": "811ace97bcf2"
+    },
+    "text.d5033b7bbabc": {
+      "text": "Vous expédiez",
+      "src": "d5033b7bbabc"
+    },
+    "text.5909e90a0f61": {
+      "text": "Commerçants",
+      "src": "5909e90a0f61"
+    },
+    "text.4145ade206c4": {
+      "text": "Détaillants",
+      "src": "4145ade206c4"
+    },
+    "text.c995be24c46c": {
+      "text": "Vous citez :",
+      "src": "c995be24c46c"
+    },
+    "text.f6c260d29d68": {
+      "text": "Par mois",
+      "src": "f6c260d29d68"
+    },
+    "text.13e34df494c1": {
+      "text": "L'itinéraire",
+      "src": "13e34df494c1"
+    },
+    "text.ed12ffaf116a": {
+      "text": "best-sellers",
+      "src": "ed12ffaf116a"
+    },
+    "text.d998dc0f3443": {
+      "text": "Votre prix",
+      "src": "d998dc0f3443"
+    },
+    "text.4cab70e9226b": {
+      "text": "Enregistrer au format PDF",
+      "src": "4cab70e9226b"
+    },
+    "text.5a68a23d1629": {
+      "text": "Prix de vente conseillé : 9 €",
+      "src": "5a68a23d1629"
+    },
+    "text.b774996992aa": {
+      "text": "Prix de gros",
+      "src": "b774996992aa"
+    },
+    "text.532049bc328c": {
+      "text": "Coffret d'échantillons",
+      "src": "532049bc328c"
+    },
+    "text.ffc73160e1fe": {
+      "text": "huit semaines",
+      "src": "ffc73160e1fe"
+    },
+    "text.40e0bca100aa": {
+      "text": "Trois étapes",
+      "src": "40e0bca100aa"
+    },
+    "text.46b396c85919": {
+      "text": "En bref",
+      "src": "46b396c85919"
+    },
+    "text.8d7f9ba88bef": {
+      "text": "Prix conseillé : 68 €",
+      "src": "8d7f9ba88bef"
+    },
+    "text.e37fd97b72e2": {
+      "text": "Prix de vente conseillé : 66 €",
+      "src": "e37fd97b72e2"
+    },
+    "text.d6269cbb16fd": {
+      "text": "Prix de vente conseillé : 46 €",
+      "src": "d6269cbb16fd"
+    },
+    "text.b75b752deac3": {
+      "text": "Prix de vente conseillé : 29 €",
+      "src": "b75b752deac3"
+    },
+    "text.5dd7cb558616": {
+      "text": "Prix de vente conseillé : 23 €",
+      "src": "5dd7cb558616"
+    },
+    "text.e5b3f946c3e3": {
+      "text": "Prix de vente conseillé : 24 €",
+      "src": "e5b3f946c3e3"
+    },
+    "text.3d49abe94e7c": {
+      "text": "Prix de vente conseillé : 21 €",
+      "src": "3d49abe94e7c"
+    },
+    "text.6e436e3622cb": {
+      "text": "Prix de vente conseillé : 20 €",
+      "src": "6e436e3622cb"
+    },
+    "text.464f7a5bad9a": {
+      "text": "Prix de vente conseillé : 16 €",
+      "src": "464f7a5bad9a"
+    },
+    "text.ebb51ac55ee6": {
+      "text": "Prix de vente conseillé : 17 €",
+      "src": "ebb51ac55ee6"
+    },
+    "text.e531c72cf811": {
+      "text": "Prix conseillé : 12 €",
+      "src": "e531c72cf811"
+    },
+    "text.5ece48a8b23c": {
+      "text": "Stocks invendus",
+      "src": "5ece48a8b23c"
+    },
+    "text.32a0dccbea2f": {
+      "text": "Trois étapes.",
+      "src": "32a0dccbea2f"
+    },
+    "text.b1f3170a03dd": {
+      "text": "en un coup d'œil.",
+      "src": "b1f3170a03dd"
+    },
+    "text.414773b4ea0a": {
+      "text": "Lyon, France",
+      "src": "414773b4ea0a"
+    },
+    "text.a4a7de16cae0": {
+      "text": "8 €",
+      "src": "a4a7de16cae0"
+    },
+    "text.fc37325d86d1": {
+      "text": "6 €",
+      "src": "fc37325d86d1"
+    },
+    "text.e17c85cc990b": {
+      "text": "Ce dont vous avez besoin",
+      "src": "e17c85cc990b"
+    },
+    "text.157ff886b56e": {
+      "text": "34 €",
+      "src": "157ff886b56e"
+    },
+    "text.3cc51f790aee": {
+      "text": "Prix : 33 €",
+      "src": "3cc51f790aee"
+    },
+    "text.7329fae8b8bb": {
+      "text": "Prix : 23 €",
+      "src": "7329fae8b8bb"
+    },
+    "text.e33d4986978b": {
+      "text": "Prix : 12 €",
+      "src": "e33d4986978b"
+    },
+    "text.3e4409383a39": {
+      "text": "Échangez 10 €",
+      "src": "3e4409383a39"
+    },
+    "text.eb27d52ebea9": {
+      "text": "Où est-il commercialisé ?",
+      "src": "eb27d52ebea9"
+    },
+    "text.4e24f844beb9": {
+      "text": "1 à 4 jours",
+      "src": "4e24f844beb9"
+    },
+    "text.1538a40f9144": {
+      "text": "avant un appel.",
+      "src": "1538a40f9144"
+    },
+    "text.74fb9f2da317": {
+      "text": "Quantité minimale de réapprovisionnement",
+      "src": "74fb9f2da317"
+    },
+    "text.b6059e10570d": {
+      "text": "En résumé,",
+      "src": "b6059e10570d"
+    },
+    "text.9260a79ea863": {
+      "text": "Déjà en vente",
+      "src": "9260a79ea863"
+    },
+    "text.7146023dc7e3": {
+      "text": "Stock de l&#x27;UE, Espagne",
+      "src": "7146023dc7e3"
+    },
+    "text.58c2988739e4": {
+      "text": "Envoyez-le à l&#x27;adresse WhatsApp",
+      "src": "58c2988739e4"
+    },
+    "text.231bb25fd1db": {
+      "text": "Prix : 8,50 €",
+      "src": "231bb25fd1db"
+    },
+    "text.da93a1575813": {
+      "text": "Prix : 4,50 €",
+      "src": "da93a1575813"
+    },
+    "text.5473a6fa50a0": {
+      "text": "29 € par mois",
+      "src": "5473a6fa50a0"
+    },
+    "text.7090ee3d291a": {
+      "text": "Résumé d&#x27;une page",
+      "src": "7090ee3d291a"
+    },
+    "text.c9cf19076b88": {
+      "text": "Ateliers, Inde",
+      "src": "c9cf19076b88"
+    },
+    "text.b00eeeee599b": {
+      "text": "Les styles qui se vendent bien",
+      "src": "b00eeeee599b"
+    },
+    "text.620dddecd9b0": {
+      "text": "sur les lignes approvisionnées",
+      "src": "620dddecd9b0"
+    },
+    "text.e5d498d5dd6a": {
+      "text": "3 à 5 pièces",
+      "src": "e5d498d5dd6a"
+    },
+    "text.97fa55b690a1": {
+      "text": "Jour ouvrable suivant",
+      "src": "97fa55b690a1"
+    },
+    "text.2528777a52a4": {
+      "text": "Endommagé ou erroné",
+      "src": "2528777a52a4"
+    },
+    "text.fbbfaf841427": {
+      "text": "Prix public : 14,50 €",
+      "src": "fbbfaf841427"
+    },
+    "text.12be61bc226a": {
+      "text": "Prix public : 11,50 €",
+      "src": "12be61bc226a"
+    },
+    "text.22a4e3dacf28": {
+      "text": "Prix public : 10,50 €",
+      "src": "22a4e3dacf28"
+    },
+    "text.e2d0526d3a72": {
+      "text": "Au moment où vous êtes payé",
+      "src": "e2d0526d3a72"
+    },
+    "text.82ec397872e7": {
+      "text": "Rien ne reste en place",
+      "src": "82ec397872e7"
+    },
+    "text.d899b291786f": {
+      "text": "par commande de réapprovisionnement",
+      "src": "d899b291786f"
+    },
+    "text.5ecfc2f74f86": {
+      "text": "Air, toutes les deux semaines",
+      "src": "5ecfc2f74f86"
+    },
+    "text.19176ef32aa7": {
+      "text": "Consultez la fiche de collection",
+      "src": "19176ef32aa7"
+    },
+    "text.6e110db4b447": {
+      "text": "Commande minimale pour une première commande",
+      "src": "6e110db4b447"
+    },
+    "text.1c261bba540e": {
+      "text": "Prix FOB Inde par pièce",
+      "src": "1c261bba540e"
+    },
+    "text.fa7e4b633e70": {
+      "text": "Paiement avant expédition",
+      "src": "fa7e4b633e70"
+    },
+    "text.c603c1c45610": {
+      "text": "le jour ouvrable suivant",
+      "src": "c603c1c45610"
+    },
+    "text.43253d9776ec": {
+      "text": "À qui s&#x27;adresse cette page ?",
+      "src": "43253d9776ec"
+    },
+    "text.e1885ee35768": {
+      "text": "Délais de livraison pour les clients de l&#x27;UE",
+      "src": "e1885ee35768"
+    },
+    "text.e3158bc54d76": {
+      "text": "Votre atelier, en Inde",
+      "src": "e3158bc54d76"
+    },
+    "text.ebe20aad99bb": {
+      "text": "Nous nous en occupons en Espagne",
+      "src": "ebe20aad99bb"
+    },
+    "text.fd5ad5cd46e6": {
+      "text": "Vous envoyez un message",
+      "src": "fd5ad5cd46e6"
+    },
+    "text.cd2d94dbea09": {
+      "text": "Vente en gros (détaillants)",
+      "src": "cd2d94dbea09"
+    },
+    "text.93f66c083027": {
+      "text": "Tunique en khadi tissée à la main",
+      "src": "93f66c083027"
+    },
+    "text.0c9f632a69a4": {
+      "text": "Livraison aux clients",
+      "src": "0c9f632a69a4"
+    },
+    "text.b01f24bc6422": {
+      "text": "Dans votre magasin d&#x27;ici quelques jours.",
+      "src": "b01f24bc6422"
+    },
+    "text.7e807c19876b": {
+      "text": "1 à 4 jours pour vous",
+      "src": "7e807c19876b"
+    },
+    "text.a7fc08723846": {
+      "text": "retour gratuit, une seule fois",
+      "src": "a7fc08723846"
+    },
+    "text.5da1e246ad79": {
+      "text": "Vous ne faites que la première.",
+      "src": "5da1e246ad79"
+    },
+    "text.4d8526c820bc": {
+      "text": "À qui appartient le client ?",
+      "src": "4d8526c820bc"
+    },
+    "text.fdb2ff1328b0": {
+      "text": "Dites-nous ce que vous fabriquez.",
+      "src": "fdb2ff1328b0"
+    },
+    "text.99239a45d342": {
+      "text": "Commencez à vendre en Europe",
+      "src": "99239a45d342"
+    },
+    "text.74a4b689ab2c": {
+      "text": "Des clients dans toute l&#x27;Europe",
+      "src": "74a4b689ab2c"
+    },
+    "text.33f7b55bab84": {
+      "text": "Qu&#x27;est-ce que vous ne vendez pas ?",
+      "src": "33f7b55bab84"
+    },
+    "text.a1b0e9ac84bf": {
+      "text": "1 à 4 jours pour les acheteurs",
+      "src": "a1b0e9ac84bf"
+    },
+    "text.c53adebd8422": {
+      "text": "Douanes et stocks, Espagne",
+      "src": "c53adebd8422"
+    },
+    "text.cae5928f3f27": {
+      "text": "des clients dans toute l&#x27;Europe.",
+      "src": "cae5928f3f27"
+    },
+    "text.53b6a6ee460d": {
+      "text": "Pourquoi devrais-je vous faire confiance ?",
+      "src": "53b6a6ee460d"
+    },
+    "text.73b6813fdbe4": {
+      "text": "Fabricant ou fournisseur, Inde",
+      "src": "73b6813fdbe4"
+    },
+    "text.8843fce1ef95": {
+      "text": "Ouvert à tous les créateurs indiens",
+      "src": "8843fce1ef95"
+    },
+    "text.46dc974d8804": {
+      "text": "L&#x27;Europe achète, vous êtes payé",
+      "src": "46dc974d8804"
+    },
+    "text.65c1df550280": {
+      "text": "Des pièces comme celles-ci se vendent à",
+      "src": "65c1df550280"
+    },
+    "text.2d70509b7b93": {
+      "text": "WhatsApp +420 777 558 262",
+      "src": "2d70509b7b93"
+    },
+    "text.b7b2980a5dc9": {
+      "text": "Détaillant ou acheteur, Europe",
+      "src": "b7b2980a5dc9"
+    },
+    "text.a6677961a0f3": {
+      "text": "Echantillons destinés aux magasins de l&#x27;UE",
+      "src": "a6677961a0f3"
+    },
+    "text.e2893add1e0c": {
+      "text": "Droits acquittés, en provenance d&#x27;un stock situé dans l&#x27;UE.",
+      "src": "e2893add1e0c"
+    },
+    "text.9db1787227fc": {
+      "text": "Votre boutique, 1 à 4 jours",
+      "src": "9db1787227fc"
+    },
+    "text.d45290bab72f": {
+      "text": "commander ce dont le magasin a besoin",
+      "src": "d45290bab72f"
+    },
+    "text.04fb03a56d56": {
+      "text": "Vendre en Europe (commerçants)",
+      "src": "04fb03a56d56"
+    },
+    "text.2bd99fad8182": {
+      "text": "Ganesha en bois sculpté à la main",
+      "src": "2bd99fad8182"
+    },
+    "text.8f09d6d62612": {
+      "text": "Crochet à 6 crochets pour carrelage en céramique",
+      "src": "8f09d6d62612"
+    },
+    "text.c4cb96eaaeb9": {
+      "text": "Les chiffres dont un acheteur a besoin,",
+      "src": "c4cb96eaaeb9"
+    },
+    "text.4cbaa97660ec": {
+      "text": "Que contient le colis ?",
+      "src": "4cbaa97660ec"
+    },
+    "text.1c72deaf0dd9": {
+      "text": "Comment fonctionne la facturation ?",
+      "src": "1c72deaf0dd9"
+    },
+    "text.c18e5ef38b1b": {
+      "text": "Figurine en laiton représentant la famille de Shiva",
+      "src": "c18e5ef38b1b"
+    },
+    "text.9963c0987808": {
+      "text": "Jupe longue en coton Kalamkari",
+      "src": "9963c0987808"
+    },
+    "text.ffc9005d1a88": {
+      "text": "50 % du prix de vente conseillé sur les articles en stock",
+      "src": "ffc9005d1a88"
+    },
+    "text.520d2f9bc659": {
+      "text": "Bronze Buddha amulet pendant",
+      "src": "520d2f9bc659"
+    },
+    "text.986e162b127c": {
+      "text": "Écharpe de prière « Om Namah Shivaya »",
+      "src": "986e162b127c"
+    },
+    "text.3e035d530052": {
+      "text": "Amazon, Miravia, TikTok Shop",
+      "src": "3e035d530052"
+    },
+    "text.dc46d8f19a5b": {
+      "text": "Prix de gros, en pourcentage du prix de vente conseillé",
+      "src": "dc46d8f19a5b"
+    },
+    "text.6d6dc5dfab12": {
+      "text": "Fiche de gamme à imprimer ou à partager",
+      "src": "6d6dc5dfab12"
+    },
+    "text.4a666a03678d": {
+      "text": "Robe mi-longue en coton à imprimé au bloc",
+      "src": "4a666a03678d"
+    },
+    "text.c33ff9976dfc": {
+      "text": "Robe à bretelles en coton imprimé à la main",
+      "src": "c33ff9976dfc"
+    },
+    "text.60de28d97090": {
+      "text": "à régler, à compter de la date de la facture",
+      "src": "60de28d97090"
+    },
+    "text.a3ec5167455a": {
+      "text": "Dites-nous ce dont votre magasin a besoin.",
+      "src": "a3ec5167455a"
+    },
+    "text.4d701965371f": {
+      "text": "Les premières questions que se posent les acheteurs.",
+      "src": "4d701965371f"
+    },
+    "text.146c85c2d07f": {
+      "text": "Fabriqué en Inde. En stock en Espagne.",
+      "src": "146c85c2d07f"
+    },
+    "text.b9f109de9562": {
+      "text": "Parcourez l&#x27;intégralité du catalogue destiné aux détaillants",
+      "src": "b9f109de9562"
+    },
+    "text.98008070613d": {
+      "text": "droits de douane et TVA à l&#x27;importation déjà acquittés",
+      "src": "98008070613d"
+    },
+    "text.ffd60f8325dd": {
+      "text": "Collier à pendentif en laiton, perles bleues",
+      "src": "ffd60f8325dd"
+    },
+    "text.98c54bdbb5a9": {
+      "text": "0 % de commission sur les ventes réalisées sur la place de marché",
+      "src": "98c54bdbb5a9"
+    },
+    "text.78f966c1ffcd": {
+      "text": "Les premières questions que se posent les commerçants.",
+      "src": "78f966c1ffcd"
+    },
+    "text.8226b0d3b39c": {
+      "text": "Des objets d&#x27;artisanat indien uniques pour votre boutique.",
+      "src": "8226b0d3b39c"
+    },
+    "text.91929439f64a": {
+      "text": "Commode en céramique à 6 tiroirs, peinte à la main",
+      "src": "91929439f64a"
+    },
+    "text.93cd063c3902": {
+      "text": "par virement ou par carte, avant l&#x27;expédition",
+      "src": "93cd063c3902"
+    },
+    "text.8d68f5e56fa8": {
+      "text": "Boucles d&#x27;oreilles en argent sterling représentant un nœud éternel",
+      "src": "8d68f5e56fa8"
+    },
+    "text.57699cd68a82": {
+      "text": "Qui en assume la responsabilité juridique ?",
+      "src": "57699cd68a82"
+    },
+    "text.68f03cc746e8": {
+      "text": "Les modèles de cette gamme se vendent déjà à",
+      "src": "68f03cc746e8"
+    },
+    "text.521c8cff2ed8": {
+      "text": "Puis-je également vendre ces articles sur des plateformes de vente en ligne ?",
+      "src": "521c8cff2ed8"
+    },
+    "text.056ccaa5aa5c": {
+      "text": "3 à 5 articles, retour gratuit, une seule fois",
+      "src": "056ccaa5aa5c"
+    },
+    "text.6f67860cf06c": {
+      "text": ", l&#x27;e-FIRA étant délivré automatiquement.",
+      "src": "6f67860cf06c"
+    },
+    "text.c176563813d0": {
+      "text": "Frais de transport au prix coûtant majorés de 10 %, qui vous sont indiqués.",
+      "src": "c176563813d0"
+    },
+    "text.ebc4e236abf1": {
+      "text": "0 €. Droits de douane et TVA à l&#x27;importation déjà acquittés",
+      "src": "ebc4e236abf1"
+    },
+    "text.f103de9a85ae": {
+      "text": "Veuillez nous envoyer des photos, les caractéristiques techniques et votre prix FOB.",
+      "src": "f103de9a85ae"
+    },
+    "text.1551244540c4": {
+      "text": "Tissus en coton indiens imprimés à la main à l&#x27;aide de blocs",
+      "src": "1551244540c4"
+    },
+    "text.1558eeaba9dc": {
+      "text": "Nous vérifions la conformité, nous vous référençons et vous expédiez",
+      "src": "1558eeaba9dc"
+    },
+    "text.43a76dbfa069": {
+      "text": "Fiche de collection : artisanat indien pour les boutiques européennes",
+      "src": "43a76dbfa069"
+    },
+    "text.454894c6db15": {
+      "text": "Dois-je renoncer à mon stock ou à mes autres canaux de distribution ?",
+      "src": "454894c6db15"
+    },
+    "text.f760bb196c55": {
+      "text": "Que se passe-t-il si un produit ne satisfait pas aux critères de conformité ?",
+      "src": "f760bb196c55"
+    },
+    "text.640330d6aa60": {
+      "text": "Le fait main implique des variations. Est-ce un défaut ?",
+      "src": "640330d6aa60"
+    },
+    "text.04dc71657ba4": {
+      "text": "Guldaar Bazaar · Pour les commerçants indiens",
+      "src": "04dc71657ba4"
+    },
+    "text.428d627ed241": {
+      "text": "Produit artisanal indien unique, droits de douane acquittés, disponible en stock dans l&#x27;UE.",
+      "src": "428d627ed241"
+    },
+    "text.e4b8772e9e3d": {
+      "text": "Prix indicatifs issus de nos propres ventes en Europe.",
+      "src": "e4b8772e9e3d"
+    },
+    "text.8258a744053e": {
+      "text": "Quels sont les délais pour le réapprovisionnement et les articles fabriqués sur commande ?",
+      "src": "8258a744053e"
+    },
+    "text.77c1d6e5f27c": {
+      "text": "Vendre de l&#x27;Inde vers l&#x27;Europe : le résumé en une page",
+      "src": "77c1d6e5f27c"
+    },
+    "text.282087c77775": {
+      "text": "Est-ce que ma prime à l&#x27;exportation et mon remboursement de la TVA me reviennent ?",
+      "src": "282087c77775"
+    },
+    "text.544418f78c0e": {
+      "text": "Votre colis d&#x27;échantillons partira d&#x27;Espagne le jour ouvrable suivant",
+      "src": "544418f78c0e"
+    },
+    "text.a2a4da6edd6c": {
+      "text": "Droits de douane et TVA à l&#x27;importation déjà acquittés, facturés en euros.",
+      "src": "a2a4da6edd6c"
+    },
+    "text.f46d183624d4": {
+      "text": "ainsi que les plateformes de vente en gros auprès desquelles les magasins européens s&#x27;approvisionnent.",
+      "src": "f46d183624d4"
+    },
+    "text.3a122c6cd265": {
+      "text": "Guldaar Bazaar · Fiche de collection · Automne 2026",
+      "src": "3a122c6cd265"
+    },
+    "text.390be169b551": {
+      "text": "Vente en gros d&#x27;objets d&#x27;artisanat indien destinés aux magasins européens, droits de douane acquittés",
+      "src": "390be169b551"
+    },
+    "text.9be149e7fbf4": {
+      "text": "Ces informations sont publiées afin que vous puissiez calculer votre marge avant de poser la question.",
+      "src": "9be149e7fbf4"
+    },
+    "text.c62005a779c5": {
+      "text": "Organisé en Espagne. Commandez en fonction de la saison, et non plusieurs mois à l&#x27;avance.",
+      "src": "c62005a779c5"
+    },
+    "text.7cdf47c61092": {
+      "text": "Vendez depuis l&#x27;Inde vers l&#x27;Europe sans formalités administratives ni stress.",
+      "src": "7cdf47c61092"
+    },
+    "text.0dca15d5ec99": {
+      "text": "Sur votre propre site IEC et LUT. Votre prime à l&#x27;exportation vous revient intégralement.",
+      "src": "0dca15d5ec99"
+    },
+    "text.318893525b4e": {
+      "text": "Vendre de l&#x27;Inde vers l&#x27;Europe : «GPSR », formalités douanières et places de marché de l&#x27;UE",
+      "src": "318893525b4e"
+    },
+    "text.288ffc0e3c50": {
+      "text": "Ayur vous répond, généralement le jour même, en vous indiquant ce dont nous avons besoin de votre part",
+      "src": "288ffc0e3c50"
+    },
+    "text.5dd139b916e0": {
+      "text": "En provenance de notre stock en Espagne. Droits de douane payés, aucun supplément à régler à la livraison.",
+      "src": "5dd139b916e0"
+    },
+    "text.2b454fccd574": {
+      "text": "Ayur vous répond, généralement le jour même, en vous envoyant la fiche produit et les tarifs",
+      "src": "2b454fccd574"
+    },
+    "text.c391e32e24c6": {
+      "text": "Amazon et les autres ont déjà pris leur part. Nous ne prenons pas de commission supplémentaire.",
+      "src": "c391e32e24c6"
+    },
+    "text.0541b2494e45": {
+      "text": "Pour signaler un problème accompagné d&#x27;une photo : crédit ou remplacement, les frais de retour sont à notre charge",
+      "src": "0541b2494e45"
+    },
+    "text.ddf824277620": {
+      "text": "depuis l&#x27;Espagne. 1 à 2 jours vers l&#x27;Espagne, 2 à 4 jours vers l&#x27;Allemagne, la France et l&#x27;Italie",
+      "src": "ddf824277620"
+    },
+    "text.98363b139dce": {
+      "text": "Douanes, droits de douane, TVA et conformité aux réglementations de l&#x27;UE, en tant qu&#x27;importateur et personne responsable.",
+      "src": "98363b139dce"
+    },
+    "text.05152b3e7e19": {
+      "text": "Sur notre boutique et sur les principales places de marché de l&#x27;UE. Remboursement le jour ouvrable suivant.",
+      "src": "05152b3e7e19"
+    },
+    "text.9c71ac8f3b60": {
+      "text": "Douze modèles, avec leur prix revendeur et leur prix de vente conseillé, ainsi que nos conditions commerciales, le tout sur une seule page imprimable.",
+      "src": "9c71ac8f3b60"
+    },
+    "text.66662c99fb4a": {
+      "text": "Nous vérifions la conformité de vos produits et vous référençons en huit langues ainsi que sur les principales places de marché de l&#x27;UE.",
+      "src": "66662c99fb4a"
+    },
+    "text.ccdf32a4c0b9": {
+      "text": ", 5 % sur les ventes réalisées sur guldaarbazaar.com. Frais de transport au prix coûtant majorés de 10 %, ce coût vous étant communiqué.",
+      "src": "ccdf32a4c0b9"
+    },
+    "text.96302ee9d4c4": {
+      "text": "Le produit n&#x27;est pas encore en stock dans l&#x27;UE ? Il est expédié directement depuis votre atelier dans un délai de 8 à 14 jours, droits de douane payés.",
+      "src": "96302ee9d4c4"
+    },
+    "text.7484dadbb3b5": {
+      "text": "Jour ouvrable suivant depuis l&#x27;Espagne. 1 à 2 jours vers l&#x27;Espagne, 2 à 4 jours vers l&#x27;Allemagne, la France et l&#x27;Italie",
+      "src": "7484dadbb3b5"
+    },
+    "text.9011c07ad3f8": {
+      "text": "Vous expédiez sous votre propre IEC. Nous nous chargeons des formalités douanières en Espagne, nous vendons les articles et nous vous versons le paiement le jour ouvrable suivant.",
+      "src": "9011c07ad3f8"
+    },
+    "text.fdfb63a9d47a": {
+      "text": "Les articles sont acheminés depuis les ateliers en Inde vers le centre de stockage de l&#x27;UE en Espagne, puis vers votre magasin en un à quatre jours.",
+      "src": "fdfb63a9d47a"
+    },
+    "text.1a1e4d583df8": {
+      "text": "Coût, paiement, livraison, stocks invendus et tout ce dont vous avez besoin, le tout sur une seule page imprimable destinée aux commerçants indiens.",
+      "src": "1a1e4d583df8"
+    },
+    "text.e398145b92c6": {
+      "text": "Notre propre boutique en ligne disponible en huit langues, et nous nous chargeons de la mise en place et de la mise à jour de vos annonces sur les principales places de marché de l&#x27;UE :",
+      "src": "e398145b92c6"
+    },
+    "text.822705cef07f": {
+      "text": "0 % de commission sur la plateforme. Paiement le jour ouvrable suivant. Nous nous chargeons de la conformité aux réglementations de l&#x27;UE, des formalités douanières et de la mise en ligne des annonces.",
+      "src": "822705cef07f"
+    },
+    "text.c85583e0c92d": {
+      "text": "Non. Vous continuez à vendre là où vous vendez déjà. En dépôt-vente, les marchandises restent votre propriété jusqu&#x27;à ce qu&#x27;elles soient vendues.",
+      "src": "c85583e0c92d"
+    },
+    "text.e0421e6ac40a": {
+      "text": "WhatsApp +420 777 558 262 · helloayursen@gmail.com · guldaarbazaar.com/partner/retailer",
+      "src": "e0421e6ac40a"
+    },
+    "text.adc9203c7d10": {
+      "text": "WhatsApp +420 777 558 262 · helloayursen@gmail.com · guldaarbazaar.com/partner/merchant",
+      "src": "adc9203c7d10"
+    },
+    "text.d35ed44973b2": {
+      "text": ". Nous achetons à ce prix et celui-ci ne varie pas lors d&#x27;une promotion. Votre marge est fixée dès que vous l&#x27;indiquez.",
+      "src": "d35ed44973b2"
+    },
+    "text.771c3c3d3906": {
+      "text": "Un colis part de votre atelier en Inde, passe par les douanes et l&#x27;entrepôt en Espagne, puis est acheminé vers des clients dans toute l&#x27;Europe",
+      "src": "771c3c3d3906"
+    },
+    "text.e0e9f2623063": {
+      "text": "Les articles fabriqués sur commande sont expédiés directement depuis l&#x27;Inde dans un délai de 5 à 7 jours, droits de douane payés. Les réapprovisionnements sont livrés dans un délai d&#x27;environ 3 semaines.",
+      "src": "e0e9f2623063"
+    },
+    "text.67f7d6c2670a": {
+      "text": "Choisissez trois éléments et le site rédige le message à votre place. Ayur Sen vous répond, généralement le jour même, et c&#x27;est toujours la même personne qui s&#x27;en charge.",
+      "src": "67f7d6c2670a"
+    },
+    "text.3796e32f4938": {
+      "text": "Livraison depuis l&#x27;Espagne sous 1 à 4 jours, rien à payer à la réception. Nous sommes en conformité avec la réglementation de l&#x27;UE et pouvons alimenter vos annonces sur les places de marché.",
+      "src": "3796e32f4938"
+    },
+    "text.17783c806156": {
+      "text": "depuis notre entrepôt européen situé en Espagne, ou sous 8 à 14 jours directement depuis votre atelier. Droits de douane et TVA payés lors du paiement, aucun supplément à payer à la livraison.",
+      "src": "17783c806156"
+    },
+    "text.1822e74ed106": {
+      "text": "Cet article ne figure pas dans notre catalogue. Nous vous indiquons ce qui ne fonctionne pas et comment y remédier. Nous ne nous contenterons pas de l&#x27;ajouter à notre catalogue en espérant que tout se passe bien, car c&#x27;est notre nom qui figure sur l&#x27;annonce.",
+      "src": "1822e74ed106"
+    },
+    "text.c09b3fc260bf": {
+      "text": "Choisissez trois éléments et le site rédige le message à votre place. Demandez un échantillon, la fiche produit ou un devis. Ayur Sen vous répondra, généralement le jour même.",
+      "src": "c09b3fc260bf"
+    },
+    "text.787b64bffb6b": {
+      "text": "Non. Une légère décalage sur une estampe au bloc ou une marque de marteau sur le laiton fait partie intégrante du produit. Nous décrivons la gamme au moment de la commande, afin que vous sachiez à quoi vous attendre.",
+      "src": "787b64bffb6b"
+    },
+    "text.e1652c4557a2": {
+      "text": "Aucun produit présentant des allégations thérapeutiques ou médicales, aucun produit AYUSH destiné à être ingéré, aucun produit cosmétique ni alimentaire pour l&#x27;instant, et aucune gamme de produits ne disposant pas d&#x27;un dossier de conformité.",
+      "src": "e1652c4557a2"
+    },
+    "text.829b7d727c71": {
+      "text": ". Un certificat «REACH» par famille de matériaux (ou un test en laboratoire, entre 50 et 150 € environ). Une marque de responsabilité apposée sur les bijoux. Des photos et des caractéristiques techniques fidèles à la réalité. Nous nous chargeons de tout le reste.",
+      "src": "829b7d727c71"
+    },
+    "text.df10bcf0e590": {
+      "text": "À l&#x27;attention des fabricants et exportateurs indiens : nous sommes votre « personne responsable » et votre importateur au sein de l&#x27;UE ; nous vous référençons sur Amazon et les places de marché européennes sans commission, et nous vous versons le paiement dès le jour ouvrable suivant.",
+      "src": "df10bcf0e590"
+    },
+    "text.8693979f23bf": {
+      "text": "Fournisseur en gros d’artisanat, de bijoux et de textiles indiens destinés aux détaillants européens : 50 % du prix de vente conseillé, aucun minimum de commande pour la première commande, droits de douane acquittés, livraison sous 1 à 4 jours depuis notre entrepôt européen situé en Espagne.",
+      "src": "8693979f23bf"
+    },
+    "text.f46f1f633e10": {
+      "text": "Un dossier «GPSR » par famille de produits, un certificat «REACH» pour les bijoux et l&#x27;orfèvrerie, une marque de responsabilité sur chaque pièce, un étiquetage indiquant la composition des fibres pour les textiles, ainsi qu&#x27;une certification «EPR» pour les emballages.",
+      "src": "f46f1f633e10"
+    },
+    "text.2e6e2f23ca04": {
+      "text": "Les réapprovisionnements s&#x27;effectuent selon notre cycle de consolidation bimensuel : les articles seront de nouveau disponibles dans votre boutique dans un délai d&#x27;environ trois semaines. Les articles fabriqués sur commande et personnalisés sont réalisés en trois jours environ et vous sont livrés, droits de douane payés, dans un délai de cinq à sept jours.",
+      "src": "2e6e2f23ca04"
+    },
+    "text.4d747fd7955b": {
+      "text": "Ce site ne contient ni cookies ni traceurs ; seules les statistiques de fréquentation anonymes et sans cookies fournies par Cloudflare sont utilisées. Ce texte a été traduit automatiquement ; de légères imprécisions peuvent donc apparaître. Réalisé avec ❤️ à l&#x27;aide de l&#x27;IA, avec l&#x27;intervention d&#x27;un humain.",
+      "src": "4d747fd7955b"
+    },
+    "text.2fedc0972d78": {
+      "text": "C&#x27;est à vous de choisir. Vente en consignation : paiement mensuel au fur et à mesure des ventes, avec un relevé par commande. Achat FOB : paiement à l&#x27;expédition depuis l&#x27;Inde, un encaissement plus rapide pour une marge plus faible. Dans les deux cas, le montant est versé sur votre compte bancaire en Inde.",
+      "src": "2fedc0972d78"
+    },
+    "text.06926b63bed6": {
+      "text": "sans vente. Une seule option de sortie, convenue par écrit avant la première expédition : rachat au prix que nous avons payé, vente en magasin d&#x27;usine à 10 % en dessous du prix catalogue, ou réimportation en franchise de droits en Inde avec la demande de remboursement au titre de l&#x27;EDPMS, déposée par nos soins.",
+      "src": "06926b63bed6"
+    },
+    "text.55f249e246b5": {
+      "text": "Facturation en euros par un fournisseur établi en Espagne ; droits de douane et TVA à l&#x27;importation acquittés à la frontière. En dehors de l&#x27;Espagne, nous facturons selon le mécanisme d&#x27;autoliquidation sur la base de votre numéro de TVA. Une boutique espagnole est facturée avec la TVA espagnole.",
+      "src": "55f249e246b5"
+    },
+    "text.5ca5f1a0c1f9": {
+      "text": "Ce site n&#x27;utilise aucun cookie et ne contient ni traceur ni publicité. Cloudflare comptabilise les visites de manière anonyme, sans recourir à des cookies. Il n&#x27;y a aucun compte à créer ni aucun formulaire à remplir ; le site lui-même ne vous demande donc absolument rien.",
+      "src": "5ca5f1a0c1f9"
+    },
+    "text.68c9217e738a": {
+      "text": "Oui. Vous effectuez vos exportations sous vos propres numéros d&#x27;IEC et d&#x27;LUT ; ainsi, le document « RoDTEP » vous appartient et les marchandises sont dédouanées à un taux d&#x27;IGST de 0 %, sans immobilisation de fonds de roulement à la frontière. Le document « e-BRC » fait l&#x27;objet d&#x27;une autocertification sur la base des virements figurant sur votre propre relevé bancaire.",
+      "src": "68c9217e738a"
+    },
+    "text.160a971122dd": {
+      "text": "Oui, partout dans l&#x27;UE. Nous pouvons créer et alimenter vos fiches produits sur Faire, Ankorstore, Amazon et d&#x27;autres grandes places de marché, et vous aider à mettre en place votre activité de commerce électronique transfrontalier, afin que vous puissiez vous concentrer sur le choix des articles. Demandez un devis.",
+      "src": "160a971122dd"
+    },
+    "text.6c10bc085e94": {
+      "text": "C&#x27;est effectivement le cas, et cette responsabilité ne vous est pas transférée à la réception du colis. Nous sommes la personne responsable au sein de l&#x27;UE pour chaque produit, nous conservons le dossier technique pendant dix ans et nous sommes l&#x27;importateur officiel. Vous êtes le distributeur d&#x27;un produit conforme, et non l&#x27;importateur d&#x27;un produit dont la conformité est incertaine.",
+      "src": "6c10bc085e94"
+    },
+    "text.1a64110344e7": {
+      "text": "Vos clients sur la place de marché vous appartiennent, tout comme les comptes de la place de marché, qui sont à votre nom. Si vous souhaitez que nous gérions également la relation client, nous pouvons nous en charger pour vous. Dans tous les cas, vous pouvez consulter vos ventes chaque mois, par produit et par canal, avec le coût de chaque commande.",
+      "src": "1a64110344e7"
+    },
+    "text.78779bec4346": {
+      "text": "C&#x27;est nous. Nous sommes le « responsable au sein de l&#x27;UE » désigné pour chaque annonce conformément au règlement relatif à la sécurité générale des produits ; nous conservons le dossier technique pendant dix ans et nous sommes l&#x27;importateur officiel des stocks situés dans l&#x27;UE. Sans « responsable au sein de l&#x27;UE », un vendeur hors UE ne peut en aucun cas publier d&#x27;annonces, et les places de marché ont commencé à supprimer les annonces qui n&#x27;en disposent pas.",
+      "src": "78779bec4346"
+    },
+    "text.3c34bdf3c062": {
+      "text": "Car l&#x27;opérateur est le premier commerçant à y être présent. Nos propres marchandises sont acheminées vers l&#x27;Europe par ce même itinéraire, avec les mêmes documents et les mêmes délais de livraison, et les chiffres indiqués ici sont ceux sur lesquels nous nous basons. N&#x27;hésitez pas à demander toute information qui n&#x27;est pas publique : une question sérieuse recevra une réponse précise, même si celle-ci indique que le projet est encore en cours de réalisation.",
+      "src": "3c34bdf3c062"
+    },
+    "text.f54dd1d5bd7d": {
+      "text": "C'est la version anglaise qui fait foi. Si un terme vous semble étrange ou si vous souhaitez obtenir une confirmation par écrit, n'hésitez pas à nous contacter : une personne vous répondra, en anglais ou dans votre langue.",
+      "src": "f54dd1d5bd7d"
     }
   }
 }
