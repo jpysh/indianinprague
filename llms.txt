@@ -5,7 +5,7 @@
 > Indian and vegan restaurants in Prague, and a journal about life between India and the
 > Czech Republic. Written in English throughout — this is an English-language site.
 
-The site is static, sets no cookies, and runs no analytics or tracking of any kind. Every
+The site is static, sets no cookies and runs no tracking; Cloudflare Web Analytics counts visits anonymously without cookies. Every
 page carries schema.org JSON-LD describing its contents, and every page renders fully
 without JavaScript — the shelf pages use a little of it for filtering and nothing else.
 
