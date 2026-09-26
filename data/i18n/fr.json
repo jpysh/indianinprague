@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:43:16.854Z",
-  "count": 6831,
+  "generated": "2026-09-26T11:46:25.907Z",
+  "count": 6835,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -27332,6 +27332,22 @@
     "text.47e801d07603": {
       "text": "Choisissez trois éléments et le système rédige le message à votre place. Demandez un échantillon, la fiche produit ou un devis.",
       "src": "47e801d07603"
+    },
+    "text.0564463d2368": {
+      "text": "Ayur répond le jour même en précisant ce dont nous avons besoin de votre part",
+      "src": "0564463d2368"
+    },
+    "text.2cefa4a8c2ee": {
+      "text": "Ayur répond le jour même en vous envoyant la fiche produit et les tarifs",
+      "src": "2cefa4a8c2ee"
+    },
+    "text.1f678465e872": {
+      "text": "Paiement le jour ouvrable suivant. Nous nous chargeons de la conformité aux réglementations de l'UE, des formalités douanières et de la mise en ligne des annonces.",
+      "src": "1f678465e872"
+    },
+    "text.044a4b86269c": {
+      "text": "Nous sommes en conformité avec la réglementation européenne et pouvons publier vos annonces sur toutes les principales places de marché.",
+      "src": "044a4b86269c"
     }
   }
 }

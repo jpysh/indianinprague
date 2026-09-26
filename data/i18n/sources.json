@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-26T11:43:15.938Z",
-  "count": 4288,
+  "generated": "2026-09-26T11:46:25.056Z",
+  "count": 4285,
   "entries": {
     "item.10129560822.title": {
       "text": "Vintage Translucent Aqua Glass Cube Necklace | Y2K Frosted Aquamarine Cube Beads",
@@ -5676,9 +5676,9 @@
       "since": "2026-09-04",
       "changed": "2026-09-04"
     },
-    "text.822705cef07f": {
-      "text": "0% marketplace commission. Paid the next working day. We handle EU compliance, customs and listings.",
-      "src": "822705cef07f",
+    "text.1f678465e872": {
+      "text": "Paid the next working day. We handle EU compliance, customs and listings.",
+      "src": "1f678465e872",
       "where": "page text — first seen on partner/merchant.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"
@@ -6033,23 +6033,9 @@
       "since": "2026-09-26",
       "changed": "2026-09-26"
     },
-    "text.4cc06e9d3666": {
-      "text": "Pick three things and it writes the message for you. The same person replies every time.",
-      "src": "4cc06e9d3666",
-      "where": "page text — first seen on partner/merchant.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
-    },
-    "text.fd5ad5cd46e6": {
-      "text": "You send one message",
-      "src": "fd5ad5cd46e6",
-      "where": "page text — first seen on partner/merchant.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
-    },
-    "text.288ffc0e3c50": {
-      "text": "Ayur replies, usually the same day, with what we need from you",
-      "src": "288ffc0e3c50",
+    "text.0564463d2368": {
+      "text": "Ayur replies the same day with what we need from you",
+      "src": "0564463d2368",
       "where": "page text — first seen on partner/merchant.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"
@@ -6173,9 +6159,9 @@
       "since": "2026-09-26",
       "changed": "2026-09-26"
     },
-    "text.3796e32f4938": {
-      "text": "Delivered from Spain in 1&ndash;4 days, nothing due on arrival. We carry the EU compliance and can feed your marketplace listings.",
-      "src": "3796e32f4938",
+    "text.044a4b86269c": {
+      "text": "We carry the EU compliance, and can feed your listings on every major marketplace.",
+      "src": "044a4b86269c",
       "where": "page text — first seen on partner/retailer.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"
@@ -6572,16 +6558,9 @@
       "since": "2026-09-26",
       "changed": "2026-09-26"
     },
-    "text.47e801d07603": {
-      "text": "Pick three things and it writes the message for you. Ask for a sample pack, the line sheet or a price.",
-      "src": "47e801d07603",
-      "where": "page text — first seen on partner/retailer.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
-    },
-    "text.2b454fccd574": {
-      "text": "Ayur replies, usually the same day, with the line sheet and prices",
-      "src": "2b454fccd574",
+    "text.2cefa4a8c2ee": {
+      "text": "Ayur replies the same day with the line sheet and prices",
+      "src": "2cefa4a8c2ee",
       "where": "page text — first seen on partner/retailer.html",
       "since": "2026-09-26",
       "changed": "2026-09-26"

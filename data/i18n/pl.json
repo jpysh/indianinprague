@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:43:18.112Z",
-  "count": 6831,
+  "generated": "2026-09-26T11:46:27.080Z",
+  "count": 6835,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -27332,6 +27332,22 @@
     "text.47e801d07603": {
       "text": "Wystarczy wybrać trzy elementy, a system sam sporządzi dla Państwa wiadomość. Proszę poprosić o pakiet próbek, katalog produktów lub cennik.",
       "src": "47e801d07603"
+    },
+    "text.0564463d2368": {
+      "text": "Ayur odpowiada jeszcze tego samego dnia, informując, czego od Państwa oczekujemy",
+      "src": "0564463d2368"
+    },
+    "text.2cefa4a8c2ee": {
+      "text": "Ayur odpowiada jeszcze tego samego dnia, przesyłając wykaz produktów wraz z cenami",
+      "src": "2cefa4a8c2ee"
+    },
+    "text.1f678465e872": {
+      "text": "Wypłata następnego dnia roboczego. Zajmujemy się kwestiami zgodności z przepisami UE, formalnościami celnymi oraz wystawianiem ofert.",
+      "src": "1f678465e872"
+    },
+    "text.044a4b86269c": {
+      "text": "Spełniamy wymogi UE i możemy umieszczać Państwa oferty na wszystkich głównych platformach handlowych.",
+      "src": "044a4b86269c"
     }
   }
 }

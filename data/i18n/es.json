@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:43:17.740Z",
-  "count": 6831,
+  "generated": "2026-09-26T11:46:26.774Z",
+  "count": 6835,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -27332,6 +27332,22 @@
     "text.47e801d07603": {
       "text": "Elija tres elementos y el sistema redactará el mensaje por usted. Solicite un paquete de muestras, la ficha de productos o un presupuesto.",
       "src": "47e801d07603"
+    },
+    "text.0564463d2368": {
+      "text": "Ayur responde ese mismo día indicando lo que necesitamos de usted",
+      "src": "0564463d2368"
+    },
+    "text.2cefa4a8c2ee": {
+      "text": "Ayur responde ese mismo día con la ficha de productos y los precios",
+      "src": "2cefa4a8c2ee"
+    },
+    "text.1f678465e872": {
+      "text": "El pago se realiza el siguiente día laborable. Nos encargamos del cumplimiento de la normativa de la UE, los trámites aduaneros y la publicación de los anuncios.",
+      "src": "1f678465e872"
+    },
+    "text.044a4b86269c": {
+      "text": "Cumplimos con la normativa de la UE y podemos publicar sus anuncios en todos los principales mercados online.",
+      "src": "044a4b86269c"
     }
   }
 }
