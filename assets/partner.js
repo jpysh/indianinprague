@@ -278,7 +278,7 @@
       : ["Hello Guldaar — I make or supply goods in India and I found /partner on guldaarbazaar.com.",
          "What I make: " + t + ".",
          w ? "Where I am based: " + w + "." : "",
-         "I would like to know about joining as a founding merchant."];
+         "I would like to start selling to Europe with you."];
     return lines.filter(Boolean).join("\n");
   }
 
