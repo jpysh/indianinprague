@@ -40,7 +40,11 @@ const PAGES = {
   // Reached from the footer, from every module, and belonging to none of them — buying,
   // shipping, returns and privacy are not the wardrobe any more than they are the diaries.
   "how-it-works.html": null,
-  "partner.html": "partner",
+  // /partner split into one page per audience on 26 Sep 2026; each marks its own nav link.
+  "partner/merchant.html": "partner/merchant",
+  "partner/retailer.html": "partner/retailer",
+  "partner/line-sheet.html": "partner/retailer",
+  "partner/merchant-sheet.html": "partner/merchant",
   "wardrobe/fashion.html": "wardrobe",
   // spirituality.html is DELIBERATELY NOT LISTED, and this is a landmine if you add it
   // without reading this first.

@@ -212,17 +212,17 @@ main.p > section.p-end{background:var(--saffron)}
  * did not advertise itself: "European retailers" read as a caption sitting beside a button.
  * A visible outline is the whole fix, and it is the difference between a segmented control
  * and a label with a highlight on it. */
-.p-switch button{flex:1;min-height:58px;border:2px solid var(--chicory);border-radius:999px;cursor:pointer;
+.p-switch a{flex:1;min-height:58px;border:2px solid var(--chicory);border-radius:999px;cursor:pointer;
   background:transparent;color:var(--bone);font-family:var(--mono);font-size:var(--fs-s);font-weight:600;
   letter-spacing:.02em;transition:background .2s ease,color .2s ease,border-color .2s ease;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1.2;
-  white-space:nowrap;padding:0 10px}
-.p-switch button:hover{border-color:var(--avocado)}
-@media (min-width:420px){.p-switch button{font-size:var(--fs-m);letter-spacing:.03em}}
-.p-switch button .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
-.p-switch button[aria-selected="true"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
-.p-switch button[aria-selected="true"] .who{opacity:.8}
-.p-switch button:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
+  white-space:nowrap;padding:0 10px;text-decoration:none}
+.p-switch a:hover{border-color:var(--avocado)}
+@media (min-width:420px){.p-switch a{font-size:var(--fs-m);letter-spacing:.03em}}
+.p-switch a .who{font-size:var(--fs-2xs);font-weight:400;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.p-switch a[aria-current="page"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
+.p-switch a[aria-current="page"] .who{opacity:.8}
+.p-switch a:focus-visible{outline:3px solid var(--magenta);outline-offset:2px}
 
 /* ---------- bento ----------
  * Deliberately uneven. A grid of six identical cards is the shape the first version of this
@@ -631,3 +631,42 @@ main.p > section.p-end{background:var(--saffron)}
 .p-media img{width:100%;height:100%;object-fit:cover;display:block}
 .p-media figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 20px;
   background:linear-gradient(transparent,rgba(34,31,22,.9));font-family:var(--mono);font-size:var(--fs-s);color:var(--bone)}
+
+/* ---------- at a glance (26 Sep 2026) ----------
+ * The decisions a busy reader makes, as one label/value list, instead of behind accordions. */
+.p-glance{display:grid;gap:0;border-top:1px solid var(--chicory)}
+.p-glance > div{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid var(--chicory)}
+.p-glance dt{font-family:var(--mono);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase;color:var(--saffron)}
+.p-glance dd{margin:0;color:var(--bone)}
+.p .light .p-glance > div,.p .light .p-glance{border-color:var(--paper-2)}
+.p .light .p-glance dt{color:#8A5A22}
+.p .light .p-glance dd{color:var(--ink)}
+@media (min-width:720px){.p-glance > div{grid-template-columns:200px 1fr;gap:24px}}
+
+/* ---------- styles that sell ---------- */
+.p-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none}
+@media (min-width:720px){.p-grid{grid-template-columns:repeat(4,1fr)}}
+.p-grid li{background:#fff;border:1px solid var(--paper-2);border-radius:14px;overflow:hidden;color:var(--ink)}
+.p-grid img{display:block;width:100%;aspect-ratio:1;object-fit:cover}
+.p-grid .t{display:block;padding:10px 12px 0;font-size:var(--fs-s);font-weight:600;line-height:1.3}
+.p-grid .pr{display:flex;justify-content:space-between;padding:6px 12px 12px;font-family:var(--mono);font-size:var(--fs-xs)}
+.p-grid .pr b{color:#5C6B0E}
+.p-grid .sold{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:#8A5A22;padding:0 12px 12px;display:block}
+
+/* ---------- posters: one A4 page, printed from the browser ---------- */
+.poster{max-width:900px;margin:0 auto;padding:24px var(--gutter);background:#fff;color:var(--ink)}
+.poster h1{font-family:var(--disp);font-size:clamp(1.8rem,1rem + 3vw,2.6rem);line-height:1.05;margin:6px 0 10px}
+.poster .p-grid{grid-template-columns:repeat(4,1fr);gap:8px}
+.poster .p-grid .t{font-size:11px;padding:6px 8px 0}
+.poster .p-grid .pr{padding:4px 8px 8px}
+.poster .p-glance > div{padding:8px 0;grid-template-columns:150px 1fr;gap:12px}
+.poster .p-glance dd,.poster .p-glance dt{color:var(--ink)}
+.poster-bar{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.poster .btn-lg.sec{color:var(--ink);border-color:var(--ink)}
+.poster-foot{margin-top:14px;font-family:var(--mono);font-size:12px}
+@media print{
+  @page{size:A4;margin:10mm}
+  header.site,footer,.poster-bar,.p-switch{display:none!important}
+  body{background:#fff}
+  .poster{padding:0}
+}

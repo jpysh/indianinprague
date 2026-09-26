@@ -314,7 +314,6 @@
     el.addEventListener("change", compose);
     el.addEventListener("input", compose);
   });
-  if (role) role.addEventListener("change", function () { show(role.value, true); });
 
   /* Topic options belong to the audience, so they are swapped rather than shown as one
      merged list that half the visitors have to read past. */
@@ -338,9 +337,18 @@
   }
   if (role) role.addEventListener("change", function () { fillTopics(role.value); compose(); });
 
+  /* Posters: "Save as PDF" is the browser's own print dialog, so the PDF is never stale. */
+  [].forEach.call(document.querySelectorAll("[data-print]"), function (b) {
+    b.addEventListener("click", function () { window.print(); });
+  });
+
   /* ---------- boot ---------- */
+  /* Since 26 Sep 2026 each audience has its own URL. /partner 301s to /partner/merchant and
+     the browser keeps the fragment, so an old /partner#retailer link lands here: forward it. */
   var start = (location.hash || "").replace("#", "");
-  if (!tracks[start]) start = "merchant";
+  var aud = page && page.getAttribute("data-audience");
+  if (start === "retailer" && aud === "merchant") { location.replace("/partner/retailer"); return; }
+  start = aud || "merchant";
   fillTopics(start);
   paint(start);
   compose();

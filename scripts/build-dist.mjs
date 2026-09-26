@@ -200,6 +200,11 @@ if (existsSync(path.join(ROOT, "diaries"))) {
 if (existsSync(path.join(ROOT, "wardrobe"))) {
   await syncDir(path.join(ROOT, "wardrobe"), path.join(DIST, "wardrobe"));
 }
+// partner/ — one hand-written page per audience plus two printable posters, since the
+// /partner split on 26 Sep 2026.
+if (existsSync(path.join(ROOT, "partner"))) {
+  await syncDir(path.join(ROOT, "partner"), path.join(DIST, "partner"));
+}
 // The language trees — /de, /fr, /ru, /it, /es, /pl, /cs — written by build-i18n.mjs from
 // the English pages above. One directory per language, mirroring the whole site; assets and
 // images are NOT duplicated into them, so seven languages cost HTML and nothing else.

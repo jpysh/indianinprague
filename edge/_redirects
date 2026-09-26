@@ -19,3 +19,8 @@
 #
 # If a path on THIS domain ever gets indexed and then moves, add its 301 here. The
 # reasoning above is the test for whether a rule belongs in this file.
+
+# 26 Sep 2026: /partner split into one page per audience. /partner was indexed and linked
+# (and sent round on WhatsApp), so it gets a real 301. The fragment survives the redirect,
+# and partner.js forwards #retailer to /partner/retailer.
+/partner /partner/merchant 301
