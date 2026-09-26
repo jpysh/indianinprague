@@ -819,3 +819,20 @@ main.p > section.p-end{background:var(--saffron)}
   .p-grid li:hover img{transform:scale(1.04)}
   .p-steps li:hover,section .p-glance > div:hover{border-color:var(--avocado)}
 }
+
+/* Route, second pass: thicker on phones, delivery times per leg, and an arrival moment. */
+.p-route .track{stroke-width:3}
+.p-route .draw{stroke-width:5}
+.p-route .stop{stroke-width:4}
+.route-legs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:4px}
+.route-legs span{justify-self:center;font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.08em;text-transform:uppercase;
+  color:var(--void);background:var(--saffron);border-radius:999px;padding:5px 10px;text-align:center;line-height:1.3}
+.route-note{margin-top:14px;font-size:var(--fs-s)!important;color:var(--bone-dim)}
+.js-rv .route-legs span{opacity:0;transform:translateY(6px);transition:opacity .4s ease,transform .4s ease}
+.js-rv .p-route.seen .route-legs span:first-child{opacity:1;transform:none;transition-delay:.5s}
+.js-rv .p-route.seen .route-legs span:last-child{opacity:1;transform:none;transition-delay:1.9s}
+.p-route.arrived .stop:last-of-type{animation:p-pop .5s ease}
+.p-route.arrived .route-labels span:last-child{animation:p-glow 1s ease}
+@keyframes p-pop{50%{transform:scale(1.6)}}
+@keyframes p-glow{40%{color:var(--bone)}}
+.p-route .stop{transform-box:fill-box;transform-origin:center}

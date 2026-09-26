@@ -50,11 +50,12 @@
     });
   }
   function onSeen(el) {
-    if (el.classList.contains("p-route")) {
-      var parcel = el.querySelector(".parcel"), mo = parcel && parcel.querySelector("animateMotion");
-      if (mo && mo.beginElement) { parcel.setAttribute("cx", 0); parcel.setAttribute("cy", 0); mo.beginElement(); }
+    if (el.matches(".p-stats .grid")) {
+      var go = function () {
+        if (el.getBoundingClientRect().bottom <= innerHeight) { removeEventListener("scroll", go); countUp(el); }
+      };
+      addEventListener("scroll", go, { passive: true }); go();
     }
-    if (el.matches(".p-stats .grid")) countUp(el);
     if (el.matches(".p-grid,.p-steps") && el.scrollWidth > el.clientWidth + 8 && el.scrollTo) {
       setTimeout(function () {
         el.scrollTo({ left: 56, behavior: "smooth" });
@@ -83,7 +84,19 @@
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); onSeen(e.target); }
       });
-    }, { rootMargin: "0px 0px -10% 0px", threshold: 0.04 });
+    }, { rootMargin: "0px 0px 8% 0px", threshold: 0 });
+    /* The route waits until it is well on screen, so the reader actually sees the trip. */
+    var rio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        var el = e.target, parcel = el.querySelector(".parcel"), mo = parcel && parcel.querySelector("animateMotion");
+        rio.unobserve(el);
+        el.classList.add("seen");
+        if (mo && mo.beginElement) { parcel.setAttribute("cx", 0); parcel.setAttribute("cy", 0); mo.beginElement(); }
+        setTimeout(function () { el.classList.add("arrived"); }, 2650);
+      });
+    }, { threshold: 0.6 });
+    [].forEach.call(document.querySelectorAll(".p-route"), function (r) { rio.observe(r); });
     var items = document.querySelectorAll(".rv,.stg");
     for (var i = 0; i < items.length; i++) io.observe(items[i]);
     /* Anything already on screen at load reveals immediately rather than waiting for a
