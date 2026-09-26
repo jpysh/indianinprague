@@ -715,3 +715,7 @@ main.p > section.p-end{background:var(--saffron)}
 }
 .p-swipe-hint{font-family:var(--mono);font-size:var(--fs-2xs);letter-spacing:.12em;text-transform:uppercase;color:#8A5A22;margin-bottom:10px}
 @media (min-width:720px){.p-swipe-hint{display:none}}
+
+/* Audit fixes, 26 Sep 2026 */
+.p .light .p-alt-btn{color:var(--ink)}
+@media (max-width:719px){.p-grid .pr{flex-direction:column;gap:2px}}
