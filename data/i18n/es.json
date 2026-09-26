@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:29:46.216Z",
-  "count": 6821,
+  "generated": "2026-09-26T11:33:31.551Z",
+  "count": 6829,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -27292,6 +27292,38 @@
     "text.f54dd1d5bd7d": {
       "text": "La versión en inglés es la que prevalece. Si algún término le resulta extraño o desea que se le confirme algún punto por escrito, no dude en consultarnos: una persona le responderá, ya sea en inglés o en su idioma.",
       "src": "f54dd1d5bd7d"
+    },
+    "text.8929ccbf20dc": {
+      "text": "Aranceles ya abonados, procedente de existencias de la UE.",
+      "src": "8929ccbf20dc"
+    },
+    "text.c3db2f232661": {
+      "text": "Producto artesanal indio único, con los derechos de aduana ya abonados, procedente de existencias de la UE.",
+      "src": "c3db2f232661"
+    },
+    "text.d3f24ea5dc68": {
+      "text": "Artesanías indias al por mayor para tiendas de la UE, con los aranceles ya pagados",
+      "src": "d3f24ea5dc68"
+    },
+    "text.aa42a7dd6a36": {
+      "text": "Desde nuestro almacén en España. Aranceles ya pagados, sin ningún coste adicional a la entrega.",
+      "src": "aa42a7dd6a36"
+    },
+    "text.345ac75b2519": {
+      "text": "¿Aún no está disponible en el almacén de la UE? Se envía directamente desde su taller en un plazo de 8 a 14 días, con los aranceles ya pagados.",
+      "src": "345ac75b2519"
+    },
+    "text.f2995742aff3": {
+      "text": "Los artículos fabricados por encargo llegan directamente desde la India en un plazo de 5 a 7 días, con los aranceles ya pagados. Las nuevas remesas llegan en unas 3 semanas.",
+      "src": "f2995742aff3"
+    },
+    "text.e7b176a9e6db": {
+      "text": "Proveedor mayorista de artesanía, joyería y textiles indios para minoristas europeos: al 50 % del PVP, sin cantidad mínima para el primer pedido, aranceles ya pagados, entrega en 1-4 días desde nuestro almacén de la UE en España.",
+      "src": "e7b176a9e6db"
+    },
+    "text.1c892a7619b9": {
+      "text": "Las reposiciones se realizan tras nuestra consolidación quincenal: volverán a su tienda en unas tres semanas. Las piezas fabricadas bajo pedido y personalizadas se elaboran en unos tres días y llegan, con los aranceles ya pagados, en un plazo de cinco a siete días.",
+      "src": "1c892a7619b9"
     }
   }
 }

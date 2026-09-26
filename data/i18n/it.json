@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:29:45.880Z",
-  "count": 6821,
+  "generated": "2026-09-26T11:33:31.141Z",
+  "count": 6829,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -27292,6 +27292,38 @@
     "text.f54dd1d5bd7d": {
       "text": "La versione inglese è quella da considerarsi vincolante. Se un termine Le sembra strano o desidera che un punto Le venga confermato per iscritto, ci contatti: un nostro collaboratore Le risponderà in inglese o nella Sua lingua.",
       "src": "f54dd1d5bd7d"
+    },
+    "text.8929ccbf20dc": {
+      "text": "Dazi già pagati, da scorte UE.",
+      "src": "8929ccbf20dc"
+    },
+    "text.c3db2f232661": {
+      "text": "Artigianato indiano esclusivo, dazi già pagati dalle scorte dell’UE.",
+      "src": "c3db2f232661"
+    },
+    "text.d3f24ea5dc68": {
+      "text": "Artigianato indiano all’ingrosso per negozi dell’UE, dazi già pagati",
+      "src": "d3f24ea5dc68"
+    },
+    "text.aa42a7dd6a36": {
+      "text": "Dal nostro magazzino in Spagna. Dazi già pagati, nessun costo aggiuntivo alla consegna.",
+      "src": "aa42a7dd6a36"
+    },
+    "text.345ac75b2519": {
+      "text": "Non è ancora disponibile a magazzino nell’UE? La spedizione avviene direttamente dalla vostra officina in 8–14 giorni, con dazi già pagati.",
+      "src": "345ac75b2519"
+    },
+    "text.f2995742aff3": {
+      "text": "Gli articoli realizzati su ordinazione vengono spediti direttamente dall’India in 5–7 giorni, con i dazi già pagati. I rifornimenti arrivano entro circa 3 settimane.",
+      "src": "f2995742aff3"
+    },
+    "text.e7b176a9e6db": {
+      "text": "Fornitore all’ingrosso di prodotti artigianali, gioielli e tessuti indiani per i rivenditori europei: 50% del prezzo di vendita al pubblico, nessun minimo d’ordine per il primo acquisto, dazi già pagati, consegna in 1-4 giorni dal magazzino UE in Spagna.",
+      "src": "e7b176a9e6db"
+    },
+    "text.1c892a7619b9": {
+      "text": "I rifornimenti avvengono in seguito al nostro consolidamento quindicinale: i prodotti torneranno nel Suo negozio entro circa tre settimane. Gli articoli realizzati su ordinazione e quelli personalizzati vengono prodotti in circa tre giorni e arrivano, con i dazi già pagati, in cinque-sette giorni.",
+      "src": "1c892a7619b9"
     }
   }
 }

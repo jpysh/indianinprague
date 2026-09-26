@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:29:45.520Z",
-  "count": 6825,
+  "generated": "2026-09-26T11:33:30.666Z",
+  "count": 6833,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -27308,6 +27308,38 @@
     "text.f54dd1d5bd7d": {
       "text": "Die englische Fassung ist für uns maßgebend. Sollte ein Begriff seltsam klingen oder sollten Sie eine Bestätigung schriftlich wünschen, wenden Sie sich bitte an uns: Ein Mitarbeiter wird Ihnen antworten – auf Englisch oder in Ihrer Sprache.",
       "src": "f54dd1d5bd7d"
+    },
+    "text.8929ccbf20dc": {
+      "text": "Zoll bereits entrichtet, aus EU-Lagerbeständen.",
+      "src": "8929ccbf20dc"
+    },
+    "text.c3db2f232661": {
+      "text": "Einzigartige indische Handwerkskunst, Zoll bereits entrichtet aus EU-Lagerbeständen.",
+      "src": "c3db2f232661"
+    },
+    "text.d3f24ea5dc68": {
+      "text": "Großhandel mit indischem Kunsthandwerk für Geschäfte in der EU, Zölle bereits entrichtet",
+      "src": "d3f24ea5dc68"
+    },
+    "text.aa42a7dd6a36": {
+      "text": "Aus unserem Lager in Spanien. Zoll bereits entrichtet, es fallen keine zusätzlichen Kosten bei Lieferung an.",
+      "src": "aa42a7dd6a36"
+    },
+    "text.345ac75b2519": {
+      "text": "Noch nicht auf Lager in der EU? Der Versand erfolgt direkt aus Ihrer Werkstatt innerhalb von 8–14 Tagen, die Zollgebühren sind bereits entrichtet.",
+      "src": "345ac75b2519"
+    },
+    "text.f2995742aff3": {
+      "text": "Sonderanfertigungen werden innerhalb von 5–7 Tagen direkt aus Indien geliefert, wobei die Zollgebühren bereits entrichtet sind. Nachlieferungen treffen innerhalb von etwa 3 Wochen ein.",
+      "src": "f2995742aff3"
+    },
+    "text.e7b176a9e6db": {
+      "text": "Großhandelslieferant für indisches Kunsthandwerk, Schmuck und Textilien für europäische Einzelhändler: 50 % des UVP, keine Mindestbestellmenge bei der Erstbestellung, Zoll bereits entrichtet, Lieferung innerhalb von 1–4 Tagen ab EU-Lager in Spanien.",
+      "src": "e7b176a9e6db"
+    },
+    "text.1c892a7619b9": {
+      "text": "Nachschub erfolgt im Rahmen unserer vierzehntägigen Sammelbestellung: Die Ware ist in etwa drei Wochen wieder in Ihrem Shop erhältlich. Sonderanfertigungen und personalisierte Artikel werden in etwa drei Tagen hergestellt und treffen in fünf bis sieben Tagen ein, wobei die Zollgebühren bereits entrichtet sind.",
+      "src": "1c892a7619b9"
     }
   }
 }

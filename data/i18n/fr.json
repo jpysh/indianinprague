@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:29:45.164Z",
-  "count": 6821,
+  "generated": "2026-09-26T11:33:30.246Z",
+  "count": 6829,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -27292,6 +27292,38 @@
     "text.f54dd1d5bd7d": {
       "text": "C'est la version anglaise qui fait foi. Si un terme vous semble étrange ou si vous souhaitez obtenir une confirmation par écrit, n'hésitez pas à nous contacter : une personne vous répondra, en anglais ou dans votre langue.",
       "src": "f54dd1d5bd7d"
+    },
+    "text.8929ccbf20dc": {
+      "text": "Droits de douane déjà acquittés, provenant de stocks situés dans l'UE.",
+      "src": "8929ccbf20dc"
+    },
+    "text.c3db2f232661": {
+      "text": "Produit artisanal indien unique, droits de douane déjà acquittés, provenant de stocks situés dans l'Union européenne.",
+      "src": "c3db2f232661"
+    },
+    "text.d3f24ea5dc68": {
+      "text": "Vente en gros d'objets d'artisanat indien destinés aux magasins de l'UE, droits de douane déjà acquittés",
+      "src": "d3f24ea5dc68"
+    },
+    "text.aa42a7dd6a36": {
+      "text": "En provenance de notre stock en Espagne. Droits de douane déjà acquittés, aucun frais supplémentaire à la livraison.",
+      "src": "aa42a7dd6a36"
+    },
+    "text.345ac75b2519": {
+      "text": "Le produit n'est pas encore en stock dans l'UE ? Il est expédié directement depuis votre atelier sous 8 à 14 jours, droits de douane déjà acquittés.",
+      "src": "345ac75b2519"
+    },
+    "text.f2995742aff3": {
+      "text": "Les articles fabriqués sur commande sont expédiés directement depuis l'Inde dans un délai de 5 à 7 jours, droits de douane déjà acquittés. Les réapprovisionnements sont livrés dans un délai d'environ 3 semaines.",
+      "src": "f2995742aff3"
+    },
+    "text.e7b176a9e6db": {
+      "text": "Fournisseur en gros d'artisanat, de bijoux et de textiles indiens destinés aux détaillants européens : 50 % du prix de vente conseillé, aucun minimum de commande pour la première commande, droits de douane déjà acquittés, livraison sous 1 à 4 jours depuis notre entrepôt européen situé en Espagne.",
+      "src": "e7b176a9e6db"
+    },
+    "text.1c892a7619b9": {
+      "text": "Les réapprovisionnements s'effectuent selon notre calendrier de regroupement bimensuel : les articles seront de retour dans votre boutique dans un délai d'environ trois semaines. Les articles fabriqués sur commande et personnalisés sont réalisés en trois jours environ et vous sont livrés, droits de douane déjà acquittés, dans un délai de cinq à sept jours.",
+      "src": "1c892a7619b9"
     }
   }
 }

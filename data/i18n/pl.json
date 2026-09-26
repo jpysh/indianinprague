@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-26T11:29:46.671Z",
-  "count": 6821,
+  "generated": "2026-09-26T11:33:32.109Z",
+  "count": 6829,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -27292,6 +27292,38 @@
     "text.f54dd1d5bd7d": {
       "text": "Obowiązuje wersja angielska. Jeśli któreś sformułowanie wydaje się Państwu niejasne lub chcą Państwo uzyskać pisemne potwierdzenie jakiejś kwestii, prosimy o kontakt: odpowiedź udzieli Państwu jedna z naszych osób, w języku angielskim lub w Państwa języku.",
       "src": "f54dd1d5bd7d"
+    },
+    "text.8929ccbf20dc": {
+      "text": "Cło zostało już uiszczone; towar pochodzi z zapasów UE.",
+      "src": "8929ccbf20dc"
+    },
+    "text.c3db2f232661": {
+      "text": "Wyjątkowe indyjskie wyroby rzemieślnicze, cło już uiszczone z zapasów w UE.",
+      "src": "c3db2f232661"
+    },
+    "text.d3f24ea5dc68": {
+      "text": "Hurtowa sprzedaż indyjskich wyrobów rzemieślniczych dla sklepów w UE, cło już uiszczone",
+      "src": "d3f24ea5dc68"
+    },
+    "text.aa42a7dd6a36": {
+      "text": "Z naszego magazynu w Hiszpanii. Cło zostało już uiszczone, nie pobiera się żadnych opłat przy odbiorze.",
+      "src": "aa42a7dd6a36"
+    },
+    "text.345ac75b2519": {
+      "text": "Nie ma jeszcze tego produktu w magazynie w UE? Zostanie on wysłany bezpośrednio z Państwa warsztatu w ciągu 8–14 dni, z opłaconym cłem.",
+      "src": "345ac75b2519"
+    },
+    "text.f2995742aff3": {
+      "text": "Produkty wykonywane na zamówienie są dostarczane bezpośrednio z Indii w ciągu 5–7 dni, z opłaconym cłem. Kolejne dostawy pojawiają się w ciągu około 3 tygodni.",
+      "src": "f2995742aff3"
+    },
+    "text.e7b176a9e6db": {
+      "text": "Hurtowy dostawca indyjskich wyrobów rękodzielniczych, biżuterii i tekstyliów dla europejskich sprzedawców detalicznych: 50% sugerowanej ceny detalicznej, brak minimalnej wartości pierwszego zamówienia, cło już uiszczone, dostawa w ciągu 1–4 dni z magazynu w Hiszpanii należącego do UE.",
+      "src": "e7b176a9e6db"
+    },
+    "text.1c892a7619b9": {
+      "text": "Uzupełnienie zapasów następuje po naszej dwutygodniowej konsolidacji: produkty powrócą do Państwa sklepu w ciągu około trzech tygodni. Produkty wykonywane na zamówienie oraz spersonalizowane są realizowane w ciągu około trzech dni, a dostarczane z opłaconym cłem w ciągu pięciu do siedmiu dni.",
+      "src": "1c892a7619b9"
     }
   }
 }

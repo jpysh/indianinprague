@@ -1,16 +1,16 @@
 {
   "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
-  "generated": "2026-09-26T11:29:47.282Z",
+  "generated": "2026-09-26T11:33:32.949Z",
   "sources": 4288,
   "exhausted": false,
   "keys": [
     {
       "n": 1,
       "ok": true,
-      "used": 148098,
+      "used": 153217,
       "limit": 500000,
-      "left": 351902,
-      "pct": 0.296196
+      "left": 346783,
+      "pct": 0.306434
     },
     {
       "n": 2,
