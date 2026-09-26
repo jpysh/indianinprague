@@ -726,3 +726,18 @@ main.p > section.p-end{background:var(--saffron)}
 .p .light .accent{color:#5C6B0E}
 /* Swipe rows: a slim, on-palette scrollbar instead of the browser's white bar. */
 .p-steps,.p-grid{scrollbar-width:thin;scrollbar-color:var(--saffron) transparent}
+
+/* Final audit, 26 Sep 2026 */
+/* Card text in the reading face; the badge no longer clips at narrow widths. */
+.p-grid .t{font-family:var(--sans)}
+.p-grid .sold{letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* Posters on a phone: two columns and a compact button row. Print keeps four. */
+.poster .eyebrow{color:#8A5A22}
+.poster-h2{color:var(--ink)}
+.poster-bar .btn-lg{min-height:44px;padding:0 18px;font-size:var(--fs-s)}
+@media (max-width:719px){
+  .poster .p-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .poster .p-grid .t{font-size:13px}
+  .poster .p-glance > div{grid-template-columns:1fr;gap:4px}
+}
+@media print{.poster .p-grid{grid-template-columns:repeat(4,1fr)!important}}

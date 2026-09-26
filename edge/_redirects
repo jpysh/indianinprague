@@ -24,3 +24,10 @@
 # (and sent round on WhatsApp), so it gets a real 301. The fragment survives the redirect,
 # and partner.js forwards #retailer to /partner/retailer.
 /partner /partner/merchant 301
+/ru/partner /partner/merchant 301
+/fr/partner /partner/merchant 301
+/de/partner /partner/merchant 301
+/it/partner /partner/merchant 301
+/es/partner /partner/merchant 301
+/pl/partner /partner/merchant 301
+/cs/partner /partner/merchant 301
