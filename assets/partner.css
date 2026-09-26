@@ -842,3 +842,23 @@ main.p > section.p-end{background:var(--saffron)}
 .p .light .p-alt a:not(.p-alt-btn){color:var(--ink);text-decoration:underline;text-underline-offset:3px}
 .p-grid li{display:flex;flex-direction:column}
 .p-grid .sold{margin-top:auto}
+
+/* Product cards aligned with the wardrobe's (26 Sep 2026): portrait photo, no box, the
+   badge as a chip on the photo, a short caption underneath. The badge sits where the eye
+   lands first, so "Bestseller" is proof at a glance instead of a footnote. */
+.p-grid li{position:relative;background:none;border:0;border-radius:0;overflow:visible}
+.p-grid picture{display:block;overflow:hidden;border-radius:6px}
+.p-grid img{aspect-ratio:4/5}
+.p-grid .t{padding:10px 0 0;font-size:var(--fs-s);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.p-grid .pr{padding:4px 0 0}
+.p-grid .sold{position:absolute;top:8px;left:8px;margin:0;padding:5px 9px;border-radius:999px;
+  background:var(--void);color:var(--saffron);font-size:10px;letter-spacing:.08em;white-space:nowrap;overflow:visible}
+.p-grid .sold::before{content:"\2605\00A0"}
+.p-grid li:has(.sold:not(:empty)) .sold{box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.p-grid .sold.trend{background:var(--magenta);color:#fff}
+.p-grid .sold.trend::before{content:"\2197\00A0"}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .p-grid li:hover{transform:none;box-shadow:none}
+}
+.poster .p-grid .sold{top:6px;left:6px;font-size:9px;padding:3px 7px}
+.p-grid .t{min-height:calc(2 * 1.3em + 10px);line-height:1.3}
