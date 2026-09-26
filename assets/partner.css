@@ -719,3 +719,10 @@ main.p > section.p-end{background:var(--saffron)}
 /* Audit fixes, 26 Sep 2026 */
 .p .light .p-alt-btn{color:var(--ink)}
 @media (max-width:719px){.p-grid .pr{flex-direction:column;gap:2px}}
+.p-after{margin-top:24px}
+.poster-h2{margin:16px 0 6px;font-size:1.1rem}
+.poster-ol{margin:8px 0 0 20px}
+/* Saffron on cream fails contrast; light sections take the olive the terms already use. */
+.p .light .accent{color:#5C6B0E}
+/* Swipe rows: a slim, on-palette scrollbar instead of the browser's white bar. */
+.p-steps,.p-grid{scrollbar-width:thin;scrollbar-color:var(--saffron) transparent}
