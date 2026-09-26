@@ -761,3 +761,61 @@ main.p > section.p-end{background:var(--saffron)}
 @media (min-width:1200px){.p .p-grid:not(.poster .p-grid){grid-template-columns:repeat(6,1fr)}}
 @media (max-width:959px){section .p-glance.terms dd b::after{content:" \00B7"}}
 @media (min-width:960px){section .p-glance:not(.terms) > div:last-child:nth-child(odd){grid-column:1 / -1}}
+
+/* ---------- motion pass (26 Sep 2026) ----------
+ * Every hidden starting state below sits under .js-rv, which partner.js adds only when it is
+ * running and motion is allowed. Without the script, or in a WebView that drops it, the page
+ * is simply complete. See the .rv note above for the blank-page incident that set this rule. */
+
+/* The route: the business in one line. */
+.p-route{margin:0 0 28px}
+.p-route svg{display:block;width:100%;height:auto;overflow:visible}
+.p-route .track{fill:none;stroke:var(--chicory);stroke-width:2;stroke-dasharray:2 8;stroke-linecap:round}
+.p-route .draw{fill:none;stroke:var(--saffron);stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
+.js-rv .p-route .draw{stroke-dashoffset:1;transition:stroke-dashoffset 2.6s cubic-bezier(.45,0,.25,1)}
+.js-rv .p-route.seen .draw{stroke-dashoffset:0}
+.p-route .stop{fill:var(--void);stroke:var(--saffron);stroke-width:3}
+.p-route .parcel{fill:var(--magenta)}
+.route-labels{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px;font-family:var(--mono);
+  font-size:var(--fs-xs);letter-spacing:.04em;color:var(--bone);line-height:1.35}
+.route-labels span:nth-child(2){text-align:center}
+.route-labels span:nth-child(3){text-align:right;color:var(--saffron)}
+.p-route-sec{padding-bottom:24px!important}
+.p-route-sec .p-route{margin:0}
+
+/* Staggered reveals: containers are observed, children arrive 60ms apart. */
+.js-rv .stg > *{opacity:0;transform:translateY(8px);transition:opacity .3s ease,transform .3s ease;
+  transition-delay:calc(var(--i,0) * 60ms)}
+.js-rv .stg.seen > *{opacity:1;transform:none}
+/* Shorter travel for everything else on this page than the 26px the old page used. */
+.js-rv .rv{transform:translateY(10px)}
+
+@media (prefers-reduced-motion:no-preference){
+  /* Hero: a slow settle on the photograph, and the copy arriving in reading order. */
+  .p-hero .shot img{animation:p-settle 14s cubic-bezier(.2,.7,.2,1) both}
+  .p-hero .inner > *{animation:p-rise .6s cubic-bezier(.2,.8,.3,1) both}
+  .p-hero .inner > :nth-child(2){animation-delay:.08s}
+  .p-hero .inner > :nth-child(3){animation-delay:.18s}
+  .p-hero .inner > :nth-child(4){animation-delay:.28s}
+  /* One page to the other: a cross-fade, with the chosen tab sliding across. */
+  @view-transition{navigation:auto}
+  .p-switch a[aria-current="page"]{view-transition-name:p-tab}
+  /* FAQ answers slide rather than jump, where the browser supports it. */
+  :root{interpolate-size:allow-keywords}
+  .p-rows details::details-content{height:0;overflow:clip;transition:height .3s ease,content-visibility .3s allow-discrete}
+  .p-rows details[open]::details-content{height:auto}
+  /* The message preview flashes when it changes, so the form visibly answers. */
+  .p-ask .preview.flash{animation:p-flash .6s ease}
+}
+@keyframes p-settle{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes p-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes p-flash{0%{border-color:var(--saffron);background:rgba(220,231,117,.12)}100%{}}
+
+/* Desktop hover: cards lift, photographs lean in. Touch screens never see it. */
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .p-grid li,.p-steps li,section .p-glance > div{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+  .p-grid li:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(34,31,22,.18)}
+  .p-grid img{transition:transform .5s ease}
+  .p-grid li:hover img{transform:scale(1.04)}
+  .p-steps li:hover,section .p-glance > div:hover{border-color:var(--avocado)}
+}

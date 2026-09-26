@@ -40,20 +40,59 @@
      had switched to: two images stacked. */
   if (page && !reduce) page.classList.add("js-on");
 
+  /* Motion pass, 26 Sep 2026: headings reveal, card groups stagger, the route draws and
+     its parcel travels, the stat numbers count up, and swipe rows nudge once. */
+  if (!reduce && "IntersectionObserver" in window) {
+    [].forEach.call(document.querySelectorAll(".p .sec-head"), function (h) { h.classList.add("rv"); });
+    [].forEach.call(document.querySelectorAll(".p-steps,section .p-glance,.p-grid,.p-rows,.p-stats .grid,.p-next"), function (g) {
+      g.classList.add("stg");
+      [].forEach.call(g.children, function (c, n) { c.style.setProperty("--i", Math.min(n, 8)); });
+    });
+  }
+  function onSeen(el) {
+    if (el.classList.contains("p-route")) {
+      var parcel = el.querySelector(".parcel"), mo = parcel && parcel.querySelector("animateMotion");
+      if (mo && mo.beginElement) { parcel.setAttribute("cx", 0); parcel.setAttribute("cy", 0); mo.beginElement(); }
+    }
+    if (el.matches(".p-stats .grid")) countUp(el);
+    if (el.matches(".p-grid,.p-steps") && el.scrollWidth > el.clientWidth + 8 && el.scrollTo) {
+      setTimeout(function () {
+        el.scrollTo({ left: 56, behavior: "smooth" });
+        setTimeout(function () { el.scrollTo({ left: 0, behavior: "smooth" }); }, 550);
+      }, 500);
+    }
+  }
+  function countUp(grid) {
+    [].forEach.call(grid.querySelectorAll(".n"), function (n) {
+      var walker = document.createTreeWalker(n, NodeFilter.SHOW_TEXT), nodes = [], t;
+      while ((t = walker.nextNode())) if (/\d/.test(t.nodeValue)) nodes.push({ node: t, text: t.nodeValue });
+      var t0 = performance.now();
+      (function tick(now) {
+        var k = Math.min(1, (now - t0) / 800), e = 1 - Math.pow(1 - k, 3);
+        nodes.forEach(function (o) {
+          o.node.nodeValue = o.text.replace(/\d+/g, function (d) { return String(Math.round(+d * e)); });
+        });
+        if (k < 1) requestAnimationFrame(tick);
+      })(t0);
+    });
+  }
+
   if (!reduce && "IntersectionObserver" in window) {
     document.documentElement.classList.add("js-rv");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); }
+        if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); onSeen(e.target); }
       });
     }, { rootMargin: "0px 0px -10% 0px", threshold: 0.04 });
-    var items = document.querySelectorAll(".rv");
+    var items = document.querySelectorAll(".rv,.stg");
     for (var i = 0; i < items.length; i++) io.observe(items[i]);
     /* Anything already on screen at load reveals immediately rather than waiting for a
        scroll that may never come on a short viewport. */
     requestAnimationFrame(function () {
       for (var k = 0; k < items.length; k++) {
-        if (items[k].getBoundingClientRect().top < innerHeight) items[k].classList.add("seen");
+        if (items[k].getBoundingClientRect().top < innerHeight && !items[k].classList.contains("seen")) {
+          items[k].classList.add("seen"); io.unobserve(items[k]); onSeen(items[k]);
+        }
       }
     });
   }
@@ -300,7 +339,11 @@
   function compose() {
     var body = message();
     primaryChannel(role && role.value === "retailer" ? "retailer" : "merchant");
-    if (preview) preview.textContent = body;
+    if (preview && preview.textContent !== body) {
+      var had = preview.textContent;
+      preview.textContent = body;
+      if (had) { preview.classList.remove("flash"); void preview.offsetWidth; preview.classList.add("flash"); }
+    }
     if (waLink) waLink.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(body);
     if (mailLink) {
       mailLink.href = "mailto:" + MAIL +
