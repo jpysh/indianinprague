@@ -741,3 +741,23 @@ main.p > section.p-end{background:var(--saffron)}
   .poster .p-glance > div{grid-template-columns:1fr;gap:4px}
 }
 @media print{.poster .p-grid{grid-template-columns:repeat(4,1fr)!important}}
+
+/* ---------- desktop and tablet pass (26 Sep 2026) ---------- */
+/* Contact: the left column says what happens after you press send, instead of sitting empty. */
+.p-next{list-style:none;counter-reset:nx;margin:28px 0 8px;display:grid;gap:14px}
+.p-next li{counter-increment:nx;font-family:var(--sans);display:flex;gap:14px;align-items:flex-start;font-size:var(--fs-m);color:var(--bone);line-height:1.45}
+.p-next li::before{content:counter(nx);flex:none;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--saffron);
+  color:var(--saffron);display:grid;place-items:center;font-family:var(--mono);font-size:var(--fs-s);font-weight:700}
+@media (min-width:960px){#ask .p-split{align-items:center}}
+/* Glance and terms: cards on wide screens, so no line runs 150 characters. */
+@media (min-width:960px){
+  section .p-glance{grid-template-columns:repeat(2,1fr);gap:14px;border-top:0}
+  section .p-glance.terms{grid-template-columns:repeat(3,1fr)}
+  section .p-glance > div{display:block;padding:22px 24px;border:1px solid var(--chicory);border-radius:var(--r);background:var(--void-2)}
+  section .p-glance dt{margin-bottom:10px}
+  section .p-glance.terms dd b{display:block;font-family:var(--disp);font-size:1.6rem;line-height:1.15;margin-bottom:2px}
+}
+/* Products: six across on a wide screen, two rows instead of three. */
+@media (min-width:1200px){.p .p-grid:not(.poster .p-grid){grid-template-columns:repeat(6,1fr)}}
+@media (max-width:959px){section .p-glance.terms dd b::after{content:" \00B7"}}
+@media (min-width:960px){section .p-glance:not(.terms) > div:last-child:nth-child(odd){grid-column:1 / -1}}
