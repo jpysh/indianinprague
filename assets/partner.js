@@ -89,10 +89,20 @@
     var rio = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (!e.isIntersecting) return;
-        var el = e.target, parcel = el.querySelector(".parcel"), mo = parcel && parcel.querySelector("animateMotion");
+        var el = e.target, parcel = el.querySelector(".parcel"), path = el.querySelector(".draw");
         rio.unobserve(el);
         el.classList.add("seen");
-        if (mo && mo.beginElement) { parcel.setAttribute("cx", 0); parcel.setAttribute("cy", 0); mo.beginElement(); }
+        /* Driven from JS along the same path the line draws, so the parcel and the line move
+           together and the parcel always finishes on the last stop. */
+        if (parcel && path && path.getTotalLength) {
+          var len = path.getTotalLength(), t0 = performance.now();
+          (function step(now) {
+            var k = Math.min(1, (now - t0) / 2600), e2 = k < .5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+            var pt = path.getPointAtLength(len * e2);
+            parcel.setAttribute("cx", pt.x); parcel.setAttribute("cy", pt.y);
+            if (k < 1) requestAnimationFrame(step);
+          })(t0);
+        }
         setTimeout(function () { el.classList.add("arrived"); }, 2650);
       });
     }, { threshold: 0.6 });

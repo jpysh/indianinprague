@@ -772,7 +772,7 @@ main.p > section.p-end{background:var(--saffron)}
 .p-route svg{display:block;width:100%;height:auto;overflow:visible}
 .p-route .track{fill:none;stroke:var(--chicory);stroke-width:2;stroke-dasharray:2 8;stroke-linecap:round}
 .p-route .draw{fill:none;stroke:var(--saffron);stroke-width:3;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0}
-.js-rv .p-route .draw{stroke-dashoffset:1;transition:stroke-dashoffset 2.6s cubic-bezier(.45,0,.25,1)}
+.js-rv .p-route .draw{stroke-dashoffset:1;transition:stroke-dashoffset 2.6s cubic-bezier(.45,0,.55,1)}
 .js-rv .p-route.seen .draw{stroke-dashoffset:0}
 .p-route .stop{fill:var(--void);stroke:var(--saffron);stroke-width:3}
 .p-route .parcel{fill:var(--magenta)}
@@ -836,3 +836,7 @@ main.p > section.p-end{background:var(--saffron)}
 @keyframes p-pop{50%{transform:scale(1.6)}}
 @keyframes p-glow{40%{color:var(--bone)}}
 .p-route .stop{transform-box:fill-box;transform-origin:center}
+
+/* Route on wide screens: a readable size, labels under their stops. */
+.p-route{max-width:880px}
+.p .light .p-alt a:not(.p-alt-btn){color:var(--ink);text-decoration:underline;text-underline-offset:3px}
