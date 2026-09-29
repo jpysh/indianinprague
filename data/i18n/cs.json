@@ -6,7 +6,7 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-28T05:18:12.737Z",
+  "generated": "2026-09-29T05:17:46.578Z",
   "count": 6937,
   "entries": {
     "item.9313828257.title": {
@@ -29763,10 +29763,6 @@
       "text": "Velmi dobré · Béžová",
       "src": "0372402bddd5"
     },
-    "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
-    },
     "text.7373b7c8f640": {
       "text": "1702 kusů na prodej · 94 prodaných",
       "src": "7373b7c8f640"
@@ -29774,14 +29770,6 @@
     "text.40af092daff0": {
       "text": "30 beletristických knih v knihovně.",
       "src": "40af092daff0"
-    },
-    "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
     },
     "text.8daf2b88bcfc": {
       "text": "Indické knihy v Evropě: beletrie, kuchařky, náboženská literatura, strana 4",
@@ -29794,10 +29782,6 @@
     "text.a3dd54965b81": {
       "text": "Dlouhé háčkované krajkové šaty | Šaty ve stylu boho na svatbu, rozlučku se svobodou a svatební večírek | Šaty ve stylu vintage a retro",
       "src": "a3dd54965b81"
-    },
-    "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasodě a Nandovi Maharádžovi.",
-      "src": "95afd31227cc"
     },
     "text.4fd026251dae": {
       "text": "Kyoto, Japonsko – Škola zenové filozofie: Klasické dílo „Překonání nihilismu – náboženství a nicota“ od Keijiho Nišitaniho",
@@ -29814,6 +29798,22 @@
     "text.1598eab17aae": {
       "text": "V tomto nápaditém thrilleru, jehož děj se odehrává ve společnosti, kde o postavení a osudu rozhodují již při narození astrologická znamení, určuje vaše znamení zvěrokruhu váš osud. A…",
       "src": "1598eab17aae"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasodě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
     }
   }
 }
