@@ -283,6 +283,13 @@ function extraShots(item, manifest) {
 
 // The listing's description. Hidden on the card and read by shop.js into the detail sheet
 // that opens when a card is tapped.
+// Full text of every description that blurb() had to cut, written to wardrobe/desc/<id>.txt
+// at the end of the build and fetched by shop.js when the detail sheet opens. Per product
+// rather than one JSON: 1,600 vendor descriptions are ~4 MB, which nobody should download
+// to read one. English only; the translated pages keep their translated short text, because
+// translating the full text is the ~3.9M characters of DeepL quota noted below.
+const fullDescs = new Map();
+
 function blurb(item) {
   const d = (item.description || "").replace(/\s+/g, " ").trim();
   if (!d) return "";
@@ -290,7 +297,8 @@ function blurb(item) {
   // what the seven translations already hold. The full partner descriptions would be ~3.9M
   // characters of new DeepL quota.
   const cut = d.length > 150 ? d.slice(0, 149).replace(/\s+\S*$/, "") + "…" : d;
-  return `<p class="blurb" id="blurb-${esc(item.id)}">${esc(cut)}</p>`;
+  if (cut !== d) fullDescs.set(item.id, d);
+  return `<p class="blurb" id="blurb-${esc(item.id)}"${cut !== d ? " data-full" : ""}>${esc(cut)}</p>`;
 }
 
 /* --------------------------------------------------------------- WhatsApp ---- */
@@ -1249,6 +1257,13 @@ async function main() {
   if (allTotal > 1) {
     await writeFile(path.join(ROOT, "wardrobe.cards"), cardsFragment(live, manifest, true));
   }
+
+  // Full descriptions for the detail sheet. Rewritten wholesale so a retired product's file
+  // does not outlive it.
+  const descDir = path.join(ROOT, "wardrobe/desc");
+  await rm(descDir, { recursive: true, force: true });
+  await mkdir(descDir, { recursive: true });
+  for (const [id, d] of fullDescs) await writeFile(path.join(descDir, id + ".txt"), d);
 
   // Sweep the numbered pages the storefront no longer has. Every shelf above does this for
   // its own directory; the storefront did not, and its numbered pages are the one set that
