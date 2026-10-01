@@ -404,7 +404,6 @@
      price, which is the other number that decides a purchase. */
   font-size:var(--fs-xl);font-weight:600;line-height:1;
   font-variant-numeric:tabular-nums;
-  backdrop-filter:blur(3px);
 }
 .piece .fav-badge svg{flex:0 0 auto;width:18px;height:18px}
 
@@ -435,7 +434,7 @@
   border:1px solid var(--magenta);
   font-family:inherit;font-size:var(--fs-xs);font-weight:600;
   letter-spacing:.06em;text-transform:uppercase;
-  cursor:pointer;transition:background .15s,color .15s;
+  cursor:pointer;white-space:nowrap;transition:background .15s,color .15s;
 }
 .sb-jump button:hover{background:var(--bone);border-color:var(--bone)}
 .sb-jump .sb-jump-top{padding:0 14px;min-width:46px}

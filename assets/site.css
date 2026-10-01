@@ -203,7 +203,7 @@ input,select,textarea,button{font-family:inherit;font-size:var(--fs-m)}
 /* Full-page film grain. Fixed and pointer-events:none so it never intercepts a tap. */
 body::before{
   content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
-  opacity:.055;mix-blend-mode:overlay;
+  opacity:.03;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -586,7 +586,7 @@ a.wa:hover{color:#3BE87C}
 .frame picture{display:contents}
 .frame .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
 .frame .grain{
-  position:absolute;inset:0;z-index:2;opacity:.2;mix-blend-mode:overlay;pointer-events:none;
+  position:absolute;inset:0;z-index:2;opacity:.2;pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g2'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g2)'/%3E%3C/svg%3E");
 }
 .frame .cap{
@@ -594,7 +594,7 @@ a.wa:hover{color:#3BE87C}
   font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone);text-transform:uppercase;
   background:rgba(58,30,22,.6);padding:3px 8px;
 }
-.frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(58,30,22,.55);mix-blend-mode:multiply;pointer-events:none}
+.frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(58,30,22,.55);pointer-events:none}
 
 /* Restaurant names sit ON the photograph, in the same bottom-left slot the garment
    captions use, rather than floating above it as loose text. It is a name rather than a
@@ -610,7 +610,7 @@ a.wa:hover{color:#3BE87C}
 
 /* A frame that actually contains a photograph dials the grain and vignette back, so the
    treatment reads as a tint rather than smothering the image. */
-.frame:has(.ph) .grain{opacity:.06}
+.frame:has(.ph) .grain{display:none}
 .frame:has(.ph)::after{box-shadow:inset 0 0 40px 6px rgba(58,30,22,.18)}
 
 /* spice-duotone placeholder grounds, hue set per element */
@@ -791,8 +791,11 @@ a.trust:hover .trust-n,a.trust:focus-visible .trust-n{color:var(--bone)}
    the whole row's title band rather than shoving that one card's meta line and button out
    of step with its neighbours. Four rows because every card is frame + meta + tags + ask.
    Pre-subgrid browsers ignore the block and get the ragged column this replaces. */
+/* SUBGRID IS OFF FOR THE SHOP GRID (#grid, shop.css). iOS Safari lost the shared rows on
+   lazily revealed cards and drew the photo over its title and price. Only pages whose
+   cards never change after load keep it. */
 @supports (grid-template-rows:subgrid){
-  .grid3>.piece{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+  .grid3:not(#grid)>.piece{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
 }
 
 .split{display:grid;grid-template-columns:1fr;gap:16px}
