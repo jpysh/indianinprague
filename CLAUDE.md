@@ -12,3 +12,8 @@
 
 - **Content must be visible without JavaScript.** Every hidden starting state sits under `.js-rv`, which `partner.js` adds only when it runs and motion is allowed. A version that hid content by default (`animation-timeline: view()`) rendered a blank page in WhatsApp's in-app browser, which is how merchants open shared links.
 - Honour `prefers-reduced-motion`.
+
+## iOS Safari rendering: banned on the shop grid
+
+- No `grid-template-rows:subgrid` on `#grid` cards, and no `mix-blend-mode` or `backdrop-filter` anywhere. On iPhone Safari (reduced motion) they made photos draw over titles, the sticky header vanish and the fixed Filters button float mid-screen (1 Oct 2026).
+- Verify shop CSS changes in WebKit at iPhone width before pushing, not just Chromium.
