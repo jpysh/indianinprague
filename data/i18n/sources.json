@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-09-30T05:17:59.931Z",
-  "count": 4337,
+  "generated": "2026-10-01T05:17:22.599Z",
+  "count": 4339,
   "entries": {
+    "item.10189665539.title": {
+      "text": "Vintage Indian Handwoven Wool Poncho | Boho Festival Cape | Folk Retro Autumn",
+      "src": "8bc3830a6310",
+      "where": "item 10189665539 — title",
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
+    },
+    "item.10189665539.description": {
+      "text": "Authentic Indian woollen textile and embroidery. \nOrange poncho handwoven from pure wool in Kashmir, India.\nTraditional ethnic geometric embroidery and hand-knotted fringe detailing. \nPerfect boho/folklore vibe.\n\n#vintageponcho #handwovenwool #bohocape #indianhandloom #orangeponcho #folklorestyle #festivalfashion #cottagecore #slowfashion #ethnicwear #vintage #fringecape #cozycore #indieaesthetic #sustainablefashion",
+      "src": "f46496d98e62",
+      "where": "item 10189665539 — description",
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
+    },
+    "attr.condition.very-good": {
+      "text": "Very good",
+      "src": "06a2935e6f57",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.orange": {
+      "text": "Orange",
+      "src": "78e7771b8b46",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.10183674562.title": {
       "text": "Long quilted jacket | Reversible | Autumn Indian coat | Boho Vintage Retro",
       "src": "90e19d7c7408",
@@ -26,13 +54,6 @@
       "where": "item 10183674562 — description",
       "since": "2026-09-30",
       "changed": "2026-09-30"
-    },
-    "attr.condition.very-good": {
-      "text": "Very good",
-      "src": "06a2935e6f57",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "attr.color.black": {
       "text": "Black",
@@ -710,20 +731,6 @@
       "text": "Enhance your photography setup with this official HOYA 72mm Digital\nFilter Kit II featuring a UV Multi-Coat filter, Circular Polarizer, and NDx8\nneutral density filter inside a protective padded pouch. Retails new for around\n€55. Barcode 024006059017. Essential for landscape shooting, reducing\nreflections, and protecting valuable camera lenses. Top search match for camera\naccessories, DSLR lens filters, HOYA 72mm filters, and photography gear.",
       "src": "ff2905d7f618",
       "where": "item 9833223694 — description",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
-    },
-    "item.9824330920.title": {
-      "text": "play most advanced board game Magnetic Folding Go Game Set Weiqi Board Game Strategy Game Set",
-      "src": "fb2aaa6aa240",
-      "where": "item 9824330920 — title",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
-    },
-    "item.9824330920.description": {
-      "text": "Master the ancient art of strategy with this complete magnetic folding Go game set featuring a portable board and full magnetic black and white pieces. Retails new for around €20. The magnetic board keeps your game secure on the go, making it ideal for travel, beginners,\nand seasoned players alike. Top search match for Weiqi board games, magnetic\ntravel games, Asian strategy games, and mind puzzles. bought from our Asia trip. unused.",
-      "src": "8ae04f6d71ab",
-      "where": "item 9824330920 — description",
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
@@ -1746,13 +1753,6 @@
       "text": "Very warm. This Handmade Beanie with 100% Wool and 100% soft fleece lining is crafted by artisans in Himalayas, India. Designed with vibrant multi-color patterns, cozy earflaps, and braided tassel ties, it brings a fun, free-spirited boho hippie vibe to your winter look. Width 9 inches.",
       "src": "f91fccf4b399",
       "where": "item 9529729646 — description",
-      "since": "",
-      "changed": ""
-    },
-    "attr.color.orange": {
-      "text": "Orange",
-      "src": "78e7771b8b46",
-      "where": "color — used across the shop",
       "since": "",
       "changed": ""
     },
@@ -4738,26 +4738,26 @@
       "since": "",
       "changed": ""
     },
-    "text.2b2e01620689": {
-      "text": "75 reviews on Vinted →",
-      "src": "2b2e01620689",
+    "text.da2811787bbc": {
+      "text": "76 reviews on Vinted →",
+      "src": "da2811787bbc",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-25",
-      "changed": "2026-09-25"
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
-    "text.50f5f16d56c8": {
-      "text": "Rated 5.0 out of 5 from 75 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "50f5f16d56c8",
+    "text.b1c46f8eb8a3": {
+      "text": "Rated 5.0 out of 5 from 76 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "b1c46f8eb8a3",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-25",
-      "changed": "2026-09-25"
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
-    "text.608e476e9e53": {
-      "text": "448 pieces",
-      "src": "608e476e9e53",
+    "text.45ed9465d49d": {
+      "text": "449 pieces",
+      "src": "45ed9465d49d",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-30",
-      "changed": "2026-09-30"
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
@@ -4934,12 +4934,12 @@
       "since": "",
       "changed": ""
     },
-    "text.87c8ffc0d389": {
-      "text": "1702 pieces for sale · 97 sold",
-      "src": "87c8ffc0d389",
+    "text.605b3a53d034": {
+      "text": "1702 pieces for sale · 98 sold",
+      "src": "605b3a53d034",
       "where": "page text — first seen on index.html",
-      "since": "2026-09-30",
-      "changed": "2026-09-30"
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -6929,19 +6929,19 @@
       "since": "2026-08-28",
       "changed": "2026-08-28"
     },
-    "text.eed03c211aea": {
-      "text": "Long quilted jacket handmade in India. Floral prints. Quilted stitching for insulation and a textured appearance. High-quality cotton. Two pockets…",
-      "src": "eed03c211aea",
+    "text.f179c431b033": {
+      "text": "Authentic Indian woollen textile and embroidery. Orange poncho handwoven from pure wool in Kashmir, India. Traditional ethnic geometric embroidery…",
+      "src": "f179c431b033",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-15",
-      "changed": "2026-09-15"
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
-    "text.a1febfb9d878": {
-      "text": "Very good · Black · M",
-      "src": "a1febfb9d878",
+    "text.7cd9920a66e4": {
+      "text": "Very good · Orange · One size",
+      "src": "7cd9920a66e4",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
     },
     "text.c16236ad956c": {
       "text": "Ask about this piece",
@@ -6957,9 +6957,23 @@
       "since": "",
       "changed": ""
     },
-    "text.afd99cda0a21": {
-      "text": "5 people have saved this on Vinted",
-      "src": "afd99cda0a21",
+    "text.eed03c211aea": {
+      "text": "Long quilted jacket handmade in India. Floral prints. Quilted stitching for insulation and a textured appearance. High-quality cotton. Two pockets…",
+      "src": "eed03c211aea",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-15",
+      "changed": "2026-09-15"
+    },
+    "text.a1febfb9d878": {
+      "text": "Very good · Black · M",
+      "src": "a1febfb9d878",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.6f08dc1cfa4c": {
+      "text": "7 people have saved this on Vinted",
+      "src": "6f08dc1cfa4c",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7244,12 +7258,12 @@
       "since": "2026-09-25",
       "changed": "2026-09-25"
     },
-    "text.ba843804d558": {
-      "text": "26 people have saved this on Vinted",
-      "src": "ba843804d558",
+    "text.5eec6b71b8e5": {
+      "text": "27 people have saved this on Vinted",
+      "src": "5eec6b71b8e5",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-26",
+      "changed": "2026-09-26"
     },
     "text.86e801428726": {
       "text": "A beautifully crafted gold-plated 1000 rupee note featuring Lakshmi and Kuber—symbols of wealth, wisdom, and prosperity. Wall decor. Perfect to hang…",
@@ -7569,13 +7583,6 @@
     "text.878ef8392d02": {
       "text": "Krishna holds Mount Govardhan on the little finger of his left hand to protect the people and animals of Vraja from a cloudburst sent by the god…",
       "src": "878ef8392d02",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-13",
-      "changed": "2026-09-13"
-    },
-    "text.7193d74e7ffb": {
-      "text": "A3+ poster: Krishna holding up Mount Govardhan",
-      "src": "7193d74e7ffb",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-09-13",
       "changed": "2026-09-13"
@@ -13054,6 +13061,13 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.7193d74e7ffb": {
+      "text": "A3+ poster: Krishna holding up Mount Govardhan",
+      "src": "7193d74e7ffb",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-09-13",
+      "changed": "2026-09-13"
+    },
     "text.4ed0f06aae10": {
       "text": "A2 poster by Gopináth",
       "src": "4ed0f06aae10",
@@ -13130,6 +13144,13 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-09-10",
       "changed": "2026-09-10"
+    },
+    "text.afd99cda0a21": {
+      "text": "5 people have saved this on Vinted",
+      "src": "afd99cda0a21",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
     },
     "text.bf54ea42bbbe": {
       "text": "Bought from Peru. I have two, one white and one black. Price is for one. Let me know in message which colour! Llama/Alpaca keychain handmade by…",
@@ -13526,20 +13547,6 @@
     "text.398fcdc28a4d": {
       "text": "Enhance your photography setup with this official HOYA 72mm Digital Filter Kit II featuring a UV Multi-Coat filter, Circular Polarizer, and NDx8…",
       "src": "398fcdc28a4d",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
-    },
-    "text.d9239828b2de": {
-      "text": "20 people have saved this on Vinted",
-      "src": "d9239828b2de",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-30",
-      "changed": "2026-09-30"
-    },
-    "text.2000e314544b": {
-      "text": "Master the ancient art of strategy with this complete magnetic folding Go game set featuring a portable board and full magnetic black and white…",
-      "src": "2000e314544b",
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
@@ -19060,12 +19067,12 @@
       "since": "",
       "changed": ""
     },
-    "text.f4c2c32ec4e0": {
-      "text": "16 people have saved this on Vinted",
-      "src": "f4c2c32ec4e0",
+    "text.4e295b703185": {
+      "text": "18 people have saved this on Vinted",
+      "src": "4e295b703185",
       "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
+      "since": "",
+      "changed": ""
     },
     "text.aa9b83be445b": {
       "text": "Stand in solidary with this striking Palestine protest sash featuring vibrant flag colors, traditional keffiyeh patterns, and anti-colonial emblem…",
@@ -19171,13 +19178,6 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-25",
       "changed": "2026-08-25"
-    },
-    "text.6f08dc1cfa4c": {
-      "text": "7 people have saved this on Vinted",
-      "src": "6f08dc1cfa4c",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
     },
     "text.4d95876a9ba0": {
       "text": "Bust: Can fit approx. 36-38 inches Shoulder: 15 inch Waist: free-flow, fits most Length: 48 inches Beautiful long dress in soft pastel beige, with a…",
@@ -19301,6 +19301,13 @@
     "text.a6cf64e70721": {
       "text": "New without tags · Beige · One size",
       "src": "a6cf64e70721",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.ba843804d558": {
+      "text": "26 people have saved this on Vinted",
+      "src": "ba843804d558",
       "where": "page text — first seen on wardrobe/3.html",
       "since": "",
       "changed": ""
@@ -23855,6 +23862,27 @@
       "since": "2026-09-27",
       "changed": "2026-09-27"
     },
+    "text.fb2aaa6aa240": {
+      "text": "play most advanced board game Magnetic Folding Go Game Set Weiqi Board Game Strategy Game Set",
+      "src": "fb2aaa6aa240",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-10-01",
+      "changed": "2026-10-01"
+    },
+    "text.d9239828b2de": {
+      "text": "20 people have saved this on Vinted",
+      "src": "d9239828b2de",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-09-30",
+      "changed": "2026-09-30"
+    },
+    "text.2000e314544b": {
+      "text": "Master the ancient art of strategy with this complete magnetic folding Go game set featuring a portable board and full magnetic black and white…",
+      "src": "2000e314544b",
+      "where": "page text — first seen on wardrobe/36.html",
+      "since": "2026-09-02",
+      "changed": "2026-09-02"
+    },
     "text.a545ce880b30": {
       "text": "Wildlife Print Shirt Men | Full-Sleeve Jungle-Inspired Style for Adventurers | Indian Summer Cotton",
       "src": "a545ce880b30",
@@ -23932,20 +23960,6 @@
       "since": "",
       "changed": ""
     },
-    "text.9ec9d1e181b0": {
-      "text": "African Maasai Beaded Choker, White Tribal Necklace",
-      "src": "9ec9d1e181b0",
-      "where": "page text — first seen on wardrobe/36.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b101f0a72f7c": {
-      "text": "Handmade Zulu-style necklace featuring intricate seed beadwork on a rope base.",
-      "src": "b101f0a72f7c",
-      "where": "page text — first seen on wardrobe/36.html",
-      "since": "",
-      "changed": ""
-    },
     "text.5324715feed8": {
       "text": "Page 36 of 38",
       "src": "5324715feed8",
@@ -23959,6 +23973,20 @@
       "where": "page text — first seen on wardrobe/37.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
+    },
+    "text.9ec9d1e181b0": {
+      "text": "African Maasai Beaded Choker, White Tribal Necklace",
+      "src": "9ec9d1e181b0",
+      "where": "page text — first seen on wardrobe/37.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b101f0a72f7c": {
+      "text": "Handmade Zulu-style necklace featuring intricate seed beadwork on a rope base.",
+      "src": "b101f0a72f7c",
+      "where": "page text — first seen on wardrobe/37.html",
+      "since": "",
+      "changed": ""
     },
     "text.b1ccfb5b45ba": {
       "text": "Antique Bronze Tibetan Buddha Dagger Amulet | Pendant Talisman Charm",
@@ -24653,20 +24681,6 @@
       "since": "",
       "changed": ""
     },
-    "text.245b0a58078c": {
-      "text": "Art Nouveau Indian Designer Long Sheer Scarf – Lightweight, Elegant, Silky-Soft",
-      "src": "245b0a58078c",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-09-18",
-      "changed": "2026-09-18"
-    },
-    "text.2537c6b9ff44": {
-      "text": "Scarf. Art Nouveau-inspired design by Indian fashion designer Nida Mahmood. Known as India's &quot;Queen of Kitsch,&quot; Mahmood often fuses vintage global…",
-      "src": "2537c6b9ff44",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "",
-      "changed": ""
-    },
     "text.efac32cad7a4": {
       "text": "Page 37 of 38",
       "src": "efac32cad7a4",
@@ -24680,6 +24694,20 @@
       "where": "page text — first seen on wardrobe/38.html",
       "since": "2026-09-27",
       "changed": "2026-09-27"
+    },
+    "text.245b0a58078c": {
+      "text": "Art Nouveau Indian Designer Long Sheer Scarf – Lightweight, Elegant, Silky-Soft",
+      "src": "245b0a58078c",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "2026-09-18",
+      "changed": "2026-09-18"
+    },
+    "text.2537c6b9ff44": {
+      "text": "Scarf. Art Nouveau-inspired design by Indian fashion designer Nida Mahmood. Known as India's &quot;Queen of Kitsch,&quot; Mahmood often fuses vintage global…",
+      "src": "2537c6b9ff44",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
     },
     "text.49f35d42294c": {
       "text": "Designer scarf Indian luxury label Satya Paul",
@@ -24789,13 +24817,6 @@
     "text.eef0f6a4d50b": {
       "text": "Haruki Murakami Kafka on the Shore Spellbinding International Bestseller",
       "src": "eef0f6a4d50b",
-      "where": "page text — first seen on wardrobe/38.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.4e295b703185": {
-      "text": "18 people have saved this on Vinted",
-      "src": "4e295b703185",
       "where": "page text — first seen on wardrobe/38.html",
       "since": "",
       "changed": ""
@@ -25709,13 +25730,6 @@
       "where": "page text — first seen on wardrobe/5.html",
       "since": "",
       "changed": ""
-    },
-    "text.5eec6b71b8e5": {
-      "text": "27 people have saved this on Vinted",
-      "src": "5eec6b71b8e5",
-      "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
     },
     "text.60f3161edca8": {
       "text": "Beautiful blue block-print dress by Anoshk, a Delhi boutique label. Soft cotton covered in an intricate floral, palm and butterfly print in mustard,…",
@@ -28440,13 +28454,6 @@
       "since": "",
       "changed": ""
     },
-    "text.7591a36cb87a": {
-      "text": "jaipur kurti",
-      "src": "7591a36cb87a",
-      "where": "page text — first seen on wardrobe/fashion.html",
-      "since": "",
-      "changed": ""
-    },
     "text.84b2201d5737": {
       "text": "Page 1 of 10",
       "src": "84b2201d5737",
@@ -28625,6 +28632,13 @@
     "text.3e97cbd1e38a": {
       "text": "Indian Clothes in Europe: Kurtas, Sarees, Block Print, page 2",
       "src": "3e97cbd1e38a",
+      "where": "page text — first seen on wardrobe/fashion/2.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.7591a36cb87a": {
+      "text": "jaipur kurti",
+      "src": "7591a36cb87a",
       "where": "page text — first seen on wardrobe/fashion/2.html",
       "since": "",
       "changed": ""
@@ -30218,13 +30232,6 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.fb79548b9d74": {
-      "text": "WEIQI",
-      "src": "fb79548b9d74",
-      "where": "page text — first seen on wardrobe/others.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
-    },
     "text.26d2aa070cdb": {
       "text": "supersun",
       "src": "26d2aa070cdb",
@@ -30242,6 +30249,13 @@
     "text.5d1fc8bb44eb": {
       "text": "TP-Link",
       "src": "5d1fc8bb44eb",
+      "where": "page text — first seen on wardrobe/others.html",
+      "since": "2026-09-02",
+      "changed": "2026-09-02"
+    },
+    "text.fb79548b9d74": {
+      "text": "WEIQI",
+      "src": "fb79548b9d74",
       "where": "page text — first seen on wardrobe/others.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:03.349Z",
-  "count": 6953,
+  "generated": "2026-10-01T05:17:26.022Z",
+  "count": 6962,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -27820,6 +27820,42 @@
     "text.bbc003407390": {
       "text": "Elegante bracciale color oro con i sette simboli sacri dei chakra, incisi su dischi circolari dal design minimalista. Leggero, raffinato e facile da indossare durante…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Poncho vintage indiano in lana tessuto a mano | Mantella boho da festival | Stile folk retrò autunnale",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Autentico tessuto indiano in lana con ricami. \nPoncho arancione tessuto a mano in pura lana nel Kashmir, India.\nRicami geometrici tradizionali in stile etnico e frange annodate a mano. \nPerfetto per un look boho/folcloristico.\n\n#poncho vintage #lana tessuta a mano #cappa boho #tessuto indiano a telaio manuale #poncho arancione #stile folcloristico #moda da festival #cottagecore #slowfashion #abbigliamento etnico #vintage #cappa con frange #cozycore #estetica indie #moda sostenibile",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 pezzi",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 recensioni su Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Ottimo · Arancione · Taglia unica",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1702 pezzi in vendita · 98 venduti",
+      "src": "605b3a53d034"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Valutato 5,0 su 5 in base a 76 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Giocate al gioco da tavolo più avanzato: Set da gioco pieghevole magnetico per Go - Set da gioco da tavolo Weiqi - Set da gioco di strategia",
+      "src": "fb2aaa6aa240"
+    },
+    "text.f179c431b033": {
+      "text": "Autentici tessuti e ricami indiani in lana. Poncho arancione tessuto a mano in pura lana nel Kashmir, in India. Ricami geometrici etnici tradizionali…",
+      "src": "f179c431b033"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:01.866Z",
-  "count": 6953,
+  "generated": "2026-10-01T05:17:24.685Z",
+  "count": 6962,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -27820,6 +27820,42 @@
     "text.bbc003407390": {
       "text": "Un bracelet élégant aux reflets dorés, orné des sept symboles sacrés des chakras, gravés sur des disques circulaires minimalistes. Léger, raffiné et facile à porter lors de…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Poncho vintage indien en laine tissé à la main | Cape bohème de festival | Style folk rétro d&#x27;automne",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Tissu en laine et broderies indiennes authentiques. \nPoncho orange tissé à la main en pure laine au Cachemire, en Inde.\nBroderies géométriques ethniques traditionnelles et franges nouées à la main. \nUne ambiance bohème/folklorique parfaite.\n\n#ponchovintage #laine tissée à la main #cape bohème #tissage indien à la main #poncho orange #style folklorique #mode de festival #cottagecore #slowfashion #vêtements ethniques #vintage #cape à franges #cozycore #esthétique indie #mode durable",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 pièces",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 avis sur Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Très bien · Orange · Taille unique",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1 702 pièces à vendre · 98 vendues",
+      "src": "605b3a53d034"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 76 avis d&#x27;acheteurs. Découvrez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Découvrez le jeu de société le plus sophistiqué : le jeu de go magnétique pliable « Weiqi », un jeu de stratégie",
+      "src": "fb2aaa6aa240"
+    },
+    "text.f179c431b033": {
+      "text": "Tissu en laine et broderie indiens authentiques. Poncho orange tissé à la main en pure laine au Cachemire, en Inde. Broderie géométrique ethnique traditionnelle…",
+      "src": "f179c431b033"
     }
   }
 }

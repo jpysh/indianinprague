@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:02.542Z",
-  "count": 6957,
+  "generated": "2026-10-01T05:17:25.334Z",
+  "count": 6966,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -27836,6 +27836,42 @@
     "text.bbc003407390": {
       "text": "Elegantes, goldfarbenes Armband mit den sieben heiligen Chakra-Symbolen, die auf minimalistische, runde Scheiben graviert sind. Leicht, schlicht und angenehm zu tragen bei…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Indischer Vintage-Poncho aus handgewebter Wolle | Boho-Festival-Umhang | Folk-Retro-Herbst",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Authentische indische Wolltextilien und Stickereien. \nOrangefarbener Poncho, handgewebt aus reiner Wolle in Kaschmir, Indien.\nTraditionelle ethnische geometrische Stickereien und handgeknüpfte Fransen. \nPerfekt für den Boho-/Folklore-Look.\n\n#VintagePoncho #handgewebteWolle #Boho-Cape #indischeHandweberei #orangefarbenerPoncho #Folklore-Stil #Festivalmode #CottageCore #SlowFashion #ethnischeKleidung #Vintage #Fransen-Cape #CozyCore #Indie-Ästhetik #nachhaltigeMode",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 Teile",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 Bewertungen auf Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Sehr gut · Orange · Einheitsgröße",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1.702 Artikel zum Verkauf · 98 verkauft",
+      "src": "605b3a53d034"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Bewertung: 5,0 von 5 bei 76 Kundenbewertungen. Lesen Sie diese unter Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Spielen Sie das modernste Brettspiel: Magnetisches, zusammenklappbares Go-Spielset – Weiqi-Brettspiel-Strategiespielset",
+      "src": "fb2aaa6aa240"
+    },
+    "text.f179c431b033": {
+      "text": "Authentische indische Wolltextilien und Stickereien. Orangefarbener Poncho, handgewebt aus reiner Wolle in Kaschmir, Indien. Traditionelle ethnische geometrische Stickereien…",
+      "src": "f179c431b033"
     }
   }
 }

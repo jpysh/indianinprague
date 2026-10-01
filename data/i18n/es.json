@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:04.154Z",
-  "count": 6953,
+  "generated": "2026-10-01T05:17:26.894Z",
+  "count": 6962,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -27820,6 +27820,42 @@
     "text.bbc003407390": {
       "text": "Elegante brazalete en tono dorado con los siete símbolos sagrados de los chakras, grabados en discos circulares minimalistas. Ligero, elegante y fácil de llevar durante…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Poncho vintage de lana tejido a mano de la India | Capa boho para festivales | Estilo folk retro otoñal",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Tejido de lana y bordados auténticamente indios. \nPoncho naranja tejido a mano con lana pura en Cachemira, India.\nBordados geométricos étnicos tradicionales y flecos anudados a mano. \nUn estilo boho/folclórico perfecto.\n\n#ponchovintage #lanatejidaamano #capabohí #telarindio #ponchoanaranjado #estilofolclórico #modafestival #cottagecore #modasostenible #ropaétnica #vintage #capaconfites #cozycore #estéticaindie #modasostenible",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 piezas",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 opiniones en Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Muy bueno · Naranja · Talla única",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1702 piezas a la venta · 98 vendidas",
+      "src": "605b3a53d034"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Valoración de 5,0 sobre 5 según 76 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Disfrute del juego de mesa más avanzado: juego de go plegable magnético, juego de mesa Weiqi, juego de estrategia",
+      "src": "fb2aaa6aa240"
+    },
+    "text.f179c431b033": {
+      "text": "Tejidos y bordados auténticos de lana de la India. Poncho naranja tejido a mano con lana pura en Cachemira, India. Bordados geométricos étnicos tradicionales…",
+      "src": "f179c431b033"
     }
   }
 }

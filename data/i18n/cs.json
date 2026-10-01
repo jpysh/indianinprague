@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:06.081Z",
-  "count": 6953,
+  "generated": "2026-10-01T05:17:28.533Z",
+  "count": 6962,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -29831,10 +29831,6 @@
       "text": "307 kusů",
       "src": "f8b16f424d89"
     },
-    "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
-    },
     "text.87c8ffc0d389": {
       "text": "1702 kusů na prodej · 97 prodáno",
       "src": "87c8ffc0d389"
@@ -29846,14 +29842,6 @@
     "text.1bd1a99c24d3": {
       "text": "45 lidí si to uložilo na Vinted",
       "src": "1bd1a99c24d3"
-    },
-    "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
     },
     "text.f9b48d1b0772": {
       "text": "Náramek s 7 hinduistickými čakrami | Léčivé, duchovní, jógové, meditační šperky ve stylu boho",
@@ -29867,10 +29855,6 @@
       "text": "Hinduistický duchovní náramek | Tibetský buddhismus | Jóga, meditace, boho, hippie, vintage, retro",
       "src": "5b7302b0a1ea"
     },
-    "text.95afd31227cc": {
-      "text": "Krišna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
-      "src": "95afd31227cc"
-    },
     "text.c9d818d0561a": {
       "text": "Hodinky v zlatém odstínu inspirované stylem „serpenti“, s ovinutým designem. Ciferník ve tvaru hadí hlavy s lunetou zdobenou umělými diamanty a smaragdově zeleným ciferníkem se zlatými římskými číslicemi…",
       "src": "c9d818d0561a"
@@ -29878,6 +29862,58 @@
     "text.bbc003407390": {
       "text": "Elegantní náramek ve zlatém odstínu se sedmi symboly posvátných čaker, vyrytými na minimalistických kruhových destičkách. Lehký, elegantní a pohodlný na nošení při…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Retro indické ručně tkané vlněné pončo | Boho festivalový plášť | Lidové retro na podzim",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Autentická indická vlněná tkanina a výšivka. \nOranžové pončo ručně tkané z čisté vlny v Kašmíru v Indii.\nTradiční etnická geometrická výšivka a ručně vázané třásně. \nDokonalá boho/folklórní atmosféra.\n\n#vintageponcho #ručnětkanávlna #bohoplášť #indickýručnítkalcovskýstav #oranžovépončo #folklórnístyl #festivalovámóda #cottagecore #slowfashion #etnickéoblečení #vintage #plášťs třásněmi #cozycore #indieaesthetic #udržitelnámóda",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 kusů",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 recenzí na Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Velmi dobré · Oranžová · Jedna velikost",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1702 kusů na prodej · 98 prodáno",
+      "src": "605b3a53d034"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Hodnocení 5,0 z 5 na základě 76 recenzí od kupujících. Přečtěte si je na stránkách Vinted (otevře se v nové záložce).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Zahrajte si nejmodernější deskovou hru – skládací sadu na go „Magnetic“ – strategickou deskovou hru Weiqi",
+      "src": "fb2aaa6aa240"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pasáček krav“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
+    },
+    "text.f179c431b033": {
+      "text": "Autentické indické vlněné textilie a výšivky. Oranžové pončo ručně tkané z čisté vlny v Kašmíru v Indii. Tradiční etnická geometrická výšivka…",
+      "src": "f179c431b033"
     }
   }
 }

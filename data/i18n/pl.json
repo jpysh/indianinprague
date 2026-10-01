@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-09-30T05:18:05.070Z",
-  "count": 6953,
+  "generated": "2026-10-01T05:17:27.749Z",
+  "count": 6962,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -27820,6 +27820,42 @@
     "text.bbc003407390": {
       "text": "Elegancka, pozłacana bransoletka z siedmioma symbolami świętych czakr, wygrawerowanymi na minimalistycznych okrągłych krążkach. Lekka, smukła i wygodna w noszeniu podczas…",
       "src": "bbc003407390"
+    },
+    "item.10189665539.title": {
+      "text": "Ponczo z ręcznie tkanej wełny w stylu vintage z Indii | Peleryna festiwalowa w stylu boho | Jesień w stylu folkowo-retro",
+      "src": "8bc3830a6310"
+    },
+    "item.10189665539.description": {
+      "text": "Autentyczna indyjska tkanina wełniana z haftem. \nPomarańczowe ponczo, ręcznie tkane z czystej wełny w Kaszmirze w Indiach.\nTradycyjny etniczny haft geometryczny oraz ręcznie wiązane frędzle. \nIdealny styl boho/folklorystyczny.\n\n#vintageponcho #ręcznietkanawełna #peleryna w stylu boho #indyjski krosno ręczne #pomarańczoweponcho #stylfolklorystyczny #moda festiwalowa #cottagecore #slowfashion #odzieżetniczna #vintage #pelerynazfrędzlami #cozycore #estetyka indie #moda zrównoważona",
+      "src": "f46496d98e62"
+    },
+    "text.45ed9465d49d": {
+      "text": "449 sztuk",
+      "src": "45ed9465d49d"
+    },
+    "text.da2811787bbc": {
+      "text": "76 recenzji na stronie Vinted →",
+      "src": "da2811787bbc"
+    },
+    "text.7cd9920a66e4": {
+      "text": "Bardzo dobrze · Pomarańczowy · Jeden rozmiar",
+      "src": "7cd9920a66e4"
+    },
+    "text.605b3a53d034": {
+      "text": "1702 sztuki na sprzedaż · 98 sprzedanych",
+      "src": "605b3a53d034"
+    },
+    "text.b1c46f8eb8a3": {
+      "text": "Ocena 5,0 na 5 na podstawie 76 opinii kupujących. Zapraszamy do zapoznania się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "b1c46f8eb8a3"
+    },
+    "text.fb2aaa6aa240": {
+      "text": "Zagraj w najbardziej zaawansowaną grę planszową: „Magnetyczny, składany zestaw do gry w Go” – zestaw do gry strategicznej Weiqi",
+      "src": "fb2aaa6aa240"
+    },
+    "text.f179c431b033": {
+      "text": "Autentyczna indyjska tkanina wełniana z haftem. Pomarańczowe ponczo, ręcznie tkane z czystej wełny w Kaszmirze w Indiach. Tradycyjny etniczny haft geometryczny…",
+      "src": "f179c431b033"
     }
   }
 }
