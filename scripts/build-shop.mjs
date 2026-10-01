@@ -286,16 +286,15 @@ function extraShots(item, manifest) {
 // Full text of every description that blurb() had to cut, written to wardrobe/desc/<id>.txt
 // at the end of the build and fetched by shop.js when the detail sheet opens. Per product
 // rather than one JSON: 1,600 vendor descriptions are ~4 MB, which nobody should download
-// to read one. English only; the translated pages keep their translated short text, because
-// translating the full text is the ~3.9M characters of DeepL quota noted below.
+// to read one. Translations live beside them in <lang>/ (translate-desc.mjs); a
+// language without one keeps its translated short text.
 const fullDescs = new Map();
 
 function blurb(item) {
   const d = (item.description || "").replace(/\s+/g, " ").trim();
   if (!d) return "";
-  // Still cut at 150 even though the detail sheet has room for more: the cut strings are
-  // what the seven translations already hold. The full partner descriptions would be ~3.9M
-  // characters of new DeepL quota.
+  // The card keeps the 150-character cut: it is what the page translations hold. The
+  // sheet loads the whole text separately (fullDescs above).
   const cut = d.length > 150 ? d.slice(0, 149).replace(/\s+\S*$/, "") + "…" : d;
   if (cut !== d) fullDescs.set(item.id, d);
   return `<p class="blurb" id="blurb-${esc(item.id)}"${cut !== d ? " data-full" : ""}>${esc(cut)}</p>`;
@@ -1261,8 +1260,9 @@ async function main() {
   // Full descriptions for the detail sheet. Rewritten wholesale so a retired product's file
   // does not outlive it.
   const descDir = path.join(ROOT, "wardrobe/desc");
-  await rm(descDir, { recursive: true, force: true });
+  // Top-level .txt only: the <lang>/ subfolders are translate-desc.mjs's output.
   await mkdir(descDir, { recursive: true });
+  for (const f of await readdir(descDir)) if (f.endsWith(".txt")) await rm(path.join(descDir, f));
   for (const [id, d] of fullDescs) await writeFile(path.join(descDir, id + ".txt"), d);
 
   // Sweep the numbered pages the storefront no longer has. Every shelf above does this for

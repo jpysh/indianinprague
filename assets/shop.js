@@ -250,12 +250,13 @@
     var desc = sheet.querySelector(".sheet-desc");
     desc.textContent = text(".blurb");
     // The card carries a cut description (data-full marks that it was cut). The whole text
-    // is one small file per product, English only, so a translated page keeps its
-    // translated short text rather than swapping to English mid-read. A failed fetch
-    // leaves the short text, which is why it is shown first.
+    // is one small file per product and language (translate-desc.mjs). A page never swaps
+    // to another language mid-read: a missing translation 404s and the translated short
+    // text stays, as does a failed fetch, which is why it is shown first.
     var cut = card.querySelector(".blurb[data-full]");
-    if (cut && document.documentElement.lang === "en") {
-      fetch("/wardrobe/desc/" + cut.id.replace(/^blurb-/, "") + ".txt")
+    var lang = document.documentElement.lang;
+    if (cut) {
+      fetch("/wardrobe/desc/" + (lang === "en" ? "" : lang + "/") + cut.id.replace(/^blurb-/, "") + ".txt")
         .then(function (r) { return r.ok ? r.text() : ""; })
         .then(function (t) { if (t && sheet.open && sheet.querySelector("h2").textContent === text(".nm")) desc.textContent = t.trim(); })
         .catch(function () {});
