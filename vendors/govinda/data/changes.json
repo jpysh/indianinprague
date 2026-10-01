@@ -1,29 +1,52 @@
 {
-  "at": "2026-09-20T05:15:21.713Z",
+  "at": "2026-09-27T05:16:02.117Z",
   "first": false,
   "added": [
     {
-      "sku": "3909",
-      "title": "Oriental blend 30 g"
+      "sku": "2592",
+      "title": "A3 poster: Krishna Govinda Returns from the Forest"
     },
     {
-      "sku": "3910",
-      "title": "Ground cloves 25 g"
+      "sku": "2593",
+      "title": "A2 poster: Krishna Govinda Returns from the Forest"
     },
     {
-      "sku": "3911",
-      "title": "Gingerbread spice mix 25 g"
+      "sku": "2594",
+      "title": "A3 poster: Krishna with a flute – photo of the Deity"
     },
     {
-      "sku": "3912",
-      "title": "White lemon pepper, 25 g"
+      "sku": "3669",
+      "title": "Sandalwood Incense Sticks"
     },
     {
-      "sku": "3913",
-      "title": "Bay leaf 5 g"
+      "sku": "3914",
+      "title": "A3 poster: Krishna reveals his cosmic form"
+    },
+    {
+      "sku": "3915",
+      "title": "A3 poster: Vasudeva carries Krishna to Gokula"
+    },
+    {
+      "sku": "3916",
+      "title": "A3 poster: Radha and Krishna on a swing"
+    },
+    {
+      "sku": "3917",
+      "title": "A3 poster: Krishna watching Radha"
+    },
+    {
+      "sku": "3918",
+      "title": "A3 poster: Krishna disguises himself as a gopi"
     }
   ],
   "gone": [],
-  "price": [],
+  "price": [
+    {
+      "sku": "3273",
+      "title": "A3 poster: Krishna Govinda",
+      "from": 120,
+      "to": 280
+    }
+  ],
   "stock": []
 }
