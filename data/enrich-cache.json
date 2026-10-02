@@ -5954,5 +5954,34 @@
       "colorRaw": "Oranžová",
       "vintedCategory": "Ženy Přehozy, ponča a pláštěnky"
     }
+  },
+  "10200502111": {
+    "description": "Beautiful cropped pants in a gorgeous pastel pistachio / sage green shade.\nCropped wide-leg.\nBreathable linen blend. \nWaist 34 inches\nLength 30.5 inches \n\n#riverisland #linenpants #pistachiogreen #pastelgreen #croppedtrousers #culottes #summerwardrobe #beachwear #bohochic #casualstyle #linentrousers #sagegreen #vacationstyle",
+    "vintedCategory": "Women Wide-leg trousers",
+    "colorRaw": "Mint",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 9,
+        "name": "Trousers & leggings"
+      },
+      {
+        "id": 1071,
+        "name": "Wide-leg trousers"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Mint",
+      "vintedCategory": "Ženy Široké kalhoty"
+    }
   }
 }

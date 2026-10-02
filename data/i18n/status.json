@@ -1,16 +1,16 @@
 {
   "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
-  "generated": "2026-10-01T05:17:28.747Z",
-  "sources": 4339,
-  "exhausted": false,
+  "generated": "2026-10-02T05:17:40.394Z",
+  "sources": 4344,
+  "exhausted": true,
   "keys": [
     {
       "n": 1,
       "ok": true,
-      "used": 245929,
+      "used": 500000,
       "limit": 500000,
-      "left": 254071,
-      "pct": 0.491858
+      "left": 0,
+      "pct": 1
     },
     {
       "n": 2,
@@ -23,96 +23,88 @@
     {
       "n": 3,
       "ok": true,
-      "used": 0,
+      "used": 17276,
       "limit": 1000000,
-      "left": 1000000,
-      "pct": 0
-    },
-    {
-      "n": 4,
-      "ok": true,
-      "used": 0,
-      "limit": 1000000,
-      "left": 1000000,
-      "pct": 0
+      "left": 982724,
+      "pct": 0.017276
     }
   ],
   "languages": [
     {
       "lang": "ru",
       "name": "Русский",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "fr",
       "name": "Français",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "de",
       "name": "Deutsch",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "it",
       "name": "Italiano",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "es",
       "name": "Español",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "pl",
       "name": "Polski",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4334,
+      "missing": 10,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 10,
       "excluded": []
     },
     {
       "lang": "cs",
       "name": "Čeština",
-      "total": 4339,
-      "translated": 4339,
-      "missing": 0,
+      "total": 4344,
+      "translated": 4331,
+      "missing": 13,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 0,
+      "outstanding": 13,
       "excluded": [
         "/^attr\\./"
       ]

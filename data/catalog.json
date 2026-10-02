@@ -1,12 +1,67 @@
 {
-  "syncedAt": "2026-10-01T05:15:09.089Z",
+  "syncedAt": "2026-10-02T05:15:09.870Z",
   "rate": {
-    "czkPerEur": 24.44,
-    "fetched": "2026-10-01",
+    "czkPerEur": 24.459,
+    "fetched": "2026-10-02",
     "source": "ECB"
   },
-  "count": 180,
+  "count": 181,
   "items": [
+    {
+      "id": "10200502111",
+      "title": "River Island Pastel Pistachio Green Cropped Linen Trousers",
+      "priceCzk": 179,
+      "priceEur": 7,
+      "brand": "River Island",
+      "size": "XL / 42 / 14",
+      "sizeGroup": "XL",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Mint",
+        "cs": "Mint"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Wide-leg trousers",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 9,
+          "name": "Trousers & leggings"
+        },
+        {
+          "id": 1071,
+          "name": "Wide-leg trousers"
+        }
+      ],
+      "description": "Beautiful cropped pants in a gorgeous pastel pistachio / sage green shade.\nCropped wide-leg.\nBreathable linen blend. \nWaist 34 inches\nLength 30.5 inches \n\n#riverisland #linenpants #pistachiogreen #pastelgreen #croppedtrousers #culottes #summerwardrobe #beachwear #bohochic #casualstyle #linentrousers #sagegreen #vacationstyle",
+      "photo": "images/vinted-10200502111-1.jpg",
+      "photos": [
+        "images/vinted-10200502111-1.jpg",
+        "images/vinted-10200502111-2.jpg",
+        "images/vinted-10200502111-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10200502111-river-island-pastel-pistachio-green-cropped-linen-trousers",
+        "es": "https://www.vinted.es/items/10200502111-river-island-pastel-pistachio-green-cropped-linen-trousers",
+        "com": "https://www.vinted.com/items/10200502111-river-island-pastel-pistachio-green-cropped-linen-trousers",
+        "uk": "https://www.vinted.co.uk/items/10200502111-river-island-pastel-pistachio-green-cropped-linen-trousers"
+      }
+    },
     {
       "id": "10189665539",
       "title": "Vintage Indian Handwoven Wool Poncho | Boho Festival Cape | Folk Retro Autumn",
@@ -984,7 +1039,7 @@
         "images/vinted-10083582654-2.jpg",
         "images/vinted-10083582654-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1735,7 +1790,7 @@
         "images/vinted-9938416992-2.jpg",
         "images/vinted-9938416992-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1937,7 +1992,7 @@
         "images/vinted-9881670398-2.jpg",
         "images/vinted-9881670398-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2039,7 +2094,7 @@
         "images/vinted-9851163929-2.jpg",
         "images/vinted-9851163929-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2364,7 +2419,7 @@
       "id": "9820649736",
       "title": "novak djokovic Asics Solution Swift FF Tennis Padel non marking Shoes FlyteFoam CM 28.5 EURO 45",
       "priceCzk": 1699,
-      "priceEur": 70,
+      "priceEur": 69,
       "brand": "Asics",
       "size": "45",
       "sizeGroup": "45",
@@ -2528,7 +2583,7 @@
       "id": "9820324385",
       "title": "Aluminum heavy high quality Laptop Stand Ergonomic Black Desk Riser Notebook Cooling Holder",
       "priceCzk": 599,
-      "priceEur": 25,
+      "priceEur": 24,
       "brand": "Design",
       "size": "",
       "sizeGroup": "",
@@ -2728,7 +2783,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3290,7 +3345,7 @@
       "id": "9675580496",
       "title": "Vintage Bag | Ethiopian Tan Leather | Boho Bag",
       "priceCzk": 599,
-      "priceEur": 25,
+      "priceEur": 24,
       "brand": "ethiopian",
       "size": "",
       "sizeGroup": "",
@@ -3600,7 +3655,7 @@
         "images/vinted-9607321104-2.jpg",
         "images/vinted-9607321104-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4669,7 +4724,7 @@
         "images/vinted-9583027994-2.jpg",
         "images/vinted-9583027994-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4795,7 +4850,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 205,
+      "priceEur": 204,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -4999,7 +5054,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5254,7 +5309,7 @@
         "images/vinted-9565087476-2.jpg",
         "images/vinted-9565087476-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6122,7 +6177,7 @@
       "id": "9493474615",
       "title": "Freshwater Pearl Choker Necklace | Vintage Jewellery Retro",
       "priceCzk": 550,
-      "priceEur": 23,
+      "priceEur": 22,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
