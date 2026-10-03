@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-10-02T05:15:09.870Z",
+  "syncedAt": "2026-10-03T05:15:04.576Z",
   "rate": {
-    "czkPerEur": 24.459,
-    "fetched": "2026-10-02",
+    "czkPerEur": 24.47,
+    "fetched": "2026-10-03",
     "source": "ECB"
   },
-  "count": 181,
+  "count": 180,
   "items": [
     {
       "id": "10200502111",
@@ -219,7 +219,7 @@
         "images/vinted-10177043522-2.jpg",
         "images/vinted-10177043522-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1208,7 +1208,7 @@
         "images/vinted-10072166426-2.jpg",
         "images/vinted-10072166426-3.jpg"
       ],
-      "favourites": 32,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1483,7 +1483,7 @@
         "images/vinted-9969986465-2.jpg",
         "images/vinted-9969986465-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2006,9 +2006,9 @@
     },
     {
       "id": "9861491149",
-      "title": "Vintage Bag Retro Style Straw Woven Cross Body Bag Boho Bag Ethnic Fashion",
-      "priceCzk": 170,
-      "priceEur": 7,
+      "title": "Vintage Bag Retro Style Straw Woven Cross Body Bag Boho Bag",
+      "priceCzk": 120,
+      "priceEur": 5,
       "brand": "Vintage Love",
       "size": "",
       "sizeGroup": "",
@@ -2049,10 +2049,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag-ethnic-fashion",
-        "es": "https://www.vinted.es/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag-ethnic-fashion",
-        "com": "https://www.vinted.com/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag-ethnic-fashion",
-        "uk": "https://www.vinted.co.uk/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag-ethnic-fashion"
+        "cz": "https://www.vinted.cz/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag",
+        "es": "https://www.vinted.es/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag",
+        "com": "https://www.vinted.com/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag",
+        "uk": "https://www.vinted.co.uk/items/9861491149-vintage-bag-retro-style-straw-woven-cross-body-bag-boho-bag"
       }
     },
     {
@@ -2728,7 +2728,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3239,7 +3239,7 @@
       "id": "9696606450",
       "title": "Apple Magic bluetooth Trackpad (Lightning cord) White Multi-Touch Surface | Bluetooth Wireless Mouse",
       "priceCzk": 1749,
-      "priceEur": 72,
+      "priceEur": 71,
       "brand": "Apple",
       "size": "",
       "sizeGroup": "",
@@ -3274,7 +3274,7 @@
         "images/vinted-9696606450-2.jpg",
         "images/vinted-9696606450-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4169,7 +4169,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5054,7 +5054,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5207,7 +5207,7 @@
         "images/vinted-9565381682-2.jpg",
         "images/vinted-9565381682-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5258,7 +5258,7 @@
         "images/vinted-9565320171-2.jpg",
         "images/vinted-9565320171-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5268,57 +5268,6 @@
         "es": "https://www.vinted.es/items/9565320171-indian-lakshmi-figurine-statue-spiritual-idol",
         "com": "https://www.vinted.com/items/9565320171-indian-lakshmi-figurine-statue-spiritual-idol",
         "uk": "https://www.vinted.co.uk/items/9565320171-indian-lakshmi-figurine-statue-spiritual-idol"
-      }
-    },
-    {
-      "id": "9565087476",
-      "title": "Antique Indian Brass Golden Lord Shiva Parvati and Ganesha Family Idol Statue",
-      "priceCzk": 1600,
-      "priceEur": 65,
-      "brand": "Indian",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Gold",
-        "cs": "Zlatá"
-      },
-      "category": "Spirituality",
-      "vintedCategory": "Home Sculptures & figurines",
-      "crumbs": [
-        {
-          "id": 1918,
-          "name": "Home"
-        },
-        {
-          "id": 1934,
-          "name": "Home accessories"
-        },
-        {
-          "id": 3822,
-          "name": "Sculptures & figurines"
-        }
-      ],
-      "description": "Beautiful spiritual antique golden figurine featuring full Hindu god Shiva family (Shiva Parvati and Ganesh sitting in Nandi). \nDimensions - Size 5.5 x 6 x 2.5 Inches; Weight 1695 Grams (1.6 kgs); Material: Brass\nBring home Spirituality Peace Harmony Good Luck Wellness",
-      "photo": "images/vinted-9565087476-1.jpg",
-      "photos": [
-        "images/vinted-9565087476-1.jpg",
-        "images/vinted-9565087476-2.jpg",
-        "images/vinted-9565087476-3.jpg"
-      ],
-      "favourites": 24,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9565087476-antique-indian-brass-golden-lord-shiva-parvati-and-ganesha-family-idol-statue",
-        "es": "https://www.vinted.es/items/9565087476-antique-indian-brass-golden-lord-shiva-parvati-and-ganesha-family-idol-statue",
-        "com": "https://www.vinted.com/items/9565087476-antique-indian-brass-golden-lord-shiva-parvati-and-ganesha-family-idol-statue",
-        "uk": "https://www.vinted.co.uk/items/9565087476-antique-indian-brass-golden-lord-shiva-parvati-and-ganesha-family-idol-statue"
       }
     },
     {
@@ -6766,7 +6715,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6888,7 +6837,7 @@
       "id": "9437887059",
       "title": "Indian Vintage Silver Earrings | 92.5% Silver With Stone Work",
       "priceCzk": 1700,
-      "priceEur": 70,
+      "priceEur": 69,
       "brand": "Quirksmith",
       "size": "",
       "sizeGroup": "",
@@ -9502,7 +9451,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
