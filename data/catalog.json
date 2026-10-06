@@ -1,12 +1,130 @@
 {
-  "syncedAt": "2026-10-05T05:15:04.431Z",
+  "syncedAt": "2026-10-06T05:15:13.344Z",
   "rate": {
-    "czkPerEur": 24.47,
-    "fetched": "2026-10-05",
+    "czkPerEur": 24.456,
+    "fetched": "2026-10-06",
     "source": "ECB"
   },
-  "count": 180,
+  "count": 182,
   "items": [
+    {
+      "id": "10258466326",
+      "title": "Ethnic Shirt with Hindu Sacred Symbols Shirt | Indian Spiritual Kurta | Vintage Clothes Yoga Namaste",
+      "priceCzk": 420,
+      "priceEur": 17,
+      "brand": "Indian",
+      "size": "Univerzální",
+      "sizeGroup": "One size",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Orange",
+        "cs": "Oranžová"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Men Long-sleeved t-shirts",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 2050,
+          "name": "Clothing"
+        },
+        {
+          "id": 76,
+          "name": "Tops & t-shirts"
+        },
+        {
+          "id": 77,
+          "name": "T-shirts"
+        },
+        {
+          "id": 1810,
+          "name": "Long-sleeved t-shirts"
+        }
+      ],
+      "description": "Material is rayon, very soft, light and flowy.\nPrinted with sacred Hindu mantra symbols, Hare Rama Hare Krishna and Ganesha.\nPerfect for festival wear, travel, yoga, beach, or a boho outfit. \n\n#Boho #Indian #Spiritual #Hindu #SacredSymbols #FestivalShirt #HippieStyle #RayonShirt #OmShirt #SanskritPrint #BohemianFashion #YogaWear #GaneshaShirt #SummerTunic #Om #Retro #VintageClothes #BohoClothes #HippieClothes",
+      "photo": "images/vinted-10258466326-1.jpg",
+      "photos": [
+        "images/vinted-10258466326-1.jpg",
+        "images/vinted-10258466326-2.jpg",
+        "images/vinted-10258466326-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10258466326-ethnic-shirt-with-hindu-sacred-symbols-shirt-indian-spiritual-kurta-vintage-clothes-yoga-namaste",
+        "es": "https://www.vinted.es/items/10258466326-ethnic-shirt-with-hindu-sacred-symbols-shirt-indian-spiritual-kurta-vintage-clothes-yoga-namaste",
+        "com": "https://www.vinted.com/items/10258466326-ethnic-shirt-with-hindu-sacred-symbols-shirt-indian-spiritual-kurta-vintage-clothes-yoga-namaste",
+        "uk": "https://www.vinted.co.uk/items/10258466326-ethnic-shirt-with-hindu-sacred-symbols-shirt-indian-spiritual-kurta-vintage-clothes-yoga-namaste"
+      }
+    },
+    {
+      "id": "10251315839",
+      "title": "Woollen Embroidery Jacket | Premium Indian Boho | Winter Vintage Coat | Suzani / Kashmiri",
+      "priceCzk": 1500,
+      "priceEur": 61,
+      "brand": "Handmade Beauty",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Navy",
+        "cs": "Námořnická"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Quilted jackets",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 1037,
+          "name": "Outerwear"
+        },
+        {
+          "id": 1908,
+          "name": "Jackets"
+        },
+        {
+          "id": 2596,
+          "name": "Quilted jackets"
+        }
+      ],
+      "description": "Stunning Indian jacket / coat in intricate Kashmiri Aari / Sozni hand-embroidery.\nAuthentic Indian craftsmanship.\nFeatures a flattering Nehru / mandarin collar, traditional fabric-covered buttons, and beautiful border panel details.\nPerfect for a bohemian, artsy, or eclectic look.\nBust 40 inches \nLength 26 inches\n\n#KashmiriJacket #HandEmbroidered #AariEmbroidery #IndianJacket #VintageBoho #ArtsyStyle #EthnicCoat #MandarinCollar #BohemianFashion #StatementJacket #FolkArtFashion #SlowFashion #HippieChic #EmbroideryCoat #HandmadeJacket",
+      "photo": "images/vinted-10251315839-1.jpg",
+      "photos": [
+        "images/vinted-10251315839-1.jpg",
+        "images/vinted-10251315839-2.jpg",
+        "images/vinted-10251315839-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10251315839-woollen-embroidery-jacket-premium-indian-boho-winter-vintage-coat-suzani-kashmiri",
+        "es": "https://www.vinted.es/items/10251315839-woollen-embroidery-jacket-premium-indian-boho-winter-vintage-coat-suzani-kashmiri",
+        "com": "https://www.vinted.com/items/10251315839-woollen-embroidery-jacket-premium-indian-boho-winter-vintage-coat-suzani-kashmiri",
+        "uk": "https://www.vinted.co.uk/items/10251315839-woollen-embroidery-jacket-premium-indian-boho-winter-vintage-coat-suzani-kashmiri"
+      }
+    },
     {
       "id": "10200502111",
       "title": "River Island Pastel Pistachio Green Cropped Linen Trousers",
@@ -1208,7 +1326,7 @@
         "images/vinted-10072166426-2.jpg",
         "images/vinted-10072166426-3.jpg"
       ],
-      "favourites": 37,
+      "favourites": 38,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2838,7 +2956,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 34,
+      "favourites": 35,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3239,7 +3357,7 @@
       "id": "9696606450",
       "title": "Apple Magic bluetooth Trackpad (Lightning cord) White Multi-Touch Surface | Bluetooth Wireless Mouse",
       "priceCzk": 1749,
-      "priceEur": 71,
+      "priceEur": 72,
       "brand": "Apple",
       "size": "",
       "sizeGroup": "",
@@ -3819,7 +3937,7 @@
         "images/vinted-9603636575-2.jpg",
         "images/vinted-9603636575-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4834,7 +4952,7 @@
         "images/vinted-9580235622-2.jpg",
         "images/vinted-9580235622-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6837,7 +6955,7 @@
       "id": "9437887059",
       "title": "Indian Vintage Silver Earrings | 92.5% Silver With Stone Work",
       "priceCzk": 1700,
-      "priceEur": 69,
+      "priceEur": 70,
       "brand": "Quirksmith",
       "size": "",
       "sizeGroup": "",
@@ -8072,7 +8190,7 @@
         "images/vinted-9339656344-2.jpg",
         "images/vinted-9339656344-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9451,7 +9569,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9506,7 +9624,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 44,
+      "favourites": 45,
       "reserved": false,
       "sold": false,
       "featured": false,
