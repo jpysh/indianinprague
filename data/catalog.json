@@ -1,17 +1,280 @@
 {
-  "syncedAt": "2026-10-06T05:15:13.344Z",
+  "syncedAt": "2026-10-07T05:15:30.678Z",
   "rate": {
-    "czkPerEur": 24.456,
-    "fetched": "2026-10-06",
+    "czkPerEur": 24.405,
+    "fetched": "2026-10-07",
     "source": "ECB"
   },
-  "count": 182,
+  "count": 187,
   "items": [
+    {
+      "id": "10275644021",
+      "title": "Silver Anklet Choker Boho Indian Payal | Vintage Jewellery | Retro Ethnic Tribal",
+      "priceCzk": 230,
+      "priceEur": 9,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Silver",
+        "cs": "Stříbrná"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Anklets",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 1187,
+          "name": "Accessories"
+        },
+        {
+          "id": 21,
+          "name": "Jewellery"
+        },
+        {
+          "id": 1785,
+          "name": "Anklets"
+        }
+      ],
+      "description": "Set of 2 anklets (pair) from Varanasi, India.\nClip the two together for a choker necklace, or wear them separately as ankle bracelets. \nSilver plated alloy with green, blue, pink and red enamel.\nA traditional Indian payal (anklet) that suits ethnic, hippie and bohemian styles.\nAnklet length: 10 inches each\nWorn as choker: 20 inches when clipped together\n\n#anklet #choker #bohojewellery #festivaljewellery #indianjewellery #payal #vintage #retro #boho #y2k",
+      "photo": "images/vinted-10275644021-1.jpg",
+      "photos": [
+        "images/vinted-10275644021-1.jpg",
+        "images/vinted-10275644021-2.jpg",
+        "images/vinted-10275644021-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10275644021-silver-anklet-choker-boho-indian-payal-vintage-jewellery-retro-ethnic-tribal",
+        "es": "https://www.vinted.es/items/10275644021-silver-anklet-choker-boho-indian-payal-vintage-jewellery-retro-ethnic-tribal",
+        "com": "https://www.vinted.com/items/10275644021-silver-anklet-choker-boho-indian-payal-vintage-jewellery-retro-ethnic-tribal",
+        "uk": "https://www.vinted.co.uk/items/10275644021-silver-anklet-choker-boho-indian-payal-vintage-jewellery-retro-ethnic-tribal"
+      }
+    },
+    {
+      "id": "10270021516",
+      "title": "TOMS Ankle Boots | Nepal Slip-On Aztec Boots | Ethnic winter boots",
+      "priceCzk": 550,
+      "priceEur": 23,
+      "brand": "Toms",
+      "size": "36",
+      "sizeGroup": "36",
+      "condition": {
+        "en": "Very good",
+        "cs": "Velmi dobrý"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Mid-calf boots",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 16,
+          "name": "Shoes"
+        },
+        {
+          "id": 1049,
+          "name": "Boots"
+        },
+        {
+          "id": 2619,
+          "name": "Mid-calf boots"
+        }
+      ],
+      "description": "Authentic Toms Nepal ankle boots.\nMid calf. \nSize: 36\nVery good condition, worn a few times. Clean, no damage.\nBrown-gray suede leather + canvas and yarn from Nepal (turquoise/ green/brown)\nLined with soft faux fur for warmth and comfort. \nInsole length: 23 cm\nLeather lacing around shaft for both added style and secure fit.",
+      "photo": "images/vinted-10270021516-1.jpg",
+      "photos": [
+        "images/vinted-10270021516-1.jpg",
+        "images/vinted-10270021516-2.jpg",
+        "images/vinted-10270021516-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10270021516-toms-ankle-boots-nepal-slip-on-aztec-boots-ethnic-winter-boots",
+        "es": "https://www.vinted.es/items/10270021516-toms-ankle-boots-nepal-slip-on-aztec-boots-ethnic-winter-boots",
+        "com": "https://www.vinted.com/items/10270021516-toms-ankle-boots-nepal-slip-on-aztec-boots-ethnic-winter-boots",
+        "uk": "https://www.vinted.co.uk/items/10270021516-toms-ankle-boots-nepal-slip-on-aztec-boots-ethnic-winter-boots"
+      }
+    },
+    {
+      "id": "10265107115",
+      "title": "Boho Blanket | Indian Hippie Throw | Vintage Mandala Picnic Yoga Tablecloth Sofa Throw Tapestry",
+      "priceCzk": 550,
+      "priceEur": 23,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Tapestries",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1919,
+          "name": "Textiles"
+        },
+        {
+          "id": 1929,
+          "name": "Tapestries"
+        }
+      ],
+      "description": "Beautiful, versatile throw with a traditional mandala print and oriental border.\nCan be used as yoga mat, bed cover, decorative sofa throw, tablecloth, picnic blanket, wall tapestry, beach blanket. \n100% cotton. \nMade in India, Varanasi.\n75 inches of diameter.",
+      "photo": "images/vinted-10265107115-1.jpg",
+      "photos": [
+        "images/vinted-10265107115-1.jpg",
+        "images/vinted-10265107115-2.jpg",
+        "images/vinted-10265107115-3.jpg"
+      ],
+      "favourites": 19,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
+        "es": "https://www.vinted.es/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
+        "com": "https://www.vinted.com/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
+        "uk": "https://www.vinted.co.uk/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry"
+      }
+    },
+    {
+      "id": "10264985597",
+      "title": "Indian Silk Bags | Ethnic Bag | Bread Bag | Vintage Retro Indian Boho",
+      "priceCzk": 360,
+      "priceEur": 15,
+      "brand": "Handmade Beauty",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Red",
+        "cs": "Červená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Tote bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 552,
+          "name": "Tote bags"
+        }
+      ],
+      "description": "I have them in two colours, price for one, please let me know in message which colour 😊\nTraditional Indian Handbags from Varanasi. \nCrafted from high-quality brocade silk.\nWhether you are attending a wedding, a festive party, or looking for a unique gift, this handbag adds a touch of royalty.\nSpacious Design: Measures 11\" (H) x 13\" (W) with a 3\" sturdy base.\nIncludes 2 pockets.\n\n#boho #vintage #ethnic #tribal #retro #hindu #spiritual #y2k #unique #luxury #premium #silk #",
+      "photo": "images/vinted-10264985597-1.jpg",
+      "photos": [
+        "images/vinted-10264985597-1.jpg",
+        "images/vinted-10264985597-2.jpg",
+        "images/vinted-10264985597-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10264985597-indian-silk-bags-ethnic-bag-bread-bag-vintage-retro-indian-boho",
+        "es": "https://www.vinted.es/items/10264985597-indian-silk-bags-ethnic-bag-bread-bag-vintage-retro-indian-boho",
+        "com": "https://www.vinted.com/items/10264985597-indian-silk-bags-ethnic-bag-bread-bag-vintage-retro-indian-boho",
+        "uk": "https://www.vinted.co.uk/items/10264985597-indian-silk-bags-ethnic-bag-bread-bag-vintage-retro-indian-boho"
+      }
+    },
+    {
+      "id": "10264668226",
+      "title": "Om Yoga Stole | Indian Hindu Religion Scarf | Shiva Meditation Wrap",
+      "priceCzk": 480,
+      "priceEur": 20,
+      "brand": "Shiva",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Turquoise",
+        "cs": "Tyrkysová"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Scarves & shawls",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 1187,
+          "name": "Accessories"
+        },
+        {
+          "id": 89,
+          "name": "Scarves & shawls"
+        }
+      ],
+      "description": "I have 5 different colours (see image 5-6). Price for one. Let me know in message which colour 😊\nCelebrate strength, transformation, and ultimate stillness with the Shiva Spiritual Wrap. \nThis scarf embodies devotion (bhakti) through intricate Shiva imagery and traditional chanting sacred mantra “Om Namah Shivaya”. \nThe design honors the cosmic energy of Shiva, the symbol of meditation, inner peace, and the dance of creation and dissolution.\nIn Hindu tradition, Lord Shiva represents the ultimate reality and the pure consciousness within.\nSoft, airy, and luminous, this piece is perfect for meditation, travel, or daily inspiration.\nWearing it serves as a visual mantra: a reminder to let go of the ego, embrace transformation, and find peace in the present moment.\nNaturally soft fabric suitable for warm or cool climates.\nEthically produced and fair-trade inspired.\n\n#OmNamahShivaya\n#LordShiva\n#Mahadev\n#ShivaArt\n#MantraMeditation\n#SacredGeometry\n#YogaGear\n#SpiritualAesthetic\n#MindfulLiving\n#ModernYogi\n#InnerPeace\n#UnisexScarf\n#MensScarf\n#WomensScarf\n#BohoMenswear",
+      "photo": "images/vinted-10264668226-1.jpg",
+      "photos": [
+        "images/vinted-10264668226-1.jpg",
+        "images/vinted-10264668226-2.jpg",
+        "images/vinted-10264668226-3.jpg"
+      ],
+      "favourites": 3,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10264668226-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation-wrap",
+        "es": "https://www.vinted.es/items/10264668226-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation-wrap",
+        "com": "https://www.vinted.com/items/10264668226-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation-wrap",
+        "uk": "https://www.vinted.co.uk/items/10264668226-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation-wrap"
+      }
+    },
     {
       "id": "10258466326",
       "title": "Ethnic Shirt with Hindu Sacred Symbols Shirt | Indian Spiritual Kurta | Vintage Clothes Yoga Namaste",
-      "priceCzk": 420,
-      "priceEur": 17,
+      "priceCzk": 387,
+      "priceEur": 16,
       "brand": "Indian",
       "size": "Univerzální",
       "sizeGroup": "One size",
@@ -113,7 +376,7 @@
         "images/vinted-10251315839-2.jpg",
         "images/vinted-10251315839-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -168,7 +431,7 @@
         "images/vinted-10200502111-2.jpg",
         "images/vinted-10200502111-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -337,7 +600,7 @@
         "images/vinted-10177043522-2.jpg",
         "images/vinted-10177043522-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -388,7 +651,7 @@
         "images/vinted-10176950236-2.jpg",
         "images/vinted-10176950236-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1157,7 +1420,7 @@
         "images/vinted-10083582654-2.jpg",
         "images/vinted-10083582654-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1601,7 +1864,7 @@
         "images/vinted-9969986465-2.jpg",
         "images/vinted-9969986465-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2537,7 +2800,7 @@
       "id": "9820649736",
       "title": "novak djokovic Asics Solution Swift FF Tennis Padel non marking Shoes FlyteFoam CM 28.5 EURO 45",
       "priceCzk": 1699,
-      "priceEur": 69,
+      "priceEur": 70,
       "brand": "Asics",
       "size": "45",
       "sizeGroup": "45",
@@ -2701,7 +2964,7 @@
       "id": "9820324385",
       "title": "Aluminum heavy high quality Laptop Stand Ergonomic Black Desk Riser Notebook Cooling Holder",
       "priceCzk": 599,
-      "priceEur": 24,
+      "priceEur": 25,
       "brand": "Design",
       "size": "",
       "sizeGroup": "",
@@ -3176,7 +3439,7 @@
         "images/vinted-9729949801-2.jpg",
         "images/vinted-9729949801-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3286,7 +3549,7 @@
         "images/vinted-9720394316-2.jpg",
         "images/vinted-9720394316-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3463,7 +3726,7 @@
       "id": "9675580496",
       "title": "Vintage Bag | Ethiopian Tan Leather | Boho Bag",
       "priceCzk": 599,
-      "priceEur": 24,
+      "priceEur": 25,
       "brand": "ethiopian",
       "size": "",
       "sizeGroup": "",
@@ -3608,7 +3871,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3828,7 +4091,7 @@
         "images/vinted-9604783346-2.jpg",
         "images/vinted-9604783346-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3883,7 +4146,7 @@
         "images/vinted-9603839908-2.jpg",
         "images/vinted-9603839908-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4287,7 +4550,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4968,7 +5231,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 204,
+      "priceEur": 205,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -5172,7 +5435,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5188,7 +5451,7 @@
       "id": "9565566983",
       "title": "Indian Antique Radha Krishna Brass Statue Hindu Spiritual Religious God Sculpture | Brass 5.5 Inches",
       "priceCzk": 1600,
-      "priceEur": 65,
+      "priceEur": 66,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -5427,7 +5690,7 @@
         "images/vinted-9564918603-2.jpg",
         "images/vinted-9564918603-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6244,7 +6507,7 @@
       "id": "9493474615",
       "title": "Freshwater Pearl Choker Necklace | Vintage Jewellery Retro",
       "priceCzk": 550,
-      "priceEur": 22,
+      "priceEur": 23,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6503,7 +6766,7 @@
         "images/vinted-9488787680-2.jpg",
         "images/vinted-9488787680-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9031,7 +9294,7 @@
       "id": "9314010527",
       "title": "African Print Maxi Dress · Blue White Gold · Strapless Shirred · Nigerian Cotton",
       "priceCzk": 720,
-      "priceEur": 29,
+      "priceEur": 30,
       "brand": "House",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -9624,7 +9887,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 45,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,
