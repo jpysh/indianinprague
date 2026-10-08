@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-07T05:18:20.937Z",
-  "count": 6959,
+  "generated": "2026-10-08T05:17:52.885Z",
+  "count": 6960,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -29902,6 +29902,11 @@
     "attr.color.mint": {
       "text": "Mint",
       "src": "ced97cc4a377",
+      "via": "vinted-cz"
+    },
+    "attr.color.green": {
+      "text": "Zelená",
+      "src": "d486dfbd5fb5",
       "via": "vinted-cz"
     }
   }
