@@ -1,12 +1,126 @@
 {
-  "syncedAt": "2026-10-09T05:15:12.819Z",
+  "syncedAt": "2026-10-10T05:15:14.667Z",
   "rate": {
-    "czkPerEur": 24.403,
-    "fetched": "2026-10-09",
+    "czkPerEur": 24.369,
+    "fetched": "2026-10-10",
     "source": "ECB"
   },
-  "count": 187,
+  "count": 189,
   "items": [
+    {
+      "id": "10306451118",
+      "title": "Indian Hindu Spiritual Kurta Shirt | Yoga Namaste | Boho Hippie",
+      "priceCzk": 397,
+      "priceEur": 16,
+      "brand": "Hipora",
+      "size": "L",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Black",
+        "cs": "Černá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Men Print shirts",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 2050,
+          "name": "Clothing"
+        },
+        {
+          "id": 76,
+          "name": "Tops & t-shirts"
+        },
+        {
+          "id": 536,
+          "name": "Shirts"
+        },
+        {
+          "id": 1804,
+          "name": "Print shirts"
+        }
+      ],
+      "description": "I have total 5 colours in different variations of sacred symbols (see last image, dark green not available now).\nUnisex. \nMade in Varanasi, India.\nFabric: lightweight, flowy rayon.\nThis kurta carries a full panel of block-printed sacred symbols.\nThese symbols hold deep meaning in Hindu and Buddhist traditions.\nIt’s the kind of piece you find in the markets and ashram towns of India. \nMade for yoga, meditation, travel and slow, easy days.\nWear it over linen trousers or harem pants, with jeans for a boho everyday look, or over a plain tee as a light layer.\n\nBrowse my other Indian spiritual items such as idols, scarves, clothes, and boho and yoga finds for bundle discount 🌸\n\n#kurta #yoga #meditation #om #boho #bohemian #hippie #buddha #mantra #blockprint #indian #spiritual #festival #rayon #tunic #hindu #buddhist #india #spiritual",
+      "photo": "images/vinted-10306451118-1.jpg",
+      "photos": [
+        "images/vinted-10306451118-1.jpg",
+        "images/vinted-10306451118-2.jpg",
+        "images/vinted-10306451118-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10306451118-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie",
+        "es": "https://www.vinted.es/items/10306451118-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie",
+        "com": "https://www.vinted.com/items/10306451118-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie",
+        "uk": "https://www.vinted.co.uk/items/10306451118-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie"
+      }
+    },
+    {
+      "id": "10300412926",
+      "title": "Hippie Scarf Sarong | Boho Vintage Style | Varanasi India",
+      "priceCzk": 250,
+      "priceEur": 10,
+      "brand": "Hippie",
+      "size": "Univerzální",
+      "sizeGroup": "One size",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Yellow",
+        "cs": "Žlutá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Cover-ups & sarongs",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 28,
+          "name": "Swimwear"
+        },
+        {
+          "id": 1780,
+          "name": "Cover-ups & sarongs"
+        }
+      ],
+      "description": "Beautiful multi-use boho tie-dye shawl.\nHand-dyed tie-dye pattern with a vibrant yellow central diamond, contrasted against blue and earthy brown tones.\nDrape it over shoulders as an oversized shawl or poncho.\nBundle it as a winter stole or wrap scarf.\nOr tie it at the waist as a beach sarong or festival cover-up.\n\n#VaranasiIndia #ArtisanMade #HandmadeShawl #BohoChic #TieDyeScarf #FestivalFashion #EthnicWrap #IndianTextiles #GyspyStyle #SummerSarong #UniqueFinds #HippieVibes  #whimsigoth #70s #hippie #gypsy",
+      "photo": "images/vinted-10300412926-1.jpg",
+      "photos": [
+        "images/vinted-10300412926-1.jpg",
+        "images/vinted-10300412926-2.jpg",
+        "images/vinted-10300412926-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10300412926-hippie-scarf-sarong-boho-vintage-style-varanasi-india",
+        "es": "https://www.vinted.es/items/10300412926-hippie-scarf-sarong-boho-vintage-style-varanasi-india",
+        "com": "https://www.vinted.com/items/10300412926-hippie-scarf-sarong-boho-vintage-style-varanasi-india",
+        "uk": "https://www.vinted.co.uk/items/10300412926-hippie-scarf-sarong-boho-vintage-style-varanasi-india"
+      }
+    },
     {
       "id": "10294958143",
       "title": "Indian Hindu Spiritual Kurta Shirt | Yoga Clothes | Boho Hippie Namaste",
@@ -54,7 +168,7 @@
         "images/vinted-10294958143-2.jpg",
         "images/vinted-10294958143-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -68,10 +182,10 @@
     },
     {
       "id": "10287044320",
-      "title": "Boho Blanket | Indian Hippie Throw | Vintage Mandala Picnic Yoga Tablecloth Sofa Throw Tapestry",
+      "title": "Boho Hippie Blanket | Mandala Picnic Blanket Sofa Tapestry | Boho Decor | Yoga Namaste",
       "priceCzk": 585,
       "priceEur": 24,
-      "brand": "Indian",
+      "brand": "Hippie",
       "size": "Jiná",
       "sizeGroup": "",
       "condition": {
@@ -105,16 +219,16 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/10287044320-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "es": "https://www.vinted.es/items/10287044320-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "com": "https://www.vinted.com/items/10287044320-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "uk": "https://www.vinted.co.uk/items/10287044320-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry"
+        "cz": "https://www.vinted.cz/items/10287044320-boho-hippie-blanket-mandala-picnic-blanket-sofa-tapestry-boho-decor-yoga-namaste",
+        "es": "https://www.vinted.es/items/10287044320-boho-hippie-blanket-mandala-picnic-blanket-sofa-tapestry-boho-decor-yoga-namaste",
+        "com": "https://www.vinted.com/items/10287044320-boho-hippie-blanket-mandala-picnic-blanket-sofa-tapestry-boho-decor-yoga-namaste",
+        "uk": "https://www.vinted.co.uk/items/10287044320-boho-hippie-blanket-mandala-picnic-blanket-sofa-tapestry-boho-decor-yoga-namaste"
       }
     },
     {
@@ -122,7 +236,7 @@
       "title": "Boho halter dress | Om Namah Shivaya print",
       "priceCzk": 747,
       "priceEur": 31,
-      "brand": "Indian",
+      "brand": "Hippie",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
       "condition": {
@@ -284,10 +398,10 @@
     },
     {
       "id": "10265107115",
-      "title": "Boho Blanket | Indian Hippie Throw | Vintage Mandala Picnic Yoga Tablecloth Sofa Throw Tapestry",
+      "title": "Hippie Blanket | Mandala Picnic Sofa Throw Tapestry | Boho Decor | Yoga Namaste",
       "priceCzk": 585,
       "priceEur": 24,
-      "brand": "Indian",
+      "brand": "Hippie",
       "size": "",
       "sizeGroup": "",
       "condition": {
@@ -327,10 +441,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "es": "https://www.vinted.es/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "com": "https://www.vinted.com/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry",
-        "uk": "https://www.vinted.co.uk/items/10265107115-boho-blanket-indian-hippie-throw-vintage-mandala-picnic-yoga-tablecloth-sofa-throw-tapestry"
+        "cz": "https://www.vinted.cz/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste",
+        "es": "https://www.vinted.es/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste",
+        "com": "https://www.vinted.com/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste",
+        "uk": "https://www.vinted.co.uk/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste"
       }
     },
     {
@@ -372,7 +486,7 @@
         "images/vinted-10264668226-2.jpg",
         "images/vinted-10264668226-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -447,7 +561,7 @@
       "id": "10251315839",
       "title": "Woollen Embroidery Jacket | Premium Indian Boho | Winter Vintage Coat | Suzani / Kashmiri",
       "priceCzk": 1500,
-      "priceEur": 61,
+      "priceEur": 62,
       "brand": "Handmade Beauty",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -714,7 +828,7 @@
         "images/vinted-10177043522-2.jpg",
         "images/vinted-10177043522-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1868,7 +1982,7 @@
         "images/vinted-10035026195-2.jpg",
         "images/vinted-10035026195-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1978,7 +2092,7 @@
         "images/vinted-9969986465-2.jpg",
         "images/vinted-9969986465-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2033,7 +2147,7 @@
         "images/vinted-9950092080-2.jpg",
         "images/vinted-9950092080-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 48,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3223,7 +3337,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3333,7 +3447,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 36,
+      "favourites": 35,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3714,7 +3828,7 @@
         "images/vinted-9696606450-2.jpg",
         "images/vinted-9696606450-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3875,7 +3989,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3891,7 +4005,7 @@
       "id": "9649545514",
       "title": "Boho Dress | Buddha Coord Set | Boho Dress | Indian Summer Cotton Suit Pant | Ethnic Dress",
       "priceCzk": 695,
-      "priceEur": 28,
+      "priceEur": 29,
       "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -5561,7 +5675,7 @@
       "id": "9565484914",
       "title": "God of wealth and prosperity | Indian Hindu Ganesha Idol Religious Spiritual Statue Spiritual",
       "priceCzk": 1500,
-      "priceEur": 61,
+      "priceEur": 62,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6028,7 +6142,7 @@
       "id": "9561679205",
       "title": "Indian Handwoven Linen Coral Pink Stole/Scarf/Shawl",
       "priceCzk": 500,
-      "priceEur": 20,
+      "priceEur": 21,
       "brand": "Fabindia",
       "size": "",
       "sizeGroup": "",
@@ -6079,7 +6193,7 @@
       "id": "9561602678",
       "title": "Indian Cotton-Linen Blend Summer Dress With Two Pockets",
       "priceCzk": 500,
-      "priceEur": 20,
+      "priceEur": 21,
       "brand": "Indian",
       "size": "XL / 42 / 14",
       "sizeGroup": "XL",
@@ -6169,7 +6283,7 @@
         "images/vinted-9561251555-2.jpg",
         "images/vinted-9561251555-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6456,7 +6570,7 @@
       "id": "9500656843",
       "title": "925 pure silver vintage jewellery | ethnic tribal earrings",
       "priceCzk": 1670,
-      "priceEur": 68,
+      "priceEur": 69,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -8462,7 +8576,7 @@
         "images/vinted-9339656344-2.jpg",
         "images/vinted-9339656344-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8572,7 +8686,7 @@
         "images/vinted-9331108819-2.jpg",
         "images/vinted-9331108819-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8627,7 +8741,7 @@
         "images/vinted-9330125733-2.jpg",
         "images/vinted-9330125733-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9747,7 +9861,7 @@
       "id": "9311631498",
       "title": "FabIndia Pink Cotton Maxi Skirt · Block Print · Gold Zari Border · Festive Boho",
       "priceCzk": 500,
-      "priceEur": 20,
+      "priceEur": 21,
       "brand": "Fabindia",
       "size": "M / 38 / 10",
       "sizeGroup": "M",

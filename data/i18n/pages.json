@@ -1,6 +1,6 @@
 {
   "_comment": "Written by build-i18n.mjs. Derived — safe to delete.",
-  "generated": "2026-10-09T05:17:56.541Z",
+  "generated": "2026-10-10T05:18:01.990Z",
   "report": {
     "ru": {
       "pages": 151,
@@ -34,8 +34,8 @@
     },
     "cs": {
       "pages": 151,
-      "noindexed": 0,
-      "totalMissing": 0
+      "noindexed": 1,
+      "totalMissing": 61
     }
   }
 }
