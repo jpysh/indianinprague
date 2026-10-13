@@ -1,12 +1,71 @@
 {
-  "syncedAt": "2026-10-12T05:15:18.422Z",
+  "syncedAt": "2026-10-13T05:15:12.926Z",
   "rate": {
-    "czkPerEur": 24.369,
-    "fetched": "2026-10-12",
+    "czkPerEur": 24.391,
+    "fetched": "2026-10-13",
     "source": "ECB"
   },
   "count": 192,
   "items": [
+    {
+      "id": "10346804767",
+      "title": "Indian Hindu Spiritual Kurta Shirt | Yoga Namaste Boho Hippie Vintage Clothes",
+      "priceCzk": 290,
+      "priceEur": 12,
+      "brand": "varanasi",
+      "size": "L",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Green",
+        "cs": "Zelená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Men Print shirts",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 2050,
+          "name": "Clothing"
+        },
+        {
+          "id": 76,
+          "name": "Tops & t-shirts"
+        },
+        {
+          "id": 536,
+          "name": "Shirts"
+        },
+        {
+          "id": 1804,
+          "name": "Print shirts"
+        }
+      ],
+      "description": "I have total 5 colours in different variations of sacred symbols, in case you are interested in different colour and pattern (see last image, dark green not available now).\nMade in Varanasi, India.\nThis kurta carries a full panel of block-printed sacred symbols in deep maroon red.\nThese symbols hold deep meaning in Hindu and Buddhist traditions.\nMade for yoga, meditation, travel and slow, easy days.\nWear it over linen trousers or harem pants for yoga and meditation, with jeans for a boho everyday look, or over a plain tee as a light layer.\nFabric: lightweight, flowy rayon.\nSoft, breathable\n\nPair with Om stole :) - https://www.vinted.cz/items/10326324598-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation\n\nOther colours (blue) - https://www.vinted.cz/items/10294958143-indian-hindu-spiritual-kurta-shirt-yoga-clothes-boho-hippie-namaste\n\nOther colours (black) - https://www.vinted.cz/items/10306451118-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie\n\n#kurta #yoga #meditation #om #boho #bohemian #hippie #buddha #mantra #blockprint #indian #spiritual #festival #rayon #tunic #hindu #buddhist #india #spiritual #menswear",
+      "photo": "images/vinted-10346804767-1.jpg",
+      "photos": [
+        "images/vinted-10346804767-1.jpg",
+        "images/vinted-10346804767-2.jpg",
+        "images/vinted-10346804767-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10346804767-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie-vintage-clothes",
+        "es": "https://www.vinted.es/items/10346804767-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie-vintage-clothes",
+        "com": "https://www.vinted.com/items/10346804767-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie-vintage-clothes",
+        "uk": "https://www.vinted.co.uk/items/10346804767-indian-hindu-spiritual-kurta-shirt-yoga-namaste-boho-hippie-vintage-clothes"
+      }
+    },
     {
       "id": "10328216168",
       "title": "Wooden tic tac toe XO | Classic collectible game | Retro vintage boardgames",
@@ -41,7 +100,7 @@
         "images/vinted-10328216168-2.jpg",
         "images/vinted-10328216168-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -96,7 +155,7 @@
         "images/vinted-10328097271-2.jpg",
         "images/vinted-10328097271-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -147,7 +206,7 @@
         "images/vinted-10326324598-2.jpg",
         "images/vinted-10326324598-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -198,7 +257,7 @@
         "images/vinted-10326276947-2.jpg",
         "images/vinted-10326276947-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -208,61 +267,6 @@
         "es": "https://www.vinted.es/items/10326276947-antique-brass-cobra-in-meditation-yoga-vintage-indian-spiritual-hindu-idol-buddhist-statue",
         "com": "https://www.vinted.com/items/10326276947-antique-brass-cobra-in-meditation-yoga-vintage-indian-spiritual-hindu-idol-buddhist-statue",
         "uk": "https://www.vinted.co.uk/items/10326276947-antique-brass-cobra-in-meditation-yoga-vintage-indian-spiritual-hindu-idol-buddhist-statue"
-      }
-    },
-    {
-      "id": "10319550662",
-      "title": "Retro Golden Necklace | Snake Chain | Vintage Leopard Print",
-      "priceCzk": 220,
-      "priceEur": 9,
-      "brand": "Alternative",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Gold",
-        "cs": "Zlatá"
-      },
-      "category": "Jewellery",
-      "vintedCategory": "Women Necklaces",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 1187,
-          "name": "Accessories"
-        },
-        {
-          "id": 21,
-          "name": "Jewellery"
-        },
-        {
-          "id": 164,
-          "name": "Necklaces"
-        }
-      ],
-      "description": "Versatile choker necklace, can be worn both sides, either the sleek gold or flipping it to reveal the leopard print. \nThe snake style is about how flexible the texture feels. \nUnique piece. \n\n#boho #boutique #leopard #vintage #retro #y2k #70s #nostalgia",
-      "photo": "images/vinted-10319550662-1.jpg",
-      "photos": [
-        "images/vinted-10319550662-1.jpg",
-        "images/vinted-10319550662-2.jpg",
-        "images/vinted-10319550662-3.jpg"
-      ],
-      "favourites": 21,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10319550662-retro-golden-necklace-snake-chain-vintage-leopard-print",
-        "es": "https://www.vinted.es/items/10319550662-retro-golden-necklace-snake-chain-vintage-leopard-print",
-        "com": "https://www.vinted.com/items/10319550662-retro-golden-necklace-snake-chain-vintage-leopard-print",
-        "uk": "https://www.vinted.co.uk/items/10319550662-retro-golden-necklace-snake-chain-vintage-leopard-print"
       }
     },
     {
@@ -308,7 +312,7 @@
         "images/vinted-10315558500-2.jpg",
         "images/vinted-10315558500-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -378,8 +382,8 @@
     {
       "id": "10306451118",
       "title": "Indian Hindu Spiritual Kurta Shirt | Yoga Namaste | Boho Hippie",
-      "priceCzk": 397,
-      "priceEur": 16,
+      "priceCzk": 290,
+      "priceEur": 12,
       "brand": "Hipora",
       "size": "L",
       "sizeGroup": "L",
@@ -437,8 +441,8 @@
     {
       "id": "10300412926",
       "title": "Hippie Scarf Sarong | Boho Vintage Style | Varanasi India",
-      "priceCzk": 250,
-      "priceEur": 10,
+      "priceCzk": 180,
+      "priceEur": 7,
       "brand": "Hippie",
       "size": "Univerzální",
       "sizeGroup": "One size",
@@ -492,8 +496,8 @@
     {
       "id": "10294958143",
       "title": "Indian Hindu Spiritual Kurta Shirt | Yoga Clothes | Boho Hippie Namaste",
-      "priceCzk": 397,
-      "priceEur": 16,
+      "priceCzk": 290,
+      "priceEur": 12,
       "brand": "Indian",
       "size": "L",
       "sizeGroup": "L",
@@ -536,7 +540,7 @@
         "images/vinted-10294958143-2.jpg",
         "images/vinted-10294958143-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -587,7 +591,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -697,7 +701,7 @@
         "images/vinted-10275644021-2.jpg",
         "images/vinted-10275644021-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -711,7 +715,7 @@
     },
     {
       "id": "10270021516",
-      "title": "TOMS Ankle Boots | Nepal Boots Slip-On Aztec | Ethnic winter boots",
+      "title": "TOMS Ankle Boots | Nepal Boots Slip-On Aztec | Ethnic boho winter boots",
       "priceCzk": 550,
       "priceEur": 23,
       "brand": "Toms",
@@ -758,10 +762,10 @@
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-winter-boots",
-        "es": "https://www.vinted.es/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-winter-boots",
-        "com": "https://www.vinted.com/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-winter-boots",
-        "uk": "https://www.vinted.co.uk/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-winter-boots"
+        "cz": "https://www.vinted.cz/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-boho-winter-boots",
+        "es": "https://www.vinted.es/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-boho-winter-boots",
+        "com": "https://www.vinted.com/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-boho-winter-boots",
+        "uk": "https://www.vinted.co.uk/items/10270021516-toms-ankle-boots-nepal-boots-slip-on-aztec-ethnic-boho-winter-boots"
       }
     },
     {
@@ -818,8 +822,8 @@
     {
       "id": "10264668226",
       "title": "Om Yoga Stole | Indian Hindu Religion Scarf | Shiva Meditation Wrap",
-      "priceCzk": 480,
-      "priceEur": 20,
+      "priceCzk": 425,
+      "priceEur": 17,
       "brand": "Shiva",
       "size": "",
       "sizeGroup": "",
@@ -869,8 +873,8 @@
     {
       "id": "10258466326",
       "title": "Ethnic Shirt with Hindu Sacred Symbols Shirt | Indian Spiritual Kurta | Vintage Clothes Yoga Namaste",
-      "priceCzk": 370,
-      "priceEur": 15,
+      "priceCzk": 290,
+      "priceEur": 12,
       "brand": "Indian",
       "size": "Univerzální",
       "sizeGroup": "One size",
@@ -929,7 +933,7 @@
       "id": "10251315839",
       "title": "Woollen Embroidery Jacket | Premium Indian Boho | Winter Vintage Coat | Suzani / Kashmiri",
       "priceCzk": 1500,
-      "priceEur": 62,
+      "priceEur": 61,
       "brand": "Handmade Beauty",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -1141,7 +1145,7 @@
         "images/vinted-10183674562-2.jpg",
         "images/vinted-10183674562-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1348,7 +1352,7 @@
         "images/vinted-10149611210-2.jpg",
         "images/vinted-10149611210-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1398,7 +1402,7 @@
         "images/vinted-10149559740-2.jpg",
         "images/vinted-10149559740-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1855,7 +1859,7 @@
         "images/vinted-10111151684-2.jpg",
         "images/vinted-10111151684-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2350,7 +2354,7 @@
         "images/vinted-9950092080-2.jpg",
         "images/vinted-9950092080-3.jpg"
       ],
-      "favourites": 51,
+      "favourites": 54,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3006,7 +3010,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3379,7 +3383,7 @@
         "images/vinted-9820377303-2.jpg",
         "images/vinted-9820377303-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3595,7 +3599,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3650,7 +3654,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 35,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4141,7 +4145,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4157,7 +4161,7 @@
       "id": "9649545514",
       "title": "Boho Dress | Buddha Coord Set | Boho Dress | Indian Summer Cotton Suit Pant | Ethnic Dress",
       "priceCzk": 695,
-      "priceEur": 29,
+      "priceEur": 28,
       "brand": "Indian",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -4196,7 +4200,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5375,7 +5379,7 @@
         "images/vinted-9602413571-2.jpg",
         "images/vinted-9602413571-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5827,7 +5831,7 @@
       "id": "9565484914",
       "title": "God of wealth and prosperity | Indian Hindu Ganesha Idol Religious Spiritual Statue Spiritual",
       "priceCzk": 1500,
-      "priceEur": 62,
+      "priceEur": 61,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6294,7 +6298,7 @@
       "id": "9561679205",
       "title": "Indian Handwoven Linen Coral Pink Stole/Scarf/Shawl",
       "priceCzk": 500,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Fabindia",
       "size": "",
       "sizeGroup": "",
@@ -6345,7 +6349,7 @@
       "id": "9561602678",
       "title": "Indian Cotton-Linen Blend Summer Dress With Two Pockets",
       "priceCzk": 500,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Indian",
       "size": "XL / 42 / 14",
       "sizeGroup": "XL",
@@ -6722,7 +6726,7 @@
       "id": "9500656843",
       "title": "925 pure silver vintage jewellery | ethnic tribal earrings",
       "priceCzk": 1670,
-      "priceEur": 69,
+      "priceEur": 68,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6832,7 +6836,7 @@
       "id": "9493474615",
       "title": "Freshwater Pearl Choker Necklace | Vintage Jewellery Retro",
       "priceCzk": 500,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -7161,8 +7165,8 @@
     {
       "id": "9476370273",
       "title": "Vintage Glass Pendant Statement Necklace",
-      "priceCzk": 300,
-      "priceEur": 12,
+      "priceCzk": 150,
+      "priceEur": 6,
       "brand": "Handmade Beauty",
       "size": "",
       "sizeGroup": "",
@@ -7381,8 +7385,8 @@
     {
       "id": "9438954997",
       "title": "Gold-toned jewellery set of collar necklace, matching hoop earrings, a cuff bracelet, and a ring",
-      "priceCzk": 420,
-      "priceEur": 17,
+      "priceCzk": 350,
+      "priceEur": 14,
       "brand": "Accessories",
       "size": "",
       "sizeGroup": "",
@@ -8087,7 +8091,7 @@
         "images/vinted-9388380417-2.jpg",
         "images/vinted-9388380417-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8358,7 +8362,7 @@
         "images/vinted-9367213932-2.jpg",
         "images/vinted-9367213932-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8801,8 +8805,8 @@
       "priceCzk": 400,
       "priceEur": 16,
       "brand": "Anokhi",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
+      "size": "Univerzální",
+      "sizeGroup": "One size",
       "condition": {
         "en": "Very good",
         "cs": "Velmi dobrý"
@@ -9832,7 +9836,7 @@
         "images/vinted-9312410623-2.jpg",
         "images/vinted-9312410623-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10013,7 +10017,7 @@
       "id": "9311631498",
       "title": "FabIndia Pink Cotton Maxi Skirt · Block Print · Gold Zari Border · Festive Boho",
       "priceCzk": 500,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Fabindia",
       "size": "M / 38 / 10",
       "sizeGroup": "M",
@@ -10052,7 +10056,7 @@
         "images/vinted-9311631498-2.jpg",
         "images/vinted-9311631498-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10162,7 +10166,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 47,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,
