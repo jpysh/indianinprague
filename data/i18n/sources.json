@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-10-13T05:17:24.752Z",
-  "count": 4415,
+  "generated": "2026-10-14T05:17:21.510Z",
+  "count": 4419,
   "entries": {
+    "item.10358173763.title": {
+      "text": "Indian Silk | Ethnic Bags | Varanasi Silk Bags | Boho Bags | Luxury Textile",
+      "src": "56b7ba319a8f",
+      "where": "item 10358173763 — title",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
+    },
+    "item.10358173763.description": {
+      "text": "I have them in two colours, price for one, please let me know in message which colour 😊\nTraditional Indian Handbags from Varanasi, India. \nCrafted from high-quality brocade silk.\nWhether you are attending a wedding, a festive party, or looking for a unique gift, this handbag adds a touch of royalty.\nSpacious Design: Measures 11\" (H) × 13\" (W) with a 3\" sturdy base.\nIncludes 2 pockets.\n\n#boho #vintage #ethnic #tribal #retro #hindu #spiritual #y2k #unique #luxury #premium #silk",
+      "src": "b694191496a4",
+      "where": "item 10358173763 — description",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "New without tags",
+      "src": "b240e472e77d",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.red": {
+      "text": "Red",
+      "src": "ba19e9c3d5f4",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.10346804767.title": {
       "text": "Indian Hindu Spiritual Kurta Shirt | Yoga Namaste Boho Hippie Vintage Clothes",
       "src": "77e099ff295f",
@@ -26,13 +54,6 @@
       "where": "item 10346804767 — description",
       "since": "2026-10-13",
       "changed": "2026-10-13"
-    },
-    "attr.condition.new-without-tags": {
-      "text": "New without tags",
-      "src": "b240e472e77d",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "attr.color.green": {
       "text": "Green",
@@ -1798,13 +1819,6 @@
       "since": "",
       "changed": ""
     },
-    "attr.color.red": {
-      "text": "Red",
-      "src": "ba19e9c3d5f4",
-      "where": "color — used across the shop",
-      "since": "",
-      "changed": ""
-    },
     "item.9562398817.title": {
       "text": "Retro Scarf | Boho Accessories | Greek Patterns Grey Glitter Sequin Lightweight Shawl",
       "src": "d90ebf2a469c",
@@ -1886,20 +1900,6 @@
       "text": "Never worn. \nColour - Cream\nFabric - Cotton-Linen Blend\nFit - Relax, Size L-XL\nSleeve - Short Sleeves\nLength - Midi\nPockets - 2\nClosure - Back Button",
       "src": "7328b2bd4796",
       "where": "item 9561602678 — description",
-      "since": "",
-      "changed": ""
-    },
-    "item.9561251555.title": {
-      "text": "Indian yellow cotton Hare Rama Radha Krishna shawl/scarf/stole",
-      "src": "b9d0867280a5",
-      "where": "item 9561251555 — title",
-      "since": "",
-      "changed": "2026-09-24"
-    },
-    "item.9561251555.description": {
-      "text": "Hand-pigmented. Finest Loom Cotton. Block  printed. Spiritual, elegant, peace giving. Large size.",
-      "src": "f108654a518f",
-      "where": "item 9561251555 — description",
       "since": "",
       "changed": ""
     },
@@ -4934,26 +4934,26 @@
       "since": "",
       "changed": ""
     },
-    "text.0453a8eca05a": {
-      "text": "85 reviews on Vinted →",
-      "src": "0453a8eca05a",
+    "text.967f068d861d": {
+      "text": "86 reviews on Vinted →",
+      "src": "967f068d861d",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
-    "text.533d8480583d": {
-      "text": "Rated 5.0 out of 5 from 85 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "533d8480583d",
+    "text.1a86cdd1d4a7": {
+      "text": "Rated 5.0 out of 5 from 86 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "1a86cdd1d4a7",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
-    "text.4e0a68461b98": {
-      "text": "465 pieces",
-      "src": "4e0a68461b98",
+    "text.b271df706f74": {
+      "text": "466 pieces",
+      "src": "b271df706f74",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.7f80a29b8b31": {
       "text": "kurtas · sarees · sets",
@@ -5130,12 +5130,12 @@
       "since": "",
       "changed": ""
     },
-    "text.1409b62bb17e": {
-      "text": "1715 pieces for sale · 109 sold",
-      "src": "1409b62bb17e",
+    "text.dcf64ac5e7d5": {
+      "text": "1715 pieces for sale · 110 sold",
+      "src": "dcf64ac5e7d5",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -7125,19 +7125,19 @@
       "since": "2026-08-28",
       "changed": "2026-08-28"
     },
-    "text.e1adde12091c": {
-      "text": "I have total 5 colours in different variations of sacred symbols, in case you are interested in different colour and pattern (see last image, dark…",
-      "src": "e1adde12091c",
+    "text.9c08c955bbac": {
+      "text": "I have them in two colours, price for one, please let me know in message which colour 😊 Traditional Indian Handbags from Varanasi, India. Crafted…",
+      "src": "9c08c955bbac",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-09",
-      "changed": "2026-10-09"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
-    "text.32f183310612": {
-      "text": "New without tags · Green · L",
-      "src": "32f183310612",
+    "text.1b713f5abb81": {
+      "text": "New without tags · Red",
+      "src": "1b713f5abb81",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-08",
-      "changed": "2026-10-08"
+      "since": "2026-09-22",
+      "changed": "2026-09-22"
     },
     "text.c16236ad956c": {
       "text": "Ask about this piece",
@@ -7167,6 +7167,27 @@
       "since": "",
       "changed": ""
     },
+    "text.e1adde12091c": {
+      "text": "I have total 5 colours in different variations of sacred symbols, in case you are interested in different colour and pattern (see last image, dark…",
+      "src": "e1adde12091c",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-09",
+      "changed": "2026-10-09"
+    },
+    "text.32f183310612": {
+      "text": "New without tags · Green · L",
+      "src": "32f183310612",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-08",
+      "changed": "2026-10-08"
+    },
+    "text.d47f70e3ba7a": {
+      "text": "6 people have saved this on Vinted",
+      "src": "d47f70e3ba7a",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "",
+      "changed": ""
+    },
     "text.ba3a343a5e75": {
       "text": "Classic Wooden Tic Tac Toe (XO) Game Set. Very satisfying weight and texture of wood while playing. Crafted from wood and featuring a sturdy base…",
       "src": "ba3a343a5e75",
@@ -7188,9 +7209,9 @@
       "since": "",
       "changed": ""
     },
-    "text.d47f70e3ba7a": {
-      "text": "6 people have saved this on Vinted",
-      "src": "d47f70e3ba7a",
+    "text.6f08dc1cfa4c": {
+      "text": "7 people have saved this on Vinted",
+      "src": "6f08dc1cfa4c",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7209,12 +7230,12 @@
       "since": "",
       "changed": ""
     },
-    "text.f5c5089f35bc": {
-      "text": "13 people have saved this on Vinted",
-      "src": "f5c5089f35bc",
+    "text.27448566af05": {
+      "text": "12 people have saved this on Vinted",
+      "src": "27448566af05",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-02",
-      "changed": "2026-09-02"
+      "since": "",
+      "changed": ""
     },
     "text.db41adc135cc": {
       "text": "Unique miniature piece that blends the cobra’s power with the calm of a Buddhist master in deep meditation. Full of intricate details such as the…",
@@ -7293,12 +7314,12 @@
       "since": "2026-10-09",
       "changed": "2026-10-09"
     },
-    "text.fb5938a595ff": {
-      "text": "23 people have saved this on Vinted",
-      "src": "fb5938a595ff",
+    "text.0f6ce6792efb": {
+      "text": "25 people have saved this on Vinted",
+      "src": "0f6ce6792efb",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-02",
+      "changed": "2026-10-02"
     },
     "text.35923c48fe52": {
       "text": "Beautiful, versatile throw with a traditional mandala print and oriental border. Can be used as yoga mat, bed cover, decorative sofa throw,…",
@@ -7369,13 +7390,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-10-12",
       "changed": "2026-10-12"
-    },
-    "text.6f08dc1cfa4c": {
-      "text": "7 people have saved this on Vinted",
-      "src": "6f08dc1cfa4c",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.6908e37fc830": {
       "text": "I have 5 different colours (see image 5-6). Price for one. Let me know in message which colour 😊 Celebrate strength, transformation, and ultimate…",
@@ -7457,13 +7471,6 @@
     "text.a1febfb9d878": {
       "text": "Very good · Black · M",
       "src": "a1febfb9d878",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.27448566af05": {
-      "text": "12 people have saved this on Vinted",
-      "src": "27448566af05",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7790,20 +7797,6 @@
       "since": "2026-09-22",
       "changed": "2026-09-22"
     },
-    "text.4bf6ff07b1a9": {
-      "text": "Vintage pinstripe blazer. Retro office aesthetic A classic oversized tailored fit, vertical white pinstripes, classic notched lapels, and flap…",
-      "src": "4bf6ff07b1a9",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-21",
-      "changed": "2026-09-21"
-    },
-    "text.79fb32ac68d3": {
-      "text": "Very good · Black · L",
-      "src": "79fb32ac68d3",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
     "text.8d0771eedeb7": {
       "text": "Nothing matches those filters.",
       "src": "8d0771eedeb7",
@@ -7832,12 +7825,12 @@
       "since": "",
       "changed": ""
     },
-    "text.7ec0bd3f903c": {
-      "text": "Page 1 of 38",
-      "src": "7ec0bd3f903c",
+    "text.1e78aa33705e": {
+      "text": "Page 1 of 39",
+      "src": "1e78aa33705e",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.e3e58d0ea378": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 10",
@@ -8385,12 +8378,12 @@
       "since": "",
       "changed": ""
     },
-    "text.ffae3dd195f0": {
-      "text": "Page 10 of 38",
-      "src": "ffae3dd195f0",
+    "text.8a9a1242ffe8": {
+      "text": "Page 10 of 39",
+      "src": "8a9a1242ffe8",
       "where": "page text — first seen on wardrobe/10.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.13798f3d5b64": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 11",
@@ -8882,12 +8875,12 @@
       "since": "",
       "changed": ""
     },
-    "text.2f4f53c387f9": {
-      "text": "Page 11 of 38",
-      "src": "2f4f53c387f9",
+    "text.80cda790244c": {
+      "text": "Page 11 of 39",
+      "src": "80cda790244c",
       "where": "page text — first seen on wardrobe/11.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.9820f7300946": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 12",
@@ -9393,12 +9386,12 @@
       "since": "",
       "changed": ""
     },
-    "text.01d760dcdb40": {
-      "text": "Page 12 of 38",
-      "src": "01d760dcdb40",
+    "text.11ea03be1b40": {
+      "text": "Page 12 of 39",
+      "src": "11ea03be1b40",
       "where": "page text — first seen on wardrobe/12.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.5595a1354b06": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 13",
@@ -9925,12 +9918,12 @@
       "since": "",
       "changed": ""
     },
-    "text.adcd6d16ee8b": {
-      "text": "Page 13 of 38",
-      "src": "adcd6d16ee8b",
+    "text.80f3ad0c01d5": {
+      "text": "Page 13 of 39",
+      "src": "80f3ad0c01d5",
       "where": "page text — first seen on wardrobe/13.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.a96f72d6b0cf": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 14",
@@ -10485,12 +10478,12 @@
       "since": "",
       "changed": ""
     },
-    "text.a3249c8551e8": {
-      "text": "Page 14 of 38",
-      "src": "a3249c8551e8",
+    "text.a4d5df78c522": {
+      "text": "Page 14 of 39",
+      "src": "a4d5df78c522",
       "where": "page text — first seen on wardrobe/14.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.e69edf94c883": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 15",
@@ -11087,12 +11080,12 @@
       "since": "",
       "changed": ""
     },
-    "text.1d720e1df2f8": {
-      "text": "Page 15 of 38",
-      "src": "1d720e1df2f8",
+    "text.451ffa10c5d5": {
+      "text": "Page 15 of 39",
+      "src": "451ffa10c5d5",
       "where": "page text — first seen on wardrobe/15.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.bf317275af27": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 16",
@@ -11689,12 +11682,12 @@
       "since": "",
       "changed": ""
     },
-    "text.657adfd285e6": {
-      "text": "Page 16 of 38",
-      "src": "657adfd285e6",
+    "text.9682d4b4d439": {
+      "text": "Page 16 of 39",
+      "src": "9682d4b4d439",
       "where": "page text — first seen on wardrobe/16.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.53614c13b64c": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 17",
@@ -12256,12 +12249,12 @@
       "since": "",
       "changed": ""
     },
-    "text.eb4dca56ed7c": {
-      "text": "Page 17 of 38",
-      "src": "eb4dca56ed7c",
+    "text.ab834f99ca0e": {
+      "text": "Page 17 of 39",
+      "src": "ab834f99ca0e",
       "where": "page text — first seen on wardrobe/17.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.881b447137c4": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 18",
@@ -12690,12 +12683,12 @@
       "since": "",
       "changed": ""
     },
-    "text.981d8e7584a1": {
-      "text": "Page 18 of 38",
-      "src": "981d8e7584a1",
+    "text.999ef778cbf9": {
+      "text": "Page 18 of 39",
+      "src": "999ef778cbf9",
       "where": "page text — first seen on wardrobe/18.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.eb5ea9d12d91": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 19",
@@ -13264,12 +13257,12 @@
       "since": "",
       "changed": ""
     },
-    "text.9fdb83e4625c": {
-      "text": "Page 19 of 38",
-      "src": "9fdb83e4625c",
+    "text.a948d5b91548": {
+      "text": "Page 19 of 39",
+      "src": "a948d5b91548",
       "where": "page text — first seen on wardrobe/19.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.062d14d25440": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 2",
@@ -13277,6 +13270,20 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.4bf6ff07b1a9": {
+      "text": "Vintage pinstripe blazer. Retro office aesthetic A classic oversized tailored fit, vertical white pinstripes, classic notched lapels, and flap…",
+      "src": "4bf6ff07b1a9",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "2026-09-21",
+      "changed": "2026-09-21"
+    },
+    "text.79fb32ac68d3": {
+      "text": "Very good · Black · L",
+      "src": "79fb32ac68d3",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
     },
     "text.3fcace6f8009": {
       "text": "Made exclusively for athletes and never retailed. Worn by legendary elite athletes. A piece of professional cycling history, authentic, rare vintage…",
@@ -13516,12 +13523,12 @@
       "since": "2026-09-13",
       "changed": "2026-09-13"
     },
-    "text.792a82fd4a3a": {
-      "text": "54 people have saved this on Vinted",
-      "src": "792a82fd4a3a",
+    "text.8a584c2acf9b": {
+      "text": "56 people have saved this on Vinted",
+      "src": "8a584c2acf9b",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-10-13",
-      "changed": "2026-10-13"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.cdc4d8ec86dc": {
       "text": "Mushroom / fungi inspired design earrings. 3 mushroom charms on each earring Secure and easy-to-use hoop latch. Oxidized plated silver over a…",
@@ -13810,26 +13817,12 @@
       "since": "2026-09-06",
       "changed": "2026-09-06"
     },
-    "text.00ccadfae4ea": {
-      "text": "A2 poster: Yasoda chasing Krishna",
-      "src": "00ccadfae4ea",
+    "text.7b4597832e3b": {
+      "text": "Page 2 of 39",
+      "src": "7b4597832e3b",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
-    },
-    "text.1f70bc645837": {
-      "text": "A poster showing Yashoda chasing Krishna Damodara for stealing butter.",
-      "src": "1f70bc645837",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
-    },
-    "text.d943c3832537": {
-      "text": "Page 2 of 38",
-      "src": "d943c3832537",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.139fcf8fb268": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 20",
@@ -14293,12 +14286,12 @@
       "since": "",
       "changed": ""
     },
-    "text.99d6b14122ad": {
-      "text": "Page 20 of 38",
-      "src": "99d6b14122ad",
+    "text.b19de89ad2bc": {
+      "text": "Page 20 of 39",
+      "src": "b19de89ad2bc",
       "where": "page text — first seen on wardrobe/20.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.808c4d14644e": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 21",
@@ -14825,12 +14818,12 @@
       "since": "",
       "changed": ""
     },
-    "text.621c168e69bd": {
-      "text": "Page 21 of 38",
-      "src": "621c168e69bd",
+    "text.206337084c47": {
+      "text": "Page 21 of 39",
+      "src": "206337084c47",
       "where": "page text — first seen on wardrobe/21.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.17ef7afbff92": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 22",
@@ -15245,12 +15238,12 @@
       "since": "",
       "changed": ""
     },
-    "text.cce79314e05f": {
-      "text": "Page 22 of 38",
-      "src": "cce79314e05f",
+    "text.8acd10aca020": {
+      "text": "Page 22 of 39",
+      "src": "8acd10aca020",
       "where": "page text — first seen on wardrobe/22.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.89a51929cfc3": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 23",
@@ -15630,12 +15623,12 @@
       "since": "",
       "changed": ""
     },
-    "text.6897103936de": {
-      "text": "Page 23 of 38",
-      "src": "6897103936de",
+    "text.175bb7f25001": {
+      "text": "Page 23 of 39",
+      "src": "175bb7f25001",
       "where": "page text — first seen on wardrobe/23.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.8436f66ba807": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 24",
@@ -16253,12 +16246,12 @@
       "since": "",
       "changed": ""
     },
-    "text.5a86de5f6215": {
-      "text": "Page 24 of 38",
-      "src": "5a86de5f6215",
+    "text.2fa8fa26e3fe": {
+      "text": "Page 24 of 39",
+      "src": "2fa8fa26e3fe",
       "where": "page text — first seen on wardrobe/24.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.0a4b8379ca32": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 25",
@@ -16883,12 +16876,12 @@
       "since": "",
       "changed": ""
     },
-    "text.a3a85d2a44f1": {
-      "text": "Page 25 of 38",
-      "src": "a3a85d2a44f1",
+    "text.d0b0ccf41cc8": {
+      "text": "Page 25 of 39",
+      "src": "d0b0ccf41cc8",
       "where": "page text — first seen on wardrobe/25.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.bb211632f58a": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 26",
@@ -17499,12 +17492,12 @@
       "since": "",
       "changed": ""
     },
-    "text.928f9811ce08": {
-      "text": "Page 26 of 38",
-      "src": "928f9811ce08",
+    "text.87b5b507706f": {
+      "text": "Page 26 of 39",
+      "src": "87b5b507706f",
       "where": "page text — first seen on wardrobe/26.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.c39e889ec712": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 27",
@@ -18066,12 +18059,12 @@
       "since": "",
       "changed": ""
     },
-    "text.bc7de1b17b57": {
-      "text": "Page 27 of 38",
-      "src": "bc7de1b17b57",
+    "text.bc52f4e2e4e5": {
+      "text": "Page 27 of 39",
+      "src": "bc52f4e2e4e5",
       "where": "page text — first seen on wardrobe/27.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.8ed0eb5bae20": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 28",
@@ -18591,12 +18584,12 @@
       "since": "",
       "changed": ""
     },
-    "text.f010eb8d1c40": {
-      "text": "Page 28 of 38",
-      "src": "f010eb8d1c40",
+    "text.98620628e664": {
+      "text": "Page 28 of 39",
+      "src": "98620628e664",
       "where": "page text — first seen on wardrobe/28.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.2000590b2c60": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 29",
@@ -19214,12 +19207,12 @@
       "since": "",
       "changed": ""
     },
-    "text.c697ecb9db98": {
-      "text": "Page 29 of 38",
-      "src": "c697ecb9db98",
+    "text.304c0bdcf7f1": {
+      "text": "Page 29 of 39",
+      "src": "304c0bdcf7f1",
       "where": "page text — first seen on wardrobe/29.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.db93acf4ea07": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 3",
@@ -19227,6 +19220,20 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.00ccadfae4ea": {
+      "text": "A2 poster: Yasoda chasing Krishna",
+      "src": "00ccadfae4ea",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-09-27",
+      "changed": "2026-09-27"
+    },
+    "text.1f70bc645837": {
+      "text": "A poster showing Yashoda chasing Krishna Damodara for stealing butter.",
+      "src": "1f70bc645837",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-09-27",
+      "changed": "2026-09-27"
     },
     "text.918c79b43f47": {
       "text": "A3 poster: Yashoda is chasing Krishna",
@@ -19297,6 +19304,13 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-09-03",
       "changed": "2026-09-03"
+    },
+    "text.f5c5089f35bc": {
+      "text": "13 people have saved this on Vinted",
+      "src": "f5c5089f35bc",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "2026-09-02",
+      "changed": "2026-09-02"
     },
     "text.9f5d3e2581c0": {
       "text": "Retro Vintage Style Radio FM and Speaker. Length 7.5 inches. Height 5 inches. Width 2.5 inches. Features: solar rechargeable batteries charging port…",
@@ -19424,13 +19438,6 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.0f6ce6792efb": {
-      "text": "25 people have saved this on Vinted",
-      "src": "0f6ce6792efb",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-10-02",
-      "changed": "2026-10-02"
-    },
     "text.1e3ca6178233": {
       "text": "Multi-strand design of silver-tone beads and textured elements. Antique, retro-inspired look.",
       "src": "1e3ca6178233",
@@ -19556,13 +19563,6 @@
       "where": "page text — first seen on wardrobe/3.html",
       "since": "",
       "changed": ""
-    },
-    "text.a29fa5f3a1b8": {
-      "text": "35 people have saved this on Vinted",
-      "src": "a29fa5f3a1b8",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-10-10",
-      "changed": "2026-10-10"
     },
     "text.c28cd1524c2d": {
       "text": "Handcrafted bracelet in authentic 925 sterling silver (marked). Amethyst stones with cultured freshwater pearls Toggle clasp Two rectangular,…",
@@ -19718,12 +19718,12 @@
       "since": "",
       "changed": ""
     },
-    "text.57bbb12527f9": {
-      "text": "33 people have saved this on Vinted",
-      "src": "57bbb12527f9",
+    "text.c99c07999b7c": {
+      "text": "34 people have saved this on Vinted",
+      "src": "c99c07999b7c",
       "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.8bb617b39993": {
       "text": "A quietly devastating novel about a humble couple exiled by their own families for marrying without consent, whose fragile peace is shattered when a…",
@@ -19732,19 +19732,12 @@
       "since": "",
       "changed": ""
     },
-    "text.f48aa6c8e5b9": {
-      "text": "A groundbreaking, meticulously researched account of the 21 month suspension of Indian democracy under Indira Gandhi, called the best and most wide…",
-      "src": "f48aa6c8e5b9",
+    "text.d6509434eebd": {
+      "text": "Page 3 of 39",
+      "src": "d6509434eebd",
       "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b38901a8713e": {
-      "text": "Page 3 of 38",
-      "src": "b38901a8713e",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.5065a9ee4b0e": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 30",
@@ -20397,12 +20390,12 @@
       "since": "",
       "changed": ""
     },
-    "text.4b13d7458606": {
-      "text": "Page 30 of 38",
-      "src": "4b13d7458606",
+    "text.09a9b96b5602": {
+      "text": "Page 30 of 39",
+      "src": "09a9b96b5602",
       "where": "page text — first seen on wardrobe/30.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.eb17ad71ea83": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 31",
@@ -20992,12 +20985,12 @@
       "since": "",
       "changed": ""
     },
-    "text.4b284eb55dbb": {
-      "text": "Page 31 of 38",
-      "src": "4b284eb55dbb",
+    "text.61119a3984d0": {
+      "text": "Page 31 of 39",
+      "src": "61119a3984d0",
       "where": "page text — first seen on wardrobe/31.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.3f56656650e0": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 32",
@@ -21608,12 +21601,12 @@
       "since": "",
       "changed": ""
     },
-    "text.8f8a187c681a": {
-      "text": "Page 32 of 38",
-      "src": "8f8a187c681a",
+    "text.be7a978ebd2b": {
+      "text": "Page 32 of 39",
+      "src": "be7a978ebd2b",
       "where": "page text — first seen on wardrobe/32.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.2cd91eae590d": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 33",
@@ -22266,12 +22259,12 @@
       "since": "",
       "changed": ""
     },
-    "text.6c714c94b268": {
-      "text": "Page 33 of 38",
-      "src": "6c714c94b268",
+    "text.eaac90afceaf": {
+      "text": "Page 33 of 39",
+      "src": "eaac90afceaf",
       "where": "page text — first seen on wardrobe/33.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.7fb2a31aaff5": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 34",
@@ -22875,12 +22868,12 @@
       "since": "",
       "changed": ""
     },
-    "text.69099b084dd7": {
-      "text": "Page 34 of 38",
-      "src": "69099b084dd7",
+    "text.7f69cb3f267d": {
+      "text": "Page 34 of 39",
+      "src": "7f69cb3f267d",
       "where": "page text — first seen on wardrobe/34.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.05ea4ea691b1": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 35",
@@ -23449,12 +23442,12 @@
       "since": "",
       "changed": ""
     },
-    "text.494268617a94": {
-      "text": "Page 35 of 38",
-      "src": "494268617a94",
+    "text.7479faac0cee": {
+      "text": "Page 35 of 39",
+      "src": "7479faac0cee",
       "where": "page text — first seen on wardrobe/35.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.8c408085f119": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 36",
@@ -23974,13 +23967,6 @@
       "since": "2026-10-07",
       "changed": "2026-10-07"
     },
-    "text.1b713f5abb81": {
-      "text": "New without tags · Red",
-      "src": "1b713f5abb81",
-      "where": "page text — first seen on wardrobe/36.html",
-      "since": "2026-09-22",
-      "changed": "2026-09-22"
-    },
     "text.0b7f2d34937d": {
       "text": "Persian Rug Mousepad | Vintage Ethnic Boho Retro Desk Office Accessories | Gaming Setup",
       "src": "0b7f2d34937d",
@@ -24128,12 +24114,12 @@
       "since": "2026-09-19",
       "changed": "2026-09-19"
     },
-    "text.5324715feed8": {
-      "text": "Page 36 of 38",
-      "src": "5324715feed8",
+    "text.cb080bc91b43": {
+      "text": "Page 36 of 39",
+      "src": "cb080bc91b43",
       "where": "page text — first seen on wardrobe/36.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.5697e8060f78": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 37",
@@ -24870,12 +24856,12 @@
       "since": "",
       "changed": ""
     },
-    "text.efac32cad7a4": {
-      "text": "Page 37 of 38",
-      "src": "efac32cad7a4",
+    "text.ca494a4881f5": {
+      "text": "Page 37 of 39",
+      "src": "ca494a4881f5",
       "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.ea38630d5246": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 38",
@@ -25076,6 +25062,13 @@
     "text.32af7eafc354": {
       "text": "Khaled Hosseini A Thousand Splendid Suns New York Times Bestseller",
       "src": "32af7eafc354",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.57bbb12527f9": {
+      "text": "33 people have saved this on Vinted",
+      "src": "57bbb12527f9",
       "where": "page text — first seen on wardrobe/38.html",
       "since": "",
       "changed": ""
@@ -25286,6 +25279,27 @@
     "text.93b3dbae6af9": {
       "text": "Very good · Red · L",
       "src": "93b3dbae6af9",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b9d0867280a5": {
+      "text": "Indian yellow cotton Hare Rama Radha Krishna shawl/scarf/stole",
+      "src": "b9d0867280a5",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
+    },
+    "text.a5ed50040b76": {
+      "text": "Hand-pigmented. Finest Loom Cotton. Block printed. Spiritual, elegant, peace giving. Large size.",
+      "src": "a5ed50040b76",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.e690560a523a": {
+      "text": "New without tags · Yellow",
+      "src": "e690560a523a",
       "where": "page text — first seen on wardrobe/38.html",
       "since": "",
       "changed": ""
@@ -25605,26 +25619,40 @@
       "since": "",
       "changed": ""
     },
+    "text.0ed1d7deb10e": {
+      "text": "Page 38 of 39",
+      "src": "0ed1d7deb10e",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
+    },
+    "text.a67a3bc5309f": {
+      "text": "Shop Indian clothes, jewellery and home decor in Europe, page 39",
+      "src": "a67a3bc5309f",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
+    },
     "text.d115329a496f": {
       "text": "Handmade Indian Cotton Dress | Burgundy Leaf Block Print | Sustainable Artisan Label | M/L",
       "src": "d115329a496f",
-      "where": "page text — first seen on wardrobe/38.html",
+      "where": "page text — first seen on wardrobe/39.html",
       "since": "",
       "changed": ""
     },
     "text.be0b07a40c59": {
       "text": "Beautiful handmade dress in brown colour with a cream leaf motif, which is a classic Indian block-print style. Handcrafted in Delhi by Anoshka…",
       "src": "be0b07a40c59",
-      "where": "page text — first seen on wardrobe/38.html",
+      "where": "page text — first seen on wardrobe/39.html",
       "since": "",
       "changed": ""
     },
-    "text.2a9137cf8438": {
-      "text": "Page 38 of 38",
-      "src": "2a9137cf8438",
-      "where": "page text — first seen on wardrobe/38.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+    "text.23ff8e94ac12": {
+      "text": "Page 39 of 39",
+      "src": "23ff8e94ac12",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.e34d6745d66a": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 4",
@@ -25632,6 +25660,13 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "2026-08-27",
       "changed": "2026-08-27"
+    },
+    "text.f48aa6c8e5b9": {
+      "text": "A groundbreaking, meticulously researched account of the 21 month suspension of Indian democracy under Indira Gandhi, called the best and most wide…",
+      "src": "f48aa6c8e5b9",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "",
+      "changed": ""
     },
     "text.63b0ae0e3b3e": {
       "text": "An energetic, counterintuitive exploration of why and how underdogs succeed, from small class sizes to civil rights battles to disadvantages that…",
@@ -25737,6 +25772,13 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "",
       "changed": ""
+    },
+    "text.49e52eb1d879": {
+      "text": "28 people have saved this on Vinted",
+      "src": "49e52eb1d879",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.3df7b18821e8": {
       "text": "🕉️ Natural Rudraksha Japa Mala: Made with authentic 7mm Rudraksha beads, ideal for spiritual use and daily chanting, length 16 inches 📿 108 (+5)…",
@@ -25853,20 +25895,6 @@
     "text.a8f0d18f7f7e": {
       "text": "New without tags · White · XL",
       "src": "a8f0d18f7f7e",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.a5ed50040b76": {
-      "text": "Hand-pigmented. Finest Loom Cotton. Block printed. Spiritual, elegant, peace giving. Large size.",
-      "src": "a5ed50040b76",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.e690560a523a": {
-      "text": "New without tags · Yellow",
-      "src": "e690560a523a",
       "where": "page text — first seen on wardrobe/4.html",
       "since": "",
       "changed": ""
@@ -25990,12 +26018,12 @@
       "since": "",
       "changed": ""
     },
-    "text.59e05ffdc963": {
-      "text": "Page 4 of 38",
-      "src": "59e05ffdc963",
+    "text.7c6c3a1ed3a5": {
+      "text": "Page 4 of 39",
+      "src": "7c6c3a1ed3a5",
       "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.c2cec8ee2ac0": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 5",
@@ -26466,12 +26494,12 @@
       "since": "",
       "changed": ""
     },
-    "text.95377154a1df": {
-      "text": "Page 5 of 38",
-      "src": "95377154a1df",
+    "text.67f15463e747": {
+      "text": "Page 5 of 39",
+      "src": "67f15463e747",
       "where": "page text — first seen on wardrobe/5.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.0ddd6319ce30": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 6",
@@ -26942,12 +26970,12 @@
       "since": "",
       "changed": ""
     },
-    "text.3c94d0b87650": {
-      "text": "Page 6 of 38",
-      "src": "3c94d0b87650",
+    "text.e41db7901208": {
+      "text": "Page 6 of 39",
+      "src": "e41db7901208",
       "where": "page text — first seen on wardrobe/6.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.bae6b18923eb": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 7",
@@ -27502,12 +27530,12 @@
       "since": "",
       "changed": ""
     },
-    "text.20fc8ff50221": {
-      "text": "Page 7 of 38",
-      "src": "20fc8ff50221",
+    "text.d37b94564f4b": {
+      "text": "Page 7 of 39",
+      "src": "d37b94564f4b",
       "where": "page text — first seen on wardrobe/7.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.c13fcfbacb31": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 8",
@@ -28013,12 +28041,12 @@
       "since": "",
       "changed": ""
     },
-    "text.0bd1231bc7fd": {
-      "text": "Page 8 of 38",
-      "src": "0bd1231bc7fd",
+    "text.e9041bf4fa85": {
+      "text": "Page 8 of 39",
+      "src": "e9041bf4fa85",
       "where": "page text — first seen on wardrobe/8.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.e628ace5dc9e": {
       "text": "Shop Indian clothes, jewellery and home decor in Europe, page 9",
@@ -28482,12 +28510,12 @@
       "since": "",
       "changed": ""
     },
-    "text.a2abd52c4941": {
-      "text": "Page 9 of 38",
-      "src": "a2abd52c4941",
+    "text.9b741c67df7d": {
+      "text": "Page 9 of 39",
+      "src": "9b741c67df7d",
       "where": "page text — first seen on wardrobe/9.html",
-      "since": "2026-09-27",
-      "changed": "2026-09-27"
+      "since": "2026-10-14",
+      "changed": "2026-10-14"
     },
     "text.feb8d825301b": {
       "text": "Indian Books in Europe: Fiction, Cookery, Scripture",

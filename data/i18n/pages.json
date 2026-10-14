@@ -1,41 +1,41 @@
 {
   "_comment": "Written by build-i18n.mjs. Derived — safe to delete.",
-  "generated": "2026-10-13T05:17:39.853Z",
+  "generated": "2026-10-14T05:17:40.913Z",
   "report": {
     "ru": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "fr": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "de": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "it": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "es": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "pl": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 158
+      "totalMissing": 168
     },
     "cs": {
-      "pages": 151,
+      "pages": 152,
       "noindexed": 2,
-      "totalMissing": 162
+      "totalMissing": 172
     }
   }
 }
