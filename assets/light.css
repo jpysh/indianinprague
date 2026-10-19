@@ -20,3 +20,12 @@ a.wa,.chip.wa{color:#096B33}
 /* Homepage pieces that assumed the dark ground. */
 :root .hero .label,:root .hero .label b{color:#FBF3E4}
 :root .tile-all .more{color:var(--magenta)}
+
+/* Hero on the light ground: the dark-theme colour blobs tint the cream behind the lede and
+   cut its contrast, so they are halved and the lede uses the full ink. */
+:root .hero-bg{background:
+  radial-gradient(60% 80% at 12% 20%, rgba(155,59,119,.09), transparent 55%),
+  radial-gradient(55% 70% at 88% 15%, rgba(232,169,60,.14), transparent 50%),
+  radial-gradient(70% 90% at 75% 95%, rgba(200,67,46,.09), transparent 55%),
+  var(--void)}
+:root .hero .sub{color:var(--bone)}

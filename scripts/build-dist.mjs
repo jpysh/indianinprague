@@ -237,6 +237,11 @@ for (const f of ["_headers", "_redirects"]) {
 for (const f of PRIVATE_PAGES) {
   if (existsSync(path.join(DIST, f))) throw new Error(`private page reached dist/: ${f}`);
 }
+// Guard (DESIGN.md, Motion): scroll position must never dim or clip content.
+for (const f of (await readdir(path.join(ROOT, "assets"))).filter((n) => n.endsWith(".css"))) {
+  if (/animation-timeline\s*:\s*(view|scroll)\(/.test((await readFile(path.join(ROOT, "assets", f), "utf8")).replace(/\/\*[\s\S]*?\*\//g, "")))
+    throw new Error(`assets/${f}: scroll-driven animation-timeline is banned (DESIGN.md, Motion)`);
+}
 for (const leaked of ["scripts", "data", "nginx", ".cloudflared", "images/9309067629.jpg"]) {
   if (existsSync(path.join(DIST, leaked))) throw new Error(`non-public path reached dist/: ${leaked}`);
 }
