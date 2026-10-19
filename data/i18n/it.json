@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-01T05:17:26.022Z",
-  "count": 6962,
+  "generated": "2026-10-19T10:26:13.896Z",
+  "count": 6976,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -27856,6 +27856,76 @@
     "text.f179c431b033": {
       "text": "Autentici tessuti e ricami indiani in lana. Poncho arancione tessuto a mano in pura lana nel Kashmir, in India. Ricami geometrici etnici tradizionali…",
       "src": "f179c431b033"
+    },
+    "text.49c266baaaa7": {
+      "text": "Ricerca",
+      "src": "49c266baaaa7",
+      "via": "claude"
+    },
+    "text.29a390f9237e": {
+      "text": "Cancella tutto",
+      "src": "29a390f9237e",
+      "via": "claude"
+    },
+    "text.23c5cdc6269e": {
+      "text": "Rimuovi filtro",
+      "src": "23c5cdc6269e",
+      "via": "claude"
+    },
+    "text.f5c9bd131486": {
+      "text": "Mostra altri",
+      "src": "f5c9bd131486",
+      "via": "claude"
+    },
+    "text.255beb6510e7": {
+      "text": "Mostra meno",
+      "src": "255beb6510e7",
+      "via": "claude"
+    },
+    "text.7d9eb7acb13e": {
+      "text": "Chiudi",
+      "src": "7d9eb7acb13e",
+      "via": "claude"
+    },
+    "text.2f55863e032e": {
+      "text": "Foto precedente",
+      "src": "2f55863e032e",
+      "via": "claude"
+    },
+    "text.894bb2b7ac07": {
+      "text": "Foto successiva",
+      "src": "894bb2b7ac07",
+      "via": "claude"
+    },
+    "text.7dc02858c140": {
+      "text": "Foto grandi",
+      "src": "7dc02858c140",
+      "via": "claude"
+    },
+    "text.b05d95c62372": {
+      "text": "Torna su",
+      "src": "b05d95c62372",
+      "via": "claude"
+    },
+    "text.3fbd859de220": {
+      "text": "Filtri e ordinamento",
+      "src": "3fbd859de220",
+      "via": "claude"
+    },
+    "text.1f830fdb0960": {
+      "text": "recensioni su Vinted",
+      "src": "1f830fdb0960",
+      "via": "claude"
+    },
+    "text.3d30020b1863": {
+      "text": ", oppure",
+      "src": "3d30020b1863",
+      "via": "claude"
+    },
+    "text.c19e966ec499": {
+      "text": "chiedimi su WhatsApp",
+      "src": "c19e966ec499",
+      "via": "claude"
     }
   }
 }

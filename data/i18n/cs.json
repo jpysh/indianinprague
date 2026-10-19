@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T05:18:10.822Z",
-  "count": 6960,
+  "generated": "2026-10-19T10:26:13.966Z",
+  "count": 6974,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -29908,6 +29908,76 @@
       "text": "Zelená",
       "src": "d486dfbd5fb5",
       "via": "vinted-cz"
+    },
+    "text.49c266baaaa7": {
+      "text": "Hledat",
+      "src": "49c266baaaa7",
+      "via": "claude"
+    },
+    "text.29a390f9237e": {
+      "text": "Zrušit vše",
+      "src": "29a390f9237e",
+      "via": "claude"
+    },
+    "text.23c5cdc6269e": {
+      "text": "Odebrat filtr",
+      "src": "23c5cdc6269e",
+      "via": "claude"
+    },
+    "text.f5c9bd131486": {
+      "text": "Zobrazit další",
+      "src": "f5c9bd131486",
+      "via": "claude"
+    },
+    "text.255beb6510e7": {
+      "text": "Zobrazit méně",
+      "src": "255beb6510e7",
+      "via": "claude"
+    },
+    "text.7d9eb7acb13e": {
+      "text": "Zavřít",
+      "src": "7d9eb7acb13e",
+      "via": "claude"
+    },
+    "text.2f55863e032e": {
+      "text": "Předchozí fotka",
+      "src": "2f55863e032e",
+      "via": "claude"
+    },
+    "text.894bb2b7ac07": {
+      "text": "Další fotka",
+      "src": "894bb2b7ac07",
+      "via": "claude"
+    },
+    "text.7dc02858c140": {
+      "text": "Velké fotky",
+      "src": "7dc02858c140",
+      "via": "claude"
+    },
+    "text.b05d95c62372": {
+      "text": "Zpět nahoru",
+      "src": "b05d95c62372",
+      "via": "claude"
+    },
+    "text.3fbd859de220": {
+      "text": "Filtry a řazení",
+      "src": "3fbd859de220",
+      "via": "claude"
+    },
+    "text.1f830fdb0960": {
+      "text": "hodnocení na Vinted",
+      "src": "1f830fdb0960",
+      "via": "claude"
+    },
+    "text.3d30020b1863": {
+      "text": " nebo",
+      "src": "3d30020b1863",
+      "via": "claude"
+    },
+    "text.c19e966ec499": {
+      "text": "napište mi na WhatsApp",
+      "src": "c19e966ec499",
+      "via": "claude"
     }
   }
 }

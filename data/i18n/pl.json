@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-01T05:17:27.749Z",
-  "count": 6962,
+  "generated": "2026-10-19T10:26:13.941Z",
+  "count": 6976,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -27856,6 +27856,76 @@
     "text.f179c431b033": {
       "text": "Autentyczna indyjska tkanina wełniana z haftem. Pomarańczowe ponczo, ręcznie tkane z czystej wełny w Kaszmirze w Indiach. Tradycyjny etniczny haft geometryczny…",
       "src": "f179c431b033"
+    },
+    "text.49c266baaaa7": {
+      "text": "Szukaj",
+      "src": "49c266baaaa7",
+      "via": "claude"
+    },
+    "text.29a390f9237e": {
+      "text": "Wyczyść wszystko",
+      "src": "29a390f9237e",
+      "via": "claude"
+    },
+    "text.23c5cdc6269e": {
+      "text": "Usuń filtr",
+      "src": "23c5cdc6269e",
+      "via": "claude"
+    },
+    "text.f5c9bd131486": {
+      "text": "Pokaż więcej",
+      "src": "f5c9bd131486",
+      "via": "claude"
+    },
+    "text.255beb6510e7": {
+      "text": "Pokaż mniej",
+      "src": "255beb6510e7",
+      "via": "claude"
+    },
+    "text.7d9eb7acb13e": {
+      "text": "Zamknij",
+      "src": "7d9eb7acb13e",
+      "via": "claude"
+    },
+    "text.2f55863e032e": {
+      "text": "Poprzednie zdjęcie",
+      "src": "2f55863e032e",
+      "via": "claude"
+    },
+    "text.894bb2b7ac07": {
+      "text": "Następne zdjęcie",
+      "src": "894bb2b7ac07",
+      "via": "claude"
+    },
+    "text.7dc02858c140": {
+      "text": "Duże zdjęcia",
+      "src": "7dc02858c140",
+      "via": "claude"
+    },
+    "text.b05d95c62372": {
+      "text": "Do góry",
+      "src": "b05d95c62372",
+      "via": "claude"
+    },
+    "text.3fbd859de220": {
+      "text": "Filtry i sortowanie",
+      "src": "3fbd859de220",
+      "via": "claude"
+    },
+    "text.1f830fdb0960": {
+      "text": "opinii na Vinted",
+      "src": "1f830fdb0960",
+      "via": "claude"
+    },
+    "text.3d30020b1863": {
+      "text": " lub",
+      "src": "3d30020b1863",
+      "via": "claude"
+    },
+    "text.c19e966ec499": {
+      "text": "zapytaj mnie na WhatsAppie",
+      "src": "c19e966ec499",
+      "via": "claude"
     }
   }
 }
