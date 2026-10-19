@@ -546,6 +546,12 @@ a.wa:hover{color:#3BE87C}
  * The 22px comes back out of SPACING, not out of the controls: nothing shrinks, no label is
  * dropped, and the language code — the thing a visitor who cannot read the page is looking
  * for — stays visible. The gutters and the gaps are the only part of a bar nobody taps. */
+/* 200% text (issue 7): the wordmark and the language pill grow with the root size while the
+   44px targets do not, so the bar was 512px wide on 390. It wraps to a second row instead of
+   scrolling sideways; at normal size it still fits one row. */
+@media (max-width:640px){
+  .bar{flex-wrap:wrap;row-gap:0}
+}
 @media (max-width:359px){
   .bar{gap:6px;padding-inline:14px}
   /* Spacing alone gave back 18 of the 22, and the last 4 had to come from somewhere. The
@@ -979,7 +985,9 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
 /* Two columns before one: three lists stacked single-file is a long scroll of footer, and 340
    rather than 380 because a 375px iPhone is the median phone here, not an edge case. */
 @media (max-width:700px){
-  .foot-nav{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 20px}
+  /* rem, so a shopper at 200% text gets one column instead of a footer that scrolls sideways
+     (issue 7): 9rem fits two columns at 375 and not at double size. */
+  .foot-nav{grid-template-columns:repeat(auto-fit,minmax(min(100%,9rem),1fr));gap:22px 20px}
 }
 @media (max-width:340px){
   .foot-nav{grid-template-columns:1fr}
