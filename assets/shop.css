@@ -754,3 +754,34 @@ header.site{border-bottom:1px solid rgba(var(--hair),.14)}
 
 /* WhatsApp green #25D366 is 1.6:1 on the light ground; this darker green keeps the brand hue at 5:1. */
 a.wa,.chip.wa{color:#0B7A3B}
+
+/* ---------- Stall: category tiles, cards (redesign stage 2, DESIGN.md §7.8) ----------
+ * Tiles: a photo per shelf in one scrolling row, so the first products reach the first
+ * screen (issue 10). The last tile is cut by the edge on a phone, which shows there is more.
+ * Cards: photo first, no border or vignette, 12 px radius, title then price (§1, §2). */
+.cat-nav{flex-wrap:nowrap;overflow-x:auto;gap:12px;padding-bottom:4px;scrollbar-width:none;
+  margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);scroll-padding-inline:var(--gutter)}
+.cat-nav::-webkit-scrollbar{display:none}
+.cat-nav a,.cat-nav a:hover{flex:0 0 76px;flex-direction:column;gap:6px;min-height:44px;padding:0;border:0;background:none;
+  font:500 var(--fs-xs)/1.25 var(--sans);letter-spacing:0;text-transform:none;color:var(--bone);text-align:center;white-space:normal}
+.cat-nav a img,.cat-nav a:not(:has(img))::before{width:64px;height:64px;border-radius:999px;object-fit:cover;
+  border:2px solid transparent;outline:1px solid rgba(var(--hair),.14)}
+.cat-nav a:not(:has(img))::before{content:"";display:block;background:var(--saffron)}
+.cat-nav a[aria-current="page"]{background:none;color:var(--bone);font-weight:700}
+.cat-nav a[aria-current="page"] img,.cat-nav a[aria-current="page"]:not(:has(img))::before{border-color:var(--magenta)}
+.cat-nav a b{display:block;font:400 var(--fs-2xs) var(--mono);color:var(--bone-dim);opacity:1}
+@media (max-width:520px){.cat-nav a{padding:0;font-size:var(--fs-xs)}}
+
+.piece .frame{border:0;border-radius:12px;aspect-ratio:4/5}
+.piece .frame::after,.piece .grain{display:none}
+#grid .piece .meta{display:flex;flex-direction:column;align-items:stretch;gap:2px;padding-top:8px;min-width:0}
+#grid .piece .meta .nm{order:1;font:500 var(--fs-s)/1.3 var(--sans);color:var(--bone);text-overflow:clip;min-width:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;white-space:normal}
+#grid .piece .meta .pr{order:2;font-size:var(--fs-m);font-weight:600;color:var(--magenta)}
+/* Shorter shop head on a phone: the shelf is the content, the head only names it (issue 10). */
+@media (max-width:520px){
+  .page-head{padding:20px 0 16px}
+  .page-head h1{font-size:1.75rem;margin-bottom:8px}
+  .page-head .lede{font-size:var(--fs-s);line-height:1.5}
+  .page-head + section .sec-inner{padding-top:16px}
+}
+.subs .sub,.subs-more{min-height:44px}
