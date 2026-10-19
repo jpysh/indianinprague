@@ -196,7 +196,7 @@ body{
 
 /* A heading that breaks with one word alone on the last line looks like a mistake, and on
    this site — where h1 runs to 60px — it looks like a large one. Ignored where unsupported. */
-h1,h2,h3,.nm{text-wrap:balance}
+h1,h2,h3,.nm{text-wrap:balance;overflow-wrap:anywhere;hyphens:auto}
 
 /* Form controls inherit nothing by default, and Safari on iOS zooms the whole viewport
    whenever a focused field is under 16px. The wardrobe's search box and five filter selects
@@ -642,7 +642,7 @@ a.wa:hover{color:#3BE87C}
    hit area grows. inline-flex rather than a block so the crumb still reads as one line with
    its separators. */
 .crumb a{display:inline-flex;align-items:center;min-height:24px}
-@media (any-pointer:coarse){.crumb a{min-height:32px}}
+@media (any-pointer:coarse){.crumb a{min-height:44px;min-width:44px}}
 /* HEADING COLUMN. The H1 and the lede beneath it used to carry unrelated caps — 20ch and
    --measure-s — so a shelf heading measured 720px above a 490px lede, two ragged right
    edges for no reason. One token, one edge. Left-aligned, NOT centred like the Diaries
@@ -754,7 +754,7 @@ a.trust:hover .trust-n,a.trust:focus-visible .trust-n{color:var(--bone)}
 /* letter-spacing because ★ glyphs are drawn tight and read as a smear at small sizes. */
 .trust .stars{color:var(--magenta);letter-spacing:.08em;font-size:1.2em}
 .trust-rate b{color:var(--bone);font-weight:600;font-size:1.15em}
-.trust-n{white-space:nowrap}
+.trust-n{white-space:normal}
 
 /* ---------- buttons ---------- */
 
@@ -920,7 +920,7 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
    than sitting in the basement beside the small print — a wordmark that reads as a footnote
    is worse than no wordmark. */
 .foot-brand{
-  display:inline-flex;align-items:center;min-height:32px;margin-bottom:18px;
+  display:inline-flex;align-items:center;min-height:44px;margin-bottom:10px;
   font-weight:600;font-size:var(--fs-s);letter-spacing:.04em;text-transform:uppercase;
   word-spacing:-.34em;white-space:nowrap;color:var(--bone);
 }
@@ -940,12 +940,12 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
 .foot-lede{font-size:var(--fs-s);color:var(--bone-dim);line-height:1.6;flex:1 1 34ch}
 
 .foot-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 32px;margin-top:20px}
-.foot-col{display:flex;flex-direction:column}
+.foot-col{display:flex;flex-direction:column;gap:8px}
 /* The column heading is a destination, not a label: land on the hub, or skip straight past it
    to the thing you actually wanted. */
 .foot-col .head{
   font-size:var(--fs-2xs);text-transform:uppercase;letter-spacing:.09em;
-  color:var(--bone-dim);opacity:.75;padding:4px 0 8px
+  color:var(--bone-dim);opacity:.75;display:flex;align-items:center;min-height:44px
 }
 /* No aria-current in here: index.html is the single source of this block and the generators
    copy it verbatim into every page, so a per-page marker cannot survive a build. The header
@@ -956,17 +956,17 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
    with nothing tappable beside them, so the only mis-tap available is the neighbouring row in
    the same list, and 36px plus the row gap clears a fingertip. It is the difference between a
    footer that fits a phone screen and one that does not. */
-.foot-col .item{display:flex;align-items:center;min-height:36px;font-size:var(--fs-xs);color:var(--bone);opacity:.82}
+.foot-col .item{display:flex;align-items:center;min-height:44px;font-size:var(--fs-xs);color:var(--bone);opacity:.82}
 .foot-col .item:hover{color:var(--magenta);opacity:1}
 
 .foot-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;padding-top:18px}
-.foot-reach{display:flex;gap:10px;flex:0 0 auto}
+.foot-reach{display:flex;flex-wrap:wrap;gap:8px;flex:0 1 auto;max-width:100%}
 /* One sentence, not two spans pushed to opposite ends. Privacy leads because it is the part
    a visitor has a stake in; how the site was made is a footnote to it. */
 /* Icon plus one word. At footer scale "WhatsApp me" was carrying no information the green mark
    did not already carry, and email deserved to be a control rather than an address to copy. */
 .chip{
-  display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:8px 16px 8px 13px;
+  display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 16px 8px 13px;
   border-radius:100px;font-size:var(--fs-xs);font-weight:600;
   border:1px solid rgba(var(--hair),.16);color:var(--bone);
   transition:background .3s,border-color .3s,color .3s
@@ -1010,7 +1010,6 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
  * specificity as the ones they are correcting, so source order is what decides. */
 @media (any-pointer:coarse){
   nav.main a{min-height:44px}
-  .foot-col .item{min-height:40px}
   .brand{min-height:44px}
 }
 
@@ -1128,7 +1127,7 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
      read the page needs first. It stops short of 44 on purpose: at 44 the pill outweighs the
      wordmark beside it and starts reading as the bar's primary control. The change is
      vertical only, so it costs the 375px bar no width. */
-  min-height:40px;padding:0 10px;
+  min-height:44px;padding:0 10px;
   /* A pill, not a bare word. The border is what makes it read as a control rather than as
      one more nav link, and the shading lifts it off the header bar without the volume of a
      filled button — which would out-shout the nav this header exists to serve. */
@@ -1159,10 +1158,10 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
   background:var(--chrome);
   border:1px solid rgba(var(--hair),.16);border-radius:10px;
   box-shadow:0 14px 32px rgba(0,0,0,.4);
-  display:flex;flex-direction:column;
+  display:flex;flex-direction:column;gap:8px;
 }
 .lang-menu a,.lang-menu .lang-here{
-  padding:9px 18px;color:var(--bone);
+  display:flex;align-items:center;min-height:44px;padding:0 18px;color:var(--bone);
   text-decoration:none;white-space:nowrap;font-size:14px;
 }
 .lang-menu a{opacity:.82}

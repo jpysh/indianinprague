@@ -16,7 +16,7 @@ header.site{border-bottom:1px solid rgba(var(--hair),.14)}
 .pr,.price,.cap,.eyebrow,.kc{font-family:var(--mono)}
 
 /* WhatsApp green #25D366 is 1.6:1 on the light ground; this darker green keeps the brand hue at 5:1. */
-a.wa,.chip.wa{color:#0B7A3B}
+a.wa,.chip.wa{color:#096B33}
 /* Homepage pieces that assumed the dark ground. */
 :root .hero .label,:root .hero .label b{color:#FBF3E4}
 :root .tile-all .more{color:var(--magenta)}
