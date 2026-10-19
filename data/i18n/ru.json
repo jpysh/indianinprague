@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-01T05:17:24.033Z",
-  "count": 6962,
+  "generated": "2026-10-19T10:26:13.812Z",
+  "count": 6976,
   "entries": {
     "attr.color.red": {
       "text": "Сеть",
@@ -27856,6 +27856,76 @@
     "text.f179c431b033": {
       "text": "Настоящие индийские шерстяные ткани и вышивка. Оранжевое пончо, сотканное вручную из чистой шерсти в Кашмире, Индия. Традиционная этническая геометрическая вышивка…",
       "src": "f179c431b033"
+    },
+    "text.49c266baaaa7": {
+      "text": "Поиск",
+      "src": "49c266baaaa7",
+      "via": "claude"
+    },
+    "text.29a390f9237e": {
+      "text": "Сбросить всё",
+      "src": "29a390f9237e",
+      "via": "claude"
+    },
+    "text.23c5cdc6269e": {
+      "text": "Убрать фильтр",
+      "src": "23c5cdc6269e",
+      "via": "claude"
+    },
+    "text.f5c9bd131486": {
+      "text": "Показать ещё",
+      "src": "f5c9bd131486",
+      "via": "claude"
+    },
+    "text.255beb6510e7": {
+      "text": "Показать меньше",
+      "src": "255beb6510e7",
+      "via": "claude"
+    },
+    "text.7d9eb7acb13e": {
+      "text": "Закрыть",
+      "src": "7d9eb7acb13e",
+      "via": "claude"
+    },
+    "text.2f55863e032e": {
+      "text": "Предыдущее фото",
+      "src": "2f55863e032e",
+      "via": "claude"
+    },
+    "text.894bb2b7ac07": {
+      "text": "Следующее фото",
+      "src": "894bb2b7ac07",
+      "via": "claude"
+    },
+    "text.7dc02858c140": {
+      "text": "Крупные фото",
+      "src": "7dc02858c140",
+      "via": "claude"
+    },
+    "text.b05d95c62372": {
+      "text": "Наверх",
+      "src": "b05d95c62372",
+      "via": "claude"
+    },
+    "text.3fbd859de220": {
+      "text": "Фильтры и сортировка",
+      "src": "3fbd859de220",
+      "via": "claude"
+    },
+    "text.1f830fdb0960": {
+      "text": "отзывов на Vinted",
+      "src": "1f830fdb0960",
+      "via": "claude"
+    },
+    "text.3d30020b1863": {
+      "text": " или",
+      "src": "3d30020b1863",
+      "via": "claude"
+    },
+    "text.c19e966ec499": {
+      "text": "спросите меня в WhatsApp",
+      "src": "c19e966ec499",
+      "via": "claude"
     }
   }
 }

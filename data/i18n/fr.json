@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-01T05:17:24.685Z",
-  "count": 6962,
+  "generated": "2026-10-19T10:26:13.841Z",
+  "count": 6976,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -27856,6 +27856,76 @@
     "text.f179c431b033": {
       "text": "Tissu en laine et broderie indiens authentiques. Poncho orange tissé à la main en pure laine au Cachemire, en Inde. Broderie géométrique ethnique traditionnelle…",
       "src": "f179c431b033"
+    },
+    "text.49c266baaaa7": {
+      "text": "Recherche",
+      "src": "49c266baaaa7",
+      "via": "claude"
+    },
+    "text.29a390f9237e": {
+      "text": "Tout effacer",
+      "src": "29a390f9237e",
+      "via": "claude"
+    },
+    "text.23c5cdc6269e": {
+      "text": "Retirer le filtre",
+      "src": "23c5cdc6269e",
+      "via": "claude"
+    },
+    "text.f5c9bd131486": {
+      "text": "Afficher plus",
+      "src": "f5c9bd131486",
+      "via": "claude"
+    },
+    "text.255beb6510e7": {
+      "text": "Afficher moins",
+      "src": "255beb6510e7",
+      "via": "claude"
+    },
+    "text.7d9eb7acb13e": {
+      "text": "Fermer",
+      "src": "7d9eb7acb13e",
+      "via": "claude"
+    },
+    "text.2f55863e032e": {
+      "text": "Photo précédente",
+      "src": "2f55863e032e",
+      "via": "claude"
+    },
+    "text.894bb2b7ac07": {
+      "text": "Photo suivante",
+      "src": "894bb2b7ac07",
+      "via": "claude"
+    },
+    "text.7dc02858c140": {
+      "text": "Grandes photos",
+      "src": "7dc02858c140",
+      "via": "claude"
+    },
+    "text.b05d95c62372": {
+      "text": "Retour en haut",
+      "src": "b05d95c62372",
+      "via": "claude"
+    },
+    "text.3fbd859de220": {
+      "text": "Filtres et tri",
+      "src": "3fbd859de220",
+      "via": "claude"
+    },
+    "text.1f830fdb0960": {
+      "text": "avis sur Vinted",
+      "src": "1f830fdb0960",
+      "via": "claude"
+    },
+    "text.3d30020b1863": {
+      "text": ", ou",
+      "src": "3d30020b1863",
+      "via": "claude"
+    },
+    "text.c19e966ec499": {
+      "text": "demandez-moi sur WhatsApp",
+      "src": "c19e966ec499",
+      "via": "claude"
     }
   }
 }
