@@ -749,7 +749,9 @@ const catNav = (active, counts) =>
   // listing it here as well would put the same word in two navigations on the same screen,
   // pointing at the same page, one of them implying it is a shelf inside the wardrobe.
   CATEGORIES.filter((c) => counts[c.name] && !c.module)
-    .map((c) => `<a href="${url(c.page)}"${active === c.name ? ' aria-current="page"' : ""}>${esc(label(c.name))} <b>${counts[c.name]}</b></a>`)
+    .map((c) => `<a href="${url(c.page)}"${active === c.name ? ' aria-current="page"' : ""}>` +
+      (counts.__thumbs?.[c.name] ? `<img src="${counts.__thumbs[c.name]}" alt="" width="64" height="64" loading="lazy" decoding="async">` : "") +
+      `<span>${esc(label(c.name))} <b>${counts[c.name]}</b></span></a>`)
     .join("") +
   // Sold is NOT a chip here. This strip answers "what do you have?", and a shelf of things
   // nobody can buy is not an answer to it — it was sitting in the primary navigation of a
@@ -1056,6 +1058,13 @@ async function main() {
   // strip say "Meditation 11" over a page of 461.
   for (const c of CATEGORIES)
     counts[c.name] = live.filter((i) => (c.names || [c.name]).includes(i.category)).length;
+  // One photo per shelf for the category tiles (direction C "Stall", DESIGN.md §7.8): the
+  // newest available piece with a derived image, smallest variant.
+  counts.__thumbs = {};
+  for (const c of CATEGORIES) {
+    const hit = live.find((i) => (c.names || [c.name]).includes(i.category) && manifest[i.photo]);
+    if (hit) { const e = manifest[hit.photo]; counts.__thumbs[c.name] = `/${e.variants[0].jpg}${e.v ? `?v=${e.v}` : ""}`; }
+  }
 
   const indexPath = path.join(ROOT, "index.html");
   let indexHtml = await readFile(indexPath, "utf8");
