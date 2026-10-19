@@ -70,8 +70,14 @@ export function vendorItems(root) {
     );
   };
 
-  return body
-    .filter((r) => r.length > 1 && r[col.list] === "yes" && hasLeadImage(r))
+  // One card per SKU. The scrape lists a product once per shelf it sits on, so 13 SKUs came
+  // through twice: same photo, slightly different titles, and the same element id on the
+  // page, which broke anchors and the shop search. The last row wins, because the earlier
+  // ones were the stray shelves (a poster filed under Women's clothing).
+  const listed = body.filter((r) => r.length > 1 && r[col.list] === "yes" && hasLeadImage(r));
+  const lastRow = new Map(listed.map((r) => [r[col.sku], r]));
+  return listed
+    .filter((r) => lastRow.get(r[col.sku]) === r)
     .map((r) => {
       const sku = r[col.sku];
       const photos = r[col.images]
