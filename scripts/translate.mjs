@@ -38,6 +38,9 @@ const flag = (name, fallback = null) => {
 };
 const DRY = argv.includes("--dry");
 const MAX_CHARS = Number(flag("--max", Infinity));
+// --match "<regex>": only strings whose English matches, anchored. Keeps a run to the few
+// strings the owner approved instead of the whole backlog.
+const MATCH = flag("--match") ? new RegExp(`^(?:${flag("--match")})$`) : null;
 const ONLY = flag("--lang") ? flag("--lang").split(",").map((s) => s.trim()) : CODES;
 
 // DeepL takes up to 50 texts per request; the character ceiling is generous but a single
@@ -196,7 +199,7 @@ function outstanding(lang, sources, machine) {
   // `item.<id>.title` -> `<id>`. Non-product keys never reach this.
   const seenOf = (key) => firstSeen(key.split(".")[1] ?? "");
   return Object.entries(sources)
-    .filter(([key, src]) => !blocked(lang, key) && machine[key]?.src !== src.src)
+    .filter(([key, src]) => !blocked(lang, key) && machine[key]?.src !== src.src && (!MATCH || MATCH.test(src.text)))
     .sort((a, b) =>
       rank(a[0]) - rank(b[0]) ||
       (rank(a[0]) === 0 ? seenOf(b[0]).localeCompare(seenOf(a[0])) : 0) ||
