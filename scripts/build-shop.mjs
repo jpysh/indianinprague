@@ -739,6 +739,14 @@ function toolbar(items) {
   </div>`;
 }
 
+// Words shop.js puts on screen, written into the page so build-i18n.mjs translates them
+// with everything else (issue 9). shop.js reads them by key and falls back to English.
+const UI_WORDS = ["Search", "Availability", "Sold", "Out of stock", "In stock", "Clear all",
+  "Remove filter", "Show more", "Show fewer", "Show all", "Close", "Previous photo", "Next photo",
+  "Large photos", "Back to top", "Filters & sort", "Colour", "Condition", "Partner", "Price", "Size"];
+const uiText = () =>
+  `<div id="ui-text" hidden>${UI_WORDS.map((w) => `<span data-k="${esc(w)}">${esc(w)}</span>`).join("")}</div>`;
+
 // The Vinted rating for the detail sheet (DESIGN.md §7.5), from data/seller.json, which
 // the daily sync refreshes. Hidden source markup: shop.js copies it into the sheet. Numbers
 // sit in their own elements so the translated pages only ever translate the fixed words.
@@ -941,6 +949,7 @@ ${markNav(ch.header, "wardrobe")}
 
   ${grid(items, manifest, cat.name === "Everything", allUrl, seq)}
   ${trustLine()}
+  ${uiText()}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button>, or <a class="wa" href="${WA}${encodeURIComponent("Hi! I am looking for something I could not find on guldaarbazaar.com: ")}" target="_blank" rel="noopener">ask me on WhatsApp</a>.</p>
   ${pager(cat, seq, sub)}
 </div></section>

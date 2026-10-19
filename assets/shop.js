@@ -11,6 +11,12 @@
  * stays `script-src 'self'` with no 'unsafe-inline'.
  */
 (function () {
+  // UI words come from a hidden table in the page (#ui-text, written by build-shop.mjs), so
+  // the translated shops say them in their own language (issue 9). English is the fallback.
+  var UI = {};
+  document.querySelectorAll("#ui-text [data-k]").forEach(function (e) { UI[e.getAttribute("data-k")] = e.textContent; });
+  function t(k) { return UI[k] || k; }
+
   "use strict";
 
   // Root-absolute: shelf pages live at /wardrobe/<shelf>, so a relative path would
@@ -129,14 +135,14 @@
     var prev = document.createElement("button");
     prev.type = "button";
     prev.className = "shot-nav prev";
-    prev.setAttribute("aria-label", "Previous photo");
+    prev.setAttribute("aria-label", t("Previous photo"));
     prev.innerHTML = "&lsaquo;";
     prev.addEventListener("click", step(-1));
 
     var next = document.createElement("button");
     next.type = "button";
     next.className = "shot-nav next";
-    next.setAttribute("aria-label", "Next photo");
+    next.setAttribute("aria-label", t("Next photo"));
     next.innerHTML = "&rsaquo;";
     next.addEventListener("click", step(1));
 
@@ -199,7 +205,7 @@
     grid.classList.toggle("list", list);
     viewBtns.forEach(function (b) {
       b.innerHTML = list ? ICON_GRID : ICON_LIST;
-      b.setAttribute("aria-label", "Large photos");
+      b.setAttribute("aria-label", t("Large photos"));
       b.setAttribute("aria-pressed", String(list));
     });
     if (keep) return;
@@ -219,7 +225,7 @@
   sheet.className = "sheet";
   sheet.setAttribute("aria-labelledby", "sheet-title");
   sheet.innerHTML =
-    '<button type="button" class="sheet-x" aria-label="Close">&times;</button>' +
+    '<button type="button" class="sheet-x" aria-label="' + t("Close") + '">&times;</button>' +
     '<div class="sheet-media"></div>' +
     '<div class="sheet-body"><h2 id="sheet-title"></h2><p class="sheet-pr"></p>' +
     '<p class="sheet-tags"></p><p class="sheet-desc"></p>' +
@@ -421,7 +427,7 @@
     for (var i = revealed; i < to; i++) shown[i].hidden = false;
     revealed = to;
     more.hidden = revealed >= shown.length;
-    more.textContent = "Show " + Math.min(PAGE, shown.length - revealed) + " more";
+    more.textContent = t("Show more") + " (" + Math.min(PAGE, shown.length - revealed) + ")";
     tally();
   }
 
@@ -449,15 +455,15 @@
   function drawChips() {
     chips.innerHTML = "";
     var active = [];
-    var AVAIL_LABEL = { sold: "Sold", oos: "Out of stock", available: "In stock" };
-    if (avail) active.push(["Availability", AVAIL_LABEL[avail] || avail, function () { setAvail(""); }]);
+    var AVAIL_LABEL = { sold: t("Sold"), oos: t("Out of stock"), available: t("In stock") };
+    if (avail) active.push([t("Availability"), AVAIL_LABEL[avail] || avail, function () { setAvail(""); }]);
     selects.forEach(function (s) {
       if (!s.value) return;
       var text = s.options[s.selectedIndex].textContent;
-      active.push([s.getAttribute("data-name"), text, function () { s.value = ""; apply(); }]);
+      active.push([t(s.getAttribute("data-name")), text, function () { s.value = ""; apply(); }]);
     });
     if ((q.value || "").trim()) {
-      active.push(["Search", '"' + q.value.trim() + '"', function () { q.value = ""; apply(); }]);
+      active.push([t("Search"), '"' + q.value.trim() + '"', function () { q.value = ""; apply(); }]);
     }
 
     active.forEach(function (row) {
@@ -465,7 +471,7 @@
       b.type = "button";
       b.className = "chip";
       b.innerHTML = "<i>" + row[0] + "</i> " + row[1] + " <span aria-hidden=\"true\">&times;</span>";
-      b.setAttribute("aria-label", "Remove filter " + row[0] + ": " + row[1]);
+      b.setAttribute("aria-label", t("Remove filter") + " " + row[0] + ": " + row[1]);
       b.addEventListener("click", row[2]);
       chips.appendChild(b);
     });
@@ -474,7 +480,7 @@
       var all = document.createElement("button");
       all.type = "button";
       all.className = "chip clear-all";
-      all.textContent = "Clear all";
+      all.textContent = t("Clear all");
       all.addEventListener("click", clearAll);
       chips.appendChild(all);
     }
@@ -511,7 +517,7 @@
     subsMore.addEventListener("click", function () {
       var open = subs.classList.toggle("subs-open");
       subsMore.setAttribute("aria-expanded", open ? "true" : "false");
-      subsMore.firstChild.nodeValue = open ? "Show fewer " : "Show all ";
+      subsMore.firstChild.nodeValue = open ? t("Show fewer") + " " : t("Show all") + " ";
     });
     window.addEventListener("resize", syncSubs);
     syncSubs();
@@ -829,8 +835,8 @@
     '<button type="button" class="sb-jump-filters">' +
     '<svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false" fill="none" ' +
     'stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M7 12h10M11 18h2"/></svg>' +
-    "Filters &amp; sort</button>" +
-    '<button type="button" class="sb-jump-top" aria-label="Back to top">' +
+    t("Filters & sort").replace(/&/g, "&amp;") + "</button>" +
+    '<button type="button" class="sb-jump-top" aria-label="' + t("Back to top") + '">' +
     '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false" fill="none" ' +
     'stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
     '<path d="M12 19V5M5 12l7-7 7 7"/></svg></button>';
