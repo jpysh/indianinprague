@@ -32,6 +32,8 @@ Sources (19 Oct 2026): Apple HIG (layout, typography, touch targets, sheets); re
 
 ## 3. Components (reuse, never rebuild)
 
+**Light and dark.** Shop pages and the homepage load `assets/light.css`, which redefines the site tokens (paper ground, ink text). Dark pages never load it. Colours that must flip go through the token hooks in `site.css` (`--on-fill` text on an accent fill, `--fill` accent fill, `--hair` and `--shade` rgb triplets for hairlines and vignettes), never a literal. Text on a photo is pinned light with a solid scrim. A light-only fix goes in `light.css`.
+
 The shop kit lives in `assets/shop.css` and `assets/shop.js`: card (`.piece`), filter bar (`.sb-*`), detail sheet, chips, pager. A new screen uses these. A fix to one is a token or kit change, never a one-off value in a page.
 
 ## 4. Shop rules (Baymard)
@@ -44,7 +46,7 @@ The shop kit lives in `assets/shop.css` and `assets/shop.js`: card (`.piece`), f
 
 ## 5. Libraries
 
-Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transitions for page changes. A library is allowed when it is MIT or similar, has zero or few dependencies, no known vulnerabilities on Snyk, a release older than two weeks, and is vendored and pinned under `assets/vendor/` and loaded only when used. Candidates when a need appears: PhotoSwipe (pinch-zoom product photos), MiniSearch (in use).
+Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transitions for page changes. A library is allowed when it is MIT or similar, has zero or few dependencies, no known vulnerabilities on Snyk, a release older than two weeks, and is vendored and pinned under `assets/vendor/` and loaded only when used. In use: MiniSearch (shop search). Approved next: PhotoSwipe for pinch-zoom product photos (owner, 19 Oct 2026), loaded only when a shopper taps a photo in the detail sheet.
 
 ## 6. Banned
 
@@ -55,7 +57,7 @@ Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transit
 1. **Light for shopping, dark for stories.** Shop pages and the homepage go light (warm off-white ground, near-black text) with olive, saffron and paprika as accents. Spirituality and Diaries keep the dark void.
 2. **Plex Sans everywhere**; Plex Mono only for prices and small labels.
 3. **Scope, in stages:** shop first (/wardrobe, shelves, detail sheet, search, filters), then the homepage. Other pages later.
-4. **Detail stays a sheet, made better:** swipe gallery, pinch zoom, size and measurements, a sticky "Ask on WhatsApp" bar. Separate product pages are a later, separate decision (SEO and URLs).
+4. **Detail stays a sheet, made better:** swipe gallery, pinch zoom (approved 19 Oct 2026: PhotoSwipe, vendored per §5), size and measurements, a sticky "Ask on WhatsApp" bar. Separate product pages are a later, separate decision (SEO and URLs).
 5. **Trust:** show the Vinted rating only: "★ 5.0 · 93 reviews on Vinted", linked to the feedback page, from `data/seller.json` (refreshed daily). Hide it if the rating drops below 4.5 or the file is missing. No sold counts or follower counts yet: too small to help.
 6. **Directions before building:** two or three mocked-up directions as a page the owner opens on a phone and picks from. Build only the chosen one.
 7. **English first;** the seven translated sites follow by translating only the changed strings. A new DeepL key is the owner's call.

@@ -27,5 +27,8 @@ The owner does not code. Claude runs the site end to end: finds issues, decides,
 - **Loops.** Every change goes through skill `ship`. Work is found by skill `customer-walk`. A finding a machine can check becomes a guard in `scripts/build-dist.mjs`.
 - **Frugal.** Delete, reuse, native feature, CSS before JS, then a library (DESIGN.md §5). No paid service without the owner's yes.
 - **Owner's calls, never Claude's:** prices, brand voice and new copy themes, anything legal or on `/partner`, deleting a page or shelf, a paid service, DeepL spend beyond a few strings. Ask on the owner issue and carry on with other work.
+- **Translations are DeepL only** (`scripts/translate.mjs`). If DeepL fails, stop and tell the owner on the owner issue; never translate with Claude unless the owner asks for that one job. Never write `data/i18n/overrides/` (the owner's layer).
+- **Parallel sessions.** Other sessions work on this repo at the same time. Before each PR, sync with `origin/main` and rerun the build; a conflict in generated pages is fixed by rebuilding, never by hand.
+- **Shopper checks** on any visual change: `node tools/check/check-mobile.mjs <paths>` (WebKit at iPhone width, reduced motion: sideways scroll at 100% and 200% text, 44 px targets, 4.5:1 contrast). Setup once is in `tools/check/package.json`.
 - **Guardrails.** One theme per session. Two strikes: if the same fix fails twice, stop and write what was tried on the issue. Re-running a check without changing anything is a loop: stop. Each PR small enough to revert cleanly.
 - **Research** the primary source before a design change (Apple HIG, Baymard, NN/G, web.dev) and name it in the PR in one line. Do not re-research a question an issue already answers.
