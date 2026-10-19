@@ -46,7 +46,7 @@
 @media (max-width:520px){
   .cat-nav{gap:6px}
   .cat-nav a{padding:0 9px;letter-spacing:.02em;font-size:var(--fs-2xs)}
-  .cat-nav a b{font-size:11px}
+  .cat-nav a b{font-size:var(--fs-2xs)}
 }
 .cat-nav a:hover{color:var(--bone);border-color:var(--bone)}
 .cat-nav a[aria-current="page"]{
@@ -669,7 +669,7 @@
 #grid:not(.list) .meta .nm{font-size:var(--fs-2xs);color:var(--bone-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #grid:not(.list) .fav-badge{top:6px;right:6px;padding:3px 6px;gap:4px;font-size:var(--fs-2xs)}
 #grid:not(.list) .fav-badge svg{width:12px;height:12px}
-#grid:not(.list) .cap.flag{top:6px;left:6px;font-size:10px;padding:2px 5px}
+#grid:not(.list) .cap.flag{top:6px;left:6px;font-size:var(--fs-2xs);padding:2px 5px}
 #grid:not(.list) .cap.flag ~ .cap.flag{top:28px}
 
 /* The ask control is the WhatsApp mark alone, its words kept for screen readers. */

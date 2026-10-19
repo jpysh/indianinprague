@@ -107,7 +107,7 @@
    * The fluid steps use clamp(min, rem + vw, max) rather than plain vw so they still
    * respond to that preference at every viewport width — a pure-vw heading ignores it.
    */
-  --fs-2xs:.75rem;     /* 12px — captions, tags, chips, crumbs, counts, the privacy line */
+  --fs-2xs:.8125rem;   /* 13px — captions, tags, chips, crumbs, counts, the privacy line */
   --fs-xs:.8125rem;    /* 13px — nav, buttons, footer links, small labels */
   --fs-s:.875rem;      /* 14px — card titles, dense secondary prose */
   --fs-m:1rem;         /* 16px — THE BODY DEFAULT, and every form control */

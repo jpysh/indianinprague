@@ -3,6 +3,7 @@
 // The checks every ship run repeats by hand (CLAUDE.md "iOS Safari", DESIGN.md §2):
 //   - no sideways scroll at 100% and at 200% text
 //   - visible tap targets at least 44 x 44 px
+//   - no text under 13 px (DESIGN.md §2)
 //   - text contrast at least 4.5:1 against what is behind it (photos skipped)
 // It prints problems and exits 1 if any, and saves a screenshot per page.
 //
@@ -40,6 +41,8 @@ const audit = () => {
     if ([...e.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim())) {
       const a = lum(rgb(getComputedStyle(e).color)), b = lum(bg(e));
       const ratio = (Math.max(a, b) + 0.05) / (Math.min(a, b) + 0.05);
+      const px = parseFloat(getComputedStyle(e).fontSize);
+      if (px < 13 && !e.closest("svg")) { const k = "s" + name; if (!seen.has(k)) { seen.add(k); out.push(`text ${px}px (DESIGN.md §2 minimum 13): ${name} "${e.textContent.trim().slice(0, 30)}"`); } }
       const k = "c" + name; if (ratio < 4.5 && !seen.has(k)) { seen.add(k); out.push(`contrast ${ratio.toFixed(1)}:1: ${name} "${e.textContent.trim().slice(0, 30)}"`); }
     }
   }
