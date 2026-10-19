@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T10:26:13.966Z",
-  "count": 6974,
+  "generated": "2026-10-19T10:39:25.824Z",
+  "count": 6987,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -29909,74 +29909,139 @@
       "src": "d486dfbd5fb5",
       "via": "vinted-cz"
     },
-    "text.49c266baaaa7": {
-      "text": "Hledat",
-      "src": "49c266baaaa7",
+    "text.30594d546696": {
+      "text": "93 recenzí na Vinted →",
+      "src": "30594d546696",
       "via": "claude"
     },
-    "text.29a390f9237e": {
-      "text": "Zrušit vše",
-      "src": "29a390f9237e",
+    "text.f8ada82629b9": {
+      "text": "Hodnocení 5,0 z 5 podle 93 recenzí kupujících. Přečtěte si je na Vinted (otevře se v nové záložce).",
+      "src": "f8ada82629b9",
       "via": "claude"
     },
-    "text.23c5cdc6269e": {
-      "text": "Odebrat filtr",
-      "src": "23c5cdc6269e",
+    "text.6a90875ca35f": {
+      "text": "468 kusů",
+      "src": "6a90875ca35f",
       "via": "claude"
     },
-    "text.f5c9bd131486": {
-      "text": "Zobrazit další",
-      "src": "f5c9bd131486",
+    "text.63682d15dad7": {
+      "text": "154 kusů",
+      "src": "63682d15dad7",
       "via": "claude"
     },
-    "text.255beb6510e7": {
-      "text": "Zobrazit méně",
-      "src": "255beb6510e7",
+    "text.589c7351d538": {
+      "text": "310 kusů",
+      "src": "589c7351d538",
       "via": "claude"
     },
-    "text.7d9eb7acb13e": {
-      "text": "Zavřít",
-      "src": "7d9eb7acb13e",
+    "text.a77aa8093970": {
+      "text": "537 kusů",
+      "src": "a77aa8093970",
       "via": "claude"
     },
-    "text.2f55863e032e": {
-      "text": "Předchozí fotka",
-      "src": "2f55863e032e",
+    "text.96a19bba52f2": {
+      "text": "1707 kusů na prodej · 116 prodáno",
+      "src": "96a19bba52f2",
       "via": "claude"
     },
-    "text.894bb2b7ac07": {
-      "text": "Další fotka",
-      "src": "894bb2b7ac07",
+    "text.04e420bd4a8d": {
+      "text": "Velmi dobrý · Šedá",
+      "src": "04e420bd4a8d",
       "via": "claude"
     },
-    "text.7dc02858c140": {
-      "text": "Velké fotky",
-      "src": "7dc02858c140",
+    "text.e80cde456a9c": {
+      "text": "Velmi dobrý · Modrá · L",
+      "src": "e80cde456a9c",
       "via": "claude"
     },
-    "text.b05d95c62372": {
-      "text": "Zpět nahoru",
-      "src": "b05d95c62372",
+    "text.32f183310612": {
+      "text": "Nový bez visačky · Zelená · L",
+      "src": "32f183310612",
       "via": "claude"
     },
-    "text.3fbd859de220": {
-      "text": "Filtry a řazení",
-      "src": "3fbd859de220",
+    "text.297f9509ac42": {
+      "text": "Nový bez visačky · Světle modrá · L",
+      "src": "297f9509ac42",
+      "via": "claude"
+    },
+    "text.28ff80abfbca": {
+      "text": "Nový bez visačky · Bílá · L",
+      "src": "28ff80abfbca",
+      "via": "claude"
+    },
+    "text.45023b4bf515": {
+      "text": "Velmi dobrý · Smíšená · 36",
+      "src": "45023b4bf515",
+      "via": "claude"
+    },
+    "text.277be3f74a1b": {
+      "text": "Velmi dobrý · Mint · XL",
+      "src": "277be3f74a1b",
       "via": "claude"
     },
     "text.1f830fdb0960": {
-      "text": "hodnocení na Vinted",
+      "text": "recenzí na Vinted",
       "src": "1f830fdb0960",
       "via": "claude"
     },
     "text.3d30020b1863": {
-      "text": " nebo",
+      "text": ", nebo",
       "src": "3d30020b1863",
       "via": "claude"
     },
     "text.c19e966ec499": {
       "text": "napište mi na WhatsApp",
       "src": "c19e966ec499",
+      "via": "claude"
+    },
+    "text.2257ffe7ac6c": {
+      "text": "58 lidí si to uložilo na Vinted",
+      "src": "2257ffe7ac6c",
+      "via": "claude"
+    },
+    "text.81285b9306cd": {
+      "text": "Velmi dobrý · Bílá · Jedna velikost",
+      "src": "81285b9306cd",
+      "via": "claude"
+    },
+    "text.2908fcd44640": {
+      "text": "31 beletrie v poličce s knihami.",
+      "src": "2908fcd44640",
+      "via": "claude"
+    },
+    "text.d2d1ccb7e207": {
+      "text": "14 naučné literatury v poličce s knihami.",
+      "src": "d2d1ccb7e207",
+      "via": "claude"
+    },
+    "text.65a415821ec9": {
+      "text": "18 letních šatů v poličce s módou.",
+      "src": "65a415821ec9",
+      "via": "claude"
+    },
+    "text.a59ca85d2f45": {
+      "text": "36 dámského oblečení v poličce s módou.",
+      "src": "a59ca85d2f45",
+      "via": "claude"
+    },
+    "text.8b319b7ffb30": {
+      "text": "17 božstev v poličce s meditací.",
+      "src": "8b319b7ffb30",
+      "via": "claude"
+    },
+    "text.7889a7c7330d": {
+      "text": "38 zbožných obrázků v poličce s meditací.",
+      "src": "7889a7c7330d",
+      "via": "claude"
+    },
+    "text.2ec194d1ec22": {
+      "text": "12 kanthi mal v poličce s meditací.",
+      "src": "2ec194d1ec22",
+      "via": "claude"
+    },
+    "text.7565669905f8": {
+      "text": "37 samolepek a plakátů v poličce s meditací.",
+      "src": "7565669905f8",
       "via": "claude"
     }
   }
