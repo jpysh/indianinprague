@@ -363,6 +363,19 @@ if (dead.length || badAnchor.length) {
 }
 console.log(`  links checked: ${pageText.size} pages, every internal href and anchor resolves`);
 
+// Duplicate ids: an anchor lands on whichever comes first, and assistive tech loses its
+// label. Two shop ids once clashed on every shelf (issue 12).
+const dupIds = [];
+for (const [file, body] of pageText) {
+  const seen = new Set();
+  for (const [, id] of body.matchAll(/\sid="([^"]+)"/g)) {
+    if (seen.has(id)) { dupIds.push(`${file}: id="${id}"`); break; }
+    seen.add(id);
+  }
+}
+if (dupIds.length) throw new Error("duplicate ids:\n  " + dupIds.slice(0, 20).join("\n  "));
+console.log(`  ids checked: no page repeats an id`);
+
 // THE BUILD MARKER: which commit these bytes were built from, served at /build-id.txt.
 //
 // publish.sh used to confirm a deploy by asking guldaarbazaar.com for a 200 and calling it
