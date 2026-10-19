@@ -334,10 +334,10 @@
       psLoad = [];
       var css = document.createElement("link");
       css.rel = "stylesheet";
-      css.href = PS + ".css";
+      css.href = PS + ".css?v=5.4.4";
       document.head.appendChild(css);
       var sc = document.createElement("script");
-      sc.src = PS + ".umd.min.js";
+      sc.src = PS + ".umd.min.js?v=5.4.4"; // fresh cache key: the edge had cached a 404 for the bare URL
       sc.onload = function () { var f = psLoad; psLoad = null; f.forEach(function (g) { g(); }); };
       sc.onerror = function () { psLoad = null; };
       document.head.appendChild(sc);
