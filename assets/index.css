@@ -22,10 +22,10 @@
 
 .tile{
   display:flex;flex-direction:column;
-  border:1px solid rgba(58,30,22,.2);background:var(--void-2);
+  border:1px solid rgba(var(--shade),.2);background:var(--void-2);
   transition:transform .15s,border-color .15s;
 }
-.tile .frame{aspect-ratio:1/1;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+.tile .frame{aspect-ratio:1/1;border:none;border-bottom:1px solid rgba(var(--shade),.2)}
 /* The count sits in the caption slot the product cards use for the category name — bottom
    left, on the photograph, over the same scrim. */
 .tile .frame .cap{font-size:var(--fs-2xs);letter-spacing:.06em}
@@ -79,7 +79,7 @@
 
 /* ---------- hero ---------- */
 
-.hero{position:relative;border-bottom:1px solid rgba(58,30,22,.22);overflow:hidden}
+.hero{position:relative;border-bottom:1px solid rgba(var(--shade),.22);overflow:hidden}
 
 .hero-bg{
   position:absolute;inset:0;z-index:0;
@@ -191,7 +191,7 @@
    face's background box measures 1.30em, so anything under that overlaps no matter the
       clamp size; 1.4 leaves a clean sliver of daylight from 34px up to 86px. */
 .hero h1{font-weight:300;font-size:clamp(2.125rem,1rem + 5.6vw,5.375rem);line-height:1.4;letter-spacing:-.02em;max-width:16ch;color:#F2EFE6}
-.hero h1 b{font-weight:600;color:var(--void);background:var(--magenta);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero h1 b{font-weight:600;color:var(--on-fill);background:var(--fill);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 /* Shares the heading column with the H1 above it, same reasoning as .page-head in site.css:
    the two used to be 826px and 490px, which is a ragged edge rather than a step. */
 .hero .sub{margin-top:22px;color:var(--bone-dim);font-size:var(--fs-l);max-width:var(--head-col)}
