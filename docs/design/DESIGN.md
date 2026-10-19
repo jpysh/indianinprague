@@ -13,7 +13,7 @@ Sources (19 Oct 2026): Apple HIG (layout, typography, touch targets, sheets); re
 3. **One thumb.** Every main action is reachable at the bottom half of a 375x812 screen: Filters, Ask on WhatsApp, View on Vinted.
 4. **Nothing is hidden behind JavaScript.** Content is readable with JS off and in WhatsApp's in-app browser (CLAUDE.md, Motion).
 5. **Fewer taps.** Measure taps from a shared link to a WhatsApp message or a Vinted listing; a change states before and after.
-6. **Calm.** Motion explains a change of place (a sheet rising, a card opening). It never decorates, and it honours reduced motion.
+6. **Calm.** Motion explains a change of place (a sheet rising, a card opening). It never decorates, and it honours reduced motion. Scroll position never changes opacity, clip or colour of content (no `animation-timeline:view()` reveals): mid-scroll they leave photos and headings pale, and the technique blanked WhatsApp's browser. Hero text sits on a calm ground, with colour blobs at low alpha so the lede keeps 7:1 or better.
 
 ## 2. Numbers
 
