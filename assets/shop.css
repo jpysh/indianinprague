@@ -10,6 +10,23 @@
  * Both clear AA for normal text. --saffron/--olive are lighter still.
  */
 
+/* ---------- light shop: direction C "Stall" (owner pick, 19 Oct 2026; DESIGN.md §7) ----------
+ * Shop pages only load this file, so redefining the site tokens here turns every shop page
+ * light while Spirituality and Diaries keep the dark void. Contrast on --void #FBF3E4:
+ *   --bone     #1E1B13  15.9:1  body text      --bone-dim #5B5544  6.6:1  secondary text
+ *   --magenta  #9C3A17   6.9:1  accent text    --olive    #5F6B2A  5.6:1  small accent text
+ * --saffron and --paprika stay fills, with --on-fill ink on top. */
+:root{
+  --void:#FBF3E4; --void-2:#F4E8D2; --void-3:#EADCC1; --band:#F4E8D2; --chrome:#FBF3E4;
+  --bone:#1E1B13; --bone-dim:#5B5544; --magenta:#9C3A17; --olive:#5F6B2A;
+  --saffron:#E9B949; --turmeric:#D9A633;
+  --on-fill:#1E1B13; --fill:var(--saffron); --hair:30,27,19; --shade:30,27,19;
+}
+body{font-family:var(--sans)}
+header.site{border-bottom:1px solid rgba(var(--hair),.14)}
+/* Plex Mono only for prices and small scanned labels (§7.2). */
+.pr,.price,.cap,.eyebrow,.kc{font-family:var(--mono)}
+
 /* ---------- category nav ---------- */
 
 /* Horizontal scroll rather than wrap on a phone: with seven categories a wrapping row
@@ -28,7 +45,7 @@
 .cat-nav a{
   flex:0 0 auto;display:flex;align-items:center;gap:6px;
   min-height:44px;padding:0 14px;
-  border:1px solid rgba(242,239,230,.22);
+  border:1px solid rgba(var(--hair),.22);
   font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
   color:var(--bone-dim);white-space:nowrap;
   transition:border-color .15s,color .15s,background .15s;
@@ -50,7 +67,7 @@
 }
 .cat-nav a:hover{color:var(--bone);border-color:var(--bone)}
 .cat-nav a[aria-current="page"]{
-  background:var(--magenta);border-color:var(--magenta);color:var(--void);
+  background:var(--fill);border-color:var(--fill);color:var(--on-fill);
 }
 .cat-nav a[aria-current="page"] b{opacity:.75}
 
@@ -87,7 +104,7 @@
 .sb-refine > summary{
   display:flex;align-items:center;gap:8px;
   min-height:44px;padding:0 14px;
-  border:1px solid rgba(242,239,230,.22);
+  border:1px solid rgba(var(--hair),.22);
   font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
   color:var(--bone-dim);cursor:pointer;list-style:none;
   transition:border-color .15s,color .15s;
@@ -107,7 +124,7 @@
 .sb-refine-n{
   display:inline-flex;align-items:center;justify-content:center;
   min-width:20px;height:20px;padding:0 5px;
-  background:var(--magenta);color:var(--void);
+  background:var(--fill);color:var(--on-fill);
   font-size:var(--fs-2xs);font-weight:600;line-height:1;
 }
 .sb-refine-n[hidden]{display:none}
@@ -121,7 +138,7 @@
 .shop-bar input,.shop-bar select{
   width:100%;min-height:44px;padding:0 12px;
   background:var(--void-2);color:var(--bone);
-  border:1px solid rgba(242,239,230,.22);border-radius:0;
+  border:1px solid rgba(var(--hair),.22);border-radius:0;
   /* 1rem is load-bearing, not a type-scale preference. Safari on iOS zooms the whole
      viewport whenever a focused field is under 16px, so at the old 12.5px every tap on
      the search box or a filter select threw the visitor into a zoomed page they then had
@@ -199,17 +216,17 @@
 /* Availability is a MODE, not another attribute — you are browsing what you can buy, or
    looking at what has already gone. A segmented control says that at a glance; a fifth
    dropdown would bury it among the filters. */
-.sb-seg{display:flex;flex:0 0 auto;border:1px solid rgba(242,239,230,.22)}
+.sb-seg{display:flex;flex:0 0 auto;border:1px solid rgba(var(--hair),.22)}
 .sb-seg button{
   flex:1 1 auto;min-height:44px;padding:0 14px;
-  background:none;border:none;border-right:1px solid rgba(242,239,230,.22);
+  background:none;border:none;border-right:1px solid rgba(var(--hair),.22);
   font-family:inherit;font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;
   color:var(--bone-dim);cursor:pointer;white-space:nowrap;
   transition:background .15s,color .15s;
 }
 .sb-seg button:last-child{border-right:none}
 .sb-seg button:hover{color:var(--bone)}
-.sb-seg button[aria-pressed="true"]{background:var(--magenta);color:var(--void);font-weight:600}
+.sb-seg button[aria-pressed="true"]{background:var(--fill);color:var(--on-fill);font-weight:600}
 
 /* ---------- active filter chips ---------- */
 
@@ -227,9 +244,9 @@
 }
 .chip i{font-style:normal;color:var(--bone-dim);text-transform:uppercase;font-size:var(--fs-2xs);letter-spacing:.05em}
 .chip span{color:var(--magenta);font-size:var(--fs-m);line-height:1}
-.chip:hover{background:var(--magenta);color:var(--void)}
-.chip:hover i,.chip:hover span{color:var(--void)}
-.chip.clear-all{border-color:rgba(242,239,230,.35);color:var(--bone-dim)}
+.chip:hover{background:var(--fill);color:var(--on-fill)}
+.chip:hover i,.chip:hover span{color:var(--on-fill)}
+.chip.clear-all{border-color:rgba(var(--hair),.35);color:var(--bone-dim)}
 .chip.clear-all:hover{background:var(--bone);color:var(--void)}
 
 /* ---------- progressive reveal ---------- */
@@ -243,7 +260,7 @@
   font-family:inherit;font-size:var(--fs-xs);letter-spacing:.06em;text-transform:uppercase;
   color:var(--saffron);cursor:pointer;transition:background .15s,color .15s;
 }
-.sb-more:hover{background:var(--saffron);color:var(--void)}
+.sb-more:hover{background:var(--saffron);color:var(--on-fill)}
 .sb-more[hidden]{display:none}
 
 /* ---------- card: carousel ---------- */
@@ -270,13 +287,13 @@
 .shot-nav{
   position:absolute;top:50%;transform:translateY(-50%);z-index:4;
   width:32px;height:44px;display:flex;align-items:center;justify-content:center;
-  background:rgba(10,9,8,.55);border:1px solid rgba(242,239,230,.28);
+  background:rgba(10,9,8,.55);border:1px solid rgba(var(--hair),.28);
   color:var(--bone);font-size:20px;line-height:1;cursor:pointer;
   opacity:0;transition:opacity .15s,background .15s;
 }
 .shot-nav.prev{left:0;border-left:none}
 .shot-nav.next{right:0;border-right:none}
-.shot-nav:hover{background:var(--magenta);color:var(--void)}
+.shot-nav:hover{background:var(--fill);color:var(--on-fill)}
 .piece:hover .shot-nav,.piece:focus-within .shot-nav{opacity:1}
 /* No hover on touch, so the arrows would never appear — but the track swipes there, and
    the counter below still says how many photos there are. */
@@ -312,7 +329,7 @@
    and so does --bone at 3.68:1. Chilli is the darker red in the same family and carries
    --bone at 4.76:1, so the badge stays urgent AND legible. */
 .frame .cap.sold-flag{background:var(--chilli);color:var(--bone)}
-.frame .cap.res{background:var(--saffron);color:var(--void)}
+.frame .cap.res{background:var(--saffron);color:var(--on-fill)}
 /* Where the piece comes from. Deliberately the quietest of the three flags: Sold and
    Reserved are about availability and have to interrupt, while the vendor mark is
    provenance — it must be readable at a glance without competing with the photograph.
@@ -430,7 +447,7 @@
 .sb-jump button{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
   min-height:46px;padding:0 18px;
-  background:var(--magenta);color:var(--void);
+  background:var(--fill);color:var(--on-fill);
   border:1px solid var(--magenta);
   font-family:inherit;font-size:var(--fs-xs);font-weight:600;
   letter-spacing:.06em;text-transform:uppercase;
@@ -488,7 +505,7 @@
   color:#25D366;border:1px solid rgba(37,211,102,.34);
   transition:background .15s,color .15s,border-color .15s;
 }
-.piece .ask:hover{background:#25D366;border-color:#25D366;color:var(--void)}
+.piece .ask:hover{background:#25D366;border-color:#25D366;color:var(--on-fill)}
 .piece .ask:focus-visible{outline:2px solid #25D366;outline-offset:2px}
 /* On a sold card the ask is the ONLY thing left to do, so it keeps full weight while the
    rest of the card is dimmed. */
@@ -548,7 +565,7 @@
 .pager .pg:hover,.pager .pg:focus-visible{background:var(--band);color:var(--bone)}
 /* The current page is a link to itself, kept in the tab order and marked for assistive
    tech with aria-current — removing it would make the strip jump as you page through. */
-.pager .pg[aria-current="page"]{background:var(--saffron);color:var(--void);border-color:var(--saffron)}
+.pager .pg[aria-current="page"]{background:var(--saffron);color:var(--on-fill);border-color:var(--saffron)}
 .pager .pg-step{font-weight:600}
 .pg-gap{padding:0 2px;color:var(--bone-dim);opacity:.6}
 /* Sits inline with the centred controls, dropped to its own line on a narrow one. */
@@ -610,7 +627,7 @@
 .piece.oos .frame .ph{filter:grayscale(.55) contrast(.95)}
 .piece.oos .nm{color:var(--bone-dim)}
 /* Saffron on void, 9.6:1. Not the chilli of a sold flag: this is a wait, not an ending. */
-.frame .cap.oos-flag{background:var(--saffron);color:var(--void)}
+.frame .cap.oos-flag{background:var(--saffron);color:var(--on-fill)}
 /* The price stays legible and unstruck. It is still what the thing costs when it returns,
    and striking it through would read as a discount that is not on offer. */
 .piece.oos .pr{opacity:.75}
@@ -680,11 +697,11 @@
 .sb-view{
   display:inline-flex;align-items:center;justify-content:center;
   width:44px;height:44px;padding:0;
-  background:none;color:var(--bone);border:1px solid rgba(242,239,230,.22);cursor:pointer;
+  background:none;color:var(--bone);border:1px solid rgba(var(--hair),.22);cursor:pointer;
 }
 .sb-view:hover{border-color:var(--bone)}
 .sb-view:focus-visible{outline:2px solid var(--magenta);outline-offset:2px}
-.sb-jump .sb-view{width:46px;min-width:46px;padding:0;border:1px solid var(--magenta);background:var(--magenta);color:var(--void)}
+.sb-jump .sb-view{width:46px;min-width:46px;padding:0;border:1px solid var(--fill);background:var(--fill);color:var(--on-fill)}
 
 /* ---------- detail sheet ----------
  * A native <dialog>: focus trap, Escape and the backdrop come from the browser. A bottom
@@ -698,7 +715,7 @@
 .sheet-x{
   position:sticky;top:0;float:right;z-index:9;
   width:44px;height:44px;margin:6px 6px -50px 0;
-  background:rgba(10,9,8,.72);color:var(--bone);border:1px solid rgba(242,239,230,.3);
+  background:rgba(10,9,8,.72);color:var(--bone);border:1px solid rgba(var(--hair),.3);
   font-size:24px;line-height:1;cursor:pointer;
 }
 .sheet-media .frame{aspect-ratio:4/5;border:0;max-height:62dvh;margin:0 auto}
@@ -719,9 +736,9 @@
   display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 16px;
   font-size:var(--fs-xs);letter-spacing:.05em;text-transform:uppercase;
 }
-.sheet-wa{flex:1 1 auto;background:#25D366;color:var(--void)}
+.sheet-wa{flex:1 1 auto;background:#25D366;color:var(--on-fill)}
 .sheet-wa svg{width:26px;height:26px}
-.sheet-vinted{border:1px solid rgba(242,239,230,.3);color:var(--bone)}
+.sheet-vinted{border:1px solid rgba(var(--hair),.3);color:var(--bone)}
 .sheet-vinted[hidden]{display:none}
 @media (min-width:801px){
   .sheet{
@@ -734,3 +751,6 @@
   .sheet-media .frame{max-height:88vh}
   .sheet-body{padding:28px 28px 28px;overflow:auto}
 }
+
+/* WhatsApp green #25D366 is 1.6:1 on the light ground; this darker green keeps the brand hue at 5:1. */
+a.wa,.chip.wa{color:#0B7A3B}
