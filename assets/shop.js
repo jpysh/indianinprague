@@ -608,7 +608,7 @@
     if (sort.value && sort.value !== "new") p.set("sort", sort.value);
     if (avail) p.set("avail", avail);
     var qs = p.toString();
-    history.replaceState(null, "", qs ? location.pathname + "?" + qs : location.pathname);
+    history.replaceState(null, "", (qs ? location.pathname + "?" + qs : location.pathname) + location.hash);
   }
 
   // Read on load. Every value is validated against the controls this page actually
