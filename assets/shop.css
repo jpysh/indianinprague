@@ -827,3 +827,9 @@
 .shot-count,.shot-nav{color:#FBF3E4}
 .shot-nav:hover{color:var(--on-fill)}
 .sheet-wa{gap:8px}
+/* Wide screens: the grab handle is a phone cue, and as a pseudo-element it took the first
+   grid cell, pushing the text under an empty corner and the buy buttons below the fold. */
+@media (min-width:801px){
+  .sheet::before{display:none}
+  .sheet-body{align-self:start;max-height:88vh}
+}

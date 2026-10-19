@@ -386,6 +386,17 @@ console.log(`  ids checked: no page repeats an id`);
 const unlit = [...pageText].filter(([, b]) => b.includes("/shop.css") && !b.includes("/light.css")).map(([f]) => f);
 if (unlit.length) throw new Error("shop pages missing light.css:\n  " + unlit.slice(0, 20).join("\n  "));
 
+// Shop search: an entry that answers "wedding" or "party" must also answer in Czech, where the
+// first shoppers are. "svatba" returned nothing on the live shop until 19 Oct 2026.
+const SEARCH_WORDS = JSON.parse(await readFile(path.join(ROOT, "data/search-terms.json"), "utf8"));
+const noCs = Object.entries(SEARCH_WORDS).filter(([k, v]) => !k.startsWith("_") && ((/\bwedding\b/.test(v) && !/\bsvatba\b/.test(v)) || (/\bparty\b/.test(v) && !/\boslava\b/.test(v)))).map(([k]) => k);
+if (noCs.length) throw new Error("search-terms.json: add svatba / oslava to:\n  " + noCs.join("\n  "));
+
+// shop.js reads its words from #ui-text; a page that loads it without the table shows English
+// controls in every language (the Fashion shelf did until 19 Oct 2026).
+const noUi = [...pageText].filter(([, b]) => b.includes("/assets/shop.js") && b.includes('id="grid"') && !b.includes('id="ui-text"')).map(([f]) => f);
+if (noUi.length) throw new Error("shop pages missing #ui-text:\n  " + noUi.slice(0, 20).join("\n  "));
+
 // The Vinted rating line (DESIGN.md §7.5) must never show a rating under 4.5.
 for (const [file, body] of pageText) {
   const m = /class="sheet-trust"[^>]*>[\s\S]*?<b>([\d.]+)<\/b>/.exec(body);

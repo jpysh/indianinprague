@@ -523,6 +523,8 @@
     var of = paged ? shelfTotal : shown.length;
     // Numbers only ("1–48 / 310"): a word here would need plural forms in every language.
     count.textContent = (revealed ? from + 1 : 0) + "–" + (from + revealed) + " / " + of;
+    lastOf = of;
+    labelPill();
   }
 
   more.addEventListener("click", reveal);
@@ -639,6 +641,19 @@
     if (sort && sort.value && sort.value !== "new") n++;
     return n;
   }
+
+  // While the phone sheet is open the pill says Close and how many pieces the filters leave,
+  // so the shopper sees the effect of a choice without shutting the sheet first (Baymard:
+  // show the result count). Close is an existing translated word; the number needs none.
+  var lastOf = null;
+  var refineLabel = document.querySelector(".sb-refine-label");
+  function labelPill() {
+    if (!refineLabel) return;
+    if (!refineLabel.hasAttribute("data-orig")) refineLabel.setAttribute("data-orig", refineLabel.textContent);
+    var on = refine && refine.open && !window.matchMedia("(min-width:721px)").matches;
+    refineLabel.textContent = on ? t("Close") + (lastOf === null ? "" : " · " + lastOf) : refineLabel.getAttribute("data-orig");
+  }
+  if (refine) refine.addEventListener("toggle", labelPill);
 
   function drawRefineCount() {
     if (!refineCount) return;

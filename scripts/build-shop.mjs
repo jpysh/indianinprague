@@ -1171,6 +1171,9 @@ async function main() {
           // filters act on the shelf.
           : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(items) +
             "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "", seq) +
+            // The Vinted rating and the UI-word table the sheet and filters read; without
+            // them the managed Fashion page had no rating and English words in every language.
+            "\n  " + trustLine() + "\n  " + uiText() +
             `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button>, or <a class="wa" href="${WA}${encodeURIComponent("Hi! I am looking for something I could not find on guldaarbazaar.com: ")}" target="_blank" rel="noopener">ask me on WhatsApp</a>.</p>\n  ` +
             pager(cat, seq);
         await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
