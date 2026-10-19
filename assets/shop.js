@@ -301,13 +301,94 @@
   }
 
   window.addEventListener("popstate", function () {
+    // Back with the zoom viewer open closes the viewer and leaves the sheet where it is.
+    if (zoomBack) { zoomBack = false; return; }
+    if (zoom) { zoomPushed = false; zoom.close(); return; }
     sheetPushed = false;
     if (sheet.open) sheet.close();
   });
   sheet.querySelector(".sheet-x").addEventListener("click", closeSheet);
-  sheet.addEventListener("cancel", function (e) { e.preventDefault(); closeSheet(); });
+  sheet.addEventListener("cancel", function (e) {
+    e.preventDefault();
+    // Esc inside the zoom viewer closes the viewer only, never the sheet beneath it.
+    if (zoom || Date.now() - zoomClosedAt < 400) return;
+    closeSheet();
+  });
   // A click on the dialog element itself is a click on the backdrop.
   sheet.addEventListener("click", function (e) { if (e.target === sheet) closeSheet(); });
+
+  /* ------------------------------------------------------ pinch-zoom viewer ---- */
+
+  // PhotoSwipe 5 (assets/vendor, pinned), fetched on the first tap of a photo in the sheet.
+  // It opens inside the dialog (anything outside a modal dialog is inert), on the tapped
+  // photo, with the largest derived file at its real size. It adds one history entry while
+  // open, so Back closes it; every other way out takes that entry back off, which is why
+  // Back and the sheet's own entry never get out of step. If it fails to load, nothing
+  // happens and the sheet works as before.
+  var PS = "/assets/vendor/photoswipe-5.4.4";
+  var zoom = null, zoomPushed = false, zoomBack = false, zoomClosedAt = 0, psLoad = null;
+
+  function loadZoom(then) {
+    if (window.PhotoSwipe) return then();
+    if (!psLoad) {
+      psLoad = [];
+      var css = document.createElement("link");
+      css.rel = "stylesheet";
+      css.href = PS + ".css";
+      document.head.appendChild(css);
+      var sc = document.createElement("script");
+      sc.src = PS + ".umd.min.js";
+      sc.onload = function () { var f = psLoad; psLoad = null; f.forEach(function (g) { g(); }); };
+      sc.onerror = function () { psLoad = null; };
+      document.head.appendChild(sc);
+    }
+    psLoad.push(then);
+  }
+
+  // The biggest file in the picture's srcset (webp), loaded to learn its real size.
+  function zoomItem(shot) {
+    var srcset = (shot.querySelector("source") || shot.querySelector("img")).getAttribute("srcset") || "";
+    var best = srcset.split(",").map(function (c) { c = c.trim().split(/\s+/); return { u: c[0], w: parseInt(c[1], 10) || 0 }; })
+      .sort(function (a, b) { return b.w - a.w; })[0];
+    var src = best ? best.u : shot.querySelector("img").currentSrc;
+    return new Promise(function (done) {
+      var im = new Image();
+      im.onload = function () { done({ src: src, w: im.naturalWidth, h: im.naturalHeight }); };
+      im.onerror = function () { done(null); };
+      im.src = src;
+    });
+  }
+
+  function openZoom(shots, index) {
+    Promise.all(shots.map(zoomItem)).then(function (items) {
+      if (zoom || items.some(function (i) { return !i; }) || !sheet.open) return;
+      var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var opts = {
+        dataSource: items, index: index, appendToEl: sheet,
+        zoom: false, // pinch and double-tap stay; the zoom button needs a translated label
+        closeTitle: t("Close"), arrowPrevTitle: t("Previous photo"), arrowNextTitle: t("Next photo"),
+        bgOpacity: 1, wheelToZoom: true,
+      };
+      if (calm) { opts.showHideAnimationType = "none"; opts.showAnimationDuration = 0; opts.hideAnimationDuration = 0; opts.zoomAnimationDuration = false; }
+      var p = new window.PhotoSwipe(opts);
+      zoom = p;
+      history.pushState({ sheet: (history.state && history.state.sheet) || "", zoom: 1 }, "", location.href);
+      zoomPushed = true;
+      p.on("close", function () {
+        zoomClosedAt = Date.now();
+        if (zoomPushed) { zoomPushed = false; zoomBack = true; history.back(); }
+      });
+      p.on("destroy", function () { zoom = null; zoomClosedAt = Date.now(); });
+      p.init();
+    });
+  }
+
+  sheet.querySelector(".sheet-media").addEventListener("click", function (e) {
+    var shot = e.target.closest ? e.target.closest(".shot") : null;
+    if (!shot || e.target.closest(".shot-nav") || zoom) return;
+    var all = [].slice.call(sheet.querySelectorAll(".sheet-media .shot"));
+    loadZoom(function () { openZoom(all, all.indexOf(shot)); });
+  });
 
   // Delegated, so cards the filters fetch later behave the same. Only the card's stretched
   // link opens the sheet; the arrows and the WhatsApp control keep their own jobs, and a

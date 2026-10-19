@@ -46,7 +46,7 @@ The shop kit lives in `assets/shop.css` and `assets/shop.js`: card (`.piece`), f
 
 ## 5. Libraries
 
-Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transitions for page changes. A library is allowed when it is MIT or similar, has zero or few dependencies, no known vulnerabilities on Snyk, a release older than two weeks, and is vendored and pinned under `assets/vendor/` and loaded only when used. In use: MiniSearch (shop search). Approved next: PhotoSwipe for pinch-zoom product photos (owner, 19 Oct 2026), loaded only when a shopper taps a photo in the detail sheet.
+Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transitions for page changes. A library is allowed when it is MIT or similar, has zero or few dependencies, no known vulnerabilities on Snyk, a release older than two weeks, and is vendored and pinned under `assets/vendor/` and loaded only when used. In use: MiniSearch (shop search); PhotoSwipe 5.4.4 for pinch-zoom product photos (owner, 19 Oct 2026), loaded only when a shopper taps a photo in the detail sheet.
 
 ## 6. Banned
 
