@@ -1,7 +1,7 @@
 {
   "_comment": "Written by scripts/translate.mjs. Derived — safe to delete, rebuilt each run.",
-  "generated": "2026-10-19T05:18:11.233Z",
-  "sources": 4455,
+  "generated": "2026-10-19T10:47:56.728Z",
+  "sources": 4456,
   "exhausted": true,
   "keys": [
     {
@@ -11,100 +11,84 @@
       "limit": 500000,
       "left": 0,
       "pct": 1
-    },
-    {
-      "n": 2,
-      "ok": true,
-      "used": 0,
-      "limit": 1000000,
-      "left": 1000000,
-      "pct": 0
-    },
-    {
-      "n": 3,
-      "ok": true,
-      "used": 17276,
-      "limit": 1000000,
-      "left": 982724,
-      "pct": 0.017276
     }
   ],
   "languages": [
     {
       "lang": "ru",
       "name": "Русский",
-      "total": 4455,
-      "translated": 4274,
-      "missing": 181,
+      "total": 4456,
+      "translated": 4309,
+      "missing": 147,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 181,
+      "outstanding": 147,
       "excluded": []
     },
     {
       "lang": "fr",
       "name": "Français",
-      "total": 4455,
-      "translated": 4274,
-      "missing": 181,
+      "total": 4456,
+      "translated": 4309,
+      "missing": 147,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 181,
+      "outstanding": 147,
       "excluded": []
     },
     {
       "lang": "de",
       "name": "Deutsch",
-      "total": 4455,
-      "translated": 4275,
-      "missing": 180,
+      "total": 4456,
+      "translated": 4310,
+      "missing": 146,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 180,
+      "outstanding": 146,
       "excluded": []
     },
     {
       "lang": "it",
       "name": "Italiano",
-      "total": 4455,
-      "translated": 4274,
-      "missing": 181,
+      "total": 4456,
+      "translated": 4309,
+      "missing": 147,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 181,
+      "outstanding": 147,
       "excluded": []
     },
     {
       "lang": "es",
       "name": "Español",
-      "total": 4455,
-      "translated": 4274,
-      "missing": 181,
+      "total": 4456,
+      "translated": 4309,
+      "missing": 147,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 181,
+      "outstanding": 147,
       "excluded": []
     },
     {
       "lang": "pl",
       "name": "Polski",
-      "total": 4455,
-      "translated": 4274,
-      "missing": 181,
+      "total": 4456,
+      "translated": 4309,
+      "missing": 147,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 181,
+      "outstanding": 147,
       "excluded": []
     },
     {
       "lang": "cs",
       "name": "Čeština",
-      "total": 4455,
-      "translated": 4272,
-      "missing": 183,
+      "total": 4456,
+      "translated": 4307,
+      "missing": 149,
       "overridden": 0,
       "stale": 0,
-      "outstanding": 183,
+      "outstanding": 149,
       "excluded": [
         "/^attr\\./"
       ]
