@@ -743,7 +743,7 @@ function toolbar(items) {
 // with everything else (issue 9). shop.js reads them by key and falls back to English.
 const UI_WORDS = ["Search", "Availability", "Sold", "Out of stock", "In stock", "Clear all",
   "Remove filter", "Show more", "Show fewer", "Show all", "Close", "Previous photo", "Next photo",
-  "Large photos", "Back to top", "Filters & sort", "Colour", "Condition", "Partner", "Price", "Size"];
+  "Large photos", "Ask on WhatsApp", "Back to top", "Filters & sort", "Colour", "Condition", "Partner", "Price", "Size"];
 const uiText = () =>
   `<div id="ui-text" hidden>${UI_WORDS.map((w) => `<span data-k="${esc(w)}">${esc(w)}</span>`).join("")}</div>`;
 

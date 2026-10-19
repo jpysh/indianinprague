@@ -277,7 +277,7 @@
     wa.hidden = !ask;
     if (ask) {
       wa.href = ask.href;
-      wa.innerHTML = ask.innerHTML;
+      wa.innerHTML = ask.querySelector("svg").outerHTML + "<span>" + t("Ask on WhatsApp") + "</span>";
     }
     var go = card.querySelector(".go");
     var vinted = sheet.querySelector(".sheet-vinted");
@@ -440,9 +440,8 @@
     var paged = !anyActive() && shelfTotal > shown.length;
     var from = paged ? pageStart : 0;
     var of = paged ? shelfTotal : shown.length;
-    count.textContent = revealed >= of
-      ? of + (of === 1 ? " piece" : " pieces")
-      : (revealed ? from + 1 : 0) + "–" + (from + revealed) + " of " + of;
+    // Numbers only ("1–48 / 310"): a word here would need plural forms in every language.
+    count.textContent = (revealed ? from + 1 : 0) + "–" + (from + revealed) + " / " + of;
   }
 
   more.addEventListener("click", reveal);

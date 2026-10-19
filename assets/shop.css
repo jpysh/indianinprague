@@ -822,3 +822,8 @@
 .sheet-acts a{border-radius:999px;text-transform:none;letter-spacing:0;font:600 var(--fs-m) var(--sans)}
 .sheet-wa{background:var(--saffron);color:var(--on-fill)}
 .sheet-vinted{border:1px solid var(--bone)}
+
+/* Photo counter and arrows sit on a dark scrim over any photo, so their ink is fixed light. */
+.shot-count,.shot-nav{color:#FBF3E4}
+.shot-nav:hover{color:var(--on-fill)}
+.sheet-wa{gap:8px}
