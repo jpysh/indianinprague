@@ -376,6 +376,12 @@ for (const [file, body] of pageText) {
 if (dupIds.length) throw new Error("duplicate ids:\n  " + dupIds.slice(0, 20).join("\n  "));
 console.log(`  ids checked: no page repeats an id`);
 
+// The Vinted rating line (DESIGN.md §7.5) must never show a rating under 4.5.
+for (const [file, body] of pageText) {
+  const m = /class="sheet-trust"[^>]*>[\s\S]*?<b>([\d.]+)<\/b>/.exec(body);
+  if (m && Number(m[1]) < 4.5) throw new Error(`${file}: Vinted rating ${m[1]} shown; it must be hidden under 4.5`);
+}
+
 // THE BUILD MARKER: which commit these bytes were built from, served at /build-id.txt.
 //
 // publish.sh used to confirm a deploy by asking guldaarbazaar.com for a 200 and calling it

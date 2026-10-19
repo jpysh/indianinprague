@@ -225,6 +225,10 @@
     '<p class="sheet-tags"></p><p class="sheet-desc"></p>' +
     '<div class="sheet-acts"><a class="sheet-wa" target="_blank" rel="noopener"></a>' +
     '<a class="sheet-vinted" target="_blank" rel="noopener">Vinted &#8599;</a></div></div>';
+  // The Vinted rating, rendered (and translated) in the page by build-shop.mjs; absent when
+  // the rating is missing or under 4.5.
+  var trust = document.querySelector(".trust-src .sheet-trust");
+  if (trust) sheet.querySelector(".sheet-pr").after(trust.cloneNode(true));
   document.body.appendChild(sheet);
   var sheetPushed = false;
 
