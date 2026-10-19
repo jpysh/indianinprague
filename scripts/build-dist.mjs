@@ -381,6 +381,16 @@ for (const [file, body] of pageText) {
 if (dupIds.length) throw new Error("duplicate ids:\n  " + dupIds.slice(0, 20).join("\n  "));
 console.log(`  ids checked: no page repeats an id`);
 
+// A translated shelf must fetch its own translated cards, or searching swaps Czech titles for
+// English ones (issue 52). The fragment has to exist in dist too.
+for (const [file, body] of pageText) {
+  const m = /data-all="([^"]+)"/.exec(body);
+  if (!m) continue;
+  const lang = file.split("/")[0];
+  if (I18N_LANGS.includes(lang) && !m[1].startsWith(`/${lang}/`)) throw new Error(`${file}: data-all="${m[1]}" is not the ${lang} copy`);
+  if (!existsSync(path.join(DIST, m[1]))) throw new Error(`${file}: data-all="${m[1]}" is missing from dist`);
+}
+
 // A shop page without light.css renders dark text on the dark void (the hand-written
 // /wardrobe/fashion page missed it once).
 const unlit = [...pageText].filter(([, b]) => b.includes("/shop.css") && !b.includes("/light.css")).map(([f]) => f);

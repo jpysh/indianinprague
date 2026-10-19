@@ -294,6 +294,10 @@ if (isMain) {
   const indexable = new Map(pages.map((f) => [f, []]));
 
   const report = {};
+  const cardFiles = [
+    ...readdirSync(ROOT).filter((f) => f.endsWith(".cards")),
+    ...readdirSync(path.join(ROOT, "wardrobe"), { recursive: true }).filter((f) => f.endsWith(".cards")).map((f) => "wardrobe/" + f),
+  ];
   for (const lang of ONLY) {
     if (!LANGS[lang]) throw new Error(`unknown language "${lang}"`);
     byText.resolved = resolve(lang, sources);
@@ -317,6 +321,11 @@ if (isMain) {
       // sentences around it are commercial and regulatory, but it is honest on any page.
       out = out.replace(/(<div class="p-i18n" data-i18n-note) hidden>/, "$1>");
 
+      // The filters fetch the whole shelf as a .cards fragment (build-shop.mjs). Point a
+      // translated shelf at its own translated copy, written below, or searching on /cs
+      // swaps the Czech cards for English ones.
+      out = out.replace(/data-all="\/([^"]+\.cards)"/, `data-all="/${lang}/$1"`);
+
       // Any MEANINGFUL amount of English left on the page keeps it out of the index.
       // `follow` so the links on it still carry weight to the pages that ARE translated.
       //
@@ -337,6 +346,11 @@ if (isMain) {
       const dest = path.join(ROOT, lang, file);
       mkdirSync(path.dirname(dest), { recursive: true });
       writeFileSync(dest, out);
+    }
+    for (const f of cardFiles) {
+      const dest = path.join(ROOT, lang, f);
+      mkdirSync(path.dirname(dest), { recursive: true });
+      writeFileSync(dest, renderPage(readFileSync(path.join(ROOT, f), "utf8"), lang, null, byText).html);
     }
     report[lang] = { pages: pages.length, noindexed, totalMissing };
     console.log(
