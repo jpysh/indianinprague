@@ -30,7 +30,7 @@
 import { readFile, writeFile, rm, mkdir, readdir } from "node:fs/promises";
 import { vendorItems } from "./vendor-items.mjs";
 import { productNode, itemSlug } from "./product-node.mjs";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
@@ -739,6 +739,20 @@ function toolbar(items) {
   </div>`;
 }
 
+// The Vinted rating for the detail sheet (DESIGN.md §7.5), from data/seller.json, which
+// the daily sync refreshes. Hidden source markup: shop.js copies it into the sheet. Numbers
+// sit in their own elements so the translated pages only ever translate the fixed words.
+// Left out entirely when the file is missing or the rating falls below 4.5.
+function trustLine() {
+  const f = path.join(ROOT, "data/seller.json");
+  if (!existsSync(f)) return "";
+  let s;
+  try { s = JSON.parse(readFileSync(f, "utf8")); } catch { return ""; }
+  if (!(s.rating >= 4.5) || !s.count || !/^https:\/\/www\.vinted\./.test(s.feedbackUrl || "")) return "";
+  return `<p class="trust-src" hidden><a class="sheet-trust" href="${esc(s.feedbackUrl)}" target="_blank" rel="noopener">` +
+    `<span aria-hidden="true">★</span> <b>${s.rating.toFixed(1)}</b> · <b>${s.count}</b> <span>reviews on Vinted</span></a></p>`;
+}
+
 const catNav = (active, counts) =>
   `<nav class="cat-nav" aria-label="Wardrobe shelves">` +
   // "All", not "Everything": it is the widest chip in the strip by some way, and at 375px
@@ -925,6 +939,7 @@ ${markNav(ch.header, "wardrobe")}
         then find 107. */ ""}${toolbar(shelfItems || items)}
 
   ${grid(items, manifest, cat.name === "Everything", allUrl, seq)}
+  ${trustLine()}
   <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button>, or <a class="wa" href="${WA}${encodeURIComponent("Hi! I am looking for something I could not find on guldaarbazaar.com: ")}" target="_blank" rel="noopener">ask me on WhatsApp</a>.</p>
   ${pager(cat, seq, sub)}
 </div></section>

@@ -823,3 +823,20 @@ a.wa,.chip.wa{color:#0B7A3B}
     background:var(--void);color:var(--bone);border:1px solid rgba(var(--hair),.3);box-shadow:0 4px 12px rgba(30,27,19,.18)}
 }
 @media (max-width:720px){body:has(.sb-refine[open]) .sb-jump{display:none}}
+
+/* ---------- Stall detail sheet (redesign stage 4, DESIGN.md §7.4-5) ---------- */
+.sheet{background:var(--void);border-top:0;border-radius:12px 12px 0 0}
+.sheet::backdrop{background:rgba(30,27,19,.55)}
+.sheet::before{content:"";display:block;width:40px;height:5px;border-radius:9px;background:rgba(var(--hair),.25);margin:8px auto 4px}
+.sheet-x{border-radius:999px;background:var(--void);color:var(--bone);border:1px solid rgba(var(--hair),.2);box-shadow:0 2px 8px rgba(30,27,19,.15)}
+.sheet-media .frame{border-radius:12px;margin-inline:16px;max-width:calc(100% - 32px)}
+.sheet-body h2{font:600 var(--fs-xl)/1.25 var(--sans)}
+.sheet-pr{font-family:var(--mono)}
+.sheet-trust{display:inline-block;line-height:44px;align-self:flex-start;
+  font:500 var(--fs-s) var(--sans);color:var(--bone);text-decoration:underline;text-underline-offset:3px}
+.sheet-trust span[aria-hidden]{color:var(--magenta);text-decoration:none}
+.sheet-trust b{font-weight:600}
+.sheet-acts{background:var(--void);padding:12px 0 calc(8px + env(safe-area-inset-bottom,0px))}
+.sheet-acts a{border-radius:999px;text-transform:none;letter-spacing:0;font:600 var(--fs-m) var(--sans)}
+.sheet-wa{background:var(--saffron);color:var(--on-fill)}
+.sheet-vinted{border:1px solid var(--bone)}
