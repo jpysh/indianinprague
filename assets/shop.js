@@ -559,12 +559,16 @@
 
   function syncRefine() {
     if (!refine) return;
-    // Open on a wide screen, where there is room and the row costs nothing. On a phone,
-    // open only if something in it is already set — arriving on a shared filtered link and
-    // finding the controls shut would hide the reason the grid is short.
-    refine.open = wide.matches || refineActive() > 0;
+    // Open on a wide screen, where there is room and the row costs nothing. On a phone the
+    // controls are a bottom sheet (redesign stage 3), so they start shut; the count on the
+    // pill and the applied-filter chips say why a shared filtered link shows a short grid.
+    refine.open = wide.matches;
   }
 
+  // Esc closes the phone sheet, as a sheet should (DESIGN.md §2).
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && refine && refine.open && !wide.matches) refine.open = false;
+  });
   if (wide.addEventListener) wide.addEventListener("change", syncRefine);
   else if (wide.addListener) wide.addListener(syncRefine);
 

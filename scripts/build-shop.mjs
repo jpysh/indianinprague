@@ -925,7 +925,7 @@ ${markNav(ch.header, "wardrobe")}
         then find 107. */ ""}${toolbar(shelfItems || items)}
 
   ${grid(items, manifest, cat.name === "Everything", allUrl, seq)}
-  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>
+  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button>, or <a class="wa" href="${WA}${encodeURIComponent("Hi! I am looking for something I could not find on guldaarbazaar.com: ")}" target="_blank" rel="noopener">ask me on WhatsApp</a>.</p>
   ${pager(cat, seq, sub)}
 </div></section>
 </main>
@@ -1146,7 +1146,7 @@ async function main() {
           // filters act on the shelf.
           : catNav(cat.name, counts) + "\n  " + subChips(cat, items, null) + "\n  " + toolbar(items) +
             "\n  " + grid(slice, manifest, false, total > 1 ? url(cat.page) + ".cards" : "", seq) +
-            `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button></p>\n  ` +
+            `\n  <p class="sb-empty" id="sb-empty" hidden>Nothing matches those filters. <button type="button" id="sb-reset">Clear them</button>, or <a class="wa" href="${WA}${encodeURIComponent("Hi! I am looking for something I could not find on guldaarbazaar.com: ")}" target="_blank" rel="noopener">ask me on WhatsApp</a>.</p>\n  ` +
             pager(cat, seq);
         await writeFile(p, replaceRegion(html, "SHOP:GRID", body, file));
       } else {
