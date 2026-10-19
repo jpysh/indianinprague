@@ -376,6 +376,11 @@ for (const [file, body] of pageText) {
 if (dupIds.length) throw new Error("duplicate ids:\n  " + dupIds.slice(0, 20).join("\n  "));
 console.log(`  ids checked: no page repeats an id`);
 
+// A shop page without light.css renders dark text on the dark void (the hand-written
+// /wardrobe/fashion page missed it once).
+const unlit = [...pageText].filter(([, b]) => b.includes("/shop.css") && !b.includes("/light.css")).map(([f]) => f);
+if (unlit.length) throw new Error("shop pages missing light.css:\n  " + unlit.slice(0, 20).join("\n  "));
+
 // The Vinted rating line (DESIGN.md §7.5) must never show a rating under 4.5.
 for (const [file, body] of pageText) {
   const m = /class="sheet-trust"[^>]*>[\s\S]*?<b>([\d.]+)<\/b>/.exec(body);

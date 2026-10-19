@@ -10,23 +10,6 @@
  * Both clear AA for normal text. --saffron/--olive are lighter still.
  */
 
-/* ---------- light shop: direction C "Stall" (owner pick, 19 Oct 2026; DESIGN.md §7) ----------
- * Shop pages only load this file, so redefining the site tokens here turns every shop page
- * light while Spirituality and Diaries keep the dark void. Contrast on --void #FBF3E4:
- *   --bone     #1E1B13  15.9:1  body text      --bone-dim #5B5544  6.6:1  secondary text
- *   --magenta  #9C3A17   6.9:1  accent text    --olive    #5F6B2A  5.6:1  small accent text
- * --saffron and --paprika stay fills, with --on-fill ink on top. */
-:root{
-  --void:#FBF3E4; --void-2:#F4E8D2; --void-3:#EADCC1; --band:#F4E8D2; --chrome:#FBF3E4;
-  --bone:#1E1B13; --bone-dim:#5B5544; --magenta:#9C3A17; --olive:#5F6B2A;
-  --saffron:#E9B949; --turmeric:#D9A633;
-  --on-fill:#1E1B13; --fill:var(--saffron); --hair:30,27,19; --shade:30,27,19;
-}
-body{font-family:var(--sans)}
-header.site{border-bottom:1px solid rgba(var(--hair),.14)}
-/* Plex Mono only for prices and small scanned labels (§7.2). */
-.pr,.price,.cap,.eyebrow,.kc{font-family:var(--mono)}
-
 /* ---------- category nav ---------- */
 
 /* Horizontal scroll rather than wrap on a phone: with seven categories a wrapping row
@@ -752,8 +735,6 @@ header.site{border-bottom:1px solid rgba(var(--hair),.14)}
   .sheet-body{padding:28px 28px 28px;overflow:auto}
 }
 
-/* WhatsApp green #25D366 is 1.6:1 on the light ground; this darker green keeps the brand hue at 5:1. */
-a.wa,.chip.wa{color:#0B7A3B}
 
 /* ---------- Stall: category tiles, cards (redesign stage 2, DESIGN.md §7.8) ----------
  * Tiles: a photo per shelf in one scrolling row, so the first products reach the first

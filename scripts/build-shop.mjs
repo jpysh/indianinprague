@@ -914,6 +914,7 @@ function page(cat, items, manifest, counts, ch, seq = { no: 1, total: 1 }, sub =
 <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts.css">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/light.css">
 <link rel="stylesheet" href="/assets/clothes.css">
 <link rel="stylesheet" href="/assets/shop.css">
 <script type="application/ld+json">
