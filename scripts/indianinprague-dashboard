@@ -1,3 +1,0 @@
-#!/bin/sh
-# Wrapper so the Login Items list shows "indianinprague-dashboard" instead of a bare "node".
-exec /usr/local/bin/node "$(dirname "$0")/dashboard-server.mjs" "$@"
