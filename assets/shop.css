@@ -216,11 +216,11 @@
 /* The single biggest usability gap in a filtered grid is not knowing WHY it is short.
    Each chip names the filter and removes it on click; "Clear all" appears once more than
    one is active. */
-.sb-chips{display:flex;flex-wrap:wrap;gap:6px}
+.sb-chips{display:flex;flex-wrap:wrap;gap:8px}
 .sb-chips[hidden]{display:none}
 .chip{
   display:inline-flex;align-items:center;gap:6px;
-  min-height:32px;padding:0 10px;
+  min-height:44px;padding:0 12px;
   background:var(--void-2);border:1px solid var(--magenta);
   font-family:inherit;font-size:var(--fs-2xs);color:var(--bone);
   cursor:pointer;transition:background .15s,color .15s;
@@ -537,10 +537,10 @@
   display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;
   margin:28px 0 8px;font-family:var(--mono);font-size:var(--fs-xs);
 }
-.pg-nums{display:flex;flex-wrap:wrap;gap:6px}
+.pg-nums{display:flex;flex-wrap:wrap;gap:8px}
 .pager .pg{
   display:inline-flex;align-items:center;justify-content:center;
-  min-width:38px;height:38px;padding:0 10px;
+  min-width:44px;height:44px;padding:0 10px;
   border:1px solid var(--band);border-radius:2px;
   color:var(--bone-dim);text-decoration:none;
   transition:background .16s ease,color .16s ease,border-color .16s ease;
@@ -555,7 +555,6 @@
 .pg-of{color:var(--bone-dim);opacity:.75}
 @media (max-width:560px){
   .pg-of{width:100%;text-align:center}
-  .pager .pg{min-width:34px;height:34px}
 }
 
 /* ---------- subcategory chips ---------- */
@@ -576,7 +575,7 @@
    did (the chips are 42px tall, not the 32px the padding arithmetic suggested). */
 .subs{
   display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;
-  max-height:92px;overflow:hidden;
+  max-height:96px;overflow:hidden;
   font-family:var(--mono);font-size:var(--fs-2xs);
 }
 .subs.subs-open{max-height:none}
@@ -584,16 +583,16 @@
   display:none;margin:0 0 16px;padding:6px 12px;
   background:none;border:1px dashed var(--band);border-radius:999px;
   font-family:var(--mono);font-size:var(--fs-2xs);color:var(--bone-dim);
-  cursor:pointer;min-height:32px;
+  cursor:pointer;min-height:44px;
   transition:border-color .16s ease,color .16s ease;
 }
 .subs-more:not([hidden]){display:inline-flex;align-items:center;gap:6px}
 .subs-more:hover,.subs-more:focus-visible{border-color:var(--bone);color:var(--bone)}
 .subs-more b{font-weight:500;opacity:.6}
 .subs .sub{
-  flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
-  padding:7px 12px;border:1px solid var(--band);border-radius:999px;
-  color:var(--bone-dim);text-decoration:none;white-space:nowrap;
+  flex:0 1 auto;max-width:100%;display:inline-flex;align-items:center;gap:6px;
+  min-height:44px;padding:7px 12px;overflow-wrap:anywhere;border:1px solid var(--band);border-radius:999px;
+  color:var(--bone-dim);text-decoration:none;
   transition:background .16s ease,color .16s ease,border-color .16s ease;
 }
 .subs .sub b{font-weight:500;opacity:.6}
@@ -776,7 +775,9 @@
     bottom:calc(16px + env(safe-area-inset-bottom,0px));
     min-height:48px;padding:0 22px;border:0;border-radius:999px;
     background:var(--bone);color:var(--void);
-    font:600 var(--fs-m) var(--sans);letter-spacing:0;text-transform:none;white-space:nowrap;
+    font:600 var(--fs-m) var(--sans);letter-spacing:0;text-transform:none;
+    /* wraps inside the screen at 200% text and in long translations */
+    max-width:calc(100vw - 32px);text-align:center;
     box-shadow:0 6px 18px rgba(30,27,19,.28);
   }
   .sb-refine > summary:hover{color:var(--void);border-color:transparent}

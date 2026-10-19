@@ -32,8 +32,8 @@
   .vinted-cta{padding:36px 30px;margin:48px 0}
 }
 
-.guide{padding:20px 0 48px}
-.guide h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);text-transform:uppercase;border-top:1px solid rgba(var(--shade),.2);padding-top:24px;margin-bottom:6px}
+.guide{padding:20px 0 48px;overflow-wrap:anywhere}
+.guide h2{overflow-wrap:anywhere;font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);text-transform:uppercase;border-top:1px solid rgba(var(--shade),.2);padding-top:24px;margin-bottom:6px}
 .guide .cz{font-size:var(--fs-2xs);color:var(--olive);margin-bottom:24px;letter-spacing:.04em}
 .guide-body{max-width:var(--measure)}
 .guide-body p{color:var(--bone-dim);margin-bottom:16px}
