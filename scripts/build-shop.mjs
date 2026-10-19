@@ -41,6 +41,18 @@ const SITE = "https://guldaarbazaar.com";
 // one-line change here rather than a re-sync.
 const STOREFRONT = "cz";
 
+// Words a search should also match on a card: what its category means, in other languages
+// and as occasions or gift ideas, so "wedding guest" or "šaty" finds a dress whose title says
+// neither. Read by shop.js through data-q.
+const SEARCH_TERMS = JSON.parse(await readFile(path.join(ROOT, "data/search-terms.json"), "utf8"));
+function searchText(item) {
+  const sub = item.subcategory || (item.crumbs?.length ? item.crumbs[item.crumbs.length - 1].name : "");
+  return [
+    sub, item.vintedCategory, item.color?.cs, item.condition?.cs,
+    SEARCH_TERMS[item.category], SEARCH_TERMS[`${item.category} > ${sub}`],
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+
 // Order is display order: the nav, and the sequence of sections on shop.html.
 const CATEGORIES = [
   {
@@ -377,6 +389,7 @@ function card(item, manifest, eager, showCat) {
     // — the Govinda flag and the Vinted mark — and the filter needs it as data.
     ` data-partner="${item.vendor ? esc(item.vendor) : "Vinted"}"` +
     ` data-title="${esc((item.title || "").toLowerCase())}"` +
+    ` data-q="${esc(searchText(item))}"` +
     (shots ? ` data-shots="${esc(shots)}"` : "");
 
   // Euro only. The shop reads as one currency, and the koruna figure was competing with it

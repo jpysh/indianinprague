@@ -353,6 +353,8 @@
       }
     }
 
+    if (hits) return hits.has(card);
+    // The search library did not load (offline, blocked): plain substring match, as before.
     var term = (q.value || "").trim().toLowerCase();
     if (term) {
       if (card.getAttribute("data-title").indexOf(term) === -1 &&
@@ -382,6 +384,11 @@
       var byAvail = availRank(a) - availRank(b);
       if (byAvail) return byAvail;
 
+      // While searching, best match first unless the shopper picked a sort themselves.
+      if (hits && (!mode || mode === "new")) {
+        var byScore = (hits.get(b) || 0) - (hits.get(a) || 0);
+        if (byScore) return byScore;
+      }
       if (mode === "asc") return num(a, "data-price") - num(b, "data-price");
       if (mode === "desc") return num(b, "data-price") - num(a, "data-price");
       if (mode === "loved") return num(b, "data-fav") - num(a, "data-fav");
@@ -669,6 +676,7 @@
         grid.innerHTML = html;
         cards = Array.prototype.slice.call(grid.querySelectorAll(".piece"));
         cards.forEach(function (c, i) { c._i = i; });
+        mini = null; // index the whole shelf, not the first page
         // Galleries are built on first interaction with a card, so the new ones need the
         // same listeners the original hundred got.
         cards.forEach(wireCarousel);
@@ -690,12 +698,80 @@
       });
   }
 
-  function apply() {
-    if (!full && anyActive()) return ensureFull(applyNow);
-    applyNow();
+  /* --------------------------------------------------------------- search ---- */
+
+  // MiniSearch (assets/vendor, pinned) over every card: title, brand, colour, category, the
+  // description, and data-q, the extra words build-shop.mjs writes from data/search-terms.json
+  // (occasions, synonyms, other languages). Loaded on first search only. Typos and partial
+  // words still match, accents are ignored, and results come best match first.
+  var MS_SRC = "/assets/vendor/minisearch-7.2.0.js";
+  var STOP = { a: 1, an: 1, the: 1, for: 1, with: 1, and: 1, of: 1, to: 1, in: 1, my: 1, me: 1,
+               some: 1, something: 1, pro: 1, na: 1, do: 1, s: 1, se: 1, und: 1, fur: 1 };
+  var mini = null, msLoad = null, hits = null;
+
+  function norm(t) {
+    t = t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    if (STOP[t]) return null;
+    // Crude plural folding, applied to the index and the query alike: dresses/dress, rings/ring.
+    if (t.length > 4 && /[^s]es$/.test(t)) return t.slice(0, -2);
+    if (t.length > 3 && /[^s]s$/.test(t)) return t.slice(0, -1);
+    return t;
   }
 
+  function loadSearch(then) {
+    if (window.MiniSearch) return then();
+    if (!msLoad) {
+      msLoad = [];
+      var sc = document.createElement("script");
+      sc.src = MS_SRC;
+      sc.onload = sc.onerror = function () { var f = msLoad; msLoad = null; f.forEach(function (g) { g(); }); };
+      document.head.appendChild(sc);
+    }
+    msLoad.push(then);
+  }
+
+  function buildIndex() {
+    mini = new window.MiniSearch({
+      fields: ["title", "brand", "color", "cat", "q", "desc"],
+      processTerm: norm,
+      searchOptions: {
+        boost: { title: 3, brand: 2, color: 2, cat: 1.5, q: 1 },
+        prefix: function (t) { return t.length > 2; },
+        fuzzy: function (t) { return t.length > 4 ? 0.2 : t.length > 3 ? 1 : 0; },
+      },
+    });
+    // Position, not the element id: a few cards share an id, which MiniSearch rejects.
+    mini.addAll(cards.map(function (c, i) {
+      var d = c.querySelector(".blurb");
+      return { id: i, title: c.getAttribute("data-title"), brand: c.getAttribute("data-brand"),
+               color: c.getAttribute("data-color"), cat: c.getAttribute("data-cat"),
+               q: c.getAttribute("data-q") || "", desc: d ? d.textContent : "" };
+    }));
+  }
+
+  // Every word must match; if nothing does ("gift for mum"), any word may, ranked.
+  function runSearch() {
+    var term = (q.value || "").trim();
+    hits = null;
+    if (!term || !window.MiniSearch) return;
+    if (!mini) buildIndex();
+    var res = mini.search(term, { combineWith: "AND" });
+    if (!res.length) res = mini.search(term, { combineWith: "OR" });
+    hits = new Map(res.map(function (r) { return [cards[r.id], r.score]; }));
+  }
+
+  function apply() {
+    if (!full && !loading && anyActive()) return ensureFull(apply);
+    if ((q.value || "").trim() && !window.MiniSearch && !msTried) {
+      msTried = true;
+      return loadSearch(applyNow);
+    }
+    applyNow();
+  }
+  var msTried = false;
+
   function applyNow() {
+    runSearch();
     shown = cards.filter(matches).sort(comparator());
     var inShown = new Set(shown);
 
