@@ -147,9 +147,9 @@ change, not predicted.
 | 1.4 | No way to ask about a specific piece | **Fixed.** Every card has an "Ask about this piece" link prefilled with title, price and listing URL. Sold cards ask "do you have anything similar?" instead |
 | 1.5 | Nothing to subscribe to | **Partly.** Three "tell me when this lands" surfaces (Wellness, Buddy, end of Diaries). Still no list — deliberately, since one message is the whole mechanism |
 | 2.1 | No shipping / sizing / returns | **Fixed.** A "How buying works" block on every wardrobe page: ask first, buy on Vinted, posts from Prague |
-| 2.2 | No trust signals | **Partly.** The sold count is on the homepage's Everything tile; no seller rating yet |
+| 2.2 | No trust signals | **Fixed** (19 Oct 2026). The detail sheet shows the Vinted rating and review count, hidden under 4.5 |
 | 2.3 | Full sizes and measurements never surfaced | **Not done.** Still `sizeGroup` only. The data is there; it needs a card-level design decision |
-| 2.4 | Description only on hover | **Not done** |
+| 2.4 | Description only on hover | **Fixed** (19 Oct 2026). The detail sheet shows the description on touch and mouse |
 | 3.1 | Nav never marks the current page | **Fixed.** `aria-current` + the `.active` rule that had never been set, on all 15 pages, via the new `scripts/sync-chrome.mjs` |
 | 3.2 | Nav clips at 375px with no affordance | **Fixed.** Overflow measured at 22px before, **0** after |
 | 3.3 | "Shop" and "Clothes" both in the nav | **Fixed.** Four modules; the shelves live in the category strip |
@@ -157,7 +157,7 @@ change, not predicted.
 | 4.1 | Filter state not in the URL | **Fixed.** `?q=&cond=&size=&color=&price=&sort=&avail=`, `replaceState` so a keystroke does not become a history entry, and every value validated against the controls the page actually rendered |
 | 4.2 | Toolbar eats the first mobile screen | **Not done** |
 | 4.3 | Filtering does not move focus or scroll | **Fixed separately** by the bottom-anchored "Filters & sort / Top" control |
-| 4.4 | Search misses description and colour | **Not done** |
+| 4.4 | Search misses description and colour | **Fixed** (19 Oct 2026). MiniSearch covers title, brand, colour, category and description |
 | 4.5 | No cross-links between shelves and writing | **Fixed.** Every Diaries rail carries a "see all" into its shelf |
 | 5.1 | restaurants.html ships no photographs | **Fixed.** Four added; Palo Verde has no photograph to add |
 | 5.2 | diaries.html feature has no photo | **Fixed.** The page is generated from `data/posts.json` and every card takes its photo from the image manifest |
