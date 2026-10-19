@@ -1,0 +1,8 @@
+{
+  "name": "guldaar-check",
+  "private": true,
+  "description": "Local shopper checks only (check-mobile.mjs). Kept out of the root package.json so Cloudflare's `npm ci` never installs a browser toolkit. Setup once: cd tools/check && npm ci && npx playwright install webkit",
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}
