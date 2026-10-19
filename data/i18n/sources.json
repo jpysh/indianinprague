@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-10-19T11:08:00.441Z",
-  "count": 4456,
+  "generated": "2026-10-19T11:24:19.211Z",
+  "count": 4457,
   "entries": {
     "item.10430047706.title": {
       "text": "Polo Ralph Lauren Knit Scarf",
@@ -7968,6 +7968,13 @@
     "text.7dc02858c140": {
       "text": "Large photos",
       "src": "7dc02858c140",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-19",
+      "changed": "2026-10-19"
+    },
+    "text.1764fa897b44": {
+      "text": "Ask on WhatsApp",
+      "src": "1764fa897b44",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-10-19",
       "changed": "2026-10-19"

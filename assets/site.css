@@ -1023,59 +1023,12 @@ footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);paddi
 
 /* ---------- motion ----------
  *
- * Everything below is CSS. There is deliberately no animation library on these pages.
- *
- * spirituality.html gets its movement from GSAP, ScrollTrigger, three.js and Lenis pulled
- * from unpkg and cdnjs — roughly a quarter of a megabyte of JavaScript from two
- * third-party origins. That is a defensible trade on one showpiece page. It is not one
- * here: wardrobe.html carries 159 cards and 3,300 DOM nodes, and the whole reason this
- * site self-hosts its fonts is that the footer's "no cookies, no trackers, no analytics"
- * is meant literally. Scroll-linked reveals no longer need any of it.
- *
- * The pattern matters as much as the effect. The BASE state is the finished state — cards
- * are visible, at full opacity, in their final position — and the animation is added
- * inside @supports on top. Support for scroll-driven animations is Chrome/Edge 115+ and
- * Safari 18+, with Firefox still behind a flag; in Firefox, and in any browser that has
- * never heard of this, the feature query simply does not match and the page renders as it
- * does today. Nothing is ever hidden waiting for a script that might not arrive.
- */
-@supports (animation-timeline:view()){
-  @media (prefers-reduced-motion:no-preference){
-    .piece,.post,.plate,.tile,.vitem,.rev,.holding,.how{
-      animation:lift linear both;
-      animation-timeline:view();
-      /* The range ends inside ENTRY, not inside cover, and that distinction is the whole
-         correctness of this rule. `cover` is measured against the element's full pass
-         across the viewport, so on a short screen with a tall element the range can still
-         be mid-way while the element is sitting still in front of the reader — text parked
-         at 60% opacity. `entry 100%` is reached the moment the element has finished
-         entering, which is the last instant at which an entrance animation should still be
-         running. */
-      animation-range:entry 0% entry 100%;
-    }
-    @keyframes lift{
-      from{opacity:0;transform:translateY(16px)}
-      to{opacity:1;transform:none}
-    }
+ * Everything here is CSS; no animation library. Content is never dimmed, clipped or
+ * moved by scroll position: the scroll-driven `lift` and `rule-in` reveals (animation-timeline:view())
+ * were removed on 19 Oct 2026 because mid-scroll they left photos and headings pale and
+ * half-wiped, and the same technique once blanked the page in WhatsApp's in-app browser.
+ * See DESIGN.md, Motion. */
 
-    /* The section rules draw themselves as their heading arrives. It is the one flourish
-       that is native to a monospace layout — a rule being typed rather than a thing
-       sliding in. */
-    /* Same correction as above, and it mattered more here: measured at 375px, a section
-       heading parked just below the fold sat at clip-path:inset(0 47% 0 0) — half the words
-       wiped, and staying wiped, because `cover 26%` was still a long scroll away. A wipe
-       that does not finish is not an effect, it is missing text. */
-    .sec-top,.rail-top{
-      animation:rule-in linear both;
-      animation-timeline:view();
-      animation-range:entry 0% entry 90%;
-    }
-    @keyframes rule-in{
-      from{clip-path:inset(0 100% 0 0)}
-      to{clip-path:inset(0 0 0 0)}
-    }
-  }
-}
 
 /* Cross-document view transitions. The site is same-origin, server-rendered and almost
    script-free, which is the ideal case for these: a card on the wardrobe and the

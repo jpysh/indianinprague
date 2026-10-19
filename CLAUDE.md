@@ -12,6 +12,7 @@
 
 - **Content must be visible without JavaScript.** Every hidden starting state sits under `.js-rv`, which `partner.js` adds only when it runs and motion is allowed. A version that hid content by default (`animation-timeline: view()`) rendered a blank page in WhatsApp's in-app browser, which is how merchants open shared links.
 - Honour `prefers-reduced-motion`.
+- No scroll-driven opacity, clip or fade on content anywhere (`animation-timeline:view()` removed 19 Oct 2026: pale mid-scroll photos and headings).
 
 ## iOS Safari rendering: banned on the shop grid
 

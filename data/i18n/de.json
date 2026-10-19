@@ -7,7 +7,7 @@
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
   "generated": "2026-10-19T10:48:19.772Z",
-  "count": 7125,
+  "count": 7126,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -28667,6 +28667,11 @@
     "text.7565669905f8": {
       "text": "37 Aufkleber und Poster im Meditations-Regal.",
       "src": "7565669905f8",
+      "via": "claude"
+    },
+    "text.1764fa897b44": {
+      "text": "Auf WhatsApp fragen",
+      "src": "1764fa897b44",
       "via": "claude"
     }
   }

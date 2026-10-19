@@ -7,7 +7,7 @@
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
   "generated": "2026-10-19T11:07:59.004Z",
-  "count": 7122,
+  "count": 7123,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -30718,6 +30718,11 @@
     "text.fe9fe68d3f70": {
       "text": "Mám je ve dvou barvách, cena za jednu, dejte mi prosím zprávou vědět, jakou barvu 😊 Tradiční indické kabelky z Váránasí. Vyrobeno z…",
       "src": "fe9fe68d3f70",
+      "via": "claude"
+    },
+    "text.1764fa897b44": {
+      "text": "Zeptat se na WhatsAppu",
+      "src": "1764fa897b44",
       "via": "claude"
     }
   }
