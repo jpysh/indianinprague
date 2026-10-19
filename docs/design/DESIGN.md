@@ -25,7 +25,7 @@ Sources (19 Oct 2026): Apple HIG (layout, typography, touch targets, sheets); re
 | Body text | 16 px minimum for anything read; 17 px for long prose |
 | Smallest text | 13 px, and only for labels a shopper scans (never prices, never sentences) |
 | Price | same size as title or larger, weight above body |
-| Card photo | 4:5 portrait, 12 px radius, full width on phone (1 column at 375, 2 from 521) |
+| Card photo | 4:5 portrait, 12 px radius, two columns at 375 (§7.8) |
 | Radius | 12 px cards and sheets, 999 px pills, 8 px inputs |
 | Contrast | WCAG AA: 4.5:1 text, 3:1 large text and controls; `--avocado` and `--paprika` are fills only |
 | Sheet | bottom sheet for product detail and filters, grab handle, closes on swipe down, Back and Esc |
@@ -59,3 +59,4 @@ Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transit
 5. **Trust:** show the Vinted rating only: "★ 5.0 · 93 reviews on Vinted", linked to the feedback page, from `data/seller.json` (refreshed daily). Hide it if the rating drops below 4.5 or the file is missing. No sold counts or follower counts yet: too small to help.
 6. **Directions before building:** two or three mocked-up directions as a page the owner opens on a phone and picks from. Build only the chosen one.
 7. **English first;** the seven translated sites follow by translating only the changed strings. A new DeepL key is the owner's call.
+8. **Direction picked (owner, 19 Oct 2026): C "Stall"** from the mock-up page (claude.ai/artifact/HviNG29SMoC4VdiFsEhPSE): warm paper ground `#FBF3E4`, ink `#1E1B13`, paprika-brown accent text, saffron fills, category tiles with photos, two columns at 375 wide (replaces "1 column at 375" in §2). **Except the bottom Filters and Sort control, which follows direction A "Ledger":** one dark pill, "Filters · Sort", centred at the bottom. Tokens live at the top of `assets/shop.css`; dark pages keep the defaults in `site.css`.

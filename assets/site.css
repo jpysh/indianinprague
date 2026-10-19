@@ -86,6 +86,10 @@
   /* Single source of truth for the gutter, so the header, sections and footer stay in
      line when it tightens on a phone. */
   --gutter:20px;
+  /* Theme hooks (19 Oct 2026). Dark pages keep these defaults; the light shop redefines
+     them in shop.css. --on-fill is text on an accent fill; --hair and --shade are the
+     rgb triplets behind the hairlines and photo vignettes. */
+  --on-fill:var(--void); --fill:var(--magenta); --hair:242,239,230; --shade:58,30,22;
 
   /* ---------- type scale ----------
    *
@@ -208,7 +212,7 @@ body::before{
 }
 
 a{color:inherit;text-decoration:none}
-::selection{background:var(--magenta);color:var(--void)}
+::selection{background:var(--fill);color:var(--on-fill)}
 
 /* Keyboard users need to see where they are. The design has no focus styling at all
    otherwise, and :focus-visible keeps it off mouse clicks. */
@@ -241,7 +245,7 @@ img{max-width:100%;height:auto}
    focused. */
 .skip{
   position:absolute;left:-9999px;top:0;z-index:200;
-  background:var(--magenta);color:var(--void);padding:10px 16px;
+  background:var(--fill);color:var(--on-fill);padding:10px 16px;
   font-size:var(--fs-2xs);letter-spacing:.06em;text-transform:uppercase;
 }
 .skip:focus{left:0}
@@ -263,7 +267,7 @@ html{scroll-behavior:smooth}
 /* ---------- header ---------- */
 
 header.site{
-  border-bottom:1px solid rgba(242,239,230,.18);
+  border-bottom:1px solid rgba(var(--hair),.18);
   position:sticky;top:0;z-index:100;
   /* SAFE AREA. The viewport meta now carries viewport-fit=cover, so the page fills the
      screen including the band behind the status bar and the notch. Without this padding the
@@ -389,7 +393,7 @@ nav.main a.active{opacity:1;color:var(--magenta)}
  * thing that works until it does not. */
 nav.main a[href="/partner"]{
   margin-left:16px;padding-left:16px;
-  border-left:1px solid rgba(242,239,230,.22);
+  border-left:1px solid rgba(var(--hair),.22);
   opacity:.62;
 }
 nav.main a[href="/partner"]:hover,nav.main a[href="/partner"]:focus-visible{opacity:1}
@@ -493,7 +497,7 @@ a.wa:hover{color:#3BE87C}
        and at .98 alpha the display heading behind it still read through the links. A menu
        you can see the page through is a menu that is hard to read. */
     background:var(--void);
-    border-bottom:1px solid rgba(242,239,230,.18);
+    border-bottom:1px solid rgba(var(--hair),.18);
     /* Above the hero's own stacking context, below nothing. */
     z-index:99;
     box-shadow:0 12px 24px rgba(0,0,0,.28);
@@ -518,7 +522,7 @@ a.wa:hover{color:#3BE87C}
   .menu[open] ~ .lang{display:none}
   nav.main a{
     min-height:48px;
-    border-bottom:1px solid rgba(242,239,230,.08);
+    border-bottom:1px solid rgba(var(--hair),.08);
     font-size:var(--fs-xs);letter-spacing:.04em;
   }
   nav.main a:last-child{border-bottom:0}
@@ -527,7 +531,7 @@ a.wa:hover{color:#3BE87C}
   nav.main a[href="/partner"]{
     margin-left:0;padding-left:0;border-left:0;
     margin-top:6px;padding-top:6px;
-    border-top:1px solid rgba(242,239,230,.18);
+    border-top:1px solid rgba(var(--hair),.18);
     opacity:.72;
   }
 }
@@ -579,7 +583,7 @@ a.wa:hover{color:#3BE87C}
 
 /* ---------- image frames ---------- */
 
-.frame{position:relative;overflow:hidden;border:1px solid rgba(58,30,22,.18)}
+.frame{position:relative;overflow:hidden;border:1px solid rgba(var(--shade),.18)}
 /* Photos are wrapped in <picture> for the WebP/JPEG choice. display:contents takes the
    wrapper out of the layout entirely, so .ph below still positions against .frame exactly
    as it did when the <img> was a direct child. */
@@ -591,10 +595,10 @@ a.wa:hover{color:#3BE87C}
 }
 .frame .cap{
   position:absolute;left:10px;bottom:9px;z-index:3;
-  font-size:var(--fs-2xs);letter-spacing:.06em;color:var(--bone);text-transform:uppercase;
-  background:rgba(58,30,22,.6);padding:3px 8px;
+  font-size:var(--fs-2xs);letter-spacing:.06em;color:#F2EFE6;text-transform:uppercase;
+  background:rgba(30,27,19,.7);padding:3px 8px;
 }
-.frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(58,30,22,.55);pointer-events:none}
+.frame::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 60px 10px rgba(var(--shade),.55);pointer-events:none}
 
 /* Restaurant names sit ON the photograph, in the same bottom-left slot the garment
    captions use, rather than floating above it as loose text. It is a name rather than a
@@ -611,7 +615,7 @@ a.wa:hover{color:#3BE87C}
 /* A frame that actually contains a photograph dials the grain and vignette back, so the
    treatment reads as a tint rather than smothering the image. */
 .frame:has(.ph) .grain{display:none}
-.frame:has(.ph)::after{box-shadow:inset 0 0 40px 6px rgba(58,30,22,.18)}
+.frame:has(.ph)::after{box-shadow:inset 0 0 40px 6px rgba(var(--shade),.18)}
 
 /* spice-duotone placeholder grounds, hue set per element */
 .sp-mag{background:radial-gradient(85% 85% at 35% 25%,#E4713F,transparent 55%),linear-gradient(150deg,#D3502F,#3D2B24)}
@@ -623,7 +627,7 @@ a.wa:hover{color:#3BE87C}
 
 /* ---------- page furniture ---------- */
 
-.page-head{border-bottom:1px solid rgba(58,30,22,.22);padding:38px 0 30px;position:relative}
+.page-head{border-bottom:1px solid rgba(var(--shade),.22);padding:38px 0 30px;position:relative}
 .crumb{font-size:var(--fs-2xs);letter-spacing:.1em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px}
 
 /* Breadcrumb links measured 15px tall — under the 24px WCAG 2.2 target-size minimum, on a
@@ -658,9 +662,9 @@ a.wa:hover{color:#3BE87C}
   .page-head{padding:52px 0 40px}
 }
 
-/* A light hairline, not the old rgba(58,30,22,.22) — a dark rule on a dark ground is
+/* A light hairline, not the old rgba(var(--shade),.22) — a dark rule on a dark ground is
    invisible, which is half of why the sections ran together. */
-section{border-bottom:1px solid rgba(242,239,230,.10)}
+section{border-bottom:1px solid rgba(var(--hair),.10)}
 
 /* Alternating bands give the page a rhythm, so scrolling past a section boundary is
    obvious without having to read the heading. */
@@ -757,9 +761,9 @@ a.trust:hover .trust-n,a.trust:focus-visible .trust-n{color:var(--bone)}
 }
 .btn:hover{background:var(--bone);color:var(--void)}
 .btn.mag{border-color:var(--magenta);color:var(--magenta)}
-.btn.mag:hover{background:var(--magenta);color:var(--void)}
-.btn.saf{border-color:var(--saffron);background:var(--saffron);color:var(--void)}
-.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--void)}
+.btn.mag:hover{background:var(--fill);color:var(--on-fill)}
+.btn.saf{border-color:var(--saffron);background:var(--saffron);color:var(--on-fill)}
+.btn.saf:hover{background:var(--turmeric);border-color:var(--turmeric);color:var(--on-fill)}
 
 .cta-row{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
 /* The home page puts a cta-row ABOVE the image grid as well as below it, and the rule
@@ -821,14 +825,14 @@ a.trust:hover .trust-n,a.trust:focus-visible .trust-n{color:var(--bone)}
   position:absolute;top:8px;right:8px;z-index:2;
   width:22px;height:22px;display:flex;align-items:center;justify-content:center;
   background:rgba(10,9,8,.62);border:1px solid rgba(242,239,230,.28);
-  color:var(--bone);font-size:var(--fs-2xs);line-height:1;
+  color:#F2EFE6;font-size:var(--fs-2xs);line-height:1;
   transition:background .15s,border-color .15s,color .15s;
 }
-.piece:hover .ext,.piece:focus-visible .ext{background:var(--magenta);border-color:var(--magenta);color:var(--void)}
+.piece:hover .ext,.piece:focus-visible .ext{background:var(--fill);border-color:var(--fill);color:var(--on-fill)}
 .piece:hover .frame{outline:2px solid var(--magenta);outline-offset:2px}
 
-.plate{border:1px solid rgba(58,30,22,.2);display:flex;flex-direction:column;background:var(--void-2)}
-.plate .frame{aspect-ratio:16/9;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+.plate{border:1px solid rgba(var(--shade),.2);display:flex;flex-direction:column;background:var(--void-2)}
+.plate .frame{aspect-ratio:16/9;border:none;border-bottom:1px solid rgba(var(--shade),.2)}
 .plate .pbody{padding:20px}
 .plate h3{font-size:var(--fs-l);font-weight:600;line-height:var(--lh-snug);text-transform:uppercase;letter-spacing:.02em;margin-bottom:6px;color:var(--bone)}
 .plate .cz{font-size:var(--fs-2xs);color:var(--olive);letter-spacing:.04em;margin-bottom:12px}
@@ -853,10 +857,10 @@ a.plate h3{transition:color .15s}
    four-line title still produce cards that line up. */
 .post{
   display:flex;flex-direction:column;
-  border:1px solid rgba(58,30,22,.2);background:var(--void-2);
+  border:1px solid rgba(var(--shade),.2);background:var(--void-2);
   transition:transform .15s,border-color .15s;
 }
-.post .frame{aspect-ratio:16/10;border:none;border-bottom:1px solid rgba(58,30,22,.2)}
+.post .frame{aspect-ratio:16/10;border:none;border-bottom:1px solid rgba(var(--shade),.2)}
 .post .pbody{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1 1 auto}
 .post h3{
   font-size:var(--fs-m);font-weight:600;line-height:var(--lh-snug);letter-spacing:-.01em;
@@ -900,8 +904,8 @@ a.plate h3{transition:color .15s}
  * (fourteen internal links rather than seven, which is the internal linking search engines
  * actually read), and two small channel chips instead of one wide labelled link. */
 
-footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);padding:36px 0 18px}
-.foot{padding-bottom:22px;border-bottom:1px solid rgba(242,239,230,.14)}
+footer{background:var(--chrome);border-top:1px solid rgba(var(--hair),.10);padding:36px 0 18px}
+.foot{padding-bottom:22px;border-bottom:1px solid rgba(var(--hair),.14)}
 
 /* The wordmark returns to the footer (24 Aug 2026), reversing the note above. What changed:
    the header is now a 53px sticky bar whose wordmark is 16 characters, and a visitor who has
@@ -958,14 +962,14 @@ footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);paddi
 .chip{
   display:inline-flex;align-items:center;gap:7px;min-height:38px;padding:8px 16px 8px 13px;
   border-radius:100px;font-size:var(--fs-xs);font-weight:600;
-  border:1px solid rgba(242,239,230,.16);color:var(--bone);
+  border:1px solid rgba(var(--hair),.16);color:var(--bone);
   transition:background .3s,border-color .3s,color .3s
 }
 /* #25D366 at full strength measures 4.89:1 on this ground — the same reasoning that set the
    old .wa-link to opacity 1 rather than .68. */
 .chip.wa{color:#25D366;border-color:rgba(37,211,102,.40)}
 .chip.wa:hover{background:rgba(37,211,102,.12);border-color:#25D366}
-.chip.mail:hover{background:rgba(242,239,230,.08);border-color:rgba(242,239,230,.42)}
+.chip.mail:hover{background:rgba(var(--hair),.08);border-color:rgba(var(--hair),.42)}
 .wa-ico{flex:0 0 auto}
 
 /* No tracking, no cookies, no analytics — so there is nothing to disclose in a banner. This
@@ -1120,9 +1124,9 @@ footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);paddi
   /* A pill, not a bare word. The border is what makes it read as a control rather than as
      one more nav link, and the shading lifts it off the header bar without the volume of a
      filled button — which would out-shout the nav this header exists to serve. */
-  border:1px solid rgba(242,239,230,.34);
+  border:1px solid rgba(var(--hair),.34);
   border-radius:999px;
-  background:rgba(242,239,230,.06);
+  background:rgba(var(--hair),.06);
   color:var(--bone);
   font-size:var(--fs-2xs);letter-spacing:.04em;text-transform:uppercase;
   /* Full opacity where nav.main sits at .68: the contrast IS the prominence. */
@@ -1144,8 +1148,8 @@ footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);paddi
 .lang-menu{
   position:absolute;top:calc(100% + 6px);right:0;z-index:60;
   min-width:100%;padding:6px 0;
-  background:#221f1b;
-  border:1px solid rgba(242,239,230,.16);border-radius:10px;
+  background:var(--chrome);
+  border:1px solid rgba(var(--hair),.16);border-radius:10px;
   box-shadow:0 14px 32px rgba(0,0,0,.4);
   display:flex;flex-direction:column;
 }
@@ -1154,7 +1158,7 @@ footer{background:var(--chrome);border-top:1px solid rgba(242,239,230,.10);paddi
   text-decoration:none;white-space:nowrap;font-size:14px;
 }
 .lang-menu a{opacity:.82}
-.lang-menu a:hover{opacity:1;color:var(--magenta);background:rgba(242,239,230,.06)}
+.lang-menu a:hover{opacity:1;color:var(--magenta);background:rgba(var(--hair),.06)}
 /* Where you are now. Highlighted rather than ticked: a checkmark is a second thing to
    decode at 11px, while colour plus a marker rail reads before you have finished looking.
    It is a <span>, so it does not respond to hover — deliberately, since there is nowhere

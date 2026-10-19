@@ -5,15 +5,15 @@
    file. site.css sets colour:--void on the same fill at 7.26:1. */
 
 .manifesto{
-  background:var(--magenta);color:var(--void);
+  background:var(--fill);color:var(--on-fill);
   padding:26px var(--gutter);margin:30px 0 36px;
   display:grid;grid-template-columns:1fr;gap:22px;
 }
-.manifesto h2{font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);color:var(--void)}
+.manifesto h2{font-weight:500;font-size:var(--fs-xl);line-height:var(--lh-tight);color:var(--on-fill)}
 /* opacity:.9 took dark text on the amber panel to 3.95:1. At full strength it is 4.70:1. */
-.manifesto p{color:var(--void)}
+.manifesto p{color:var(--on-fill)}
 .manifesto .labels{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.manifesto .labels span{font-size:var(--fs-2xs);letter-spacing:.05em;border:1px solid var(--void);color:var(--void);padding:4px 8px;text-transform:uppercase}
+.manifesto .labels span{font-size:var(--fs-2xs);letter-spacing:.05em;border:1px solid var(--void);color:var(--on-fill);padding:4px 8px;text-transform:uppercase}
 
 @media (min-width:721px){
   .manifesto{grid-template-columns:1fr 1fr;gap:30px;padding:36px 30px;margin:36px 0 42px}
@@ -33,7 +33,7 @@
 }
 
 .guide{padding:20px 0 48px}
-.guide h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);text-transform:uppercase;border-top:1px solid rgba(58,30,22,.2);padding-top:24px;margin-bottom:6px}
+.guide h2{font-weight:500;font-size:var(--fs-2xl);line-height:var(--lh-tight);text-transform:uppercase;border-top:1px solid rgba(var(--shade),.2);padding-top:24px;margin-bottom:6px}
 .guide .cz{font-size:var(--fs-2xs);color:var(--olive);margin-bottom:24px;letter-spacing:.04em}
 .guide-body{max-width:var(--measure)}
 .guide-body p{color:var(--bone-dim);margin-bottom:16px}
