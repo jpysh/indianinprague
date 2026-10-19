@@ -7,7 +7,7 @@
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
   "generated": "2026-10-19T10:48:19.696Z",
-  "count": 7122,
+  "count": 7123,
   "entries": {
     "attr.color.red": {
       "text": "Сеть",
@@ -28656,6 +28656,11 @@
     "text.7565669905f8": {
       "text": "37 наклеек и плакатов на полке медитации.",
       "src": "7565669905f8",
+      "via": "claude"
+    },
+    "text.1764fa897b44": {
+      "text": "Спросить в WhatsApp",
+      "src": "1764fa897b44",
       "via": "claude"
     }
   }
