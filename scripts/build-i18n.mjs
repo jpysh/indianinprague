@@ -29,7 +29,7 @@
 // to avoid. The noindex lifts by itself the moment the translations land.
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
-import { LANGS, CODES, ROOT, DEFAULT_LANG, loadSources, resolve } from "./i18n.mjs";
+import { LANGS, CODES, ROOT, DIR, DEFAULT_LANG, loadSources, resolve } from "./i18n.mjs";
 import { walk } from "./extract.mjs";
 
 const argv = process.argv.slice(2);
@@ -228,6 +228,41 @@ function relink(html, lang, known) {
 
 /* -------------------------------------------------------------------- render ---- */
 
+// The prefilled WhatsApp message is assembled in build-shop.mjs from four English templates
+// (ask, order, sold, restock). Where data/i18n/wa-messages.json has that language, take the
+// message apart and put it back together in the shopper's language, with the translated
+// title. Languages without an entry keep the English message.
+const WA_URL = /https:\/\/wa\.me\/420777558262\?text=([^"\s<>]+)/g;
+const WA_PATTERNS = [
+  ["ask", /^Hi! I'd like to ask about "(.+)"(?: \((€[\d.,]+)\))? — (https:\/\/\S+)$/],
+  ["order", /^Hi! I'd like to order "(.+)"(?: \((€[\d.,]+)\))? — ref (\S+)$/],
+  ["sold", /^Hi! "(.+)" has sold — do you have anything similar\?$/],
+  ["restock", /^Hi! Is "(.+)" coming back in stock\? — ref (\S+)$/],
+  ["hello", /^Hi! I found you on guldaarbazaar\.com and I have a question\.$/],
+  ["lookfor", /^Hi! I am looking for something I could not find on guldaarbazaar\.com: $/],
+];
+const waMessages = existsSync(path.join(DIR, "wa-messages.json")) ? JSON.parse(readFileSync(path.join(DIR, "wa-messages.json"), "utf8")) : {};
+function translateWa(html, lang, byText) {
+  const tpl = waMessages[lang];
+  if (!tpl) return html;
+  return html.replace(WA_URL, (whole, enc) => {
+    let msg;
+    try { msg = decodeURIComponent(enc); } catch { return whole; }
+    for (const [kind, re] of WA_PATTERNS) {
+      const m = re.exec(msg);
+      if (!m) continue;
+      if (kind === "hello" || kind === "lookfor") return "https://wa.me/420777558262?text=" + encodeURIComponent(tpl[kind]);
+      const key = byText.get(m[1]);
+      const title = (key && byText.resolved[key]?.text) || m[1];
+      const price = kind === "sold" || kind === "restock" ? "" : m[2] ? ` (${m[2]})` : "";
+      const last = kind === "sold" ? "" : kind === "restock" ? m[2] : m[3];
+      const text = tpl[kind].replace("{title}", title).replace("{price}", price).replace("{last}", last);
+      return "https://wa.me/420777558262?text=" + encodeURIComponent(text);
+    }
+    return whole;
+  });
+}
+
 function renderPage(html, lang, url, byText) {
   let missing = 0;
   let translated = 0;
@@ -241,7 +276,7 @@ function renderPage(html, lang, url, byText) {
     missing++;
     return null; // leave the English in place — a working page beats a blank one
   });
-  return { html: out, missing, translated };
+  return { html: translateWa(out, lang, byText), missing, translated };
 }
 
 /* ---------------------------------------------------------------------- main ---- */

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T11:07:59.004Z",
-  "count": 7123,
+  "generated": "2026-10-19T17:34:58.675Z",
+  "count": 7125,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -11140,7 +11140,8 @@
     },
     "text.a0e49adfe592": {
       "text": "Nad 50 €",
-      "src": "a0e49adfe592"
+      "src": "a0e49adfe592",
+      "via": "claude"
     },
     "text.51577176b678": {
       "text": "MAGNOLIA",
@@ -11235,8 +11236,9 @@
       "src": "63df5dcc99ec"
     },
     "text.0ab16751f585": {
-      "text": "Méně než 10 €",
-      "src": "0ab16751f585"
+      "text": "Do 10 €",
+      "src": "0ab16751f585",
+      "via": "claude"
     },
     "text.b5c548eb4340": {
       "text": "PATCHOULI",
@@ -30723,6 +30725,16 @@
     "text.1764fa897b44": {
       "text": "Zeptat se na WhatsAppu",
       "src": "1764fa897b44",
+      "via": "claude"
+    },
+    "text.d8204a657216": {
+      "text": "10 – 25 €",
+      "src": "d8204a657216",
+      "via": "claude"
+    },
+    "text.78e84152535d": {
+      "text": "25 – 50 €",
+      "src": "78e84152535d",
       "via": "claude"
     }
   }
