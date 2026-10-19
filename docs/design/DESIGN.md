@@ -49,3 +49,13 @@ Native first: CSS scroll-snap for galleries, `<dialog>` for sheets, View Transit
 ## 6. Banned
 
 `backdrop-filter`, `mix-blend-mode` and `subgrid` on the shop grid (iOS Safari breaks them; CLAUDE.md). GSAP, three.js and Lenis outside Spirituality. Text over a busy photo without a solid scrim.
+
+## 7. Redesign decisions (owner, 19 Oct 2026)
+
+1. **Light for shopping, dark for stories.** Shop pages and the homepage go light (warm off-white ground, near-black text) with olive, saffron and paprika as accents. Spirituality and Diaries keep the dark void.
+2. **Plex Sans everywhere**; Plex Mono only for prices and small labels.
+3. **Scope, in stages:** shop first (/wardrobe, shelves, detail sheet, search, filters), then the homepage. Other pages later.
+4. **Detail stays a sheet, made better:** swipe gallery, pinch zoom, size and measurements, a sticky "Ask on WhatsApp" bar. Separate product pages are a later, separate decision (SEO and URLs).
+5. **Trust:** show the Vinted rating only: "★ 5.0 · 93 reviews on Vinted", linked to the feedback page, from `data/seller.json` (refreshed daily). Hide it if the rating drops below 4.5 or the file is missing. No sold counts or follower counts yet: too small to help.
+6. **Directions before building:** two or three mocked-up directions as a page the owner opens on a phone and picks from. Build only the chosen one.
+7. **English first;** the seven translated sites follow by translating only the changed strings. A new DeepL key is the owner's call.
