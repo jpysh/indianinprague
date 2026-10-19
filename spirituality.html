@@ -266,7 +266,7 @@ h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: 440; 
 
 /* Eyebrow & Mask Reveal */
 .eyebrow {
-  font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
+  font-family: var(--font-label); font-size: 13px; letter-spacing: .09em; text-transform: uppercase;
   color: var(--ink-soft); display: flex; flex-direction: column; gap: 4px; line-height: 1.6;
 }
 .eyebrow strong { color: var(--terracotta-deep); font-weight: 500; letter-spacing: .12em; }
@@ -301,7 +301,7 @@ header.site.nav-hidden {
   border: 1px solid rgba(245,238,221,0.18); border-radius: 100px; padding: 8px 10px 8px 22px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.4); color: var(--cream);
 }
-.pill-nav .word { font-family: var(--font-display); font-size: 15.5px; }
+.pill-nav .word { font-family: var(--font-display); font-size: 15.5px; line-height: 44px; }
 .pill-nav .word em { font-style: italic; color: var(--marigold); }
 
 /* Section links, wide screens only. */
@@ -394,7 +394,7 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
   display: grid; grid-template-columns: 34px 1fr; gap: 2px 12px;
   padding: 16px 2px; align-items: baseline; min-height: 44px;
 }
-.nav-sheet .n { font-family: var(--font-label); font-size: 12px; color: var(--marigold); grid-row: 1 / span 2; }
+.nav-sheet .n { font-family: var(--font-label); font-size: 13px; color: var(--marigold); grid-row: 1 / span 2; }
 .nav-sheet .l { font-family: var(--font-display); font-size: 25px; color: var(--cream); line-height: 1.15; }
 .nav-sheet .d { font-size: 13.5px; color: rgba(245,238,221,.62); }
 .nav-sheet li a:hover .l, .nav-sheet li a:focus-visible .l { color: var(--marigold); }
@@ -454,7 +454,6 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .pill-nav .word em { display: none; }
-  .sound-toggle { width: 42px; height: 42px; }
   .menu-btn { font-size: 13.5px; padding: 0 15px; }
 }
 
@@ -494,7 +493,7 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
 .btn-ghost:hover { background: rgba(245,238,221,.08); border-color: var(--cream); }
 .btn-text {
   display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14.5px;
-  color: var(--marigold); padding: 4px 0; position: relative;
+  color: var(--marigold); padding: 4px 0; min-height: 44px; position: relative;
 }
 .btn-text .arrow { transition: transform 0.3s var(--ease); }
 .btn-text:hover .arrow { transform: translateX(6px); }
@@ -585,7 +584,7 @@ body.sheet-open .pill-nav { background: rgba(33, 23, 53, 0.55); }
   font-family: var(--font-display); font-style: italic; font-size: clamp(24px, 2.8vw, 32px);
   color: var(--terracotta-deep); margin-top: 36px; padding-left: 28px; border-left: 3px solid var(--terracotta);
 }
-.pull cite { display: block; font-family: var(--font-label); font-style: normal; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 12px; }
+.pull cite { display: block; font-family: var(--font-label); font-style: normal; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 12px; }
 
 .sec-head { max-width: 640px; margin-bottom: clamp(40px, 5vw, 64px); }
 /* line-height 1.08 → 1.14: with the eyebrow gone the headline is the whole section header, and
@@ -626,12 +625,12 @@ a.card:focus-visible { outline: 2px solid var(--terracotta-deep); outline-offset
 /* .icon-blob removed 2026-08-17: three abstract line marks that named nothing the card's own
    tag and title did not already say, taking the top 70px of every card above the fold. */
 
-.tag { font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--terracotta-deep); }
+.tag { font-family: var(--font-label); font-size: 13px; letter-spacing: .09em; text-transform: uppercase; color: var(--terracotta-deep); }
 .card h3 { font-size: 22px; line-height: 1.25; }
 .card .hook { color: var(--ink-soft); font-size: 15px; line-height: 1.6; font-weight: 500; }
 .card ul { margin: 4px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
 .card ul li { font-size: 14px; color: var(--ink-soft); font-weight: 500; }
-.card .btn-text { margin-top: auto; padding-top: 8px; }
+.card .btn-text { margin-top: auto; padding-top: 8px; color: var(--terracotta-deep); }
 
 /* ============================================================
    HORIZONTAL SCROLL RUNWAYS (TRIPS & SHOP)
@@ -732,7 +731,7 @@ section.on-void .runway-rail span { background: var(--marigold); }
 .card.trip:hover { box-shadow: none; }
 .card.trip .art-blob { border-radius: 0 0 46% 54% / 0 0 30% 30%; aspect-ratio: 5/4; }
 .card.trip .loc, .card.trip h3, .card.trip .hook { padding-left: 24px; padding-right: 24px; }
-.card.trip .loc { font-family: var(--font-label); font-size: 11px; letter-spacing: .08em; color: var(--terracotta-deep); margin-top: 18px; }
+.card.trip .loc { font-family: var(--font-label); font-size: 13px; letter-spacing: .08em; color: var(--terracotta-deep); margin-top: 18px; }
 .card.trip h3 { font-size: 20px; margin-top: 6px; }
 
 .card.shop { width: 280px; align-items: flex-start; gap: 10px; flex-shrink: 0; }
@@ -756,7 +755,7 @@ section.on-void .runway-rail span { background: var(--marigold); }
    than the offer cards do — 640px is the switch, which keeps all three across on tablet. */
 .commit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 60px; }
 .commit { padding: 30px; border-radius: 22px; background: rgba(245,238,221,.06); border: 1px solid rgba(245,238,221,.14); backdrop-filter: blur(12px); }
-.commit .n { font-family: var(--font-label); font-size: 12px; color: var(--marigold); letter-spacing: .08em; }
+.commit .n { font-family: var(--font-label); font-size: 13px; color: var(--marigold); letter-spacing: .08em; }
 .commit h4 { color: var(--cream); font-size: 20px; margin-top: 12px; }
 .commit p { color: rgba(245,238,221,.78); font-size: 14.5px; margin-top: 10px; line-height: 1.65; }
 
@@ -1034,20 +1033,18 @@ footer.site {
 /* Three category columns, each headed by a link to the section itself — the heading is a
    destination, not a label, so a visitor can land on the hub or jump straight past it. */
 .foot-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 32px; margin-top: 20px; }
-.foot-col { display: flex; flex-direction: column; }
+.foot-col { display: flex; flex-direction: column; gap: 8px; }
 .foot-col .head {
-  font-family: var(--font-label); font-size: 11px; letter-spacing: .09em; text-transform: uppercase;
-  color: rgba(245,238,221,.5); padding: 4px 0 8px;
+  font-family: var(--font-label); font-size: 13px; letter-spacing: .09em; text-transform: uppercase;
+  color: rgba(245,238,221,.5); display: flex; align-items: center; min-height: 44px;
 }
 /* No aria-current marker in here either: on the site pages this exact block is copied out of
    index.html by the generators, so a per-page marker cannot survive a build — and this footer
    is meant to be identical to those apart from colour. */
 .foot-col .head:hover { color: var(--foot-accent); }
-/* 36px rather than 44: these rows sit in a single vertical column with nothing tappable beside
-   them, so the mis-tap a 44px target guards against is a neighbouring row in the same list —
-   and 36px plus the row gap still clears a fingertip. It buys back ~100px of footer height. */
+/* 44px with an 8px gap (DESIGN.md §2): a footer row is a tap target like any other. */
 .foot-col .item {
-  display: flex; align-items: center; min-height: 36px;
+  display: flex; align-items: center; min-height: 44px;
   font-size: 14px; color: rgba(245,238,221,.82);
 }
 .foot-col .item:hover { color: var(--foot-accent); }
@@ -1057,10 +1054,10 @@ footer.site {
   padding-top: 18px;
 }
 .foot-reach { display: flex; gap: 10px; flex: 0 0 auto; }
-.foot-made { font-size: 12.5px; color: rgba(245,238,221,.42); }
+.foot-made { font-size: 13px; color: rgba(245,238,221,.42); }
 /* Icon plus one word. At footer scale "Message on" was the part carrying no information. */
 .chip {
-  display: inline-flex; align-items: center; gap: 7px; min-height: 38px; padding: 8px 16px 8px 13px;
+  display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 8px 16px 8px 13px;
   border-radius: 100px; font-size: 13.5px; font-weight: 600;
   border: 1px solid var(--foot-line); color: rgba(245,238,221,.85);
   transition: background .3s, border-color .3s, color .3s;
@@ -1068,7 +1065,7 @@ footer.site {
 .chip.wa { color: #25D366; border-color: rgba(37,211,102,.4); }
 .chip.wa:hover { background: rgba(37,211,102,.12); border-color: #25D366; }
 .chip.mail:hover { background: rgba(245,238,221,.08); border-color: rgba(245,238,221,.4); color: var(--foot-ink); }
-.foot-note { font-size: 12.5px; color: rgba(245,238,221,.42); }
+.foot-note { font-size: 13px; color: rgba(245,238,221,.42); }
 
 /* Two columns before one: three category lists stacked single-file on a phone is a long scroll
    of footer, and these lists are short enough to pair. */

@@ -24,6 +24,7 @@
 .info-sec ol,.info-sec ul{margin:0 0 12px;padding-left:20px;display:flex;flex-direction:column;gap:10px}
 .info-sec li{font-family:var(--sans);font-size:var(--fs-m);line-height:var(--lh-read)}
 .info-sec a{color:var(--magenta);text-decoration:underline;text-underline-offset:2px}
+.info-sec a[href^="mailto:"]{display:inline-flex;align-items:center;min-height:44px;overflow-wrap:anywhere}
 
 /* The FAQ is a <dl> because that is what a list of questions and answers is. It is NOT a
    <details> accordion: the answers have to be visible for the FAQPage markup to be honest
