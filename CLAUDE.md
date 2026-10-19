@@ -8,6 +8,13 @@
 - It keeps four protections that block nothing: `object-src 'none'`, `frame-ancestors 'none'`, `base-uri 'self'` and `upgrade-insecure-requests`.
 - Crawlers and AI tools ignore the CSP entirely.
 
+## Security posture: repo stays public (owner decision, 19 Oct 2026)
+
+- The repo is public on purpose (building in public; keeps GitHub's free protections). Do not propose going private.
+- On: secret scanning with push protection, Dependabot alerts and security updates, CodeQL default setup, ruleset `protect-main` (no force-push, no deletion), private vulnerability reporting.
+- Hosting is Cloudflare free tiers only. No self-hosted origin; the Docker, nginx and tunnel files were deleted.
+- Owner enables 2FA on GitHub and Cloudflare (issue on the owner list). Never put secrets in tracked files.
+
 ## Motion
 
 - **Content must be visible without JavaScript.** Every hidden starting state sits under `.js-rv`, which `partner.js` adds only when it runs and motion is allowed. A version that hid content by default (`animation-timeline: view()`) rendered a blank page in WhatsApp's in-app browser, which is how merchants open shared links.
