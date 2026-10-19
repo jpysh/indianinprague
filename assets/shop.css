@@ -785,3 +785,41 @@ a.wa,.chip.wa{color:#0B7A3B}
   .page-head + section .sec-inner{padding-top:16px}
 }
 .subs .sub,.subs-more{min-height:44px}
+
+/* ---------- Ledger pill + filter sheet on a phone (redesign stage 3, DESIGN.md §7.8) ----------
+ * The Refine & sort summary becomes one dark pill fixed at the bottom centre, in thumb reach
+ * (§1.3). Opened, the controls rise above it as a bottom sheet. No backdrop-filter (§6). */
+@media (max-width:720px){
+  .sb-refine > summary{
+    position:fixed;z-index:40;left:50%;transform:translateX(-50%);
+    bottom:calc(16px + env(safe-area-inset-bottom,0px));
+    min-height:48px;padding:0 22px;border:0;border-radius:999px;
+    background:var(--bone);color:var(--void);
+    font:600 var(--fs-m) var(--sans);letter-spacing:0;text-transform:none;white-space:nowrap;
+    box-shadow:0 6px 18px rgba(30,27,19,.28);
+  }
+  .sb-refine > summary:hover{color:var(--void);border-color:transparent}
+  .sb-refine > summary::after{display:none}
+  .sb-refine[open] > summary{margin-bottom:0}
+  .sb-refine-n{border-radius:999px;background:var(--saffron);color:var(--on-fill)}
+  .sb-refine[open] .sb-controls{
+    position:fixed;z-index:39;left:0;right:0;bottom:0;
+    max-height:70vh;overflow-y:auto;overscroll-behavior:contain;
+    padding:20px var(--gutter) calc(88px + env(safe-area-inset-bottom,0px));
+    background:var(--void);border-radius:12px 12px 0 0;
+    box-shadow:0 -8px 30px rgba(30,27,19,.22);
+  }
+  .sb-refine[open] .sb-controls::before{content:"";display:block;width:40px;height:5px;border-radius:9px;
+    background:rgba(var(--hair),.25);margin:-8px auto 12px}
+  .page-head + section .sec-inner{padding-bottom:96px}
+}
+/* The pill is the Filters control on a phone now, so the scroll-away jump keeps only view and
+   Top, as small round buttons above the pill's right edge. */
+@media (max-width:720px){
+  .sb-jump{left:auto;right:calc(16px + env(safe-area-inset-right,0px));transform:none;
+    bottom:calc(76px + env(safe-area-inset-bottom,0px));gap:8px;box-shadow:none}
+  .sb-jump .sb-jump-filters{display:none}
+  .sb-jump button,.sb-jump .sb-view{width:44px;min-width:44px;min-height:44px;padding:0;border-radius:999px;
+    background:var(--void);color:var(--bone);border:1px solid rgba(var(--hair),.3);box-shadow:0 4px 12px rgba(30,27,19,.18)}
+}
+@media (max-width:720px){body:has(.sb-refine[open]) .sb-jump{display:none}}
