@@ -78,3 +78,11 @@ Business case/
 # commit that produced it and was permanently a day stale in git. Deleting it costs one
 # round of re-submission, which is harmless.
 data/indexnow-state.json
+
+# Public repo: machine-local state and the owner's private admin tool stay on the Mac.
+# (Already-published history is not rewritten by this.)
+.wrangler/
+dashboard.html
+scripts/dashboard-server.mjs
+scripts/indianinprague-dashboard
+scripts/com.jains.indianinprague-dashboard.plist
