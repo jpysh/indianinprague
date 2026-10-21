@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T11:07:59.004Z",
-  "count": 7123,
+  "generated": "2026-10-21T16:23:50.350Z",
+  "count": 7178,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -30525,26 +30525,6 @@
       "src": "1d1453ed1e15",
       "via": "claude"
     },
-    "text.1052f2eb7249": {
-      "text": "Plakát A2: Krishna Govinda se vrací z lesa",
-      "src": "1052f2eb7249",
-      "via": "claude"
-    },
-    "text.95afd31227cc": {
-      "text": "Krishna Govinda, „pastýř krav“, se vrací z lesa ke svým rodičům, Yasodě a Nanda Maharajovi.",
-      "src": "95afd31227cc",
-      "via": "claude"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát A3: Krishna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d",
-      "via": "claude"
-    },
-    "text.537b3274202c": {
-      "text": "Plakát A3: Krishna Govinda",
-      "src": "537b3274202c",
-      "via": "claude"
-    },
     "text.7d50c0b77994": {
       "text": "Sešívačka Swingline na celý pás",
       "src": "7d50c0b77994",
@@ -30724,6 +30704,242 @@
       "text": "Zeptat se na WhatsAppu",
       "src": "1764fa897b44",
       "via": "claude"
+    },
+    "item.10463767343.title": {
+      "text": "Prošívaná retro cestovní taška ve stylu hippie | Originální cestovní taška | Taška na víkend",
+      "src": "cc8177c524f4"
+    },
+    "item.10463583902.title": {
+      "text": "Sada z čisté mědi | Měděný náramek | Měděný prsten | Magnetické měděné šperky | Vintage",
+      "src": "1d6e0a8c1f92"
+    },
+    "item.10473357779.title": {
+      "text": "Retro prošívaná taška ve stylu karavanu | Originální cestovní taška | Taška na víkend ve stylu boho-hippie | Taška na plenky",
+      "src": "09c3e08aa012"
+    },
+    "item.10463767343.description": {
+      "text": "Lehká a s velkou kapacitou. \nRetro karavan ve stylu hippie. \nDuhové barvy. \nCottagecore, estetika 70. let. \nSkvělá do posilovny, na víkendové výlety, na plavání, na piknik, do přírody. \n\n#Boho #Hippie #ProšívanáTaška\n#TaškaNaVíkend #Karavan #Retro #FestivalováMóda #Taška #Cestování #Cottagecore #Vintage #CestovníTaška",
+      "src": "30fa8ce02435"
+    },
+    "item.10463583902.description": {
+      "text": "Nastavitelný a unisexový.  \nLéčivá měď a magnet. \nMagnet přitahuje železo v krvi a podporuje krevní oběh. \nMěď má podle tradiční ájurvédy i moderní vědy antimikrobiální vlastnosti a pomáhá uzemnit energii. \n\nJiný, cenově dostupnější náramek pouze z mědi – https://www.vinted.cz/items/10313811804-copper-magnetic-bracelet-indian-hindu-spiritual\n\n#měď #měděnýnáramek #ájurvéda #ajurvéda #léčivé #duchovní #indické #hinduistické #jóga #namaste #vintage #boho",
+      "src": "8719daccc71f"
+    },
+    "item.10473357779.description": {
+      "text": "Roztomilá taška ve tvaru retro karavanu s výrazným 2D prošívaným motivem podmořského útesu. Zdobí ji barevné korály, hvězdice, mušle a ryby.\nLehká, ale s velkou kapacitou.\nIdeální jako originální taška na víkendové výlety, plážová taška, taška do posilovny nebo příruční zavazadlo na jednodenní cestu. Prostorný vnitřek se zapínáním na zip.\n\nMám i další model s duhovým vzorem – https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #hippie #vintage #camper #cestovnítaška #taška do posilovny #taška na plenky #netradiční #70. léta #retro #y2k",
+      "src": "5dcb4a8fd144"
+    },
+    "text.28b5afbde6fd": {
+      "text": "470 kusů",
+      "src": "28b5afbde6fd"
+    },
+    "text.5b476800841a": {
+      "text": "311 kusů",
+      "src": "5b476800841a"
+    },
+    "text.1e78aa33705e": {
+      "text": "Strana 1 z 39",
+      "src": "1e78aa33705e"
+    },
+    "text.7b4597832e3b": {
+      "text": "Strana 2 z 39",
+      "src": "7b4597832e3b"
+    },
+    "text.d6509434eebd": {
+      "text": "Strana 3 z 39",
+      "src": "d6509434eebd"
+    },
+    "text.7c6c3a1ed3a5": {
+      "text": "Strana 4 z 39",
+      "src": "7c6c3a1ed3a5"
+    },
+    "text.67f15463e747": {
+      "text": "Strana 5 z 39",
+      "src": "67f15463e747"
+    },
+    "text.e41db7901208": {
+      "text": "Strana 6 z 39",
+      "src": "e41db7901208"
+    },
+    "text.d37b94564f4b": {
+      "text": "Strana 7 z 39",
+      "src": "d37b94564f4b"
+    },
+    "text.e9041bf4fa85": {
+      "text": "Strana 8 z 39",
+      "src": "e9041bf4fa85"
+    },
+    "text.9b741c67df7d": {
+      "text": "Strana 9 z 39",
+      "src": "9b741c67df7d"
+    },
+    "text.8a9a1242ffe8": {
+      "text": "Strana 10 z 39",
+      "src": "8a9a1242ffe8"
+    },
+    "text.80cda790244c": {
+      "text": "Strana 11 z 39",
+      "src": "80cda790244c"
+    },
+    "text.11ea03be1b40": {
+      "text": "Strana 12 z 39",
+      "src": "11ea03be1b40"
+    },
+    "text.80f3ad0c01d5": {
+      "text": "Strana 13 z 39",
+      "src": "80f3ad0c01d5"
+    },
+    "text.a4d5df78c522": {
+      "text": "Strana 14 z 39",
+      "src": "a4d5df78c522"
+    },
+    "text.451ffa10c5d5": {
+      "text": "Strana 15 z 39",
+      "src": "451ffa10c5d5"
+    },
+    "text.9682d4b4d439": {
+      "text": "Strana 16 z 39",
+      "src": "9682d4b4d439"
+    },
+    "text.ab834f99ca0e": {
+      "text": "Strana 17 z 39",
+      "src": "ab834f99ca0e"
+    },
+    "text.999ef778cbf9": {
+      "text": "Strana 18 z 39",
+      "src": "999ef778cbf9"
+    },
+    "text.a948d5b91548": {
+      "text": "Strana 19 z 39",
+      "src": "a948d5b91548"
+    },
+    "text.b19de89ad2bc": {
+      "text": "Strana 20 z 39",
+      "src": "b19de89ad2bc"
+    },
+    "text.206337084c47": {
+      "text": "Strana 21 z 39",
+      "src": "206337084c47"
+    },
+    "text.8acd10aca020": {
+      "text": "Strana 22 z 39",
+      "src": "8acd10aca020"
+    },
+    "text.175bb7f25001": {
+      "text": "Strana 23 z 39",
+      "src": "175bb7f25001"
+    },
+    "text.2fa8fa26e3fe": {
+      "text": "Strana 24 z 39",
+      "src": "2fa8fa26e3fe"
+    },
+    "text.d0b0ccf41cc8": {
+      "text": "Strana 25 z 39",
+      "src": "d0b0ccf41cc8"
+    },
+    "text.87b5b507706f": {
+      "text": "Strana 26 z 39",
+      "src": "87b5b507706f"
+    },
+    "text.bc52f4e2e4e5": {
+      "text": "Strana 27 z 39",
+      "src": "bc52f4e2e4e5"
+    },
+    "text.98620628e664": {
+      "text": "Strana 28 z 39",
+      "src": "98620628e664"
+    },
+    "text.304c0bdcf7f1": {
+      "text": "Strana 29 z 39",
+      "src": "304c0bdcf7f1"
+    },
+    "text.09a9b96b5602": {
+      "text": "Strana 30 z 39",
+      "src": "09a9b96b5602"
+    },
+    "text.61119a3984d0": {
+      "text": "Strana 31 z 39",
+      "src": "61119a3984d0"
+    },
+    "text.be7a978ebd2b": {
+      "text": "Strana 32 z 39",
+      "src": "be7a978ebd2b"
+    },
+    "text.eaac90afceaf": {
+      "text": "Strana 33 z 39",
+      "src": "eaac90afceaf"
+    },
+    "text.7f69cb3f267d": {
+      "text": "Strana 34 z 39",
+      "src": "7f69cb3f267d"
+    },
+    "text.7479faac0cee": {
+      "text": "Strana 35 z 39",
+      "src": "7479faac0cee"
+    },
+    "text.cb080bc91b43": {
+      "text": "Strana 36 z 39",
+      "src": "cb080bc91b43"
+    },
+    "text.ca494a4881f5": {
+      "text": "Strana 37 z 39",
+      "src": "ca494a4881f5"
+    },
+    "text.0ed1d7deb10e": {
+      "text": "Strana 38 z 39",
+      "src": "0ed1d7deb10e"
+    },
+    "text.23ff8e94ac12": {
+      "text": "Strana 39 z 39",
+      "src": "23ff8e94ac12"
+    },
+    "text.90f8ddd58deb": {
+      "text": "95 recenzí na Vintedu →",
+      "src": "90f8ddd58deb"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.5ccc7ef4fdeb": {
+      "text": "1710 kusů na prodej · 116 prodáno",
+      "src": "5ccc7ef4fdeb"
+    },
+    "text.3e24238d716f": {
+      "text": "44 lidí si to uložilo na Vinted",
+      "src": "3e24238d716f"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.a67a3bc5309f": {
+      "text": "Nakupujte indické oblečení, šperky a bytové doplňky v Evropě, strana 39",
+      "src": "a67a3bc5309f"
+    },
+    "text.335edb1ed116": {
+      "text": "Hodnocení 5,0 z 5 na základě 95 recenzí kupujících. Přečtěte si je na Vinted (otevře se v nové záložce).",
+      "src": "335edb1ed116"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
+    },
+    "text.81c4e2e47285": {
+      "text": "Lehký a s velkou kapacitou. Retro karavan v hippie stylu. Duhové barvy. Cottagecore, estetika 70. let. Skvělý na cestu do posilovny, víkendové výlety, plavání,…",
+      "src": "81c4e2e47285"
+    },
+    "text.7c5fc229de62": {
+      "text": "Nastavitelná a unisexová. Léčivá měď a magnet. Magnet přitahuje železo v krvi a podporuje krevní oběh. Měď má antimikrobiální a energetické účinky…",
+      "src": "7c5fc229de62"
+    },
+    "text.7f3b1e61e0fd": {
+      "text": "Roztomilá cestovní taška ve tvaru retro karavanu s výrazným 2D prošívaným motivem podmořského útesu. Zdobí ji barevné korály, hvězdice, mušle a ryby…",
+      "src": "7f3b1e61e0fd"
     }
   }
 }

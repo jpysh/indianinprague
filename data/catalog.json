@@ -1,12 +1,169 @@
 {
-  "syncedAt": "2026-10-19T05:15:19.206Z",
+  "syncedAt": "2026-10-21T16:21:22.530Z",
   "rate": {
-    "czkPerEur": 24.323,
-    "fetched": "2026-10-19",
+    "czkPerEur": 24.262,
+    "fetched": "2026-10-21",
     "source": "ECB"
   },
-  "count": 197,
+  "count": 200,
   "items": [
+    {
+      "id": "10473357779",
+      "title": "Retro Quilted Camper Van Bag | Whimsical Travel Bag | Boho Hippie Weekender Duffel Bag | Diaper Bag",
+      "priceCzk": 595,
+      "priceEur": 25,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Cute retro camper van shaped duffel bag with a vibrant 2D quilted underwater reef design. Features colorful coral, starfish, seashells, and fish. \nLightweight but large capacity. \nPerfect to use as a unique weekender tote, beach bag, gym bag, or overnight travel carry-on. Spacious interior with a zipper closure.\n\nI have another rainbow design - https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #hippie #vintage #camper #travelbag #gymbag #diaperbag #whimsical #70s #retro #y2k",
+      "photo": "images/vinted-10473357779-1.jpg",
+      "photos": [
+        "images/vinted-10473357779-1.jpg",
+        "images/vinted-10473357779-2.jpg",
+        "images/vinted-10473357779-3.jpg"
+      ],
+      "favourites": 9,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10473357779-retro-quilted-camper-van-bag-whimsical-travel-bag-boho-hippie-weekender-duffel-bag-diaper-bag",
+        "es": "https://www.vinted.es/items/10473357779-retro-quilted-camper-van-bag-whimsical-travel-bag-boho-hippie-weekender-duffel-bag-diaper-bag",
+        "com": "https://www.vinted.com/items/10473357779-retro-quilted-camper-van-bag-whimsical-travel-bag-boho-hippie-weekender-duffel-bag-diaper-bag",
+        "uk": "https://www.vinted.co.uk/items/10473357779-retro-quilted-camper-van-bag-whimsical-travel-bag-boho-hippie-weekender-duffel-bag-diaper-bag"
+      }
+    },
+    {
+      "id": "10463767343",
+      "title": "Quilted Retro Hippie Van Travel Bag | Whimsical Duffel Bag | Weekender Bag",
+      "priceCzk": 595,
+      "priceEur": 25,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Lightweight and large capacity. \nHippie retro camper van. \nRainbow colours. \nCottagecore, 70s aesthetic. \nGreat for gym, weekend travel, swimming, picnic, outdoors. \n\n#Boho #Hippie #QuiltedBag\n#WeekenderBag #CamperVan #Retro #FestivalFashion #Tote #Travel #Cottagecore #Vintage #TravelBag",
+      "photo": "images/vinted-10463767343-1.jpg",
+      "photos": [
+        "images/vinted-10463767343-1.jpg",
+        "images/vinted-10463767343-2.jpg",
+        "images/vinted-10463767343-3.jpg"
+      ],
+      "favourites": 45,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag",
+        "es": "https://www.vinted.es/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag",
+        "com": "https://www.vinted.com/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag",
+        "uk": "https://www.vinted.co.uk/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag"
+      }
+    },
+    {
+      "id": "10463583902",
+      "title": "Pure Copper Set | Copper Bracelet | Copper Ring | Magnetic Copper Jewellery | Vintage",
+      "priceCzk": 450,
+      "priceEur": 19,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Gold",
+        "cs": "Zlatá"
+      },
+      "category": "Jewellery",
+      "vintedCategory": "Men Bracelets",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 82,
+          "name": "Accessories"
+        },
+        {
+          "id": 95,
+          "name": "Jewellery"
+        },
+        {
+          "id": 243,
+          "name": "Bracelets"
+        }
+      ],
+      "description": "Adjustable and unisex.  \nHealing copper and magnet. \nMagnet attracts iron in blood and helps in circulation. \nCopper has anti microbial and energy grounding properties according to traditional ayurveda and modern science. \n\nA different, less priced only copper bracelet - https://www.vinted.cz/items/10313811804-copper-magnetic-bracelet-indian-hindu-spiritual\n\n#copper #copperbracelet #ayurveda #ajurveda #healing #spiritual #indian #hindu #yoga #namaste #vintage #boho",
+      "photo": "images/vinted-10463583902-1.jpg",
+      "photos": [
+        "images/vinted-10463583902-1.jpg",
+        "images/vinted-10463583902-2.jpg",
+        "images/vinted-10463583902-3.jpg"
+      ],
+      "favourites": 3,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10463583902-pure-copper-set-copper-bracelet-copper-ring-magnetic-copper-jewellery-vintage",
+        "es": "https://www.vinted.es/items/10463583902-pure-copper-set-copper-bracelet-copper-ring-magnetic-copper-jewellery-vintage",
+        "com": "https://www.vinted.com/items/10463583902-pure-copper-set-copper-bracelet-copper-ring-magnetic-copper-jewellery-vintage",
+        "uk": "https://www.vinted.co.uk/items/10463583902-pure-copper-set-copper-bracelet-copper-ring-magnetic-copper-jewellery-vintage"
+      }
+    },
     {
       "id": "10430047706",
       "title": "Polo Ralph Lauren Knit Scarf",
@@ -46,7 +203,7 @@
         "images/vinted-10430047706-2.jpg",
         "images/vinted-10430047706-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 44,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -62,7 +219,7 @@
       "id": "10424837655",
       "title": "Handmade African Bag | Nigeria Ankara Style | Boho Ethnic Bag",
       "priceCzk": 595,
-      "priceEur": 24,
+      "priceEur": 25,
       "brand": "Africa",
       "size": "",
       "sizeGroup": "",
@@ -97,7 +254,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -168,7 +325,7 @@
       "id": "10402501121",
       "title": "From India Cinema Searchlight Living Room Floor Lamp Vintage Industrial Spotlight Wooden Tripod",
       "priceCzk": 1299,
-      "priceEur": 53,
+      "priceEur": 54,
       "brand": "India",
       "size": "",
       "sizeGroup": "",
@@ -362,7 +519,7 @@
         "images/vinted-10401947975-2.jpg",
         "images/vinted-10401947975-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -523,7 +680,7 @@
         "images/vinted-10358173763-2.jpg",
         "images/vinted-10358173763-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 0,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -683,7 +840,7 @@
         "images/vinted-10328097271-2.jpg",
         "images/vinted-10328097271-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -734,7 +891,7 @@
         "images/vinted-10326324598-2.jpg",
         "images/vinted-10326324598-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -785,7 +942,7 @@
         "images/vinted-10326276947-2.jpg",
         "images/vinted-10326276947-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -954,7 +1111,7 @@
         "images/vinted-10306451118-2.jpg",
         "images/vinted-10306451118-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1068,7 +1225,7 @@
         "images/vinted-10294958143-2.jpg",
         "images/vinted-10294958143-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1119,7 +1276,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1335,7 +1492,7 @@
         "images/vinted-10265107115-2.jpg",
         "images/vinted-10265107115-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 35,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1351,7 +1508,7 @@
       "id": "10264668226",
       "title": "Om Yoga Stole | Indian Hindu Religion Scarf | Shiva Meditation Wrap",
       "priceCzk": 425,
-      "priceEur": 17,
+      "priceEur": 18,
       "brand": "Shiva",
       "size": "",
       "sizeGroup": "",
@@ -1386,7 +1543,7 @@
         "images/vinted-10264668226-2.jpg",
         "images/vinted-10264668226-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1724,7 +1881,7 @@
         "images/vinted-10176950236-2.jpg",
         "images/vinted-10176950236-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1775,7 +1932,7 @@
         "images/vinted-10154270849-2.jpg",
         "images/vinted-10154270849-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2332,7 +2489,7 @@
         "images/vinted-10111151684-2.jpg",
         "images/vinted-10111151684-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2873,7 +3030,7 @@
         "images/vinted-9942454144-2.jpg",
         "images/vinted-9942454144-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3126,7 +3283,7 @@
         "images/vinted-9882151449-2.jpg",
         "images/vinted-9882151449-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 20,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3226,7 +3383,7 @@
         "images/vinted-9881670398-2.jpg",
         "images/vinted-9881670398-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3293,7 +3450,7 @@
       "id": "9851163929",
       "title": "Retro radio | portable solar rechargeable wireless bluetooth speaker",
       "priceCzk": 960,
-      "priceEur": 39,
+      "priceEur": 40,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -3378,7 +3535,7 @@
         "images/vinted-9843116673-2.jpg",
         "images/vinted-9843116673-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3428,7 +3585,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3529,7 +3686,7 @@
         "images/vinted-9833223694-2.jpg",
         "images/vinted-9833223694-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3742,7 +3899,7 @@
         "images/vinted-9820415575-2.jpg",
         "images/vinted-9820415575-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3907,7 +4064,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4017,7 +4174,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 38,
+      "favourites": 39,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4363,7 +4520,7 @@
       "id": "9686505544",
       "title": "Vintage jewellery | retro jewellery | 925 Silver Bracelet | Amethyst and Pearl | boho",
       "priceCzk": 1299,
-      "priceEur": 53,
+      "priceEur": 54,
       "brand": "Vintage Love",
       "size": "",
       "sizeGroup": "",
@@ -4508,7 +4665,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4563,7 +4720,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4728,7 +4885,7 @@
         "images/vinted-9607321104-2.jpg",
         "images/vinted-9607321104-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 26,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4783,7 +4940,7 @@
         "images/vinted-9604783346-2.jpg",
         "images/vinted-9604783346-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4942,7 +5099,7 @@
         "images/vinted-9603594529-2.jpg",
         "images/vinted-9603594529-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5242,7 +5399,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 35,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5342,7 +5499,7 @@
         "images/vinted-9602746361-2.jpg",
         "images/vinted-9602746361-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5907,7 +6064,7 @@
         "images/vinted-9580235622-2.jpg",
         "images/vinted-9580235622-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5962,7 +6119,7 @@
         "images/vinted-9579803801-2.jpg",
         "images/vinted-9579803801-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6539,7 +6696,7 @@
         "images/vinted-9562314219-2.jpg",
         "images/vinted-9562314219-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6610,7 +6767,7 @@
       "id": "9562192907",
       "title": "Vintage Traditional Indonesian Ulos - accessory, wall frame, rug, table runner",
       "priceCzk": 1300,
-      "priceEur": 53,
+      "priceEur": 54,
       "brand": "Handmade Beauty",
       "size": "",
       "sizeGroup": "",
@@ -6877,7 +7034,7 @@
       "id": "9538548234",
       "title": "Pure 925 silver pearl bracelet",
       "priceCzk": 1300,
-      "priceEur": 53,
+      "priceEur": 54,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -7462,7 +7619,7 @@
         "images/vinted-9477421040-2.jpg",
         "images/vinted-9477421040-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7517,7 +7674,7 @@
         "images/vinted-9476370273-2.jpg",
         "images/vinted-9476370273-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7808,7 +7965,7 @@
       "id": "9438210918",
       "title": "Fastrack Quartz Analog Silver Dial Stainless Steel Strap Watch",
       "priceCzk": 449,
-      "priceEur": 18,
+      "priceEur": 19,
       "brand": "Fastrack",
       "size": "30–38 mm",
       "sizeGroup": "",
@@ -8248,7 +8405,7 @@
         "images/vinted-9395115967-2.jpg",
         "images/vinted-9395115967-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10368,7 +10525,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10423,7 +10580,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,

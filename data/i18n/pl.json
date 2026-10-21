@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T10:48:19.869Z",
-  "count": 7123,
+  "generated": "2026-10-21T16:23:48.848Z",
+  "count": 7178,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -28662,6 +28662,226 @@
       "text": "Zapytaj na WhatsAppie",
       "src": "1764fa897b44",
       "via": "claude"
+    },
+    "item.10463767343.title": {
+      "text": "Pikowana torba podróżna w stylu retro hippie z motywem furgonetki | Fantazyjna torba typu duffel | Torba weekendowa",
+      "src": "cc8177c524f4"
+    },
+    "item.10463583902.title": {
+      "text": "Zestaw z czystej miedzi | Bransoletka z miedzi | Pierścionek z miedzi | Biżuteria z miedzi z magnesami | Styl vintage",
+      "src": "1d6e0a8c1f92"
+    },
+    "item.10473357779.title": {
+      "text": "Torba w stylu retro z pikowanym wzorem przedstawiającym kampera | Fantazyjna torba podróżna | Torba weekendowa w stylu boho-hippie | Torba na pieluchy",
+      "src": "09c3e08aa012"
+    },
+    "item.10463767343.description": {
+      "text": "Lekka i pojemna. \nKamper w stylu hippisowskim retro. \nKolory tęczy. \nStyl cottagecore, estetyka lat 70. \nIdealna na siłownię, weekendowe wyjazdy, pływanie, piknik i spędzanie czasu na świeżym powietrzu. \n\n#Boho #Hippie #TorbaPikowana\n#TorbaWeekendowa #Kamper #Retro #ModaFestiwalowa #TorbaNaRamię #Podróże #Cottagecore #Vintage #TorbaPodróżna",
+      "src": "30fa8ce02435"
+    },
+    "item.10463583902.description": {
+      "text": "Regulowana i unisex.  \nMiedź o właściwościach leczniczych oraz magnes. \nMagnes przyciąga żelazo zawarte we krwi i wspomaga krążenie. \nZgodnie z tradycyjną ajurwedą oraz współczesną nauką miedź posiada właściwości przeciwbakteryjne oraz uziemiające. \n\nInna, tańsza bransoletka wykonana wyłącznie z miedzi – https://www.vinted.cz/items/10313811804-copper-magnetic-bracelet-indian-hindu-spiritual\n\n#miedź #bransoletkamiedziana #ajurweda #ajurveda #lecznicze #duchowe #indyjskie #hinduskie #joga #namaste #vintage #boho",
+      "src": "8719daccc71f"
+    },
+    "item.10473357779.description": {
+      "text": "Urocza torba podróżna w kształcie kampera w stylu retro, ozdobiona żywym, pikowanym wzorem podwodnej rafy w technice 2D. Przedstawia kolorowe korale, rozgwiazdy, muszle i rybki. \nLekka, ale o dużej pojemności. \nIdealna jako oryginalna torba na weekend, torba plażowa, torba na siłownię lub bagaż podręczny na krótką podróż. Przestronne wnętrze z zapięciem na zamek błyskawiczny.\n\nW ofercie mam również inny wzór w kolorach tęczy – https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #hippie #vintage #camper #torba podróżna #torba na siłownię #torba na pieluchy #fantazyjna #lata 70. #retro #y2k",
+      "src": "5dcb4a8fd144"
+    },
+    "text.28b5afbde6fd": {
+      "text": "470 sztuk",
+      "src": "28b5afbde6fd"
+    },
+    "text.5b476800841a": {
+      "text": "311 sztuk",
+      "src": "5b476800841a"
+    },
+    "text.1e78aa33705e": {
+      "text": "Strona 1 z 39",
+      "src": "1e78aa33705e"
+    },
+    "text.7b4597832e3b": {
+      "text": "Strona 2 z 39",
+      "src": "7b4597832e3b"
+    },
+    "text.d6509434eebd": {
+      "text": "Strona 3 z 39",
+      "src": "d6509434eebd"
+    },
+    "text.7c6c3a1ed3a5": {
+      "text": "Strona 4 z 39",
+      "src": "7c6c3a1ed3a5"
+    },
+    "text.67f15463e747": {
+      "text": "Strona 5 z 39",
+      "src": "67f15463e747"
+    },
+    "text.e41db7901208": {
+      "text": "Strona 6 z 39",
+      "src": "e41db7901208"
+    },
+    "text.d37b94564f4b": {
+      "text": "Strona 7 z 39",
+      "src": "d37b94564f4b"
+    },
+    "text.e9041bf4fa85": {
+      "text": "Strona 8 z 39",
+      "src": "e9041bf4fa85"
+    },
+    "text.9b741c67df7d": {
+      "text": "Strona 9 z 39",
+      "src": "9b741c67df7d"
+    },
+    "text.8a9a1242ffe8": {
+      "text": "Strona 10 z 39",
+      "src": "8a9a1242ffe8"
+    },
+    "text.80cda790244c": {
+      "text": "Strona 11 z 39",
+      "src": "80cda790244c"
+    },
+    "text.11ea03be1b40": {
+      "text": "Strona 12 z 39",
+      "src": "11ea03be1b40"
+    },
+    "text.80f3ad0c01d5": {
+      "text": "Strona 13 z 39",
+      "src": "80f3ad0c01d5"
+    },
+    "text.a4d5df78c522": {
+      "text": "Strona 14 z 39",
+      "src": "a4d5df78c522"
+    },
+    "text.451ffa10c5d5": {
+      "text": "Strona 15 z 39",
+      "src": "451ffa10c5d5"
+    },
+    "text.9682d4b4d439": {
+      "text": "Strona 16 z 39",
+      "src": "9682d4b4d439"
+    },
+    "text.ab834f99ca0e": {
+      "text": "Strona 17 z 39",
+      "src": "ab834f99ca0e"
+    },
+    "text.999ef778cbf9": {
+      "text": "Strona 18 z 39",
+      "src": "999ef778cbf9"
+    },
+    "text.a948d5b91548": {
+      "text": "Strona 19 z 39",
+      "src": "a948d5b91548"
+    },
+    "text.b19de89ad2bc": {
+      "text": "Strona 20 z 39",
+      "src": "b19de89ad2bc"
+    },
+    "text.206337084c47": {
+      "text": "Strona 21 z 39",
+      "src": "206337084c47"
+    },
+    "text.8acd10aca020": {
+      "text": "Strona 22 z 39",
+      "src": "8acd10aca020"
+    },
+    "text.175bb7f25001": {
+      "text": "Strona 23 z 39",
+      "src": "175bb7f25001"
+    },
+    "text.2fa8fa26e3fe": {
+      "text": "Strona 24 z 39",
+      "src": "2fa8fa26e3fe"
+    },
+    "text.d0b0ccf41cc8": {
+      "text": "Strona 25 z 39",
+      "src": "d0b0ccf41cc8"
+    },
+    "text.87b5b507706f": {
+      "text": "Strona 26 z 39",
+      "src": "87b5b507706f"
+    },
+    "text.bc52f4e2e4e5": {
+      "text": "Strona 27 z 39",
+      "src": "bc52f4e2e4e5"
+    },
+    "text.98620628e664": {
+      "text": "Strona 28 z 39",
+      "src": "98620628e664"
+    },
+    "text.304c0bdcf7f1": {
+      "text": "Strona 29 z 39",
+      "src": "304c0bdcf7f1"
+    },
+    "text.09a9b96b5602": {
+      "text": "Strona 30 z 39",
+      "src": "09a9b96b5602"
+    },
+    "text.61119a3984d0": {
+      "text": "Strona 31 z 39",
+      "src": "61119a3984d0"
+    },
+    "text.be7a978ebd2b": {
+      "text": "Strona 32 z 39",
+      "src": "be7a978ebd2b"
+    },
+    "text.eaac90afceaf": {
+      "text": "Strona 33 z 39",
+      "src": "eaac90afceaf"
+    },
+    "text.7f69cb3f267d": {
+      "text": "Strona 34 z 39",
+      "src": "7f69cb3f267d"
+    },
+    "text.7479faac0cee": {
+      "text": "Strona 35 z 39",
+      "src": "7479faac0cee"
+    },
+    "text.cb080bc91b43": {
+      "text": "Strona 36 z 39",
+      "src": "cb080bc91b43"
+    },
+    "text.ca494a4881f5": {
+      "text": "Strona 37 z 39",
+      "src": "ca494a4881f5"
+    },
+    "text.0ed1d7deb10e": {
+      "text": "Strona 38 z 39",
+      "src": "0ed1d7deb10e"
+    },
+    "text.23ff8e94ac12": {
+      "text": "Strona 39 z 39",
+      "src": "23ff8e94ac12"
+    },
+    "text.90f8ddd58deb": {
+      "text": "95 recenzji na stronie Vinted →",
+      "src": "90f8ddd58deb"
+    },
+    "text.5ccc7ef4fdeb": {
+      "text": "1710 sztuk na sprzedaż · 116 sprzedanych",
+      "src": "5ccc7ef4fdeb"
+    },
+    "text.3e24238d716f": {
+      "text": "44 osoby dodały tę pozycję do ulubionych w serwisie Vinted",
+      "src": "3e24238d716f"
+    },
+    "text.a67a3bc5309f": {
+      "text": "Zakupy indyjskiej odzieży, biżuterii i artykułów dekoracyjnych do domu w Europie, strona 39",
+      "src": "a67a3bc5309f"
+    },
+    "text.335edb1ed116": {
+      "text": "Ocena 5,0 na 5 na podstawie 95 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "335edb1ed116"
+    },
+    "text.81c4e2e47285": {
+      "text": "Lekki i pojemny. Kamper w stylu hippisowskim retro. Kolory tęczy. Styl „cottagecore”, estetyka lat 70. Idealny na siłownię, weekendowe wycieczki, pływanie…",
+      "src": "81c4e2e47285"
+    },
+    "text.7c5fc229de62": {
+      "text": "Regulowany i unisex. Miedź o właściwościach leczniczych oraz magnes. Magnes przyciąga żelazo zawarte we krwi i wspomaga krążenie. Miedź ma właściwości przeciwbakteryjne oraz energetyczne…",
+      "src": "7c5fc229de62"
+    },
+    "text.7f3b1e61e0fd": {
+      "text": "Urocza torba podróżna w kształcie kampera w stylu retro, ozdobiona żywym, pikowanym wzorem rafy podwodnej w stylu 2D. Przedstawia kolorowe korale, rozgwiazdy, muszle i ryby…",
+      "src": "7f3b1e61e0fd"
     }
   }
 }
