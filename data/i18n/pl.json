@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-21T16:23:48.848Z",
-  "count": 7178,
+  "generated": "2026-10-22T05:17:52.889Z",
+  "count": 7180,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -28882,6 +28882,14 @@
     "text.7f3b1e61e0fd": {
       "text": "Urocza torba podróżna w kształcie kampera w stylu retro, ozdobiona żywym, pikowanym wzorem rafy podwodnej w stylu 2D. Przedstawia kolorowe korale, rozgwiazdy, muszle i ryby…",
       "src": "7f3b1e61e0fd"
+    },
+    "text.a8dac0a2c8bb": {
+      "text": "1709 przedmiotów na sprzedaż · 117 sprzedanych",
+      "src": "a8dac0a2c8bb"
+    },
+    "text.09c3e08aa012": {
+      "text": "Torba w stylu retro z pikowanym wzorem przedstawiającym kampera | Fantazyjna torba podróżna | Torba weekendowa w stylu boho-hippie | Torba na pieluchy",
+      "src": "09c3e08aa012"
     }
   }
 }

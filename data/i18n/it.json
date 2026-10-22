@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-21T16:23:45.318Z",
-  "count": 7178,
+  "generated": "2026-10-22T05:17:52.077Z",
+  "count": 7180,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -28882,6 +28882,14 @@
     "text.7f3b1e61e0fd": {
       "text": "Simpatica borsa da viaggio a forma di camper retrò, con un vivace motivo 2D trapuntato che raffigura una barriera corallina sottomarina. Presenta coralli colorati, stelle marine, conchiglie e pesci…",
       "src": "7f3b1e61e0fd"
+    },
+    "text.a8dac0a2c8bb": {
+      "text": "1709 pezzi in vendita · 117 venduti",
+      "src": "a8dac0a2c8bb"
+    },
+    "text.09c3e08aa012": {
+      "text": "Borsa trapuntata in stile retrò con motivo camper | Borsa da viaggio stravagante | Borsa da weekend in stile boho-hippie | Borsa per pannolini",
+      "src": "09c3e08aa012"
     }
   }
 }

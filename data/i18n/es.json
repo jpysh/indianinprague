@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-21T16:23:46.889Z",
-  "count": 7178,
+  "generated": "2026-10-22T05:17:52.455Z",
+  "count": 7180,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -28882,6 +28882,14 @@
     "text.7f3b1e61e0fd": {
       "text": "Bonita bolsa de viaje con forma de furgoneta camper retro y un llamativo diseño en 2D acolchado que representa un arrecife submarino. Presenta coloridos corales, estrellas de mar, conchas marinas y peces…",
       "src": "7f3b1e61e0fd"
+    },
+    "text.a8dac0a2c8bb": {
+      "text": "1709 piezas a la venta · 117 vendidas",
+      "src": "a8dac0a2c8bb"
+    },
+    "text.09c3e08aa012": {
+      "text": "Bolso acolchado de estilo retro con motivo de furgoneta camper | Bolso de viaje original | Bolso de viaje de fin de semana de estilo boho-hippie | Bolso para pañales",
+      "src": "09c3e08aa012"
     }
   }
 }

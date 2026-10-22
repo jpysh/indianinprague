@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-21T16:23:43.983Z",
-  "count": 7181,
+  "generated": "2026-10-22T05:17:51.680Z",
+  "count": 7183,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -28893,6 +28893,14 @@
     "text.7f3b1e61e0fd": {
       "text": "Niedliche Reisetasche in Form eines Retro-Wohnmobils mit einem farbenfrohen, zweidimensional gesteppten Unterwasser-Riff-Motiv. Mit bunten Korallen, Seesternen, Muscheln und Fischen.…",
       "src": "7f3b1e61e0fd"
+    },
+    "text.a8dac0a2c8bb": {
+      "text": "1.709 Artikel zum Verkauf · 117 verkauft",
+      "src": "a8dac0a2c8bb"
+    },
+    "text.09c3e08aa012": {
+      "text": "Retro-Tasche im Camper-Van-Stil mit Steppmuster | Verspielte Reisetasche | Boho-Hippie-Wochenendtasche | Wickeltasche",
+      "src": "09c3e08aa012"
     }
   }
 }
