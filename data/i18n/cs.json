@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-22T05:17:53.413Z",
-  "count": 7180,
+  "generated": "2026-10-23T05:18:02.287Z",
+  "count": 7193,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -30925,13 +30925,53 @@
       "text": "Roztomilá cestovní taška ve tvaru retro karavanu s výrazným 2D prošívaným motivem podmořského útesu. Zdobí ji barevné korály, hvězdice, mušle a ryby…",
       "src": "7f3b1e61e0fd"
     },
+    "text.a8dac0a2c8bb": {
+      "text": "1709 kusů na prodej · 117 prodáno",
+      "src": "a8dac0a2c8bb"
+    },
+    "text.09c3e08aa012": {
+      "text": "Retro prošívaná taška ve stylu karavanu | Originální cestovní taška | Taška na víkend ve stylu boho-hippie | Taška na plenky",
+      "src": "09c3e08aa012"
+    },
+    "item.10486458688.title": {
+      "text": "Originální prošívaná cestovní taška s lesním motivem | Taška na víkend | Taška ve stylu boho | Taška na plenky",
+      "src": "229eadb39056"
+    },
+    "item.10490025694.title": {
+      "text": "Originální podvodní retro cestovní taška ve stylu karavanu | Prošívaná cestovní taška | Taška na víkend ve stylu boho-hippie",
+      "src": "e19749623a54"
+    },
+    "item.10486458688.description": {
+      "text": "Lehká, ale s velkou kapacitou. \nZ měkkého materiálu – směs bavlny.\nHravý potisk s lesním leopardem a listy. \nIdeální na pikniky, do přírody, do posilovny nebo jako měkká přebalovací taška. \n\nMám hippie tašku s motivem duhy – https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #cestovnítaška #cottagecore #les #hippie #víkendovátaška #indickýpotisk #prošívaná",
+      "src": "83039fde80f0"
+    },
+    "item.10490025694.description": {
+      "text": "Prošívaná cestovní taška z polyesteru s potiskem retro karavanu v podmořském prostředí s hvězdicemi, mušlemi, korály a rybami. \nLehká a s velkou kapacitou. \nHravý styl 70. let. \nSkvělá na pikniky, do posilovny, na výlety do přírody, na víkendové výlety nebo jako taška na plenky. \n\nMám i kompaktnější prošívanou tašku z bavlny – https://www.vinted.cz/items/10486458688-whimsical-forest-themed-quilted-travel-bag-weekender-duffel-bag-boho-bag-diaper-bag\n\n#boho #retro #hippie #campervan #underwater #whimsical #travelbag #70s #oldschool #vintage",
+      "src": "b87aec8eaa42"
+    },
+    "text.b95c4766f777": {
+      "text": "472 kusů",
+      "src": "b95c4766f777"
+    },
+    "text.a7270263ff6f": {
+      "text": "97 recenzí na Vintedu →",
+      "src": "a7270263ff6f"
+    },
     "text.537b3274202c": {
       "text": "Plakát formátu A3: Krišna Govinda",
       "src": "537b3274202c"
     },
-    "text.a8dac0a2c8bb": {
-      "text": "1709 kusů na prodej · 117 prodáno",
-      "src": "a8dac0a2c8bb"
+    "text.e63eb1513295": {
+      "text": "1710 kusů na prodej · 118 prodáno",
+      "src": "e63eb1513295"
+    },
+    "text.8e54a3669856": {
+      "text": "43 lidí si to uložilo na Vinted",
+      "src": "8e54a3669856"
+    },
+    "text.6a1d93b190da": {
+      "text": "50 lidí si to uložilo na Vinted",
+      "src": "6a1d93b190da"
     },
     "text.1052f2eb7249": {
       "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
@@ -30941,13 +30981,25 @@
       "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
       "src": "9c6d4a4d7c3d"
     },
+    "text.cc8177c524f4": {
+      "text": "Prošívaná retro cestovní taška ve stylu hippie | Originální cestovní taška | Taška na víkend",
+      "src": "cc8177c524f4"
+    },
+    "text.1af4748616af": {
+      "text": "Hodnocení 5,0 z 5 na základě 97 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "1af4748616af"
+    },
     "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Maharádžovi.",
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
       "src": "95afd31227cc"
     },
-    "text.09c3e08aa012": {
-      "text": "Retro prošívaná taška ve stylu karavanu | Originální cestovní taška | Taška na víkend ve stylu boho-hippie | Taška na plenky",
-      "src": "09c3e08aa012"
+    "text.edbb9ae85c49": {
+      "text": "Prošívaná cestovní taška z polyesteru s potiskem retro karavanu v podmořském prostředí s hvězdicemi, mušlemi, korály a rybami. Lehká a s vynikající…",
+      "src": "edbb9ae85c49"
+    },
+    "text.bd7012eaf217": {
+      "text": "Lehká, ale s velkou kapacitou. Z měkkého materiálu – směs bavlny. Hravý potisk s lesním leopardem a listy. Ideální na pikniky, do přírody, do posilovny, jako měkká přebalovací podložka…",
+      "src": "bd7012eaf217"
     }
   }
 }

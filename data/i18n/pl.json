@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-22T05:17:52.889Z",
-  "count": 7180,
+  "generated": "2026-10-23T05:18:01.572Z",
+  "count": 7193,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -28890,6 +28890,58 @@
     "text.09c3e08aa012": {
       "text": "Torba w stylu retro z pikowanym wzorem przedstawiającym kampera | Fantazyjna torba podróżna | Torba weekendowa w stylu boho-hippie | Torba na pieluchy",
       "src": "09c3e08aa012"
+    },
+    "item.10486458688.title": {
+      "text": "Oryginalna pikowana torba podróżna z motywem leśnym | Torba typu „weekender” | Torba w stylu boho | Torba na pieluchy",
+      "src": "229eadb39056"
+    },
+    "item.10490025694.title": {
+      "text": "Oryginalna torba podróżna w stylu retro z motywem podwodnego kampera | Pikowana torba podróżna | Torba weekendowa w stylu boho-hippie",
+      "src": "e19749623a54"
+    },
+    "item.10486458688.description": {
+      "text": "Lekka, ale o dużej pojemności. \nWykonana z miękkiej mieszanki bawełny.\nZabawny nadruk przedstawiający leśnego lamparta i liście. \nIdealna na pikniki, na świeżym powietrzu, na siłownię oraz jako miękka torba na pieluchy. \n\nPosiadam torbę w stylu hippie z motywem tęczy – https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #torba podróżna #cottagecore #las #hippie #torba weekendowa #indyjski wzór #pikowana",
+      "src": "83039fde80f0"
+    },
+    "item.10490025694.description": {
+      "text": "Pikowana torba podróżna z poliestru z nadrukiem przedstawiającym kampera w stylu retro na tle podwodnego krajobrazu z rozgwiazdami, muszlami, koralowcami i rybami. \nLekka i pojemna. \nPełna fantazji estetyka w stylu lat 70. \nIdealna na pikniki, na siłownię, na świeżym powietrzu, na weekendowe wyjazdy lub jako torba na pieluchy. \n\nPosiadam również bardziej kompaktową pikowaną torbę z bawełny – https://www.vinted.cz/items/10486458688-whimsical-forest-themed-quilted-travel-bag-weekender-duffel-bag-boho-bag-diaper-bag\n\n#boho #retro #hippie #kamper #podwodny #fantazyjny #torbapodróżna #lata70 #oldschool #vintage",
+      "src": "b87aec8eaa42"
+    },
+    "text.b95c4766f777": {
+      "text": "472 sztuki",
+      "src": "b95c4766f777"
+    },
+    "text.a7270263ff6f": {
+      "text": "97 recenzji na stronie Vinted →",
+      "src": "a7270263ff6f"
+    },
+    "text.e63eb1513295": {
+      "text": "1710 sztuk na sprzedaż · 118 sprzedanych",
+      "src": "e63eb1513295"
+    },
+    "text.8e54a3669856": {
+      "text": "43 osoby dodały tę pozycję do ulubionych na Vinted",
+      "src": "8e54a3669856"
+    },
+    "text.6a1d93b190da": {
+      "text": "50 osób dodało tę pozycję do ulubionych na Vinted",
+      "src": "6a1d93b190da"
+    },
+    "text.cc8177c524f4": {
+      "text": "Pikowana torba podróżna w stylu retro hippie z motywem furgonetki | Fantazyjna torba typu duffel | Torba weekendowa",
+      "src": "cc8177c524f4"
+    },
+    "text.1af4748616af": {
+      "text": "Ocena 5,0 na 5 na podstawie 97 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "1af4748616af"
+    },
+    "text.edbb9ae85c49": {
+      "text": "Pikowana torba podróżna z poliestru z nadrukiem przedstawiającym kampera w stylu retro na tle podwodnego krajobrazu z rozgwiazdami, muszlami, koralowcami i rybami. Lekka, o doskonałej…",
+      "src": "edbb9ae85c49"
+    },
+    "text.bd7012eaf217": {
+      "text": "Lekka, ale o dużej pojemności. Wykonana z miękkiej mieszanki bawełny. Zabawny nadruk przedstawiający leśnego lamparta i liście. Idealna na pikniki, na świeżym powietrzu, na siłownię, jako miękka pieluszka…",
+      "src": "bd7012eaf217"
     }
   }
 }

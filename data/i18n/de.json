@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-22T05:17:51.680Z",
-  "count": 7183,
+  "generated": "2026-10-23T05:17:59.210Z",
+  "count": 7196,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -28901,6 +28901,58 @@
     "text.09c3e08aa012": {
       "text": "Retro-Tasche im Camper-Van-Stil mit Steppmuster | Verspielte Reisetasche | Boho-Hippie-Wochenendtasche | Wickeltasche",
       "src": "09c3e08aa012"
+    },
+    "item.10486458688.title": {
+      "text": "Verspielte, gesteppte Reisetasche mit Waldmotiv | Weekender-Reisetasche | Boho-Tasche | Wickeltasche",
+      "src": "229eadb39056"
+    },
+    "item.10490025694.title": {
+      "text": "Verspielte Reisetasche im Retro-Camper-Stil mit Unterwasser-Motiv | Gesteppte Reisetasche | Boho-Hippie-Wochenendtasche",
+      "src": "e19749623a54"
+    },
+    "item.10486458688.description": {
+      "text": "Leicht, aber mit großem Fassungsvermögen. \nWeiches Material aus Baumwollmischung.\nVerspieltes Waldmuster mit Leoparden und Blättern. \nPerfekt für Picknicks, Outdoor-Aktivitäten, das Fitnessstudio oder als weiche Wickeltasche. \n\nIch besitze eine Hippie-Tasche im Regenbogen-Design – https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #Reisetasche #Cottagecore #Wald #Hippie #Wochenendtasche #indischerDruck #gesteppt",
+      "src": "83039fde80f0"
+    },
+    "item.10490025694.description": {
+      "text": "Gesteppte Reisetasche aus Polyester mit aufgedrucktem Retro-Wohnmobil in einer Unterwasserszene mit Seesternen, Muscheln, Korallen und Fischen. \nLeicht und mit großem Fassungsvermögen. \nVerspielte 70er-Jahre-Ästhetik. \nIdeal für Picknicks, das Fitnessstudio, Outdoor-Aktivitäten, Wochenendausflüge oder als Wickeltasche. \n\nIch biete auch eine kompaktere, gesteppte Tasche aus Baumwolle an – https://www.vinted.cz/items/10486458688-whimsical-forest-themed-quilted-travel-bag-weekender-duffel-bag-boho-bag-diaper-bag\n\n#boho #retro #hippie #Wohnmobil #Unterwasser #verspielt #Reisetasche #70er #OldSchool #Vintage",
+      "src": "b87aec8eaa42"
+    },
+    "text.b95c4766f777": {
+      "text": "472 Teile",
+      "src": "b95c4766f777"
+    },
+    "text.a7270263ff6f": {
+      "text": "97 Bewertungen auf Vinted →",
+      "src": "a7270263ff6f"
+    },
+    "text.e63eb1513295": {
+      "text": "1.710 Artikel zum Verkauf · 118 verkauft",
+      "src": "e63eb1513295"
+    },
+    "text.8e54a3669856": {
+      "text": "43 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "8e54a3669856"
+    },
+    "text.6a1d93b190da": {
+      "text": "50 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "6a1d93b190da"
+    },
+    "text.cc8177c524f4": {
+      "text": "Gesteppte Retro-Hippie-Van-Reisetasche | Verspielte Reisetasche | Wochenendtasche",
+      "src": "cc8177c524f4"
+    },
+    "text.1af4748616af": {
+      "text": "Bewertung: 5,0 von 5 bei 97 Kundenbewertungen. Lesen Sie diese auf Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "1af4748616af"
+    },
+    "text.edbb9ae85c49": {
+      "text": "Gesteppte Reisetasche aus Polyester mit einem aufgedruckten Retro-Wohnmobil in einer Unterwasserszene mit Seesternen, Muscheln, Korallen und Fischen. Leicht und mit hervorragender…",
+      "src": "edbb9ae85c49"
+    },
+    "text.bd7012eaf217": {
+      "text": "Leicht und dennoch sehr geräumig. Weiches Material aus einer Baumwollmischung. Verspieltes Waldmuster mit Leoparden und Blättern. Perfekt für Picknicks, Outdoor-Aktivitäten, das Fitnessstudio, als weiche Windelunterlage …",
+      "src": "bd7012eaf217"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-22T05:17:51.315Z",
-  "count": 7180,
+  "generated": "2026-10-23T05:17:58.426Z",
+  "count": 7193,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -28890,6 +28890,58 @@
     "text.09c3e08aa012": {
       "text": "Sac matelassé rétro « Camper Van » | Sac de voyage fantaisiste | Sac de voyage « Boho Hippie » | Sac à langer",
       "src": "09c3e08aa012"
+    },
+    "item.10486458688.title": {
+      "text": "Sac de voyage matelassé au motif forestier fantaisiste | Sac de voyage de week-end | Sac bohème | Sac à langer",
+      "src": "229eadb39056"
+    },
+    "item.10490025694.title": {
+      "text": "Sac de voyage rétro fantaisiste sur le thème des camping-cars sous-marins | Sac de voyage matelassé | Sac de week-end bohème-hippie",
+      "src": "e19749623a54"
+    },
+    "item.10486458688.description": {
+      "text": "Léger mais d&#x27;une grande capacité. \nTissu doux en mélange de coton.\nImprimé fantaisiste représentant un léopard de la forêt et des feuilles. \nIdéal pour les pique-niques, les activités en plein air, la salle de sport ou comme sac à langer souple. \n\nJ&#x27;ai un sac hippie sur le thème de l&#x27;arc-en-ciel : https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #sacdevoyage #cottagecore #forêt #hippie #sacdeweek-end #impriméindien #matelassé",
+      "src": "83039fde80f0"
+    },
+    "item.10490025694.description": {
+      "text": "Sac de voyage matelassé en polyester, orné d&#x27;un motif imprimé représentant un camping-car rétro dans un décor sous-marin avec des étoiles de mer, des coquillages, du corail et des poissons. \nLéger et très spacieux. \nEsthétique fantaisiste inspirée des années 70. \nIdéal pour les pique-niques, la salle de sport, les activités en plein air, les escapades du week-end ou comme sac à langer. \n\nJe propose également un sac matelassé plus compact en coton : https://www.vinted.cz/items/10486458688-whimsical-forest-themed-quilted-travel-bag-weekender-duffel-bag-boho-bag-diaper-bag\n\n#boho #rétro #hippie #camping-car #sous-marin #fantaisiste #sacdevoyage #années70 #oldschool #vintage",
+      "src": "b87aec8eaa42"
+    },
+    "text.b95c4766f777": {
+      "text": "472 pièces",
+      "src": "b95c4766f777"
+    },
+    "text.a7270263ff6f": {
+      "text": "97 avis sur Vinted →",
+      "src": "a7270263ff6f"
+    },
+    "text.e63eb1513295": {
+      "text": "1 710 pièces en vente · 118 vendues",
+      "src": "e63eb1513295"
+    },
+    "text.8e54a3669856": {
+      "text": "43 personnes ont enregistré cette annonce sur Vinted",
+      "src": "8e54a3669856"
+    },
+    "text.6a1d93b190da": {
+      "text": "50 personnes ont enregistré cette annonce sur Vinted",
+      "src": "6a1d93b190da"
+    },
+    "text.cc8177c524f4": {
+      "text": "Sac de voyage matelassé style hippie rétro | Sac de voyage fantaisiste | Sac de week-end",
+      "src": "cc8177c524f4"
+    },
+    "text.1af4748616af": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 97 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "1af4748616af"
+    },
+    "text.edbb9ae85c49": {
+      "text": "Sac de voyage matelassé en polyester, orné d&#x27;un motif imprimé représentant un camping-car rétro dans un décor sous-marin avec des étoiles de mer, des coquillages, du corail et des poissons. Léger et très…",
+      "src": "edbb9ae85c49"
+    },
+    "text.bd7012eaf217": {
+      "text": "Léger mais d&#x27;une grande capacité. Tissu doux en mélange de coton. Imprimé fantaisiste représentant un léopard des bois et des feuilles. Idéal pour les pique-niques, les activités en plein air, la salle de sport, comme lange…",
+      "src": "bd7012eaf217"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-22T05:17:52.455Z",
-  "count": 7180,
+  "generated": "2026-10-23T05:18:00.597Z",
+  "count": 7193,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -28890,6 +28890,58 @@
     "text.09c3e08aa012": {
       "text": "Bolso acolchado de estilo retro con motivo de furgoneta camper | Bolso de viaje original | Bolso de viaje de fin de semana de estilo boho-hippie | Bolso para pañales",
       "src": "09c3e08aa012"
+    },
+    "item.10486458688.title": {
+      "text": "Bolso de viaje acolchado con un original diseño forestal | Bolsa de viaje para el fin de semana | Bolso boho | Bolso para pañales",
+      "src": "229eadb39056"
+    },
+    "item.10490025694.title": {
+      "text": "Bolso de viaje retro con diseño de autocaravana submarina y toque caprichoso | Bolsa de viaje acolchada | Bolsa de fin de semana de estilo boho-hippie",
+      "src": "e19749623a54"
+    },
+    "item.10486458688.description": {
+      "text": "Ligera, pero con gran capacidad. \nTejido suave de mezcla de algodón.\nEstampado divertido de leopardo del bosque y hojas. \nPerfecta para picnics, actividades al aire libre, el gimnasio o como bolsa de pañales blanda. \n\nTengo un bolso hippie con temática de arcoíris: https://www.vinted.cz/items/10463767343-quilted-retro-hippie-van-travel-bag-whimsical-duffel-bag-weekender-bag\n\n#boho #bolsa de viaje #cottagecore #bosque #hippie #bolsa de fin de semana #estampado indio #acolchado",
+      "src": "83039fde80f0"
+    },
+    "item.10490025694.description": {
+      "text": "Bolso de viaje de poliéster acolchado con un estampado de una autocaravana retro en un paisaje submarino con estrellas de mar, conchas, corales y peces. \nLigero y de gran capacidad. \nEstética divertida al estilo de los años 70. \nIdeal para picnics, el gimnasio, actividades al aire libre, escapadas de fin de semana o como bolso para pañales. \n\nTengo una bolsa acolchada más compacta de algodón: https://www.vinted.cz/items/10486458688-whimsical-forest-themed-quilted-travel-bag-weekender-duffel-bag-boho-bag-diaper-bag\n\n#boho #retro #hippie #furgoneta #submarino #caprichoso #bolsa de viaje #años 70 #oldschool #vintage",
+      "src": "b87aec8eaa42"
+    },
+    "text.b95c4766f777": {
+      "text": "472 piezas",
+      "src": "b95c4766f777"
+    },
+    "text.a7270263ff6f": {
+      "text": "97 opiniones en Vinted →",
+      "src": "a7270263ff6f"
+    },
+    "text.e63eb1513295": {
+      "text": "1710 piezas a la venta · 118 vendidas",
+      "src": "e63eb1513295"
+    },
+    "text.8e54a3669856": {
+      "text": "43 personas han guardado esto en Vinted",
+      "src": "8e54a3669856"
+    },
+    "text.6a1d93b190da": {
+      "text": "50 personas han guardado esto en Vinted",
+      "src": "6a1d93b190da"
+    },
+    "text.cc8177c524f4": {
+      "text": "Bolso de viaje acolchado estilo hippie retro con diseño de furgoneta | Bolso de viaje original | Bolso de fin de semana",
+      "src": "cc8177c524f4"
+    },
+    "text.1af4748616af": {
+      "text": "Valoración de 5,0 sobre 5 según 97 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "1af4748616af"
+    },
+    "text.edbb9ae85c49": {
+      "text": "Bolsa de viaje de poliéster acolchada con un estampado de una autocaravana retro en un paisaje submarino con estrellas de mar, conchas, corales y peces. Ligera y con una excelente…",
+      "src": "edbb9ae85c49"
+    },
+    "text.bd7012eaf217": {
+      "text": "Ligera, pero con gran capacidad. Tejido suave de mezcla de algodón. Estampado divertido con leopardos del bosque y hojas. Perfecta para picnics, actividades al aire libre, el gimnasio, como cambiador blando…",
+      "src": "bd7012eaf217"
     }
   }
 }
