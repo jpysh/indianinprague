@@ -1,12 +1,122 @@
 {
-  "syncedAt": "2026-10-24T05:15:09.968Z",
+  "syncedAt": "2026-10-24T17:19:48.748Z",
   "rate": {
     "czkPerEur": 24.327,
     "fetched": "2026-10-24",
     "source": "ECB"
   },
-  "count": 199,
+  "count": 201,
   "items": [
+    {
+      "id": "10514142547",
+      "title": "Indian Blue Pottery Ceramic Tile Wall Hanger",
+      "priceCzk": 795,
+      "priceEur": 33,
+      "brand": "Jaipur",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New with tags",
+        "cs": "Nový s visačkou"
+      },
+      "color": {
+        "en": "Blue",
+        "cs": "Modrá"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Clothes bags & hangers",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1934,
+          "name": "Home accessories"
+        },
+        {
+          "id": 1939,
+          "name": "Storage & organisation"
+        },
+        {
+          "id": 2012,
+          "name": "Clothes bags & hangers"
+        }
+      ],
+      "description": "Blue Pottery Ceramic Tile Wall Crafted by Skilled Artisans in Jaipur, India. \nFeatures beautifully hand-painted ceramic tiles with a vibrant floral pattern, adding a decorative touch to any wall.\n5 Strong Utility Hooks – Perfect for organizing keys, bags, scarves, masks, towels, caps, and other daily essentials.\nUplifts any space. \nBeautiful country cottage aesthetic. \nDurable Iron & Ceramic Construction.\nEasy Installation & Versatile Use – Simple to mount and suitable for homes, offices, hallways, kitchens, and living rooms.\n\n#india #boho #vintage #homedecor #cottagecore #artisanal #vintage #indianhome #ethnic",
+      "photo": "images/vinted-10514142547-1.jpg",
+      "photos": [
+        "images/vinted-10514142547-1.jpg",
+        "images/vinted-10514142547-2.jpg",
+        "images/vinted-10514142547-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
+        "es": "https://www.vinted.es/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
+        "com": "https://www.vinted.com/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
+        "uk": "https://www.vinted.co.uk/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger"
+      }
+    },
+    {
+      "id": "10513562820",
+      "title": "Handmade Quilted Cotton Yoga Mat Bag | India Yoga Namaste",
+      "priceCzk": 750,
+      "priceEur": 31,
+      "brand": "Jaipur",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Red",
+        "cs": "Červená"
+      },
+      "category": "Uncategorised",
+      "vintedCategory": "Sports Yoga mat carriers & bags",
+      "crumbs": [
+        {
+          "id": 4332,
+          "name": "Sports"
+        },
+        {
+          "id": 4334,
+          "name": "Fitness, running & yoga"
+        },
+        {
+          "id": 4416,
+          "name": "Yoga & pilates equipment"
+        },
+        {
+          "id": 4451,
+          "name": "Yoga mat carriers & bags"
+        }
+      ],
+      "description": "Carry yoga essentials in style with this Handmade Quilted Cotton Yoga Mat Bag, beautifully handcrafted by skilled artisans in Jaipur, India.\nMade from premium quilted cotton fabric.\nLightweight and great capacity. \n28*6 inches. \nDesigned with an adjustable crossbody shoulder strap, secure full-length zipper closure, and a convenient exterior zipper pocket, this yoga mat bag comfortably carries yoga or Pilates mat while providing extra storage for phone, wallet, keys, towel, water bottle, or other workout essentials.\nPerfect for yoga studios, Pilates classes, gym sessions, meditation, travel, and outdoor practice, this quilted yoga carrier is lightweight, durable, and stylish enough for everyday use.\n\n#yoga #yogamat #yogastudio #pilates #workout #gymbag #yogabag #meditation #workoutbag #quilted #quiltedbag #india #hindu",
+      "photo": "images/vinted-10513562820-1.jpg",
+      "photos": [
+        "images/vinted-10513562820-1.jpg",
+        "images/vinted-10513562820-2.jpg",
+        "images/vinted-10513562820-3.jpg"
+      ],
+      "favourites": 7,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste",
+        "es": "https://www.vinted.es/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste",
+        "com": "https://www.vinted.com/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste",
+        "uk": "https://www.vinted.co.uk/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste"
+      }
+    },
     {
       "id": "10493834643",
       "title": "Quilted Travel Bag | Whimsical Retro Hippie Camper Van Bag | Boho Vintage Weekender Bag",
@@ -46,7 +156,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 32,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -203,7 +313,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -468,7 +578,7 @@
         "images/vinted-10401947975-2.jpg",
         "images/vinted-10401947975-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1225,7 +1335,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 31,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1720,7 +1830,7 @@
         "images/vinted-10189665539-2.jpg",
         "images/vinted-10189665539-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2136,7 +2246,7 @@
         "images/vinted-10129560822-2.jpg",
         "images/vinted-10129560822-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2438,7 +2548,7 @@
         "images/vinted-10111151684-2.jpg",
         "images/vinted-10111151684-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2823,7 +2933,7 @@
         "images/vinted-10035026195-2.jpg",
         "images/vinted-10035026195-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3080,7 +3190,7 @@
         "images/vinted-9942373135-2.jpg",
         "images/vinted-9942373135-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4013,7 +4123,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4998,7 +5108,7 @@
         "images/vinted-9603636575-2.jpg",
         "images/vinted-9603636575-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6284,7 +6394,7 @@
         "images/vinted-9565566983-2.jpg",
         "images/vinted-9565566983-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": true,
@@ -6437,7 +6547,7 @@
         "images/vinted-9565320171-2.jpg",
         "images/vinted-9565320171-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7238,7 +7348,7 @@
         "images/vinted-9498955593-2.jpg",
         "images/vinted-9498955593-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7568,7 +7678,7 @@
         "images/vinted-9477421040-2.jpg",
         "images/vinted-9477421040-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9095,7 +9205,7 @@
         "images/vinted-9339704755-2.jpg",
         "images/vinted-9339704755-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9810,7 +9920,7 @@
         "images/vinted-9316357780-2.jpg",
         "images/vinted-9316357780-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 26,
       "reserved": false,
       "sold": false,
       "featured": false,

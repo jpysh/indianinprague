@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-24T05:17:22.288Z",
-  "count": 7203,
+  "generated": "2026-10-24T17:22:21.731Z",
+  "count": 7215,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -28982,6 +28982,54 @@
     "text.30776358a04d": {
       "text": "Sac en polyester matelassé orné d&#x27;un imprimé rétro représentant un camping-car hippie. De magnifiques nuances arc-en-ciel. Léger et très spacieux. Fantaisiste, style « cottagecore », années 70…",
       "src": "30776358a04d"
+    },
+    "item.10514142547.title": {
+      "text": "Crochet mural en carreaux de céramique de style « Indian Blue Pottery »",
+      "src": "7ac963d2a879"
+    },
+    "item.10513562820.title": {
+      "text": "Sac pour tapis de yoga en coton matelassé, fait main | India Yoga Namaste",
+      "src": "b302618303fe"
+    },
+    "item.10514142547.description": {
+      "text": "Carrelage mural en céramique « Blue Pottery », réalisé par des artisans qualifiés à Jaipur, en Inde. \nComposé de magnifiques carreaux de céramique peints à la main, ornés d’un motif floral éclatant, il apporte une touche décorative à n’importe quel mur.\n5 crochets robustes – Parfaits pour ranger vos clés, sacs, écharpes, masques, serviettes, casquettes et autres objets du quotidien.\nÉgaye n’importe quel espace. \nMagnifique style cottage champêtre. \nStructure durable en fer et en céramique.\nInstallation facile et utilisation polyvalente – Simple à fixer et adapté aux maisons, bureaux, couloirs, cuisines et salons.\n\n#inde #boho #vintage #décoration #cottagecore #artisanal #vintage #maisonindienne #ethnique",
+      "src": "927cb5c63e08"
+    },
+    "item.10513562820.description": {
+      "text": "Transportez vos accessoires de yoga avec élégance grâce à ce sac pour tapis de yoga en coton matelassé, fabriqué à la main par des artisans qualifiés à Jaipur, en Inde.\nRéalisé dans un tissu en coton matelassé haut de gamme.\nLéger et d’une grande capacité. \n28*6 pouces. \nDoté d’une bandoulière réglable, d’une fermeture à glissière sécurisée sur toute la longueur et d’une poche extérieure zippée très pratique, ce sac pour tapis de yoga vous permet de transporter confortablement votre tapis de yoga ou de Pilates tout en offrant un espace de rangement supplémentaire pour votre téléphone, votre portefeuille, vos clés, votre serviette, votre bouteille d’eau ou tout autre accessoire indispensable à votre entraînement.\nIdéal pour les studios de yoga, les cours de Pilates, les séances de sport, la méditation, les voyages et la pratique en plein air, ce sac mat de yoga matelassé est léger, résistant et suffisamment élégant pour un usage quotidien.\n\n#yoga #tapisdoyoga #studiodyoga #pilates #entraînement #sacdesport #sacsadoyoga #méditation #sacd&#x27;entraînement #matelassé #sacsmatelassé #Inde #hindou",
+      "src": "1f67229c2adf"
+    },
+    "text.8454f92ff14f": {
+      "text": "Jaipur",
+      "src": "8454f92ff14f"
+    },
+    "text.9635b1666ec6": {
+      "text": "155 pièces",
+      "src": "9635b1666ec6"
+    },
+    "text.53bebbe6187d": {
+      "text": "Neuf, avec étiquette · Bleu",
+      "src": "53bebbe6187d"
+    },
+    "text.83901fdf9eee": {
+      "text": "100 avis sur Vinted →",
+      "src": "83901fdf9eee"
+    },
+    "text.950bd7f6c536": {
+      "text": "1 711 pièces en vente · 120 vendues",
+      "src": "950bd7f6c536"
+    },
+    "text.270a4c12725c": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 100 avis d&#x27;acheteurs. Découvrez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "270a4c12725c"
+    },
+    "text.bbdc5e20ea3d": {
+      "text": "Transportez vos accessoires de yoga avec élégance grâce à ce sac pour tapis de yoga en coton matelassé, fabriqué à la main par des artisans qualifiés à Jaipur, en Inde. Fabriqué…",
+      "src": "bbdc5e20ea3d"
+    },
+    "text.53d9c2054dd4": {
+      "text": "Décoration murale en carreaux de céramique « Blue Pottery », réalisée par des artisans qualifiés à Jaipur, en Inde. Elle se compose de magnifiques carreaux de céramique peints à la main, ornés d&#x27;un motif floral éclatant…",
+      "src": "53d9c2054dd4"
     }
   }
 }
