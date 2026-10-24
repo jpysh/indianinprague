@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-23T05:17:59.982Z",
-  "count": 7193,
+  "generated": "2026-10-24T05:17:23.179Z",
+  "count": 7203,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -28942,6 +28942,46 @@
     "text.bd7012eaf217": {
       "text": "Leggero ma di grande capienza. Realizzato in morbido tessuto misto cotone. Fantasia stravagante con leopardo della foresta e foglie. Perfetto per i picnic, le attività all’aperto, la palestra, come morbido fasciatoio…",
       "src": "bd7012eaf217"
+    },
+    "item.10493834643.title": {
+      "text": "Borsa da viaggio trapuntata | Borsa stravagante in stile retrò hippie con motivo camper | Borsa da weekend in stile boho vintage",
+      "src": "9c5a0d3b923b"
+    },
+    "item.10493834643.description": {
+      "text": "Borsa in poliestere trapuntata con stampa retrò di un camper hippie.\nSplendide sfumature arcobaleno. \nLeggera e di grande capienza. \nStile stravagante, in stile “cottagecore”, ispirato agli anni ’70. \nIdeale per picnic, palestra, spiaggia, viaggi nel fine settimana o come borsa per pannolini. \n\nUn lenzuolo in stile hippie - https://www.vinted.cz/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste\n\nHo una borsa africana in stile boho - \nhttps://www.vinted.cz/items/10424837655-handmade-african-bag-nigeria-ankara-style-boho-ethnic-bag\n\n#boho #retro #hippie #wildchild #staywild #vintage #cottagecore #trapuntato #camper #arcobaleno",
+      "src": "acfaaa690119"
+    },
+    "text.5cec47cb1981": {
+      "text": "473 pezzi",
+      "src": "5cec47cb1981"
+    },
+    "text.8373696d4d32": {
+      "text": "98 recensioni su Vinted →",
+      "src": "8373696d4d32"
+    },
+    "text.38d570f8edb0": {
+      "text": "1709 articoli in vendita · 120 venduti",
+      "src": "38d570f8edb0"
+    },
+    "text.ac0e628ebacf": {
+      "text": "53 persone hanno salvato questo articolo su Vinted",
+      "src": "ac0e628ebacf"
+    },
+    "text.a0637b664aee": {
+      "text": "Valutato 5,0 su 5 in base a 98 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "a0637b664aee"
+    },
+    "text.229eadb39056": {
+      "text": "Borsa da viaggio trapuntata dal motivo stravagante ispirato alla foresta | Borsa da weekend | Borsa in stile boho | Borsa per pannolini",
+      "src": "229eadb39056"
+    },
+    "text.e19749623a54": {
+      "text": "Borsa da viaggio stravagante a tema camper retrò subacqueo | Borsa da viaggio trapuntata | Borsa da weekend in stile boho-hippie",
+      "src": "e19749623a54"
+    },
+    "text.30776358a04d": {
+      "text": "Borsa in poliestere trapuntata con stampa retrò raffigurante un camper hippie. Splendide sfumature arcobaleno. Leggera e di grande capienza. Fantasiosa, in stile cottagecore, anni ’70…",
+      "src": "30776358a04d"
     }
   }
 }

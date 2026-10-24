@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-23T05:18:01.572Z",
-  "count": 7193,
+  "generated": "2026-10-24T05:17:24.171Z",
+  "count": 7203,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -28942,6 +28942,46 @@
     "text.bd7012eaf217": {
       "text": "Lekka, ale o dużej pojemności. Wykonana z miękkiej mieszanki bawełny. Zabawny nadruk przedstawiający leśnego lamparta i liście. Idealna na pikniki, na świeżym powietrzu, na siłownię, jako miękka pieluszka…",
       "src": "bd7012eaf217"
+    },
+    "item.10493834643.title": {
+      "text": "Pikowana torba podróżna | Fantazyjna torba w stylu retro z motywem hipisowskiego kampera | Torba weekendowa w stylu boho vintage",
+      "src": "9c5a0d3b923b"
+    },
+    "item.10493834643.description": {
+      "text": "Pikowana torba z poliestru z nadrukiem przedstawiającym kampera w stylu retro hippie.\nPiękne odcienie tęczy. \nLekka i pojemna. \nFantazyjny styl w duchu cottagecore i estetyki lat 70. \nIdealna na pikniki, na siłownię, na plażę, na weekendowe wyjazdy lub jako torba na pieluchy. \n\nPrześcieradło w stylu hippisowskim – https://www.vinted.cz/items/10265107115-hippie-blanket-mandala-picnic-sofa-throw-tapestry-boho-decor-yoga-namaste\n\nPosiadam afrykańską torebkę w stylu boho – \nhttps://www.vinted.cz/items/10424837655-handmade-african-bag-nigeria-ankara-style-boho-ethnic-bag\n\n#boho #retro #hippie #wildchild #staywild #vintage #cottagecore #pikowana #kamper #tęcza",
+      "src": "acfaaa690119"
+    },
+    "text.5cec47cb1981": {
+      "text": "473 sztuki",
+      "src": "5cec47cb1981"
+    },
+    "text.8373696d4d32": {
+      "text": "98 recenzji na stronie Vinted →",
+      "src": "8373696d4d32"
+    },
+    "text.38d570f8edb0": {
+      "text": "1709 przedmiotów na sprzedaż · 120 sprzedanych",
+      "src": "38d570f8edb0"
+    },
+    "text.ac0e628ebacf": {
+      "text": "53 osoby dodały tę pozycję do ulubionych na Vinted",
+      "src": "ac0e628ebacf"
+    },
+    "text.a0637b664aee": {
+      "text": "Ocena 5,0 na 5 na podstawie 98 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "a0637b664aee"
+    },
+    "text.229eadb39056": {
+      "text": "Oryginalna pikowana torba podróżna z motywem leśnym | Torba typu „weekender” | Torba w stylu boho | Torba na pieluchy",
+      "src": "229eadb39056"
+    },
+    "text.e19749623a54": {
+      "text": "Oryginalna torba podróżna w stylu retro z motywem podwodnego kampera | Pikowana torba podróżna | Torba weekendowa w stylu boho-hippie",
+      "src": "e19749623a54"
+    },
+    "text.30776358a04d": {
+      "text": "Pikowana torba z poliestru z nadrukiem przedstawiającym kampera w stylu retro hippie. Piękne odcienie tęczy. Lekka i pojemna. Fantazyjna, w stylu cottagecore, lat 70.…",
+      "src": "30776358a04d"
     }
   }
 }
