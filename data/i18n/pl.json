@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-24T17:22:24.601Z",
-  "count": 7215,
+  "generated": "2026-10-25T06:22:04.754Z",
+  "count": 7236,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -28984,8 +28984,8 @@
       "src": "30776358a04d"
     },
     "item.10514142547.title": {
-      "text": "Wieszak ścienny z płytek ceramicznych w stylu indyjskiej niebieskiej ceramiki",
-      "src": "7ac963d2a879"
+      "text": "Wisząca dekoracja ścienna z indyjskiej ceramiki w stylu „Blue Pottery” | Wystrój w stylu boho | Wystrój wnętrz w stylu cottagecore",
+      "src": "3d3db0da7e54"
     },
     "item.10513562820.title": {
       "text": "Ręcznie wykonana, pikowana bawełniana torba na matę do jogi | India Yoga Namaste",
@@ -29030,6 +29030,90 @@
     "text.53d9c2054dd4": {
       "text": "Ceramiczna kompozycja ścienna z niebieskiej ceramiki, wykonana przez wykwalifikowanych rzemieślników w Jaipurze w Indiach. Składa się z pięknie ręcznie malowanych płytek ceramicznych o żywych motywach kwiatowych…",
       "src": "53d9c2054dd4"
+    },
+    "item.10516217265.title": {
+      "text": "Butelka z czystej miedzi, wykonana techniką młotkowania | Indyjska ajurwedyjska butelka na wodę",
+      "src": "17107259c094"
+    },
+    "item.10516217265.description": {
+      "text": "Butelka z efektem młotkowanego wykończenia została wykonana z miedzi o czystości 99,2%, która w naturalny sposób oczyszcza wodę, nadając jednocześnie Państwa codziennym czynnościom odrobinę rzemieślniczej elegancji.\nLecznicze właściwości ajurwedyjskie. \nProszę napełnić butelkę wodą na noc, a następnie wypić jej zawartość. \nNie należy pozostawiać wody w butelce przez dłuższy czas. \nMiedź lita o czystości 99,2%.\nPojemność 950 ml.\nPokrywka zapobiegająca wyciekaniu.\nRęcznie wykonana przez rzemieślników w Indiach (Almora, Himalaje).\nWnętrze bez wyściółki i powłoki.\n\n#copperbottle #miedź #ajurweda #leczenie #indie #hinduizm #duchowość #joga #namaste #czystamiedź",
+      "src": "f1221b457b04"
+    },
+    "text.2f4aeff2f245": {
+      "text": "RÓŻA",
+      "src": "2f4aeff2f245"
+    },
+    "text.cc2c21482404": {
+      "text": "89 sztuk",
+      "src": "cc2c21482404"
+    },
+    "text.7e7060b11c32": {
+      "text": "539 sztuk",
+      "src": "7e7060b11c32"
+    },
+    "text.8e53d8c2fe38": {
+      "text": "Knossos Jasmine",
+      "src": "8e53d8c2fe38"
+    },
+    "text.af718e89e116": {
+      "text": "Kalendarz wisznuicki na rok 2027",
+      "src": "af718e89e116"
+    },
+    "text.81e5cf8c3591": {
+      "text": "Naturalne perfumy olejkowe ROSE",
+      "src": "81e5cf8c3591"
+    },
+    "text.59b117842f87": {
+      "text": "Mydło ajurwedyjskie Medimix 125 g",
+      "src": "59b117842f87"
+    },
+    "text.8a5912e37e45": {
+      "text": "Specjalne kadzidełka Parijat",
+      "src": "8a5912e37e45"
+    },
+    "text.8aaee23b5cbf": {
+      "text": "1730 sztuk na sprzedaż · 120 sprzedanych",
+      "src": "8aaee23b5cbf"
+    },
+    "text.10115cff3a4d": {
+      "text": "22 mydła na półce z produktami wellness.",
+      "src": "10115cff3a4d"
+    },
+    "text.5bb47602d795": {
+      "text": "7 pałeczek kadzidła na półce do medytacji.",
+      "src": "5bb47602d795"
+    },
+    "text.cf739834cf31": {
+      "text": "31 kartek z życzeniami na półce z pamiątkami.",
+      "src": "cf739834cf31"
+    },
+    "text.9c8e06620a54": {
+      "text": "33 perfumy na bazie olejków na półce z produktami wellness.",
+      "src": "9c8e06620a54"
+    },
+    "text.5bad77746e70": {
+      "text": "Kartka okolicznościowa z kopertą, mała, autorstwa Šrí Balajiego",
+      "src": "5bad77746e70"
+    },
+    "text.1ddf6e1b8aec": {
+      "text": "Kantimála, seria pierwsza, czarna z jednolitym żółto-czerwonym koralikiem",
+      "src": "1ddf6e1b8aec"
+    },
+    "text.d94e455855d3": {
+      "text": "Kartka okolicznościowa z kopertą, mały format: Sri Sri Radha Vrindavanchandra",
+      "src": "d94e455855d3"
+    },
+    "text.32ab9352d9c1": {
+      "text": "Kalendarz wisznuicki na rok 2027, tym razem zaczerpnięty z książki *Śrī Iśopaniṣad*.",
+      "src": "32ab9352d9c1"
+    },
+    "text.91b77eb92223": {
+      "text": "Tradycyjne greckie mydło z czystej oliwy z oliwek z dodatkiem kwiatów jaśminu. Zielone, naturalne mydło oliwkowe – w 100% naturalne, bez żadnych barwników. Do codziennego stosowania…",
+      "src": "91b77eb92223"
+    },
+    "text.9f2c705405c4": {
+      "text": "Butelka z efektem młotkowanego wykończenia została wykonana z miedzi o czystości 99,2%, dzięki czemu w naturalny sposób oczyszcza wodę, nadając jednocześnie Państwa codziennym czynnościom odrobinę rzemieślniczej elegancji…",
+      "src": "9f2c705405c4"
     }
   }
 }

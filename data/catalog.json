@@ -1,15 +1,66 @@
 {
-  "syncedAt": "2026-10-24T17:19:48.748Z",
+  "syncedAt": "2026-10-25T06:15:15.307Z",
   "rate": {
     "czkPerEur": 24.327,
-    "fetched": "2026-10-24",
+    "fetched": "2026-10-25",
     "source": "ECB"
   },
-  "count": 201,
+  "count": 202,
   "items": [
     {
+      "id": "10516217265",
+      "title": "Hammered Pure Copper Bottle | Indian Ayurvedic Water Bottle",
+      "priceCzk": 850,
+      "priceEur": 35,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Gold",
+        "cs": "Zlatá"
+      },
+      "category": "Uncategorised",
+      "vintedCategory": "Sports Water bottles",
+      "crumbs": [
+        {
+          "id": 4332,
+          "name": "Sports"
+        },
+        {
+          "id": 4334,
+          "name": "Fitness, running & yoga"
+        },
+        {
+          "id": 4698,
+          "name": "Water bottles"
+        }
+      ],
+      "description": "Hammered bottle is crafted from 99.2% pure copper to naturally purify water while adding a touch of artisan elegance to your everyday routine.\nHealing Ayurveda properties. \nPut water overnight and drink in the water. \nDon’t leave it for long periods. \n99.2% pure solid copper.\n950ml capacity.\nLeak-proof lid.\nHandcrafted by artisans in India (Almora, Himalayas).\nUnlined & uncoated interior.\n\n#copperbottle #copper #ayurveda #healing #india #hindu #spiritual #yoga #namaste #purecopper",
+      "photo": "images/vinted-10516217265-1.jpg",
+      "photos": [
+        "images/vinted-10516217265-1.jpg",
+        "images/vinted-10516217265-2.jpg",
+        "images/vinted-10516217265-3.jpg"
+      ],
+      "favourites": 15,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle",
+        "es": "https://www.vinted.es/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle",
+        "com": "https://www.vinted.com/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle",
+        "uk": "https://www.vinted.co.uk/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle"
+      }
+    },
+    {
       "id": "10514142547",
-      "title": "Indian Blue Pottery Ceramic Tile Wall Hanger",
+      "title": "Indian Blue Pottery Ceramic Tile Wall Hanger | Boho Home | Cottagecore Home Decor",
       "priceCzk": 795,
       "priceEur": 33,
       "brand": "Jaipur",
@@ -50,16 +101,16 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
-        "es": "https://www.vinted.es/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
-        "com": "https://www.vinted.com/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger",
-        "uk": "https://www.vinted.co.uk/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger"
+        "cz": "https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor",
+        "es": "https://www.vinted.es/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor",
+        "com": "https://www.vinted.com/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor",
+        "uk": "https://www.vinted.co.uk/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor"
       }
     },
     {
@@ -105,7 +156,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -156,7 +207,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 32,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2933,7 +2984,7 @@
         "images/vinted-10035026195-2.jpg",
         "images/vinted-10035026195-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4233,7 +4284,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 40,
+      "favourites": 41,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9920,7 +9971,7 @@
         "images/vinted-9316357780-2.jpg",
         "images/vinted-9316357780-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10309,7 +10360,7 @@
         "images/vinted-9312410623-2.jpg",
         "images/vinted-9312410623-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,

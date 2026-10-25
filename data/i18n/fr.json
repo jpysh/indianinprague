@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-24T17:22:21.731Z",
-  "count": 7215,
+  "generated": "2026-10-25T06:22:01.100Z",
+  "count": 7236,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -28984,8 +28984,8 @@
       "src": "30776358a04d"
     },
     "item.10514142547.title": {
-      "text": "Crochet mural en carreaux de céramique de style « Indian Blue Pottery »",
-      "src": "7ac963d2a879"
+      "text": "Crochet mural en carreaux de céramique « Indian Blue Pottery » | Décoration d'intérieur bohème | Décoration d'intérieur « cottagecore »",
+      "src": "3d3db0da7e54"
     },
     "item.10513562820.title": {
       "text": "Sac pour tapis de yoga en coton matelassé, fait main | India Yoga Namaste",
@@ -29030,6 +29030,90 @@
     "text.53d9c2054dd4": {
       "text": "Décoration murale en carreaux de céramique « Blue Pottery », réalisée par des artisans qualifiés à Jaipur, en Inde. Elle se compose de magnifiques carreaux de céramique peints à la main, ornés d&#x27;un motif floral éclatant…",
       "src": "53d9c2054dd4"
+    },
+    "item.10516217265.title": {
+      "text": "Bouteille en cuivre pur martelé | Bouteille à eau ayurvédique indienne",
+      "src": "17107259c094"
+    },
+    "item.10516217265.description": {
+      "text": "Cette bouteille martelée est fabriquée à partir de cuivre pur à 99,2 % afin de purifier naturellement l'eau tout en apportant une touche d'élégance artisanale à votre quotidien.\nPropriétés ayurvédiques bienfaisantes. \nLaissez l'eau reposer toute la nuit, puis buvez-la. \nNe la laissez pas reposer trop longtemps. \nCuivre massif pur à 99,2 %.\nCapacité de 950 ml.\nCouvercle étanche.\nFabriquée à la main par des artisans en Inde (Almora, dans l'Himalaya).\nIntérieur sans revêtement ni doublure.\n\n#copperbottle #cuivre #ayurveda #guérison #inde #hindou #spirituel #yoga #namaste #cuivrepur",
+      "src": "f1221b457b04"
+    },
+    "text.2f4aeff2f245": {
+      "text": "ROSE",
+      "src": "2f4aeff2f245"
+    },
+    "text.cc2c21482404": {
+      "text": "89 pièces",
+      "src": "cc2c21482404"
+    },
+    "text.7e7060b11c32": {
+      "text": "539 pièces",
+      "src": "7e7060b11c32"
+    },
+    "text.8e53d8c2fe38": {
+      "text": "Knossos Jasmine",
+      "src": "8e53d8c2fe38"
+    },
+    "text.af718e89e116": {
+      "text": "Calendrier vaishnava 2027",
+      "src": "af718e89e116"
+    },
+    "text.81e5cf8c3591": {
+      "text": "Parfum à l'huile naturelle ROSE",
+      "src": "81e5cf8c3591"
+    },
+    "text.59b117842f87": {
+      "text": "Savon ayurvédique Medimix, 125 g",
+      "src": "59b117842f87"
+    },
+    "text.8a5912e37e45": {
+      "text": "Bâtonnets d'encens spéciaux au Parijat",
+      "src": "8a5912e37e45"
+    },
+    "text.8aaee23b5cbf": {
+      "text": "1 730 pièces à vendre · 120 vendues",
+      "src": "8aaee23b5cbf"
+    },
+    "text.10115cff3a4d": {
+      "text": "22 savons dans le rayon bien-être.",
+      "src": "10115cff3a4d"
+    },
+    "text.5bb47602d795": {
+      "text": "7 bâtonnets d'encens dans le porte-encens.",
+      "src": "5bb47602d795"
+    },
+    "text.cf739834cf31": {
+      "text": "31 cartes de vœux dans l'étagère des souvenirs.",
+      "src": "cf739834cf31"
+    },
+    "text.9c8e06620a54": {
+      "text": "33 parfums à base d'huile dans le rayon bien-être.",
+      "src": "9c8e06620a54"
+    },
+    "text.5bad77746e70": {
+      "text": "Carte de vœux avec enveloppe, petit format, de Šrí Balaji",
+      "src": "5bad77746e70"
+    },
+    "text.1ddf6e1b8aec": {
+      "text": "Kantimála, 1re série, noir avec une perle unie jaune et rouge",
+      "src": "1ddf6e1b8aec"
+    },
+    "text.d94e455855d3": {
+      "text": "Carte de vœux avec enveloppe, petit format : Sri Sri Radha Vrindavanchandra",
+      "src": "d94e455855d3"
+    },
+    "text.32ab9352d9c1": {
+      "text": "Le calendrier vaishnava pour 2027, tiré cette fois-ci de l'ouvrage *Śrī Iśopaniṣad*.",
+      "src": "32ab9352d9c1"
+    },
+    "text.91b77eb92223": {
+      "text": "Savon d'olive pur et traditionnel grec, à base de fleurs de jasmin. Savon d'olive naturel vert – 100 % naturel, sans aucun colorant. Pour un usage quotidien…",
+      "src": "91b77eb92223"
+    },
+    "text.9f2c705405c4": {
+      "text": "Cette bouteille martelée est fabriquée à partir de cuivre pur à 99,2 % afin de purifier naturellement l'eau tout en apportant une touche d'élégance artisanale à votre quotidien…",
+      "src": "9f2c705405c4"
     }
   }
 }
