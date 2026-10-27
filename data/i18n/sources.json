@@ -10,9 +10,37 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-10-26T06:17:52.415Z",
-  "count": 4512,
+  "generated": "2026-10-27T06:18:03.928Z",
+  "count": 4515,
   "entries": {
+    "item.10546429650.title": {
+      "text": "Cotton Quilted Yoga Mat Bag | Indian Handmade Yoga Mat Carrier | Boho Quilted Bag",
+      "src": "650f829f98e1",
+      "where": "item 10546429650 — title",
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
+    },
+    "item.10546429650.description": {
+      "text": "Handcrafted in Rajasthan India. Cotton quilted yoga mat bag.\n100% cotton.\nHas a comfortable adjustable shoulder strap.\nLightweight but spacious. \nFront zipper for keys, phone, cards etc.\nPerfect for yoga practice or Pilates and gym sessions.\nHolds standard yoga mats.\nSize 28*6 inches. \n\nIn red - https://www.vinted.cz/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste\n\nIn yellow- https://www.vinted.cz/items/10520294482-quilted-cotton-yoga-mat-bag-indian-block-print-adjustable-strap-carrier-namaste-yoga-kit\n\nIn green - https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\nIn brown - https://www.vinted.cz/items/10532107383-quilted-cotton-yoga-mat-bag-natural-yoga-mat-carrier-with-zipper-pocket-adjustable-strap-boho\n\nAyurveda copper bottle - https://www.vinted.cz/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle\n\n#Quilted #Cotton #YogaMat #Boho ##Ethnic #Indian #Namaste #Sustainable",
+      "src": "814f0df4a9c0",
+      "where": "item 10546429650 — description",
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
+    },
+    "attr.condition.new-without-tags": {
+      "text": "New without tags",
+      "src": "b240e472e77d",
+      "where": "condition — used across the shop",
+      "since": "",
+      "changed": ""
+    },
+    "attr.color.multicolour": {
+      "text": "Multicolour",
+      "src": "a95a6359e765",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
+    },
     "item.10532107383.title": {
       "text": "Quilted Cotton Yoga Mat Bag | Natural Yoga Mat Carrier with Zipper Pocket & Adjustable Strap | Boho",
       "src": "7ff3cb45215f",
@@ -26,13 +54,6 @@
       "where": "item 10532107383 — description",
       "since": "2026-10-26",
       "changed": "2026-10-26"
-    },
-    "attr.condition.new-without-tags": {
-      "text": "New without tags",
-      "src": "b240e472e77d",
-      "where": "condition — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "attr.color.brown": {
       "text": "Brown",
@@ -79,27 +100,6 @@
     "attr.color.gold": {
       "text": "Gold",
       "src": "6249df4367d0",
-      "where": "color — used across the shop",
-      "since": "",
-      "changed": ""
-    },
-    "item.10521893948.title": {
-      "text": "Large Vintage Tote Bag | Indian Cotton Quilted Bag | Boho Tote",
-      "src": "81fdb1ab3d95",
-      "where": "item 10521893948 — title",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
-    },
-    "item.10521893948.description": {
-      "text": "Handcrafted hand block printed cotton tote bag from Rajasthan, India. Beautiful teal colour. \nQuilted – Adds structure, durability & premium feel.\n100% Cotton Fabric – Soft, breathable & eco-friendly.\nAuthentic Hand Block Printing – No machine prints.\nSustainable – Plastic-free lifestyle choice.\nZipper Closure – Keeps belongings safe & secure.\nInside Pocket – Ideal for phone, keys, wallet & small items.\nTraditional Indian craftsmanship with modern everyday functionality.\nIdeal for office, shopping, picnic, travel, beach, college and boho fashion. \nLarge - 18*18 inches \n\n#BlockPrint #HandBlockPrint #JaipurBlockPrint #IndianBlockPrint #QuiltedBag #BohoBag #BohoChicStyle #Bohemian #FloralToteBag #CottonToteBag #SustainableFashion #SlowFashionMovement #EcoFriendlyBag #HandcraftedBag #MarketTote #BeachToteBag #EverydayTote #TravelTote #BohoShopper",
-      "src": "fbac98ad5f8b",
-      "where": "item 10521893948 — description",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
-    },
-    "attr.color.white": {
-      "text": "White",
-      "src": "3495e757855a",
       "where": "color — used across the shop",
       "since": "",
       "changed": ""
@@ -201,13 +201,6 @@
       "where": "item 10493834643 — description",
       "since": "2026-10-24",
       "changed": "2026-10-24"
-    },
-    "attr.color.multicolour": {
-      "text": "Multicolour",
-      "src": "a95a6359e765",
-      "where": "color — used across the shop",
-      "since": "",
-      "changed": ""
     },
     "item.10463583902.title": {
       "text": "Pure Copper Set | Copper Bracelet | Copper Ring | Magnetic Copper Jewellery | Vintage",
@@ -572,6 +565,13 @@
       "where": "item 10286969414 — description",
       "since": "2026-10-08",
       "changed": "2026-10-08"
+    },
+    "attr.color.white": {
+      "text": "White",
+      "src": "3495e757855a",
+      "where": "color — used across the shop",
+      "since": "",
+      "changed": ""
     },
     "item.10275644021.title": {
       "text": "Silver Anklet Choker Boho Indian Payal | Vintage Jewellery | Retro Ethnic Tribal",
@@ -5130,19 +5130,19 @@
       "since": "",
       "changed": ""
     },
-    "text.83901fdf9eee": {
-      "text": "100 reviews on Vinted →",
-      "src": "83901fdf9eee",
+    "text.55ec8fd3a921": {
+      "text": "101 reviews on Vinted →",
+      "src": "55ec8fd3a921",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-24",
-      "changed": "2026-10-24"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
-    "text.270a4c12725c": {
-      "text": "Rated 5.0 out of 5 from 100 buyer reviews. Read them on Vinted (opens in a new tab).",
-      "src": "270a4c12725c",
+    "text.5608eb752326": {
+      "text": "Rated 5.0 out of 5 from 101 buyer reviews. Read them on Vinted (opens in a new tab).",
+      "src": "5608eb752326",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-24",
-      "changed": "2026-10-24"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.43ff969a3174": {
       "text": "474 pieces",
@@ -5319,12 +5319,12 @@
       "since": "",
       "changed": ""
     },
-    "text.a8c373ff0639": {
-      "text": "1734 pieces for sale · 121 sold",
-      "src": "a8c373ff0639",
+    "text.6d91510e2dcb": {
+      "text": "1734 pieces for sale · 122 sold",
+      "src": "6d91510e2dcb",
       "where": "page text — first seen on index.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.f46ea5ea90b2": {
       "text": "Open the wardrobe →",
@@ -7307,13 +7307,6 @@
       "since": "",
       "changed": ""
     },
-    "text.4c8804ad77fb": {
-      "text": "Quilted Cotton Yoga Mat Bag | Natural Yoga Mat Carrier with Zipper Pocket &amp; Adjustable Strap | Boho",
-      "src": "4c8804ad77fb",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
-    },
     "text.329335dbed2d": {
       "text": "Listed on Vinted",
       "src": "329335dbed2d",
@@ -7321,12 +7314,12 @@
       "since": "2026-08-28",
       "changed": "2026-08-28"
     },
-    "text.f79fb1cb0821": {
-      "text": "74 people have saved this on Vinted",
-      "src": "f79fb1cb0821",
+    "text.2971862d4fbe": {
+      "text": "11 people have saved this on Vinted",
+      "src": "2971862d4fbe",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-05",
+      "changed": "2026-09-05"
     },
     "text.90d8ae7580b6": {
       "text": "people saved this on Vinted",
@@ -7335,16 +7328,16 @@
       "since": "",
       "changed": ""
     },
-    "text.e050663241ae": {
-      "text": "Premium cotton quilted yoga mat bag. Made by skilled artisans in Rajasthan India. Quilted design gives it structure, texture and design. Equipped…",
-      "src": "e050663241ae",
+    "text.0de06ad1c77f": {
+      "text": "Handcrafted in Rajasthan India. Cotton quilted yoga mat bag. 100% cotton. Has a comfortable adjustable shoulder strap. Lightweight but spacious.…",
+      "src": "0de06ad1c77f",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
-    "text.16a6f7446c94": {
-      "text": "New without tags · Brown",
-      "src": "16a6f7446c94",
+    "text.84a1642387bf": {
+      "text": "New without tags · Multicolour",
+      "src": "84a1642387bf",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7363,12 +7356,40 @@
       "since": "",
       "changed": ""
     },
-    "text.57bbb12527f9": {
-      "text": "33 people have saved this on Vinted",
-      "src": "57bbb12527f9",
+    "text.4c8804ad77fb": {
+      "text": "Quilted Cotton Yoga Mat Bag | Natural Yoga Mat Carrier with Zipper Pocket &amp; Adjustable Strap | Boho",
+      "src": "4c8804ad77fb",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-26",
+      "changed": "2026-10-26"
+    },
+    "text.6579090bc210": {
+      "text": "123 people have saved this on Vinted",
+      "src": "6579090bc210",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
+    },
+    "text.e050663241ae": {
+      "text": "Premium cotton quilted yoga mat bag. Made by skilled artisans in Rajasthan India. Quilted design gives it structure, texture and design. Equipped…",
+      "src": "e050663241ae",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-10-26",
+      "changed": "2026-10-26"
+    },
+    "text.16a6f7446c94": {
+      "text": "New without tags · Brown",
+      "src": "16a6f7446c94",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
+    },
+    "text.9759e9fab8de": {
+      "text": "65 people have saved this on Vinted",
+      "src": "9759e9fab8de",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
     },
     "text.2276460c673c": {
       "text": "Elevate yoga routine with this gorgeous, artisanal yoga mat carrier bag, handcrafted by artisans in Rajasthan India 🙏🏽 100% cotton. Quilted for…",
@@ -7384,12 +7405,12 @@
       "since": "2026-10-26",
       "changed": "2026-10-26"
     },
-    "text.5c730b846b7a": {
-      "text": "73 people have saved this on Vinted",
-      "src": "5c730b846b7a",
+    "text.0d92e5b4d8bb": {
+      "text": "104 people have saved this on Vinted",
+      "src": "0d92e5b4d8bb",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.90cbd00cc79e": {
       "text": "Beautifully crafted with handmade hammered copper. A practical Ayurveda way to store and pour drinking water. The lid of the bottle doubles as a…",
@@ -7405,33 +7426,12 @@
       "since": "",
       "changed": ""
     },
-    "text.3accf5d47559": {
-      "text": "41 people have saved this on Vinted",
-      "src": "3accf5d47559",
+    "text.39e0ea5ffe52": {
+      "text": "166 people have saved this on Vinted",
+      "src": "39e0ea5ffe52",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-12",
-      "changed": "2026-10-12"
-    },
-    "text.6a1a60b95498": {
-      "text": "Handcrafted hand block printed cotton tote bag from Rajasthan, India. Beautiful teal colour. Quilted – Adds structure, durability &amp; premium feel.…",
-      "src": "6a1a60b95498",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
-    },
-    "text.aaf01b4d66fc": {
-      "text": "New without tags · White",
-      "src": "aaf01b4d66fc",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.53d54abee8ab": {
-      "text": "117 people have saved this on Vinted",
-      "src": "53d54abee8ab",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.1d4b854eb4ae": {
       "text": "Handcrafted cotton quilted yoga mat bag. Made by skilled artisans from Jaipur, India from 100% quilted cotton fabric. Features an adjustable…",
@@ -7447,12 +7447,12 @@
       "since": "2026-10-26",
       "changed": "2026-10-26"
     },
-    "text.9f5676aab173": {
-      "text": "179 people have saved this on Vinted",
-      "src": "9f5676aab173",
+    "text.1632c4df7835": {
+      "text": "227 people have saved this on Vinted",
+      "src": "1632c4df7835",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.9f2c705405c4": {
       "text": "Hammered bottle is crafted from 99.2% pure copper to naturally purify water while adding a touch of artisan elegance to your everyday routine.…",
@@ -7573,12 +7573,12 @@
       "since": "2026-10-25",
       "changed": "2026-10-25"
     },
-    "text.4e295b703185": {
-      "text": "18 people have saved this on Vinted",
-      "src": "4e295b703185",
+    "text.ff0a2f2a0447": {
+      "text": "24 people have saved this on Vinted",
+      "src": "ff0a2f2a0447",
       "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
+      "since": "2026-09-30",
+      "changed": "2026-09-30"
     },
     "text.53d9c2054dd4": {
       "text": "Blue Pottery Ceramic Tile Wall Crafted by Skilled Artisans in Jaipur, India. Features beautifully hand-painted ceramic tiles with a vibrant floral…",
@@ -7594,12 +7594,12 @@
       "since": "2026-10-24",
       "changed": "2026-10-24"
     },
-    "text.c200aa4ec86c": {
-      "text": "37 people have saved this on Vinted",
-      "src": "c200aa4ec86c",
+    "text.57658f291423": {
+      "text": "42 people have saved this on Vinted",
+      "src": "57658f291423",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-16",
-      "changed": "2026-10-16"
+      "since": "2026-09-21",
+      "changed": "2026-09-21"
     },
     "text.bbdc5e20ea3d": {
       "text": "Carry yoga essentials in style with this Handmade Quilted Cotton Yoga Mat Bag, beautifully handcrafted by skilled artisans in Jaipur, India. Made…",
@@ -7615,12 +7615,12 @@
       "since": "2026-09-22",
       "changed": "2026-09-22"
     },
-    "text.a29fa5f3a1b8": {
-      "text": "35 people have saved this on Vinted",
-      "src": "a29fa5f3a1b8",
+    "text.4336d0d4c387": {
+      "text": "36 people have saved this on Vinted",
+      "src": "4336d0d4c387",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.30776358a04d": {
       "text": "Quilted polyester bag with retro hippie camper van print. Beautiful rainbow shades. Lightweight and great capacity. Whimsical, cottagecore, 70s…",
@@ -7636,12 +7636,12 @@
       "since": "2026-09-05",
       "changed": "2026-09-05"
     },
-    "text.5eec6b71b8e5": {
-      "text": "27 people have saved this on Vinted",
-      "src": "5eec6b71b8e5",
+    "text.98e0b2824309": {
+      "text": "29 people have saved this on Vinted",
+      "src": "98e0b2824309",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-26",
-      "changed": "2026-09-26"
+      "since": "2026-09-12",
+      "changed": "2026-09-12"
     },
     "text.7c5fc229de62": {
       "text": "Adjustable and unisex. Healing copper and magnet. Magnet attracts iron in blood and helps in circulation. Copper has anti microbial and energy…",
@@ -7650,12 +7650,12 @@
       "since": "2026-10-21",
       "changed": "2026-10-21"
     },
-    "text.8a584c2acf9b": {
-      "text": "56 people have saved this on Vinted",
-      "src": "8a584c2acf9b",
+    "text.792a82fd4a3a": {
+      "text": "54 people have saved this on Vinted",
+      "src": "792a82fd4a3a",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-26",
-      "changed": "2026-10-26"
+      "since": "2026-10-23",
+      "changed": "2026-10-23"
     },
     "text.2b6c8d1efd96": {
       "text": "Polo Ralph Lauren knitted scarf in a grey. #ralphlauren #poloralphlauren #ralphlaurenscarf",
@@ -7797,12 +7797,12 @@
       "since": "2026-10-08",
       "changed": "2026-10-08"
     },
-    "text.4a51407894f6": {
-      "text": "9 people have saved this on Vinted",
-      "src": "4a51407894f6",
+    "text.fea856223973": {
+      "text": "10 people have saved this on Vinted",
+      "src": "fea856223973",
       "where": "page text — first seen on wardrobe.html",
-      "since": "2026-09-04",
-      "changed": "2026-09-04"
+      "since": "",
+      "changed": ""
     },
     "text.ba3a343a5e75": {
       "text": "Classic Wooden Tic Tac Toe (XO) Game Set. Very satisfying weight and texture of wood while playing. Crafted from wood and featuring a sturdy base…",
@@ -7810,13 +7810,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-10-12",
       "changed": "2026-10-12"
-    },
-    "text.afd99cda0a21": {
-      "text": "5 people have saved this on Vinted",
-      "src": "afd99cda0a21",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.a29af8427452": {
       "text": "Stunning pyjama set. Made in Varanasi, India. Featuring an hand-painted big cats leopard and tiger on lightweight breathable rayon. #PajamaSet…",
@@ -7828,13 +7821,6 @@
     "text.bcc3f8498609": {
       "text": "New without tags · Yellow · M",
       "src": "bcc3f8498609",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.fea856223973": {
-      "text": "10 people have saved this on Vinted",
-      "src": "fea856223973",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7909,6 +7895,13 @@
       "since": "2026-09-16",
       "changed": "2026-09-16"
     },
+    "text.4a51407894f6": {
+      "text": "9 people have saved this on Vinted",
+      "src": "4a51407894f6",
+      "where": "page text — first seen on wardrobe.html",
+      "since": "2026-09-04",
+      "changed": "2026-09-04"
+    },
     "text.297f9509ac42": {
       "text": "New without tags · Light blue · L",
       "src": "297f9509ac42",
@@ -7916,9 +7909,9 @@
       "since": "2026-10-09",
       "changed": "2026-10-09"
     },
-    "text.45489b95c8c2": {
-      "text": "32 people have saved this on Vinted",
-      "src": "45489b95c8c2",
+    "text.57bbb12527f9": {
+      "text": "33 people have saved this on Vinted",
+      "src": "57bbb12527f9",
       "where": "page text — first seen on wardrobe.html",
       "since": "",
       "changed": ""
@@ -7929,13 +7922,6 @@
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-10-07",
       "changed": "2026-10-07"
-    },
-    "text.84a1642387bf": {
-      "text": "New without tags · Multicolour",
-      "src": "84a1642387bf",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "",
-      "changed": ""
     },
     "text.1f830fdb0960": {
       "text": "reviews on Vinted",
@@ -13495,19 +13481,12 @@
       "since": "2026-10-07",
       "changed": "2026-10-07"
     },
-    "text.8bc55d2b0054": {
-      "text": "40 people have saved this on Vinted",
-      "src": "8bc55d2b0054",
+    "text.3accf5d47559": {
+      "text": "41 people have saved this on Vinted",
+      "src": "3accf5d47559",
       "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-08-27",
-      "changed": "2026-08-27"
-    },
-    "text.2971862d4fbe": {
-      "text": "11 people have saved this on Vinted",
-      "src": "2971862d4fbe",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-05",
-      "changed": "2026-09-05"
+      "since": "2026-10-12",
+      "changed": "2026-10-12"
     },
     "text.6908e37fc830": {
       "text": "I have 5 different colours (see image 5-6). Price for one. Let me know in message which colour 😊 Celebrate strength, transformation, and ultimate…",
@@ -13579,6 +13558,13 @@
       "since": "2026-10-01",
       "changed": "2026-10-01"
     },
+    "text.13412caa3780": {
+      "text": "4 people have saved this on Vinted",
+      "src": "13412caa3780",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
+    },
     "text.eed03c211aea": {
       "text": "Long quilted jacket handmade in India. Floral prints. Quilted stitching for insulation and a textured appearance. High-quality cotton. Two pockets…",
       "src": "eed03c211aea",
@@ -13606,6 +13592,13 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-09-30",
       "changed": "2026-09-30"
+    },
+    "text.afd99cda0a21": {
+      "text": "5 people have saved this on Vinted",
+      "src": "afd99cda0a21",
+      "where": "page text — first seen on wardrobe/2.html",
+      "since": "",
+      "changed": ""
     },
     "text.d5950d618b06": {
       "text": "Photo and wooden frame both included. Nostalgic, retro 70s scene with a classic camper van and bohemian style. I had kept it on the floor on a…",
@@ -13641,13 +13634,6 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-09-27",
       "changed": "2026-09-27"
-    },
-    "text.13412caa3780": {
-      "text": "4 people have saved this on Vinted",
-      "src": "13412caa3780",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "",
-      "changed": ""
     },
     "text.63e5575941a8": {
       "text": "Master the Spanish language with Europe's leading bilingual dictionary publisher, in a clear colour layout with easy grammar guides and cultural…",
@@ -13816,13 +13802,6 @@
       "where": "page text — first seen on wardrobe/2.html",
       "since": "2026-09-25",
       "changed": "2026-09-25"
-    },
-    "text.98e0b2824309": {
-      "text": "29 people have saved this on Vinted",
-      "src": "98e0b2824309",
-      "where": "page text — first seen on wardrobe/2.html",
-      "since": "2026-09-12",
-      "changed": "2026-09-12"
     },
     "text.86e801428726": {
       "text": "A beautifully crafted gold-plated 1000 rupee note featuring Lakshmi and Kuber—symbols of wealth, wisdom, and prosperity. Wall decor. Perfect to hang…",
@@ -19536,6 +19515,13 @@
       "since": "2026-09-10",
       "changed": "2026-09-10"
     },
+    "text.6f08dc1cfa4c": {
+      "text": "7 people have saved this on Vinted",
+      "src": "6f08dc1cfa4c",
+      "where": "page text — first seen on wardrobe/3.html",
+      "since": "",
+      "changed": ""
+    },
     "text.ca1cd7cdd5f9": {
       "text": "New with tags · Silver",
       "src": "ca1cd7cdd5f9",
@@ -19914,26 +19900,12 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
-    "text.6f08dc1cfa4c": {
-      "text": "7 people have saved this on Vinted",
-      "src": "6f08dc1cfa4c",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "",
-      "changed": ""
-    },
     "text.72f6f5824eba": {
       "text": "Improve your posture and keep your workspace tidy with this heavy duty black anodized aluminum laptop stand riser. Retails new for around €40.…",
       "src": "72f6f5824eba",
       "where": "page text — first seen on wardrobe/3.html",
       "since": "2026-09-02",
       "changed": "2026-09-02"
-    },
-    "text.ff0a2f2a0447": {
-      "text": "24 people have saved this on Vinted",
-      "src": "ff0a2f2a0447",
-      "where": "page text — first seen on wardrobe/3.html",
-      "since": "2026-09-30",
-      "changed": "2026-09-30"
     },
     "text.aa9b83be445b": {
       "text": "Stand in solidary with this striking Palestine protest sash featuring vibrant flag colors, traditional keffiyeh patterns, and anti-colonial emblem…",
@@ -24366,26 +24338,26 @@
       "since": "",
       "changed": ""
     },
-    "text.e19749623a54": {
-      "text": "Whimsical underwater retro camper van travel bag | Quilted duffel bag | Boho Hippie Weekender Bag",
-      "src": "e19749623a54",
+    "text.81fdb1ab3d95": {
+      "text": "Large Vintage Tote Bag | Indian Cotton Quilted Bag | Boho Tote",
+      "src": "81fdb1ab3d95",
       "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-10-24",
-      "changed": "2026-10-24"
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
-    "text.792a82fd4a3a": {
-      "text": "54 people have saved this on Vinted",
-      "src": "792a82fd4a3a",
+    "text.6a1a60b95498": {
+      "text": "Handcrafted hand block printed cotton tote bag from Rajasthan, India. Beautiful teal colour. Quilted – Adds structure, durability &amp; premium feel.…",
+      "src": "6a1a60b95498",
       "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-10-23",
-      "changed": "2026-10-23"
+      "since": "2026-10-26",
+      "changed": "2026-10-26"
     },
-    "text.edbb9ae85c49": {
-      "text": "Quilted polyester travel bag with printed retro camper van in underwater scene with starfish, shells, coral and fish. Lightweight with great…",
-      "src": "edbb9ae85c49",
+    "text.aaf01b4d66fc": {
+      "text": "New without tags · White",
+      "src": "aaf01b4d66fc",
       "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-10-23",
-      "changed": "2026-10-23"
+      "since": "",
+      "changed": ""
     },
     "text.8acc5df684d6": {
       "text": "Ask for something similar",
@@ -24393,6 +24365,20 @@
       "where": "page text — first seen on wardrobe/37.html",
       "since": "",
       "changed": ""
+    },
+    "text.e19749623a54": {
+      "text": "Whimsical underwater retro camper van travel bag | Quilted duffel bag | Boho Hippie Weekender Bag",
+      "src": "e19749623a54",
+      "where": "page text — first seen on wardrobe/37.html",
+      "since": "2026-10-24",
+      "changed": "2026-10-24"
+    },
+    "text.edbb9ae85c49": {
+      "text": "Quilted polyester travel bag with printed retro camper van in underwater scene with starfish, shells, coral and fish. Lightweight with great…",
+      "src": "edbb9ae85c49",
+      "where": "page text — first seen on wardrobe/37.html",
+      "since": "2026-10-23",
+      "changed": "2026-10-23"
     },
     "text.229eadb39056": {
       "text": "Whimsical forest themed quilted travel bag | Weekender Duffel Bag | Boho Bag | Diaper Bag",
@@ -24905,13 +24891,6 @@
       "since": "2026-09-22",
       "changed": "2026-09-22"
     },
-    "text.57658f291423": {
-      "text": "42 people have saved this on Vinted",
-      "src": "57658f291423",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-09-21",
-      "changed": "2026-09-21"
-    },
     "text.58db75a4a7c5": {
       "text": "Stamped 925. Tiny, delicate and petite. Perfect for second, third or upper ear piercings rather than for the main lobe, but fits there as well.…",
       "src": "58db75a4a7c5",
@@ -24946,13 +24925,6 @@
       "where": "page text — first seen on wardrobe/37.html",
       "since": "2026-09-05",
       "changed": "2026-09-05"
-    },
-    "text.9759e9fab8de": {
-      "text": "65 people have saved this on Vinted",
-      "src": "9759e9fab8de",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "2026-09-04",
-      "changed": "2026-09-04"
     },
     "text.41bb22e563ea": {
       "text": "Quilted weekend bag, vibrant woodland colour and whimsical character. Lightweight, great for picnic, outdoors, gym.",
@@ -25031,20 +25003,6 @@
       "since": "",
       "changed": ""
     },
-    "text.5aed9ba239e5": {
-      "text": "Must read Karl Marx Friedrich Engels The Communist Manifesto Most Influential Political Manuscript",
-      "src": "5aed9ba239e5",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.b5cdd7188eb8": {
-      "text": "The 1848 pamphlet that Marx and Engels called the history of all society as a history of class struggle became one of the most influential political…",
-      "src": "b5cdd7188eb8",
-      "where": "page text — first seen on wardrobe/37.html",
-      "since": "",
-      "changed": ""
-    },
     "text.ca494a4881f5": {
       "text": "Page 37 of 39",
       "src": "ca494a4881f5",
@@ -25058,6 +25016,20 @@
       "where": "page text — first seen on wardrobe/38.html",
       "since": "2026-09-27",
       "changed": "2026-09-27"
+    },
+    "text.5aed9ba239e5": {
+      "text": "Must read Karl Marx Friedrich Engels The Communist Manifesto Most Influential Political Manuscript",
+      "src": "5aed9ba239e5",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.b5cdd7188eb8": {
+      "text": "The 1848 pamphlet that Marx and Engels called the history of all society as a history of class struggle became one of the most influential political…",
+      "src": "b5cdd7188eb8",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
     },
     "text.50fc562c0107": {
       "text": "Silver Tone Wild West Ring | Size 6 | Boho Gypsy Hippie Style",
@@ -25542,6 +25514,13 @@
       "since": "",
       "changed": ""
     },
+    "text.f79fb1cb0821": {
+      "text": "74 people have saved this on Vinted",
+      "src": "f79fb1cb0821",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "",
+      "changed": ""
+    },
     "text.10b3c526f163": {
       "text": "Brand new, never used. Beautiful matching set of 2 ceramic oven baking dishes with a blue and yellow floral folk design. Ideal kitchenware for…",
       "src": "10b3c526f163",
@@ -25696,6 +25675,13 @@
       "since": "2026-09-02",
       "changed": "2026-09-02"
     },
+    "text.8bc55d2b0054": {
+      "text": "40 people have saved this on Vinted",
+      "src": "8bc55d2b0054",
+      "where": "page text — first seen on wardrobe/38.html",
+      "since": "2026-08-27",
+      "changed": "2026-08-27"
+    },
     "text.f11d9acfa706": {
       "text": "Soon to be a major HBO television series produced by A24 starring Jodie Comer, this unhinged dark comedy was named Book of the Year by Cosmopolitan,…",
       "src": "f11d9acfa706",
@@ -25745,20 +25731,6 @@
       "since": "",
       "changed": ""
     },
-    "text.39dd5ff88c45": {
-      "text": "Indian Top Brand Jaypore Summer Cotton Ethnic Tunic Outfit | Size M",
-      "src": "39dd5ff88c45",
-      "where": "page text — first seen on wardrobe/38.html",
-      "since": "",
-      "changed": ""
-    },
-    "text.76abc2efcd10": {
-      "text": "Modern Indian aesthetic tunic, with traditional Ajrakh pattern. Pure cotton. Famous luxury cotton Indian brand - Jaypore. Bust 99 cm / 39 inches…",
-      "src": "76abc2efcd10",
-      "where": "page text — first seen on wardrobe/38.html",
-      "since": "",
-      "changed": ""
-    },
     "text.0ed1d7deb10e": {
       "text": "Page 38 of 39",
       "src": "0ed1d7deb10e",
@@ -25772,6 +25744,20 @@
       "where": "page text — first seen on wardrobe/39.html",
       "since": "2026-10-21",
       "changed": "2026-10-21"
+    },
+    "text.39dd5ff88c45": {
+      "text": "Indian Top Brand Jaypore Summer Cotton Ethnic Tunic Outfit | Size M",
+      "src": "39dd5ff88c45",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "",
+      "changed": ""
+    },
+    "text.76abc2efcd10": {
+      "text": "Modern Indian aesthetic tunic, with traditional Ajrakh pattern. Pure cotton. Famous luxury cotton Indian brand - Jaypore. Bust 99 cm / 39 inches…",
+      "src": "76abc2efcd10",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "",
+      "changed": ""
     },
     "text.2bedbbd55e97": {
       "text": "Wooden drop earrings with faux pearl | Heartshaped | Boho jewellery",
@@ -25969,6 +25955,13 @@
       "since": "",
       "changed": ""
     },
+    "text.4e295b703185": {
+      "text": "18 people have saved this on Vinted",
+      "src": "4e295b703185",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "",
+      "changed": ""
+    },
     "text.48478df86fcb": {
       "text": "Called spellbinding, addictive, and wonderful by major critics. A surreal, dreamlike masterpiece weaving together a runaway teenager and an old man…",
       "src": "48478df86fcb",
@@ -26151,6 +26144,13 @@
       "since": "",
       "changed": ""
     },
+    "text.45489b95c8c2": {
+      "text": "32 people have saved this on Vinted",
+      "src": "45489b95c8c2",
+      "where": "page text — first seen on wardrobe/39.html",
+      "since": "",
+      "changed": ""
+    },
     "text.e94e9a27cd6b": {
       "text": "A fun, conversation-starting piece for anyone plant-based or animal-loving. Grey cotton with a bold black &quot;EATING ANIMALS IS WEIRD&quot; slogan across…",
       "src": "e94e9a27cd6b",
@@ -26263,6 +26263,13 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.5eec6b71b8e5": {
+      "text": "27 people have saved this on Vinted",
+      "src": "5eec6b71b8e5",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-09-26",
+      "changed": "2026-09-26"
+    },
     "text.1e3ca6178233": {
       "text": "Multi-strand design of silver-tone beads and textured elements. Antique, retro-inspired look.",
       "src": "1e3ca6178233",
@@ -26346,6 +26353,13 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "",
       "changed": ""
+    },
+    "text.c200aa4ec86c": {
+      "text": "37 people have saved this on Vinted",
+      "src": "c200aa4ec86c",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-10-16",
+      "changed": "2026-10-16"
     },
     "text.c28cd1524c2d": {
       "text": "Handcrafted bracelet in authentic 925 sterling silver (marked). Amethyst stones with cultured freshwater pearls Toggle clasp Two rectangular,…",
@@ -26480,13 +26494,6 @@
       "since": "",
       "changed": ""
     },
-    "text.f4c2c32ec4e0": {
-      "text": "16 people have saved this on Vinted",
-      "src": "f4c2c32ec4e0",
-      "where": "page text — first seen on wardrobe/4.html",
-      "since": "2026-10-19",
-      "changed": "2026-10-19"
-    },
     "text.8bb617b39993": {
       "text": "A quietly devastating novel about a humble couple exiled by their own families for marrying without consent, whose fragile peace is shattered when a…",
       "src": "8bb617b39993",
@@ -26571,6 +26578,13 @@
       "since": "",
       "changed": ""
     },
+    "text.f4c2c32ec4e0": {
+      "text": "16 people have saved this on Vinted",
+      "src": "f4c2c32ec4e0",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-10-19",
+      "changed": "2026-10-19"
+    },
     "text.4faba1eff437": {
       "text": "Dangle sunflower crochet earrings with brown wooden beads. Materials: Wool, Stainless steel, Wood Style: Boho &amp; hippie Height 7 cm",
       "src": "4faba1eff437",
@@ -26605,6 +26619,13 @@
       "where": "page text — first seen on wardrobe/4.html",
       "since": "",
       "changed": ""
+    },
+    "text.49e52eb1d879": {
+      "text": "28 people have saved this on Vinted",
+      "src": "49e52eb1d879",
+      "where": "page text — first seen on wardrobe/4.html",
+      "since": "2026-10-27",
+      "changed": "2026-10-27"
     },
     "text.3df7b18821e8": {
       "text": "🕉️ Natural Rudraksha Japa Mala: Made with authentic 7mm Rudraksha beads, ideal for spiritual use and daily chanting, length 16 inches 📿 108 (+5)…",
@@ -29392,13 +29413,6 @@
       "since": "",
       "changed": ""
     },
-    "text.8454f92ff14f": {
-      "text": "Jaipur",
-      "src": "8454f92ff14f",
-      "where": "page text — first seen on wardrobe/fashion.html",
-      "since": "2026-10-24",
-      "changed": "2026-10-24"
-    },
     "text.b59b72be37f3": {
       "text": "Alternative",
       "src": "b59b72be37f3",
@@ -29993,6 +30007,13 @@
       "where": "page text — first seen on wardrobe/fashion/9.html",
       "since": "2026-09-16",
       "changed": "2026-09-16"
+    },
+    "text.8454f92ff14f": {
+      "text": "Jaipur",
+      "src": "8454f92ff14f",
+      "where": "page text — first seen on wardrobe/fashion/9.html",
+      "since": "2026-10-24",
+      "changed": "2026-10-24"
     },
     "text.7b47d7620da9": {
       "text": "Page 9 of 10",

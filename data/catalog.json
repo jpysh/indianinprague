@@ -1,17 +1,72 @@
 {
-  "syncedAt": "2026-10-26T06:15:27.593Z",
+  "syncedAt": "2026-10-27T06:15:15.351Z",
   "rate": {
-    "czkPerEur": 24.327,
-    "fetched": "2026-10-26",
+    "czkPerEur": 24.369,
+    "fetched": "2026-10-27",
     "source": "ECB"
   },
   "count": 206,
   "items": [
     {
+      "id": "10546429650",
+      "title": "Cotton Quilted Yoga Mat Bag | Indian Handmade Yoga Mat Carrier | Boho Quilted Bag",
+      "priceCzk": 699,
+      "priceEur": 29,
+      "brand": "Jaipur",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Uncategorised",
+      "vintedCategory": "Sports Yoga mat carriers & bags",
+      "crumbs": [
+        {
+          "id": 4332,
+          "name": "Sports"
+        },
+        {
+          "id": 4334,
+          "name": "Fitness, running & yoga"
+        },
+        {
+          "id": 4416,
+          "name": "Yoga & pilates equipment"
+        },
+        {
+          "id": 4451,
+          "name": "Yoga mat carriers & bags"
+        }
+      ],
+      "description": "Handcrafted in Rajasthan India. Cotton quilted yoga mat bag.\n100% cotton.\nHas a comfortable adjustable shoulder strap.\nLightweight but spacious. \nFront zipper for keys, phone, cards etc.\nPerfect for yoga practice or Pilates and gym sessions.\nHolds standard yoga mats.\nSize 28*6 inches. \n\nIn red - https://www.vinted.cz/items/10513562820-handmade-quilted-cotton-yoga-mat-bag-india-yoga-namaste\n\nIn yellow- https://www.vinted.cz/items/10520294482-quilted-cotton-yoga-mat-bag-indian-block-print-adjustable-strap-carrier-namaste-yoga-kit\n\nIn green - https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\nIn brown - https://www.vinted.cz/items/10532107383-quilted-cotton-yoga-mat-bag-natural-yoga-mat-carrier-with-zipper-pocket-adjustable-strap-boho\n\nAyurveda copper bottle - https://www.vinted.cz/items/10516217265-hammered-pure-copper-bottle-indian-ayurvedic-water-bottle\n\n#Quilted #Cotton #YogaMat #Boho ##Ethnic #Indian #Namaste #Sustainable",
+      "photo": "images/vinted-10546429650-1.jpg",
+      "photos": [
+        "images/vinted-10546429650-1.jpg",
+        "images/vinted-10546429650-2.jpg",
+        "images/vinted-10546429650-3.jpg"
+      ],
+      "favourites": 11,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10546429650-cotton-quilted-yoga-mat-bag-indian-handmade-yoga-mat-carrier-boho-quilted-bag",
+        "es": "https://www.vinted.es/items/10546429650-cotton-quilted-yoga-mat-bag-indian-handmade-yoga-mat-carrier-boho-quilted-bag",
+        "com": "https://www.vinted.com/items/10546429650-cotton-quilted-yoga-mat-bag-indian-handmade-yoga-mat-carrier-boho-quilted-bag",
+        "uk": "https://www.vinted.co.uk/items/10546429650-cotton-quilted-yoga-mat-bag-indian-handmade-yoga-mat-carrier-boho-quilted-bag"
+      }
+    },
+    {
       "id": "10532107383",
       "title": "Quilted Cotton Yoga Mat Bag | Natural Yoga Mat Carrier with Zipper Pocket & Adjustable Strap | Boho",
-      "priceCzk": 750,
-      "priceEur": 31,
+      "priceCzk": 699,
+      "priceEur": 29,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -50,7 +105,7 @@
         "images/vinted-10532107383-2.jpg",
         "images/vinted-10532107383-3.jpg"
       ],
-      "favourites": 74,
+      "favourites": 123,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -65,8 +120,8 @@
     {
       "id": "10526267062",
       "title": "Cotton Quilted Yoga Mat Bag | Indian Boho Yoga Bag |",
-      "priceCzk": 750,
-      "priceEur": 31,
+      "priceCzk": 699,
+      "priceEur": 29,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -105,7 +160,7 @@
         "images/vinted-10526267062-2.jpg",
         "images/vinted-10526267062-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 65,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -156,7 +211,7 @@
         "images/vinted-10522603322-2.jpg",
         "images/vinted-10522603322-3.jpg"
       ],
-      "favourites": 73,
+      "favourites": 104,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -169,61 +224,10 @@
       }
     },
     {
-      "id": "10521893948",
-      "title": "Large Vintage Tote Bag | Indian Cotton Quilted Bag | Boho Tote",
-      "priceCzk": 550,
-      "priceEur": 23,
-      "brand": "Jaipur",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "White",
-        "cs": "Bílá"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Tote bags",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 19,
-          "name": "Bags"
-        },
-        {
-          "id": 552,
-          "name": "Tote bags"
-        }
-      ],
-      "description": "Handcrafted hand block printed cotton tote bag from Rajasthan, India. Beautiful teal colour. \nQuilted – Adds structure, durability & premium feel.\n100% Cotton Fabric – Soft, breathable & eco-friendly.\nAuthentic Hand Block Printing – No machine prints.\nSustainable – Plastic-free lifestyle choice.\nZipper Closure – Keeps belongings safe & secure.\nInside Pocket – Ideal for phone, keys, wallet & small items.\nTraditional Indian craftsmanship with modern everyday functionality.\nIdeal for office, shopping, picnic, travel, beach, college and boho fashion. \nLarge - 18*18 inches \n\n#BlockPrint #HandBlockPrint #JaipurBlockPrint #IndianBlockPrint #QuiltedBag #BohoBag #BohoChicStyle #Bohemian #FloralToteBag #CottonToteBag #SustainableFashion #SlowFashionMovement #EcoFriendlyBag #HandcraftedBag #MarketTote #BeachToteBag #EverydayTote #TravelTote #BohoShopper",
-      "photo": "images/vinted-10521893948-1.jpg",
-      "photos": [
-        "images/vinted-10521893948-1.jpg",
-        "images/vinted-10521893948-2.jpg",
-        "images/vinted-10521893948-3.jpg"
-      ],
-      "favourites": 41,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10521893948-large-vintage-tote-bag-indian-cotton-quilted-bag-boho-tote",
-        "es": "https://www.vinted.es/items/10521893948-large-vintage-tote-bag-indian-cotton-quilted-bag-boho-tote",
-        "com": "https://www.vinted.com/items/10521893948-large-vintage-tote-bag-indian-cotton-quilted-bag-boho-tote",
-        "uk": "https://www.vinted.co.uk/items/10521893948-large-vintage-tote-bag-indian-cotton-quilted-bag-boho-tote"
-      }
-    },
-    {
       "id": "10520294482",
       "title": "Quilted Cotton Yoga Mat Bag | Indian Block Print Adjustable Strap Carrier | Namaste Yoga Kit",
-      "priceCzk": 750,
-      "priceEur": 31,
+      "priceCzk": 699,
+      "priceEur": 29,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -262,7 +266,7 @@
         "images/vinted-10520294482-2.jpg",
         "images/vinted-10520294482-3.jpg"
       ],
-      "favourites": 117,
+      "favourites": 166,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -313,7 +317,7 @@
         "images/vinted-10516217265-2.jpg",
         "images/vinted-10516217265-3.jpg"
       ],
-      "favourites": 179,
+      "favourites": 227,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -368,7 +372,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -383,8 +387,8 @@
     {
       "id": "10513562820",
       "title": "Handmade Quilted Cotton Yoga Mat Bag | India Yoga Namaste",
-      "priceCzk": 750,
-      "priceEur": 31,
+      "priceCzk": 699,
+      "priceEur": 29,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -423,7 +427,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 37,
+      "favourites": 42,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -474,7 +478,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 35,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -529,7 +533,7 @@
         "images/vinted-10463583902-2.jpg",
         "images/vinted-10463583902-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -580,7 +584,7 @@
         "images/vinted-10430047706-2.jpg",
         "images/vinted-10430047706-3.jpg"
       ],
-      "favourites": 56,
+      "favourites": 54,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -686,7 +690,7 @@
         "images/vinted-10423803022-2.jpg",
         "images/vinted-10423803022-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -912,7 +916,7 @@
       "id": "10401889445",
       "title": "African Unique Heavy Safari Hand Carved Soapstone Coasters Set of 5 Lion Rhino Elephant With Holder",
       "priceCzk": 499,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Africa",
       "size": "",
       "sizeGroup": "",
@@ -1107,7 +1111,7 @@
         "images/vinted-10328216168-2.jpg",
         "images/vinted-10328216168-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1162,7 +1166,7 @@
         "images/vinted-10328097271-2.jpg",
         "images/vinted-10328097271-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1213,7 +1217,7 @@
         "images/vinted-10326324598-2.jpg",
         "images/vinted-10326324598-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1319,7 +1323,7 @@
         "images/vinted-10315558500-2.jpg",
         "images/vinted-10315558500-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 0,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1598,7 +1602,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 32,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1763,7 +1767,7 @@
         "images/vinted-10270021516-2.jpg",
         "images/vinted-10270021516-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1814,7 +1818,7 @@
         "images/vinted-10265107115-2.jpg",
         "images/vinted-10265107115-3.jpg"
       ],
-      "favourites": 40,
+      "favourites": 41,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1865,7 +1869,7 @@
         "images/vinted-10264668226-2.jpg",
         "images/vinted-10264668226-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2152,7 +2156,7 @@
         "images/vinted-10183674562-2.jpg",
         "images/vinted-10183674562-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2862,7 +2866,7 @@
         "images/vinted-10104577760-2.jpg",
         "images/vinted-10104577760-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3212,7 +3216,7 @@
       "id": "10007670761",
       "title": "Luxury silk bedcover with 2 pillow cases",
       "priceCzk": 2300,
-      "priceEur": 95,
+      "priceEur": 94,
       "brand": "Indian",
       "size": "Extra velké dvoulůžko (220–240 cm x 220–260 cm)",
       "sizeGroup": "",
@@ -3554,7 +3558,7 @@
         "images/vinted-9920405528-2.jpg",
         "images/vinted-9920405528-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3756,7 +3760,7 @@
         "images/vinted-9861491149-2.jpg",
         "images/vinted-9861491149-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4496,7 +4500,7 @@
         "images/vinted-9802654698-2.jpg",
         "images/vinted-9802654698-3.jpg"
       ],
-      "favourites": 42,
+      "favourites": 43,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4987,7 +4991,7 @@
         "images/vinted-9674633786-2.jpg",
         "images/vinted-9674633786-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 0,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5207,7 +5211,7 @@
         "images/vinted-9607321104-2.jpg",
         "images/vinted-9607321104-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5721,7 +5725,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 40,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6221,7 +6225,7 @@
         "images/vinted-9602413571-2.jpg",
         "images/vinted-9602413571-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6276,7 +6280,7 @@
         "images/vinted-9583027994-2.jpg",
         "images/vinted-9583027994-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6402,7 +6406,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 206,
+      "priceEur": 205,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6441,7 +6445,7 @@
         "images/vinted-9579803801-2.jpg",
         "images/vinted-9579803801-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6606,7 +6610,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6657,7 +6661,7 @@
         "images/vinted-9565566983-2.jpg",
         "images/vinted-9565566983-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": true,
@@ -7018,7 +7022,7 @@
         "images/vinted-9562314219-2.jpg",
         "images/vinted-9562314219-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7073,7 +7077,7 @@
         "images/vinted-9562257190-2.jpg",
         "images/vinted-9562257190-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7340,7 +7344,7 @@
         "images/vinted-9552844745-2.jpg",
         "images/vinted-9552844745-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7411,7 +7415,7 @@
       "id": "9529729646",
       "title": "for coldest winters Handmade Himalayan Wool Hat India Nepal with 100% Soft Fleece Lining Beanie Boho",
       "priceCzk": 499,
-      "priceEur": 21,
+      "priceEur": 20,
       "brand": "Indian",
       "size": "Univerzální",
       "sizeGroup": "One size",
@@ -8216,7 +8220,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8882,7 +8886,7 @@
         "images/vinted-9388380417-2.jpg",
         "images/vinted-9388380417-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10572,7 +10576,7 @@
         "images/vinted-9312410623-2.jpg",
         "images/vinted-9312410623-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10847,7 +10851,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
