@@ -18,4 +18,4 @@ jobs:
           node-version: 22
       - run: node scripts/build-dist.mjs
       - name: Second run must change nothing tracked
-        run: git diff --exit-code -- . ':!data/i18n/pages.json'
+        run: git diff --exit-code -- . ':!data/i18n/pages.json' ':!sitemap.xml' # sitemap lastmod is computed before the publish commit that dates it
