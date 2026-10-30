@@ -43,3 +43,12 @@ The owner does not code. Claude runs the site end to end: finds issues, decides,
 - **Shopper checks** on any visual change: `node tools/check/check-mobile.mjs <paths>` (WebKit at iPhone width, reduced motion: sideways scroll at 100% and 200% text, 44 px targets, 4.5:1 contrast). Setup once is in `tools/check/package.json`.
 - **Guardrails.** One theme per session. Two strikes: if the same fix fails twice, stop and write what was tried on the issue. Re-running a check without changing anything is a loop: stop. Each PR small enough to revert cleanly.
 - **Research** the primary source before a design change (Apple HIG, Baymard, NN/G, web.dev) and name it in the PR in one line. Do not re-research a question an issue already answers.
+
+## Shop search
+
+- One engine: MiniSearch in `assets/shop.js` over every card. Other pages hand off with a plain GET form to `/wardrobe?q=` (homepage hero); the wardrobe reads `?q=` on load.
+- Words come from the card title, brand, colour, category, description and `data-q`, which `build-shop.mjs` writes from `data/search-terms.json` (synonyms and other-language words, per category). Extend that file to fix "no results" in a language; never tag a whole category with one product's name ("bhagavad gita" on every Prabhupada book made 26 false hits).
+- Words of 4 letters or fewer match exactly; longer ones allow typos. Prefixes match from 3 letters.
+- Any word we show shoppers as a search hint (placeholders, chips) must return results in every language. Check each language after a DeepL run.
+- Vendor data can carry HTML entities; decode where it is read (`scripts/vendor-items.mjs`). `build-dist.mjs` fails on double-escaped entities in cards.
+- Quick test without a browser: `grep -oi 'data-q="[^"]*WORD' <lang>/wardrobe.cards | wc -l`. Real test: `/<lang>/wardrobe?q=WORD` at the mobile preset.
