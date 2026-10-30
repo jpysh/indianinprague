@@ -402,6 +402,13 @@ const SEARCH_WORDS = JSON.parse(await readFile(path.join(ROOT, "data/search-term
 const noCs = Object.entries(SEARCH_WORDS).filter(([k, v]) => !k.startsWith("_") && ((/\bwedding\b/.test(v) && !/\bsvatba\b/.test(v)) || (/\bparty\b/.test(v) && !/\boslava\b/.test(v)))).map(([k]) => k);
 if (noCs.length) throw new Error("search-terms.json: add svatba / oslava to:\n  " + noCs.join("\n  "));
 
+// Homepage search hands off to the wardrobe's ?q= search, in every language (issue: homepage search).
+for (const c of ["", "ru/", "fr/", "de/", "it/", "es/", "pl/", "cs/"]) {
+  const home = await readFile(path.join(ROOT, c, "index.html"), "utf8");
+  if (!home.includes(`action="/${c}wardrobe" method="get" role="search"`) || !/<input type="search" id="hero-q" name="q"/.test(home))
+    throw new Error(`${c}index.html: homepage search form must GET /${c}wardrobe with name="q"`);
+}
+
 // shop.js reads its words from #ui-text; a page that loads it without the table shows English
 // controls in every language (the Fashion shelf did until 19 Oct 2026).
 const noUi = [...pageText].filter(([, b]) => b.includes("/assets/shop.js") && b.includes('id="grid"') && !b.includes('id="ui-text"')).map(([f]) => f);

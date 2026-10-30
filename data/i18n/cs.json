@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T19:20:45.050Z",
-  "count": 7299,
+  "generated": "2026-10-30T20:15:24.382Z",
+  "count": 7297,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -31346,10 +31346,6 @@
       "text": "108 recenzí na Vintedu →",
       "src": "43472698dc4d"
     },
-    "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
-    },
     "text.1ec112770049": {
       "text": "1711 kusů na prodej · 128 prodáno",
       "src": "1ec112770049"
@@ -31377,14 +31373,6 @@
     "text.5c248f4e69b5": {
       "text": "Indický ručně vyrobený háčkovaný náhrdelník s řetízkem v indigové barvě",
       "src": "5c248f4e69b5"
-    },
-    "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
     },
     "text.b0d0d2b71e89": {
       "text": "Letní šaty z indické směsi bavlny a lnu se dvěma kapsami",
@@ -31418,10 +31406,6 @@
       "text": "Prošívaná bavlněná taška na jogamatku | Taška s nastavitelným popruhem s indickým blokovým potiskem | Sada Namaste Yoga",
       "src": "1d8dcd07974d"
     },
-    "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
-      "src": "95afd31227cc"
-    },
     "text.0e866ae24e9a": {
       "text": "Luxusní stylové hodinky | Retro design Serpenti | Zlaté hodinky s hadím motivem | Vintage, luxusní a kreativní",
       "src": "0e866ae24e9a"
@@ -31437,6 +31421,14 @@
     "text.a97e18a59fda": {
       "text": "Reliéfní vyobrazení Pána Krišny, jak hraje na flétnu po boku Rádhy, zdobené barevným a stříbrným smaltem (meenakari) na jejich oděvech a…",
       "src": "a97e18a59fda"
+    },
+    "text.617b294c81e2": {
+      "text": "Prohledat šatník",
+      "src": "617b294c81e2"
+    },
+    "text.924bbb0f6c19": {
+      "text": "Kadidlo, japa korálky, mýdlo…",
+      "src": "924bbb0f6c19"
     }
   }
 }
