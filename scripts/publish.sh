@@ -109,7 +109,16 @@ status() {                       # status <state> <step> <message...>
 # honest about a run that died at step 4 rather than only about the ones that finish. It
 # records the LAST step announced, which is the failing one.
 CURRENT_STEP="starting"
-trap 'code=$?; [ $code -ne 0 ] && status failed "$CURRENT_STEP" "the run stopped here — see .sync.log"; exit $code' EXIT
+# The dashboard alone was not enough: from 24 to 30 Oct 2026 every push was rejected and
+# nobody saw it. A failed run also comments on the owner issue, at most once a day.
+ALERT_STAMP="$(dirname "$0")/../.publish-alert-stamp"
+alert() {
+  [ "$(cat "$ALERT_STAMP" 2>/dev/null)" = "$(date +%Y-%m-%d)" ] && return
+  gh issue comment 3 --repo jpysh/indianinprague \
+    --body "Daily publish failed at step: $CURRENT_STEP. The live site did not update. See .sync.log on the Mac." \
+    >/dev/null 2>&1 && date +%Y-%m-%d > "$ALERT_STAMP"
+}
+trap 'code=$?; [ $code -ne 0 ] && { status failed "$CURRENT_STEP" "the run stopped here — see .sync.log"; alert; }; exit $code' EXIT
 
 # ONCE A DAY, WHENEVER THE MACHINE HAPPENS TO BE ON (added 17 Aug 2026)
 # ---------------------------------------------------------------------

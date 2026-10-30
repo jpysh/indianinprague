@@ -55,6 +55,7 @@ scripts/dashboard.log
 # Machine-local state about THIS Mac, like .sync-stamp: on a fresh checkout its absence must
 # read as "no run yet", not as a stale verdict copied from another machine.
 .publish-status.json
+.publish-alert-stamp
 PRFAQ*.md
 Business case/
 
