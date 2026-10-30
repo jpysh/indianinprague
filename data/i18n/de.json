@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T19:20:41.738Z",
-  "count": 7302,
+  "generated": "2026-10-30T20:15:21.686Z",
+  "count": 7305,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -29377,6 +29377,18 @@
     "text.a97e18a59fda": {
       "text": "Reliefdarstellung von Lord Krishna, der an der Seite von Radha Flöte spielt, verziert mit farbenfrohen und silbernen Emaillearbeiten (Meenakari) auf ihrer Kleidung und…",
       "src": "a97e18a59fda"
+    },
+    "text.617b294c81e2": {
+      "text": "Durchsuchen Sie den Kleiderschrank",
+      "src": "617b294c81e2"
+    },
+    "text.f2c7a2dee472": {
+      "text": "Räucherstäbchen, Japa-Perlen, Naturseife suchen…",
+      "src": "f2c7a2dee472"
+    },
+    "text.924bbb0f6c19": {
+      "text": "Räucherwerk, Japa-Perlen, Seife…",
+      "src": "924bbb0f6c19"
     }
   }
 }

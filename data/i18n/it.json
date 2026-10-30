@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T19:20:42.780Z",
-  "count": 7299,
+  "generated": "2026-10-30T20:15:21.897Z",
+  "count": 7302,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -29366,6 +29366,18 @@
     "text.a97e18a59fda": {
       "text": "Raffigurazione in rilievo del Signore Krishna che suona il flauto accanto a Radha, impreziosita da smalti colorati e argentati (meenakari) sui loro abiti e…",
       "src": "a97e18a59fda"
+    },
+    "text.617b294c81e2": {
+      "text": "Cercare nell'armadio",
+      "src": "617b294c81e2"
+    },
+    "text.f2c7a2dee472": {
+      "text": "Cercate incenso, rosari japa, sapone naturale…",
+      "src": "f2c7a2dee472"
+    },
+    "text.924bbb0f6c19": {
+      "text": "Incenso, rosari japa, sapone…",
+      "src": "924bbb0f6c19"
     }
   }
 }

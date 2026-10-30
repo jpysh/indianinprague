@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T19:20:41.018Z",
-  "count": 7299,
+  "generated": "2026-10-30T20:15:21.476Z",
+  "count": 7302,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -29366,6 +29366,18 @@
     "text.a97e18a59fda": {
       "text": "Représentation en relief du seigneur Krishna jouant de la flûte aux côtés de Radha, rehaussée d&#x27;émaux colorés et argentés (meenakari) sur leurs vêtements et…",
       "src": "a97e18a59fda"
+    },
+    "text.617b294c81e2": {
+      "text": "Faites une recherche dans la garde-robe",
+      "src": "617b294c81e2"
+    },
+    "text.f2c7a2dee472": {
+      "text": "Rechercher de l'encens, des chapelets de japa, du savon naturel…",
+      "src": "f2c7a2dee472"
+    },
+    "text.924bbb0f6c19": {
+      "text": "De l'encens, un chapelet de japa, du savon…",
+      "src": "924bbb0f6c19"
     }
   }
 }

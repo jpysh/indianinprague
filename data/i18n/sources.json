@@ -10,8 +10,8 @@
     "  since    the date this string first appeared on the site",
     "  changed  the date its English last changed; equals `since` until it is edited"
   ],
-  "generated": "2026-10-30T19:20:39.208Z",
-  "count": 4511,
+  "generated": "2026-10-30T20:15:23.792Z",
+  "count": 4513,
   "entries": {
     "item.10573779334.title": {
       "text": "Krishna Radha Engraved Portrait | Indian Hindu Religious Temple Painting | Sacred Spiritual",
@@ -5025,6 +5025,27 @@
       "since": "2026-08-27",
       "changed": "2026-08-27"
     },
+    "text.617b294c81e2": {
+      "text": "Search the wardrobe",
+      "src": "617b294c81e2",
+      "where": "page text — first seen on index.html",
+      "since": "2026-10-30",
+      "changed": "2026-10-30"
+    },
+    "text.924bbb0f6c19": {
+      "text": "Incense, japa beads, soap…",
+      "src": "924bbb0f6c19",
+      "where": "page text — first seen on index.html",
+      "since": "2026-10-30",
+      "changed": "2026-10-30"
+    },
+    "text.49c266baaaa7": {
+      "text": "Search",
+      "src": "49c266baaaa7",
+      "where": "page text — first seen on index.html",
+      "since": "2026-10-19",
+      "changed": "2026-10-19"
+    },
     "text.136ca0dfda22": {
       "text": "Wardrobe →",
       "src": "136ca0dfda22",
@@ -8003,13 +8024,6 @@
     "text.1f830fdb0960": {
       "text": "reviews on Vinted",
       "src": "1f830fdb0960",
-      "where": "page text — first seen on wardrobe.html",
-      "since": "2026-10-19",
-      "changed": "2026-10-19"
-    },
-    "text.49c266baaaa7": {
-      "text": "Search",
-      "src": "49c266baaaa7",
       "where": "page text — first seen on wardrobe.html",
       "since": "2026-10-19",
       "changed": "2026-10-19"
