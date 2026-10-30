@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-19T17:34:58.675Z",
-  "count": 7125,
+  "generated": "2026-10-30T19:20:45.050Z",
+  "count": 7299,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -31280,11 +31280,6 @@
       "text": "101 recenzí na Vintedu →",
       "src": "55ec8fd3a921"
     },
-    "text.537b3274202c": {
-      "text": "Plakát A3: Krishna Govinda",
-      "src": "537b3274202c",
-      "via": "claude"
-    },
     "text.6d91510e2dcb": {
       "text": "1734 kusů na prodej · 122 prodáno",
       "src": "6d91510e2dcb"
@@ -31305,16 +31300,6 @@
       "text": "227 lidí si to uložilo na Vinted",
       "src": "1632c4df7835"
     },
-    "text.1052f2eb7249": {
-      "text": "Plakát A2: Krishna Govinda se vrací z lesa",
-      "src": "1052f2eb7249",
-      "via": "claude"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát A3: Krishna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d",
-      "via": "claude"
-    },
     "text.81fdb1ab3d95": {
       "text": "Velká taška ve vintage stylu | Prošívaná taška z indické bavlny | Taška ve stylu boho",
       "src": "81fdb1ab3d95"
@@ -31322,11 +31307,6 @@
     "text.5608eb752326": {
       "text": "Hodnocení 5,0 z 5 na základě 101 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
       "src": "5608eb752326"
-    },
-    "text.95afd31227cc": {
-      "text": "Krishna Govinda, „pastýř krav“, se vrací z lesa ke svým rodičům, Yasodě a Nanda Maharajovi.",
-      "src": "95afd31227cc",
-      "via": "claude"
     },
     "text.0de06ad1c77f": {
       "text": "Ručně vyrobeno v indickém Rádžasthánu. Bavlněná prošívaná taška na jogamatku. 100 % bavlna. Má pohodlný nastavitelný ramenní popruh. Lehká, ale prostorná…",
@@ -31341,6 +31321,122 @@
       "text": "25 – 50 €",
       "src": "78e84152535d",
       "via": "claude"
+    },
+    "item.10554333040.title": {
+      "text": "Bavlněná prošívaná taška | Indická taška ve stylu boho",
+      "src": "2557a89197b7"
+    },
+    "item.10573779334.title": {
+      "text": "Portrét Krišny a Rádhy s rytinami | Indický hinduistický náboženský chrámový obraz | Posvátné a duchovní",
+      "src": "eeb588f43343"
+    },
+    "item.10573779334.description": {
+      "text": "Reliéfní vyobrazení Pána Krišny hrajícího na flétnu po boku Radhy, zdobené barevným a stříbrným smaltem (meenakari) na jejich oděvech a korunách.\nOzdobný tmavě hnědý a zlatavý rám s texturovaným vnitřním okrajem a detaily z korálků.\nČasto se používá v domácích svatyních (pooja rooms), na kancelářských stolech nebo jako dárky k svátku Diwali a svatbám.\n\n#hindu #chrám #kršna #haribol #radha #hinduistickýbůh #pánkršna #duchovní #náboženské #diwali #domácídekorace #etnické",
+      "src": "fcc00bafbc48"
+    },
+    "item.10554333040.description": {
+      "text": "Velká prošívaná taška s indickým blokovým potiskem, ručně vyrobená zručnými řemeslníky v indickém Rádžasthánu. \nProstorný rozměr – 18 × 18 palců. \nProšívání jí dodává pevnost, texturu a prvotřídní design. \nPerfektní etnická taška v boho stylu do kanceláře, na vysokou školu, na nákupy, jako dárek, na ručník, na pláž atd. \nNa svém profilu mám podobné prošívané tašky na jógu :)\n\nBavlněná prošívaná taška na jógu – https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\n#prošívaná #bavlna #indická #etnická #boho #vintage #taška #bohochic #prémiová #luxusní #díkůvzdání #svátky #jedinečnénálezy #jedinečnédárky #udržitelná #přírodní #ekologická",
+      "src": "c73492302025"
+    },
+    "text.12bca5bfe975": {
+      "text": "475 kusů",
+      "src": "12bca5bfe975"
+    },
+    "text.43472698dc4d": {
+      "text": "108 recenzí na Vintedu →",
+      "src": "43472698dc4d"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.1ec112770049": {
+      "text": "1711 kusů na prodej · 128 prodáno",
+      "src": "1ec112770049"
+    },
+    "text.48afe83416e8": {
+      "text": "57 lidí si to uložilo na Vinted",
+      "src": "48afe83416e8"
+    },
+    "text.9f7a06268246": {
+      "text": "80 lidí si to uložilo na Vinted",
+      "src": "9f7a06268246"
+    },
+    "text.5e08dc82935d": {
+      "text": "127 lidí si to uložilo na Vinted",
+      "src": "5e08dc82935d"
+    },
+    "text.af0d808691ee": {
+      "text": "109 lidí si to uložilo na Vinted",
+      "src": "af0d808691ee"
+    },
+    "text.d15d203e5beb": {
+      "text": "17 letních šatů v módní sekci.",
+      "src": "d15d203e5beb"
+    },
+    "text.5c248f4e69b5": {
+      "text": "Indický ručně vyrobený háčkovaný náhrdelník s řetízkem v indigové barvě",
+      "src": "5c248f4e69b5"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.b0d0d2b71e89": {
+      "text": "Letní šaty z indické směsi bavlny a lnu se dvěma kapsami",
+      "src": "b0d0d2b71e89"
+    },
+    "text.17107259c094": {
+      "text": "Láhev z tepané čisté mědi | Indická ájurvédská láhev na vodu",
+      "src": "17107259c094"
+    },
+    "text.d8a822632373": {
+      "text": "Dřevěná hra „XO“ | Klasická sběratelská hra | Retro vintage deskové hry",
+      "src": "d8a822632373"
+    },
+    "text.b2c73ef7b25f": {
+      "text": "Hodnocení 5,0 z 5 na základě 108 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "b2c73ef7b25f"
+    },
+    "text.12c74807a830": {
+      "text": "Nostalgický retro vintage přívěsek na klíče ve tvaru kazety | Dárek pro milovníky hudby | Kolekce Audiotape Hipster",
+      "src": "12c74807a830"
+    },
+    "text.dc4dbc52d5df": {
+      "text": "Klíčenka ve stylu vintage z nerezové oceli ve tvaru kazety – ideální dárek pro DJ, hudebníka nebo milovníka hudby",
+      "src": "dc4dbc52d5df"
+    },
+    "text.c7b7aaaa41df": {
+      "text": "Hliníkový, robustní a vysoce kvalitní stojan na notebook – ergonomický černý podstavec pro stůl s chlazením",
+      "src": "c7b7aaaa41df"
+    },
+    "text.1d8dcd07974d": {
+      "text": "Prošívaná bavlněná taška na jogamatku | Taška s nastavitelným popruhem s indickým blokovým potiskem | Sada Namaste Yoga",
+      "src": "1d8dcd07974d"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
+    },
+    "text.0e866ae24e9a": {
+      "text": "Luxusní stylové hodinky | Retro design Serpenti | Zlaté hodinky s hadím motivem | Vintage, luxusní a kreativní",
+      "src": "0e866ae24e9a"
+    },
+    "text.74698620b449": {
+      "text": "Ručně vyrobený dvouvrstvý, jednoduchý a lehký náhrdelník z háčkovaných korálků. Šňůrky umožňují nastavení požadované délky.",
+      "src": "74698620b449"
+    },
+    "text.d15780ef0498": {
+      "text": "Velká prošívaná taška s indickým blokovým potiskem, ručně vyrobená zručnými řemeslníky v indickém Rádžasthánu. Prostorná – 18 × 18 palců. Prošívané švy jí dodávají…",
+      "src": "d15780ef0498"
+    },
+    "text.a97e18a59fda": {
+      "text": "Reliéfní vyobrazení Pána Krišny, jak hraje na flétnu po boku Rádhy, zdobené barevným a stříbrným smaltem (meenakari) na jejich oděvech a…",
+      "src": "a97e18a59fda"
     }
   }
 }

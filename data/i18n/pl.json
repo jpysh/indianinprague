@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-27T06:18:09.235Z",
-  "count": 7272,
+  "generated": "2026-10-30T19:20:44.214Z",
+  "count": 7299,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -29258,6 +29258,114 @@
     "text.0de06ad1c77f": {
       "text": "Wykonana ręcznie w Radżastanie w Indiach. Bawełniana, pikowana torba na matę do jogi. 100% bawełna. Wyposażona w wygodny, regulowany pasek na ramię. Lekka, ale pojemna…",
       "src": "0de06ad1c77f"
+    },
+    "item.10554333040.title": {
+      "text": "Bawełniana pikowana torba na ramię | Torba w stylu indyjskim boho",
+      "src": "2557a89197b7"
+    },
+    "item.10573779334.title": {
+      "text": "Portret Kryszny i Radhy wykonany techniką grawerowania | Indyjski hinduski obraz świątynny | Święty, duchowy",
+      "src": "eeb588f43343"
+    },
+    "item.10573779334.description": {
+      "text": "Wytłoczony wizerunek Pana Kryszny grającego na flecie u boku Radhy, ozdobiony kolorową i srebrną emalią (meenakari) na strojach i koronie.\nOzdobna ramka w odcieniach ciemnobrązowym i złotym, z teksturowaną wewnętrzną ramką i detalami z koralików.\nObraz ten jest powszechnie wykorzystywany w domowych świątyniach (pokojach pooja), na biurkach w biurach lub jako prezent z okazji święta Diwali oraz ślubu.\n\n#hinduizm #świątynia #Kryszna #haribol #Radha #bóghinduski #PanKryszna #duchowość #religia #Diwali #dekoracjedomowe #etniczne",
+      "src": "fcc00bafbc48"
+    },
+    "item.10554333040.description": {
+      "text": "Duża pikowana torba z indyjskim nadrukiem blokowym, wykonana ręcznie przez wykwalifikowanych rzemieślników z Radżastanu w Indiach. \nPojemny rozmiar – 18*18 cali. \nPikowane szwy nadają jej sztywność, fakturę oraz zapewniają wzornictwo najwyższej jakości. \nIdealna etniczna torba w stylu boho do biura, na uczelnię, na zakupy, na prezent, jako ręcznik, na plażę itp. \nNa moim profilu znajdą Państwo podobne pikowane torby do jogi :)\n\nBawełniana pikowana torba do jogi – https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\n#pikowana #bawełniana #indyjska #etniczna #boho #vintage #torba #bohochic #premium #luksusowa #dziękczynienie #święta #unikalneznaleziska #unikalneprezenty #zrównoważona #naturalna #ekologiczna",
+      "src": "c73492302025"
+    },
+    "text.d8204a657216": {
+      "text": "10–25 euro",
+      "src": "d8204a657216"
+    },
+    "text.78e84152535d": {
+      "text": "25–50 euro",
+      "src": "78e84152535d"
+    },
+    "text.12bca5bfe975": {
+      "text": "475 sztuk",
+      "src": "12bca5bfe975"
+    },
+    "text.43472698dc4d": {
+      "text": "108 recenzji na stronie Vinted →",
+      "src": "43472698dc4d"
+    },
+    "text.1ec112770049": {
+      "text": "1711 sztuk na sprzedaż · 128 sprzedanych",
+      "src": "1ec112770049"
+    },
+    "text.48afe83416e8": {
+      "text": "57 osób dodało tę pozycję do ulubionych na platformie Vinted",
+      "src": "48afe83416e8"
+    },
+    "text.9f7a06268246": {
+      "text": "80 osób dodało tę pozycję do ulubionych na platformie Vinted",
+      "src": "9f7a06268246"
+    },
+    "text.5e08dc82935d": {
+      "text": "127 osób dodało tę pozycję do ulubionych w serwisie Vinted",
+      "src": "5e08dc82935d"
+    },
+    "text.af0d808691ee": {
+      "text": "109 osób dodało tę pozycję do ulubionych na platformie Vinted",
+      "src": "af0d808691ee"
+    },
+    "text.d15d203e5beb": {
+      "text": "17 letnich sukienek na półce z modą.",
+      "src": "d15d203e5beb"
+    },
+    "text.5c248f4e69b5": {
+      "text": "Naszyjnik z łańcuszkiem wykonany na szydełku w kolorze indygo, wykonany przez indyjskich rzemieślników",
+      "src": "5c248f4e69b5"
+    },
+    "text.b0d0d2b71e89": {
+      "text": "Letnia sukienka z indyjskiej mieszanki bawełny i lnu z dwiema kieszeniami",
+      "src": "b0d0d2b71e89"
+    },
+    "text.17107259c094": {
+      "text": "Butelka z czystej miedzi, wykonana techniką młotkowania | Indyjska ajurwedyjska butelka na wodę",
+      "src": "17107259c094"
+    },
+    "text.d8a822632373": {
+      "text": "Drewniana gra „XO” | Klasyczna gra kolekcjonerska | Gry planszowe w stylu retro i vintage",
+      "src": "d8a822632373"
+    },
+    "text.b2c73ef7b25f": {
+      "text": "Ocena 5,0 na 5 na podstawie 108 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "b2c73ef7b25f"
+    },
+    "text.12c74807a830": {
+      "text": "Breloczek w stylu retro i vintage z motywem kasety | Prezent dla miłośnika muzyki | Kolekcja „Audiotape Hipster”",
+      "src": "12c74807a830"
+    },
+    "text.dc4dbc52d5df": {
+      "text": "Breloczek ze stali nierdzewnej w stylu vintage w kształcie kasety – idealny prezent dla DJ-a, muzyka lub miłośnika muzyki",
+      "src": "dc4dbc52d5df"
+    },
+    "text.c7b7aaaa41df": {
+      "text": "Solidna, wysokiej jakości aluminiowa podstawka pod laptopa – ergonomiczna, czarna podwyższenie biurkowe z systemem chłodzenia",
+      "src": "c7b7aaaa41df"
+    },
+    "text.1d8dcd07974d": {
+      "text": "Pikowana bawełniana torba na matę do jogi | Torba z regulowanym paskiem z indyjskim nadrukiem blokowym | Zestaw do jogi Namaste",
+      "src": "1d8dcd07974d"
+    },
+    "text.0e866ae24e9a": {
+      "text": "Luksusowy zegarek | Styl retro Serpenti | Złoty zegarek z motywem owiniętego węża | Luksusowy zegarek w stylu vintage o kreatywnym wyglądzie",
+      "src": "0e866ae24e9a"
+    },
+    "text.74698620b449": {
+      "text": "Ręcznie wykonany, dwuwarstwowy, prosty i lekki naszyjnik z koralików wykonanych na szydełku. Sznurki umożliwiające regulację długości.",
+      "src": "74698620b449"
+    },
+    "text.d15780ef0498": {
+      "text": "Duża, pikowana torba z indyjskim nadrukiem blokowym, wykonana ręcznie przez wykwalifikowanych rzemieślników z Radżastanu w Indiach. Pojemny rozmiar – 18*18 cali. Pikowane szwy nadają jej…",
+      "src": "d15780ef0498"
+    },
+    "text.a97e18a59fda": {
+      "text": "Wytłoczony wizerunek Pana Kryszny grającego na flecie u boku Radhy, ozdobiony kolorową i srebrną emalią (meenakari) na ich strojach oraz…",
+      "src": "a97e18a59fda"
     }
   }
 }
