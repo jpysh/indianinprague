@@ -37,6 +37,9 @@ const META_PROSE = /(name|property)="(description|og:title|og:description|og:ima
 // The test for those is "contains a digit and almost no letters", which keeps "12 items"
 // (five letters) and drops "1 200 Kč" (two).
 export const translatable = (s) => {
+  // The shop's price-band labels: a fixed set, and the one place a currency range needs each
+  // language's own order ("10 – 25 €"), so they are the exception to the rule below.
+  if (/^€\d+ – €\d+$/.test(s.trim())) return true;
   if (!/\p{L}/u.test(s)) return false;
   if (/^https?:\/\//.test(s.trim())) return false;
   const letters = s.replace(/[^\p{L}]/gu, "");

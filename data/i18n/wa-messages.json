@@ -1,0 +1,17 @@
+{
+  "_comment": [
+    "The prefilled WhatsApp message in each language, written by Claude (via:claude) because",
+    "DeepL was out of quota; replace with a DeepL or owner version when one exists.",
+    "build-i18n.mjs fills {title} (the translated title), {price} (' (€24)' or nothing) and",
+    "{last} (the listing URL for ask, the reference for order and restock).",
+    "A language with no entry here keeps the English message from build-shop.mjs."
+  ],
+  "cs": {
+    "ask": "Dobrý den! Mám dotaz ke kousku „{title}“{price}: {last}",
+    "order": "Dobrý den! Mám zájem o objednávku „{title}“{price}, kód {last}",
+    "sold": "Dobrý den! Kousek „{title}“ je prodaný. Máte něco podobného?",
+    "restock": "Dobrý den! Bude „{title}“ zase skladem? Kód {last}",
+    "hello": "Dobrý den! Píšu z webu guldaarbazaar.com a mám dotaz.",
+    "lookfor": "Dobrý den! Hledám něco, co na guldaarbazaar.com nemáte: "
+  }
+}

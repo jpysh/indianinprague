@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-27T06:18:10.117Z",
-  "count": 7272,
+  "generated": "2026-10-19T17:34:58.675Z",
+  "count": 7125,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -11140,7 +11140,8 @@
     },
     "text.a0e49adfe592": {
       "text": "Nad 50 €",
-      "src": "a0e49adfe592"
+      "src": "a0e49adfe592",
+      "via": "claude"
     },
     "text.51577176b678": {
       "text": "MAGNOLIA",
@@ -11235,8 +11236,9 @@
       "src": "63df5dcc99ec"
     },
     "text.0ab16751f585": {
-      "text": "Méně než 10 €",
-      "src": "0ab16751f585"
+      "text": "Do 10 €",
+      "src": "0ab16751f585",
+      "via": "claude"
     },
     "text.b5c548eb4340": {
       "text": "PATCHOULI",
@@ -31279,8 +31281,9 @@
       "src": "55ec8fd3a921"
     },
     "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
+      "text": "Plakát A3: Krishna Govinda",
+      "src": "537b3274202c",
+      "via": "claude"
     },
     "text.6d91510e2dcb": {
       "text": "1734 kusů na prodej · 122 prodáno",
@@ -31303,12 +31306,14 @@
       "src": "1632c4df7835"
     },
     "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
+      "text": "Plakát A2: Krishna Govinda se vrací z lesa",
+      "src": "1052f2eb7249",
+      "via": "claude"
     },
     "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
+      "text": "Plakát A3: Krishna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d",
+      "via": "claude"
     },
     "text.81fdb1ab3d95": {
       "text": "Velká taška ve vintage stylu | Prošívaná taška z indické bavlny | Taška ve stylu boho",
@@ -31319,12 +31324,23 @@
       "src": "5608eb752326"
     },
     "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
-      "src": "95afd31227cc"
+      "text": "Krishna Govinda, „pastýř krav“, se vrací z lesa ke svým rodičům, Yasodě a Nanda Maharajovi.",
+      "src": "95afd31227cc",
+      "via": "claude"
     },
     "text.0de06ad1c77f": {
       "text": "Ručně vyrobeno v indickém Rádžasthánu. Bavlněná prošívaná taška na jogamatku. 100 % bavlna. Má pohodlný nastavitelný ramenní popruh. Lehká, ale prostorná…",
       "src": "0de06ad1c77f"
+    },
+    "text.d8204a657216": {
+      "text": "10 – 25 €",
+      "src": "d8204a657216",
+      "via": "claude"
+    },
+    "text.78e84152535d": {
+      "text": "25 – 50 €",
+      "src": "78e84152535d",
+      "via": "claude"
     }
   }
 }

@@ -376,7 +376,7 @@ function card(item, manifest, eager, showCat) {
     ? `<span class="fav-badge" title="${item.favourites} people have saved this on Vinted">` +
       `<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" focusable="false" fill="currentColor">` +
       `<path d="M12 21s-8-4.9-8-10.4A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8 3.6C20 16.1 12 21 12 21Z"/></svg>` +
-      `${item.favourites}<span class="vh"> people saved this on Vinted</span></span>`
+      `<span aria-hidden="true">${item.favourites}</span><span class="vh">${item.favourites} people have saved this on Vinted</span></span>`
     : "";
 
   const shots = sold ? "" : extraShots(item, manifest);
