@@ -846,8 +846,9 @@
       searchOptions: {
         boost: { title: 3, brand: 2, color: 2, cat: 1.5, q: 1 },
         prefix: function (t) { return t.length > 2; },
-        // Four letters and under must match exactly: one typo let "gita" find "sita" (issue 89).
-        fuzzy: function (t) { return t.length > 4 ? 0.2 : 0; },
+        // Five letters and under must match exactly, longer words allow one typo: "gita" found
+        // "sita" (issue 89), "cobre" found "cobra" and "pendientes" found "pendant".
+        fuzzy: function (t) { return t.length > 5 ? 1 : 0; },
       },
     });
     // Position, not the element id: a few cards share an id, which MiniSearch rejects.
