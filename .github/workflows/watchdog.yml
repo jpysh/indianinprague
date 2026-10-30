@@ -1,0 +1,39 @@
+# Daily check that does not depend on the Mac. From 24 to 30 Oct 2026 the live site stood
+# still and main's build was red for 11 days, and nothing told a person. Comments on the
+# owner issue (3) when the live build is over 2 days old or main's last build failed.
+name: watchdog
+on:
+  schedule:
+    - cron: "0 10 * * *" # after the 07:15 Prague publish and its hourly retries
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  actions: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          problems=""
+          sha=$(curl -fsS https://guldaarbazaar.com/build-id.txt | tr -d '[:space:]') || sha=""
+          if [ -z "$sha" ]; then
+            problems="- guldaarbazaar.com/build-id.txt did not answer."
+          else
+            built=$(gh api "repos/$GH_REPO/commits/$sha" -q .commit.committer.date) || built=""
+            age=$(( ( $(date +%s) - $(date -d "${built:-1970-01-01}" +%s) ) / 86400 ))
+            [ "$age" -gt 2 ] && problems="- The live site is serving $sha, built $age days ago. The daily publish on the Mac is not getting through."
+          fi
+          last=$(gh run list -w build -b main -e push -L 1 --json conclusion,url -q '.[0] | "\(.conclusion) \(.url)"')
+          case "$last" in failure*) problems="$problems
+          - The last build on main failed: ${last#failure }";; esac
+          if [ -n "$problems" ]; then
+            gh issue comment 3 --body "Watchdog $(date -u +%F):
+          $problems"
+            echo "$problems"
+          else
+            echo "live build $sha is fresh; main build: $last"
+          fi
