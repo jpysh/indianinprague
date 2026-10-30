@@ -402,6 +402,12 @@ const SEARCH_WORDS = JSON.parse(await readFile(path.join(ROOT, "data/search-term
 const noCs = Object.entries(SEARCH_WORDS).filter(([k, v]) => !k.startsWith("_") && ((/\bwedding\b/.test(v) && !/\bsvatba\b/.test(v)) || (/\bparty\b/.test(v) && !/\boslava\b/.test(v)))).map(([k]) => k);
 if (noCs.length) throw new Error("search-terms.json: add svatba / oslava to:\n  " + noCs.join("\n  "));
 
+// Double-escaped entities show on a card as "Qu&#039;Elle" (issue 89).
+for (const f of ["wardrobe.cards", "wardrobe/books.cards", "wardrobe/meditation.cards"]) {
+  if (/&amp;(quot|#0?39|amp);/.test(await readFile(path.join(ROOT, f), "utf8")))
+    throw new Error(`${f}: double-escaped HTML entity in a card; decode it where the data is read`);
+}
+
 // Homepage search hands off to the wardrobe's ?q= search, in every language (issue: homepage search).
 for (const c of ["", "ru/", "fr/", "de/", "it/", "es/", "pl/", "cs/"]) {
   const home = await readFile(path.join(ROOT, c, "index.html"), "utf8");

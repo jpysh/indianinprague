@@ -576,6 +576,11 @@ const grid = (items, manifest, showCat, allUrl = "", seq = null) =>
   // hand-written ones (wardrobe.html, fashion.html) get it when their SHOP:GRID region is
   // replaced. Cards injected later by shop.js reference it from the DOM it is already in.
   VINTED_SYMBOL +
+  // Arriving with ?q= (the homepage search), hold the default cards back until shop.js has
+  // the results, so the shopper never sees the unfiltered shelf first (issue 89). Without
+  // JavaScript this never runs; if shop.js fails, the cards come back after 5 seconds.
+  `<script>if(/[?&]q=./.test(location.search)){var d=document.documentElement;d.classList.add("sb-wait");setTimeout(function(){d.classList.remove("sb-wait")},5000)}</script>\n` +
+  `<p class="sb-wait-msg" role="status">Searching…</p>\n` +
   `<div class="grid3" id="grid"${allUrl ? ` data-all="${allUrl}"` : ""}` +
   (seq?.count ? ` data-start="${(seq.no - 1) * PER_PAGE}" data-total="${seq.count}"` : "") + `>\n` +
   items.map((it, i) => "    " + card(it, manifest, i < 3, showCat)).join("\n") +

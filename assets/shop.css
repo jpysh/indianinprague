@@ -836,3 +836,8 @@
   .sheet::before{display:none}
   .sheet-body{align-self:start;max-height:88vh}
 }
+
+/* Held back while a search from the address bar runs (issue 89; see grid() in build-shop.mjs). */
+.sb-wait-msg{display:none}
+.sb-wait .sb-wait-msg{display:block;padding:48px 0;text-align:center;color:var(--bone-dim)}
+.sb-wait #grid,.sb-wait .pager{display:none}
