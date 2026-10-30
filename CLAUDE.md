@@ -48,7 +48,10 @@ The owner does not code. Claude runs the site end to end: finds issues, decides,
 
 - One engine: MiniSearch in `assets/shop.js` over every card. Other pages hand off with a plain GET form to `/wardrobe?q=` (homepage hero); the wardrobe reads `?q=` on load.
 - Words come from the card title, brand, colour, category, description and `data-q`, which `build-shop.mjs` writes from `data/search-terms.json` (synonyms and other-language words, per category). Extend that file to fix "no results" in a language; never tag a whole category with one product's name ("bhagavad gita" on every Prabhupada book made 26 false hits).
-- Words of 4 letters or fewer match exactly; longer ones allow typos. Prefixes match from 3 letters.
+- Words of 5 letters or fewer match exactly; longer ones allow one typo. Prefixes match from 3 letters.
+- Search terms are keyed by category and Vinted subcategory; a subcategory with no entry (yoga mat bags were "Uncategorised") is findable only in English. Add inflected forms shoppers type (jogę, jógu, йоги) and compounds (yogatasche): there is no stemming.
+- Translated descriptions are indexed, so a word can hit an unrelated meaning there (German "Taschen" = pockets on jackets). Fix by giving the right cards the word in `data-q`.
+- `*.cards` and the language trees are gitignored build output; rebuild with `node scripts/build-dist.mjs` before grepping them locally, or they can be stale. `build-dist.mjs` checks a list of shopper words against the cards (search audit, 30 Oct 2026).
 - Any word we show shoppers as a search hint (placeholders, chips) must return results in every language. Check each language after a DeepL run.
 - Vendor data can carry HTML entities; decode where it is read (`scripts/vendor-items.mjs`). `build-dist.mjs` fails on double-escaped entities in cards.
 - Quick test without a browser: `grep -oi 'data-q="[^"]*WORD' <lang>/wardrobe.cards | wc -l`. Real test: `/<lang>/wardrobe?q=WORD` at the mobile preset.
