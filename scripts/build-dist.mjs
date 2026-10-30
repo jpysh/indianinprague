@@ -402,6 +402,16 @@ const SEARCH_WORDS = JSON.parse(await readFile(path.join(ROOT, "data/search-term
 const noCs = Object.entries(SEARCH_WORDS).filter(([k, v]) => !k.startsWith("_") && ((/\bwedding\b/.test(v) && !/\bsvatba\b/.test(v)) || (/\bparty\b/.test(v) && !/\boslava\b/.test(v)))).map(([k]) => k);
 if (noCs.length) throw new Error("search-terms.json: add svatba / oslava to:\n  " + noCs.join("\n  "));
 
+// What shoppers type for the top sellers, per language (search audit, 30 Oct 2026): each word
+// must sit in data-q of at least this many cards, or that search falls back to unrelated hits.
+{
+  const cardsText = (await readFile(path.join(ROOT, "wardrobe.html"), "utf8")) + (await readFile(path.join(ROOT, "wardrobe.cards"), "utf8"));
+  const qs = [...cardsText.matchAll(/ data-q="([^"]*)"/g)].map((m) => " " + m[1] + " ");
+  const MUST = { "yogatasche": 3, "jogę": 3, "jógu": 3, "йоги": 3, "taschen": 10, "borse": 10, "torebka": 10, "сумка": 10, "благовония": 20, "ohrringe": 10 };
+  const thin = Object.entries(MUST).filter(([w, n]) => qs.filter((q) => q.includes(" " + w + " ")).length < n).map(([w, n]) => `${w} (needs ${n})`);
+  if (thin.length) throw new Error("search-terms.json: shopper words missing from cards:\n  " + thin.join("\n  "));
+}
+
 // Double-escaped entities show on a card as "Qu&#039;Elle" (issue 89).
 for (const f of ["wardrobe.cards", "wardrobe/books.cards", "wardrobe/meditation.cards"]) {
   if (/&amp;(quot|#0?39|amp);/.test(await readFile(path.join(ROOT, f), "utf8")))
