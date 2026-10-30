@@ -154,6 +154,16 @@ if [ -z "$LOCAL" ]; then
     echo "⚠ detached HEAD — commit or check out a branch before publishing" >&2
     exit 1
   }
+  # Take what was merged on GitHub since the last run BEFORE building (30 Oct 2026). Without
+  # this, a PR merged after a publish made every later push non-fast-forward: from 24 to 30
+  # Oct each run committed locally, the push was rejected, and the live site stood still.
+  # Generated files are rebuilt below, so a clash in them resolves to GitHub's side.
+  git fetch -q origin "${GIT_BRANCH}"
+  git merge --ff-only -q FETCH_HEAD 2>/dev/null || git merge -q --no-edit -X theirs FETCH_HEAD || {
+    git merge --abort 2>/dev/null
+    echo "⚠ could not merge origin/${GIT_BRANCH} — fix by hand before publishing" >&2
+    exit 1
+  }
 fi
 
 step "1/14 sync from Vinted"
