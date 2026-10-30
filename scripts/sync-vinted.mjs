@@ -639,6 +639,9 @@ async function main() {
   // sold, almost always. It drops out of the shop but is kept, because "what sells" is
   // the only inventory history this setup will ever have.
   const liveIds = new Set(items.map((i) => i.id));
+  // An item that dropped out for a day and was relisted is not sold. Left in the archive it
+  // rendered twice on its shelf and failed the duplicate-id guard (30 Oct 2026).
+  archive.items = archive.items.filter((i) => !liveIds.has(i.id));
   const knownArchived = new Set(archive.items.map((i) => i.id));
   const soldAt = new Date().toISOString().slice(0, 10);
   let newlySold = 0;
