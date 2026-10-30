@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T20:15:21.686Z",
-  "count": 7305,
+  "generated": "2026-10-30T20:38:19.825Z",
+  "count": 7306,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -29389,6 +29389,10 @@
     "text.924bbb0f6c19": {
       "text": "Räucherwerk, Japa-Perlen, Seife…",
       "src": "924bbb0f6c19"
+    },
+    "text.c31723ab3302": {
+      "text": "Wird gesucht…",
+      "src": "c31723ab3302"
     }
   }
 }

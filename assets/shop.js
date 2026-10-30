@@ -846,7 +846,8 @@
       searchOptions: {
         boost: { title: 3, brand: 2, color: 2, cat: 1.5, q: 1 },
         prefix: function (t) { return t.length > 2; },
-        fuzzy: function (t) { return t.length > 4 ? 0.2 : t.length > 3 ? 1 : 0; },
+        // Four letters and under must match exactly: one typo let "gita" find "sita" (issue 89).
+        fuzzy: function (t) { return t.length > 4 ? 0.2 : 0; },
       },
     });
     // Position, not the element id: a few cards share an id, which MiniSearch rejects.
@@ -895,6 +896,7 @@
     drawChips();
     writeUrl();
     if (empty) empty.hidden = shown.length !== 0;
+    document.documentElement.classList.remove("sb-wait");
   }
 
   bar.addEventListener("input", function (e) { if (e.target === q) apply(); });

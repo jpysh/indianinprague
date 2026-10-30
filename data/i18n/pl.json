@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T20:15:22.374Z",
-  "count": 7302,
+  "generated": "2026-10-30T20:38:20.344Z",
+  "count": 7303,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -29378,6 +29378,10 @@
     "text.924bbb0f6c19": {
       "text": "Kadzidło, koraliki do medytacji, mydło…",
       "src": "924bbb0f6c19"
+    },
+    "text.c31723ab3302": {
+      "text": "Wyszukiwanie…",
+      "src": "c31723ab3302"
     }
   }
 }

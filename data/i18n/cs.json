@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-10-30T20:15:24.382Z",
-  "count": 7297,
+  "generated": "2026-10-30T20:38:22.492Z",
+  "count": 7304,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -31429,6 +31429,40 @@
     "text.924bbb0f6c19": {
       "text": "Kadidlo, japa korálky, mýdlo…",
       "src": "924bbb0f6c19"
+    },
+    "text.29ee41d366e5": {
+      "text": "Rádha Krišna na lotosu 5&quot;",
+      "src": "29ee41d366e5",
+      "via": "govinda-cs"
+    },
+    "text.a09fa7b93ae7": {
+      "text": "Bohyně Lakšmí 3,5&quot;",
+      "src": "a09fa7b93ae7",
+      "via": "govinda-cs"
+    },
+    "text.42f1ac970199": {
+      "text": "Šiva murti 5&quot;",
+      "src": "42f1ac970199",
+      "via": "govinda-cs"
+    },
+    "text.db9e7e80acfd": {
+      "text": "Rádha Krišna ásan 3.5&quot;",
+      "src": "db9e7e80acfd",
+      "via": "govinda-cs"
+    },
+    "text.a341ee9dbc96": {
+      "text": "Šríla Prabhupáda 4.5&quot;",
+      "src": "a341ee9dbc96",
+      "via": "govinda-cs"
+    },
+    "text.da870f4e8a33": {
+      "text": "Nrsimhadév s Prahládem 2,5&quot;",
+      "src": "da870f4e8a33",
+      "via": "govinda-cs"
+    },
+    "text.c31723ab3302": {
+      "text": "Hledám…",
+      "src": "c31723ab3302"
     }
   }
 }

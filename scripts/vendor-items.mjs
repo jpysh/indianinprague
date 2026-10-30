@@ -7,6 +7,9 @@ import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 
 const CSV = "vendors/govinda/data/listings.csv";
+// Govinda's export carries HTML entities (&quot;, &#039;) that the page escaping then showed
+// as text: "Telle Qu&#039;Elle Est" on a live card until 30 Oct 2026 (issue 89).
+const unentity = (s) => (s || "").replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&amp;/g, "&");
 const OVERRIDES = "vendors/govinda/data/overrides.json";
 
 // Enough CSV for a file this pipeline writes itself: quoted fields with embedded commas
@@ -96,8 +99,8 @@ export function vendorItems(root) {
       return {
         id: `govinda-${sku}`,
         vendor: "Govinda",
-        title: r[col.title],
-        description: r[col.description],
+        title: unentity(r[col.title]),
+        description: unentity(r[col.description]),
         // Priced in euro only: this is retail stock, not a koruna listing converted for
         // display, and the CZK figure is the vendor's, not ours. data-price wants a number
         // for the range filter, so it carries the euro figure.
