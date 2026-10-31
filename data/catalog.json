@@ -1,12 +1,114 @@
 {
-  "syncedAt": "2026-10-30T19:18:48.953Z",
+  "syncedAt": "2026-10-31T06:15:16.789Z",
   "rate": {
     "czkPerEur": 24.353,
-    "fetched": "2026-10-30",
+    "fetched": "2026-10-31",
     "source": "ECB"
   },
-  "count": 201,
+  "count": 203,
   "items": [
+    {
+      "id": "10600140497",
+      "title": "Cotton quilted tote bag | Indian boho ethnic bag",
+      "priceCzk": 450,
+      "priceEur": 18,
+      "brand": "Jaipur",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Brown",
+        "cs": "Hnědá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Tote bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 552,
+          "name": "Tote bags"
+        }
+      ],
+      "description": "Beautiful hand block printed tote bag, crafted by skilled artisans from Rajasthan India. \nEach piece is printed by hand, making every tote unique and full of character.\nMade from 100% soft, durable cotton.\nQuilted stitching to give structure, texture and design. \nSize 13*13 inches.\nLarge handle to carry comfortably. \nPerfect as a Cosmetic, Make-up, Travel, Toiletries, Tote Bag, Medicine, Accessories, Shoulder Bag etc. \n\nLarger cotton quilted Indian ethnic tote bag - https://www.vinted.cz/items/10554333040-cotton-quilted-tote-bag-indian-boho-bag\n\nBrown yoga bag - https://www.vinted.cz/items/10532107383-quilted-cotton-yoga-mat-bag-natural-yoga-mat-carrier-with-zipper-pocket-adjustable-strap-boho\n\n#artesanal #indian #cotton #quiltedbag #ecofriendly #sustainable #gifting #ethnic #boho",
+      "photo": "images/vinted-10600140497-1.jpg",
+      "photos": [
+        "images/vinted-10600140497-1.jpg",
+        "images/vinted-10600140497-2.jpg",
+        "images/vinted-10600140497-3.jpg"
+      ],
+      "favourites": 47,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag",
+        "es": "https://www.vinted.es/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag",
+        "com": "https://www.vinted.com/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag",
+        "uk": "https://www.vinted.co.uk/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag"
+      }
+    },
+    {
+      "id": "10599908535",
+      "title": "Whimsical Camper Van Bag | Retro Hippie Travel Bag | Boho Duffel Bag",
+      "priceCzk": 595,
+      "priceEur": 24,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Quilted polyester duffel bag with printed camper van and wildflowers. \nLightweight and large capacity. \nWhimsical, 70s aesthetic with hippie camper van. \nPerfect for weekend travel, picnics, outdoors, gym, diaper bag etc. \n\nSmaller cotton quilted Indian ethnic tote bag - https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#retro #hippie #boho #travelbag #vintage #whimsical #duffelbag",
+      "photo": "images/vinted-10599908535-1.jpg",
+      "photos": [
+        "images/vinted-10599908535-1.jpg",
+        "images/vinted-10599908535-2.jpg",
+        "images/vinted-10599908535-3.jpg"
+      ],
+      "favourites": 97,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10599908535-whimsical-camper-van-bag-retro-hippie-travel-bag-boho-duffel-bag",
+        "es": "https://www.vinted.es/items/10599908535-whimsical-camper-van-bag-retro-hippie-travel-bag-boho-duffel-bag",
+        "com": "https://www.vinted.com/items/10599908535-whimsical-camper-van-bag-retro-hippie-travel-bag-boho-duffel-bag",
+        "uk": "https://www.vinted.co.uk/items/10599908535-whimsical-camper-van-bag-retro-hippie-travel-bag-boho-duffel-bag"
+      }
+    },
     {
       "id": "10573779334",
       "title": "Krishna Radha Engraved Portrait | Indian Hindu Religious Temple Painting | Sacred Spiritual",
@@ -46,7 +148,7 @@
         "images/vinted-10573779334-2.jpg",
         "images/vinted-10573779334-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -97,7 +199,7 @@
         "images/vinted-10554333040-2.jpg",
         "images/vinted-10554333040-3.jpg"
       ],
-      "favourites": 57,
+      "favourites": 58,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -474,7 +576,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 40,
+      "favourites": 42,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -529,7 +631,7 @@
         "images/vinted-10463583902-2.jpg",
         "images/vinted-10463583902-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -631,7 +733,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1009,7 +1111,7 @@
       "reserved": false,
       "sold": false,
       "featured": false,
-      "hidden": false,
+      "hidden": true,
       "urls": {
         "cz": "https://www.vinted.cz/items/10395939169-backlit-keyboard-gaming-keyboard-mechanical-keyboard",
         "es": "https://www.vinted.es/items/10395939169-backlit-keyboard-gaming-keyboard-mechanical-keyboard",
@@ -1382,7 +1484,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1606,7 +1708,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1716,7 +1818,7 @@
         "images/vinted-10275644021-2.jpg",
         "images/vinted-10275644021-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1822,7 +1924,7 @@
         "images/vinted-10265107115-2.jpg",
         "images/vinted-10265107115-3.jpg"
       ],
-      "favourites": 44,
+      "favourites": 45,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2211,7 +2313,7 @@
         "images/vinted-10154270849-2.jpg",
         "images/vinted-10154270849-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3662,7 +3764,7 @@
         "images/vinted-9861491149-2.jpg",
         "images/vinted-9861491149-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4292,7 +4394,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6712,7 +6814,7 @@
         "images/vinted-9564918603-2.jpg",
         "images/vinted-9564918603-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
