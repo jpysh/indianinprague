@@ -1,6 +1,8 @@
 {
   "_comment": "Extra words the shop search matches on, so people can type what they have in mind (an occasion, a gift idea, a synonym, another language) and not only words in the title. Keys are a category, or 'Category > Subcategory'. A card gets its category's words plus its subcategory's. Written by Claude, 19 Oct 2026; extend freely, build-shop.mjs reads it on every build.",
 
+  "_title": { "copper": "copper miedź miedzi miedziany miedziana miedziane měď mědi měděný měděná kupfer cuivre cobre rame медь медный медная медные" },
+
   "Books": "book books reading read gift present novel kniha knihy čtení buch bücher libro livre libri książka книга",
   "Books > Audio and video": "audiobook cd dvd lecture audio video audiokniha hörbuch",
   "Books > Cookery books": "cookbook recipes cooking vegetarian food kitchen kuchařka recepty vaření kochbuch recetas",
@@ -123,6 +125,7 @@
   "Spirituality > Ornaments": "ornament decoration",
   "Spirituality > Sculptures & figurines": "statue sculpture figurine idol buddha ganesh socha",
 
+  "Uncategorised > Water bottles": "bottle bottles water bottle flask flasche wasserflasche kupferflasche trinkflasche láhev lahev láhve měděná láhev bouteille gourde botella cantimplora bottiglia borraccia butelka bidon бутылка бутылки медная бутылка фляга",
   "Uncategorised > Yoga mat carriers & bags": "yoga bag yoga mat bag mat carrier yogatasche yogamattentasche yogamatte tasche sac de yoga sac tapis borsa yoga borsa tappetino bolso de yoga bolso esterilla torba na jogę torba jogi mata do jogi taška na jógu taška jóga jógu podložka сумка для йоги йога коврик",
   "Uncategorised > Board games": "board game game family fun gift desková hra spiel juego",
   "Uncategorised > Keyboards": "keyboard computer pc klávesnice tastatur",

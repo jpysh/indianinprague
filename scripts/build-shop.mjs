@@ -50,6 +50,8 @@ function searchText(item) {
   return [
     sub, item.vintedCategory, item.color?.cs, item.condition?.cs,
     SEARCH_TERMS[item.category], SEARCH_TERMS[`${item.category} > ${sub}`],
+    // Material words, added when the English title has the key ("copper"): miedź, měď, Kupfer (issue 97).
+    ...Object.entries(SEARCH_TERMS._title || {}).filter(([w]) => new RegExp(`\\b${w}\\b`, "i").test(item.title || "")).map(([, t]) => t),
   ].filter(Boolean).join(" ").toLowerCase();
 }
 
