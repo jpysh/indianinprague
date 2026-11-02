@@ -1,12 +1,169 @@
 {
-  "syncedAt": "2026-11-01T06:15:19.704Z",
+  "syncedAt": "2026-11-02T06:15:24.916Z",
   "rate": {
     "czkPerEur": 24.353,
-    "fetched": "2026-11-01",
+    "fetched": "2026-11-02",
     "source": "ECB"
   },
-  "count": 201,
+  "count": 202,
   "items": [
+    {
+      "id": "10625422297",
+      "title": "Whimsical Camper Van Bag | Retro Hippie Duffel Bag | Boho Vintage",
+      "priceCzk": 595,
+      "priceEur": 24,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Quilted polyester bag with printed camper van, butterflies and wildflowers. \nLarge but lightweight. \nWhimsical, 70s retro hippie aesthetic. \nGreat for picnics, weekend travel, outdoors, gym, swim, beach, diaper bag etc. \n\nAnother camper van bag in rainbow colours - https://www.vinted.cz/items/10493834643-quilted-travel-bag-whimsical-retro-hippie-camper-van-bag-boho-vintage-weekender-bag\n\nCotton quilted yoga bag - https://www.vinted.cz/items/10532107383-quilted-cotton-yoga-mat-bag-natural-yoga-mat-carrier-with-zipper-pocket-adjustable-strap-boho\n\nCotton quilted toiletries pouch set - https://www.vinted.cz/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic\n\n#quilted #campervan #travelbag #boho #hippie #vintage #duffelbag #retro",
+      "photo": "images/vinted-10625422297-1.jpg",
+      "photos": [
+        "images/vinted-10625422297-1.jpg",
+        "images/vinted-10625422297-2.jpg",
+        "images/vinted-10625422297-3.jpg"
+      ],
+      "favourites": 53,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
+        "es": "https://www.vinted.es/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
+        "com": "https://www.vinted.com/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
+        "uk": "https://www.vinted.co.uk/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage"
+      }
+    },
+    {
+      "id": "10615882258",
+      "title": "Quilted Yoga Mat Bag | Indian Cotton Yoga Bag | Boho Ethnic | Unique Handmade Yoga Kit",
+      "priceCzk": 699,
+      "priceEur": 29,
+      "brand": "Jaipur",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Burgundy",
+        "cs": "Vínově červená"
+      },
+      "category": "Uncategorised",
+      "vintedCategory": "Sports Yoga mat carriers & bags",
+      "crumbs": [
+        {
+          "id": 4332,
+          "name": "Sports"
+        },
+        {
+          "id": 4334,
+          "name": "Fitness, running & yoga"
+        },
+        {
+          "id": 4416,
+          "name": "Yoga & pilates equipment"
+        },
+        {
+          "id": 4451,
+          "name": "Yoga mat carriers & bags"
+        }
+      ],
+      "description": "Quilted yoga mat bag hand made by skilled artisans in Rajasthan India. \n100% cotton and hand block print.\nQuilted stitching gives it structure, texture and design. \nSpacious 28*6 inches fits any standard yoga mat. \nHas a front zipper closure to store keys, phone, cards etc. \nEco friendly, sustainable and natural addition to yoga, mediation, Pilates, gym, workout routine. \nMakes for a beautiful gift for yoga lovers. \n\nI have other colours, such as green - https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\nCompliment with Ayurveda copper bottle - https://www.vinted.cz/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper\n\nOr Cotton Quilted Tote Bag - https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#quilted #cotton #yoga #workout #gym #natural #indian #hindu #boho #vintage #handmade #sustainable #ecofriendly #uniquefinds #unique #bohemian #ayurveda",
+      "photo": "images/vinted-10615882258-1.jpg",
+      "photos": [
+        "images/vinted-10615882258-1.jpg",
+        "images/vinted-10615882258-2.jpg",
+        "images/vinted-10615882258-3.jpg"
+      ],
+      "favourites": 27,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit",
+        "es": "https://www.vinted.es/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit",
+        "com": "https://www.vinted.com/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit",
+        "uk": "https://www.vinted.co.uk/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit"
+      }
+    },
+    {
+      "id": "10615589755",
+      "title": "Pure Copper Bottle | Ayurveda Hindu Indian Traditional Copper Water Bottle | Hammered Copper",
+      "priceCzk": 900,
+      "priceEur": 37,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Gold",
+        "cs": "Zlatá"
+      },
+      "category": "Uncategorised",
+      "vintedCategory": "Sports Water bottles",
+      "crumbs": [
+        {
+          "id": 4332,
+          "name": "Sports"
+        },
+        {
+          "id": 4334,
+          "name": "Fitness, running & yoga"
+        },
+        {
+          "id": 4698,
+          "name": "Water bottles"
+        }
+      ],
+      "description": "Hammered pure copper bottle handmade by traditional skilled artisans from India (Almora, Himalayas).\n950 ml. \nHealing and purifying properties. \nPerfectly combining ancient Ayurvedic wellness traditions with sleek, functional design, this bottle features a beautiful hand-hammered texture that catches the light while providing an enhanced grip.\nStoring water in copper vessels overnight and drinking in the morning is traditionally practiced.\nUsed to balance body’s three imbalances (Vata, Pitta, and Kapha) while naturally infusing water with a crisp, refreshing quality.\nCopper naturally patinas over time. To restore its original brilliant shine, simply wash periodically using a mixture of lemon juice (or tamarind) and salt, rinse thoroughly, and wipe dry with a soft cloth. Recommended for use with plain water only.\n\nBedside copper jar with cup - https://www.vinted.cz/items/10522603322-pure-hammered-copper-bedside-water-bottle-with-tumbler-lid-ayurveda-copper-bottle-with-glass-lid\n\n#AyurvedicLiving #CopperWaterBottle #MindfulHydration #YogaLifestyle #HolisticWellness #AncientWisdom #ConsciousConsumer #EcoFriendlyLiving #PureCopper #WellnessRituals #DoshaBalance #ArtisanalHandmade #SustainableHydration #HealthyLifestyle #SacredRituals #India #Hindu #Spiritual #copper",
+      "photo": "images/vinted-10615589755-1.jpg",
+      "photos": [
+        "images/vinted-10615589755-1.jpg",
+        "images/vinted-10615589755-2.jpg",
+        "images/vinted-10615589755-3.jpg"
+      ],
+      "favourites": 65,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
+        "es": "https://www.vinted.es/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
+        "com": "https://www.vinted.com/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
+        "uk": "https://www.vinted.co.uk/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper"
+      }
+    },
     {
       "id": "10612759897",
       "title": "Indian Hand Block Printed Quilted Toiletries Pouch Set | Cotton Travel Bags | Boho Ethnic",
@@ -46,7 +203,7 @@
         "images/vinted-10612759897-2.jpg",
         "images/vinted-10612759897-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -56,57 +213,6 @@
         "es": "https://www.vinted.es/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic",
         "com": "https://www.vinted.com/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic",
         "uk": "https://www.vinted.co.uk/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic"
-      }
-    },
-    {
-      "id": "10604543878",
-      "title": "Pure Copper Bottle | Ayurveda Hindu Indian Traditional Copper Water Bottle | Hammered Copper",
-      "priceCzk": 850,
-      "priceEur": 35,
-      "brand": "Indian",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Gold",
-        "cs": "Zlatá"
-      },
-      "category": "Uncategorised",
-      "vintedCategory": "Sports Water bottles",
-      "crumbs": [
-        {
-          "id": 4332,
-          "name": "Sports"
-        },
-        {
-          "id": 4334,
-          "name": "Fitness, running & yoga"
-        },
-        {
-          "id": 4698,
-          "name": "Water bottles"
-        }
-      ],
-      "description": "Hammered pure copper bottle handmade by traditional skilled artisans from India (Almora, Himalayas).\n950 ml. \nHealing and purifying properties. \nPerfectly combining ancient Ayurvedic wellness traditions with sleek, functional design, this bottle features a beautiful hand-hammered texture that catches the light while providing an enhanced grip.\nStoring water in copper vessels overnight and drinking in the morning is traditionally practiced.\nUsed to balance body’s three imbalances (Vata, Pitta, and Kapha) while naturally infusing water with a crisp, refreshing quality.\nCopper naturally patinas over time. To restore its original brilliant shine, simply wash periodically using a mixture of lemon juice (or tamarind) and salt, rinse thoroughly, and wipe dry with a soft cloth. Recommended for use with plain water only.\n\n#AyurvedicLiving #CopperWaterBottle #MindfulHydration #YogaLifestyle #HolisticWellness #AncientWisdom #ConsciousConsumer #EcoFriendlyLiving #PureCopper #WellnessRituals #DoshaBalance #ArtisanalHandmade #SustainableHydration #HealthyLifestyle #SacredRituals #India #Hindu #Spiritual",
-      "photo": "images/vinted-10604543878-1.jpg",
-      "photos": [
-        "images/vinted-10604543878-1.jpg",
-        "images/vinted-10604543878-2.jpg",
-        "images/vinted-10604543878-3.jpg"
-      ],
-      "favourites": 38,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10604543878-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
-        "es": "https://www.vinted.es/items/10604543878-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
-        "com": "https://www.vinted.com/items/10604543878-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
-        "uk": "https://www.vinted.co.uk/items/10604543878-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper"
       }
     },
     {
@@ -198,7 +304,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 89,
+      "favourites": 103,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -300,7 +406,7 @@
         "images/vinted-10554333040-2.jpg",
         "images/vinted-10554333040-3.jpg"
       ],
-      "favourites": 60,
+      "favourites": 63,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -355,7 +461,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 20,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -410,7 +516,7 @@
         "images/vinted-10532107383-2.jpg",
         "images/vinted-10532107383-3.jpg"
       ],
-      "favourites": 127,
+      "favourites": 130,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -465,7 +571,7 @@
         "images/vinted-10526267062-2.jpg",
         "images/vinted-10526267062-3.jpg"
       ],
-      "favourites": 80,
+      "favourites": 88,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -516,7 +622,7 @@
         "images/vinted-10522603322-2.jpg",
         "images/vinted-10522603322-3.jpg"
       ],
-      "favourites": 111,
+      "favourites": 113,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -571,7 +677,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -626,7 +732,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 44,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -677,7 +783,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 45,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -728,7 +834,7 @@
         "images/vinted-10430047706-2.jpg",
         "images/vinted-10430047706-3.jpg"
       ],
-      "favourites": 57,
+      "favourites": 58,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -779,7 +885,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -834,7 +940,7 @@
         "images/vinted-10423803022-2.jpg",
         "images/vinted-10423803022-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -939,7 +1045,7 @@
         "images/vinted-10402007043-2.jpg",
         "images/vinted-10402007043-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1314,7 +1420,7 @@
         "images/vinted-10326324598-2.jpg",
         "images/vinted-10326324598-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1809,7 +1915,7 @@
         "images/vinted-10275644021-2.jpg",
         "images/vinted-10275644021-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 31,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2194,7 +2300,7 @@
         "images/vinted-10189665539-2.jpg",
         "images/vinted-10189665539-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2253,7 +2359,7 @@
         "images/vinted-10183674562-2.jpg",
         "images/vinted-10183674562-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2404,7 +2510,7 @@
         "images/vinted-10149559740-2.jpg",
         "images/vinted-10149559740-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2760,7 +2866,7 @@
         "images/vinted-10115813999-2.jpg",
         "images/vinted-10115813999-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2861,7 +2967,7 @@
         "images/vinted-10111151684-2.jpg",
         "images/vinted-10111151684-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 31,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3465,57 +3571,6 @@
       }
     },
     {
-      "id": "9942373135",
-      "title": "Peruvian Alpaca Llama Keychain Handmade Alpaca Wool | Memorabilia Collectible Vintage Boho",
-      "priceCzk": 199,
-      "priceEur": 8,
-      "brand": "Peruvian",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Multicolour",
-        "cs": "Smíšená"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Keyrings",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 1187,
-          "name": "Accessories"
-        },
-        {
-          "id": 1852,
-          "name": "Keyrings"
-        }
-      ],
-      "description": "Bought from Peru. I have two, one white and one black. Price is for one. Let me know in message which colour!\nLlama/Alpaca keychain handmade by artisans in Peruvian mountains. \nEach features a rainbow band around their necks and brightly colored blankets and baskets full of eggs. \nMade from 100% Alpaca wool.",
-      "photo": "images/vinted-9942373135-1.jpg",
-      "photos": [
-        "images/vinted-9942373135-1.jpg",
-        "images/vinted-9942373135-2.jpg",
-        "images/vinted-9942373135-3.jpg"
-      ],
-      "favourites": 17,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
-        "es": "https://www.vinted.es/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
-        "com": "https://www.vinted.com/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho",
-        "uk": "https://www.vinted.co.uk/items/9942373135-peruvian-alpaca-llama-keychain-handmade-alpaca-wool-memorabilia-collectible-vintage-boho"
-      }
-    },
-    {
       "id": "9938416992",
       "title": "india economic discrimination modern Sukhadeo Thorat Blocked by Caste Oxford University Press",
       "priceCzk": 249,
@@ -3806,7 +3861,7 @@
         "images/vinted-9851163929-2.jpg",
         "images/vinted-9851163929-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3906,7 +3961,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4010,7 +4065,7 @@
         "images/vinted-9824321071-2.jpg",
         "images/vinted-9824321071-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4389,7 +4444,7 @@
         "images/vinted-9794561854-2.jpg",
         "images/vinted-9794561854-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4880,7 +4935,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5559,7 +5614,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 42,
+      "favourites": 43,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7614,7 +7669,7 @@
         "images/vinted-9488787680-2.jpg",
         "images/vinted-9488787680-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7944,7 +7999,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10021,7 +10076,7 @@
         "images/vinted-9315339114-2.jpg",
         "images/vinted-9315339114-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
