@@ -1,12 +1,67 @@
 {
-  "syncedAt": "2026-11-02T06:15:24.916Z",
+  "syncedAt": "2026-11-03T06:15:11.907Z",
   "rate": {
-    "czkPerEur": 24.353,
-    "fetched": "2026-11-02",
+    "czkPerEur": 24.351,
+    "fetched": "2026-11-03",
     "source": "ECB"
   },
   "count": 202,
   "items": [
+    {
+      "id": "10638267277",
+      "title": "Handmade Om Choker | Indian Spiritual Necklace | Mandala | Boho jewellery",
+      "priceCzk": 250,
+      "priceEur": 10,
+      "brand": "Indian",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Red",
+        "cs": "Červená"
+      },
+      "category": "Jewellery",
+      "vintedCategory": "Women Necklaces",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 1187,
+          "name": "Accessories"
+        },
+        {
+          "id": 21,
+          "name": "Jewellery"
+        },
+        {
+          "id": 164,
+          "name": "Necklaces"
+        }
+      ],
+      "description": "Hand painted and handmade  jewellery combining sacred Indian spiritual symbol Om with contemporary bohemian style.\nPainted in a deep crimson red.\nCenter piece pendant features a geometric mandala that frames the ancient Om symbol 🕉️ a universal sign representing peace, mindfulness, and the vibration of the universe.\nAlso has clusters of miniature metallic baubles.\nMade by skilled artisans in the Himalayas. \n\nOm stole - https://www.vinted.cz/items/10326324598-om-yoga-stole-indian-hindu-religion-scarf-shiva-meditation\n\nOm shirt - https://www.vinted.cz/items/10294958143-indian-hindu-spiritual-kurta-shirt-yoga-clothes-boho-hippie-namaste\n\n#BohemianStyle #Om #ArtisanJewelry #StatementNecklace #HandcraftedJewelry #FolkArt\n#YogaJewelry #Mindful #Festival #Spiritual #HandPaintedJewelry #UniqueAccessories #Tribal #Thanksgiving #Gift",
+      "photo": "images/vinted-10638267277-1.jpg",
+      "photos": [
+        "images/vinted-10638267277-1.jpg",
+        "images/vinted-10638267277-2.jpg",
+        "images/vinted-10638267277-3.jpg"
+      ],
+      "favourites": 3,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery",
+        "es": "https://www.vinted.es/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery",
+        "com": "https://www.vinted.com/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery",
+        "uk": "https://www.vinted.co.uk/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery"
+      }
+    },
     {
       "id": "10625422297",
       "title": "Whimsical Camper Van Bag | Retro Hippie Duffel Bag | Boho Vintage",
@@ -46,7 +101,7 @@
         "images/vinted-10625422297-2.jpg",
         "images/vinted-10625422297-3.jpg"
       ],
-      "favourites": 53,
+      "favourites": 77,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -101,7 +156,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 72,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -152,7 +207,7 @@
         "images/vinted-10615589755-2.jpg",
         "images/vinted-10615589755-3.jpg"
       ],
-      "favourites": 65,
+      "favourites": 89,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -203,7 +258,7 @@
         "images/vinted-10612759897-2.jpg",
         "images/vinted-10612759897-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -304,7 +359,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 103,
+      "favourites": 104,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -461,7 +516,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -516,7 +571,7 @@
         "images/vinted-10532107383-2.jpg",
         "images/vinted-10532107383-3.jpg"
       ],
-      "favourites": 130,
+      "favourites": 129,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -622,7 +677,7 @@
         "images/vinted-10522603322-2.jpg",
         "images/vinted-10522603322-3.jpg"
       ],
-      "favourites": 113,
+      "favourites": 112,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -677,7 +732,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -732,7 +787,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 45,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -793,57 +848,6 @@
         "es": "https://www.vinted.es/items/10493834643-quilted-travel-bag-whimsical-retro-hippie-camper-van-bag-boho-vintage-weekender-bag",
         "com": "https://www.vinted.com/items/10493834643-quilted-travel-bag-whimsical-retro-hippie-camper-van-bag-boho-vintage-weekender-bag",
         "uk": "https://www.vinted.co.uk/items/10493834643-quilted-travel-bag-whimsical-retro-hippie-camper-van-bag-boho-vintage-weekender-bag"
-      }
-    },
-    {
-      "id": "10430047706",
-      "title": "Polo Ralph Lauren Knit Scarf",
-      "priceCzk": 279,
-      "priceEur": 11,
-      "brand": "Ralph Lauren",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": "Grey",
-        "cs": "Šedá"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Scarves & shawls",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 1187,
-          "name": "Accessories"
-        },
-        {
-          "id": 89,
-          "name": "Scarves & shawls"
-        }
-      ],
-      "description": "Polo Ralph Lauren knitted scarf in a grey.\n\n#ralphlauren #poloralphlauren #ralphlaurenscarf",
-      "photo": "images/vinted-10430047706-1.jpg",
-      "photos": [
-        "images/vinted-10430047706-1.jpg",
-        "images/vinted-10430047706-2.jpg",
-        "images/vinted-10430047706-3.jpg"
-      ],
-      "favourites": 58,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10430047706-polo-ralph-lauren-knit-scarf",
-        "es": "https://www.vinted.es/items/10430047706-polo-ralph-lauren-knit-scarf",
-        "com": "https://www.vinted.com/items/10430047706-polo-ralph-lauren-knit-scarf",
-        "uk": "https://www.vinted.co.uk/items/10430047706-polo-ralph-lauren-knit-scarf"
       }
     },
     {
@@ -1805,7 +1809,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 35,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1970,7 +1974,7 @@
         "images/vinted-10270021516-2.jpg",
         "images/vinted-10270021516-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2021,7 +2025,7 @@
         "images/vinted-10265107115-2.jpg",
         "images/vinted-10265107115-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2072,7 +2076,7 @@
         "images/vinted-10264668226-2.jpg",
         "images/vinted-10264668226-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3810,7 +3814,7 @@
         "images/vinted-9861491149-2.jpg",
         "images/vinted-9861491149-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3961,7 +3965,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4389,7 +4393,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4825,7 +4829,7 @@
         "images/vinted-9675580496-2.jpg",
         "images/vinted-9675580496-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5614,7 +5618,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 43,
+      "favourites": 45,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6499,7 +6503,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6703,7 +6707,7 @@
         "images/vinted-9565320171-2.jpg",
         "images/vinted-9565320171-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7233,7 +7237,7 @@
         "images/vinted-9538548234-2.jpg",
         "images/vinted-9538548234-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 0,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7669,7 +7673,7 @@
         "images/vinted-9488787680-2.jpg",
         "images/vinted-9488787680-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7999,7 +8003,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9096,7 +9100,7 @@
         "images/vinted-9360475926-2.jpg",
         "images/vinted-9360475926-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9146,7 +9150,7 @@
         "images/vinted-9355268622-2.jpg",
         "images/vinted-9355268622-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9306,7 +9310,7 @@
         "images/vinted-9339656344-2.jpg",
         "images/vinted-9339656344-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
