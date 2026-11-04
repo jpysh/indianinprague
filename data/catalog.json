@@ -1,11 +1,11 @@
 {
-  "syncedAt": "2026-11-03T06:15:11.907Z",
+  "syncedAt": "2026-11-04T06:15:07.361Z",
   "rate": {
-    "czkPerEur": 24.351,
-    "fetched": "2026-11-03",
+    "czkPerEur": 24.343,
+    "fetched": "2026-11-04",
     "source": "ECB"
   },
-  "count": 202,
+  "count": 201,
   "items": [
     {
       "id": "10638267277",
@@ -50,7 +50,7 @@
         "images/vinted-10638267277-2.jpg",
         "images/vinted-10638267277-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -60,57 +60,6 @@
         "es": "https://www.vinted.es/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery",
         "com": "https://www.vinted.com/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery",
         "uk": "https://www.vinted.co.uk/items/10638267277-handmade-om-choker-indian-spiritual-necklace-mandala-boho-jewellery"
-      }
-    },
-    {
-      "id": "10625422297",
-      "title": "Whimsical Camper Van Bag | Retro Hippie Duffel Bag | Boho Vintage",
-      "priceCzk": 595,
-      "priceEur": 24,
-      "brand": "Alternative",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Multicolour",
-        "cs": "Smíšená"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Holdalls & duffel bags",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 19,
-          "name": "Bags"
-        },
-        {
-          "id": 1849,
-          "name": "Holdalls & duffel bags"
-        }
-      ],
-      "description": "Quilted polyester bag with printed camper van, butterflies and wildflowers. \nLarge but lightweight. \nWhimsical, 70s retro hippie aesthetic. \nGreat for picnics, weekend travel, outdoors, gym, swim, beach, diaper bag etc. \n\nAnother camper van bag in rainbow colours - https://www.vinted.cz/items/10493834643-quilted-travel-bag-whimsical-retro-hippie-camper-van-bag-boho-vintage-weekender-bag\n\nCotton quilted yoga bag - https://www.vinted.cz/items/10532107383-quilted-cotton-yoga-mat-bag-natural-yoga-mat-carrier-with-zipper-pocket-adjustable-strap-boho\n\nCotton quilted toiletries pouch set - https://www.vinted.cz/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic\n\n#quilted #campervan #travelbag #boho #hippie #vintage #duffelbag #retro",
-      "photo": "images/vinted-10625422297-1.jpg",
-      "photos": [
-        "images/vinted-10625422297-1.jpg",
-        "images/vinted-10625422297-2.jpg",
-        "images/vinted-10625422297-3.jpg"
-      ],
-      "favourites": 77,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
-        "es": "https://www.vinted.es/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
-        "com": "https://www.vinted.com/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage",
-        "uk": "https://www.vinted.co.uk/items/10625422297-whimsical-camper-van-bag-retro-hippie-duffel-bag-boho-vintage"
       }
     },
     {
@@ -156,7 +105,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 72,
+      "favourites": 73,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -207,7 +156,7 @@
         "images/vinted-10615589755-2.jpg",
         "images/vinted-10615589755-3.jpg"
       ],
-      "favourites": 89,
+      "favourites": 88,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -359,7 +308,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 104,
+      "favourites": 105,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -571,7 +520,7 @@
         "images/vinted-10532107383-2.jpg",
         "images/vinted-10532107383-3.jpg"
       ],
-      "favourites": 129,
+      "favourites": 128,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -626,7 +575,7 @@
         "images/vinted-10526267062-2.jpg",
         "images/vinted-10526267062-3.jpg"
       ],
-      "favourites": 88,
+      "favourites": 89,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -677,7 +626,7 @@
         "images/vinted-10522603322-2.jpg",
         "images/vinted-10522603322-3.jpg"
       ],
-      "favourites": 112,
+      "favourites": 110,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -838,7 +787,7 @@
         "images/vinted-10493834643-2.jpg",
         "images/vinted-10493834643-3.jpg"
       ],
-      "favourites": 47,
+      "favourites": 50,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1259,7 +1208,7 @@
         "images/vinted-10358173763-2.jpg",
         "images/vinted-10358173763-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1475,7 +1424,7 @@
         "images/vinted-10326276947-2.jpg",
         "images/vinted-10326276947-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1809,7 +1758,7 @@
         "images/vinted-10287044320-2.jpg",
         "images/vinted-10287044320-3.jpg"
       ],
-      "favourites": 36,
+      "favourites": 35,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3136,7 +3085,7 @@
         "images/vinted-10079665167-2.jpg",
         "images/vinted-10079665167-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3462,7 +3411,7 @@
         "images/vinted-9942518252-2.jpg",
         "images/vinted-9942518252-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3663,7 +3612,7 @@
         "images/vinted-9882151449-2.jpg",
         "images/vinted-9882151449-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3965,7 +3914,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4393,7 +4342,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4829,7 +4778,7 @@
         "images/vinted-9675580496-2.jpg",
         "images/vinted-9675580496-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4994,7 +4943,7 @@
         "images/vinted-9641705366-2.jpg",
         "images/vinted-9641705366-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5049,7 +4998,7 @@
         "images/vinted-9629132899-2.jpg",
         "images/vinted-9629132899-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5618,7 +5567,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 45,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6503,7 +6452,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7563,7 +7512,7 @@
         "images/vinted-9489491094-2.jpg",
         "images/vinted-9489491094-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7673,7 +7622,7 @@
         "images/vinted-9488787680-2.jpg",
         "images/vinted-9488787680-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8834,7 +8783,7 @@
         "images/vinted-9371171716-2.jpg",
         "images/vinted-9371171716-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8889,7 +8838,7 @@
         "images/vinted-9370862833-2.jpg",
         "images/vinted-9370862833-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9100,7 +9049,7 @@
         "images/vinted-9360475926-2.jpg",
         "images/vinted-9360475926-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10194,7 +10143,7 @@
         "images/vinted-9313953618-2.jpg",
         "images/vinted-9313953618-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10304,7 +10253,7 @@
         "images/vinted-9313793339-2.jpg",
         "images/vinted-9313793339-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10634,7 +10583,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,

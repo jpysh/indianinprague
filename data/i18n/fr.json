@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-03T06:18:14.131Z",
-  "count": 7391,
+  "generated": "2026-11-04T06:17:54.230Z",
+  "count": 7398,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -29734,6 +29734,34 @@
     "text.cd53d8ba1b54": {
       "text": "Des bijoux peints à la main et fabriqués artisanalement, alliant le symbole spirituel sacré indien « Om » à un style bohème contemporain. Peints dans un rouge cramoisi profond…",
       "src": "cd53d8ba1b54"
+    },
+    "text.9eaea222219c": {
+      "text": "115 avis sur Vinted →",
+      "src": "9eaea222219c"
+    },
+    "text.76a12703808c": {
+      "text": "1 728 pièces en vente · 137 vendues",
+      "src": "76a12703808c"
+    },
+    "text.f75725dadb03": {
+      "text": "105 personnes ont enregistré cette annonce sur Vinted",
+      "src": "f75725dadb03"
+    },
+    "text.a9cd93dd9ba1": {
+      "text": "128 personnes ont enregistré cette annonce sur Vinted",
+      "src": "a9cd93dd9ba1"
+    },
+    "text.ce049cc90b04": {
+      "text": "110 personnes ont enregistré cette annonce sur Vinted",
+      "src": "ce049cc90b04"
+    },
+    "text.d3047d3d69af": {
+      "text": "Sac de voyage fantaisiste sur le thème du camping-car | Sac de voyage rétro hippie | Style bohème vintage",
+      "src": "d3047d3d69af"
+    },
+    "text.9c3e327df1c8": {
+      "text": "Note de 5,0 sur 5 d&#x27;après 115 avis d&#x27;acheteurs. Consultez-les sur Vinted (s&#x27;ouvre dans un nouvel onglet).",
+      "src": "9c3e327df1c8"
     }
   }
 }
