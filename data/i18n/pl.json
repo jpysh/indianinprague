@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-05T06:18:22.156Z",
-  "count": 7435,
+  "generated": "2026-11-06T06:17:50.341Z",
+  "count": 7445,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -29768,8 +29768,8 @@
       "src": "02029ffabeb2"
     },
     "item.10662610449.title": {
-      "text": "Fioletowo-złota lehenga | Indyjska spódnica maxi | Etniczna spódnica lehenga na święto Diwali w stylu boho chic",
-      "src": "793f5bd36619"
+      "text": "Fioletowo-złota jedwabna lehenga | Indyjska spódnica maxi | Etniczna spódnica lehenga na święto Diwali w stylu boho chic",
+      "src": "4bfacc6d7217"
     },
     "item.10659420297.title": {
       "text": "Ramka na zdjęcie z wizerunkami Lakshmi, Saraswati i Ganesha | Dekoracje świąteczne z indyjskiej świątyni hinduskiej na Diwali | Sztuka sakralna i duchowa",
@@ -29910,6 +29910,46 @@
     "text.47184431983c": {
       "text": "Wykonana z sztywnej tkaniny brokatowej, ozdobiona misternym złotym wzorem zari oraz żywym różowym motywem kwiatowym wplecionym w fioletową tkaninę. Zaprojektowana z…",
       "src": "47184431983c"
+    },
+    "text.32959f2cf278": {
+      "text": "120 recenzji na stronie Vinted →",
+      "src": "32959f2cf278"
+    },
+    "text.9291090f5c3c": {
+      "text": "1723 sztuki na sprzedaż · 146 sprzedanych",
+      "src": "9291090f5c3c"
+    },
+    "text.d21ffd649970": {
+      "text": "91 osób dodało tę pozycję do ulubionych na Vinted",
+      "src": "d21ffd649970"
+    },
+    "text.fa21e0fe53b5": {
+      "text": "107 osób zapisało tę pozycję w serwisie Vinted",
+      "src": "fa21e0fe53b5"
+    },
+    "text.b6afb00cf9c3": {
+      "text": "Indyjska ceramiczna miska do zupy z uchwytem | Nadaje się do mycia w zmywarce i do użycia w kuchence mikrofalowej",
+      "src": "b6afb00cf9c3"
+    },
+    "text.91a504c3bf0a": {
+      "text": "Plecak w stylu boho z aztekowym wzorem – torba „Wanderer” w stylu bohemy | Plecak w stylu tribal",
+      "src": "91a504c3bf0a"
+    },
+    "text.be2232ddb276": {
+      "text": "Szala Om Yoga | Szal inspirowany indyjską religią hinduską | Szal do medytacji poświęcony Shivie",
+      "src": "be2232ddb276"
+    },
+    "text.289f0e5552e3": {
+      "text": "Torba podróżna | Fantazyjna torba w stylu retro hippie z motywem kampera | Torba weekendowa w stylu boho vintage",
+      "src": "289f0e5552e3"
+    },
+    "text.02029ffabeb2": {
+      "text": "Torba w stylu retro z motywem kampera | Torba podróżna w stylu hippie boho z lat 70. | Torba w stylu vintage o fantazyjnym wzornictwie",
+      "src": "02029ffabeb2"
+    },
+    "text.e5b495b529ab": {
+      "text": "Ocena 5,0 na 5 na podstawie 120 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "e5b495b529ab"
     }
   }
 }
