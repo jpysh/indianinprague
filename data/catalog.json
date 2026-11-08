@@ -1,12 +1,118 @@
 {
-  "syncedAt": "2026-11-07T06:15:20.421Z",
+  "syncedAt": "2026-11-08T06:15:20.039Z",
   "rate": {
     "czkPerEur": 24.35,
-    "fetched": "2026-11-07",
+    "fetched": "2026-11-08",
     "source": "ECB"
   },
-  "count": 197,
+  "count": 198,
   "items": [
+    {
+      "id": "10707623922",
+      "title": "Magnetic Copper Bracelet and Ring Set | Indian Ayurevda Spiritual Jewellery",
+      "priceCzk": 397,
+      "priceEur": 16,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Gold",
+        "cs": "Zlatá"
+      },
+      "category": "Jewellery",
+      "vintedCategory": "Men Bracelets",
+      "crumbs": [
+        {
+          "id": 5,
+          "name": "Men"
+        },
+        {
+          "id": 82,
+          "name": "Accessories"
+        },
+        {
+          "id": 95,
+          "name": "Jewellery"
+        },
+        {
+          "id": 243,
+          "name": "Bracelets"
+        }
+      ],
+      "description": "Magnetic copper bracelet and ring set. Beautiful hammered texture. \nBracelet has 6 magnets and ring has 2. \nUnisex.\nAdjustable bracelet. Ring is harder to move. \nBracelet 7.2 cm diameter and 0.9 cm width. \nRing 2 cm diameter and 0.7 cm width. \nAccording to Ayurveda, copper has healing properties, balancing energies. \nMagnets help pull the iron in blood and boost circulation. \nIn modern science, copper has natural antimicrobial property, releasing ions that destroy viruses. \n\nCopper water bottle - https://www.vinted.cz/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper\n\nCopper bedside jar with cup - https://www.vinted.cz/items/10522603322-pure-hammered-copper-bedside-water-bottle-with-tumbler-lid-ayurveda-copper-bottle-with-glass-lid\n\n#copper #copperbracelet #copperring #copperjewellery #ayurveda",
+      "photo": "images/vinted-10707623922-1.jpg",
+      "photos": [
+        "images/vinted-10707623922-1.jpg",
+        "images/vinted-10707623922-2.jpg",
+        "images/vinted-10707623922-3.jpg"
+      ],
+      "favourites": 14,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10707623922-magnetic-copper-bracelet-and-ring-set-indian-ayurevda-spiritual-jewellery",
+        "es": "https://www.vinted.es/items/10707623922-magnetic-copper-bracelet-and-ring-set-indian-ayurevda-spiritual-jewellery",
+        "com": "https://www.vinted.com/items/10707623922-magnetic-copper-bracelet-and-ring-set-indian-ayurevda-spiritual-jewellery",
+        "uk": "https://www.vinted.co.uk/items/10707623922-magnetic-copper-bracelet-and-ring-set-indian-ayurevda-spiritual-jewellery"
+      }
+    },
+    {
+      "id": "10703373162",
+      "title": "Himalayan Tibetan Paintings | Framed Artwork | Monastery Culture Landscape Portraits | Heritage",
+      "priceCzk": 912,
+      "priceEur": 37,
+      "brand": "Himalaya",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Black",
+        "cs": "Černá"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Picture & photo frames",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1934,
+          "name": "Home accessories"
+        },
+        {
+          "id": 1937,
+          "name": "Picture & photo frames"
+        }
+      ],
+      "description": "Set of 7 framed artwork showing majestic beauty and spiritual essence of the Himalayas. \nMade in fine-line pen-and-wash ink sketches paired with soft watercolor tones. \nPaintings of high-altitude mountain monasteries (such as gompas), hilltop fortresses, arid rock formations, and traditional regional attire. This set captures the timeless architecture, rugged landscapes, and vibrant cultural heritage of regions like Tibet, Ladakh, and Zanskar.\nAn perfect gift for travel enthusiasts, art collectors, practitioners of mindfulness, or mountain landscape lovers.\n\n#mountains #artwork #uniquefinds #unique #himalayas #art #mountains #india #spiritual #tibet #ladakh #luxury #gift #thanksgiving #holidays #watercolour #zen #homedecor",
+      "photo": "images/vinted-10703373162-1.jpg",
+      "photos": [
+        "images/vinted-10703373162-1.jpg",
+        "images/vinted-10703373162-2.jpg",
+        "images/vinted-10703373162-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10703373162-himalayan-tibetan-paintings-framed-artwork-monastery-culture-landscape-portraits-heritage",
+        "es": "https://www.vinted.es/items/10703373162-himalayan-tibetan-paintings-framed-artwork-monastery-culture-landscape-portraits-heritage",
+        "com": "https://www.vinted.com/items/10703373162-himalayan-tibetan-paintings-framed-artwork-monastery-culture-landscape-portraits-heritage",
+        "uk": "https://www.vinted.co.uk/items/10703373162-himalayan-tibetan-paintings-framed-artwork-monastery-culture-landscape-portraits-heritage"
+      }
+    },
     {
       "id": "10686079177",
       "title": "Cotton Quilted Yoga Mat Bag | Gym Bag | Indian Handmade Yoga Bag | Boho Bag",
@@ -50,7 +156,7 @@
         "images/vinted-10686079177-2.jpg",
         "images/vinted-10686079177-3.jpg"
       ],
-      "favourites": 87,
+      "favourites": 106,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -105,7 +211,7 @@
         "images/vinted-10685433080-2.jpg",
         "images/vinted-10685433080-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -371,7 +477,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 76,
+      "favourites": 77,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -473,7 +579,7 @@
         "images/vinted-10612759897-2.jpg",
         "images/vinted-10612759897-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -625,7 +731,7 @@
         "images/vinted-10573779334-2.jpg",
         "images/vinted-10573779334-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -676,7 +782,7 @@
         "images/vinted-10554333040-2.jpg",
         "images/vinted-10554333040-3.jpg"
       ],
-      "favourites": 63,
+      "favourites": 65,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -731,7 +837,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -786,7 +892,7 @@
         "images/vinted-10526267062-2.jpg",
         "images/vinted-10526267062-3.jpg"
       ],
-      "favourites": 93,
+      "favourites": 95,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -947,7 +1053,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 45,
+      "favourites": 46,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1431,7 +1537,7 @@
         "images/vinted-10328097271-2.jpg",
         "images/vinted-10328097271-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1588,7 +1694,7 @@
         "images/vinted-10315558500-2.jpg",
         "images/vinted-10315558500-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2319,7 +2425,7 @@
         "images/vinted-10154270849-2.jpg",
         "images/vinted-10154270849-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2429,56 +2535,6 @@
         "es": "https://www.vinted.es/items/10149559740-star-sign-decides-your-fate-serial-killer-thriller-zodiac-sam-wilson-english-novel",
         "com": "https://www.vinted.com/items/10149559740-star-sign-decides-your-fate-serial-killer-thriller-zodiac-sam-wilson-english-novel",
         "uk": "https://www.vinted.co.uk/items/10149559740-star-sign-decides-your-fate-serial-killer-thriller-zodiac-sam-wilson-english-novel"
-      }
-    },
-    {
-      "id": "10137238946",
-      "title": "dystopian Who Is John Galt Atlas Shrugged Ayn Rand Centennial Edition Landmark English Novel",
-      "priceCzk": 89,
-      "priceEur": 4,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "Good",
-        "cs": "Dobrý"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2319,
-          "name": "Fiction"
-        }
-      ],
-      "description": "Who is John Galt? The centennial edition of Ayn Rand's masterwork, one of the most influential and debated novels of the 20th century. A gripping dystopian mystery about the thinkers who stopped the motor of the world, in an epic saga of suspense and individual freedom. In English. ISBN 0451191145 | RRP around €15\n#aynrand #atlasshrugged #johngalt #whoisjohngalt #objectivism #philosophicalfiction #philosophy #dystopian #dystopianfiction #classicnovel #classicliterature #literaryclassics #20thcenturyliterature #individualism #libertarian #capitalism #politicalphilosophy #bestseller #novel #bookclub #bookstagram #secondhandbooks #englishbook #knihy #kniha #anglickeknihy #knihomol #ksiazki #atlaszbuntowany #ksiazkipoangielsku",
-      "photo": "images/vinted-10137238946-1.jpg",
-      "photos": [
-        "images/vinted-10137238946-1.jpg",
-        "images/vinted-10137238946-2.jpg",
-        "images/vinted-10137238946-3.jpg"
-      ],
-      "favourites": 1,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10137238946-dystopian-who-is-john-galt-atlas-shrugged-ayn-rand-centennial-edition-landmark-english-novel",
-        "es": "https://www.vinted.es/items/10137238946-dystopian-who-is-john-galt-atlas-shrugged-ayn-rand-centennial-edition-landmark-english-novel",
-        "com": "https://www.vinted.com/items/10137238946-dystopian-who-is-john-galt-atlas-shrugged-ayn-rand-centennial-edition-landmark-english-novel",
-        "uk": "https://www.vinted.co.uk/items/10137238946-dystopian-who-is-john-galt-atlas-shrugged-ayn-rand-centennial-edition-landmark-english-novel"
       }
     },
     {
@@ -3517,7 +3573,7 @@
         "images/vinted-9938416992-2.jpg",
         "images/vinted-9938416992-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3668,7 +3724,7 @@
         "images/vinted-9861491149-2.jpg",
         "images/vinted-9861491149-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4412,7 +4468,7 @@
         "images/vinted-9775845980-2.jpg",
         "images/vinted-9775845980-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4793,7 +4849,7 @@
         "images/vinted-9649545514-2.jpg",
         "images/vinted-9649545514-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5472,7 +5528,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 46,
+      "favourites": 47,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5922,7 +5978,7 @@
         "images/vinted-9602442603-2.jpg",
         "images/vinted-9602442603-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6820,7 +6876,7 @@
         "images/vinted-9562192907-2.jpg",
         "images/vinted-9562192907-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7857,7 +7913,7 @@
         "images/vinted-9438792395-2.jpg",
         "images/vinted-9438792395-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9329,7 +9385,7 @@
         "images/vinted-9328560854-2.jpg",
         "images/vinted-9328560854-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10378,7 +10434,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 23,
       "reserved": false,
       "sold": false,
       "featured": false,

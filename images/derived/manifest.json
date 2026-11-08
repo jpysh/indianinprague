@@ -6901,6 +6901,26 @@
       }
     ]
   },
+  "images/govinda-1492-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "3ae1de5e",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1492-1-400.jpg",
+        "webp": "images/derived/govinda-1492-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1492-1-800.jpg",
+        "webp": "images/derived/govinda-1492-1-800.webp"
+      }
+    ]
+  },
   "images/govinda-150-1.jpg": {
     "width": 900,
     "height": 1600,
@@ -10358,6 +10378,26 @@
         "h": 1422,
         "jpg": "images/derived/govinda-1811-1-800.jpg",
         "webp": "images/derived/govinda-1811-1-800.webp"
+      }
+    ]
+  },
+  "images/govinda-1817-1.jpg": {
+    "width": 900,
+    "height": 1600,
+    "aspect": 0.5625,
+    "v": "33e08b25",
+    "variants": [
+      {
+        "w": 400,
+        "h": 711,
+        "jpg": "images/derived/govinda-1817-1-400.jpg",
+        "webp": "images/derived/govinda-1817-1-400.webp"
+      },
+      {
+        "w": 800,
+        "h": 1422,
+        "jpg": "images/derived/govinda-1817-1-800.jpg",
+        "webp": "images/derived/govinda-1817-1-800.webp"
       }
     ]
   },
@@ -37645,7 +37685,7 @@
     "width": 900,
     "height": 1600,
     "aspect": 0.5625,
-    "v": "6969b446",
+    "v": "f8212ba3",
     "variants": [
       {
         "w": 400,
@@ -55052,6 +55092,90 @@
         "h": 533,
         "jpg": "images/derived/vinted-10686079177-3-400.jpg",
         "webp": "images/derived/vinted-10686079177-3-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10703373162-1.jpg": {
+    "width": 731,
+    "height": 800,
+    "aspect": 0.9137,
+    "v": "b639ca32",
+    "variants": [
+      {
+        "w": 400,
+        "h": 438,
+        "jpg": "images/derived/vinted-10703373162-1-400.jpg",
+        "webp": "images/derived/vinted-10703373162-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10703373162-2.jpg": {
+    "width": 602,
+    "height": 800,
+    "aspect": 0.7525,
+    "v": "3a4b7d7d",
+    "variants": [
+      {
+        "w": 400,
+        "h": 532,
+        "jpg": "images/derived/vinted-10703373162-2-400.jpg",
+        "webp": "images/derived/vinted-10703373162-2-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10703373162-3.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "b8c51ada",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10703373162-3-400.jpg",
+        "webp": "images/derived/vinted-10703373162-3-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10707623922-1.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "e089352c",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10707623922-1-400.jpg",
+        "webp": "images/derived/vinted-10707623922-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10707623922-2.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "7bbd0de4",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10707623922-2-400.jpg",
+        "webp": "images/derived/vinted-10707623922-2-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10707623922-3.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "8943de09",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10707623922-3-400.jpg",
+        "webp": "images/derived/vinted-10707623922-3-400.webp"
       }
     ]
   },
