@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-08T06:20:43.306Z",
-  "count": 7519,
+  "generated": "2026-11-09T06:18:12.389Z",
+  "count": 7524,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -30245,6 +30245,26 @@
     "text.84b8e1f28041": {
       "text": "Conjunto de 7 obras de arte enmarcadas que muestran la majestuosa belleza y la esencia espiritual del Himalaya. Realizadas mediante bocetos a pluma y aguada de trazo fino, combinados con suaves…",
       "src": "84b8e1f28041"
+    },
+    "text.36093f7cc44e": {
+      "text": "1726 piezas a la venta · 149 vendidas",
+      "src": "36093f7cc44e"
+    },
+    "text.5fb36973fc49": {
+      "text": "78 personas han guardado esto en Vinted",
+      "src": "5fb36973fc49"
+    },
+    "text.635c0bdc1f5c": {
+      "text": "121 personas han guardado esto en Vinted",
+      "src": "635c0bdc1f5c"
+    },
+    "text.c1c99494deea": {
+      "text": "16 vestidos de verano en la sección de moda.",
+      "src": "c1c99494deea"
+    },
+    "text.fcadc6dab316": {
+      "text": "Vestido midi escalonado de algodón «Indian Summer», estampado a mano con bloques de color – Talla M",
+      "src": "fcadc6dab316"
     }
   }
 }

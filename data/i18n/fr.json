@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-08T06:20:39.873Z",
-  "count": 7519,
+  "generated": "2026-11-09T06:18:11.197Z",
+  "count": 7524,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -30245,6 +30245,26 @@
     "text.84b8e1f28041": {
       "text": "Ensemble de 7 œuvres d&#x27;art encadrées illustrant la beauté majestueuse et l&#x27;essence spirituelle de l&#x27;Himalaya. Réalisées à partir de croquis à l&#x27;encre et au lavis aux traits fins, associées à des…",
       "src": "84b8e1f28041"
+    },
+    "text.36093f7cc44e": {
+      "text": "1 726 pièces en vente · 149 vendues",
+      "src": "36093f7cc44e"
+    },
+    "text.5fb36973fc49": {
+      "text": "78 personnes ont enregistré cette annonce sur Vinted",
+      "src": "5fb36973fc49"
+    },
+    "text.635c0bdc1f5c": {
+      "text": "121 personnes ont enregistré cette annonce sur Vinted",
+      "src": "635c0bdc1f5c"
+    },
+    "text.c1c99494deea": {
+      "text": "16 robes d&#x27;été dans la rubrique « Mode ».",
+      "src": "c1c99494deea"
+    },
+    "text.fcadc6dab316": {
+      "text": "Robe midi à volants en coton « Indian Summer », imprimée à la main au bloc – Taille M",
+      "src": "fcadc6dab316"
     }
   }
 }
