@@ -1,12 +1,71 @@
 {
-  "syncedAt": "2026-11-09T06:15:07.287Z",
+  "syncedAt": "2026-11-10T06:15:11.524Z",
   "rate": {
-    "czkPerEur": 24.35,
-    "fetched": "2026-11-09",
+    "czkPerEur": 24.365,
+    "fetched": "2026-11-10",
     "source": "ECB"
   },
-  "count": 197,
+  "count": 196,
   "items": [
+    {
+      "id": "10741164106",
+      "title": "Vintage Indian Kashmiri Coat | Winter Coat | Heritage Coat | Unique Dark Academia Boho Winter Jacket",
+      "priceCzk": 2797,
+      "priceEur": 115,
+      "brand": "Kashmir",
+      "size": "L / 40 / 12",
+      "sizeGroup": "L",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Overcoats & long coats",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 4,
+          "name": "Clothing"
+        },
+        {
+          "id": 1037,
+          "name": "Outerwear"
+        },
+        {
+          "id": 1907,
+          "name": "Coats"
+        },
+        {
+          "id": 2526,
+          "name": "Overcoats & long coats"
+        }
+      ],
+      "description": "Vintage indian coat jacket made by traditional skilled artisans. \nMade in Kashmir, India. \nRaw silk as base in magenta pink.\nDense, intricate Aari (crewel) chain-stitch embroidery of spectacular floral pattern in warm, glowing shades of marigold yellow, tangerine orange, soft coral, and olive green.\nDesigned with a sleek Mandarin collar, a classic button-down front, and elegant long sleeves. \nThis striking outerwear piece combines historical artistry and modern luxury. \nDark Academia meets Bohemian aesthetic. Deep magenta pink gives it whimsical gothic feel. \nUltimate statement layer for the modern eclectic. \nPerfect for throwing over a dress, styling with a dark turtleneck and tailored trousers, or wearing open as a bohemian jacket.\n\nArmpit to armpit 50 cm\nLength 98 cm\nShoulder to wrist sleeve 54 cm\n\nI also have a shorter, woollen embroidered jacket - https://www.vinted.cz/items/10251315839-woollen-embroidery-jacket-premium-indian-boho-winter-vintage-coat-suzani-kashmiri\n\n#vintagekashmiricoat #india #boho #vintage #retro #darkacademia #bohemianmaximalism #slowfashion #vintageindiansilk #darkbohostyle #artisan #whimsigothfashion #folklorecore #academicchic #eclectic #slowfashion #heritage",
+      "photo": "images/vinted-10741164106-1.jpg",
+      "photos": [
+        "images/vinted-10741164106-1.jpg",
+        "images/vinted-10741164106-2.jpg",
+        "images/vinted-10741164106-3.jpg"
+      ],
+      "favourites": 1,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10741164106-vintage-indian-kashmiri-coat-winter-coat-heritage-coat-unique-dark-academia-boho-winter-jacket",
+        "es": "https://www.vinted.es/items/10741164106-vintage-indian-kashmiri-coat-winter-coat-heritage-coat-unique-dark-academia-boho-winter-jacket",
+        "com": "https://www.vinted.com/items/10741164106-vintage-indian-kashmiri-coat-winter-coat-heritage-coat-unique-dark-academia-boho-winter-jacket",
+        "uk": "https://www.vinted.co.uk/items/10741164106-vintage-indian-kashmiri-coat-winter-coat-heritage-coat-unique-dark-academia-boho-winter-jacket"
+      }
+    },
     {
       "id": "10707623922",
       "title": "Magnetic Copper Bracelet and Ring Set | Indian Ayurevda Spiritual Jewellery",
@@ -50,7 +109,7 @@
         "images/vinted-10707623922-2.jpg",
         "images/vinted-10707623922-3.jpg"
       ],
-      "favourites": 34,
+      "favourites": 37,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -156,7 +215,7 @@
         "images/vinted-10686079177-2.jpg",
         "images/vinted-10686079177-3.jpg"
       ],
-      "favourites": 121,
+      "favourites": 120,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -528,7 +587,7 @@
         "images/vinted-10615589755-2.jpg",
         "images/vinted-10615589755-3.jpg"
       ],
-      "favourites": 97,
+      "favourites": 96,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -538,57 +597,6 @@
         "es": "https://www.vinted.es/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
         "com": "https://www.vinted.com/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper",
         "uk": "https://www.vinted.co.uk/items/10615589755-pure-copper-bottle-ayurveda-hindu-indian-traditional-copper-water-bottle-hammered-copper"
-      }
-    },
-    {
-      "id": "10612759897",
-      "title": "Indian Hand Block Printed Quilted Toiletries Pouch Set | Cotton Travel Bags | Boho Ethnic",
-      "priceCzk": 450,
-      "priceEur": 18,
-      "brand": "Jaipur",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Pink",
-        "cs": "Tmavě růžová"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Makeup bags",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 19,
-          "name": "Bags"
-        },
-        {
-          "id": 161,
-          "name": "Makeup bags"
-        }
-      ],
-      "description": "Small, medium and large set of 3 cotton quilted pouches.\nHandmade by skilled artisans from Rajasthan India. \nEach pouch features a soft quilted texture, a detailed floral pattern and a practical zip closure.\nTwo of the big ones have inside pockets. \nPerfect for storing:\n1. Makeup and cosmetics\n2. Skincare and toiletries\n3. Jewellery and small accessories\n4. Travel essentials\n5. Stationery and everyday items\n\nAlso a thoughtful gift for birthdays, festive occasions, or bridesmaids.\n\nQuilted tote bag - https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\nQuilted yoga bag - https://www.vinted.cz/items/10526267062-cotton-quilted-yoga-mat-bag-indian-boho-yoga-bag\n\n#JaipurBlockPrint #BlockPrintPouch #QuiltedToiletryBag #KanthaStitch #BlockPrintCosmeticBag #HandmadeToiletryBag #ArtisanMade #BohoTravel #TravelPouches #CosmeticOrganizer #MakeupBagSet #TravelEssentials #BohoChic #HandmadeGifts #EcoFriendly #Sustainable #Bohemian",
-      "photo": "images/vinted-10612759897-1.jpg",
-      "photos": [
-        "images/vinted-10612759897-1.jpg",
-        "images/vinted-10612759897-2.jpg",
-        "images/vinted-10612759897-3.jpg"
-      ],
-      "favourites": 30,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic",
-        "es": "https://www.vinted.es/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic",
-        "com": "https://www.vinted.com/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic",
-        "uk": "https://www.vinted.co.uk/items/10612759897-indian-hand-block-printed-quilted-toiletries-pouch-set-cotton-travel-bags-boho-ethnic"
       }
     },
     {
@@ -680,7 +688,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 106,
+      "favourites": 105,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -731,7 +739,7 @@
         "images/vinted-10573779334-2.jpg",
         "images/vinted-10573779334-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -782,7 +790,7 @@
         "images/vinted-10554333040-2.jpg",
         "images/vinted-10554333040-3.jpg"
       ],
-      "favourites": 65,
+      "favourites": 64,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -892,7 +900,7 @@
         "images/vinted-10526267062-2.jpg",
         "images/vinted-10526267062-3.jpg"
       ],
-      "favourites": 95,
+      "favourites": 97,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -943,7 +951,7 @@
         "images/vinted-10522603322-2.jpg",
         "images/vinted-10522603322-3.jpg"
       ],
-      "favourites": 109,
+      "favourites": 108,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -998,7 +1006,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1104,7 +1112,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1749,7 +1757,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3097,7 +3105,7 @@
         "images/vinted-10079665167-2.jpg",
         "images/vinted-10079665167-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3207,7 +3215,7 @@
         "images/vinted-10067667788-2.jpg",
         "images/vinted-10067667788-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3317,7 +3325,7 @@
         "images/vinted-10035026195-2.jpg",
         "images/vinted-10035026195-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3875,7 +3883,7 @@
         "images/vinted-9839115628-2.jpg",
         "images/vinted-9839115628-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4248,7 +4256,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4303,7 +4311,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4959,7 +4967,7 @@
         "images/vinted-9629132899-2.jpg",
         "images/vinted-9629132899-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5069,7 +5077,7 @@
         "images/vinted-9604783346-2.jpg",
         "images/vinted-9604783346-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5178,7 +5186,7 @@
         "images/vinted-9603636575-2.jpg",
         "images/vinted-9603636575-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5228,7 +5236,7 @@
         "images/vinted-9603594529-2.jpg",
         "images/vinted-9603594529-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6413,7 +6421,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 31,
+      "favourites": 32,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7037,7 +7045,7 @@
         "images/vinted-9552844745-2.jpg",
         "images/vinted-9552844745-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7047,61 +7055,6 @@
         "es": "https://www.vinted.es/items/9552844745-indian-fit-flare-pure-cotton-halter-dress-size-l",
         "com": "https://www.vinted.com/items/9552844745-indian-fit-flare-pure-cotton-halter-dress-size-l",
         "uk": "https://www.vinted.co.uk/items/9552844745-indian-fit-flare-pure-cotton-halter-dress-size-l"
-      }
-    },
-    {
-      "id": "9538548234",
-      "title": "Pure 925 silver pearl bracelet",
-      "priceCzk": 1300,
-      "priceEur": 53,
-      "brand": "Indian",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Silver",
-        "cs": "Stříbrná"
-      },
-      "category": "Jewellery",
-      "vintedCategory": "Women Bracelets",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 1187,
-          "name": "Accessories"
-        },
-        {
-          "id": 21,
-          "name": "Jewellery"
-        },
-        {
-          "id": 165,
-          "name": "Bracelets"
-        }
-      ],
-      "description": "Crafted from genuine 92.5% Pure Silver. Stamped with 925 hallmark. Adjustable design to ensure a comfortable and secure fit. Rhodium coating to prevent tarnishing, ensuring a long-lasting shine.",
-      "photo": "images/vinted-9538548234-1.jpg",
-      "photos": [
-        "images/vinted-9538548234-1.jpg",
-        "images/vinted-9538548234-2.jpg",
-        "images/vinted-9538548234-3.jpg"
-      ],
-      "favourites": 0,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9538548234-pure-925-silver-pearl-bracelet",
-        "es": "https://www.vinted.es/items/9538548234-pure-925-silver-pearl-bracelet",
-        "com": "https://www.vinted.com/items/9538548234-pure-925-silver-pearl-bracelet",
-        "uk": "https://www.vinted.co.uk/items/9538548234-pure-925-silver-pearl-bracelet"
       }
     },
     {
@@ -7363,7 +7316,7 @@
         "images/vinted-9493474615-2.jpg",
         "images/vinted-9493474615-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 16,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7528,7 +7481,7 @@
         "images/vinted-9488787680-2.jpg",
         "images/vinted-9488787680-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8915,7 +8868,7 @@
     {
       "id": "9355268622",
       "title": "2022 Pulitzer Prize for Fiction The Netanyahus – Joshua Cohen Winner, 2022 Pulitzer Prize",
-      "priceCzk": 99,
+      "priceCzk": 88,
       "priceEur": 4,
       "brand": "",
       "size": "",
@@ -8950,7 +8903,7 @@
         "images/vinted-9355268622-2.jpg",
         "images/vinted-9355268622-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9330,7 +9283,7 @@
         "images/vinted-9328560854-2.jpg",
         "images/vinted-9328560854-3.jpg"
       ],
-      "favourites": 18,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10324,7 +10277,7 @@
         "images/vinted-9311631498-2.jpg",
         "images/vinted-9311631498-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10434,7 +10387,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 51,
+      "favourites": 52,
       "reserved": false,
       "sold": false,
       "featured": false,
