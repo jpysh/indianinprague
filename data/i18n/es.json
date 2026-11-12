@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-11T06:17:52.326Z",
-  "count": 7549,
+  "generated": "2026-11-12T06:18:05.435Z",
+  "count": 7555,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -30365,6 +30365,30 @@
     "text.41d222963bf1": {
       "text": "Bolsa para esterilla de yoga estampada a mano con bloques, diseñada por expertos artesanos de Rajastán (India). Tejido 100 % algodón de alta calidad. Las costuras acolchadas le confieren…",
       "src": "41d222963bf1"
+    },
+    "item.10758263438.title": {
+      "text": "Novela gráfica de manga de Kafka, adquirida en Japón; una interpretación de culto única de «La metamorfosis»",
+      "src": "dc1068902bb9"
+    },
+    "item.10758263438.description": {
+      "text": "Adquirido en Japón. Una interpretación única en formato manga de la obra de Franz Kafka; novela gráfica en inglés, edición en rústica, 176 páginas.\nNueve relatos de Kafka, entre los que se incluyen «La metamorfosis», «El artista del hambre», «En la colonia penitenciaria» y «Un médico rural», redibujados con densas ilustraciones en blanco y negro por el dúo de culto japonés formado por los hermanos Nishioka Kyodai, que debutaron en 1989. Presentada por primera vez en inglés, traducida por David Yang. Pushkin Press, 2023.\nTambién buscado como: kniha v angličtině, komiks, Proměna, libro en inglés, novela gráfica, Przemiana, libro en inglés, Premena, libro en inglés, cómics, Metamorfosis, libro en inglés, cómic, La metamorfosis.\n#Kafka #FranzKafka #Metamorfosis #Manga #NovelaGráfica #cómic #cómic #cómic\nISBN: 978-1-78227-984-6 (ISBN-10: 1782279849)",
+      "src": "205314ab914a"
+    },
+    "text.238197c1f227": {
+      "text": "150 unidades",
+      "src": "238197c1f227"
+    },
+    "text.c8bbbd5a4e06": {
+      "text": "1722 piezas a la venta · 156 vendidas",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.f0be32953e7a": {
+      "text": "Bolsa acolchada de algodón para esterilla de yoga | Bolsa boho india | Bolsa de pilates | Bolsa de deporte para el gimnasio",
+      "src": "f0be32953e7a"
+    },
+    "text.f0c66d57facf": {
+      "text": "Adquirido en Japón. Una interpretación única en formato manga de la obra de Franz Kafka; novela gráfica en inglés, edición en rústica, 176 páginas. Nueve relatos de Kafka, entre los que se incluye «El…»",
+      "src": "f0c66d57facf"
     }
   }
 }

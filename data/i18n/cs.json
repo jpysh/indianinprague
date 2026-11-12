@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-11T06:17:53.894Z",
-  "count": 7548,
+  "generated": "2026-11-12T06:18:06.859Z",
+  "count": 7554,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -32389,10 +32389,6 @@
       "text": "125 recenzí na Vintedu →",
       "src": "874ef9d339ac"
     },
-    "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
-    },
     "text.12bdb27fd612": {
       "text": "1722 kusů na prodej · 155 prodáno",
       "src": "12bdb27fd612"
@@ -32404,14 +32400,6 @@
     "text.b46a53d23101": {
       "text": "122 lidí si to uložilo na Vinted",
       "src": "b46a53d23101"
-    },
-    "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
     },
     "text.85d2ab31003c": {
       "text": "Bavlněná prošívaná taška na jogamatku | Indická taška na jogamatku ve stylu boho |",
@@ -32429,10 +32417,6 @@
       "text": "Vázaná kniha Davida Whytea „Consolations“ od Elizabeth Gilbertové – tuto knihu si nechte navždy u postele",
       "src": "96c365ffb05c"
     },
-    "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
-      "src": "95afd31227cc"
-    },
     "text.12d7f6ba138e": {
       "text": "Retro indický kašmírský kabát | Zimní kabát | Tradiční kabát | Jedinečná zimní bunda ve stylu „Dark Academia Boho“",
       "src": "12d7f6ba138e"
@@ -32440,6 +32424,46 @@
     "text.41d222963bf1": {
       "text": "Taška na jogamatku s ručně tištěným vzorem, navržená zručnými řemeslníky z indického Rádžasthánu. Vyrobena ze 100 % vysoce kvalitní bavlny. Prošívané švy jí dodávají…",
       "src": "41d222963bf1"
+    },
+    "item.10758263438.title": {
+      "text": "V Japonsku zakoupený grafický román „Kafka Manga“ – jedinečná kultovní interpretace díla „Proměna“",
+      "src": "dc1068902bb9"
+    },
+    "item.10758263438.description": {
+      "text": "Zakoupeno v Japonsku. Jedinečná manga interpretace díla Franze Kafky, grafický román v angličtině, brožovaná vazba, 176 stran.\nDevět Kafkových povídek, včetně Proměny, Umělce hladu, V trestanecké kolonii a Venkovského lékaře, překreslených do hutných černobílých ilustrací kultovním japonským sourozeneckým duem Nishioka Kyodai, které debutovalo v roce 1989. Poprvé vydáno v angličtině, překlad David Yang. Pushkin Press 2023.\nHledáno také jako: kniha v angličtině, komiks, Proměna, kniha v angličtině, grafický román, Przemiana, kniha v angličtině, Premena, kniha v angličtině, komiks, Metamorfóza, kniha v angličtině, komiks, Proměna.\n#Kafka #FranzKafka #Metamorphosis #Manga #GraphicNovel #komiks #képregény #benzidesenate\nISBN: 978-1-78227-984-6 (ISBN-10: 1782279849)",
+      "src": "205314ab914a"
+    },
+    "text.238197c1f227": {
+      "text": "150 kusů",
+      "src": "238197c1f227"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.c8bbbd5a4e06": {
+      "text": "1722 kusů na prodej · 156 prodáno",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.f0be32953e7a": {
+      "text": "Bavlněná prošívaná taška na jogamatku | Indická taška ve stylu boho | Taška na pilates | Taška do posilovny",
+      "src": "f0be32953e7a"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
+    },
+    "text.f0c66d57facf": {
+      "text": "Zakoupeno v Japonsku. Jedinečná manga adaptace díla Franze Kafky, grafický román v angličtině, brožovaná vazba, 176 stran. Devět Kafkových povídek, včetně…",
+      "src": "f0c66d57facf"
     }
   }
 }

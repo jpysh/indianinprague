@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-11T06:17:50.307Z",
-  "count": 7549,
+  "generated": "2026-11-12T06:18:03.527Z",
+  "count": 7555,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -30365,6 +30365,30 @@
     "text.41d222963bf1": {
       "text": "Sac pour tapis de yoga imprimé à la main à l&#x27;aide de blocs, conçu par des artisans qualifiés du Rajasthan, en Inde. Tissu 100 % coton de haute qualité. Les coutures matelassées lui confèrent…",
       "src": "41d222963bf1"
+    },
+    "item.10758263438.title": {
+      "text": "Roman graphique « Kafka Manga » acheté au Japon : une interprétation culte et unique de *La Métamorphose*",
+      "src": "dc1068902bb9"
+    },
+    "item.10758263438.description": {
+      "text": "Acheté au Japon. Une interprétation unique en son genre de Franz Kafka sous forme de manga, roman graphique en anglais, livre de poche, 176 pages.\nNeuf récits de Kafka, dont *La Métamorphose*, *L’Artiste de la faim*, *Dans la colonie pénitentiaire* et *Un médecin de campagne*, redessinés dans un style noir et blanc très dense par le duo culte de frère et sœur japonais Nishioka Kyodai, qui a fait ses débuts en 1989. Présenté pour la première fois en anglais, traduit par David Yang. Pushkin Press 2023.\nÉgalement recherché sous les termes : kniha v angličtině, komiks, Proměna, livre en anglais, roman graphique, Przemiana, livre en anglais, Premena, carte en anglais, bandes dessinées, Metamorfoza, livre en anglais, bande dessinée, Az átváltozás.\n#Kafka #FranzKafka #Métamorphose #Manga #RomanGraphique #komiks #képregény #benzidesenate\nISBN : 978-1-78227-984-6 (ISBN-10 : 1782279849)",
+      "src": "205314ab914a"
+    },
+    "text.238197c1f227": {
+      "text": "150 pièces",
+      "src": "238197c1f227"
+    },
+    "text.c8bbbd5a4e06": {
+      "text": "1 722 pièces en vente · 156 vendues",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.f0be32953e7a": {
+      "text": "Sac mat de yoga matelassé en coton | Sac bohème indien | Sac de Pilates | Sac de sport",
+      "src": "f0be32953e7a"
+    },
+    "text.f0c66d57facf": {
+      "text": "Acheté au Japon. Une adaptation unique en son genre de Franz Kafka sous forme de manga, roman graphique en anglais, livre de poche, 176 pages. Neuf récits de Kafka, dont « Le… »",
+      "src": "f0c66d57facf"
     }
   }
 }

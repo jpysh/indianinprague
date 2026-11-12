@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-11T06:17:53.149Z",
-  "count": 7549,
+  "generated": "2026-11-12T06:18:06.246Z",
+  "count": 7555,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -30365,6 +30365,30 @@
     "text.41d222963bf1": {
       "text": "Torba na matę do jogi z ręcznym nadrukiem blokowym, zaprojektowana przez wykwalifikowanych rzemieślników z Radżastanu w Indiach. Wykonana w 100% z wysokiej jakości tkaniny bawełnianej. Pikowane szwy nadają jej…",
       "src": "41d222963bf1"
+    },
+    "item.10758263438.title": {
+      "text": "Zakupiona w Japonii powieść graficzna „Kafka Manga” – jedyna w swoim rodzaju kultowa interpretacja „Przemiany”",
+      "src": "dc1068902bb9"
+    },
+    "item.10758263438.description": {
+      "text": "Zakupiono w Japonii. Wyjątkowa manga inspirowana twórczością Franza Kafki, powieść graficzna w języku angielskim, wydanie w miękkiej oprawie, 176 stron.\nDziewięć opowiadań Kafki, w tym „Przemiana”, „Artysta głodu”, „W kolonii karnej” oraz „Wiejski lekarz”, narysowanych na nowo w gęstej czarno-białej grafice przez kultowy japoński duet rodzeństwa Nishioka Kyodai, który zadebiutował w 1989 roku. Po raz pierwszy wydane w języku angielskim, w tłumaczeniu Davida Yanga. Wydawnictwo Pushkin Press, 2023 r.\nWyszukiwane również jako: książka w języku angielskim, komiks, Proměna, książka po angielsku, powieść graficzna, Przemiana, kniha v angličtine, Premena, carte în limba engleză, benzi desenate, Metamorfoza, angol nyelvű könyv, képregény, Az átváltozás.\n#Kafka #FranzKafka #Metamorphosis #Manga #GraphicNovel #komiks #képregény #benzidesenate\nISBN: 978-1-78227-984-6 (ISBN-10: 1782279849)",
+      "src": "205314ab914a"
+    },
+    "text.238197c1f227": {
+      "text": "150 sztuk",
+      "src": "238197c1f227"
+    },
+    "text.c8bbbd5a4e06": {
+      "text": "1722 sztuki na sprzedaż · 156 sprzedanych",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.f0be32953e7a": {
+      "text": "Bawełniana, pikowana torba na matę do jogi | Torba w stylu indyjskim boho | Torba na pilates | Torba sportowa na siłownię",
+      "src": "f0be32953e7a"
+    },
+    "text.f0c66d57facf": {
+      "text": "Zakupiono w Japonii. Wyjątkowa manga oparta na twórczości Franza Kafki, powieść graficzna w języku angielskim, wydanie w miękkiej oprawie, 176 stron. Dziewięć opowiadań Kafki, w tym „The…”",
+      "src": "f0c66d57facf"
     }
   }
 }

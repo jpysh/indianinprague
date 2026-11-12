@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-11T06:17:50.934Z",
-  "count": 7552,
+  "generated": "2026-11-12T06:18:04.199Z",
+  "count": 7558,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -30376,6 +30376,30 @@
     "text.41d222963bf1": {
       "text": "Von erfahrenen Kunsthandwerkern in Rajasthan, Indien, entworfene Yogamatten-Tasche mit Handblockdruck. Aus 100 % hochwertigem Baumwollstoff. Die Steppnähte verleihen ihr…",
       "src": "41d222963bf1"
+    },
+    "item.10758263438.title": {
+      "text": "In Japan erworbener Kafka-Manga – Graphic Novel, eine einzigartige Kult-Interpretation von „Die Verwandlung“",
+      "src": "dc1068902bb9"
+    },
+    "item.10758263438.description": {
+      "text": "In Japan erworben. Eine einzigartige Manga-Interpretation von Franz Kafka, Graphic Novel in englischer Sprache, Taschenbuch, 176 Seiten.\nNeun Kafka-Geschichten, darunter „Die Verwandlung“, „Der Hungerkünstler“, „In der Strafkolonie“ und „Ein Landarzt“, neu gezeichnet in ausdrucksstarken Schwarz-Weiß-Illustrationen vom japanischen Kult-Geschwisterpaar Nishioka Kyodai, das 1989 sein Debüt feierte. Erstmals auf Englisch erschienen, übersetzt von David Yang. Pushkin Press 2023.\nAuch gesucht als: Buch auf Englisch, Comic, Proměna, Buch auf Englisch, Graphic Novel, Przemiana, Buch auf Englisch, Premena, Buch auf Englisch, Comics, Metamorphose, Buch auf Englisch, Comic, Die Verwandlung.\n#Kafka #FranzKafka #Metamorphosis #Manga #GraphicNovel #komiks #képregény #benzidesenate\nISBN: 978-1-78227-984-6 (ISBN-10: 1782279849)",
+      "src": "205314ab914a"
+    },
+    "text.238197c1f227": {
+      "text": "150 Stück",
+      "src": "238197c1f227"
+    },
+    "text.c8bbbd5a4e06": {
+      "text": "1722 Artikel zum Verkauf · 156 verkauft",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.f0be32953e7a": {
+      "text": "Gesteppte Yogamatten-Tasche aus Baumwolle | Indische Boho-Tasche | Pilates-Tasche | Sporttasche für das Fitnessstudio",
+      "src": "f0be32953e7a"
+    },
+    "text.f0c66d57facf": {
+      "text": "In Japan erworben. Eine einzigartige Manga-Interpretation von Franz Kafka, Graphic Novel in englischer Sprache, Taschenbuch, 176 Seiten. Neun Geschichten von Kafka, darunter „The…“",
+      "src": "f0c66d57facf"
     }
   }
 }
