@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-12T06:18:06.859Z",
-  "count": 7554,
+  "generated": "2026-11-13T06:17:49.551Z",
+  "count": 7570,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -32437,13 +32437,69 @@
       "text": "150 kusů",
       "src": "238197c1f227"
     },
+    "text.c8bbbd5a4e06": {
+      "text": "1722 kusů na prodej · 156 prodáno",
+      "src": "c8bbbd5a4e06"
+    },
+    "text.f0be32953e7a": {
+      "text": "Bavlněná prošívaná taška na jogamatku | Indická taška ve stylu boho | Taška na pilates | Taška do posilovny",
+      "src": "f0be32953e7a"
+    },
+    "text.f0c66d57facf": {
+      "text": "Zakoupeno v Japonsku. Jedinečná manga adaptace díla Franze Kafky, grafický román v angličtině, brožovaná vazba, 176 stran. Devět Kafkových povídek, včetně…",
+      "src": "f0c66d57facf"
+    },
+    "item.10783050996.title": {
+      "text": "Taška ve stylu retro karavanu | Netradiční hippie taška | Boho vintage",
+      "src": "30476e8d5c3d"
+    },
+    "item.10775609402.title": {
+      "text": "Magnetický měděný náramek a prsten | Indická ájurvédská měď | léčivé šperky",
+      "src": "699b9c8bc68c"
+    },
+    "item.10783050996.description": {
+      "text": "Prošívaná polyesterová taška s potisky retro karavanu, motýlů a lučních květin.\nKrásná, hravá vintage estetika 70. let.\nVelká a lehká.\nRozměry: délka 20,4 palce, šířka 9 palců, výška 12 palců.\nIdeální na pikniky, víkendové výlety, do přírody, do posilovny nebo na plavání, na pláž či jako taška na dětské plenky.\n\nV nabídce mám také bavlněné prošívané tašky na jogamatky – https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\nA bavlněné prošívané tašky – https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#retro #vintage #taška-do-karavanu #cestovní-taška #taška-na-cestování #boho #hippie #nakupování #Den-díkůvzdání #Černý-pátek #svátky",
+      "src": "79206f0c4b37"
+    },
+    "item.10775609402.description": {
+      "text": "Sada náramku a prstenu z tepané mědi s magnety. \nNáramek s nastavitelnou délkou. \nUnisexový design. \nVe starověké ajurvédě měď napomáhá uzdravování tím, že vyrovnává energie. Podle moderní vědy její ionty pomáhají odstraňovat škodlivé bakterie a viry. \nMagnety přitahují železo v krvi a podporují tak krevní oběh. \nIdeální pro každodenní nošení, jako dárek pro milovníky jógy a ájurvédy. \n\n\nMám k dispozici noční sklenici z tepané mědi s víčkem – https://www.vinted.cz/items/10522603322-čistá-tepaná-měděná-noční-láhev-na-vodu-s-víčkem-v podobě sklenice-ájurvédská-měděná-láhev-se-skleněným-víčkem\n\nA prošívané tašky na jógové podložky – https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#měď #měděnýnáramek #magnetickáměď #ajurvéda #léčení #duchovno #rovnováha #mindfulness",
+      "src": "07848ae843c3"
+    },
+    "text.d35b0efe2128": {
+      "text": "Měď",
+      "src": "d35b0efe2128"
+    },
+    "text.a9ec3d2fc396": {
+      "text": "484 kusů",
+      "src": "a9ec3d2fc396"
+    },
+    "text.29f33fb2d282": {
+      "text": "314 kusů",
+      "src": "29f33fb2d282"
+    },
+    "text.3ea4c8861ec8": {
+      "text": "127 recenzí na Vintedu →",
+      "src": "3ea4c8861ec8"
+    },
     "text.537b3274202c": {
       "text": "Plakát formátu A3: Krišna Govinda",
       "src": "537b3274202c"
     },
-    "text.c8bbbd5a4e06": {
-      "text": "1722 kusů na prodej · 156 prodáno",
-      "src": "c8bbbd5a4e06"
+    "text.60f53028cee5": {
+      "text": "1724 kusů na prodej · 156 prodáno",
+      "src": "60f53028cee5"
+    },
+    "text.9157bf86d9fe": {
+      "text": "79 lidí si to uložilo na Vinted",
+      "src": "9157bf86d9fe"
+    },
+    "text.03f5470187b2": {
+      "text": "66 lidí si to uložilo na Vinted",
+      "src": "03f5470187b2"
+    },
+    "text.2a03e010f1ea": {
+      "text": "124 lidí si to uložilo na Vinted",
+      "src": "2a03e010f1ea"
     },
     "text.1052f2eb7249": {
       "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
@@ -32453,17 +32509,25 @@
       "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
       "src": "9c6d4a4d7c3d"
     },
-    "text.f0be32953e7a": {
-      "text": "Bavlněná prošívaná taška na jogamatku | Indická taška ve stylu boho | Taška na pilates | Taška do posilovny",
-      "src": "f0be32953e7a"
+    "text.db4d7bfb4000": {
+      "text": "Hodnocení 5,0 z 5 na základě 127 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "db4d7bfb4000"
+    },
+    "text.193ea536e2ad": {
+      "text": "Láhev z čisté mědi | Tradiční indická ájurvédská hinduistická měděná láhev na vodu | Tlouklá měď",
+      "src": "193ea536e2ad"
     },
     "text.95afd31227cc": {
       "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
       "src": "95afd31227cc"
     },
-    "text.f0c66d57facf": {
-      "text": "Zakoupeno v Japonsku. Jedinečná manga adaptace díla Franze Kafky, grafický román v angličtině, brožovaná vazba, 176 stran. Devět Kafkových povídek, včetně…",
-      "src": "f0c66d57facf"
+    "text.b581911a7388": {
+      "text": "Sada náramku a prstenu z tepané mědi s magnety. Nastavitelný náramek. Unisexový design. Ve starověké ajurvédě měď napomáhá uzdravování tím, že vyrovnává…",
+      "src": "b581911a7388"
+    },
+    "text.278d4f2fe6c7": {
+      "text": "Prošívaná polyesterová taška s potisky retro karavanu, motýlů a lučních květin. Krásná, hravá vintage estetika 70. let. Velká a lehká…",
+      "src": "278d4f2fe6c7"
     }
   }
 }
