@@ -1,12 +1,63 @@
 {
-  "syncedAt": "2026-11-15T06:15:05.521Z",
+  "syncedAt": "2026-11-16T06:15:14.666Z",
   "rate": {
     "czkPerEur": 24.424,
-    "fetched": "2026-11-15",
+    "fetched": "2026-11-16",
     "source": "ECB"
   },
-  "count": 191,
+  "count": 190,
   "items": [
+    {
+      "id": "10825241824",
+      "title": "Whimsical retro camper bag | Hippie van duffel | Boho vintage van travel bag",
+      "priceCzk": 635,
+      "priceEur": 26,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Smíšená"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Whimsical travel duffel with polyester quilted fabric and prints of camper van, butterflies and wild flowers. \nunique hippie retro 1970s aesthetic. \ndimensions 20.4 inches in length, 12 inches in height and 9 inches in width. \nvery spacious yet lightweight. \nperfect for outdoors, short trips, swimming or gymnasium, picnic, beach holidays, roadtrips, baby diaper bags etc. \n\ni have another retro style duffel bag - https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\ni have cotton quilted yoga mat bags - https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#camper #oldschool #hippie #trippy #retro #vintage #travelduffel #adventure #holidays #roadtrip #boho #unique #thanksgiving",
+      "photo": "images/vinted-10825241824-1.jpg",
+      "photos": [
+        "images/vinted-10825241824-1.jpg",
+        "images/vinted-10825241824-2.jpg",
+        "images/vinted-10825241824-3.jpg"
+      ],
+      "favourites": 4,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10825241824-whimsical-retro-camper-bag-hippie-van-duffel-boho-vintage-van-travel-bag",
+        "es": "https://www.vinted.es/items/10825241824-whimsical-retro-camper-bag-hippie-van-duffel-boho-vintage-van-travel-bag",
+        "com": "https://www.vinted.com/items/10825241824-whimsical-retro-camper-bag-hippie-van-duffel-boho-vintage-van-travel-bag",
+        "uk": "https://www.vinted.co.uk/items/10825241824-whimsical-retro-camper-bag-hippie-van-duffel-boho-vintage-van-travel-bag"
+      }
+    },
     {
       "id": "10796332946",
       "title": "Pure Copper Bottle and Tumbler | Ayurveda Gift Set | Indian Healing Spiritual 100% Copper",
@@ -46,7 +97,7 @@
         "images/vinted-10796332946-2.jpg",
         "images/vinted-10796332946-3.jpg"
       ],
-      "favourites": 67,
+      "favourites": 78,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -97,7 +148,7 @@
         "images/vinted-10794296799-2.jpg",
         "images/vinted-10794296799-3.jpg"
       ],
-      "favourites": 16,
+      "favourites": 17,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -152,7 +203,7 @@
         "images/vinted-10775609402-2.jpg",
         "images/vinted-10775609402-3.jpg"
       ],
-      "favourites": 54,
+      "favourites": 56,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -638,7 +689,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 78,
+      "favourites": 79,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -739,7 +790,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 108,
+      "favourites": 107,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -856,8 +907,8 @@
     {
       "id": "10546429650",
       "title": "Cotton Quilted Yoga Mat Bag | Indian Handmade Yoga Mat Carrier | Boho Quilted Bag",
-      "priceCzk": 699,
-      "priceEur": 29,
+      "priceCzk": 684,
+      "priceEur": 28,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -951,7 +1002,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1322,7 +1373,7 @@
         "images/vinted-10401889445-2.jpg",
         "images/vinted-10401889445-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1592,7 +1643,7 @@
         "images/vinted-10326276947-2.jpg",
         "images/vinted-10326276947-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1702,7 +1753,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1816,7 +1867,7 @@
         "images/vinted-10300412926-2.jpg",
         "images/vinted-10300412926-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2103,7 +2154,7 @@
         "images/vinted-10251315839-2.jpg",
         "images/vinted-10251315839-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2272,7 +2323,7 @@
         "images/vinted-10183674562-2.jpg",
         "images/vinted-10183674562-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2729,7 +2780,7 @@
         "images/vinted-10115813999-2.jpg",
         "images/vinted-10115813999-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3105,7 +3156,7 @@
         "images/vinted-10067667788-2.jpg",
         "images/vinted-10067667788-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3321,7 +3372,7 @@
         "images/vinted-9942518252-2.jpg",
         "images/vinted-9942518252-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3637,8 +3688,8 @@
     {
       "id": "9851163929",
       "title": "Retro radio | portable solar rechargeable wireless bluetooth speaker",
-      "priceCzk": 960,
-      "priceEur": 39,
+      "priceCzk": 876,
+      "priceEur": 36,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -3733,56 +3784,6 @@
         "es": "https://www.vinted.es/items/9843116673-what-would-nietzsche-do-common-modern-everyday-problems-psychology-philosophy",
         "com": "https://www.vinted.com/items/9843116673-what-would-nietzsche-do-common-modern-everyday-problems-psychology-philosophy",
         "uk": "https://www.vinted.co.uk/items/9843116673-what-would-nietzsche-do-common-modern-everyday-problems-psychology-philosophy"
-      }
-    },
-    {
-      "id": "9839115628",
-      "title": "remember everything memory expert Joshua Foer Moonwalking with Einstein Bestseller Science",
-      "priceCzk": 59,
-      "priceEur": 2,
-      "brand": "",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": ""
-      },
-      "category": "Books",
-      "vintedCategory": "Books & Media Non-fiction",
-      "crumbs": [
-        {
-          "id": 2309,
-          "name": "Books & Media"
-        },
-        {
-          "id": 2312,
-          "name": "Books"
-        },
-        {
-          "id": 2320,
-          "name": "Non-fiction"
-        }
-      ],
-      "description": "The runaway international bestseller that reveals the fascinating\nscience behind extreme memory training and the U.S. Memory Championship. give your child or yourself the the memory competitive edge. Retails new for around €14. ISBN 9780141032139. Joshua Foer takes readers on a captivating journey from forgetful journalist to mental athlete in a narrative\npraised by the New York Times and Wall Street Journal. Great search match for\npopular science books, self improvement, cognitive science, and nonfiction\nbestsellers.",
-      "photo": "images/vinted-9839115628-1.jpg",
-      "photos": [
-        "images/vinted-9839115628-1.jpg",
-        "images/vinted-9839115628-2.jpg",
-        "images/vinted-9839115628-3.jpg"
-      ],
-      "favourites": 12,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9839115628-remember-everything-memory-expert-joshua-foer-moonwalking-with-einstein-bestseller-science",
-        "es": "https://www.vinted.es/items/9839115628-remember-everything-memory-expert-joshua-foer-moonwalking-with-einstein-bestseller-science",
-        "com": "https://www.vinted.com/items/9839115628-remember-everything-memory-expert-joshua-foer-moonwalking-with-einstein-bestseller-science",
-        "uk": "https://www.vinted.co.uk/items/9839115628-remember-everything-memory-expert-joshua-foer-moonwalking-with-einstein-bestseller-science"
       }
     },
     {
@@ -4201,7 +4202,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4531,7 +4532,7 @@
         "images/vinted-9698274032-2.jpg",
         "images/vinted-9698274032-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4967,7 +4968,7 @@
         "images/vinted-9603839908-2.jpg",
         "images/vinted-9603839908-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5986,7 +5987,7 @@
         "images/vinted-9580235622-2.jpg",
         "images/vinted-9580235622-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 20,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6318,57 +6319,6 @@
         "es": "https://www.vinted.es/items/9565484914-god-of-wealth-and-prosperity-indian-hindu-ganesha-idol-religious-spiritual-statue-spiritual",
         "com": "https://www.vinted.com/items/9565484914-god-of-wealth-and-prosperity-indian-hindu-ganesha-idol-religious-spiritual-statue-spiritual",
         "uk": "https://www.vinted.co.uk/items/9565484914-god-of-wealth-and-prosperity-indian-hindu-ganesha-idol-religious-spiritual-statue-spiritual"
-      }
-    },
-    {
-      "id": "9565381682",
-      "title": "Indian Ganesha Lakshmi Figurine Statue Spiritual Idols",
-      "priceCzk": 470,
-      "priceEur": 19,
-      "brand": "Indian",
-      "size": "",
-      "sizeGroup": "",
-      "condition": {
-        "en": "New without tags",
-        "cs": "Nový bez visačky"
-      },
-      "color": {
-        "en": "Brown",
-        "cs": "Hnědá"
-      },
-      "category": "Spirituality",
-      "vintedCategory": "Home Sculptures & figurines",
-      "crumbs": [
-        {
-          "id": 1918,
-          "name": "Home"
-        },
-        {
-          "id": 1934,
-          "name": "Home accessories"
-        },
-        {
-          "id": 3822,
-          "name": "Sculptures & figurines"
-        }
-      ],
-      "description": "Mini Ganesha and Parvati Clay Sculpture - Handmade Decorative Spiritual Hindu Gods Sculptures of Ganesh and Parvati for Office or House Warming Gift or Home Decor\nSize each: 3.1X1.9X4 (L X B X H) Inches Approx, Weight each: 200 Grams",
-      "photo": "images/vinted-9565381682-1.jpg",
-      "photos": [
-        "images/vinted-9565381682-1.jpg",
-        "images/vinted-9565381682-2.jpg",
-        "images/vinted-9565381682-3.jpg"
-      ],
-      "favourites": 7,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9565381682-indian-ganesha-lakshmi-figurine-statue-spiritual-idols",
-        "es": "https://www.vinted.es/items/9565381682-indian-ganesha-lakshmi-figurine-statue-spiritual-idols",
-        "com": "https://www.vinted.com/items/9565381682-indian-ganesha-lakshmi-figurine-statue-spiritual-idols",
-        "uk": "https://www.vinted.co.uk/items/9565381682-indian-ganesha-lakshmi-figurine-statue-spiritual-idols"
       }
     },
     {
@@ -7101,7 +7051,7 @@
         "images/vinted-9493474615-2.jpg",
         "images/vinted-9493474615-3.jpg"
       ],
-      "favourites": 17,
+      "favourites": 19,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7902,7 +7852,7 @@
         "images/vinted-9395292320-2.jpg",
         "images/vinted-9395292320-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-15T06:20:47.601Z",
-  "count": 7622,
+  "generated": "2026-11-16T06:18:15.950Z",
+  "count": 7630,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -30657,6 +30657,38 @@
     "text.7aa8a64d25fd": {
       "text": "Hay disponibles vales regalo para el restaurante Góvinda y la tienda Góvinda, situados en la calle Soukenická, 27, Praga 1, con una validez de un año a partir de la fecha de…",
       "src": "7aa8a64d25fd"
+    },
+    "item.10825241824.title": {
+      "text": "Bolso de viaje retro y original con diseño de autocaravana | Bolsa de viaje tipo «Hippie Van» | Bolsa de viaje boho vintage con diseño de furgoneta",
+      "src": "d85ac4b6cd0f"
+    },
+    "item.10825241824.description": {
+      "text": "Bolsa de viaje de estilo original, confeccionada en tejido de poliéster acolchado y con estampados de furgoneta camper, mariposas y flores silvestres. \nEstética única, hippie y retro de los años 70. \nDimensiones: 20,4 pulgadas de largo, 12 pulgadas de alto y 9 pulgadas de ancho. \nMuy espaciosa y, a la vez, ligera. \nPerfecta para actividades al aire libre, escapadas cortas, la piscina o el gimnasio, picnics, vacaciones en la playa, viajes por carretera, como bolsa para pañales de bebé, etc. \n\nTengo otra bolsa de viaje de estilo retro: https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nTengo bolsas acolchadas de algodón para esterillas de yoga: https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#autocaravana #oldschool #hippie #alucinante #retro #vintage #bolsa-de-viaje #aventura #vacaciones #viaje-por-carretera #boho #único #Acción de Gracias",
+      "src": "a221fc8dc758"
+    },
+    "text.501f3bc4371c": {
+      "text": "486 piezas",
+      "src": "501f3bc4371c"
+    },
+    "text.961358d6b6ba": {
+      "text": "1729 piezas a la venta · 164 vendidas",
+      "src": "961358d6b6ba"
+    },
+    "text.297497c17ac6": {
+      "text": "12 libros de no ficción en la estantería.",
+      "src": "297497c17ac6"
+    },
+    "text.1b435e118cf9": {
+      "text": "Estatuillas de Ganesha y Lakshmi de la India: figuras espirituales",
+      "src": "1b435e118cf9"
+    },
+    "text.ac123882fe35": {
+      "text": "«Recordarlo todo», del experto en memoria Joshua Foer; «Moonwalking with Einstein»; éxito de ventas; ciencia",
+      "src": "ac123882fe35"
+    },
+    "text.045038c43ea8": {
+      "text": "Bolsa de viaje original confeccionada con tejido de poliéster acolchado y estampados de furgoneta camper, mariposas y flores silvestres. Estética hippie retro única de los años 70…",
+      "src": "045038c43ea8"
     }
   }
 }

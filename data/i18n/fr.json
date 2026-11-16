@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-15T06:20:46.136Z",
-  "count": 7622,
+  "generated": "2026-11-16T06:18:12.968Z",
+  "count": 7630,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -30657,6 +30657,38 @@
     "text.7aa8a64d25fd": {
       "text": "Des chèques-cadeaux sont disponibles pour le restaurant Góvinda et la boutique Góvinda, situés au 27, rue Soukenická, à Prague 1. Ils sont valables un an à compter de la date de…",
       "src": "7aa8a64d25fd"
+    },
+    "item.10825241824.title": {
+      "text": "Sac de voyage rétro fantaisiste sur le thème du camping-car | Sac de voyage « Hippie Van » | Sac de voyage bohème vintage sur le thème du van",
+      "src": "d85ac4b6cd0f"
+    },
+    "item.10825241824.description": {
+      "text": "Sac de voyage original en tissu matelassé en polyester, orné d'imprimés représentant un camping-car, des papillons et des fleurs sauvages. \nEsthétique hippie rétro unique des années 1970. \nDimensions : 20,4 pouces de longueur, 12 pouces de hauteur et 9 pouces de largeur. \nTrès spacieux tout en restant léger. \nIdéal pour les activités en plein air, les courts séjours, la piscine ou la salle de sport, les pique-niques, les vacances à la plage, les road trips, comme sac à langer, etc. \n\nJe propose un autre sac de voyage de style rétro : https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nJ'ai des sacs matelassés en coton pour tapis de yoga : https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#camping-car #oldschool #hippie #trippy #rétro #vintage #sac-de-voyage #aventure #vacances #road-trip #boho #unique #Thanksgiving",
+      "src": "a221fc8dc758"
+    },
+    "text.501f3bc4371c": {
+      "text": "486 pièces",
+      "src": "501f3bc4371c"
+    },
+    "text.961358d6b6ba": {
+      "text": "1 729 pièces en vente · 164 vendues",
+      "src": "961358d6b6ba"
+    },
+    "text.297497c17ac6": {
+      "text": "12 ouvrages documentaires sur l'étagère.",
+      "src": "297497c17ac6"
+    },
+    "text.1b435e118cf9": {
+      "text": "Figurines et statues indiennes de Ganesha et Lakshmi – Images sacrées",
+      "src": "1b435e118cf9"
+    },
+    "text.ac123882fe35": {
+      "text": "« Se souvenir de tout » : Joshua Foer, expert en mémoire, « Moonwalking with Einstein », best-seller scientifique",
+      "src": "ac123882fe35"
+    },
+    "text.045038c43ea8": {
+      "text": "Sac de voyage original en tissu matelassé en polyester, orné d'imprimés représentant un camping-car, des papillons et des fleurs sauvages. Une esthétique hippie rétro unique des années 1970…",
+      "src": "045038c43ea8"
     }
   }
 }
