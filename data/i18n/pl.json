@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:29.499Z",
-  "count": 7644,
+  "generated": "2026-11-18T06:17:27.222Z",
+  "count": 7646,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -30745,6 +30745,14 @@
     "text.769b98d861ad": {
       "text": "Wzbogaćcie Państwo swoje sesje jogi, pilatesu lub treningi na siłowni dzięki pikowanej bawełnianej torbie na matę do jogi, wykonanej ręcznie w Indiach przez wykwalifikowanych rzemieślników. Ozdobiona motywami kwiatowymi i paisley…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 recenzji na stronie Vinted →",
+      "src": "c85ced3b982e"
+    },
+    "text.f02ca961bf88": {
+      "text": "Ocena 5,0 na 5 na podstawie 135 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "f02ca961bf88"
     }
   }
 }

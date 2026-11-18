@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:27.396Z",
-  "count": 7644,
+  "generated": "2026-11-18T06:17:26.207Z",
+  "count": 7646,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -30745,6 +30745,14 @@
     "text.769b98d861ad": {
       "text": "Arricchite le vostre sessioni di yoga, Pilates o in palestra con la borsa per tappetino da yoga in cotone trapuntato, realizzata a mano in India da abili artigiani. Caratterizzata da motivi floreali e paisley…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 recensioni su Vinted →",
+      "src": "c85ced3b982e"
+    },
+    "text.f02ca961bf88": {
+      "text": "Valutato 5,0 su 5 in base a 135 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "f02ca961bf88"
     }
   }
 }

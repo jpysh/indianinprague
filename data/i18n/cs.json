@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:30.709Z",
-  "count": 7643,
+  "generated": "2026-11-18T06:17:27.738Z",
+  "count": 7645,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -32791,10 +32791,6 @@
       "text": "133 recenzí na Vintedu →",
       "src": "7257e1587a30"
     },
-    "text.537b3274202c": {
-      "text": "Plakát formátu A3: Krišna Govinda",
-      "src": "537b3274202c"
-    },
     "text.b59c049cba00": {
       "text": "29 beletristických knih v knihovně.",
       "src": "b59c049cba00"
@@ -32802,14 +32798,6 @@
     "text.ece6e50090f8": {
       "text": "1729 kusů na prodej · 166 prodáno",
       "src": "ece6e50090f8"
-    },
-    "text.1052f2eb7249": {
-      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
-      "src": "1052f2eb7249"
-    },
-    "text.9c6d4a4d7c3d": {
-      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
-      "src": "9c6d4a4d7c3d"
     },
     "text.08e66ebcee6a": {
       "text": "Kai Fu Lee: AI 2041 – Nejlepší kniha roku podle WSJ v kategorii umělá inteligence",
@@ -32823,10 +32811,6 @@
       "text": "Pulitzerova cena za beletrii za rok 2022: „The Netanyahus“ – Joshua Cohen, laureát Pulitzerovy ceny za rok 2022",
       "src": "c282d80e1c08"
     },
-    "text.95afd31227cc": {
-      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
-      "src": "95afd31227cc"
-    },
     "text.26bd4243b5ac": {
       "text": "Prsten ve stylu boho, maximalistický, inspirovaný vintage stylem. Textura se snoubí s pohybem 🪩 Vyznačuje se krásným širokým texturovaným kroužkem se 4 visícími leštěnými kulatými přívěsky…",
       "src": "26bd4243b5ac"
@@ -32834,6 +32818,30 @@
     "text.769b98d861ad": {
       "text": "Obohaťte své lekce jógy, pilatesu nebo cvičení v posilovně díky prošívané bavlněné tašce na jógovou podložku, ručně vyrobené v Indii zkušenými řemeslníky. S květinovými a paisley vzory…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 recenzí na Vintedu →",
+      "src": "c85ced3b982e"
+    },
+    "text.537b3274202c": {
+      "text": "Plakát formátu A3: Krišna Govinda",
+      "src": "537b3274202c"
+    },
+    "text.1052f2eb7249": {
+      "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
+      "src": "1052f2eb7249"
+    },
+    "text.9c6d4a4d7c3d": {
+      "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
+      "src": "9c6d4a4d7c3d"
+    },
+    "text.f02ca961bf88": {
+      "text": "Hodnocení 5,0 z 5 na základě 135 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "f02ca961bf88"
+    },
+    "text.95afd31227cc": {
+      "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
+      "src": "95afd31227cc"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:28.297Z",
-  "count": 7644,
+  "generated": "2026-11-18T06:17:26.704Z",
+  "count": 7646,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -30745,6 +30745,14 @@
     "text.769b98d861ad": {
       "text": "Dele un toque especial a sus sesiones de yoga, pilates o gimnasio con la bolsa acolchada de algodón para esterillas de yoga, elaborada a mano en la India por expertos artesanos. Con motivos florales y de paisley…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 opiniones en Vinted →",
+      "src": "c85ced3b982e"
+    },
+    "text.f02ca961bf88": {
+      "text": "Valoración de 5,0 sobre 5 según 135 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "f02ca961bf88"
     }
   }
 }

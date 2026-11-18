@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:25.816Z",
-  "count": 7644,
+  "generated": "2026-11-18T06:17:25.178Z",
+  "count": 7646,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -30745,6 +30745,14 @@
     "text.769b98d861ad": {
       "text": "Donnez une touche d'élégance à vos séances de yoga, de Pilates ou de musculation grâce à ce sac pour tapis de yoga en coton matelassé, fabriqué à la main en Inde par des artisans qualifiés. Orné de motifs floraux et de motifs paisley…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 avis sur Vinted →",
+      "src": "c85ced3b982e"
+    },
+    "text.f02ca961bf88": {
+      "text": "Note de 5,0 sur 5 d'après 135 avis d'acheteurs. Consultez-les sur Vinted (s'ouvre dans un nouvel onglet).",
+      "src": "f02ca961bf88"
     }
   }
 }

@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-17T06:18:26.614Z",
-  "count": 7647,
+  "generated": "2026-11-18T06:17:25.696Z",
+  "count": 7649,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -30756,6 +30756,14 @@
     "text.769b98d861ad": {
       "text": "Verleihen Sie Ihren Yoga-, Pilates- oder Fitness-Einheiten das gewisse Etwas – mit der gesteppten Yogamatten-Tasche aus Baumwolle, die in Indien von erfahrenen Kunsthandwerkern handgefertigt wurde. Mit Blumen- und Paisley-Motiven…",
       "src": "769b98d861ad"
+    },
+    "text.c85ced3b982e": {
+      "text": "135 Bewertungen auf Vinted →",
+      "src": "c85ced3b982e"
+    },
+    "text.f02ca961bf88": {
+      "text": "Bewertung: 5,0 von 5 bei 135 Kundenbewertungen. Lesen Sie diese auf Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "f02ca961bf88"
     }
   }
 }
