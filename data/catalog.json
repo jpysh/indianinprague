@@ -1,12 +1,63 @@
 {
-  "syncedAt": "2026-11-20T06:15:13.910Z",
+  "syncedAt": "2026-11-21T06:15:09.641Z",
   "rate": {
-    "czkPerEur": 24.427,
-    "fetched": "2026-11-20",
+    "czkPerEur": 24.469,
+    "fetched": "2026-11-21",
     "source": "ECB"
   },
-  "count": 190,
+  "count": 191,
   "items": [
+    {
+      "id": "10895189400",
+      "title": "Retro Camper Van Bag | Boho Hippie Travel Duffel | Whimsical Bag",
+      "priceCzk": 595,
+      "priceEur": 24,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "Nový bez visačky"
+      },
+      "color": {
+        "en": "Blue",
+        "cs": "Modrá"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Polyester quilted fabric has printed camper van with wildflowers and butterflies. \nBeautiful, whimsical, unique 1970s aesthetic. \nDimensions 20.4 inches length, 12 inches in height and 9 inches in width. \nLarge and lightweight. \nPerfect for weekend travel, picnics, outdoors, gym or swimming kit, beach holidays, baby diaper bag and more. \nGreat unique gift.\n\nAnother quilted vintage hippie duffel bag - https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nVintage poster photo frame in the background - https://www.vinted.cz/items/10154270849-vintage-hippie-photo-frame-retro-sepia-photograph-wooden-frame-boho-vintage-wall-art\n\nI also have quilted cotton yoga mat bag as gifts for yoga lovers - https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#retro #hippie #1970s #vintage #hippie #campervan #weekender #travelduffel #uniquegifts #holidays #christmas #thanksgiving",
+      "photo": "images/vinted-10895189400-1.jpg",
+      "photos": [
+        "images/vinted-10895189400-1.jpg",
+        "images/vinted-10895189400-2.jpg",
+        "images/vinted-10895189400-3.jpg"
+      ],
+      "favourites": 57,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10895189400-retro-camper-van-bag-boho-hippie-travel-duffel-whimsical-bag",
+        "es": "https://www.vinted.es/items/10895189400-retro-camper-van-bag-boho-hippie-travel-duffel-whimsical-bag",
+        "com": "https://www.vinted.com/items/10895189400-retro-camper-van-bag-boho-hippie-travel-duffel-whimsical-bag",
+        "uk": "https://www.vinted.co.uk/items/10895189400-retro-camper-van-bag-boho-hippie-travel-duffel-whimsical-bag"
+      }
+    },
     {
       "id": "10882972961",
       "title": "Copper jar | Indian Ayurveda Copper Bottle with Glass | 2-in-1 copper bottle and tumbler",
@@ -46,7 +97,7 @@
         "images/vinted-10882972961-2.jpg",
         "images/vinted-10882972961-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -101,7 +152,7 @@
         "images/vinted-10877542181-2.jpg",
         "images/vinted-10877542181-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -156,7 +207,7 @@
         "images/vinted-10837788244-2.jpg",
         "images/vinted-10837788244-3.jpg"
       ],
-      "favourites": 15,
+      "favourites": 18,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -211,7 +262,7 @@
         "images/vinted-10836497802-2.jpg",
         "images/vinted-10836497802-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -262,7 +313,7 @@
         "images/vinted-10796332946-2.jpg",
         "images/vinted-10796332946-3.jpg"
       ],
-      "favourites": 85,
+      "favourites": 92,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -313,7 +364,7 @@
         "images/vinted-10794296799-2.jpg",
         "images/vinted-10794296799-3.jpg"
       ],
-      "favourites": 19,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -368,7 +419,7 @@
         "images/vinted-10775609402-2.jpg",
         "images/vinted-10775609402-3.jpg"
       ],
-      "favourites": 62,
+      "favourites": 63,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -434,7 +485,7 @@
       "id": "10741164106",
       "title": "Vintage Indian Kashmiri Coat | Winter Coat | Ethnic jacket | Unique Dark Academia Boho Winter Jacket",
       "priceCzk": 2897,
-      "priceEur": 119,
+      "priceEur": 118,
       "brand": "Kashmir",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -583,7 +634,7 @@
         "images/vinted-10686079177-2.jpg",
         "images/vinted-10686079177-3.jpg"
       ],
-      "favourites": 128,
+      "favourites": 130,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -638,7 +689,7 @@
         "images/vinted-10685433080-2.jpg",
         "images/vinted-10685433080-3.jpg"
       ],
-      "favourites": 39,
+      "favourites": 40,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -744,7 +795,7 @@
         "images/vinted-10659420297-2.jpg",
         "images/vinted-10659420297-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 11,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -799,7 +850,7 @@
         "images/vinted-10638267277-2.jpg",
         "images/vinted-10638267277-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -854,7 +905,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 78,
+      "favourites": 80,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -955,7 +1006,7 @@
         "images/vinted-10600140497-2.jpg",
         "images/vinted-10600140497-3.jpg"
       ],
-      "favourites": 106,
+      "favourites": 107,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -971,7 +1022,7 @@
       "id": "10573779334",
       "title": "Krishna Radha Engraved Portrait | Indian Hindu Religious Temple Painting | Sacred Spiritual",
       "priceCzk": 330,
-      "priceEur": 14,
+      "priceEur": 13,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1006,7 +1057,7 @@
         "images/vinted-10573779334-2.jpg",
         "images/vinted-10573779334-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1022,7 +1073,7 @@
       "id": "10554333040",
       "title": "Cotton Quilted Tote Bag | Indian Boho Bag",
       "priceCzk": 550,
-      "priceEur": 23,
+      "priceEur": 22,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1112,7 +1163,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1128,7 +1179,7 @@
       "id": "10514142547",
       "title": "Indian Blue Pottery Ceramic Tile Wall Hanger | Boho Home | Cottagecore Home Decor",
       "priceCzk": 795,
-      "priceEur": 33,
+      "priceEur": 32,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1167,7 +1218,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 30,
+      "favourites": 31,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1222,7 +1273,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 47,
+      "favourites": 48,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1273,7 +1324,7 @@
         "images/vinted-10424837655-2.jpg",
         "images/vinted-10424837655-3.jpg"
       ],
-      "favourites": 23,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1328,7 +1379,7 @@
         "images/vinted-10423803022-2.jpg",
         "images/vinted-10423803022-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1483,7 +1534,7 @@
         "images/vinted-10401947975-2.jpg",
         "images/vinted-10401947975-3.jpg"
       ],
-      "favourites": 6,
+      "favourites": 7,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1918,7 +1969,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 10,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2032,7 +2083,7 @@
         "images/vinted-10300412926-2.jpg",
         "images/vinted-10300412926-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2162,7 +2213,7 @@
       "id": "10270021516",
       "title": "TOMS Ankle Boots | Nepal Boots Slip-On Aztec | Ethnic boho winter boots",
       "priceCzk": 550,
-      "priceEur": 23,
+      "priceEur": 22,
       "brand": "Toms",
       "size": "36",
       "sizeGroup": "36",
@@ -2795,7 +2846,7 @@
         "images/vinted-10116640143-2.jpg",
         "images/vinted-10116640143-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2961,7 +3012,7 @@
       "id": "10111151684",
       "title": "Gold Plated Hindu God Lakshmi | Prosperity Symbol | Indian Religious Spirituality Art",
       "priceCzk": 330,
-      "priceEur": 14,
+      "priceEur": 13,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -2996,7 +3047,7 @@
         "images/vinted-10111151684-2.jpg",
         "images/vinted-10111151684-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3232,7 +3283,7 @@
       "id": "10067667788",
       "title": "Rare Vintage y2k Luna Pro Team Cycling Knit Jacket | Vintage sweater | retro boho | autumn sweater",
       "priceCzk": 110,
-      "priceEur": 5,
+      "priceEur": 4,
       "brand": "Luna",
       "size": "S / 36 / 8",
       "sizeGroup": "S",
@@ -3381,7 +3432,7 @@
         "images/vinted-10035026195-2.jpg",
         "images/vinted-10035026195-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 15,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3537,7 +3588,7 @@
         "images/vinted-9942454144-2.jpg",
         "images/vinted-9942454144-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -3855,7 +3906,7 @@
       "id": "9843116673",
       "title": "What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy",
       "priceCzk": 110,
-      "priceEur": 5,
+      "priceEur": 4,
       "brand": "",
       "size": "",
       "sizeGroup": "",
@@ -4047,7 +4098,7 @@
         "images/vinted-9824291422-1.jpg",
         "images/vinted-9824291422-2.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4267,7 +4318,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 29,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4668,7 +4719,7 @@
       "id": "9675580496",
       "title": "Vintage Bag | Ethiopian Tan Leather | Boho Bag",
       "priceCzk": 599,
-      "priceEur": 25,
+      "priceEur": 24,
       "brand": "ethiopian",
       "size": "",
       "sizeGroup": "",
@@ -6068,7 +6119,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 205,
+      "priceEur": 204,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6288,7 +6339,7 @@
       "id": "9565566983",
       "title": "Indian Antique Radha Krishna Brass Statue Hindu Spiritual Religious God Sculpture | Brass 5.5 Inches",
       "priceCzk": 1600,
-      "priceEur": 66,
+      "priceEur": 65,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6845,7 +6896,7 @@
         "images/vinted-9552844745-2.jpg",
         "images/vinted-9552844745-3.jpg"
       ],
-      "favourites": 24,
+      "favourites": 25,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7281,7 +7332,7 @@
         "images/vinted-9477421040-2.jpg",
         "images/vinted-9477421040-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7611,7 +7662,7 @@
         "images/vinted-9438792395-2.jpg",
         "images/vinted-9438792395-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7678,7 +7729,7 @@
       "id": "9437887059",
       "title": "Indian Vintage Silver Earrings | 92.5% Silver With Stone Work",
       "priceCzk": 1700,
-      "priceEur": 70,
+      "priceEur": 69,
       "brand": "Quirksmith",
       "size": "",
       "sizeGroup": "",
@@ -8387,7 +8438,7 @@
         "images/vinted-9371171716-2.jpg",
         "images/vinted-9371171716-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10027,7 +10078,7 @@
         "images/vinted-9311521689-2.jpg",
         "images/vinted-9311521689-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 26,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10082,7 +10133,7 @@
         "images/vinted-9311368443-2.jpg",
         "images/vinted-9311368443-3.jpg"
       ],
-      "favourites": 55,
+      "favourites": 56,
       "reserved": false,
       "sold": false,
       "featured": false,

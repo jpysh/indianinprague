@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-20T06:18:24.120Z",
-  "count": 7669,
+  "generated": "2026-11-21T06:17:31.818Z",
+  "count": 7677,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -30845,6 +30845,38 @@
     "text.85ba36a07b11": {
       "text": "Bouteille 2-en-1 en cuivre pur, dotée d'un couvercle qui fait office de verre. Elle est destinée aux tables de chevet et aux bureaux (elle n'est pas conçue pour être transportée, mais pour être posée sur une table…",
       "src": "85ba36a07b11"
+    },
+    "item.10895189400.title": {
+      "text": "Sac « Retro Camper Van » | Sac de voyage bohème-hippie | Sac fantaisiste",
+      "src": "35c7dd358338"
+    },
+    "item.10895189400.description": {
+      "text": "Le tissu matelassé en polyester est orné d’un motif représentant un camping-car, des fleurs sauvages et des papillons. \nUne esthétique des années 1970 magnifique, fantaisiste et unique. \nDimensions : 20,4 pouces de longueur, 12 pouces de hauteur et 9 pouces de largeur. \nSpacieux et léger. \nIdéal pour les escapades du week-end, les pique-niques, les activités de plein air, vos affaires de sport ou de natation, les vacances à la plage, comme sac à langer pour bébé et bien plus encore. \nUn cadeau unique et original.\n\nUn autre sac de voyage matelassé vintage style hippie : https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nCadre photo vintage style affiche en arrière-plan - https://www.vinted.cz/items/10154270849-vintage-hippie-photo-frame-retro-sepia-photograph-wooden-frame-boho-vintage-wall-art\n\nJe propose également un sac matelassé en coton pour tapis de yoga, idéal comme cadeau pour les amateurs de yoga - https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#rétro #hippie #années1970 #vintage #hippie #camping-car #week-end #sac-de-voyage #cadeaux-originaux #vacances #Noël #Thanksgiving",
+      "src": "a5bb2c94ca45"
+    },
+    "text.bc9938412e5a": {
+      "text": "489 pièces",
+      "src": "bc9938412e5a"
+    },
+    "text.e5d96501c939": {
+      "text": "138 avis sur Vinted →",
+      "src": "e5d96501c939"
+    },
+    "text.754ba8606f62": {
+      "text": "Neuf, sans étiquettes · Bleu",
+      "src": "754ba8606f62"
+    },
+    "text.4eb27c677375": {
+      "text": "1 730 pièces à vendre · 169 vendues",
+      "src": "4eb27c677375"
+    },
+    "text.4974e8bf1806": {
+      "text": "Note de 5,0 sur 5 d'après 138 avis d'acheteurs. Découvrez-les sur Vinted (s'ouvre dans un nouvel onglet).",
+      "src": "4974e8bf1806"
+    },
+    "text.5cecf72f7050": {
+      "text": "Ce tissu matelassé en polyester est orné d'un motif représentant un camping-car, des fleurs sauvages et des papillons. Une esthétique magnifique, fantaisiste et unique, typique des années 1970. Dimensions : 20,4…",
+      "src": "5cecf72f7050"
     }
   }
 }

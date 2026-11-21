@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-20T06:18:26.151Z",
-  "count": 7669,
+  "generated": "2026-11-21T06:17:33.186Z",
+  "count": 7677,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -30845,6 +30845,38 @@
     "text.85ba36a07b11": {
       "text": "Botella de cobre puro 2 en 1 con tapa que sirve también como vaso. Está pensada para mesitas de noche y escritorios (no para llevarla, sino para colocarla sobre las mesas…",
       "src": "85ba36a07b11"
+    },
+    "item.10895189400.title": {
+      "text": "Bolso estilo furgoneta retro | Bolsa de viaje boho-hippie | Bolso original",
+      "src": "35c7dd358338"
+    },
+    "item.10895189400.description": {
+      "text": "La tela acolchada de poliéster presenta un estampado de una furgoneta camper con flores silvestres y mariposas. \nUna estética preciosa, caprichosa y única de los años 70. \nDimensiones: 20,4 pulgadas de largo, 12 pulgadas de alto y 9 pulgadas de ancho. \nEspaciosa y ligera. \nPerfecta para escapadas de fin de semana, picnics, actividades al aire libre, el gimnasio o la piscina, vacaciones en la playa, como bolsa para pañales de bebé y mucho más. \nUn regalo único y estupendo.\n\nOtra bolsa de viaje acolchada de estilo hippie vintage: https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nMarco de fotos con póster vintage al fondo: https://www.vinted.cz/items/10154270849-vintage-hippie-photo-frame-retro-sepia-photograph-wooden-frame-boho-vintage-wall-art\n\nTambién dispongo de una bolsa acolchada de algodón para la esterilla de yoga, ideal como regalo para los amantes del yoga: https://www.vinted.cz/items/10686079177-cotton-quilted-yoga-mat-bag-gym-bag-indian-handmade-yoga-bag-boho-bag\n\n#retro #hippie #años70 #vintage #hippie #furgoneta-camping #escapada-de-fin-de-semana #bolsa-de-viaje #regalos-únicos #vacaciones #Navidad #Acción de Gracias",
+      "src": "a5bb2c94ca45"
+    },
+    "text.bc9938412e5a": {
+      "text": "489 piezas",
+      "src": "bc9938412e5a"
+    },
+    "text.e5d96501c939": {
+      "text": "138 opiniones en Vinted →",
+      "src": "e5d96501c939"
+    },
+    "text.754ba8606f62": {
+      "text": "Nuevo, sin etiquetas · Azul",
+      "src": "754ba8606f62"
+    },
+    "text.4eb27c677375": {
+      "text": "1730 piezas a la venta · 169 vendidas",
+      "src": "4eb27c677375"
+    },
+    "text.4974e8bf1806": {
+      "text": "Valoración de 5,0 sobre 5 según 138 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "4974e8bf1806"
+    },
+    "text.5cecf72f7050": {
+      "text": "La tela acolchada de poliéster presenta un estampado de una autocaravana con flores silvestres y mariposas. Una estética preciosa, caprichosa y única de los años 70. Dimensiones: 20,4…",
+      "src": "5cecf72f7050"
     }
   }
 }
