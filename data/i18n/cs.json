@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-21T06:17:34.283Z",
-  "count": 7676,
+  "generated": "2026-11-22T06:21:32.753Z",
+  "count": 7709,
   "entries": {
     "item.9313828257.title": {
       "text": "Háčkované kancelářské šaty",
@@ -28132,8 +28132,8 @@
       "src": "122508845908"
     },
     "item.10065438847.title": {
-      "text": "Šaty z úpletu s vintage bohémským potiskem | Retro móda Y2K | Boho-hippie | Podzimní šaty",
-      "src": "b284dd73cb18"
+      "text": "Šaty z pleteniny s vintage bohémským potiskem | Retro móda ve stylu Y2K | Boho-hippie | teplé zimní vlněné šaty",
+      "src": "30ac84f78214"
     },
     "item.10067667788.title": {
       "text": "Vzácná vintage cyklistická pletená bunda Luna Pro Team z roku 2000 | Vintage svetr | retro boho | podzimní svetr",
@@ -30332,9 +30332,8 @@
       "via": "claude"
     },
     "item.10270021516.title": {
-      "text": "Kotníkové boty TOMS | Nepálské boty bez šněrování Aztec | Etno boho zimní boty",
-      "src": "911d976eb610",
-      "via": "claude"
+      "text": "Kotníkové boty TOMS | Nepálské boty Slip-On Aztec | Etnické zimní vlněné boty ve stylu boho",
+      "src": "8ccfacd2bbaa"
     },
     "item.10270021516.description": {
       "text": "Autentické kotníkové boty Toms Nepal.\nDo půli lýtek.\nVelikost: 36\nVelmi dobrý stav, nošené několikrát. Čisté, bez poškození.\nHnědošedá semišová kůže + plátno a příze z Nepálu (tyrkysová/zelená/hnědá)\nPodšité měkkou umělou kožešinou pro teplo a pohodlí.\nDélka vložky: 23 cm\nKožené šněrování kolem svršku pro styl a bezpečné uchycení.",
@@ -32939,13 +32938,143 @@
       "text": "Nové, bez visaček · Modré",
       "src": "754ba8606f62"
     },
+    "text.4eb27c677375": {
+      "text": "1730 kusů na prodej · 169 prodáno",
+      "src": "4eb27c677375"
+    },
+    "text.4974e8bf1806": {
+      "text": "Hodnocení 5,0 z 5 na základě 138 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "4974e8bf1806"
+    },
+    "text.5cecf72f7050": {
+      "text": "Prošívaná polyesterová látka s potiskem obytného vozu, divokých květin a motýlů. Krásná, hravá a jedinečná estetika 70. let. Rozměry 20,4…",
+      "src": "5cecf72f7050"
+    },
+    "text.7e66fb3c1b55": {
+      "text": "Německé vydání Proměna v srdci.",
+      "src": "7e66fb3c1b55",
+      "via": "govinda-cs"
+    },
+    "text.7b6d171e8269": {
+      "text": "Kantimála 1ř. kulaté větší se zlatými korálky",
+      "src": "7b6d171e8269",
+      "via": "govinda-cs"
+    },
+    "text.3224f01f25a5": {
+      "text": "Kantimála jednořadá z kulatých korálků z tulasí prokládaných zlatavým korálkem.",
+      "src": "3224f01f25a5",
+      "via": "govinda-cs"
+    },
+    "text.fa3e0525e5ff": {
+      "text": "Šaty na ramínkách zelené krátké, M/L",
+      "src": "fa3e0525e5ff",
+      "via": "govinda-cs"
+    },
+    "text.e6ba94cd7235": {
+      "text": "Krátké šaty na ramínkách s krásnou výšivkou z Rájastánu.",
+      "src": "e6ba94cd7235",
+      "via": "govinda-cs"
+    },
+    "text.545a68350042": {
+      "text": "Maháprasádam - Slané kešu 200 g",
+      "src": "545a68350042",
+      "via": "govinda-cs"
+    },
+    "text.947b0ab0631d": {
+      "text": "Pražené slané kešu ořechy.",
+      "src": "947b0ab0631d",
+      "via": "govinda-cs"
+    },
+    "text.d6917af523c0": {
+      "text": "Kokosky s ananasem a citrónovou polevou 150 g",
+      "src": "d6917af523c0",
+      "via": "govinda-cs"
+    },
+    "text.7eb77670a209": {
+      "text": "Kokosky ze sušeného mléka, kokosu, třtinového a vanilínového cukru a citrónové šťávy (bezlepkové). Se sušeným ananasem a citrónovou polevou.",
+      "src": "7eb77670a209",
+      "via": "govinda-cs"
+    },
+    "text.bf9650dd922b": {
+      "text": "Čadar vlněný Kashgiri 100 % vlna",
+      "src": "bf9650dd922b",
+      "via": "govinda-cs"
+    },
+    "item.10902815783.title": {
+      "text": "Retro náušnice ze 100 % mědi | měděné náušnice ve tvaru slzy | ručně tepané měděné visací náušnice",
+      "src": "cc7fa7431ab4"
+    },
+    "item.10902815783.description": {
+      "text": "Krásné náušnice ve tvaru slzy z mědi, které odrážejí světlo. \nRučně vyrobené v Indii z texturované, tepané, 100 % přírodní mědi, na nichž jsou patrné stopy po zpracování. \nDélka 6 cm, včetně háčku o délce přibližně 1 cm. \nMěď časem ztmavne a získá krásný starobylý vintage vzhled. \nPokud dáváte přednost lesklému povrchu před starobylým vzhledem, je třeba je pravidelně čistit citronem a solí.\nMěď má antimikrobiální účinky a pomáhá vyrovnávat tělesné nerovnováhy. \nSkvělý dárek pro ty, kteří se zajímají o ájurvédu, vintage indické šperky a jedinečné materiály. \n\nV nabídce mám také sadu měděné láhve na vodu a sklenice – https://www.vinted.cz/items/10796332946-pure-copper-bottle-and-tumbler-ayurveda-gift-set-indian-healing-spiritual-100-copper\n\nnoční sklenice z čisté mědi s pohárkem jako víčkem – https://www.vinted.cz/items/10882972961-měděná-dóza-indická-ájurvéda-měděná-láhev-se-sklenicí-2-v-1-měděná-láhev-a-sklenice\n\na sada měděného náramku a prstenu – https://www.vinted.cz/items/10775609402-magnetic-copper-bracelet-and-ring-indian-ayurveda-copper-healing-jewellery\n\n#měď #šperky #dárky #Indie #ájurvéda #jógové šperky #léčení #Vánoce #svátky #dárky #dárky s myšlenkou #ruční výroba",
+      "src": "1bcf5550db58"
+    },
+    "text.3bf9bdbc881c": {
+      "text": "91 kusů",
+      "src": "3bf9bdbc881c"
+    },
+    "text.d6b5201ed940": {
+      "text": "35 kusů",
+      "src": "d6b5201ed940"
+    },
+    "text.eb239cbc66c3": {
+      "text": "490 kusů",
+      "src": "eb239cbc66c3"
+    },
+    "text.70648b3599d6": {
+      "text": "318 kusů",
+      "src": "70648b3599d6"
+    },
+    "text.49e7fa48243c": {
+      "text": "544 kusů",
+      "src": "49e7fa48243c"
+    },
+    "text.600aa679ff80": {
+      "text": "Poznámky mini",
+      "src": "600aa679ff80"
+    },
+    "text.389331657cec": {
+      "text": "139 recenzí na Vintedu →",
+      "src": "389331657cec"
+    },
+    "text.469378acefd6": {
+      "text": "Krišna (ruské vydání)",
+      "src": "469378acefd6"
+    },
     "text.537b3274202c": {
       "text": "Plakát formátu A3: Krišna Govinda",
       "src": "537b3274202c"
     },
-    "text.4eb27c677375": {
-      "text": "1730 kusů na prodej · 169 prodáno",
-      "src": "4eb27c677375"
+    "text.bc4b8ada738a": {
+      "text": "1737 kusů na prodej · 170 prodáno",
+      "src": "bc4b8ada738a"
+    },
+    "text.3e45af00e601": {
+      "text": "86 lidí si to uložilo na Vinted",
+      "src": "3e45af00e601"
+    },
+    "text.77ffdff8baa6": {
+      "text": "94 lidí si to uložilo na Vinted",
+      "src": "77ffdff8baa6"
+    },
+    "text.59377f395858": {
+      "text": "9 zápisníků v polici na suvenýry.",
+      "src": "59377f395858"
+    },
+    "text.d256a4f24757": {
+      "text": "131 lidí si to uložilo na Vinted",
+      "src": "d256a4f24757"
+    },
+    "text.4d4b2787c97f": {
+      "text": "36 cizích jazyků v knihovně.",
+      "src": "4d4b2787c97f"
+    },
+    "text.2a73d8daef4f": {
+      "text": "38 kusů dámského oblečení v regálu s módou.",
+      "src": "2a73d8daef4f"
+    },
+    "text.abf504aace18": {
+      "text": "Bhakti – proměna v srdci (německé vydání)",
+      "src": "abf504aace18"
     },
     "text.1052f2eb7249": {
       "text": "Plakát formátu A2: Krišna Govinda se vrací z lesa",
@@ -32955,17 +33084,29 @@
       "text": "Plakát formátu A3: Krišna Govinda se vrací z lesa",
       "src": "9c6d4a4d7c3d"
     },
-    "text.4974e8bf1806": {
-      "text": "Hodnocení 5,0 z 5 na základě 138 recenzí kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
-      "src": "4974e8bf1806"
+    "text.9de14896cc1b": {
+      "text": "Hodnocení 5,0 z 5 na základě 139 recenzí od kupujících. Přečtěte si je na Vintedu (otevře se v nové záložce).",
+      "src": "9de14896cc1b"
+    },
+    "text.1dffc7be12bd": {
+      "text": "bestseller, film natočený podle knihy nominované na cenu Booker, David Mitchell: Atlas mraků – rozšířené vydání",
+      "src": "1dffc7be12bd"
     },
     "text.95afd31227cc": {
       "text": "Kršna Govinda, „pastýř“, se vrací z lesa ke svým rodičům, Jasódě a Nandovi Mahárádžovi.",
       "src": "95afd31227cc"
     },
-    "text.5cecf72f7050": {
-      "text": "Prošívaná polyesterová látka s potiskem obytného vozu, divokých květin a motýlů. Krásná, hravá a jedinečná estetika 70. let. Rozměry 20,4…",
-      "src": "5cecf72f7050"
+    "text.5b43a6418417": {
+      "text": "Krásné měděné náušnice ve tvaru slzy, které odrážejí světlo. Ručně vyrobené v Indii z texturované, tepané, 100 % přírodní mědi, na nichž jsou patrné stopy po zpracování. 6 cm…",
+      "src": "5b43a6418417"
+    },
+    "text.45f4519e7679": {
+      "text": "Šrí Šrímad A.C. Bhaktivedanta Swami Prabhupáda: Krišnovy zábavy nejsou jen vzrušující, okouzlující a zábavné, ale také plné hlubokého…",
+      "src": "45f4519e7679"
+    },
+    "text.5f090f5ed318": {
+      "text": "Zápisník na poznámky. Obsahuje prázdné stránky. Na zadní straně obálky je vytištěna Mahá mantra. Darujte svým blízkým originální dárek, vyrobený…",
+      "src": "5f090f5ed318"
     }
   }
 }
