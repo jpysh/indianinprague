@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-22T06:21:31.254Z",
-  "count": 7710,
+  "generated": "2026-11-23T06:18:36.538Z",
+  "count": 7730,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -31008,6 +31008,86 @@
     "text.5f090f5ed318": {
       "text": "Un cuaderno para tomar notas. Contiene páginas en blanco. El Mahā Mantra está impreso en la contraportada. Regale a sus seres queridos un obsequio original, elaborado…",
       "src": "5f090f5ed318"
+    },
+    "item.10919504483.title": {
+      "text": "Abrigo de invierno para hombre | Marca Reserved | Abrigo minimalista de cuello alto",
+      "src": "df6aa015f0af"
+    },
+    "item.10920072581.title": {
+      "text": "Abrigo de lana con capucha grande | Textura de lana hervida | Abrigo de lana cálido para el invierno",
+      "src": "d710231a23e7"
+    },
+    "item.10919752201.title": {
+      "text": "Chaqueta acolchada de The North Face | Modelo NSE Elements 2000 con estampado «Coral Ice Dye» | The North Face clásico y vintage",
+      "src": "ff07f072cfed"
+    },
+    "item.10920072581.description": {
+      "text": "Abrigo con capucha de color burdeos, confeccionado en tejido de lana hervida con textura.\nCálido a la par que ligero. \nMuy versátil y elegante. \nAdquirido en Milán, de la marca italiana KOAN. \nDe axila a axila: 54 cm\nDe hombro a manga: 60 cm\nLongitud: 80 cm\n\n#lana #de lana #abrigo de lana #abrigo de invierno #abrigo #chaqueta #cálido #invierno",
+      "src": "c203abe5515e"
+    },
+    "item.10919504483.description": {
+      "text": "Abrigo entallado para hombre de la marca polaca Reserved. \nLo compré hace poco y apenas lo he usado. \nCuello alto con cierre de botones a presión\ny cremallera oculta\nmangas largas\ndos bolsillos laterales\nforro\nbolsillo interior\nLongitud: 91 cm, Ancho de pecho: 56,5 cm, Longitud de manga: 66,5 cm, Ancho de cintura: 53,5 cm\n\n#invierno #abrigo #hombresinvierno #abrigolarg",
+      "src": "e9db6d7c0406"
+    },
+    "item.10919752201.description": {
+      "text": "Inspirada en los modelos de la serie Summit™, diseñados para la montaña, de principios de la década de 2000, la chaqueta «2000 Printed Elements» es una versión moderna de la chaqueta clásica. Confeccionada con el tejido WindWall, altamente resistente al viento.\nApenas se ha usado. \nAcabado de tinte exclusivo. \n100 % poliéster reciclado, aislamiento reciclado, cuello alto, cierre de cremallera, 2 bolsillos para las manos, logotipo bordado, cintura elástica.",
+      "src": "6f3fea8926a6"
+    },
+    "text.0f058801ff0c": {
+      "text": "Koan",
+      "src": "0f058801ff0c"
+    },
+    "text.3385ffe67470": {
+      "text": "Reservado",
+      "src": "3385ffe67470"
+    },
+    "text.d0c6bb7253f8": {
+      "text": "493 piezas",
+      "src": "d0c6bb7253f8"
+    },
+    "text.418e83d148e4": {
+      "text": "The North Face",
+      "src": "418e83d148e4"
+    },
+    "text.81b78e2d44a6": {
+      "text": "Bueno · Borgoña · L",
+      "src": "81b78e2d44a6"
+    },
+    "text.44b84c90ae23": {
+      "text": "Muy bueno · Marrón · M",
+      "src": "44b84c90ae23"
+    },
+    "text.290522bedbe6": {
+      "text": "Nuevo, sin etiquetas · Naranja · L",
+      "src": "290522bedbe6"
+    },
+    "text.0308a1f78731": {
+      "text": "1739 piezas a la venta · 171 vendidas",
+      "src": "0308a1f78731"
+    },
+    "text.f5d11f054711": {
+      "text": "84 personas han guardado esto en Vinted",
+      "src": "f5d11f054711"
+    },
+    "text.106fe84dda12": {
+      "text": "132 personas han guardado esto en Vinted",
+      "src": "106fe84dda12"
+    },
+    "text.010e2f83ee6c": {
+      "text": "Conjunto a juego con estampado de leopardo y tigre indio | Pijama de algodón | Ropa de estar por casa estilo boho",
+      "src": "010e2f83ee6c"
+    },
+    "text.5ba409921a70": {
+      "text": "Inspirada en los modelos de la serie Summit™, diseñados para la montaña, de principios de la década de 2000, la chaqueta «2000 Printed Elements» es una versión actualizada de este clásico…",
+      "src": "5ba409921a70"
+    },
+    "text.5567c75cb8e1": {
+      "text": "Abrigo entallado para hombre de la marca polaca Reserved. Lo compré hace poco y apenas lo he usado. Cuello alto y erguido con cierre de botones a presión y cremallera oculta larga…",
+      "src": "5567c75cb8e1"
+    },
+    "text.5c43bd5f656b": {
+      "text": "Abrigo con capucha de color burdeos, confeccionado en tejido de lana hervida con textura. Cálido a la par que ligero. Muy versátil y elegante. Adquirido en Milán, de la marca italiana KOAN…",
+      "src": "5c43bd5f656b"
     }
   }
 }

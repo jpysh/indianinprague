@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-22T06:21:30.301Z",
-  "count": 7713,
+  "generated": "2026-11-23T06:18:35.173Z",
+  "count": 7733,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -31019,6 +31019,86 @@
     "text.5f090f5ed318": {
       "text": "Ein Notizbuch zum Notieren. Enthält leere Seiten. Auf der Rückseite ist das Mahā-Mantra aufgedruckt. Schenken Sie Ihren Liebsten ein originelles Geschenk, hergestellt …",
       "src": "5f090f5ed318"
+    },
+    "item.10919504483.title": {
+      "text": "Wintermantel für Herren | Marke „Reserved“ | Minimalistischer Mantel mit hohem Kragen",
+      "src": "df6aa015f0af"
+    },
+    "item.10920072581.title": {
+      "text": "Wollmantel mit großer Kapuze | Struktur aus gekochter Wolle | Warmer Wintermantel aus Wolle",
+      "src": "d710231a23e7"
+    },
+    "item.10919752201.title": {
+      "text": "North Face Daunenjacke | Modell NSE Elements 2000 Coral Ice Dye Print | Klassischer Vintage-Stil von North Face",
+      "src": "ff07f072cfed"
+    },
+    "item.10920072581.description": {
+      "text": "Burgunderroter Mantel mit Kapuze aus strukturiertem, gekochten Wollstoff.\nWarm und dennoch leicht. \nSehr vielseitig und elegant. \nGekauft in Mailand, italienische Marke KOAN. \nVon Achsel zu Achsel 54 cm\nVon der Schulter bis zum Ärmel 60 cm\nLänge 80 cm\n\n#Wolle #Wollstoff #Wollmantel #Wintermantel #Mantel #Jacke #warm #Winter",
+      "src": "c203abe5515e"
+    },
+    "item.10919504483.description": {
+      "text": "Taillierter Mantel für Herren der polnischen Marke Reserved. \nErst kürzlich gekauft und kaum getragen. \nHoher Stehkragen mit Druckknopfverschluss\nund verdecktem Reißverschluss\nlange Ärmel\nzwei Seitentaschen\nmit Futter\nInnentasche\nLänge: 91 cm, Brustweite: 56,5 cm, Ärmellänge: 66,5 cm, Taillenweite: 53,5 cm\n\n#Winter #Mantel #Herrenwinter #Langmantel",
+      "src": "e9db6d7c0406"
+    },
+    "item.10919752201.description": {
+      "text": "Inspiriert von den bergtauglichen Modellen der Summit™-Serie aus den frühen 2000er Jahren ist die „2000 Printed Elements“-Jacke eine moderne Neuinterpretation des Klassikers. Hergestellt aus dem äußerst windabweisenden WindWall-Material.\nKaum getragen. \nEinzigartige Färbung. \n100 % recyceltes Polyester, recycelte Isolierung, hoher Kragen, Reißverschluss, 2 Seitentaschen, gesticktes Logo, elastischer Bund.",
+      "src": "6f3fea8926a6"
+    },
+    "text.0f058801ff0c": {
+      "text": "Koan",
+      "src": "0f058801ff0c"
+    },
+    "text.3385ffe67470": {
+      "text": "Reserviert",
+      "src": "3385ffe67470"
+    },
+    "text.d0c6bb7253f8": {
+      "text": "493 Stück",
+      "src": "d0c6bb7253f8"
+    },
+    "text.418e83d148e4": {
+      "text": "The North Face",
+      "src": "418e83d148e4"
+    },
+    "text.81b78e2d44a6": {
+      "text": "Gut · Burgunderrot · L",
+      "src": "81b78e2d44a6"
+    },
+    "text.44b84c90ae23": {
+      "text": "Sehr gut · Braun · M",
+      "src": "44b84c90ae23"
+    },
+    "text.290522bedbe6": {
+      "text": "Neu, ohne Etiketten · Orange · L",
+      "src": "290522bedbe6"
+    },
+    "text.0308a1f78731": {
+      "text": "1.739 Artikel zum Verkauf · 171 verkauft",
+      "src": "0308a1f78731"
+    },
+    "text.f5d11f054711": {
+      "text": "84 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "f5d11f054711"
+    },
+    "text.106fe84dda12": {
+      "text": "132 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "106fe84dda12"
+    },
+    "text.010e2f83ee6c": {
+      "text": "Set mit Leoparden- und Tigermuster | Pyjama aus Baumwolle | Boho-Pyjama und Loungewear",
+      "src": "010e2f83ee6c"
+    },
+    "text.5ba409921a70": {
+      "text": "Inspiriert von den bergtauglichen Modellen der Summit™-Serie aus den frühen 2000er Jahren ist die Jacke „2000 Printed Elements“ eine moderne Neuinterpretation des Klassikers…",
+      "src": "5ba409921a70"
+    },
+    "text.5567c75cb8e1": {
+      "text": "Taillierter Mantel für Herren der polnischen Marke Reserved. Vor kurzem gekauft und kaum getragen. Hoher Stehkragen mit Druckknopfverschluss und verdecktem Reißverschluss, lang…",
+      "src": "5567c75cb8e1"
+    },
+    "text.5c43bd5f656b": {
+      "text": "Burgunderroter Mantel mit Kapuze aus strukturiertem, gekochten Wollstoff. Warm und dennoch leicht. Sehr vielseitig und elegant. Gekauft in Mailand, italienische Marke KOAN.…",
+      "src": "5c43bd5f656b"
     }
   }
 }

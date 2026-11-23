@@ -8275,5 +8275,104 @@
       "colorRaw": "Hnědá",
       "vintedCategory": "Ženy Naušnice"
     }
+  },
+  "10920072581": {
+    "description": "Burgundy hooded coat with textured, boiled woollen fabric.\nWarm yet lightweight. \nVery versatile and elegant. \nBought in Milan, Italian brand KOAN. \nArmpit to armpit 54 cm\nShoulder to sleeve 60 cm\nLength 80 cm\n\n#wool #woollen #woolcoat #wintercoat #coat #jacket #warm #winter",
+    "vintedCategory": "Women Overcoats & long coats",
+    "colorRaw": "Burgundy",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 1037,
+        "name": "Outerwear"
+      },
+      {
+        "id": 1907,
+        "name": "Coats"
+      },
+      {
+        "id": 2526,
+        "name": "Overcoats & long coats"
+      }
+    ],
+    "condition": "Good",
+    "cs": {
+      "condition": "Dobrý",
+      "colorRaw": "Vínově červená",
+      "vintedCategory": "Ženy Svrchníky a dlouhé kabáty"
+    }
+  },
+  "10919752201": {
+    "description": "Inspired by the mountain-ready Summit™ Series styles of the early 2000s, the 2000 Printed Elements Jacket is a modern-day version of the classic jacket. Made with the highly wind-resistant WindWall fabric.\nHardly worn. \nUnique dye finish. \n100% Recycled Polyester, Recycled Insulation, High Collar, Zip Closure, 2 Hand Pockets, Embroidered Logo, Elasticated Waistband.",
+    "vintedCategory": "Women Puffer jackets",
+    "colorRaw": "Orange",
+    "crumbs": [
+      {
+        "id": 1904,
+        "name": "Women"
+      },
+      {
+        "id": 4,
+        "name": "Clothing"
+      },
+      {
+        "id": 1037,
+        "name": "Outerwear"
+      },
+      {
+        "id": 1908,
+        "name": "Jackets"
+      },
+      {
+        "id": 2614,
+        "name": "Puffer jackets"
+      }
+    ],
+    "condition": "New without tags",
+    "cs": {
+      "condition": "Nový bez visačky",
+      "colorRaw": "Oranžová",
+      "vintedCategory": "Ženy Péřové bundy"
+    }
+  },
+  "10919504483": {
+    "description": "Fitted coat for men from Polish brand Reserved. \nBought recently and hardly worn. \nHigh stand up collar with snap fastening\nand concealed zip\nlong sleeves\ntwo side pockets\nlining finish\npocket to the inside\nLength: 91 cm, Chest width: 56.5 cm, Sleeve length: 66.5 cm, Waist width: 53.5 cm\n\n#winter #coat #menwinter #longcoat",
+    "vintedCategory": "Men Overcoats & long coats",
+    "colorRaw": "Brown",
+    "crumbs": [
+      {
+        "id": 5,
+        "name": "Men"
+      },
+      {
+        "id": 2050,
+        "name": "Clothing"
+      },
+      {
+        "id": 1206,
+        "name": "Outerwear"
+      },
+      {
+        "id": 2051,
+        "name": "Coats"
+      },
+      {
+        "id": 2533,
+        "name": "Overcoats & long coats"
+      }
+    ],
+    "condition": "Very good",
+    "cs": {
+      "condition": "Velmi dobrý",
+      "colorRaw": "Hnědá",
+      "vintedCategory": "Muži Svrchníky a dlouhé kabáty"
+    }
   }
 }

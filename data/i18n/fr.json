@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-22T06:21:29.817Z",
-  "count": 7710,
+  "generated": "2026-11-23T06:18:34.554Z",
+  "count": 7730,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -31008,6 +31008,86 @@
     "text.5f090f5ed318": {
       "text": "Un carnet pour prendre des notes. Il contient des pages vierges. Le Mahā Mantra est imprimé au dos de la couverture. Offrez à vos proches un cadeau original, fabriqué…",
       "src": "5f090f5ed318"
+    },
+    "item.10919504483.title": {
+      "text": "Manteau d'hiver pour homme | Marque Reserved | Manteau minimaliste à col montant",
+      "src": "df6aa015f0af"
+    },
+    "item.10920072581.title": {
+      "text": "Manteau en laine avec grande capuche | Texture en laine bouillie | Manteau d'hiver chaud en laine",
+      "src": "d710231a23e7"
+    },
+    "item.10919752201.title": {
+      "text": "Doudoune The North Face | Modèle NSE Elements 2000, imprimé « Coral Ice Dye » | The North Face classique et vintage",
+      "src": "ff07f072cfed"
+    },
+    "item.10920072581.description": {
+      "text": "Manteau à capuche bordeaux en laine bouillie texturée.\nChaud tout en restant léger. \nTrès polyvalent et élégant. \nAcheté à Milan, marque italienne KOAN. \nDe aisselle à aisselle : 54 cm\nDe l'épaule à la manche : 60 cm\nLongueur : 80 cm\n\n#laine #manteaudelaine #manteau #manteaud'hiver #veste #chaud #hiver",
+      "src": "c203abe5515e"
+    },
+    "item.10919504483.description": {
+      "text": "Manteau ajusté pour homme de la marque polonaise Reserved. \nAcheté récemment et très peu porté. \nCol montant avec fermeture à boutons-pression\net fermeture éclair dissimulée\nmanches longues\ndeux poches latérales\ndoublure\npoche intérieure\nLongueur : 91 cm, Tour de poitrine : 56,5 cm, Longueur des manches : 66,5 cm, Tour de taille : 53,5 cm\n\n#hiver #manteau #hiverhomme #manteaulong",
+      "src": "e9db6d7c0406"
+    },
+    "item.10919752201.description": {
+      "text": "Inspirée des modèles de la gamme Summit™ du début des années 2000, conçus pour la montagne, la veste « 2000 Printed Elements » est une version moderne de ce classique. Confectionnée dans le tissu WindWall, hautement résistant au vent.\nPratiquement jamais portée. \nFinition teinte unique. \n100 % polyester recyclé, isolation recyclée, col montant, fermeture à glissière, 2 poches pour les mains, logo brodé, taille élastiquée.",
+      "src": "6f3fea8926a6"
+    },
+    "text.0f058801ff0c": {
+      "text": "Koan",
+      "src": "0f058801ff0c"
+    },
+    "text.3385ffe67470": {
+      "text": "Réservé",
+      "src": "3385ffe67470"
+    },
+    "text.d0c6bb7253f8": {
+      "text": "493 pièces",
+      "src": "d0c6bb7253f8"
+    },
+    "text.418e83d148e4": {
+      "text": "The North Face",
+      "src": "418e83d148e4"
+    },
+    "text.81b78e2d44a6": {
+      "text": "Bon · Bourgogne · L",
+      "src": "81b78e2d44a6"
+    },
+    "text.44b84c90ae23": {
+      "text": "Très bien · Marron · M",
+      "src": "44b84c90ae23"
+    },
+    "text.290522bedbe6": {
+      "text": "Neuf, sans étiquettes · Orange · L",
+      "src": "290522bedbe6"
+    },
+    "text.0308a1f78731": {
+      "text": "1 739 pièces en vente · 171 vendues",
+      "src": "0308a1f78731"
+    },
+    "text.f5d11f054711": {
+      "text": "84 personnes ont enregistré cette annonce sur Vinted",
+      "src": "f5d11f054711"
+    },
+    "text.106fe84dda12": {
+      "text": "132 personnes ont enregistré cette annonce sur Vinted",
+      "src": "106fe84dda12"
+    },
+    "text.010e2f83ee6c": {
+      "text": "Ensemble coordonné « Indian Leopard Tiger » | Pyjama en coton | Pyjama et tenue d'intérieur style bohème",
+      "src": "010e2f83ee6c"
+    },
+    "text.5ba409921a70": {
+      "text": "Inspirée des modèles de la gamme Summit™ du début des années 2000, conçus pour la montagne, la veste 2000 Printed Elements est une version moderne de ce grand classique…",
+      "src": "5ba409921a70"
+    },
+    "text.5567c75cb8e1": {
+      "text": "Manteau ajusté pour homme de la marque polonaise Reserved. Acheté récemment et pratiquement jamais porté. Col montant haut avec fermeture à boutons-pression et fermeture éclair dissimulée sur toute la longueur…",
+      "src": "5567c75cb8e1"
+    },
+    "text.5c43bd5f656b": {
+      "text": "Manteau à capuche bordeaux en laine bouillie texturée. Chaud tout en restant léger. Très polyvalent et élégant. Acheté à Milan, marque italienne KOAN…",
+      "src": "5c43bd5f656b"
     }
   }
 }
