@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-23T06:18:35.173Z",
-  "count": 7733,
+  "generated": "2026-11-24T06:18:06.690Z",
+  "count": 7743,
   "entries": {
     "attr.color.red": {
       "text": "Netz",
@@ -31099,6 +31099,46 @@
     "text.5c43bd5f656b": {
       "text": "Burgunderroter Mantel mit Kapuze aus strukturiertem, gekochten Wollstoff. Warm und dennoch leicht. Sehr vielseitig und elegant. Gekauft in Mailand, italienische Marke KOAN.…",
       "src": "5c43bd5f656b"
+    },
+    "item.10944305472.title": {
+      "text": "Om-Stola | Weicher, spiritueller Schal im hinduistischen Stil",
+      "src": "8519621308f8"
+    },
+    "item.10944305472.description": {
+      "text": "Fließender, langer Schal mit handgedrucktem „Om“ 🕉️, spirituellen Symbolen und „Om Namah Shivay“. \nHergestellt aus superweichem Rayon-Stoff. \nUnisex. \nIch habe drei weitere Farben im Angebot – Rosa, Lila und Orange (siehe letztes Foto). Bitte schreiben Sie mir eine Nachricht, falls Sie eine andere Farbe wünschen. 🙏🏾",
+      "src": "60684179f3cf"
+    },
+    "text.52fed860992f": {
+      "text": "494 Teile",
+      "src": "52fed860992f"
+    },
+    "text.0cba8a59366c": {
+      "text": "141 Bewertungen auf Vinted →",
+      "src": "0cba8a59366c"
+    },
+    "text.67f147be829c": {
+      "text": "1.740 Artikel zum Verkauf · 171 verkauft",
+      "src": "67f147be829c"
+    },
+    "text.57ac7ac37266": {
+      "text": "98 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "57ac7ac37266"
+    },
+    "text.8a9c0609c5d2": {
+      "text": "68 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "8a9c0609c5d2"
+    },
+    "text.2ff0341b8316": {
+      "text": "134 Personen haben diesen Artikel auf Vinted gespeichert",
+      "src": "2ff0341b8316"
+    },
+    "text.acde882f793a": {
+      "text": "Bewertung: 5,0 von 5, basierend auf 141 Kundenbewertungen. Lesen Sie diese auf Vinted (wird in einem neuen Tab geöffnet).",
+      "src": "acde882f793a"
+    },
+    "text.8ffb4fc2db93": {
+      "text": "Fließender, langer Schal mit handgedrucktem Om 🕉️, spirituellen Symbolen und „Om Namah Shivay“. Hergestellt aus besonders weichem Rayon-Stoff. Unisex. Ich habe noch 3 weitere Farben…",
+      "src": "8ffb4fc2db93"
     }
   }
 }

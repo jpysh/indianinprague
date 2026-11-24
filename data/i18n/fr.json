@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-23T06:18:34.554Z",
-  "count": 7730,
+  "generated": "2026-11-24T06:18:05.909Z",
+  "count": 7740,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -31088,6 +31088,46 @@
     "text.5c43bd5f656b": {
       "text": "Manteau à capuche bordeaux en laine bouillie texturée. Chaud tout en restant léger. Très polyvalent et élégant. Acheté à Milan, marque italienne KOAN…",
       "src": "5c43bd5f656b"
+    },
+    "item.10944305472.title": {
+      "text": "Écharpe Om | Écharpe spirituelle hindoue toute douce",
+      "src": "8519621308f8"
+    },
+    "item.10944305472.description": {
+      "text": "Écharpe longue et fluide, ornée d'un « Om » 🕉️ imprimé à la main, de symboles spirituels et de l'inscription « Om Namah Shivay ». \nConfectionnée dans un tissu ultra-doux, en rayonne. \nModèle unisexe. \nJe propose 3 autres couleurs : rose, violet et orange (voir la dernière photo). N'hésitez pas à m'envoyer un message si vous souhaitez une autre couleur. 🙏🏾",
+      "src": "60684179f3cf"
+    },
+    "text.52fed860992f": {
+      "text": "494 pièces",
+      "src": "52fed860992f"
+    },
+    "text.0cba8a59366c": {
+      "text": "141 avis sur Vinted →",
+      "src": "0cba8a59366c"
+    },
+    "text.67f147be829c": {
+      "text": "1 740 pièces en vente · 171 vendues",
+      "src": "67f147be829c"
+    },
+    "text.57ac7ac37266": {
+      "text": "98 personnes ont enregistré cette annonce sur Vinted",
+      "src": "57ac7ac37266"
+    },
+    "text.8a9c0609c5d2": {
+      "text": "68 personnes ont enregistré cette annonce sur Vinted",
+      "src": "8a9c0609c5d2"
+    },
+    "text.2ff0341b8316": {
+      "text": "134 personnes ont enregistré cette annonce sur Vinted",
+      "src": "2ff0341b8316"
+    },
+    "text.acde882f793a": {
+      "text": "Note de 5,0 sur 5 d'après 141 avis d'acheteurs. Consultez-les sur Vinted (s'ouvre dans un nouvel onglet).",
+      "src": "acde882f793a"
+    },
+    "text.8ffb4fc2db93": {
+      "text": "Écharpe longue et fluide, ornée d'un « Om » 🕉️ imprimé à la main, de symboles spirituels et de l'inscription « Om Namah Shivay ». Confectionnée dans un tissu ultra-doux, en rayonne. Modèle unisexe. Je propose 3 autres couleurs…",
+      "src": "8ffb4fc2db93"
     }
   }
 }

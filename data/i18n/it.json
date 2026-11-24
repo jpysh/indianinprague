@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-23T06:18:35.814Z",
-  "count": 7730,
+  "generated": "2026-11-24T06:18:08.107Z",
+  "count": 7740,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -31088,6 +31088,46 @@
     "text.5c43bd5f656b": {
       "text": "Cappotto con cappuccio color bordeaux, realizzato in tessuto di lana bollita a trama rigata. Caldo ma leggero. Molto versatile ed elegante. Acquistato a Milano, marchio italiano KOAN.…",
       "src": "5c43bd5f656b"
+    },
+    "item.10944305472.title": {
+      "text": "Sciarpa Om | Morbida sciarpa spirituale indù",
+      "src": "8519621308f8"
+    },
+    "item.10944305472.description": {
+      "text": "Sciarpa lunga e fluida con il simbolo Om 🕉️ stampato a mano, simboli spirituali e la scritta “Om Namah Shivay”. \nRealizzata in tessuto morbidissimo, rayon. \nModello unisex. \nSono disponibili altri 3 colori: rosa, viola e arancione (vedi ultima foto); mi scriva nel caso desiderasse un colore diverso. 🙏🏾",
+      "src": "60684179f3cf"
+    },
+    "text.52fed860992f": {
+      "text": "494 pezzi",
+      "src": "52fed860992f"
+    },
+    "text.0cba8a59366c": {
+      "text": "141 recensioni su Vinted →",
+      "src": "0cba8a59366c"
+    },
+    "text.67f147be829c": {
+      "text": "1740 pezzi in vendita · 171 venduti",
+      "src": "67f147be829c"
+    },
+    "text.57ac7ac37266": {
+      "text": "98 persone hanno salvato questo articolo su Vinted",
+      "src": "57ac7ac37266"
+    },
+    "text.8a9c0609c5d2": {
+      "text": "68 persone hanno salvato questo articolo su Vinted",
+      "src": "8a9c0609c5d2"
+    },
+    "text.2ff0341b8316": {
+      "text": "134 persone hanno salvato questo articolo su Vinted",
+      "src": "2ff0341b8316"
+    },
+    "text.acde882f793a": {
+      "text": "Valutato 5,0 su 5 in base a 141 recensioni degli acquirenti. Leggetele su Vinted (si apre in una nuova scheda).",
+      "src": "acde882f793a"
+    },
+    "text.8ffb4fc2db93": {
+      "text": "Sciarpa lunga e fluida con il simbolo Om 🕉️ stampato a mano, simboli spirituali e la scritta “Om Namah Shivay”. Realizzata in rayon, un tessuto morbidissimo. Modello unisex. Sono disponibili altri 3 colori…",
+      "src": "8ffb4fc2db93"
     }
   }
 }

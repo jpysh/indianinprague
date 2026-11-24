@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-23T06:18:36.538Z",
-  "count": 7730,
+  "generated": "2026-11-24T06:18:08.611Z",
+  "count": 7740,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -31088,6 +31088,46 @@
     "text.5c43bd5f656b": {
       "text": "Abrigo con capucha de color burdeos, confeccionado en tejido de lana hervida con textura. Cálido a la par que ligero. Muy versátil y elegante. Adquirido en Milán, de la marca italiana KOAN…",
       "src": "5c43bd5f656b"
+    },
+    "item.10944305472.title": {
+      "text": "Pañuelo «Om» | Suave pañuelo espiritual hindú",
+      "src": "8519621308f8"
+    },
+    "item.10944305472.description": {
+      "text": "Bufanda larga y vaporosa con el símbolo «Om» 🕉️ estampado a mano, símbolos espirituales y la frase «Om Namah Shivay». \nConfeccionada en rayón, un tejido muy suave. \nUnisex. \nTengo otros tres colores disponibles: rosa, morado y naranja (véase la última foto); envíeme un mensaje si desea un color diferente. 🙏🏾",
+      "src": "60684179f3cf"
+    },
+    "text.52fed860992f": {
+      "text": "494 piezas",
+      "src": "52fed860992f"
+    },
+    "text.0cba8a59366c": {
+      "text": "141 opiniones en Vinted →",
+      "src": "0cba8a59366c"
+    },
+    "text.67f147be829c": {
+      "text": "1740 piezas a la venta · 171 vendidas",
+      "src": "67f147be829c"
+    },
+    "text.57ac7ac37266": {
+      "text": "98 personas han guardado esto en Vinted",
+      "src": "57ac7ac37266"
+    },
+    "text.8a9c0609c5d2": {
+      "text": "68 personas han guardado esto en Vinted",
+      "src": "8a9c0609c5d2"
+    },
+    "text.2ff0341b8316": {
+      "text": "134 personas han guardado esto en Vinted",
+      "src": "2ff0341b8316"
+    },
+    "text.acde882f793a": {
+      "text": "Valoración de 5,0 sobre 5 según 141 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "acde882f793a"
+    },
+    "text.8ffb4fc2db93": {
+      "text": "Bufanda larga y vaporosa con el símbolo «Om» 🕉️ estampado a mano, símbolos espirituales y la frase «Om Namah Shivay». Confeccionada en rayón, un tejido muy suave. Unisex. Dispongo de otros tres colores…",
+      "src": "8ffb4fc2db93"
     }
   }
 }

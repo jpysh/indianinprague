@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-23T06:18:37.489Z",
-  "count": 7730,
+  "generated": "2026-11-24T06:18:09.102Z",
+  "count": 7740,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -31088,6 +31088,46 @@
     "text.5c43bd5f656b": {
       "text": "Burgundowy płaszcz z kapturem, uszyty z teksturowanej, gotowanej wełny. Ciepły, a jednocześnie lekki. Bardzo uniwersalny i elegancki. Zakupiony w Mediolanie, włoska marka KOAN.…",
       "src": "5c43bd5f656b"
+    },
+    "item.10944305472.title": {
+      "text": "Szalik Om | Miękki szalik o hinduskiej tematyce duchowej",
+      "src": "8519621308f8"
+    },
+    "item.10944305472.description": {
+      "text": "Zwiewny, długi szalik z ręcznie nadrukowanym symbolem „Om” 🕉️, symbolami duchowymi oraz napisem „Om Namah Shivay”. \nWykonany z niezwykle miękkiej tkaniny – sztucznego jedwabiu. \nModel unisex. \nDostępne są jeszcze 3 inne kolory – różowy, fioletowy i pomarańczowy (patrz ostatnie zdjęcie). Proszę o kontakt, jeśli życzą sobie Państwo inny kolor. 🙏🏾",
+      "src": "60684179f3cf"
+    },
+    "text.52fed860992f": {
+      "text": "494 sztuki",
+      "src": "52fed860992f"
+    },
+    "text.0cba8a59366c": {
+      "text": "141 recenzji na stronie Vinted →",
+      "src": "0cba8a59366c"
+    },
+    "text.67f147be829c": {
+      "text": "1740 sztuk na sprzedaż · 171 sprzedanych",
+      "src": "67f147be829c"
+    },
+    "text.57ac7ac37266": {
+      "text": "98 osób dodało tę pozycję do ulubionych na platformie Vinted",
+      "src": "57ac7ac37266"
+    },
+    "text.8a9c0609c5d2": {
+      "text": "68 osób dodało tę pozycję do ulubionych na Vinted",
+      "src": "8a9c0609c5d2"
+    },
+    "text.2ff0341b8316": {
+      "text": "134 osoby zapisały tę pozycję w serwisie Vinted",
+      "src": "2ff0341b8316"
+    },
+    "text.acde882f793a": {
+      "text": "Ocena 5,0 na 5 na podstawie 141 opinii kupujących. Zapoznaj się z nimi na stronie Vinted (otwiera się w nowej karcie).",
+      "src": "acde882f793a"
+    },
+    "text.8ffb4fc2db93": {
+      "text": "Zwiewny, długi szalik z ręcznie nadrukowanym symbolem Om 🕉️, symbolami duchowymi oraz napisem „Om Namah Shivay”. Wykonany z niezwykle miękkiej tkaniny – wiskozy. Model unisex. Dostępne są jeszcze 3 inne kolory…",
+      "src": "8ffb4fc2db93"
     }
   }
 }
