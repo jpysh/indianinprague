@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-25T06:18:16.385Z",
-  "count": 7754,
+  "generated": "2026-11-26T06:18:11.771Z",
+  "count": 7763,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -31184,6 +31184,42 @@
     "text.839d55dbdf0b": {
       "text": "Lot de trois paniers de rangement en bambou tissés à la main. Les première et troisième photos illustrent des exemples d'utilisation. Artisanat traditionnel indien. Chaque panier…",
       "src": "839d55dbdf0b"
+    },
+    "item.10965098226.title": {
+      "text": "Sac « Retro Camper » | Fourgonnette classique | Sac de voyage | Sac de transport bohème, vintage et fantaisiste",
+      "src": "586ec461c83f"
+    },
+    "item.10965098226.description": {
+      "text": "Sac de voyage original. \nTissu en polyester matelassé. \nSes imprimés lui donnent l'allure d'un camping-car classique, agrémentés de motifs de fleurs sauvages et de papillons. \nDimensions : 20,4 pouces de longueur, 12 pouces de hauteur, 9 pouces de largeur \nLéger mais d'une grande capacité. \nUne excellente idée de cadeau. Idéal pour les pique-niques, les petits voyages, les road trips, comme sac à langer, pour faire les courses, etc. \n\nUn autre sac de voyage rétro hippie : https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nJe propose également des sacs matelassés en coton pour tapis de yoga : https://www.vinted.cz/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit\n\nSac fourre-tout en coton matelassé - https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#rétro #camper #voyage #boho #vintage #hippie #fantaisiste #Noël #fêtes #cadeaux #BlackFriday #oldschool #classique",
+      "src": "4a3d51543638"
+    },
+    "text.d140916ed06a": {
+      "text": "Swingline",
+      "src": "d140916ed06a"
+    },
+    "text.11043f130585": {
+      "text": "495 pièces",
+      "src": "11043f130585"
+    },
+    "text.e019c34fec78": {
+      "text": "148 avis sur Vinted →",
+      "src": "e019c34fec78"
+    },
+    "text.2c57c430c4c6": {
+      "text": "1 739 pièces en vente · 174 vendues",
+      "src": "2c57c430c4c6"
+    },
+    "text.94dbcf0f68e2": {
+      "text": "69 personnes ont enregistré cette annonce sur Vinted",
+      "src": "94dbcf0f68e2"
+    },
+    "text.0f062eb57328": {
+      "text": "Note de 5,0 sur 5 d'après 148 avis d'acheteurs. Consultez-les sur Vinted (s'ouvre dans un nouvel onglet).",
+      "src": "0f062eb57328"
+    },
+    "text.9f31b77fc204": {
+      "text": "Sac de voyage original. Tissu en polyester matelassé. Ses motifs lui donnent l'allure d'un camping-car classique, agrémentés de fleurs sauvages et de papillons…",
+      "src": "9f31b77fc204"
     }
   }
 }

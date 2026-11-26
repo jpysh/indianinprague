@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-25T06:18:18.763Z",
-  "count": 7754,
+  "generated": "2026-11-26T06:18:14.104Z",
+  "count": 7763,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -31184,6 +31184,42 @@
     "text.839d55dbdf0b": {
       "text": "Juego de tres cestas de bambú tejidas a mano para guardar objetos. La primera y la tercera foto muestran ejemplos de uso. Artesanía tradicional india. Cada cesta…",
       "src": "839d55dbdf0b"
+    },
+    "item.10965098226.title": {
+      "text": "Bolso tipo «Retro Camper» | Furgoneta clásica | Bolsa de viaje tipo duffel | Bolso de mano boho vintage y original",
+      "src": "586ec461c83f"
+    },
+    "item.10965098226.description": {
+      "text": "Bolsa de viaje con un diseño original. \nTejido de poliéster acolchado. \nLos estampados le dan el aspecto de una autocaravana clásica, junto con motivos de flores silvestres y mariposas. \nMedidas: 20,4 pulgadas de largo, 12 pulgadas de alto y 9 pulgadas de ancho. \nLigera, pero de gran capacidad. \nUn regalo estupendo. Perfecta para picnics, viajes cortos, escapadas por carretera, como bolsa para pañales, para ir de compras, etc. \n\nOtra bolsa de viaje de estilo hippie retro: https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nTambién dispongo de bolsas acolchadas de algodón para esterillas de yoga: https://www.vinted.cz/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit\n\nBolso tote de algodón acolchado: https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#retro #camper #viajes #boho #vintage #hippie #caprichoso #Navidad #vacaciones #regalos #BlackFriday #oldschool #clásico",
+      "src": "4a3d51543638"
+    },
+    "text.d140916ed06a": {
+      "text": "Swingline",
+      "src": "d140916ed06a"
+    },
+    "text.11043f130585": {
+      "text": "495 piezas",
+      "src": "11043f130585"
+    },
+    "text.e019c34fec78": {
+      "text": "148 opiniones en Vinted →",
+      "src": "e019c34fec78"
+    },
+    "text.2c57c430c4c6": {
+      "text": "1739 piezas a la venta · 174 vendidas",
+      "src": "2c57c430c4c6"
+    },
+    "text.94dbcf0f68e2": {
+      "text": "69 personas han guardado esto en Vinted",
+      "src": "94dbcf0f68e2"
+    },
+    "text.0f062eb57328": {
+      "text": "Valoración de 5,0 sobre 5 según 148 opiniones de compradores. Léalas en Vinted (se abre en una nueva pestaña).",
+      "src": "0f062eb57328"
+    },
+    "text.9f31b77fc204": {
+      "text": "Bolsa de viaje de estilo original. Tejido de poliéster acolchado. Los estampados le dan el aspecto de una autocaravana clásica, junto con motivos de flores silvestres y mariposas…",
+      "src": "9f31b77fc204"
     }
   }
 }

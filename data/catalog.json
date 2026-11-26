@@ -1,12 +1,63 @@
 {
-  "syncedAt": "2026-11-25T06:15:10.008Z",
+  "syncedAt": "2026-11-26T06:15:11.403Z",
   "rate": {
-    "czkPerEur": 24.428,
-    "fetched": "2026-11-25",
+    "czkPerEur": 24.435,
+    "fetched": "2026-11-26",
     "source": "ECB"
   },
-  "count": 192,
+  "count": 193,
   "items": [
+    {
+      "id": "10965098226",
+      "title": "Retro Camper Can Bag | Classic Van | Travel Duffel Bag | Boho Vintage Whimsical Carry Bag",
+      "priceCzk": 595,
+      "priceEur": 24,
+      "brand": "Alternative",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "New without tags"
+      },
+      "color": {
+        "en": "Multicolour",
+        "cs": "Multi"
+      },
+      "category": "Fashion",
+      "vintedCategory": "Women Holdalls & duffel bags",
+      "crumbs": [
+        {
+          "id": 1904,
+          "name": "Women"
+        },
+        {
+          "id": 19,
+          "name": "Bags"
+        },
+        {
+          "id": 1849,
+          "name": "Holdalls & duffel bags"
+        }
+      ],
+      "description": "Whimsical duffel bag. \nQuilted polyester fabric. \nPrints make it look like a classic camper van, along with prints of wildflowers and butterflies. \nSize 20.4 inches in length, 12 inches in height, 9 inches in width \nLightweight yet large capacity. \nGreat gift. Perfect for picnics, short travel, road trips, diaper bag, shopping trips etc. \n\nAnother retro hippie duffel - https://www.vinted.cz/items/10794296799-stay-wild-retro-camper-van-weekender-bag-boho-hippie-travel-duffel-cottagecore-mushroom-sunset\n\nI also have cotton quilted yoga mat bags - https://www.vinted.cz/items/10615882258-quilted-yoga-mat-bag-indian-cotton-yoga-bag-boho-ethnic-unique-handmade-yoga-kit\n\nQuilted cotton tote - https://www.vinted.cz/items/10600140497-cotton-quilted-tote-bag-indian-boho-ethnic-bag\n\n#retro #camper #travel #boho #vintage #hippie #whimsical #christmas #holidays #gifting #blackfriday #oldschool #classic",
+      "photo": "images/vinted-10965098226-1.jpg",
+      "photos": [
+        "images/vinted-10965098226-1.jpg",
+        "images/vinted-10965098226-2.jpg",
+        "images/vinted-10965098226-3.jpg"
+      ],
+      "favourites": 26,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
+        "es": "https://www.vinted.es/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
+        "com": "https://www.vinted.com/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
+        "uk": "https://www.vinted.co.uk/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag"
+      }
+    },
     {
       "id": "10955641673",
       "title": "Bamboo Storage Baskets | Set of 3",
@@ -50,7 +101,7 @@
         "images/vinted-10955641673-2.jpg",
         "images/vinted-10955641673-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -384,7 +435,7 @@
         "images/vinted-10882972961-2.jpg",
         "images/vinted-10882972961-3.jpg"
       ],
-      "favourites": 12,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -439,7 +490,7 @@
         "images/vinted-10877542181-2.jpg",
         "images/vinted-10877542181-3.jpg"
       ],
-      "favourites": 3,
+      "favourites": 4,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -454,8 +505,8 @@
     {
       "id": "10837788244",
       "title": "Quilted Cotton Yoga Mat Bag | Boho Handmade Yoga Carrier with Zipper Pocket and Adjustable Strap",
-      "priceCzk": 647,
-      "priceEur": 26,
+      "priceCzk": 617,
+      "priceEur": 25,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -494,7 +545,7 @@
         "images/vinted-10837788244-2.jpg",
         "images/vinted-10837788244-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -651,7 +702,7 @@
         "images/vinted-10794296799-2.jpg",
         "images/vinted-10794296799-3.jpg"
       ],
-      "favourites": 31,
+      "favourites": 28,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -666,8 +717,8 @@
     {
       "id": "10775609402",
       "title": "Magnetic copper bracelet and ring | Indian Ayurveda copper | healing jewellery",
-      "priceCzk": 397,
-      "priceEur": 16,
+      "priceCzk": 367,
+      "priceEur": 15,
       "brand": "Copper",
       "size": "",
       "sizeGroup": "",
@@ -706,7 +757,7 @@
         "images/vinted-10775609402-2.jpg",
         "images/vinted-10775609402-3.jpg"
       ],
-      "favourites": 70,
+      "favourites": 69,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -881,8 +932,8 @@
     {
       "id": "10686079177",
       "title": "Cotton Quilted Yoga Mat Bag | Gym Bag | Indian Handmade Yoga Bag | Boho Bag",
-      "priceCzk": 647,
-      "priceEur": 26,
+      "priceCzk": 617,
+      "priceEur": 25,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -921,7 +972,7 @@
         "images/vinted-10686079177-2.jpg",
         "images/vinted-10686079177-3.jpg"
       ],
-      "favourites": 135,
+      "favourites": 134,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -936,8 +987,8 @@
     {
       "id": "10685433080",
       "title": "Ceramic Wall Hooks | Indian Artisan Home Decor | Boho Home Cottagecore | Vintage Antique Wall Decor",
-      "priceCzk": 925,
-      "priceEur": 38,
+      "priceCzk": 895,
+      "priceEur": 37,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1101,8 +1152,8 @@
     {
       "id": "10615882258",
       "title": "Quilted Yoga Mat Bag | Indian Cotton Yoga Bag | Boho Ethnic | Unique Handmade Yoga Kit",
-      "priceCzk": 647,
-      "priceEur": 26,
+      "priceCzk": 617,
+      "priceEur": 25,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1141,7 +1192,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 87,
+      "favourites": 88,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1359,8 +1410,8 @@
     {
       "id": "10546429650",
       "title": "Cotton Quilted Yoga Mat Bag | Indian Handmade Yoga Mat Carrier | Boho Quilted Bag",
-      "priceCzk": 647,
-      "priceEur": 26,
+      "priceCzk": 617,
+      "priceEur": 25,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1414,8 +1465,8 @@
     {
       "id": "10514142547",
       "title": "Indian Blue Pottery Ceramic Tile Wall Hanger | Boho Home | Cottagecore Home Decor",
-      "priceCzk": 795,
-      "priceEur": 33,
+      "priceCzk": 755,
+      "priceEur": 31,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1454,7 +1505,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 32,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1469,8 +1520,8 @@
     {
       "id": "10513562820",
       "title": "Handmade Quilted Cotton Yoga Mat Bag | India Yoga Namaste",
-      "priceCzk": 647,
-      "priceEur": 26,
+      "priceCzk": 617,
+      "priceEur": 25,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1509,7 +1560,7 @@
         "images/vinted-10513562820-2.jpg",
         "images/vinted-10513562820-3.jpg"
       ],
-      "favourites": 49,
+      "favourites": 50,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1632,7 +1683,7 @@
       "title": "Swingline Full Strip Stapler and 2 Hole Punch Office Desk Set Home Office Student Office Bundle",
       "priceCzk": 99,
       "priceEur": 4,
-      "brand": "swingline",
+      "brand": "Swingline",
       "size": "",
       "sizeGroup": "",
       "condition": {
@@ -2055,8 +2106,8 @@
     {
       "id": "10315558500",
       "title": "Brass Tibetan Buddha Amulet | Pendant Talisman Charm | India Hindu Spiritual Jewellery",
-      "priceCzk": 450,
-      "priceEur": 18,
+      "priceCzk": 350,
+      "priceEur": 14,
       "brand": "Alternative",
       "size": "",
       "sizeGroup": "",
@@ -3177,7 +3228,7 @@
         "images/vinted-10115768203-2.jpg",
         "images/vinted-10115768203-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4124,7 +4175,7 @@
         "images/vinted-9824321071-2.jpg",
         "images/vinted-9824321071-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4292,7 +4343,7 @@
         "images/vinted-9820377303-2.jpg",
         "images/vinted-9820377303-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 12,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5968,7 +6019,7 @@
         "images/vinted-9602442603-2.jpg",
         "images/vinted-9602442603-3.jpg"
       ],
-      "favourites": 4,
+      "favourites": 5,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6403,7 +6454,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 34,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7687,7 +7738,7 @@
         "images/vinted-9438954997-2.jpg",
         "images/vinted-9438954997-3.jpg"
       ],
-      "favourites": 20,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8048,7 +8099,7 @@
         "images/vinted-9395292320-2.jpg",
         "images/vinted-9395292320-3.jpg"
       ],
-      "favourites": 2,
+      "favourites": 3,
       "reserved": false,
       "sold": false,
       "featured": false,
