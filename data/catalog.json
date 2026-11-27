@@ -1,12 +1,67 @@
 {
-  "syncedAt": "2026-11-26T06:15:11.403Z",
+  "syncedAt": "2026-11-27T06:15:16.526Z",
   "rate": {
-    "czkPerEur": 24.435,
-    "fetched": "2026-11-26",
+    "czkPerEur": 24.453,
+    "fetched": "2026-11-27",
     "source": "ECB"
   },
-  "count": 193,
+  "count": 194,
   "items": [
+    {
+      "id": "10981455232",
+      "title": "Vintage Botanical Ceramic Wall Hook with 3 Metal Hooks",
+      "priceCzk": 427,
+      "priceEur": 17,
+      "brand": "Ceramic",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "New without tags"
+      },
+      "color": {
+        "en": "Navy",
+        "cs": "Navy"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Clothes bags & hangers",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1934,
+          "name": "Home accessories"
+        },
+        {
+          "id": 1939,
+          "name": "Storage & organisation"
+        },
+        {
+          "id": 2012,
+          "name": "Clothes bags & hangers"
+        }
+      ],
+      "description": "Made in India. \nVintage floral ceramic tiles wall hook up with 3 rounded hooks. \nRich cobalt blue and golden yellow detailing.\nVintage-inspired black metal. \nWall-mounted design (screws not included). \nA beautiful addition to an entrance hall, bedroom, kitchen or dressing area. \nA thoughtful gift for lovers of vintage interiors, botanical designs and boho cottagecore home accessories.\n\n4-piece vintage ceramic wall hook - https://www.vinted.cz/items/10685433080-ceramic-wall-hooks-indian-artisan-home-decor-boho-home-cottagecore-vintage-antique-wall-decor\n\n5-piece vintage ceramic wall hook - https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor\n\n#homedecor #boho #vintage #heritage #nostalgia #retro #royal #christmas #gifts #holidays #heritage",
+      "photo": "images/vinted-10981455232-1.jpg",
+      "photos": [
+        "images/vinted-10981455232-1.jpg",
+        "images/vinted-10981455232-2.jpg",
+        "images/vinted-10981455232-3.jpg"
+      ],
+      "favourites": 14,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10981455232-vintage-botanical-ceramic-wall-hook-with-3-metal-hooks",
+        "es": "https://www.vinted.es/items/10981455232-vintage-botanical-ceramic-wall-hook-with-3-metal-hooks",
+        "com": "https://www.vinted.com/items/10981455232-vintage-botanical-ceramic-wall-hook-with-3-metal-hooks",
+        "uk": "https://www.vinted.co.uk/items/10981455232-vintage-botanical-ceramic-wall-hook-with-3-metal-hooks"
+      }
+    },
     {
       "id": "10965098226",
       "title": "Retro Camper Can Bag | Classic Van | Travel Duffel Bag | Boho Vintage Whimsical Carry Bag",
@@ -46,7 +101,7 @@
         "images/vinted-10965098226-2.jpg",
         "images/vinted-10965098226-3.jpg"
       ],
-      "favourites": 26,
+      "favourites": 58,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -384,7 +439,7 @@
         "images/vinted-10902815783-2.jpg",
         "images/vinted-10902815783-3.jpg"
       ],
-      "favourites": 1,
+      "favourites": 2,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -435,7 +490,7 @@
         "images/vinted-10882972961-2.jpg",
         "images/vinted-10882972961-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -545,7 +600,7 @@
         "images/vinted-10837788244-2.jpg",
         "images/vinted-10837788244-3.jpg"
       ],
-      "favourites": 21,
+      "favourites": 22,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -651,7 +706,7 @@
         "images/vinted-10796332946-2.jpg",
         "images/vinted-10796332946-3.jpg"
       ],
-      "favourites": 101,
+      "favourites": 105,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -702,7 +757,7 @@
         "images/vinted-10794296799-2.jpg",
         "images/vinted-10794296799-3.jpg"
       ],
-      "favourites": 28,
+      "favourites": 33,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -757,7 +812,7 @@
         "images/vinted-10775609402-2.jpg",
         "images/vinted-10775609402-3.jpg"
       ],
-      "favourites": 69,
+      "favourites": 72,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -823,7 +878,7 @@
       "id": "10741164106",
       "title": "Vintage Indian Kashmiri Coat | Winter Coat | Ethnic jacket | Unique Dark Academia Boho Winter Jacket",
       "priceCzk": 2897,
-      "priceEur": 119,
+      "priceEur": 118,
       "brand": "Kashmir",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -917,7 +972,7 @@
         "images/vinted-10703373162-2.jpg",
         "images/vinted-10703373162-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1192,7 +1247,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 88,
+      "favourites": 89,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1309,7 +1364,7 @@
       "id": "10573779334",
       "title": "Krishna Radha Engraved Portrait | Indian Hindu Religious Temple Painting | Sacred Spiritual",
       "priceCzk": 330,
-      "priceEur": 14,
+      "priceEur": 13,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1360,7 +1415,7 @@
       "id": "10554333040",
       "title": "Cotton Quilted Tote Bag | Indian Boho Bag",
       "priceCzk": 550,
-      "priceEur": 23,
+      "priceEur": 22,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1450,7 +1505,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 25,
+      "favourites": 27,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1505,7 +1560,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 35,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2146,7 +2201,7 @@
         "images/vinted-10315558500-2.jpg",
         "images/vinted-10315558500-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2201,7 +2256,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 11,
+      "favourites": 13,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2260,7 +2315,7 @@
         "images/vinted-10306451118-2.jpg",
         "images/vinted-10306451118-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2445,7 +2500,7 @@
       "id": "10270021516",
       "title": "TOMS Ankle Boots | Nepal Boots Slip-On Aztec | Ethnic boho winter wool boots",
       "priceCzk": 550,
-      "priceEur": 23,
+      "priceEur": 22,
       "brand": "Toms",
       "size": "36",
       "sizeGroup": "36",
@@ -3464,7 +3519,7 @@
       "id": "10067667788",
       "title": "Rare Vintage y2k Luna Pro Team Cycling Knit Jacket | Vintage sweater | retro boho | autumn sweater",
       "priceCzk": 110,
-      "priceEur": 5,
+      "priceEur": 4,
       "brand": "Luna",
       "size": "S / 36 / 8",
       "sizeGroup": "S",
@@ -4037,7 +4092,7 @@
       "id": "9843116673",
       "title": "What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy",
       "priceCzk": 110,
-      "priceEur": 5,
+      "priceEur": 4,
       "brand": "",
       "size": "",
       "sizeGroup": "",
@@ -4850,7 +4905,7 @@
       "id": "9675580496",
       "title": "Vintage Bag | Ethiopian Tan Leather | Boho Bag",
       "priceCzk": 599,
-      "priceEur": 25,
+      "priceEur": 24,
       "brand": "ethiopian",
       "size": "",
       "sizeGroup": "",
@@ -6250,7 +6305,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 205,
+      "priceEur": 204,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -7353,7 +7408,7 @@
         "images/vinted-9489491094-2.jpg",
         "images/vinted-9489491094-3.jpg"
       ],
-      "favourites": 7,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -10319,7 +10374,7 @@
         "images/vinted-9309160145-2.jpg",
         "images/vinted-9309160145-3.jpg"
       ],
-      "favourites": 10,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,

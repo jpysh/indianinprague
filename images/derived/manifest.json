@@ -56647,6 +56647,48 @@
       }
     ]
   },
+  "images/vinted-10981455232-1.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "f1e3a547",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10981455232-1-400.jpg",
+        "webp": "images/derived/vinted-10981455232-1-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10981455232-2.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "ea0724dc",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10981455232-2-400.jpg",
+        "webp": "images/derived/vinted-10981455232-2-400.webp"
+      }
+    ]
+  },
+  "images/vinted-10981455232-3.jpg": {
+    "width": 600,
+    "height": 800,
+    "aspect": 0.75,
+    "v": "35b07633",
+    "variants": [
+      {
+        "w": 400,
+        "h": 533,
+        "jpg": "images/derived/vinted-10981455232-3-400.jpg",
+        "webp": "images/derived/vinted-10981455232-3-400.webp"
+      }
+    ]
+  },
   "images/vinted-9309067629-1.jpg": {
     "width": 600,
     "height": 800,

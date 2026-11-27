@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-26T06:18:13.276Z",
-  "count": 7763,
+  "generated": "2026-11-27T06:17:53.566Z",
+  "count": 7770,
   "entries": {
     "attr.color.red": {
       "text": "Rete",
@@ -31220,6 +31220,34 @@
     "text.9f31b77fc204": {
       "text": "Borsa da viaggio dal design stravagante. Tessuto in poliestere trapuntato. Le stampe le conferiscono l’aspetto di un classico camper, insieme a motivi raffiguranti fiori selvatici e farfalle…",
       "src": "9f31b77fc204"
+    },
+    "item.10981455232.title": {
+      "text": "Gancio da parete vintage in ceramica con motivi botanici e 3 ganci in metallo",
+      "src": "9cab13a91876"
+    },
+    "item.10981455232.description": {
+      "text": "Prodotto in India. \nGancio da parete in piastrelle di ceramica con motivo floreale vintage, dotato di 3 ganci arrotondati. \nRicchi dettagli in blu cobalto e giallo dorato.\nMetallo nero di ispirazione vintage. \nModello da parete (viti non incluse). \nUna splendida aggiunta all’ingresso, alla camera da letto, alla cucina o alla zona spogliatoio. \nUn regalo premuroso per gli amanti degli interni vintage, dei motivi botanici e degli accessori per la casa in stile boho cottagecore.\n\nSet di 4 ganci da parete in ceramica vintage - https://www.vinted.cz/items/10685433080-ceramic-wall-hooks-indian-artisan-home-decor-boho-home-cottagecore-vintage-antique-wall-decor\n\nSet di 5 ganci da parete in ceramica vintage - https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor\n\n#arredamento #boho #vintage #tradizione #nostalgia #retro #regale #Natale #regali #festività #tradizione",
+      "src": "5d9e93d10355"
+    },
+    "text.6af8d370b0d0": {
+      "text": "Ceramica",
+      "src": "6af8d370b0d0"
+    },
+    "text.89373d322489": {
+      "text": "160 pezzi",
+      "src": "89373d322489"
+    },
+    "text.c7b6d571baf4": {
+      "text": "Nuovo, senza etichette · Blu navy",
+      "src": "c7b6d571baf4"
+    },
+    "text.554ce65e6a5e": {
+      "text": "1740 pezzi in vendita · 174 venduti",
+      "src": "554ce65e6a5e"
+    },
+    "text.c80ac46e6ac2": {
+      "text": "Prodotto in India. Appendiabiti da parete in piastrelle di ceramica con motivi floreali vintage, dotato di 3 ganci arrotondati. Ricco blu cobalto e dettagli in giallo dorato. Nero di ispirazione vintage…",
+      "src": "c80ac46e6ac2"
     }
   }
 }

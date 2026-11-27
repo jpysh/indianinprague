@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-26T06:18:11.771Z",
-  "count": 7763,
+  "generated": "2026-11-27T06:17:51.819Z",
+  "count": 7770,
   "entries": {
     "attr.color.red": {
       "text": "Réseau",
@@ -31220,6 +31220,34 @@
     "text.9f31b77fc204": {
       "text": "Sac de voyage original. Tissu en polyester matelassé. Ses motifs lui donnent l'allure d'un camping-car classique, agrémentés de fleurs sauvages et de papillons…",
       "src": "9f31b77fc204"
+    },
+    "item.10981455232.title": {
+      "text": "Crochet mural vintage en céramique sur le thème botanique, avec 3 crochets métalliques",
+      "src": "9cab13a91876"
+    },
+    "item.10981455232.description": {
+      "text": "Fabriqué en Inde. \nPatère murale en carreaux de céramique à motifs floraux vintage, dotée de 3 crochets arrondis. \nRiche bleu cobalt rehaussé de détails jaune doré.\nMétal noir d'inspiration vintage. \nModèle à fixer au mur (vis non fournies). \nUn magnifique atout pour votre entrée, votre chambre, votre cuisine ou votre dressing. \nUn cadeau attentionné pour les amateurs de décoration vintage, de motifs botaniques et d'accessoires de décoration d'intérieur de style boho cottagecore.\n\nEnsemble de 4 crochets muraux vintage en céramique - https://www.vinted.cz/items/10685433080-ceramic-wall-hooks-indian-artisan-home-decor-boho-home-cottagecore-vintage-antique-wall-decor\n\nLot de 5 crochets muraux vintage en céramique - https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor\n\n#décoration-d'intérieur #boho #vintage #patrimoine #nostalgie #rétro #royal #Noël #cadeaux #fêtes #patrimoine",
+      "src": "5d9e93d10355"
+    },
+    "text.6af8d370b0d0": {
+      "text": "Céramique",
+      "src": "6af8d370b0d0"
+    },
+    "text.89373d322489": {
+      "text": "160 pièces",
+      "src": "89373d322489"
+    },
+    "text.c7b6d571baf4": {
+      "text": "Neuf, sans étiquettes · Bleu marine",
+      "src": "c7b6d571baf4"
+    },
+    "text.554ce65e6a5e": {
+      "text": "1 740 pièces en vente · 174 vendues",
+      "src": "554ce65e6a5e"
+    },
+    "text.c80ac46e6ac2": {
+      "text": "Fabriqué en Inde. Patère murale en carreaux de céramique à motifs floraux vintage, dotée de 3 crochets arrondis. Nuances intenses de bleu cobalt et de jaune doré. Noir d'inspiration vintage…",
+      "src": "c80ac46e6ac2"
     }
   }
 }

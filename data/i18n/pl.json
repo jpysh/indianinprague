@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-26T06:18:15.031Z",
-  "count": 7763,
+  "generated": "2026-11-27T06:17:54.993Z",
+  "count": 7770,
   "entries": {
     "attr.color.red": {
       "text": "Sieć",
@@ -31220,6 +31220,34 @@
     "text.9f31b77fc204": {
       "text": "Oryginalna torba podróżna. Pikowana tkanina poliestrowa. Nadruki nadają jej wygląd klasycznego kampera, a także przedstawiają polne kwiaty i motyle…",
       "src": "9f31b77fc204"
+    },
+    "item.10981455232.title": {
+      "text": "Ceramiczny wieszak ścienny w stylu vintage z motywem roślinnym, wyposażony w 3 metalowe haczyki",
+      "src": "9cab13a91876"
+    },
+    "item.10981455232.description": {
+      "text": "Wyprodukowano w Indiach. \nWieszak ścienny w stylu vintage z motywem kwiatowym, wykonany z płytek ceramicznych, wyposażony w 3 zaokrąglone haczyki. \nW bogatej kolorystyce kobaltowego błękitu z akcentami złocistej żółci.\nCzarny metal inspirowany stylem vintage. \nKonstrukcja do montażu na ścianie (śruby nie wchodzą w skład zestawu). \nPiękny dodatek do przedpokoju, sypialni, kuchni lub garderoby. \nPrzemyślany prezent dla miłośników wnętrz w stylu vintage, motywów botanicznych oraz akcesoriów domowych w stylu boho cottagecore.\n\n4-częściowy zestaw ceramicznych wieszaków ściennych w stylu vintage – https://www.vinted.cz/items/10685433080-ceramic-wall-hooks-indian-artisan-home-decor-boho-home-cottagecore-vintage-antique-wall-decor\n\n5-częściowy zestaw ceramicznych wieszaków ściennych w stylu vintage – https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor\n\n#dekoracjedomowe #boho #vintage #dziedzictwo #nostalgia #retro #królewski #Boże Narodzenie #prezenty #święta #dziedzictwo",
+      "src": "5d9e93d10355"
+    },
+    "text.6af8d370b0d0": {
+      "text": "Ceramika",
+      "src": "6af8d370b0d0"
+    },
+    "text.89373d322489": {
+      "text": "160 sztuk",
+      "src": "89373d322489"
+    },
+    "text.c7b6d571baf4": {
+      "text": "Nowe, bez metek · Granatowe",
+      "src": "c7b6d571baf4"
+    },
+    "text.554ce65e6a5e": {
+      "text": "1740 sztuk na sprzedaż · 174 sprzedane",
+      "src": "554ce65e6a5e"
+    },
+    "text.c80ac46e6ac2": {
+      "text": "Wyprodukowano w Indiach. Vintage’owy wieszak ścienny z ceramicznych płytek w kwiatowy wzór, wyposażony w 3 zaokrąglone haczyki. Bogata kobaltowa zieleń i złocistożółte detale. Czarny, inspirowany stylem vintage…",
+      "src": "c80ac46e6ac2"
     }
   }
 }

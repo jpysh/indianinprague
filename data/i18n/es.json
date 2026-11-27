@@ -6,8 +6,8 @@
     "",
     "  src   hash of the English this was translated from; a mismatch means retranslate"
   ],
-  "generated": "2026-11-26T06:18:14.104Z",
-  "count": 7763,
+  "generated": "2026-11-27T06:17:54.178Z",
+  "count": 7770,
   "entries": {
     "attr.color.red": {
       "text": "Red",
@@ -31220,6 +31220,34 @@
     "text.9f31b77fc204": {
       "text": "Bolsa de viaje de estilo original. Tejido de poliéster acolchado. Los estampados le dan el aspecto de una autocaravana clásica, junto con motivos de flores silvestres y mariposas…",
       "src": "9f31b77fc204"
+    },
+    "item.10981455232.title": {
+      "text": "Colgador de pared de cerámica de estilo vintage con motivos botánicos y 3 ganchos metálicos",
+      "src": "9cab13a91876"
+    },
+    "item.10981455232.description": {
+      "text": "Fabricado en la India. \nColgador de pared con azulejos cerámicos de estilo vintage con motivos florales y 3 ganchos redondeados. \nIntenso azul cobalto y detalles en amarillo dorado.\nMetal negro de inspiración vintage. \nDiseño para montaje en pared (tornillos no incluidos). \nUn precioso complemento para el recibidor, el dormitorio, la cocina o el vestidor. \nUn regalo muy acertado para los amantes de los interiores vintage, los diseños botánicos y los accesorios para el hogar de estilo boho cottagecore.\n\nJuego de 4 ganchos de pared de cerámica de estilo vintage - https://www.vinted.cz/items/10685433080-ceramic-wall-hooks-indian-artisan-home-decor-boho-home-cottagecore-vintage-antique-wall-decor\n\nJuego de 5 ganchos de pared de cerámica vintage - https://www.vinted.cz/items/10514142547-indian-blue-pottery-ceramic-tile-wall-hanger-boho-home-cottagecore-home-decor\n\n#decoración del hogar #boho #vintage #patrimonio #nostalgia #retro #real #Navidad #regalos #fiestas #patrimonio",
+      "src": "5d9e93d10355"
+    },
+    "text.6af8d370b0d0": {
+      "text": "Cerámica",
+      "src": "6af8d370b0d0"
+    },
+    "text.89373d322489": {
+      "text": "160 unidades",
+      "src": "89373d322489"
+    },
+    "text.c7b6d571baf4": {
+      "text": "Nuevo, sin etiquetas · Azul marino",
+      "src": "c7b6d571baf4"
+    },
+    "text.554ce65e6a5e": {
+      "text": "1740 piezas a la venta · 174 vendidas",
+      "src": "554ce65e6a5e"
+    },
+    "text.c80ac46e6ac2": {
+      "text": "Fabricado en la India. Colgador de pared de azulejos cerámicos con motivos florales de estilo vintage, con tres ganchos redondeados. Detalles en un intenso azul cobalto y amarillo dorado. Negro de inspiración vintage…",
+      "src": "c80ac46e6ac2"
     }
   }
 }
