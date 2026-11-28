@@ -1,12 +1,63 @@
 {
-  "syncedAt": "2026-11-27T06:15:16.526Z",
+  "syncedAt": "2026-11-28T06:15:11.460Z",
   "rate": {
-    "czkPerEur": 24.453,
-    "fetched": "2026-11-27",
+    "czkPerEur": 24.435,
+    "fetched": "2026-11-28",
     "source": "ECB"
   },
-  "count": 194,
+  "count": 193,
   "items": [
+    {
+      "id": "10994372482",
+      "title": "Om Artwork | Traditional Folk Art from Himalayas | Framed Om Spiritual Hindu Healing Art",
+      "priceCzk": 520,
+      "priceEur": 21,
+      "brand": "Himalaya",
+      "size": "",
+      "sizeGroup": "",
+      "condition": {
+        "en": "New without tags",
+        "cs": "New without tags"
+      },
+      "color": {
+        "en": "Burgundy",
+        "cs": "Burgundy"
+      },
+      "category": "Home Decor",
+      "vintedCategory": "Home Picture & photo frames",
+      "crumbs": [
+        {
+          "id": 1918,
+          "name": "Home"
+        },
+        {
+          "id": 1934,
+          "name": "Home accessories"
+        },
+        {
+          "id": 1937,
+          "name": "Picture & photo frames"
+        }
+      ],
+      "description": "Himalayan heritage. \nOm in traditional ritualistic folk art form originating from the Himalayas (Kumaon region of Uttarakhand, India).\nTraditionally created by hand using rice paste and natural red ochre.\nFeatures by intricate white geometric and floral patterns painted on a deep red cloth background.\nAipan designs are associated with prosperity, good fortune and auspicious beginnings.\nAt the heart of this artwork lies Om (ॐ) 🕉️ an ancient sacred symbol representing universal consciousness, inner peace and spiritual harmony. \nThe surrounding symmetrical floral and geometric patterns evoke a sense of balance and unity.\nBeautiful addition to meditation and yoga spaces, living room, office.\nA mindful, handmade gift for yoga and meditation lovers, housewarming, Christmas, birthdays and more. \n17*17 cm\n\n#om #spirituality #hindu #religious #healing #meditation #yoga #namaste #holidays #gift",
+      "photo": "images/vinted-10994372482-1.jpg",
+      "photos": [
+        "images/vinted-10994372482-1.jpg",
+        "images/vinted-10994372482-2.jpg",
+        "images/vinted-10994372482-3.jpg"
+      ],
+      "favourites": 0,
+      "reserved": false,
+      "sold": false,
+      "featured": false,
+      "hidden": false,
+      "urls": {
+        "cz": "https://www.vinted.cz/items/10994372482-om-artwork-traditional-folk-art-from-himalayas-framed-om-spiritual-hindu-healing-art",
+        "es": "https://www.vinted.es/items/10994372482-om-artwork-traditional-folk-art-from-himalayas-framed-om-spiritual-hindu-healing-art",
+        "com": "https://www.vinted.com/items/10994372482-om-artwork-traditional-folk-art-from-himalayas-framed-om-spiritual-hindu-healing-art",
+        "uk": "https://www.vinted.co.uk/items/10994372482-om-artwork-traditional-folk-art-from-himalayas-framed-om-spiritual-hindu-healing-art"
+      }
+    },
     {
       "id": "10981455232",
       "title": "Vintage Botanical Ceramic Wall Hook with 3 Metal Hooks",
@@ -50,7 +101,7 @@
         "images/vinted-10981455232-2.jpg",
         "images/vinted-10981455232-3.jpg"
       ],
-      "favourites": 14,
+      "favourites": 21,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -64,7 +115,7 @@
     },
     {
       "id": "10965098226",
-      "title": "Retro Camper Can Bag | Classic Van | Travel Duffel Bag | Boho Vintage Whimsical Carry Bag",
+      "title": "Retro Camper Van Bag | Vintage 70s Van | Travel Duffel Bag | Boho Whimsical Carry Bag",
       "priceCzk": 595,
       "priceEur": 24,
       "brand": "Alternative",
@@ -101,16 +152,16 @@
         "images/vinted-10965098226-2.jpg",
         "images/vinted-10965098226-3.jpg"
       ],
-      "favourites": 58,
+      "favourites": 61,
       "reserved": false,
       "sold": false,
       "featured": false,
       "hidden": false,
       "urls": {
-        "cz": "https://www.vinted.cz/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
-        "es": "https://www.vinted.es/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
-        "com": "https://www.vinted.com/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag",
-        "uk": "https://www.vinted.co.uk/items/10965098226-retro-camper-can-bag-classic-van-travel-duffel-bag-boho-vintage-whimsical-carry-bag"
+        "cz": "https://www.vinted.cz/items/10965098226-retro-camper-van-bag-vintage-70s-van-travel-duffel-bag-boho-whimsical-carry-bag",
+        "es": "https://www.vinted.es/items/10965098226-retro-camper-van-bag-vintage-70s-van-travel-duffel-bag-boho-whimsical-carry-bag",
+        "com": "https://www.vinted.com/items/10965098226-retro-camper-van-bag-vintage-70s-van-travel-duffel-bag-boho-whimsical-carry-bag",
+        "uk": "https://www.vinted.co.uk/items/10965098226-retro-camper-van-bag-vintage-70s-van-travel-duffel-bag-boho-whimsical-carry-bag"
       }
     },
     {
@@ -600,7 +651,7 @@
         "images/vinted-10837788244-2.jpg",
         "images/vinted-10837788244-3.jpg"
       ],
-      "favourites": 22,
+      "favourites": 24,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -615,8 +666,8 @@
     {
       "id": "10836497802",
       "title": "Rustic Boho Ring with Jingle Balls | Chunky Y2K Grunge Silver Ring | Indie Vintage Jewellery",
-      "priceCzk": 160,
-      "priceEur": 7,
+      "priceCzk": 110,
+      "priceEur": 5,
       "brand": "Indie",
       "size": "50,6 mm / 16,1 mm Ø",
       "sizeGroup": "",
@@ -706,7 +757,7 @@
         "images/vinted-10796332946-2.jpg",
         "images/vinted-10796332946-3.jpg"
       ],
-      "favourites": 105,
+      "favourites": 104,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -757,7 +808,7 @@
         "images/vinted-10794296799-2.jpg",
         "images/vinted-10794296799-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -812,7 +863,7 @@
         "images/vinted-10775609402-2.jpg",
         "images/vinted-10775609402-3.jpg"
       ],
-      "favourites": 72,
+      "favourites": 74,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -878,7 +929,7 @@
       "id": "10741164106",
       "title": "Vintage Indian Kashmiri Coat | Winter Coat | Ethnic jacket | Unique Dark Academia Boho Winter Jacket",
       "priceCzk": 2897,
-      "priceEur": 118,
+      "priceEur": 119,
       "brand": "Kashmir",
       "size": "L / 40 / 12",
       "sizeGroup": "L",
@@ -1082,7 +1133,7 @@
         "images/vinted-10685433080-2.jpg",
         "images/vinted-10685433080-3.jpg"
       ],
-      "favourites": 42,
+      "favourites": 43,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1247,7 +1298,7 @@
         "images/vinted-10615882258-2.jpg",
         "images/vinted-10615882258-3.jpg"
       ],
-      "favourites": 89,
+      "favourites": 90,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1364,7 +1415,7 @@
       "id": "10573779334",
       "title": "Krishna Radha Engraved Portrait | Indian Hindu Religious Temple Painting | Sacred Spiritual",
       "priceCzk": 330,
-      "priceEur": 13,
+      "priceEur": 14,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -1415,7 +1466,7 @@
       "id": "10554333040",
       "title": "Cotton Quilted Tote Bag | Indian Boho Bag",
       "priceCzk": 550,
-      "priceEur": 22,
+      "priceEur": 23,
       "brand": "Jaipur",
       "size": "",
       "sizeGroup": "",
@@ -1505,7 +1556,7 @@
         "images/vinted-10546429650-2.jpg",
         "images/vinted-10546429650-3.jpg"
       ],
-      "favourites": 27,
+      "favourites": 29,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1560,7 +1611,7 @@
         "images/vinted-10514142547-2.jpg",
         "images/vinted-10514142547-3.jpg"
       ],
-      "favourites": 35,
+      "favourites": 36,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -1630,8 +1681,8 @@
     {
       "id": "10424837655",
       "title": "Handmade African Bag | Nigeria Ankara Style | Boho Ethnic Bag",
-      "priceCzk": 595,
-      "priceEur": 24,
+      "priceCzk": 525,
+      "priceEur": 21,
       "brand": "Africa",
       "size": "",
       "sizeGroup": "",
@@ -2256,7 +2307,7 @@
         "images/vinted-10313811804-2.jpg",
         "images/vinted-10313811804-3.jpg"
       ],
-      "favourites": 13,
+      "favourites": 14,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -2500,7 +2551,7 @@
       "id": "10270021516",
       "title": "TOMS Ankle Boots | Nepal Boots Slip-On Aztec | Ethnic boho winter wool boots",
       "priceCzk": 550,
-      "priceEur": 22,
+      "priceEur": 23,
       "brand": "Toms",
       "size": "36",
       "sizeGroup": "36",
@@ -3519,7 +3570,7 @@
       "id": "10067667788",
       "title": "Rare Vintage y2k Luna Pro Team Cycling Knit Jacket | Vintage sweater | retro boho | autumn sweater",
       "priceCzk": 110,
-      "priceEur": 4,
+      "priceEur": 5,
       "brand": "Luna",
       "size": "S / 36 / 8",
       "sizeGroup": "S",
@@ -3568,61 +3619,6 @@
         "es": "https://www.vinted.es/items/10067667788-rare-vintage-y2k-luna-pro-team-cycling-knit-jacket-vintage-sweater-retro-boho-autumn-sweater",
         "com": "https://www.vinted.com/items/10067667788-rare-vintage-y2k-luna-pro-team-cycling-knit-jacket-vintage-sweater-retro-boho-autumn-sweater",
         "uk": "https://www.vinted.co.uk/items/10067667788-rare-vintage-y2k-luna-pro-team-cycling-knit-jacket-vintage-sweater-retro-boho-autumn-sweater"
-      }
-    },
-    {
-      "id": "10065438847",
-      "title": "Vintage Bohemian Print Knit Dress | Retro Y2K Fashion | Boho Hippie | warm winter wool dress",
-      "priceCzk": 150,
-      "priceEur": 6,
-      "brand": "Vintage Love",
-      "size": "M / 38 / 10",
-      "sizeGroup": "M",
-      "condition": {
-        "en": "Good",
-        "cs": "Dobrý"
-      },
-      "color": {
-        "en": "Multicolour",
-        "cs": "Smíšená"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Winter dresses",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 4,
-          "name": "Clothing"
-        },
-        {
-          "id": 10,
-          "name": "Dresses"
-        },
-        {
-          "id": 1779,
-          "name": "Winter dresses"
-        }
-      ],
-      "description": "Fit-and-flare dress with long sleeves and dark brown cowl-neck scarf collar. \nHas a fun, grunge retro boho fashion. \nWorn.\n\n#BohoFashion #VintageStyle #KnitDress #BohoChic #RetroVibes #VintageDress #BohemianStyle #FallFashion",
-      "photo": "images/vinted-10065438847-1.jpg",
-      "photos": [
-        "images/vinted-10065438847-1.jpg",
-        "images/vinted-10065438847-2.jpg",
-        "images/vinted-10065438847-3.jpg"
-      ],
-      "favourites": 5,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/10065438847-vintage-bohemian-print-knit-dress-retro-y2k-fashion-boho-hippie-warm-winter-wool-dress",
-        "es": "https://www.vinted.es/items/10065438847-vintage-bohemian-print-knit-dress-retro-y2k-fashion-boho-hippie-warm-winter-wool-dress",
-        "com": "https://www.vinted.com/items/10065438847-vintage-bohemian-print-knit-dress-retro-y2k-fashion-boho-hippie-warm-winter-wool-dress",
-        "uk": "https://www.vinted.co.uk/items/10065438847-vintage-bohemian-print-knit-dress-retro-y2k-fashion-boho-hippie-warm-winter-wool-dress"
       }
     },
     {
@@ -4092,7 +4088,7 @@
       "id": "9843116673",
       "title": "What Would Nietzsche Do? common modern everyday problems | Psychology Philosophy",
       "priceCzk": 110,
-      "priceEur": 4,
+      "priceEur": 5,
       "brand": "",
       "size": "",
       "sizeGroup": "",
@@ -4449,7 +4445,7 @@
         "images/vinted-9820113596-2.jpg",
         "images/vinted-9820113596-3.jpg"
       ],
-      "favourites": 31,
+      "favourites": 32,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4504,7 +4500,7 @@
         "images/vinted-9812964914-2.jpg",
         "images/vinted-9812964914-3.jpg"
       ],
-      "favourites": 31,
+      "favourites": 30,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -4905,7 +4901,7 @@
       "id": "9675580496",
       "title": "Vintage Bag | Ethiopian Tan Leather | Boho Bag",
       "priceCzk": 599,
-      "priceEur": 24,
+      "priceEur": 25,
       "brand": "ethiopian",
       "size": "",
       "sizeGroup": "",
@@ -5105,7 +5101,7 @@
         "images/vinted-9641705366-2.jpg",
         "images/vinted-9641705366-3.jpg"
       ],
-      "favourites": 5,
+      "favourites": 6,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -5624,7 +5620,7 @@
         "images/vinted-9602838102-2.jpg",
         "images/vinted-9602838102-3.jpg"
       ],
-      "favourites": 54,
+      "favourites": 56,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -6305,7 +6301,7 @@
       "id": "9579803801",
       "title": "Rare Find Victorian Antique Authentic 925 Silver Bangle | Vintage retro royal jewellery",
       "priceCzk": 5000,
-      "priceEur": 204,
+      "priceEur": 205,
       "brand": "Indian",
       "size": "",
       "sizeGroup": "",
@@ -6509,7 +6505,7 @@
         "images/vinted-9575763651-2.jpg",
         "images/vinted-9575763651-3.jpg"
       ],
-      "favourites": 33,
+      "favourites": 34,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -7243,7 +7239,7 @@
         "images/vinted-9500656843-2.jpg",
         "images/vinted-9500656843-3.jpg"
       ],
-      "favourites": 0,
+      "favourites": 1,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -8995,7 +8991,7 @@
         "images/vinted-9331163535-2.jpg",
         "images/vinted-9331163535-3.jpg"
       ],
-      "favourites": 8,
+      "favourites": 9,
       "reserved": false,
       "sold": false,
       "featured": false,
@@ -9892,61 +9888,6 @@
       }
     },
     {
-      "id": "9313793339",
-      "title": "Halter V-Neck Summer Beach Dress",
-      "priceCzk": 200,
-      "priceEur": 8,
-      "brand": "House",
-      "size": "L / 40 / 12",
-      "sizeGroup": "L",
-      "condition": {
-        "en": "Very good",
-        "cs": "Velmi dobrý"
-      },
-      "color": {
-        "en": "Black",
-        "cs": "Černá"
-      },
-      "category": "Fashion",
-      "vintedCategory": "Women Long dresses",
-      "crumbs": [
-        {
-          "id": 1904,
-          "name": "Women"
-        },
-        {
-          "id": 4,
-          "name": "Clothing"
-        },
-        {
-          "id": 10,
-          "name": "Dresses"
-        },
-        {
-          "id": 1055,
-          "name": "Long dresses"
-        }
-      ],
-      "description": "Flowy summer maxi dress in batik-style print. Mint green, black, and white. V-neckline front and back with a self-tie halter neck finished with wooden beads. Hem that drapes and moves beautifully.\nMade of a soft, silky satin-feel fabric. Perfect as beachwear, a resort cover-up, or an evening dress.\nSize L",
-      "photo": "images/vinted-9313793339-1.jpg",
-      "photos": [
-        "images/vinted-9313793339-1.jpg",
-        "images/vinted-9313793339-2.jpg",
-        "images/vinted-9313793339-3.jpg"
-      ],
-      "favourites": 21,
-      "reserved": false,
-      "sold": false,
-      "featured": false,
-      "hidden": false,
-      "urls": {
-        "cz": "https://www.vinted.cz/items/9313793339-halter-v-neck-summer-beach-dress",
-        "es": "https://www.vinted.es/items/9313793339-halter-v-neck-summer-beach-dress",
-        "com": "https://www.vinted.com/items/9313793339-halter-v-neck-summer-beach-dress",
-        "uk": "https://www.vinted.co.uk/items/9313793339-halter-v-neck-summer-beach-dress"
-      }
-    },
-    {
       "id": "9312410623",
       "title": "Indian Cotton Jumpsuit · Blue Block Print · Elastic Crochet Bodice · Summery Boho",
       "priceCzk": 300,
@@ -10374,7 +10315,7 @@
         "images/vinted-9309160145-2.jpg",
         "images/vinted-9309160145-3.jpg"
       ],
-      "favourites": 9,
+      "favourites": 8,
       "reserved": false,
       "sold": false,
       "featured": false,
